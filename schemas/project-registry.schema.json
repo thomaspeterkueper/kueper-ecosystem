@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kueper.com/schemas/project-registry.schema.json",
+  "title": "KUEPER Ecosystem Project Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "updated_at", "projects"],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "projects": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/project" }
+    }
+  },
+  "$defs": {
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "repository",
+        "provider",
+        "enabled",
+        "role",
+        "version_source",
+        "governance"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "repository": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "provider": {
+          "type": "string",
+          "enum": ["github"]
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "control-plane",
+            "application",
+            "knowledge-platform",
+            "knowledge-graph",
+            "archive",
+            "website"
+          ]
+        },
+        "production_url": {
+          "type": ["string", "null"],
+          "format": "uri"
+        },
+        "health_url": {
+          "type": ["string", "null"],
+          "format": "uri"
+        },
+        "version_source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["strategy", "candidates"],
+          "properties": {
+            "strategy": {
+              "type": "string",
+              "enum": ["first-existing", "none"]
+            },
+            "candidates": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["type", "path"],
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["package-json", "text", "json"]
+                  },
+                  "path": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "json_pointer": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "governance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["required_paths"],
+          "properties": {
+            "required_paths": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "integrations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["target", "required"],
+            "properties": {
+              "target": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9-]*$"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "required_api": {
+                "type": "string"
+              },
+              "required_schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
