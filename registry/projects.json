@@ -1,0 +1,176 @@
+{
+  "$schema": "../schemas/project-registry.schema.json",
+  "schema_version": "1.0.0",
+  "updated_at": "2026-07-10",
+  "projects": [
+    {
+      "id": "ecosystem",
+      "name": "KUEPER Ecosystem",
+      "repository": "thomaspeterkueper/kueper-ecosystem",
+      "provider": "github",
+      "enabled": true,
+      "role": "control-plane",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "docs/source-of-truth.md",
+          "docs/cross-repository-workflow.md",
+          "decisions/README.md"
+        ]
+      },
+      "integrations": []
+    },
+    {
+      "id": "noxia",
+      "name": "NOXIA",
+      "repository": "thomaspeterkueper/noxiagame",
+      "provider": "github",
+      "enabled": true,
+      "role": "application",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "ssf", "required": true },
+        { "target": "knowledge-graph", "required": true }
+      ]
+    },
+    {
+      "id": "ssf",
+      "name": "Solar Science Foundation",
+      "repository": "thomaspeterkueper/solarsciencefoundation",
+      "provider": "github",
+      "enabled": true,
+      "role": "knowledge-platform",
+      "production_url": "https://solarsciencefoundation.vercel.app",
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "knowledge-graph", "required": true },
+        { "target": "noxia", "required": false }
+      ]
+    },
+    {
+      "id": "knowledge-graph",
+      "name": "KUEPER Knowledge Graph",
+      "repository": "thomaspeterkueper/kueper-knowledge-graph",
+      "provider": "github",
+      "enabled": true,
+      "role": "knowledge-graph",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "json", "path": "schema/version.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": []
+    },
+    {
+      "id": "ota",
+      "name": "OverTime Archive",
+      "repository": "thomaspeterkueper/overtime-archive.org",
+      "provider": "github",
+      "enabled": true,
+      "role": "archive",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "knowledge-graph", "required": false }
+      ],
+      "notes": "Default Branch ist derzeit master und wird vom Collector als beobachteter Ist-Zustand übernommen."
+    },
+    {
+      "id": "kueper-com",
+      "name": "kueper.com",
+      "repository": "thomaspeterkueper/kueper.com",
+      "provider": "github",
+      "enabled": true,
+      "role": "website",
+      "production_url": "https://kueper.com",
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "ota", "required": false },
+        { "target": "knowledge-graph", "required": false }
+      ]
+    }
+  ]
+}
