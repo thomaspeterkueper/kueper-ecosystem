@@ -69,6 +69,10 @@ Betroffene Repositories: ...
 ## Folgeaufgaben
 ```
 
+## Entscheidungen
+
+- [ECO-ARC-0005-2026-DE — Status- und Monitoring-Control-Plane](./ECO-ARC-0005-2026-DE.md) — `accepted`
+
 ## Erste mögliche Entscheidungen
 
 Noch anzulegen:
