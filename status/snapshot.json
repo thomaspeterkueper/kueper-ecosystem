@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-12T11:21:16+00:00",
+  "generated_at": "2026-07-12T11:27:26+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
     "projects": 7,
     "overall_counts": {
-      "healthy": 1,
-      "degraded": 4,
+      "healthy": 2,
+      "degraded": 3,
       "critical": 2
     },
-    "open_external_tasks_total": 16
+    "open_external_tasks_total": 19
   },
   "projects": [
     {
@@ -45,7 +45,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-10T05:51:04Z",
+      "last_push": "2026-07-12T11:24:43Z",
       "overall": "healthy"
     },
     {
@@ -71,12 +71,10 @@
           }
         },
         "external_tasks_open": {
-          "state": "warning",
+          "state": "ok",
           "detail": {
-            "count": 1,
-            "files": [
-              "NOX-0008-kurse-canonical-path-ids.md"
-            ]
+            "count": 0,
+            "files": []
           }
         },
         "integrations": {
@@ -99,8 +97,8 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-12T11:20:21Z",
-      "overall": "degraded"
+      "last_push": "2026-07-12T11:21:25Z",
+      "overall": "healthy"
     },
     {
       "id": "ssf",
@@ -182,8 +180,9 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 6,
+            "count": 7,
             "files": [
+              "EXT-ECO-KG-20260712-001.md",
               "KG-REQ-20260710-batch-register-ota-documents.md",
               "KG-REQ-20260710-che-1101-source-gap.md",
               "KG-REQ-20260710-org-ssf-legal-fields.md",
@@ -200,7 +199,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-12T10:51:35Z",
+      "last_push": "2026-07-12T11:26:46Z",
       "overall": "degraded"
     },
     {
@@ -230,8 +229,9 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 4,
+            "count": 5,
             "files": [
+              "EXT-ECO-OTA-20260712-001.md",
               "KG-REQ-20260710-confirm-ota-documents.md",
               "OTA-REQ-20260708-document-architecture-consensus.md",
               "OTA-REQ-20260710-priority-prerequisites-mat-chain.md",
@@ -253,7 +253,7 @@
       },
       "default_branch": "master",
       "private": false,
-      "last_push": "2026-07-10T11:59:22Z",
+      "last_push": "2026-07-12T11:26:49Z",
       "overall": "critical"
     },
     {
@@ -281,8 +281,10 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 2,
+            "count": 4,
             "files": [
+              "EXT-ECO-KUE-20260712-001.md",
+              "EXT-ECO-KUE-20260712-002.md",
               "KUEPERCOM-REQ-20260708-document-architecture-consensus.md",
               "REQ-KG-LEGAL-ACCESS-20260710.md"
             ]
@@ -308,7 +310,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-10T04:04:08Z",
+      "last_push": "2026-07-12T11:26:48Z",
       "overall": "degraded"
     },
     {
