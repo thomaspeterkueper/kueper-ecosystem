@@ -1,4 +1,6 @@
 :root {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "IBM Plex Mono", Menlo, Consolas, monospace;
   --ink: #0f1319;
   --panel: #171c25;
   --panel-2: #1e242f;
