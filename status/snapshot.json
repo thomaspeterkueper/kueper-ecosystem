@@ -1,13 +1,12 @@
 {
-  "generated_at": "2026-07-12T11:27:26+00:00",
+  "generated_at": "2026-07-12T11:35:57+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
     "projects": 7,
     "overall_counts": {
       "healthy": 2,
-      "degraded": 3,
-      "critical": 2
+      "degraded": 5
     },
     "open_external_tasks_total": 19
   },
@@ -45,7 +44,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-12T11:24:43Z",
+      "last_push": "2026-07-12T11:27:44Z",
       "overall": "healthy"
     },
     {
@@ -218,11 +217,9 @@
           "detail": 0
         },
         "governance_required_paths": {
-          "state": "error",
+          "state": "ok",
           "detail": {
-            "missing": [
-              "README.md"
-            ],
+            "missing": [],
             "checked": 4
           }
         },
@@ -253,8 +250,8 @@
       },
       "default_branch": "master",
       "private": false,
-      "last_push": "2026-07-12T11:26:49Z",
-      "overall": "critical"
+      "last_push": "2026-07-12T11:35:22Z",
+      "overall": "degraded"
     },
     {
       "id": "kueper-com",
@@ -329,12 +326,9 @@
           "detail": 0
         },
         "governance_required_paths": {
-          "state": "error",
+          "state": "ok",
           "detail": {
-            "missing": [
-              "external-tasks/done",
-              "external-tasks/rejected"
-            ],
+            "missing": [],
             "checked": 4
           }
         },
@@ -354,8 +348,8 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-10T04:08:09Z",
-      "overall": "critical"
+      "last_push": "2026-07-12T11:35:23Z",
+      "overall": "degraded"
     }
   ]
 }
