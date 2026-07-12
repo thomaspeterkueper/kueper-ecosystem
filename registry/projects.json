@@ -229,7 +229,7 @@
       "integrations": [
         { "target": "ota", "required": false }
       ],
-      "notes": "Source of Truth fuer die Buecher/Manuskripte/Worldbuilding/Charaktere (autorenseitige Quelle). KEIN zweites kanonisches Archiv: OTA-Dokumente gehoeren ausschliesslich ins OTA (ECO-ARC-0008). Code NXU. Eigenes Supabase-Projekt (nicht in der Registry)."
+      "notes": "Source of Truth fuer die Universums-Primaerdaten: Buecher (500+), Figuren, Handlungen, Orte, Personen, Worldbuilding - verwaltet in eigener Supabase-DB unter eigenem Namespace. NICHT die OTA-*-Archivdokumentebene: die bleibt beim OTA, noxia-universe schlaegt dorthin nur vor (ECO-ARC-0008). Code NXU."
     }
   ]
 }
