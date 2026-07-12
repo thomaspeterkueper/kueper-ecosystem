@@ -30,36 +30,6 @@
       "integrations": []
     },
     {
-      "id": "noxia-universe",
-      "name": "Noxia Universe",
-      "repository": "thomaspeterkueper/noxia-universe",
-      "provider": "github",
-      "enabled": true,
-      "role": "canon-archive",
-      "production_url": null,
-      "health_url": null,
-      "version_source": {
-        "strategy": "first-existing",
-        "candidates": [
-          { "type": "text", "path": "VERSION" }
-        ]
-      },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
-      "integrations": [
-        { "target": "ota", "required": true },
-        { "target": "noxia", "required": true },
-        { "target": "knowledge-graph", "required": false }
-      ],
-      "notes": "Kanonisches Bucharchiv des Noxia-Universums. Source of Truth für alle Bücher, Kanon-Dokumente (OTA-HIS/LIT/TEC/ORG), Timeline, Charaktere, Physik (χ-Feld, AVI-Modell). Supabase-Datenbank: noxia-universe. Skaliert auf 500+ Einträge und interstellare Reichweite."
-    },
-    {
       "id": "noxia",
       "name": "NOXIA",
       "repository": "thomaspeterkueper/noxiagame",
@@ -259,7 +229,7 @@
       "integrations": [
         { "target": "ota", "required": false }
       ],
-      "notes": "Autorenseitige Quelle der Buchreihen (Manuskripte, Charaktere, Worldbuilding). Kein zweites kanonisches Archiv: OTA-Dokumente gehoeren ausschliesslich ins OTA (ECO-ARC-0008). Code NXU. Eigenes Supabase-Projekt (nicht in der Registry)."
+      "notes": "Source of Truth fuer die Buecher/Manuskripte/Worldbuilding/Charaktere (autorenseitige Quelle). KEIN zweites kanonisches Archiv: OTA-Dokumente gehoeren ausschliesslich ins OTA (ECO-ARC-0008). Code NXU. Eigenes Supabase-Projekt (nicht in der Registry)."
     }
   ]
 }
