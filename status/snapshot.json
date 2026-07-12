@@ -1,14 +1,13 @@
 {
-  "generated_at": "2026-07-12T12:35:32+00:00",
+  "generated_at": "2026-07-12T12:58:22+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
-    "projects": 7,
+    "projects": 8,
     "overall_counts": {
-      "healthy": 1,
-      "degraded": 6
+      "degraded": 8
     },
-    "open_external_tasks_total": 24
+    "open_external_tasks_total": 29
   },
   "projects": [
     {
@@ -34,8 +33,13 @@
           }
         },
         "external_tasks_open": {
-          "state": "not_applicable",
-          "detail": null
+          "state": "warning",
+          "detail": {
+            "count": 1,
+            "files": [
+              "EXT-ECO-NXU-20260712-001.md"
+            ]
+          }
         },
         "integrations": {
           "state": "not_applicable",
@@ -44,8 +48,8 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-12T11:35:58Z",
-      "overall": "healthy"
+      "last_push": "2026-07-12T12:56:27Z",
+      "overall": "degraded"
     },
     {
       "id": "noxia",
@@ -72,9 +76,10 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 1,
+            "count": 2,
             "files": [
-              "EXT-ECO-NOXIA-20260712-001.md"
+              "EXT-ECO-NOXIA-20260712-001.md",
+              "NOX-0007-school-domain-mapping-and-fake-modules.md"
             ]
           }
         },
@@ -92,13 +97,19 @@
               "required": true,
               "state": "ok",
               "detail": "registered"
+            },
+            {
+              "target": "noxia-universe",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
             }
           ]
         }
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-12T12:35:11Z",
+      "last_push": "2026-07-12T12:41:44Z",
       "overall": "degraded"
     },
     {
@@ -148,6 +159,12 @@
               "required": false,
               "state": "ok",
               "detail": "registered"
+            },
+            {
+              "target": "noxia-universe",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
             }
           ]
         }
@@ -182,7 +199,7 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 8,
+            "count": 9,
             "files": [
               "EXT-ECO-KG-20260712-001.md",
               "EXT-ECO-KG-20260712-002.md",
@@ -191,6 +208,7 @@
               "KG-REQ-20260710-org-ssf-legal-fields.md",
               "KG-REQ-20260710-phy-1101-asset-paths.md",
               "KG-REQ-20260711-learning-path-slides-schema.md",
+              "KG-REQ-20260711-mat-l0-arithmetic-content.md",
               "REQ-KG-SUPABASE-STATUS-20260710.md"
             ]
           }
@@ -202,7 +220,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-12T12:35:10Z",
+      "last_push": "2026-07-12T12:41:45Z",
       "overall": "degraded"
     },
     {
@@ -230,9 +248,10 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 7,
+            "count": 8,
             "files": [
               "EXT-ECO-OTA-20260712-001.md",
+              "EXT-ECO-OTA-20260712-002.md",
               "KG-REQ-20260710-confirm-ota-documents.md",
               "KG-REQ-20260711-mediaasset-arc-canonization.md",
               "OTA-ARC-0010-2026-DE.md",
@@ -250,13 +269,19 @@
               "required": false,
               "state": "ok",
               "detail": "registered"
+            },
+            {
+              "target": "noxia-universe",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
             }
           ]
         }
       },
       "default_branch": "master",
       "private": false,
-      "last_push": "2026-07-12T11:39:39Z",
+      "last_push": "2026-07-12T12:57:40Z",
       "overall": "degraded"
     },
     {
@@ -304,6 +329,12 @@
             },
             {
               "target": "knowledge-graph",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "noxia-universe",
               "required": false,
               "state": "ok",
               "detail": "registered"
@@ -355,6 +386,54 @@
       "default_branch": "main",
       "private": false,
       "last_push": "2026-07-12T11:35:23Z",
+      "overall": "degraded"
+    },
+    {
+      "id": "noxia-universe",
+      "name": "Noxia Universe",
+      "repository": "thomaspeterkueper/noxia-universe",
+      "role": "archive",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "warning",
+          "detail": {
+            "count": 1,
+            "files": [
+              "EXT-ECO-NXU-20260712-001.md"
+            ]
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "ota",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-12T12:57:42Z",
       "overall": "degraded"
     }
   ]
