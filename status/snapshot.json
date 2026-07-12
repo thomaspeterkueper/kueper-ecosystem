@@ -1,0 +1,359 @@
+{
+  "generated_at": "2026-07-12T11:21:16+00:00",
+  "collector_version": "1.0.0",
+  "registry_schema_version": "1.0.0",
+  "summary": {
+    "projects": 7,
+    "overall_counts": {
+      "healthy": 1,
+      "degraded": 4,
+      "critical": 2
+    },
+    "open_external_tasks_total": 16
+  },
+  "projects": [
+    {
+      "id": "ecosystem",
+      "name": "KUEPER Ecosystem",
+      "repository": "thomaspeterkueper/kueper-ecosystem",
+      "role": "control-plane",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "not_applicable",
+          "detail": null
+        },
+        "integrations": {
+          "state": "not_applicable",
+          "detail": []
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-10T05:51:04Z",
+      "overall": "healthy"
+    },
+    {
+      "id": "noxia",
+      "name": "NOXIA",
+      "repository": "thomaspeterkueper/noxiagame",
+      "role": "application",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "warning",
+          "detail": {
+            "count": 1,
+            "files": [
+              "NOX-0008-kurse-canonical-path-ids.md"
+            ]
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "ssf",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "knowledge-graph",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-12T11:20:21Z",
+      "overall": "degraded"
+    },
+    {
+      "id": "ssf",
+      "name": "Solar Science Foundation",
+      "repository": "thomaspeterkueper/solarsciencefoundation",
+      "role": "knowledge-platform",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "warning",
+          "detail": {
+            "count": 2,
+            "files": [
+              "SSF-0005-footer-legal-links-and-styling.md",
+              "SSF-0006-research-page.md"
+            ]
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "knowledge-graph",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "noxia",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-11T05:18:18Z",
+      "overall": "degraded"
+    },
+    {
+      "id": "knowledge-graph",
+      "name": "KUEPER Knowledge Graph",
+      "repository": "thomaspeterkueper/kueper-knowledge-graph",
+      "role": "knowledge-graph",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "warning",
+          "detail": {
+            "count": 6,
+            "files": [
+              "KG-REQ-20260710-batch-register-ota-documents.md",
+              "KG-REQ-20260710-che-1101-source-gap.md",
+              "KG-REQ-20260710-org-ssf-legal-fields.md",
+              "KG-REQ-20260710-phy-1101-asset-paths.md",
+              "KG-REQ-20260711-learning-path-slides-schema.md",
+              "REQ-KG-SUPABASE-STATUS-20260710.md"
+            ]
+          }
+        },
+        "integrations": {
+          "state": "not_applicable",
+          "detail": []
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-12T10:51:35Z",
+      "overall": "degraded"
+    },
+    {
+      "id": "ota",
+      "name": "OverTime Archive",
+      "repository": "thomaspeterkueper/overtime-archive.org",
+      "role": "archive",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "master"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "error",
+          "detail": {
+            "missing": [
+              "README.md"
+            ],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "warning",
+          "detail": {
+            "count": 4,
+            "files": [
+              "KG-REQ-20260710-confirm-ota-documents.md",
+              "OTA-REQ-20260708-document-architecture-consensus.md",
+              "OTA-REQ-20260710-priority-prerequisites-mat-chain.md",
+              "REQ-KG-LEGAL-ACCESS-20260710.md"
+            ]
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "knowledge-graph",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "master",
+      "private": false,
+      "last_push": "2026-07-10T11:59:22Z",
+      "overall": "critical"
+    },
+    {
+      "id": "kueper-com",
+      "name": "kueper.com",
+      "repository": "thomaspeterkueper/kueper.com",
+      "role": "website",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "warning",
+          "detail": {
+            "count": 2,
+            "files": [
+              "KUEPERCOM-REQ-20260708-document-architecture-consensus.md",
+              "REQ-KG-LEGAL-ACCESS-20260710.md"
+            ]
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "ota",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "knowledge-graph",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-10T04:04:08Z",
+      "overall": "degraded"
+    },
+    {
+      "id": "thomas-kueper-de",
+      "name": "thomas-kueper.de",
+      "repository": "thomaspeterkueper/thomas-kueper.de",
+      "role": "website",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "error",
+          "detail": {
+            "missing": [
+              "external-tasks/done",
+              "external-tasks/rejected"
+            ],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "warning",
+          "detail": {
+            "count": 1,
+            "files": [
+              "REQ-KG-LEGAL-ACCESS-20260710.md"
+            ]
+          }
+        },
+        "integrations": {
+          "state": "not_applicable",
+          "detail": []
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-10T04:08:09Z",
+      "overall": "critical"
+    }
+  ]
+}

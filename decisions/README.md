@@ -72,6 +72,8 @@ Betroffene Repositories: ...
 ## Entscheidungen
 
 - [ECO-ARC-0005-2026-DE — Status- und Monitoring-Control-Plane](./ECO-ARC-0005-2026-DE.md) — `accepted`
+- [ECO-ARC-0006-2026-DE — Kanonisches External-Task-Format](./ECO-ARC-0006-2026-DE.md) — `accepted`
+- [ECO-ARC-0007-2026-DE — Dokument-Architektur des KUEPER-Ökosystems](./ECO-ARC-0007-2026-DE.md) — `accepted`
 
 ## Erste mögliche Entscheidungen
 

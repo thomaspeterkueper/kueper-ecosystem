@@ -17,6 +17,7 @@ Die Registry ist keine Source of Truth für fachliche Projektdaten. Sie enthält
 - KUEPER Knowledge Graph
 - OverTime Archive
 - kueper.com
+- thomas-kueper.de
 
 ## Grundregeln
 

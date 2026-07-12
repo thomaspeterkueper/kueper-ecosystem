@@ -1,7 +1,7 @@
 {
   "$schema": "../schemas/project-registry.schema.json",
   "schema_version": "1.0.0",
-  "updated_at": "2026-07-10",
+  "updated_at": "2026-07-12",
   "projects": [
     {
       "id": "ecosystem",
@@ -171,6 +171,33 @@
         { "target": "ota", "required": false },
         { "target": "knowledge-graph", "required": false }
       ]
+    },
+    {
+      "id": "thomas-kueper-de",
+      "name": "thomas-kueper.de",
+      "repository": "thomaspeterkueper/thomas-kueper.de",
+      "provider": "github",
+      "enabled": true,
+      "role": "website",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [],
+      "notes": "In der Repository-Landkarte gefuehrt, aber bis 2026-07-12 nicht registriert. Aufgenommen durch ECO-Audit. production_url bleibt null bis bestaetigt (nicht geraten)."
     }
   ]
 }

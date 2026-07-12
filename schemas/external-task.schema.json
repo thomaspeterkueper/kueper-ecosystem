@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kueper.com/schemas/external-task.schema.json",
+  "title": "KUEPER External Task (front matter)",
+  "description": "Kanonisches Kopf-Schema fuer External Tasks unter external-tasks/open|done|rejected|parked. Der Task-Body ist Markdown; dieses Schema validiert das YAML-Frontmatter, das jeder kanonischen Task voransteht. Verbindlich ab ECO-ARC-0006.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "status", "source", "target", "created", "requested_by"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^EXT-(ECO|KG|SSF|NOXIA|KUE|OTA|TKD)-(ECO|KG|SSF|NOXIA|KUE|OTA|TKD)-[0-9]{8}-[0-9]{3}$",
+      "description": "EXT-{SOURCE}-{TARGET}-{YYYYMMDD}-{NNN}. Codes siehe ECO-ARC-0006."
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "status": {
+      "type": "string",
+      "enum": ["open", "done", "rejected", "parked"]
+    },
+    "source": {
+      "type": "string",
+      "enum": ["ECO", "KG", "SSF", "NOXIA", "KUE", "OTA", "TKD"]
+    },
+    "target": {
+      "type": "string",
+      "enum": ["ECO", "KG", "SSF", "NOXIA", "KUE", "OTA", "TKD"]
+    },
+    "created": { "type": "string", "format": "date" },
+    "requested_by": { "type": "string", "minLength": 1 },
+    "priority": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"]
+    },
+    "affects": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["ECO", "KG", "SSF", "NOXIA", "KUE", "OTA", "TKD"]
+      }
+    },
+    "supersedes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
