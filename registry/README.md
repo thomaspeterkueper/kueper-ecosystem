@@ -18,6 +18,7 @@ Die Registry ist keine Source of Truth für fachliche Projektdaten. Sie enthält
 - OverTime Archive
 - kueper.com
 - thomas-kueper.de
+- Noxia Universe
 
 ## Grundregeln
 

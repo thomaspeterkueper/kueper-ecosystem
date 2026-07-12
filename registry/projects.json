@@ -231,6 +231,35 @@
       },
       "integrations": [],
       "notes": "In der Repository-Landkarte gefuehrt, aber bis 2026-07-12 nicht registriert. Aufgenommen durch ECO-Audit. production_url bleibt null bis bestaetigt (nicht geraten)."
+    },
+    {
+      "id": "noxia-universe",
+      "name": "Noxia Universe",
+      "repository": "thomaspeterkueper/noxia-universe",
+      "provider": "github",
+      "enabled": true,
+      "role": "archive",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "ota", "required": false }
+      ],
+      "notes": "Autorenseitige Quelle der Buchreihen (Manuskripte, Charaktere, Worldbuilding). Kein zweites kanonisches Archiv: OTA-Dokumente gehoeren ausschliesslich ins OTA (ECO-ARC-0008). Code NXU. Eigenes Supabase-Projekt (nicht in der Registry)."
     }
   ]
 }
