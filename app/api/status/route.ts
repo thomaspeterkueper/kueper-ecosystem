@@ -53,7 +53,7 @@ function parseFrontmatter(text: string): Record<string, any> {
     const key = line.slice(0, idx).trim();
     let val: any = line.slice(idx + 1).trim();
     if (val.startsWith("[") && val.endsWith("]")) {
-      val = val.slice(1, -1).split(",").map((s) => s.trim()).filter(Boolean);
+      val = val.slice(1, -1).split(",").map((s: string) => s.trim()).filter(Boolean);
     }
     fm[key] = val;
   }
