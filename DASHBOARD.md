@@ -21,23 +21,27 @@ der API-Route `app/api/status`. Das Frontend sieht ihn nie.
 
 ## Auf Vercel deployen
 
+Die App liegt im **Repo-Root**, daher ist **kein Root-Directory-Setting nötig**.
+
 1. In Vercel **New Project** → Repository `thomaspeterkueper/kueper-ecosystem` importieren.
-2. **Root Directory** auf `dashboard` setzen (das ist entscheidend — die App liegt im Unterordner).
-3. Framework wird als **Next.js** erkannt, Build-Befehle nicht ändern.
-4. Unter **Environment Variables** hinzufügen:
+2. Framework wird automatisch als **Next.js** erkannt, Build-Befehle nicht ändern,
+   Root Directory unverändert lassen.
+3. Unter **Environment Variables** hinzufügen:
    - `GH_TOKEN` = dein read-only GitHub-Token
-   - optional `REGISTRY_REPO`, falls die Registry in einem anderen Repo liegt
-     (Default: `thomaspeterkueper/kueper-ecosystem`)
-5. **Deploy**. Danach Deployment Protection aktivieren (siehe oben).
+   - optional `REGISTRY_REPO` (Default: `thomaspeterkueper/kueper-ecosystem`)
+4. **Deploy**. Danach unter Settings → Deployment Protection eine Zugriffssperre aktivieren.
+
+Startseite `/` ist der Werkzeug-Hub; das Telemetrie-Dashboard liegt unter `/dashboard`,
+der JSON-Feed unter `/api/status`.
 
 ## Lokal starten
 
 ```bash
-cd dashboard
 npm install
 echo "GH_TOKEN=dein_token" > .env.local
 npm run dev
-# http://localhost:3000
+# http://localhost:3000        → Werkzeug-Hub
+# http://localhost:3000/dashboard → Telemetrie
 ```
 
 ## Wie es funktioniert
@@ -46,11 +50,11 @@ npm run dev
   Control-Plane-Repo und prüft je Projekt Erreichbarkeit, Default Branch, letzten
   Push, offene PRs, Governance-Pflichtpfade, Version (`version_source`) und alle
   offenen External Tasks (inkl. Frontmatter). Gibt normalisiertes JSON zurück.
-- Die Seite rendert Zusammenfassung, Projektzustände und die nach Priorität
-  sortierte Task-Liste. Jede Task verlinkt direkt auf ihre Datei auf GitHub, damit
-  sie im jeweiligen Projekt angestoßen werden kann.
+- `/` ist der Werkzeug-Hub; `/dashboard` rendert Zusammenfassung, Projektzustände
+  und die nach Priorität sortierte Task-Liste. Jede Task verlinkt direkt auf ihre
+  Datei auf GitHub, damit sie im jeweiligen Projekt angestoßen werden kann.
 - Der Aktualisieren-Button ruft `/api/status` erneut auf — immer frische Daten,
   kein Caching.
 
-Die verbindlichen Regeln und Task-Formate liegen in `../decisions` (ECO-ARC-*)
-und `../schemas`.
+Die verbindlichen Regeln und Task-Formate liegen in `decisions/` (ECO-ARC-*)
+und `schemas/`.
