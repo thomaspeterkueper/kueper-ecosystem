@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T08:43:30+00:00",
+  "generated_at": "2026-07-14T08:56:22+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
@@ -8,7 +8,7 @@
       "degraded": 7,
       "healthy": 3
     },
-    "open_external_tasks_total": 13
+    "open_external_tasks_total": 14
   },
   "projects": [
     {
@@ -50,7 +50,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T08:42:55Z",
+      "last_push": "2026-07-14T08:55:40Z",
       "overall": "degraded"
     },
     {
@@ -353,21 +353,35 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 2,
+            "count": 3,
             "files": [
               "EXT-ECO-TKD-20260714-002.md",
+              "EXT-ECO-TKD-20260714-003.md",
               "REQ-KG-LEGAL-ACCESS-20260710.md"
             ]
           }
         },
         "integrations": {
-          "state": "not_applicable",
-          "detail": []
+          "state": "ok",
+          "detail": [
+            {
+              "target": "mishkenaz",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "omnizedenz",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
         }
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T07:50:55Z",
+      "last_push": "2026-07-14T08:56:04Z",
       "overall": "degraded"
     },
     {
@@ -502,8 +516,15 @@
           }
         },
         "integrations": {
-          "state": "not_applicable",
-          "detail": []
+          "state": "ok",
+          "detail": [
+            {
+              "target": "thomas-kueper-de",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
         }
       },
       "default_branch": "main",
