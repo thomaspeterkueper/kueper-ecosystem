@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-14T07:12:19+00:00",
+  "generated_at": "2026-07-14T07:39:22+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
     "projects": 9,
     "overall_counts": {
-      "degraded": 6,
-      "healthy": 3
+      "degraded": 7,
+      "healthy": 2
     },
-    "open_external_tasks_total": 11
+    "open_external_tasks_total": 13
   },
   "projects": [
     {
@@ -50,7 +50,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T07:12:09Z",
+      "last_push": "2026-07-14T07:38:52Z",
       "overall": "degraded"
     },
     {
@@ -353,8 +353,9 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 1,
+            "count": 2,
             "files": [
+              "EXT-ECO-TKD-20260714-002.md",
               "REQ-KG-LEGAL-ACCESS-20260710.md"
             ]
           }
@@ -366,7 +367,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T07:11:57Z",
+      "last_push": "2026-07-14T07:39:01Z",
       "overall": "degraded"
     },
     {
@@ -440,10 +441,12 @@
           }
         },
         "external_tasks_open": {
-          "state": "ok",
+          "state": "warning",
           "detail": {
-            "count": 0,
-            "files": []
+            "count": 1,
+            "files": [
+              "EXT-ECO-MISH-20260714-001.md"
+            ]
           }
         },
         "integrations": {
@@ -466,8 +469,8 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T07:08:41Z",
-      "overall": "healthy"
+      "last_push": "2026-07-14T07:39:00Z",
+      "overall": "degraded"
     }
   ]
 }
