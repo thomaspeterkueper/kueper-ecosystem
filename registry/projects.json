@@ -230,6 +230,36 @@
         { "target": "ota", "required": false }
       ],
       "notes": "Source of Truth fuer die Universums-Primaerdaten: Buecher (500+), Figuren, Handlungen, Orte, Personen, Worldbuilding - verwaltet in eigener Supabase-DB unter eigenem Namespace. NICHT die OTA-*-Archivdokumentebene: die bleibt beim OTA, noxia-universe schlaegt dorthin nur vor (ECO-ARC-0008). Code NXU."
+    },
+    {
+      "id": "mishkenaz",
+      "name": "Mishkenaz",
+      "repository": "thomaspeterkueper/mishkenaz.org",
+      "provider": "github",
+      "enabled": true,
+      "role": "knowledge-platform",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "noxia-universe", "required": false },
+        { "target": "thomas-kueper-de", "required": false }
+      ],
+      "notes": "Sprachforschungsprojekt und zugleich In-universe-Sprache der Dvaraka-Ueberlebenden (physiologisch/umgebungsbedingter Sprachwandel). Doppelnatuerig wie SSF. Source of Truth fuer die linguistische Ausarbeitung (Phonologie, Grammatik, Lexikon, Dialekte). Ueberschneidung mit vorhandenen Sprachinhalten auf thomas-kueper.de: dort vorlaeufig/auszugsweise, kanonisch hier. Code MISH. Siehe ECO-ARC-0009."
     }
   ]
 }

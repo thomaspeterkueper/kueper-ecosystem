@@ -19,6 +19,7 @@ Die Registry ist keine Source of Truth für fachliche Projektdaten. Sie enthält
 - kueper.com
 - thomas-kueper.de
 - Noxia Universe
+- Mishkenaz
 
 ## Grundregeln
 
