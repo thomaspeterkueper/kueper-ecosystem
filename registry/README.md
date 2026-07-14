@@ -23,6 +23,7 @@ Die Registry ist keine Source of Truth für fachliche Projektdaten. Sie enthält
 - Omnizedenz
 - AVI-Modell
 - Contracomology
+- KUEPER Archive Core
 
 ## Grundregeln
 

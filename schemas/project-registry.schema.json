@@ -62,7 +62,8 @@
             "knowledge-platform",
             "knowledge-graph",
             "archive",
-            "website"
+            "website",
+            "infrastructure"
           ]
         },
         "production_url": {

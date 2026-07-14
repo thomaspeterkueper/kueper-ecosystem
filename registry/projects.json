@@ -355,6 +355,34 @@
         { "target": "thomas-kueper-de", "required": false }
       ],
       "notes": "Reine Frontend-Fassade fuer Kontrakomologie (Zeit in Musik/Literatur) - kein Wissensspeicher. Bestand bereits vor der Registrierung (seit 2026-07-03, 30 Commits), migriert eine eigene Legacy-Seite contracomology.org nach eigenem Plan (docs/MIGRATION-FROM-LEGACY-SITE.md): KG-Begriffe (CON:L1:*) aus dem Knowledge Graph, Volltexte aus OTA/kueper.com. thomas-kueper.de haelt aktuell 18 Kontrakomologie-Essays als faktische Quelle bis zur eigenen Migration. Code CONTRA. Siehe ECO-ARC-0012."
+    },
+    {
+      "id": "kueper-archive-schema",
+      "name": "KUEPER Archive Core",
+      "repository": "thomaspeterkueper/kueper-archive-schema",
+      "provider": "github",
+      "enabled": true,
+      "role": "infrastructure",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "none",
+        "candidates": []
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "kueper-com", "required": true },
+        { "target": "ota", "required": true },
+        { "target": "knowledge-graph", "required": false }
+      ],
+      "notes": "Gemeinsames Datenbankschema (Migrationen, Typdefinitionen, Importer, Validatoren) fuer kanonische Dokumentarchive: identisches Schema, physisch getrennte Supabase-Projekte je Repository (KUE, OTA). Gehoert weder kueper.com noch overtime-archive.org allein - zentral hier verantwortet. Schema V1 ist dokumentiert/Entwurf, noch nicht produktiv angewendet. Code ARCH. Siehe ECO-ARC-0013."
     }
   ]
 }

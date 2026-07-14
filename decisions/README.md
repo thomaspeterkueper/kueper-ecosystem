@@ -79,6 +79,7 @@ Betroffene Repositories: ...
 - [ECO-ARC-0010-2026-DE — Omnizedenz: Überblick + Vertiefung](./ECO-ARC-0010-2026-DE.md) — `accepted`
 - [ECO-ARC-0011-2026-DE — AVI-Modell: Überblick + Vertiefung](./ECO-ARC-0011-2026-DE.md) — `accepted`
 - [ECO-ARC-0012-2026-DE — Kontrakomologie / Contracomology: Registrierung einer bestehenden Fassade](./ECO-ARC-0012-2026-DE.md) — `accepted`
+- [ECO-ARC-0013-2026-DE — KUEPER Archive Core: gemeinsames Datenbankschema für Dokumentarchive](./ECO-ARC-0013-2026-DE.md) — `accepted`
 
 ## Erste mögliche Entscheidungen
 
