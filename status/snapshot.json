@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T07:09:22+00:00",
+  "generated_at": "2026-07-14T07:12:19+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
@@ -8,7 +8,7 @@
       "degraded": 6,
       "healthy": 3
     },
-    "open_external_tasks_total": 12
+    "open_external_tasks_total": 11
   },
   "projects": [
     {
@@ -50,7 +50,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T07:08:23Z",
+      "last_push": "2026-07-14T07:12:09Z",
       "overall": "degraded"
     },
     {
@@ -325,7 +325,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T07:09:04Z",
+      "last_push": "2026-07-14T07:10:01Z",
       "overall": "healthy"
     },
     {
@@ -353,9 +353,8 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 2,
+            "count": 1,
             "files": [
-              "EXT-ECO-TKD-20260714-001.md",
               "REQ-KG-LEGAL-ACCESS-20260710.md"
             ]
           }
@@ -367,7 +366,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T07:09:06Z",
+      "last_push": "2026-07-14T07:11:57Z",
       "overall": "degraded"
     },
     {
