@@ -49,6 +49,7 @@ Diese Inhalte bleiben in den jeweils zuständigen Repositories.
 - [`docs/repository-roles.md`](docs/repository-roles.md)
 - [`docs/source-of-truth.md`](docs/source-of-truth.md)
 - [`docs/cross-repository-workflow.md`](docs/cross-repository-workflow.md)
+- [`docs/onboarding-template.md`](docs/onboarding-template.md) — verbindliche Vorlage für neue Projekte
 - [`decisions/README.md`](decisions/README.md)
 
 ## Grundsatz
