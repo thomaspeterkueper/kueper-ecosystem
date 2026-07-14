@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-14T09:02:10+00:00",
+  "generated_at": "2026-07-14T09:24:04+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
-    "projects": 12,
+    "projects": 13,
     "overall_counts": {
-      "degraded": 8,
+      "degraded": 9,
       "healthy": 4
     },
-    "open_external_tasks_total": 20
+    "open_external_tasks_total": 23
   },
   "projects": [
     {
@@ -50,7 +50,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T09:01:10Z",
+      "last_push": "2026-07-14T09:19:53Z",
       "overall": "degraded"
     },
     {
@@ -238,9 +238,10 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 4,
+            "count": 5,
             "files": [
               "EXT-ECO-OTA-20260712-002.md",
+              "EXT-ECO-OTA-20260714-001.md",
               "EXT-NXU-OTA-20260712-001.md",
               "EXT-NXU-OTA-20260712-002.md",
               "REQ-KG-LEGAL-ACCESS-20260710.md"
@@ -267,7 +268,7 @@
       },
       "default_branch": "master",
       "private": false,
-      "last_push": "2026-07-13T04:48:23Z",
+      "last_push": "2026-07-14T09:23:42Z",
       "overall": "degraded"
     },
     {
@@ -293,10 +294,12 @@
           }
         },
         "external_tasks_open": {
-          "state": "ok",
+          "state": "warning",
           "detail": {
-            "count": 0,
-            "files": []
+            "count": 1,
+            "files": [
+              "EXT-ECO-KUE-20260714-003.md"
+            ]
           }
         },
         "integrations": {
@@ -325,8 +328,8 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T07:10:01Z",
-      "overall": "healthy"
+      "last_push": "2026-07-14T09:23:42Z",
+      "overall": "degraded"
     },
     {
       "id": "thomas-kueper-de",
@@ -422,9 +425,10 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 1,
+            "count": 2,
             "files": [
-              "EXT-ECO-NXU-20260712-001.md"
+              "EXT-ECO-NXU-20260712-001.md",
+              "EXT-NXU-OTA-20260714-001.md"
             ]
           }
         },
@@ -442,7 +446,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-12T15:07:21Z",
+      "last_push": "2026-07-14T09:19:47Z",
       "overall": "degraded"
     },
     {
@@ -660,6 +664,64 @@
       "private": false,
       "last_push": "2026-07-14T09:01:29Z",
       "overall": "degraded"
+    },
+    {
+      "id": "kueper-archive-schema",
+      "name": "KUEPER Archive Core",
+      "repository": "thomaspeterkueper/kueper-archive-schema",
+      "role": "infrastructure",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "ok",
+          "detail": {
+            "count": 0,
+            "files": []
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "kueper-com",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "ota",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "knowledge-graph",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-14T09:23:10Z",
+      "overall": "healthy"
     }
   ]
 }
