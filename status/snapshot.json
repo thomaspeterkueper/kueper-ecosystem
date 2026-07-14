@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-14T07:39:22+00:00",
+  "generated_at": "2026-07-14T08:43:30+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
-    "projects": 9,
+    "projects": 10,
     "overall_counts": {
       "degraded": 7,
-      "healthy": 2
+      "healthy": 3
     },
     "open_external_tasks_total": 13
   },
@@ -50,7 +50,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T07:38:52Z",
+      "last_push": "2026-07-14T08:42:55Z",
       "overall": "degraded"
     },
     {
@@ -367,7 +367,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T07:39:01Z",
+      "last_push": "2026-07-14T07:50:55Z",
       "overall": "degraded"
     },
     {
@@ -469,8 +469,47 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T07:39:00Z",
+      "last_push": "2026-07-14T07:58:49Z",
       "overall": "degraded"
+    },
+    {
+      "id": "omnizedenz",
+      "name": "Omnizedenz",
+      "repository": "thomaspeterkueper/omnizedenz.org",
+      "role": "knowledge-platform",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "ok",
+          "detail": {
+            "count": 0,
+            "files": []
+          }
+        },
+        "integrations": {
+          "state": "not_applicable",
+          "detail": []
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-14T08:43:12Z",
+      "overall": "healthy"
     }
   ]
 }
