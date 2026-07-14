@@ -199,8 +199,11 @@
           "external-tasks/rejected"
         ]
       },
-      "integrations": [],
-      "notes": "In der Repository-Landkarte gefuehrt, aber bis 2026-07-12 nicht registriert. Aufgenommen durch ECO-Audit. production_url bleibt null bis bestaetigt (nicht geraten)."
+      "integrations": [
+        { "target": "mishkenaz", "required": false },
+        { "target": "omnizedenz", "required": true }
+      ],
+      "notes": "In der Repository-Landkarte gefuehrt, aber bis 2026-07-12 nicht registriert. Aufgenommen durch ECO-Audit. production_url bleibt null bis bestaetigt (nicht geraten). Integrationen: mishkenaz (Migrationsquelle, ECO-ARC-0009) und omnizedenz (Ueberblick/Vertiefung-Verhaeltnis, ECO-ARC-0010)."
     },
     {
       "id": "noxia-universe",
@@ -285,8 +288,10 @@
           "external-tasks/rejected"
         ]
       },
-      "integrations": [],
-      "notes": "Vertiefung des philosophischen Konzepts Omnizedenz (Resonanz-/Verantwortungs-Arbeitsmodell). Owner-Entscheidung 2026-07-14: eigenstaendige Vertiefung OHNE Migration/Abhaengigkeit von thomas-kueper.de, das unveraendert bleibt. Scope nur der Kernbegriff (nicht die themenverwandten Essays wie Faust/Machiavelli/Wirtschaftspsychologie, die exklusiv bei thomas-kueper.de bleiben). Code OMNI. Siehe ECO-ARC-0010."
+      "integrations": [
+        { "target": "thomas-kueper-de", "required": true }
+      ],
+      "notes": "Vertiefung des philosophischen Konzepts Omnizedenz (Resonanz-/Verantwortungs-Arbeitsmodell). Owner-Praezisierung 2026-07-14: Ueberblick/Vertiefung-Verhaeltnis mit thomas-kueper.de (dort grober Ueberblick, hier Vertiefung), beide muessen inhaltlich zusammenpassen; Aenderungen am Kernkonzept koennen beide Seiten betreffen. Scope nur der Kernbegriff (nicht die themenverwandten Essays wie Faust/Machiavelli/Wirtschaftspsychologie, die exklusiv bei thomas-kueper.de bleiben). Code OMNI. Siehe ECO-ARC-0010."
     }
   ]
 }
