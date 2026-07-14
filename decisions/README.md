@@ -76,7 +76,9 @@ Betroffene Repositories: ...
 - [ECO-ARC-0007-2026-DE — Dokument-Architektur des KUEPER-Ökosystems](./ECO-ARC-0007-2026-DE.md) — `accepted`
 - [ECO-ARC-0008-2026-DE — Noxia-Universum: Buchkanon, OTA-Grenze und SSF-Dualität](./ECO-ARC-0008-2026-DE.md) — `accepted`
 - [ECO-ARC-0009-2026-DE — Mishkenaz: Sprachforschung und In-universe-Sprache Dvarakas](./ECO-ARC-0009-2026-DE.md) — `accepted`
-- [ECO-ARC-0010-2026-DE — Omnizedenz: eigenständige Vertiefung](./ECO-ARC-0010-2026-DE.md) — `accepted`
+- [ECO-ARC-0010-2026-DE — Omnizedenz: Überblick + Vertiefung](./ECO-ARC-0010-2026-DE.md) — `accepted`
+- [ECO-ARC-0011-2026-DE — AVI-Modell: Überblick + Vertiefung](./ECO-ARC-0011-2026-DE.md) — `accepted`
+- [ECO-ARC-0012-2026-DE — Kontrakomologie / Contracomology: Registrierung einer bestehenden Fassade](./ECO-ARC-0012-2026-DE.md) — `accepted`
 
 ## Erste mögliche Entscheidungen
 

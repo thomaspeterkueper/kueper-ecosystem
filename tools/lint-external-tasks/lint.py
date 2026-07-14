@@ -18,12 +18,12 @@ Struktur-Pruefung ohne Netzwerk. Kein jsonschema-Paket noetig (nur stdlib).
 """
 import sys, os, re, json, glob
 
-CODES = {"ECO", "KG", "SSF", "NOXIA", "NXU", "MISH", "OMNI", "KUE", "OTA", "TKD"}
+CODES = {"ECO", "KG", "SSF", "NOXIA", "NXU", "MISH", "OMNI", "AVI", "CONTRA", "KUE", "OTA", "TKD"}
 FILENAME_RE = re.compile(
-    r"^EXT-(ECO|KG|SSF|NOXIA|NXU|MISH|OMNI|KUE|OTA|TKD)-(ECO|KG|SSF|NOXIA|NXU|MISH|OMNI|KUE|OTA|TKD)-\d{8}-\d{3}\.md$"
+    r"^EXT-(ECO|KG|SSF|NOXIA|NXU|MISH|OMNI|AVI|CONTRA|KUE|OTA|TKD)-(ECO|KG|SSF|NOXIA|NXU|MISH|OMNI|AVI|CONTRA|KUE|OTA|TKD)-\d{8}-\d{3}\.md$"
 )
 ID_RE = re.compile(
-    r"^EXT-(ECO|KG|SSF|NOXIA|NXU|MISH|OMNI|KUE|OTA|TKD)-(ECO|KG|SSF|NOXIA|NXU|MISH|OMNI|KUE|OTA|TKD)-\d{8}-\d{3}$"
+    r"^EXT-(ECO|KG|SSF|NOXIA|NXU|MISH|OMNI|AVI|CONTRA|KUE|OTA|TKD)-(ECO|KG|SSF|NOXIA|NXU|MISH|OMNI|AVI|CONTRA|KUE|OTA|TKD)-\d{8}-\d{3}$"
 )
 REQUIRED_FM = ["id", "status", "source", "target", "created", "requested_by"]
 STATUS = {"open", "done", "rejected", "parked"}

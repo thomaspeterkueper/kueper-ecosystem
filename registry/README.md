@@ -21,6 +21,8 @@ Die Registry ist keine Source of Truth für fachliche Projektdaten. Sie enthält
 - Noxia Universe
 - Mishkenaz
 - Omnizedenz
+- AVI-Modell
+- Contracomology
 
 ## Grundregeln
 

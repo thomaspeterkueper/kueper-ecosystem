@@ -200,10 +200,12 @@
         ]
       },
       "integrations": [
-        { "target": "mishkenaz", "required": false },
-        { "target": "omnizedenz", "required": true }
+        { "target": "mishkenaz", "required": true },
+        { "target": "omnizedenz", "required": true },
+        { "target": "avi-modell", "required": true },
+        { "target": "contracomology", "required": false }
       ],
-      "notes": "In der Repository-Landkarte gefuehrt, aber bis 2026-07-12 nicht registriert. Aufgenommen durch ECO-Audit. production_url bleibt null bis bestaetigt (nicht geraten). Integrationen: mishkenaz (Migrationsquelle, ECO-ARC-0009) und omnizedenz (Ueberblick/Vertiefung-Verhaeltnis, ECO-ARC-0010)."
+      "notes": "In der Repository-Landkarte gefuehrt, aber bis 2026-07-12 nicht registriert. Aufgenommen durch ECO-Audit. production_url bleibt null bis bestaetigt (nicht geraten). Ueberblick/Vertiefung-Verhaeltnis mit mishkenaz (ECO-ARC-0009), omnizedenz (ECO-ARC-0010), avi-modell (ECO-ARC-0011). contracomology bezieht Kontrakomologie-Inhalt teils von hier (ECO-ARC-0012, eigener Migrationsplan)."
     },
     {
       "id": "noxia-universe",
@@ -260,9 +262,9 @@
       },
       "integrations": [
         { "target": "noxia-universe", "required": false },
-        { "target": "thomas-kueper-de", "required": false }
+        { "target": "thomas-kueper-de", "required": true }
       ],
-      "notes": "Sprachforschungsprojekt und zugleich In-universe-Sprache der Dvaraka-Ueberlebenden (physiologisch/umgebungsbedingter Sprachwandel). Doppelnatuerig wie SSF. Source of Truth fuer die linguistische Ausarbeitung (Phonologie, Grammatik, Lexikon, Dialekte). Owner-Entscheidung 2026-07-14: Migration der ausgereiften Inhalte von thomas-kueper.de (src/pages/mishkenaz/*) hierher; thomas-kueper.de wird danach zur Verweisseite. Siehe ECO-ARC-0009 (inkl. Korrektur vom 2026-07-14)."
+      "notes": "Sprachforschungsprojekt und zugleich In-universe-Sprache der Dvaraka-Ueberlebenden (physiologisch/umgebungsbedingter Sprachwandel). Doppelnatuerig wie SSF. Source of Truth fuer die linguistische Ausarbeitung (Phonologie, Grammatik, Lexikon, Dialekte). Owner-Entscheidung 2026-07-14: Migration der ausgereiften Inhalte von thomas-kueper.de (src/pages/mishkenaz/*) hierher; danach Ueberblick(thomas-kueper.de)/Vertiefung(hier)-Verhaeltnis, konsistenzpflichtig, wie bei Omnizedenz und AVI-Modell. Siehe ECO-ARC-0009 (Korrektur vom 2026-07-14)."
     },
     {
       "id": "omnizedenz",
@@ -292,6 +294,67 @@
         { "target": "thomas-kueper-de", "required": true }
       ],
       "notes": "Vertiefung des philosophischen Konzepts Omnizedenz (Resonanz-/Verantwortungs-Arbeitsmodell). Owner-Praezisierung 2026-07-14: Ueberblick/Vertiefung-Verhaeltnis mit thomas-kueper.de (dort grober Ueberblick, hier Vertiefung), beide muessen inhaltlich zusammenpassen; Aenderungen am Kernkonzept koennen beide Seiten betreffen. Scope nur der Kernbegriff (nicht die themenverwandten Essays wie Faust/Machiavelli/Wirtschaftspsychologie, die exklusiv bei thomas-kueper.de bleiben). Code OMNI. Siehe ECO-ARC-0010."
+    },
+    {
+      "id": "avi-modell",
+      "name": "AVI-Modell",
+      "repository": "thomaspeterkueper/avi-modell",
+      "provider": "github",
+      "enabled": true,
+      "role": "knowledge-platform",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "thomas-kueper-de", "required": true }
+      ],
+      "notes": "Vertiefung des Arbeitsmodells AVI (Aufnehmen, Verdichten, Integrieren) fuer Texte, Musik, Weltbau und Systementwurf. Ueberblick/Vertiefung-Verhaeltnis mit thomas-kueper.de (grundlagen/avi), konsistenzpflichtig wie Omnizedenz und Mishkenaz. Code AVI. Siehe ECO-ARC-0011. Begriffliche Naehe zu contracomology (CON:L1:avi-punkt) beachten."
+    },
+    {
+      "id": "contracomology",
+      "name": "Contracomology",
+      "repository": "thomaspeterkueper/contracomology",
+      "provider": "github",
+      "enabled": true,
+      "role": "application",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "knowledge-graph", "required": true },
+        { "target": "ota", "required": false },
+        { "target": "kueper-com", "required": false },
+        { "target": "thomas-kueper-de", "required": false }
+      ],
+      "notes": "Reine Frontend-Fassade fuer Kontrakomologie (Zeit in Musik/Literatur) - kein Wissensspeicher. Bestand bereits vor der Registrierung (seit 2026-07-03, 30 Commits), migriert eine eigene Legacy-Seite contracomology.org nach eigenem Plan (docs/MIGRATION-FROM-LEGACY-SITE.md): KG-Begriffe (CON:L1:*) aus dem Knowledge Graph, Volltexte aus OTA/kueper.com. thomas-kueper.de haelt aktuell 18 Kontrakomologie-Essays als faktische Quelle bis zur eigenen Migration. Code CONTRA. Siehe ECO-ARC-0012."
     }
   ]
 }

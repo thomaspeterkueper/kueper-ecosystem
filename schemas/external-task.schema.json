@@ -9,7 +9,7 @@
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^EXT-(ECO|KG|SSF|NOXIA|NXU|MISH|OMNI|KUE|OTA|TKD)-(ECO|KG|SSF|NOXIA|NXU|MISH|OMNI|KUE|OTA|TKD)-[0-9]{8}-[0-9]{3}$",
+      "pattern": "^EXT-(ECO|KG|SSF|NOXIA|NXU|MISH|OMNI|AVI|CONTRA|KUE|OTA|TKD)-(ECO|KG|SSF|NOXIA|NXU|MISH|OMNI|AVI|CONTRA|KUE|OTA|TKD)-[0-9]{8}-[0-9]{3}$",
       "description": "EXT-{SOURCE}-{TARGET}-{YYYYMMDD}-{NNN}. Codes siehe ECO-ARC-0006."
     },
     "title": { "type": "string", "minLength": 1 },
@@ -19,11 +19,11 @@
     },
     "source": {
       "type": "string",
-      "enum": ["ECO", "KG", "SSF", "NOXIA", "NXU", "MISH", "OMNI", "KUE", "OTA", "TKD"]
+      "enum": ["ECO", "KG", "SSF", "NOXIA", "NXU", "MISH", "OMNI", "AVI", "CONTRA", "KUE", "OTA", "TKD"]
     },
     "target": {
       "type": "string",
-      "enum": ["ECO", "KG", "SSF", "NOXIA", "NXU", "MISH", "OMNI", "KUE", "OTA", "TKD"]
+      "enum": ["ECO", "KG", "SSF", "NOXIA", "NXU", "MISH", "OMNI", "AVI", "CONTRA", "KUE", "OTA", "TKD"]
     },
     "created": { "type": "string", "format": "date" },
     "requested_by": { "type": "string", "minLength": 1 },
@@ -35,7 +35,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": ["ECO", "KG", "SSF", "NOXIA", "NXU", "MISH", "OMNI", "KUE", "OTA", "TKD"]
+        "enum": ["ECO", "KG", "SSF", "NOXIA", "NXU", "MISH", "OMNI", "AVI", "CONTRA", "KUE", "OTA", "TKD"]
       }
     },
     "supersedes": {
