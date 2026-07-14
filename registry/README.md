@@ -20,6 +20,7 @@ Die Registry ist keine Source of Truth für fachliche Projektdaten. Sie enthält
 - thomas-kueper.de
 - Noxia Universe
 - Mishkenaz
+- Omnizedenz
 
 ## Grundregeln
 

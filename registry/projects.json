@@ -259,7 +259,34 @@
         { "target": "noxia-universe", "required": false },
         { "target": "thomas-kueper-de", "required": false }
       ],
-      "notes": "Sprachforschungsprojekt und zugleich In-universe-Sprache der Dvaraka-Ueberlebenden (physiologisch/umgebungsbedingter Sprachwandel). Doppelnatuerig wie SSF. Source of Truth fuer die linguistische Ausarbeitung (Phonologie, Grammatik, Lexikon, Dialekte). Ueberschneidung mit vorhandenen Sprachinhalten auf thomas-kueper.de: dort vorlaeufig/auszugsweise, kanonisch hier. Code MISH. Siehe ECO-ARC-0009."
+      "notes": "Sprachforschungsprojekt und zugleich In-universe-Sprache der Dvaraka-Ueberlebenden (physiologisch/umgebungsbedingter Sprachwandel). Doppelnatuerig wie SSF. Source of Truth fuer die linguistische Ausarbeitung (Phonologie, Grammatik, Lexikon, Dialekte). Owner-Entscheidung 2026-07-14: Migration der ausgereiften Inhalte von thomas-kueper.de (src/pages/mishkenaz/*) hierher; thomas-kueper.de wird danach zur Verweisseite. Siehe ECO-ARC-0009 (inkl. Korrektur vom 2026-07-14)."
+    },
+    {
+      "id": "omnizedenz",
+      "name": "Omnizedenz",
+      "repository": "thomaspeterkueper/omnizedenz.org",
+      "provider": "github",
+      "enabled": true,
+      "role": "knowledge-platform",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [],
+      "notes": "Vertiefung des philosophischen Konzepts Omnizedenz (Resonanz-/Verantwortungs-Arbeitsmodell). Owner-Entscheidung 2026-07-14: eigenstaendige Vertiefung OHNE Migration/Abhaengigkeit von thomas-kueper.de, das unveraendert bleibt. Scope nur der Kernbegriff (nicht die themenverwandten Essays wie Faust/Machiavelli/Wirtschaftspsychologie, die exklusiv bei thomas-kueper.de bleiben). Code OMNI. Siehe ECO-ARC-0010."
     }
   ]
 }
