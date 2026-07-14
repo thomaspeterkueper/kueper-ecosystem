@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-14T08:56:22+00:00",
+  "generated_at": "2026-07-14T09:02:10+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
-    "projects": 10,
+    "projects": 12,
     "overall_counts": {
-      "degraded": 7,
-      "healthy": 3
+      "degraded": 8,
+      "healthy": 4
     },
-    "open_external_tasks_total": 14
+    "open_external_tasks_total": 20
   },
   "projects": [
     {
@@ -50,7 +50,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T08:55:40Z",
+      "last_push": "2026-07-14T09:01:10Z",
       "overall": "degraded"
     },
     {
@@ -353,10 +353,11 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 3,
+            "count": 4,
             "files": [
               "EXT-ECO-TKD-20260714-002.md",
               "EXT-ECO-TKD-20260714-003.md",
+              "EXT-ECO-TKD-20260714-004.md",
               "REQ-KG-LEGAL-ACCESS-20260710.md"
             ]
           }
@@ -366,7 +367,7 @@
           "detail": [
             {
               "target": "mishkenaz",
-              "required": false,
+              "required": true,
               "state": "ok",
               "detail": "registered"
             },
@@ -375,13 +376,25 @@
               "required": true,
               "state": "ok",
               "detail": "registered"
+            },
+            {
+              "target": "avi-modell",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "contracomology",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
             }
           ]
         }
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T08:56:04Z",
+      "last_push": "2026-07-14T09:01:49Z",
       "overall": "degraded"
     },
     {
@@ -474,7 +487,7 @@
             },
             {
               "target": "thomas-kueper-de",
-              "required": false,
+              "required": true,
               "state": "ok",
               "detail": "registered"
             }
@@ -531,6 +544,122 @@
       "private": false,
       "last_push": "2026-07-14T08:43:12Z",
       "overall": "healthy"
+    },
+    {
+      "id": "avi-modell",
+      "name": "AVI-Modell",
+      "repository": "thomaspeterkueper/avi-modell",
+      "role": "knowledge-platform",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "ok",
+          "detail": {
+            "count": 0,
+            "files": []
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "thomas-kueper-de",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-14T09:01:22Z",
+      "overall": "healthy"
+    },
+    {
+      "id": "contracomology",
+      "name": "Contracomology",
+      "repository": "thomaspeterkueper/contracomology",
+      "role": "application",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "warning",
+          "detail": {
+            "count": 5,
+            "files": [
+              "KG.KON-000001-kg-begriffsdefinitionen.md",
+              "KG.KON-000003-noxiagame-kontrakomologie-modul.md",
+              "KG.KON-000004-ssf-akademie-eintrag.md",
+              "KG.KON-000005-kg-lernmodul-subjectcodes.md",
+              "REQ-KG-LEGAL-ACCESS-20260710.md"
+            ]
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "knowledge-graph",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "ota",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "kueper-com",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "thomas-kueper-de",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-14T09:01:29Z",
+      "overall": "degraded"
     }
   ]
 }
