@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-14T18:51:14+00:00",
+  "generated_at": "2026-07-15T07:14:34+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
     "projects": 13,
     "overall_counts": {
-      "degraded": 8,
-      "healthy": 5
+      "degraded": 9,
+      "healthy": 4
     },
-    "open_external_tasks_total": 22
+    "open_external_tasks_total": 23
   },
   "projects": [
     {
@@ -50,7 +50,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T18:50:30Z",
+      "last_push": "2026-07-14T18:51:15Z",
       "overall": "degraded"
     },
     {
@@ -111,7 +111,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T09:31:16Z",
+      "last_push": "2026-07-15T07:00:52Z",
       "overall": "degraded"
     },
     {
@@ -197,10 +197,12 @@
           }
         },
         "external_tasks_open": {
-          "state": "ok",
+          "state": "warning",
           "detail": {
-            "count": 0,
-            "files": []
+            "count": 1,
+            "files": [
+              "EXT-ECO-KG-20260714-001.md"
+            ]
           }
         },
         "integrations": {
@@ -210,8 +212,8 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T06:48:32Z",
-      "overall": "healthy"
+      "last_push": "2026-07-15T07:14:08Z",
+      "overall": "degraded"
     },
     {
       "id": "ota",
