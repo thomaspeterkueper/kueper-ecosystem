@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-15T07:14:34+00:00",
+  "generated_at": "2026-07-15T07:32:59+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
     "projects": 13,
     "overall_counts": {
-      "degraded": 9,
-      "healthy": 4
+      "healthy": 6,
+      "degraded": 7
     },
-    "open_external_tasks_total": 23
+    "open_external_tasks_total": 20
   },
   "projects": [
     {
@@ -34,14 +34,8 @@
           }
         },
         "external_tasks_open": {
-          "state": "warning",
-          "detail": {
-            "count": 2,
-            "files": [
-              "EXT-ECO-KG-20260712-003.md",
-              "EXT-ECO-NXU-20260712-001.md"
-            ]
-          }
+          "state": "not_applicable",
+          "detail": null
         },
         "integrations": {
           "state": "not_applicable",
@@ -50,8 +44,8 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T18:51:15Z",
-      "overall": "degraded"
+      "last_push": "2026-07-15T07:32:19Z",
+      "overall": "healthy"
     },
     {
       "id": "noxia",
@@ -76,13 +70,10 @@
           }
         },
         "external_tasks_open": {
-          "state": "warning",
+          "state": "ok",
           "detail": {
-            "count": 2,
-            "files": [
-              "EXT-ECO-NOXIA-20260712-001.md",
-              "NOX-0007-school-domain-mapping-and-fake-modules.md"
-            ]
+            "count": 0,
+            "files": []
           }
         },
         "integrations": {
@@ -111,8 +102,8 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-15T07:00:52Z",
-      "overall": "degraded"
+      "last_push": "2026-07-15T07:27:37Z",
+      "overall": "healthy"
     },
     {
       "id": "ssf",
@@ -199,9 +190,10 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 1,
+            "count": 2,
             "files": [
-              "EXT-ECO-KG-20260714-001.md"
+              "EXT-ECO-KG-20260714-002.md",
+              "KG-REQ-20260715-kontrakomologie-canonization.md"
             ]
           }
         },
@@ -212,7 +204,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-15T07:14:08Z",
+      "last_push": "2026-07-15T07:32:39Z",
       "overall": "degraded"
     },
     {
@@ -240,12 +232,13 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 5,
+            "count": 6,
             "files": [
               "EXT-ECO-OTA-20260712-002.md",
               "EXT-ECO-OTA-20260714-001.md",
               "EXT-NXU-OTA-20260712-001.md",
               "EXT-NXU-OTA-20260712-002.md",
+              "EXT-NXU-OTA-20260714-001.md",
               "REQ-KG-LEGAL-ACCESS-20260710.md"
             ]
           }
@@ -270,7 +263,7 @@
       },
       "default_branch": "master",
       "private": false,
-      "last_push": "2026-07-14T18:50:48Z",
+      "last_push": "2026-07-15T07:30:45Z",
       "overall": "degraded"
     },
     {
@@ -425,10 +418,9 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 2,
+            "count": 1,
             "files": [
-              "EXT-ECO-NXU-20260712-001.md",
-              "EXT-NXU-OTA-20260714-001.md"
+              "EXT-ECO-NXU-20260712-001.md"
             ]
           }
         },
@@ -446,7 +438,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T09:19:47Z",
+      "last_push": "2026-07-15T07:30:45Z",
       "overall": "degraded"
     },
     {
