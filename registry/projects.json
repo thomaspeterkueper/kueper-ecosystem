@@ -234,7 +234,7 @@
       "integrations": [
         { "target": "ota", "required": false }
       ],
-      "notes": "Source of Truth fuer die Universums-Primaerdaten: Buecher (500+), Figuren, Handlungen, Orte, Personen, Worldbuilding - verwaltet in eigener Supabase-DB unter eigenem Namespace. NICHT die OTA-*-Archivdokumentebene: die bleibt beim OTA, noxia-universe schlaegt dorthin nur vor (ECO-ARC-0008). Code NXU. Owner-Entscheidung 2026-07-14: Supabase-Projekt wird per nativem Org-Transfer in die Free-Tier-Organisation Kueper-Archives verschoben (Kostenoptimierung, zweiter freier Slot neben kue-archive)."
+      "notes": "Source of Truth fuer die Universums-Primaerdaten: Buecher (500+), Figuren, Handlungen, Orte, Personen, Worldbuilding - verwaltet in eigener Supabase-DB unter eigenem Namespace. NICHT die OTA-*-Archivdokumentebene: die bleibt beim OTA, noxia-universe schlaegt dorthin nur vor (ECO-ARC-0008). Code NXU. Supabase-Projekt in die Free-Tier-Organisation Kueper-Archives umgezogen (2026-07-14, Kostenoptimierung, zweiter Free-Slot neben kue-archive) - bestaetigt."
     },
     {
       "id": "mishkenaz",
