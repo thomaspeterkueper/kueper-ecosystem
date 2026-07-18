@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-18T09:40:19+00:00",
+  "generated_at": "2026-07-18T21:18:41+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
-    "projects": 13,
+    "projects": 18,
     "overall_counts": {
-      "healthy": 6,
+      "healthy": 11,
       "degraded": 7
     },
-    "open_external_tasks_total": 34
+    "open_external_tasks_total": 35
   },
   "projects": [
     {
@@ -44,7 +44,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-18T09:39:35Z",
+      "last_push": "2026-07-18T21:17:18Z",
       "overall": "healthy"
     },
     {
@@ -363,11 +363,12 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 4,
+            "count": 5,
             "files": [
               "EXT-ECO-TKD-20260714-002.md",
               "EXT-ECO-TKD-20260714-003.md",
               "EXT-ECO-TKD-20260714-004.md",
+              "EXT-ECO-TKD-20260718-001.md",
               "REQ-KG-LEGAL-ACCESS-20260710.md"
             ]
           }
@@ -398,13 +399,37 @@
               "required": false,
               "state": "ok",
               "detail": "registered"
+            },
+            {
+              "target": "endia",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "zereya",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "fluide-hermeneutik",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "resonanz-ethik",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
             }
           ]
         }
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T09:01:49Z",
+      "last_push": "2026-07-18T21:18:17Z",
       "overall": "degraded"
     },
     {
@@ -727,6 +752,248 @@
       "default_branch": "main",
       "private": false,
       "last_push": "2026-07-14T18:49:49Z",
+      "overall": "healthy"
+    },
+    {
+      "id": "endia",
+      "name": "Endia",
+      "repository": "thomaspeterkueper/endia.de",
+      "role": "knowledge-platform",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "ok",
+          "detail": {
+            "count": 0,
+            "files": []
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "thomas-kueper-de",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-18T21:17:49Z",
+      "overall": "healthy"
+    },
+    {
+      "id": "zereya",
+      "name": "Zereya",
+      "repository": "thomaspeterkueper/zereya.de",
+      "role": "knowledge-platform",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "ok",
+          "detail": {
+            "count": 0,
+            "files": []
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "thomas-kueper-de",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-18T21:17:50Z",
+      "overall": "healthy"
+    },
+    {
+      "id": "davaru",
+      "name": "Davaru",
+      "repository": "thomaspeterkueper/davaru.de",
+      "role": "knowledge-platform",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "ok",
+          "detail": {
+            "count": 0,
+            "files": []
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "endia",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-18T21:17:51Z",
+      "overall": "healthy"
+    },
+    {
+      "id": "fluide-hermeneutik",
+      "name": "Fluíde Hermeneutik",
+      "repository": "thomaspeterkueper/fluide-hermeneutics.org",
+      "role": "knowledge-platform",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "ok",
+          "detail": {
+            "count": 0,
+            "files": []
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "omnizedenz",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "thomas-kueper-de",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-18T21:17:52Z",
+      "overall": "healthy"
+    },
+    {
+      "id": "resonanz-ethik",
+      "name": "Resonanz-Ethik",
+      "repository": "thomaspeterkueper/resonanceethics.org",
+      "role": "knowledge-platform",
+      "enabled": true,
+      "checks": {
+        "repository_reachable": {
+          "state": "ok",
+          "detail": "main"
+        },
+        "open_pull_requests": {
+          "state": "ok",
+          "detail": 0
+        },
+        "governance_required_paths": {
+          "state": "ok",
+          "detail": {
+            "missing": [],
+            "checked": 4
+          }
+        },
+        "external_tasks_open": {
+          "state": "ok",
+          "detail": {
+            "count": 0,
+            "files": []
+          }
+        },
+        "integrations": {
+          "state": "ok",
+          "detail": [
+            {
+              "target": "omnizedenz",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
+            },
+            {
+              "target": "thomas-kueper-de",
+              "required": false,
+              "state": "ok",
+              "detail": "registered"
+            }
+          ]
+        }
+      },
+      "default_branch": "main",
+      "private": false,
+      "last_push": "2026-07-18T21:17:53Z",
       "overall": "healthy"
     }
   ]
