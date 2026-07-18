@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T08:55:17+00:00",
+  "generated_at": "2026-07-18T09:40:19+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
@@ -8,7 +8,7 @@
       "healthy": 6,
       "degraded": 7
     },
-    "open_external_tasks_total": 21
+    "open_external_tasks_total": 34
   },
   "projects": [
     {
@@ -44,7 +44,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-15T07:33:00Z",
+      "last_push": "2026-07-18T09:39:35Z",
       "overall": "healthy"
     },
     {
@@ -130,9 +130,22 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 1,
+            "count": 14,
             "files": [
-              "EXT-ECO-SSF-20260712-001.md"
+              "NOX-0001.md",
+              "NOX-0002.md",
+              "NOX-0003.md",
+              "NOX-0004.md",
+              "NOX-0005.md",
+              "NOX-0006.md",
+              "NOX-0007.md",
+              "NOX-0008.md",
+              "OTA-REQ-20260718-001.md",
+              "OTA-REQ-20260718-002.md",
+              "SSF-0001.md",
+              "SSF-0002.md",
+              "SSF-0003.md",
+              "SSF-0004.md"
             ]
           }
         },
@@ -162,7 +175,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-13T05:39:00Z",
+      "last_push": "2026-07-18T09:11:09Z",
       "overall": "degraded"
     },
     {
@@ -192,7 +205,7 @@
           "detail": {
             "count": 2,
             "files": [
-              "EXT-ECO-KG-20260714-002.md",
+              "EXT-ECO-KG-20260718-002.md",
               "KG-REQ-20260715-kontrakomologie-canonization.md"
             ]
           }
@@ -204,7 +217,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-15T07:32:39Z",
+      "last_push": "2026-07-18T09:39:59Z",
       "overall": "degraded"
     },
     {
@@ -264,7 +277,7 @@
       },
       "default_branch": "master",
       "private": false,
-      "last_push": "2026-07-15T08:54:56Z",
+      "last_push": "2026-07-15T19:03:02Z",
       "overall": "degraded"
     },
     {
