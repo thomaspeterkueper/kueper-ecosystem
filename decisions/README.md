@@ -81,6 +81,7 @@ Betroffene Repositories: ...
 - [ECO-ARC-0012-2026-DE — Kontrakomologie / Contracomology: Registrierung einer bestehenden Fassade](./ECO-ARC-0012-2026-DE.md) — `accepted`
 - [ECO-ARC-0013-2026-DE — KUEPER Archive Core: gemeinsames Datenbankschema für Dokumentarchive](./ECO-ARC-0013-2026-DE.md) — `accepted`
 - [ECO-ARC-0014-2026-DE — Kanonisches Domain-Präfix: KD, nicht KNOW](./ECO-ARC-0014-2026-DE.md) — `accepted`
+- [ECO-ARC-0015-2026-DE — Präzisierung: levelfreie KD:<DOMAIN>-Form](./ECO-ARC-0015-2026-DE.md) — `accepted`
 
 ## Erste mögliche Entscheidungen
 
