@@ -24,6 +24,11 @@ Die Registry ist keine Source of Truth für fachliche Projektdaten. Sie enthält
 - AVI-Modell
 - Contracomology
 - KUEPER Archive Core
+- Endia
+- Zereya
+- Davaru
+- Fluíde Hermeneutik
+- Resonanz-Ethik
 
 ## Grundregeln
 

@@ -203,9 +203,13 @@
         { "target": "mishkenaz", "required": true },
         { "target": "omnizedenz", "required": true },
         { "target": "avi-modell", "required": true },
-        { "target": "contracomology", "required": false }
+        { "target": "contracomology", "required": false },
+        { "target": "endia", "required": true },
+        { "target": "zereya", "required": true },
+        { "target": "fluide-hermeneutik", "required": false },
+        { "target": "resonanz-ethik", "required": false }
       ],
-      "notes": "In der Repository-Landkarte gefuehrt, aber bis 2026-07-12 nicht registriert. Aufgenommen durch ECO-Audit. production_url bleibt null bis bestaetigt (nicht geraten). Ueberblick/Vertiefung-Verhaeltnis mit mishkenaz (ECO-ARC-0009), omnizedenz (ECO-ARC-0010), avi-modell (ECO-ARC-0011). contracomology bezieht Kontrakomologie-Inhalt teils von hier (ECO-ARC-0012, eigener Migrationsplan)."
+      "notes": "In der Repository-Landkarte gefuehrt, aber bis 2026-07-12 nicht registriert. Aufgenommen durch ECO-Audit. production_url bleibt null bis bestaetigt (nicht geraten). Ueberblick/Vertiefung-Verhaeltnis mit mishkenaz (ECO-ARC-0009), omnizedenz (ECO-ARC-0010), avi-modell (ECO-ARC-0011), endia und zereya (ECO-ARC-0016). contracomology bezieht Kontrakomologie-Inhalt teils von hier (ECO-ARC-0012, eigener Migrationsplan). fluide-hermeneutik/resonanz-ethik: bestehende Essay-Seiten, optionale Verlinkung."
     },
     {
       "id": "noxia-universe",
@@ -234,7 +238,7 @@
       "integrations": [
         { "target": "ota", "required": false }
       ],
-      "notes": "Source of Truth fuer die Universums-Primaerdaten: Buecher (500+), Figuren, Handlungen, Orte, Personen, Worldbuilding - verwaltet in eigener Supabase-DB unter eigenem Namespace. NICHT die OTA-*-Archivdokumentebene: die bleibt beim OTA, noxia-universe schlaegt dorthin nur vor (ECO-ARC-0008). Code NXU. Supabase-Projekt in die Free-Tier-Organisation Kueper-Archives umgezogen (2026-07-14, Kostenoptimierung, zweiter Free-Slot neben kue-archive) - bestaetigt."
+      "notes": "Source of Truth fuer die NOXIA-Kontinuitaet speziell (Praezisierung ECO-ARC-0016) - NICHT Baumeister- oder Zereya-Kontinuitaet (eigene Zustaendigkeit, siehe zereya): Buecher, Figuren, Handlungen, Orte, Personen, Worldbuilding dieser Kontinuitaet - verwaltet in eigener Supabase-DB unter eigenem Namespace. NICHT die OTA-*-Archivdokumentebene: die bleibt beim OTA, noxia-universe schlaegt dorthin nur vor (ECO-ARC-0008). Code NXU. Supabase-Projekt in die Free-Tier-Organisation Kueper-Archives umgezogen (2026-07-14, Kostenoptimierung, zweiter Free-Slot neben kue-archive) - bestaetigt."
     },
     {
       "id": "mishkenaz",
@@ -383,6 +387,153 @@
         { "target": "knowledge-graph", "required": false }
       ],
       "notes": "Gemeinsames Datenbankschema (Migrationen, Typdefinitionen, Importer, Validatoren) fuer kanonische Dokumentarchive. Korrektur 2026-07-14: EIN gemeinsames Supabase-Projekt (kue-archive, Free Tier, Org Kueper-Archives, Frankfurt), getrennte Postgres-Schemas (public=KUE, ota=OTA) statt zwei Projekte -- Kostengruende. KUE laeuft produktiv. Gehoert weder kueper.com noch overtime-archive.org allein - zentral hier verantwortet. Code ARCH. Siehe ECO-ARC-0013."
+    },
+    {
+      "id": "endia",
+      "name": "Endia",
+      "repository": "thomaspeterkueper/endia.de",
+      "provider": "github",
+      "enabled": true,
+      "role": "knowledge-platform",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "thomas-kueper-de", "required": true }
+      ],
+      "notes": "YA-Trilogie (Digital Rebellion) - die erste begonnene Buchreihe, Urspung des gesamten Oekosystems. Ueberblick(thomas-kueper.de)/Vertiefung(hier)-Verhaeltnis, konsistenzpflichtig, wie Mishkenaz/Omnizedenz/AVI-Modell. Code ENDIA. Siehe ECO-ARC-0016."
+    },
+    {
+      "id": "zereya",
+      "name": "Zereya",
+      "repository": "thomaspeterkueper/zereya.de",
+      "provider": "github",
+      "enabled": true,
+      "role": "knowledge-platform",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "thomas-kueper-de", "required": true }
+      ],
+      "notes": "8-baendige Saga - eigenstaendige literarische Kontinuitaet (nicht Teil von noxia-universe), aus deren Arbeit das Baumeister- und Noxia-Universum entstand. Ueberblick(thomas-kueper.de)/Vertiefung(hier)-Verhaeltnis, konsistenzpflichtig. Code ZEREYA. Siehe ECO-ARC-0016."
+    },
+    {
+      "id": "davaru",
+      "name": "Davaru",
+      "repository": "thomaspeterkueper/davaru.de",
+      "provider": "github",
+      "enabled": true,
+      "role": "knowledge-platform",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "endia", "required": true }
+      ],
+      "notes": "In-universe-Konzept aus Endia: 'Der Weg des DaVaRu', eine Ethik fuer Mensch und Kibzu, entstanden innerhalb von Endias fiktivem Spiel. Begleiter zu Endia, nicht zu thomas-kueper.de (dort kein bestehender Davaru-Inhalt). Code DAVARU. Siehe ECO-ARC-0016."
+    },
+    {
+      "id": "fluide-hermeneutik",
+      "name": "Fluíde Hermeneutik",
+      "repository": "thomaspeterkueper/fluide-hermeneutics.org",
+      "provider": "github",
+      "enabled": true,
+      "role": "knowledge-platform",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "omnizedenz", "required": true },
+        { "target": "thomas-kueper-de", "required": false }
+      ],
+      "notes": "Vertiefung eines Omnizedenz-Teilaspekts (bereits als Essay unter thomas-kueper.de/philosophie/fluide-hermeneutik vorhanden). Code FLHERM. Siehe ECO-ARC-0016."
+    },
+    {
+      "id": "resonanz-ethik",
+      "name": "Resonanz-Ethik",
+      "repository": "thomaspeterkueper/resonanceethics.org",
+      "provider": "github",
+      "enabled": true,
+      "role": "knowledge-platform",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        { "target": "omnizedenz", "required": true },
+        { "target": "thomas-kueper-de", "required": false }
+      ],
+      "notes": "Vertiefung eines Omnizedenz-Teilaspekts (bereits als Essay unter thomas-kueper.de/philosophie/resonanz-ethik vorhanden). Code RESETH. Siehe ECO-ARC-0016."
     }
   ]
 }
