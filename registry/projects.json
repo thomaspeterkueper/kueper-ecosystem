@@ -295,9 +295,10 @@
         ]
       },
       "integrations": [
-        { "target": "thomas-kueper-de", "required": true }
+        { "target": "thomas-kueper-de", "required": true },
+        { "target": "resonanz-ethik", "required": true }
       ],
-      "notes": "Vertiefung des philosophischen Konzepts Omnizedenz (Resonanz-/Verantwortungs-Arbeitsmodell). Owner-Praezisierung 2026-07-14: Ueberblick/Vertiefung-Verhaeltnis mit thomas-kueper.de (dort grober Ueberblick, hier Vertiefung), beide muessen inhaltlich zusammenpassen; Aenderungen am Kernkonzept koennen beide Seiten betreffen. Scope nur der Kernbegriff (nicht die themenverwandten Essays wie Faust/Machiavelli/Wirtschaftspsychologie, die exklusiv bei thomas-kueper.de bleiben). Code OMNI. Siehe ECO-ARC-0010."
+      "notes": "Vertiefung des philosophischen Konzepts Omnizedenz (Resonanz-/Verantwortungs-Arbeitsmodell). Owner-Praezisierung 2026-07-14: Ueberblick/Vertiefung-Verhaeltnis mit thomas-kueper.de (dort grober Ueberblick, hier Vertiefung), beide muessen inhaltlich zusammenpassen; Aenderungen am Kernkonzept koennen beide Seiten betreffen. Praezisierung 2026-07-19: Scope umfasst zusaetzlich eine kurze, aus der Ontologie abgeleitete Fassung der Resonanz-Ethik (Symbole, Kernprinzipien) - volle Vertiefung bleibt bei resonanceethics.org (dreistufig mit thomas-kueper.de). Uebrige Einzelessays (Faust/Machiavelli/Wirtschaftspsychologie) bleiben exklusiv bei thomas-kueper.de. Code OMNI. Siehe ECO-ARC-0010, ECO-ARC-0016."
     },
     {
       "id": "avi-modell",
