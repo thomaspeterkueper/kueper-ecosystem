@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-18T21:31:13+00:00",
+  "generated_at": "2026-07-19T09:48:16+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
     "projects": 18,
     "overall_counts": {
-      "healthy": 11,
-      "degraded": 7
+      "healthy": 10,
+      "degraded": 8
     },
-    "open_external_tasks_total": 35
+    "open_external_tasks_total": 38
   },
   "projects": [
     {
@@ -44,7 +44,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-18T21:18:42Z",
+      "last_push": "2026-07-19T09:46:47Z",
       "overall": "healthy"
     },
     {
@@ -102,7 +102,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-15T07:27:37Z",
+      "last_push": "2026-07-19T09:47:20Z",
       "overall": "healthy"
     },
     {
@@ -203,9 +203,11 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 2,
+            "count": 4,
             "files": [
               "EXT-ECO-KG-20260718-002.md",
+              "EXT-OMNI-KG-20260719-001.md",
+              "EXT-OMNI-KG-20260719-002.md",
               "KG-REQ-20260715-kontrakomologie-canonization.md"
             ]
           }
@@ -217,7 +219,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-18T09:39:59Z",
+      "last_push": "2026-07-19T09:47:29Z",
       "overall": "degraded"
     },
     {
@@ -557,10 +559,12 @@
           }
         },
         "external_tasks_open": {
-          "state": "ok",
+          "state": "warning",
           "detail": {
-            "count": 0,
-            "files": []
+            "count": 1,
+            "files": [
+              "EXT-ECO-OMNI-20260719-001.md"
+            ]
           }
         },
         "integrations": {
@@ -571,14 +575,20 @@
               "required": true,
               "state": "ok",
               "detail": "registered"
+            },
+            {
+              "target": "resonanz-ethik",
+              "required": true,
+              "state": "ok",
+              "detail": "registered"
             }
           ]
         }
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T08:43:12Z",
-      "overall": "healthy"
+      "last_push": "2026-07-19T09:47:10Z",
+      "overall": "degraded"
     },
     {
       "id": "avi-modell",
