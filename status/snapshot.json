@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-19T09:54:15+00:00",
+  "generated_at": "2026-07-19T14:20:24+00:00",
   "collector_version": "1.0.0",
   "registry_schema_version": "1.0.0",
   "summary": {
     "projects": 18,
     "overall_counts": {
-      "healthy": 10,
-      "degraded": 8
+      "healthy": 9,
+      "degraded": 9
     },
-    "open_external_tasks_total": 38
+    "open_external_tasks_total": 37
   },
   "projects": [
     {
@@ -44,7 +44,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-19T09:48:46Z",
+      "last_push": "2026-07-19T14:19:26Z",
       "overall": "healthy"
     },
     {
@@ -70,10 +70,12 @@
           }
         },
         "external_tasks_open": {
-          "state": "ok",
+          "state": "warning",
           "detail": {
-            "count": 0,
-            "files": []
+            "count": 1,
+            "files": [
+              "NOX-0009-player-building-trade.md"
+            ]
           }
         },
         "integrations": {
@@ -102,8 +104,8 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-19T09:47:20Z",
-      "overall": "healthy"
+      "last_push": "2026-07-19T14:16:26Z",
+      "overall": "degraded"
     },
     {
       "id": "ssf",
@@ -130,8 +132,10 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 14,
+            "count": 10,
             "files": [
+              "EXT-ECO-SSF-20260719-001.md",
+              "KG-REQ-20260719-duplicate-path-id.md",
               "NOX-0001.md",
               "NOX-0002.md",
               "NOX-0003.md",
@@ -139,13 +143,7 @@
               "NOX-0005.md",
               "NOX-0006.md",
               "NOX-0007.md",
-              "NOX-0008.md",
-              "OTA-REQ-20260718-001.md",
-              "OTA-REQ-20260718-002.md",
-              "SSF-0001.md",
-              "SSF-0002.md",
-              "SSF-0003.md",
-              "SSF-0004.md"
+              "NOX-0008.md"
             ]
           }
         },
@@ -175,7 +173,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-18T09:11:09Z",
+      "last_push": "2026-07-19T14:20:00Z",
       "overall": "degraded"
     },
     {
@@ -203,11 +201,9 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 4,
+            "count": 2,
             "files": [
-              "EXT-ECO-KG-20260718-002.md",
-              "EXT-OMNI-KG-20260719-001.md",
-              "EXT-OMNI-KG-20260719-002.md",
+              "EXT-ECO-KG-20260719-003.md",
               "KG-REQ-20260715-kontrakomologie-canonization.md"
             ]
           }
@@ -219,7 +215,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-19T09:52:50Z",
+      "last_push": "2026-07-19T14:19:59Z",
       "overall": "degraded"
     },
     {
@@ -247,7 +243,7 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 7,
+            "count": 10,
             "files": [
               "EXT-ECO-OTA-20260712-002.md",
               "EXT-ECO-OTA-20260714-001.md",
@@ -255,6 +251,9 @@
               "EXT-NXU-OTA-20260712-002.md",
               "EXT-NXU-OTA-20260714-001.md",
               "EXT-NXU-OTA-20260715-001.md",
+              "KG-REQ-20260719-kon-kontr-typo.md",
+              "OTA-REQ-20260718-001.md",
+              "OTA-REQ-20260718-002.md",
               "REQ-KG-LEGAL-ACCESS-20260710.md"
             ]
           }
@@ -279,7 +278,7 @@
       },
       "default_branch": "master",
       "private": false,
-      "last_push": "2026-07-15T19:03:02Z",
+      "last_push": "2026-07-19T13:17:28Z",
       "overall": "degraded"
     },
     {
@@ -337,7 +336,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-14T11:54:18Z",
+      "last_push": "2026-07-19T13:15:21Z",
       "overall": "healthy"
     },
     {
@@ -561,9 +560,10 @@
         "external_tasks_open": {
           "state": "warning",
           "detail": {
-            "count": 1,
+            "count": 2,
             "files": [
-              "EXT-ECO-OMNI-20260719-001.md"
+              "EXT-ECO-OMNI-20260719-001.md",
+              "EXT-KG-OMNI-20260719-001.md"
             ]
           }
         },
@@ -587,7 +587,7 @@
       },
       "default_branch": "main",
       "private": false,
-      "last_push": "2026-07-19T09:47:10Z",
+      "last_push": "2026-07-19T14:13:49Z",
       "overall": "degraded"
     },
     {
