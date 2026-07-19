@@ -83,6 +83,7 @@ Betroffene Repositories: ...
 - [ECO-ARC-0014-2026-DE — Kanonisches Domain-Präfix: KD, nicht KNOW](./ECO-ARC-0014-2026-DE.md) — `accepted`
 - [ECO-ARC-0015-2026-DE — Präzisierung: levelfreie KD:<DOMAIN>-Form](./ECO-ARC-0015-2026-DE.md) — `accepted`
 - [ECO-ARC-0016-2026-DE — Fünf neue Projekte: Endia, Zereya, Davaru, Fluíde Hermeneutik, Resonanz-Ethik](./ECO-ARC-0016-2026-DE.md) — `accepted`
+- [ECO-ARC-0017-2026-DE — KD-Domain-Granularität und Präfixkollisionen (SSF-Import)](./ECO-ARC-0017-2026-DE.md) — `accepted`
 
 ## Erste mögliche Entscheidungen
 
