@@ -114,9 +114,21 @@ anlegen oder eine zweite Impressums-Wahrheit pflegen), ist das ein Fall für ein
 External Task an die zuständige Stelle, nicht für eigenständiges Anlegen. Nur
 Inhalte, die **ausschließlich** `{PROJEKT}` betreffen, gehören allein dir.
 
-## 5. Personenbezogene Daten (falls `{PROJEKT}` Accounts/Logins hat)
+## 5. Rechtstexte und personenbezogene Daten
 
-Falls du eine eigene Nutzerverwaltung (z. B. eigenes Supabase-Projekt) betreibst:
+**Für jedes Projekt mit eigener öffentlicher Website, unabhängig von
+Accounts:** Rechtstexte (Impressum, Datenschutz) nicht selbst verfassen —
+sie kommen zentral aus dem KG (`registry/legal/impressum-master.json`).
+Stelle bei der Registrierung **immer** einen External Task an `KG`, um
+`SYS:KUEPER:{PROJEKT}` in die `consumers`-Liste dort aufnehmen zu lassen —
+auch wenn du keine Accounts führst. Das ist unabhängig von Punkt 2 unten und
+wird leicht vergessen, weil es nicht offensichtlich mit „personenbezogene
+Daten" verbunden wirkt: Ein Impressum ist in Deutschland fast immer
+Pflicht, sobald eine Seite öffentlich erreichbar ist — unabhängig davon, ob
+Nutzerdaten verarbeitet werden.
+
+Falls du eine eigene Nutzerverwaltung (z. B. eigenes Supabase-Projekt)
+betreibst, zusätzlich:
 
 - Melde bei der Registrierung: Region, Auth-Verfahren, Session-Mechanismus
   (Cookie vs. localStorage), welche Tabellen personenbezogene Daten enthalten.
@@ -125,8 +137,6 @@ Falls du eine eigene Nutzerverwaltung (z. B. eigenes Supabase-Projekt) betreibst
   E-Mail-Adressen nach 1 Monat.** Wenn du Accounts führst, brauchst du einen
   entsprechenden Löschmechanismus — sonst stimmt die zentrale
   Datenschutzerklärung nicht mit deinem Ist-Zustand überein.
-- Rechtstexte (Impressum, Datenschutz) nicht selbst verfassen — sie kommen
-  zentral aus dem KG. Bei Bedarf per External Task anfordern.
 
 ## 6. Namenskonflikte sind nicht automatisch Fehler
 
