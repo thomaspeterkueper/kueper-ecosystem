@@ -6,6 +6,8 @@ type UniverseEvent = {
   id: string;
   title: string;
   summary: string;
+  location?: string;
+  characters?: string[];
   time: {
     start?: string;
     end?: string;
@@ -193,6 +195,12 @@ export default function UniverseTimelinePage() {
               </span>
             </div>
             {e.summary && <div style={styles.eventDesc}>{e.summary}</div>}
+            {(e.location || (e.characters && e.characters.length > 0)) && (
+              <div style={{ marginTop: "0.5rem", fontSize: "0.78rem", color: "#9aa3b2" }}>
+                {e.location && <div>📍 {e.location}</div>}
+                {e.characters && e.characters.length > 0 && <div>👤 {e.characters.join(", ")}</div>}
+              </div>
+            )}
             <div style={{ marginTop: "0.5rem", display: "flex", gap: "0.5rem" }}>
               <span style={styles.badge}>{e.epistemic_status}</span>
               <span style={{ ...styles.badge, background: "#2c3d2c", color: "#9fcf9f" }}>{e.canonicality}</span>
