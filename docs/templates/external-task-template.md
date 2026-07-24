@@ -7,6 +7,7 @@ target: KG
 created: 2026-07-12
 requested_by: T.P.K.
 priority: medium
+execution_class: C
 affects: [KG, SSF]
 supersedes: []
 ---
@@ -34,5 +35,7 @@ Warum gehört die Änderung ins Ziel-Repository (Source-of-Truth-Bezug)?
 Was gilt als erledigt (Akzeptanzkriterien)?
 
 ## Hinweise
+
+`execution_class` ist optional. Fehlt das Feld, behandelt der Ecosystem Loop die Anforderung konservativ als Klasse `C`.
 
 Optionaler Kontext, Referenzen auf verwandte Tasks oder Entscheidungen.
