@@ -1,0 +1,55 @@
+name: Ecosystem Loop Scan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Scan ecosystem requests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 tools/loop/loop.py scan --output loop-queue.json
+
+      - name: Validate queue JSON
+        run: python3 -m json.tool loop-queue.json >/dev/null
+
+      - name: Write job summary
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("loop-queue.json").read_text(encoding="utf-8"))
+          s = data["summary"]
+          lines = [
+              "# KUEPER Ecosystem Loop",
+              "",
+              f"- Mode: `{data['mode']}`",
+              f"- Projects checked: **{s['projects_checked']}**",
+              f"- Open tasks: **{s['open_tasks']}**",
+              f"- NOXIA pilot tasks: **{s['pilot_tasks']}**",
+              f"- Class A/B/C: **{s['by_execution_class']['A']} / {s['by_execution_class']['B']} / {s['by_execution_class']['C']}**",
+              f"- Execution enabled: **{data['execution_enabled']}**",
+          ]
+          Path("summary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+          PY
+          cat summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload queue
+        uses: actions/upload-artifact@v4
+        with:
+          name: ecosystem-loop-queue
+          path: loop-queue.json
+          if-no-files-found: error
+          retention-days: 7
