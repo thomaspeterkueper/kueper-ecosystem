@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://kueper.com/schemas/external-task.schema.json",
   "title": "KUEPER External Task (front matter)",
-  "description": "Kanonisches Kopf-Schema fuer External Tasks unter external-tasks/open|done|rejected|parked. Der Task-Body ist Markdown; dieses Schema validiert das YAML-Frontmatter, das jeder kanonischen Task voransteht. Verbindlich ab ECO-ARC-0006.",
+  "description": "Kanonisches Kopf-Schema fuer External Tasks unter external-tasks/open|done|rejected|parked. Der Task-Body ist Markdown; dieses Schema validiert das YAML-Frontmatter, das jeder kanonischen Task voransteht. Verbindlich ab ECO-ARC-0006; execution_class ist die optionale Loop-Erweiterung aus ECO-ARC-0019.",
   "type": "object",
   "additionalProperties": false,
   "required": ["id", "status", "source", "target", "created", "requested_by"],
@@ -30,6 +30,11 @@
     "priority": {
       "type": "string",
       "enum": ["low", "medium", "high", "critical"]
+    },
+    "execution_class": {
+      "type": "string",
+      "enum": ["A", "B", "C"],
+      "description": "Optionale Ausfuehrungsklasse fuer den Ecosystem Loop. Fehlt das Feld, gilt konservativ C."
     },
     "affects": {
       "type": "array",
