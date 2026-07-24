@@ -28,17 +28,8 @@ ROOT = Path(__file__).resolve().parents[2]
 REGISTRY = ROOT / "registry" / "projects.json"
 POLICY = ROOT / "registry" / "loop-policy.json"
 API = "https://api.github.com"
-
-FIELD_PATTERNS = {
-    "status": re.compile(r"^Status:\s*(.+?)\s*$", re.I | re.M),
-    "source_repository": re.compile(r"^Source Repository:\s*`?([^`\n]+)`?\s*$", re.I | re.M),
-    "target_repository": re.compile(r"^Target Repository:\s*`?([^`\n]+)`?\s*$", re.I | re.M),
-    "created": re.compile(r"^Created:\s*(\d{4}-\d{2}-\d{2})\s*$", re.I | re.M),
-    "requested_by": re.compile(r"^Requested by:\s*(.+?)\s*$", re.I | re.M),
-    "execution_class": re.compile(r"^Execution Class:\s*([ABC])\s*$", re.I | re.M),
-}
-
 CLASS_ORDER = {"A": 0, "B": 1, "C": 2}
+PRIORITY_ORDER = {"critical": 0, "high": 1, "medium": 2, "low": 3}
 
 
 def token() -> str:
@@ -99,24 +90,79 @@ def fetch_text(download_url: str, gh_token: str) -> str | None:
         return None
 
 
+def parse_frontmatter(text: str) -> tuple[dict[str, Any], str]:
+    """Parse the flat YAML subset used by ECO-ARC-0006 without dependencies."""
+    if not text.startswith("---"):
+        return {}, text
+    end = text.find("\n---", 3)
+    if end == -1:
+        return {}, text
+
+    block = text[3:end].strip("\n")
+    body = text[end + 4 :]
+    frontmatter: dict[str, Any] = {}
+    current_list_key: str | None = None
+
+    for line in block.splitlines():
+        if not line.strip():
+            continue
+        if current_list_key and line.lstrip().startswith("- "):
+            frontmatter[current_list_key].append(line.lstrip()[2:].strip())
+            continue
+        current_list_key = None
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        key, value = key.strip(), value.strip()
+        if not value:
+            frontmatter[key] = []
+            current_list_key = key
+        elif value.startswith("[") and value.endswith("]"):
+            inner = value[1:-1].strip()
+            frontmatter[key] = [part.strip() for part in inner.split(",") if part.strip()]
+        else:
+            frontmatter[key] = value
+    return frontmatter, body
+
+
+def legacy_field(text: str, label: str) -> str | None:
+    match = re.search(rf"^{re.escape(label)}:\s*`?([^`\n]+)`?\s*$", text, re.I | re.M)
+    return match.group(1).strip() if match else None
+
+
 def parse_task(text: str, filename: str, default_class: str) -> dict[str, Any]:
-    result: dict[str, Any] = {"filename": filename}
-    for key, pattern in FIELD_PATTERNS.items():
-        match = pattern.search(text)
-        result[key] = match.group(1).strip() if match else None
-    result["execution_class"] = (result.get("execution_class") or default_class).upper()
-    result["title"] = next(
-        (line.lstrip("# ").strip() for line in text.splitlines() if line.startswith("# ")),
+    fm, body = parse_frontmatter(text)
+    title = fm.get("title") or next(
+        (line.lstrip("# ").strip() for line in body.splitlines() if line.startswith("# ")),
         filename,
     )
-    return result
+
+    # Canonical ECO-ARC-0006 frontmatter first; legacy labels remain readable
+    # during the migration period explicitly allowed by that decision.
+    execution_class = str(fm.get("execution_class") or legacy_field(text, "Execution Class") or default_class).upper()
+    if execution_class not in CLASS_ORDER:
+        execution_class = default_class
+
+    return {
+        "id": fm.get("id") or filename.removesuffix(".md"),
+        "filename": filename,
+        "title": title,
+        "status": fm.get("status") or legacy_field(text, "Status"),
+        "source": fm.get("source") or legacy_field(text, "Source Repository"),
+        "target": fm.get("target") or legacy_field(text, "Target Repository"),
+        "created": fm.get("created") or legacy_field(text, "Created"),
+        "requested_by": fm.get("requested_by") or legacy_field(text, "Requested by"),
+        "priority": str(fm.get("priority") or "medium").lower(),
+        "execution_class": execution_class,
+        "canonical_frontmatter": bool(fm),
+    }
 
 
 def scan() -> dict[str, Any]:
     gh_token = token()
     registry = load_json(REGISTRY)
     policy = load_json(POLICY)
-    default_class = policy.get("scan", {}).get("default_execution_class", "C")
+    default_class = str(policy.get("scan", {}).get("default_execution_class", "C")).upper()
     include_disabled = policy.get("scan", {}).get("include_disabled_projects", False)
     pilot_projects = set(policy.get("pilot_projects", []))
 
@@ -165,12 +211,15 @@ def scan() -> dict[str, Any]:
             )
             items.append(item)
 
-    items.sort(key=lambda item: (
-        0 if item.get("pilot") else 1,
-        CLASS_ORDER.get(item.get("execution_class", "C"), 9),
-        item.get("created") or "9999-12-31",
-        item.get("filename") or "",
-    ))
+    items.sort(
+        key=lambda item: (
+            0 if item.get("pilot") else 1,
+            CLASS_ORDER.get(item.get("execution_class", "C"), 9),
+            PRIORITY_ORDER.get(item.get("priority", "medium"), 9),
+            item.get("created") or "9999-12-31",
+            item.get("filename") or "",
+        )
+    )
 
     return {
         "schema_version": "1.0.0",
