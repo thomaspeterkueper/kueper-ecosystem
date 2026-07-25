@@ -1,0 +1,60 @@
+name: KUEPER Autonomous Ecosystem Loop
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_tasks:
+        description: Maximum tasks to execute in this sweep
+        required: false
+        default: "3"
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kueper-autonomous-ecosystem-loop
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      KUEPER_MAX_TASKS: ${{ inputs.max_tasks || '3' }}
+      KUEPER_AUTO_MERGE: "true"
+    steps:
+      - name: Checkout control plane
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Codex CLI
+        run: npm install --global @openai/codex
+
+      - name: Verify configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$KUEPER_BOT_TOKEN" || { echo "Missing KUEPER_BOT_TOKEN"; exit 2; }
+          test -n "$OPENAI_API_KEY" || { echo "Missing OPENAI_API_KEY"; exit 2; }
+          codex --version
+          gh --version
+
+      - name: Execute ecosystem sweep
+        run: python3 tools/loop/orchestrate.py | tee ecosystem-loop-report.json
+
+      - name: Upload loop report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ecosystem-loop-report-${{ github.run_id }}
+          path: ecosystem-loop-report.json
+          if-no-files-found: ignore
+          retention-days: 30
