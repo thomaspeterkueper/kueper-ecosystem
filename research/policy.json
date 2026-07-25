@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_version": "1.0.1",
+  "target_repository": "thomaspeterkueper/kueper-knowledge-graph",
+  "candidate_path": "research/candidates",
+  "default_languages": ["de", "en"],
+  "max_languages_per_topic": 5,
+  "max_discoveries_per_run": 3,
+  "max_research_topics_per_run": 2,
+  "minimum_relevance_score": 0.60,
+  "minimum_evidence_score_for_candidate": 0.65,
+  "auto_merge_candidates": true,
+  "auto_canonicalize": false,
+  "eligible_projects": [
+    {"id": "noxia", "weight": 1.0, "languages": ["de", "en"]},
+    {"id": "noxia-universe", "weight": 1.0, "languages": ["de", "en"]},
+    {"id": "mishkenaz", "weight": 1.0, "languages": ["de", "en", "hi", "gu", "sa"]},
+    {"id": "ota", "weight": 0.9, "languages": ["de", "en"]},
+    {"id": "ssf", "weight": 0.8, "languages": ["de", "en"]},
+    {"id": "kueper-com", "weight": 0.7, "languages": ["de", "en"]},
+    {"id": "endia", "weight": 0.7, "languages": ["de", "en"]},
+    {"id": "zereya", "weight": 0.7, "languages": ["de", "en"]}
+  ],
+  "evidence_rules": {
+    "prefer": ["primary-source", "peer-reviewed", "official-institution", "academic-publisher"],
+    "allow_secondary": true,
+    "require_source_urls": true,
+    "require_uncertainty": true,
+    "require_language_per_source": true,
+    "require_claim_source_mapping": true,
+    "reject_unsourced_claims": true
+  }
+}

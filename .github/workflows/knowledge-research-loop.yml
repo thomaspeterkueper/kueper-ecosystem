@@ -1,0 +1,59 @@
+name: KUEPER Knowledge Research Loop
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 3 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kueper-knowledge-research-loop
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      KUEPER_DISCOVERY_AGENT_CMD: codex exec --full-auto
+      KUEPER_RESEARCH_AGENT_CMD: codex exec --full-auto -c web_search="live"
+    steps:
+      - name: Checkout control plane
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Codex CLI
+        run: npm install --global @openai/codex
+
+      - name: Verify configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$KUEPER_BOT_TOKEN" || { echo "Missing KUEPER_BOT_TOKEN"; exit 2; }
+          test -n "$OPENAI_API_KEY" || { echo "Missing OPENAI_API_KEY"; exit 2; }
+          codex --version
+
+      - name: Discover one project's highest-value research gaps
+        run: python3 tools/research/discover.py | tee research-discovery-report.json
+
+      - name: Research queued topics
+        run: python3 tools/research/execute.py | tee research-execution-report.json
+
+      - name: Upload research reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-loop-${{ github.run_id }}
+          path: |
+            research-discovery-report.json
+            research-execution-report.json
+          if-no-files-found: ignore
+          retention-days: 30
