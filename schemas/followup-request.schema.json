@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kueper.com/schemas/followup-request.schema.json",
+  "title": "KUEPER Autonomous Follow-up Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["target", "title", "reason", "requested_change", "expected_result"],
+  "properties": {
+    "target": {"type": "string", "pattern": "^[A-Z][A-Z0-9-]*$"},
+    "title": {"type": "string", "minLength": 3, "maxLength": 160},
+    "reason": {"type": "string", "minLength": 10},
+    "requested_change": {"type": "string", "minLength": 10},
+    "expected_result": {"type": "string", "minLength": 5},
+    "priority": {"enum": ["low", "medium", "high", "critical"]},
+    "parent_task": {"type": "string"},
+    "depth": {"type": "integer", "minimum": 1, "maximum": 3},
+    "affects": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  }
+}

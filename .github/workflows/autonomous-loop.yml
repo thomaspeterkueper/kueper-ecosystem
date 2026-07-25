@@ -26,6 +26,8 @@ jobs:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       KUEPER_MAX_TASKS: ${{ inputs.max_tasks || '3' }}
       KUEPER_AUTO_MERGE: "true"
+      KUEPER_MAX_FOLLOWUPS: "10"
+      KUEPER_MAX_FOLLOWUP_DEPTH: "3"
     steps:
       - name: Checkout control plane
         uses: actions/checkout@v4
@@ -47,14 +49,19 @@ jobs:
           codex --version
           gh --version
 
+      - name: Route project follow-up requests
+        run: python3 tools/loop/route_followups.py | tee ecosystem-routing-report.json
+
       - name: Execute ecosystem sweep
         run: python3 tools/loop/orchestrate.py | tee ecosystem-loop-report.json
 
-      - name: Upload loop report
+      - name: Upload loop reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ecosystem-loop-report-${{ github.run_id }}
-          path: ecosystem-loop-report.json
+          path: |
+            ecosystem-routing-report.json
+            ecosystem-loop-report.json
           if-no-files-found: ignore
           retention-days: 30
