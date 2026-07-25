@@ -27,8 +27,8 @@ def gh(token:str,method:str,path:str,body:dict[str,Any]|None=None)->Any:
     except urllib.error.HTTPError as exc:
         raise RuntimeError(f"GitHub HTTP {exc.code}: {exc.read().decode(errors='replace')}") from exc
 
-def run(cmd:list[str],cwd:Path|None=None,check=True):
-    cp=subprocess.run(cmd,cwd=str(cwd) if cwd else None,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+def run(cmd:list[str],cwd:Path|None=None,check=True,env:dict[str,str]|None=None):
+    cp=subprocess.run(cmd,cwd=str(cwd) if cwd else None,env=env,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
     if check and cp.returncode:raise RuntimeError(cp.stdout)
     return cp
 
@@ -59,12 +59,7 @@ Requested source languages: {langs}
 
 Use live web search. Research the question rigorously. Languages are discovery channels, NOT evidence rankings. Prefer primary sources, peer-reviewed work, official institutions, and academic publishers. Search in the languages that materially improve coverage; do not force every language if it adds no value. Compare conflicting evidence.
 
-You MUST distinguish:
-- established findings,
-- inference,
-- open/contested points,
-- implications for the source project.
-Do not convert fictional canon into real-world evidence or real-world evidence into fictional canon.
+You MUST distinguish established findings, inference, open/contested points, and implications for the source project. Do not convert fictional canon into real-world evidence or real-world evidence into fictional canon.
 
 Create exactly two files in the checkout:
 1. `.research-result.json` containing:
@@ -93,8 +88,7 @@ def validate_result(root:Path,item:dict[str,Any])->dict[str,Any]:
     jf=root/".research-result.json";candidate=root/POLICY["candidate_path"]/f"{item['id']}.md"
     if not jf.exists() or not candidate.exists():raise RuntimeError("research agent did not create required result files")
     meta=json.loads(jf.read_text(encoding="utf-8"));score=float(meta.get("evidence_score",0));src=int(meta.get("source_count",0));domains=int(meta.get("distinct_domains",0))
-    text=candidate.read_text(encoding="utf-8")
-    urls=re.findall(r"https?://[^\s)>]+",text)
+    text=candidate.read_text(encoding="utf-8");urls=re.findall(r"https?://[^\s)>]+",text)
     if score<float(POLICY["minimum_evidence_score_for_candidate"]):raise RuntimeError(f"evidence score too low: {score}")
     if src<2 or domains<2 or len(set(urls))<2:raise RuntimeError("candidate requires >=2 sources from >=2 domains with URLs")
     required=["## Forschungsfrage","## Befundlage","## Gegenbefunde und Unsicherheit","## Claim-Source-Mapping","## Quellen","## Relevanz für KUEPER-Projekte","## Offene Fragen"]
@@ -118,10 +112,8 @@ def execute(token:str,item:dict[str,Any],payload:dict[str,Any])->dict[str,Any]:
         cmd=shlex.split(os.environ.get("KUEPER_RESEARCH_AGENT_CMD",'codex exec --full-auto -c web_search="live"'))
         cp=run(cmd+[research_prompt(item)],cwd=root,check=False)
         if cp.returncode:raise RuntimeError((cp.stdout or "")[-4000:])
-        meta=validate_result(root,item)
-        (root/".research-result.json").unlink()
-        changed=run(["git","status","--porcelain"],cwd=root).stdout or ""
-        paths=[]
+        meta=validate_result(root,item);(root/".research-result.json").unlink()
+        changed=run(["git","status","--porcelain","--untracked-files=all"],cwd=root).stdout or "";paths=[]
         for line in changed.splitlines():
             p=line[3:].strip();p=p.split(" -> ",1)[1] if " -> " in p else p
             if p:paths.append(p)
@@ -129,9 +121,14 @@ def execute(token:str,item:dict[str,Any],payload:dict[str,Any])->dict[str,Any]:
         if paths!=[allowed]:raise RuntimeError(f"research agent changed forbidden files: {paths}")
         run(["git","config","user.name","KUEPER Research Bot"],cwd=root);run(["git","config","user.email","research-bot@users.noreply.github.com"],cwd=root)
         run(["git","add",allowed],cwd=root);run(["git","commit","-m",f"research: candidate {item['id']}"],cwd=root);run(["git","push","--quiet","origin",branch],cwd=root)
-        pr=gh(token,"POST",f"/repos/{TARGET}/pulls",{"title":f"[Research] {item['id']}: {item['title']}","head":branch,"base":default,"body":f"Multilingual evidence candidate for `{item['source_project']}`. Evidence score reported by research pass: `{meta.get('evidence_score')}`. This PR adds only non-canonical staging material under `{POLICY['candidate_path']}/`; it does not modify canonical KG data.","draft":False})
+        pr=gh(token,"POST",f"/repos/{TARGET}/pulls",{"title":f"[Research] {item['id']}: {item['title']}","head":branch,"base":default,"body":f"Multilingual evidence candidate for `{item['source_project']}`. Evidence score: `{meta.get('evidence_score')}`. This PR adds only non-canonical staging material under `{POLICY['candidate_path']}/`; it does not modify canonical KG data.","draft":False})
+        merge="review-required"
+        if POLICY.get("auto_merge_candidates",False):
+            env=os.environ.copy();env["GH_TOKEN"]=token
+            cp=run(["gh","pr","merge",pr["html_url"],"--auto","--squash","--delete-branch"],cwd=root,check=False,env=env)
+            merge="auto-merge-queued" if cp.returncode==0 else "auto-merge-unavailable"
         update_queue(token,payload,item,"candidate-pr",pr["html_url"])
-        return {"id":item["id"],"result":"candidate-pr","pr":pr["html_url"],"evidence_score":meta.get("evidence_score"),"languages_used":meta.get("languages_used")}
+        return {"id":item["id"],"result":"candidate-pr","pr":pr["html_url"],"merge":merge,"evidence_score":meta.get("evidence_score"),"languages_used":meta.get("languages_used")}
     except Exception as exc:
         try:update_queue(token,payload,item,"needs-review",error=str(exc))
         except Exception:pass
