@@ -1,91 +1,102 @@
 # Autonome Loops im KUEPER Ecosystem
 
-Status: V1  
+Status: V2  
 Control Plane: `kueper-ecosystem`
 
 ## Ziel
 
-Das Ecosystem soll nicht darauf warten, dass der Owner jedes Projekt manuell auffordert, neue Requests zu prüfen. Offene, kanonische External Tasks werden regelmäßig entdeckt, im aktuellen Zustand des zuständigen Ziel-Repositories neu bewertet und – sofern sinnvoll und ausreichend bestimmt – dort autonom bearbeitet.
+Das Ecosystem wartet nicht darauf, dass der Owner jedes Projekt manuell auffordert. Offene External Tasks werden regelmäßig entdeckt, im aktuellen Ziel-Repository neu bewertet und autonom bearbeitet. Erkennt ein Projekt dabei einen konkreten Bedarf in einem anderen Projekt, kann es diesen als strukturierten Folge-Request an das Ecosystem übergeben.
 
-## V1-Kreislauf
+## V2-Kreislauf
 
 ```text
-OBSERVE
-  Registry + aktuelle Default-Branch-HEADs + external-tasks/open
+PROJECT WORK
+  lokaler Task wird bearbeitet
     ↓
-SELECT
-  Priorität → Alter → Task-ID
-    ↓
-PREFLIGHT
-  Ziel-Repo frisch klonen → HEAD unmittelbar erneut prüfen
-    ↓
-RESCAN / REPLAN
-  Request gegen aktuellen Repo-Stand neu bewerten
-    ↓
-ACT
-  im Ziel-Repo implementieren
-    ↓
-VERIFY
-  Tests / Build / Lint nach lokalen Repo-Regeln
-    ↓
-RESULT
-  done oder parked + präzise Rückfrage
-    ↓
-PUBLISH
-  Branch + PR
-    ↓
-MERGE GATE
-  risikoarm: Auto-Merge nach Repo-Checks
-  risikoreich: menschliche Review
-    ↓
-NEXT SWEEP
+DISCOVER
+  konkreter Bedarf außerhalb der eigenen Source of Truth?
+    ↓ nein                         ↓ ja
+  lokal fertig              .kueper/outbox/*.json
+                                  ↓
+ROUTE
+  Zielcode + Registry + Tiefe + Duplikat prüfen
+                                  ↓
+  kanonischen External Task in Ziel-Inbox erzeugen
+                                  ↓
+OBSERVE → SELECT → PREFLIGHT → RESCAN/REPLAN → ACT → VERIFY
+                                  ↓
+RESULT → PR → MERGE GATE → NEXT SWEEP
 ```
 
 ## Verantwortungsgrenzen
 
-1. `kueper-ecosystem` ist Orchestrator, nicht fachliche Source of Truth.
-2. Ein Task wird immer im Ziel-Repository bearbeitet.
-3. Vor der Bearbeitung wird der aktuelle Default-Branch-HEAD zweimal geprüft. Hat er sich bewegt, lautet das Ergebnis `rescan-and-replan`; der alte Plan wird verworfen.
-4. Ein Agent darf keine fehlende fachliche Entscheidung erfinden. In diesem Fall wird der Task `parked` und um `## Rückfrage` ergänzt.
-5. Ein erfolgreich bearbeiteter Task wird im PR von `external-tasks/open/` nach `external-tasks/done/` verschoben und erhält `status: done`.
-6. Änderungen an sensiblen Bereichen (`.github/`, Migrationen, Auth/Security, Infrastruktur, Lockfiles, Deployment-Konfiguration) werden niemals automatisch gemergt.
-7. Andere Repositories werden aus einem Projekt-Checkout nicht direkt verändert.
+1. `kueper-ecosystem` orchestriert, ist aber nicht fachliche Source of Truth.
+2. Ein Projekt darf nur seine eigenen fachlichen Entscheidungen und Dateien ändern.
+3. Cross-Repo-Bedarf wird als Request formuliert, niemals durch einen Fremd-Commit erzwungen.
+4. Vor der Bearbeitung wird der Default-Branch-HEAD erneut geprüft; bei Bewegung wird neu geplant.
+5. Unklare oder widersprüchliche Tasks werden geparkt und erhalten eine konkrete `## Rückfrage`.
+6. Änderungen an `.github/`, Migrationen, Auth/Security, Infrastruktur, Lockfiles und Deployment-Konfiguration bleiben reviewpflichtig.
 
-## Selbst erzeugte Folge-Requests
+## Follow-up Envelope
 
-Ein Projekt darf während seiner Arbeit neuen Bedarf erkennen. V1 erzwingt dabei weiterhin die Source-of-Truth-Grenze: Der Agent dokumentiert den Folgebedarf. Die nächste Ausbaustufe routet daraus automatisch einen kanonischen Task in die Inbox des zuständigen Ziel-Repositories.
+Ein Projekt darf unter `.kueper/outbox/` JSON-Dateien erzeugen. Pflichtfelder:
 
-Damit entsteht kein unkontrolliertes rekursives Schreiben zwischen Repositories.
-
-## Agent-Adapter
-
-V1 verwendet standardmäßig Codex CLI über:
-
-```text
-codex exec --full-auto
+```json
+{
+  "target": "KG",
+  "title": "Kurzer konkreter Titel",
+  "reason": "Warum der Bedarf bei der aktuellen Arbeit entstanden ist.",
+  "requested_change": "Was das Zielprojekt prüfen oder umsetzen soll.",
+  "expected_result": "Woran Erledigung erkennbar ist.",
+  "priority": "medium",
+  "parent_task": "EXT-...",
+  "depth": 2
+}
 ```
 
-Die Ausführungsschicht ist über `KUEPER_AGENT_CMD` austauschbar. Das Request-Protokoll, die Registry und die Governance hängen daher nicht von einem bestimmten Modellanbieter ab.
+`target` ist ein registrierter System-Code. Source und Target dürfen nicht identisch sein.
 
-## Einmalige Secrets
+## Rekursions- und Sturmbegrenzung
 
-Der GitHub-Workflow benötigt zwei Repository-Secrets in `kueper-ecosystem`:
+V2 begrenzt autonome Ketten absichtlich:
 
-- `KUEPER_BOT_TOKEN`: Fine-grained GitHub Token oder GitHub-App-Token mit Contents/PR-Schreibrechten auf allen registrierten KUEPER-Repositories.
-- `OPENAI_API_KEY`: API-Key für den autonomen Agentenlauf.
+- maximal drei Follow-ups, die ein einzelner Project-Agent sinnvoll erzeugen soll;
+- maximale Routing-Tiefe standardmäßig `3`;
+- maximal zehn neu geroutete Requests pro Sweep;
+- Fingerprint-Deduplizierung gegen `open`, `parked` und `done` im Ziel-Repository;
+- keine spekulativen, bloß wünschenswerten oder selbstgerichteten Requests;
+- ein Follow-up wird erst im nächsten Sweep bearbeitet. Dadurch gibt es keine ungebremste Rekursion innerhalb eines Agentenlaufs.
 
-Secrets werden weder in Requests noch in Logs geschrieben.
+Konfiguration: `KUEPER_MAX_FOLLOWUP_DEPTH` und `KUEPER_MAX_FOLLOWUPS`.
+
+## Routing
+
+`tools/loop/route_followups.py` liest die Outboxes aller aktivierten Registry-Projekte. Ein gültiger Envelope wird in das kanonische Format `EXT-{SOURCE}-{TARGET}-{YYYYMMDD}-{NNN}` übersetzt und direkt in `external-tasks/open/` des fachlich zuständigen Ziel-Repositories geschrieben.
+
+Jeder geroutete Task enthält zusätzlich:
+
+- `routing_fingerprint`
+- `parent_task`
+- `routing_depth`
+
+Damit bleibt die Herkunft einer autonomen Task-Kette nachvollziehbar.
 
 ## Takt
 
-Der zentrale Sweep läuft einmal pro Stunde (`17 * * * *`) und kann zusätzlich manuell gestartet werden. Pro Sweep werden standardmäßig höchstens drei Tasks bearbeitet. Diese Grenze verhindert Task-Stürme und begrenzt Kosten; sie ist über `KUEPER_MAX_TASKS` konfigurierbar.
+Der zentrale Sweep läuft stündlich. Reihenfolge V2:
 
-## Nächste Ausbaustufe
+1. vorhandene Outboxes routen;
+2. offene External Tasks scannen;
+3. priorisierte Tasks bearbeiten;
+4. entstandene Follow-ups liegen im jeweiligen PR und werden nach dessen Merge beim nächsten Sweep geroutet.
 
-Nach Stabilisierung von V1:
+## Noch nicht Teil von V2
 
-1. automatisches Routing neu entdeckter Cross-Repo-Folgeaufgaben;
-2. Knowledge-Expansion-Loop für Knowledge Graph / Universe / Romane;
-3. multilingualer Research-Loop mit Evidenz- und Quellenbewertung;
-4. Canon-Conflict-Loop: Realwissen ↔ Worldbuilding ↔ Manuskript/Spiel;
-5. Budget-, Rekursions- und Relevanzgrenzen für autonome Wissensvertiefung.
+V2 erzeugt neue Requests nur aus **konkreter Projektarbeit**. Es startet noch keine freie, selbstzweckhafte Ideen- oder Research-Expansion. Das ist bewusst getrennt, damit das Ecosystem zunächst beweist, dass autonome Task-Ketten stabil, relevant und begrenzt bleiben.
+
+Nächste Stufen:
+
+1. Knowledge-Expansion mit eigenem Relevanzbudget;
+2. multilingualer Research-Loop mit Evidenzbewertung;
+3. Canon-Conflict-Loop Realwissen ↔ Worldbuilding ↔ Manuskript/Spiel;
+4. Kosten-/Token-/Zeitbudgets und systemweite Priorisierung.
