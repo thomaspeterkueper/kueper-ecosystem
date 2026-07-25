@@ -57,15 +57,10 @@ Scope: systemweit
 Betroffene Repositories: ...
 
 ## Kontext
-
 ## Entscheidung
-
 ## Begründung
-
 ## Auswirkungen
-
 ## Nicht entschieden
-
 ## Folgeaufgaben
 ```
 
@@ -85,6 +80,7 @@ Betroffene Repositories: ...
 - [ECO-ARC-0016-2026-DE — Fünf neue Projekte: Endia, Zereya, Davaru, Fluíde Hermeneutik, Resonanz-Ethik](./ECO-ARC-0016-2026-DE.md) — `accepted`
 - [ECO-ARC-0017-2026-DE — KD-Domain-Granularität und Präfixkollisionen (SSF-Import)](./ECO-ARC-0017-2026-DE.md) — `accepted`
 - [ECO-ARC-0018-2026-DE — Geschützte Universe-Timeline als interner Consumer](./ECO-ARC-0018-2026-DE.md) — `proposed`
+- [ECO-ARC-0019-2026-DE — Autonome Ecosystem- und Project-Loops](./ECO-ARC-0019-2026-DE.md) — `accepted`
 
 ## Erste mögliche Entscheidungen
 
