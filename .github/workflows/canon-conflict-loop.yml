@@ -1,0 +1,54 @@
+name: KUEPER Canon Conflict Loop
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 5 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kueper-canon-conflict-loop
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      KUEPER_MAX_CANDIDATE_VALIDATIONS: "3"
+      KUEPER_VALIDATION_AGENT_CMD: codex exec --full-auto
+    steps:
+      - name: Checkout control plane
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Codex CLI
+        run: npm install --global @openai/codex
+
+      - name: Verify configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$KUEPER_BOT_TOKEN" || { echo "Missing KUEPER_BOT_TOKEN"; exit 2; }
+          test -n "$OPENAI_API_KEY" || { echo "Missing OPENAI_API_KEY"; exit 2; }
+          codex --version
+
+      - name: Validate merged research candidates against consumer projects
+        run: python3 tools/research/validate_candidates.py | tee canon-conflict-report.json
+
+      - name: Upload validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: canon-conflict-${{ github.run_id }}
+          path: canon-conflict-report.json
+          if-no-files-found: ignore
+          retention-days: 30
