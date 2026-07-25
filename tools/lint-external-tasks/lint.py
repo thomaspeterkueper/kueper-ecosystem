@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-KUEPER Ecosystem — External-Task-Linter (ECO-ARC-0006)
+KUEPER Ecosystem — External-Task-Linter (ECO-ARC-0006 / ECO-ARC-0019)
 
 Prueft eine kanonische External-Task-Datei:
   1. Dateiname folgt EXT-{SOURCE}-{TARGET}-{YYYYMMDD}-{NNN}.md
@@ -8,6 +8,7 @@ Prueft eine kanonische External-Task-Datei:
   3. Pflicht-Sektionen im Body vorhanden
   4. id im Frontmatter passt zum Dateinamen
   5. source != target
+  6. optionale execution_class ist A, B oder C
 
 Nutzung:
   python3 tools/lint-external-tasks/lint.py <datei.md> [<datei2.md> ...]
@@ -28,6 +29,7 @@ ID_RE = re.compile(
 REQUIRED_FM = ["id", "status", "source", "target", "created", "requested_by"]
 STATUS = {"open", "done", "rejected", "parked"}
 PRIORITY = {"low", "medium", "high", "critical"}
+EXECUTION_CLASS = {"A", "B", "C"}
 REQUIRED_SECTIONS = [
     "## Anlass",
     "## Gewünschte Änderung",
@@ -100,6 +102,8 @@ def lint_file(path):
         errors.append("source und target duerfen nicht gleich sein.")
     if "priority" in fm and fm["priority"] not in PRIORITY:
         errors.append(f"priority ungueltig: {fm['priority']}")
+    if "execution_class" in fm and fm["execution_class"] not in EXECUTION_CLASS:
+        errors.append(f"execution_class ungueltig: {fm['execution_class']}")
     if "created" in fm and not re.match(r"^\d{4}-\d{2}-\d{2}$", str(fm["created"])):
         errors.append(f"created ist kein ISO-Datum: {fm['created']}")
 

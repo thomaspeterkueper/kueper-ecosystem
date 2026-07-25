@@ -49,6 +49,7 @@ Diese Inhalte bleiben in den jeweils zuständigen Repositories.
 - [`docs/repository-roles.md`](docs/repository-roles.md)
 - [`docs/source-of-truth.md`](docs/source-of-truth.md)
 - [`docs/cross-repository-workflow.md`](docs/cross-repository-workflow.md)
+- [`docs/ecosystem-loop.md`](docs/ecosystem-loop.md) — regelmäßiger Scan, Triage und Repository-Preflight
 - [`docs/onboarding-template.md`](docs/onboarding-template.md) — verbindliche Vorlage für neue Projekte
 - [`decisions/README.md`](decisions/README.md)
 
@@ -59,6 +60,8 @@ Jedes Projekt bleibt Source of Truth nur für seinen eigenen Zuständigkeitsbere
 Wenn eine Änderung ein anderes Repository betrifft, wird sie nicht direkt umgesetzt. Stattdessen wird im Ziel-Repository unter `external-tasks/open/` eine Markdown-Anforderung angelegt. Bearbeitete Anforderungen werden später nach `done/` beziehungsweise `rejected/` verschoben.
 
 Das verbindliche Dateiformat dieser Anforderungen legt [`decisions/ECO-ARC-0006-2026-DE.md`](decisions/ECO-ARC-0006-2026-DE.md) fest (Vorlage: [`docs/templates/external-task-template.md`](docs/templates/external-task-template.md), Prüfung: `tools/lint-external-tasks/lint.py`). Der beobachtete Ist-Zustand aller Projekte liegt in [`status/snapshot.json`](status/snapshot.json), erzeugt von `tools/collector/collect.py`.
+
+Der Pilot für den wiederkehrenden Ecosystem Loop liegt in [`tools/loop/`](tools/loop/) und baut direkt auf diesem External-Task-Vertrag auf. Vor einem späteren Dispatch wird der aktuelle Ziel-Repository-HEAD erneut geprüft; ein veralteter Plan darf nicht ausgeführt werden.
 
 ## Status
 
