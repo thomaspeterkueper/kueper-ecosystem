@@ -87,6 +87,7 @@ Betroffene Repositories: ...
 - [ECO-ARC-0023-2026-DE — Automatische Wiederaufnahme geparkter Tasks](./ECO-ARC-0023-2026-DE.md) — `accepted`
 - [ECO-ARC-0024-2026-DE — Supabase Task Bus als operative State Plane](./ECO-ARC-0024-2026-DE.md) — `accepted`
 - [ECO-ARC-0025-2026-DE — Execution Plane, Provider- und Kostenrouting](./ECO-ARC-0025-2026-DE.md) — `accepted`
+- [ECO-ARC-0026-2026-DE — Provider Circuit Breaker für Billing- und Verfügbarkeitsfehler](./ECO-ARC-0026-2026-DE.md) — `accepted`
 
 ## Erste mögliche Entscheidungen
 
