@@ -67,6 +67,13 @@ Entscheidung) oder ein anderes Projekt etwas von dir braucht: **kein Direkt-Comm
 in fremde Repos.** Stattdessen eine Datei nach folgendem, verbindlichem Format
 (ECO-ARC-0006) in `external-tasks/open/` des **Ziel-Repos** legen:
 
+**Hinweis (ECO-ARC-0027, seit 2026-07-26):** Die operative Wahrheit für Tasks
+liegt inzwischen in `ecosystem.tasks` (Supabase State Plane), `.md`-Dateien
+hier sind eine synchron gehaltene Audit-Projektion davon. Für dich als
+Projekt/Mensch/Agent ohne direkten Datenbankzugriff ändert sich dadurch
+nichts: `external-tasks/open/` bleibt die verbindliche Schnittstelle, du
+liest und schreibst weiterhin hier.
+
 Dateiname: `EXT-{SOURCE}-{TARGET}-{YYYYMMDD}-{NNN}.md`
 
 ```md
