@@ -84,6 +84,7 @@ Betroffene Repositories: ...
 - [ECO-ARC-0020-2026-DE — Autonomes Routing von Folge-Requests](./ECO-ARC-0020-2026-DE.md) — `accepted`
 - [ECO-ARC-0021-2026-DE — Kontrollierte Knowledge Expansion und multilingualer Research-Loop](./ECO-ARC-0021-2026-DE.md) — `accepted`
 - [ECO-ARC-0022-2026-DE — Research Candidate Validation und Canon-Conflict-Loop](./ECO-ARC-0022-2026-DE.md) — `accepted`
+- [ECO-ARC-0023-2026-DE — Automatische Wiederaufnahme geparkter Tasks](./ECO-ARC-0023-2026-DE.md) — `accepted`
 
 ## Erste mögliche Entscheidungen
 
