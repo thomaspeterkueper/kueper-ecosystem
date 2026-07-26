@@ -29,29 +29,46 @@ jobs:
       KUEPER_MAX_TASKS: ${{ inputs.max_tasks || '3' }}
     steps:
       - name: Checkout control plane
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
+          package-manager-cache: false
 
       - name: Install Claude Code agent frontend
         run: npm install --global @anthropic-ai/claude-code
+
+      - name: Verify required secrets
+        shell: bash
+        run: |
+          set -euo pipefail
+          missing=0
+          for name in SUPABASE_URL SUPABASE_SECRET_KEY DEEPSEEK_API_KEY KUEPER_BOT_TOKEN; do
+            if [ -z "${!name:-}" ]; then
+              echo "::error title=Missing GitHub Actions secret::$name is empty or unavailable to this workflow"
+              missing=1
+            else
+              echo "$name: available"
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
 
       - name: Verify runtime
         shell: bash
         run: |
           set -euo pipefail
-          for name in SUPABASE_URL SUPABASE_SECRET_KEY DEEPSEEK_API_KEY KUEPER_BOT_TOKEN; do
-            test -n "${!name}" || { echo "Missing $name"; exit 2; }
-          done
           python --version
+          node --version
+          npm --version
           claude --version
           gh --version
 
@@ -63,7 +80,7 @@ jobs:
 
       - name: Upload worker report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: agent-worker-v7-${{ github.run_id }}
           path: agent-worker-report.json
