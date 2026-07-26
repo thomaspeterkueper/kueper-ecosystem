@@ -86,6 +86,7 @@ Betroffene Repositories: ...
 - [ECO-ARC-0022-2026-DE — Research Candidate Validation und Canon-Conflict-Loop](./ECO-ARC-0022-2026-DE.md) — `accepted`
 - [ECO-ARC-0023-2026-DE — Automatische Wiederaufnahme geparkter Tasks](./ECO-ARC-0023-2026-DE.md) — `accepted`
 - [ECO-ARC-0024-2026-DE — Supabase Task Bus als operative State Plane](./ECO-ARC-0024-2026-DE.md) — `accepted`
+- [ECO-ARC-0025-2026-DE — Execution Plane, Provider- und Kostenrouting](./ECO-ARC-0025-2026-DE.md) — `accepted`
 
 ## Erste mögliche Entscheidungen
 
