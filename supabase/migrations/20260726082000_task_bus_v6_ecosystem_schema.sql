@@ -1,27 +1,18 @@
 -- KUEPER Ecosystem V6 — private `ecosystem` state plane with public server-only RPC facade.
--- Apply after the original V6 migrations if they were already applied; if not, this migration
--- safely relocates all V6 tables and rebuilds the RPCs against the private schema.
+-- Standalone migration: use this as the only V6 Task Bus migration before first production use.
 
+create extension if not exists pgcrypto;
 create schema if not exists ecosystem;
 
--- Move V6 state tables if they still live in public.
+-- Compatibility: if an earlier V6 draft was already applied, relocate its tables.
 do $$
 begin
-  if to_regclass('public.tasks') is not null and to_regclass('ecosystem.tasks') is null then
-    alter table public.tasks set schema ecosystem;
-  end if;
-  if to_regclass('public.task_dependencies') is not null and to_regclass('ecosystem.task_dependencies') is null then
-    alter table public.task_dependencies set schema ecosystem;
-  end if;
-  if to_regclass('public.task_runs') is not null and to_regclass('ecosystem.task_runs') is null then
-    alter table public.task_runs set schema ecosystem;
-  end if;
-  if to_regclass('public.task_events') is not null and to_regclass('ecosystem.task_events') is null then
-    alter table public.task_events set schema ecosystem;
-  end if;
+  if to_regclass('public.tasks') is not null and to_regclass('ecosystem.tasks') is null then alter table public.tasks set schema ecosystem; end if;
+  if to_regclass('public.task_dependencies') is not null and to_regclass('ecosystem.task_dependencies') is null then alter table public.task_dependencies set schema ecosystem; end if;
+  if to_regclass('public.task_runs') is not null and to_regclass('ecosystem.task_runs') is null then alter table public.task_runs set schema ecosystem; end if;
+  if to_regclass('public.task_events') is not null and to_regclass('ecosystem.task_events') is null then alter table public.task_events set schema ecosystem; end if;
 end $$;
 
--- If V6 was not previously applied, create the private tables directly.
 create table if not exists ecosystem.tasks (
   id uuid primary key default gen_random_uuid(),
   external_id text unique,
@@ -120,8 +111,7 @@ create index if not exists task_dependencies_reverse_idx on ecosystem.task_depen
 create index if not exists task_runs_task_idx on ecosystem.task_runs(task_id,started_at desc);
 create index if not exists task_events_task_idx on ecosystem.task_events(task_id,created_at desc);
 
-create or replace function ecosystem.kueper_touch_updated_at() returns trigger language plpgsql set search_path=ecosystem,pg_temp as $$
-begin new.updated_at=now(); return new; end $$;
+create or replace function ecosystem.kueper_touch_updated_at() returns trigger language plpgsql set search_path=ecosystem,pg_temp as $$ begin new.updated_at=now(); return new; end $$;
 drop trigger if exists tasks_touch_updated_at on ecosystem.tasks;
 create trigger tasks_touch_updated_at before update on ecosystem.tasks for each row execute function ecosystem.kueper_touch_updated_at();
 
@@ -130,7 +120,8 @@ declare cycle_found boolean;
 begin
   if new.task_id=new.depends_on_task_id then raise exception 'task cannot depend on itself'; end if;
   with recursive ancestors(id) as (
-    select new.depends_on_task_id union
+    select new.depends_on_task_id
+    union
     select d.depends_on_task_id from ecosystem.task_dependencies d join ancestors a on d.task_id=a.id
   ) select exists(select 1 from ancestors where id=new.task_id) into cycle_found;
   if cycle_found then raise exception 'dependency cycle detected for task %',new.task_id; end if;
@@ -151,7 +142,7 @@ end $$;
 drop trigger if exists tasks_log_status on ecosystem.tasks;
 create trigger tasks_log_status after insert or update of status on ecosystem.tasks for each row execute function ecosystem.kueper_log_task_status_change();
 
--- Public RPC facade: PostgREST can call these without exposing the private ecosystem schema.
+-- Public RPC facade: callers do not need the private `ecosystem` schema exposed through PostgREST.
 create or replace function public.kueper_create_task(
   p_type text,p_source_project text,p_target_project text,p_payload jsonb default '{}'::jsonb,p_priority text default 'medium',
   p_parent_task_id uuid default null,p_dependencies uuid[] default '{}'::uuid[],p_idempotency_key text default null,p_external_id text default null,
@@ -187,10 +178,13 @@ declare picked ecosystem.tasks; new_token uuid:=gen_random_uuid();
 begin
   if p_worker_id is null or length(trim(p_worker_id))=0 then raise exception 'worker id is required'; end if;
   if p_lease_seconds<30 or p_lease_seconds>3600 then raise exception 'lease seconds must be between 30 and 3600'; end if;
-  select t.* into picked from ecosystem.tasks t where t.status='pending' and t.available_at<=now() and t.attempt_count<t.max_attempts
-    and (p_target_project is null or t.target_project=p_target_project) and (p_types is null or t.type=any(p_types))
+  select t.* into picked from ecosystem.tasks t
+  where t.status='pending' and t.available_at<=now() and t.attempt_count<t.max_attempts
+    and (p_target_project is null or t.target_project=p_target_project)
+    and (p_types is null or t.type=any(p_types))
     and not exists(select 1 from ecosystem.task_dependencies d join ecosystem.tasks dep on dep.id=d.depends_on_task_id where d.task_id=t.id and dep.status<>'completed')
-    order by case t.priority when 'critical' then 0 when 'high' then 1 when 'medium' then 2 else 3 end,t.available_at,t.created_at for update skip locked limit 1;
+  order by case t.priority when 'critical' then 0 when 'high' then 1 when 'medium' then 2 else 3 end,t.available_at,t.created_at
+  for update skip locked limit 1;
   if picked.id is null then return null; end if;
   update ecosystem.tasks set status='claimed',claimed_at=now(),lease_owner=p_worker_id,lease_token=new_token,lease_expires_at=now()+make_interval(secs=>p_lease_seconds),attempt_count=attempt_count+1,last_error=null where id=picked.id returning * into picked;
   insert into ecosystem.task_runs(task_id,attempt,worker_id,provider,model,status) values(picked.id,picked.attempt_count,p_worker_id,picked.preferred_provider,picked.preferred_model,'running');
@@ -199,38 +193,25 @@ end $$;
 
 create or replace function public.kueper_start_task(p_task_id uuid,p_lease_token uuid) returns ecosystem.tasks language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
 declare r ecosystem.tasks; begin update ecosystem.tasks set status='running',started_at=coalesce(started_at,now()) where id=p_task_id and status='claimed' and lease_token=p_lease_token and lease_expires_at>now() returning * into r; if r.id is null then raise exception 'task lease invalid or expired'; end if; return r; end $$;
-
 create or replace function public.kueper_heartbeat_task(p_task_id uuid,p_lease_token uuid,p_extend_seconds integer default 600) returns timestamptz language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
 declare expiry timestamptz; begin if p_extend_seconds<30 or p_extend_seconds>3600 then raise exception 'invalid lease extension'; end if; update ecosystem.tasks set lease_expires_at=now()+make_interval(secs=>p_extend_seconds) where id=p_task_id and status in ('claimed','running') and lease_token=p_lease_token and lease_expires_at>now() returning lease_expires_at into expiry; if expiry is null then raise exception 'task lease invalid or expired'; end if; return expiry; end $$;
-
-create or replace function public.kueper_complete_task(p_task_id uuid,p_lease_token uuid,p_result jsonb default '{}'::jsonb,p_provider text default null,p_model text default null,p_input_tokens bigint default null,p_output_tokens bigint default null,p_cost_estimate_eur numeric default null)
-returns ecosystem.tasks language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
+create or replace function public.kueper_complete_task(p_task_id uuid,p_lease_token uuid,p_result jsonb default '{}'::jsonb,p_provider text default null,p_model text default null,p_input_tokens bigint default null,p_output_tokens bigint default null,p_cost_estimate_eur numeric default null) returns ecosystem.tasks language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
 declare r ecosystem.tasks; begin update ecosystem.tasks set status='completed',result=p_result,completed_at=now(),agent_provider=coalesce(p_provider,agent_provider),agent_model=coalesce(p_model,agent_model),input_tokens=p_input_tokens,output_tokens=p_output_tokens,cost_estimate_eur=p_cost_estimate_eur,lease_owner=null,lease_token=null,lease_expires_at=null,blocked_reason=null where id=p_task_id and status in ('claimed','running') and lease_token=p_lease_token returning * into r; if r.id is null then raise exception 'task lease invalid'; end if; update ecosystem.task_runs set status='succeeded',finished_at=now(),provider=coalesce(p_provider,provider),model=coalesce(p_model,model),input_tokens=p_input_tokens,output_tokens=p_output_tokens,cost_estimate_eur=p_cost_estimate_eur,result=p_result where task_id=r.id and attempt=r.attempt_count; return r; end $$;
-
-create or replace function public.kueper_fail_task(p_task_id uuid,p_lease_token uuid,p_error text,p_retry_delay_seconds integer default 300)
-returns ecosystem.tasks language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
+create or replace function public.kueper_fail_task(p_task_id uuid,p_lease_token uuid,p_error text,p_retry_delay_seconds integer default 300) returns ecosystem.tasks language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
 declare r ecosystem.tasks; terminal boolean; begin select attempt_count>=max_attempts into terminal from ecosystem.tasks where id=p_task_id and lease_token=p_lease_token; if terminal is null then raise exception 'task lease invalid'; end if; update ecosystem.tasks set status=case when terminal then 'failed' else 'pending' end,last_error=p_error,available_at=case when terminal then available_at else now()+make_interval(secs=>greatest(0,p_retry_delay_seconds)) end,completed_at=case when terminal then now() else null end,lease_owner=null,lease_token=null,lease_expires_at=null where id=p_task_id and status in ('claimed','running') and lease_token=p_lease_token returning * into r; if r.id is null then raise exception 'task lease invalid'; end if; update ecosystem.task_runs set status='failed',finished_at=now(),error=p_error where task_id=r.id and attempt=r.attempt_count; return r; end $$;
-
-create or replace function public.kueper_park_task(p_task_id uuid,p_lease_token uuid,p_reason text,p_requires_owner_decision boolean default false)
-returns ecosystem.tasks language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
+create or replace function public.kueper_park_task(p_task_id uuid,p_lease_token uuid,p_reason text,p_requires_owner_decision boolean default false) returns ecosystem.tasks language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
 declare r ecosystem.tasks; begin update ecosystem.tasks set status='parked',blocked_reason=p_reason,requires_owner_decision=p_requires_owner_decision,lease_owner=null,lease_token=null,lease_expires_at=null where id=p_task_id and status in ('claimed','running') and lease_token=p_lease_token returning * into r; if r.id is null then raise exception 'task lease invalid'; end if; update ecosystem.task_runs set status='succeeded',finished_at=now(),result=jsonb_build_object('parked',true,'reason',p_reason) where task_id=r.id and attempt=r.attempt_count; return r; end $$;
-
 create or replace function public.kueper_requeue_parked_task(p_task_id uuid) returns ecosystem.tasks language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
 declare r ecosystem.tasks; begin update ecosystem.tasks set status='pending',available_at=now(),blocked_reason=null,requires_owner_decision=false where id=p_task_id and status='parked' and requires_owner_decision=false returning * into r; return r; end $$;
-
 create or replace function public.kueper_cancel_task(p_task_id uuid,p_reason text default null) returns ecosystem.tasks language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
 declare r ecosystem.tasks; begin update ecosystem.tasks set status='cancelled',completed_at=now(),blocked_reason=coalesce(p_reason,blocked_reason),lease_owner=null,lease_token=null,lease_expires_at=null where id=p_task_id and status not in ('completed','failed','cancelled') returning * into r; return r; end $$;
-
 create or replace function public.kueper_add_dependency(p_task_id uuid,p_depends_on_task_id uuid) returns ecosystem.task_dependencies language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
 declare r ecosystem.task_dependencies; begin if not exists(select 1 from ecosystem.tasks where id=p_task_id) then raise exception 'task not found'; end if; if not exists(select 1 from ecosystem.tasks where id=p_depends_on_task_id) then raise exception 'dependency task not found'; end if; insert into ecosystem.task_dependencies(task_id,depends_on_task_id) values(p_task_id,p_depends_on_task_id) on conflict(task_id,depends_on_task_id) do update set task_id=excluded.task_id returning * into r; return r; end $$;
-
 create or replace function public.kueper_remove_dependency(p_task_id uuid,p_depends_on_task_id uuid) returns boolean language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
 declare n integer; begin delete from ecosystem.task_dependencies where task_id=p_task_id and depends_on_task_id=p_depends_on_task_id; get diagnostics n=row_count; return n>0; end $$;
-
 create or replace function public.kueper_recover_expired_leases() returns integer language plpgsql security definer set search_path=ecosystem,public,pg_temp as $$
 declare n integer; begin with expired as (update ecosystem.tasks set status=case when attempt_count>=max_attempts then 'failed' else 'pending' end,last_error=coalesce(last_error,'worker lease expired'),available_at=case when attempt_count>=max_attempts then available_at else now()+interval '60 seconds' end,completed_at=case when attempt_count>=max_attempts then now() else null end,lease_owner=null,lease_token=null,lease_expires_at=null where status in ('claimed','running') and lease_expires_at<now() returning id,attempt_count) update ecosystem.task_runs r set status='lease-expired',finished_at=now(),error=coalesce(error,'worker lease expired') from expired e where r.task_id=e.id and r.attempt=e.attempt_count and r.status='running'; get diagnostics n=row_count; return n; end $$;
 
--- Security: private state tables are not exposed to browser roles. Backend reads state; all mutation goes through RPCs.
 alter table ecosystem.tasks enable row level security;
 alter table ecosystem.task_dependencies enable row level security;
 alter table ecosystem.task_runs enable row level security;
