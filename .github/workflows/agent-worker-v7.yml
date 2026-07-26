@@ -1,0 +1,71 @@
+name: KUEPER Agent Worker V7
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_tasks:
+        description: Maximum tasks for this run
+        required: false
+        default: "3"
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kueper-agent-worker-v7
+  cancel-in-progress: false
+
+jobs:
+  worker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+      KUEPER_MAX_TASKS: ${{ inputs.max_tasks || '3' }}
+    steps:
+      - name: Checkout control plane
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Claude Code agent frontend
+        run: npm install --global @anthropic-ai/claude-code
+
+      - name: Verify runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          for name in SUPABASE_URL SUPABASE_SECRET_KEY DEEPSEEK_API_KEY KUEPER_BOT_TOKEN; do
+            test -n "${!name}" || { echo "Missing $name"; exit 2; }
+          done
+          python --version
+          claude --version
+          gh --version
+
+      - name: Test provider router
+        run: python -m unittest tools/worker/test_provider_router.py
+
+      - name: Process bounded task batch
+        run: python tools/worker/agent_worker.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
+
+      - name: Upload worker report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-worker-v7-${{ github.run_id }}
+          path: agent-worker-report.json
+          if-no-files-found: ignore
+          retention-days: 30
