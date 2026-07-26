@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "timezone": "UTC",
+  "providers": {
+    "deepseek": {
+      "enabled": true,
+      "default_model": "deepseek-v4-flash",
+      "complex_model": "deepseek-v4-pro",
+      "peak_multiplier": 2.0,
+      "peak_windows": [
+        {"start": "01:00", "end": "04:00"},
+        {"start": "06:00", "end": "10:00"}
+      ],
+      "defer_during_peak": ["low", "medium"],
+      "never_defer": ["high", "critical"]
+    }
+  },
+  "task_classes": {
+    "RESEARCH_DISCOVERY": {"cost_sensitive": true, "complexity": "low"},
+    "RESEARCH": {"cost_sensitive": true, "complexity": "high"},
+    "CANON_VALIDATION": {"cost_sensitive": true, "complexity": "medium"},
+    "CLASSIFY": {"cost_sensitive": true, "complexity": "low"},
+    "ROUTE": {"cost_sensitive": true, "complexity": "low"},
+    "CODE": {"cost_sensitive": false, "complexity": "high"},
+    "COMPLEX_CODING": {"cost_sensitive": false, "complexity": "high"},
+    "BUG": {"cost_sensitive": false, "complexity": "medium"},
+    "BUILD_FAILED": {"cost_sensitive": false, "complexity": "high"},
+    "SECURITY": {"cost_sensitive": false, "complexity": "high"}
+  }
+}
