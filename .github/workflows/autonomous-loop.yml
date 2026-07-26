@@ -57,6 +57,9 @@ jobs:
       - name: Route project follow-up requests
         run: python3 tools/loop/route_followups.py | tee ecosystem-routing-report.json
 
+      - name: Consume routed outbox envelopes
+        run: python3 tools/loop/cleanup_outbox.py | tee ecosystem-outbox-cleanup-report.json
+
       - name: Execute ecosystem sweep
         run: python3 tools/loop/orchestrate.py | tee ecosystem-loop-report.json
 
@@ -68,6 +71,7 @@ jobs:
           path: |
             ecosystem-parked-report.json
             ecosystem-routing-report.json
+            ecosystem-outbox-cleanup-report.json
             ecosystem-loop-report.json
           if-no-files-found: ignore
           retention-days: 30
