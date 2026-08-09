@@ -89,6 +89,7 @@ Betroffene Repositories: ...
 - [ECO-ARC-0025-2026-DE — Execution Plane, Provider- und Kostenrouting](./ECO-ARC-0025-2026-DE.md) — `accepted`
 - [ECO-ARC-0026-2026-DE — Provider Circuit Breaker für Billing- und Verfügbarkeitsfehler](./ECO-ARC-0026-2026-DE.md) — `accepted`
 - [ECO-ARC-0027-2026-DE — Request, Task und Normierungsstelle](./ECO-ARC-0027-2026-DE.md) — `accepted`
+- [ECO-ARC-0028-2026-DE — Systemweite KI-Transparenz für öffentliche Publikationen](./ECO-ARC-0028-2026-DE.md) — `accepted`
 
 ## Erste mögliche Entscheidungen
 
