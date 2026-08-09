@@ -1,0 +1,25 @@
+{
+  "id": "ECO:POLICY:PUBLICATION-TRANSPARENCY",
+  "version": "1.0.0",
+  "effectiveDate": "2026-08-09",
+  "language": "de",
+  "scope": "public-websites",
+  "title": "Transparenz zum Einsatz von KI",
+  "shortLabel": "KI-Transparenz",
+  "shortNotice": "Bei der sprachlichen, redaktionellen und teilweise konzeptionellen Bearbeitung von Inhalten kommen KI-gestützte Werkzeuge zum Einsatz. Inhaltliche Entscheidungen, Endredaktion und Verantwortung für veröffentlichte Fassungen liegen bei Thomas Peter Küper.",
+  "fullNotice": [
+    "Bei der Erstellung und Bearbeitung von Inhalten nutze ich auch KI-gestützte Werkzeuge. Je nach Text kann ihr Einsatz von Rechtschreib- und Stilkorrekturen über redaktionelle Strukturierung bis zur dialogischen, konzeptionellen Mitarbeit reichen.",
+    "Die veröffentlichten Fassungen werden von mir ausgewählt und redaktionell verantwortet. Inhaltliche Entscheidungen, Einordnung, Annahme oder Verwerfung von Vorschlägen sowie die Endredaktion liegen bei Thomas Peter Küper.",
+    "Reine Korrektur-, Lektorats- oder Formatierungsschritte werden nicht bei jedem einzelnen Inhalt gesondert ausgewiesen. Wo generative KI substanziell an der Entwicklung eines Textes, Modells oder Konzepts beteiligt war und ein zusätzlicher werkbezogener Hinweis zur Einordnung sinnvoll ist, kann dieser direkt am jeweiligen Inhalt ergänzt werden."
+  ],
+  "individualDisclosure": {
+    "requiredByPolicy": false,
+    "recommendedWhen": "substantial-generative-ai-contribution",
+    "template": "Entwickelt und redaktionell überarbeitet unter Einsatz generativer KI. Endredaktion und Verantwortung: Thomas Peter Küper."
+  },
+  "governance": {
+    "sourceOfTruth": "thomaspeterkueper/kueper-ecosystem",
+    "decision": "ECO-ARC-0028-2026-DE",
+    "distribution": "target repositories consume or mirror this policy; automatic synchronization is not yet implemented"
+  }
+}
