@@ -24,6 +24,7 @@ Kein Repository darf fremde Domänen stillschweigend kanonisieren.
 | Systemweite Architektur und Governance | `kueper-ecosystem` |
 | Repository-Zuständigkeiten | `kueper-ecosystem` |
 | Cross-Repository-Workflow | `kueper-ecosystem` |
+| Systemweite Publikations- und KI-Transparenzpolicy | `kueper-ecosystem` (`config/publication-transparency.json`) |
 | Gemeinsame ID- und Metadatenregeln | `kueper-ecosystem`, sofern systemweit; sonst jeweiliges Fachrepo |
 | Entitäten und Relationen | `kueper-knowledge-graph` |
 | Knowledge Domains | `kueper-knowledge-graph` |
