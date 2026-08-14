@@ -23,13 +23,18 @@ jobs:
     timeout-minutes: 90
     env:
       KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      ANTHROPIC_BASE_URL: "https://api.deepseek.com/anthropic"
+      ANTHROPIC_AUTH_TOKEN: ${{ secrets.DEEPSEEK_API_KEY }}
+      ANTHROPIC_MODEL: "deepseek-v4-flash"
+      ANTHROPIC_DEFAULT_OPUS_MODEL: "deepseek-v4-pro[1m]"
+      ANTHROPIC_DEFAULT_SONNET_MODEL: "deepseek-v4-flash"
+      ANTHROPIC_DEFAULT_HAIKU_MODEL: "deepseek-v4-flash"
       KUEPER_MAX_TASKS: ${{ inputs.max_tasks || '3' }}
-      KUEPER_AUTO_MERGE: "true"
       KUEPER_MAX_FOLLOWUPS: "10"
       KUEPER_MAX_FOLLOWUP_DEPTH: "3"
       KUEPER_MAX_PARKED_REEVALUATIONS: "3"
-      KUEPER_PARKED_AGENT_CMD: codex exec --full-auto
+      KUEPER_PARKED_AGENT_CMD: claude -p --dangerously-skip-permissions
     steps:
       - name: Checkout control plane
         uses: actions/checkout@v4
@@ -39,16 +44,16 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Install Codex CLI
-        run: npm install --global @openai/codex
+      - name: Install Claude Code agent frontend
+        run: npm install --global @anthropic-ai/claude-code
 
       - name: Verify configuration
         shell: bash
         run: |
           set -euo pipefail
           test -n "$KUEPER_BOT_TOKEN" || { echo "Missing KUEPER_BOT_TOKEN"; exit 2; }
-          test -n "$OPENAI_API_KEY" || { echo "Missing OPENAI_API_KEY"; exit 2; }
-          codex --version
+          test -n "$DEEPSEEK_API_KEY" || { echo "Missing DEEPSEEK_API_KEY"; exit 2; }
+          claude --version
           gh --version
 
       - name: Re-evaluate parked tasks
@@ -60,9 +65,6 @@ jobs:
       - name: Consume routed outbox envelopes
         run: python3 tools/loop/cleanup_outbox.py | tee ecosystem-outbox-cleanup-report.json
 
-      - name: Execute ecosystem sweep
-        run: python3 tools/loop/orchestrate.py | tee ecosystem-loop-report.json
-
       - name: Upload loop reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -72,6 +74,5 @@ jobs:
             ecosystem-parked-report.json
             ecosystem-routing-report.json
             ecosystem-outbox-cleanup-report.json
-            ecosystem-loop-report.json
           if-no-files-found: ignore
           retention-days: 30
