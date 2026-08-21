@@ -1,0 +1,12 @@
+{
+  "target": "ECO",
+  "title": "Implement common Document Ingest Layer v0.1",
+  "reason": "Canon/Continuity, KG curation, research evidence and later persistent character agents need one shared source/provenance substrate. Individual agents should not parse repositories independently or treat document text as canonical truth.",
+  "requested_change": "Implement the smallest common Document Ingest Layer v0.1 following docs/architecture/DOCUMENT_INGEST_LAYER.md. Add schemas/contracts for source registry, source documents, passages, extracted assertions and interpretation candidates; A0_RAW/A1_EXTRACTED/A2_ACCEPTED/A3_CANONICAL lifecycle metadata; epistemic roles that distinguish narrator assertions, character speech/belief/perception, document claims and system observations; a deterministic Markdown/plain-text repository adapter; version-aware stable fingerprints; duplicate-safe incremental re-ingest; and a bounded review/outbox path for ingest conflicts. Preserve repository commit/blob and passage provenance. Do not directly mutate canon. Include deterministic tests for idempotent unchanged re-ingest, changed-passage detection and the rule that character speech does not automatically become world truth. Keep future DOCX/PDF/upload adapters outside v0.1 but make the contracts extensible.",
+  "expected_result": "The Ecosystem has a shared, version-aware document source and provenance layer that can ingest registered text-native repository documents into passages, assertions and structured candidates without conflating source statements with accepted or canonical truth, providing a stable substrate for Canon/Continuity and other agents.",
+  "priority": "high",
+  "cost_policy": "normal",
+  "estimated_effort": "high",
+  "depth": 1,
+  "affects": ["ECO", "KG", "SSF", "NOXIA", "NXU"]
+}
