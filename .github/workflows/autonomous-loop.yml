@@ -7,8 +7,15 @@ on:
         description: Maximum tasks to execute in this sweep
         required: false
         default: "3"
+  push:
+    branches:
+      - main
+    paths:
+      - ".kueper/outbox/**"
+      - "tools/loop/**"
+      - ".github/workflows/autonomous-loop.yml"
   schedule:
-    - cron: "17 * * * *"
+    - cron: "7,22,37,52 * * * *"
 
 permissions:
   contents: read
