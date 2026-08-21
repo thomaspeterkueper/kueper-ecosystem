@@ -23,6 +23,8 @@ ROOT = Path(__file__).resolve().parents[2]
 REGISTRY = ROOT / "registry" / "projects.json"
 MAX_DEPTH = int(os.environ.get("KUEPER_MAX_FOLLOWUP_DEPTH", "3"))
 MAX_ROUTES = int(os.environ.get("KUEPER_MAX_FOLLOWUPS", "10"))
+VALID_COST_POLICIES = {"immediate", "normal", "prefer_off_peak", "off_peak_only"}
+VALID_EFFORT = {"low", "medium", "high"}
 
 
 def gh(token: str, method: str, path: str, body: dict[str, Any] | None = None) -> Any:
@@ -109,6 +111,10 @@ def validate(env: dict[str, Any], source_code: str, by_code: dict[str, dict[str,
         errors.append("depth-limit")
     if env.get("priority", "medium") not in {"low", "medium", "high", "critical"}:
         errors.append("invalid-priority")
+    if env.get("cost_policy", "normal") not in VALID_COST_POLICIES:
+        errors.append("invalid-cost-policy")
+    if env.get("estimated_effort", "medium") not in VALID_EFFORT:
+        errors.append("invalid-estimated-effort")
     return errors
 
 
@@ -146,6 +152,8 @@ def markdown(env: dict[str, Any], ident: str, source: str, target: str, fp: str,
     affects_s = ", ".join(str(x) for x in affects)
     parent = str(env.get("parent_task") or "")
     depth = int(env.get("depth", 1))
+    cost_policy = env.get("cost_policy", "normal")
+    estimated_effort = env.get("estimated_effort", "medium")
     return f'''---
 id: {ident}
 title: {env['title'].strip()}
@@ -155,6 +163,8 @@ target: {target}
 created: {today}
 requested_by: autonomous-project-loop
 priority: {env.get('priority', 'medium')}
+cost_policy: {cost_policy}
+estimated_effort: {estimated_effort}
 affects: [{affects_s}]
 routing_fingerprint: {fp}
 parent_task: {parent}
@@ -184,7 +194,7 @@ Dieser Bedarf wurde im zuständigen Quellprojekt während der autonomen Bearbeit
 
 ## Hinweise
 
-Automatisch gerouteter Folge-Request. Parent: `{parent or 'none'}`. Routing-Tiefe: {depth}/{MAX_DEPTH}.
+Automatisch gerouteter Folge-Request. Parent: `{parent or 'none'}`. Routing-Tiefe: {depth}/{MAX_DEPTH}. Kostenpolicy: `{cost_policy}`. Aufwand: `{estimated_effort}`.
 '''
 
 
