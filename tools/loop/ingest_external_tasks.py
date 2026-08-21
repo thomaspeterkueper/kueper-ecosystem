@@ -22,6 +22,8 @@ GITHUB_API = "https://api.github.com"
 ROOT = Path(__file__).resolve().parents[2]
 REGISTRY_PATH = ROOT / "registry" / "projects.json"
 MAX_INGEST = int(os.environ.get("KUEPER_MAX_EXTERNAL_INGEST", "5"))
+VALID_COST_POLICIES = {"immediate", "normal", "prefer_off_peak", "off_peak_only"}
+VALID_EFFORT = {"low", "medium", "high"}
 
 CODES_TO_IDS = {
     "ECO": "ecosystem", "KG": "knowledge-graph", "SSF": "ssf", "NOXIA": "noxia",
@@ -177,11 +179,7 @@ def main() -> int:
                 })
                 continue
 
-            requested_change = (
-                section(text, "Gewünschte Änderung")
-                or section(text, "Ziel")
-                or section(text, "KXF-Anforderung")
-            )
+            requested_change = section(text, "Gewünschte Änderung") or section(text, "Ziel") or section(text, "KXF-Anforderung")
             expected_result = section(text, "Erwartetes Ergebnis") or section(text, "KXF-Anforderung")
             reason = section(text, "Anlass") or section(text, "Begründung") or section(text, "Herkunft")
             instruction = requested_change or f"Bearbeite den External Task {external_id} gemäß Repository-Governance."
@@ -192,6 +190,12 @@ def main() -> int:
             priority = fm.get("priority", "medium").lower()
             if priority not in {"low", "medium", "high", "critical"}:
                 priority = "medium"
+            cost_policy = fm.get("cost_policy", "prefer_off_peak" if priority in {"low", "medium"} else "immediate").lower()
+            if cost_policy not in VALID_COST_POLICIES:
+                cost_policy = "normal"
+            estimated_effort = fm.get("estimated_effort", "high").lower()
+            if estimated_effort not in VALID_EFFORT:
+                estimated_effort = "medium"
 
             payload = {
                 "instruction": instruction,
@@ -206,6 +210,8 @@ def main() -> int:
                 "allow_repository_changes": True,
                 "allow_pull_request": True,
                 "allow_merge": False,
+                "cost_policy": cost_policy,
+                "estimated_effort": estimated_effort,
             }
             idem = f"external-task:{repo}:{external_id}"
             created = rpc(supabase_url, supabase_secret, "kueper_create_task", {
@@ -217,14 +223,15 @@ def main() -> int:
                 "p_external_id": external_id,
                 "p_idempotency_key": idem,
                 "p_preferred_provider": "deepseek",
-                "p_preferred_model": "deepseek-v4-flash",
+                "p_preferred_model": None,
                 "p_repository": repo,
-                "p_metadata": {"actor": "external-task-ingestor", "source": "github-external-task"},
+                "p_metadata": {"actor": "external-task-ingestor", "source": "github-external-task", "cost_policy": cost_policy, "estimated_effort": estimated_effort},
             })
             task_id = created.get("id") if isinstance(created, dict) else None
             results.append({
                 "path": path, "repository": repo, "external_id": external_id,
                 "task_id": task_id, "result": "queued-or-existing",
+                "cost_policy": cost_policy, "estimated_effort": estimated_effort,
             })
             ingested += 1
 

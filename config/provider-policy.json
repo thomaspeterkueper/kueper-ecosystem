@@ -1,6 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "timezone": "UTC",
+  "notes": "Peak windows are configuration, not hard-coded provider truth. Update them when DeepSeek publishes revised official windows.",
   "providers": {
     "deepseek": {
       "enabled": true,
@@ -21,9 +22,13 @@
     "CANON_VALIDATION": {"cost_sensitive": true, "complexity": "medium"},
     "CLASSIFY": {"cost_sensitive": true, "complexity": "low"},
     "ROUTE": {"cost_sensitive": true, "complexity": "low"},
+    "IMPLEMENT_EXTERNAL_REQUIREMENT": {"cost_sensitive": true, "complexity": "high"},
+    "IMPLEMENT_AGENT_RUNTIME": {"cost_sensitive": true, "complexity": "high"},
+    "LONG_SIMULATION_ANALYSIS": {"cost_sensitive": true, "complexity": "high"},
     "CODE": {"cost_sensitive": false, "complexity": "high"},
     "COMPLEX_CODING": {"cost_sensitive": false, "complexity": "high"},
     "BUG": {"cost_sensitive": false, "complexity": "medium"},
+    "DEAD_END": {"cost_sensitive": false, "complexity": "medium"},
     "BUILD_FAILED": {"cost_sensitive": false, "complexity": "high"},
     "SECURITY": {"cost_sensitive": false, "complexity": "high"}
   }
