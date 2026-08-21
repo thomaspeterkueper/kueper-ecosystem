@@ -79,7 +79,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python tools/worker/agent_worker_v71.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
+          python tools/worker/agent_worker_v72.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
 
       - name: Upload worker report
         if: always()
