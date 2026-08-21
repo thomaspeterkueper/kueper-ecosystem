@@ -1,0 +1,12 @@
+{
+  "target": "ECO",
+  "title": "Implement Automated PR Review Agent v0.1",
+  "reason": "Agent-generated pull requests currently require manual architectural and correctness review, which breaks the autonomous loop. The Ecosystem needs an independent reviewer that can detect blocking defects, create idempotent fix tasks and re-review updated PRs without gaining merge authority.",
+  "requested_change": "Implement Automated PR Review Agent v0.1 following docs/architecture/AUTOMATED_PR_REVIEW_AGENT.md. Tie agent-generated PRs to their originating KUEPER task; load task acceptance criteria, repository governance, referenced architecture contracts, full PR diff and available check results; invoke a configurable review provider/model, preferring a provider/model distinct from the implementation run where available; require schema-validated structured findings and PASS/CHANGES_REQUIRED/REVIEW_ERROR verdicts; persist review runs/findings keyed by PR head SHA and stable finding fingerprints; publish concise GitHub review/comment output; create exactly one idempotent REVIEW_FIX task for blocking findings; and re-review after the PR head changes while tracking resolved findings. Include deterministic tests for PASS, CHANGES_REQUIRED, unchanged-head deduplication and REVIEW_ERROR. Include an acceptance fixture able to detect the NOXIA observation-producer class of errors: unresolved findings re-emitted after cooldown and estimated_effort lost at an outbox boundary. Do not auto-merge.",
+  "expected_result": "Agent-generated PRs enter an independent automated review/fix/re-review loop. Blocking findings generate one deduplicated REVIEW_FIX task, corrected PR heads are reviewed again, and no PR is merged automatically in v0.1.",
+  "priority": "high",
+  "cost_policy": "normal",
+  "estimated_effort": "high",
+  "depth": 1,
+  "affects": ["ECO", "KG", "SSF", "NOXIA", "NXU"]
+}
