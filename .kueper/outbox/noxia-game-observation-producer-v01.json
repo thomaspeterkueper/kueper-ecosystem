@@ -1,0 +1,12 @@
+{
+  "target": "NOXIA",
+  "title": "Implement NOXIA game observation producer v0.1",
+  "reason": "NOXIA should be able to act as an evidence-producing sensor for the KUEPER Ecosystem. Runtime gameplay and autonomous testers need a bounded way to turn reproducible game anomalies into cross-project requests without allowing game events to directly mutate repositories.",
+  "requested_change": "Implement the smallest NOXIA-side producer for the Game Observation -> Evidence -> TaskCandidate protocol defined by kueper-ecosystem/docs/architecture/GAME_OBSERVATION_TASK_PROTOCOL.md. Add a local observation sink usable by deterministic game assertions and NOXIA_TESTER_INTELLIGENT_01, stable fingerprints, occurrence aggregation, cooldown/deduplication and candidate gating. In v0.1 promote only reproducible BUG and DEAD_END observations automatically. Convert approved candidates into valid KUEPER outbox routing envelopes, but do not write directly to GitHub or Supabase from gameplay code. Preserve world_id, agent_id, reproduction, expected/actual, confidence and evidence provenance. Add deterministic tests proving duplicate observations collapse to one candidate/request and a low-confidence/non-reproducible observation does not emit an implementation request.",
+  "expected_result": "NOXIA can locally record gameplay observations and emit a bounded, deduplicated KUEPER outbox request for a reproducible BUG or DEAD_END, while ordinary game actions, proposals, balance opinions and weak observations do not directly create development tasks.",
+  "priority": "medium",
+  "cost_policy": "prefer_off_peak",
+  "estimated_effort": "high",
+  "depth": 1,
+  "affects": ["NOXIA", "ECO"]
+}
