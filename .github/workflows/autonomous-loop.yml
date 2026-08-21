@@ -60,6 +60,9 @@ jobs:
           claude --version
           gh --version
 
+      - name: Test external task ingestion parser
+        run: python3 -m unittest tools/loop/test_ingest_external_tasks.py
+
       - name: Re-evaluate parked tasks
         shell: bash
         run: |
