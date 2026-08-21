@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "type": "IMPLEMENT_AGENT_RUNTIME",
+  "source_project": "kueper-ecosystem",
+  "target_project": "noxiagame",
+  "repository": "thomaspeterkueper/noxiagame",
+  "priority": "high",
+  "idempotency_key": "noxia-autonomous-tester-intelligent-01-v01",
+  "reason": "Implement the second reference implementation of the KUEPER Agent Runtime: a persistent intelligent NOXIA test player that discovers defects through real gameplay and can emit evidenced development requests.",
+  "instruction": "Implement the smallest useful v0.1 foundation for NOXIA_TESTER_INTELLIGENT_01. First inspect the current NOXIA architecture and repository governance and adapt to existing game APIs rather than inventing parallel game state. Provide a read-only observation/state projection suitable for an autonomous player and a bounded typed gameplay action surface that uses the same authoritative game rules as human play wherever practical. Add persistent tester state sufficient for goals, recent observations/actions and memory across cycles. Implement a bounded Observe -> Goal/Plan -> Action -> Result loop that can run in a dedicated disposable test world. Add structured anomaly reporting for BUG and DEAD_END only in v0.1, including reproduction steps, expected/actual result, confidence and evidence. Reports must be suitable for later routing into the KUEPER ecosystem task bus, but the test player must not modify source code, canonical data, balance or game design itself. PROPOSAL, BALANCE and UX observations must not trigger autonomous implementation. Include deterministic deduplication/loop guards and a dry-run or deterministic test harness demonstrating at least one normal progression cycle and one anomaly-report cycle. Keep provider/LLM integration behind an adapter so agent identity does not depend on DeepSeek or any specific model. If the current game architecture lacks a safe authoritative action boundary, implement the minimal boundary first and document the remaining integration point rather than bypassing game invariants.",
+  "constraints": {
+    "allow_repository_changes": true,
+    "allow_pull_request": true,
+    "allow_merge": false,
+    "no_source_code_access_for_runtime_tester": true,
+    "no_autonomous_design_changes": true,
+    "initial_report_types": ["BUG", "DEAD_END"]
+  },
+  "acceptance": [
+    "Tester consumes an explicit observation projection rather than arbitrary database/source access.",
+    "Tester actions are typed and validated by an authoritative NOXIA adapter before state mutation.",
+    "Agent state persists goals plus bounded memory/history across cycles.",
+    "Loop has explicit action/cycle/follow-up guards and deterministic deduplication.",
+    "BUG/DEAD_END reports contain reproduction, expected, actual, confidence and evidence.",
+    "A deterministic test/demo covers a successful gameplay cycle and an anomaly cycle.",
+    "No automatic merge, balance change, content invention or proposal implementation is introduced."
+  ],
+  "architecture_reference": "kueper-ecosystem/docs/architecture/KUEPER_AGENT_RUNTIME.md"
+}
