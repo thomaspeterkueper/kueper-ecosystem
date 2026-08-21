@@ -76,7 +76,10 @@ jobs:
         run: python -m unittest tools/worker/test_provider_router.py
 
       - name: Process bounded task batch
-        run: python tools/worker/agent_worker.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/worker/agent_worker_v71.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
 
       - name: Upload worker report
         if: always()
