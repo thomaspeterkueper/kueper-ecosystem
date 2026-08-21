@@ -3,7 +3,8 @@
 
 GitHub remains the audit/source document for cross-repository requests. The Supabase
 `ecosystem.tasks` table is the operational execution queue. Idempotency keys make the
-scan safe to run repeatedly.
+scan safe to run repeatedly. Both frontmatter-based and older heading-based task files
+are supported.
 """
 from __future__ import annotations
 
@@ -23,24 +24,12 @@ REGISTRY_PATH = ROOT / "registry" / "projects.json"
 MAX_INGEST = int(os.environ.get("KUEPER_MAX_EXTERNAL_INGEST", "5"))
 
 CODES_TO_IDS = {
-    "ECO": "ecosystem",
-    "KG": "knowledge-graph",
-    "SSF": "ssf",
-    "NOXIA": "noxia",
-    "NXU": "noxia-universe",
-    "MISH": "mishkenaz",
-    "OMNI": "omnizedenz",
-    "AVI": "avi-modell",
-    "CONTRA": "contracomology",
-    "ARCH": "kueper-archive-schema",
-    "ENDIA": "endia",
-    "ZEREYA": "zereya",
-    "DAVARU": "davaru",
-    "FLHERM": "fluide-hermeneutik",
-    "RESETH": "resonanz-ethik",
-    "KUE": "kueper-com",
-    "OTA": "ota",
-    "TKD": "thomas-kueper-de",
+    "ECO": "ecosystem", "KG": "knowledge-graph", "SSF": "ssf", "NOXIA": "noxia",
+    "NXU": "noxia-universe", "MISH": "mishkenaz", "OMNI": "omnizedenz",
+    "AVI": "avi-modell", "CONTRA": "contracomology", "ARCH": "kueper-archive-schema",
+    "ENDIA": "endia", "ZEREYA": "zereya", "DAVARU": "davaru",
+    "FLHERM": "fluide-hermeneutik", "RESETH": "resonanz-ethik", "KUE": "kueper-com",
+    "OTA": "ota", "TKD": "thomas-kueper-de",
 }
 
 
@@ -62,9 +51,7 @@ def gh(token: str, path: str) -> Any:
 
 def rpc(base: str, secret: str, name: str, payload: dict[str, Any]) -> Any:
     req = urllib.request.Request(
-        f"{base.rstrip('/')}/rest/v1/rpc/{name}",
-        data=json.dumps(payload).encode(),
-        method="POST",
+        f"{base.rstrip('/')}/rest/v1/rpc/{name}", data=json.dumps(payload).encode(), method="POST"
     )
     req.add_header("apikey", secret)
     req.add_header("Authorization", f"Bearer {secret}")
@@ -121,6 +108,11 @@ def section(text: str, heading: str) -> str:
     return m.group(1).strip() if m else ""
 
 
+def title(text: str) -> str:
+    m = re.search(r"^#\s+(.+?)\s*$", text, re.M)
+    return m.group(1).strip() if m else ""
+
+
 def resolve_project(value: str | None, fallback: str, by_id: dict[str, dict[str, Any]]) -> str:
     raw = (value or "").strip()
     if raw in by_id:
@@ -128,9 +120,14 @@ def resolve_project(value: str | None, fallback: str, by_id: dict[str, dict[str,
     upper = raw.upper()
     if upper in CODES_TO_IDS and CODES_TO_IDS[upper] in by_id:
         return CODES_TO_IDS[upper]
-    normalized = raw.lower().replace("_", "-")
+    normalized = re.sub(r"[^a-z0-9]+", "-", raw.lower()).strip("-")
     for pid, p in by_id.items():
-        if normalized in {pid.lower(), str(p.get("name", "")).lower().replace(" ", "-")}:
+        names = {
+            pid.lower(),
+            re.sub(r"[^a-z0-9]+", "-", str(p.get("name", "")).lower()).strip("-"),
+            re.sub(r"[^a-z0-9]+", "-", str(p.get("repository", "")).split("/")[-1].lower()).strip("-"),
+        }
+        if normalized in names:
             return pid
     return fallback
 
@@ -170,18 +167,27 @@ def main() -> int:
                 continue
 
             external_id = fm.get("id") or Path(path).stem
-            source_id = resolve_project(fm.get("source"), "ecosystem", by_id)
+            source_hint = fm.get("source") or section(text, "Herkunft")
+            source_id = resolve_project(source_hint, "ecosystem", by_id)
             resolved_target = resolve_project(fm.get("target"), target_id, by_id)
             if resolved_target != target_id:
-                results.append({"path": path, "repository": repo, "result": "target-mismatch", "declared_target": resolved_target, "repository_target": target_id})
+                results.append({
+                    "path": path, "repository": repo, "result": "target-mismatch",
+                    "declared_target": resolved_target, "repository_target": target_id,
+                })
                 continue
 
-            requested_change = section(text, "Gewünschte Änderung")
-            expected_result = section(text, "Erwartetes Ergebnis")
-            reason = section(text, "Anlass") or section(text, "Begründung")
+            requested_change = (
+                section(text, "Gewünschte Änderung")
+                or section(text, "Ziel")
+                or section(text, "KXF-Anforderung")
+            )
+            expected_result = section(text, "Erwartetes Ergebnis") or section(text, "KXF-Anforderung")
+            reason = section(text, "Anlass") or section(text, "Begründung") or section(text, "Herkunft")
             instruction = requested_change or f"Bearbeite den External Task {external_id} gemäß Repository-Governance."
-            if expected_result:
+            if expected_result and expected_result not in instruction:
                 instruction += f"\n\nErwartetes Ergebnis:\n{expected_result}"
+            instruction += f"\n\nLies den vollständigen External Task unter `{path}` vor der Implementierung."
 
             priority = fm.get("priority", "medium").lower()
             if priority not in {"low", "medium", "high", "critical"}:
@@ -191,7 +197,7 @@ def main() -> int:
                 "instruction": instruction,
                 "external_task_id": external_id,
                 "external_task_path": path,
-                "title": fm.get("title") or external_id,
+                "title": fm.get("title") or title(text) or external_id,
                 "reason": reason,
                 "source_repository": by_id.get(source_id, {}).get("repository"),
                 "target_repository": repo,
@@ -216,7 +222,10 @@ def main() -> int:
                 "p_metadata": {"actor": "external-task-ingestor", "source": "github-external-task"},
             })
             task_id = created.get("id") if isinstance(created, dict) else None
-            results.append({"path": path, "repository": repo, "external_id": external_id, "task_id": task_id, "result": "queued-or-existing"})
+            results.append({
+                "path": path, "repository": repo, "external_id": external_id,
+                "task_id": task_id, "result": "queued-or-existing",
+            })
             ingested += 1
 
     print(json.dumps({"ingested": ingested, "limit": MAX_INGEST, "results": results}, ensure_ascii=False, indent=2))
