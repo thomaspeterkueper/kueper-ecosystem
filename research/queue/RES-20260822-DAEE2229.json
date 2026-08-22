@@ -1,0 +1,24 @@
+{
+  "id": "RES-20260822-DAEE2229",
+  "status": "queued",
+  "created": "2026-08-22T04:00:19+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "title": "Dvaraka/Dwarka chronology: separating archaeology from fiction for the Mishkenaz timeline",
+  "question": "What is the current archaeological consensus on the occupation and maritime history of Dwarka and Bet Dwarka on the Saurashtra coast - especially the late-Harappan window around 1600-1400 BCE and any evidence of earlier settlement or destruction horizons - and how does that evidence relate to the Mahabharata/Harivamsha Dvaraka narrative, so the Mishkenaz canon can mark which timeline layers are archaeologically anchored, contested, or purely fictional?",
+  "why_now": "EXT-KG-MISH-20260726-001 (parked) explicitly requires exactly this epistemic separation (archaeology vs. reconstruction vs. fiction) but is blocked until the content migration from thomas-kueper.de lands (EXT-ECO-MISH-20260714-001, priority high); meanwhile new ASI excavations 2025-2026 are still running, so the anchor evidence is actively moving and should be captured before the six content pages are written from the canonical OTA documents.",
+  "languages": [
+    "en",
+    "hi",
+    "gu",
+    "sa"
+  ],
+  "relevance_score": 0.9125,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.95,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "fingerprint": "daee2229317c8b8c"
+}
