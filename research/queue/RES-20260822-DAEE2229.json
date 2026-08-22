@@ -1,6 +1,6 @@
 {
   "id": "RES-20260822-DAEE2229",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-22T04:00:19+00:00",
   "source_project": "mishkenaz",
   "source_repository": "thomaspeterkueper/mishkenaz.org",
@@ -22,5 +22,21 @@
   },
   "fingerprint": "daee2229317c8b8c",
   "updated_at": "2026-08-22T04:11:23+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/6"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/6",
+  "validated_at": "2026-08-22T05:47:23+00:00",
+  "validation_summary": "Der Kandidat ist eine umfassende archäologische Evidenzsynthese zu Dwarka/Bet Dwarka und direkt relevant für die Mishkenaz-Kernprämisse (Sprache der Dvaraka-Überlebenden, README). Er etabliert das spätharappische Fenster ca. 1600–1400 v. Chr. als belastbarsten Realwelt-Anker für eine Dvaraka-artige maritime Gemeinschaft und belegt, dass eine Kontinuität ab ca. 3500 v. Chr. und ein exakter Kollaps (z. B. 1247 v. Chr.) nicht archäologisch gedeckt, sondern fiktionale Setzung sind. Das Repository enthält jedoch noch keinerlei Kanon-Content (alle sechs Inhaltsseiten sind Platzhalter; Content-Migration aus thomas-kueper.de steht laut EXT-ECO-MISH-20260714-001 aus). Ein Canon-Conflict entsteht daher aktuell nicht — es gibt nichts, das realer Evidenz widerspräche. Der Kandidat erzeugt aber konkrete Folgeaktionen: (1) epistemische Verifikation der Dvaraka-Zeitschiene vor/bei der Migration, (2) Nutzung des spätharappischen Hafen-/Muschelökonomie-Befunds als Anreicherung für das Worldbuilding, (3",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-MISH-20260822-001",
+      "target": "mishkenaz",
+      "repository": "thomaspeterkueper/mishkenaz.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-MISH-20260822-002",
+      "target": "mishkenaz",
+      "repository": "thomaspeterkueper/mishkenaz.org"
+    }
+  ]
 }
