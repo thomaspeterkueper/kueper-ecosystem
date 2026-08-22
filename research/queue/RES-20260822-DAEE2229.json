@@ -1,6 +1,6 @@
 {
   "id": "RES-20260822-DAEE2229",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-22T04:00:19+00:00",
   "source_project": "mishkenaz",
   "source_repository": "thomaspeterkueper/mishkenaz.org",
@@ -20,5 +20,7 @@
     "uncertainty": 0.85,
     "evidence_potential": 0.9
   },
-  "fingerprint": "daee2229317c8b8c"
+  "fingerprint": "daee2229317c8b8c",
+  "updated_at": "2026-08-22T04:11:23+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/6"
 }
