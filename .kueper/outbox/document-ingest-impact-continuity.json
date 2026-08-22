@@ -1,0 +1,12 @@
+{
+  "target": "ECO",
+  "title": "Extend Document Ingest with private versioning, continuity and impact reports",
+  "reason": "Book/manuscript ingest must preserve private source material and version history, validate shared-universe continuity, identify KUE/OTA knowledge impact and always produce an auditable report showing possible errors and generated/proposed follow-documents.",
+  "requested_change": "Extend the Document Ingest Layer according to docs/architecture/DOCUMENT_INGEST_IMPACT_REPORT.md. Add private-by-default source/storage contracts; stable Book and immutable Version identities with ACTIVE/SUPERSEDED/ARCHIVED/PUBLISHED semantics; replacement and incremental version-delta ingest; preservation of published editions; continuity-domain configuration for related works including the Baumeister/Zereya/NOXIA shared narrative domain after validating canonical registry identifiers; persistent continuity findings with OPEN/CONFIRMED/FALSE_POSITIVE/EXPLAINED/RESOLVED/SUPERSEDED lifecycle; cross-work checks over temporal state, character location/age/knowledge/belief, reader knowledge, relations, technology availability and explicit canon claims; KUE/OTA/KG impact classification CREATE/UPDATE/PROPOSE/NO_CHANGE; a Generated Document Manifest; and a mandatory structured plus human-readable Ingest Impact Report with ingest_run_id and reverse provenance. Do not expose manuscript/passages publicly and do not silently canonize generated documents or resolve ambiguous continuity conflicts. Include deterministic fixtures required by the architecture document.",
+  "expected_result": "Replacing or uploading a private book version yields an incremental, provenance-preserving ingest and mandatory report showing version changes, possible cross-novel continuity errors with source counterparts, finding lifecycle changes, KUE/OTA/KG impacts and every created/updated/proposed follow-document, while old/published versions remain traceable and private material remains non-public.",
+  "priority": "high",
+  "cost_policy": "normal",
+  "estimated_effort": "high",
+  "depth": 1,
+  "affects": ["ECO", "KG", "NXU"]
+}
