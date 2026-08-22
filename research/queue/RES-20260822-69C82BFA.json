@@ -1,0 +1,23 @@
+{
+  "id": "RES-20260822-69C82BFA",
+  "status": "queued",
+  "created": "2026-08-22T04:00:20+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "title": "Physiological and environmental drivers of language change for the Mishkenaz premise and its Galut layers",
+  "question": "Which empirically documented mechanisms - articulatory/phonetic sound change, areal and environmental influences on phonology, language contact, koineization, and diaspora/exile language evolution such as Yiddish, Ladino, and Judeo-Arabic or substrate effects in scattered communities - should ground the central premise that Mishkenaz changed through physiological and environmental factors as the survivors of Dvaraka dispersed worldwide, and how do the named features (-om/-ath/-il aspects, Ta-constant, Galut layers G1-G6) map onto real typological patterns of Indo-Aryan/Dravidian morphology and sound change?",
+  "why_now": "The Grammatik and Woerterbuch pages - the linguistic core of the site - are the next substantive work under the pending high-priority migration (EXT-ECO-MISH-20260714-001), which will write them from the canonical OTA documents; the README and index page assert that language change is driven by physiological and environmental factors, so the plausibility and educational quality of the site depend on anchoring that claim in documented linguistics rather than asserting it.",
+  "languages": [
+    "en",
+    "de",
+    "hi"
+  ],
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "fingerprint": "69c82bfa00fa1060"
+}
