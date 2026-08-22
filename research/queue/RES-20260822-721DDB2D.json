@@ -1,0 +1,22 @@
+{
+  "id": "RES-20260822-721DDB2D",
+  "status": "queued",
+  "created": "2026-08-22T04:00:21+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "title": "Proto-Mishkenaz 'Urgesten': grounding the gestural-origin claim in gesture-first language research",
+  "question": "What does the current cognitive-science and linguistics literature establish about gestural origins of language - pantomime and emblematic gestures, the gesture-first hypothesis, home sign and emerging sign systems such as Nicaraguan Sign Language, and the cultural evolution of gesture-to-speech pathways - and which of those documented findings best serve as real-world anchors for presenting Proto-Mishkenaz as a system of Urgesten (proto-gestures)?",
+  "why_now": "proto-mishkenaz.astro is one of the six pages named in the pending migration (EXT-ECO-MISH-20260714-001), whose content is defined in the migration task as Urgesten; that page will publicly present the language's origin layer, and grounding it in actual gesture-origin research determines whether the presentation is credible and educational rather than a bare assertion.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "relevance_score": 0.725,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.8
+  },
+  "fingerprint": "721ddb2d9b630c4b"
+}
