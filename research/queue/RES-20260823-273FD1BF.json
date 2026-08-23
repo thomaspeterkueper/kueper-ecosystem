@@ -1,0 +1,22 @@
+{
+  "id": "RES-20260823-273FD1BF",
+  "status": "queued",
+  "created": "2026-08-23T04:06:20+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "title": "Levantine/Sinai/Cypriot copper ores: monazite & radiogenic-heat geochemistry",
+  "question": "Do Levantine, Sinai, or Cypriot copper ores — the material basis of the \"singende Schlüssel\" artifact — contain enough Th-232/U-238-bearing minerals (monazite/thorite) to produce a real (if nanowatts-scale) radiogenic warmth signature, and is the claimed phosphate-belt link to the Qatna/Amara region geologically defensible?",
+  "why_now": "OTA-SCI-0080-2026-DE explicitly flags this as an open data gap: \"[T — Datenlücke] Kupfererze aus Sinai/Zypern sind nicht systematisch auf Th/Monazit untersucht.\" The artifact's perceived warmth is a canonical physical claim in the Yin Hua Saga (NOXIA), the doc is a kueper.com publication candidate, and the metallurgy feeds SSF chemistry modules. Resolving it with geochemical literature (Sinai/Serabit el-Khadim, Cyprus/Troodos, Timna, Syrian phosphate belt) would either close the gap or let the curator harden the [T]/[S] classification honestly — directly serving the archive's R/S/F integrity principle.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "relevance_score": 0.775,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.7
+  },
+  "fingerprint": "273fd1bf2eba0d48"
+}
