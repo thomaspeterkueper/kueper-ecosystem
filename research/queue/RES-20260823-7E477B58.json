@@ -1,0 +1,22 @@
+{
+  "id": "RES-20260823-7E477B58",
+  "status": "queued",
+  "created": "2026-08-23T04:06:21+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "title": "Bronze Age collapse: verify Sea Peoples ethnonyms, Peloponnese population decline, Sanxingdui correlation",
+  "question": "What is the current scholarly state on (a) the identities of the Sea Peoples named in Egyptian sources — especially \"Weshesh\", still listed as \"Unbekannt [S]\" — (b) the claimed ~90% population decline on the Peloponnese, and (c) the ~1100 BCE collapse of Sanxingdui and whether it plausibly correlates with the Mediterranean Late Bronze Age collapse?",
+  "why_now": "OTA-HIS-0007-1200BCE-DE is the canonical history bridge that makes the Bronze Age collapse the \"central trauma\" of the Baumeister network. It carries several [R]-labeled figures (90% Peloponnese decline, Qatna destruction ~1340 BCE) and open historical-linguistic identifications (Weshesh). Updating its factual layer against post-2014 scholarship, Aegean demography studies, and Sanxingdui excavation reports would materially raise educational quality and plausibility; the Cline-parallel is reused across the NOXIA saga and referenced by KARTE/ARC documents.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "relevance_score": 0.725,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.8
+  },
+  "fingerprint": "7e477b58ab49979d"
+}
