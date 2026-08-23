@@ -1,0 +1,21 @@
+{
+  "id": "RES-20260823-5BEB27E7",
+  "status": "queued",
+  "created": "2026-08-23T04:06:22+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "title": "Verify mtDNA/biophoton \"real\" anchors of the Λ-haplogroup system",
+  "question": "Which of the Λ-system's [R]-claimed biological anchors are current and defensible: exclusive maternal mtDNA inheritance (including documented rare paternal-transmission cases since 2018), oocyte vs. sperm mtDNA copy numbers, mtDNA methylation surviving embryonic reprogramming, 200–800 nm biophoton emission, Fe/S-cluster quantum tunneling in Complex I, and piRNA biogenesis via MitoPLD/Zucchini on the mitochondrial surface?",
+  "why_now": "The Λ-haplogroup (OTA-SCI-0045-2026-DE, OTA-SCI-0048-2031-DE) is the biological substrate for a large share of the canon (Zereya-Saga, GENERATION MARS, GANDHAKA, NOXIA) and is reused by SSF learning paths and kueper.com publications. Several [R] statements sit at the moving research frontier (paternal mtDNA exceptions; mtDNA-methylation transmission is debated; UPE literature is growing). Verifying and refining these anchors against the current literature keeps the archive's core R/S/F separation honest — its stated raison d'être — and protects downstream story consistency.",
+  "languages": [
+    "en"
+  ],
+  "relevance_score": 0.75,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.5,
+    "evidence_potential": 0.8
+  },
+  "fingerprint": "5beb27e71d2d3484"
+}
