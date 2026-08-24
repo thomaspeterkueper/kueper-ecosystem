@@ -1,0 +1,77 @@
+name: KUEPER Automated PR Review
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_reviews:
+        description: Maximum review_pending PRs for this run
+        required: false
+        default: "3"
+  schedule:
+    - cron: "7,22,37,52 * * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kueper-pr-review-agent
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+      KUEPER_MAX_REVIEWS: ${{ inputs.max_reviews || '3' }}
+    steps:
+      - name: Checkout control plane
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          package-manager-cache: false
+
+      - name: Install Claude Code reviewer frontend
+        run: npm install --global @anthropic-ai/claude-code
+
+      - name: Verify required secrets
+        shell: bash
+        run: |
+          set -euo pipefail
+          missing=0
+          for name in SUPABASE_URL SUPABASE_SECRET_KEY DEEPSEEK_API_KEY KUEPER_BOT_TOKEN; do
+            if [ -z "${!name:-}" ]; then
+              echo "::error title=Missing GitHub Actions secret::$name is empty or unavailable to this workflow"
+              missing=1
+            fi
+          done
+          test "$missing" -eq 0
+
+      - name: Run deterministic reviewer schema tests
+        run: python -m unittest tools/review/test_pr_review_agent.py
+
+      - name: Review bounded pending PR batch
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/review/pr_review_agent.py --max-reviews "$KUEPER_MAX_REVIEWS" | tee pr-review-report.json
+
+      - name: Upload review report
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: pr-review-${{ github.run_id }}
+          path: pr-review-report.json
+          if-no-files-found: ignore
+          retention-days: 30
