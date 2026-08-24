@@ -1,0 +1,21 @@
+{
+  "id": "RES-20260824-30C15610",
+  "status": "queued",
+  "created": "2026-08-24T04:11:11+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "title": "Align Miller-Urey / early-Earth atmosphere content with current consensus",
+  "question": "What is the current scientific consensus on the early Earth atmosphere (weakly reducing/neutral vs strongly reducing), the relevance of Miller-Urey lightning conditions, and the impact-generated transient-reducing and locally-reduced prebiotic hypotheses — so the modules can frame the classic experiment as one model rather than the canonical early atmosphere?",
+  "why_now": "MillerUreyExperiment.tsx defaults to the classic strongly-reducing CH4/NH3/H2O/H2 mix and asserts 'Deshalb hatte die frühe Erde keinen freien Sauerstoff'; EarlyEarthExperiment.tsx models a CO2-dominated atmosphere ('CO2 = Wärmespeicher'); OriginOfLifeTimeline.tsx presents Miller-Urey chemistry as the canonical early-Earth story. Current consensus has shifted to a weakly reducing/neutral CO2-N2-H2O atmosphere, with strongly reducing conditions only transient (post-impact) or local, so the modules currently teach a superseded assumption as fact — against MISSION.md's 'the science is real; the institution teaching it is not.'",
+  "languages": [
+    "en"
+  ],
+  "relevance_score": 0.76,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.65,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.85
+  },
+  "fingerprint": "30c156107547dd55"
+}
