@@ -1,6 +1,6 @@
 {
   "id": "RES-20260824-1BCF9EC2",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-24T04:11:11+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -17,5 +17,7 @@
     "uncertainty": 0.7,
     "evidence_potential": 0.95
   },
-  "fingerprint": "1bcf9ec2487dcb87"
+  "fingerprint": "1bcf9ec2487dcb87",
+  "updated_at": "2026-08-24T04:21:24+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/11"
 }
