@@ -1,24 +1,24 @@
-name: KUEPER Agent Worker V7
+name: KUEPER Automated PR Review
 
 on:
   workflow_dispatch:
     inputs:
-      max_tasks:
-        description: Maximum tasks for this run
+      max_reviews:
+        description: Maximum review_pending PRs for this run
         required: false
         default: "3"
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "7,22,37,52 * * * *"
 
 permissions:
   contents: read
 
 concurrency:
-  group: kueper-agent-worker-v7
+  group: kueper-pr-review-agent
   cancel-in-progress: false
 
 jobs:
-  worker:
+  review:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
@@ -26,7 +26,7 @@ jobs:
       SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
-      KUEPER_MAX_TASKS: ${{ inputs.max_tasks || '3' }}
+      KUEPER_MAX_REVIEWS: ${{ inputs.max_reviews || '3' }}
     steps:
       - name: Checkout control plane
         uses: actions/checkout@v6
@@ -42,7 +42,7 @@ jobs:
           node-version: "22"
           package-manager-cache: false
 
-      - name: Install Claude Code agent frontend
+      - name: Install Claude Code reviewer frontend
         run: npm install --global @anthropic-ai/claude-code
 
       - name: Verify required secrets
@@ -54,38 +54,24 @@ jobs:
             if [ -z "${!name:-}" ]; then
               echo "::error title=Missing GitHub Actions secret::$name is empty or unavailable to this workflow"
               missing=1
-            else
-              echo "$name: available"
             fi
           done
-          if [ "$missing" -ne 0 ]; then
-            exit 1
-          fi
+          test "$missing" -eq 0
 
-      - name: Verify runtime
+      - name: Run deterministic reviewer schema tests
+        run: python -m unittest tools/review/test_pr_review_agent.py
+
+      - name: Review bounded pending PR batch
         shell: bash
         run: |
           set -euo pipefail
-          python --version
-          node --version
-          npm --version
-          claude --version
-          gh --version
+          python tools/review/pr_review_agent.py --max-reviews "$KUEPER_MAX_REVIEWS" | tee pr-review-report.json
 
-      - name: Test provider router
-        run: python -m unittest tools/worker/test_provider_router.py
-
-      - name: Process bounded task batch
-        shell: bash
-        run: |
-          set -euo pipefail
-          python tools/worker/agent_worker_v73.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
-
-      - name: Upload worker report
+      - name: Upload review report
         if: always()
         uses: actions/upload-artifact@v6
         with:
-          name: agent-worker-v7-${{ github.run_id }}
-          path: agent-worker-report.json
+          name: pr-review-${{ github.run_id }}
+          path: pr-review-report.json
           if-no-files-found: ignore
           retention-days: 30
