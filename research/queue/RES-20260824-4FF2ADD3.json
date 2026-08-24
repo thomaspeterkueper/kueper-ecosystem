@@ -1,0 +1,21 @@
+{
+  "id": "RES-20260824-4FF2ADD3",
+  "status": "queued",
+  "created": "2026-08-24T04:11:10+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "title": "SSF Research Watch v0.1 — scientific evidence discovery, dedup and impact triage",
+  "question": "Which authoritative sources and metadata (Crossref/DOI, arXiv, OpenAlex/ADS, preprint vs peer-reviewed status, retraction/correction records) should ground SSF's Research Watch so it can discover new scientific work, deduplicate by DOI/arXiv/registry, score relevance against the SSF/KG curriculum scope, and classify impact (NEW/CONFIRMS/REVISES/CONTRADICTS/DEPRECATES/NO_IMPACT/UNCERTAIN) without treating every publication as accepted knowledge?",
+  "why_now": "Open auto-routed task EXT-ECO-SSF-20260821-001 (2026-08-21) mandates the smallest useful Research Watch v0.1 with persistent evidence/discovery records, DOI/arXiv/registry deduplication, relevance scoring, impact classification and bounded promotion into RESEARCH_DISCOVERY/CANON_VALIDATION TaskCandidates. The Supabase schema has no evidence/discovery tables and no discovery adapter exists; SSF currently depends on manually introduced topics. The task explicitly affects SSF, KG and NOXIA and requires cross-project requests via KUEPER outbox envelopes.",
+  "languages": [
+    "en"
+  ],
+  "relevance_score": 0.89,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "fingerprint": "4ff2add341a15d2c"
+}
