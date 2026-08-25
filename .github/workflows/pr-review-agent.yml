@@ -58,11 +58,12 @@ jobs:
           done
           test "$missing" -eq 0
 
-      - name: Run deterministic reviewer schema and transport tests
+      - name: Run deterministic reviewer schema, transport and intake tests
         run: |
           python -m unittest tools/review/test_pr_review_agent.py
           python -m unittest tools/review/test_pr_review_agent_v02.py
           python -m unittest tools/review/test_pr_review_agent_v03.py
+          python -m unittest tools/review/test_direct_pr_intake.py
 
       - name: Review bounded pending PR batch
         shell: bash
