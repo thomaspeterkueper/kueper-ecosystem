@@ -1,0 +1,21 @@
+{
+  "id": "RES-20260825-A58F2D7C",
+  "status": "queued",
+  "created": "2026-08-25T04:06:38+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "title": "Systemtheoretische Verankerung des Autonomiegradienten und Verifikation der LUCA-Studie (KUE-MTH-0006)",
+  "question": "Welche kanonische Literatur zur organisatorischen Schließung und biologischen Autonomie (z. B. Moreno & Mossio, 'Biological Autonomy'; Maturana/Varela-Autopoiesis; Ruiz-Mirazo) fundiert den in KUE-MTH-0006 eingeführten Autonomiegradienten, und stimmen die Befunde der zitierten Mrnjavac-et-al.-Studie (Science Advances 2026, DOI 10.1126/sciadv.aef3128) zur Phosphit-Phosphorylierung an hydrothermalen Schlotten mit der aktuellen Ursprungs-des-Stoffwechsels-Literatur überein?",
+  "why_now": "KUE-MTH-0006 ist ein published_foundation_document mit KG-Entitäten (CON:L1:autonomiegradient, CON:L1:luca, CON:L0:omnizedenz), das den Begriff 'organisatorische Schließung' als tragendes Konzept verwendet, ohne dessen Quell-Literatur zu referenzieren, und sich zugleich auf eine sehr junge (2026) Science-Advances-Studie als empirischen Anker stützt. Eine Verankerung in der Systembiologie-Literatur und eine Verifikation des empirischen Befunds würden die Bildungsqualität des Konzepts und seine Wiederverwendung über KG, omnizedenz und SSF hinweg deutlich verbessern.",
+  "languages": [
+    "en"
+  ],
+  "relevance_score": 0.79,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.85
+  },
+  "fingerprint": "a58f2d7cd0d32761"
+}
