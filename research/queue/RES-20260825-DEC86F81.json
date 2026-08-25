@@ -1,0 +1,21 @@
+{
+  "id": "RES-20260825-DEC86F81",
+  "status": "queued",
+  "created": "2026-08-25T04:06:36+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "title": "DESI-Datenlage zur Zustandsgleichung der Dunklen Energie (w₀, w_a) für KUE-SCI-0001 aktualisieren",
+  "question": "Wie ist der aktuelle Beobachtungsstand (Stand 2026, v. a. DESI DR2 und Folgeanalysen mit Pantheon+/Union3/DESY5 sowie CMB-Daten) zur CPL-Parametrisierung w_vac(a) = w₀ + w_a(1−a)? Widersprechen die Daten der in KUE-SCI-0001 §13.5 als [ETABLIERT] markierten Aussage 'Planck 2018, DESI 2024: w₀ ≈ −1, w_a ≈ 0', und welche konkreten Fit-Werte und Signifikanzen sind für eine Korrektur des Dokuments belegbar?",
+  "why_now": "KUE-SCI-0001 (AVI) ist das Kern-Dokument des Ökosystems; es deklariert den heutigen Beobachtungsstand zu w₀/w_a ausdrücklich als [ETABLIERT] — real deuten DESI-DR2-Analysen (März 2025) jedoch auf dynamische Dunkle Energie (w₀ > −1, w_a < 0) mit bis zu ~4,2σ in Kombination mit bestimmten Supernova-Katalogen hin. Da AVI gerade eine zeitlich veränderliche Vakuumenergiedichte postuliert und in v1.5 die Funktion w_vac(Φ) festlegen will, ist die tatsächliche Datenlage direkt relevant: Sie korrigiert eine faktisch falsche [ETABLIERT]-Markierung und stärkt zugleich die Motivation der Kernthese.",
+  "languages": [
+    "en"
+  ],
+  "relevance_score": 0.9,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.95
+  },
+  "fingerprint": "dec86f8179175933"
+}
