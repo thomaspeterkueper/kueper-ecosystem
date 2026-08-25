@@ -1,0 +1,21 @@
+{
+  "id": "RES-20260825-D5E30168",
+  "status": "queued",
+  "created": "2026-08-25T04:06:37+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "title": "Physik und Folgebeobachtungen dünner TNO-Atmosphären (2002 XV93) für KUE-OBS-0101 auswerten",
+  "question": "Was ist der Stand der Forschung zu Volatilretention, Kryovulkanismus und tidaler Heizung auf kleinen Trans-Neptun-Objekten (~250 km Radius), und wurden seit der Publikation von Arimatsu et al. (Nature Astronomy, Mai 2026) Folge-Sternbedeckungen, JWST-Spektroskopie oder theoretische Arbeiten berichtet, die die in der Notiz [OFFEN] markierten Fragen eingrenzen (CH₄- vs. N₂- vs. CO-Zusammensetzung, Einschlag vs. Kryovulkanismus, Rolle der 2:3-Resonanz)?",
+  "why_now": "KUE-OBS-0101 ist ein kanonisches Beobachtungsdokument, das drei zentrale Fragen explizit als [OFFEN] führt (Atmosphärenzusammensetzung, Verbreitung auf weiteren TNOs, Rolle der Bahnresonanz) und selbst 'eine systematische Neubewertung der Datenlage' anmahnt. Eine externe Auswertung der Theorie-Literatur (Volatilretentions-Modelle für sub-500-km-Körper, plutino-tidale Heizung) sowie etwaiger verfügbarer Folgebeobachtungen würde den [OFFEN]-Block konkretisieren, die theoretische Einordnung (§3) substantiell verbessern und die Gattung künftiger OBS-Notizen für das Ökosystem stärken.",
+  "languages": [
+    "en"
+  ],
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "fingerprint": "d5e30168e84ae878"
+}
