@@ -1,6 +1,6 @@
 {
   "id": "RES-20260825-D5E30168",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-25T04:06:37+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -17,5 +17,7 @@
     "uncertainty": 0.8,
     "evidence_potential": 0.85
   },
-  "fingerprint": "d5e30168e84ae878"
+  "fingerprint": "d5e30168e84ae878",
+  "updated_at": "2026-08-25T04:24:10+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/13"
 }
