@@ -59,13 +59,17 @@ def intake(db: v71.PatchedSupabaseRPC, pr_url: str, *, priority: str = "normal")
     task_id = created.get("id") if isinstance(created, dict) else None
     if not task_id:
         raise RuntimeError("kueper_create_task returned no task id")
-    # Existing review RPCs operate only on review_pending tasks. Promote the
-    # newly-created intake task using the narrow lifecycle RPC installed with V7.3.
-    promoted = db.rpc("kueper_mark_task_review_pending", {
+
+    # Direct PRs are not worker-leased, so the lease-bound
+    # kueper_submit_task_for_review RPC is intentionally not used here.
+    promoted = db.rpc("kueper_enqueue_direct_pr_review", {
         "p_task_id": task_id,
         "p_pr_url": pr_url,
+        "p_repository": repo,
     })
-    return promoted if isinstance(promoted, dict) else {"id": task_id, "status": "review_pending", "pr_url": pr_url}
+    if not isinstance(promoted, dict):
+        raise RuntimeError("kueper_enqueue_direct_pr_review returned no task")
+    return promoted
 
 
 def main() -> int:
