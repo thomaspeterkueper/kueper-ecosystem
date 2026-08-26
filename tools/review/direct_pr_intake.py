@@ -29,7 +29,7 @@ def parse_pr_url(url: str) -> tuple[str, int]:
     return match.group(1), int(match.group(2))
 
 
-def intake(db: v71.PatchedSupabaseRPC, pr_url: str, *, priority: str = "normal") -> dict[str, Any]:
+def intake(db: v71.PatchedSupabaseRPC, pr_url: str, *, priority: str = "medium") -> dict[str, Any]:
     repo, number = parse_pr_url(pr_url)
     payload = {
         "pr_url": pr_url,
@@ -75,7 +75,7 @@ def intake(db: v71.PatchedSupabaseRPC, pr_url: str, *, priority: str = "normal")
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("pr_url")
-    parser.add_argument("--priority", default="normal", choices=("low", "normal", "high", "critical"))
+    parser.add_argument("--priority", default="medium", choices=("low", "medium", "high", "critical"))
     args = parser.parse_args()
     for name in ("SUPABASE_URL", "SUPABASE_SECRET_KEY"):
         if not os.environ.get(name):
