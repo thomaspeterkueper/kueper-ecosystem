@@ -32,7 +32,7 @@ class DirectPrIntakeTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             parse_pr_url("https://github.com/thomaspeterkueper/kueper-ecosystem/issues/30")
 
-    def test_intake_uses_dedicated_enqueue_rpc(self):
+    def test_intake_uses_dedicated_enqueue_rpc_and_medium_priority(self):
         db = FakeDb()
         result = intake(db, "https://github.com/thomaspeterkueper/kueper-ecosystem/pull/30")
         self.assertEqual(result["status"], "review_pending")
@@ -40,6 +40,8 @@ class DirectPrIntakeTests(unittest.TestCase):
             "kueper_create_task",
             "kueper_enqueue_direct_pr_review",
         ])
+        create = db.calls[0][1]
+        self.assertEqual(create["p_priority"], "medium")
         enqueue = db.calls[1][1]
         self.assertEqual(enqueue["p_repository"], "thomaspeterkueper/kueper-ecosystem")
         self.assertEqual(enqueue["p_pr_url"], "https://github.com/thomaspeterkueper/kueper-ecosystem/pull/30")
