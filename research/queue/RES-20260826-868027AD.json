@@ -1,0 +1,22 @@
+{
+  "id": "RES-20260826-868027AD",
+  "status": "queued",
+  "created": "2026-08-26T04:06:50+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "title": "Transmedia and games-in-literature precedents for the 'Spiel-im-Buch' that is the ecosystem's origin",
+  "question": "What design precedents from transmedia storytelling, alternate-reality games, and games-within-literature (e.g. Jenkins' convergence culture, ARG conventions, interactive book/novel games) should inform the fictional game inside the Endia books, so the in-book game and its digital expression on endia.de form one coherent system?",
+  "why_now": "The README asserts the game inside the book was the starting point for building the entire KUEPER ecosystem, yet nothing in the repo or the ADR documents how the game is designed or how it extends into the digital platform — the ecosystem's founding artifact is currently undesigned.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "relevance_score": 0.7375,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.8
+  },
+  "fingerprint": "868027ad0e688050"
+}
