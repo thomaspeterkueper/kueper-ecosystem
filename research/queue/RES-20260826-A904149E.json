@@ -1,0 +1,22 @@
+{
+  "id": "RES-20260826-A904149E",
+  "status": "queued",
+  "created": "2026-08-26T04:06:48+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "title": "Grounding for the Davaru ethics system (humans + Kibzu) and its deferred real-world evolution",
+  "question": "Which real ethical frameworks and techniques for constructing fictional ethical systems (e.g. virtue ethics, Ubuntu, German philosophy, technology/digital ethics, comparative ethics) should inform 'Der Weg des DaVaRu' so it is internally coherent as the book's fictional ethics and can plausibly evolve into a standalone real-world concept if that deferred ECO-ARC-0016 decision is taken?",
+  "why_now": "ECO-ARC-0016 makes Davaru the central worldbuilding element of Endia, asserts it originated inside the fictional game, mandates davaru.de integration with endia, and explicitly defers whether it grows beyond fiction (analogous to Mishkenaz). The repo's knowledge-platform role needs substantive content for that ethics system, but the ADR documents no real-world scholarly grounding to draw on.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.8
+  },
+  "fingerprint": "a904149e8d681f91"
+}
