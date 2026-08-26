@@ -1,0 +1,22 @@
+{
+  "id": "RES-20260826-47CC2438",
+  "status": "queued",
+  "created": "2026-08-26T04:06:49+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "title": "Real digital-rights and surveillance discourse to ground the 'Digital Rebellion' trilogy and the knowledge-platform",
+  "question": "Which real-world digital-rights movements, surveillance/data-protection debates (incl. German Netzpolitik, CCC, GDPR-era privacy discourse), and digital-literacy content should the trilogy's 'Digital Rebellion' premise and the endia.de knowledge-platform draw on for plausible worldbuilding and educational quality?",
+  "why_now": "The trilogy's core theme is a digital rebellion, the project role is a knowledge-platform, and the ADR explicitly notes the document contains no real-world scholarly claims about Endia — so the fiction currently floats without grounding in the very discourse it presumably depicts.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "relevance_score": 0.75,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.85
+  },
+  "fingerprint": "47cc243863af863e"
+}
