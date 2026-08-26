@@ -28,7 +28,10 @@ jobs:
       KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
       KUEPER_MAX_REVIEWS: ${{ inputs.max_reviews || '3' }}
     steps:
-      - name: Checkout control plane
+      # Scheduled/dispatch runs always check out the trusted default branch after
+      # merge. No pull_request_target event is used and no PR head code is run
+      # with secrets. PR #32 itself therefore remains a manual bootstrap case.
+      - name: Checkout trusted control plane
         uses: actions/checkout@v6
 
       - name: Set up Python
@@ -65,17 +68,25 @@ jobs:
           python -m unittest tools/review/test_pr_review_agent_v03.py
           python -m unittest tools/review/test_direct_pr_intake.py
 
+      - name: Discover direct PRs from registry
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/review/direct_pr_intake.py --discover --max-prs 50 | tee direct-pr-intake-report.json
+
       - name: Review bounded pending PR batch
         shell: bash
         run: |
           set -euo pipefail
           python tools/review/pr_review_agent_v03.py --max-reviews "$KUEPER_MAX_REVIEWS" | tee pr-review-report.json
 
-      - name: Upload review report
+      - name: Upload review reports
         if: always()
         uses: actions/upload-artifact@v6
         with:
           name: pr-review-${{ github.run_id }}
-          path: pr-review-report.json
+          path: |
+            direct-pr-intake-report.json
+            pr-review-report.json
           if-no-files-found: ignore
           retention-days: 30
