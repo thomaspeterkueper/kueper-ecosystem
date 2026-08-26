@@ -1,6 +1,6 @@
 {
   "id": "RES-20260826-A904149E",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-26T04:06:48+00:00",
   "source_project": "endia",
   "source_repository": "thomaspeterkueper/endia.de",
@@ -18,5 +18,7 @@
     "uncertainty": 0.6,
     "evidence_potential": 0.8
   },
-  "fingerprint": "a904149e8d681f91"
+  "fingerprint": "a904149e8d681f91",
+  "updated_at": "2026-08-26T04:15:01+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/14"
 }
