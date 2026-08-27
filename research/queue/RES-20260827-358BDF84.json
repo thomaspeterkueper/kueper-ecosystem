@@ -1,0 +1,22 @@
+{
+  "id": "RES-20260827-358BDF84",
+  "status": "queued",
+  "created": "2026-08-27T14:18:43+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "title": "Kanonische Terminologie und Etymologie der Ökosystem-Begriffe",
+  "question": "Was ist die kanonische Schreibweise, Herkunft und Übersetzungspolitik der geteilten Begriffe (Zereya, Noxia, Davaru, Omnizedenz, Fluíde Hermeneutik, Resonanz-Ethik) — insbesondere der orthografisch auffälligen Form 'Fluíde' — für die zweisprachige (de/en) Wissensdarstellung?",
+  "why_now": "Als knowledge-platform wird zereya.de Konzepte erklären; die bindende Ökosystem-Entscheidung enthält mit 'Fluíde Hermeneutik' bereits eine ungewöhnliche Schreibung in deutschem Kontext. Eine recherchierte Terminologietabelle (Etymologie, kanonische Orthografie, Übersetzungsregeln) sichert Bildungsqualität und Konsistenz über alle Universen-Seiten hinweg.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "relevance_score": 0.75,
+  "scores": {
+    "project_relevance": 0.7,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.7
+  },
+  "fingerprint": "358bdf849422397c"
+}
