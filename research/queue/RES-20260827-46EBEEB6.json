@@ -1,0 +1,22 @@
+{
+  "id": "RES-20260827-46EBEEB6",
+  "status": "queued",
+  "created": "2026-08-27T14:18:40+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "title": "Omnizedenz-Philosophie: Bestand und Verbindlichkeit der bestehenden Essay-Texte",
+  "question": "Welche Omnizedenz-Konzepte, Begriffsdefinitionen und Unterthemen (z.B. Fluíde Hermeneutik, Resonanz-Ethik) sind in den bestehenden Essays auf thomas-kueper.de und im Noxia-Kanon bereits festgelegt, sodass zereya.de sie konsistent aufgreifen statt neu erfinden kann?",
+  "why_now": "ECO-ARC-0016 verbindet Zereya über die Omnizedenz-Philosophie mit den anderen Kontinuitäten, und das README bezeichnet Zereya als Ursprung von Baumeister- und Noxia-Universum. Bevor zereya.de als Vertiefung eigene Inhalte schreibt, muss der Bestand der geteilten Philosophie samt Terminologie inventarisiert sein, sonst entstehen Konflikte mit dem Ökosystem-Source-of-Truth.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "fingerprint": "46ebeeb66e8c74ab"
+}
