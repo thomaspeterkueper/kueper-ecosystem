@@ -1,8 +1,31 @@
 -- KUEPER V7.3 — direct PR intake into the existing review lifecycle.
 -- Directly-created PRs do not hold worker leases, so they cannot use
--- kueper_submit_task_for_review. This RPC is intentionally narrow: it can only
--- move PR_REVIEW intake tasks from pending to review_pending, and is idempotent
--- for the same PR URL/repository.
+-- kueper_submit_task_for_review. These RPCs are intentionally narrow.
+
+create or replace function public.kueper_get_task_for_pr(
+  p_pr_url text
+)
+returns jsonb
+language sql
+security definer
+set search_path = ecosystem, public, pg_temp
+as $$
+  select to_jsonb(t)
+  from ecosystem.tasks t
+  where t.pr_url = nullif(trim(coalesce(p_pr_url, '')), '')
+  order by
+    case t.status
+      when 'review_pending' then 0
+      when 'running' then 1
+      when 'claimed' then 2
+      when 'pending' then 3
+      when 'completed' then 4
+      else 5
+    end,
+    t.updated_at desc,
+    t.created_at desc
+  limit 1;
+$$;
 
 create or replace function public.kueper_enqueue_direct_pr_review(
   p_task_id uuid,
@@ -74,8 +97,12 @@ begin
 end;
 $$;
 
+revoke all on function public.kueper_get_task_for_pr(text)
+  from public, anon, authenticated;
 revoke all on function public.kueper_enqueue_direct_pr_review(uuid,text,text)
   from public, anon, authenticated;
 
+grant execute on function public.kueper_get_task_for_pr(text)
+  to service_role;
 grant execute on function public.kueper_enqueue_direct_pr_review(uuid,text,text)
   to service_role;
