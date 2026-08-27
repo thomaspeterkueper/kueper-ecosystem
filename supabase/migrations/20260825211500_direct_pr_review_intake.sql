@@ -40,6 +40,7 @@ as $$
 declare
   normalized_url text := nullif(trim(coalesce(p_pr_url, '')), '');
   normalized_repo text := nullif(trim(coalesce(p_repository, '')), '');
+  url_repo text;
   r ecosystem.tasks;
 begin
   if normalized_url is null then
@@ -48,10 +49,16 @@ begin
   if normalized_repo is null then
     raise exception 'repository is required';
   end if;
+  if normalized_repo !~ '^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$' then
+    raise exception 'invalid GitHub repository';
+  end if;
   if normalized_url !~ '^https://github\.com/[^/]+/[^/]+/pull/[0-9]+$' then
     raise exception 'invalid GitHub PR URL';
   end if;
-  if normalized_url not like 'https://github.com/' || normalized_repo || '/pull/%' then
+  url_repo := substring(
+    normalized_url from '^https://github\.com/([^/]+/[^/]+)/pull/[0-9]+$'
+  );
+  if url_repo is distinct from normalized_repo then
     raise exception 'PR URL/repository mismatch';
   end if;
 
@@ -69,15 +76,15 @@ begin
     raise exception 'task repository mismatch';
   end if;
 
-  if r.status = 'review_pending' then
+  if r.status in ('review_pending', 'completed') then
     if coalesce(trim(r.pr_url), '') <> normalized_url then
-      raise exception 'task already review_pending for different PR';
+      raise exception 'task already processed for different PR';
     end if;
     return to_jsonb(r);
   end if;
 
   if r.status <> 'pending' then
-    raise exception 'direct PR intake task must be pending or review_pending';
+    raise exception 'direct PR intake task must be pending, review_pending, or completed';
   end if;
 
   update ecosystem.tasks
@@ -112,16 +119,23 @@ declare
   normalized_url text := nullif(trim(coalesce(p_pr_url, '')), '');
   normalized_repo text := nullif(trim(coalesce(p_repository, '')), '');
   normalized_head text := lower(nullif(trim(coalesce(p_head_sha, '')), ''));
+  url_repo text;
   accepted_head text;
   r ecosystem.tasks;
 begin
   if normalized_url is null or normalized_repo is null then
     raise exception 'PR URL and repository are required';
   end if;
+  if normalized_repo !~ '^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$' then
+    raise exception 'invalid GitHub repository';
+  end if;
   if normalized_url !~ '^https://github\.com/[^/]+/[^/]+/pull/[0-9]+$' then
     raise exception 'invalid GitHub PR URL';
   end if;
-  if normalized_url not like 'https://github.com/' || normalized_repo || '/pull/%' then
+  url_repo := substring(
+    normalized_url from '^https://github\.com/([^/]+/[^/]+)/pull/[0-9]+$'
+  );
+  if url_repo is distinct from normalized_repo then
     raise exception 'PR URL/repository mismatch';
   end if;
   if normalized_head is null or normalized_head !~ '^[0-9a-f]{40}$' then
