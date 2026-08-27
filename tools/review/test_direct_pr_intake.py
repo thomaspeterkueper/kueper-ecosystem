@@ -12,14 +12,19 @@ class FakeDb:
     def __init__(self):
         self.calls = []
         self.tasks = {}
+        self.tasks_by_pr = {}
 
     def rpc(self, name, payload):
         self.calls.append((name, payload))
+        if name == "kueper_get_task_for_pr":
+            task = self.tasks_by_pr.get(payload["p_pr_url"])
+            return dict(task) if task else None
         if name == "kueper_create_task":
             key = payload["p_idempotency_key"]
             if key not in self.tasks:
                 self.tasks[key] = {
                     "id": f"task-{len(self.tasks) + 1}",
+                    "type": payload["p_type"],
                     "status": "pending",
                     "repository": payload["p_repository"],
                     "target_project": payload["p_target_project"],
@@ -30,6 +35,7 @@ class FakeDb:
                 if task["id"] == payload["p_task_id"]:
                     task["status"] = "review_pending"
                     task["pr_url"] = payload["p_pr_url"]
+                    self.tasks_by_pr[payload["p_pr_url"]] = task
                     return dict(task)
         raise AssertionError(f"unexpected RPC {name}")
 
@@ -49,7 +55,7 @@ class DirectPrIntakeTests(unittest.TestCase):
         db = FakeDb()
         result = intake(db, f"https://github.com/{NOXIA_REPO}/pull/10", repository_projects=PROJECTS)
         self.assertEqual(result["target_project"], "NOXIA")
-        create = db.calls[0][1]
+        create = next(payload for name, payload in db.calls if name == "kueper_create_task")
         self.assertEqual(create["p_source_project"], "ECO")
         self.assertEqual(create["p_target_project"], "NOXIA")
         self.assertEqual(create["p_priority"], "medium")
@@ -66,6 +72,21 @@ class DirectPrIntakeTests(unittest.TestCase):
         self.assertEqual(first["id"], second["id"])
         self.assertEqual(len(db.tasks), 1)
         self.assertEqual(second["status"], "review_pending")
+
+    def test_existing_agent_task_prevents_duplicate_review_task(self):
+        db = FakeDb()
+        url = f"https://github.com/{NOXIA_REPO}/pull/10"
+        db.tasks_by_pr[url] = {
+            "id": "origin-task",
+            "type": "IMPLEMENT_EXTERNAL_REQUIREMENT",
+            "status": "review_pending",
+            "pr_url": url,
+            "repository": NOXIA_REPO,
+            "target_project": "NOXIA",
+        }
+        result = intake(db, url, repository_projects=PROJECTS)
+        self.assertEqual(result["id"], "origin-task")
+        self.assertFalse(any(name == "kueper_create_task" for name, _ in db.calls))
 
     def test_discovery_scans_registry_and_routes_each_repository(self):
         db = FakeDb()
