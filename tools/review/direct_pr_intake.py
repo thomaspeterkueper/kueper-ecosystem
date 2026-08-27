@@ -22,6 +22,7 @@ sys.path.insert(0, str(WORKER_DIR))
 import agent_worker_v71 as v71  # noqa: E402
 
 PR_RE = re.compile(r"^https://github\.com/([^/]+/[^/]+)/pull/(\d+)$")
+SHA_RE = re.compile(r"^[0-9a-fA-F]{40}$")
 REGISTRY_PATH = Path(__file__).resolve().parents[2] / "registry" / "projects.json"
 PROJECT_CODES = {
     "ecosystem": "ECO",
@@ -62,6 +63,7 @@ def intake(
     *,
     priority: str = "medium",
     repository_projects: dict[str, str] | None = None,
+    head_sha: str | None = None,
 ) -> dict[str, Any]:
     repo, number = parse_pr_url(pr_url)
     projects = repository_projects if repository_projects is not None else load_repository_projects()
@@ -69,12 +71,30 @@ def intake(
     if not target_project:
         raise ValueError(f"repository is not enabled in registry: {repo}")
 
+    normalized_head = (head_sha or "").strip().lower()
+    if normalized_head and not SHA_RE.match(normalized_head):
+        raise ValueError("head_sha must be a full 40-character GitHub SHA")
+
     existing = db.rpc("kueper_get_task_for_pr", {"p_pr_url": pr_url})
     if isinstance(existing, dict) and existing.get("id"):
+        status = str(existing.get("status") or "")
+        task_type = str(existing.get("type") or "")
+
+        if status == "completed" and normalized_head:
+            requeued = db.rpc("kueper_requeue_changed_pr_head", {
+                "p_task_id": existing["id"],
+                "p_pr_url": pr_url,
+                "p_repository": repo,
+                "p_head_sha": normalized_head,
+            })
+            if not isinstance(requeued, dict):
+                raise RuntimeError("kueper_requeue_changed_pr_head returned no task")
+            return requeued
+
         # Agent-created PRs already carry their originating task. Returning it
         # here prevents a second PR_REVIEW task from being introduced by the
         # registry scanner. A pending direct-intake task is recoverable below.
-        if existing.get("type") != "PR_REVIEW" or existing.get("status") != "pending":
+        if task_type != "PR_REVIEW" or status != "pending":
             return existing
         promoted = db.rpc("kueper_enqueue_direct_pr_review", {
             "p_task_id": existing["id"],
@@ -159,12 +179,15 @@ def discover(
             if len(results) >= max_prs:
                 return results
             html_url = str(pr.get("html_url") or "").strip()
+            head = pr.get("head") if isinstance(pr.get("head"), dict) else {}
+            head_sha = str(head.get("sha") or "").strip().lower()
             if not html_url:
                 continue
-            task = intake(db, html_url, repository_projects=projects)
+            task = intake(db, html_url, repository_projects=projects, head_sha=head_sha or None)
             results.append({
                 "repository": repository,
                 "pr_url": html_url,
+                "head_sha": head_sha or None,
                 "task_id": task.get("id"),
                 "status": task.get("status"),
                 "task_type": task.get("type"),
