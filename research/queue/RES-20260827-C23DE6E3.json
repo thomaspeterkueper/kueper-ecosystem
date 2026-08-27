@@ -1,0 +1,21 @@
+{
+  "id": "RES-20260827-C23DE6E3",
+  "status": "queued",
+  "created": "2026-08-27T14:18:41+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "title": "Source-of-Truth- und Datenkonventionen für eine neue eigenständige Kontinuität",
+  "question": "Wie strukturieren noxia-universe, kueper-knowledge-graph und overtime-archive.org ihre Kanon-Daten (Entitäten, IDs, OTA-*-Dokumente), damit zereya.de als zweite eigenständige Kontinuität kompatible Datenmodelle anlegt und keine fremden Zuständigkeiten verletzt?",
+  "why_now": "Das Onboarding-Template (Abschnitt 4) verlangt vor Datenmodellen eine Source-of-Truth-Prüfung, und ECO-ARC-0016 lässt konkrete ID-Schemata für die neuen Projekte ausdrücklich offen. Die ersten Datenmodell-Entscheidungen in diesem Repository hängen direkt von diesen existierenden Konventionen ab.",
+  "languages": [
+    "de"
+  ],
+  "relevance_score": 0.775,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.8
+  },
+  "fingerprint": "c23de6e30124e848"
+}
