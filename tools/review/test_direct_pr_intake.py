@@ -135,6 +135,25 @@ class DirectPrIntakeTests(unittest.TestCase):
         self.assertEqual(result["metadata"]["re_review_head_sha"], NEW_SHA)
         self.assertFalse(any(name == "kueper_create_task" for name, _ in db.calls))
 
+    def test_completed_direct_task_is_already_processed(self):
+        db = FakeDb()
+        url = f"https://github.com/{ECO_REPO}/pull/30"
+        db.tasks_by_pr[url] = {
+            "id": "completed-direct-task",
+            "type": "PR_REVIEW",
+            "status": "completed",
+            "pr_url": url,
+            "repository": ECO_REPO,
+            "target_project": "ECO",
+        }
+
+        result = intake(db, url, repository_projects=PROJECTS)
+
+        self.assertEqual(result["id"], "completed-direct-task")
+        self.assertEqual(result["status"], "completed")
+        self.assertFalse(any(name == "kueper_create_task" for name, _ in db.calls))
+        self.assertFalse(any(name == "kueper_enqueue_direct_pr_review" for name, _ in db.calls))
+
     def test_discovery_scans_registry_routes_and_forwards_head_sha(self):
         db = FakeDb()
 
