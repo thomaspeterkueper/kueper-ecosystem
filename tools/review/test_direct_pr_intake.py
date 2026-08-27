@@ -6,6 +6,8 @@ from tools.review.direct_pr_intake import discover, intake, parse_pr_url
 ECO_REPO = "thomaspeterkueper/kueper-ecosystem"
 NOXIA_REPO = "thomaspeterkueper/noxiagame"
 PROJECTS = {ECO_REPO: "ECO", NOXIA_REPO: "NOXIA"}
+OLD_SHA = "1" * 40
+NEW_SHA = "2" * 40
 
 
 class FakeDb:
@@ -37,6 +39,13 @@ class FakeDb:
                     task["pr_url"] = payload["p_pr_url"]
                     self.tasks_by_pr[payload["p_pr_url"]] = task
                     return dict(task)
+        if name == "kueper_requeue_changed_pr_head":
+            task = self.tasks_by_pr[payload["p_pr_url"]]
+            accepted = task.get("metadata", {}).get("accepted_head_sha")
+            if accepted != payload["p_head_sha"]:
+                task["status"] = "review_pending"
+                task.setdefault("metadata", {})["re_review_head_sha"] = payload["p_head_sha"]
+            return dict(task)
         raise AssertionError(f"unexpected RPC {name}")
 
 
@@ -64,6 +73,10 @@ class DirectPrIntakeTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             intake(FakeDb(), "https://github.com/example/unregistered/pull/1", repository_projects=PROJECTS)
 
+    def test_rejects_non_full_head_sha(self):
+        with self.assertRaises(ValueError):
+            intake(FakeDb(), f"https://github.com/{ECO_REPO}/pull/30", repository_projects=PROJECTS, head_sha="abc123")
+
     def test_duplicate_intake_is_idempotent(self):
         db = FakeDb()
         url = f"https://github.com/{ECO_REPO}/pull/30"
@@ -88,16 +101,51 @@ class DirectPrIntakeTests(unittest.TestCase):
         self.assertEqual(result["id"], "origin-task")
         self.assertFalse(any(name == "kueper_create_task" for name, _ in db.calls))
 
-    def test_discovery_scans_registry_and_routes_each_repository(self):
+    def test_completed_pass_same_head_stays_completed(self):
+        db = FakeDb()
+        url = f"https://github.com/{NOXIA_REPO}/pull/10"
+        db.tasks_by_pr[url] = {
+            "id": "origin-task",
+            "type": "IMPLEMENT_EXTERNAL_REQUIREMENT",
+            "status": "completed",
+            "pr_url": url,
+            "repository": NOXIA_REPO,
+            "target_project": "NOXIA",
+            "metadata": {"accepted_head_sha": OLD_SHA},
+        }
+        result = intake(db, url, repository_projects=PROJECTS, head_sha=OLD_SHA)
+        self.assertEqual(result["status"], "completed")
+        self.assertTrue(any(name == "kueper_requeue_changed_pr_head" for name, _ in db.calls))
+        self.assertFalse(any(name == "kueper_create_task" for name, _ in db.calls))
+
+    def test_completed_pass_changed_head_requeues_for_review(self):
+        db = FakeDb()
+        url = f"https://github.com/{NOXIA_REPO}/pull/10"
+        db.tasks_by_pr[url] = {
+            "id": "origin-task",
+            "type": "IMPLEMENT_EXTERNAL_REQUIREMENT",
+            "status": "completed",
+            "pr_url": url,
+            "repository": NOXIA_REPO,
+            "target_project": "NOXIA",
+            "metadata": {"accepted_head_sha": OLD_SHA},
+        }
+        result = intake(db, url, repository_projects=PROJECTS, head_sha=NEW_SHA)
+        self.assertEqual(result["status"], "review_pending")
+        self.assertEqual(result["metadata"]["re_review_head_sha"], NEW_SHA)
+        self.assertFalse(any(name == "kueper_create_task" for name, _ in db.calls))
+
+    def test_discovery_scans_registry_routes_and_forwards_head_sha(self):
         db = FakeDb()
 
         def fake_fetch(repository, token):
             self.assertEqual(token, "token")
             number = 10 if repository == NOXIA_REPO else 30
-            return [{"html_url": f"https://github.com/{repository}/pull/{number}"}]
+            return [{"html_url": f"https://github.com/{repository}/pull/{number}", "head": {"sha": NEW_SHA}}]
 
         result = discover(db, "token", repository_projects=PROJECTS, fetch_open_prs=fake_fetch)
         self.assertEqual(len(result), 2)
+        self.assertTrue(all(row["head_sha"] == NEW_SHA for row in result))
         targets = {payload["p_repository"]: payload["p_target_project"] for name, payload in db.calls if name == "kueper_create_task"}
         self.assertEqual(targets[ECO_REPO], "ECO")
         self.assertEqual(targets[NOXIA_REPO], "NOXIA")
