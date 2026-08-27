@@ -68,6 +68,23 @@ def intake(
     target_project = projects.get(repo)
     if not target_project:
         raise ValueError(f"repository is not enabled in registry: {repo}")
+
+    existing = db.rpc("kueper_get_task_for_pr", {"p_pr_url": pr_url})
+    if isinstance(existing, dict) and existing.get("id"):
+        # Agent-created PRs already carry their originating task. Returning it
+        # here prevents a second PR_REVIEW task from being introduced by the
+        # registry scanner. A pending direct-intake task is recoverable below.
+        if existing.get("type") != "PR_REVIEW" or existing.get("status") != "pending":
+            return existing
+        promoted = db.rpc("kueper_enqueue_direct_pr_review", {
+            "p_task_id": existing["id"],
+            "p_pr_url": pr_url,
+            "p_repository": repo,
+        })
+        if not isinstance(promoted, dict):
+            raise RuntimeError("kueper_enqueue_direct_pr_review returned no task")
+        return promoted
+
     payload = {
         "pr_url": pr_url,
         "origin": "direct-pr-intake",
@@ -145,7 +162,13 @@ def discover(
             if not html_url:
                 continue
             task = intake(db, html_url, repository_projects=projects)
-            results.append({"repository": repository, "pr_url": html_url, "task_id": task.get("id"), "status": task.get("status")})
+            results.append({
+                "repository": repository,
+                "pr_url": html_url,
+                "task_id": task.get("id"),
+                "status": task.get("status"),
+                "task_type": task.get("type"),
+            })
     return results
 
 
