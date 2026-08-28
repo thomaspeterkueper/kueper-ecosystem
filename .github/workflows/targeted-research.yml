@@ -1,0 +1,76 @@
+name: KUEPER Targeted Research
+
+on:
+  workflow_dispatch:
+    inputs:
+      research_ids:
+        description: "Comma-separated queued research IDs"
+        required: true
+        type: string
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/targeted-research.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kueper-targeted-research
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+      ANTHROPIC_BASE_URL: "https://api.deepseek.com/anthropic"
+      ANTHROPIC_AUTH_TOKEN: ${{ secrets.DEEPSEEK_API_KEY }}
+      ANTHROPIC_MODEL: "deepseek-v4-flash"
+      ANTHROPIC_DEFAULT_OPUS_MODEL: "deepseek-v4-pro[1m]"
+      ANTHROPIC_DEFAULT_SONNET_MODEL: "deepseek-v4-flash"
+      ANTHROPIC_DEFAULT_HAIKU_MODEL: "deepseek-v4-flash"
+      KUEPER_RESEARCH_AGENT_CMD: node ${{ github.workspace }}/tools/research/agent-with-exa.mjs
+      KUEPER_SYNTHESIS_AGENT_BIN: claude
+      KUEPER_RESEARCH_IDS: ${{ github.event.inputs.research_ids || 'RES-20260828-0806A449,RES-20260828-D6A60CB1,RES-20260828-4570466F' }}
+    steps:
+      - name: Checkout control plane
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Claude Code agent frontend
+        run: npm install --global @anthropic-ai/claude-code
+
+      - name: Install AI Gateway research tooling
+        run: npm install --no-save --package-lock=false ai@6.0.0
+
+      - name: Verify configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$KUEPER_BOT_TOKEN" || { echo "Missing KUEPER_BOT_TOKEN"; exit 2; }
+          test -n "$DEEPSEEK_API_KEY" || { echo "Missing DEEPSEEK_API_KEY"; exit 2; }
+          test -n "$AI_GATEWAY_API_KEY" || { echo "Missing AI_GATEWAY_API_KEY"; exit 2; }
+          test -n "$KUEPER_RESEARCH_IDS" || { echo "Missing KUEPER_RESEARCH_IDS"; exit 2; }
+          claude --version
+          node --version
+
+      - name: Research selected queued topics
+        run: python3 tools/research/execute-targeted.py | tee targeted-research-report.json
+
+      - name: Upload research report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: targeted-research-${{ github.run_id }}
+          path: targeted-research-report.json
+          if-no-files-found: ignore
+          retention-days: 30
