@@ -1,13 +1,16 @@
 {
   "id": "RES-20260828-0806A449",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-28T19:31:00+00:00",
   "source_project": "avi-modell",
   "source_repository": "thomaspeterkueper/avi-modell",
   "title": "Historienabhängige kosmologische Zustandsbeschreibung",
   "question": "Welche etablierten theoretischen Frameworks in Kosmologie, Gravitation und statistischer Physik erlauben historien- oder pfadabhängige Observablen beziehungsweise erweiterte Zustandsbeschreibungen, wenn die momentanen kosmologischen Variablen Y identisch sind, und welche formalen Bedingungen müsste ein zusätzlicher AVI-Historienzustand ξ erfüllen, um kovariant, testbar und nicht ad hoc zu sein?",
   "why_now": "AVI ist auf den kosmologischen Scope korrigiert; als erster Profiltest soll die zentrale Historienseparation bei gleichem Gegenwartszustand gegen etablierte theoretische Konzepte abgegrenzt werden, bevor zusätzliche Modellstruktur festgeschrieben wird.",
-  "languages": ["en", "de"],
+  "languages": [
+    "en",
+    "de"
+  ],
   "evidence_profile": "avi-theoretical-cosmology",
   "relevance_score": 0.99,
   "scores": {
@@ -17,5 +20,7 @@
     "evidence_potential": 0.95
   },
   "fingerprint": "0806a44962601a10",
-  "pilot": true
+  "pilot": true,
+  "updated_at": "2026-08-28T19:41:09+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/23"
 }
