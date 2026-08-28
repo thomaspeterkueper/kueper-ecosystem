@@ -17,8 +17,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
-import { generateText, stepCountIs } from 'ai';
-import { gateway } from '@ai-sdk/gateway';
+import { generateText, gateway, stepCountIs } from 'ai';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '../..');
@@ -56,9 +55,16 @@ async function buildEvidencePacket() {
   const whyNow = field(originalPrompt, 'Why now');
   const requestedLanguages = field(originalPrompt, 'Requested source languages') || 'de, en';
 
-  const model = process.env.KUEPER_EVIDENCE_MODEL || evidencePolicy.model || 'deepseek/deepseek-v4-flash';
-  const numResults = Number(process.env.KUEPER_EVIDENCE_NUM_RESULTS || evidencePolicy.num_results || 6);
-  const maxSteps = Number(process.env.KUEPER_EVIDENCE_MAX_STEPS || evidencePolicy.max_steps || 4);
+  const model =
+    process.env.KUEPER_EVIDENCE_MODEL ||
+    evidencePolicy.model ||
+    'google/gemini-3.5-flash-lite';
+  const numResults = Number(
+    process.env.KUEPER_EVIDENCE_NUM_RESULTS || evidencePolicy.num_results || 6,
+  );
+  const maxSteps = Number(
+    process.env.KUEPER_EVIDENCE_MAX_STEPS || evidencePolicy.max_steps || 4,
+  );
   const minimumUrls = Number(evidencePolicy.minimum_urls || 2);
 
   const prompt = `You are the external-evidence scout for the KUEPER research pipeline.
@@ -69,7 +75,7 @@ Question: ${question}
 Why now: ${whyNow}
 Requested discovery languages: ${requestedLanguages}
 
-Use the webSearch tool before answering. Search with more than one query when that materially improves coverage. Prefer primary sources, peer-reviewed papers, official institutions, standards bodies, academic publishers, and original technical documentation. Secondary sources may be included only when useful for orientation or disagreement.
+Use the exa_search tool before answering. Search with more than one query when that materially improves coverage. Prefer primary sources, peer-reviewed papers, official institutions, standards bodies, academic publishers, and original technical documentation. Secondary sources may be included only when useful for orientation or disagreement.
 
 Return a compact evidence packet in Markdown with exactly these sections:
 ## Search summary
@@ -82,12 +88,12 @@ Number every source and include its exact title, author/institution when availab
 Do not fabricate citations, URLs, dates, authors, quotations, or source contents. This packet is discovery material for a second research agent, not a canonical conclusion.`;
 
   const result = await generateText({
-    model: gateway(model),
+    model,
     system:
       'Use Exa search to ground the response in current external sources. Search first; synthesize second. Preserve uncertainty and source provenance.',
     prompt,
     tools: {
-      webSearch: gateway.tools.exaSearch({
+      exa_search: gateway.tools.exaSearch({
         type: evidencePolicy.search_type || 'auto',
         numResults,
       }),
@@ -101,13 +107,14 @@ Do not fabricate citations, URLs, dates, authors, quotations, or source contents
     },
   });
 
-  const searchCalls = result.steps.reduce(
-    (count, step) => count + (step.toolResults ?? []).filter((r) => r.toolName === 'webSearch').length,
-    0,
+  const searchResults = (result.staticToolResults ?? []).filter(
+    (toolResult) => toolResult.toolName === 'exa_search',
   );
   const urls = uniqueUrls(result.text);
 
-  if (searchCalls < 1) throw new Error('Exa scout returned no webSearch tool call');
+  if (searchResults.length < 1) {
+    throw new Error('Exa scout returned no exa_search tool result');
+  }
   if (urls.length < minimumUrls) {
     throw new Error(`Exa scout returned only ${urls.length} source URL(s); minimum is ${minimumUrls}`);
   }
@@ -116,7 +123,7 @@ Do not fabricate citations, URLs, dates, authors, quotations, or source contents
     provider: 'exa',
     transport: 'vercel-ai-gateway',
     model,
-    searchCalls,
+    searchCalls: searchResults.length,
     urlCount: urls.length,
     text: result.text.trim(),
   };
@@ -144,14 +151,15 @@ try {
   if (packet) {
     augmentedPrompt += `\n\n---\n## External evidence discovery packet (Exa via Vercel AI Gateway)\n\nThis packet is non-canonical discovery material. Treat every claim as provisional until mapped to the cited source. Prefer the packet's exact URLs as starting points, compare conflicting sources, and use live web search as an additional verification channel when available. Never elevate fictional canon to real-world evidence.\n\nProvider: ${packet.provider}\nTransport: ${packet.transport}\nScout model: ${packet.model}\nSearch calls: ${packet.searchCalls}\nSource URLs surfaced: ${packet.urlCount}\n\n${packet.text}\n---`;
     console.error(
-      `agent-with-exa: attached Exa evidence packet (${packet.searchCalls} search call(s), ${packet.urlCount} URL(s))`,
+      `agent-with-exa: attached Exa evidence packet (${packet.searchCalls} search result(s), ${packet.urlCount} URL(s))`,
     );
   }
 
   process.exit(runUnderlyingAgent(augmentedPrompt));
 } catch (error) {
   const message = error instanceof Error ? error.message : String(error);
-  const required = evidencePolicy.required === true || process.env.KUEPER_EXTERNAL_EVIDENCE_REQUIRED === '1';
+  const required =
+    evidencePolicy.required === true || process.env.KUEPER_EXTERNAL_EVIDENCE_REQUIRED === '1';
   console.error(`agent-with-exa: Exa evidence failed: ${message}`);
   if (required) process.exit(3);
   console.error('agent-with-exa: falling back to the existing research agent without Exa');
