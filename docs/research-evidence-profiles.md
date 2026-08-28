@@ -14,7 +14,9 @@ The research loop uses project-specific evidence profiles from `research/policy.
 
 ## Eligible rotation
 
-The research rotation now includes `avi-modell`, `omnizedenz` and `contracomology` in addition to the previously eligible projects. Their weights are deliberately below the most active NOXIA/Mishkenaz streams, so adding them broadens coverage without letting them dominate the daily queue.
+The research rotation now includes `avi-modell`, `omnizedenz` and `contracomology` in addition to the previously eligible projects.
+
+`tools/research/discover.py` uses a deterministic smooth weighted round-robin schedule. Policy weights are scaled to small integer slots and distributed over the cycle instead of being grouped into contiguous blocks. This means a project with weight `1.0` is selected more often over time than a project with weight `0.65`, while every enabled project still receives recurring coverage. The chosen weight and evidence profile are written to the queue item for provenance.
 
 ## Safety boundary
 
