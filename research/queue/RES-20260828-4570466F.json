@@ -1,13 +1,19 @@
 {
   "id": "RES-20260828-4570466F",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-28T19:31:20+00:00",
   "source_project": "mishkenaz",
   "source_repository": "thomaspeterkueper/mishkenaz.org",
   "title": "Mechanismen realistischen Langzeit-Sprachwandels für Proto-Mishkenaz",
   "question": "Welche empirisch belegten Mechanismen von Lautwandel, Grammatikalisierung, Sprachkontakt, Isolation, Populationsengpässen sowie Substrat- und Superstrateinflüssen eignen sich, um die Divergenz einer über mehrere Regionen verteilten Nachfahrensprache über Jahrhunderte bis Jahrtausende plausibel zu modellieren, und welche sprachlichen Merkmale sind typischerweise besonders persistent beziehungsweise besonders wandelanfällig?",
   "why_now": "Mishkenaz definiert sich ausdrücklich über physiologisch und umgebungsbedingt geprägten Sprachwandel; vor der ausstehenden Content-Migration sollen die Wandelregeln mit realhistorischer und sprachwissenschaftlicher Evidenz unterlegt werden.",
-  "languages": ["en", "de", "hi", "gu", "sa"],
+  "languages": [
+    "en",
+    "de",
+    "hi",
+    "gu",
+    "sa"
+  ],
   "evidence_profile": "historical-linguistic",
   "relevance_score": 0.97,
   "scores": {
@@ -17,5 +23,7 @@
     "evidence_potential": 0.95
   },
   "fingerprint": "4570466f7d40b7de",
-  "pilot": true
+  "pilot": true,
+  "updated_at": "2026-08-28T20:00:09+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/25"
 }
