@@ -1,4 +1,3 @@
-# Manual selected-queue runner; this push also starts the initial three-profile pilot.
 name: KUEPER Targeted Research
 
 on:
@@ -8,11 +7,6 @@ on:
         description: "Comma-separated queued research IDs"
         required: true
         type: string
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/targeted-research.yml"
 
 permissions:
   contents: read
@@ -37,7 +31,7 @@ jobs:
       ANTHROPIC_DEFAULT_HAIKU_MODEL: "deepseek-v4-flash"
       KUEPER_RESEARCH_AGENT_CMD: node ${{ github.workspace }}/tools/research/agent-with-exa.mjs
       KUEPER_SYNTHESIS_AGENT_BIN: claude
-      KUEPER_RESEARCH_IDS: ${{ github.event.inputs.research_ids || 'RES-20260828-0806A449,RES-20260828-D6A60CB1,RES-20260828-4570466F' }}
+      KUEPER_RESEARCH_IDS: ${{ github.event.inputs.research_ids }}
     steps:
       - name: Checkout control plane
         uses: actions/checkout@v4
