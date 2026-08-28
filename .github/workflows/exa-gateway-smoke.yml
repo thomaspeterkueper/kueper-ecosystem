@@ -1,4 +1,5 @@
 # Path-scoped production smoke validation for Exa via Vercel AI Gateway.
+# Revalidated after project-specific evidence profiles were introduced.
 name: Exa Gateway Smoke
 
 on:
