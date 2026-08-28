@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "schema_version": "1.0.1",
+  "schema_version": "1.1.0",
   "target_repository": "thomaspeterkueper/kueper-knowledge-graph",
   "candidate_path": "research/candidates",
   "default_languages": ["de", "en"],
@@ -11,6 +11,17 @@
   "minimum_evidence_score_for_candidate": 0.65,
   "auto_merge_candidates": true,
   "auto_canonicalize": false,
+  "external_evidence": {
+    "enabled": true,
+    "provider": "exa",
+    "transport": "vercel-ai-gateway",
+    "model": "deepseek/deepseek-v4-flash",
+    "search_type": "auto",
+    "num_results": 6,
+    "max_steps": 4,
+    "minimum_urls": 2,
+    "required": false
+  },
   "eligible_projects": [
     {"id": "noxia", "weight": 1.0, "languages": ["de", "en"]},
     {"id": "noxia-universe", "weight": 1.0, "languages": ["de", "en"]},
