@@ -23,6 +23,7 @@ const root = path.resolve(here, '../..');
 const policyPath = path.join(root, 'research', 'policy.json');
 const policy = JSON.parse(fs.readFileSync(policyPath, 'utf8'));
 const evidencePolicy = policy.external_evidence ?? {};
+const evidenceProfiles = policy.evidence_profiles ?? {};
 
 const originalPrompt = process.argv.slice(2).join(' ').trim();
 if (!originalPrompt) {
@@ -37,6 +38,13 @@ function field(prompt, label) {
 
 function uniqueUrls(text) {
   return [...new Set(text.match(/https?:\/\/[^\s)>\]"']+/g) ?? [])];
+}
+
+function resolveProfile(sourceProject) {
+  const explicit = field(originalPrompt, 'Evidence profile');
+  const project = (policy.eligible_projects ?? []).find((entry) => entry.id === sourceProject);
+  const name = explicit || project?.evidence_profile || 'general';
+  return { name, config: evidenceProfiles[name] ?? evidenceProfiles.general ?? {} };
 }
 
 async function buildEvidencePacket() {
@@ -58,18 +66,21 @@ async function buildEvidencePacket() {
   const question = field(originalPrompt, 'Question');
   const whyNow = field(originalPrompt, 'Why now');
   const requestedLanguages = field(originalPrompt, 'Requested source languages') || 'de, en';
+  const { name: profileName, config: profile } = resolveProfile(sourceProject);
 
   const model =
     process.env.KUEPER_EVIDENCE_MODEL ||
     evidencePolicy.model ||
     'deepseek/deepseek-v4-flash-0731';
   const numResults = Number(
-    process.env.KUEPER_EVIDENCE_NUM_RESULTS || evidencePolicy.num_results || 6,
+    process.env.KUEPER_EVIDENCE_NUM_RESULTS || profile.exa_num_results || evidencePolicy.num_results || 6,
   );
   const maxSteps = Number(
-    process.env.KUEPER_EVIDENCE_MAX_STEPS || evidencePolicy.max_steps || 4,
+    process.env.KUEPER_EVIDENCE_MAX_STEPS || profile.exa_max_steps || evidencePolicy.max_steps || 4,
   );
-  const minimumUrls = Number(evidencePolicy.minimum_urls || 2);
+  const minimumUrls = Number(profile.minimum_urls || evidencePolicy.minimum_urls || 2);
+  const preferredSourceTypes = (profile.preferred_source_types ?? []).join(', ');
+  const profileGuidance = profile.scout_guidance || 'Apply rigorous source criticism and preserve uncertainty.';
 
   const prompt = `You are the external-evidence scout for the KUEPER research pipeline.
 
@@ -78,6 +89,9 @@ Source project: ${sourceProject}
 Question: ${question}
 Why now: ${whyNow}
 Requested discovery languages: ${requestedLanguages}
+Evidence profile: ${profileName}
+Preferred source types: ${preferredSourceTypes || 'not specified'}
+Profile-specific guidance: ${profileGuidance}
 
 Use the exa_search tool before answering. Search with more than one query when that materially improves coverage. Prefer primary sources, peer-reviewed papers, official institutions, standards bodies, academic publishers, and original technical documentation. Secondary sources may be included only when useful for orientation or disagreement.
 
@@ -94,7 +108,7 @@ Do not fabricate citations, URLs, dates, authors, quotations, or source contents
   const result = await generateText({
     model,
     system:
-      'Use Exa search to ground the response in current external sources. Search first; synthesize second. Preserve uncertainty and source provenance.',
+      `Use Exa search to ground the response in current external sources. Search first; synthesize second. Apply evidence profile ${profileName}. Preserve uncertainty and source provenance.`,
     prompt,
     tools: {
       exa_search: gateway.tools.exaSearch({
@@ -110,7 +124,7 @@ Do not fabricate citations, URLs, dates, authors, quotations, or source contents
     providerOptions: {
       gateway: {
         user: 'kueper-research-loop',
-        tags: ['kueper', 'external-evidence', 'exa', `project:${sourceProject}`],
+        tags: ['kueper', 'external-evidence', 'exa', `project:${sourceProject}`, `profile:${profileName}`],
       },
     },
   });
@@ -131,6 +145,7 @@ Do not fabricate citations, URLs, dates, authors, quotations, or source contents
     provider: 'exa',
     transport: 'vercel-ai-gateway',
     model,
+    profile: profileName,
     searchCalls: searchResults.length,
     urlCount: urls.length,
     text: result.text.trim(),
@@ -166,6 +181,7 @@ try {
           provider: packet.provider,
           transport: packet.transport,
           model: packet.model,
+          profile: packet.profile,
           searchCalls: packet.searchCalls,
           urlCount: packet.urlCount,
         },
@@ -179,7 +195,7 @@ try {
   let augmentedPrompt = originalPrompt;
 
   if (packet) {
-    augmentedPrompt += `\n\n---\n## External evidence discovery packet (Exa via Vercel AI Gateway)\n\nThis packet is non-canonical discovery material. Treat every claim as provisional until mapped to the cited source. Prefer the packet's exact URLs as starting points, compare conflicting sources, and use live web search as an additional verification channel when available. Never elevate fictional canon to real-world evidence.\n\nProvider: ${packet.provider}\nTransport: ${packet.transport}\nScout model: ${packet.model}\nSearch calls: ${packet.searchCalls}\nSource URLs surfaced: ${packet.urlCount}\n\n${packet.text}\n---`;
+    augmentedPrompt += `\n\n---\n## External evidence discovery packet (Exa via Vercel AI Gateway)\n\nThis packet is non-canonical discovery material. Treat every claim as provisional until mapped to the cited source. Prefer the packet's exact URLs as starting points, compare conflicting sources, and use live web search as an additional verification channel when available. Never elevate fictional canon to real-world evidence.\n\nProvider: ${packet.provider}\nTransport: ${packet.transport}\nScout model: ${packet.model}\nEvidence profile: ${packet.profile}\nSearch calls: ${packet.searchCalls}\nSource URLs surfaced: ${packet.urlCount}\n\n${packet.text}\n---`;
     console.error(
       `agent-with-exa: attached Exa evidence packet (${packet.searchCalls} search result(s), ${packet.urlCount} URL(s))`,
     );

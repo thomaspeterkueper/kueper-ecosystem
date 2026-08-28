@@ -1,13 +1,16 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "target_repository": "thomaspeterkueper/kueper-knowledge-graph",
   "candidate_path": "research/candidates",
-  "default_languages": ["de", "en"],
+  "default_languages": [
+    "de",
+    "en"
+  ],
   "max_languages_per_topic": 5,
   "max_discoveries_per_run": 3,
   "max_research_topics_per_run": 2,
-  "minimum_relevance_score": 0.60,
+  "minimum_relevance_score": 0.6,
   "minimum_evidence_score_for_candidate": 0.65,
   "auto_merge_candidates": true,
   "auto_canonicalize": false,
@@ -23,22 +26,278 @@
     "required": false
   },
   "eligible_projects": [
-    {"id": "noxia", "weight": 1.0, "languages": ["de", "en"]},
-    {"id": "noxia-universe", "weight": 1.0, "languages": ["de", "en"]},
-    {"id": "mishkenaz", "weight": 1.0, "languages": ["de", "en", "hi", "gu", "sa"]},
-    {"id": "ota", "weight": 0.9, "languages": ["de", "en"]},
-    {"id": "ssf", "weight": 0.8, "languages": ["de", "en"]},
-    {"id": "kueper-com", "weight": 0.7, "languages": ["de", "en"]},
-    {"id": "endia", "weight": 0.7, "languages": ["de", "en"]},
-    {"id": "zereya", "weight": 0.7, "languages": ["de", "en"]}
+    {
+      "id": "noxia",
+      "weight": 1.0,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "technical-scientific"
+    },
+    {
+      "id": "noxia-universe",
+      "weight": 1.0,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "worldbuilding-scientific"
+    },
+    {
+      "id": "mishkenaz",
+      "weight": 1.0,
+      "languages": [
+        "de",
+        "en",
+        "hi",
+        "gu",
+        "sa"
+      ],
+      "evidence_profile": "historical-linguistic"
+    },
+    {
+      "id": "ota",
+      "weight": 0.9,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "science"
+    },
+    {
+      "id": "ssf",
+      "weight": 0.8,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "science"
+    },
+    {
+      "id": "avi-modell",
+      "weight": 0.85,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "avi-theoretical-cosmology"
+    },
+    {
+      "id": "omnizedenz",
+      "weight": 0.65,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "philosophy-comparative"
+    },
+    {
+      "id": "contracomology",
+      "weight": 0.65,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "philosophy-comparative"
+    },
+    {
+      "id": "kueper-com",
+      "weight": 0.7,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "general"
+    },
+    {
+      "id": "endia",
+      "weight": 0.7,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "worldbuilding-scientific"
+    },
+    {
+      "id": "zereya",
+      "weight": 0.7,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "worldbuilding-scientific"
+    }
   ],
   "evidence_rules": {
-    "prefer": ["primary-source", "peer-reviewed", "official-institution", "academic-publisher"],
+    "prefer": [
+      "primary-source",
+      "peer-reviewed",
+      "official-institution",
+      "academic-publisher"
+    ],
     "allow_secondary": true,
     "require_source_urls": true,
     "require_uncertainty": true,
     "require_language_per_source": true,
     "require_claim_source_mapping": true,
     "reject_unsourced_claims": true
+  },
+  "evidence_profiles": {
+    "general": {
+      "description": "General external research with explicit provenance and uncertainty.",
+      "minimum_evidence_score": 0.65,
+      "minimum_sources": 2,
+      "minimum_domains": 2,
+      "minimum_urls": 2,
+      "preferred_source_types": [
+        "primary-source",
+        "peer-reviewed",
+        "official-institution",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "primary-source",
+        "peer-reviewed",
+        "official-institution",
+        "academic-publisher"
+      ],
+      "require_strong_source": false,
+      "scout_guidance": "Prefer direct, attributable sources. Use secondary sources for orientation or disagreement, not as a substitute for stronger evidence when stronger evidence exists."
+    },
+    "science": {
+      "description": "Empirical and theoretical science with a strong primary-literature bias.",
+      "minimum_evidence_score": 0.72,
+      "minimum_sources": 3,
+      "minimum_domains": 2,
+      "minimum_urls": 3,
+      "preferred_source_types": [
+        "peer-reviewed",
+        "primary-source",
+        "official-dataset",
+        "official-institution",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "peer-reviewed",
+        "primary-source",
+        "official-dataset",
+        "official-institution"
+      ],
+      "require_strong_source": true,
+      "scout_guidance": "Prioritize peer-reviewed papers, original datasets, collaboration/instrument publications and official institutions. Label preprints explicitly. Distinguish measurement, accepted interpretation, model dependence and open controversy."
+    },
+    "avi-theoretical-cosmology": {
+      "description": "Strict cosmology/theory profile for the Axiomatisches Vakuum Integral (AVI).",
+      "minimum_evidence_score": 0.72,
+      "minimum_sources": 3,
+      "minimum_domains": 2,
+      "minimum_urls": 3,
+      "preferred_source_types": [
+        "peer-reviewed",
+        "primary-source",
+        "official-dataset",
+        "collaboration-publication",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "peer-reviewed",
+        "primary-source",
+        "official-dataset",
+        "collaboration-publication"
+      ],
+      "require_strong_source": true,
+      "scout_guidance": "Treat standard cosmology, observations and mathematical results as external evidence; treat AVI-specific assumptions as model postulates unless independently supported. Separate established background, derived consequence, postulate, interpretation and falsifiable prediction. Do not use metaphysical analogy as physical evidence."
+    },
+    "technical-scientific": {
+      "description": "Engineering/technology research anchored in standards, original documentation and science.",
+      "minimum_evidence_score": 0.68,
+      "minimum_sources": 2,
+      "minimum_domains": 2,
+      "minimum_urls": 2,
+      "preferred_source_types": [
+        "standard",
+        "official-technical-documentation",
+        "peer-reviewed",
+        "primary-source",
+        "official-institution"
+      ],
+      "strong_source_markers": [
+        "standard",
+        "official-technical-documentation",
+        "peer-reviewed",
+        "primary-source"
+      ],
+      "require_strong_source": true,
+      "scout_guidance": "Prefer standards bodies, original technical documentation, peer-reviewed engineering literature and official datasets. Vendor material may establish product facts but not independent performance claims. Community posts are leads only unless independently corroborated."
+    },
+    "historical-linguistic": {
+      "description": "Historical, archaeological and linguistic research with attestation/reconstruction separation.",
+      "minimum_evidence_score": 0.68,
+      "minimum_sources": 3,
+      "minimum_domains": 2,
+      "minimum_urls": 3,
+      "preferred_source_types": [
+        "primary-historical-source",
+        "archaeological-publication",
+        "peer-reviewed",
+        "academic-corpus",
+        "scholarly-grammar",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "primary-historical-source",
+        "archaeological-publication",
+        "peer-reviewed",
+        "academic-corpus",
+        "scholarly-grammar"
+      ],
+      "require_strong_source": true,
+      "scout_guidance": "Separate directly attested forms/finds, scholarly reconstruction, comparative inference and fictional extrapolation. Prefer archaeological reports, corpora, scholarly grammars, historical primary sources and peer-reviewed historical linguistics. Search relevant source languages when they materially improve access to primary scholarship."
+    },
+    "worldbuilding-scientific": {
+      "description": "Real-world plausibility research for fictional settings while preserving the canon/evidence boundary.",
+      "minimum_evidence_score": 0.65,
+      "minimum_sources": 2,
+      "minimum_domains": 2,
+      "minimum_urls": 2,
+      "preferred_source_types": [
+        "peer-reviewed",
+        "primary-source",
+        "official-institution",
+        "standard",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "peer-reviewed",
+        "primary-source",
+        "official-institution",
+        "standard"
+      ],
+      "require_strong_source": true,
+      "scout_guidance": "Research the real-world constraint first, then state what it permits or challenges in worldbuilding. Never present fictional canon as evidence. Distinguish physically established constraints, engineering feasibility, speculative extension and narrative choice."
+    },
+    "philosophy-comparative": {
+      "description": "Philosophical/theological comparison without pretending metaphysical theses are empirically verified.",
+      "minimum_evidence_score": 0.65,
+      "minimum_sources": 3,
+      "minimum_domains": 2,
+      "minimum_urls": 3,
+      "preferred_source_types": [
+        "primary-philosophical-text",
+        "scholarly-edition",
+        "peer-reviewed",
+        "academic-reference",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "primary-philosophical-text",
+        "scholarly-edition",
+        "peer-reviewed",
+        "academic-reference"
+      ],
+      "require_strong_source": true,
+      "scout_guidance": "Use primary philosophical/theological texts and serious scholarship. Separate textual/historical fact, scholarly interpretation, comparative analogy and KUEPER-system claim. Metaphysical propositions are not validated merely by source count; report them as philosophical positions unless they make independently testable empirical claims."
+    }
   }
 }

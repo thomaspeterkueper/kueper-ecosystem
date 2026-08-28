@@ -35,6 +35,14 @@ def run(cmd:list[str],cwd:Path|None=None,check=True,env:dict[str,str]|None=None)
 def auth_url(repo,token):return f"https://x-access-token:{urllib.parse.quote(token,safe='')}@github.com/{repo}.git"
 def repo_info(token,repo):return gh(token,"GET",f"/repos/{repo}")
 
+def evidence_profile(item:dict[str,Any])->tuple[str,dict[str,Any]]:
+    name=item.get("evidence_profile")
+    if not name:
+        entry=next((p for p in POLICY.get("eligible_projects",[]) if p.get("id")==item.get("source_project")),{})
+        name=entry.get("evidence_profile","general")
+    profiles=POLICY.get("evidence_profiles",{})
+    return name,profiles.get(name,profiles.get("general",{}))
+
 def queue(token)->list[tuple[dict[str,Any],dict[str,Any]]]:
     try:items=gh(token,"GET",f"/repos/{CONTROL}/contents/research/queue?ref=main")
     except Exception:return []
@@ -49,6 +57,8 @@ def queue(token)->list[tuple[dict[str,Any],dict[str,Any]]]:
 
 def research_prompt(item:dict[str,Any])->str:
     langs=", ".join(item.get("languages") or POLICY["default_languages"])
+    profile_name,profile=evidence_profile(item)
+    profile_rules=json.dumps(profile,ensure_ascii=False)
     return f'''You are the evidence research agent for the KUEPER ecosystem.
 
 Research ID: {item['id']}
@@ -56,17 +66,19 @@ Source project: {item['source_project']}
 Question: {item['question']}
 Why now: {item.get('why_now','')}
 Requested source languages: {langs}
+Evidence profile: {profile_name}
+Evidence profile rules: {profile_rules}
 
-Use live web search. Research the question rigorously. Languages are discovery channels, NOT evidence rankings. Prefer primary sources, peer-reviewed work, official institutions, and academic publishers. Search in the languages that materially improve coverage; do not force every language if it adds no value. Compare conflicting evidence.
+Use live web search. Research the question rigorously. Languages are discovery channels, NOT evidence rankings. Apply the evidence profile above before the general defaults. Prefer primary sources, peer-reviewed work, official institutions, and academic publishers. Search in the languages that materially improve coverage; do not force every language if it adds no value. Compare conflicting evidence.
 
 You MUST distinguish established findings, inference, open/contested points, and implications for the source project. Do not convert fictional canon into real-world evidence or real-world evidence into fictional canon.
 
 Create exactly two files in the checkout:
 1. `.research-result.json` containing:
-{{"evidence_score":0.0,"source_count":0,"distinct_domains":0,"languages_used":["en"],"uncertainty":"low|medium|high","candidate_filename":"{item['id']}.md"}}
+{{"evidence_score":0.0,"source_count":0,"distinct_domains":0,"languages_used":["en"],"uncertainty":"low|medium|high","evidence_profile":"{profile_name}","candidate_filename":"{item['id']}.md"}}
 2. `research/candidates/{item['id']}.md` with sections:
 # title
-Metadata (Research ID, source project, status: candidate/non-canonical, researched date)
+Metadata (Research ID, source project, evidence profile, status: candidate/non-canonical, researched date)
 ## Forschungsfrage
 ## Kurzfazit
 ## Befundlage
@@ -87,10 +99,16 @@ Do not edit canonical KG entities, relations, mappings, schemas, external tasks,
 def validate_result(root:Path,item:dict[str,Any])->dict[str,Any]:
     jf=root/".research-result.json";candidate=root/POLICY["candidate_path"]/f"{item['id']}.md"
     if not jf.exists() or not candidate.exists():raise RuntimeError("research agent did not create required result files")
+    profile_name,profile=evidence_profile(item)
     meta=json.loads(jf.read_text(encoding="utf-8"));score=float(meta.get("evidence_score",0));src=int(meta.get("source_count",0));domains=int(meta.get("distinct_domains",0))
     text=candidate.read_text(encoding="utf-8");urls=re.findall(r"https?://[^\s)>]+",text)
-    if score<float(POLICY["minimum_evidence_score_for_candidate"]):raise RuntimeError(f"evidence score too low: {score}")
-    if src<2 or domains<2 or len(set(urls))<2:raise RuntimeError("candidate requires >=2 sources from >=2 domains with URLs")
+    min_score=float(profile.get("minimum_evidence_score",POLICY["minimum_evidence_score_for_candidate"]));min_sources=int(profile.get("minimum_sources",2));min_domains=int(profile.get("minimum_domains",2));min_urls=int(profile.get("minimum_urls",2))
+    if score<min_score:raise RuntimeError(f"evidence score too low for {profile_name}: {score} < {min_score}")
+    if src<min_sources or domains<min_domains or len(set(urls))<min_urls:raise RuntimeError(f"candidate for {profile_name} requires >={min_sources} sources, >={min_domains} domains and >={min_urls} URLs")
+    if profile.get("require_strong_source"):
+        markers=[str(x).lower() for x in profile.get("strong_source_markers",[])]
+        if markers and not any(marker in text.lower() for marker in markers):raise RuntimeError(f"candidate for {profile_name} lacks a strong source type marker")
+    if meta.get("evidence_profile") not in (None,profile_name):raise RuntimeError(f"agent reported mismatched evidence profile: {meta.get('evidence_profile')} != {profile_name}")
     required=["## Forschungsfrage","## Befundlage","## Gegenbefunde und Unsicherheit","## Claim-Source-Mapping","## Quellen","## Relevanz für KUEPER-Projekte","## Offene Fragen"]
     missing=[x for x in required if x not in text]
     if missing:raise RuntimeError(f"missing candidate sections: {missing}")
@@ -121,7 +139,7 @@ def execute(token:str,item:dict[str,Any],payload:dict[str,Any])->dict[str,Any]:
         if paths!=[allowed]:raise RuntimeError(f"research agent changed forbidden files: {paths}")
         run(["git","config","user.name","KUEPER Research Bot"],cwd=root);run(["git","config","user.email","research-bot@users.noreply.github.com"],cwd=root)
         run(["git","add",allowed],cwd=root);run(["git","commit","-m",f"research: candidate {item['id']}"],cwd=root);run(["git","push","--quiet","origin",branch],cwd=root)
-        pr=gh(token,"POST",f"/repos/{TARGET}/pulls",{"title":f"[Research] {item['id']}: {item['title']}","head":branch,"base":default,"body":f"Multilingual evidence candidate for `{item['source_project']}`. Evidence score: `{meta.get('evidence_score')}`. This PR adds only non-canonical staging material under `{POLICY['candidate_path']}/`; it does not modify canonical KG data.","draft":False})
+        pr=gh(token,"POST",f"/repos/{TARGET}/pulls",{"title":f"[Research] {item['id']}: {item['title']}","head":branch,"base":default,"body":f"Multilingual evidence candidate for `{item['source_project']}` using evidence profile `{evidence_profile(item)[0]}`. Evidence score: `{meta.get('evidence_score')}`. This PR adds only non-canonical staging material under `{POLICY['candidate_path']}/`; it does not modify canonical KG data.","draft":False})
         merge="review-required"
         if POLICY.get("auto_merge_candidates",False):
             env=os.environ.copy();env["GH_TOKEN"]=token

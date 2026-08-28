@@ -47,11 +47,14 @@ def queue_existing(token:str)->set[str]:
             except Exception:pass
     return out
 
-def prompt(project:dict[str,Any],langs:list[str])->str:
+def prompt(project:dict[str,Any],langs:list[str],profile_name:str,profile:dict[str,Any])->str:
+    profile_rules=json.dumps(profile,ensure_ascii=False)
     return f'''You are the knowledge-gap analyst for the KUEPER ecosystem. Inspect this repository deeply but DO NOT change it.
 Repository: {project['repository']}
 Project role: {project.get('role')}
 Potential research languages: {', '.join(langs)}
+Evidence profile: {profile_name}
+Evidence profile rules: {profile_rules}
 
 Find at most 3 concrete external-knowledge gaps whose resolution would materially improve current work in this repository, its plausibility, its worldbuilding, its educational quality, or reuse across KUEPER projects.
 Do not invent speculative nice-to-haves. Prefer gaps visibly grounded in existing files, TODOs, assertions, worldbuilding assumptions, scientific claims, historical/linguistic questions, or dependencies.
@@ -75,12 +78,13 @@ def main()->int:
     if not token:raise SystemExit("KUEPER_BOT_TOKEN required")
     eligible=POLICY["eligible_projects"];pmap=projects()
     day=int(dt.datetime.now(dt.timezone.utc).strftime("%Y%j"));choice=eligible[day%len(eligible)];project=pmap[choice["id"]]
+    profile_name=choice.get("evidence_profile","general");profile=POLICY.get("evidence_profiles",{}).get(profile_name,POLICY.get("evidence_profiles",{}).get("general",{}))
     root=Path(tempfile.mkdtemp(prefix="kueper-research-discovery-"))
     results=[]
     try:
         run(["git","clone","--quiet","--depth","1",auth_url(project["repository"],token),str(root)])
         cmd=os.environ.get("KUEPER_DISCOVERY_AGENT_CMD","codex exec --full-auto").split()
-        run(cmd+[prompt(project,choice.get("languages",POLICY["default_languages"]))],cwd=root)
+        run(cmd+[prompt(project,choice.get("languages",POLICY["default_languages"]),profile_name,profile)],cwd=root)
         f=root/".kueper-discovery.json"
         if not f.exists():raise RuntimeError("agent did not create .kueper-discovery.json")
         data=json.loads(f.read_text(encoding="utf-8"));existing=queue_existing(token)
@@ -92,7 +96,7 @@ def main()->int:
             seed=f"{project['id']}|{gap.get('title')}|{gap.get('question')}".lower().strip();fp=hashlib.sha256(seed.encode()).hexdigest()[:16]
             if fp in existing:continue
             now=dt.datetime.now(dt.timezone.utc);rid=f"RES-{now.strftime('%Y%m%d')}-{fp[:8].upper()}"
-            item={"id":rid,"status":"queued","created":now.replace(microsecond=0).isoformat(),"source_project":project["id"],"source_repository":project["repository"],"title":gap.get("title"),"question":gap.get("question"),"why_now":gap.get("why_now"),"languages":langs or POLICY["default_languages"],"relevance_score":score,"scores":{k:gap.get(k) for k in ("project_relevance","cross_project_reuse","uncertainty","evidence_potential")},"fingerprint":fp}
+            item={"id":rid,"status":"queued","created":now.replace(microsecond=0).isoformat(),"source_project":project["id"],"source_repository":project["repository"],"title":gap.get("title"),"question":gap.get("question"),"why_now":gap.get("why_now"),"languages":langs or POLICY["default_languages"],"evidence_profile":profile_name,"relevance_score":score,"scores":{k:gap.get(k) for k in ("project_relevance","cross_project_reuse","uncertainty","evidence_potential")},"fingerprint":fp}
             content=base64.b64encode((json.dumps(item,indent=2,ensure_ascii=False)+"\n").encode()).decode()
             gh(token,"PUT",f"/repos/{CONTROL}/contents/research/queue/{rid}.json",{"message":f"research: queue {rid}","content":content,"branch":"main"})
             existing.add(fp);results.append(item)
