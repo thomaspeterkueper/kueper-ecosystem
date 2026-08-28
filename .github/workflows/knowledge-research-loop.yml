@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "23 3 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "research/triggers/knowledge-research-loop.txt"
 
 permissions:
   contents: read
@@ -62,7 +67,8 @@ jobs:
         run: |
           set -euo pipefail
           python3 -m json.tool research/policy.json >/dev/null
-          python3 -m py_compile tools/research/discover.py tools/research/execute.py
+          python3 -m py_compile tools/research/discover.py tools/research/execute.py tools/research/validate_ota_pilot.py
+          python3 tools/research/validate_ota_pilot.py
           node --check tools/research/agent-with-exa.mjs
 
       - name: Discover one project's highest-value research gaps
