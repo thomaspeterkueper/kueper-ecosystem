@@ -1,0 +1,44 @@
+name: Exa Gateway Smoke
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/exa-gateway-smoke.yml"
+      - "tools/research/agent-with-exa.mjs"
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+      KUEPER_EXA_SMOKE_ONLY: "1"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Verify AI Gateway secret
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$AI_GATEWAY_API_KEY" || { echo "AI_GATEWAY_API_KEY is missing"; exit 2; }
+
+      - name: Install AI SDK
+        run: npm install --no-save --package-lock=false ai@^6.0.0
+
+      - name: Run Exa smoke test
+        shell: bash
+        run: |
+          set -euo pipefail
+          node tools/research/agent-with-exa.mjs $'Research ID: SMOKE-EXA\nSource project: ecosystem\nQuestion: Find current official documentation confirming Exa Web Search availability through Vercel AI Gateway.\nWhy now: Validate the production external-evidence path after configuring the repository secret.\nRequested source languages: en'
