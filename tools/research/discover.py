@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Discover high-value knowledge gaps in eligible KUEPER projects.
 
-The discovery agent reads one rotating project per run and writes a local JSON proposal.
-Validated proposals are persisted as research queue items in kueper-ecosystem. Discovery
-itself does not change project repositories or canonical knowledge.
+The discovery agent reads one weighted rotating project per run and writes a local JSON
+proposal. Validated proposals are persisted as research queue items in kueper-ecosystem.
+Discovery itself does not change project repositories or canonical knowledge.
 """
 from __future__ import annotations
 import base64, datetime as dt, hashlib, json, os, shutil, subprocess, tempfile, urllib.error, urllib.parse, urllib.request
@@ -15,6 +15,7 @@ ROOT=Path(__file__).resolve().parents[2]
 POLICY=json.loads((ROOT/"research/policy.json").read_text(encoding="utf-8"))
 REGISTRY=json.loads((ROOT/"registry/projects.json").read_text(encoding="utf-8"))
 CONTROL="thomaspeterkueper/kueper-ecosystem"
+ROTATION_WEIGHT_SCALE=20
 
 def gh(token:str,method:str,path:str,body:dict[str,Any]|None=None)->Any:
     data=None if body is None else json.dumps(body).encode()
@@ -34,6 +35,23 @@ def run(cmd:list[str],cwd:Path|None=None):
 
 def projects()->dict[str,dict[str,Any]]:return {p["id"]:p for p in REGISTRY["projects"] if p.get("enabled",True)}
 def auth_url(repo:str,token:str)->str:return f"https://x-access-token:{urllib.parse.quote(token,safe='')}@github.com/{repo}.git"
+
+def weighted_rotation_choice(entries:list[dict[str,Any]],day_ordinal:int)->dict[str,Any]:
+    """Deterministic smooth weighted round-robin choice for a UTC calendar day.
+
+    Policy weights are scaled to small integers, then distributed across one smooth cycle.
+    This preserves long-run weight ratios without producing large contiguous blocks of the
+    same project. Equal-weight projects therefore still rotate naturally.
+    """
+    if not entries:raise RuntimeError("eligible_projects is empty")
+    weights=[max(1,round(float(entry.get("weight",1.0))*ROTATION_WEIGHT_SCALE)) for entry in entries]
+    total=sum(weights);slot=day_ordinal%total;current=[0]*len(entries)
+    chosen=0
+    for _ in range(slot+1):
+        for i,weight in enumerate(weights):current[i]+=weight
+        chosen=max(range(len(entries)),key=lambda i:current[i])
+        current[chosen]-=total
+    return entries[chosen]
 
 def queue_existing(token:str)->set[str]:
     try:items=gh(token,"GET",f"/repos/{CONTROL}/contents/research/queue?ref=main")
@@ -77,7 +95,7 @@ def main()->int:
     token=os.environ.get("KUEPER_BOT_TOKEN");
     if not token:raise SystemExit("KUEPER_BOT_TOKEN required")
     eligible=POLICY["eligible_projects"];pmap=projects()
-    day=int(dt.datetime.now(dt.timezone.utc).strftime("%Y%j"));choice=eligible[day%len(eligible)];project=pmap[choice["id"]]
+    utc_day=dt.datetime.now(dt.timezone.utc).date();choice=weighted_rotation_choice(eligible,utc_day.toordinal());project=pmap[choice["id"]]
     profile_name=choice.get("evidence_profile","general");profile=POLICY.get("evidence_profiles",{}).get(profile_name,POLICY.get("evidence_profiles",{}).get("general",{}))
     root=Path(tempfile.mkdtemp(prefix="kueper-research-discovery-"))
     results=[]
@@ -96,11 +114,11 @@ def main()->int:
             seed=f"{project['id']}|{gap.get('title')}|{gap.get('question')}".lower().strip();fp=hashlib.sha256(seed.encode()).hexdigest()[:16]
             if fp in existing:continue
             now=dt.datetime.now(dt.timezone.utc);rid=f"RES-{now.strftime('%Y%m%d')}-{fp[:8].upper()}"
-            item={"id":rid,"status":"queued","created":now.replace(microsecond=0).isoformat(),"source_project":project["id"],"source_repository":project["repository"],"title":gap.get("title"),"question":gap.get("question"),"why_now":gap.get("why_now"),"languages":langs or POLICY["default_languages"],"evidence_profile":profile_name,"relevance_score":score,"scores":{k:gap.get(k) for k in ("project_relevance","cross_project_reuse","uncertainty","evidence_potential")},"fingerprint":fp}
+            item={"id":rid,"status":"queued","created":now.replace(microsecond=0).isoformat(),"source_project":project["id"],"source_repository":project["repository"],"title":gap.get("title"),"question":gap.get("question"),"why_now":gap.get("why_now"),"languages":langs or POLICY["default_languages"],"evidence_profile":profile_name,"project_weight":float(choice.get("weight",1.0)),"relevance_score":score,"scores":{k:gap.get(k) for k in ("project_relevance","cross_project_reuse","uncertainty","evidence_potential")},"fingerprint":fp}
             content=base64.b64encode((json.dumps(item,indent=2,ensure_ascii=False)+"\n").encode()).decode()
             gh(token,"PUT",f"/repos/{CONTROL}/contents/research/queue/{rid}.json",{"message":f"research: queue {rid}","content":content,"branch":"main"})
             existing.add(fp);results.append(item)
     finally:shutil.rmtree(root,ignore_errors=True)
-    print(json.dumps({"project":project["id"],"queued":len(results),"items":results},indent=2,ensure_ascii=False));return 0
+    print(json.dumps({"project":project["id"],"project_weight":choice.get("weight",1.0),"evidence_profile":profile_name,"queued":len(results),"items":results},indent=2,ensure_ascii=False));return 0
 
 if __name__=="__main__":raise SystemExit(main())
