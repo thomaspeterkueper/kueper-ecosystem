@@ -15,7 +15,7 @@
     "enabled": true,
     "provider": "exa",
     "transport": "vercel-ai-gateway",
-    "model": "google/gemini-3.5-flash-lite",
+    "model": "deepseek/deepseek-v4-flash-0731",
     "search_type": "auto",
     "num_results": 6,
     "max_steps": 4,
