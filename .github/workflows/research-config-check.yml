@@ -1,0 +1,72 @@
+name: Research Config Check
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "research/policy.json"
+      - "registry/projects.json"
+      - "tools/research/discover.py"
+      - "tools/research/execute.py"
+      - "tools/research/agent-with-exa.mjs"
+      - ".github/workflows/research-config-check.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate JSON and source syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m json.tool research/policy.json >/dev/null
+          python -m json.tool registry/projects.json >/dev/null
+          python -m py_compile tools/research/discover.py tools/research/execute.py
+          node --check tools/research/agent-with-exa.mjs
+
+      - name: Validate profile mappings and weighted rotation
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import importlib.util
+          import json
+          from collections import Counter
+          from pathlib import Path
+
+          root = Path.cwd()
+          policy = json.loads((root / 'research/policy.json').read_text(encoding='utf-8'))
+          registry = json.loads((root / 'registry/projects.json').read_text(encoding='utf-8'))
+
+          assert policy['auto_canonicalize'] is False
+          profiles = policy['evidence_profiles']
+          eligible = policy['eligible_projects']
+          assert eligible
+          assert all(entry.get('evidence_profile') in profiles for entry in eligible)
+
+          projects = {p['id']: p for p in registry['projects']}
+          assert all(entry['id'] in projects and projects[entry['id']].get('enabled', True) for entry in eligible)
+          assert 'Axiomatisches Vakuum Integral' in projects['avi-modell']['notes']
+          assert 'Kreativ-, Text-, Musik- oder Weltbau-Modell' in projects['avi-modell']['notes']
+
+          spec = importlib.util.spec_from_file_location('discover', root / 'tools/research/discover.py')
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+
+          scaled = [max(1, round(float(entry.get('weight', 1.0)) * module.ROTATION_WEIGHT_SCALE)) for entry in eligible]
+          cycle = sum(scaled)
+          counts = Counter(module.weighted_rotation_choice(eligible, day)['id'] for day in range(cycle))
+          expected = {entry['id']: weight for entry, weight in zip(eligible, scaled)}
+          assert dict(counts) == expected, (counts, expected)
+
+          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts)}, indent=2))
+          PY
