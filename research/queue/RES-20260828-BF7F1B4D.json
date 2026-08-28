@@ -1,0 +1,21 @@
+{
+  "id": "RES-20260828-BF7F1B4D",
+  "status": "queued",
+  "created": "2026-08-28T15:29:43+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "title": "Canonical solar-system data for NOXIA's real-solar-system model",
+  "question": "What are the authoritative orbital and physical parameters (orbit radius/period, surface gravity, atmosphere, solar irradiance, and defensible Hohmann-transfer travel times) for the real solar-system bodies and colonies NOXIA simulates, and which current values are factually wrong and should be corrected?",
+  "why_now": "The Weltarchitektur migration (20260720300000) seeds real celestial bodies for the 2087 world but contains visible inconsistencies: Phobos is seeded with orbit_altitude_km = 6 while its own comment says '~6000km vom Mars', calc_travel_time_seconds marks its Hohmann estimate '8 Tage pro AE (sehr vereinfacht, wird verfeinert)' as a TODO, celestialBodies.ts sets MEO at ~2000 km, and world/analyzer.ts assigns Mars a solar factor of 0.82 while the inverse-square law at 1.524 AU gives ~0.43. Since the design goal is a simulation 'im realen Sonnensystem' and the Solar Academy teaches real astronomy and water economics, a canonical dataset fixes data bugs, grounds the educational content, and is a natural shared KUEPER Knowledge-Graph/SSF asset for future bodies (SPEC_world_hierarchy already plans orbit_radius/body_radius/gravity fields).",
+  "languages": [
+    "en"
+  ],
+  "relevance_score": 0.84,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.95
+  },
+  "fingerprint": "bf7f1b4da732966a"
+}
