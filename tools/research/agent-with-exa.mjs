@@ -98,6 +98,10 @@ Do not fabricate citations, URLs, dates, authors, quotations, or source contents
         numResults,
       }),
     },
+    prepareStep: ({ stepNumber }) =>
+      stepNumber === 0
+        ? { toolChoice: { type: 'tool', toolName: 'exa_search' } }
+        : { toolChoice: 'auto' },
     stopWhen: stepCountIs(maxSteps),
     providerOptions: {
       gateway: {
@@ -107,9 +111,9 @@ Do not fabricate citations, URLs, dates, authors, quotations, or source contents
     },
   });
 
-  const searchResults = (result.staticToolResults ?? []).filter(
-    (toolResult) => toolResult.toolName === 'exa_search',
-  );
+  const searchResults = result.steps
+    .flatMap((step) => step.staticToolResults ?? [])
+    .filter((toolResult) => toolResult.toolName === 'exa_search');
   const urls = uniqueUrls(result.text);
 
   if (searchResults.length < 1) {
