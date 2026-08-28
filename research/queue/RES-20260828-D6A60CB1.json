@@ -1,13 +1,16 @@
 {
   "id": "RES-20260828-D6A60CB1",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-28T19:31:10+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
   "title": "Omnizedenz im Verhältnis zu Pantheismus, Panentheismus und Prozessphilosophie",
   "question": "Wie unterscheiden Primärtexte und seriöse Forschung Pantheismus, Panentheismus, Prozessphilosophie beziehungsweise Prozesstheologie und verwandte Feld- oder Beziehungsontologien, und wo überschneidet sich die Omnizedenz-Idee eines nicht-personalen Feldes strukturell mit diesen Positionen, ohne begriffliche Gleichsetzung oder empirische Überhöhung?",
   "why_now": "Das Omnizedenz-Projekt arbeitet bereits an einer vorsichtigeren Abgrenzung zu Pantheismus und Panentheismus. Der neue philosophy-comparative-Pfad soll diese begriffliche Nachbarschaft erstmals systematisch mit Primärtexten und Fachliteratur prüfen.",
-  "languages": ["de", "en"],
+  "languages": [
+    "de",
+    "en"
+  ],
   "evidence_profile": "philosophy-comparative",
   "relevance_score": 0.98,
   "scores": {
@@ -17,5 +20,7 @@
     "evidence_potential": 0.95
   },
   "fingerprint": "d6a60cb1edfe8e40",
-  "pilot": true
+  "pilot": true,
+  "updated_at": "2026-08-28T19:51:13+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/24"
 }
