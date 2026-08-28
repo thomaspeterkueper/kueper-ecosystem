@@ -16,6 +16,7 @@ POLICY=json.loads((ROOT/"research/policy.json").read_text(encoding="utf-8"))
 REGISTRY=json.loads((ROOT/"registry/projects.json").read_text(encoding="utf-8"))
 CONTROL="thomaspeterkueper/kueper-ecosystem"
 ROTATION_WEIGHT_SCALE=20
+PRIOR_RESEARCH_MAX_TOPICS=20
 
 def gh(token:str,method:str,path:str,body:dict[str,Any]|None=None)->Any:
     data=None if body is None else json.dumps(body).encode()
@@ -37,36 +38,47 @@ def projects()->dict[str,dict[str,Any]]:return {p["id"]:p for p in REGISTRY["pro
 def auth_url(repo:str,token:str)->str:return f"https://x-access-token:{urllib.parse.quote(token,safe='')}@github.com/{repo}.git"
 
 def weighted_rotation_choice(entries:list[dict[str,Any]],day_ordinal:int)->dict[str,Any]:
-    """Deterministic smooth weighted round-robin choice for a UTC calendar day.
-
-    Policy weights are scaled to small integers, then distributed across one smooth cycle.
-    This preserves long-run weight ratios without producing large contiguous blocks of the
-    same project. Equal-weight projects therefore still rotate naturally.
-    """
+    """Deterministic smooth weighted round-robin choice for a UTC calendar day."""
     if not entries:raise RuntimeError("eligible_projects is empty")
     weights=[max(1,round(float(entry.get("weight",1.0))*ROTATION_WEIGHT_SCALE)) for entry in entries]
-    total=sum(weights);slot=day_ordinal%total;current=[0]*len(entries)
-    chosen=0
+    total=sum(weights);slot=day_ordinal%total;current=[0]*len(entries);chosen=0
     for _ in range(slot+1):
         for i,weight in enumerate(weights):current[i]+=weight
         chosen=max(range(len(entries)),key=lambda i:current[i])
         current[chosen]-=total
     return entries[chosen]
 
-def queue_existing(token:str)->set[str]:
+def queue_history(token:str)->list[dict[str,Any]]:
+    """Load existing queue metadata once for exact and semantic duplicate control."""
     try:items=gh(token,"GET",f"/repos/{CONTROL}/contents/research/queue?ref=main")
-    except Exception:return set()
-    out=set()
+    except Exception:return []
+    out=[]
     for item in items if isinstance(items,list) else []:
-        if item.get("name","").endswith(".json"):
+        if item.get("type")!="file" or not item.get("name","").endswith(".json"):continue
+        try:
             payload=gh(token,"GET",f"/repos/{CONTROL}/contents/{item['path']}?ref=main")
-            raw=base64.b64decode(payload.get("content","")).decode();
-            try:out.add(json.loads(raw).get("fingerprint",""))
-            except Exception:pass
+            raw=base64.b64decode(payload.get("content","")).decode()
+            data=json.loads(raw)
+            if isinstance(data,dict):out.append(data)
+        except Exception:pass
     return out
 
-def prompt(project:dict[str,Any],langs:list[str],profile_name:str,profile:dict[str,Any])->str:
+def prior_topics(history:list[dict[str,Any]],project_id:str)->list[dict[str,Any]]:
+    same=[item for item in history if item.get("source_project")==project_id]
+    same.sort(key=lambda item:item.get("created","") or "",reverse=True)
+    return [
+        {
+            "id":item.get("id"),
+            "status":item.get("status"),
+            "title":item.get("title"),
+            "question":item.get("question"),
+        }
+        for item in same[:PRIOR_RESEARCH_MAX_TOPICS]
+    ]
+
+def prompt(project:dict[str,Any],langs:list[str],profile_name:str,profile:dict[str,Any],previous:list[dict[str,Any]])->str:
     profile_rules=json.dumps(profile,ensure_ascii=False)
+    previous_json=json.dumps(previous,ensure_ascii=False,indent=2)
     return f'''You are the knowledge-gap analyst for the KUEPER ecosystem. Inspect this repository deeply but DO NOT change it.
 Repository: {project['repository']}
 Project role: {project.get('role')}
@@ -74,8 +86,16 @@ Potential research languages: {', '.join(langs)}
 Evidence profile: {profile_name}
 Evidence profile rules: {profile_rules}
 
+Previous research topics for this project (may be in different languages):
+{previous_json}
+
 Find at most 3 concrete external-knowledge gaps whose resolution would materially improve current work in this repository, its plausibility, its worldbuilding, its educational quality, or reuse across KUEPER projects.
 Do not invent speculative nice-to-haves. Prefer gaps visibly grounded in existing files, TODOs, assertions, worldbuilding assumptions, scientific claims, historical/linguistic questions, or dependencies.
+
+CRITICAL novelty rule:
+- Do NOT propose a research question that is semantically the same as a previous topic merely rephrased, translated, broadened, or cosmetically narrowed.
+- A genuine follow-up to prior research is allowed only when it addresses a materially unresolved dimension. In that case list the prior IDs in `related_research_ids` and explain in `novelty_reason` exactly what the new research adds that the prior candidate did not answer.
+- If a previous candidate already answers the gap sufficiently, omit the gap entirely.
 
 For each gap score 0..1:
 - project_relevance
@@ -87,25 +107,26 @@ Only include score >= {POLICY['minimum_relevance_score']}.
 Choose source languages based on the topic, not quota. Local/primary-language sources may be useful but language itself is never evidence quality.
 
 Write ONLY `.kueper-discovery.json` with this JSON structure:
-{{"gaps":[{{"title":"...","question":"...","why_now":"...","project_id":"{project['id']}","suggested_languages":["en"],"project_relevance":0.0,"cross_project_reuse":0.0,"uncertainty":0.0,"evidence_potential":0.0,"relevance_score":0.0}}]}}
+{{"gaps":[{{"title":"...","question":"...","why_now":"...","project_id":"{project['id']}","suggested_languages":["en"],"related_research_ids":[],"novelty_reason":"","project_relevance":0.0,"cross_project_reuse":0.0,"uncertainty":0.0,"evidence_potential":0.0,"relevance_score":0.0}}]}}
 Do not edit any other file.
 '''
 
 def main()->int:
-    token=os.environ.get("KUEPER_BOT_TOKEN");
+    token=os.environ.get("KUEPER_BOT_TOKEN")
     if not token:raise SystemExit("KUEPER_BOT_TOKEN required")
     eligible=POLICY["eligible_projects"];pmap=projects()
     utc_day=dt.datetime.now(dt.timezone.utc).date();choice=weighted_rotation_choice(eligible,utc_day.toordinal());project=pmap[choice["id"]]
     profile_name=choice.get("evidence_profile","general");profile=POLICY.get("evidence_profiles",{}).get(profile_name,POLICY.get("evidence_profiles",{}).get("general",{}))
-    root=Path(tempfile.mkdtemp(prefix="kueper-research-discovery-"))
-    results=[]
+    history=queue_history(token);previous=prior_topics(history,project["id"]);existing={item.get("fingerprint","") for item in history}
+    prior_ids={item.get("id") for item in history if item.get("source_project")==project["id"] and item.get("id")}
+    root=Path(tempfile.mkdtemp(prefix="kueper-research-discovery-"));results=[]
     try:
         run(["git","clone","--quiet","--depth","1",auth_url(project["repository"],token),str(root)])
         cmd=os.environ.get("KUEPER_DISCOVERY_AGENT_CMD","codex exec --full-auto").split()
-        run(cmd+[prompt(project,choice.get("languages",POLICY["default_languages"]),profile_name,profile)],cwd=root)
+        run(cmd+[prompt(project,choice.get("languages",POLICY["default_languages"]),profile_name,profile,previous)],cwd=root)
         f=root/".kueper-discovery.json"
         if not f.exists():raise RuntimeError("agent did not create .kueper-discovery.json")
-        data=json.loads(f.read_text(encoding="utf-8"));existing=queue_existing(token)
+        data=json.loads(f.read_text(encoding="utf-8"))
         for gap in data.get("gaps",[])[:POLICY["max_discoveries_per_run"]]:
             if gap.get("project_id")!=project["id"]:continue
             score=float(gap.get("relevance_score",0))
@@ -113,12 +134,16 @@ def main()->int:
             langs=[x for x in gap.get("suggested_languages",[]) if isinstance(x,str)][:POLICY["max_languages_per_topic"]]
             seed=f"{project['id']}|{gap.get('title')}|{gap.get('question')}".lower().strip();fp=hashlib.sha256(seed.encode()).hexdigest()[:16]
             if fp in existing:continue
+            related=[rid for rid in gap.get("related_research_ids",[]) if isinstance(rid,str) and rid in prior_ids]
+            novelty=str(gap.get("novelty_reason","") or "").strip()
+            if gap.get("related_research_ids") and not related:continue
+            if related and len(novelty)<20:continue
             now=dt.datetime.now(dt.timezone.utc);rid=f"RES-{now.strftime('%Y%m%d')}-{fp[:8].upper()}"
-            item={"id":rid,"status":"queued","created":now.replace(microsecond=0).isoformat(),"source_project":project["id"],"source_repository":project["repository"],"title":gap.get("title"),"question":gap.get("question"),"why_now":gap.get("why_now"),"languages":langs or POLICY["default_languages"],"evidence_profile":profile_name,"project_weight":float(choice.get("weight",1.0)),"relevance_score":score,"scores":{k:gap.get(k) for k in ("project_relevance","cross_project_reuse","uncertainty","evidence_potential")},"fingerprint":fp}
+            item={"id":rid,"status":"queued","created":now.replace(microsecond=0).isoformat(),"source_project":project["id"],"source_repository":project["repository"],"title":gap.get("title"),"question":gap.get("question"),"why_now":gap.get("why_now"),"languages":langs or POLICY["default_languages"],"evidence_profile":profile_name,"project_weight":float(choice.get("weight",1.0)),"relevance_score":score,"scores":{k:gap.get(k) for k in ("project_relevance","cross_project_reuse","uncertainty","evidence_potential")},"related_research_ids":related,"novelty_reason":novelty or None,"fingerprint":fp}
             content=base64.b64encode((json.dumps(item,indent=2,ensure_ascii=False)+"\n").encode()).decode()
             gh(token,"PUT",f"/repos/{CONTROL}/contents/research/queue/{rid}.json",{"message":f"research: queue {rid}","content":content,"branch":"main"})
             existing.add(fp);results.append(item)
     finally:shutil.rmtree(root,ignore_errors=True)
-    print(json.dumps({"project":project["id"],"project_weight":choice.get("weight",1.0),"evidence_profile":profile_name,"queued":len(results),"items":results},indent=2,ensure_ascii=False));return 0
+    print(json.dumps({"project":project["id"],"project_weight":choice.get("weight",1.0),"evidence_profile":profile_name,"prior_topics_supplied":len(previous),"queued":len(results),"items":results},indent=2,ensure_ascii=False));return 0
 
 if __name__=="__main__":raise SystemExit(main())
