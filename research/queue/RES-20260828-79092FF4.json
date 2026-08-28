@@ -1,0 +1,34 @@
+{
+  "id": "RES-20260828-79092FF4",
+  "status": "queued",
+  "created": "2026-08-28T22:21:00+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "title": "Defensible human life-support and habitability parameters for the colony simulation and Academy content",
+  "question": "What do NASA/ESA technical standards and the peer-reviewed space-medicine/ECLSS literature establish as per-capita water, oxygen, food/calorie, energy and radiation-dosage requirements for a functioning off-Earth colony, and what are the quantitative characteristics of the hazards NOXIA names (pressure loss, dust storms, ionizing radiation, perchlorate/regolith toxicity), so that the colony consumption model, the 'physische Gefahren' list, the 'Ökologisch' growth bottleneck and the Academy documents ('Wie viel Wasser braucht eine Kolonie?', 'Bevölkerung und Ressourcenverbrauch') use defensible numbers?",
+  "why_now": "The Solar Academy's first foundation documents explicitly teach water scarcity on Mars and colony resource consumption, and NOXIA-CITY-SIMULATION §4/§7 make 'Strahlung, Staub, Atmosphäre' and 'Druckverlust, Staubstürme, Strahlung, Meteoriteneinschläge' central colony bottlenecks without any sourced quantities. The living-population v0.1 (sustenance/safety needs) and the tick economy assume these budgets implicitly. Calibrating water/O2/radiation numbers now lets the colony simulation, the survival pressure and the learning modules share one defensible physical basis.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "NASA/ESA human spaceflight life-support requirements (per-capita water/O2/calorie budgets, ECLSS closure rates), radiation dose limits (ICRP/NCRP/NASA career limits), and Mars/Lunar environmental hazard data (atmospheric pressure loss, dust storm opacity, perchlorate and regolith toxicity) for colony habitability",
+  "publication_route_hint": null,
+  "project_weight": 1.0,
+  "relevance_score": 0.7875,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.65,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260828-471FC77C"
+  ],
+  "novelty_reason": "RES-20260828-471FC77C covers validated psychological needs frameworks (Maslow/Max-Neef/SDT) and need-pressure/decision parameters for the living-population model; it does not quantify the physical/physiological life-support environment (per-capita water/O2/calorie, radiation dose limits, Martian/Lunar hazards) that the needs model, the colony consumption constants and the Academy's water-scarcity content assume.",
+  "fingerprint": "79092ff477e5084b"
+}
