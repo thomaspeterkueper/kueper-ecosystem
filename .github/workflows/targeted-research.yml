@@ -1,3 +1,4 @@
+# Manual selected-queue runner; this push also starts the initial three-profile pilot.
 name: KUEPER Targeted Research
 
 on:
