@@ -19,6 +19,7 @@ jobs:
     env:
       KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
       ANTHROPIC_BASE_URL: "https://api.deepseek.com/anthropic"
       ANTHROPIC_AUTH_TOKEN: ${{ secrets.DEEPSEEK_API_KEY }}
       ANTHROPIC_MODEL: "deepseek-v4-flash"
@@ -26,7 +27,8 @@ jobs:
       ANTHROPIC_DEFAULT_SONNET_MODEL: "deepseek-v4-flash"
       ANTHROPIC_DEFAULT_HAIKU_MODEL: "deepseek-v4-flash"
       KUEPER_DISCOVERY_AGENT_CMD: claude -p --dangerously-skip-permissions
-      KUEPER_RESEARCH_AGENT_CMD: claude -p --dangerously-skip-permissions
+      KUEPER_RESEARCH_AGENT_CMD: node ${{ github.workspace }}/tools/research/agent-with-exa.mjs
+      KUEPER_SYNTHESIS_AGENT_BIN: claude
     steps:
       - name: Checkout control plane
         uses: actions/checkout@v4
@@ -39,13 +41,20 @@ jobs:
       - name: Install Claude Code agent frontend
         run: npm install --global @anthropic-ai/claude-code
 
+      - name: Install AI Gateway research tooling
+        run: npm install --no-save --package-lock=false ai@^6.0.0 @ai-sdk/gateway@^3.0.0
+
       - name: Verify configuration
         shell: bash
         run: |
           set -euo pipefail
           test -n "$KUEPER_BOT_TOKEN" || { echo "Missing KUEPER_BOT_TOKEN"; exit 2; }
           test -n "$DEEPSEEK_API_KEY" || { echo "Missing DEEPSEEK_API_KEY"; exit 2; }
+          if [ -z "$AI_GATEWAY_API_KEY" ]; then
+            echo "::warning::AI_GATEWAY_API_KEY is not configured; Exa external evidence will fall back to the existing live-search path."
+          fi
           claude --version
+          node --version
 
       - name: Discover one project's highest-value research gaps
         run: python3 tools/research/discover.py | tee research-discovery-report.json
