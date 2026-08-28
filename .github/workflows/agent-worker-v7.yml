@@ -26,6 +26,7 @@ jobs:
       SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+      KUEPER_WORKFLOW_TOKEN: ${{ secrets.KUEPER_WORKFLOW_TOKEN }}
       KUEPER_MAX_TASKS: ${{ inputs.max_tasks || '3' }}
     steps:
       - name: Checkout control plane
@@ -61,6 +62,11 @@ jobs:
           if [ "$missing" -ne 0 ]; then
             exit 1
           fi
+          if [ -n "${KUEPER_WORKFLOW_TOKEN:-}" ]; then
+            echo "KUEPER_WORKFLOW_TOKEN: available for privileged .github/workflows/* pushes"
+          else
+            echo "KUEPER_WORKFLOW_TOKEN: not configured; privileged workflow mutations will be parked"
+          fi
 
       - name: Verify runtime
         shell: bash
@@ -72,14 +78,16 @@ jobs:
           claude --version
           gh --version
 
-      - name: Test provider router
-        run: python -m unittest tools/worker/test_provider_router.py
+      - name: Test provider router and credential policy
+        run: |
+          python -m unittest tools/worker/test_provider_router.py
+          python -m unittest tools/worker/test_git_credentials.py
 
       - name: Process bounded task batch
         shell: bash
         run: |
           set -euo pipefail
-          python tools/worker/agent_worker_v73.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
+          python tools/worker/agent_worker_v74.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
 
       - name: Upload worker report
         if: always()
