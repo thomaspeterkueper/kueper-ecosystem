@@ -42,7 +42,7 @@ jobs:
         run: npm install --global @anthropic-ai/claude-code
 
       - name: Install AI Gateway research tooling
-        run: npm install --no-save --package-lock=false ai@^6.0.0 @ai-sdk/gateway@^3.0.0
+        run: npm install --no-save --package-lock=false ai@^6.0.0
 
       - name: Verify configuration
         shell: bash
