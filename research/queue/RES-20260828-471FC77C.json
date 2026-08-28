@@ -1,0 +1,21 @@
+{
+  "id": "RES-20260828-471FC77C",
+  "status": "queued",
+  "created": "2026-08-28T15:29:44+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "title": "Empirically grounded needs model for the living population simulation",
+  "question": "Which validated behavioral-science frameworks (Maslow's hierarchy, Max-Neef's fundamental human needs, Self-Determination Theory) and empirically grounded need-pressure/satisfaction dynamics should underpin the five needs (sustenance, rest, safety, social, purpose) and the scored decision model in NOXIA-LIVING-0001, and what plausible parameter ranges for need deltas, decay, and relationship trust/affinity change follow from the literature?",
+  "why_now": "The living-population work is the current active effort (ADR NOXIA-LIVING-0001, migrations 20260825-20260828 incl. seed guard, diagnostics route app/api/game/population). The ADR specifies a scored decision model (need pressure + role obligation + local opportunity + relationship modifier - travel cost) and an acceptance criterion that 'Bedürfnisse verändern ihre Entscheidungen', but lib/game/population/engine.ts currently runs a tick%4 phase cycle with hardcoded need deltas (e.g. work: rest -0.05, purpose +0.04). Grounding the taxonomy and parameters in behavioral science would make the society simulation plausible and educational, and give KUEPER a reusable 'human needs' concept for future simulations.",
+  "languages": [
+    "en"
+  ],
+  "relevance_score": 0.75,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.55,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.8
+  },
+  "fingerprint": "471fc77c2de4184f"
+}
