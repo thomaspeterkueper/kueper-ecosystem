@@ -1,0 +1,34 @@
+{
+  "id": "RES-20260828-49AF01DE",
+  "status": "queued",
+  "created": "2026-08-28T22:20:59+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "title": "Empirically grounded deposit/ISRU model for NOXIA's solar-system resources",
+  "question": "Which real-world solar-system bodies actually contain the resources NOXIA's RESOURCE-0001 ontology assigns to them (water ice at Shackleton, Moon-exclusive Helium-3, titanium/ilmenite on the Moon, Martian hematite/magnetite/phosphates/sulfur/olivine, tungsten and lithium deposits, asteroid nickel-iron and platinum-group metals), with what ore grades, concentrations and extraction feasibility per current ISRU/planetary-geology literature — and which resource placements are factually unsupported and should be reclassified across the UBIQUITOUS/LOCALIZED/UNIQUE ladder of NOXIA-ECON-0001?",
+  "why_now": "WORLD-0002 explicitly defers 'detaillierte Mineralogie' while the next migrations (deposits table, Wolfram production chain, scanner exploration) hard-code it; locationMaps.ts already places ice/helium-3/titanium tiles on the Moon and RESOURCE-0001 asserts Helium-3 is 'Mond-exklusiv', which gates the resource_class mechanics and the upcoming Wolfram chain. The Solar Academy teaches 'Wasserknappheit im Sonnensystem' and Shackleton crater ice from this same catalog. Grounding the deposit model now prevents committing unsupported geology that would later break both worldbuilding plausibility and the educational content.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Real lunar/Martian/asteroid regolith and ore composition (ilmenite, He-3 abundance, water-ice at Shackleton, phosphates on Mars, tungsten/lithium provinces, asteroid Ni-Fe and PGM grades) and ISRU extraction feasibility from NASA/ESA reports and peer-reviewed planetary geology",
+  "publication_route_hint": null,
+  "project_weight": 1.0,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260828-BF7F1B4D"
+  ],
+  "novelty_reason": "RES-20260828-BF7F1B4D resolves orbital/physical body parameters and defensible Hohmann travel times; it does not address the geological/mineral resource distribution, ore grades or ISRU feasibility that this gap targets. The deposit catalog (RESOURCE-0001 material table, WORLD-0002 deferred 'detaillierte Mineralogie', Moon ice/He-3/titanium terrain, ECON-0001 resource-class examples) is a materially unresolved dimension of the same solar-system model.",
+  "fingerprint": "49af01de64725f1c"
+}
