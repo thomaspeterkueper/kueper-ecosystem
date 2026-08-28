@@ -58,7 +58,7 @@ async function buildEvidencePacket() {
   const model =
     process.env.KUEPER_EVIDENCE_MODEL ||
     evidencePolicy.model ||
-    'google/gemini-3.5-flash-lite';
+    'deepseek/deepseek-v4-flash-0731';
   const numResults = Number(
     process.env.KUEPER_EVIDENCE_NUM_RESULTS || evidencePolicy.num_results || 6,
   );
