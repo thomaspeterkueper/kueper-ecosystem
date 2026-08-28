@@ -1,6 +1,6 @@
 {
   "id": "RES-20260828-BF7F1B4D",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-28T15:29:43+00:00",
   "source_project": "noxia",
   "source_repository": "thomaspeterkueper/noxiagame",
@@ -17,5 +17,7 @@
     "uncertainty": 0.6,
     "evidence_potential": 0.95
   },
-  "fingerprint": "bf7f1b4da732966a"
+  "fingerprint": "bf7f1b4da732966a",
+  "updated_at": "2026-08-28T15:36:44+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/21"
 }
