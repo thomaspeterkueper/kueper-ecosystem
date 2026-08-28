@@ -1,0 +1,72 @@
+{
+  "pilot_id": "OTA-EVIDENCE-2026-08-28",
+  "status": "planned-after-merge",
+  "purpose": "Validate pre-research claim classification, Exa evidence boundaries, freshness/conflict checks, and OTA vs KUE-SCI publication routing on three existing OTA documents.",
+  "safety": {
+    "auto_publish": false,
+    "auto_canonicalize": false,
+    "candidate_target": "thomaspeterkueper/kueper-knowledge-graph/research/candidates",
+    "run_only_after_control_plane_merge": true
+  },
+  "cases": [
+    {
+      "id": "OTA-PILOT-SCI-0037",
+      "source_repository": "thomaspeterkueper/overtime-archive.org",
+      "source_path": "src/content/documents/OTA-SCI-0037-2026-DE.md",
+      "document_signature": "OTA-SCI-0037-2026-DE",
+      "series": "SCI",
+      "observed_markers": ["H", "T", "S", "W", "ESTABLISHED", "HYPOTHETICAL", "SPECULATIVE", "INTERPRETATION"],
+      "research_question": "Which claims in OTA-SCI-0037 about the 2026 RHIC/STAR result, Lambda-anti-Lambda spin correlation, the quantum vacuum and the interpretation as transfer from virtual to real states are supported by the primary publication and subsequent/current literature, and which are model-dependent, overstated, speculative, or superseded?",
+      "preclassified_claim_classes": ["R", "H", "T", "S", "W"],
+      "real_world_anchor": "STAR/RHIC primary result, measured spin correlations, accepted quantum-field interpretation, and subsequent scientific discussion.",
+      "publication_route_hint": "real_scientific_epaper",
+      "expected_behavior": [
+        "Use primary/peer-reviewed literature and check for later publications, corrections and counterinterpretations.",
+        "Do not treat Omnizedenz/AVI framing as experimentally established.",
+        "If a standalone real-world analysis is warranted, recommend a separable KUE-SCI e-paper on kueper.com and leave OTA/canon framing in OTA."
+      ]
+    },
+    {
+      "id": "OTA-PILOT-FND-0030",
+      "source_repository": "thomaspeterkueper/overtime-archive.org",
+      "source_path": "src/content/documents/OTA-FND-0030-2026-DE.md",
+      "document_signature": "OTA-FND-0030-2026-DE",
+      "series": "FND",
+      "observed_markers": ["R", "T", "H", "S", "F", "W"],
+      "research_question": "For OTA-FND-0030, which real-physics premises and constraints relevant to the AVI reference layer are established or testable, and where do the NOXIA-specific Hexade, chi-index and resonance-technology extensions cross from theoretical/hypothetical material into speculation, work-setting or fiction?",
+      "preclassified_claim_classes": ["R", "T", "H", "S", "F", "W"],
+      "real_world_anchor": "Standard cosmology/quantum-vacuum background and any externally testable premises or constraints used by the AVI reference layer.",
+      "publication_route_hint": "fictional_archive_document",
+      "expected_behavior": [
+        "Research R and the external premises/constraints of T/H/S only.",
+        "Do not search for evidence that Hexade, chi-index or NOXIA canon is 'true'.",
+        "Keep the mixed foundational document in OTA; only a separately reviewable real-science treatment may later be promoted to KUE-SCI."
+      ]
+    },
+    {
+      "id": "OTA-PILOT-BIO-0026",
+      "source_repository": "thomaspeterkueper/overtime-archive.org",
+      "source_path": "src/content/documents/OTA-BIO-0026-2026-DE.md",
+      "document_signature": "OTA-BIO-0026-2026-DE",
+      "series": "BIO",
+      "observed_markers": ["F", "W"],
+      "research_question": "Does OTA-BIO-0026 contain a genuinely external ethnographic, linguistic, geographic or scientific anchor that needs verification, as distinct from the fictional character dossier itself?",
+      "preclassified_claim_classes": ["F", "W"],
+      "real_world_anchor": null,
+      "publication_route_hint": "fictional_archive_document",
+      "expected_behavior": [
+        "The discovery gate must not queue a pure F/W request merely to validate the character or canon.",
+        "External research is allowed only if a concrete real-world anchor is first identified and reclassified as R-Anker/R.",
+        "No KUE-SCI recommendation is expected from character-canon validation."
+      ]
+    }
+  ],
+  "success_criteria": [
+    "Claim classes exist before Exa/web research begins.",
+    "F/W-only material without a real-world anchor does not enter external research.",
+    "T/H/S evidence is used for constraints and falsifiability, not as automatic validation.",
+    "Material newer or contradictory evidence is surfaced explicitly.",
+    "Real scientific e-paper recommendations point to thomaspeterkueper/kueper.com/src/content/kue/sci with KUE-SCI namespace.",
+    "No pilot run directly edits OTA, kueper.com, or canonical Knowledge Graph data."
+  ]
+}
