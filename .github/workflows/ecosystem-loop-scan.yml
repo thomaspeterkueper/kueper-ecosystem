@@ -25,14 +25,38 @@ jobs:
             exit 1
           fi
 
+      - name: Run deterministic loop safety tests
+        run: python3 -m unittest tools.loop.test_loop
+
       - name: Scan ecosystem requests
         env:
           GH_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
         run: |
           python3 tools/loop/loop.py scan --output loop-queue.json
 
-      - name: Validate queue JSON
-        run: python3 -m json.tool loop-queue.json >/dev/null
+      - name: Validate scan coverage and queue JSON
+        run: |
+          set -euo pipefail
+          python3 -m json.tool loop-queue.json >/dev/null
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("loop-queue.json").read_text(encoding="utf-8"))
+          bad = {
+              project_id: state
+              for project_id, state in data.get("projects", {}).items()
+              if state.get("state") != "ok" or not state.get("head_sha")
+          }
+          if bad:
+              details = ", ".join(
+                  f"{project_id}={state.get('state')}({state.get('http_status', 'no-head')})"
+                  for project_id, state in sorted(bad.items())
+              )
+              raise SystemExit(
+                  "Incomplete ecosystem scan; refusing green status with missing repository data: " + details
+              )
+          PY
 
       - name: Write job summary
         run: |
