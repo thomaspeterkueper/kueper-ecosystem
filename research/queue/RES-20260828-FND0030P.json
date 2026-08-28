@@ -1,6 +1,6 @@
 {
   "id": "RES-20260828-FND0030P",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-28T22:16:10+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -9,9 +9,19 @@
   "title": "Pilot: Realphysik-Grenzen in OTA-FND-0030",
   "question": "For OTA-FND-0030, which real-physics premises and constraints relevant to the AVI reference layer are established or testable, and where do the NOXIA-specific Hexade, chi-index and resonance-technology extensions cross from theoretical/hypothetical material into speculation, work-setting or fiction?",
   "why_now": "Production pilot for evidence-boundary handling in a mixed foundational OTA document after the OTA/KUE-SCI routing merge.",
-  "languages": ["de", "en"],
+  "languages": [
+    "de",
+    "en"
+  ],
   "evidence_profile": "ota-archive-evidence",
-  "claim_classes": ["R", "T", "H", "S", "F", "W"],
+  "claim_classes": [
+    "R",
+    "T",
+    "H",
+    "S",
+    "F",
+    "W"
+  ],
   "real_world_anchor": "Standard cosmology/quantum-vacuum background and any externally testable premises or constraints used by the AVI reference layer.",
   "publication_route_hint": "fictional_archive_document",
   "external_research_required": true,
@@ -25,5 +35,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Production validation that external research checks only the real premises and constraints of T/H/S layers without validating NOXIA F/W canon.",
-  "fingerprint": "pilot-ota-fnd-0030"
+  "fingerprint": "pilot-ota-fnd-0030",
+  "updated_at": "2026-08-28T22:38:19+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/27"
 }
