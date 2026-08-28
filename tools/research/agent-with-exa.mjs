@@ -150,6 +150,28 @@ function runUnderlyingAgent(prompt) {
 
 try {
   const packet = await buildEvidencePacket();
+
+  if (process.env.KUEPER_EXA_SMOKE_ONLY === '1') {
+    if (!packet) {
+      throw new Error('Exa smoke test produced no evidence packet');
+    }
+    console.log(
+      JSON.stringify(
+        {
+          ok: true,
+          provider: packet.provider,
+          transport: packet.transport,
+          model: packet.model,
+          searchCalls: packet.searchCalls,
+          urlCount: packet.urlCount,
+        },
+        null,
+        2,
+      ),
+    );
+    process.exit(0);
+  }
+
   let augmentedPrompt = originalPrompt;
 
   if (packet) {
@@ -165,6 +187,7 @@ try {
   const required =
     evidencePolicy.required === true || process.env.KUEPER_EXTERNAL_EVIDENCE_REQUIRED === '1';
   console.error(`agent-with-exa: Exa evidence failed: ${message}`);
+  if (process.env.KUEPER_EXA_SMOKE_ONLY === '1') process.exit(4);
   if (required) process.exit(3);
   console.error('agent-with-exa: falling back to the existing research agent without Exa');
   process.exit(runUnderlyingAgent(originalPrompt));
