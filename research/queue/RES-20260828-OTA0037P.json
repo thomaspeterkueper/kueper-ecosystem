@@ -1,6 +1,6 @@
 {
   "id": "RES-20260828-OTA0037P",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-28T22:16:00+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -9,9 +9,18 @@
   "title": "Pilot: RHIC/STAR-Claims in OTA-SCI-0037",
   "question": "Which claims in OTA-SCI-0037 about the 2026 RHIC/STAR result, Lambda-anti-Lambda spin correlation, the quantum vacuum and the interpretation as transfer from virtual to real states are supported by the primary publication and subsequent/current literature, and which are model-dependent, overstated, speculative, or superseded?",
   "why_now": "Production pilot for the new OTA evidence profile, freshness/conflict checks and KUE-SCI publication routing after control-plane merge.",
-  "languages": ["de", "en"],
+  "languages": [
+    "de",
+    "en"
+  ],
   "evidence_profile": "ota-archive-evidence",
-  "claim_classes": ["R", "H", "T", "S", "W"],
+  "claim_classes": [
+    "R",
+    "H",
+    "T",
+    "S",
+    "W"
+  ],
   "real_world_anchor": "STAR/RHIC primary result, measured spin correlations, accepted quantum-field interpretation, and subsequent scientific discussion.",
   "publication_route_hint": "real_scientific_epaper",
   "external_research_required": true,
@@ -25,5 +34,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Production validation of the newly introduced pre-research claim classification and KUE-SCI routing on an existing mixed OTA scientific document.",
-  "fingerprint": "pilot-ota-sci-0037"
+  "fingerprint": "pilot-ota-sci-0037",
+  "updated_at": "2026-08-28T22:30:03+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/26"
 }
