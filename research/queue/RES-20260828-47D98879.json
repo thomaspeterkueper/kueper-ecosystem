@@ -1,0 +1,33 @@
+{
+  "id": "RES-20260828-47D98879",
+  "status": "queued",
+  "created": "2026-08-28T22:21:01+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "title": "Georgist land-value taxation and outer-space property law as grounding for NOXIA's land/tax mechanics",
+  "question": "What does the economic literature on Henry George's land value tax (ground rent, LVT effects on speculation, land-use efficiency and government revenue) establish empirically, and which real outer-space property-law frameworks (Outer Space Treaty Art. II, national resource-extraction legislation, Artemis Accords) constrain or enable private land ownership and 'Grundbücher' on Mars — so that NOXIA's land_value/LVT mechanic, the per-trade colony tax (NOXIA-ECON-0002), the ECO-L1 modules 'Was ist Bodenwert?'/'Was ist Grundrente?' and the draft essay 'Warum der Mars Henry George recht gibt' rest on checked premises rather than asserted ones?",
+  "why_now": "The colony_admin_tax migration makes land_value a central economic quantity and adds colony tax rates (up to 50%) on trade, while NOXIA-CITY-SIMULATION F2 adopts the Georgist Landwertsteuer as the governance model; the draft Henry George essay is published to players and asserts the Martian colony 'proves' Georgist rent, and the ECO-L1-0002/0003 learning modules teach Bodenwert and Grundrente. The economic evidence for LVT's actual effects and the legal reality of extra-terrestrial property rights are both externally checkable and currently unsourced.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Empirical land-value-tax economics (Georgist LVT theory and historical/empirical studies such as the Pittsburgh land-tax experiment) and outer-space property/resource law (Outer Space Treaty Art. II, Commercial Space Launch Competitiveness Act, Artemis Accords) for land ownership and taxation on Mars",
+  "publication_route_hint": null,
+  "project_weight": 1.0,
+  "relevance_score": 0.7125,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "47d988797e994831"
+}
