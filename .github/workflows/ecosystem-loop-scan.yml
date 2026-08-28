@@ -15,9 +15,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Verify cross-repo token
+        env:
+          GH_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "::error title=Missing GitHub Actions secret::KUEPER_BOT_TOKEN is empty or unavailable to this workflow"
+            exit 1
+          fi
+
       - name: Scan ecosystem requests
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
         run: |
           python3 tools/loop/loop.py scan --output loop-queue.json
 
