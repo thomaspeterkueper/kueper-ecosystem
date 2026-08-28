@@ -72,9 +72,6 @@ async function buildEvidencePacket() {
     return null;
   }
 
-  // Load the optional AI Gateway dependency only when the Exa path is actually
-  // usable. If installation/import fails, the outer catch falls back to the
-  // existing research agent instead of preventing the wrapper from starting.
   const { generateText, gateway, stepCountIs } = await import('ai');
 
   const researchId = field(originalPrompt, 'Research ID') || 'unknown';
@@ -82,6 +79,9 @@ async function buildEvidencePacket() {
   const question = field(originalPrompt, 'Question');
   const whyNow = field(originalPrompt, 'Why now');
   const requestedLanguages = field(originalPrompt, 'Requested source languages') || 'de, en';
+  const preclassifiedClaims = field(originalPrompt, 'Preclassified claim classes') || '[]';
+  const realWorldAnchor = field(originalPrompt, 'Real-world anchor') || 'none specified';
+  const publicationRouteHint = field(originalPrompt, 'Publication route hint') || 'none';
   const { name: profileName, config: profile } = resolveProfile(sourceProject);
 
   const model =
@@ -103,6 +103,8 @@ async function buildEvidencePacket() {
   const minimumUrls = Number(profile.minimum_urls || evidencePolicy.minimum_urls || 2);
   const preferredSourceTypes = (profile.preferred_source_types ?? []).join(', ');
   const profileGuidance = profile.scout_guidance || 'Apply rigorous source criticism and preserve uncertainty.';
+  const claimClassRules = JSON.stringify(profile.claim_classes ?? {});
+  const claimAliases = JSON.stringify(profile.claim_aliases ?? {});
 
   const tools = {
     exa_search: gateway.tools.exaSearch({
@@ -126,20 +128,31 @@ Question: ${question}
 Why now: ${whyNow}
 Requested discovery languages: ${requestedLanguages}
 Evidence profile: ${profileName}
+Pre-research claim classification: ${preclassifiedClaims}
+Real-world anchor to research: ${realWorldAnchor}
+Publication-route hint: ${publicationRouteHint}
+Claim-class rules: ${claimClassRules}
+Claim aliases: ${claimAliases}
 Preferred source types: ${preferredSourceTypes || 'not specified'}
 Profile-specific guidance: ${profileGuidance}
 
+The claim classes were assigned before external research. Preserve the epistemic boundary: search external evidence for the real-world anchor, premises, constraints, attestation, counterevidence or falsifiability question. Do not use Exa results to validate fictional canon or authorial/work-setting claims. For theoretical, hypothetical or speculative claims, sources can constrain or motivate the claim but cannot turn it into an established result by source count.
+
 Cost discipline is part of the task. Perform exactly one Exa search in the first tool step, then synthesize the result in the next step. Do not perform a second search during this initial pass. A separate adaptive follow-up pass is available if the evidence is genuinely insufficient or conflicting.
 
-Prefer primary sources, peer-reviewed papers, official institutions, standards bodies, academic publishers, and original technical documentation. Secondary sources may be included only when useful for orientation or disagreement.
+Prefer primary sources, peer-reviewed papers, official institutions, standards bodies, academic publishers, and original technical documentation. Secondary sources may be included only when useful for orientation or disagreement. When the profile requires freshness checking, actively notice newer results, corrections, null findings or superseding publications. When it requires conflict checking, surface serious counterevidence rather than optimizing for confirmation.
 
 Return a compact evidence packet in Markdown with exactly these sections:
 ## Search summary
+## Claim classification
+Restate the pre-research class for each material claim and say what part external evidence can actually assess.
 ## Candidate claims
-For each material claim state whether the source support looks established, inferential, contested, or insufficient.
+For each material externally assessable claim state whether the source support looks established, inferential, contested, or insufficient.
 ## Conflicts and uncertainty
+## Freshness check
+State whether newer evidence materially changes the picture; say "not material" when appropriate.
 ## Sources
-Number every source and include its exact title, author/institution when available, publication date when available, exact URL, source language, and source type.
+Number every source and include its exact title, author/institution when available, publication date when available, exact URL, source language, source type, and preprint/peer-review status when relevant.
 ## Scout decision
 Follow-up search needed: yes|no
 Research confidence: high|medium|low
@@ -147,12 +160,12 @@ Reason: one concise sentence.
 
 Set "Follow-up search needed" to yes only when a material conflict remains unresolved, source quality is inadequate for the evidence profile, or the minimum source coverage is clearly not met. Do not request follow-up merely to collect more sources when the current evidence already answers the question adequately.
 
-Do not fabricate citations, URLs, dates, authors, quotations, or source contents. This packet is discovery material for a second research agent, not a canonical conclusion.`;
+Do not fabricate citations, URLs, dates, authors, quotations, or source contents. This packet is discovery material for a second research agent, not a canonical conclusion and not a publication decision.`;
 
   const initial = await generateText({
     model,
     system:
-      `Use Exa search to ground the response in current external sources. Apply evidence profile ${profileName}. Use one search pass first, then synthesize. Preserve uncertainty and source provenance.`,
+      `Use Exa search to ground the response in current external sources. Apply evidence profile ${profileName} and preserve the supplied pre-research claim classification. Use one search pass first, then synthesize. Preserve uncertainty and source provenance.`,
     prompt: initialPrompt,
     tools,
     prepareStep: ({ stepNumber }) =>
@@ -188,6 +201,9 @@ Research ID: ${researchId}
 Source project: ${sourceProject}
 Question: ${question}
 Evidence profile: ${profileName}
+Pre-research claim classification: ${preclassifiedClaims}
+Real-world anchor to research: ${realWorldAnchor}
+Publication-route hint: ${publicationRouteHint}
 Profile-specific guidance: ${profileGuidance}
 Reason for follow-up: ${decision.reason}
 
@@ -196,7 +212,7 @@ Initial evidence packet:
 ${initial.text.trim()}
 ---
 
-Perform exactly one additional Exa search targeted at the unresolved conflict, missing strong source, or coverage gap identified above. Do not repeat the same broad query unless necessary. Then synthesize only the incremental findings and state whether the follow-up resolved the issue.
+Perform exactly one additional Exa search targeted at the unresolved conflict, missing strong source, freshness issue, counterevidence, or coverage gap identified above. Do not repeat the same broad query unless necessary. Preserve the original epistemic class: do not upgrade theory/speculation/fiction because more sources were found. Then synthesize only the incremental findings and state whether the follow-up resolved the issue.
 
 Return Markdown with these sections:
 ## Follow-up search summary
@@ -213,7 +229,7 @@ Do not fabricate citations, URLs, dates, authors, quotations, or source contents
     const followUp = await generateText({
       model,
       system:
-        `Resolve only the specific evidence gap from the first pass. Apply evidence profile ${profileName}. Use exactly one additional Exa search, then synthesize.`,
+        `Resolve only the specific evidence gap from the first pass. Apply evidence profile ${profileName} without changing the epistemic class by source count. Use exactly one additional Exa search, then synthesize.`,
       prompt: followUpPrompt,
       tools,
       prepareStep: ({ stepNumber }) =>
@@ -245,6 +261,8 @@ Do not fabricate citations, URLs, dates, authors, quotations, or source contents
     transport: 'vercel-ai-gateway',
     model,
     profile: profileName,
+    preclassifiedClaims,
+    publicationRouteHint,
     baseSteps,
     maxSteps,
     escalated,
@@ -285,6 +303,8 @@ try {
           transport: packet.transport,
           model: packet.model,
           profile: packet.profile,
+          preclassifiedClaims: packet.preclassifiedClaims,
+          publicationRouteHint: packet.publicationRouteHint,
           baseSteps: packet.baseSteps,
           maxSteps: packet.maxSteps,
           escalated: packet.escalated,
@@ -301,7 +321,7 @@ try {
   let augmentedPrompt = originalPrompt;
 
   if (packet) {
-    augmentedPrompt += `\n\n---\n## External evidence discovery packet (Exa via Vercel AI Gateway)\n\nThis packet is non-canonical discovery material. Treat every claim as provisional until mapped to the cited source. Prefer the packet's exact URLs as starting points, compare conflicting sources, and use live web search as an additional verification channel when available. Never elevate fictional canon to real-world evidence.\n\nProvider: ${packet.provider}\nTransport: ${packet.transport}\nScout model: ${packet.model}\nEvidence profile: ${packet.profile}\nAdaptive escalation: ${packet.escalated ? 'yes' : 'no'}\nSearch calls: ${packet.searchCalls}\nSource URLs surfaced: ${packet.urlCount}\n\n${packet.text}\n---`;
+    augmentedPrompt += `\n\n---\n## External evidence discovery packet (Exa via Vercel AI Gateway)\n\nThis packet is non-canonical discovery material. Treat every claim as provisional until mapped to the cited source. Preserve the pre-research epistemic classification. Prefer the packet's exact URLs as starting points, compare conflicting sources, and use live web search as an additional verification channel when available. Never elevate fictional canon, work-setting, theory or speculation to established real-world evidence merely because sources were found. Publication routing remains advisory and review-gated.\n\nProvider: ${packet.provider}\nTransport: ${packet.transport}\nScout model: ${packet.model}\nEvidence profile: ${packet.profile}\nPreclassified claims: ${packet.preclassifiedClaims}\nPublication route hint: ${packet.publicationRouteHint}\nAdaptive escalation: ${packet.escalated ? 'yes' : 'no'}\nSearch calls: ${packet.searchCalls}\nSource URLs surfaced: ${packet.urlCount}\n\n${packet.text}\n---`;
     console.error(
       `agent-with-exa: attached Exa evidence packet (${packet.searchCalls} search call(s), ${packet.urlCount} URL(s), escalated=${packet.escalated})`,
     );
