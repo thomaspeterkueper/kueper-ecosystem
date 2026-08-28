@@ -1,5 +1,6 @@
 name: Apply Research Evidence Profiles
 
+# One-time migration trigger. Remove this workflow after successful application.
 on:
   workflow_dispatch:
   push:
