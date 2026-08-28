@@ -1,3 +1,4 @@
+# Path-scoped validation for research policy, profiles and rotation.
 name: Research Config Check
 
 on:
