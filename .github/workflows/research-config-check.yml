@@ -11,6 +11,7 @@ on:
       - "registry/projects.json"
       - "tools/research/discover.py"
       - "tools/research/execute.py"
+      - "tools/research/execute-targeted.py"
       - "tools/research/agent-with-exa.mjs"
       - ".github/workflows/research-config-check.yml"
 
@@ -31,7 +32,7 @@ jobs:
           set -euo pipefail
           python -m json.tool research/policy.json >/dev/null
           python -m json.tool registry/projects.json >/dev/null
-          python -m py_compile tools/research/discover.py tools/research/execute.py
+          python -m py_compile tools/research/discover.py tools/research/execute.py tools/research/execute-targeted.py
           node --check tools/research/agent-with-exa.mjs
 
       - name: Validate profile mappings and weighted rotation
