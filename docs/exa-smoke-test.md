@@ -12,3 +12,17 @@ The smoke test verifies:
 - the generated evidence packet contains at least the configured minimum number of source URLs.
 
 The test prints only non-secret telemetry (`provider`, `transport`, `model`, search-result count and URL count). It never prints the API key or source contents.
+
+## Initial production validation — 2026-08-28
+
+Status: **SUCCESS**
+
+- Provider: `exa`
+- Transport: `vercel-ai-gateway`
+- Scout model: `deepseek/deepseek-v4-flash-0731`
+- Exa search calls: `4`
+- Source URLs surfaced: `13`
+- GitHub Actions secret check: successful
+- Workflow conclusion: `success`
+
+This confirms that the GitHub Actions secret, Vercel AI Gateway authentication, configured scout model, Exa tool execution, and evidence-packet URL gate work together on the production `main` branch.
