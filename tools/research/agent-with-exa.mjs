@@ -17,7 +17,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
-import { generateText, gateway, stepCountIs } from 'ai';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '../..');
@@ -48,6 +47,11 @@ async function buildEvidencePacket() {
     console.error('agent-with-exa: AI Gateway credential missing; continuing without Exa evidence');
     return null;
   }
+
+  // Load the optional AI Gateway dependency only when the Exa path is actually
+  // usable. If installation/import fails, the outer catch falls back to the
+  // existing research agent instead of preventing the wrapper from starting.
+  const { generateText, gateway, stepCountIs } = await import('ai');
 
   const researchId = field(originalPrompt, 'Research ID') || 'unknown';
   const sourceProject = field(originalPrompt, 'Source project') || 'unknown';
