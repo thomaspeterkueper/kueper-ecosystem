@@ -51,6 +51,27 @@ def publication_route(profile:dict[str,Any],hint:str|None=None)->tuple[str|None,
     if route_id and not route:raise RuntimeError(f"publication route {route_id} is not defined")
     return route_id,route
 
+def source_document_context(token:str,item:dict[str,Any])->dict[str,Any]|None:
+    """Fetch the exact declared source document before external research.
+
+    A declared source_path is a hard contract: if it cannot be loaded from the
+    declared source repository's real default branch, research fails closed.
+    """
+    source_path=item.get("source_path")
+    if not source_path:return None
+    source_repo=item.get("source_repository")
+    if not source_repo:raise RuntimeError(f"queued item {item.get('id')} declares source_path but no source_repository")
+    info=repo_info(token,source_repo);default=info.get("default_branch")
+    if not default:raise RuntimeError(f"cannot resolve default branch for source repository {source_repo}")
+    encoded_path=urllib.parse.quote(str(source_path),safe='/');encoded_ref=urllib.parse.quote(str(default),safe='')
+    payload=gh(token,"GET",f"/repos/{source_repo}/contents/{encoded_path}?ref={encoded_ref}")
+    if not isinstance(payload,dict) or payload.get("type")!="file" or not payload.get("content"):
+        raise RuntimeError(f"declared source document is not a readable file: {source_repo}@{default}:{source_path}")
+    try:text=base64.b64decode(payload["content"]).decode("utf-8")
+    except Exception as exc:raise RuntimeError(f"cannot decode declared source document {source_repo}:{source_path}: {exc}") from exc
+    if not text.strip():raise RuntimeError(f"declared source document is empty: {source_repo}:{source_path}")
+    return {"repository":source_repo,"path":str(source_path),"ref":str(default),"sha":payload.get("sha"),"text":text}
+
 def queue(token)->list[tuple[dict[str,Any],dict[str,Any]]]:
     try:items=gh(token,"GET",f"/repos/{CONTROL}/contents/research/queue?ref=main")
     except Exception:return []
@@ -63,7 +84,7 @@ def queue(token)->list[tuple[dict[str,Any],dict[str,Any]]]:
         if data.get("status")=="queued":out.append((data,payload))
     return sorted(out,key=lambda x:(-float(x[0].get("relevance_score",0)),x[0].get("created","")))
 
-def research_prompt(item:dict[str,Any])->str:
+def research_prompt(item:dict[str,Any],source_context:dict[str,Any]|None=None)->str:
     langs=", ".join(item.get("languages") or POLICY["default_languages"])
     profile_name,profile=evidence_profile(item)
     profile_rules=json.dumps(profile,ensure_ascii=False)
@@ -77,6 +98,18 @@ def research_prompt(item:dict[str,Any])->str:
     route_json=json.dumps(route,ensure_ascii=False) if route else "{}"
     claim_json=json.dumps(claim_classes,ensure_ascii=False)
     real_anchor=item.get("real_world_anchor") or "none specified"
+    if source_context:
+        source_block=(
+            f"Source document repository: {source_context['repository']}\n"
+            f"Source document path: {source_context['path']}\n"
+            f"Source document ref: {source_context['ref']}\n"
+            f"Source document blob SHA: {source_context.get('sha') or 'unknown'}\n\n"
+            "--- BEGIN DECLARED SOURCE DOCUMENT ---\n"
+            f"{source_context['text']}\n"
+            "--- END DECLARED SOURCE DOCUMENT ---"
+        )
+    else:
+        source_block="No single declared source document was supplied for this research item."
     required_sections=[]
     if profile.get("require_claim_classification"):required_sections.append("## Claim-Klassifikation")
     if profile.get("require_freshness_check") or profile.get("require_conflict_check"):required_sections.append("## Aktualität und Widerspruchsprüfung")
@@ -95,6 +128,11 @@ Preclassified claim classes: {claim_json}
 Real-world anchor: {real_anchor}
 Publication route hint: {route_id or 'none'}
 Publication route contract: {route_json}
+
+## Declared source document context
+{source_block}
+
+If a declared source document is present above, it is authoritative for what that source document actually says. Audit and classify claims from that exact text. Do not claim that the document is unavailable, and do not reconstruct its contents from adjacent ecosystem documents. Adjacent documents may be used only as explicitly identified secondary ecosystem context.
 
 The claim classification above was made BEFORE external research. Preserve it unless the evidence shows that the external part was misclassified; if you change it, explain why. Use live web search only for externally checkable claims, premises, constraints, historical attestations, scientific anchors, or falsifiability questions. Do not use web evidence to validate fictional canon or authorial/work settings.
 
@@ -175,11 +213,12 @@ def execute(token:str,item:dict[str,Any],payload:dict[str,Any])->dict[str,Any]:
     root=Path(tempfile.mkdtemp(prefix=f"research-{item['id']}-"));branch=f"research/{item['id'].lower()}"
     try:
         if item.get("external_research_required") is False:raise RuntimeError("queued item was classified as not requiring external research")
+        source_context=source_document_context(token,item)
         default=repo_info(token,TARGET)["default_branch"]
         run(["git","clone","--quiet","--branch",default,"--single-branch",auth_url(TARGET,token),str(root)])
         run(["git","checkout","-b",branch],cwd=root)
         cmd=shlex.split(os.environ.get("KUEPER_RESEARCH_AGENT_CMD",'codex exec --full-auto -c web_search="live"'))
-        cp=run(cmd+[research_prompt(item)],cwd=root,check=False)
+        cp=run(cmd+[research_prompt(item,source_context)],cwd=root,check=False)
         if cp.returncode:raise RuntimeError((cp.stdout or "")[-4000:])
         meta=validate_result(root,item);(root/".research-result.json").unlink()
         changed=run(["git","status","--porcelain","--untracked-files=all"],cwd=root).stdout or "";paths=[]
