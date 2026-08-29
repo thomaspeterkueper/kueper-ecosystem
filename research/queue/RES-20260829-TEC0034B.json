@@ -1,0 +1,38 @@
+{
+  "id": "RES-20260829-TEC0034B",
+  "status": "queued",
+  "created": "2026-08-29T19:59:00+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0034-2026-DE.md",
+  "source_ref": "e6177626fc4a2f92402602466dfc2177a6b816fa",
+  "source_blob_sha": "4f47ef2629f0aa836f28220311e84a737b5e5db9",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "wasserextraktor-mars-typ-m",
+  "consumer_project": "noxia",
+  "title": "Mars ice-resource, overburden and perchlorate constraints for OTA-TEC-0034",
+  "question": "Source-grounded audit of OTA-TEC-0034: What do current Mars datasets and ISRU studies support for (1) plausible water-ice abundance ranges and geographic/depth distribution at candidate settlement latitudes, (2) overburden and accessibility constraints, (3) whether fixed economic cutoffs such as >5 wt-% desirable and <2 wt-% uneconomic are scientifically defensible or should remain scenario-dependent [H], (4) perchlorate occurrence and its actual implications for extracted-water purification and equipment, and (5) whether direct atmospheric water extraction is categorically unrealistic or merely low-yield/location- and season-dependent? Do NOT research or alter NOXIA balancing, build costs, production rates, colony-count rules or other [F]/[W] values.",
+  "why_now": "The dossier contains explicit provisional site thresholds and contamination assumptions that determine the fictional technical object's location constraints and therefore indirectly affect NOXIA, but they should be corrected only at the OTA technical-canon layer.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R", "H"],
+  "external_research_required": true,
+  "real_world_anchor": "NASA/USGS/peer-reviewed Mars subsurface ice mapping, ISRU resource accessibility, perchlorate geochemistry and atmospheric water-vapor measurements.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.98,
+  "scores": {
+    "project_relevance": 1.0,
+    "cross_project_reuse": 0.95,
+    "uncertainty": 1.0,
+    "evidence_potential": 0.97
+  },
+  "related_research_ids": [],
+  "novelty_reason": "First source-pinned resource/site-constraint audit for the water-extractor technical object.",
+  "fingerprint": "pilot-ota-tec-0034-site-resource",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}
