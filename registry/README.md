@@ -1,7 +1,7 @@
 # Project Registry
 
-Version: 1.0.0  
-Stand: 2026-07-10
+Version: 1.1.0  
+Stand: 2026-08-29
 
 ## Zweck
 
@@ -39,6 +39,22 @@ Die Registry ist keine Source of Truth für fachliche Projektdaten. Sie enthält
 - `integrations` beschreibt erwartete Beziehungen, nicht deren technische Implementierung.
 - Unbekannte URLs oder Health-Endpunkte bleiben `null`. Sie dürfen nicht geraten werden.
 - Secret-Werte gehören niemals in die Registry.
+
+## Repository-Klasse und Sensitivität
+
+Schema 1.1 ergänzt optionale Sicherheits- und Berechtigungsfelder, ohne bestehende 1.0-Einträge ungültig zu machen:
+
+- `repository_class`: `standard` oder `private-manuscript-source`
+- `data_sensitivity`: `public`, `internal` oder `confidential-authoring`
+- `permissions.ingest`
+- `permissions.derived_analysis`
+- `permissions.canonization`
+- `permissions.public_export`
+- `permissions.cross_repository_routing`
+
+Für `private-manuscript-source` erzwingt das Schema `data_sensitivity: confidential-authoring` sowie `canonization: false` und `public_export: false`. Damit wird die Sicherheitsinvariante aus ECO-ARC-0030 maschinenlesbar: private Manuskriptquellen dürfen analysiert werden, erhalten dadurch aber weder Kanonisierungs- noch Veröffentlichungsrechte.
+
+Die eigentliche Registrierung/Aktivierung eines privaten Repositories erfolgt separat. Eine Schema-Erweiterung allein aktiviert kein Repository und verändert keine Routing-Rechte.
 
 ## Validierung
 
