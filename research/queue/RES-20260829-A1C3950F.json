@@ -1,0 +1,43 @@
+{
+  "id": "RES-20260829-A1C3950F",
+  "status": "queued",
+  "created": "2026-08-29T06:43:28+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-KARTE-0001-Gehirn-Epochen.md",
+  "document_signature": "OTA-KARTE-0001-Gehirn-Epochen",
+  "title": "Source-grounded verification of the Mousley-et-al. brain-epoch claims in OTA-KARTE-0001",
+  "question": "Verify the exact [R]-marked statements in OTA-KARTE-0001 against the primary publication Mousley, Bethlehem, Yeh, Astle et al., 'Topological turning points across the human lifespan', Nature Communications 16, 10055 (2025), and its current coverage. Which specifics are accurate (five epochs with boundaries 0-9, 9-32, 32-66, 66-83, 83+ years; four turning points at ~9, ~32, ~66 and ~83; age ~32 as the strongest turning point; UMAP/PCA trajectory analysis; ~12 graph-theoretic network metrics; age-dependent hearing/clinical vulnerability framing) and which are misstated or unsupported (the exact DOI 10.1038/s41467-025-65974-8, the wording and attribution of the quoted Dr. Alexa Mousley and Prof. Duncan Astle statements, the claimed 3D-manifold projection, epoch-specific clinical diagnoses)? Flag any [S] extrapolations (e.g. identical turning points in ~60,000 BCE anatomically modern humans) that the source cannot anchor.",
+  "why_now": "The Cambridge brain-epoch study is real and recent (2025); OTA-KARTE-0001 is the archive's reference module for brain development and is explicitly the basis of sibling workqueue documents OTA-KARTE-0002 and OTA-SCI-0021, so verifying its [R] layer once materially improves several documents. Several specific details (DOI, quote wording, metric count, projection method) are checkable but not yet confirmed against the primary source.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "real_world_anchor": "Mousley et al., 'Topological turning points across the human lifespan', Nature Communications 16, 10055 (2025) — five brain-structure epochs separated by turning points at approximately 9, 32, 66 and 83 years.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.76,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior topic covers the connectomics/brain-development real anchor; previous research addressed OTA-FND-0030, OTA-SCI-0037, the Lambda-haplogroup mtDNA/biophoton anchors, the Bronze-Age collapse and Levantine/Sinai/Cypriot copper geochemistry. This document and its real-science claim are novel.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 541,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "RELATION_GAP",
+      "NO_VISUAL"
+    ]
+  },
+  "fingerprint": "a1c3950f4f5d39c8"
+}
