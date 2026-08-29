@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260829-7802BB92",
+  "status": "queued",
+  "created": "2026-08-29T07:04:31+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0044-2026-DE.md",
+  "source_ref": "239e78adb80d3750596ad9a6e04ba64608484d69",
+  "source_blob_sha": "cb611761194ef5480393b3daf7fb6d7dffabeba0",
+  "title": "Source-grounded audit of OTA-SCI-0044 against the primary Garcia-Bernete et al. Nature Astronomy (2026) paper on IRAS 07251-0248",
+  "question": "Audit the [R]-marked claims in OTA-SCI-0044-2026-DE against the primary publication 'Abundant hydrocarbons in a buried galactic nucleus with signs of carbonaceous grain and polycyclic aromatic hydrocarbon processing' (Garcia-Bernete et al., Nature Astronomy 2026, DOI 10.1038/s41550-025-02750-0) and the current literature. Which specifics are accurate - first extragalactic CH3 (methyl radical) detection, benzene/acetylene/diacetylene inventory, 2-10x over-abundance vs. models, the cosmic-ray-ionization/C2H2 correlation (r ~ 0.85), ~160 km/s outflow, T_dust > 500 K / n_H conditions - and which are misattributed? The document credits the research article to 'Spilker et al.' (arXiv 2602.04967) and lists a separate News & Views item; the published research article's first author is Garcia-Bernete, so the attribution and the arXiv ID need correction. This document is the declared empirical foundation (85% [R]) of the RKF framework (OTA-FND-0012/0013/0014/0015).",
+  "why_now": "The doc (dated 2026-02-16) cites only arXiv/press-release sources without a DOI, and the first-author attribution conflicts with the published paper. Because OTA-SCI-0044 is the load-bearing real-world anchor for the entire RKF classification chain, correcting the citation and any numeric misstatements has outsized impact on archive plausibility and on the astrochemistry/prebiotic-chemistry learning content reused by SSF.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Garcia-Bernete et al. (2026), Nature Astronomy, DOI 10.1038/s41550-025-02750-0 — JWST NIRSpec/MIRI observations of the ULIRG IRAS 07251-0248 (first extragalactic CH3, hydrocarbons 2-10x above models, ~160 km/s outflow)",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.95
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Distinct from the prior interstellar-sulfur audit (RES-20260829-DA7FADB5, OTA-SCI-0026, Araki et al.): this gap targets a different document (OTA-SCI-0044) and a different paper (Garcia-Bernete et al., Nature Astronomy 2026, extragalactic hydrocarbons in IRAS 07251-0248), specifically the Spilker-vs-Garcia-Bernete first-author attribution and the RKF-framework dependency. It is not a rephrasing of any prior topic.",
+  "fingerprint": "7802bb9239959e67"
+}
