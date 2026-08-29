@@ -1,9 +1,9 @@
 {
-  "request_id": "OTA-SOURCE-GROUNDED-RERUN-2026-08-29",
-  "created": "2026-08-29T06:11:00+00:00",
+  "request_id": "OTA-TEC-0034-NOXIA-PILOT-2026-08-29",
+  "created": "2026-08-29T20:00:00+00:00",
   "research_ids": [
-    "RES-20260829-OTA0037R",
-    "RES-20260829-FND0030R"
+    "RES-20260829-TEC0034A",
+    "RES-20260829-TEC0034B"
   ],
-  "reason": "Re-run the OTA evidence pilot after fixing fail-closed loading of declared source documents."
+  "reason": "Run the first OTA→NOXIA technical-object evidence pilot for the source-pinned Mars water extractor. Research real R/H engineering constraints only; never auto-update NOXIA balancing."
 }
