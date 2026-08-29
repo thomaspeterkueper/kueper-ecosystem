@@ -1,0 +1,39 @@
+{
+  "id": "RES-20260829-TEC0037A",
+  "status": "queued",
+  "created": "2026-08-29T20:11:20+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0037-2026-DE.md",
+  "source_ref": "73d4f677b813cecddd50a97099479adfc0d20e5f",
+  "source_blob_sha": "0a00c3e007611e18fed3ae6e914e38eb9a732336",
+  "document_signature": "OTA-TEC-0037-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "vex-47-explorationsdrohne-basistyp",
+  "consumer_project": "noxia",
+  "title": "Real sensor and environmental anchors for VEX-47 across Mars, Titan and vacuum environments",
+  "question": "Source-grounded audit of the exact OTA-TEC-0037 document, restricted to its real-world anchors. Assess only: (1) the real sensor principles named for the VEX-47 baseline — optical imaging, infrared sensing, atmospheric/compositional analysis and particle detection — and their known operating constraints in Mars-like dust, Titan-like cold/dense atmosphere and vacuum/asteroid environments; (2) the effect of dust/haze on optical and infrared sensing and what mitigation is realistically required; (3) thermal-management and electronics/sensor packaging constraints across vacuum, Mars and Titan conditions; and (4) the audio-system caveat that microphones/loudspeakers require a material medium and therefore cannot operate as ordinary airborne audio devices in vacuum, while Titan/Mars acoustic behavior differs from Earth. Report real-world constraints that should be reflected in wording, but do not attempt to validate fictional propulsion or energy systems. Explicitly exclude Casimir-Drift, vacuum-energy thrust, Thorium-Mikrozelle, Mantrika-Kristall-Verstärkung, Post-PROMETHEUS law/canon, resonance sensors, Blackpearl technology, AVI-derived life-sign sensing, Kha-Null, the 174–963/233/528 Hz settings, Vex's emergent personality, fictional performance numbers, or any NOXIA balancing value. The individual instance `vex-lain-einheit-01` is out of scope except to verify that its fictional modifications are not generalized into real sensor claims or the VEX-47 type.",
+  "why_now": "OTA-TEC-0037 is deliberately fiction-heavy but embeds a small set of real sensor/environment assertions. This is a useful test that the OTA technical-object contract can research real anchors without trying to scientifically validate fictional machinery or instance-specific canon.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R"],
+  "external_research_required": true,
+  "real_world_anchor": "Planetary exploration sensor systems, Mars dust and atmosphere, Titan atmospheric/thermal environment, vacuum-compatible sensing and acoustics.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.9,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "First source-pinned real-anchor audit of a predominantly fictional OTA→NOXIA technical object with an embedded individual instance.",
+  "fingerprint": "pilot-ota-tec-0037-vex-real-anchors",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}
