@@ -1,0 +1,87 @@
+name: OTA Evidence Sweep
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * 0"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ota-evidence-sweep
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+      ANTHROPIC_BASE_URL: "https://api.deepseek.com/anthropic"
+      ANTHROPIC_AUTH_TOKEN: ${{ secrets.DEEPSEEK_API_KEY }}
+      ANTHROPIC_MODEL: "deepseek-v4-flash"
+      ANTHROPIC_DEFAULT_OPUS_MODEL: "deepseek-v4-pro[1m]"
+      ANTHROPIC_DEFAULT_SONNET_MODEL: "deepseek-v4-flash"
+      ANTHROPIC_DEFAULT_HAIKU_MODEL: "deepseek-v4-flash"
+      KUEPER_DISCOVERY_AGENT_CMD: claude -p --dangerously-skip-permissions
+      KUEPER_RESEARCH_AGENT_CMD: node ${{ github.workspace }}/tools/research/agent-with-exa.mjs
+      KUEPER_SYNTHESIS_AGENT_BIN: claude
+      KUEPER_DISCOVERY_PROJECT_ID: ota
+
+    steps:
+      - name: Checkout control plane
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Claude Code agent frontend
+        run: npm install --global @anthropic-ai/claude-code
+
+      - name: Install AI Gateway research tooling
+        run: npm install --no-save --package-lock=false ai@6.0.0
+
+      - name: Verify configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$KUEPER_BOT_TOKEN" || { echo "Missing KUEPER_BOT_TOKEN"; exit 2; }
+          test -n "$DEEPSEEK_API_KEY" || { echo "Missing DEEPSEEK_API_KEY"; exit 2; }
+          test -n "$AI_GATEWAY_API_KEY" || { echo "Missing AI_GATEWAY_API_KEY"; exit 2; }
+          python3 -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/execute.py tools/research/execute-targeted.py
+          node --check tools/research/agent-with-exa.mjs
+
+      - name: Discover source-grounded OTA gaps
+        run: python3 tools/research/discover-targeted.py | tee ota-discovery-report.json
+
+      - name: Select at most two newly queued OTA topics
+        shell: bash
+        run: |
+          set -euo pipefail
+          IDS="$(jq -r '[.items[:2][]?.id] | join(",")' ota-discovery-report.json)"
+          echo "KUEPER_RESEARCH_IDS=$IDS" >> "$GITHUB_ENV"
+          if [ -n "$IDS" ]; then
+            echo "Selected: $IDS"
+          else
+            echo "No new OTA evidence gaps passed discovery gates."
+          fi
+
+      - name: Research selected OTA topics
+        if: env.KUEPER_RESEARCH_IDS != ''
+        run: python3 tools/research/execute-targeted.py | tee ota-execution-report.json
+
+      - name: Upload OTA sweep reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ota-evidence-sweep-${{ github.run_id }}
+          path: |
+            ota-discovery-report.json
+            ota-execution-report.json
+          if-no-files-found: ignore
+          retention-days: 30
