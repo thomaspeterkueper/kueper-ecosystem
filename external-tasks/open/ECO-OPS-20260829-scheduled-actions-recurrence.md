@@ -28,20 +28,45 @@ Bei Prüfung gegen ca. `2026-08-29T13:12Z` fehlen damit mehrere erwartete Agent-
 
 Der Fehlerzustand ist nach Überschreiten der Zwei-Stunden-Grenze erneut bestätigt: Die GitHub-Actions-Historie enthält weiterhin keinen `event=schedule`-Lauf nach dem Canon-Conflict-Lauf von `2026-08-29T11:40:58Z`, obwohl für Agent Worker und Automated PR Review inzwischen mehrere weitere Cron-Fenster fällig waren.
 
-Der verbundene GitHub-Connector erlaubt das Lesen der Workflow-Runs, stellt in dieser Sitzung aber keinen autorisierten `workflow_dispatch`-/`enable workflow`-Endpunkt bereit. Deshalb kann die vorgesehene reversible Recovery-Maßnahme nicht aus dem Arbeitsloop selbst ausgelöst werden. Ein Code- oder Cron-Umbau wäre ohne nachgewiesene Ursache riskanter und wird ausdrücklich nicht als Ersatz vorgenommen.
+Ein reiner Cron-Umbau innerhalb GitHub Actions wäre keine belastbare Reparatur: beide Workflows sind korrekt terminiert und der Fehler trat bereits nach zwischenzeitlicher Recovery erneut auf.
 
-**Konkreter nächster Schritt:** Im GitHub-Actions-UI den Enabled-State von `KUEPER Agent Worker V7` und `KUEPER Automated PR Review` prüfen und je einen manuellen Run auf `main` auslösen. Anschließend zwei reguläre Cron-Fenster beobachten. Wenn die manuellen Läufe funktionieren, aber `event=schedule` weiterhin fehlt, Queue-/Concurrency- und Schedule-Deaktivierungsursache weiter untersuchen.
+## Architekturentscheidung 2026-08-29 14:28Z
 
-## Untersuchung / sichere nächste Schritte
+Freigegeben ist eine robuste Control-Plane-Lösung:
 
-1. Prüfen, ob beide Workflows im Actions-UI weiterhin als enabled angezeigt werden.
-2. Je einen manuellen `workflow_dispatch` auf `main` auslösen, ohne Parameteränderung.
-3. Danach mindestens zwei reguläre Cron-Fenster beobachten.
-4. Wenn manuelle Dispatches funktionieren, Cron aber erneut ausbleibt: Repository-/Workflow-Event-Historie und mögliche GitHub-Schedule-Deaktivierung bzw. Queue-/Concurrency-Effekte untersuchen.
-5. Keine Cron-Frequenzen erhöhen und keinen No-op-Commit als künstlichen Trigger erzeugen, solange die Ursache nicht bestimmt ist.
+1. Supabase wird primärer Scheduler für Agent Worker und PR Review.
+2. GitHub Actions bleibt Executor.
+3. Native GitHub-`schedule`-Trigger bleiben als Fallback bestehen.
+4. Eine Supabase-Lease plus Cooldown verhindert Doppelverarbeitung und doppelte LLM/API-Kosten.
+5. Dispatch/Start/Finish werden als Heartbeat gespeichert und sind über eine Health-RPC prüfbar.
+
+## Implementierungsstand
+
+Auf Branch `automation/external-scheduler-heartbeat` ist die technische Umsetzung vorhanden:
+
+- additive Migration `20260829143000_external_scheduler_control_plane.sql`
+- `ecosystem.scheduler_runs` und `ecosystem.scheduler_leases`
+- allow-listed Supabase→GitHub-Dispatcher nur für Agent Worker und PR Review
+- explizite, idempotente Enable-/Disable-RPCs für `pg_cron`
+- Health-RPC zur Stale-Erkennung
+- stdlib-only GitHub Guard `tools/scheduler/run_guard.py`
+- Lease-/Cooldown-Gating in beiden Workflows vor Node-/Claude-/Agent-Arbeit
+- Terminal-Heartbeat mit GitHub Run ID
+- Python- und SQL-Smoke-Tests
+- Operations-Runbook `docs/operations/external-scheduler.md`
+
+Die Migration ist absichtlich **inert**, bis ein dediziertes Dispatch-Credential vorhanden ist. Es wird dadurch noch kein zusätzlicher Cron-Traffic erzeugt.
+
+## Verbleibender Aktivierungsblocker
+
+Im verbundenen Supabase-Projekt ist derzeit kein Vault-Secret `kueper_github_dispatch_token` vorhanden. Der verbundene GitHub-Connector stellt das zugrunde liegende Token nicht als exportierbares Secret bereit; es darf auch nicht aus einem vorhandenen GitHub-Actions-Secret herauskopiert werden.
+
+**Konkreter nächster Schritt:** Einen dedizierten GitHub-Token bzw. GitHub-App-Credential mit minimaler Berechtigung zum Dispatch von Actions-Workflows für `thomaspeterkueper/kueper-ecosystem` als Supabase-Vault-Secret `kueper_github_dispatch_token` hinterlegen. Danach Migration anwenden/prüfen, `select public.kueper_enable_external_scheduler();` ausführen und mindestens zwei Intervalle je Worker verifizieren.
 
 ## Akzeptanz
 
-- Agent Worker und Automated PR Review erzeugen wieder mindestens zwei aufeinanderfolgende `event=schedule`-Runs gemäß ihren bestehenden Cron-Ausdrücken.
-- Ursache oder belastbare Recovery-Maßnahme ist dokumentiert.
-- Kein zusätzlicher Kosten-/Frequenzanstieg.
+- Agent Worker und Automated PR Review erzeugen wieder mindestens zwei aufeinanderfolgende erfolgreiche externe Dispatch-Intervalle.
+- Ein konkurrierender nativer GitHub-Schedule-Lauf wird durch Lease/Cooldown billig übersprungen.
+- `public.kueper_scheduler_health()` zeigt beide Worker nicht stale.
+- Ursache bzw. belastbare Recovery-Maßnahme ist dokumentiert.
+- Kein zusätzlicher LLM/API-Kostenanstieg durch Doppelverarbeitung.
