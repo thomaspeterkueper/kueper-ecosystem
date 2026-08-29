@@ -1,6 +1,6 @@
 {
-  "requested_at": "2026-08-29T15:20:00Z",
-  "reason": "Probe the next deterministic OTA source after SCI-0042 remediation before spending another Exa full-run slot",
-  "mode": "discovery-only",
+  "requested_at": "2026-08-29T15:22:00Z",
+  "reason": "Run the scoped OTA-FND-0024 evidence audit discovered in dry-run while Exa Web Search remains free through Aug 31",
+  "mode": "full",
   "max_topics": 2
 }
