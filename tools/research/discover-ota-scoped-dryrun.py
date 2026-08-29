@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Run the scoped OTA discovery algorithm without mutating the research queue.
+"""Run the cooled OTA discovery algorithm without mutating the research queue.
 
-This wrapper loads the production discover-ota-scoped implementation unchanged,
-blocks only queue-file PUTs, and rewrites the final report so benchmark proposals
-are clearly distinguished from persisted queue items.
+This wrapper loads the production cooldown wrapper unchanged, blocks only
+queue-file PUTs, and rewrites the final report so benchmark proposals are clearly
+distinguished from persisted queue items.
 """
 from __future__ import annotations
 
@@ -15,11 +15,11 @@ from pathlib import Path
 from typing import Any
 
 HERE = Path(__file__).resolve().parent
-TARGET = HERE / "discover-ota-scoped.py"
+TARGET = HERE / "discover-ota-cooled.py"
 
 
 def load_module():
-    spec = importlib.util.spec_from_file_location("discover_ota_scoped", TARGET)
+    spec = importlib.util.spec_from_file_location("discover_ota_cooled", TARGET)
     if spec is None or spec.loader is None:
         raise RuntimeError(f"cannot load {TARGET}")
     module = importlib.util.module_from_spec(spec)
@@ -43,12 +43,13 @@ def main() -> int:
 
     raw = buffer.getvalue().strip()
     if not raw:
-        raise RuntimeError("scoped discovery produced no report")
+        raise RuntimeError("cooled scoped discovery produced no report")
     report = json.loads(raw)
     proposed = int(report.get("queued", 0) or 0)
     report["dry_run"] = True
     report["proposed"] = proposed
     report["queued"] = 0
+    report["reaudit_cooldown_days"] = module.COOLDOWN_DAYS
     for item in report.get("items", []):
         if isinstance(item, dict):
             item["status"] = "proposed-dry-run"
