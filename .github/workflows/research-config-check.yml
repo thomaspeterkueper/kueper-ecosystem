@@ -51,6 +51,15 @@ jobs:
 
           assert policy['auto_canonicalize'] is False
           profiles = policy['evidence_profiles']
+          ota_profile = profiles['ota-archive-evidence']
+          assert ota_profile.get('require_source_path') is True
+          assert ota_profile.get('pin_source_revision') is True
+
+          discover_source = (root / 'tools/research/discover.py').read_text(encoding='utf-8')
+          execute_source = (root / 'tools/research/execute.py').read_text(encoding='utf-8')
+          assert 'source_blob_sha' in discover_source and 'source_ref' in discover_source
+          assert 'source blob mismatch' in execute_source and 'source_ref' in execute_source
+
           eligible = policy['eligible_projects']
           assert eligible
           assert all(entry.get('evidence_profile') in profiles for entry in eligible)
@@ -70,5 +79,5 @@ jobs:
           expected = {entry['id']: weight for entry, weight in zip(eligible, scaled)}
           assert dict(counts) == expected, (counts, expected)
 
-          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts)}, indent=2))
+          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts), 'ota_source_contract': 'pinned'}, indent=2))
           PY
