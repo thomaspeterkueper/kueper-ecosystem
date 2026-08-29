@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-A464A32B",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-29T14:33:23+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -38,5 +38,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No prior OTA research topic addresses the Dumont et al. (2025) planetary-forcing-of-seismicity result, the LOD-seismicity bridge, or the Le Mouël et al. (2025) SSN/LOD periodicity claims; the closest ecosystem documents (OTA-OBS-0005, OTA-SCI-0036) appear only as secondary context excerpts and were not previously researched. The internal [ESTABLISHED]/[HYPOTHETICAL] classification conflict is a materially unresolved audit target.",
-  "fingerprint": "a464a32baf1ede15"
+  "fingerprint": "a464a32baf1ede15",
+  "updated_at": "2026-08-29T14:48:28+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/40"
 }
