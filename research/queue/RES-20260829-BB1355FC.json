@@ -1,0 +1,41 @@
+{
+  "id": "RES-20260829-BB1355FC",
+  "status": "queued",
+  "created": "2026-08-29T07:35:57+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0042-2026-DE.md",
+  "source_ref": "05b33fa6bc6d6124ba241df7dd50d906123cfc6b",
+  "source_blob_sha": "546bba54fb0fd171a531a432896931edc756fb41",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 241,
+  "context_paths": [
+    "src/content/documents/OTA-FND-0008-2025-DE.md",
+    "src/content/documents/OTA-OBS-0005-2026-DE.md",
+    "src/content/documents/OTA-SCI-0036-2026-DE.md"
+  ],
+  "title": "Source-grounded audit of the Guglielmi phenomenological-earthquake claims and the Tohoku foreshock eigenzeit analysis in OTA-SCI-0042",
+  "question": "Audit the [R]/ESTABLISHED-marked Guglielmi-group claims in OTA-SCI-0042-2026-DE against the primary sources. (a) Do the preprints 'Toward a Phenomenological Theory of Earthquakes' (arXiv:2510.26158v1, physics.geo-ph) and 'Relativity of Time in Earthquake Physics' (arXiv:2509.04858) exist as cited with the stated author list (A.V. Guglielmi, O.D. Zotov, A.D. Zavyalov, B.I. Klain†), is the former dedicated to the late Boris Klain, and does its introduction contain the quoted 'We were not experts in earthquake physics'? (b) Are the Tohoku foreshock specifics accurate: 166 foreshocks in the ~200 days before the M9.1 mainshock of 2011-03-11, radial convergence toward the future epicenter with a maximum of ~85 m/h, azimuthal splitting into two counter-rotating populations (lower branch ~0.7°/day clockwise, upper branch ~1.3°/day counterclockwise), and an eigenzeit analysis with two phases (σ=0, σ=0.065)? (c) Which of the ten Appendix A 'discoveries' (tectonic earthquake triads 3 classes/6 species, Zotov's law, foreshock convergence/aftershock divergence, rotating foreshock epicenters, three relaxation phases, deactivation coefficient decreasing with magnitude, cumulative round-the-world seismoecho effect, modulation of global seismicity by spheroidal/toroidal Earth oscillations, anthropogenic weekend effect, inapplicability of the Hirano-Utsu law) are actually asserted in the primary text, and is the critical discovery #8 (spheroidal/toroidal modulation of global seismicity) presented as established or as a hypothesis? (d) Does the document's two-Zotov institutional disambiguation (O.D. Zotov at the Schmidt Institute of Physics of the Earth vs L. Zotov at MSU) match the affiliations on the actual publications and press interview (timeanddate.com, 13 Aug 2025)?",
+  "why_now": "OTA-SCI-0042 is the declared [R] foundation of the AVI LOD-seismicity cascade, and its very specific numbers (166 foreshocks, 0.7°/day and 1.3°/day Umov vortex rotation, 85 m/h convergence, σ phases, the 10-discovery list) propagate into OTA-SCI-0036 and OTA-OBS-0005. Because the anchor sources are recent 2025 preprints that no prior OTA research topic has audited, verification is needed to confirm whether the [R]/ESTABLISHED layer matches the primary text exactly or overstates a model/hypothesis as established.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Guglielmi, A.V. (2025), 'Toward a Phenomenological Theory of Earthquakes', arXiv:2510.26158v1 [physics.geo-ph]; Guglielmi, A.V. & Zotov, O.D. (2025), 'Relativity of Time in Earthquake Physics', arXiv:2509.04858; Zotov, O.D., Zavyalov, A.D. & Klain, B.I. (2020/2023/2025) primary publications; L. Zotov press quote via timeanddate.com (2025-08-13)",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior OTA research topic addresses the Guglielmi phenomenological-earthquake-theory literature, the Tohoku foreshock eigenzeit analysis, or the LOD-seismicity bridge; the closest prior topics audit unrelated [R] anchors (Mpemba unification RES-20260829-20AB97DF, interstellar sulfur RES-20260829-DA7FADB5, RHIC/STAR RES-20260829-OTA0037R).",
+  "fingerprint": "bb1355fccf5c1ec5"
+}
