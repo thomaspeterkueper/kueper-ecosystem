@@ -1,0 +1,28 @@
+{
+  "id": "ota-tech-object-v1",
+  "description": "Evidence contract for canonical fictional OTA technical objects consumed by NOXIA or other applications.",
+  "source_layer": "overtime-archive.org",
+  "identity_layer": "kueper-knowledge-graph",
+  "real_science_route": "kueper.com/KUE-SCI",
+  "consumer_layers": ["noxiagame"],
+  "researchable_claim_classes": ["R", "R-Anker", "H", "T"],
+  "rules": {
+    "R": "Verify against strong external evidence.",
+    "R-Anker": "Verify only the real-world anchor.",
+    "H": "Test evidence, constraints, alternatives and uncertainty; never auto-promote to R.",
+    "T": "Research real premises and engineering constraints; do not treat model choice as established.",
+    "F": "Do not externally validate fictional canon or gameplay placeholder values.",
+    "W": "Do not externally validate authorial/work stipulations.",
+    "balancing": "NOXIA gameplay values are derived consumer data and must never be automatically overwritten by evidence corrections."
+  },
+  "publication": {
+    "ota_correction_requires_review": true,
+    "kue_sci_requires_review": true,
+    "auto_publish": false,
+    "auto_update_noxia": false
+  },
+  "impact_reporting": {
+    "flag_noxia_impact": true,
+    "write_noxia_balancing": false
+  }
+}
