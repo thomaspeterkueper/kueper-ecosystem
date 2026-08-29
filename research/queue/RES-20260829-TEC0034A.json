@@ -1,0 +1,38 @@
+{
+  "id": "RES-20260829-TEC0034A",
+  "status": "queued",
+  "created": "2026-08-29T19:58:00+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0034-2026-DE.md",
+  "source_ref": "e6177626fc4a2f92402602466dfc2177a6b816fa",
+  "source_blob_sha": "4f47ef2629f0aa836f28220311e84a737b5e5db9",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "wasserextraktor-mars-typ-m",
+  "consumer_project": "noxia",
+  "title": "Mars water extraction thermodynamics, energy budget and microwave ISRU for OTA-TEC-0034",
+  "question": "Source-grounded audit of OTA-TEC-0034: What does current primary/peer-reviewed/official Mars ISRU literature support for (1) water-ice sublimation/extraction under representative Mars pressures and temperatures, (2) useful heating/target-temperature ranges versus the dossier's provisional 0–20 °C assumption, (3) realistic process-energy ranges per kg or m³ of recovered water including heating, vapor capture and condensation/resublimation, and (4) the relative engineering merits and limitations of microwave in-situ heating versus excavation plus resistive/solar-thermal heating? Explicitly separate thermodynamic minima from system-level energy. Do NOT evaluate or rewrite the dossier's [F] 200–500 L/day gameplay/fiction placeholder or any NOXIA balancing value.",
+  "why_now": "First OTA→NOXIA technical-object pilot; the dossier explicitly marks temperature, microwave efficiency and 15–40 kWh/m³ as unverified hypotheses that should be checked before technical canon is hardened.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R", "H"],
+  "external_research_required": true,
+  "real_world_anchor": "Mars water-ice ISRU thermodynamics, sublimation, vapor capture, microwave/regolith heating and system energy studies.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.9,
+  "relevance_score": 1.0,
+  "scores": {
+    "project_relevance": 1.0,
+    "cross_project_reuse": 1.0,
+    "uncertainty": 1.0,
+    "evidence_potential": 1.0
+  },
+  "related_research_ids": [],
+  "novelty_reason": "First source-pinned evidence audit of the water-extractor technical object.",
+  "fingerprint": "pilot-ota-tec-0034-thermo-energy",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}
