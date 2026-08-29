@@ -1,0 +1,42 @@
+{
+  "id": "RES-20260829-7DE7EDC3",
+  "status": "queued",
+  "created": "2026-08-29T15:22:37+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-FND-0024-2026-DE.md",
+  "source_ref": "7639a4c0494c749c8da6d4213689424c9fcee6b1",
+  "source_blob_sha": "86ca840b41b4fcc5fd68d0e3c0dc77cbd142f8b7",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 189,
+  "context_paths": [
+    "src/content/documents/OTA-CUL-0002-60000BCE-DE.md",
+    "src/content/documents/OTA-HIS-0003-2087-DE.md",
+    "src/content/documents/OTA-KARTE-0003-Baumeister-Netzwerk-DE.md"
+  ],
+  "title": "Source-grounded verification of the meteoritic-iron [R]/[R-Anker] claims in OTA-FND-0024 ('Die Kette vom Hexenteich') against the primary archaeometallurgical literature",
+  "question": "Verify the [R]/[R-Anker]-marked meteoritic-iron claims that ground the central artifact of OTA-FND-0024-2026-DE against the primary sources. (a) Are the Widmanstaetten-structure composition ranges (Kamacit Fe + 4-7.5% Ni; Taenit Fe + 20-50% Ni) and the stated Kamacit saturation magnetization (Ms = 1.715 kA/m) accurately reported per the metallurgical/meteoritics literature? (b) Are the cited historical analogs confirmed as meteoritic iron by primary studies: the Tutankhamun dagger (~1350 BCE), the Ugarit bronze-age axes (~1400 BCE), and the Moerigen/Switzerland arrowhead (~900 BCE, reportedly traced to a specific IAB iron meteorite)? (c) Is the document's framing of the artifact as 'eisenzeitliche Glieder' (Iron Age links) archaeologically consistent, given that the archaeometallurgical record of meteoritic-iron use is predominantly Late Bronze Age (before terrestrial smelting) - a material discrepancy the pending OTA-SCI-0059 companion would have to resolve? (d) How defensible is the [T] claim that Monazit/Thorit (Th-232) trace inclusions occur in iron meteorites from the asteroid melt process, given thorium's strongly lithophile geochemistry - i.e., is any Th-bearing mineral phase actually documented in iron meteorites, and what Th/U abundances do iron meteorites carry?",
+  "why_now": "OTA-FND-0024 declares meteoritic iron (Widmanstaetten structure) the precise scientific foundation of the novel and schedules OTA-SCI-0059 (Meteoritic iron) as an ausstehend companion document. The specific figures (Ni ranges, Ms value), the historical-analog dates, and the eisenzeitlich framing have not been checked against the primary archaeometallurgical record, and the Th-bearing-inclusion premise is a stated [T] hypothesis that can be constrained by meteorite geochemistry.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "R-Anker"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Archaeometallurgical record of meteoritic-iron artifacts (Tutankhamun dagger, Comelli et al. 2016; Ugarit axes; Moerigen arrowhead 2023); iron-meteorite phase diagrams and Th/U trace-element geochemistry.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.84,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior OTA research topic audits the meteoritic-iron material claims (Widmanstaetten compositions, Ms value, historical analogs, Iron-Age framing) in any source document. The nearest topic (RES-20260823-273FD1BF) concerns Th-bearing monazite in Levantine/Sinai/Cypriot copper ores and their radiogenic heat, not iron-meteorite mineralogy, so the substrate and claims differ.",
+  "fingerprint": "7de7edc3066fbde3"
+}
