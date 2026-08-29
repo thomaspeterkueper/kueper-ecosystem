@@ -1,0 +1,45 @@
+name: Apply Source Document Context Fix
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "tools/maintenance/apply-source-document-context-fix.py"
+      - ".github/workflows/apply-source-document-context-fix.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.KUEPER_BOT_TOKEN }}
+
+      - name: Apply source-document context fix
+        run: python3 tools/maintenance/apply-source-document-context-fix.py
+
+      - name: Validate
+        run: |
+          set -euo pipefail
+          python3 -m py_compile tools/research/execute.py
+          grep -q "def source_document_context" tools/research/execute.py
+          grep -q "BEGIN DECLARED SOURCE DOCUMENT" tools/research/execute.py
+
+      - name: Commit
+        run: |
+          set -euo pipefail
+          git config user.name "KUEPER Maintenance Bot"
+          git config user.email "maintenance-bot@users.noreply.github.com"
+          git add tools/research/execute.py
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "research: load declared source documents before evidence search"
+            git push origin main
+          fi
