@@ -1,0 +1,41 @@
+{
+  "id": "RES-20260829-04521EF6",
+  "status": "queued",
+  "created": "2026-08-29T19:40:43+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-FND-0022-2026-DE.md",
+  "source_ref": "b409235628697cbf40db6071ce3f467d2d885088",
+  "source_blob_sha": "af78ac78060ad45163d355800ded5a8d17edd050",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 174,
+  "context_paths": [
+    "src/content/documents/OTA-CUL-0015-MULTI-DE.md",
+    "src/content/documents/OTA-LSC-0001-2048-DE.md",
+    "src/content/documents/OTA-LSC-0002-2026-DE.md"
+  ],
+  "title": "Source-grounded verification of the Gandhara halo-synthesis [R-Anker] claim in OTA-FND-0022 ('griechischer Nimbus / zoroastrische Khvarenah / buddhistische Prabha als ein ikonographisches System') against the art-historical literature",
+  "question": "(a) Is the halo/nimbus in Buddhist art a genuine syncretism of Hellenistic-Greek radiate iconography (Helios/Apollo), Zoroastrian khvarenah (divine glory/light) and Indic concepts (prabha, ushnisha, aura), and was Gandhara (present-day Pakistan/Afghanistan, Kushan-era Greco-Buddhist art) the first 1st-5th century CE site where these three fused into a single iconographic system — or do the primary art-historical sources trace the Buddhist halo to a different origin (Greco-Roman import vs. indigenous Indian tradition, e.g. Surya iconography) and date its first appearance differently? (b) What do the earliest attested Gandharan halos (Bimaran casket, early Bodhisattva/Buddha reliefs, stucco heads) actually show, and which primary/publication evidence dates them? (c) How is Avestan xvarənah/khvarenah defined in the primary Zoroastrian texts, and is the 'glory manifested as halo' reading defensible in the secondary literature? (d) Is the philological record consistent with the doc's name-connection between gandhaka (Sanskrit 'sulphur', from gandha 'smell') and Gandhara (region name etymology)? (e) Which specific claims of the referenced halo-diffusion map (OTA-CUL-0015, Heiligenschein-Straße; routes from Iran/Gandhara to Rome, China, Southeast Asia) rest on this anchor, and where does the literature conflict with the stated 1st-5th century timing or the claimed tripartite synthesis?",
+  "why_now": "The GANDHAKA title-genesis and the entire referenced halo-iconography architecture of OTA-CUL-0015 (Heiligenschein-Straße, halo diffusion routes) rest on this single [R-Anker] claim. It has never been externally audited: no prior OTA research topic covers Gandharan art or halo iconography, and the claim bundles three distinct scholarly traditions (Hellenistic, Zoroastrian, Buddhist) whose synthesis is contested in art history — so an anchor check can materially affect how the archive labels the title genesis and the CUL-0015 route map.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "The historical claim that Gandhara (present-day Pakistan/Afghanistan) was the 1st-5th century CE synthesis node where Greek nimbus iconography, Zoroastrian khvarenah, and Buddhist prabha first fused into a single halo iconographic system.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior OTA research topic covers Gandharan art or halo iconography; the closest neighbor, RES-20260823-7E477B58, addresses the Sanxingdui/Sea Peoples line of OTA-CUL-0015, not its Gandhara halo-synthesis claim. This gap is not a rephrase or broadening of any listed topic.",
+  "fingerprint": "04521ef6c05b5c82"
+}
