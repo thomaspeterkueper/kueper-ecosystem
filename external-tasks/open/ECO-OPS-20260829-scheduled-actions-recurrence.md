@@ -30,15 +30,33 @@ Der Fehlerzustand ist nach Überschreiten der Zwei-Stunden-Grenze erneut bestät
 
 Der verbundene GitHub-Connector erlaubt das Lesen der Workflow-Runs, stellt in dieser Sitzung aber keinen autorisierten `workflow_dispatch`-/`enable workflow`-Endpunkt bereit. Deshalb kann die vorgesehene reversible Recovery-Maßnahme nicht aus dem Arbeitsloop selbst ausgelöst werden. Ein Code- oder Cron-Umbau wäre ohne nachgewiesene Ursache riskanter und wird ausdrücklich nicht als Ersatz vorgenommen.
 
-**Konkreter nächster Schritt:** Im GitHub-Actions-UI den Enabled-State von `KUEPER Agent Worker V7` und `KUEPER Automated PR Review` prüfen und je einen manuellen Run auf `main` auslösen. Anschließend zwei reguläre Cron-Fenster beobachten. Wenn die manuellen Läufe funktionieren, aber `event=schedule` weiterhin fehlt, Queue-/Concurrency- und Schedule-Deaktivierungsursache weiter untersuchen.
+## Teil-Recovery 2026-08-29 15:10Z
+
+Die manuelle Recovery wurde im GitHub-Actions-UI ausgelöst:
+
+- Agent Worker V7 #867: `workflow_dispatch`, gestartet `2026-08-29T14:26:02Z`; beim letzten Check noch in Bearbeitung.
+- Automated PR Review #81: `workflow_dispatch`, gestartet `14:26:50Z`, erfolgreich beendet `14:49:32Z`.
+
+Danach ist mindestens ein regulärer Review-Cron wieder erschienen:
+
+- Automated PR Review #86: `event=schedule`, erstellt `14:33:24Z`, erfolgreich beendet `14:55:02Z`.
+- Auch Autonomous Ecosystem Loop #626 lief wieder regulär per `schedule` um `14:34:17Z` und endete erfolgreich.
+
+Damit ist der globale GitHub-Scheduler nicht mehr vollständig ausgefallen. Die Akzeptanz ist aber noch nicht erfüllt: Für Agent Worker und Automated PR Review müssen jeweils mindestens zwei aufeinanderfolgende reguläre Schedule-Runs beobachtet werden. Insbesondere kann der lange manuelle Agent-Worker-Lauf die eigenen Cron-Runs aufgrund der bestehenden Concurrency-Gruppe zunächst seriell aufstauen.
+
+Parallel wurde als robuste Abhilfe Draft-PR #45 (`automation/external-scheduler-heartbeat`) angelegt: Supabase-basierter externer Dispatch, Heartbeat und Lease/Cooldown-Deduplizierung, GitHub-Cron bleibt Fallback. Die additive Control-Plane-Migration ist bereits angewendet, die externen Cronjobs bleiben fail-closed deaktiviert, bis das dedizierte Vault-Secret `kueper_github_dispatch_token` vorhanden ist.
+
+Beim ersten Branch-Check von PR #45 erzeugten die geänderten Workflowdateien Parse-Fehlläufe ohne Jobs. Ein YAML-Plain-Scalar mit `: ` im `echo`-Schritt wurde auf dem PR-Branch in Blocksyntax korrigiert; weitere Validierung des geänderten Heads läuft über den normalen PR-/Actions-Lifecycle. Alte Parse-Runs werden nicht erneut gestartet.
+
+**Konkreter nächster Schritt:** Zwei weitere reguläre Cronfenster für beide Zielworkflows beobachten. Separat PR #45 validieren und erst nach vorhandenem dediziertem Vault-Credential den externen Scheduler aktivieren. Keine Merge-Aktion autonom ausführen.
 
 ## Untersuchung / sichere nächste Schritte
 
-1. Prüfen, ob beide Workflows im Actions-UI weiterhin als enabled angezeigt werden.
-2. Je einen manuellen `workflow_dispatch` auf `main` auslösen, ohne Parameteränderung.
-3. Danach mindestens zwei reguläre Cron-Fenster beobachten.
-4. Wenn manuelle Dispatches funktionieren, Cron aber erneut ausbleibt: Repository-/Workflow-Event-Historie und mögliche GitHub-Schedule-Deaktivierung bzw. Queue-/Concurrency-Effekte untersuchen.
-5. Keine Cron-Frequenzen erhöhen und keinen No-op-Commit als künstlichen Trigger erzeugen, solange die Ursache nicht bestimmt ist.
+1. Zwei aufeinanderfolgende `event=schedule`-Läufe für Agent Worker und Automated PR Review bestätigen.
+2. PR #45 auf parsebare Workflowdefinitionen, Lease-/Cooldown-Verhalten und fail-closed Aktivierung prüfen.
+3. Nach Bereitstellung des dedizierten Dispatch-Credentials externen Scheduler aktivieren und echten Dispatch Agent Worker + PR Review testen.
+4. GitHub-Cron als Fallback beibehalten; keine Frequenz erhöhen.
+5. Bei erneutem Ausfall Heartbeat/Health-RPC statt bloßer Historienbeobachtung verwenden.
 
 ## Akzeptanz
 
