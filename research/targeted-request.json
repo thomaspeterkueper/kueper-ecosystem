@@ -1,0 +1,9 @@
+{
+  "request_id": "OTA-SOURCE-GROUNDED-RERUN-2026-08-29",
+  "created": "2026-08-29T06:11:00+00:00",
+  "research_ids": [
+    "RES-20260829-OTA0037R",
+    "RES-20260829-FND0030R"
+  ],
+  "reason": "Re-run the OTA evidence pilot after fixing fail-closed loading of declared source documents."
+}
