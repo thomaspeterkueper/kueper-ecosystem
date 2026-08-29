@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-20AB97DF",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-29T07:04:32+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No prior topic covered the Mpemba effect. The gap is a pure freshness/accuracy audit: resolving the now-available DOI for the 2026 PRX unification paper and correcting the misdated/misattributed quantum-Mpemba citations (Zhang et al. 2025 vs 'Wu et al. 2024'), which the prior AVI/brain-epoch topics did not touch.",
-  "fingerprint": "20ab97df31150fb8"
+  "fingerprint": "20ab97df31150fb8",
+  "updated_at": "2026-08-29T10:27:21+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/36"
 }
