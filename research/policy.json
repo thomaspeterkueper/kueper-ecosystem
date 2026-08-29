@@ -1,9 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "target_repository": "thomaspeterkueper/kueper-knowledge-graph",
   "candidate_path": "research/candidates",
-  "default_languages": ["de", "en"],
+  "default_languages": [
+    "de",
+    "en"
+  ],
   "max_languages_per_topic": 5,
   "max_discoveries_per_run": 3,
   "max_research_topics_per_run": 2,
@@ -43,20 +46,116 @@
     }
   },
   "eligible_projects": [
-    {"id": "noxia", "weight": 1.0, "languages": ["de", "en"], "evidence_profile": "technical-scientific"},
-    {"id": "noxia-universe", "weight": 1.0, "languages": ["de", "en"], "evidence_profile": "worldbuilding-scientific"},
-    {"id": "mishkenaz", "weight": 1.0, "languages": ["de", "en", "hi", "gu", "sa"], "evidence_profile": "historical-linguistic"},
-    {"id": "ota", "weight": 0.9, "languages": ["de", "en"], "evidence_profile": "ota-archive-evidence"},
-    {"id": "ssf", "weight": 0.8, "languages": ["de", "en"], "evidence_profile": "science"},
-    {"id": "avi-modell", "weight": 0.85, "languages": ["de", "en"], "evidence_profile": "avi-theoretical-cosmology"},
-    {"id": "omnizedenz", "weight": 0.65, "languages": ["de", "en"], "evidence_profile": "philosophy-comparative"},
-    {"id": "contracomology", "weight": 0.65, "languages": ["de", "en"], "evidence_profile": "philosophy-comparative"},
-    {"id": "kueper-com", "weight": 0.7, "languages": ["de", "en"], "evidence_profile": "general"},
-    {"id": "endia", "weight": 0.7, "languages": ["de", "en"], "evidence_profile": "worldbuilding-scientific"},
-    {"id": "zereya", "weight": 0.7, "languages": ["de", "en"], "evidence_profile": "worldbuilding-scientific"}
+    {
+      "id": "noxia",
+      "weight": 1.0,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "technical-scientific"
+    },
+    {
+      "id": "noxia-universe",
+      "weight": 1.0,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "worldbuilding-scientific"
+    },
+    {
+      "id": "mishkenaz",
+      "weight": 1.0,
+      "languages": [
+        "de",
+        "en",
+        "hi",
+        "gu",
+        "sa"
+      ],
+      "evidence_profile": "historical-linguistic"
+    },
+    {
+      "id": "ota",
+      "weight": 0.9,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "ota-archive-evidence"
+    },
+    {
+      "id": "ssf",
+      "weight": 0.8,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "science"
+    },
+    {
+      "id": "avi-modell",
+      "weight": 0.85,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "avi-theoretical-cosmology"
+    },
+    {
+      "id": "omnizedenz",
+      "weight": 0.65,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "philosophy-comparative"
+    },
+    {
+      "id": "contracomology",
+      "weight": 0.65,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "philosophy-comparative"
+    },
+    {
+      "id": "kueper-com",
+      "weight": 0.7,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "general"
+    },
+    {
+      "id": "endia",
+      "weight": 0.7,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "worldbuilding-scientific"
+    },
+    {
+      "id": "zereya",
+      "weight": 0.7,
+      "languages": [
+        "de",
+        "en"
+      ],
+      "evidence_profile": "worldbuilding-scientific"
+    }
   ],
   "evidence_rules": {
-    "prefer": ["primary-source", "peer-reviewed", "official-institution", "academic-publisher"],
+    "prefer": [
+      "primary-source",
+      "peer-reviewed",
+      "official-institution",
+      "academic-publisher"
+    ],
     "allow_secondary": true,
     "require_source_urls": true,
     "require_uncertainty": true,
@@ -71,8 +170,18 @@
       "minimum_sources": 2,
       "minimum_domains": 2,
       "minimum_urls": 2,
-      "preferred_source_types": ["primary-source", "peer-reviewed", "official-institution", "academic-publisher"],
-      "strong_source_markers": ["primary-source", "peer-reviewed", "official-institution", "academic-publisher"],
+      "preferred_source_types": [
+        "primary-source",
+        "peer-reviewed",
+        "official-institution",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "primary-source",
+        "peer-reviewed",
+        "official-institution",
+        "academic-publisher"
+      ],
       "require_strong_source": false,
       "scout_guidance": "Prefer direct, attributable sources. Use secondary sources for orientation or disagreement, not as a substitute for stronger evidence when stronger evidence exists."
     },
@@ -82,8 +191,19 @@
       "minimum_sources": 3,
       "minimum_domains": 2,
       "minimum_urls": 3,
-      "preferred_source_types": ["peer-reviewed", "primary-source", "official-dataset", "official-institution", "academic-publisher"],
-      "strong_source_markers": ["peer-reviewed", "primary-source", "official-dataset", "official-institution"],
+      "preferred_source_types": [
+        "peer-reviewed",
+        "primary-source",
+        "official-dataset",
+        "official-institution",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "peer-reviewed",
+        "primary-source",
+        "official-dataset",
+        "official-institution"
+      ],
       "require_strong_source": true,
       "scout_guidance": "Prioritize peer-reviewed papers, original datasets, collaboration/instrument publications and official institutions. Label preprints explicitly. Distinguish measurement, accepted interpretation, model dependence and open controversy."
     },
@@ -93,8 +213,19 @@
       "minimum_sources": 3,
       "minimum_domains": 2,
       "minimum_urls": 3,
-      "preferred_source_types": ["peer-reviewed", "primary-source", "official-dataset", "collaboration-publication", "academic-publisher"],
-      "strong_source_markers": ["peer-reviewed", "primary-source", "official-dataset", "collaboration-publication"],
+      "preferred_source_types": [
+        "peer-reviewed",
+        "primary-source",
+        "official-dataset",
+        "collaboration-publication",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "peer-reviewed",
+        "primary-source",
+        "official-dataset",
+        "collaboration-publication"
+      ],
       "require_strong_source": true,
       "scout_guidance": "Treat standard cosmology, observations and mathematical results as external evidence; treat AVI-specific assumptions as model postulates unless independently supported. Separate established background, derived consequence, postulate, interpretation and falsifiable prediction. Do not use metaphysical analogy as physical evidence."
     },
@@ -104,8 +235,19 @@
       "minimum_sources": 2,
       "minimum_domains": 2,
       "minimum_urls": 2,
-      "preferred_source_types": ["standard", "official-technical-documentation", "peer-reviewed", "primary-source", "official-institution"],
-      "strong_source_markers": ["standard", "official-technical-documentation", "peer-reviewed", "primary-source"],
+      "preferred_source_types": [
+        "standard",
+        "official-technical-documentation",
+        "peer-reviewed",
+        "primary-source",
+        "official-institution"
+      ],
+      "strong_source_markers": [
+        "standard",
+        "official-technical-documentation",
+        "peer-reviewed",
+        "primary-source"
+      ],
       "require_strong_source": true,
       "scout_guidance": "Prefer standards bodies, original technical documentation, peer-reviewed engineering literature and official datasets. Vendor material may establish product facts but not independent performance claims. Community posts are leads only unless independently corroborated."
     },
@@ -115,8 +257,21 @@
       "minimum_sources": 3,
       "minimum_domains": 2,
       "minimum_urls": 3,
-      "preferred_source_types": ["primary-historical-source", "archaeological-publication", "peer-reviewed", "academic-corpus", "scholarly-grammar", "academic-publisher"],
-      "strong_source_markers": ["primary-historical-source", "archaeological-publication", "peer-reviewed", "academic-corpus", "scholarly-grammar"],
+      "preferred_source_types": [
+        "primary-historical-source",
+        "archaeological-publication",
+        "peer-reviewed",
+        "academic-corpus",
+        "scholarly-grammar",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "primary-historical-source",
+        "archaeological-publication",
+        "peer-reviewed",
+        "academic-corpus",
+        "scholarly-grammar"
+      ],
       "require_strong_source": true,
       "scout_guidance": "Separate directly attested forms/finds, scholarly reconstruction, comparative inference and fictional extrapolation. Prefer archaeological reports, corpora, scholarly grammars, historical primary sources and peer-reviewed historical linguistics. Search relevant source languages when they materially improve access to primary scholarship."
     },
@@ -126,8 +281,19 @@
       "minimum_sources": 2,
       "minimum_domains": 2,
       "minimum_urls": 2,
-      "preferred_source_types": ["peer-reviewed", "primary-source", "official-institution", "standard", "academic-publisher"],
-      "strong_source_markers": ["peer-reviewed", "primary-source", "official-institution", "standard"],
+      "preferred_source_types": [
+        "peer-reviewed",
+        "primary-source",
+        "official-institution",
+        "standard",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "peer-reviewed",
+        "primary-source",
+        "official-institution",
+        "standard"
+      ],
       "require_strong_source": true,
       "scout_guidance": "Research the real-world constraint first, then state what it permits or challenges in worldbuilding. Never present fictional canon as evidence. Distinguish physically established constraints, engineering feasibility, speculative extension and narrative choice."
     },
@@ -137,25 +303,56 @@
       "minimum_sources": 3,
       "minimum_domains": 2,
       "minimum_urls": 3,
-      "preferred_source_types": ["primary-philosophical-text", "scholarly-edition", "peer-reviewed", "academic-reference", "academic-publisher"],
-      "strong_source_markers": ["primary-philosophical-text", "scholarly-edition", "peer-reviewed", "academic-reference"],
+      "preferred_source_types": [
+        "primary-philosophical-text",
+        "scholarly-edition",
+        "peer-reviewed",
+        "academic-reference",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "primary-philosophical-text",
+        "scholarly-edition",
+        "peer-reviewed",
+        "academic-reference"
+      ],
       "require_strong_source": true,
       "scout_guidance": "Use primary philosophical/theological texts and serious scholarship. Separate textual/historical fact, scholarly interpretation, comparative analogy and KUEPER-system claim. Metaphysical propositions are not validated merely by source count; report them as philosophical positions unless they make independently testable empirical claims."
     },
     "ota-archive-evidence": {
       "description": "Evidence profile for OTA documents that may mix real-world evidence, theory, speculation, work-setting and fictional canon.",
-      "minimum_evidence_score": 0.70,
+      "minimum_evidence_score": 0.7,
       "minimum_sources": 3,
       "minimum_domains": 2,
       "minimum_urls": 3,
-      "preferred_source_types": ["peer-reviewed", "primary-source", "official-dataset", "official-institution", "standard", "archaeological-publication", "scholarly-edition", "academic-publisher"],
-      "strong_source_markers": ["peer-reviewed", "primary-source", "official-dataset", "official-institution", "standard", "archaeological-publication", "scholarly-edition"],
+      "preferred_source_types": [
+        "peer-reviewed",
+        "primary-source",
+        "official-dataset",
+        "official-institution",
+        "standard",
+        "archaeological-publication",
+        "scholarly-edition",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "peer-reviewed",
+        "primary-source",
+        "official-dataset",
+        "official-institution",
+        "standard",
+        "archaeological-publication",
+        "scholarly-edition"
+      ],
       "require_strong_source": true,
       "require_claim_classification": true,
       "require_freshness_check": true,
       "require_conflict_check": true,
       "default_publication_route": "fictional_archive_document",
-      "allowed_publication_routes": ["fictional_archive_document", "real_scientific_epaper"],
+      "allowed_publication_routes": [
+        "fictional_archive_document",
+        "real_scientific_epaper"
+      ],
       "real_science_publication_route": "real_scientific_epaper",
       "claim_classes": {
         "R": "Real-world empirical, historical or otherwise externally checkable claim. Strong external evidence is required.",
@@ -174,7 +371,9 @@
         "INTERPRETATION": "S",
         "CRITICAL EVALUATION": "R"
       },
-      "scout_guidance": "Classify the claim before searching. Apply external evidence rigorously to R/real anchors; for T/H/S, test premises, constraints, counterevidence and falsifiability without treating source count as validation. Never use external search to validate F or W canon. Check whether newer evidence changes the result and surface material contradictions. If a standalone real-world scientific e-paper is warranted, recommend the real_scientific_epaper route to kueper.com/KUE-SCI; keep archive/canon framing in OTA."
+      "scout_guidance": "Classify the claim before searching. Each OTA research gap must be anchored to exactly one repository source document; preserve its path and pinned Git revision. Apply external evidence rigorously to R/real anchors; for T/H/S, test premises, constraints, counterevidence and falsifiability without treating source count as validation. Never use external search to validate F or W canon. Check whether newer evidence changes the result and surface material contradictions. If a standalone real-world scientific e-paper is warranted, recommend the real_scientific_epaper route to kueper.com/KUE-SCI; keep archive/canon framing in OTA.",
+      "require_source_path": true,
+      "pin_source_revision": true
     },
     "scientific-publication": {
       "description": "Publication-grade evidence profile for real-world scientific e-papers destined for the canonical public KUE-SCI layer on kueper.com after review.",
@@ -182,14 +381,30 @@
       "minimum_sources": 4,
       "minimum_domains": 3,
       "minimum_urls": 4,
-      "preferred_source_types": ["peer-reviewed", "primary-source", "official-dataset", "collaboration-publication", "official-institution", "standard", "academic-publisher"],
-      "strong_source_markers": ["peer-reviewed", "primary-source", "official-dataset", "collaboration-publication", "official-institution"],
+      "preferred_source_types": [
+        "peer-reviewed",
+        "primary-source",
+        "official-dataset",
+        "collaboration-publication",
+        "official-institution",
+        "standard",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "peer-reviewed",
+        "primary-source",
+        "official-dataset",
+        "collaboration-publication",
+        "official-institution"
+      ],
       "require_strong_source": true,
       "require_claim_classification": true,
       "require_freshness_check": true,
       "require_conflict_check": true,
       "default_publication_route": "real_scientific_epaper",
-      "allowed_publication_routes": ["real_scientific_epaper"],
+      "allowed_publication_routes": [
+        "real_scientific_epaper"
+      ],
       "claim_classes": {
         "established": "Externally established result or observation; map directly to strong sources.",
         "postulated": "Model assumption or explicit postulate; sources may motivate or constrain it but do not establish it.",

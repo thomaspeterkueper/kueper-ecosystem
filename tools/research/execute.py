@@ -54,23 +54,31 @@ def publication_route(profile:dict[str,Any],hint:str|None=None)->tuple[str|None,
 def source_document_context(token:str,item:dict[str,Any])->dict[str,Any]|None:
     """Fetch the exact declared source document before external research.
 
-    A declared source_path is a hard contract: if it cannot be loaded from the
-    declared source repository's real default branch, research fails closed.
+    A declared source_path is a hard contract. New discovery items pin both the
+    source commit and blob SHA so a later research run audits the exact version
+    that triggered the gap. Legacy/manual items may fall back to the repository's
+    current default branch, but still fail closed if the file cannot be loaded.
     """
     source_path=item.get("source_path")
     if not source_path:return None
     source_repo=item.get("source_repository")
     if not source_repo:raise RuntimeError(f"queued item {item.get('id')} declares source_path but no source_repository")
-    info=repo_info(token,source_repo);default=info.get("default_branch")
-    if not default:raise RuntimeError(f"cannot resolve default branch for source repository {source_repo}")
-    encoded_path=urllib.parse.quote(str(source_path),safe='/');encoded_ref=urllib.parse.quote(str(default),safe='')
+    source_ref=item.get("source_ref")
+    if not source_ref:
+        info=repo_info(token,source_repo);source_ref=info.get("default_branch")
+    if not source_ref:raise RuntimeError(f"cannot resolve source ref for repository {source_repo}")
+    encoded_path=urllib.parse.quote(str(source_path),safe='/');encoded_ref=urllib.parse.quote(str(source_ref),safe='')
     payload=gh(token,"GET",f"/repos/{source_repo}/contents/{encoded_path}?ref={encoded_ref}")
     if not isinstance(payload,dict) or payload.get("type")!="file" or not payload.get("content"):
-        raise RuntimeError(f"declared source document is not a readable file: {source_repo}@{default}:{source_path}")
+        raise RuntimeError(f"declared source document is not a readable file: {source_repo}@{source_ref}:{source_path}")
+    expected_blob=item.get("source_blob_sha")
+    actual_blob=payload.get("sha")
+    if expected_blob and actual_blob!=expected_blob:
+        raise RuntimeError(f"source blob mismatch for {source_repo}@{source_ref}:{source_path}: {actual_blob} != {expected_blob}")
     try:text=base64.b64decode(payload["content"]).decode("utf-8")
     except Exception as exc:raise RuntimeError(f"cannot decode declared source document {source_repo}:{source_path}: {exc}") from exc
     if not text.strip():raise RuntimeError(f"declared source document is empty: {source_repo}:{source_path}")
-    return {"repository":source_repo,"path":str(source_path),"ref":str(default),"sha":payload.get("sha"),"text":text}
+    return {"repository":source_repo,"path":str(source_path),"ref":str(source_ref),"sha":actual_blob,"text":text}
 
 def queue(token)->list[tuple[dict[str,Any],dict[str,Any]]]:
     try:items=gh(token,"GET",f"/repos/{CONTROL}/contents/research/queue?ref=main")
