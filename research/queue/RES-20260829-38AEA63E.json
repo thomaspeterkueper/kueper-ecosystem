@@ -1,0 +1,42 @@
+{
+  "id": "RES-20260829-38AEA63E",
+  "status": "queued",
+  "created": "2026-08-29T14:33:23+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0042-2026-DE.md",
+  "source_ref": "e8e7c2f565fe703a87f25693c108ab45f083a31a",
+  "source_blob_sha": "546bba54fb0fd171a531a432896931edc756fb41",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 241,
+  "context_paths": [
+    "src/content/documents/OTA-FND-0008-2025-DE.md",
+    "src/content/documents/OTA-OBS-0005-2026-DE.md",
+    "src/content/documents/OTA-SCI-0036-2026-DE.md"
+  ],
+  "title": "Source-grounded verification of the Guglielmi (2025) phenomenological earthquake theory and Tohoku-foreshock claims in OTA-SCI-0042",
+  "question": "Verify the [R]/[ESTABLISHED]-marked claims in OTA-SCI-0042-2026-DE about the Guglielmi research line against the primary sources and current literature. (a) Does the arXiv preprint 'Toward a Phenomenological Theory of Earthquakes' (Guglielmi, arXiv:2510.26158v1, physics.geo-ph, Schmidt Institute of Physics of the Earth, RAS) exist as cited, is it dedicated to Boris Klain, and are the ten Appendix A discoveries accurately reported — especially #8 'modulation of global seismicity by spheroidal and toroidal oscillations of the Earth', the 'Zotov-Gesetz' as a Bath-law analog for foreshocks, the three relaxation phases (Initial → Omori → Recovery), the magnitude-dependence of the deactivation coefficient, and the anthropogenic 'weekend effect'? (b) Does the companion preprint 'Relativity of Time in Earthquake Physics' (Guglielmi & Zotov, arXiv:2509.04858) exist and does it report the 166 Tohoku foreshocks in the 200 days before the M9.1 2011 mainshock, the two eigenzeit phases (σ=0, σ=0.065), and the counter-rotating Umov-energy-flow interpretation with azimuthal splitting at 0.7°/day and 1.3°/day and maximum radial convergence 85 m/h? (c) Which of these claims are established in the broader literature versus model-dependent or as yet uncorroborated?",
+  "why_now": "OTA-SCI-0042 (Feb 2026) integrates two very recent preprints (arXiv:2510.26158, arXiv:2509.04858) as the [R] foundation of the earthquake-phenomenology line, and the document's own revision register shows the Guglielmi integration (Ref. 5k–5n) is still propagating through the Omnizedenz Formelsammlung and AVI documents. The unusually specific Tohoku-foreshock figures (166 events / 200 days, 85 m/h, 0.7°/day, 1.3°/day) and the ten-discoveries list need verification against the primary sources before they anchor further archive claims; several are framed as [ESTABLISHED] while resting on preprints.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Guglielmi, A.V. (2025). 'Toward a Phenomenological Theory of Earthquakes.' arXiv:2510.26158v1 [physics.geo-ph]; Guglielmi, A.V. & Zotov, O.D. (2025). 'Relativity of Time in Earthquake Physics.' arXiv:2509.04858",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior OTA research topic covers the Guglielmi/Zotov phenomenological earthquake theory, its eigenzeit formalism, or the Tohoku-foreshock analysis; prior topics addressed Mpemba effects (OTA-SCI-0062), IRAS 07251 (OTA-SCI-0044), archaeoacoustics (OTA-OBS-0001), brain epochs (OTA-KARTE-0001), interstellar sulfur (OTA-SCI-0026), and RHIC/STAR (OTA-SCI-0037), none of which overlap with this earthquake-seismicity source document.",
+  "fingerprint": "38aea63e74cdc942"
+}
