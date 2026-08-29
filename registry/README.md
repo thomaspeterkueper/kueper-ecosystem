@@ -52,7 +52,7 @@ Schema 1.1 ergänzt optionale Sicherheits- und Berechtigungsfelder, ohne bestehe
 - `permissions.public_export`
 - `permissions.cross_repository_routing`
 
-Für `private-manuscript-source` erzwingt das Schema `data_sensitivity: confidential-authoring` sowie `canonization: false` und `public_export: false`. Damit wird die Sicherheitsinvariante aus ECO-ARC-0030 maschinenlesbar: private Manuskriptquellen dürfen analysiert werden, erhalten dadurch aber weder Kanonisierungs- noch Veröffentlichungsrechte.
+Für `private-manuscript-source` erzwingt das Schema `data_sensitivity: confidential-authoring` sowie `canonization: false`, `public_export: false` und `cross_repository_routing: false`. Damit wird die Sicherheitsinvariante aus ECO-ARC-0030 maschinenlesbar: private Manuskriptquellen dürfen analysiert werden, erhalten dadurch aber weder Kanonisierungs- noch Veröffentlichungsrechte; reguläres Cross-Repository-Routing bleibt bis zu einer separat geprüften Erweiterung des External-Task-Formats deaktiviert.
 
 Die eigentliche Registrierung/Aktivierung eines privaten Repositories erfolgt separat. Eine Schema-Erweiterung allein aktiviert kein Repository und verändert keine Routing-Rechte.
 
