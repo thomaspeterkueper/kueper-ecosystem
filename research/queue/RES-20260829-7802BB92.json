@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-7802BB92",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-29T07:04:31+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Distinct from the prior interstellar-sulfur audit (RES-20260829-DA7FADB5, OTA-SCI-0026, Araki et al.): this gap targets a different document (OTA-SCI-0044) and a different paper (Garcia-Bernete et al., Nature Astronomy 2026, extragalactic hydrocarbons in IRAS 07251-0248), specifically the Spilker-vs-Garcia-Bernete first-author attribution and the RKF-framework dependency. It is not a rephrasing of any prior topic.",
-  "fingerprint": "7802bb9239959e67"
+  "fingerprint": "7802bb9239959e67",
+  "updated_at": "2026-08-29T07:24:19+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/34"
 }
