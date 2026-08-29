@@ -33,6 +33,14 @@ Push- und manuell/ereignisgetriggerte Actions funktionieren weiterhin; unter and
 - Der frühere Workflow-Credential-Blocker ist nicht mehr aktuell: der Credential-Smoke-Test lief erfolgreich.
 - Der verbundene GitHub-Connector bietet in diesem Lauf keinen sicheren `workflow_dispatch`-/Enable-Endpunkt. Deshalb wurde kein Cron auf Verdacht verändert und kein künstlicher No-op-Commit erzeugt.
 
+## Update 2026-08-29 08:58 UTC
+
+Der Stall besteht weiterhin: auch bei erneuter Prüfung ist Run #865 von 04:08:22Z der jüngste `event=schedule`-Lauf. Push-getriggerte Actions laufen dagegen weiterhin erfolgreich.
+
+Als direkte Folge fehlte bei Ecosystem-PR #42 der vorgesehene Automated-PR-Review. Der Arbeitsloop hat den Review ersatzweise ausgeführt und einen konkreten Governance-Verstoß gefunden: `private-manuscript-source` erlaubte im neuen Registry-Schema noch `cross_repository_routing:true`, obwohl ECO-ARC-0030 Cross-Repository-Routing aus privaten Manuskriptquellen bis zu einer kompatiblen External-Task-Erweiterung ausdrücklich deaktiviert. Der PR-Branch wurde deshalb risikoarm korrigiert; `cross_repository_routing:false` ist nun für diese Repository-Klasse schema-erzwungen und dokumentiert. Der Vercel-Check des neuen Heads ist grün.
+
+Der Scheduling-Blocker selbst kann über den derzeit verbundenen Connector weiterhin nicht sicher per Workflow-Dispatch oder Enable-API behoben werden. Solange kein `schedule`-Event zurückkehrt, bleibt dieser Auftrag offen.
+
 ## Sicherer nächster Schritt
 
 1. In GitHub Actions einmal `KUEPER Agent Worker V7` und `KUEPER Automated PR Review` per **Run workflow** auf `main` auslösen.
