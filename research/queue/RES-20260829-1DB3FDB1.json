@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-1DB3FDB1",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-29T19:40:43+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -39,5 +39,7 @@
     "RES-20260823-5BEB27E7"
   ],
   "novelty_reason": "Prior RES-20260823-5BEB27E7 audited the Λ-system's mtDNA-specific anchors (exclusive maternal inheritance, mtDNA methylation surviving embryonic reprogramming, oocyte/sperm copy numbers). This gap instead addresses the nuclear intergenerational/transgenerational inheritance of in-utero epigenetic programming and its autoimmune consequences — the Elysium premise in OTA-FND-0022 — which that topic did not cover; the molecule (nuclear epigenome vs mtDNA), the exposure mechanism (in-utero programming of a child vs haplotypic inheritance) and the clinical target (autoimmunity) are all materially different.",
-  "fingerprint": "1db3fdb1a70bdc90"
+  "fingerprint": "1db3fdb1a70bdc90",
+  "updated_at": "2026-08-29T19:54:21+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/44"
 }
