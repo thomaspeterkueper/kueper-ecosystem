@@ -1,0 +1,34 @@
+{
+  "id": "RES-20260829-862AA763",
+  "status": "queued",
+  "created": "2026-08-29T10:12:35+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "canon/timeline/NXU-TIMELINE-DRAFT-2026-07.md",
+  "source_ref": "b8f53cbc3699d1ffe9c59fbadbf36a9c1951bab4",
+  "source_blob_sha": "9317fd98852d9a80526bedc7fa9f1453cb1b9bdd",
+  "title": "Mars-Geologie: Plausibilität der Sektor-7-Vergrabung (864 m/1.247 m, 50–80 Mio. Jahre) und Lavatunnel-Eis als Kolonie-Wasserquelle",
+  "question": "Wie hoch sind die Resurfacing- und Sedimentationsraten auf dem Mars (fehlende Plattentektonik, dünne Atmosphäre, äolischer Transport), sodass eine auf 50–80 Mio. Jahre datierte hexagonale Struktur in 864–1.247 m Tiefe vergraben liegen könnte — und sind Lavatunnel mit zugänglichem Wassereis im Hellas-Becken eine tragfähige Wasserquelle für eine ~1.000-köpfige, zwei Jahre isolierte Kolonie?",
+  "why_now": "Die Große-Stille-Timeline (aktives Manuskript Generation Mars) setzt eine hexagonale Struktur in Sektor-7-Tief mit 50–80 Mio. Jahre Datierung und überlebt die 'Das Schweigen'-Isolation über Lavatunnel-Eisvorkommen (entdeckt 2068). Die Vergrabungstiefe ist auf dem tektonisch inaktiven Mars eine konkret prüfbare geologische Randbedingung; eine Recherche zu Resurfacing-Raten, Lavatunnel-Skylights und Untergrund-Eis kann die Szenerie stützen oder eine Korrektur der Tiefen-/Datierungsannahme erzwingen — direkt relevant für die Hard-SF-Strenge des Repos.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "S"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Mars-Resurfacing- und Sedimentationsraten je geologischer Epoche; Nachweis von Lavatunnel-Skylights und Untergrund-Eis (z. B. Hellas-Region); Machbarkeit von Tiefbohrungen auf dem Mars",
+  "publication_route_hint": null,
+  "project_weight": 1.0,
+  "relevance_score": 0.83,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "862aa763aa09b56e"
+}
