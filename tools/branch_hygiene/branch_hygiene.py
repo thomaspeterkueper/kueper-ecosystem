@@ -75,21 +75,31 @@ def classify_branch(
     prs: list[dict[str, Any]],
     protected: bool,
     policy: dict[str, Any],
+    repo: str,
 ) -> tuple[str, str]:
     if branch == default_branch:
         return "KEEP", "default branch"
     if protected:
         return "KEEP", "protected branch"
 
-    open_head = [p for p in prs if p.get("state") == "open" and p.get("head", {}).get("ref") == branch]
+    # PRs from forks carry head refs in the fork's namespace; only PRs whose
+    # head lives in the scanned repository can be associated with its branches.
+    own_head = [p for p in prs if p.get("head", {}).get("repo", {}).get("full_name") == repo]
+
+    open_head = [p for p in own_head if p.get("state") == "open" and p.get("head", {}).get("ref") == branch]
     if open_head:
         return "KEEP", f"head of open PR #{open_head[0].get('number')}"
 
-    open_base = [p for p in prs if p.get("state") == "open" and p.get("base", {}).get("ref") == branch]
+    open_base = [
+        p for p in prs
+        if p.get("state") == "open"
+        and p.get("base", {}).get("repo", {}).get("full_name") == repo
+        and p.get("base", {}).get("ref") == branch
+    ]
     if open_base:
         return "KEEP", f"base of open/stacked PR #{open_base[0].get('number')}"
 
-    branch_prs = [p for p in prs if p.get("head", {}).get("ref") == branch]
+    branch_prs = [p for p in own_head if p.get("head", {}).get("ref") == branch]
     merged = [p for p in branch_prs if p.get("merged_at")]
     closed_unmerged = [p for p in branch_prs if p.get("state") == "closed" and not p.get("merged_at")]
 
@@ -99,13 +109,16 @@ def classify_branch(
             return "REVIEW", f"research/special branch; merged PR #{merged[-1].get('number')} but follow-up state is not inferable"
         return "REVIEW", "research/special branch requires explicit lifecycle check"
 
+    if closed_unmerged:
+        unmerged_numbers = ",".join(str(p.get("number")) for p in closed_unmerged)
+        if merged:
+            merged_numbers = ",".join(str(p.get("number")) for p in merged)
+            return "REVIEW", f"merged PR(s) #{merged_numbers} but closed-unmerged PR(s) #{unmerged_numbers}; deletion cannot be proven safe"
+        return "REVIEW", f"closed but unmerged PR(s) #{unmerged_numbers}"
+
     if merged:
         numbers = ",".join(str(p.get("number")) for p in merged)
         return "DELETE", f"merged PR(s) #{numbers}; no open PR uses branch as head/base"
-
-    if closed_unmerged:
-        numbers = ",".join(str(p.get("number")) for p in closed_unmerged)
-        return "REVIEW", f"closed but unmerged PR(s) #{numbers}"
 
     if branch.startswith(tuple(policy.get("ephemeral_prefixes", ["tmp-", "test/", "agent/", "ecosystem/task-"]))):
         return "REVIEW", "ephemeral-looking branch without a merged PR association"
@@ -122,7 +135,7 @@ def scan_repo(gh: GitHub, repo: str, policy: dict[str, Any]) -> dict[str, Any]:
     rows = []
     for item in branches:
         name = item["name"]
-        action, reason = classify_branch(name, default_branch, prs, bool(item.get("protected")), policy)
+        action, reason = classify_branch(name, default_branch, prs, bool(item.get("protected")), policy, repo)
         rows.append({
             "branch": name,
             "sha": item.get("commit", {}).get("sha"),
