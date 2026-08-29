@@ -1,6 +1,6 @@
 {
-  "requested_at": "2026-08-29T14:31:00Z",
-  "reason": "Run the optimized full OTA evidence sweep while Exa Web Search is still free through Aug 31",
-  "mode": "full",
+  "requested_at": "2026-08-29T15:20:00Z",
+  "reason": "Probe the next deterministic OTA source after SCI-0042 remediation before spending another Exa full-run slot",
+  "mode": "discovery-only",
   "max_topics": 2
 }
