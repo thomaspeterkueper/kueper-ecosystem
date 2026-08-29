@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-04521EF6",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-29T19:40:43+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -37,5 +37,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No prior OTA research topic covers Gandharan art or halo iconography; the closest neighbor, RES-20260823-7E477B58, addresses the Sanxingdui/Sea Peoples line of OTA-CUL-0015, not its Gandhara halo-synthesis claim. This gap is not a rephrase or broadening of any listed topic.",
-  "fingerprint": "04521ef6c05b5c82"
+  "fingerprint": "04521ef6c05b5c82",
+  "updated_at": "2026-08-29T19:48:42+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/43"
 }
