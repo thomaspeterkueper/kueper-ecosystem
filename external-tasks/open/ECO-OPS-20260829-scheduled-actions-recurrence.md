@@ -75,3 +75,32 @@ Fortlaufende read-only-Beobachtung über die öffentliche GitHub-REST-API:
 - **Akzeptanzkriterium weiterhin nicht erfüllt:** Keine zwei aufeinanderfolgenden `event=schedule`-Läufe je Workflow; der Stall bestand zum Prüfzeitpunkt `15:25Z` fort.
 - **In Arbeit beobachtet:** Supabase-gestützte externe Scheduling-Lösung mit Lease-Guard als Draft-PR #45 (`automation/external-scheduler-heartbeat`): `tools/scheduler/run_guard.py`, Migration `supabase/migrations/20260829143000_external_scheduler_control_plane.sql`. Initiale YAML-Parse-Fehler des PR-Branches wurden laut Teil-Recovery-Abschnitt auf dem PR-Branch korrigiert.
 - **Keine Änderungen an Cron, Workflow-Code oder Agentenlogik vorgenommen** — Ursache ist nach wie vor nicht im Repository-Code nachgewiesen.
+
+## Automatisierte Beobachtung und PR-Validierung 2026-08-29 ~16:22Z
+
+### Live-Zustand (GitHub-REST, read-only)
+
+- Der externe Supabase-Scheduler dispatcht seit ~15:14Z beide Zielworkflows auf der entworfenen Kadenz:
+  - Agent Worker V7: #874 15:15 (success), #875 15:30 (cancelled), #877 15:45 (success), #878 16:00 (in_progress), #879 16:15 (pending) — Slots :00/:15/:30/:45.
+  - Automated PR Review: #88 15:14 (success), #89 15:22 (success), #90 15:37 (success), #91 15:52 (success), #92 16:07 (in_progress) — Slots :07/:22/:37/:52, vier aufeinanderfolgende erfolgreiche Intervalle.
+- Die Akzeptanz „mindestens zwei aufeinanderfolgende erfolgreiche externe Dispatch-Intervalle" ist damit zum Prüfzeitpunkt je Worker erfüllt (Agent Worker 15:45/16:00, PR Review 15:22–15:52).
+- Der GitHub-native Scheduler bleibt weitgehend ausgefallen: einziger `event=schedule`-Lauf seit 11:01:55Z ist Agent Worker #876 (15:36:05Z, cancelled); Automated PR Review zuletzt 14:33:24Z. Die Workflows auf `main` sind unverändert aktiv und korrekt terminiert, `concurrency` ist `cancel-in-progress: false` und die Queue zu jedem Prüfzeitpunkt leer — die Schedule-Events werden oberhalb des Repositorys (GitHub-Scheduler) nicht emittiert. Schedule-Events traten jeweils nur vereinzelt unmittelbar nach Dispatches auf.
+- Die Cancellations (#873, #875, #876) sind über die API nicht zuschreibbar; sie passen nicht zum Concurrency-Verhalten und sind separat zu beachten.
+
+### Validierung Draft-PR #45 (`automation/external-scheduler-heartbeat`, Head `539a9b9`)
+
+- Beide Workflow-YAMLs am PR-Head parsen lokal sauber (Jobs vorhanden). Die 0-Job-Parse-Fehlläufe (#84–#87, #868–#872) stammen von Commits vor den Fix-Commits `42658c3`/`539a9b9`; seit dem letzten Fix entstehen keine neuen Parse-Fehlläufe.
+- `kueper_acquire_scheduler_lease` ist fail-closed: aktiver Lease → `skipped`/`active_lease`, kürzlich beendeter Lauf → `skipped`/`cooldown`; fehlende Supabase-Erreichbarkeit lässt den Guard-Schritt fehlschlagen, bevor Agent-/LLM-Arbeit beginnt.
+- Dispatch-Token wird nur innerhalb der SECURITY-DEFINER-Funktion aus Vault gelesen und nie ausgegeben; Grants sind auf `service_role` begrenzt; die Migration installiert keine Cronjobs, Aktivierung nur über explizite Enable-/Disable-RPCs.
+- `python -m unittest tools/scheduler/test_run_guard.py` (3 Tests) läuft lokal durch; SQL-Smoke-Test vorhanden.
+- Merge-Hinweis: Die PR-Branch-Version dieser Datei überschreibt Abschnitte, die auf `main` nach dem Branch-Punkt (`9166f71`, `d0759d6`) weitergeführt wurden; ein Merge-Konflikt in dieser Datei ist zu erwarten und zugunsten der jeweils neuesten Beobachtungen aufzulösen. Erst nach dem Merge greift der Lease-Guard auf `main` und überspringt konkurrierende GitHub-Schedule-Läufe billig.
+
+### Repo-Beitrag dieses Tasks (Branch `ecosystem/task-1237643c`)
+
+- Neu: `tools/scheduler/check_health.py` + Unit-Tests — deterministischer, read-only Health-Check (Supabase-Health-RPC primär, GitHub-Run-Historie als Fallback) mit Exit-Code für den Arbeitsloop; ersetzt künftig die manuelle Historienbeobachtung (Schritt 5 des ursprünglichen Auftrags). Der Live-Smoke-Test meldet beide Worker healthy und weist den weiterhin fehlenden nativen GitHub-Schedule separat aus.
+- Keine Cron-Frequenz, kein Workflow-Trigger und keine Agentenlogik geändert; kein Frequenz-/Kostenanstieg.
+
+### Verbleibende Schritte
+
+1. PR #45 nach fachlichem Review mergen (keine autonome Merge-Aktion; zuständig ist der reguläre PR-Review-Pfad), damit der Lease-Guard auf `main` wirksam wird.
+2. `tools/scheduler/check_health.py` in die Loop-Beobachtung übernehmen; bei erneutem Stall sofortige deterministische Erkennung statt Historienrecherche.
