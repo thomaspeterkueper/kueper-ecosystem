@@ -26,4 +26,6 @@ Relative to the baseline discovery-agent step, the scoped design reduces discove
 
 ## Benchmark hygiene
 
-Discovery-only runs are non-mutating. They use `discover-ota-scoped-dryrun.py`, which executes the production scoped discovery implementation while suppressing research-queue writes. The report marks findings as dry-run proposals. Full and scheduled sweeps continue to use the production writer and normal evidence pipeline.
+The first discovery-only benchmark predated the non-mutating wrapper and briefly persisted its two proposals to the research queue. Those benchmark-only queue files were removed without researching or canonicalizing them.
+
+Future discovery-only runs are non-mutating. They use `discover-ota-scoped-dryrun.py`, which executes the production scoped discovery implementation while suppressing research-queue writes. The report marks findings as dry-run proposals. Full and scheduled sweeps continue to use the production writer and normal evidence pipeline.
