@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-F4846287",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-29T15:22:38+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -37,5 +37,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No prior OTA research topic covers biogenic magnetite in the human brain or geomagnetic alpha-ERD transduction. RES-20260823-5BEB27E7 audits mtDNA/biophoton/piRNA anchors of the Lambda-haplogroup system (a different novel and different biological substrates), not brain magnetite or EEG alpha desynchronization, so this is a distinct, unaddressed gap.",
-  "fingerprint": "f484628794ecf0b9"
+  "fingerprint": "f484628794ecf0b9",
+  "updated_at": "2026-08-29T15:37:16+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/42"
 }
