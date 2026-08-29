@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-A7BD20AF",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-29T10:12:34+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -30,5 +30,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": null,
-  "fingerprint": "a7bd20afb47cde38"
+  "fingerprint": "a7bd20afb47cde38",
+  "updated_at": "2026-08-29T10:20:11+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/35"
 }
