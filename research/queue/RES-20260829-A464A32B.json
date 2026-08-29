@@ -1,0 +1,42 @@
+{
+  "id": "RES-20260829-A464A32B",
+  "status": "queued",
+  "created": "2026-08-29T14:33:23+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0042-2026-DE.md",
+  "source_ref": "e8e7c2f565fe703a87f25693c108ab45f083a31a",
+  "source_blob_sha": "546bba54fb0fd171a531a432896931edc756fb41",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 241,
+  "context_paths": [
+    "src/content/documents/OTA-FND-0008-2025-DE.md",
+    "src/content/documents/OTA-OBS-0005-2026-DE.md",
+    "src/content/documents/OTA-SCI-0036-2026-DE.md"
+  ],
+  "title": "Source-grounded verification of the Dumont et al. (2025) planetary-forcing and LOD-seismicity bridge claims in OTA-SCI-0042",
+  "question": "Verify the [R]/[ESTABLISHED]-marked claims in OTA-SCI-0042-2026-DE about the Dumont/Le Mouël research line against the primary sources and current literature. (a) Does the peer-reviewed paper 'On a planetary forcing of global seismicity' (Dumont, S., de Bremond d'Ars, J., Boulé, J.B., Courtillot, V., Gèze, M., Gibert, D., Kossobokov, V., Le Mouël, J.L., Lopes, F. et al., Frontiers in Earth Science 13, 1587650, DOI 10.3389/feart.2025.1587650) exist with the reported author list, and does it support the specific claims: 7 LOD periodicities (1, 3.4, 11, 14, 18.6, 33, 60 yr) detected in global seismicity, SSA decomposition reproducing 90% of seismic variance with 7 components, and the same periodicities appearing in LOD and sunspot number? (b) Is 'planetary forcing as the common cause' classified in the paper (and the wider community) as established, hypothesis, or contested — and which status is defensible given the current literature? (c) Does the preprint 'On the planetary forcing of the Solar dynamo' (Le Mouël, Courtillot et al., arXiv:2511.18939v2) report 11 common SSN/LOD periods with bootstrap p ≤ 10⁻³ as the document claims? The audit should also resolve the document's internal inconsistency: the executive summary marks planetary forcing of seismicity [ESTABLISHED] while section 2.2 marks it [HYPOTHETICAL].",
+  "why_now": "Dumont et al. (2025) is the linchpin 'bridge' claim of the LOD-seismicity chain in OTA-SCI-0042 and is reused as the [R] anchor by OTA-OBS-0005 and the AVI/Omnizedenz documents; whether planetary forcing of seismicity is genuinely established in the peer-reviewed literature (or treated as a contested hypothesis) determines whether the AVI R(a)-field causal chain has a solid empirical foundation. The document also carries a classification inconsistency that should be resolved before the claims propagate further through the archive revision wave.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Dumont, S. et al. (2025). 'On a planetary forcing of global seismicity.' Frontiers in Earth Science 13, 1587650, DOI 10.3389/feart.2025.1587650; Le Mouël, J.L., Courtillot, V. et al. (2025). 'On the planetary forcing of the Solar dynamo.' arXiv:2511.18939v2",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.8625,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior OTA research topic addresses the Dumont et al. (2025) planetary-forcing-of-seismicity result, the LOD-seismicity bridge, or the Le Mouël et al. (2025) SSN/LOD periodicity claims; the closest ecosystem documents (OTA-OBS-0005, OTA-SCI-0036) appear only as secondary context excerpts and were not previously researched. The internal [ESTABLISHED]/[HYPOTHETICAL] classification conflict is a materially unresolved audit target.",
+  "fingerprint": "a464a32baf1ede15"
+}
