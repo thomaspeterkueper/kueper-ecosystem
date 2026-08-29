@@ -8,7 +8,7 @@
   "properties": {
     "schema_version": {
       "type": "string",
-      "const": "1.0.0"
+      "const": "1.1.0"
     },
     "updated_at": {
       "type": "string",
@@ -63,8 +63,35 @@
             "knowledge-graph",
             "archive",
             "website",
-            "infrastructure"
+            "infrastructure",
+            "authoring"
           ]
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9]{0,7}$",
+          "description": "Verbindlicher Oekosystem-Code (ECO-ARC-0031). Kanonische Referenzliste: ECO-ARC-0006."
+        },
+        "sensitivity": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Vertraulichkeits- und Berechtigungsmodell (ECO-ARC-0030/0031). Nur fuer Repositories mit besonderer Sensitivitaet belegen.",
+          "properties": {
+            "repository_class": {
+              "type": "string",
+              "enum": ["private-manuscript-source"]
+            },
+            "permissions": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "ingest": { "type": "boolean" },
+                "canonization": { "type": "boolean" },
+                "public_export": { "type": "boolean" },
+                "derived_analysis": { "type": "boolean" }
+              }
+            }
+          }
         },
         "production_url": {
           "type": ["string", "null"],

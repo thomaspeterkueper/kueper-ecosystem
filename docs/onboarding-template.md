@@ -41,8 +41,10 @@ Rolle und Governance-Pflichtpfaden in die Registry ein.
 Jedes Projekt hat einen kurzen, eindeutigen Code für External Tasks und
 IDs (siehe ECO-ARC-0006). Aktuelle Codes stehen in der Code-Tabelle von `decisions/ECO-ARC-0006-2026-DE.md`
 (Stand bei Abfassung dieses Templates: `ECO`, `KG`, `SSF`, `NOXIA`, `NXU`, `KUE`,
-`OTA`, `TKD`). Schlage bei der Registrierung einen neuen, noch nicht vergebenen
+`OTA`, `TKD`, `BW`). Schlage bei der Registrierung einen neuen, noch nicht vergebenen
 Code vor (`{CODE}`). Verwende ihn ab Bestätigung konsequent in allen Task-IDs.
+Der bestätigte Code wird verbindlich im Registry-Feld `code` geführt
+(ECO-ARC-0031).
 
 ## 2. Pflichtstruktur in deinem eigenen Repository
 
@@ -159,6 +161,11 @@ Sobald registriert, erscheint `{PROJEKT}` automatisch im Live-Dashboard unter
 `https://kueper-ecosystem.vercel.app/dashboard` (Einstieg: `/`, der Werkzeug-Hub)
 — Zustand, letzter Push, offene Tasks. Kein Zutun deinerseits nötig; das
 Dashboard liest die Registry live.
+
+Private Repositories werden als `privat` markiert; Collector und Dashboard
+verarbeiten für sie ausschließlich operative Metadaten (Erreichbarkeit,
+Branch, letzter Push, PR-Anzahl, Pfadprüfungen, Task-Metadaten) — niemals
+Inhalte (ECO-ARC-0030/0031).
 
 ## 8. Kurz gesagt
 

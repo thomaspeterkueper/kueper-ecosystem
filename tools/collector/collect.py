@@ -56,6 +56,7 @@ def collect_project(p, id_to_repo, token):
         "name": p["name"],
         "repository": repo,
         "role": p["role"],
+        "code": p.get("code"),
         "enabled": p.get("enabled", True),
         "checks": checks,
     }

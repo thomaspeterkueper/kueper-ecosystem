@@ -20,6 +20,7 @@ Ziel ist, Überschneidungen zu vermeiden und klar festzuhalten, welches Reposito
 | `noxiagame` | Spiel und Anwendung | Spielsysteme, Simulation, Unlocks, Gameplay-Kontext | kanonische Wissensdefinitionen |
 | `thomas-kueper.de` | Autoren- und Werkplattform | Autor, Werke, öffentliche Projektseiten, Philosophie | systemweite Governance, KG-Exporte |
 | `overtime-archive.org` | werkbezogene Real/Fiction-Schicht | fiktionale Anwendung, Werkarchive, Real/Fiction-Brücken | kanonische wissenschaftliche Grundlagen |
+| `buecherwelten` | private Authoring-Schicht (Rolle `authoring`) | private Arbeitsstände/Authoring-Zustände: Manuskripte, Szenen, Kapitelstände, werkbezogene Medien | kanonische Publikation, universumsweite Primärdaten, `OTA-*`-Dokumente |
 
 ## 3. Grundsatz: Kein Repository besitzt fremde Domänen
 
@@ -144,6 +145,24 @@ Nicht zuständig für:
 
 - wissenschaftliche Grundlagen als Source of Truth
 - globale Governance
+
+### `buecherwelten`
+
+Zuständig für:
+
+- private Arbeitsstände und Authoring-Zustände für Buchprojekte
+- Manuskripte, Szenen, Kapitelstände
+- werkbezogene Medien in Bearbeitung
+
+Nicht zuständig für:
+
+- kanonische Publikationen oder öffentliche Werkdarstellung
+- bestätigte universumsweite Primärdaten (NXU) und kanonische `OTA-*`-Dokumente (OTA)
+- projektübergreifende IDs, Mappings und semantische Relationen (KG)
+
+Private Authoring-Inhalte dürfen ohne ausdrückliche Promotion-Entscheidung
+nicht automatisch nach NXU/OTA/KG oder in andere öffentliche Repositories
+übertragen werden (ECO-ARC-0030/0031).
 
 ## 5. Änderungsprinzip
 

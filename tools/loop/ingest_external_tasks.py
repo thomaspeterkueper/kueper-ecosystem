@@ -31,7 +31,7 @@ CODES_TO_IDS = {
     "AVI": "avi-modell", "CONTRA": "contracomology", "ARCH": "kueper-archive-schema",
     "ENDIA": "endia", "ZEREYA": "zereya", "DAVARU": "davaru",
     "FLHERM": "fluide-hermeneutik", "RESETH": "resonanz-ethik", "KUE": "kueper-com",
-    "OTA": "ota", "TKD": "thomas-kueper-de",
+    "OTA": "ota", "TKD": "thomas-kueper-de", "BW": "buecherwelten",
 }
 
 

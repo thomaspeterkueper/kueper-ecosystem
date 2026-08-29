@@ -42,6 +42,7 @@ Diese Inhalte bleiben in den jeweils zuständigen Repositories.
 | `noxiagame` | Spielerische Anwendung und Simulation |
 | `thomas-kueper.de` | Autorenwebsite, Werke, Philosophie, öffentliche Autorendarstellung |
 | `overtime-archive.org` | Werkbezogene Real/Fiction-Exploration und fiktionale Anwendungsschicht |
+| `buecherwelten` | Private Authoring- und Entwicklungsschicht für Buchprojekte und werkbezogene Medien |
 
 ## Startdokumente
 

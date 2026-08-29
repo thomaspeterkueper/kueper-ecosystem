@@ -15,6 +15,8 @@ der API-Route `app/api/status`. Das Frontend sieht ihn nie.
 - Empfohlen: ein **eigener, read-only Fine-grained-Token** nur für das Dashboard,
   beschränkt auf die Ökosystem-Repos, mit `Contents: read`, `Pull requests: read`,
   `Metadata: read`. So kann ein geleakter Dashboard-Token nichts schreiben.
+  Werden private Repositories überwacht (z. B. `buecherwelten`), muss der Token
+  auch dort `Contents: read` besitzen.
 - Das Dashboard zeigt operative Daten. Nach dem Deploy in Vercel unter
   **Settings → Deployment Protection** eine Zugriffssperre aktivieren
   (Vercel Authentication oder Passwortschutz).
@@ -50,6 +52,11 @@ npm run dev
   Control-Plane-Repo und prüft je Projekt Erreichbarkeit, Default Branch, letzten
   Push, offene PRs, Governance-Pflichtpfade, Version (`version_source`) und alle
   offenen External Tasks (inkl. Frontmatter). Gibt normalisiertes JSON zurück.
+- Private Repositories (z. B. `buecherwelten`) werden ausschließlich über
+  **operative Metadaten** erfasst — Erreichbarkeit, Branch, letzter Push,
+  PR-Anzahl (keine Titel), Pfadprüfungen, Task-Dateinamen und Frontmatter.
+  Inhalte werden weder gelesen noch gespeichert; im Dashboard sind private
+  Projekte als `privat` markiert (ECO-ARC-0031).
 - `/` ist der Werkzeug-Hub; `/dashboard` rendert Zusammenfassung, Projektzustände
   und die nach Priorität sortierte Task-Liste. Jede Task verlinkt direkt auf ihre
   Datei auf GitHub, damit sie im jeweiligen Projekt angestoßen werden kann.

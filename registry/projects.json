@@ -1,7 +1,7 @@
 {
   "$schema": "../schemas/project-registry.schema.json",
-  "schema_version": "1.0.0",
-  "updated_at": "2026-08-28",
+  "schema_version": "1.1.0",
+  "updated_at": "2026-08-29",
   "projects": [
     {
       "id": "ecosystem",
@@ -10,6 +10,7 @@
       "provider": "github",
       "enabled": true,
       "role": "control-plane",
+      "code": "ECO",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -43,6 +44,7 @@
       "provider": "github",
       "enabled": true,
       "role": "application",
+      "code": "NOXIA",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -89,6 +91,7 @@
       "provider": "github",
       "enabled": true,
       "role": "knowledge-platform",
+      "code": "SSF",
       "production_url": "https://solarsciencefoundation.vercel.app",
       "health_url": null,
       "version_source": {
@@ -135,6 +138,7 @@
       "provider": "github",
       "enabled": true,
       "role": "knowledge-graph",
+      "code": "KG",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -173,6 +177,7 @@
       "provider": "github",
       "enabled": true,
       "role": "archive",
+      "code": "OTA",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -216,6 +221,7 @@
       "provider": "github",
       "enabled": true,
       "role": "website",
+      "code": "KUE",
       "production_url": "https://kueper.com",
       "health_url": null,
       "version_source": {
@@ -262,6 +268,7 @@
       "provider": "github",
       "enabled": true,
       "role": "website",
+      "code": "TKD",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -324,6 +331,7 @@
       "provider": "github",
       "enabled": true,
       "role": "archive",
+      "code": "NXU",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -363,6 +371,7 @@
       "provider": "github",
       "enabled": true,
       "role": "knowledge-platform",
+      "code": "MISH",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -406,6 +415,7 @@
       "provider": "github",
       "enabled": true,
       "role": "knowledge-platform",
+      "code": "OMNI",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -449,6 +459,7 @@
       "provider": "github",
       "enabled": true,
       "role": "knowledge-platform",
+      "code": "AVI",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -488,6 +499,7 @@
       "provider": "github",
       "enabled": true,
       "role": "application",
+      "code": "CONTRA",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -539,6 +551,7 @@
       "provider": "github",
       "enabled": true,
       "role": "infrastructure",
+      "code": "ARCH",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -576,6 +589,7 @@
       "provider": "github",
       "enabled": true,
       "role": "knowledge-platform",
+      "code": "ENDIA",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -615,6 +629,7 @@
       "provider": "github",
       "enabled": true,
       "role": "knowledge-platform",
+      "code": "ZEREYA",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -654,6 +669,7 @@
       "provider": "github",
       "enabled": true,
       "role": "knowledge-platform",
+      "code": "DAVARU",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -693,6 +709,7 @@
       "provider": "github",
       "enabled": true,
       "role": "knowledge-platform",
+      "code": "FLHERM",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -736,6 +753,7 @@
       "provider": "github",
       "enabled": true,
       "role": "knowledge-platform",
+      "code": "RESETH",
       "production_url": null,
       "health_url": null,
       "version_source": {
@@ -771,6 +789,50 @@
         }
       ],
       "notes": "Vertiefung eines Omnizedenz-Teilaspekts (bereits als Essay unter thomas-kueper.de/philosophie/resonanz-ethik vorhanden). Code RESETH. Siehe ECO-ARC-0016."
+    },
+    {
+      "id": "buecherwelten",
+      "name": "Buecherwelten",
+      "repository": "thomaspeterkueper/buecherwelten",
+      "provider": "github",
+      "enabled": true,
+      "role": "authoring",
+      "code": "BW",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "first-existing",
+        "candidates": [
+          {
+            "type": "package-json",
+            "path": "package.json",
+            "json_pointer": "/version"
+          },
+          {
+            "type": "text",
+            "path": "VERSION"
+          }
+        ]
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [],
+      "sensitivity": {
+        "repository_class": "private-manuscript-source",
+        "permissions": {
+          "ingest": true,
+          "canonization": false,
+          "public_export": false,
+          "derived_analysis": true
+        }
+      },
+      "notes": "Private Authoring- und Entwicklungsschicht fuer Buchprojekte und werkbezogene Medien (ECO-ARC-0030, ECO-ARC-0031). Code BW. Kein automatischer Inhaltstransfer zu NXU/KG/OTA: private source -> public target ist deny-by-default, Promotion nur durch explizite Owner-Entscheidung. Collector/Dashboard verarbeiten ausschliesslich operative Metadaten, keine Inhalte."
     }
   ]
 }
