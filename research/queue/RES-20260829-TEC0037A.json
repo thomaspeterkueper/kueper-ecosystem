@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-TEC0037A",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-29T20:11:20+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -14,9 +14,14 @@
   "title": "Real sensor and environmental anchors for VEX-47 across Mars, Titan and vacuum environments",
   "question": "Source-grounded audit of the exact OTA-TEC-0037 document, restricted to its real-world anchors. Assess only: (1) the real sensor principles named for the VEX-47 baseline — optical imaging, infrared sensing, atmospheric/compositional analysis and particle detection — and their known operating constraints in Mars-like dust, Titan-like cold/dense atmosphere and vacuum/asteroid environments; (2) the effect of dust/haze on optical and infrared sensing and what mitigation is realistically required; (3) thermal-management and electronics/sensor packaging constraints across vacuum, Mars and Titan conditions; and (4) the audio-system caveat that microphones/loudspeakers require a material medium and therefore cannot operate as ordinary airborne audio devices in vacuum, while Titan/Mars acoustic behavior differs from Earth. Report real-world constraints that should be reflected in wording, but do not attempt to validate fictional propulsion or energy systems. Explicitly exclude Casimir-Drift, vacuum-energy thrust, Thorium-Mikrozelle, Mantrika-Kristall-Verstärkung, Post-PROMETHEUS law/canon, resonance sensors, Blackpearl technology, AVI-derived life-sign sensing, Kha-Null, the 174–963/233/528 Hz settings, Vex's emergent personality, fictional performance numbers, or any NOXIA balancing value. The individual instance `vex-lain-einheit-01` is out of scope except to verify that its fictional modifications are not generalized into real sensor claims or the VEX-47 type.",
   "why_now": "OTA-TEC-0037 is deliberately fiction-heavy but embeds a small set of real sensor/environment assertions. This is a useful test that the OTA technical-object contract can research real anchors without trying to scientifically validate fictional machinery or instance-specific canon.",
-  "languages": ["en", "de"],
+  "languages": [
+    "en",
+    "de"
+  ],
   "evidence_profile": "ota-archive-evidence",
-  "claim_classes": ["R"],
+  "claim_classes": [
+    "R"
+  ],
   "external_research_required": true,
   "real_world_anchor": "Planetary exploration sensor systems, Mars dust and atmosphere, Titan atmospheric/thermal environment, vacuum-compatible sensing and acoustics.",
   "publication_route_hint": "fictional_archive_document",
@@ -35,5 +40,7 @@
     "flag_noxia_impact": true,
     "auto_update_noxia": false,
     "balancing_is_out_of_scope": true
-  }
+  },
+  "updated_at": "2026-08-29T20:31:12+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/49"
 }
