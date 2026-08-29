@@ -198,7 +198,8 @@
               "permissions": {
                 "properties": {
                   "public_export": { "const": false },
-                  "canonization": { "const": false }
+                  "canonization": { "const": false },
+                  "cross_repository_routing": { "const": false }
                 }
               }
             }
