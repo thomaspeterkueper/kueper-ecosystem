@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260829-02C11838",
+  "status": "queued",
+  "created": "2026-08-29T10:12:36+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "canon/language/mishkenaz.md",
+  "source_ref": "b8f53cbc3699d1ffe9c59fbadbf36a9c1951bab4",
+  "source_blob_sha": "ae85a08b2fa1b67172ad95ae1b12b0a37582cd91",
+  "title": "Frequenzarchitektur von Mishkenaz: 432-Hz-Doppelresonanz und Schumann-Vielfache (78,3/79,8 Hz) — Messbefund oder Mythos?",
+  "question": "Welche Frequenzen umfassen die realen Schumann-Resonanz-Moden tatsächlich (7,83-Hz-Fundamentale plus Obertöne), gibt es eine wissenschaftliche Basis für eine '432-Hz-Doppelresonanz' oder für 78,3/79,8 Hz als Schumann-Vielfaches mit 1,5-Hz-Schwebung — und welche phonetischen Merkmale (velarer Nasal, mikrotonale Meend-Übergänge) sind für den Hindustani-Dhrupad der Dagar-vani belegt?",
+  "why_now": "Die Mishkenaz-Kanonik (OTA-LIT-0005) verankert die 432-Hz-Doppelresonanz und die Schumann-Vielfache als tragende Frequenzarchitektur; dieselbe Architektur fließt über die audio_elements-Tabelle in die Score-/Sound-Integration des Universums. Da 432-Hz- und Schumann-Behauptungen außerhalb der Wissenschaft breit zirkulieren, ist eine belastbare Faktenlage (Messbefund vs. Esoterik) nötig, damit die Frequenzsprache der Sprache sowohl plausibel als auch lehrreich bleibt und nicht unbeabsichtigt bekannte Pseudowissenschaft verfestigt.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Schumann-Resonanz-Modenfrequenzen (7,83-Hz-Fundamentale und Obertöne); wissenschaftliche Literatur zu 432-Hz- vs. 440-Hz-Stimmungen und Resonanzbehauptungen; phonetische Literatur zum Hindustani-Dhrupad (Dagar-vani)",
+  "publication_route_hint": null,
+  "project_weight": 1.0,
+  "relevance_score": 0.71,
+  "scores": {
+    "project_relevance": 0.7,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.7
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "02c11838537a8916"
+}
