@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-FND0030R",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-29T06:10:30+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -9,9 +9,19 @@
   "title": "Rerun: source-grounded boundary audit of OTA-FND-0030",
   "question": "Audit the exact declared OTA-FND-0030 source text. Which statements are real-world anchors, AVI theory/hypothesis, speculation, work-setting or fiction; where does the document currently overstate or misstate the scientific status; and which real-world premises or constraints require external evidence? Do not reconstruct the document from neighboring files.",
   "why_now": "The first FND pilot exposed that the executor had not loaded the declared source document and therefore reconstructed claims from adjacent ecosystem material. This rerun validates the corrected source-grounded audit path.",
-  "languages": ["de", "en"],
+  "languages": [
+    "de",
+    "en"
+  ],
   "evidence_profile": "ota-archive-evidence",
-  "claim_classes": ["R", "T", "H", "S", "F", "W"],
+  "claim_classes": [
+    "R",
+    "T",
+    "H",
+    "S",
+    "F",
+    "W"
+  ],
   "real_world_anchor": "Standard cosmology, quantum-vacuum/QFT background and externally testable premises or constraints actually invoked by the source document's AVI reference layer.",
   "publication_route_hint": "fictional_archive_document",
   "external_research_required": true,
@@ -23,8 +33,14 @@
     "uncertainty": 1.0,
     "evidence_potential": 1.0
   },
-  "related_research_ids": ["RES-20260828-FND0030P"],
+  "related_research_ids": [
+    "RES-20260828-FND0030P"
+  ],
   "novelty_reason": "Re-runs the boundary audit with the exact OTA-FND-0030 source text. The previous candidate explicitly stated that the source file was unavailable, so its reconstructed claim map is not an acceptable document audit.",
-  "supersedes_candidate_ids": ["RES-20260828-FND0030P"],
-  "fingerprint": "pilot-rerun-source-ota-fnd-0030"
+  "supersedes_candidate_ids": [
+    "RES-20260828-FND0030P"
+  ],
+  "fingerprint": "pilot-rerun-source-ota-fnd-0030",
+  "updated_at": "2026-08-29T06:22:03+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/30"
 }
