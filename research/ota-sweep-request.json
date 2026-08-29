@@ -1,6 +1,6 @@
 {
-  "requested_at": "2026-08-29T19:35:00Z",
-  "reason": "Verify the 30-day OTA source-path re-audit cooldown after the FND-0024 evidence correction without queue writes or Exa execution",
-  "mode": "discovery-only",
+  "requested_at": "2026-08-29T19:38:00Z",
+  "reason": "Run the two source-grounded FND-0022 evidence gaps discovered after cooldown verification while Exa Web Search remains free through Aug 31",
+  "mode": "full",
   "max_topics": 2
 }
