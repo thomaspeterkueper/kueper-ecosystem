@@ -1,0 +1,34 @@
+{
+  "id": "RES-20260829-A7BD20AF",
+  "status": "queued",
+  "created": "2026-08-29T10:12:34+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "canon/physics/chi-field.md",
+  "source_ref": "b8f53cbc3699d1ffe9c59fbadbf36a9c1951bab4",
+  "source_blob_sha": "dd17789f5e2a3e65c008d8f5c3fa331b083ac856",
+  "title": "χ-Feld/AVI-Modell gegen den Stand der Kosmologie 2026: S8-Spannung, Neutrino-DM-Kopplung, LOD- und Am-241-Anomalie",
+  "question": "Welche peer-reviewten Befunde (2024–2026) existieren zur Auflösung der S8-Spannung durch Neutrino–Dunkle-Materie-Wechselwirkungen, zum aktuellen Status der Length-of-Day-Anomalie und der Am-241-Zerfallsraten-Anomalie sowie zur realen Euclid-S8(z)-Messerwartung — und sind die im χ-Feld-Dokument gesetzten Prädiktionen (LOD-Reversal 2028–2032, Euclid-Bestätigung ab 2027) mit dem Missions- und Datenstand vereinbar, eingeschränkt oder bereits widerlegt?",
+  "why_now": "Das χ-Feld ist als 'real_hypothesis' kanonisiert und trägt im Noxia-Universum die gesamte interstellare Antriebstechnologie. supabase/schema.sql hält zwei offene Prädiktionen mit verification_year 2027 (Euclid S8(z)) und 2032 (LOD-Reversal), deren Prüffenster jetzt beginnen. Eine Literatur- und Missionsstands-Recherche kann die reale Basis stützen, einschränken oder falsifizieren, bevor sie als Physik der SF-Technologie weiter ausgebaut wird — unmittelbar im Sinne der Hard-SF-These 'Physik ist die Geschichte' und der kueper.com-Anbindung als realer Grundlage.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewte Literatur 2024–2026 zu Neutrino-Dunkle-Materie-Interaktionsmodellen und S8-Tension; Length-of-Day-Anomalie; Am-241-Zerfallsraten-Anomalie; Euclid-Mission und Stand der S8(z)-Messungen 2026",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.94,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.95,
+    "evidence_potential": 0.95
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "a7bd20afb47cde38"
+}
