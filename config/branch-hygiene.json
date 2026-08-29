@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "mode": "dry-run",
+  "extra_repositories": [
+    "thomaspeterkueper/buecherwelten"
+  ],
+  "excluded_repositories": [],
+  "always_review_prefixes": [
+    "research/"
+  ],
+  "ephemeral_prefixes": [
+    "tmp-",
+    "test/",
+    "agent/",
+    "ecosystem/task-"
+  ]
+}
