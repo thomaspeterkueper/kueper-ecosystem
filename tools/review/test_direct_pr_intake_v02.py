@@ -67,6 +67,51 @@ class DirectPrIntakeV02Tests(unittest.TestCase):
         self.assertEqual(result["id"], "task-37")
         self.assertFalse(any(name == "kueper_note_open_pr_head" for name, _ in db.calls))
 
+    def test_missing_v02_rpc_falls_back_to_v01_task(self):
+        url = f"https://github.com/{ECO_REPO}/pull/44"
+
+        class PreMigrationDb(FakeDb):
+            def rpc(self, name, payload):
+                if name == "kueper_note_open_pr_head":
+                    self.calls.append((name, payload))
+                    raise RuntimeError(
+                        "PGRST202: Could not find the function public.kueper_note_open_pr_head in the schema cache"
+                    )
+                return super().rpc(name, payload)
+
+        db = PreMigrationDb({
+            "id": "task-44",
+            "type": "PR_REVIEW",
+            "status": "review_pending",
+            "repository": ECO_REPO,
+            "pr_url": url,
+            "metadata": {},
+        })
+        result = intake(db, url, repository_projects=PROJECTS, head_sha=NEW_SHA)
+        self.assertEqual(result["id"], "task-44")
+        self.assertNotIn("discovered_pr_head_sha", result["metadata"])
+        self.assertTrue(any(name == "kueper_note_open_pr_head" for name, _ in db.calls))
+
+    def test_non_deployment_head_rpc_error_still_fails(self):
+        url = f"https://github.com/{ECO_REPO}/pull/44"
+
+        class BadDataDb(FakeDb):
+            def rpc(self, name, payload):
+                if name == "kueper_note_open_pr_head":
+                    raise RuntimeError("task is not an active/completed review task for this PR")
+                return super().rpc(name, payload)
+
+        db = BadDataDb({
+            "id": "task-44",
+            "type": "PR_REVIEW",
+            "status": "review_pending",
+            "repository": ECO_REPO,
+            "pr_url": url,
+            "metadata": {},
+        })
+        with self.assertRaisesRegex(RuntimeError, "not an active/completed review task"):
+            intake(db, url, repository_projects=PROJECTS, head_sha=NEW_SHA)
+
     def test_discover_records_error_entry_and_continues_per_pr(self):
         # A review_pending task whose head-note RPC fails (e.g. a legacy row
         # created before repository tracking) must be recorded as an error entry
@@ -87,7 +132,7 @@ class DirectPrIntakeV02Tests(unittest.TestCase):
                         "id": "task-31",
                         "type": "PR_REVIEW",
                         "status": "review_pending",
-                        "repository": None,  # legacy row: repository never set
+                        "repository": None,
                         "pr_url": payload["p_pr_url"],
                         "metadata": {},
                     }
