@@ -7,6 +7,11 @@ on:
         description: "Comma-separated queued research IDs"
         required: true
         type: string
+  push:
+    branches:
+      - main
+    paths:
+      - "research/targeted-request.json"
 
 permissions:
   contents: read
@@ -31,10 +36,34 @@ jobs:
       ANTHROPIC_DEFAULT_HAIKU_MODEL: "deepseek-v4-flash"
       KUEPER_RESEARCH_AGENT_CMD: node ${{ github.workspace }}/tools/research/agent-with-exa.mjs
       KUEPER_SYNTHESIS_AGENT_BIN: claude
-      KUEPER_RESEARCH_IDS: ${{ github.event.inputs.research_ids }}
     steps:
       - name: Checkout control plane
         uses: actions/checkout@v4
+
+      - name: Resolve targeted research IDs
+        shell: bash
+        env:
+          DISPATCH_IDS: ${{ github.event.inputs.research_ids }}
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            ids="$DISPATCH_IDS"
+          else
+            ids="$(python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('research/targeted-request.json').read_text(encoding='utf-8'))
+          ids=data.get('research_ids') or []
+          if isinstance(ids,str):
+              print(ids)
+          else:
+              print(','.join(str(x) for x in ids))
+          PY
+          )"
+          fi
+          test -n "$ids" || { echo "No targeted research IDs resolved"; exit 2; }
+          echo "KUEPER_RESEARCH_IDS=$ids" >> "$GITHUB_ENV"
+          echo "Targeted IDs: $ids"
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -55,6 +84,8 @@ jobs:
           test -n "$DEEPSEEK_API_KEY" || { echo "Missing DEEPSEEK_API_KEY"; exit 2; }
           test -n "$AI_GATEWAY_API_KEY" || { echo "Missing AI_GATEWAY_API_KEY"; exit 2; }
           test -n "$KUEPER_RESEARCH_IDS" || { echo "Missing KUEPER_RESEARCH_IDS"; exit 2; }
+          python3 -m py_compile tools/research/execute.py tools/research/execute-targeted.py
+          node --check tools/research/agent-with-exa.mjs
           claude --version
           node --version
 
