@@ -34,11 +34,25 @@ jobs:
       KUEPER_DISCOVERY_AGENT_CMD: claude -p --dangerously-skip-permissions
       KUEPER_RESEARCH_AGENT_CMD: node ${{ github.workspace }}/tools/research/agent-with-exa.mjs
       KUEPER_SYNTHESIS_AGENT_BIN: claude
-      KUEPER_DISCOVERY_PROJECT_ID: ota
 
     steps:
       - name: Checkout control plane
         uses: actions/checkout@v4
+
+      - name: Resolve sweep mode
+        shell: bash
+        run: |
+          set -euo pipefail
+          MODE="full"
+          if [ "${{ github.event_name }}" = "push" ] && [ -f research/ota-sweep-request.json ]; then
+            MODE="$(jq -r '.mode // "full"' research/ota-sweep-request.json)"
+          fi
+          case "$MODE" in
+            full|discovery-only) ;;
+            *) echo "Unsupported OTA sweep mode: $MODE"; exit 2 ;;
+          esac
+          echo "KUEPER_OTA_SWEEP_MODE=$MODE" >> "$GITHUB_ENV"
+          echo "Sweep mode: $MODE"
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -49,6 +63,7 @@ jobs:
         run: npm install --global @anthropic-ai/claude-code
 
       - name: Install AI Gateway research tooling
+        if: env.KUEPER_OTA_SWEEP_MODE != 'discovery-only'
         run: npm install --no-save --package-lock=false ai@6.0.0
 
       - name: Verify configuration
@@ -57,12 +72,14 @@ jobs:
           set -euo pipefail
           test -n "$KUEPER_BOT_TOKEN" || { echo "Missing KUEPER_BOT_TOKEN"; exit 2; }
           test -n "$DEEPSEEK_API_KEY" || { echo "Missing DEEPSEEK_API_KEY"; exit 2; }
-          test -n "$AI_GATEWAY_API_KEY" || { echo "Missing AI_GATEWAY_API_KEY"; exit 2; }
-          python3 -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/execute.py tools/research/execute-targeted.py
+          if [ "$KUEPER_OTA_SWEEP_MODE" = "full" ]; then
+            test -n "$AI_GATEWAY_API_KEY" || { echo "Missing AI_GATEWAY_API_KEY"; exit 2; }
+          fi
+          python3 -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/execute.py tools/research/execute-targeted.py
           node --check tools/research/agent-with-exa.mjs
 
-      - name: Discover source-grounded OTA gaps
-        run: python3 tools/research/discover-targeted.py | tee ota-discovery-report.json
+      - name: Discover one deterministic OTA document scope
+        run: python3 tools/research/discover-ota-scoped.py | tee ota-discovery-report.json
 
       - name: Select at most two newly queued OTA topics
         shell: bash
@@ -77,7 +94,7 @@ jobs:
           fi
 
       - name: Research selected OTA topics
-        if: env.KUEPER_RESEARCH_IDS != ''
+        if: env.KUEPER_RESEARCH_IDS != '' && env.KUEPER_OTA_SWEEP_MODE != 'discovery-only'
         run: python3 tools/research/execute-targeted.py | tee ota-execution-report.json
 
       - name: Upload OTA sweep reports
