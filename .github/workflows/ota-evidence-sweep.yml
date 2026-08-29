@@ -75,19 +75,31 @@ jobs:
           if [ "$KUEPER_OTA_SWEEP_MODE" = "full" ]; then
             test -n "$AI_GATEWAY_API_KEY" || { echo "Missing AI_GATEWAY_API_KEY"; exit 2; }
           fi
-          python3 -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/execute.py tools/research/execute-targeted.py
+          python3 -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/discover-ota-scoped-dryrun.py tools/research/execute.py tools/research/execute-targeted.py
           node --check tools/research/agent-with-exa.mjs
 
       - name: Discover one deterministic OTA document scope
-        run: python3 tools/research/discover-ota-scoped.py | tee ota-discovery-report.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "$KUEPER_OTA_SWEEP_MODE" = "discovery-only" ]; then
+            python3 tools/research/discover-ota-scoped-dryrun.py | tee ota-discovery-report.json
+          else
+            python3 tools/research/discover-ota-scoped.py | tee ota-discovery-report.json
+          fi
 
       - name: Select at most two newly queued OTA topics
         shell: bash
         run: |
           set -euo pipefail
-          IDS="$(jq -r '[.items[:2][]?.id] | join(",")' ota-discovery-report.json)"
+          IDS=""
+          if [ "$KUEPER_OTA_SWEEP_MODE" = "full" ]; then
+            IDS="$(jq -r '[.items[:2][]?.id] | join(",")' ota-discovery-report.json)"
+          fi
           echo "KUEPER_RESEARCH_IDS=$IDS" >> "$GITHUB_ENV"
-          if [ -n "$IDS" ]; then
+          if [ "$KUEPER_OTA_SWEEP_MODE" = "discovery-only" ]; then
+            echo "Discovery-only benchmark: $(jq -r '.proposed // 0' ota-discovery-report.json) proposal(s), no queue writes."
+          elif [ -n "$IDS" ]; then
             echo "Selected: $IDS"
           else
             echo "No new OTA evidence gaps passed discovery gates."
