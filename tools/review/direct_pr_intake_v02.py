@@ -6,6 +6,10 @@ records the currently observed open-PR head for every review_pending task, inclu
 agent-originating tasks. That lets the queue suppress an already-reviewed exact
 head after CHANGES_REQUIRED and automatically make the task eligible again when
 GitHub discovery sees a new head.
+
+Discovery isolates per-PR intake failures into error entries instead of aborting
+the batch, so one anomalous row (e.g. a legacy task without a repository column)
+cannot starve the review queue.
 """
 from __future__ import annotations
 
@@ -95,7 +99,18 @@ def discover(
             head_sha = str(head.get("sha") or "").strip().lower()
             if not html_url:
                 continue
-            task = intake(db, html_url, repository_projects=projects, head_sha=head_sha or None)
+            try:
+                task = intake(db, html_url, repository_projects=projects, head_sha=head_sha or None)
+            except Exception as exc:  # per-PR isolation: one anomalous row must not abort the batch
+                results.append({
+                    "repository": repository,
+                    "pr_url": html_url,
+                    "head_sha": head_sha or None,
+                    "task_id": None,
+                    "status": "error",
+                    "error": str(exc),
+                })
+                continue
             results.append({
                 "repository": repository,
                 "pr_url": html_url,

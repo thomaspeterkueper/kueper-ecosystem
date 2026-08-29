@@ -9,6 +9,12 @@
 -- excludes a task only when that exact discovered head already has a persisted
 -- review. Once discovery observes a changed head, the task becomes eligible
 -- again automatically.
+--
+-- kueper_note_open_pr_head matches a task by id + pr_url + status and backfills
+-- the repository column from the validated PR URL. Rows created by
+-- kueper_reopen_legacy_pr_for_review and kueper_submit_task_for_review predate
+-- repository tracking and carry pr_url only; raising on them would abort the
+-- whole discovery batch and starve the review queue.
 
 create or replace function public.kueper_note_open_pr_head(
   p_task_id uuid,
@@ -52,10 +58,13 @@ begin
         when lower(coalesce(metadata->>'discovered_pr_head_sha', '')) is distinct from normalized_head
           then now()
         else updated_at
-      end
+      end,
+      -- The validated PR URL embeds the repository, so a null or stale
+      -- repository column (legacy recovery / review submission rows) is
+      -- self-healed here instead of failing the whole discovery batch.
+      repository = normalized_repo
   where id = p_task_id
     and pr_url = normalized_url
-    and repository = normalized_repo
     and status in ('review_pending','completed')
   returning * into r;
 

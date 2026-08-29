@@ -309,4 +309,49 @@ begin
     'head-changed task must reappear in lane order, got: ' || array_to_string(got, ','));
 end $$;
 
+-- 6. Legacy rows (created by kueper_reopen_legacy_pr_for_review /
+-- kueper_submit_task_for_review before repository tracking) carry pr_url but a
+-- null repository column. note_open_pr_head must backfill the repository from
+-- the validated PR URL instead of raising; raising would abort the whole
+-- discovery batch and starve the review queue.
+insert into ecosystem.tasks
+  (id, type, source_project, target_project, status, priority, repository, pr_url,
+   created_at, updated_at, completed_at, metadata)
+values
+  ('00000000-0000-0000-0000-00000000000c', 'IMPLEMENT_EXTERNAL_REQUIREMENT', 'ECO', 'ECO', 'review_pending', 'medium',
+   null, 'https://github.com/thomaspeterkueper/kueper-ecosystem/pull/37',
+   '2026-08-12 10:00:00+00', '2026-08-12 10:00:00+00', null, '{}');
+
+do $$
+declare
+  r jsonb;
+  backfilled text;
+  n integer;
+begin
+  select public.kueper_note_open_pr_head(
+    '00000000-0000-0000-0000-00000000000c',
+    'https://github.com/thomaspeterkueper/kueper-ecosystem/pull/37',
+    'thomaspeterkueper/kueper-ecosystem',
+    '5555555555555555555555555555555555555555'
+  ) into r;
+  perform public.kueper_test_assert(
+    r->'metadata'->>'discovered_pr_head_sha' = '5555555555555555555555555555555555555555',
+    'note_open_pr_head must note the head on a legacy row without repository');
+  perform public.kueper_test_assert(
+    r->>'status' = 'review_pending',
+    'note_open_pr_head must return the updated legacy task');
+
+  select repository into backfilled
+  from ecosystem.tasks
+  where id = '00000000-0000-0000-0000-00000000000c';
+  perform public.kueper_test_assert(
+    backfilled = 'thomaspeterkueper/kueper-ecosystem',
+    'note_open_pr_head must backfill the repository column, got: ' || coalesce(backfilled, '<null>'));
+
+  select count(*) into n
+  from public.kueper_list_review_pending(100) t
+  where t.id = '00000000-0000-0000-0000-00000000000c';
+  perform public.kueper_test_assert(n = 1, 'backfilled legacy task must be eligible for review');
+end $$;
+
 select 'pr_review_queue_fairness: all SQL assertions passed' as result;
