@@ -34,6 +34,7 @@ jobs:
       KUEPER_DISCOVERY_AGENT_CMD: claude -p --dangerously-skip-permissions
       KUEPER_RESEARCH_AGENT_CMD: node ${{ github.workspace }}/tools/research/agent-with-exa.mjs
       KUEPER_SYNTHESIS_AGENT_BIN: claude
+      KUEPER_OTA_REAUDIT_COOLDOWN_DAYS: "30"
 
     steps:
       - name: Checkout control plane
@@ -75,7 +76,7 @@ jobs:
           if [ "$KUEPER_OTA_SWEEP_MODE" = "full" ]; then
             test -n "$AI_GATEWAY_API_KEY" || { echo "Missing AI_GATEWAY_API_KEY"; exit 2; }
           fi
-          python3 -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/discover-ota-scoped-dryrun.py tools/research/execute.py tools/research/execute-targeted.py
+          python3 -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/discover-ota-cooled.py tools/research/discover-ota-scoped-dryrun.py tools/research/execute.py tools/research/execute-targeted.py
           node --check tools/research/agent-with-exa.mjs
 
       - name: Discover one deterministic OTA document scope
@@ -85,7 +86,7 @@ jobs:
           if [ "$KUEPER_OTA_SWEEP_MODE" = "discovery-only" ]; then
             python3 tools/research/discover-ota-scoped-dryrun.py | tee ota-discovery-report.json
           else
-            python3 tools/research/discover-ota-scoped.py | tee ota-discovery-report.json
+            python3 tools/research/discover-ota-cooled.py | tee ota-discovery-report.json
           fi
 
       - name: Select at most two newly queued OTA topics
