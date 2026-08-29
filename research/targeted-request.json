@@ -1,9 +1,9 @@
 {
-  "request_id": "OTA-TEC-0034-NOXIA-PILOT-2026-08-29",
-  "created": "2026-08-29T20:00:00+00:00",
+  "request_id": "OTA-NOXIA-TEC-0036-0037-PILOT-2026-08-29",
+  "created": "2026-08-29T20:12:00+00:00",
   "research_ids": [
-    "RES-20260829-TEC0034A",
-    "RES-20260829-TEC0034B"
+    "RES-20260829-TEC0036A",
+    "RES-20260829-TEC0037A"
   ],
-  "reason": "Run the first OTA→NOXIA technical-object evidence pilot for the source-pinned Mars water extractor. Research real R/H engineering constraints only; never auto-update NOXIA balancing."
+  "reason": "Run source-grounded evidence audits for the new OTA→NOXIA lunar rover and VEX-47 technical objects. Enforce ota-tech-object-v1: research only declared real/hypothetical anchors, keep fiction and NOXIA balancing out of scope, and preserve the VEX type/instance boundary."
 }
