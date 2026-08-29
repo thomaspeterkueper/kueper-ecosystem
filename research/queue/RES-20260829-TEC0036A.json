@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-TEC0036A",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-29T20:11:00+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -14,9 +14,15 @@
   "title": "Lunar crewed rover environment, mobility, thermal and endurance audit for OTA-TEC-0036",
   "question": "Source-grounded audit of the exact OTA-TEC-0036 document. Using primary, peer-reviewed and official lunar mission/engineering sources, assess the real and hypothetical claims relevant to a pressurized early-colony lunar rover: (1) low-gravity traction, wheel-soil interaction, bounce/slide and rollover/stability evidence from Apollo LRV and modern lunar rover work; (2) lunar dust abrasion, electrostatic charging and effects on seals, joints, radiators and solar surfaces; (3) thermal management in vacuum, explicitly checking whether the dossier's statement that electronics reject heat 'exclusively by radiation' is too categorical and distinguishing internal conduction/transport from final external rejection; (4) representative lunar surface temperature ranges versus vehicle component exposure; (5) battery performance and thermal control in lunar cold; and (6) engineering plausibility/constraints for a 2–4 person pressurized rover with multi-hour to multi-day missions, including life-support and power/range reserve logic. Identify any wording in the source document that should be narrowed or reclassified. Do NOT evaluate or rewrite [F] build time, [F] 15–20 km/h gameplay/fiction choices, colony population/balancing values, Mars Credits, unlocks, journeys or any other NOXIA balancing value.",
   "why_now": "OTA-TEC-0036 is a new canonical NOXIA technical object with several real-world lunar engineering assertions and explicit [H] endurance/pressurization assumptions that should be audited before downstream game mappings harden.",
-  "languages": ["en", "de"],
+  "languages": [
+    "en",
+    "de"
+  ],
   "evidence_profile": "ota-archive-evidence",
-  "claim_classes": ["R", "H"],
+  "claim_classes": [
+    "R",
+    "H"
+  ],
   "external_research_required": true,
   "real_world_anchor": "Apollo Lunar Roving Vehicle operations, lunar dust and electrostatics, lunar thermal environment, batteries and pressurized crewed lunar rover engineering.",
   "publication_route_hint": "fictional_archive_document",
@@ -35,5 +41,7 @@
     "flag_noxia_impact": true,
     "auto_update_noxia": false,
     "balancing_is_out_of_scope": true
-  }
+  },
+  "updated_at": "2026-08-29T20:24:50+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/48"
 }
