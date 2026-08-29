@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-7DE7EDC3",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-29T15:22:37+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -38,5 +38,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No prior OTA research topic audits the meteoritic-iron material claims (Widmanstaetten compositions, Ms value, historical analogs, Iron-Age framing) in any source document. The nearest topic (RES-20260823-273FD1BF) concerns Th-bearing monazite in Levantine/Sinai/Cypriot copper ores and their radiogenic heat, not iron-meteorite mineralogy, so the substrate and claims differ.",
-  "fingerprint": "7de7edc3066fbde3"
+  "fingerprint": "7de7edc3066fbde3",
+  "updated_at": "2026-08-29T15:29:45+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/41"
 }
