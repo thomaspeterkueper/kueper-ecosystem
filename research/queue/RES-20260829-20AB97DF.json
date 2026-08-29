@@ -1,0 +1,36 @@
+{
+  "id": "RES-20260829-20AB97DF",
+  "status": "queued",
+  "created": "2026-08-29T07:04:32+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0062-2026-DE.md",
+  "source_ref": "239e78adb80d3750596ad9a6e04ba64608484d69",
+  "source_blob_sha": "51c353fdbfe8f13706f3ba44f3d78c2b995318b9",
+  "title": "Resolve the pending 2026 Physical Review X Mpemba-unification reference and verify the quantum-Mpemba [R] claims in OTA-SCI-0062",
+  "question": "Verify the [R]-marked literature in OTA-SCI-0062-2026-DE against the primary sources. (a) Does 'Resource-Theoretical Unification of Mpemba Effects: Classical and Quantum' exist as published (Summer, Moroder, Bettmann, Turkeshi, Marvian & Goold, Physical Review X 16, 011065, 2026), and what is the exact DOI, publication date (the doc states '[DOI ausstehend - Publikationsdatum 30.03.2026]' while the PRX record shows 25 March 2026) and full author list (the doc writes 'Summer, A. et al. / Goold, J.')? (b) Are the experimental [R] claims correctly attributed and dated: Kumar & Bechhoefer 2020 (Nature 584, 64-68), Chatterjee et al. 2023 (PRL 131, 080402), Joshi et al. 2024 (arXiv:2401.04270, trapped-ion symmetry restoration), the strong quantum Mpemba effect in a single ion (published as Zhang et al., Nature Communications 16, 301, 2025 - the doc writes 'Wu et al., Nature Communications 2024'), and the anecdote that Sara Murciano (Paris-Saclay) first observed the effect in simulations?",
+  "why_now": "The document is marked 'kueper.com-Status: Publikationsfaehig (Abschnitte I-VI)', so its [R] reference layer is destined for real publication; the DOI it flags as pending is now resolvable, and at least one citation ('Wu et al., Nature Communications 2024') differs from the published record (Zhang et al., Nat. Commun. 16, 301, 2025). The quantum-Mpemba field is moving fast enough that the freshness check is material.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Summer, Moroder, Bettmann, Turkeshi, Marvian & Goold (2026), Phys. Rev. X 16, 011065 (DOI 10.1103/PhysRevX.16.011065); quantum-Mpemba primary papers (Kumar & Bechhoefer 2020; Chatterjee et al. 2023; Joshi et al. 2024; Zhang et al. 2025)",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.9,
+  "relevance_score": 0.8375,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior topic covered the Mpemba effect. The gap is a pure freshness/accuracy audit: resolving the now-available DOI for the 2026 PRX unification paper and correcting the misdated/misattributed quantum-Mpemba citations (Zhang et al. 2025 vs 'Wu et al. 2024'), which the prior AVI/brain-epoch topics did not touch.",
+  "fingerprint": "20ab97df31150fb8"
+}
