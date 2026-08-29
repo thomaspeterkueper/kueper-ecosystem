@@ -11,6 +11,7 @@ on:
       - "registry/projects.json"
       - "tools/research/discover.py"
       - "tools/research/discover-targeted.py"
+      - "tools/research/discover-ota-scoped.py"
       - "tools/research/execute.py"
       - "tools/research/execute-targeted.py"
       - "tools/research/agent-with-exa.mjs"
@@ -34,7 +35,7 @@ jobs:
           set -euo pipefail
           python -m json.tool research/policy.json >/dev/null
           python -m json.tool registry/projects.json >/dev/null
-          python -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/execute.py tools/research/execute-targeted.py
+          python -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/execute.py tools/research/execute-targeted.py
           node --check tools/research/agent-with-exa.mjs
 
       - name: Validate profile mappings and weighted rotation
@@ -59,12 +60,17 @@ jobs:
 
           discover_source = (root / 'tools/research/discover.py').read_text(encoding='utf-8')
           targeted_source = (root / 'tools/research/discover-targeted.py').read_text(encoding='utf-8')
+          scoped_source = (root / 'tools/research/discover-ota-scoped.py').read_text(encoding='utf-8')
           execute_source = (root / 'tools/research/execute.py').read_text(encoding='utf-8')
           sweep_source = (root / '.github/workflows/ota-evidence-sweep.yml').read_text(encoding='utf-8')
           assert 'source_blob_sha' in discover_source and 'source_ref' in discover_source
           assert 'source blob mismatch' in execute_source and 'source_ref' in execute_source
           assert 'KUEPER_DISCOVERY_PROJECT_ID' in targeted_source
-          assert 'KUEPER_DISCOVERY_PROJECT_ID: ota' in sweep_source
+          assert 'deterministic-document-scope-v1' in scoped_source
+          assert 'select_source' in scoped_source and 'build_scope' in scoped_source
+          assert 'SOURCE.md' in scoped_source and 'MAX_CONTEXT_DOCS' in scoped_source
+          assert 'discover-ota-scoped.py' in sweep_source
+          assert "discovery-only" in sweep_source
           assert 'items[:2]' in sweep_source
 
           eligible = policy['eligible_projects']
@@ -86,5 +92,5 @@ jobs:
           expected = {entry['id']: weight for entry, weight in zip(eligible, scaled)}
           assert dict(counts) == expected, (counts, expected)
 
-          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts), 'ota_source_contract': 'pinned', 'ota_weekly_sweep': True}, indent=2))
+          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts), 'ota_source_contract': 'pinned', 'ota_weekly_sweep': True, 'ota_discovery_scope': 'deterministic-document-scope-v1'}, indent=2))
           PY
