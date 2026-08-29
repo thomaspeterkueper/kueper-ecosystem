@@ -1,0 +1,43 @@
+{
+  "id": "RES-20260829-1DB3FDB1",
+  "status": "queued",
+  "created": "2026-08-29T19:40:43+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-FND-0022-2026-DE.md",
+  "source_ref": "b409235628697cbf40db6071ce3f467d2d885088",
+  "source_blob_sha": "af78ac78060ad45163d355800ded5a8d17edd050",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 174,
+  "context_paths": [
+    "src/content/documents/OTA-CUL-0015-MULTI-DE.md",
+    "src/content/documents/OTA-LSC-0001-2048-DE.md",
+    "src/content/documents/OTA-LSC-0002-2026-DE.md"
+  ],
+  "title": "Source-grounded verification of the intergenerational/transgenerational epigenetic-inheritance [R-Anker] premise behind the Elysium-Programm in OTA-FND-0022 (in-utero programming, heritability to children, autoimmune manifestation) against the current epigenetics literature",
+  "question": "(a) What is the current evidentiary status of maternal in-utero epigenetic programming of the offspring — the developmental-origins/DOHaD literature (Dutch Hunger Winter cohort epigenetic signatures, Agouti viable yellow) — and to what extent do recent replication failures and null results qualify the strongest claims? (b) How well is transgenerational (multi-generational) inheritance of acquired epigenetic states established in humans versus strictly intergenerational effects (exposure of the mother during pregnancy affecting the directly exposed F1), and what do the Överkalix, famine-cohort and paternal-lineage studies plus experimental models (C. elegans, mice) actually support? (c) Is there credible evidence linking early-life/developmental epigenetic programming or redox/disulfide state to autoimmune disease risk, such that the doc's premise of an autoimmunity arising as 'biologische Gegenwehr' against an in-utero epigenetic imprint is biologically constrained rather than arbitrary? (d) Which parts of the Elysium-Programm's epigenetic premise (encoded emotional-regulation thresholds, inheritance of acquired emotional/physiological states by children, autoimmune manifestation) are supported, contested, or speculative in the current literature, and does any evidence suggest 'epigenetic optimization' as a feasible intervention at all?",
+  "why_now": "The Elysium-Programm and Kaia's illness are the narrative and thematic core of OTA-FND-0022, and the document's own header explicitly declares 'Epigenetik' an [R-Anker]. The underlying science — intergenerational/transgenerational epigenetic inheritance, in-utero programming, and its autoimmune consequences — is fast-moving and contested, with high-profile null results and replication caveats since the classic famine/Överkalix findings, so an anchor check can materially change how the archive labels the premise.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "The real-world hypothesis that acquired physiological/epigenetic states in a mother can be transmitted to her child in utero and across generations, affecting offspring immune/autoimmune phenotype.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.84,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260823-5BEB27E7"
+  ],
+  "novelty_reason": "Prior RES-20260823-5BEB27E7 audited the Λ-system's mtDNA-specific anchors (exclusive maternal inheritance, mtDNA methylation surviving embryonic reprogramming, oocyte/sperm copy numbers). This gap instead addresses the nuclear intergenerational/transgenerational inheritance of in-utero epigenetic programming and its autoimmune consequences — the Elysium premise in OTA-FND-0022 — which that topic did not cover; the molecule (nuclear epigenome vs mtDNA), the exposure mechanism (in-utero programming of a child vs haplotypic inheritance) and the clinical target (autoimmunity) are all materially different.",
+  "fingerprint": "1db3fdb1a70bdc90"
+}
