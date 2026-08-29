@@ -1,0 +1,103 @@
+name: OTA Workqueue Research
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "53 3 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "research/triggers/ota-workqueue.txt"
+      - "tools/research/discover-ota-workqueue.py"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kueper-ota-workqueue-research
+  cancel-in-progress: false
+
+jobs:
+  ota-workqueue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+      ANTHROPIC_BASE_URL: "https://api.deepseek.com/anthropic"
+      ANTHROPIC_AUTH_TOKEN: ${{ secrets.DEEPSEEK_API_KEY }}
+      ANTHROPIC_MODEL: "deepseek-v4-flash"
+      ANTHROPIC_DEFAULT_OPUS_MODEL: "deepseek-v4-pro[1m]"
+      ANTHROPIC_DEFAULT_SONNET_MODEL: "deepseek-v4-flash"
+      ANTHROPIC_DEFAULT_HAIKU_MODEL: "deepseek-v4-flash"
+      KUEPER_DISCOVERY_AGENT_CMD: claude -p --dangerously-skip-permissions
+      KUEPER_RESEARCH_AGENT_CMD: node ${{ github.workspace }}/tools/research/agent-with-exa.mjs
+      KUEPER_SYNTHESIS_AGENT_BIN: claude
+    steps:
+      - name: Checkout control plane
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Claude Code agent frontend
+        run: npm install --global @anthropic-ai/claude-code
+
+      - name: Install optional AI Gateway research tooling
+        continue-on-error: true
+        run: npm install --no-save --package-lock=false ai@6.0.0
+
+      - name: Verify OTA workqueue bridge
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$KUEPER_BOT_TOKEN" || { echo "Missing KUEPER_BOT_TOKEN"; exit 2; }
+          test -n "$DEEPSEEK_API_KEY" || { echo "Missing DEEPSEEK_API_KEY"; exit 2; }
+          if [ -z "$AI_GATEWAY_API_KEY" ]; then
+            echo "::warning::AI_GATEWAY_API_KEY is not configured; external evidence will use the existing fallback path."
+          fi
+          python3 -m json.tool research/policy.json >/dev/null
+          python3 -m py_compile tools/research/discover-ota-workqueue.py tools/research/execute.py tools/research/execute-targeted.py
+          node --check tools/research/agent-with-exa.mjs
+          claude --version
+          node --version
+
+      - name: Select evidence-worthy OTA workqueue items
+        id: discover
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/research/discover-ota-workqueue.py | tee ota-workqueue-discovery-report.json
+          ids="$(python3 - <<'PY'
+          import json
+          data=json.load(open('ota-workqueue-discovery-report.json', encoding='utf-8'))
+          print(','.join(data.get('queued_ids') or []))
+          PY
+          )"
+          echo "research_ids=$ids" >> "$GITHUB_OUTPUT"
+          if [ -z "$ids" ]; then
+            echo "No external-evidence OTA workqueue items selected."
+          else
+            echo "Selected OTA research IDs: $ids"
+          fi
+
+      - name: Execute selected OTA research
+        if: steps.discover.outputs.research_ids != ''
+        env:
+          KUEPER_RESEARCH_IDS: ${{ steps.discover.outputs.research_ids }}
+        run: python3 tools/research/execute-targeted.py | tee ota-workqueue-execution-report.json
+
+      - name: Upload OTA workqueue reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ota-workqueue-research-${{ github.run_id }}
+          path: |
+            ota-workqueue-discovery-report.json
+            ota-workqueue-execution-report.json
+          if-no-files-found: ignore
+          retention-days: 30
