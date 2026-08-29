@@ -10,6 +10,7 @@ on:
     paths:
       - "research/triggers/ota-workqueue.txt"
       - "tools/research/discover-ota-workqueue.py"
+      - ".github/workflows/ota-workqueue-research.yml"
 
 permissions:
   contents: read
