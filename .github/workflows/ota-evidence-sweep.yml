@@ -2,6 +2,11 @@ name: OTA Evidence Sweep
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "research/ota-sweep-request.json"
   schedule:
     - cron: "17 4 * * 0"
 
