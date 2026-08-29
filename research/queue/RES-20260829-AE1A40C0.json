@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-AE1A40C0",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-29T07:04:30+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No prior OTA research topic audited the archaeoacoustic resonance claims; the closest prior topics (brain-epoch turning points in OTA-KARTE-0001, Bronze-Age collapse in OTA-HIS-0007, copper-ore geochemistry in OTA-SCI-0080) cover different documents and different claims. This gap verifies the specific [R] frequencies (70+114 Hz, 110 Hz, 95-120 Hz band) and the Cook 2008 neuro claim that underpin OTA-KARTE-0003 and OTA-HIS-0006.",
-  "fingerprint": "ae1a40c030fd3ab0"
+  "fingerprint": "ae1a40c030fd3ab0",
+  "updated_at": "2026-08-29T07:11:47+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/33"
 }
