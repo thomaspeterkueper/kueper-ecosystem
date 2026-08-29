@@ -7,6 +7,11 @@ agent-originating tasks. That lets the queue suppress an already-reviewed exact
 head after CHANGES_REQUIRED and automatically make the task eligible again when
 GitHub discovery sees a new head.
 
+During deployment, the workflow may reach main before the matching Supabase
+migration is applied. A narrowly-scoped compatibility fallback therefore keeps
+v0.1 intake behavior when the new head-note RPC is genuinely unavailable. Other
+RPC/data errors still fail normally and are surfaced by per-PR discovery isolation.
+
 Discovery isolates per-PR intake failures into error entries instead of aborting
 the batch, so one anomalous row (e.g. a legacy task without a repository column)
 cannot starve the review queue.
@@ -30,6 +35,20 @@ github_open_prs = v01.github_open_prs
 SHA_RE = v01.SHA_RE
 
 
+def _head_note_rpc_unavailable(exc: Exception) -> bool:
+    """Return True only for errors that mean the v0.2 RPC is not deployed yet."""
+    message = str(exc).lower()
+    mentions_rpc = "kueper_note_open_pr_head" in message
+    unavailable_marker = any(marker in message for marker in (
+        "does not exist",
+        "could not find the function",
+        "schema cache",
+        "pgrst202",
+        "404",
+    ))
+    return mentions_rpc and unavailable_marker
+
+
 def note_head(db: Any, task: dict[str, Any], pr_url: str, repo: str, head_sha: str | None) -> dict[str, Any]:
     normalized_head = (head_sha or "").strip().lower()
     if not normalized_head:
@@ -38,12 +57,19 @@ def note_head(db: Any, task: dict[str, Any], pr_url: str, repo: str, head_sha: s
         raise ValueError("head_sha must be a full 40-character GitHub SHA")
     if str(task.get("status") or "") not in {"review_pending", "completed"}:
         return task
-    observed = db.rpc("kueper_note_open_pr_head", {
-        "p_task_id": task["id"],
-        "p_pr_url": pr_url,
-        "p_repository": repo,
-        "p_head_sha": normalized_head,
-    })
+    try:
+        observed = db.rpc("kueper_note_open_pr_head", {
+            "p_task_id": task["id"],
+            "p_pr_url": pr_url,
+            "p_repository": repo,
+            "p_head_sha": normalized_head,
+        })
+    except Exception as exc:
+        if _head_note_rpc_unavailable(exc):
+            # Deployment compatibility only: until the migration exists, retain
+            # the v0.1 task unchanged rather than taking the reviewer offline.
+            return task
+        raise
     if not isinstance(observed, dict):
         raise RuntimeError("kueper_note_open_pr_head returned no task")
     return observed
