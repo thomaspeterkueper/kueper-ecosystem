@@ -1,0 +1,62 @@
+name: KUEPER Branch Hygiene Dry Run
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * 0'
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted control plane
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Run deterministic safety tests
+        working-directory: tools/branch_hygiene
+        run: python -m unittest -v test_branch_hygiene.py
+
+      - name: Verify cross-repository read token
+        env:
+          GH_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "::error title=Missing GitHub Actions secret::KUEPER_BOT_TOKEN is empty or unavailable"
+            exit 1
+          fi
+
+      - name: Classify branches across repositories
+        env:
+          GH_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+        run: |
+          python tools/branch_hygiene/branch_hygiene.py \
+            --output-json branch-hygiene-report.json \
+            --output-md branch-hygiene-report.md
+
+      - name: Publish report summary
+        if: always()
+        run: |
+          if [ -f branch-hygiene-report.md ]; then
+            cat branch-hygiene-report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload dry-run report
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: branch-hygiene-dry-run
+          path: |
+            branch-hygiene-report.json
+            branch-hygiene-report.md
+          if-no-files-found: warn
+          retention-days: 14
