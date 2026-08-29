@@ -1,5 +1,6 @@
 {
-  "requested_at": "2026-08-29T06:55:00Z",
-  "reason": "Initial end-to-end validation of automatic OTA source-path and revision pinning",
+  "requested_at": "2026-08-29T07:34:30Z",
+  "reason": "Benchmark deterministic document-scoped OTA discovery against the first full-repository sweep",
+  "mode": "discovery-only",
   "max_topics": 2
 }
