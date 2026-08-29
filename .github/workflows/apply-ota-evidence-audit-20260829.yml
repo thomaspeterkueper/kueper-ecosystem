@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "tools/maintenance/apply-ota-evidence-audit-20260829.py"
+      - "tools/maintenance/refine-ota-evidence-audit-20260829.py"
       - ".github/workflows/apply-ota-evidence-audit-20260829.yml"
   workflow_dispatch:
 
@@ -33,7 +34,9 @@ jobs:
           fetch-depth: 0
 
       - name: Apply audited corrections
-        run: python3 tools/maintenance/apply-ota-evidence-audit-20260829.py ota
+        run: |
+          python3 tools/maintenance/apply-ota-evidence-audit-20260829.py ota
+          python3 tools/maintenance/refine-ota-evidence-audit-20260829.py ota
 
       - name: Validate changed documents
         shell: bash
@@ -41,6 +44,9 @@ jobs:
           set -euo pipefail
           grep -q 'version: "v1.1"' ota/src/content/documents/OTA-SCI-0037-2026-DE.md
           grep -q 'CMS-PAS-HIN-26-002' ota/src/content/documents/OTA-SCI-0037-2026-DE.md
+          ! grep -q 'THEORETISCH / HYPOTHETICAL' ota/src/content/documents/OTA-SCI-0037-2026-DE.md
+          ! grep -q 'ESTABLISHED / VORLÄUFIG' ota/src/content/documents/OTA-SCI-0037-2026-DE.md
+          ! grep -q 'markiert einen Paradigmenwechsel' ota/src/content/documents/OTA-SCI-0037-2026-DE.md
           grep -q 'Z_AVI = (Y, ξ)' ota/src/content/documents/OTA-FND-0030-2026-DE.md
           ! grep -q 'ℱ\[Vakuumgeschichte bis a\]' ota/src/content/documents/OTA-FND-0030-2026-DE.md
           grep -q '\[W\].*Werk-Setzung' ota/src/content/documents/OTA-FND-0030-2026-DE.md
