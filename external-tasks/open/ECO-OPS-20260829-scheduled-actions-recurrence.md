@@ -63,3 +63,15 @@ Beim ersten Branch-Check von PR #45 erzeugten die geänderten Workflowdateien Pa
 - Agent Worker und Automated PR Review erzeugen wieder mindestens zwei aufeinanderfolgende `event=schedule`-Runs gemäß ihren bestehenden Cron-Ausdrücken.
 - Ursache oder belastbare Recovery-Maßnahme ist dokumentiert.
 - Kein zusätzlicher Kosten-/Frequenzanstieg.
+
+## Beobachtung der Recovery-Versuche 2026-08-29 14:29–15:25Z
+
+Fortlaufende read-only-Beobachtung über die öffentliche GitHub-REST-API:
+
+- **Enabled-State:** Alle 11 Workflows melden `state=active`, einschließlich `KUEPER Agent Worker V7` und `KUEPER Automated PR Review`. Eine workflow-seitige Deaktivierung ist damit ausgeschlossen.
+- **Manuelle Dispatches beobachtet:** `workflow_dispatch`-Läufe auf `main` um `14:26:02Z` (Agent Worker V7), `14:26:50Z` (Automated PR Review), `15:14:32Z` (beide; Agent-Worker-Lauf abgebrochen) und `15:15:01Z` (Agent Worker V7, pending).
+- **Scheduler-Reaktion:** Unmittelbar nach den 14:26Z-Dispatches emittierte der Scheduler je genau einen `event=schedule`-Lauf für die Workflows mit Cron `7,22,37,52` (Automated PR Review `14:33:24Z`, Autonomous Ecosystem Loop `14:34:17Z`, beide success). Danach blieben alle weiteren fälligen Slots (14:37, 14:45, 14:52, 15:00, 15:07, 15:22) erneut aus. Agent Worker V7 erhielt seit `11:01:55Z` keinen einzigen Schedule-Lauf.
+- **Concurrency ausgeschlossen:** Beide Workflows definieren `concurrency` mit `cancel-in-progress: false`. Ein gehaltener Lock würde neue Cron-Läufe als `queued` sichtbar machen; die Queue ist zu jedem Prüfzeitpunkt leer. Die Schedule-Events werden demnach gar nicht erst emittiert — die Ursache liegt oberhalb der Workflow-Ausführung (GitHub-Scheduler), nicht im Repository-Code.
+- **Akzeptanzkriterium weiterhin nicht erfüllt:** Keine zwei aufeinanderfolgenden `event=schedule`-Läufe je Workflow; der Stall bestand zum Prüfzeitpunkt `15:25Z` fort.
+- **In Arbeit beobachtet:** Supabase-gestützte externe Scheduling-Lösung mit Lease-Guard als Draft-PR #45 (`automation/external-scheduler-heartbeat`): `tools/scheduler/run_guard.py`, Migration `supabase/migrations/20260829143000_external_scheduler_control_plane.sql`. Initiale YAML-Parse-Fehler des PR-Branches wurden laut Teil-Recovery-Abschnitt auf dem PR-Branch korrigiert.
+- **Keine Änderungen an Cron, Workflow-Code oder Agentenlogik vorgenommen** — Ursache ist nach wie vor nicht im Repository-Code nachgewiesen.
