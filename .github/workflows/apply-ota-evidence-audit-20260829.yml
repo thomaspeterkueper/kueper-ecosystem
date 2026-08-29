@@ -1,0 +1,72 @@
+name: Apply OTA Evidence Audit 2026-08-29
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "tools/maintenance/apply-ota-evidence-audit-20260829.py"
+      - ".github/workflows/apply-ota-evidence-audit-20260829.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+      BRANCH: fix/ota-evidence-audit-20260829
+    steps:
+      - name: Checkout control plane
+        uses: actions/checkout@v4
+
+      - name: Checkout OTA
+        uses: actions/checkout@v4
+        with:
+          repository: thomaspeterkueper/overtime-archive.org
+          ref: master
+          token: ${{ secrets.KUEPER_BOT_TOKEN }}
+          path: ota
+          fetch-depth: 0
+
+      - name: Apply audited corrections
+        run: python3 tools/maintenance/apply-ota-evidence-audit-20260829.py ota
+
+      - name: Validate changed documents
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q 'version: "v1.1"' ota/src/content/documents/OTA-SCI-0037-2026-DE.md
+          grep -q 'CMS-PAS-HIN-26-002' ota/src/content/documents/OTA-SCI-0037-2026-DE.md
+          grep -q 'Z_AVI = (Y, ξ)' ota/src/content/documents/OTA-FND-0030-2026-DE.md
+          ! grep -q 'ℱ\[Vakuumgeschichte bis a\]' ota/src/content/documents/OTA-FND-0030-2026-DE.md
+          grep -q '\[W\].*Werk-Setzung' ota/src/content/documents/OTA-FND-0030-2026-DE.md
+
+      - name: Commit and push OTA branch
+        working-directory: ota
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "KUEPER Evidence Bot"
+          git config user.email "evidence-bot@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add src/content/documents/OTA-SCI-0037-2026-DE.md src/content/documents/OTA-FND-0030-2026-DE.md
+          git commit -m "ota: apply source-grounded evidence audit corrections"
+          git push --force-with-lease origin "$BRANCH"
+
+      - name: Open or update OTA pull request
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh pr view "$BRANCH" --repo thomaspeterkueper/overtime-archive.org >/dev/null 2>&1; then
+            gh pr edit "$BRANCH" --repo thomaspeterkueper/overtime-archive.org \
+              --title "Evidence audit: correct OTA-SCI-0037 and FND-0030" \
+              --body "Source-grounded follow-up to the OTA evidence pilot. Corrects STAR/RHIC claim boundaries and current 2026 status in OTA-SCI-0037; updates OTA-FND-0030 to the current AVI history-separation model, defines [W], and clarifies real anchors vs fictional operators. Research basis: KG candidates RES-20260829-OTA0037R and RES-20260829-FND0030R."
+          else
+            gh pr create --repo thomaspeterkueper/overtime-archive.org --base master --head "$BRANCH" \
+              --title "Evidence audit: correct OTA-SCI-0037 and FND-0030" \
+              --body "Source-grounded follow-up to the OTA evidence pilot. Corrects STAR/RHIC claim boundaries and current 2026 status in OTA-SCI-0037; updates OTA-FND-0030 to the current AVI history-separation model, defines [W], and clarifies real anchors vs fictional operators. Research basis: KG candidates RES-20260829-OTA0037R and RES-20260829-FND0030R."
+          fi
