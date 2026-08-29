@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260829-AE1A40C0",
+  "status": "queued",
+  "created": "2026-08-29T07:04:30+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-OBS-0001-2025-DE.md",
+  "source_ref": "239e78adb80d3750596ad9a6e04ba64608484d69",
+  "source_blob_sha": "a9667226048de94ca05c3acc416a172cbf3884b1",
+  "title": "Source-grounded audit of the archaeoacoustic [R] claims in OTA-OBS-0001 that anchor the Baumeister resonance network",
+  "question": "Which of the [R]-marked resonance measurements in OTA-OBS-0001-2025-DE are supported by the primary archaeoacoustic literature, and which are misstated or contested? Specifically: (a) the Hal Saflieni Hypogeum 'double resonance at 70 Hz and 114 Hz' with reverb 'up to 13 s' — the Debertolis/Coimbra/Eneix study reports ~7-8 s reverberation and the Antiquity follow-up (Till 2017) confirms a long reverb but treats the specific figures as method-dependent; (b) Newgrange 110 Hz and Stonehenge 110 Hz (Cox/Fazenda 2020); (c) Chavin de Huantar '50-150 Hz' (Kolar); (d) the ICRL/PEAR claim that all studied chambers resonate in a 95-120 Hz band, most at 110-112 Hz; (e) the Cook, Pajot & Leuchter (2008) 110-Hz prefrontal-cortex EEG shift. OTA-KARTE-0003 and OTA-HIS-0006-9500BCE use these as the empirical '[R] Kanonisch' base of the Baumeister resonance network, and the KARTE table itself flags Gobekli Tepe as 'nicht gemessen [R] Dringend'.",
+  "why_now": "The frequencies are labelled '[R] Kanonisch' although several are contested or unpublished; the Gobekli Tepe row is explicitly an unmeasured gap ('nicht gemessen [R] Dringend'), and at least one figure (reverb 'up to 13 s') differs from the widely cited primary result (~7-8 s). Since the archive's whole resonance premise and the Baumeister network tables depend on these numbers, a source-grounded correction directly changes the epistemic chain of the worldbuilding.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Published archaeoacoustic measurements of Hal Saflieni Hypogeum (Debertolis, Coimbra & Eneix 2015; Till 2017 Antiquity), Newgrange and Stonehenge (Cox & Fazenda 2020; Jahn/PEAR), Chavin de Huantar (Kolar), and the 110-Hz EEG study (Cook, Pajot & Leuchter 2008, Time and Mind 1(1))",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior OTA research topic audited the archaeoacoustic resonance claims; the closest prior topics (brain-epoch turning points in OTA-KARTE-0001, Bronze-Age collapse in OTA-HIS-0007, copper-ore geochemistry in OTA-SCI-0080) cover different documents and different claims. This gap verifies the specific [R] frequencies (70+114 Hz, 110 Hz, 95-120 Hz band) and the Cook 2008 neuro claim that underpin OTA-KARTE-0003 and OTA-HIS-0006.",
+  "fingerprint": "ae1a40c030fd3ab0"
+}
