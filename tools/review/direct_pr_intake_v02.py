@@ -12,9 +12,13 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
+from pathlib import Path
 from typing import Any, Callable
 
-from tools.review import direct_pr_intake as v01
+REVIEW_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(REVIEW_DIR))
+import direct_pr_intake as v01  # noqa: E402
 
 parse_pr_url = v01.parse_pr_url
 load_repository_projects = v01.load_repository_projects
