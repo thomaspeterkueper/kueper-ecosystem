@@ -1,0 +1,5 @@
+{
+  "requested_at": "2026-08-29T06:55:00Z",
+  "reason": "Initial end-to-end validation of automatic OTA source-path and revision pinning",
+  "max_topics": 2
+}
