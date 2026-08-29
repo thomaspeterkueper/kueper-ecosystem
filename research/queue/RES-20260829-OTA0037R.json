@@ -1,0 +1,30 @@
+{
+  "id": "RES-20260829-OTA0037R",
+  "status": "queued",
+  "created": "2026-08-29T06:10:00+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0037-2026-DE.md",
+  "document_signature": "OTA-SCI-0037-2026-DE",
+  "title": "Rerun: source-grounded evidence audit of OTA-SCI-0037",
+  "question": "Audit the exact declared OTA-SCI-0037 source text against the 2026 RHIC/STAR primary result and subsequent/current literature. Which claims in the document are directly supported, model-dependent, overstated, speculative, contradicted or superseded, and what separable real-science scope, if any, merits a KUE-SCI e-paper?",
+  "why_now": "The first OTA pilot proved the evidence-routing concept but the executor did not load the declared OTA source text. This rerun validates the corrected fail-closed source-document context path.",
+  "languages": ["de", "en"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R", "H", "T", "S", "W"],
+  "real_world_anchor": "STAR/RHIC primary publication, measured Lambda-anti-Lambda spin correlations, QCD-vacuum interpretation and subsequent scientific discussion.",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 1.0,
+  "scores": {
+    "project_relevance": 1.0,
+    "cross_project_reuse": 1.0,
+    "uncertainty": 1.0,
+    "evidence_potential": 1.0
+  },
+  "related_research_ids": ["RES-20260828-OTA0037P"],
+  "novelty_reason": "Re-runs the same audit with the exact declared OTA source document loaded into the research context; the previous candidate was produced without that source-document contract and is therefore only a preliminary pilot artifact.",
+  "supersedes_candidate_ids": ["RES-20260828-OTA0037P"],
+  "fingerprint": "pilot-rerun-source-ota-sci-0037"
+}
