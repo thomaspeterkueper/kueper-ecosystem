@@ -1,0 +1,41 @@
+{
+  "id": "RES-20260829-F4846287",
+  "status": "queued",
+  "created": "2026-08-29T15:22:38+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-FND-0024-2026-DE.md",
+  "source_ref": "7639a4c0494c749c8da6d4213689424c9fcee6b1",
+  "source_blob_sha": "86ca840b41b4fcc5fd68d0e3c0dc77cbd142f8b7",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 189,
+  "context_paths": [
+    "src/content/documents/OTA-CUL-0002-60000BCE-DE.md",
+    "src/content/documents/OTA-HIS-0003-2087-DE.md",
+    "src/content/documents/OTA-KARTE-0003-Baumeister-Netzwerk-DE.md"
+  ],
+  "title": "Source-grounded verification of the biogenic-magnetite and alpha-ERD [R] claims in OTA-FND-0024 (Wang et al. 2019 eNeuro; Kirschvink et al. 1992) against the primary neuroscience literature",
+  "question": "Verify the [R]-marked neurophysiological claims that form the neurological mechanism of OTA-FND-0024-2026-DE against the primary sources. (a) Does the Caltech study (Wang et al. 2019, eNeuro) on alpha-ERD from rotation of earth-strength magnetic fields exist as cited, and does it support the specific claims: rotation of ~35 microtesla (earth-strength) fields triggering event-related desynchronization with 'up to 60%' alpha-amplitude (8-13 Hz) reduction, and subjects reporting no subjective perception? What effect magnitude and participant subgrouping did the paper actually report, and has the result been independently replicated or critiqued in the subsequent human-magnetoreception literature? (b) Are biogenic magnetite (Fe3O4) nanocrystals of 19-24 nm documented in human brain neurons and astrocytes per Kirschvink et al. 1992 (PNAS) and follow-ups, or does the primary record report different size distributions (single-domain ~50 nm vs superparamagnetic smaller crystals), and how has interpretation evolved (endogenous biomineralization vs exogenous/pollution-derived magnetite, e.g., Maher et al. 2016)? (c) What is the current scientific status of human geomagnetic transduction - established, contested, or preliminary - and is the [T] extrapolation from the chain's local field to a similar alpha-ERD cascade physically constrained (field strength, gradient, exposure geometry)?",
+  "why_now": "The document's central premise - a magnetic chain rewiring a brain before science can detect it - rests entirely on these [R] anchors, and OTA-SCI-0060 (biogenic magnetite and alpha-ERD) is scheduled as an ausstehend companion. The 'up to 60% alpha drop' and '19-24 nm' figures are specific enough to verify against the primary sources, and human geomagnetic transduction is a live, contested area where a freshness check of replication status is warranted.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Wang et al. 2019 eNeuro geomagnetic alpha-ERD study; Kirschvink et al. 1992 PNAS biogenic magnetite in human brain; subsequent human magnetoreception literature (Maher et al. 2016 and later replications/critiques).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.9,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior OTA research topic covers biogenic magnetite in the human brain or geomagnetic alpha-ERD transduction. RES-20260823-5BEB27E7 audits mtDNA/biophoton/piRNA anchors of the Lambda-haplogroup system (a different novel and different biological substrates), not brain magnetite or EEG alpha desynchronization, so this is a distinct, unaddressed gap.",
+  "fingerprint": "f484628794ecf0b9"
+}
