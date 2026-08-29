@@ -55,7 +55,10 @@ jobs:
           set -euo pipefail
           git config user.name "KUEPER Maintenance Bot"
           git config user.email "maintenance-bot@users.noreply.github.com"
-          git add research/policy.json tools/research/discover.py tools/research/execute.py .github/workflows/research-config-check.yml
+          # Workflow files are intentionally excluded here because this bot token
+          # has no GitHub `workflow` scope. Research Config Check is updated on
+          # the same branch through the connected GitHub App after this push.
+          git add research/policy.json tools/research/discover.py tools/research/execute.py
           if git diff --cached --quiet; then
             echo "No changes"
           else
@@ -70,9 +73,9 @@ jobs:
           if gh pr view "$BRANCH" --repo thomaspeterkueper/kueper-ecosystem >/dev/null 2>&1; then
             gh pr edit "$BRANCH" --repo thomaspeterkueper/kueper-ecosystem \
               --title "Research: pin exact source revisions for OTA audits" \
-              --body "Makes OTA discovery source-grounded by construction. Each OTA gap must name one tracked source document; discovery records source_path, commit SHA and blob SHA; execution fetches and verifies that exact revision. Legacy/manual queue items retain default-branch fallback. Research Config Check locks the contract in CI."
+              --body "Makes OTA discovery source-grounded by construction. Each OTA gap must name one tracked source document; discovery records source_path, commit SHA and blob SHA; execution fetches and verifies that exact revision. Legacy/manual queue items retain default-branch fallback. Research Config Check is added separately on the same branch through the GitHub App."
           else
             gh pr create --repo thomaspeterkueper/kueper-ecosystem --base main --head "$BRANCH" \
               --title "Research: pin exact source revisions for OTA audits" \
-              --body "Makes OTA discovery source-grounded by construction. Each OTA gap must name one tracked source document; discovery records source_path, commit SHA and blob SHA; execution fetches and verifies that exact revision. Legacy/manual queue items retain default-branch fallback. Research Config Check locks the contract in CI."
+              --body "Makes OTA discovery source-grounded by construction. Each OTA gap must name one tracked source document; discovery records source_path, commit SHA and blob SHA; execution fetches and verifies that exact revision. Legacy/manual queue items retain default-branch fallback. Research Config Check is added separately on the same branch through the GitHub App."
           fi
