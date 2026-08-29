@@ -1,0 +1,78 @@
+name: Apply Source Revision Pinning
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "tools/maintenance/apply-source-revision-pinning.py"
+      - ".github/workflows/apply-source-revision-pinning.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      BRANCH: research/pin-source-document-revisions
+      GH_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.KUEPER_BOT_TOKEN }}
+          fetch-depth: 0
+
+      - name: Prepare feature branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git checkout -B "$BRANCH" origin/main
+
+      - name: Apply migration
+        run: python3 tools/maintenance/apply-source-revision-pinning.py
+
+      - name: Validate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m json.tool research/policy.json >/dev/null
+          python3 -m py_compile tools/research/discover.py tools/research/execute.py tools/research/execute-targeted.py
+          grep -q '"schema_version": "1.4.0"' research/policy.json
+          grep -q '"require_source_path": true' research/policy.json
+          grep -q '"pin_source_revision": true' research/policy.json
+          grep -q 'source_blob_sha' tools/research/discover.py
+          grep -q 'source blob mismatch' tools/research/execute.py
+
+      - name: Commit feature branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "KUEPER Maintenance Bot"
+          git config user.email "maintenance-bot@users.noreply.github.com"
+          git add research/policy.json tools/research/discover.py tools/research/execute.py .github/workflows/research-config-check.yml
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "research: pin exact source revisions for OTA audits"
+          fi
+          git push --force-with-lease origin "$BRANCH"
+
+      - name: Open or update pull request
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh pr view "$BRANCH" --repo thomaspeterkueper/kueper-ecosystem >/dev/null 2>&1; then
+            gh pr edit "$BRANCH" --repo thomaspeterkueper/kueper-ecosystem \
+              --title "Research: pin exact source revisions for OTA audits" \
+              --body "Makes OTA discovery source-grounded by construction. Each OTA gap must name one tracked source document; discovery records source_path, commit SHA and blob SHA; execution fetches and verifies that exact revision. Legacy/manual queue items retain default-branch fallback. Research Config Check locks the contract in CI."
+          else
+            gh pr create --repo thomaspeterkueper/kueper-ecosystem --base main --head "$BRANCH" \
+              --title "Research: pin exact source revisions for OTA audits" \
+              --body "Makes OTA discovery source-grounded by construction. Each OTA gap must name one tracked source document; discovery records source_path, commit SHA and blob SHA; execution fetches and verifies that exact revision. Legacy/manual queue items retain default-branch fallback. Research Config Check locks the contract in CI."
+          fi
