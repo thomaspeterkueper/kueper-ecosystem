@@ -21,13 +21,39 @@ export type TimelineCluster<T> = {
   items: T[];
 };
 
-const MIN_SPAN_YEARS = 0.25;
+const MIN_SPAN_YEARS = 1;
 const MAX_SPAN_YEARS = 100_000;
 
+function historicalYearToCoordinate(year: number): number | null {
+  if (!Number.isFinite(year) || year === 0) return null;
+  return year < 0 ? year + 1 : year;
+}
+
+function isLeapHistoricalYear(year: number): boolean {
+  const abs = Math.abs(year);
+  return abs % 4 === 0 && (abs % 100 !== 0 || abs % 400 === 0);
+}
+
+function daysInMonth(year: number, month: number): number {
+  if (month === 2) return isLeapHistoricalYear(year) ? 29 : 28;
+  return [4, 6, 9, 11].includes(month) ? 30 : 31;
+}
+
+function dayOfYear(year: number, month: number, day: number): number | null {
+  if (month < 1 || month > 12) return null;
+  const maxDay = daysInMonth(year, month);
+  if (day < 1 || day > maxDay) return null;
+
+  let total = day - 1;
+  for (let m = 1; m < month; m += 1) total += daysInMonth(year, m);
+  return total;
+}
+
 /**
- * Converts supported KG timeline values into a continuous CE/BCE year coordinate.
- * Examples: -60000 -> -60000, 2087 -> 2087, 2087-04-12 -> ~2087.28.
- * The original display value remains authoritative for presentation.
+ * Converts supported KG timeline values into a continuous coordinate without
+ * introducing a historical year zero. Internally 1 BCE maps to 0 and 1 CE to 1.
+ * Negative source years therefore shift by +1: -60000 (60000 BCE) -> -59999.
+ * The original `time.display` value remains authoritative for presentation.
  */
 export function temporalToYear(temporal: TimelineTemporal): number | null {
   const raw = temporal.start?.trim();
@@ -35,28 +61,32 @@ export function temporalToYear(temporal: TimelineTemporal): number | null {
 
   if (/^-?\d+(?:\.\d+)?$/.test(raw)) {
     const value = Number(raw);
-    return Number.isFinite(value) ? value : null;
+    return historicalYearToCoordinate(value);
   }
 
   const iso = raw.match(/^(-?\d{1,6})-(\d{2})-(\d{2})$/);
   if (iso) {
-    const year = Number(iso[1]);
+    const historicalYear = Number(iso[1]);
     const month = Number(iso[2]);
     const day = Number(iso[3]);
-    if (!Number.isFinite(year) || month < 1 || month > 12 || day < 1 || day > 31) return null;
-    return year + (month - 1) / 12 + (day - 1) / 365.2425;
+    const coordinateYear = historicalYearToCoordinate(historicalYear);
+    if (coordinateYear === null) return null;
+
+    const ordinal = dayOfYear(historicalYear, month, day);
+    if (ordinal === null) return null;
+    const days = isLeapHistoricalYear(historicalYear) ? 366 : 365;
+    return coordinateYear + ordinal / days;
   }
 
   const leadingYear = raw.match(/^(-?\d{1,6})/);
   if (leadingYear) {
-    const year = Number(leadingYear[1]);
-    return Number.isFinite(year) ? year : null;
+    return historicalYearToCoordinate(Number(leadingYear[1]));
   }
 
   return null;
 }
 
-export function extent<T extends TimelinePoint>(items: T[], fallback: TimelineViewport = { min: -10_000, max: 2100 }): TimelineViewport {
+export function extent<T extends TimelinePoint>(items: T[], fallback: TimelineViewport = { min: -9_999, max: 2100 }): TimelineViewport {
   const years = items
     .map((item) => temporalToYear(item.temporal))
     .filter((year): year is number => year !== null);
@@ -128,11 +158,9 @@ export function yearToRatio(year: number, viewport: TimelineViewport): number {
   return (year - viewport.min) / span;
 }
 
-export function formatAxisYear(year: number, span: number): string {
-  const abs = Math.abs(year);
-  const rounded = span < 10 ? Math.round(year * 10) / 10 : Math.round(year);
-  if (rounded < 0) return `${Math.abs(rounded).toLocaleString("de-DE")} BCE`;
-  if (abs < 1 && rounded === 0) return "1 BCE / 1 CE";
+export function formatAxisYear(coordinate: number, span: number): string {
+  const rounded = span < 10 ? Math.round(coordinate) : Math.round(coordinate);
+  if (rounded <= 0) return `${(1 - rounded).toLocaleString("de-DE")} BCE`;
   return `${rounded.toLocaleString("de-DE")} CE`;
 }
 
@@ -144,7 +172,7 @@ export function buildTicks(viewport: TimelineViewport, desired = 7): number[] {
   const magnitude = 10 ** Math.floor(Math.log10(rough));
   const normalized = rough / magnitude;
   const stepBase = normalized <= 1 ? 1 : normalized <= 2 ? 2 : normalized <= 5 ? 5 : 10;
-  const step = stepBase * magnitude;
+  const step = Math.max(1, stepBase * magnitude);
   const first = Math.ceil(viewport.min / step) * step;
   const ticks: number[] = [];
 
