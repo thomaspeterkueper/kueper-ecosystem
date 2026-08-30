@@ -71,6 +71,7 @@ class GitHub:
 
 def classify_branch(
     branch: str,
+    branch_sha: str | None,
     default_branch: str,
     prs: list[dict[str, Any]],
     protected: bool,
@@ -82,8 +83,6 @@ def classify_branch(
     if protected:
         return "KEEP", "protected branch"
 
-    # PRs from forks carry head refs in the fork's namespace; only PRs whose
-    # head lives in the scanned repository can be associated with its branches.
     own_head = [p for p in prs if p.get("head", {}).get("repo", {}).get("full_name") == repo]
 
     open_head = [p for p in own_head if p.get("state") == "open" and p.get("head", {}).get("ref") == branch]
@@ -117,8 +116,16 @@ def classify_branch(
         return "REVIEW", f"closed but unmerged PR(s) #{unmerged_numbers}"
 
     if merged:
-        numbers = ",".join(str(p.get("number")) for p in merged)
-        return "DELETE", f"merged PR(s) #{numbers}; no open PR uses branch as head/base"
+        normalized_branch_sha = (branch_sha or "").lower()
+        exact = [
+            p for p in merged
+            if str(p.get("head", {}).get("sha") or "").lower() == normalized_branch_sha
+        ]
+        if exact and normalized_branch_sha:
+            numbers = ",".join(str(p.get("number")) for p in exact)
+            return "DELETE_CANDIDATE", f"current branch SHA exactly matches merged PR head for PR(s) #{numbers}; no open PR uses branch as head/base"
+        merged_numbers = ",".join(str(p.get("number")) for p in merged)
+        return "REVIEW", f"merged PR(s) #{merged_numbers}, but current branch SHA does not match a merged PR head; branch may have moved after merge"
 
     if branch.startswith(tuple(policy.get("ephemeral_prefixes", ["tmp-", "test/", "agent/", "ecosystem/task-"]))):
         return "REVIEW", "ephemeral-looking branch without a merged PR association"
@@ -135,10 +142,11 @@ def scan_repo(gh: GitHub, repo: str, policy: dict[str, Any]) -> dict[str, Any]:
     rows = []
     for item in branches:
         name = item["name"]
-        action, reason = classify_branch(name, default_branch, prs, bool(item.get("protected")), policy, repo)
+        branch_sha = item.get("commit", {}).get("sha")
+        action, reason = classify_branch(name, branch_sha, default_branch, prs, bool(item.get("protected")), policy, repo)
         rows.append({
             "branch": name,
-            "sha": item.get("commit", {}).get("sha"),
+            "sha": branch_sha,
             "protected": bool(item.get("protected")),
             "action": action,
             "reason": reason,
@@ -164,7 +172,7 @@ def markdown(report: dict[str, Any]) -> str:
     for repo in report["repositories"]:
         totals.update(repo.get("counts", {}))
     lines += [
-        f"Repositories scanned: **{len(report['repositories'])}** · KEEP **{totals['KEEP']}** · DELETE candidates **{totals['DELETE']}** · REVIEW **{totals['REVIEW']}** · errors **{len(report['errors'])}**",
+        f"Repositories scanned: **{len(report['repositories'])}** · KEEP **{totals['KEEP']}** · DELETE candidates **{totals['DELETE_CANDIDATE']}** · REVIEW **{totals['REVIEW']}** · errors **{len(report['errors'])}**",
         "",
     ]
     for repo in report["repositories"]:
@@ -172,14 +180,14 @@ def markdown(report: dict[str, Any]) -> str:
         lines += [
             f"## {repo['repository']}",
             "",
-            f"Default: `{repo['default_branch']}` · KEEP {c.get('KEEP',0)} · DELETE {c.get('DELETE',0)} · REVIEW {c.get('REVIEW',0)}",
+            f"Default: `{repo['default_branch']}` · KEEP {c.get('KEEP',0)} · DELETE candidates {c.get('DELETE_CANDIDATE',0)} · REVIEW {c.get('REVIEW',0)}",
             "",
-            "| Action | Branch | Reason |",
-            "|---|---|---|",
+            "| Action | Branch | SHA | Reason |",
+            "|---|---|---|---|",
         ]
-        order = {"DELETE": 0, "REVIEW": 1, "KEEP": 2}
+        order = {"DELETE_CANDIDATE": 0, "REVIEW": 1, "KEEP": 2}
         for row in sorted(repo["branches"], key=lambda r: (order[r["action"]], r["branch"])):
-            lines.append(f"| {row['action']} | `{row['branch']}` | {row['reason']} |")
+            lines.append(f"| {row['action']} | `{row['branch']}` | `{row.get('sha') or ''}` | {row['reason']} |")
         lines.append("")
     if report["errors"]:
         lines += ["## Errors", ""]
@@ -208,7 +216,7 @@ def main(argv: Iterable[str] | None = None) -> int:
         repos = [r for r in repos if r in requested]
 
     gh = GitHub(token)
-    report: dict[str, Any] = {"schema_version": "1.0", "mode": "dry-run", "repositories": [], "errors": []}
+    report: dict[str, Any] = {"schema_version": "1.1", "mode": "dry-run", "repositories": [], "errors": []}
     for repo in repos:
         try:
             report["repositories"].append(scan_repo(gh, repo, policy))
