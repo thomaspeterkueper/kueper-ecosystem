@@ -1,6 +1,6 @@
 {
   "id": "RES-20260830-415E863B",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-30T10:00:57+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -39,5 +39,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No prior OTA research topic covers OTA-SCI-0043 or the LLSVP/core-exsolution/BECMO and Biggin-2026 geodynamo-control claims; the closest prior topics (RES-20260829-A464A32B and RES-20260829-38AEA63E) audited the LOD-seismicity bridge in the separate OTA-SCI-0042 document and did not examine the LLSVP primary sources, their quantitative attributions, or the H-to-ESTABLISHED upgrade logic.",
-  "fingerprint": "415e863bed38b249"
+  "fingerprint": "415e863bed38b249",
+  "updated_at": "2026-08-30T10:10:32+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/50"
 }
