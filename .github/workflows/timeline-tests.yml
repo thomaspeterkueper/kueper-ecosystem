@@ -1,0 +1,33 @@
+name: Timeline checks
+
+on:
+  pull_request:
+    paths:
+      - 'app/internal/universe/timeline/**'
+      - 'tests/timeline-math.test.ts'
+      - 'package.json'
+      - '.github/workflows/timeline-tests.yml'
+  push:
+    branches:
+      - 'feat/histography-timeline-viewport'
+    paths:
+      - 'app/internal/universe/timeline/**'
+      - 'tests/timeline-math.test.ts'
+      - 'package.json'
+      - '.github/workflows/timeline-tests.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  timeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run test:timeline
+      - run: npm run build
