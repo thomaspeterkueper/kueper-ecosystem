@@ -52,6 +52,18 @@ Die vollständige Lease-/Heartbeat-Deduplizierung ist erst wirksam, wenn die Wor
 
 **Betriebsentscheidung für den Übergang:** Externen Scheduler aktiv lassen, weil er die nachgewiesene GitHub-Scheduler-Lücke zuverlässig überbrückt. Keine Cron-Frequenz erhöhen und den nativen Fallback nicht entfernen. Stattdessen PR #45 regulär validieren; erst mit integriertem Lease-Guard ist die beabsichtigte kostenarme Doppeltrigger-Absicherung vollständig.
 
+## Neuer Betriebsblocker 2026-08-30 00:02Z: Review-Provider-Billing
+
+Der externe Scheduler löst weiterhin korrekt aus, aber `KUEPER Automated PR Review` Run #127 (`workflow_dispatch`, gestartet `2026-08-29T23:52:01Z`) ist im eigentlichen Review-Batch fehlgeschlagen. Setup, Secret-Prüfung, deterministische Tests und Direct-PR-Discovery waren erfolgreich. Der Fehler ist providerseitig:
+
+- DeepSeek API antwortet mit HTTP 402 `Insufficient Balance`.
+- Der Review-Agent meldet `billing-insufficient-balance` und beendet den Batch mit `REVIEW_ERROR`.
+- Betroffen war in diesem Lauf unter anderem der noch offene OTA-PR #8; andere bereits gemergte Tasks wurden korrekt übersprungen.
+
+Das ist **kein transienter CI-Fehler** und wird daher nicht automatisch erneut gestartet. Ein Rerun auf unverändertem Provider-/Billing-Zustand würde nur zusätzliche Actions-Zeit verbrauchen.
+
+**Konkreter nächster Schritt:** DeepSeek-Guthaben/Abrechnung wiederherstellen oder eine bereits governance-seitig freigegebene alternative Reviewer-Providerkonfiguration aktivieren. Bis dahin Scheduler weiterlaufen lassen, aber Review-Fehler als Provider-Blocker behandeln; keine Frequenz erhöhen.
+
 ## Untersuchung / sichere nächste Schritte
 
 1. PR #45 auf parsebare Workflowdefinitionen, Lease-/Cooldown-Verhalten und Heartbeat-Endzustände vollständig validieren.
@@ -59,6 +71,7 @@ Die vollständige Lease-/Heartbeat-Deduplizierung ist erst wirksam, wenn die Wor
 3. Bis dahin externe Dispatch-HTTP-Ergebnisse und GitHub-Concurrency auf echte Doppel-Ausführung/Kosten beobachten.
 4. GitHub-Cron als Fallback beibehalten; keine Frequenz erhöhen.
 5. Nach Integration von #45 zwei externe Intervalle plus mindestens einen nativen Fallback-Fall mit `skipped`/Lease-Guard verifizieren.
+6. Review-Provider-Billing beheben bzw. freigegebenen Fallback aktivieren und danach genau einen Review-Lauf zur Verifikation ausführen.
 
 ## Akzeptanz
 
@@ -66,4 +79,5 @@ Die vollständige Lease-/Heartbeat-Deduplizierung ist erst wirksam, wenn die Wor
 - Lease/Cooldown verhindert doppelte teure Ausführung bei externem + nativem Trigger.
 - Heartbeat/Health-State macht verpasste Intervalle deterministisch sichtbar.
 - Ursache oder belastbare Recovery-Maßnahme ist dokumentiert.
+- Review-Provider ist wieder ausführungsfähig oder ein freigegebener Fallback ist aktiv.
 - Kein zusätzlicher dauerhafter Kosten-/Frequenzanstieg.
