@@ -57,7 +57,8 @@ jobs:
 
       - name: Explain duplicate skip
         if: steps.lease.outputs.should_run != 'true'
-        run: echo "Scheduler guard skipped this execution: ${{ steps.lease.outputs.skip_reason }}"
+        run: |
+          echo "Scheduler guard skipped this execution: ${{ steps.lease.outputs.skip_reason }}"
 
       - name: Set up Python
         if: steps.lease.outputs.should_run == 'true'
