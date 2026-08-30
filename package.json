@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test:timeline": "node -e \"require('fs').rmSync('.tmp-timeline-tests',{recursive:true,force:true})\" && tsc tests/timeline-math.test.ts app/internal/universe/timeline/timeline-math.ts --outDir .tmp-timeline-tests --rootDir . --module commonjs --target ES2020 --moduleResolution node --esModuleInterop --types node && node --test .tmp-timeline-tests/tests/timeline-math.test.js && node -e \"require('fs').rmSync('.tmp-timeline-tests',{recursive:true,force:true})\""
   },
   "dependencies": {
     "next": "^14.2.5",
