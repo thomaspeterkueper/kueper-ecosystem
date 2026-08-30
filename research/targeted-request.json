@@ -1,9 +1,8 @@
 {
-  "request_id": "OTA-NOXIA-TEC-0084-PELICAN-2026-08-30",
-  "created": "2026-08-30T14:18:00+00:00",
+  "request_id": "OTA-NOXIA-TEC-0085-RL25-2026-08-30",
+  "created": "2026-08-30T14:51:00+00:00",
   "research_ids": [
-    "RES-20260830-TEC0084A",
-    "RES-20260830-TEC0084B"
+    "RES-20260830-TEC0085A"
   ],
-  "reason": "Run source-grounded evidence audits for OTA-TEC-0084 PELICAN: lunar surface-to-LLO delta-v/propulsion/abort architecture and plume-surface interaction/dust mitigation/crew exposure. Enforce ota-tech-object-v1 and keep all fictional/NOXIA balancing values out of scope."
+  "reason": "Run source-grounded evidence audit for the first OTA-TEC component dossier: RL-25 fictional Hydrolox class. Test combined 450 kN / 465 s plausibility, real reference ranges, restartability/lifetime and cluster engine-out constraints. Enforce ota-tech-object-v1 and keep fictional naming, canonical vehicle values and NOXIA balancing out of automatic correction."
 }
