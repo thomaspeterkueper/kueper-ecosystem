@@ -1,0 +1,43 @@
+{
+  "id": "RES-20260830-089E7B21",
+  "status": "queued",
+  "created": "2026-08-30T10:00:58+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0043-2026-DE.md",
+  "source_ref": "5cb98d663454bc01def1344722c396f210b95468",
+  "source_blob_sha": "bee4831dcf9e6172ba5d5d54f790f7dded5e67c4",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 162,
+  "context_paths": [
+    "src/content/documents/OTA-OBS-0005-2026-DE.md",
+    "src/content/documents/OTA-SCI-0026-2025-DE.md",
+    "src/content/documents/OTA-SCI-0026-2026-DE.md"
+  ],
+  "title": "LLSVP spatial-filter hypothesis: has global seismicity been correlated with LLSVP geometry and CMB heat-flux heterogeneity (KN-5.3 test) - evidence audit for OTA-SCI-0043",
+  "question": "Source-grounded audit of the [H]/[S]-marked spatial-filter claims in OTA-SCI-0043-2026-DE that LLSVPs create zones of reduced CMB heat flux and thereby spatially filter core-mantle coupling, LOD periodicities (Dumont et al. 2025) and regional seismicity. The curator's [KN-5.3] note asserts: 'Seismizitätsraten geographisch aufgelöst gegen LLSVP-Projektionen auf die Oberfläche korrelieren. Die Daten existieren. Niemand hat es gemacht.' (a) As of 2026, is this still accurate - has any published study correlated spatially resolved global seismicity (including deep-focus and intermediate-depth earthquakes) with LLSVP surface projections, LLSVP margins, or CMB heat-flux heterogeneity, and what do such studies report (supporting, null or constraining evidence)? (b) What do existing deep-earthquake distributions show relative to LLSVP geometry - e.g. do the Pacific subduction rings, the western Pacific deep-focus cluster, or intraplate seismicity fall preferentially along LLSVP margins, and is there any documented seismicity-rate enhancement near plume-root regions of the African/Pacific LLSVPs? (c) For the related claim that LLSVPs act as a spatial filter on core-mantle coupling modes (6-year LOD cycle / torsional Alfvén waves; Dumont periodicities ~90% variance), what supporting or constraining evidence exists that CMB heat-flux heterogeneity is spatially organized by LLSVP geometry and that this modulates LOD/seismicity signals? (d) Is the South Atlantic Anomaly region (produced by the African LLSVP's field-intensity reduction) associated with any distinct regional seismicity signal that could serve as the proposed test case, and what is the current state of evidence for the African LLSVP-SAA causal link itself? Map supporting, null and constraining evidence without upgrading the [H] spatial-filter claim to established; explicitly preserve it as untested if the literature confirms the curator's 'nobody has done it' claim. Do NOT research the AVI [S] layer (Section VII) or validate fictional/Ommizedenz framework claims.",
+  "why_now": "Section V.3 and the document's 'Nächste Schritte' list explicitly identify the geographical correlation test (seismicity rates vs. LLSVP projections) as the archive's highest-priority open empirical test for the LLSVP spatial-filter hypothesis. The document was drafted 2026-02-09, and a targeted literature check can determine whether recent deep-Earth seismology or geodynamic work has since tested or constrained the hypothesis - which directly determines whether OTA-SCI-0043's [HYPOTHETICAL] status for 'LLSVPs modulieren regionale Seismizität' should be retained, upgraded or narrowed, and whether a real-science contribution is warranted.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Testable hypothesis: spatial correlation between global seismicity rates and LLSVP surface projections / CMB heat-flux heterogeneity (KN-5.3); supporting evidence base: deep-focus earthquake distributions, Dumont et al. (2025) planetary-forcing-LOD-seismicity periodicities, and the African LLSVP - South Atlantic Anomaly causal link.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.9,
+  "relevance_score": 0.725,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.7
+  },
+  "related_research_ids": [
+    "RES-20260829-A464A32B"
+  ],
+  "novelty_reason": "Prior topic RES-20260829-A464A32B verified the Dumont et al. (2025) planetary-forcing claims in OTA-SCI-0042 but did not address the spatial dimension introduced in OTA-SCI-0043 - whether LLSVP geometry modulates those periodicities and regional seismicity. This gap tests the materially unresolved KN-5.3 spatial-correlation hypothesis and its supporting/constraining literature, which is a distinct claim in a distinct source document.",
+  "fingerprint": "089e7b21b8e286ba"
+}
