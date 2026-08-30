@@ -1,6 +1,6 @@
 {
   "id": "RES-20260830-089E7B21",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-30T10:00:58+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -39,5 +39,7 @@
     "RES-20260829-A464A32B"
   ],
   "novelty_reason": "Prior topic RES-20260829-A464A32B verified the Dumont et al. (2025) planetary-forcing claims in OTA-SCI-0042 but did not address the spatial dimension introduced in OTA-SCI-0043 - whether LLSVP geometry modulates those periodicities and regional seismicity. This gap tests the materially unresolved KN-5.3 spatial-correlation hypothesis and its supporting/constraining literature, which is a distinct claim in a distinct source document.",
-  "fingerprint": "089e7b21b8e286ba"
+  "fingerprint": "089e7b21b8e286ba",
+  "updated_at": "2026-08-30T10:18:39+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/51"
 }
