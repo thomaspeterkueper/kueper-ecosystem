@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Execute queued KUEPER research topics and publish evidence-marked KG candidates.
 
-Research results are staging material only. They may be auto-merged into the Knowledge
-Graph's `research/candidates/` area when structural evidence gates pass, but never
-become canonical entities/relations automatically.
+Research results are staging material only. Structural evidence gates may create a
+candidate PR, but the executor never merges or enables auto-merge. Merge eligibility
+belongs to a separate review-aware reconciliation step.
 """
 from __future__ import annotations
 import base64, datetime as dt, json, os, re, shlex, shutil, subprocess, tempfile, urllib.error, urllib.parse, urllib.request
@@ -51,14 +51,24 @@ def publication_route(profile:dict[str,Any],hint:str|None=None)->tuple[str|None,
     if route_id and not route:raise RuntimeError(f"publication route {route_id} is not defined")
     return route_id,route
 
-def source_document_context(token:str,item:dict[str,Any])->dict[str,Any]|None:
-    """Fetch the exact declared source document before external research.
+def validate_source_contract(item:dict[str,Any])->tuple[str,dict[str,Any]]:
+    """Fail closed when an evidence profile requires an exact source document."""
+    profile_name,profile=evidence_profile(item)
+    if profile.get("require_source_path"):
+        if not item.get("source_path"):
+            raise RuntimeError(f"queued item {item.get('id')} requires source_path for evidence profile {profile_name}")
+        if not item.get("source_repository"):
+            raise RuntimeError(f"queued item {item.get('id')} requires source_repository for evidence profile {profile_name}")
+    if profile.get("pin_source_revision"):
+        if not item.get("source_ref"):
+            raise RuntimeError(f"queued item {item.get('id')} requires pinned source_ref for evidence profile {profile_name}")
+        if not item.get("source_blob_sha"):
+            raise RuntimeError(f"queued item {item.get('id')} requires pinned source_blob_sha for evidence profile {profile_name}")
+    return profile_name,profile
 
-    A declared source_path is a hard contract. New discovery items pin both the
-    source commit and blob SHA so a later research run audits the exact version
-    that triggered the gap. Legacy/manual items may fall back to the repository's
-    current default branch, but still fail closed if the file cannot be loaded.
-    """
+def source_document_context(token:str,item:dict[str,Any])->dict[str,Any]|None:
+    """Fetch and verify the exact declared source document before external research."""
+    validate_source_contract(item)
     source_path=item.get("source_path")
     if not source_path:return None
     source_repo=item.get("source_repository")
@@ -237,12 +247,8 @@ def execute(token:str,item:dict[str,Any],payload:dict[str,Any])->dict[str,Any]:
         if paths!=[allowed]:raise RuntimeError(f"research agent changed forbidden files: {paths}")
         run(["git","config","user.name","KUEPER Research Bot"],cwd=root);run(["git","config","user.email","research-bot@users.noreply.github.com"],cwd=root)
         run(["git","add",allowed],cwd=root);run(["git","commit","-m",f"research: candidate {item['id']}"],cwd=root);run(["git","push","--quiet","origin",branch],cwd=root)
-        pr=gh(token,"POST",f"/repos/{TARGET}/pulls",{"title":f"[Research] {item['id']}: {item['title']}","head":branch,"base":default,"body":f"Multilingual evidence candidate for `{item['source_project']}` using evidence profile `{evidence_profile(item)[0]}`. Evidence score: `{meta.get('evidence_score')}`. Publication recommendation: `{meta.get('publication_recommendation') or 'none'}`. This PR adds only non-canonical staging material under `{POLICY['candidate_path']}/`; it does not modify canonical KG data or publish to OTA/kueper.com.","draft":False})
+        pr=gh(token,"POST",f"/repos/{TARGET}/pulls",{"title":f"[Research] {item['id']}: {item['title']}","head":branch,"base":default,"body":f"Multilingual evidence candidate for `{item['source_project']}` using evidence profile `{evidence_profile(item)[0]}`. Evidence score: `{meta.get('evidence_score')}`. Publication recommendation: `{meta.get('publication_recommendation') or 'none'}`. This PR adds only non-canonical staging material under `{POLICY['candidate_path']}/`; it does not modify canonical KG data or publish to OTA/kueper.com. Merge remains review-gated and is never enabled by the research executor.","draft":False})
         merge="review-required"
-        if POLICY.get("auto_merge_candidates",False):
-            env=os.environ.copy();env["GH_TOKEN"]=token
-            cp=run(["gh","pr","merge",pr["html_url"],"--auto","--squash","--delete-branch"],cwd=root,check=False,env=env)
-            merge="auto-merge-queued" if cp.returncode==0 else "auto-merge-unavailable"
         update_queue(token,payload,item,"candidate-pr",pr["html_url"])
         return {"id":item["id"],"result":"candidate-pr","pr":pr["html_url"],"merge":merge,"evidence_score":meta.get("evidence_score"),"languages_used":meta.get("languages_used"),"publication_recommendation":meta.get("publication_recommendation")}
     except Exception as exc:
