@@ -7,8 +7,8 @@ with the dedicated KUEPER_WORKFLOW_TOKEN. If that credential is unavailable,
 the task is parked rather than retried as a generic failure.
 
 Every temporary repository clone also gets a fail-closed pre-push guard for its
-default branch. This covers both worker-managed pushes and git commands invoked
-by the coding agent itself.
+default branch. GitHub write credentials are withheld from the coding-agent
+process and are restored only by the worker for an approved PR-branch push.
 """
 from __future__ import annotations
 
@@ -42,30 +42,46 @@ def repo_task(task: dict[str, Any], model: str) -> dict[str, Any]:
 
     def credential_aware_run(cmd, *args, **kwargs):
         cwd = kwargs.get("cwd")
-        if cwd is not None and isinstance(cmd, list) and cmd and cmd[0] == "git":
+        if cwd is not None and isinstance(cmd, list) and cmd:
             root_key = str(Path(cwd))
-            # Install before checkout/agent execution in REVIEW_FIX. Normal V7.2
-            # tasks install the same hook directly after resolving origin/HEAD.
-            if len(cmd) >= 2 and cmd[1] in {"checkout", "push"} and root_key not in guarded_roots:
-                guarded_roots[root_key] = _resolve_and_install_guard(Path(cwd), original_run)
 
-            if len(cmd) >= 2 and cmd[1] == "push":
-                default_branch = guarded_roots[root_key]
-                # Check explicit refspecs before credential selection. The Git
-                # pre-push hook remains the authoritative guard for all forms.
-                for arg in cmd[2:]:
-                    if isinstance(arg, str) and (":" in arg or arg in {default_branch, f"refs/heads/{default_branch}"}):
-                        assert_push_target(default_branch, arg)
-
-                changed = original_run(
-                    ["git", "show", "--name-only", "--format=", "HEAD"], cwd=cwd
-                ).stdout.splitlines()
-                push_token, privileged = select_push_token(
-                    changed,
-                    bot_token=os.environ["KUEPER_BOT_TOKEN"],
-                    workflow_token=os.environ.get("KUEPER_WORKFLOW_TOKEN"),
+            # The coding agent may edit and test locally, but it does not receive
+            # GitHub mutation credentials. Even `git push --no-verify` therefore
+            # cannot turn a blocked Ready/Merge operation into a direct write.
+            if cmd[0] == "claude":
+                if root_key not in guarded_roots:
+                    guarded_roots[root_key] = _resolve_and_install_guard(Path(cwd), original_run)
+                original_run(
+                    ["git", "remote", "set-url", "origin", f"https://github.com/{repo}.git"],
+                    cwd=cwd,
                 )
-                if privileged:
+                agent_env = dict(kwargs.get("env") or os.environ.copy())
+                for secret_name in ("KUEPER_BOT_TOKEN", "KUEPER_WORKFLOW_TOKEN", "GH_TOKEN", "GITHUB_TOKEN"):
+                    agent_env.pop(secret_name, None)
+                kwargs["env"] = agent_env
+
+            if cmd[0] == "git":
+                # Install before checkout/agent execution in REVIEW_FIX. Normal
+                # V7.2 tasks also install the same hook after origin/HEAD lookup.
+                if len(cmd) >= 2 and cmd[1] in {"checkout", "push"} and root_key not in guarded_roots:
+                    guarded_roots[root_key] = _resolve_and_install_guard(Path(cwd), original_run)
+
+                if len(cmd) >= 2 and cmd[1] == "push":
+                    default_branch = guarded_roots[root_key]
+                    for arg in cmd[2:]:
+                        if isinstance(arg, str) and (":" in arg or arg in {default_branch, f"refs/heads/{default_branch}"}):
+                            assert_push_target(default_branch, arg)
+
+                    changed = original_run(
+                        ["git", "show", "--name-only", "--format=", "HEAD"], cwd=cwd
+                    ).stdout.splitlines()
+                    push_token, _privileged = select_push_token(
+                        changed,
+                        bot_token=os.environ["KUEPER_BOT_TOKEN"],
+                        workflow_token=os.environ.get("KUEPER_WORKFLOW_TOKEN"),
+                    )
+                    # Restore an authenticated origin only at the controlled
+                    # worker push boundary, after the agent process has exited.
                     original_run(
                         ["git", "remote", "set-url", "origin", worker.clone_url(repo, push_token)],
                         cwd=cwd,
