@@ -12,6 +12,7 @@ from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import agent_worker as worker  # noqa: E402
 import agent_worker_v71 as v71  # noqa: E402
+from direct_main_guard import install_pre_push_guard  # noqa: E402
 
 TARGET_CODES = "ECO, KG, SSF, NOXIA, NXU, MISH, OMNI, AVI, CONTRA, ARCH, ENDIA, ZEREYA, DAVARU, FLHERM, RESETH, KUE, OTA, TKD"
 
@@ -27,6 +28,9 @@ def repo_task(task: dict[str, Any], model: str) -> dict[str, Any]:
         default_branch = worker.run(
             ["git", "symbolic-ref", "--short", "refs/remotes/origin/HEAD"], cwd=root
         ).stdout.strip().split("/", 1)[-1]
+        # Fail closed for every git push originating in this worker clone,
+        # including shell commands launched by the coding agent itself.
+        install_pre_push_guard(root, default_branch)
         current_sha = worker.run(["git", "rev-parse", "HEAD"], cwd=root).stdout.strip()
         expected_sha = task.get("base_sha")
         if expected_sha and current_sha != expected_sha:
@@ -53,6 +57,7 @@ Rules:
 - Run relevant tests/build/lint and repair failures caused by your changes.
 - Never expose secrets or weaken tests.
 - Do not edit other repositories.
+- Never push, cherry-pick, recreate, or otherwise integrate changes directly onto the repository default branch. Publish changes only on the task/PR branch. If PR Ready/Merge is unavailable, keep the PR blocked; do not substitute a default-branch write.
 - If blocked by a genuine owner/creative decision, leave the repo unchanged and print `KUEPER_PARK_OWNER: <reason>`.
 - If blocked by a temporary internal dependency, leave the repo unchanged and print `KUEPER_PARK: <reason>`.
 - Finish with only intentional working-tree changes.
