@@ -1,0 +1,43 @@
+{
+  "id": "RES-20260830-415E863B",
+  "status": "queued",
+  "created": "2026-08-30T10:00:57+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0043-2026-DE.md",
+  "source_ref": "5cb98d663454bc01def1344722c396f210b95468",
+  "source_blob_sha": "bee4831dcf9e6172ba5d5d54f790f7dded5e67c4",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 162,
+  "context_paths": [
+    "src/content/documents/OTA-OBS-0005-2026-DE.md",
+    "src/content/documents/OTA-SCI-0026-2025-DE.md",
+    "src/content/documents/OTA-SCI-0026-2026-DE.md"
+  ],
+  "title": "Source-grounded verification of the LLSVP core-exsolution and geodynamo-control [R] claims in OTA-SCI-0043 (Deng/Miyazaki 2025, Boukaré 2025, Biggin 2026)",
+  "question": "Source-grounded audit of the exact OTA-SCI-0043-2026-DE source text against its three primary 2025-2026 publications and the current deep-Earth literature. (a) Do the three primary references exist as cited, with correct authorship, journal, volume/pages, dates and DOIs: Deng, Miyazaki, Yuan & Du (2025) 'Deep mantle heterogeneities formed through a basal magma ocean contaminated by core exsolution', Nature Geoscience 18, 1056-1062, DOI 10.1038/s41561-025-01797-y; Boukaré, Badro & Samuel (2025) 'Solidification of Earth's mantle led inevitably to a basal magma ocean', Nature 640, 114-119, DOI 10.1038/s41586-025-08701-z; and Biggin, Davies, Mound et al. (2026) 'Mantle heterogeneity influenced Earth's ancient magnetic field', Nature Geoscience, DOI 10.1038/s41561-025-01910-1? Note the document was drafted 2026-02-09 from a Frankfurter Rundschau article; check whether the Biggin et al. (2026) paper is actually published as claimed and dated. (b) Does the BECMO mechanism as described (Si/Mg/O dissolved in liquid iron; exsolution upon cooling; particle rise to the CMB; dissolution in the basal magma ocean; LLSVPs as solidified BECMO remnants) match the Deng et al. paper, and is the archive's epistemic upgrade from [HYPOTHETICAL] to [ESTABLISHED] for 'LLSVPs = erstarrte BECMO-Reste' defensible against the paper's own framing? (c) Does Boukaré et al. support the specific claim that a basal magma ocean is an inevitable consequence of magma-ocean solidification (FeO-rich silicate melting-point depression and density contrast), and does its timing (March 2025) match the stated convergence? (d) Do Biggin et al. support the quantitative attributions: SV energy under LLSVPs 12-18% of total at the surface (satellite data) and 33-49% at the CMB (COV-OBS.x2 model); African LLSVP contributing ~2.5x more SV energy at the surface and ~1.3x at the CMB than the Pacific; peak-to-peak CMB heat-flux variability >2x the average (attributed to Nakagawa & Tackley 2008); and the conclusion that observed paleomagnetic secular-variation properties are uniquely or preferentially reproduced only with strong lateral CMB heat-flux variability (i.e. 'paläomagnetische Signaturen erfordern LLSVP-Einfluss [ESTABLISHED]')? (e) Verify the secondary [R] attributions: Cottaar & Lekic (2016) vertical extent 300-1200 km; LLSVP volume fraction ~8% of mantle / ~6% of Earth; lower-third density anomaly ~0.5%; ULVZ velocity reductions up to ~90% in few-tens-of-km-thick layers; internal high-velocity anomalies in the Pacific LLSVP discovered via Virtual Receiver Approach (Geosciences 2025, MDPI); and Lin, Marti & Jackson (2025) 'Invariance of dynamo action in an early-Earth model' (Nature 644, 109-114). Identify any misstated numbers, misattributed sources, or overstated statuses, and flag which claims the current literature has superseded or contested. Do NOT research or validate the AVI [S] layer (Section VII R(a)-Feld, KRAN K23, mode-filter hierarchy) or any OTA-internal balancing values.",
+  "why_now": "OTA-SCI-0043 is the declared structural foundation of the archive's entire core-mantle documentation (OTA-SCI-0041/0042/0036, OTA-OBS-0005, OTA-SCI-0026) and upgrades [H] to [ESTABLISHED] based on convergent 2025-2026 Nature/Nature Geoscience publications. The most recent primary source (Biggin et al. 2026) postdates the 2026-02-09 draft and its publication status, authorship and quantitative figures are exactly the kind of [R] anchor the OTA evidence profile requires to be independently verified before the [ESTABLISHED] classifications propagate to the six documents listed in the change register.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Primary publications: Deng, Miyazaki, Yuan & Du (2025) Nature Geoscience 18, 1056-1062, DOI 10.1038/s41561-025-01797-y; Boukaré, Badro & Samuel (2025) Nature 640, 114-119, DOI 10.1038/s41586-025-08701-z; Biggin et al. (2026) Nature Geoscience, DOI 10.1038/s41561-025-01910-1; Lin, Marti & Jackson (2025) Nature 644, 109-114.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.775,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior OTA research topic covers OTA-SCI-0043 or the LLSVP/core-exsolution/BECMO and Biggin-2026 geodynamo-control claims; the closest prior topics (RES-20260829-A464A32B and RES-20260829-38AEA63E) audited the LOD-seismicity bridge in the separate OTA-SCI-0042 document and did not examine the LLSVP primary sources, their quantitative attributions, or the H-to-ESTABLISHED upgrade logic.",
+  "fingerprint": "415e863bed38b249"
+}
