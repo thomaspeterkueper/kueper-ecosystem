@@ -7,6 +7,10 @@ on:
         description: Maximum tasks for this run
         required: false
         default: "3"
+      scheduler_run_id:
+        description: Supabase scheduler run UUID; leave empty for manual/fallback runs
+        required: false
+        default: ""
   schedule:
     - cron: "*/15 * * * *"
 
@@ -32,21 +36,48 @@ jobs:
       - name: Checkout control plane
         uses: actions/checkout@v6
 
+      - name: Acquire scheduler execution lease
+        id: lease
+        shell: bash
+        env:
+          SCHEDULER_RUN_ID: ${{ inputs.scheduler_run_id || '' }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          source_name="manual"
+          if [ "$EVENT_NAME" = "schedule" ]; then
+            source_name="github_schedule"
+          elif [ -n "$SCHEDULER_RUN_ID" ]; then
+            source_name="supabase"
+          fi
+          python3 tools/scheduler/run_guard.py acquire \
+            --worker agent-worker-v7 \
+            --scheduler-run-id "$SCHEDULER_RUN_ID" \
+            --source "$source_name"
+
+      - name: Explain duplicate skip
+        if: steps.lease.outputs.should_run != 'true'
+        run: echo "Scheduler guard skipped this execution: ${{ steps.lease.outputs.skip_reason }}"
+
       - name: Set up Python
+        if: steps.lease.outputs.should_run == 'true'
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Set up Node
+        if: steps.lease.outputs.should_run == 'true'
         uses: actions/setup-node@v6
         with:
           node-version: "22"
           package-manager-cache: false
 
       - name: Install Claude Code agent frontend
+        if: steps.lease.outputs.should_run == 'true'
         run: npm install --global @anthropic-ai/claude-code
 
       - name: Verify required secrets
+        if: steps.lease.outputs.should_run == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -69,6 +100,7 @@ jobs:
           fi
 
       - name: Verify runtime
+        if: steps.lease.outputs.should_run == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -78,19 +110,35 @@ jobs:
           claude --version
           gh --version
 
+      - name: Test scheduler guard
+        if: steps.lease.outputs.should_run == 'true'
+        run: python -m unittest tools/scheduler/test_run_guard.py
+
       - name: Test provider router and credential policy
+        if: steps.lease.outputs.should_run == 'true'
         run: |
           python -m unittest tools/worker/test_provider_router.py
           python -m unittest tools/worker/test_git_credentials.py
 
       - name: Process bounded task batch
+        if: steps.lease.outputs.should_run == 'true'
         shell: bash
         run: |
           set -euo pipefail
           python tools/worker/agent_worker_v74.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
 
+      - name: Finish scheduler heartbeat
+        if: always() && steps.lease.outputs.should_run == 'true'
+        shell: bash
+        run: |
+          python3 tools/scheduler/run_guard.py finish \
+            --run-id "${{ steps.lease.outputs.scheduler_run_id }}" \
+            --lease-token "${{ steps.lease.outputs.lease_token }}" \
+            --status "${{ job.status }}" \
+            --github-run-id "${{ github.run_id }}"
+
       - name: Upload worker report
-        if: always()
+        if: always() && steps.lease.outputs.should_run == 'true'
         uses: actions/upload-artifact@v6
         with:
           name: agent-worker-v7-${{ github.run_id }}
