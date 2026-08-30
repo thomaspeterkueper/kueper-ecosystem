@@ -1,9 +1,9 @@
 {
-  "request_id": "OTA-NOXIA-TEC-0083-STARPORT-2026-08-30",
-  "created": "2026-08-30T14:13:00+00:00",
+  "request_id": "OTA-NOXIA-TEC-0084-PELICAN-2026-08-30",
+  "created": "2026-08-30T14:18:00+00:00",
   "research_ids": [
-    "RES-20260830-TEC0083A",
-    "RES-20260830-TEC0083B"
+    "RES-20260830-TEC0084A",
+    "RES-20260830-TEC0084B"
   ],
-  "reason": "Run source-grounded evidence audits for OTA-TEC-0083 Starport-Launcher: reusable SSTO/TSTO mass closure and 100–150 t LEO plausibility, plus turnaround/reuse economics, TPS, maintenance and crew-abort architecture. Enforce ota-tech-object-v1 and keep all fictional/NOXIA balancing values out of scope."
+  "reason": "Run source-grounded evidence audits for OTA-TEC-0084 PELICAN: lunar surface-to-LLO delta-v/propulsion/abort architecture and plume-surface interaction/dust mitigation/crew exposure. Enforce ota-tech-object-v1 and keep all fictional/NOXIA balancing values out of scope."
 }
