@@ -128,12 +128,28 @@ class SupabaseEvaluationTests(unittest.TestCase):
             results = check_health.evaluate_supabase_workers(["agent-worker-v7"])
         self.assertEqual(results[0]["verdict"], "stale")
 
+    def test_null_stale_row_fails_closed(self):
+        # JSON null, an absent "stale" key, or any non-boolean value must never
+        # read as healthy; only a literal false may pass.
+        for row in (
+            {"worker_name": "agent-worker-v7", "stale": None},
+            {"worker_name": "agent-worker-v7"},
+            {"worker_name": "agent-worker-v7", "stale": "unexpected"},
+        ):
+            with patch.object(check_health, "_rpc", return_value=[row]):
+                results = check_health.evaluate_supabase_workers(["agent-worker-v7"])
+            self.assertEqual(results[0]["verdict"], "stale")
+
 
 class MainFlowTests(unittest.TestCase):
     def test_github_backend_healthy_exit_zero(self):
         runs = [run(iso(15)), run(iso(0)), run(iso(45, hour=15))]
         argv = ["--backend", "github", "--worker", "agent-worker-v7", "--json"]
-        with patch.object(check_health, "fetch_github_runs", return_value=runs), patch(
+        # The fixture timestamps are anchored to NOW, so main() must evaluate
+        # against the same clock instead of the real wall clock.
+        with patch.object(check_health, "fetch_github_runs", return_value=runs), patch.object(
+            check_health, "_now", return_value=NOW
+        ), patch(
             "sys.argv", ["check_health.py", *argv]
         ), patch.dict(os.environ, {}, clear=True), patch("sys.stdout", new_callable=io.StringIO) as stdout:
             code = check_health.main()

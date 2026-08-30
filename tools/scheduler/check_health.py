@@ -106,6 +106,11 @@ def _parse_iso(value: str) -> dt.datetime:
     return dt.datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(dt.timezone.utc)
 
 
+def _now() -> dt.datetime:
+    """Wall-clock source for slot/age evaluation; patched by tests."""
+    return dt.datetime.now(dt.timezone.utc)
+
+
 def recent_slots(slot_minutes: set[int], now: dt.datetime, count: int) -> list[dt.datetime]:
     """Return the most recent `count` slot times (newest first).
 
@@ -198,7 +203,7 @@ def evaluate_supabase_workers(worker_names: list[str]) -> list[dict]:
     results = []
     for worker in worker_names:
         row = by_worker.get(worker)
-        if row is None or bool(row.get("stale")) is not False:
+        if row is None or row.get("stale") is not False:
             results.append({"worker": worker, "verdict": "stale", "row": row})
         else:
             results.append({"worker": worker, "verdict": "healthy", "row": row})
@@ -263,7 +268,7 @@ def build_parser() -> argparse.ArgumentParser:
 def main() -> int:
     args = build_parser().parse_args()
     workers = list(WORKERS.keys()) if args.worker == "all" else [args.worker]
-    now = dt.datetime.now(dt.timezone.utc)
+    now = _now()
     try:
         if args.backend == "supabase" or (
             args.backend == "auto" and os.environ.get("SUPABASE_URL") and os.environ.get("SUPABASE_SECRET_KEY")
