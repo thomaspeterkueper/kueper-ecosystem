@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from direct_main_guard import (
+from tools.worker.direct_main_guard import (
     DefaultBranchMutationBlocked,
     assert_push_target,
     install_pre_push_guard,
