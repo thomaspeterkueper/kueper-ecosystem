@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-862AA763",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-08-29T10:12:35+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -30,5 +30,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": null,
-  "fingerprint": "862aa763aa09b56e"
+  "fingerprint": "862aa763aa09b56e",
+  "updated_at": "2026-08-30T09:18:34+00:00",
+  "last_error": "agent-with-exa: Exa evidence failed: Cannot read properties of undefined (reading 'exaSearch')\nagent-with-exa: falling back to the existing research agent without Exa\n\"deepseek-v4-flash\" is not a model this version of Claude Code recognizes, so auto-compact will keep this session within 200k tokens (the context window it assumes). If the model accepts more, append [1m] to the model name for 1M, or set CLAUDE_CODE_MAX_CONTEXT_TOKENS to its real window; to make it recognized, map it in the modelOverrides setting or update Claude Code; CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1 restores the previous wait-for-the-API behavior.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"generate_session_title\"}\nAPI Error: 402 Insufficient Balance\n"
 }
