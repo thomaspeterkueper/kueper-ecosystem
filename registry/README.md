@@ -64,7 +64,16 @@ Die Datei wird gegen folgendes Schema validiert:
 schemas/project-registry.schema.json
 ```
 
-Eine ungültige Registry muss den Collector stoppen. Aus einer unvollständigen oder syntaktisch fehlerhaften Registry darf kein grüner Status erzeugt werden.
+Ausgeführt wird die Prüfung von `tools/validate-registry/validate.py` (nur stdlib):
+
+```bash
+python3 tools/validate-registry/validate.py
+```
+
+Die Prüfung ist in den Collector (`tools/collector/collect.py`) und in die CI
+(`.github/workflows/research-config-check.yml`) eingebunden. Eine ungültige
+Registry muss den Collector stoppen. Aus einer unvollständigen oder syntaktisch
+fehlerhaften Registry darf kein grüner Status erzeugt werden.
 
 ## Änderungen an anderen Repositories
 

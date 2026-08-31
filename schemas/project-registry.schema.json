@@ -6,6 +6,9 @@
   "additionalProperties": false,
   "required": ["schema_version", "updated_at", "projects"],
   "properties": {
+    "$schema": {
+      "type": "string"
+    },
     "schema_version": {
       "type": "string",
       "enum": ["1.0.0", "1.1.0"]

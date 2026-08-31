@@ -15,10 +15,31 @@ Zustandswerte je Check: ok | warning | error | unknown | not_applicable
 Gesamtstatus je Projekt:  healthy | degraded | critical | unknown
 Ein gruener Gesamtstatus wird nie aus fehlenden Daten abgeleitet.
 """
+import importlib.util
 import json, os, sys, datetime, urllib.request, urllib.error
 
 API = "https://api.github.com"
-REG_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "registry", "projects.json")
+_HERE = os.path.dirname(os.path.abspath(__file__))
+REG_PATH = os.path.join(_HERE, "..", "..", "registry", "projects.json")
+SCHEMA_PATH = os.path.join(_HERE, "..", "..", "schemas", "project-registry.schema.json")
+VALIDATOR_PATH = os.path.join(_HERE, "..", "validate-registry", "validate.py")
+
+
+def _validate_registry():
+    """Eine ungueltige Registry muss den Collector stoppen (registry/README.md)."""
+    spec = importlib.util.spec_from_file_location("validate_registry", os.path.abspath(VALIDATOR_PATH))
+    validator = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(validator)
+    try:
+        errors = validator.validate_file(os.path.abspath(REG_PATH), os.path.abspath(SCHEMA_PATH))
+    except (OSError, json.JSONDecodeError) as e:
+        sys.stderr.write(f"Registry nicht lesbar/gueltig: {e}\n")
+        sys.exit(1)
+    if errors:
+        sys.stderr.write("Registry ungueltig (registry/README.md, Abschnitt Validierung):\n")
+        for path, msg in errors:
+            sys.stderr.write(f"  - {path}: {msg}\n")
+        sys.exit(1)
 
 
 def _token():
@@ -143,6 +164,7 @@ def _overall(checks):
 
 
 def main():
+    _validate_registry()
     token = _token()
     with open(os.path.abspath(REG_PATH), encoding="utf-8") as f:
         reg = json.load(f)

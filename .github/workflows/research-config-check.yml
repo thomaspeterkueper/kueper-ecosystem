@@ -9,6 +9,10 @@ on:
     paths:
       - "research/policy.json"
       - "registry/projects.json"
+      - "registry/README.md"
+      - "schemas/project-registry.schema.json"
+      - "tools/validate-registry/validate.py"
+      - "tools/validate-registry/test_validate.py"
       - "tools/research/discover.py"
       - "tools/research/discover-targeted.py"
       - "tools/research/discover-ota-scoped.py"
@@ -38,6 +42,13 @@ jobs:
           python -m json.tool registry/projects.json >/dev/null
           python -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/discover-ota-scoped-dryrun.py tools/research/execute.py tools/research/execute-targeted.py
           node --check tools/research/agent-with-exa.mjs
+
+      - name: Validate project registry schema
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/validate-registry/validate.py registry/projects.json
+          python -m unittest tools/validate-registry/test_validate.py
 
       - name: Validate profile mappings and weighted rotation
         shell: bash

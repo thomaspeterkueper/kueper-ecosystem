@@ -19,6 +19,21 @@ Zustandswerte: `ok | warning | error | unknown | not_applicable`.
 Gesamtstatus: `healthy | degraded | critical | unknown`. Ein grüner Gesamtstatus
 wird nie aus fehlenden Daten abgeleitet.
 
+## validate-registry
+
+`validate-registry/validate.py` — validiert `registry/projects.json` gegen
+`schemas/project-registry.schema.json` (inklusive der 1.1-Erzwingung für
+`private-manuscript-source`: `confidential-authoring`, keine Kanonisierung,
+kein öffentlicher Export, kein Cross-Repository-Routing).
+
+```bash
+python3 tools/validate-registry/validate.py
+```
+
+Nur stdlib, kein Netzwerk, exit 1 bei Verstoß (CI-tauglich). Wird vom
+Collector vor dem Sammeln ausgeführt und in
+`.github/workflows/research-config-check.yml` aufgerufen.
+
 ## lint-external-tasks
 
 `lint-external-tasks/lint.py` — Linter für das kanonische External-Task-Format
