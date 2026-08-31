@@ -1,0 +1,46 @@
+{
+  "id": "RES-20260831-3DEACC8E",
+  "status": "queued",
+  "created": "2026-08-31T06:09:30+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0028-2048-DE.md",
+  "source_ref": "7523d1a6645cb9dd1c95c41e532bd125c2d0aba7",
+  "source_blob_sha": "da20eab7b68d0aa66e5fa91170a06b863df25845",
+  "document_signature": "OTA-TEC-0028-2048-DE",
+  "title": "Source-grounded verification of the RIKEN geometric-diode and switchable-diode [R] anchors in OTA-TEC-0028-2048",
+  "question": "Audit the [R]-marked Part I section of OTA-TEC-0028-2048-DE against the primary sources. (a) Does the cited work 'Geometrically controlled non-reciprocal transport in magnetic helical nanostructures' (Birch et al., Nature Nanotechnology 2025, RIKEN Center for Emergent Matter Science, group leader Yoshinori Tokura) exist under that title, or is the actual paper 'Nanosculpted 3D helices of a magnetic Weyl semimetal with switchable non-reciprocal electron transport' (Birch, M.T., Fujishiro, Y., Belopolski, I., Mogi, M., et al., Nature Nanotechnology 2025, DOI 10.1038/s41565-025-02104-x)? Confirm exact title, authorship, first-author and group-leader attribution, journal, year and DOI. (b) Do the document's Generation-0 figures match the primary source: material Co3Sn2S2, focused-ion-beam (FIB) fabrication, spiral width 250-500 nm, structure height 800-1200 nm, 5-8 windings, operation temperature <77 K, current-rectification ratio 50:1-200:1, and ~$5000/cm2 material cost? Report the paper's actual measured values (e.g. helix length 3-14 um, diameter 1-4 um, pitch 500 nm-2 um, diode effect demonstrated between 10 K and 190 K at zero applied magnetic field) and flag every discrepancy, including whether the claimed room-temperature operation is still undemonstrated. (c) Verify the second [R] citation 'A Switchable One-Compound Diode' (Vogel et al., Advanced Materials, DOI 10.1002/adma.202208698): correct volume/issue/year (Adv. Mater. 35(2), e2208698, 2023; first published online 25 Oct 2022), the material Ag18Cu3Te11Cl3, and whether 'room-temperature pnp-switching by temperature gradient' is accurately summarized. (d) Identify wording in the [R] section that should be narrowed or reclassified, and confirm which real-world limitations the document already flags correctly. Do NOT evaluate or alter the AVI chi/R(a)/Gamma field-coupling Part II, the AVI-LOD-Index metric, scenario forecasts, or any NOXIA/OTA balancing value. Distinguish [R] verified, [H] plausible extrapolation, [F] fictional setting, [OFFEN] unresolved.",
+  "why_now": "OTA-TEC-0028-2048 is a priority-11 archive fragment whose [R]-grounded 'Generation-0' section embeds a specific, fresh (2025) RIKEN Nature Nanotechnology result plus a 2022 Advanced Materials diode paper. The diagnostic run flags RELATION_GAP and GENERIC_SUMMARY; independent checks already show the cited paper title does not match the primary record and several Generation-0 numbers diverge from the measured values. Verifying these now grounds the OTA technical canon and prevents misattributed figures from propagating into dependent documents (OTA-TEC-0029, OTA-TEC-0002/0003 cross-refs).",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "real_world_anchor": "RIKEN CEMS Nature Nanotechnology 2025 paper on FIB-nanosculpted 3D helices of the magnetic Weyl semimetal Co3Sn2S2 exhibiting switchable non-reciprocal electron transport (Birch et al., DOI 10.1038/s41565-025-02104-x); Vogel et al. 2022/2023 'A Switchable One-Compound Diode', Advanced Materials, DOI 10.1002/adma.202208698.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior research topic covers OTA-TEC-0028/0029 or the RIKEN geometric-diode / helimagnet line. The nearest prior topics (RES-20260830-TEC0083A/B, TEC0085A) concern launcher and hydrolox propulsion, not solid-state geometry-engineered electronics; this is a materially new unresolved dimension.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 664,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL"
+    ]
+  },
+  "fingerprint": "3deacc8e7f3618c5"
+}
