@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260831-EAA9EDD9",
+  "status": "queued",
+  "created": "2026-08-31T09:55:01+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "modules/materials/MAG-004.yaml",
+  "source_ref": "a58fce20a9a595408124cd9bbb14b24271ac3389",
+  "source_blob_sha": "9106c620c064648ab27ac275e0f9a897cf894364",
+  "title": "Source verified property data for the permanent-magnet material comparison modules (Ferrite, AlNiCo, SmCo, NdFeB)",
+  "question": "What are the current, source-backed property values for the four permanent-magnet classes the MAG curriculum compares — Curie temperature, maximum operating temperature, energy product, coercivity, corrosion behaviour, cost and rare-earth raw-material dependence/recycling — so MAG-004/005 can be built on verified data and the KG CON:MAT entities instead of unsourced qualitative comparisons?",
+  "why_now": "MAG-004 ('Permanentmagnete als Werkstoffe') and MAG-005 ('Magnetismus und Temperatur') are draft KG-facing modules whose learning objectives explicitly require comparing Ferrit, AlNiCo, SmCo and NdFeB on magnetic performance, temperature behaviour, corrosion, cost and raw-material availability, but no sourced numeric property data backs these comparisons in the YAML modules or the magnetism learning path. Rare-earth supply-chain and recycling facts (USGS/IEA critical-minerals data, export controls) change quickly, making a sourced baseline valuable now and reusable across the KG and NOXIA/Mars motor-generator content.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Verified property data for Ferrite, AlNiCo, SmCo and NdFeB permanent magnets (Curie temperature, maximum operating temperature, energy product, corrosion behaviour, rare-earth supply/recycling)",
+  "publication_route_hint": null,
+  "project_weight": 0.8,
+  "relevance_score": 0.775,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "eaa9edd96de9388e"
+}
