@@ -55,7 +55,7 @@ def note_head(db: Any, task: dict[str, Any], pr_url: str, repo: str, head_sha: s
         return task
     if not SHA_RE.match(normalized_head):
         raise ValueError("head_sha must be a full 40-character GitHub SHA")
-    if str(task.get("status") or "") not in {"review_pending", "completed"}:
+    if str(task.get("status") or "") not in {"review_pending", "completed", "cancelled"}:
         return task
     try:
         observed = db.rpc("kueper_note_open_pr_head", {
