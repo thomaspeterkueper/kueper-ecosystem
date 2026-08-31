@@ -1,0 +1,74 @@
+name: OTA Tech Object Audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "47 4 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout control plane
+        uses: actions/checkout@v4
+
+      - name: Checkout OTA source
+        uses: actions/checkout@v4
+        with:
+          repository: thomaspeterkueper/overtime-archive.org
+          path: ota
+          fetch-depth: 1
+          token: ${{ secrets.KUEPER_BOT_TOKEN }}
+
+      - name: Audit mapped technical objects
+        run: |
+          set -euo pipefail
+          python3 tools/research/audit-ota-tech-objects.py \
+            --ota-root ota \
+            --queue-dir research/queue \
+            --output ota-tech-object-audit.json \
+            --strict
+
+      - name: Run deterministic audit tests
+        run: python3 tools/research/test_ota_tech_object_audit.py
+
+      - name: Publish step summary
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('ota-tech-object-audit.json')
+          if not p.exists():
+              print('Audit report was not produced.')
+              raise SystemExit(0)
+          r = json.loads(p.read_text(encoding='utf-8'))
+          lines = [
+              '# OTA Tech Object Audit',
+              '',
+              f"Objects: **{r['objects_total']}**",
+              '',
+          ]
+          for key in ('covered', 'stale', 'uncovered', 'invalid'):
+              lines.append(f"- {key}: **{r.get('counts', {}).get(key, 0)}**")
+          lines += ['', '## Attention']
+          attention = [o for o in r['objects'] if o['coverage_state'] != 'covered']
+          if not attention:
+              lines.append('- none')
+          else:
+              for o in attention:
+                  lines.append(f"- `{o['signature']}` / `{o.get('object_id')}` — **{o['coverage_state']}**")
+          Path(__import__('os').environ['GITHUB_STEP_SUMMARY']).write_text('\n'.join(lines) + '\n', encoding='utf-8')
+          PY
+
+      - name: Upload audit artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ota-tech-object-audit-${{ github.run_id }}
+          path: ota-tech-object-audit.json
+          if-no-files-found: ignore
+          retention-days: 30
