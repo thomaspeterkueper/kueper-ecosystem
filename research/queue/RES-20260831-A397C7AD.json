@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260831-A397C7AD",
+  "status": "queued",
+  "created": "2026-08-31T09:55:00+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "lib/learningPaths.ts",
+  "source_ref": "a58fce20a9a595408124cd9bbb14b24271ac3389",
+  "source_blob_sha": "4fae89e554754c85f6248264a0f4ec665e8c302e",
+  "title": "Verify the chemical mechanism behind the red-wine-stain learning path (protein denaturation vs tannin/polyphenol chemistry)",
+  "question": "What is the scientifically supported mechanism by which red wine stains set on and are removed from fabrics — is it protein denaturation and thermal cross-linking binding to the textile fiber as the ROTWEIN path claims ('ab 40°C beginnt Vernetzung, ab 80°C permanent fixiert', 'Heisses Wasser denaturiert Proteine'), or is it dominated by tannin/anthocyanin (polyphenol) interactions, and does hot water reliably worsen the stain or can it help?",
+  "why_now": "PATH:SSF:CHE-REINIGUNG-ROTWEIN-0001 attributes red-wine stain setting to protein denaturation cross-linking with textile fibers and states sharp thermal thresholds (40°C onset, 80°C permanent fixation). Red wine's chromophores are polyphenols (anthocyanins, tannins), not proteins, and cotton is cellulose rather than protein, so the stated mechanism is likely a simplification with real teaching consequences. The module is prototype status; evidence-based correction would improve its chemistry claims before promotion.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Chemical mechanism of red-wine stain setting/removal on fabrics (tannin/polyphenol interactions vs protein denaturation) and the claimed 40°C/80°C thermal-fixation thresholds",
+  "publication_route_hint": null,
+  "project_weight": 0.8,
+  "relevance_score": 0.775,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "a397c7adf7cd649e"
+}
