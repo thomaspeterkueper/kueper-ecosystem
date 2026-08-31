@@ -1,8 +1,8 @@
 {
-  "request_id": "OTA-NOXIA-TEC-0088-MEDICAL-2026-08-31",
-  "created": "2026-08-31T13:54:30+00:00",
+  "request_id": "OTA-NOXIA-TEC-0089-FABRICATION-2026-08-31",
+  "created": "2026-08-31T13:54:45+00:00",
   "research_ids": [
-    "RES-20260831-TEC0088A"
+    "RES-20260831-TEC0089A"
   ],
-  "reason": "Queue the Mars Medical Center autonomy/capability/logistics evidence audit behind the currently running 0092 research while today's research capacity is available. Preserve medical evidence boundaries and do not generate fictional staffing, bed counts, costs or NOXIA balancing."
+  "reason": "Queue the Mars Fabrication Center evidence audit behind the active/pending research runs: additive and conventional manufacturing, qualification/inspection, regolith limits, recycling and alloy/feedstock provenance. Preserve all fictional production rates, dates, costs and NOXIA balancing."
 }
