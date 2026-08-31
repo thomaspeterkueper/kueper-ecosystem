@@ -1,0 +1,48 @@
+{
+  "id": "RES-20260831-3CFEFFA6",
+  "status": "queued",
+  "created": "2026-08-31T06:09:30+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0021-2025-DE.md",
+  "source_ref": "7523d1a6645cb9dd1c95c41e532bd125c2d0aba7",
+  "source_blob_sha": "716c6a5c4fb968d9343c23dbffdb6c36062b7711",
+  "document_signature": "OTA-TEC-0021-2025-DE",
+  "title": "Superionic gold hydride (Au2Hx) MOF-stabilization audit for OTA-TEC-0021-2025 against the 2025 European XFEL discovery",
+  "question": "Source-grounded audit of the exact OTA-TEC-0021-2025-DE document, which proposes a conductive 2D-MOF (Cu3(HHTP)2, Kagome lattice, ~1.8 nm hexagonal pores) to extend the superionic Au2Hx phase lifetime from ~1e-6 to 1e-3 s (XFEL conditions) to 1e0-1e2 s for an atomic-clock experiment (OTA-SCI-0017). (a) Confirm the [R] anchor: does the 2025 superionic gold hydride discovery exist as 'Synthesis of Gold Hydride at High Pressure and High Temperature' (Frost, M. et al., Angewandte Chemie International Edition 2025, DOI 10.1002/anie.202505811, European XFEL HED instrument, SLAC-led team), and does it support the formula Au2Hx, a superionic state with hydrogen diffusing through the rigid hcp gold lattice, formation above ~40 GPa at roughly 2500 C, and decomposition on cooling? (b) Are the document's stated experimental conditions accurate: diamond-anvil cell at P ~ 40 GPa, pulsed laser heating at T ~ 2000 C, XFEL-driven phase lifetime of 1e-6-1e-3 s? Report the primary source's actual pressure, temperature and stability/decomposition facts, including the high-temperature-only stability that the MOF proposal would have to overcome. (c) Do the MOF premises hold: is Cu3(HHTP)2 a real conductive 2D MOF with Kagome lattice and ~1.8 nm hexagonal pores, and what are the documented pore sizes, stability and synthesis routes? (d) Assess the [H] MOF-confinement stabilization hypothesis as a physical constraint/falsifiability problem: can nanoscale MOF confinement plausibly extend a high-temperature superionic phase lifetime by 1e3-1e8, or do the high-temperature-only stability window and the observed decomposition pathway constrain or falsify the proposal? Map supporting, null and constraining evidence without upgrading [H] to established. (e) Identify wording that should be narrowed or reclassified in the source dossier. Do NOT evaluate or alter the fictional Baumeister-artefakt hypothesis, the 72 Hz / Blackpearl narrative links, the Au2Hx name, or any NOXIA/OTA balancing value.",
+  "why_now": "OTA-TEC-0021-2025 is a priority-11 fragment flagged RELATION_GAP and LOW_SUBSTANCE. Its core premise was, at drafting time, hypothetical; a real primary result (Frost et al. 2025, Angew. Chem., European XFEL) now exists that directly anchors the superionic Au2Hx phase under XFEL/diamond-anvil conditions. Checking the document's pressure, temperature, phase-lifetime and metastability figures against this fresh primary source, and the real properties of Cu3(HHTP)2, materially upgrades the [R]/[T]/[S] boundary of the dossier and its OTA-SCI-0017 dependency.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "real_world_anchor": "Frost, M. et al. (2025), 'Synthesis of Gold Hydride at High Pressure and High Temperature', Angewandte Chemie International Edition, DOI 10.1002/anie.202505811 (superionic Au2Hx formed >40 GPa / ~2500 C at European XFEL); real material properties of the conductive 2D MOF Cu3(HHTP)2.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.7375,
+  "scores": {
+    "project_relevance": 0.7,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior research topic touches superionic gold hydride, the European XFEL Au2Hx discovery, or MOF phase-stabilization. The closest prior physics audits (RES-20260829-20AB97DF Mpemba, RES-20260829-7802BB92 IRAS, RES-20260829-38AEA63E earthquake theory) are unrelated domains; this is a materially new unresolved dimension.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 263,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "3cfeffa6ff6ee9ac"
+}
