@@ -1,6 +1,6 @@
 {
   "id": "RES-20260831-C1748BD0",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-31T10:09:53+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -45,5 +45,7 @@
       "NO_HEADINGS"
     ]
   },
-  "fingerprint": "c1748bd0bc34e4eb"
+  "fingerprint": "c1748bd0bc34e4eb",
+  "updated_at": "2026-08-31T10:26:46+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/66"
 }
