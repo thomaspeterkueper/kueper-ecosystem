@@ -1,6 +1,6 @@
 {
   "id": "RES-20260830-TEC0085A",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-30T14:50:00+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -14,9 +14,15 @@
   "title": "Hydrolox component audit for OTA-TEC-0085 RL-25 class",
   "question": "Source-grounded audit of the exact OTA-TEC-0085 component draft. Using primary manufacturer, NASA/ESA/JAXA and peer-reviewed propulsion sources, assess: (1) real vacuum specific impulse ranges for RL10-family and other high-performance LH2/LOX engines; (2) real thrust ranges and whether any demonstrated or well-supported hydrolox vacuum engine combines approximately 450 kN thrust with approximately 465 s vacuum Isp; (3) whether such a combination is physically plausible as a 2040s fictional advanced chemical engine and what cycle, nozzle expansion, chamber-pressure, mass, cooling, materials and lifetime constraints would dominate; (4) restartability and lifetime considerations for a reusable cislunar upper-stage engine; (5) whether a four-engine cluster creates meaningful engine-out capability across TLI/LOI/correction burns or only in selected mission phases; and (6) wording that should be narrowed or reclassified in the source dossier. Do not classify the combination as [F] merely because no current serial engine matches it. Distinguish explicitly between [R] = demonstrated/directly supported, [H] = not demonstrated as this exact engine but physically and technically supportable by a stated extrapolation path, [F] = work-set fiction not defensible as a grounded technical extrapolation, and [OFFEN] = evidence insufficient. Any [H] conclusion must name the enabling technical path and limiting constraints rather than relying on generic future-technology language. Keep the fictional name RL-25, the 450 kN value, the four-engine CYGNUS configuration and all NOXIA gameplay/balancing values out of automatic correction. Do not treat similarity of names to RL10 or any real engine as identity.",
   "why_now": "OTA-TEC-0085 is the first proposed OTA component dossier and its central purpose is to test combined-parameter plausibility before the component schema is frozen or CYGNUS engine data are deduplicated.",
-  "languages": ["en", "de"],
+  "languages": [
+    "en",
+    "de"
+  ],
   "evidence_profile": "ota-archive-evidence",
-  "claim_classes": ["R", "H"],
+  "claim_classes": [
+    "R",
+    "H"
+  ],
   "external_research_required": true,
   "real_world_anchor": "High-performance LH2/LOX vacuum rocket engines, RL10-family reference data, staged-combustion/expander cycles, nozzle expansion, restartability and engine-out behavior.",
   "publication_route_hint": "fictional_archive_document",
@@ -35,5 +41,7 @@
     "flag_noxia_impact": true,
     "auto_update_noxia": false,
     "balancing_is_out_of_scope": true
-  }
+  },
+  "updated_at": "2026-08-31T10:02:55+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/63"
 }
