@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260831-TEC0093R",
+  "status": "reconciled",
+  "created": "2026-08-31T13:00:10+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0093-2026-DE.md",
+  "source_ref": "4229a44f50bf5d0c65478f48c353d4e4579a4249",
+  "source_blob_sha": "d5114254df8deeb60714c423deb970f5c218886b",
+  "document_signature": "OTA-TEC-0093-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "life-support-kernmodul",
+  "consumer_project": "noxia",
+  "coverage_basis": "evidence-applied-reconciliation",
+  "external_research_required": false,
+  "title": "Post-evidence reconciliation for OTA-TEC-0093 v1.1",
+  "question": "No new external research task. Record that the current OTA-TEC-0093 v1.1 exact blob is the reviewed application of RES-20260831-TEC0093A. The revision confirms real ECLSS function classes and incomplete material closure, strengthens the non-linear integration/scaling rule, separates technology-family variants from identical hardware, clarifies redundancy/fault-tolerance boundaries, preserves the ENTWURF status, and aligns the KG system identity. No concrete NOXIA crew scaling, performance, cost, unlock or balancing value was introduced.",
+  "why_now": "Applying the reviewed ECLSS evidence intentionally changed the OTA exact blob. A duplicate external research run would be circular; reconciliation preserves the original executed source pin while covering the reviewed evidence-applied revision.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R", "H", "T"],
+  "real_world_anchor": "Inherited from the source-pinned regenerative ECLSS subsystem, material-closure, scaling, variant and redundancy audit; no new external evidence dimension was introduced by this source revision.",
+  "publication_route_hint": "fictional_archive_document",
+  "related_research_ids": ["RES-20260831-TEC0093A"],
+  "evidence_application": {
+    "ota_commit": "4229a44f50bf5d0c65478f48c353d4e4579a4249",
+    "change_kind": "reviewed-research-application",
+    "rerun_required": false
+  },
+  "novelty_reason": "Reconciliation only; binds the evidence-applied v1.1 blob without rewriting the historical source pin of RES-20260831-TEC0093A.",
+  "fingerprint": "ota-tec-0093-evidence-applied-v1.1",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}

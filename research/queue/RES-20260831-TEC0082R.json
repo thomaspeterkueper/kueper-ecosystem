@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260831-TEC0082R",
+  "status": "reconciled",
+  "created": "2026-08-31T13:00:00+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0082-2026-DE.md",
+  "source_ref": "4229a44f50bf5d0c65478f48c353d4e4579a4249",
+  "source_blob_sha": "fdd257103b9571876b62bcf6c7495e9b6967f662",
+  "document_signature": "OTA-TEC-0082-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "cygnus-ctv-cislunar-transferschiff",
+  "consumer_project": "noxia",
+  "coverage_basis": "evidence-applied-reconciliation",
+  "external_research_required": false,
+  "title": "Post-evidence reconciliation for OTA-TEC-0082 v1.1",
+  "question": "No new external research task. Record that the current OTA-TEC-0082 v1.1 exact blob is the reviewed application of RES-20260831-TEC0082A. The OTA revision qualifies Hohmann versus patched-conic/multi-body cislunar transfer language, separates target-orbit insertion assumptions, explicitly records the inherited mass/propellant/delta-v non-closure without retconning the fictional values, treats RL-25 as a fictional type/analogy, bounds cryogenic boil-off claims, and aligns KG system/domain metadata. Crew/human-factors findings from RES-20260831-TEC0082B were not applied by this revision and remain a separate review path.",
+  "why_now": "Applying the reviewed propulsion/trajectory evidence intentionally changed the OTA exact blob. Re-running the same research against its own applied conclusions would be circular; this reconciliation preserves historical execution provenance while binding the reviewed evidence-applied source revision.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R", "H", "T"],
+  "real_world_anchor": "Inherited from the source-pinned CYGNUS cislunar transfer, Tsiolkovsky, Hydrolox and cryogenic audit; no new externally testable dimension was introduced by the evidence-application diff.",
+  "publication_route_hint": "fictional_archive_document",
+  "related_research_ids": ["RES-20260831-TEC0082A"],
+  "evidence_application": {
+    "ota_commit": "4229a44f50bf5d0c65478f48c353d4e4579a4249",
+    "change_kind": "reviewed-research-application",
+    "rerun_required": false
+  },
+  "novelty_reason": "Reconciliation only; binds the evidence-applied v1.1 blob without rewriting the historical source pin of RES-20260831-TEC0082A.",
+  "fingerprint": "ota-tec-0082-evidence-applied-v1.1",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}
