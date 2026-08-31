@@ -67,14 +67,29 @@ The targeted executor enforces this fail-closed before external research starts.
 
 `tools/research/audit-ota-tech-objects.py` is the inventory layer above individual research jobs. It compares the current mapped OTA documents against the research queue and reports four states:
 
-- **covered** — at least one safe `ota-tech-object-v1` research item matches the current exact document blob and the current `objectId`;
+- **covered** — at least one safe `ota-tech-object-v1` contract record matches the current exact document blob and the current `objectId`;
 - **stale** — contract research exists for the same source path, but not for the current exact blob/object identity;
 - **uncovered** — the mapped object has no contract-bound research item yet;
 - **invalid** — required OTA→NOXIA mapping metadata is incomplete, inconsistent or duplicates an `objectId`.
 
-`covered` means only that the current revision has contract-bound research coverage. It does not mean every claim is true, every gap has been researched, or any candidate has been canonicalized.
+`covered` means only that the current revision has contract-bound evidence coverage. It does not mean every claim is true, every gap has been researched, or any candidate has been canonicalized.
 
 `stale` is expected after a source revision changes. It is a signal for review, not permission to rerun research automatically.
+
+### Evidence-applied reconciliation
+
+A special stale case occurs when a reviewed research result is applied to the OTA dossier itself. That application necessarily changes the source blob, so the exact-blob audit becomes stale even though no new research question was introduced.
+
+After a diff review confirms that the new revision only incorporates the cited prior research, the control plane may add a non-executable `ota-tech-object-v1` reconciliation record for the new exact blob with:
+
+- `status: reconciled`;
+- `coverage_basis: evidence-applied-reconciliation`;
+- `external_research_required: false`;
+- `related_research_ids` pointing to the executed source-pinned audits;
+- an `evidence_application` block naming the OTA application commit and `rerun_required: false`;
+- the same fail-closed NOXIA consumer-impact policy as executable research.
+
+This record must never rewrite the old research item's `source_ref` or `source_blob_sha`: historical execution provenance remains immutable. Reconciliation is valid only for evidence-application diffs that introduce no materially new externally testable claim. Any new or expanded `[R]`, `[R-Anker]`, `[H]` or `[T]` dimension requires a new source-pinned research item instead.
 
 `uncovered` is also informational. The inventory does not create research jobs, consume an external provider, edit OTA, create KG records or modify NOXIA by itself.
 
@@ -114,3 +129,4 @@ When an OTA dossier contains both a technical type and an individual instance, i
 5. Fictional/world stipulations are not scientifically validated by accident.
 6. Scientific changes may create consumer impact signals, never automatic gameplay balancing changes.
 7. Inventory/audit is read-only and does not imply automatic research or publication.
+8. Evidence-applied reconciliation preserves historical research pins; it never repins an executed audit retroactively.

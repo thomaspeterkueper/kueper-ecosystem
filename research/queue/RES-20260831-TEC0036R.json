@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260831-TEC0036R",
+  "status": "reconciled",
+  "created": "2026-08-31T11:25:10+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0036-2026-DE.md",
+  "source_ref": "16cc8551cd0ea8624d5b6d407e1733604318316f",
+  "source_blob_sha": "c7d429fc487636eb3e4c4337ad000e876e9b010e",
+  "document_signature": "OTA-TEC-0036-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "erkundungsrover-mond-typ-p",
+  "consumer_project": "noxia",
+  "coverage_basis": "evidence-applied-reconciliation",
+  "external_research_required": false,
+  "title": "Post-evidence reconciliation for OTA-TEC-0036 v1.1",
+  "question": "No new external research task. Record that the current exact OTA-TEC-0036 v1.1 blob is the reviewed evidence-applied descendant of RES-20260829-TEC0036A. The v1.1 edits implement that audit's lunar-rover findings, including the correction of the overly categorical vacuum thermal statement, narrower Apollo/LRV traction and rollover wording, and evidence-aware wheel/dust/thermal constraints. No new externally testable engineering dimension outside the cited audit was introduced by the evidence-application change.",
+  "why_now": "The exact-blob inventory marks 0036 stale because applying the successful research necessarily changed the source blob. A new external research run would duplicate the audit that produced the current wording. This reconciliation keeps the original execution provenance intact while covering the reviewed evidence-applied revision.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R", "H"],
+  "real_world_anchor": "Inherited from the prior Apollo LRV, lunar dust, thermal-control and pressurized-rover evidence audit; no new external evidence claim is introduced by this record.",
+  "publication_route_hint": "fictional_archive_document",
+  "related_research_ids": ["RES-20260829-TEC0036A"],
+  "evidence_application": {
+    "ota_commit": "e4db11fcf9f6f3ba7ab24caf9e741da0b19c9061",
+    "change_kind": "reviewed-research-application",
+    "rerun_required": false
+  },
+  "novelty_reason": "Reconciliation only; no new research dimension. Keeps exact-blob inventory coverage without falsifying the historical source pin of the executed audit.",
+  "fingerprint": "ota-tec-0036-evidence-applied-v1.1",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}
