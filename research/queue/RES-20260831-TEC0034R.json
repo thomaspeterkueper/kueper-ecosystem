@@ -1,0 +1,40 @@
+{
+  "id": "RES-20260831-TEC0034R",
+  "status": "reconciled",
+  "created": "2026-08-31T11:25:00+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0034-2026-DE.md",
+  "source_ref": "16cc8551cd0ea8624d5b6d407e1733604318316f",
+  "source_blob_sha": "6434681baf8a7446a4fa35b827d02b4d042afac8",
+  "document_signature": "OTA-TEC-0034-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "wasserextraktor-mars-typ-m",
+  "consumer_project": "noxia",
+  "coverage_basis": "evidence-applied-reconciliation",
+  "external_research_required": false,
+  "title": "Post-evidence reconciliation for OTA-TEC-0034 v1.1",
+  "question": "No new external research task. Record that the current exact OTA-TEC-0034 v1.1 blob is the reviewed evidence-applied descendant of the prior source-pinned water-extractor audits. The v1.1 changes apply those findings: Mars pressure/phase wording is narrowed, the 0-20 C process range is qualified, microwave efficiency is no longer asserted generically, the former 15-40 kWh/m3 figure is replaced by evidence-grounded per-kg/system ranges, and fixed ice-content thresholds are explicitly demoted to scenario/design assumptions. No new externally testable technical claim outside the scope of the cited prior audits was introduced by the evidence-application change.",
+  "why_now": "The OTA technical-object audit correctly marks the current blob stale after evidence was incorporated into OTA on 2026-08-30. Re-running the same web research against its own applied conclusions would be circular. This non-executable reconciliation preserves the original research provenance while binding the reviewed evidence-applied source revision.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R", "H"],
+  "real_world_anchor": "Inherited from the prior Mars water-ice ISRU thermodynamics/resource audits; no new external evidence claim is introduced by this record.",
+  "publication_route_hint": "fictional_archive_document",
+  "related_research_ids": [
+    "RES-20260829-TEC0034A",
+    "RES-20260829-TEC0034B"
+  ],
+  "evidence_application": {
+    "ota_commit": "e4db11fcf9f6f3ba7ab24caf9e741da0b19c9061",
+    "change_kind": "reviewed-research-application",
+    "rerun_required": false
+  },
+  "novelty_reason": "Reconciliation only; no new research dimension. Keeps exact-blob inventory coverage without rewriting the historical source pins of the executed audits.",
+  "fingerprint": "ota-tec-0034-evidence-applied-v1.1",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}
