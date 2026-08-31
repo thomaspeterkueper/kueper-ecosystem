@@ -17,6 +17,15 @@ class FakeDB:
 
     def rpc(self, name, payload):
         self.calls.append((name, payload))
+        if name == "kueper_mark_research_evidence_gate":
+            return {
+                "id": payload.get("p_task_id"),
+                "status": "review_pending",
+                "metadata": {
+                    "research_evidence_gate": True,
+                    "technical_pass_head_sha": payload.get("p_head_sha"),
+                },
+            }
         return {"delegated": name}
 
 
@@ -44,16 +53,26 @@ class ResearchCandidateGateTests(unittest.TestCase):
     def test_empty_file_list_is_not_candidate_only(self):
         self.assertFalse(reviewer.research_candidate_only([]))
 
-    def test_completion_is_suppressed_for_research_candidate(self):
+    def test_completion_routes_to_persisted_research_gate(self):
         db = FakeDB()
         proxy = reviewer.CompletionGuardDB(db, hold_completion=True)
+        head = "a" * 40
         result = proxy.rpc(
             "kueper_complete_reviewed_task",
-            {"p_task_id": "task-1", "p_head_sha": "a" * 40},
+            {"p_task_id": "task-1", "p_head_sha": head},
         )
         self.assertEqual(result["status"], "review_pending")
+        self.assertTrue(result["metadata"]["research_evidence_gate"])
         self.assertTrue(proxy.completion_suppressed)
-        self.assertEqual(db.calls, [])
+        self.assertEqual(
+            db.calls,
+            [
+                (
+                    "kueper_mark_research_evidence_gate",
+                    {"p_task_id": "task-1", "p_head_sha": head},
+                )
+            ],
+        )
 
     def test_other_rpc_is_delegated(self):
         db = FakeDB()
