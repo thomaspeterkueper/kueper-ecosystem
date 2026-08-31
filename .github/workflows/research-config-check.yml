@@ -13,8 +13,10 @@ on:
       - "tools/research/discover-targeted.py"
       - "tools/research/discover-ota-scoped.py"
       - "tools/research/discover-ota-scoped-dryrun.py"
+      - "tools/research/discover-ota-workqueue.py"
       - "tools/research/execute.py"
       - "tools/research/execute-targeted.py"
+      - "tools/research/test_candidate_merge_gate.py"
       - "tools/research/agent-with-exa.mjs"
       - ".github/workflows/ota-evidence-sweep.yml"
       - ".github/workflows/research-config-check.yml"
@@ -36,7 +38,7 @@ jobs:
           set -euo pipefail
           python -m json.tool research/policy.json >/dev/null
           python -m json.tool registry/projects.json >/dev/null
-          python -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/discover-ota-scoped-dryrun.py tools/research/execute.py tools/research/execute-targeted.py
+          python -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/discover-ota-scoped-dryrun.py tools/research/discover-ota-workqueue.py tools/research/execute.py tools/research/execute-targeted.py
           node --check tools/research/agent-with-exa.mjs
 
       - name: Validate profile mappings and weighted rotation
@@ -54,6 +56,7 @@ jobs:
           registry = json.loads((root / 'registry/projects.json').read_text(encoding='utf-8'))
 
           assert policy['auto_canonicalize'] is False
+          assert policy['auto_merge_candidates'] is False
           profiles = policy['evidence_profiles']
           ota_profile = profiles['ota-archive-evidence']
           assert ota_profile.get('require_source_path') is True
@@ -63,10 +66,19 @@ jobs:
           targeted_source = (root / 'tools/research/discover-targeted.py').read_text(encoding='utf-8')
           scoped_source = (root / 'tools/research/discover-ota-scoped.py').read_text(encoding='utf-8')
           dryrun_source = (root / 'tools/research/discover-ota-scoped-dryrun.py').read_text(encoding='utf-8')
+          workqueue_source = (root / 'tools/research/discover-ota-workqueue.py').read_text(encoding='utf-8')
           execute_source = (root / 'tools/research/execute.py').read_text(encoding='utf-8')
           sweep_source = (root / '.github/workflows/ota-evidence-sweep.yml').read_text(encoding='utf-8')
           assert 'source_blob_sha' in discover_source and 'source_ref' in discover_source
+          # ota-archive-evidence pins the source revision, so the workqueue bridge must
+          # emit items that satisfy the same fail-closed contract execute.py enforces.
+          assert 'source_ref' in workqueue_source and 'source_blob_sha' in workqueue_source
+          assert 'HEAD:{source_path}' in workqueue_source and 'rev-parse", "HEAD' in workqueue_source
           assert 'source blob mismatch' in execute_source and 'source_ref' in execute_source
+          # The candidate merge gate is fail-closed: no auto-merge path exists and
+          # the only merge invocation requires human review.
+          assert 'gh pr merge' not in execute_source
+          assert 'merge="review-required"' in execute_source
           assert 'KUEPER_DISCOVERY_PROJECT_ID' in targeted_source
           assert 'deterministic-document-scope-v1' in scoped_source
           assert 'select_source' in scoped_source and 'build_scope' in scoped_source
@@ -96,5 +108,9 @@ jobs:
           expected = {entry['id']: weight for entry, weight in zip(eligible, scaled)}
           assert dict(counts) == expected, (counts, expected)
 
-          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts), 'ota_source_contract': 'pinned', 'ota_weekly_sweep': True, 'ota_discovery_scope': 'deterministic-document-scope-v1', 'ota_discovery_dry_run': 'non-mutating'}, indent=2))
+          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts), 'ota_source_contract': 'pinned', 'ota_workqueue_source_contract': 'pinned', 'ota_weekly_sweep': True, 'ota_discovery_scope': 'deterministic-document-scope-v1', 'ota_discovery_dry_run': 'non-mutating'}, indent=2))
           PY
+
+      - name: Run candidate merge gate tests
+        shell: bash
+        run: python3 tools/research/test_candidate_merge_gate.py

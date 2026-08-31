@@ -5,7 +5,8 @@ The bridge clones the current OTA repository, runs its own content analyzer, the
 configured discovery agent to select only genuine external-evidence gaps. Metadata-only
 problems and fictional/canonical gaps are deliberately excluded from web research.
 Selected items are persisted in the existing central research queue and retain the exact
-OTA source path/signature so execute.py can load the declared source document fail-closed.
+OTA source path/signature plus the pinned clone revision and blob SHA so execute.py can
+load the declared source document fail-closed.
 """
 from __future__ import annotations
 
@@ -255,6 +256,7 @@ def main() -> int:
     queued: list[dict[str, Any]] = []
     try:
         run(["git", "clone", "--quiet", "--depth", "1", auth_url(OTA_REPO, token), str(temp)])
+        source_ref = run(["git", "rev-parse", "HEAD"], cwd=temp).strip()
         workqueue = build_workqueue(temp)
         agent_cmd = os.environ.get("KUEPER_DISCOVERY_AGENT_CMD", "claude -p --dangerously-skip-permissions").split()
         run(agent_cmd + [prompt(workqueue, previous)], cwd=temp)
@@ -272,6 +274,12 @@ def main() -> int:
             if signature != by_path[source_path].get("document_signature"):
                 continue
             if not (temp / source_path).exists():
+                continue
+            try:
+                source_blob_sha = run(
+                    ["git", "rev-parse", f"HEAD:{source_path}"], cwd=temp
+                ).strip()
+            except RuntimeError:
                 continue
             claim_classes = [c for c in gap.get("claim_classes", []) if isinstance(c, str)]
             if not claim_classes or any(c not in allowed_claims for c in claim_classes):
@@ -306,6 +314,8 @@ def main() -> int:
                 "source_project": "ota",
                 "source_repository": OTA_REPO,
                 "source_path": source_path,
+                "source_ref": source_ref,
+                "source_blob_sha": source_blob_sha,
                 "document_signature": signature,
                 "title": gap.get("title"),
                 "question": gap.get("question"),
