@@ -14,7 +14,6 @@ import argparse
 import hashlib
 import json
 import re
-import subprocess
 from collections import defaultdict
 from pathlib import Path
 
@@ -40,7 +39,17 @@ def scalar(fm: str, key: str) -> str | None:
     return m.group(1).strip() if m else None
 
 
-def block_has_list_value(fm: str, key: str, value: str) -> bool:
+def has_list_value(fm: str, key: str, value: str) -> bool:
+    """Support both YAML block lists and the inline-list style used by OTA."""
+    inline = re.search(rf"(?m)^{re.escape(key)}:\s*\[([^\]]*)\]\s*$", fm)
+    if inline:
+        values = {
+            part.strip().strip("\"'")
+            for part in inline.group(1).split(",")
+            if part.strip()
+        }
+        return value in values
+
     lines = fm.splitlines()
     for i, line in enumerate(lines):
         if line.strip() == f"{key}:":
@@ -136,7 +145,7 @@ def discover(ota_root: Path) -> tuple[list[dict], list[str]]:
         fm = frontmatter(text)
         if not fm or scalar(fm, "series") != "TEC":
             continue
-        if not block_has_list_value(fm, "contexts", "noxia"):
+        if not has_list_value(fm, "contexts", "noxia"):
             continue
         object_id = scalar(fm, "objectId")
         mapped_object_id = mapping_value(fm, "noxia", "objectId")
