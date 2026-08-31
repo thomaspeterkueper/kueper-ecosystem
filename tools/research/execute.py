@@ -2,8 +2,8 @@
 """Execute queued KUEPER research topics and publish evidence-marked KG candidates.
 
 Research results are staging material only. Structural evidence gates may create a
-candidate PR, but the executor never merges or enables auto-merge. Merge eligibility
-belongs to a separate review-aware reconciliation step.
+draft candidate PR, but the executor never merges, marks it ready, or enables
+auto-merge. Merge eligibility belongs to a separate review-aware reconciliation step.
 """
 from __future__ import annotations
 import base64, datetime as dt, json, os, re, shlex, shutil, subprocess, tempfile, urllib.error, urllib.parse, urllib.request
@@ -247,10 +247,10 @@ def execute(token:str,item:dict[str,Any],payload:dict[str,Any])->dict[str,Any]:
         if paths!=[allowed]:raise RuntimeError(f"research agent changed forbidden files: {paths}")
         run(["git","config","user.name","KUEPER Research Bot"],cwd=root);run(["git","config","user.email","research-bot@users.noreply.github.com"],cwd=root)
         run(["git","add",allowed],cwd=root);run(["git","commit","-m",f"research: candidate {item['id']}"],cwd=root);run(["git","push","--quiet","origin",branch],cwd=root)
-        pr=gh(token,"POST",f"/repos/{TARGET}/pulls",{"title":f"[Research] {item['id']}: {item['title']}","head":branch,"base":default,"body":f"Multilingual evidence candidate for `{item['source_project']}` using evidence profile `{evidence_profile(item)[0]}`. Evidence score: `{meta.get('evidence_score')}`. Publication recommendation: `{meta.get('publication_recommendation') or 'none'}`. This PR adds only non-canonical staging material under `{POLICY['candidate_path']}/`; it does not modify canonical KG data or publish to OTA/kueper.com. Merge remains review-gated and is never enabled by the research executor.","draft":False})
-        merge="review-required"
+        pr=gh(token,"POST",f"/repos/{TARGET}/pulls",{"title":f"[Research] {item['id']}: {item['title']}","head":branch,"base":default,"body":f"Multilingual evidence candidate for `{item['source_project']}` using evidence profile `{evidence_profile(item)[0]}`. Evidence score: `{meta.get('evidence_score')}`. Publication recommendation: `{meta.get('publication_recommendation') or 'none'}`. This draft PR adds only non-canonical staging material under `{POLICY['candidate_path']}/`; it does not modify canonical KG data or publish to OTA/kueper.com. It must remain draft until explicit critical evidence review; the research executor never marks it ready, merges it, or enables auto-merge.","draft":True})
+        merge="draft-review-required"
         update_queue(token,payload,item,"candidate-pr",pr["html_url"])
-        return {"id":item["id"],"result":"candidate-pr","pr":pr["html_url"],"merge":merge,"evidence_score":meta.get("evidence_score"),"languages_used":meta.get("languages_used"),"publication_recommendation":meta.get("publication_recommendation")}
+        return {"id":item["id"],"result":"candidate-pr","pr":pr["html_url"],"merge":merge,"draft":True,"evidence_score":meta.get("evidence_score"),"languages_used":meta.get("languages_used"),"publication_recommendation":meta.get("publication_recommendation")}
     except Exception as exc:
         try:update_queue(token,payload,item,"needs-review",error=str(exc))
         except Exception:pass

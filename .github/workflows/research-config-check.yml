@@ -86,7 +86,8 @@ jobs:
           assert 'HEAD:{source_path}' in workqueue_source and 'rev-parse", "HEAD' in workqueue_source
           assert 'source blob mismatch' in execute_source and 'source_ref' in execute_source
           assert 'gh pr merge' not in execute_source
-          assert 'merge="review-required"' in execute_source
+          assert '"draft":True' in execute_source
+          assert 'merge="draft-review-required"' in execute_source
           assert 'KUEPER_DISCOVERY_PROJECT_ID' in targeted_source
           assert 'deterministic-document-scope-v1' in scoped_source
           assert 'select_source' in scoped_source and 'build_scope' in scoped_source
