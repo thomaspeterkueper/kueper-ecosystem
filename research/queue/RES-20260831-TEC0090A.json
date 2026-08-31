@@ -1,6 +1,6 @@
 {
   "id": "RES-20260831-TEC0090A",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-31T11:30:20+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -14,20 +14,30 @@
   "title": "Mars regolith roads, traffic loads and road-versus-rail trade-off audit for OTA-TEC-0090",
   "question": "Source-grounded audit of the exact OTA-TEC-0090 Mars route-corridor dossier. Assess: (1) what Mars regolith/simulant geotechnical evidence supports about bearing, shear, compaction, traction and prepared surfaces while keeping site-specific design values open; (2) realistic construction and maintenance options for graded/compacted regolith tracks and locally stabilized or sintered surfaces; (3) dust, thermal cycling, settlement and repeated wheel-load effects; (4) rolling-resistance and vehicle-energy implications of prepared versus unprepared routes; (5) what evidence exists for rail or guided transport concepts on Mars/Moon and under which high-throughput, repetitive freight conditions they might outperform road vehicles; (6) why no universal road-to-rail crossover point can be claimed without load, distance, construction energy and maintenance assumptions; and (7) wording requiring narrowing or [H]/[OFFEN] status. Do NOT set road widths, axle loads, network geometry, build costs, travel-time bonuses, rail unlocks or other NOXIA balancing values.",
   "why_now": "OTA-TEC-0090 is an uncovered mapped infrastructure object and explicitly remains ENTWURF pending geotechnical load limits and a source-grounded road-versus-rail trade-off.",
-  "languages": ["en", "de"],
+  "languages": [
+    "en",
+    "de"
+  ],
   "evidence_profile": "ota-archive-evidence",
-  "claim_classes": ["R", "H"],
+  "claim_classes": [
+    "R",
+    "H"
+  ],
   "external_research_required": true,
   "real_world_anchor": "Mars/lunar regolith geotechnics and simulant testing; planetary rover terramechanics; prepared-surface construction concepts; space-settlement freight road/rail/guided-transport studies.",
   "publication_route_hint": "fictional_archive_document",
   "project_weight": 0.95,
   "relevance_score": 0.94,
-  "related_research_ids": ["RES-20260829-TEC0036A"],
+  "related_research_ids": [
+    "RES-20260829-TEC0036A"
+  ],
   "novelty_reason": "Extends rover-level mobility evidence into linear infrastructure and throughput-dependent road/rail system design without re-auditing the rover itself.",
   "fingerprint": "ota-tec-0090-mars-routes-geotechnics",
   "consumer_impact_policy": {
     "flag_noxia_impact": true,
     "auto_update_noxia": false,
     "balancing_is_out_of_scope": true
-  }
+  },
+  "updated_at": "2026-08-31T14:43:35+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/79"
 }
