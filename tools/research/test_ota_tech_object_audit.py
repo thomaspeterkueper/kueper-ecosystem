@@ -12,12 +12,12 @@ mod = importlib.util.module_from_spec(spec)
 assert spec and spec.loader
 spec.loader.exec_module(mod)
 
+# Mirrors the actual OTA frontmatter style: contexts is normally an inline list.
 DOC = '''---
 signature: "OTA-TEC-0099-2026-DE"
 series: "TEC"
 objectId: test-object
-contexts:
-  - noxia
+contexts: ["noxia"]
 mappings:
   noxia:
     objectId: test-object
