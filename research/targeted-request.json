@@ -1,8 +1,8 @@
 {
-  "request_id": "OTA-NOXIA-TEC-0093-ECLSS-2026-08-31",
-  "created": "2026-08-31T11:34:00+00:00",
+  "request_id": "OTA-NOXIA-TEC-0092-PIONEER-2026-08-31",
+  "created": "2026-08-31T13:52:00+00:00",
   "research_ids": [
-    "RES-20260831-TEC0093A"
+    "RES-20260831-TEC0092A"
   ],
-  "reason": "Execute the highest-reuse remaining OTA->NOXIA technical-object evidence audit: regenerative Life-Support core subsystem performance, material closure, crew scaling, reliability and shared-core/variant logic. Reuse CYGNUS/vehicle evidence where appropriate; preserve fictional canon and NOXIA balancing."
+  "reason": "Execute the next highest-priority OTA->NOXIA technical-object evidence audit while Vercel/AI Gateway research capacity is available: integrated early lunar transfer-plus-landing architecture, orbital refueling/propellant transfer, delta-v/mass closure, plume-surface interaction and abort/rescue constraints. Reuse the existing CYGNUS, Starport Launcher, PELICAN and Gateway evidence instead of duplicating it; preserve all fictional timeline choices and NOXIA balancing boundaries."
 }
