@@ -9,42 +9,24 @@
   "source_blob_sha": "d4379892f4902c48851ec23b86c100fc665d1385",
   "document_signature": "OTA-TEC-0029-2048-DE",
   "title": "Quantum-sensor [R] claims and reference audit for OTA-TEC-0029 (optical lattice clocks, SQUIDs, atom interferometers)",
-  "question": "Source-grounded audit of the exact OTA-TEC-0029-2048-DE supplementary specification against the primary quantum-metrology and applied-ML literature. Assess only the externally checkable [R] layer: (1) verify the Generation-0 optical lattice clock figures — Sr-87 clock transition at 429 THz, fractional precision Δf/f < 10^-18 (NIST 2020), the '1 second in 30 billion years' conversion, and the per-laboratory table (NIST Sr accuracy 2.1e-18, RIKEN Yb 3.2e-18, PTB Sr 1.8e-18; 1s stability 1e-16/4e-16/2e-16; uptime 85%/70%/80%; cost $2.5M/$3M/$2.8M) against the primary clock papers from NIST, RIKEN and PTB; (2) verify the SQUID claim ΔB < 10^-13 T for low-Tc SQUIDs and the stated '10^7-fold more sensitive than Hall sensors' factor; (3) verify the atom-interferometer precision claims Δg/g < 10^-10 (gravitation) and Δω < 10^-8 rad/s (rotation) against current atom-gravimeter/gyroscope results; (4) verify the cited references exist as cited — Ludlow et al. (2015) 'Optical atomic clocks', Rev. Mod. Phys. 87, 637; Bothwell et al. (2022) 'JILA SrI optical lattice clock', Metrologia 56 (check whether the correct citation is Bothwell et al. 2019, Metrologia 56, 065004, making the year wrong and the volume right); Liu et al. (2008) 'Isolation Forest', ICDM 2008; Hochreiter & Schmidhuber (1997) 'LSTM', Neural Computation 9(8) — and flag any hallucinated, misdated or misattributed citation; (5) assess the stated real-world physics behind the LOD-relevance claims: Dst-index measurement via SQUID, '10-20 year' core-oscillation coupling to length-of-day, the VLBI/GNSS/SLR/clock LOD-precision figures (0.02-0.05 ms, TRL 9) in the multi-method comparison table, and the plausibility of the stated TRL ratings; (6) separate the [R] hardware claims from the fictional AVI scenario projections (15-station 2026-2035 network, the 2030 'AVI validiert' scenario with correlation thresholds ρ > 0.5/0.3/0.6 and p < 0.001, LLM-hypothesis-generation figures) and identify wording in the [R] section that should be narrowed or reclassified. Do NOT evaluate or alter the fictional AVI model, the OTA-TEC-0028 spiral-crystal experiment, the 2048 setting, or any NOXIA/OTA balancing value. Distinguish [R] verified, [H] plausible extrapolation, [F]/[W] fictional setting, [OFFEN] unresolved.",
-  "why_now": "OTA-TEC-0029 is one of the archive's most [R]-dense technical specs (priority 11, 28 headings) and the declared orthogonal-verification companion to OTA-TEC-0028, yet its quantum-sensor precision figures, TRL ratings and reference list have never been checked against primary sources. At least one citation (Bothwell et al., Metrologia 56, dated 2022) appears misdated (the JILA SrI clock paper is 2019), and the per-laboratory accuracy/stability/cost table needs verification before the [R] layer can stand.",
-  "languages": [
-    "de",
-    "en"
-  ],
+  "question": "Audit the exact OTA-TEC-0029 real-science layer: optical clocks, SQUIDs, atom interferometers, Dst and LOD/EOP claims, keeping uncertainty, stability, noise density, integration time, product definition and TRL separate.",
+  "why_now": "OTA-TEC-0029 contains real sensor anchors but over-compresses heterogeneous metrics into institution-wide tables and includes a misdated Bothwell citation. Critical review is needed before reuse.",
+  "languages": ["de", "en"],
   "evidence_profile": "ota-archive-evidence",
-  "claim_classes": [
-    "R"
-  ],
-  "real_world_anchor": "Real quantum-metrology devices and literature: Sr-87 / Yb-171 optical lattice clocks at NIST (Boulder), RIKEN and PTB; low-Tc SQUID magnetometers; atom-interferometer gravimeters/gyroscopes; and the cited primary papers (Ludlow 2015, Bothwell, Liu 2008, Hochreiter & Schmidhuber 1997) plus NASA/GGOS LOD measurement practice (VLBI, GNSS, SLR).",
+  "claim_classes": ["R"],
+  "real_world_anchor": "Real optical clocks, low-Tc SQUIDs, atom interferometers and IERS/Kyoto geophysical measurement products",
   "publication_route_hint": "fictional_archive_document",
   "external_research_required": true,
   "project_weight": 0.9,
   "relevance_score": 0.825,
-  "scores": {
-    "project_relevance": 0.9,
-    "cross_project_reuse": 0.7,
-    "uncertainty": 0.8,
-    "evidence_potential": 0.9
-  },
-  "related_research_ids": [
-    "RES-20260831-3DEACC8E"
-  ],
-  "novelty_reason": "The prior audit RES-20260831-3DEACC8E verified only the two [R] diode citations (Birch et al., Vogel et al.) in the main document OTA-TEC-0028 and explicitly excluded its AVI field-coupling layer. This companion document's own [R] claims — optical-clock accuracies/stabilities/costs per laboratory, SQUID and atom-interferometer sensitivities, TRL ratings, and its reference list — have not been checked, and at least one citation appears misdated.",
-  "workqueue_basis": {
-    "substance": "KURZ",
-    "words": 351,
-    "quality_flags": [
-      "GENERIC_TITLE",
-      "GENERIC_SUMMARY",
-      "RELATION_GAP",
-      "NO_VISUAL"
-    ]
-  },
+  "scores": {"project_relevance": 0.9, "cross_project_reuse": 0.7, "uncertainty": 0.8, "evidence_potential": 0.9},
+  "related_research_ids": ["RES-20260831-3DEACC8E"],
+  "novelty_reason": "This companion document's own quantum-sensor, EOP and citation layer had not been critically reconciled.",
   "fingerprint": "4ce6d2e56ad025d8",
-  "updated_at": "2026-08-31T10:18:25+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/65"
+  "updated_at": "2026-08-31T20:00:00+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/94",
+  "superseded_candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/65",
+  "critical_review_revision": "R1",
+  "critical_review_head_sha": "b31c7dcd11ae8a08a12bda4917c71a83289afdd6",
+  "superseded_merge_commit": "b0c75a1abda4ae084f49b453cc7a5a6605053305"
 }
