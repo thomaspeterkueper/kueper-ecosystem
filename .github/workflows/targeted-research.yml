@@ -90,7 +90,10 @@ jobs:
           node --version
 
       - name: Research selected queued topics
-        run: python3 tools/research/execute-targeted.py | tee targeted-research-report.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/research/execute-targeted.py | tee targeted-research-report.json
 
       - name: Upload research report
         if: always()
