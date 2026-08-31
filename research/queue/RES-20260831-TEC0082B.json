@@ -1,0 +1,48 @@
+{
+  "id": "RES-20260831-TEC0082B",
+  "status": "queued",
+  "created": "2026-08-31T09:38:19+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0082-2026-DE.md",
+  "source_ref": "16cc8551cd0ea8624d5b6d407e1733604318316f",
+  "source_blob_sha": "74a00c288d60e92a598996f9ae19978dca4554f0",
+  "document_signature": "OTA-TEC-0082-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "cygnus-ctv-cislunar-transferschiff",
+  "consumer_project": "noxia",
+  "title": "Rotating habitat, human factors, radiation and life-support audit for OTA-TEC-0082",
+  "question": "Source-grounded audit of the exact OTA-TEC-0082 CYGNUS CTV dossier. Using primary, peer-reviewed and official human-spaceflight sources, assess only the externally checkable crew-environment layer: (1) verify the rotational-gravity calculation for a 12 m diameter section interpreted as r=6 m and a 0.2 g target, including the resulting angular velocity/rpm; (2) assess evidence on short-radius rotating habitats, Coriolis effects, motion sickness, head-movement sensitivity, adaptation and the limits of extrapolating laboratory/ground studies to a 72-84 h crewed transit; (3) identify what larger-radius/lower-rpm design space would reduce human-factors burden, without changing the fictional CYGNUS geometry automatically; (4) characterize the real cislunar radiation environment for a multi-day crewed transfer, separating GCR background from solar particle events and assessing shielding/storm-shelter implications, including the trade-off created by large windows; (5) assess life-support requirements for a multi-day crewed vehicle, including CO2 removal, humidity/thermal control, water/oxygen consumables or regeneration, fault tolerance and what 'triple redundant life support' would need to mean operationally before it can be treated as an engineering claim; and (6) identify wording that should be narrowed, reclassified or kept [H]/[F/OFFEN]. Do NOT validate or alter fictional crew capacity, fleet availability, introduction dates, operator names, passenger comfort claims, NOXIA costs, unlocks, production values or other gameplay balancing.",
+  "why_now": "OTA PR #14 explicitly reserved a second source-pinned audit for rotating-habitat human factors, radiation and transfer assumptions after OTA-TEC-0082 entered the canonical OTA->NOXIA pipeline. The production inventory now reports the current CYGNUS blob as uncovered; splitting this crew-environment research from propulsion avoids conflating distinct evidence domains.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Rotational artificial-gravity mechanics and human-factors literature; NASA/space-agency cislunar radiation and solar-particle-event guidance; operational environmental-control and life-support evidence from crewed spacecraft and stations.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 0.99,
+  "scores": {
+    "project_relevance": 1.0,
+    "cross_project_reuse": 0.95,
+    "uncertainty": 0.95,
+    "evidence_potential": 1.0
+  },
+  "related_research_ids": [
+    "RES-20260831-TEC0082A"
+  ],
+  "novelty_reason": "First exact-source-revision human-factors, radiation and ECLSS audit for the canonical CYGNUS CTV. Existing OTA technical-object coverage does not test the 6 m-radius/0.2 g habitat or the CYGNUS multi-day crew-environment assumptions.",
+  "fingerprint": "ota-tec-0082-cygnus-crew-environment",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}
