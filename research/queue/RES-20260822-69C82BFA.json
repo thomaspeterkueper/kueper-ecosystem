@@ -1,6 +1,6 @@
 {
   "id": "RES-20260822-69C82BFA",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-22T04:00:20+00:00",
   "source_project": "mishkenaz",
   "source_repository": "thomaspeterkueper/mishkenaz.org",
@@ -21,5 +21,21 @@
   },
   "fingerprint": "69c82bfa00fa1060",
   "updated_at": "2026-08-22T04:19:18+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/7"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/7",
+  "validated_at": "2026-08-31T11:43:59+00:00",
+  "validation_summary": "The candidate assesses the core Mishkenaz premise (language change through physiological + environmental factors) as supportable in two of three parts: articulatory-perceptual sound change (Ohala) and diaspora/exile language development (koineization, stratification, substrate contact) are well documented — with the Indo-Aryan diaspora (Romani, Domari, Parya, Saurashtra) as the closest real model — while climate-geographic phonology (Everett et al.) is disputed and must not be presented as fact. The named features (-om/-ath/-il, Ta-Konstante, Galut-Layer G1–G6) are not attested forms; only the underlying typological patterns (suffixal aspect morphology, dental -t- perfective marker, real Tamil -il locative, Vedic -tha-, strata model) are real. Since all content pages in this repo are still placeholders and the canonical migration from thomas-kueper.de (EXT-ECO-MISH-20260714-001) is pending, the candidate creates concrete pre-migration verification and enrichment actions for mishkenaz.",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-MISH-20260831-001",
+      "target": "mishkenaz",
+      "repository": "thomaspeterkueper/mishkenaz.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-MISH-20260831-002",
+      "target": "mishkenaz",
+      "repository": "thomaspeterkueper/mishkenaz.org"
+    }
+  ]
 }
