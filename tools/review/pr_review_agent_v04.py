@@ -29,9 +29,13 @@ from __future__ import annotations
 import json
 import os
 import subprocess
+import sys
+from pathlib import Path
 from typing import Any
 
-import pr_review_agent_v03 as v03
+REVIEW_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(REVIEW_DIR))
+import pr_review_agent_v03 as v03  # noqa: E402
 
 base = v03.v02.base
 _original_review_task = base.review_task
