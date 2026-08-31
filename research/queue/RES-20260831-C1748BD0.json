@@ -1,0 +1,49 @@
+{
+  "id": "RES-20260831-C1748BD0",
+  "status": "queued",
+  "created": "2026-08-31T10:09:53+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0019-2091-DE.md",
+  "source_ref": "16cc8551cd0ea8624d5b6d407e1733604318316f",
+  "source_blob_sha": "b93bb189ff2b21968f0dc4dfca15124a7aa3f618",
+  "document_signature": "OTA-TEC-0019-2091-DE",
+  "title": "ECLSS alarm-threshold and survival-protocol audit for OTA-TEC-0019 (pCO2, pO2, leak rates, survival pressure)",
+  "question": "Source-grounded audit of the exact OTA-TEC-0019-2091-DE ECLSS survival SOP against primary aerospace-medicine, NASA/ESA ECLSS and human-physiology sources. Assess only the externally checkable physiology/engineering layer: (1) verify the CO2 (pCO2) alarm thresholds — NOMINAL < 0.4 kPa (~3 mmHg), GELB 0.4-0.9 kPa (~3-7 mmHg), ROT 0.9-2.0 kPa (~7-15 mmHg), SCHWARZ > 2.0 kPa (>15 mmHg) — against NASA spacecraft CO2 SMAC values, the ISS CO2 partial-pressure operating range, and acute hypercapnia / CO2-toxicity limits, including whether LiOH activation at 0.9 kPa is consistent with real spacecraft practice; (2) verify the O2 (pO2) thresholds (NOMINAL 18-21 kPa, GELB 17-18, ROT < 17, SCHWARZ < 15 kPa) against cabin-oxygen/hypoxia standards (equivalent altitude, time-of-useful-consciousness) and NASA/ESA habitable-pressure practice; (3) assess the cabin leak-rate thresholds (NOMINAL < 50 Pa/min, GELB 50-150, ROT 150-400, SCHWARZ > 400 Pa/min) against real spacecraft leak-detection/depressurization criteria and the depressurization times these rates imply for a KITE-class cabin volume; (4) verify the 'survival mode' pressure of 60-65 kPa (~0.6 atm) against hypobaric-tolerance, flammability, structural-load and EVA-prebreathing logic, and the '2 L/person/day' water-restriction figure; (5) check the stated emergency systems against real ECLSS/escape-system practice — LiOH-cartridge activation for CO2 spikes and the claimed regeneration of scrubber A/B, chlorate ('O2 candle') candles ignited singly at 30-60 s intervals with a thermal-load caveat, and fire-suppressor pre-verification; (6) identify wording in the thresholds that should be narrowed, corrected or reclassified [R]/[H]/[F], and which figures are defensible as realistic operational SOP values. Do NOT evaluate or alter the fictional KITE-class vehicle, the 2065-2100 applicability window, crew/capacity numbers, narrative canon, or any NOXIA/OTA balancing value.",
+  "why_now": "OTA-TEC-0019 is a priority-12 operational SOP whose entire emergency architecture rests on concrete numeric thresholds (pCO2, pO2, leak rate, survival pressure). These are directly checkable against NASA SMAC, ISS operations and aerospace-medicine standards; any mismatch propagates into crew-safety framing across the KITE/ECLSS canon. No prior research has verified these specific anchors, and the document carries a relation_gap with the KITE specification it governs.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "real_world_anchor": "Real aerospace-medicine and ECLSS standards: NASA Spacecraft Maximum Allowable Concentrations for CO2, ISS pCO2/pO2 operational ranges, hypoxic and hypercapnic physiological limits, spacecraft cabin leak-rate and depressurization criteria, hypobaric survival pressure (0.6 atm), LiOH CO2 scrubbing, and chlorate-candle (O2 candle) oxygen-generation practice.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.725,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [
+    "RES-20260831-TEC0082B"
+  ],
+  "novelty_reason": "RES-20260831-TEC0082B assessed general life-support requirements for the CYGNUS CTV (CO2 removal, consumables, fault tolerance) but did not verify this SOP's specific numeric alarm thresholds (pCO2/pO2 in kPa, leak rates in Pa/min, survival pressure 60-65 kPa, 2 L/person/day) against NASA SMAC and aerospace-medicine standards, nor its LiOH-regeneration and O2-candle operational claims.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 483,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "c1748bd0bc34e4eb"
+}
