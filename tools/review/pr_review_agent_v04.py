@@ -1,24 +1,28 @@
 #!/usr/bin/env python3
 """KUEPER PR reviewer v0.4 — hold research candidates after technical PASS.
 
-The normal reviewer is intentionally allowed to mark ordinary implementation PRs
-completed after a persisted PASS on the exact current head. Research evidence
-candidates are different: a technically clean Markdown candidate can still contain
-source overreach, stale market values, or incorrect scientific generalization.
+The normal reviewer may complete ordinary implementation PR tasks after a persisted
+PASS on the exact current head. Research evidence candidates are different: a
+technically clean Markdown candidate can still contain source overreach, stale market
+values, or incorrect scientific generalization.
 
-V0.4 therefore adds one narrow lifecycle guard around v0.3:
+V0.4 adds one narrow lifecycle guard around v0.3:
 - inspect the current PR file list before review;
 - when every changed path is below ``research/candidates/``, persist the normal
-  technical review but suppress ``kueper_complete_reviewed_task``;
-- leave the task ``review_pending`` so completion cannot be mistaken for evidence
-  acceptance;
+  technical review but replace completion with the server-side research evidence gate;
+- leave the task ``review_pending`` and mark it as requiring an explicit evidence
+  approval for the exact technical-PASS head;
 - rely on ``kueper_list_review_pending`` exact-head deduplication to avoid reviewing
   the same persisted head again;
 - when the PR head changes, direct-PR intake records the new head and the existing
   queue logic makes it reviewable again.
 
+The matching Supabase RPCs make this fail closed even if another service later calls
+``kueper_complete_reviewed_task`` directly: gated research tasks can complete only
+after ``kueper_approve_research_candidate`` has approved the same head SHA.
+
 No merge is performed here. The research candidate still requires explicit critical
-scientific/evidence review before a human or trusted orchestrator merges it.
+scientific/evidence review before a human or trusted orchestrator approves and merges it.
 """
 from __future__ import annotations
 
@@ -78,7 +82,7 @@ def pr_changed_paths(pr_url: str) -> list[str]:
 
 
 class CompletionGuardDB:
-    """Proxy Supabase RPC calls while suppressing only research completion."""
+    """Proxy Supabase RPC calls while routing research completion into the evidence gate."""
 
     def __init__(self, db: Any, *, hold_completion: bool):
         self._db = db
@@ -88,11 +92,13 @@ class CompletionGuardDB:
     def rpc(self, name: str, payload: dict[str, Any]):
         if self.hold_completion and name == "kueper_complete_reviewed_task":
             self.completion_suppressed = True
-            return {
-                "id": payload.get("p_task_id"),
-                "status": "review_pending",
-                "research_manual_gate": True,
-            }
+            return self._db.rpc(
+                "kueper_mark_research_evidence_gate",
+                {
+                    "p_task_id": payload.get("p_task_id"),
+                    "p_head_sha": payload.get("p_head_sha"),
+                },
+            )
         return self._db.rpc(name, payload)
 
     def __getattr__(self, name: str):
@@ -106,10 +112,11 @@ def _post_research_gate_comment(pr_url: str, head_sha: str) -> None:
         env["GH_TOKEN"] = token
     body = (
         f"KUEPER research evidence gate: technical **PASS** recorded for `{head_sha[:12]}`, "
-        "but this PR changes only `research/candidates/`. The review task therefore remains "
-        "`review_pending` and is **not** transitioned to completed. The persisted exact-head "
-        "review suppresses duplicate review runs; a changed head becomes reviewable again. "
-        "Critical scientific/evidence review is still required before merge."
+        "but this PR changes only `research/candidates/`. The server-side evidence gate is now "
+        "active: the review task remains `review_pending`, requires explicit critical evidence "
+        "approval for this exact head, and `kueper_complete_reviewed_task` will fail closed until "
+        "that approval is recorded. The persisted exact-head review suppresses duplicate review "
+        "runs; a changed head becomes reviewable again. No merge is authorized by this technical PASS."
     )
     cp = subprocess.run(
         ["gh", "pr", "comment", pr_url, "--body", body],
