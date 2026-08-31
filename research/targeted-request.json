@@ -1,10 +1,9 @@
 {
-  "request_id": "SSF-SCIENCE-QUEUED-BLOCK-2026-08-31",
-  "created": "2026-08-31T14:41:00+00:00",
+  "request_id": "SSF-SCIENCE-LARGE-SOURCE-RETRY-2026-08-31",
+  "created": "2026-08-31T18:44:20+00:00",
   "research_ids": [
     "RES-20260831-A397C7AD",
-    "RES-20260831-B813E7F4",
-    "RES-20260831-EAA9EDD9"
+    "RES-20260831-B813E7F4"
   ],
-  "reason": "Execute the remaining already-authorized queued SSF science research as one serialized block after the active OTA-NOXIA technical research run, maximizing the remaining 2026-08-31 search window without rerunning existing candidate-pr items. Verify teaching claims against primary/high-quality scientific sources, preserve source-pinned scope, and do not invent gameplay or NOXIA balancing values."
+  "reason": "Retry the two SSF chemistry audits that failed only because the large pinned learningPaths.ts source exceeded OS argv limits. The full source blob remains SHA-verified; explicit source_anchors now bound the exact source excerpts passed to the research agent. Preserve science evidence rules and do not rerun the already successful permanent-magnet candidate."
 }
