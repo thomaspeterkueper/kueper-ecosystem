@@ -1,6 +1,6 @@
 {
   "id": "RES-20260823-273FD1BF",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-23T04:06:20+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -20,5 +20,27 @@
   },
   "fingerprint": "273fd1bf2eba0d48",
   "updated_at": "2026-08-23T04:14:05+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/8"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/8",
+  "validated_at": "2026-08-31T11:47:35+00:00",
+  "validation_summary": "The candidate examines OTA-SCI-0080-2026-DE, the scientific anchor [R] for the fictional 'singender Schlüssel' (Yin-Hua saga). It shows that the canon's [R/T] premise — Levantine copper ores (Sinai/Cyprus/Timna) carry monazite/thorite radiogenic heat sources and that Qatna/Amara lies on the Syrian phosphate belt — contradicts published geochemistry: Troodos whole-rock U≈0.17/Th≈0.52 ppm with no monazite carrier; Sinai ore U 30–>200 ppm (verified slag ET-59/2 U=230 µg/g) yielding only ~20 nW/kg, 8–10 orders below perceptible warmth; Syrian phosphates U-bound in apatite/organic matter (Th/U≈0.04–0.08), belt 50–150 km from Qatna and copper-free. It partially closes the data gap the canon itself marks, offers concrete reference values, and exposes 'Amara' as having no locatable real-world referent near Qatna while being used in a real-geology [R/T] claim. Three OTA actions follow: a classification decision on the contradicted [R/T] premise (mirroring the OTA-FND-0024 v1.1 evidence-audit pr",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260831-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260831-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260831-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
