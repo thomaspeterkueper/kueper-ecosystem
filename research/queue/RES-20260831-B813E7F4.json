@@ -7,34 +7,26 @@
   "source_path": "lib/learningPaths.ts",
   "source_ref": "a58fce20a9a595408124cd9bbb14b24271ac3389",
   "source_blob_sha": "4fae89e554754c85f6248264a0f4ec665e8c302e",
-  "source_anchors": [
-    "PATH:SSF:CHE-KUECHE-KARAMELL-0001"
-  ],
+  "source_anchors": ["PATH:SSF:CHE-KUECHE-KARAMELL-0001"],
   "title": "Verify and source the caramelization temperature claims in the kitchen-chemistry learning path (sugar melting/onset thresholds)",
   "question": "What are the scientifically correct melting points and caramelization onset temperatures for fructose, glucose, sucrose and maltose, and is the hard-threshold framing of the KARAMELL path ('Zucker beginnt bei etwa 160°C zu schmelzen', 'Unter 160°C passiert nichts', 'Fruchtzucker 110 / Traubenzucker 150 / Haushaltszucker 160 / Malzzucker 180 Grad') accurate, or is caramelization a temperature- and time-dependent rate process with sucrose actually melting near 186°C?",
-  "why_now": "The prototype path PATH:SSF:CHE-KUECHE-KARAMELL-0001 (registered in lib/learningPathRegistry.ts and linked as an optional branch from the Maillard path) teaches exact sugar thresholds as crisp facts to NOXIA learners. Sucrose melts at about 186°C with simultaneous decomposition and caramelization is a rate process, so the current claims likely mis-teach phase behaviour. A sourced correction before the path ships protects educational quality and the KG chemistry entities (CON:CHE-ORGANIC, KD:CHE-THERMAL) it feeds.",
-  "languages": [
-    "en",
-    "de"
-  ],
+  "why_now": "The prototype path PATH:SSF:CHE-KUECHE-KARAMELL-0001 teaches exact sugar thresholds as crisp facts to NOXIA learners. The current claims mix thermal events and reaction kinetics; a sourced correction is required before shipping.",
+  "languages": ["en", "de"],
   "evidence_profile": "science",
-  "claim_classes": [
-    "R"
-  ],
+  "claim_classes": ["R"],
   "external_research_required": true,
-  "real_world_anchor": "Melting points and caramelization onset temperatures of fructose, glucose, sucrose and maltose; whether a hard 160°C onset threshold is scientifically accurate",
+  "real_world_anchor": "Melting/crystalline-structure-loss events and caramelization kinetics of fructose, glucose, sucrose and maltose; whether a hard 160°C threshold is scientifically accurate",
   "publication_route_hint": null,
   "project_weight": 0.8,
   "relevance_score": 0.825,
-  "scores": {
-    "project_relevance": 0.9,
-    "cross_project_reuse": 0.8,
-    "uncertainty": 0.75,
-    "evidence_potential": 0.85
-  },
+  "scores": {"project_relevance": 0.9, "cross_project_reuse": 0.8, "uncertainty": 0.75, "evidence_potential": 0.85},
   "related_research_ids": [],
   "novelty_reason": null,
   "fingerprint": "b813e7f4ee43e9f5",
-  "updated_at": "2026-08-31T18:56:46+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/89"
+  "updated_at": "2026-08-31T20:00:00+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/91",
+  "superseded_candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/89",
+  "critical_review_revision": "R1",
+  "critical_review_head_sha": "f75ab77cb49e9c42e13a93be1c256b9d85dc159b",
+  "superseded_merge_commit": "7aea3dc480a2f4c1c5e8ffab07f8e6458390d15d"
 }
