@@ -1,9 +1,9 @@
 {
-  "request_id": "OTA-NOXIA-TEC-0087-GATEWAY-2026-08-30",
-  "created": "2026-08-30T15:26:00+00:00",
+  "request_id": "OTA-NOXIA-TEC-0082-CYGNUS-2026-08-31",
+  "created": "2026-08-31T11:19:43+00:00",
   "research_ids": [
-    "RES-20260830-TEC0087A",
-    "RES-20260830-TEC0087B"
+    "RES-20260831-TEC0082A",
+    "RES-20260831-TEC0082B"
   ],
-  "reason": "Run source-grounded evidence audits for OTA-TEC-0087 Gateway EML-2: L2/halo/NRHO orbital interpretation and stationkeeping, plus cislunar depot/logistics and Gateway-Tycho-LLO-CYGNUS-PELICAN traffic closure. Enforce ota-tech-object-v1; preserve fictional infrastructure parameters and NOXIA balancing."
+  "reason": "Run the two explicitly reviewed, source-pinned ota-tech-object-v1 evidence audits for OTA-TEC-0082 CYGNUS CTV: cislunar delta-v/Hydrolox/cryogenic closure and rotating-habitat/radiation/ECLSS human-factors closure. Preserve fictional canon and NOXIA balancing; report consumer impact only."
 }
