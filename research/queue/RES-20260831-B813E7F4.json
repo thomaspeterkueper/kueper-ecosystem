@@ -1,12 +1,15 @@
 {
   "id": "RES-20260831-B813E7F4",
-  "status": "needs-review",
+  "status": "queued",
   "created": "2026-08-31T09:54:59+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
   "source_path": "lib/learningPaths.ts",
   "source_ref": "a58fce20a9a595408124cd9bbb14b24271ac3389",
   "source_blob_sha": "4fae89e554754c85f6248264a0f4ec665e8c302e",
+  "source_anchors": [
+    "PATH:SSF:CHE-KUECHE-KARAMELL-0001"
+  ],
   "title": "Verify and source the caramelization temperature claims in the kitchen-chemistry learning path (sugar melting/onset thresholds)",
   "question": "What are the scientifically correct melting points and caramelization onset temperatures for fructose, glucose, sucrose and maltose, and is the hard-threshold framing of the KARAMELL path ('Zucker beginnt bei etwa 160°C zu schmelzen', 'Unter 160°C passiert nichts', 'Fruchtzucker 110 / Traubenzucker 150 / Haushaltszucker 160 / Malzzucker 180 Grad') accurate, or is caramelization a temperature- and time-dependent rate process with sucrose actually melting near 186°C?",
   "why_now": "The prototype path PATH:SSF:CHE-KUECHE-KARAMELL-0001 (registered in lib/learningPathRegistry.ts and linked as an optional branch from the Maillard path) teaches exact sugar thresholds as crisp facts to NOXIA learners. Sucrose melts at about 186°C with simultaneous decomposition and caramelization is a rate process, so the current claims likely mis-teach phase behaviour. A sourced correction before the path ships protects educational quality and the KG chemistry entities (CON:CHE-ORGANIC, KD:CHE-THERMAL) it feeds.",
@@ -32,6 +35,5 @@
   "related_research_ids": [],
   "novelty_reason": null,
   "fingerprint": "b813e7f4ee43e9f5",
-  "updated_at": "2026-08-31T14:44:14+00:00",
-  "last_error": "[Errno 7] Argument list too long: 'node'"
+  "updated_at": "2026-08-31T18:44:10+00:00"
 }
