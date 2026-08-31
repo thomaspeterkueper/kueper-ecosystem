@@ -1,11 +1,10 @@
 {
-  "request_id": "OTA-NOXIA-REMAINING-TECH-BLOCK-2026-08-31",
-  "created": "2026-08-31T14:01:00+00:00",
+  "request_id": "SSF-SCIENCE-QUEUED-BLOCK-2026-08-31",
+  "created": "2026-08-31T14:41:00+00:00",
   "research_ids": [
-    "RES-20260831-TEC0088A",
-    "RES-20260831-TEC0089A",
-    "RES-20260831-TEC0091A",
-    "RES-20260831-TEC0090A"
+    "RES-20260831-A397C7AD",
+    "RES-20260831-B813E7F4",
+    "RES-20260831-EAA9EDD9"
   ],
-  "reason": "Execute the remaining queued OTA->NOXIA technical-object research as one serialized block after the currently running 0092 audit, to avoid GitHub concurrency replacing older pending runs and to maximize today's available web-search capacity. Preserve each source-pinned research contract independently, reuse existing evidence where declared, and keep all fictional timeline, cost, capacity, geometry and NOXIA balancing values out of scope."
+  "reason": "Execute the remaining already-authorized queued SSF science research as one serialized block after the active OTA-NOXIA technical research run, maximizing the remaining 2026-08-31 search window without rerunning existing candidate-pr items. Verify teaching claims against primary/high-quality scientific sources, preserve source-pinned scope, and do not invent gameplay or NOXIA balancing values."
 }
