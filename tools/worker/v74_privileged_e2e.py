@@ -4,8 +4,9 @@
 This deliberately bypasses Supabase and the model provider. It exercises the
 production V7.4 repo_task wrapper around one fixed, harmless mutation on the
 existing `test/workflow-credential-smoke` branch. The actual `git push` is made
-through `worker.run`, so agent_worker_v74.py must detect the workflow-file
-change and replace the origin credential with KUEPER_WORKFLOW_TOKEN.
+through the exact worker module wrapped by agent_worker_v74.py, so the wrapper
+must detect the workflow-file change and replace the origin credential with
+KUEPER_WORKFLOW_TOKEN.
 
 It never targets main and refuses any target branch other than the dedicated
 smoke branch.
@@ -18,8 +19,12 @@ import tempfile
 from pathlib import Path
 from typing import Any
 
-from tools.worker import agent_worker as worker
 from tools.worker import agent_worker_v74 as v74
+
+# Use the exact module object imported and wrapped by V7.4. Importing
+# tools.worker.agent_worker separately would create a second module object and
+# would not prove the production wrapper interception.
+worker = v74.worker
 
 TARGET_BRANCH = "test/workflow-credential-smoke"
 TARGET_PATH = Path(".github/workflows/_v74-e2e-target.yml")
@@ -72,9 +77,11 @@ def _fake_repo_task(task: dict[str, Any], model: str) -> dict[str, Any]:
 
         worker.run(["git", "commit", "-m", f"test: v74 privileged e2e {mode}"], cwd=root)
         changed = [
-            p for p in worker.run(
+            p
+            for p in worker.run(
                 ["git", "show", "--name-only", "--format=", "HEAD"], cwd=root
-            ).stdout.splitlines() if p.strip()
+            ).stdout.splitlines()
+            if p.strip()
         ]
         if changed != [TARGET_PATH.as_posix()]:
             raise RuntimeError(f"safety guard: unexpected changed paths: {changed}")
