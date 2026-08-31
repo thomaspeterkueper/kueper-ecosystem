@@ -1,0 +1,33 @@
+{
+  "id": "RES-20260831-TEC0088A",
+  "status": "queued",
+  "created": "2026-08-31T11:30:00+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0088-2026-DE.md",
+  "source_ref": "16cc8551cd0ea8624d5b6d407e1733604318316f",
+  "source_blob_sha": "27c31dd2bfb3ab49e7c0024305f11bf76fcad585",
+  "document_signature": "OTA-TEC-0088-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "mars-medical-center",
+  "consumer_project": "noxia",
+  "title": "Mars medical autonomy, capability gaps and staffing-scale audit for OTA-TEC-0088",
+  "question": "Source-grounded audit of the exact OTA-TEC-0088 Mars Medical Center dossier. Assess: (1) NASA/space-agency Earth-Independent Medical Operations requirements for long-duration exploration where rapid evacuation and real-time specialist support are unavailable; (2) which diagnostic, trauma, surgical, dental, laboratory, pharmacy and isolation capabilities are supported by current exploration-medicine evidence versus still-developmental concepts; (3) what Antarctica/McMurdo and other remote-medicine analogues can and cannot support when reasoning about a roughly 500-person Mars settlement; (4) whether any defensible staffing, cross-training, bed/cot, mass-casualty or medical-logistics scaling ranges can be derived without linear extrapolation from terrestrial hospitals; (5) medicine shelf life, blood availability, walking-blood-bank concepts, sterilization and critical consumables under multi-year resupply constraints; and (6) wording that should remain [H]/[OFFEN] rather than [R]. Do NOT create fictional population, staffing, bed-count, cost, treatment-rate, event-frequency or NOXIA balancing values.",
+  "why_now": "OTA-TEC-0088 is a mapped OTA->NOXIA object still reported uncovered and explicitly remains ENTWURF pending source-pinned staffing/capability/Walking-Blood-Bank review. Medical autonomy is a distinct safety-critical evidence domain and should not be inferred from generic colony analogies.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R", "H"],
+  "external_research_required": true,
+  "real_world_anchor": "NASA Earth-Independent Medical Operations and exploration medical capability research; Antarctic/remote medicine analogues; blood, pharmaceutical, sterilization and telemedicine constraints in isolated operations.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 0.98,
+  "related_research_ids": [],
+  "novelty_reason": "First exact-source medical-autonomy audit for the mapped Mars Medical Center; existing OTA tech audits do not cover colony-scale healthcare capability and logistics.",
+  "fingerprint": "ota-tec-0088-mars-medical-autonomy",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}

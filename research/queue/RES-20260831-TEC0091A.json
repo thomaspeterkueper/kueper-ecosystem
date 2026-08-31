@@ -1,0 +1,33 @@
+{
+  "id": "RES-20260831-TEC0091A",
+  "status": "queued",
+  "created": "2026-08-31T11:30:30+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0091-2026-DE.md",
+  "source_ref": "16cc8551cd0ea8624d5b6d407e1733604318316f",
+  "source_blob_sha": "2cf2872548806cb5759808969345fd08542b9f5e",
+  "document_signature": "OTA-TEC-0091-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "mars-utility-corridor",
+  "consumer_project": "noxia",
+  "title": "Mars utility-corridor thermics, piping and resilience audit for OTA-TEC-0091",
+  "question": "Source-grounded audit of the exact OTA-TEC-0091 Mars Utility Corridor dossier. Assess: (1) what Antarctic, Arctic and permafrost utilidor systems demonstrate as an architectural analogy and which construction details do not transfer directly to Mars; (2) water and wastewater freeze protection, pipe insulation, heat tracing, pumping and pressure-loss constraints under Mars ambient conditions; (3) surface, enclosed, partially buried and buried corridor trade-offs including regolith thermal properties, settlement and maintenance access; (4) safe co-routing while keeping potable water, wastewater, high-power electrical and data systems physically separated; (5) leak detection, segmentation, bypass/ring architectures and how to avoid turning a common corridor into a common-mode single point of failure; (6) whether shared corridors actually reduce construction/inspection burden after containment and redundancy requirements are included; and (7) wording that should stay [H]/[OFFEN]. Do NOT set pipe sizes, heat-trace watts, corridor spacing, build costs, network bonuses or NOXIA balancing values.",
+  "why_now": "OTA-TEC-0091 is an uncovered mapped infrastructure object and explicitly remains ENTWURF pending Mars-specific thermics/ground conditions and redundancy/common-mode-failure rules.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R", "H"],
+  "external_research_required": true,
+  "real_world_anchor": "Polar/permafrost utilidors, insulated and heat-traced water/wastewater systems, pipeline thermics, leak isolation and resilient utility-network architecture, interpreted under Mars environmental constraints.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.95,
+  "relevance_score": 0.95,
+  "related_research_ids": ["RES-20260829-TEC0034A", "RES-20260829-TEC0034B"],
+  "novelty_reason": "Covers distribution-network thermics and common-corridor resilience, not the water-extraction process already researched for OTA-TEC-0034.",
+  "fingerprint": "ota-tec-0091-mars-utility-corridor",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}

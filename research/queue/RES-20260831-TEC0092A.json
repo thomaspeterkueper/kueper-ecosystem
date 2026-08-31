@@ -1,0 +1,42 @@
+{
+  "id": "RES-20260831-TEC0092A",
+  "status": "queued",
+  "created": "2026-08-31T11:30:40+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0092-2026-DE.md",
+  "source_ref": "16cc8551cd0ea8624d5b6d407e1733604318316f",
+  "source_blob_sha": "a5dfd87734758330043bdc123dc3da8760e7ab49",
+  "document_signature": "OTA-TEC-0092-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "fruehphase-kombifahrzeug-pionierklasse",
+  "consumer_project": "noxia",
+  "title": "Integrated lunar transfer/landing, refueling and abort architecture audit for OTA-TEC-0092",
+  "question": "Source-grounded audit of the exact OTA-TEC-0092 early-phase combined lunar transfer/lander dossier. Focus only on the technical architecture dimension not already covered by the related CYGNUS, Starport Launcher, PELICAN and Gateway audits: (1) compare real and studied integrated versus staged lunar transfer/landing architectures and identify what mission functions can plausibly be combined in one vehicle; (2) assess orbital refueling / propellant-transfer constraints, rendezvous burden, cryogenic or other propellant-management implications and reliability effects for an early low-flight-rate architecture; (3) establish representative LEO-to-lunar-surface delta-v and mass-closure requirements sufficient to constrain, but not invent, vehicle mass, propellant type or tanker count; (4) assess plume-surface interaction, elevated/high-mounted engines and other landing-site mitigation approaches without asserting a fictional configuration; (5) assess abort, rescue, redundancy and common-mode-failure implications when transfer and landing functions are concentrated in one vehicle; (6) identify which findings can be inherited from existing 0082/0083/0084/0087 evidence and which are genuinely unique to an integrated vehicle; and (7) keep the 2040-2048 placement, Pioneer name, succession sequence and all canonical timeline choices explicitly [F/OFFEN]. Do NOT set tanker flights, fleet size, passenger count, turnaround, costs, unlocks or other NOXIA balancing values.",
+  "why_now": "OTA-TEC-0092 is an uncovered mapped technical object created to close the early Moon-transport continuity gap. Its current dossier is explicitly ENTWURF/non-canonical until integrated-architecture, refueling, landing and abort constraints are source-pinned. Existing component/vehicle audits provide reusable evidence, so this job must synthesize rather than duplicate them.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R", "H", "T"],
+  "external_research_required": true,
+  "real_world_anchor": "Lunar transfer/lander mission architectures; orbital propellant transfer and rendezvous; lunar landing plume-surface interaction; abort and rescue architecture; rocket-equation/delta-v constraints.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 0.99,
+  "related_research_ids": [
+    "RES-20260831-TEC0082A",
+    "RES-20260831-TEC0082B",
+    "RES-20260830-TEC0083A",
+    "RES-20260830-TEC0083B",
+    "RES-20260830-TEC0084A",
+    "RES-20260830-TEC0084B",
+    "RES-20260830-TEC0087A",
+    "RES-20260830-TEC0087B"
+  ],
+  "novelty_reason": "First exact-source audit of the integrated early lunar transfer-plus-landing system as a system architecture. It deliberately reuses existing vehicle/subsystem research instead of re-researching those objects independently.",
+  "fingerprint": "ota-tec-0092-pioneer-combi-architecture",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}
