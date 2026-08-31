@@ -1,0 +1,33 @@
+{
+  "id": "RES-20260831-TEC0089A",
+  "status": "queued",
+  "created": "2026-08-31T11:30:10+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0089-2026-DE.md",
+  "source_ref": "16cc8551cd0ea8624d5b6d407e1733604318316f",
+  "source_blob_sha": "b6395519655998d86675b83aa19e496a228bd9f2",
+  "document_signature": "OTA-TEC-0089-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "mars-fabrication-center",
+  "consumer_project": "noxia",
+  "title": "Mars fabrication, repair autonomy and material-feedstock closure audit for OTA-TEC-0089",
+  "question": "Source-grounded audit of the exact OTA-TEC-0089 Mars Fabrication Center dossier. Assess: (1) demonstrated and developmental polymer additive manufacturing, metal additive manufacturing and conventional machining for space/remote operations; (2) the qualification, inspection and post-processing burden that distinguishes non-critical tools/fixtures from pressure, structural, ECLSS or other safety-critical parts; (3) powder/feedstock handling, contamination, atmosphere, energy and machine-maintenance requirements for metal AM on Mars; (4) what regolith-based manufacturing can realistically produce and why it cannot be treated as a generic substitute for metallic feedstocks; (5) credible recycling/remanufacturing loops for polymers, metals and electronics; (6) the unresolved chain from Mars resources to sufficiently refined alloy/feedstock material; and (7) wording that should remain [H]/[OFFEN]. Do NOT invent production rates, machine counts, local-industry dates, costs, bonuses, resource yields or NOXIA balancing values.",
+  "why_now": "OTA-TEC-0089 is an uncovered mapped object and its ENTWURF status explicitly depends on closing metal-feedstock provenance, process maturity and the boundary between local raw-material production and fabrication capability.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R", "H"],
+  "external_research_required": true,
+  "real_world_anchor": "In-space additive manufacturing, metal AM/LPBF qualification, conventional machining and repair, regolith-derived construction materials, recycling and ISRU material-refining chains.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 0.97,
+  "related_research_ids": [],
+  "novelty_reason": "First source-pinned fabrication-center audit that separates making parts from producing qualified feedstocks and safety-critical hardware.",
+  "fingerprint": "ota-tec-0089-mars-fabrication-feedstock",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}
