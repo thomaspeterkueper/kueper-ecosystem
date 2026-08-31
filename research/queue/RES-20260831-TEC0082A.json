@@ -1,0 +1,48 @@
+{
+  "id": "RES-20260831-TEC0082A",
+  "status": "queued",
+  "created": "2026-08-31T09:38:19+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0082-2026-DE.md",
+  "source_ref": "16cc8551cd0ea8624d5b6d407e1733604318316f",
+  "source_blob_sha": "74a00c288d60e92a598996f9ae19978dca4554f0",
+  "document_signature": "OTA-TEC-0082-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "cygnus-ctv-cislunar-transferschiff",
+  "consumer_project": "noxia",
+  "title": "Cislunar transfer, delta-v, Hydrolox and cryogenic closure audit for OTA-TEC-0082",
+  "question": "Source-grounded audit of the exact OTA-TEC-0082 CYGNUS CTV dossier. Using primary, peer-reviewed and official sources, assess only the externally checkable engineering layer: (1) distinguish the dossier's simplified 'Hohmann transfer' wording from realistic patched-conic / multi-body Earth-Moon transfers and check representative delta-v and 72-84 h transfer-time assumptions for LEO to lunar-orbit / cislunar destinations; (2) close the Tsiolkovsky arithmetic for the inherited fictional mass set 85 t dry, 180 t maximum loaded mass, 75 t LH2/LOX and claimed 5.2 km/s delta-v at representative hydrolox vacuum Isp, explicitly reporting which combinations are physically incompatible without changing the fictional canon; (3) verify real RL-25 and RL10 thrust/Isp characteristics and assess whether the dossier's inherited '4 x RL-25, 450 kN, 465 s' can be treated only as a fictional type label/analogy rather than an exact real engine specification; (4) assess cryogenic LH2/LOX storage and boil-off management over multi-day cislunar missions, including passive versus active thermal-management constraints; (5) check whether the stated standard-flight split around 3.1 km/s TLI + 0.8 km/s LOI and any inferred reserve are technically defensible for the stated route, and separate LLO, EML-2/Gateway and other destination requirements; and (6) identify wording that should be narrowed, reclassified or left explicitly [F/OFFEN]. Do NOT validate or alter fictional introduction dates, fleet counts, operator names, ticketing/economics, NOXIA costs, unlocks, production values, journey timings used only for gameplay, or any other balancing value.",
+  "why_now": "OTA PR #14 deliberately introduced OTA-TEC-0082 as the next OTA->NOXIA technical-object pilot and explicitly deferred a source-pinned cislunar delta-v / engine / cryogenic closure audit until after merge. The production inventory now reports OTA-TEC-0082 as uncovered, so this is the intended first backlog intake rather than an automatically generated rerun.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Tsiolkovsky rocket equation; NASA and peer-reviewed cislunar trajectory/delta-v references; official RL-25/RL10 performance data; cryogenic fluid management and hydrogen/oxygen boil-off engineering for multi-day spaceflight.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 1.0,
+  "scores": {
+    "project_relevance": 1.0,
+    "cross_project_reuse": 0.95,
+    "uncertainty": 0.95,
+    "evidence_potential": 1.0
+  },
+  "related_research_ids": [
+    "RES-20260831-TEC0082B"
+  ],
+  "novelty_reason": "First exact-source-revision engineering closure audit for the canonical CYGNUS CTV. Existing OTA technical-object research covers Starport Launcher, Pelican, RL-25 and Gateway but not the CYGNUS vehicle-level mass/delta-v/transfer/cryogenic closure.",
+  "fingerprint": "ota-tec-0082-cygnus-cislunar-propulsion",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}
