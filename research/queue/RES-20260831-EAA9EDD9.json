@@ -32,6 +32,9 @@
   "related_research_ids": [],
   "novelty_reason": null,
   "fingerprint": "eaa9edd96de9388e",
-  "updated_at": "2026-08-31T15:04:29+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/82"
+  "updated_at": "2026-08-31T19:41:00+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/88",
+  "superseded_candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/82",
+  "critical_review_revision": "R2",
+  "staged_merge_commit": "6fa20b5e4b8f0b063b6e454de26edf13d1ea37a6"
 }
