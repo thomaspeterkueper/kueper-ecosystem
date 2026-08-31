@@ -6,20 +6,28 @@ on:
   push:
     branches:
       - main
-    paths:
+    paths: &research_paths
       - "research/policy.json"
+      - "research/contracts/**"
       - "registry/projects.json"
       - "tools/research/discover.py"
       - "tools/research/discover-targeted.py"
       - "tools/research/discover-ota-scoped.py"
       - "tools/research/discover-ota-scoped-dryrun.py"
       - "tools/research/discover-ota-workqueue.py"
+      - "tools/research/audit-ota-tech-objects.py"
       - "tools/research/execute.py"
       - "tools/research/execute-targeted.py"
       - "tools/research/test_candidate_merge_gate.py"
+      - "tools/research/test_ota_tech_object_audit.py"
       - "tools/research/agent-with-exa.mjs"
       - ".github/workflows/ota-evidence-sweep.yml"
+      - ".github/workflows/ota-tech-object-audit.yml"
       - ".github/workflows/research-config-check.yml"
+  pull_request:
+    branches:
+      - main
+    paths: *research_paths
 
 permissions:
   contents: read
@@ -38,7 +46,8 @@ jobs:
           set -euo pipefail
           python -m json.tool research/policy.json >/dev/null
           python -m json.tool registry/projects.json >/dev/null
-          python -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/discover-ota-scoped-dryrun.py tools/research/discover-ota-workqueue.py tools/research/execute.py tools/research/execute-targeted.py
+          python -m json.tool research/contracts/ota-tech-object-v1.json >/dev/null
+          python -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/discover-ota-scoped-dryrun.py tools/research/discover-ota-workqueue.py tools/research/audit-ota-tech-objects.py tools/research/execute.py tools/research/execute-targeted.py tools/research/test_ota_tech_object_audit.py
           node --check tools/research/agent-with-exa.mjs
 
       - name: Validate profile mappings and weighted rotation
@@ -68,15 +77,14 @@ jobs:
           dryrun_source = (root / 'tools/research/discover-ota-scoped-dryrun.py').read_text(encoding='utf-8')
           workqueue_source = (root / 'tools/research/discover-ota-workqueue.py').read_text(encoding='utf-8')
           execute_source = (root / 'tools/research/execute.py').read_text(encoding='utf-8')
+          tech_audit_source = (root / 'tools/research/audit-ota-tech-objects.py').read_text(encoding='utf-8')
+          tech_contract = json.loads((root / 'research/contracts/ota-tech-object-v1.json').read_text(encoding='utf-8'))
           sweep_source = (root / '.github/workflows/ota-evidence-sweep.yml').read_text(encoding='utf-8')
+          tech_audit_workflow = (root / '.github/workflows/ota-tech-object-audit.yml').read_text(encoding='utf-8')
           assert 'source_blob_sha' in discover_source and 'source_ref' in discover_source
-          # ota-archive-evidence pins the source revision, so the workqueue bridge must
-          # emit items that satisfy the same fail-closed contract execute.py enforces.
           assert 'source_ref' in workqueue_source and 'source_blob_sha' in workqueue_source
           assert 'HEAD:{source_path}' in workqueue_source and 'rev-parse", "HEAD' in workqueue_source
           assert 'source blob mismatch' in execute_source and 'source_ref' in execute_source
-          # The candidate merge gate is fail-closed: no auto-merge path exists and
-          # the only merge invocation requires human review.
           assert 'gh pr merge' not in execute_source
           assert 'merge="review-required"' in execute_source
           assert 'KUEPER_DISCOVERY_PROJECT_ID' in targeted_source
@@ -88,6 +96,16 @@ jobs:
           assert "discovery-only" in sweep_source
           assert 'no queue writes' in sweep_source
           assert 'items[:2]' in sweep_source
+
+          assert tech_contract['id'] == 'ota-tech-object-v1'
+          assert tech_contract['publication']['auto_update_noxia'] is False
+          assert tech_contract['impact_reporting']['write_noxia_balancing'] is False
+          assert 'coverage_state' in tech_audit_source
+          assert 'source_blob_sha' in tech_audit_source
+          assert 'auto_update_noxia' in tech_audit_source
+          assert 'balancing_is_out_of_scope' in tech_audit_source
+          assert '--strict' in tech_audit_workflow
+          assert 'ota-tech-object-audit.json' in tech_audit_workflow
 
           eligible = policy['eligible_projects']
           assert eligible
@@ -108,9 +126,13 @@ jobs:
           expected = {entry['id']: weight for entry, weight in zip(eligible, scaled)}
           assert dict(counts) == expected, (counts, expected)
 
-          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts), 'ota_source_contract': 'pinned', 'ota_workqueue_source_contract': 'pinned', 'ota_weekly_sweep': True, 'ota_discovery_scope': 'deterministic-document-scope-v1', 'ota_discovery_dry_run': 'non-mutating'}, indent=2))
+          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts), 'ota_source_contract': 'pinned', 'ota_workqueue_source_contract': 'pinned', 'ota_weekly_sweep': True, 'ota_discovery_scope': 'deterministic-document-scope-v1', 'ota_discovery_dry_run': 'non-mutating', 'ota_tech_object_audit': 'exact-blob-coverage-v1'}, indent=2))
           PY
 
       - name: Run candidate merge gate tests
         shell: bash
         run: python3 tools/research/test_candidate_merge_gate.py
+
+      - name: Run OTA tech object audit tests
+        shell: bash
+        run: python3 tools/research/test_ota_tech_object_audit.py
