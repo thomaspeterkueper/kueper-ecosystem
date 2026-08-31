@@ -118,7 +118,15 @@ def review_task(task: dict[str, Any], db: v71.PatchedSupabaseRPC) -> dict[str, A
         gh_env["GH_TOKEN"] = token
         meta = gh_json(root, gh_env, "pr", "view", pr_url, "--json", "state,headRefName,headRefOid,baseRefName,title")
         if meta.get("state") != "OPEN":
-            return {"task": task_id, "result": "skipped", "reason": f"PR is {meta.get('state')}"}
+            state = str(meta.get("state") or "UNKNOWN").upper()
+            if state not in {"CLOSED", "MERGED"}:
+                raise worker.WorkerError(f"unexpected PR state: {state}")
+            db.rpc("kueper_close_inactive_pr_review_task", {
+                "p_task_id": task_id,
+                "p_pr_url": pr_url,
+                "p_pr_state": state,
+            })
+            return {"task": task_id, "result": "terminal", "reason": f"PR is {state}"}
 
         head_sha = str(meta.get("headRefOid") or "").strip().lower()
         head_branch = str(meta.get("headRefName") or "").strip()
@@ -276,6 +284,52 @@ PASS is allowed only when there are no blocking findings. Do not invent findings
         return {"task": task_id, "result": "CHANGES_REQUIRED", "head_sha": head_sha, "fix_task": fix.get("id") if isinstance(fix, dict) else None, "blocking": len(blocking_findings)}
 
 
+def review_pending_batch(
+    db: v71.PatchedSupabaseRPC,
+    max_reviews: int,
+) -> tuple[list[dict[str, Any]], int]:
+    """Process a bounded number of live PRs without charging terminal cleanup.
+
+    GitHub state is authoritative for whether a PR can still be reviewed. A
+    CLOSED/MERGED task is terminalized by ``review_task`` and does not consume
+    one of the bounded live-review slots. The queue is then fetched again so a
+    stale prefix cannot starve eligible work behind it.
+    """
+    limit = max(1, max_reviews)
+    results: list[dict[str, Any]] = []
+    failures = 0
+    charged = 0
+    seen: set[str] = set()
+
+    while charged < limit:
+        pending = db.rpc("kueper_list_review_pending", {"p_limit": limit - charged}) or []
+        if isinstance(pending, dict):
+            pending = [pending]
+        candidates = [task for task in pending if str(task.get("id") or "") not in seen]
+        if not candidates:
+            break
+
+        for task in candidates:
+            task_id = str(task.get("id") or "")
+            if task_id:
+                seen.add(task_id)
+            try:
+                result = review_task(task, db)
+            except Exception as exc:
+                failures += 1
+                charged += 1
+                print(f"::error title=Automated PR review failed::{task.get('id')}: {str(exc)[:500]}", flush=True)
+                result = {"task": task.get("id"), "result": "REVIEW_ERROR", "error": str(exc)}
+            else:
+                if result.get("result") != "terminal":
+                    charged += 1
+            results.append(result)
+            if charged >= limit:
+                break
+
+    return results, failures
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--max-reviews", type=int, default=int(os.environ.get("KUEPER_MAX_REVIEWS", "3")))
@@ -286,18 +340,7 @@ def main() -> int:
         raise SystemExit(f"missing required secrets: {', '.join(missing)}")
 
     db = v71.PatchedSupabaseRPC(os.environ["SUPABASE_URL"], os.environ["SUPABASE_SECRET_KEY"])
-    pending = db.rpc("kueper_list_review_pending", {"p_limit": max(1, args.max_reviews)}) or []
-    if isinstance(pending, dict):
-        pending = [pending]
-    results: list[dict[str, Any]] = []
-    failures = 0
-    for task in pending:
-        try:
-            results.append(review_task(task, db))
-        except Exception as exc:
-            failures += 1
-            print(f"::error title=Automated PR review failed::{task.get('id')}: {str(exc)[:500]}", flush=True)
-            results.append({"task": task.get("id"), "result": "REVIEW_ERROR", "error": str(exc)})
+    results, failures = review_pending_batch(db, args.max_reviews)
     print(json.dumps({"reviewer": "KUEPER_PR_REVIEW_V0_1", "results": results}, ensure_ascii=False, indent=2))
     return 1 if failures else 0
 

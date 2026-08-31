@@ -18,6 +18,9 @@ class FakeDb:
         if name == "kueper_get_task_for_pr":
             return dict(self.task) if self.task else None
         if name == "kueper_note_open_pr_head":
+            if self.task.get("status") == "cancelled":
+                self.task["status"] = "review_pending"
+                self.task.setdefault("metadata", {}).pop("pr_terminal_state", None)
             self.task.setdefault("metadata", {})["discovered_pr_head_sha"] = payload["p_head_sha"]
             return dict(self.task)
         raise AssertionError(f"unexpected RPC {name}")
@@ -66,6 +69,24 @@ class DirectPrIntakeV02Tests(unittest.TestCase):
         result = intake(db, url, repository_projects=PROJECTS)
         self.assertEqual(result["id"], "task-37")
         self.assertFalse(any(name == "kueper_note_open_pr_head" for name, _ in db.calls))
+
+    def test_reopened_cancelled_pr_is_reactivated_by_open_head_discovery(self):
+        url = f"https://github.com/{ECO_REPO}/pull/45"
+        db = FakeDb({
+            "id": "task-45",
+            "type": "PR_REVIEW",
+            "status": "cancelled",
+            "repository": ECO_REPO,
+            "pr_url": url,
+            "metadata": {"pr_terminal_state": "CLOSED"},
+        })
+
+        result = intake(db, url, repository_projects=PROJECTS, head_sha=NEW_SHA)
+
+        self.assertEqual(result["id"], "task-45")
+        self.assertEqual(result["status"], "review_pending")
+        self.assertEqual(result["metadata"]["discovered_pr_head_sha"], NEW_SHA)
+        self.assertNotIn("pr_terminal_state", result["metadata"])
 
     def test_missing_v02_rpc_falls_back_to_v01_task(self):
         url = f"https://github.com/{ECO_REPO}/pull/44"
