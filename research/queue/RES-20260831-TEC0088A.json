@@ -1,6 +1,6 @@
 {
   "id": "RES-20260831-TEC0088A",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-31T11:30:00+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -14,9 +14,15 @@
   "title": "Mars medical autonomy, capability gaps and staffing-scale audit for OTA-TEC-0088",
   "question": "Source-grounded audit of the exact OTA-TEC-0088 Mars Medical Center dossier. Assess: (1) NASA/space-agency Earth-Independent Medical Operations requirements for long-duration exploration where rapid evacuation and real-time specialist support are unavailable; (2) which diagnostic, trauma, surgical, dental, laboratory, pharmacy and isolation capabilities are supported by current exploration-medicine evidence versus still-developmental concepts; (3) what Antarctica/McMurdo and other remote-medicine analogues can and cannot support when reasoning about a roughly 500-person Mars settlement; (4) whether any defensible staffing, cross-training, bed/cot, mass-casualty or medical-logistics scaling ranges can be derived without linear extrapolation from terrestrial hospitals; (5) medicine shelf life, blood availability, walking-blood-bank concepts, sterilization and critical consumables under multi-year resupply constraints; and (6) wording that should remain [H]/[OFFEN] rather than [R]. Do NOT create fictional population, staffing, bed-count, cost, treatment-rate, event-frequency or NOXIA balancing values.",
   "why_now": "OTA-TEC-0088 is a mapped OTA->NOXIA object still reported uncovered and explicitly remains ENTWURF pending source-pinned staffing/capability/Walking-Blood-Bank review. Medical autonomy is a distinct safety-critical evidence domain and should not be inferred from generic colony analogies.",
-  "languages": ["en", "de"],
+  "languages": [
+    "en",
+    "de"
+  ],
   "evidence_profile": "ota-archive-evidence",
-  "claim_classes": ["R", "H"],
+  "claim_classes": [
+    "R",
+    "H"
+  ],
   "external_research_required": true,
   "real_world_anchor": "NASA Earth-Independent Medical Operations and exploration medical capability research; Antarctic/remote medicine analogues; blood, pharmaceutical, sterilization and telemedicine constraints in isolated operations.",
   "publication_route_hint": "fictional_archive_document",
@@ -29,5 +35,7 @@
     "flag_noxia_impact": true,
     "auto_update_noxia": false,
     "balancing_is_out_of_scope": true
-  }
+  },
+  "updated_at": "2026-08-31T14:12:19+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/72"
 }
