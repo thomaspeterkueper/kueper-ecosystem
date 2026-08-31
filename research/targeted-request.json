@@ -1,8 +1,11 @@
 {
-  "request_id": "OTA-NOXIA-TEC-0090-ROUTES-2026-08-31",
-  "created": "2026-08-31T13:55:15+00:00",
+  "request_id": "OTA-NOXIA-REMAINING-TECH-BLOCK-2026-08-31",
+  "created": "2026-08-31T14:01:00+00:00",
   "research_ids": [
+    "RES-20260831-TEC0088A",
+    "RES-20260831-TEC0089A",
+    "RES-20260831-TEC0091A",
     "RES-20260831-TEC0090A"
   ],
-  "reason": "Queue the Mars route-corridor geotechnics and road-versus-rail audit behind the active research sequence: regolith bearing/traction/compaction, prepared surfaces, dust/thermal cycling, rolling resistance and throughput-dependent road/rail trade-offs. Preserve all network geometry, construction values and NOXIA balancing as open."
+  "reason": "Execute the remaining queued OTA->NOXIA technical-object research as one serialized block after the currently running 0092 audit, to avoid GitHub concurrency replacing older pending runs and to maximize today's available web-search capacity. Preserve each source-pinned research contract independently, reuse existing evidence where declared, and keep all fictional timeline, cost, capacity, geometry and NOXIA balancing values out of scope."
 }
