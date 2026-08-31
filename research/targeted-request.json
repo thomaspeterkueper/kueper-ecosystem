@@ -1,8 +1,8 @@
 {
-  "request_id": "OTA-NOXIA-TEC-0082B-CYGNUS-2026-08-31",
-  "created": "2026-08-31T11:22:00+00:00",
+  "request_id": "OTA-NOXIA-TEC-0093-ECLSS-2026-08-31",
+  "created": "2026-08-31T11:34:00+00:00",
   "research_ids": [
-    "RES-20260831-TEC0082B"
+    "RES-20260831-TEC0093A"
   ],
-  "reason": "Execute the remaining queued CYGNUS crew-environment audit only. RES-20260831-TEC0082A has already completed as KG candidate PR #64. Enforce ota-tech-object-v1; preserve fictional canon and NOXIA balancing; report consumer impact only."
+  "reason": "Execute the highest-reuse remaining OTA->NOXIA technical-object evidence audit: regenerative Life-Support core subsystem performance, material closure, crew scaling, reliability and shared-core/variant logic. Reuse CYGNUS/vehicle evidence where appropriate; preserve fictional canon and NOXIA balancing."
 }
