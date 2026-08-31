@@ -1,6 +1,6 @@
 {
   "id": "RES-20260831-TEC0093A",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-31T11:30:50+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -14,9 +14,16 @@
   "title": "Regenerative ECLSS subsystem performance, closure and crew-scaling audit for OTA-TEC-0093",
   "question": "Source-grounded audit of the exact OTA-TEC-0093 Life-Support core-module dossier. Assess the component-level evidence needed before this proposed reusable component can become active: (1) official/primary performance evidence for regenerative oxygen generation by water electrolysis, CO2 removal/regeneration, Sabatier water recovery, humidity/temperature control and trace-contaminant control; (2) realistic material-closure limits, make-up water/oxygen or other consumables, maintenance, sorbent/catalyst life, pumps/valves/sensors and replacement burden; (3) metabolic loading and crew-size scaling, including why independently valid subsystem values cannot simply be summed into a jointly realistic integrated ECLSS for 6, 20 or 200 people; (4) energy, mass, volume and heat-rejection trade-offs relevant to short-duration rover, multi-day transit and long-duration station variants; (5) fault tolerance, graceful degradation, emergency reserves and what evidence would be needed before phrases such as 'triple redundant life support' could describe a real architecture; (6) whether CYGNUS, PELICAN, lunar rover, Gateway and the early combined vehicle can plausibly share a common core/technology family versus requiring materially different hardware variants; and (7) which `CANDIDATE_COMPONENT_OF` relations could become technically supported without claiming identical hardware. Reuse existing object-level audits where relevant, especially CYGNUS crew-environment research; do not duplicate their questions. Do NOT set NOXIA consumption rates, maintenance costs, crew capacities, unlocks, efficiency bonuses or other balancing values.",
   "why_now": "OTA-TEC-0093 is an uncovered mapped component and explicitly a test case for the emerging OTA component schema. It centralizes a function repeatedly referenced by several NOXIA vehicles/stations, so resolving its real subsystem limits and variant logic has unusually high cross-project reuse and should precede hardening duplicate life-support assumptions elsewhere.",
-  "languages": ["en", "de"],
+  "languages": [
+    "en",
+    "de"
+  ],
   "evidence_profile": "ota-archive-evidence",
-  "claim_classes": ["R", "H", "T"],
+  "claim_classes": [
+    "R",
+    "H",
+    "T"
+  ],
   "external_research_required": true,
   "real_world_anchor": "NASA/agency regenerative ECLSS systems and performance data: oxygen generation, CO2 removal, Sabatier recovery, humidity/trace-gas control, water interfaces, crew metabolic loads, reliability and maintenance.",
   "publication_route_hint": "fictional_archive_document",
@@ -37,5 +44,7 @@
     "flag_noxia_impact": true,
     "auto_update_noxia": false,
     "balancing_is_out_of_scope": true
-  }
+  },
+  "updated_at": "2026-08-31T11:46:03+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/68"
 }
