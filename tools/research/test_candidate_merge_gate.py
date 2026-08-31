@@ -64,7 +64,10 @@ def main() -> int:
     source = (ROOT / "tools/research/execute.py").read_text(encoding="utf-8")
     assert "gh pr merge" not in source
     assert "auto-merge-queued" not in source
-    assert 'merge="review-required"' in source
+    assert '"draft":True' in source
+    assert 'merge="draft-review-required"' in source
+    assert '"draft":True' in source
+    assert "never marks it ready" in source
 
     print("candidate merge gate tests: ok")
     return 0
