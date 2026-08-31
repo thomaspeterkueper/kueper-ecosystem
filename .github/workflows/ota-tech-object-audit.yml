@@ -4,6 +4,15 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "47 4 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "research/contracts/ota-tech-object-v1.json"
+      - "research/queue/**"
+      - "tools/research/audit-ota-tech-objects.py"
+      - "tools/research/test_ota_tech_object_audit.py"
+      - ".github/workflows/ota-tech-object-audit.yml"
 
 permissions:
   contents: read
