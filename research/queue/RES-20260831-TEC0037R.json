@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260831-TEC0037R",
+  "status": "reconciled",
+  "created": "2026-08-31T11:25:20+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0037-2026-DE.md",
+  "source_ref": "16cc8551cd0ea8624d5b6d407e1733604318316f",
+  "source_blob_sha": "6a7ff3a182b08876256a0cd50633138db699d604",
+  "document_signature": "OTA-TEC-0037-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "vex-47-explorationsdrohne-basistyp",
+  "consumer_project": "noxia",
+  "coverage_basis": "evidence-applied-reconciliation",
+  "external_research_required": false,
+  "title": "Post-evidence reconciliation for OTA-TEC-0037 v1.1",
+  "question": "No new external research task. Record that the current exact OTA-TEC-0037 v1.1 blob is the reviewed evidence-applied descendant of RES-20260829-TEC0037A. The v1.1 edits implement that audit's real sensor/environment boundaries: Mars dust and Titan haze constraints, environment-specific sensor modes, vacuum audio limitations, and explicit [W] treatment of the fictional housing temperature range. Fictional propulsion, energy, resonance and individual-instance canon remain outside scientific validation. No new externally testable real-world claim outside the prior audit scope was introduced.",
+  "why_now": "The inventory marks 0037 stale solely because the evidence audit was applied to the source document. Re-running identical external research would be circular. This reconciliation binds the current reviewed blob while preserving the historical source pin of the executed audit.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R"],
+  "real_world_anchor": "Inherited from the prior planetary sensor, Mars dust, Titan haze/thermal environment, vacuum sensing and acoustics audit; no new external evidence claim is introduced by this record.",
+  "publication_route_hint": "fictional_archive_document",
+  "related_research_ids": ["RES-20260829-TEC0037A"],
+  "evidence_application": {
+    "ota_commit": "e4db11fcf9f6f3ba7ab24caf9e741da0b19c9061",
+    "change_kind": "reviewed-research-application",
+    "rerun_required": false
+  },
+  "novelty_reason": "Reconciliation only; no new research dimension. Keeps exact-blob inventory coverage without falsifying the historical source pin of the executed audit.",
+  "fingerprint": "ota-tec-0037-evidence-applied-v1.1",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}
