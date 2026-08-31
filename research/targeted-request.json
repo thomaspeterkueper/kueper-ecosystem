@@ -1,8 +1,8 @@
 {
-  "request_id": "OTA-NOXIA-TEC-0091-UTILITY-CORRIDOR-2026-08-31",
-  "created": "2026-08-31T13:55:00+00:00",
+  "request_id": "OTA-NOXIA-TEC-0090-ROUTES-2026-08-31",
+  "created": "2026-08-31T13:55:15+00:00",
   "research_ids": [
-    "RES-20260831-TEC0091A"
+    "RES-20260831-TEC0090A"
   ],
-  "reason": "Queue the Mars Utility Corridor thermics/piping/resilience audit behind the active research sequence: polar utilidor analogues, freeze protection, heat tracing, co-routing separation, leak isolation and common-mode resilience. Preserve all pipe sizing, costs, spacing and NOXIA balancing as open."
+  "reason": "Queue the Mars route-corridor geotechnics and road-versus-rail audit behind the active research sequence: regolith bearing/traction/compaction, prepared surfaces, dust/thermal cycling, rolling resistance and throughput-dependent road/rail trade-offs. Preserve all network geometry, construction values and NOXIA balancing as open."
 }
