@@ -1,0 +1,40 @@
+{
+  "id": "RES-20260831-TEC0082R2",
+  "status": "reconciled",
+  "created": "2026-08-31T14:04:00+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0082-2026-DE.md",
+  "source_ref": "31b352c6a3a75911d970c8694d600c98e95d12b5",
+  "source_blob_sha": "7c69115dbd322a3bdbe249b3398d7791e4fb9746",
+  "document_signature": "OTA-TEC-0082-2026-DE",
+  "research_contract": "ota-tech-object-v1",
+  "object_id": "cygnus-ctv-cislunar-transferschiff",
+  "consumer_project": "noxia",
+  "coverage_basis": "evidence-applied-reconciliation",
+  "external_research_required": false,
+  "title": "Post-evidence reconciliation for OTA-TEC-0082 v1.2",
+  "question": "No new external research task. Bind the current OTA-TEC-0082 v1.2 exact blob to the reviewed applications of RES-20260831-TEC0082A and the review-corrected RES-20260831-TEC0082B. The v1.2 revision preserves all fictional vehicle settings while clarifying the real rotation arithmetic, non-universal nature of the ~2 rpm design guideline, 5.46 rpm human-factors uncertainty, GCR versus SPE distinction, storm-shelter strategy, material/areal-density-dependent window shielding trade-off, and the engineering limits of the canonical triple-redundancy label.",
+  "why_now": "Applying the corrected crew-environment evidence intentionally changed the exact OTA source blob after the v1.1 propulsion reconciliation. Re-running the same source-pinned research would be circular; this record preserves immutable execution provenance while binding the reviewed evidence-applied v1.2 revision.",
+  "languages": ["en", "de"],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": ["R", "H", "T"],
+  "real_world_anchor": "Inherited from the source-pinned CYGNUS propulsion/trajectory audit and the corrected rotating-habitat, human-factors, radiation and life-support audit; no new externally testable evidence dimension was introduced by the evidence-application diff itself.",
+  "publication_route_hint": "fictional_archive_document",
+  "related_research_ids": [
+    "RES-20260831-TEC0082A",
+    "RES-20260831-TEC0082B"
+  ],
+  "evidence_application": {
+    "ota_commit": "31b352c6a3a75911d970c8694d600c98e95d12b5",
+    "change_kind": "reviewed-research-application",
+    "rerun_required": false
+  },
+  "novelty_reason": "Reconciliation only; binds the evidence-applied v1.2 blob without rewriting historical source pins or treating the research candidate itself as world canon.",
+  "fingerprint": "ota-tec-0082-evidence-applied-v1.2",
+  "consumer_impact_policy": {
+    "flag_noxia_impact": true,
+    "auto_update_noxia": false,
+    "balancing_is_out_of_scope": true
+  }
+}
