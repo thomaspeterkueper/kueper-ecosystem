@@ -1,8 +1,8 @@
 {
-  "request_id": "OTA-NOXIA-TEC-0089-FABRICATION-2026-08-31",
-  "created": "2026-08-31T13:54:45+00:00",
+  "request_id": "OTA-NOXIA-TEC-0091-UTILITY-CORRIDOR-2026-08-31",
+  "created": "2026-08-31T13:55:00+00:00",
   "research_ids": [
-    "RES-20260831-TEC0089A"
+    "RES-20260831-TEC0091A"
   ],
-  "reason": "Queue the Mars Fabrication Center evidence audit behind the active/pending research runs: additive and conventional manufacturing, qualification/inspection, regolith limits, recycling and alloy/feedstock provenance. Preserve all fictional production rates, dates, costs and NOXIA balancing."
+  "reason": "Queue the Mars Utility Corridor thermics/piping/resilience audit behind the active research sequence: polar utilidor analogues, freeze protection, heat tracing, co-routing separation, leak isolation and common-mode resilience. Preserve all pipe sizing, costs, spacing and NOXIA balancing as open."
 }
