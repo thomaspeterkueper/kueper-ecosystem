@@ -121,6 +121,23 @@
             }
           }
         },
+        "merge_gate": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["mode", "required"],
+          "properties": {
+            "mode": {
+              "type": "string",
+              "enum": ["fail-closed", "off"]
+            },
+            "required": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": { "$ref": "#/$defs/mergeGateCheck" }
+            }
+          }
+        },
         "integrations": {
           "type": "array",
           "items": {
@@ -148,6 +165,41 @@
           "type": "string"
         }
       }
+    },
+    "mergeGateCheck": {
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": ["vercel", "supabase-preview", "supabase-migrations"]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "name"],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            },
+            "source": {
+              "type": "string",
+              "enum": ["check-run", "status", "any"]
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "match": {
+              "type": "string",
+              "enum": ["contains", "exact", "prefix"]
+            },
+            "app_slug": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      ]
     }
   }
 }
