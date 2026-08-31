@@ -1,6 +1,6 @@
 {
   "id": "RES-20260823-5BEB27E7",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-23T04:06:22+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -19,5 +19,21 @@
   },
   "fingerprint": "5beb27e71d2d3484",
   "updated_at": "2026-08-23T04:18:31+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/9"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/9",
+  "validated_at": "2026-08-31T11:51:35+00:00",
+  "validation_summary": "Der Kandidat prüft sechs biologische Anker des Λ-Systems gegen die Literatur (Stand Aug 2026). Ergebnis: Anker 2 (Kopienzahl Oozyte/Spermium) und 6 (piRNA via MitoPLD/Zucchini) sind haltbar; Anker 5 (Fe/S-Elektronentunneln) ist haltbar als Tunneln; Anker 4 (Biophotonen 200–800 nm) ist präzisierungsbedürftig, da die führende Review 350–1300 nm als kanonischen UPE-Bereich angibt; Anker 3 (mtDNA-Methylierung übersteht Reprogrammierung) ist eine umstrittene Forschungsfront, kein etablierter Fakt; Anker 1 (paternale Transmission seit 2018) ist widerlegt. Gegenprüfung im OTA-Repository: Die 2018er-Paternalitätsbehauptung ist im aktuellen Kanon NICHT enthalten — OTA-SCI-0045-2026-DE (Z.129/173-175) formuliert bereits 'ausschließlich maternale Vererbung, keine Ausnahmen' und liegt damit auf der durch den Kandidaten bestätigten Linie; hier ist keine Aktion nötig. Konkret betroffen sind dagegen zwei Stellen: (a) das als [R] markierte Biophotonen-Spektralfenster 200–800 nm in OTA-SCI-0045-2026-DE",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260831-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260831-005",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
