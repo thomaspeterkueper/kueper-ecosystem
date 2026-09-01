@@ -15,9 +15,16 @@ from __future__ import annotations
 
 import argparse
 import os
+import sys
 import tempfile
 from pathlib import Path
 from typing import Any
+
+# Script invocation (`python tools/worker/v74_privileged_e2e.py`) puts only the
+# script directory on sys.path, so the repo root must be added for the
+# `tools.worker` package import below. Mirrors the bootstrap in
+# agent_worker_v74.py.
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from tools.worker import agent_worker_v74 as v74
 
@@ -44,6 +51,27 @@ def _require_env(name: str) -> str:
     if not value:
         raise SystemExit(f"missing required environment variable: {name}")
     return value
+
+
+def _assert_privileged_origin(root: Path, repo: str, bot_token: str, workflow_token: str) -> None:
+    """Fail unless origin was swapped to KUEPER_WORKFLOW_TOKEN before the push.
+
+    The wrapper mutates the clone's origin URL in place (agent_worker_v74.py),
+    so the swapped credential is observable via `git remote get-url origin`
+    after the push. Without this check a push that quietly fell back to the bot
+    token would still succeed and the E2E would stay green.
+    """
+    origin = worker.run(["git", "remote", "get-url", "origin"], cwd=root).stdout.strip()
+    if origin != worker.clone_url(repo, workflow_token):
+        raise RuntimeError(
+            "safety guard: origin was not swapped to KUEPER_WORKFLOW_TOKEN; "
+            "the push used the bot credential"
+        )
+    if origin == worker.clone_url(repo, bot_token):
+        raise RuntimeError(
+            "safety guard: KUEPER_BOT_TOKEN equals KUEPER_WORKFLOW_TOKEN; "
+            "the credential swap is vacuous"
+        )
 
 
 def _fake_repo_task(task: dict[str, Any], model: str) -> dict[str, Any]:
@@ -90,6 +118,12 @@ def _fake_repo_task(task: dict[str, Any], model: str) -> dict[str, Any]:
         # wraps worker.run and must switch origin to KUEPER_WORKFLOW_TOKEN before
         # this privileged workflow-file push is executed.
         worker.run(["git", "push", "--quiet", "origin", TARGET_BRANCH], cwd=root)
+        _assert_privileged_origin(
+            root,
+            repo,
+            bot_token,
+            _require_env("KUEPER_WORKFLOW_TOKEN"),
+        )
         sha = worker.run(["git", "rev-parse", "HEAD"], cwd=root).stdout.strip()
         return {
             "kind": "completed",
@@ -105,8 +139,13 @@ def main() -> int:
     args = parser.parse_args()
 
     repo = _require_env("GITHUB_REPOSITORY")
-    _require_env("KUEPER_BOT_TOKEN")
-    _require_env("KUEPER_WORKFLOW_TOKEN")
+    bot_token = _require_env("KUEPER_BOT_TOKEN")
+    workflow_token = _require_env("KUEPER_WORKFLOW_TOKEN")
+    if bot_token == workflow_token:
+        raise SystemExit(
+            "safety guard: KUEPER_BOT_TOKEN equals KUEPER_WORKFLOW_TOKEN; "
+            "the privileged credential swap would be vacuous"
+        )
     if repo != "thomaspeterkueper/kueper-ecosystem":
         raise SystemExit(f"safety guard: unexpected repository {repo}")
 
