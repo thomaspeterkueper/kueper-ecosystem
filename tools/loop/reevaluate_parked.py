@@ -12,6 +12,7 @@ import os
 import shlex
 import shutil
 import subprocess
+import sys
 import tempfile
 import urllib.error
 import urllib.parse
@@ -64,15 +65,21 @@ def projects():
     return [p for p in REGISTRY["projects"] if p.get("enabled",True) and p["id"] in CODES]
 
 def parked_tasks(token):
-    out=[]
+    out=[];errors=[]
     for p in projects():
-        repo=p["repository"];branch=default_branch(token,repo)
-        listing=get_content(token,repo,"external-tasks/parked",branch)
-        for item in listing if isinstance(listing,list) else []:
-            if item.get("type")!="file" or not item.get("name","").endswith(".md"): continue
-            payload=get_content(token,repo,item["path"],branch)
-            if isinstance(payload,dict): out.append((p,branch,item,payload,decode(payload)))
-    return out
+        try:
+            repo=p["repository"];branch=default_branch(token,repo)
+            listing=get_content(token,repo,"external-tasks/parked",branch)
+            for item in listing if isinstance(listing,list) else []:
+                if item.get("type")!="file" or not item.get("name","").endswith(".md"): continue
+                payload=get_content(token,repo,item["path"],branch)
+                if isinstance(payload,dict): out.append((p,branch,item,payload,decode(payload)))
+        except Exception as exc:
+            # Ein fehlgeschlagenes Projekt (z. B. privates Repository ohne
+            # Token-Zugriff, HTTP 404) darf den gesamten Sweep nicht abbrechen.
+            errors.append({"repository":p["repository"],"result":"error","error":str(exc)})
+            print(f"ERROR scan {p['repository']}: {exc}", file=sys.stderr)
+    return out,errors
 
 def prompt(repo:str, task:str)->str:
     return f'''You are the parked-task gate for repository `{repo}`.
@@ -130,8 +137,9 @@ def assess(token,p,branch,item,payload,text):
 def main():
     token=os.environ.get("KUEPER_BOT_TOKEN")
     if not token: raise SystemExit("KUEPER_BOT_TOKEN required")
-    tasks=parked_tasks(token)[:MAX_ITEMS]
-    results=[]
+    tasks,project_errors=parked_tasks(token)
+    tasks=tasks[:MAX_ITEMS]
+    results=list(project_errors)
     for args in tasks:
         try: results.append(assess(token,*args))
         except Exception as exc: results.append({"task":args[2].get("name"),"result":"error","error":str(exc)})
