@@ -52,6 +52,8 @@ npm run dev
   Control-Plane-Repo und prüft je Projekt Erreichbarkeit, Default Branch, letzten
   Push, offene PRs, Governance-Pflichtpfade, Version (`version_source`) und alle
   offenen External Tasks (inkl. Frontmatter). Gibt normalisiertes JSON zurück.
+  Projekte mit `enabled: false` (z. B. `buecherwelten` vor Owner-Abnahme)
+  werden übersprungen: keine Abfrage, keine rote `critical`-Karte.
 - Private Repositories (z. B. `buecherwelten`) werden ausschließlich über
   **operative Metadaten** erfasst — Erreichbarkeit, Branch, letzter Push,
   PR-Anzahl (keine Titel), Pfadprüfungen, Task-Dateinamen und Frontmatter.

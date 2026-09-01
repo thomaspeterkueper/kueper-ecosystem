@@ -237,7 +237,12 @@ export async function GET() {
   const projectsIn: Json[] = registry.projects || [];
   const ids = new Set<string>(projectsIn.map((p) => p.id));
 
-  const projects = await Promise.all(projectsIn.map((p) => collectProject(p, ids, token)));
+  // enabled: false deaktiviert die Überwachung (registry/README.md): das
+  // Projekt wird nicht abgefragt und nicht als kritisch gerendert, bis der
+  // Owner den Eintrag aktiviert (z. B. buecherwelten vor Owner-Abnahme).
+  const monitored = projectsIn.filter((p) => p.enabled !== false);
+
+  const projects = await Promise.all(monitored.map((p) => collectProject(p, ids, token)));
 
   const allTasks = projects.flatMap((p) => p.tasks);
   const counts: Record<string, number> = {};

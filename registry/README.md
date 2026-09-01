@@ -33,7 +33,7 @@ Die Registry ist keine Source of Truth für fachliche Projektdaten. Sie enthält
 
 ## Grundregeln
 
-- `enabled: true` aktiviert die Überwachung.
+- `enabled: true` aktiviert die Überwachung; `enabled: false` deaktiviert sie: Collector und Dashboard überspringen das Projekt, bis der Owner den Eintrag aktiviert.
 - `repository` ist die verbindliche GitHub-Quelle für Repository-Metadaten.
 - `code` ist der verbindliche Ökosystem-Code (ECO-ARC-0031); die Referenzliste der vergebenen Codes steht in ECO-ARC-0006. Das Feld ist seit Schema-Revision 1.1.0 kanonischer Ablageort, nicht mehr nur die `notes`.
 - `role` beschreibt die Rolle; `authoring` bezeichnet private Arbeitsstände/Authoring-Zustände (keine Publikationsschicht).
