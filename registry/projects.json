@@ -795,7 +795,7 @@
       "name": "Buecherwelten",
       "repository": "thomaspeterkueper/buecherwelten",
       "provider": "github",
-      "enabled": true,
+      "enabled": false,
       "role": "authoring",
       "code": "BW",
       "production_url": null,
@@ -822,7 +822,7 @@
           "derived_analysis": true
         }
       },
-      "notes": "Private Authoring- und Entwicklungsschicht fuer Buchprojekte und werkbezogene Medien (ECO-ARC-0030, ECO-ARC-0031). Code BW. Kein automatischer Inhaltstransfer zu NXU/KG/OTA: private source -> public target ist deny-by-default, Promotion nur durch explizite Owner-Entscheidung. Collector/Dashboard verarbeiten ausschliesslich operative Metadaten, keine Inhalte."
+      "notes": "Private Authoring- und Entwicklungsschicht fuer Buchprojekte und werkbezogene Medien (ECO-ARC-0030, ECO-ARC-0031). Code BW. Kein automatischer Inhaltstransfer zu NXU/KG/OTA: private source -> public target ist deny-by-default, Promotion nur durch explizite Owner-Entscheidung. Collector/Dashboard verarbeiten ausschliesslich operative Metadaten, keine Inhalte. Aktivierung (enabled: true) erst nach Owner-Abnahme von ECO-ARC-0030/0031; EXT-BW-ECO-20260824-001 bleibt bis dahin open."
     }
   ]
 }
