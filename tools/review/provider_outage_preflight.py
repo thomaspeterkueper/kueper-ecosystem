@@ -46,11 +46,12 @@ def classify_provider_outage_preflight(
     pr_state: str,
     changed_paths: Iterable[str],
 ) -> PreflightResult:
-    """Return a deterministic DEFERRED/BLOCKED result, never PASS.
+    """Return a deterministic DEFERRED_PROVIDER_UNAVAILABLE/BLOCKED result, never PASS.
 
     BLOCKED means the task should not even be presented as reviewable because
-    immutable transport/state assumptions are violated. DEFERRED means the PR is
-    structurally reviewable but still requires the normal independent reviewer.
+    immutable transport/state assumptions are violated.
+    DEFERRED_PROVIDER_UNAVAILABLE means the PR is structurally reviewable but
+    still requires the normal independent reviewer.
     """
     paths = normalize_paths(changed_paths)
     reasons: list[str] = []
@@ -75,4 +76,4 @@ def classify_provider_outage_preflight(
     else:
         reasons.append("provider-unavailable-independent-review-required")
 
-    return PreflightResult("DEFERRED", tuple(reasons), paths)
+    return PreflightResult("DEFERRED_PROVIDER_UNAVAILABLE", tuple(reasons), paths)
