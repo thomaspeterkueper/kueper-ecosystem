@@ -91,8 +91,8 @@ Betroffene Repositories: ...
 - [ECO-ARC-0027-2026-DE — Request, Task und Normierungsstelle](./ECO-ARC-0027-2026-DE.md) — `accepted`
 - [ECO-ARC-0028-2026-DE — Systemweite KI-Transparenz für öffentliche Publikationen](./ECO-ARC-0028-2026-DE.md) — `accepted`
 - [ECO-ARC-0029-2026-DE — Mehrfach-Agenten-Zusammenarbeit am selben Repository](./ECO-ARC-0029-2026-DE.md) — `accepted`
-- [ECO-ARC-0030-2026-DE — Private Manuscript Repositories](./ECO-ARC-0030-2026-DE.md) — `accepted`
-- [ECO-ARC-0031-2026-DE — buecherwelten (BW): Registrierung, Code-Feld, Authoring-Rolle, Vertraulichkeitsmodell](./ECO-ARC-0031-2026-DE.md) — `accepted`
+- [ECO-ARC-0030-2026-DE — Private Manuscript Repositories](./ECO-ARC-0030-2026-DE.md) — `proposed`
+- [ECO-ARC-0031-2026-DE — buecherwelten (BW): Registrierung, Code-Feld, Authoring-Rolle, Vertraulichkeitsmodell](./ECO-ARC-0031-2026-DE.md) — `proposed`
 
 ## Erste mögliche Entscheidungen
 

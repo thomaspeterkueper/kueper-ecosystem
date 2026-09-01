@@ -43,8 +43,8 @@ IDs (siehe ECO-ARC-0006). Aktuelle Codes stehen in der Code-Tabelle von `decisio
 (Stand bei Abfassung dieses Templates: `ECO`, `KG`, `SSF`, `NOXIA`, `NXU`, `KUE`,
 `OTA`, `TKD`, `BW`). Schlage bei der Registrierung einen neuen, noch nicht vergebenen
 Code vor (`{CODE}`). Verwende ihn ab Bestätigung konsequent in allen Task-IDs.
-Der bestätigte Code wird verbindlich im Registry-Feld `code` geführt
-(ECO-ARC-0031).
+Der Code wird verbindlich im Registry-Feld `code` geführt (Vorschlag
+ECO-ARC-0031, PR #47; Annahme durch den Project Owner ausstehend).
 
 ## 2. Pflichtstruktur in deinem eigenen Repository
 

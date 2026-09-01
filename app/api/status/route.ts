@@ -187,7 +187,10 @@ async function collectProject(p: Json, ids: Set<string>, token: string) {
     detail: integ,
   };
 
-  const version = await resolveVersion(repo, branch, p.version_source, token);
+  // Sensitive Repositories (sensitivity gesetzt, z. B. private-manuscript-source):
+  // Inhalte (package.json, VERSION, ...) duerfen vom Dashboard nicht gelesen werden
+  // (ECO-ARC-0031 §5) — daher keine inhaltsbasierte Versionsaufloesung.
+  const version = p.sensitivity ? null : await resolveVersion(repo, branch, p.version_source, token);
 
   return {
     id: p.id,

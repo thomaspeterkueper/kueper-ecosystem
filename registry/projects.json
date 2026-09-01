@@ -801,18 +801,8 @@
       "production_url": null,
       "health_url": null,
       "version_source": {
-        "strategy": "first-existing",
-        "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
-        ]
+        "strategy": "none",
+        "candidates": []
       },
       "governance": {
         "required_paths": [
