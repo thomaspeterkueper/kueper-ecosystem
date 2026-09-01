@@ -1,6 +1,6 @@
 {
   "id": "RES-20260824-1BCF9EC2",
-  "status": "candidate-pr",
+  "status": "validation-error",
   "created": "2026-08-24T04:11:11+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -19,5 +19,7 @@
   },
   "fingerprint": "1bcf9ec2487dcb87",
   "updated_at": "2026-08-24T04:21:24+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/11"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/11",
+  "validated_at": "2026-09-01T10:11:01+00:00",
+  "validation_error": "\"deepseek-v4-flash\" is not a model this version of Claude Code recognizes, so auto-compact will keep this session within 200k tokens (the context window it assumes). If the model accepts more, append [1m] to the model name for 1M, or set CLAUDE_CODE_MAX_CONTEXT_TOKENS to its real window; to make it recognized, map it in the modelOverrides setting or update Claude Code; CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1 restores the previous wait-for-the-API behavior.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"generate_session_title\"}\nAPI Error: 402 Insufficient Balance\n"
 }
