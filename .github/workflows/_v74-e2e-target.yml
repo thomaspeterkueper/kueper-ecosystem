@@ -1,8 +1,0 @@
-name: V7.4 Privileged Credential E2E Target
-on:
-  workflow_dispatch:
-jobs:
-  noop:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "v74 privileged credential e2e"
