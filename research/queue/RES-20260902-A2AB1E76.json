@@ -1,0 +1,48 @@
+{
+  "id": "RES-20260902-A2AB1E76",
+  "status": "queued",
+  "created": "2026-09-02T08:14:12+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0019-2095-DE.md",
+  "source_ref": "a6f5c1c86f1025dce8d85e1f0fa44a8f465b68d9",
+  "source_blob_sha": "8361ba60e5ae33f7332c09b126e048632b993afc",
+  "document_signature": "OTA-TEC-0019-2095-DE",
+  "title": "Artificial Schumann-resonance generator audit for OTA-TEC-0019-2095: Helmholtz field amplitudes, natural Schumann field strength and ELF bioeffect evidence",
+  "question": "Source-grounded audit of the exact OTA-TEC-0019-2095-DE artificial-Schumann-resonance generator specification, restricted to the real, externally checkable layer the document marks [T]/[S]. Assess: (1) the real-world anchor: verify the Schumann-resonance fundamental near 7.83 Hz and the typical amplitude of the naturally occurring Schumann-resonance magnetic field at Earth's surface (order of magnitude, e.g. pT-range estimates), i.e. what field a habitat generator would need to produce to replicate natural background exposure; (2) internal design arithmetic: does the specified Helmholtz pair (coil diameter 5.0 m, spacing 2.5 m = radius, N = 100 turns, I = 0.5 A AC at 7.83 Hz, 2.0 mm² copper wire, ~10 V) really produce the claimed central field of ~1.8 pT, or does the standard Helmholtz formula B = (8/5√5)·(μ₀·N·I)/R give ~1.8 × 10⁻⁵ T (~18 µT) — i.e. flag the apparent picotesla/microtesla unit inconsistency among the 1.5-2.0 pT design target, the computed central value, the stated field-homogeneity/coverage claims, and the derived ~6.6 W / <10 W power estimate; (3) feasibility: can a ~5 m-diameter, ~10 W, ~500 € copper-wire Helmholtz system realistically deliver the claimed >90 % homogeneity over ~50 m³, and what are the actual trade-offs (wire length ~3.14 km, resistance, voltage, structural support, field falloff outside the central volume); (4) the biological premise: what does the current peer-reviewed evidence (systematic reviews, ELF bioeffect literature, WHO/ICNIRP context) show about biological, sleep or circadian effects of ~7.83 Hz and nearby ELF magnetic fields at pT-µT levels — are artificial 'Schumann-resonance generator' health or sleep claims established, contested, or unsupported, and is the document's precautionary framing ('Selbst wenn Schumann-Bioeffekte minimal sind...') consistent with the evidence; and (5) which wording, figures or [T]/[S]/[F] markers in the document should be narrowed or reclassified. Do NOT validate or alter the fictional 2095-2100 Helios Base evaluation data, sleep-quality/circadian numbers, cost estimates, maintenance claims, or any NOXIA/OTA balancing value. Map supporting, null and constraining evidence without upgrading speculative bioeffect claims to established.",
+  "why_now": "OTA-TEC-0019-2095 is in the current workqueue (priority 12) and is one of the few queued items whose central engineering claims are presented as real and buildable ('[T] Theoretisch — Physikalisch validiert'; curator note: 'Die Technologie ist real und heute umsetzbar [T]'). Its design parameters contain an internally checkable unit inconsistency (the Helmholtz configuration it specifies cannot produce picotesla fields with microtesla-magnitude arithmetic), and the entire premise rests on the contested scientific status of ELF/Schumann-resonance bioeffects. External physical and biomedical grounding can resolve both, materially improving the spec's internal consistency and its R/T/S/F classification. No prior KUEPER research topic has audited this document or its artificial-Schumann-generator claims.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "real_world_anchor": "Schumann-resonance phenomenon (7.83 Hz fundamental and natural surface field amplitude), the ELF electromagnetic-field bioeffect literature, and Helmholtz-coil magnetostatic field calculations.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.7625,
+  "scores": {
+    "project_relevance": 0.7,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior KUEPER research topic addresses artificial Schumann-resonance generators, Helmholtz-coil field magnitudes, or the ELF/Schumann bioeffect evidence base. The adjacent prior topic RES-20260829-AE1A40C0 concerns 95-120 Hz archaeoacoustic chamber resonance and 110 Hz EEG shifts, which is a different frequency band and evidence domain; RES-20260831-C1748BD0 covers ECLSS alarm thresholds. The 2095 Schumann-generator design arithmetic and its bioeffect premise are a materially new, un-researched dimension.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 487,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "a2ab1e76b171a3a7"
+}
