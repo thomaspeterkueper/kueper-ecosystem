@@ -1,6 +1,6 @@
 {
   "id": "RES-20260902-A2A10C95",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-02T08:03:08+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früheres Research-Topic betrifft KUE-SCI-0170 oder die Neurophysiologie menschlicher Magnetorezeption; der Fokus auf Replikationsstand und Primärquellen-Verifikation ist dokumentbezogen und sachlich unabhängig von den Topics zu OBS-0101, MTH-0006 und SCI-0001.",
-  "fingerprint": "a2a10c95a640ffba"
+  "fingerprint": "a2a10c95a640ffba",
+  "updated_at": "2026-09-02T08:26:46+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/104"
 }
