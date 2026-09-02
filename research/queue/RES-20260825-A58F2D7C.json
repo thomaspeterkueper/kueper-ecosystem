@@ -1,6 +1,6 @@
 {
   "id": "RES-20260825-A58F2D7C",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-25T04:06:38+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -19,5 +19,21 @@
   },
   "fingerprint": "a58f2d7cd0d32761",
   "updated_at": "2026-08-26T04:20:36+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/15"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/15",
+  "validated_at": "2026-09-02T10:02:43+00:00",
+  "validation_summary": "Der Kandidat ist eine Literaturfundierungs- und Verifikationsarbeit zu KUE-MTH-0006 (Autonomiegradient). Die dort zitierte Mrnjavac-et-al.-Studie (Science Advances 2026, DOI 10.1126/sciadv.aef3128) wird als real, peer-reviewt und korrekt zitiert verifiziert; die Zitation im Dokument ist nicht zu beanstanden. Zugleich weist der Kandidat nach, dass die tragenden theoretischen Begriffe des Dokuments (organisatorische Schließung, Autonomiegradient) bislang ohne reale Quell-Literatur verwendet werden, obwohl sie direkt auf eine etablierte Tradition abbildbar sind (Maturana & Varela; Moreno & Mossio; Montévil & Mossio; Ruiz-Mirazo). Kein Widerspruch (conflict) zwischen Kanon und Realbefund: KUE-MTH-0006 attribuiert das Hydrothermal-Schlotten-Milieu korrekt an die Autoren und übernimmt die umstrittene interpretative Rahmung („zwei Ursprünge des Lebens“, „LUCA nicht lebendig“) nicht. Gerechtfertigt sind: (1) Anreicherung der Theoriebegriffe in KUE-MTH-0006 durch die verifizierte reale Grundlag",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20260902-004",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20260902-005",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    }
+  ]
 }
