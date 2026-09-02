@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260902-341335E2",
+  "status": "queued",
+  "created": "2026-09-02T08:03:09+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0169-2026-de.md",
+  "source_ref": "150eefff423eecc74bf3e752d574161edfcb56e3",
+  "source_blob_sha": "d06d392eaaab63520b446db0b8590d0e05105699",
+  "title": "KUE-SCI-0169 Astronomisch-planetares Forcing der Seismizität: Verifikation der zitierten 2025/2026-Studien und Stand unabhängiger Replikationen",
+  "question": "Stimmen die in KUE-SCI-0169 als [R] referenzierten Charakterisierungen der Arbeiten von Dumont et al. (2025, Frontiers in Earth Science, DOI 10.3389/feart.2025.1587650), Doglioni (2026, Frontiers in Earth Science, DOI 10.3389/feart.2026.1815784) und Le Mouël et al. (2025, arXiv:2511.18939) mit den Primärtexten überein, und sind seit der Abfassung des Dokuments (2026-08-29) unabhängige Replikationen, methodische Kritiken (z. B. an der SSA-Methodik, Kataloghomogenität, multiplen Frequenzsuchen) oder Widerlegungen der behaupteten gemeinsamen pseudo-periodischen Komponenten (Seismizität/LOD), der 18,6-Jahres-Modulation des seismischen Moments bzw. der Tohoku-Foreshock-Geometrie erschienen, die die [H]-markierten Aussagen (Replizierbarkeit, Kausalmechanismus, keine Erdbebenvorhersage) in Richtung [R] oder Widerlegung verschieben würden?",
+  "why_now": "KUE-SCI-0169 ist 'Reviewfähig' (2026-08-29) und bewertet eine ungewöhnlich aktuelle, medial aufgeladene Kontroverse, bei der bereits wenige Monate neue Preprints, Kommentare oder Replikationsversuche die Trennlinie zwischen belegtem Befund und Hypothese verschieben können. Vor Freigabe des E-Papers sollte geprüft werden, ob sich die Datenlage seit Redaktionsschluss verändert hat, damit das Dokument seinen Zweck als verlässlicher Realanker erfüllt und nicht als Beleg für planetare Erdbebenauslösung fehlgelesen wird.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Realwissenschaftliche Kontroverse über astronomisch-planetares Forcing globaler Seismizität und deren unabhängige Replikation (Dumont et al. 2025; Doglioni 2026; Le Mouël et al. 2025)",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.7,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.65,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.7
+  },
+  "related_research_ids": [],
+  "novelty_reason": "KUE-SCI-0169 wurde in keinem früheren Research-Topic behandelt; die Frage nach Replikationsstand, Kritik und Primärquellen-Verifikation der Seismizitäts-Forcing-Literatur ist dokumentbezogen und sachlich von den Topics zu OBS-0101, MTH-0006 und SCI-0001 verschieden.",
+  "fingerprint": "341335e287432e7d"
+}
