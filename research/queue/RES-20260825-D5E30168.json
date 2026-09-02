@@ -1,6 +1,6 @@
 {
   "id": "RES-20260825-D5E30168",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-25T04:06:37+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -19,5 +19,27 @@
   },
   "fingerprint": "d5e30168e84ae878",
   "updated_at": "2026-08-25T04:24:10+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/13"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/13",
+  "validated_at": "2026-09-02T09:50:48+00:00",
+  "validation_summary": "Der Kandidat recherchiert die reale Befundlage (Stand 2026-08-25) zu Volatilretention, Kryovulkanismus und tidaler Heizung bei kleinen TNOs und bezieht sie auf die [OFFEN]-Fragen der kanonischen Beobachtungsnotiz KUE-OBS-0101-2026-DE (v1.3, 2026-05-09), die in diesem Checkout vorliegt. Der Kandidat widerlegt keine kanonische [R]-Aussage, sondern dokumentiert, dass die in der Notiz noch als 'geplant' bezeichnete JWST-Folgespektroskopie inzwischen publiziert ist (Wong, Protopapa & Lellouch 2026, ApJL) und die Zusammensetzungsfrage material einengt (CH₄/CO-dominante globale Modelle weitgehend ausgeschlossen; N₂/Ar-dominant oder oberflächennahes CH₄ verbleiben) sowie mit der Makemake-CH₄-Fluoreszenz (Protopapa et al. 2025) einen zweiten unabhängigen Anker für die Verbreitungsfrage liefert. Die Resonanzklassen-Frage bleibt ohne realen Literaturanker und damit frei fiktional setzbar. Konkrete Aktionen entstehen für kueper-com: Anreicherung der [OFFEN]-Einträge der Notiz und eine Quellen-Veri",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20260902-001",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20260902-002",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20260902-003",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    }
+  ]
 }
