@@ -1,0 +1,48 @@
+{
+  "id": "RES-20260902-0CDC9069",
+  "status": "queued",
+  "created": "2026-09-02T08:14:12+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0021-2025-DE.md",
+  "source_ref": "a6f5c1c86f1025dce8d85e1f0fa44a8f465b68d9",
+  "source_blob_sha": "e4a7809aa044cf7ba6af300c5504f3f0a12169fd",
+  "document_signature": "OTA-SCI-0021-2025-DE",
+  "title": "Source-grounded verification of the 'Mousley et al. (2025)' five-brain-epoch and ISS microgravity [R] anchors in OTA-SCI-0021 (and OTA-KARTE-0002)",
+  "question": "Source-grounded audit of the exact OTA-SCI-0021-2025-DE text against primary, peer-reviewed and institutional sources. (a) Verify the underlying 'Mousley-Studie (University of Cambridge, 2025)' that OTA-SCI-0021 uses as its 1g baseline (documented in detail in OTA-SCI-0019-2025-DE): does the primary source exist as cited — Mousley, A., et al. (2025), 'Topological turning points across the human lifespan', Nature Communications 16, 10789, DOI 10.1038/s41467-025-65974-8, PMC12647875, University of Cambridge Dept. of Psychiatry, first author Dr. Alexa Mousley, senior author Prof. Duncan Astle, >4,000 diffusion-MRI scans, graph-theoretic network metrics projected with UMAP — and does it support the claims that brain development proceeds in five discrete epochs (Cambridge terminology childhood, adolescent, adult, early ageing, late ageing) separated by four topological turning points at approximately 9, 32, 66 and 83 years, with ~32 the strongest turning point of the lifespan and >80-year findings resting on a thinner sample? Report the paper's actual epoch names, boundary ages and terminological nuances, and flag any discrepancy (title, authorship, journal, volume/article number, DOI, PMC ID, dates, age boundaries, or characterization of the ~32-year peak). (b) Check how OTA-SCI-0021's Section V matrix and the derived OTA-KARTE-0002 reference card transcribe that model: are the boundary ages (~9/~32/~66/~83) and the 1g-only epoch characterizations (Epoche I 0-9 Konsolidierung/maximale Plastizität; Epoche II 9-32 Effizienzsteigerung, peak ~32; Epoche III 32-66 Stabilität/Plateau; Epoche IV 66-83 Reorganisation, erhöhte Demenzvulnerabilität; Epoche V 83+ lokale Dominanz, dünne Datenbasis) supported by the study, and which wording must be narrowed or reclassified? (c) Verify the aggregated [R] space-medicine layer: long-duration spaceflight/microgravity neuroimaging findings (structural white-matter/connectivity changes, cerebrospinal fluid shifts, functional reorganization, and their persistence) as reported in recent NASA/ESA ISS studies — which are established, at what magnitudes and subject numbers, and which are overstated or still preliminary? (d) Assess the document's [R]/[S] split: confirm the 1g column rests on the verifiable study while the 0,38g-only (Mars) and Hybrid columns and the 'Epoche 2.5' (18-25) transitional idea are [S]/[T] speculative extrapolations with no direct empirical basis, and identify any real microgravity evidence that legitimately anchors (or constrains) them. Keep the central question — whether the five epochs hold under Mars gravity — explicitly open. Do NOT validate or alter the fictional GANDHAKA/noχ¹ᐃ narrative applications, character-age decisions, or any NOXIA/OTA balancing value. Distinguish [R] verified, [H] plausible extrapolation, [S] speculative, [F] fictional, [OFFEN] unresolved.",
+  "why_now": "OTA-SCI-0021 is in the current workqueue (priority 12, RELATION_GAP) and is the 'Vollständige Dokumentation' node behind the queued OTA-KARTE-0002 reference card, whose entire [R] column stands or falls on the Mousley et al. (2025) anchor. The five-epoch/wendepunkt model is used archive-wide as the 'Rosetta Stone' for timing every narrative brain intervention across both universes, so an unverified or mis-transcribed citation would propagate into many documents. The study carries full, checkable citation metadata (DOI, PMC, institutional press release, secondary journalism URLs), making it a high-resolution R-anchor verification exactly like prior source-grounded audits; no prior KUEPER research topic has examined this anchor chain.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "S"
+  ],
+  "real_world_anchor": "Mousley et al. (2025) lifespan brain-development epochs and NASA/ESA ISS long-duration microgravity neuroimaging findings as cited by OTA-SCI-0021-2025-DE (and OTA-KARTE-0002).",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.9125,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.95
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior KUEPER research topic covers the Mousley et al. (2025) lifespan brain-epoch model, the OTA-SCI-0019/0021/KARTE-0002 anchor chain, or ISS microgravity brain-architecture claims. The nearest prior items concern ECLSS physiology thresholds (RES-20260831-C1748BD0), rotating-habitat human factors (RES-20260831-TEC0082B) and archaeoacoustic chamber resonance (RES-20260829-AE1A40C0), none of which address brain-development epoch boundaries or microgravity neuroimaging.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 357,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "0cdc906986b6258c"
+}
