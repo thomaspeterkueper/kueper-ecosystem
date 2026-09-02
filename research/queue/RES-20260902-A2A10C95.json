@@ -1,0 +1,36 @@
+{
+  "id": "RES-20260902-A2A10C95",
+  "status": "queued",
+  "created": "2026-09-02T08:03:08+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0170-2026-de.md",
+  "source_ref": "150eefff423eecc74bf3e752d574161edfcb56e3",
+  "source_blob_sha": "001e45c9dc4f943d5509dd3fb99c4ba636fe441f",
+  "title": "KUE-SCI-0170 Menschliche Magnetorezeption: Replikationsstand der Wang-2019-Alpha-ERD und Verifikation der Kaub-2026-Bildgebung",
+  "question": "Wie ist der empirische Stand (2025–2026) zur menschlichen Magnetorezeption im Verhältnis zu den in KUE-SCI-0170 getroffenen Aussagen: Wurde der richtungsabhängige Alpha-ERD-Befund von Wang et al. (2019, eNeuro, DOI 10.1523/ENEURO.0483-18.2019) inzwischen unabhängig repliziert, präregistriert nachuntersucht, methodisch kritisiert oder widerlegt, und ist die als Erst-Bildgebung einzelner magnetischer Dipolquellen in menschlichem Hirngewebe referenzierte Quantum-Diamond-Mikroskopie-Studie (Kaub et al. 2026, RSC Advances, DOI 10.1039/D5RA08546B) sowie das theoretische Modell von Kletetschka & Bazala (2025, Scientific Reports, DOI 10.1038/s41598-025-07988-2) korrekt wiedergegeben? Welche Folgearbeiten grenzen den [T/H]-Status des Transduktionsmechanismus (Magnetit-basiert vs. Radikalpaar/Cryptochrom) ein, benennen ein menschliches Rezeptororgan oder etablieren eine kausale Brücke zwischen Hirnmagnetit und EEG-Reaktion?",
+  "why_now": "KUE-SCI-0170 (2026-08-29) ist 'Reviewfähig' und referenziert sehr junge Literatur (Kaub et al. 2026, Kletetschka & Bazala 2025). Die Abschnitte VII–IX (offener Mechanismus, Replikationsanforderungen, Evidenzregister) lassen sich erst belastbar freigeben, wenn der Replikationsstand der Wang-2019-Studie und die korrekte Wiedergabe der 2025/2026er-Arbeiten gegen Primär- und Folge-Literatur geprüft sind; Fehlklassifikationen würden sonst als kanonische Realanker downstream in KG/OTA fortgeschrieben.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Replikations- und Evidenzlage zu humaner Magnetorezeption (Wang et al. 2019; Kaub et al. 2026; Kletetschka & Bazala 2025) und offener Transduktionsmechanismus",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.775,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früheres Research-Topic betrifft KUE-SCI-0170 oder die Neurophysiologie menschlicher Magnetorezeption; der Fokus auf Replikationsstand und Primärquellen-Verifikation ist dokumentbezogen und sachlich unabhängig von den Topics zu OBS-0101, MTH-0006 und SCI-0001.",
+  "fingerprint": "a2a10c95a640ffba"
+}
