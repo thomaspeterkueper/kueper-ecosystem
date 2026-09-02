@@ -1,6 +1,6 @@
 {
   "id": "RES-20260902-BA7C8605",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-02T08:03:07+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früheres Research-Topic behandelt KUE-SCI-0183; die Goldhydrid- und MOF-Konfinement-Frage ist ein eigenständiger, erst mit dem letzten Commit ins Repo gelangter realwissenschaftlicher Sachverhalt und überlappt nicht mit den Topics zu OBS-0101, MTH-0006 oder SCI-0001.",
-  "fingerprint": "ba7c860550db2d76"
+  "fingerprint": "ba7c860550db2d76",
+  "updated_at": "2026-09-02T08:12:56+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/103"
 }
