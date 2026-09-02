@@ -1,0 +1,36 @@
+{
+  "id": "RES-20260902-BA7C8605",
+  "status": "queued",
+  "created": "2026-09-02T08:03:07+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0183-2026-de.md",
+  "source_ref": "150eefff423eecc74bf3e752d574161edfcb56e3",
+  "source_blob_sha": "ba8a4d5887642d659066c92bc80e335ed20f6049",
+  "title": "KUE-SCI-0183 Goldhydrid Au₂Hₓ: Verifikation der Frost-et-al.-Befunde und Recherche zur Konfinement-Stabilisierung superionischer Hydride",
+  "question": "Stimmen die in KUE-SCI-0183 als [R] referenzierten quantitativen Befunde von Frost et al. (2025, Angew. Chem. Int. Ed. 64, e202505811, DOI 10.1002/anie.202505811) — Bildung eines binären Goldhydrids Au₂Hₓ oberhalb ≈40 GPa und ≈2200 K, hcp-Golduntergitter, superionische Wasserstoffmobilität in DFT-MD, Anstieg von x auf ≈1 bei ≈80 GPa, Rückkehr zu fcc-Gold bei Abkühlung auf 295 K — exakt mit der Primärliteratur (einschließlich etwaiger Korrekturen/Errata) überein, und gibt es seit 2025 publizierte Folgearbeiten, die (a) die Phase reproduzieren oder den Druck-Temperatur-Kompositionsbereich erweitern oder (b) eine Stabilisierung von Hochdruck-, superionischen oder metastabilen Metallhydridphasen durch Konfinement in porösen Wirten (MOFs wie Cu₃(HHTP)₂, Kohlenstoff, Schichtmaterialien) experimentell oder rechnerisch demonstrieren, sodass die in §§III–X getroffene Einstufung (keine demonstrierte Niedrigtemperatur-Metastabilität; Konfinement als ungetestete [T/H]-Hypothese; keine Lebensdauerangaben) aktualisiert werden müsste?",
+  "why_now": "KUE-SCI-0183 wurde am 2026-09-01 neu angelegt (letzter Commit) und steht im Status 'Reviewfähig'. Vor Freigabe müssen die zugrunde gelegten Primärquellen (Frost et al. 2025; Cu₃(HHTP)₂-Leitfähigkeitsarbeiten; Materials-Horizons-Studie 2025) gegen die aktuelle Literatur geprüft und seit 2025 erschienene Folge- und Konfinement-Arbeiten eingearbeitet werden. Die epistemische Trennschärfe des Dokuments hängt unmittelbar daran, ob zwischenzeitlich eine Host-Stabilisierung von Au₂Hₓ oder verwandten superionischen Hydriden publiziert wurde, die den zentralen [T/H]-Vorbehalt verändern würde.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Experimentelle Hochdruck-Synthese von Au₂Hₓ (Frost et al. 2025) und Forschungsstand zur Konfinement-/Host-Stabilisierung superionischer bzw. metastabiler Metallhydride",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.7875,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früheres Research-Topic behandelt KUE-SCI-0183; die Goldhydrid- und MOF-Konfinement-Frage ist ein eigenständiger, erst mit dem letzten Commit ins Repo gelangter realwissenschaftlicher Sachverhalt und überlappt nicht mit den Topics zu OBS-0101, MTH-0006 oder SCI-0001.",
+  "fingerprint": "ba7c860550db2d76"
+}
