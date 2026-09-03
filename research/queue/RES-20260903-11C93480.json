@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260903-11C93480",
+  "status": "queued",
+  "created": "2026-09-03T08:11:17+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "Learning-science evidence for presenting real-world knowledge inside a fiction/game world on the endia.de knowledge-platform (learning effects and fact-fiction source monitoring)",
+  "question": "What does empirical learning-science research establish about whether factual knowledge embedded inside a fictional narrative or game world — as the Endia books and the endia.de knowledge-platform do — is learned, retained, and correctly source-attributed (real vs. fictional) by young-adult readers, and which evidence-based design guardrails (clear fiction/fact signalling, debriefing, retrieval practice, source labels) follow so the platform can preserve the canon-evidence boundary without degrading learning?",
+  "why_now": "ECO-ARC-0016 assigns endia.de the knowledge-platform role, yet this repository is still an onboarding scaffold with no educational concept or fact/fiction presentation rules specified. The worldbuilding-scientific evidence profile makes the canon/evidence boundary a core requirement, so deciding now — on empirical evidence rather than intuition — how a book-framed platform presents real-world topics determines the site's core design before any content is built. The two queued topics that look adjacent do not answer this: the transmedia/games-in-literature topic covers narrative-game design precedents, and the digital-rights topic covers which content to draw on; neither addresses whether and how knowledge framed by fiction is actually learned and correctly attributed.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewed learning-science literature on narrative-embedded learning, the seductive-details effect, multimedia learning, and source monitoring in educational media for young adults",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Orthogonal to prior candidates: RES-20260826-868027AD asks which transmedia/game-in-literature design precedents make the in-book game coherent; RES-20260826-47CC2438 asks which digital-rights discourse and literacy content to draw on. Neither poses the empirical question of whether knowledge delivered inside a fictional frame is learned, retained and correctly attributed as fact vs. canon, nor which fact/fiction signalling guardrails the platform needs. This is therefore not a rephrasing or narrowing of either.",
+  "fingerprint": "11c934802bc53e5e"
+}
