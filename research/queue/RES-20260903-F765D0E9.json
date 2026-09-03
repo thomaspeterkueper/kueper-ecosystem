@@ -1,0 +1,52 @@
+{
+  "id": "RES-20260903-F765D0E9",
+  "status": "queued",
+  "created": "2026-09-03T08:22:44+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0016-2063-DE.md",
+  "source_ref": "a6f5c1c86f1025dce8d85e1f0fa44a8f465b68d9",
+  "source_blob_sha": "0743003fccec507abd24667a75aaa0bdb531af92",
+  "document_signature": "OTA-TEC-0016-2063-DE",
+  "title": "Mars-EDL- und Methalox-ISRU-Hard-SF-Audit für OTA-TEC-0016 (KITE-Shuttle): Eintrittsgeschwindigkeit, Bremsschub-/Treibstoff-Arithmetik, Landegeschwindigkeit, Sabatier-Anker",
+  "question": "Source-grounded audit of the exact OTA-TEC-0016-2063-DE Helios KITE-Shuttle dossier against real Mars entry/descent/landing (EDL) physics, methalox propulsion arithmetic and demonstrated Mars ISRU. Assess only the externally checkable layer the document marks [R]/[T]: (1) Mars atmosphere anchors: verify the claim that the Mars atmosphere is ~0.6% of Earth's surface pressure and what that implies for aerodynamic braking, terminal guidance and the design statement that the vehicle deliberately has no aerodynamic shaping ('Mars-Atmosphäre zu dünn'); quantify representative entry-interface velocities for an orbital (Standard-Transport-Orbit) to surface vehicle versus the dossier's stated 'Eintrittsgeschwindigkeit ~8 km/s' and 'atmosphärischer Eintritt 5-10g max' — are those figures consistent with a low-Mars-orbit-to-surface shuttle, or do they correspond to a direct hyperbolic/Earth-return entry?; (2) entry g-loads: check typical peak deceleration loads for real and studied Mars entry vehicles (capsule/aeroshell and propulsive lander classes) and whether 5-10 g is representative or overstated for the stated descent timeline; (3) propulsion arithmetic: close the mass/burn-time/thrust loop for the fictional set 28 t dry / 45 t max, 180 kN methalox main engine, 8 t (standard)/12 t (extended) propellant and a claimed 12-minute continuous burn — with representative methalox vacuum Isp (~360-380 s) compute the implied mass flow, whether 180 kN for 12 min is compatible with only 8-12 t of propellant, and the resulting delta-v versus the ~4 km/s+ surface↔orbit requirement; report explicitly which combinations are physically incompatible without changing the fictional canon; (4) Mars methalox ISRU: verify the [R]-marked claim that methane/LOX is producible on Mars via the Sabatier process and characterize what has actually been demonstrated (e.g. MOXIE-class oxygen production, scale-up gaps for CH4) without asserting a fictional production rate; (5) landing-speed thresholds: assess the stated safe touchdown ceiling of ≤3.5 m/s and the fatal threshold of >50 m/s (247 m/s fatal impact in the narrative) against real lander touchdown design limits (Apollo LM ~1-3 m/s, Starship-class propulsive landings) and structural impact survivability; (6) descent timeline: check whether a deorbit-to-landing profile completing in roughly 30 minutes (T-0 deorbit burn, T+15 min entry, T+30 min touchdown) is physically consistent for a Mars orbital shuttle; and (7) identify wording in the [R]/[T] hard-SF validation list (Section VII, KN-02) that should be narrowed, corrected or reclassified [R]/[T]/[H]/[F]. Do NOT evaluate or alter the fictional 2063-2091 introduction window, crew/passenger counts, KITE-03/05/07 instances, operator HeliosCorp/UN Mars Initiative, the 'PROMETHEUS' doctrine layer, Rashid Al-Mansouri's simulator narrative and 247 m/s crash, the 'Mondbasis Alpha 1' aesthetic, or any NOXIA/OTA balancing value. Map supporting and constraining evidence without upgrading speculative future capability to demonstrated.",
+  "why_now": "Workqueue diagnostics flag OTA-TEC-0016 as a KURZ/FRAGMENT [F][T][R] document whose own 'Hard-SF-Validierung' section asserts specific [R]/[T] Mars-EDL and Sabatier anchors (8 km/s entry, 5-10 g, 12-min/180 kN burn on 8-12 t propellant, ≤3.5 m/s landing, Mars methalox ISRU). Several of these are internally checkable (thrust x burn time vs propellant mass appears to be off by an order of magnitude) and externally falsifiable against real Mars-EDL and ISRU literature. No prior research topic covers this Mars orbit-surface vehicle; existing audits (TEC-0082 hydrolox cislunar, TEC-0084 lunar surface-to-LLO, TEC-0083 Earth-to-LEO, TEC-0090 Mars roads) are architecturally adjacent but do not constrain its Mars-EDL/methalox layer.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "real_world_anchor": "Real Mars atmospheric pressure (~0.6% of Earth) and EDL physics; representative LMO-surface entry velocities and entry g-loads from NASA/ESA Mars-EDL literature; demonstrated Mars methalox ISRU via Sabatier (MOXIE-scale); propellant-mass flow arithmetic for methalox engines; real lander touchdown vertical-speed design limits.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260830-TEC0084A",
+    "RES-20260831-TEC0082A",
+    "RES-20260830-TEC0083A"
+  ],
+  "novelty_reason": "First audit of the Mars orbital-surface KITE shuttle itself. Prior vehicle audits covered cislunar hydrolox crew transfer (TEC-0082), lunar surface-to-LLO (TEC-0084), Earth-to-LEO reusable launchers (TEC-0083) and Mars surface roads (TEC-0090); none tests this document's specific Mars-EDL entry-velocity/g-load/propellant-closure and demonstrated-Sabatier claims.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 902,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "f765d0e991c76b54"
+}
