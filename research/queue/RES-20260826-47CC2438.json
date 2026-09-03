@@ -1,6 +1,6 @@
 {
   "id": "RES-20260826-47CC2438",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-08-26T04:06:49+00:00",
   "source_project": "endia",
   "source_repository": "thomaspeterkueper/endia.de",
@@ -18,5 +18,7 @@
     "uncertainty": 0.6,
     "evidence_potential": 0.85
   },
-  "fingerprint": "47cc243863af863e"
+  "fingerprint": "47cc243863af863e",
+  "updated_at": "2026-09-03T08:32:10+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/107"
 }
