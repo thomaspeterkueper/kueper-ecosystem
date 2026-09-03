@@ -29,6 +29,7 @@ Kein Repository darf fremde Domänen stillschweigend kanonisieren.
 | Entitäten und Relationen | `kueper-knowledge-graph` |
 | Knowledge Domains | `kueper-knowledge-graph` |
 | KXF-Exporte und Mappings | `kueper-knowledge-graph` |
+| Projektübergreifende IDs, Mappings und semantische Relationen (KG) | `kueper-knowledge-graph` |
 | KUE-Archivdokumente | `kueper.com` |
 | Werkneutrale wissenschaftliche Grundlagenpublikation | `kueper.com` oder später eigenes Knowledge-Base-Repo, falls beschlossen |
 | Lernmodule, Lernpfade, Übungen | `solarsciencefoundation` |
@@ -37,6 +38,27 @@ Kein Repository darf fremde Domänen stillschweigend kanonisieren.
 | NOXIA-Unlocks und Gameplay-Anwendung | `noxiagame` |
 | Autorenwebsite und öffentliche Werkdarstellung | `thomas-kueper.de` |
 | Fiktionale Archiv- und Werkbezüge | `overtime-archive.org` |
+| Bestätigte universumsweite Primärdaten der NOXIA-Kontinuität (NXU) | `noxia-universe` |
+| Ausschließlich kanonische `OTA-*`-Dokumente (OTA) | `overtime-archive.org` |
+| Private Arbeitsstände/Authoring-Zustände für Buchprojekte und werkbezogene Medien (BW) | `buecherwelten` |
+
+## 3a. Werkbezogene Abgrenzung (BW / NXU / OTA / KG)
+
+Für Buchprojekte und werkbezogene Medien gilt folgende verbindliche
+Zuständigkeitsabgrenzung (ECO-ARC-0031):
+
+| Code | Zuständigkeit |
+|---|---|
+| `BW` | **private Arbeitsstände/Authoring-Zustände** — `buecherwelten` ist die private Authoring- und Entwicklungsschicht: Manuskripte, Szenen, Kapitelstände, werkbezogene Medien. Keine Publikationsschicht. |
+| `NXU` | **bestätigte universumsweite Primärdaten der NOXIA-Kontinuität** — `noxia-universe` führt nur bestätigte Bücher, Figuren, Handlungen, Orte, Personen und Worldbuilding dieser Kontinuität. |
+| `OTA` | **ausschließlich kanonische `OTA-*`-Dokumente** — `overtime-archive.org` ist alleinige Quelle für die kanonische OTA-Dokumentebene. |
+| `KG` | **projektübergreifende IDs, Mappings und semantische Relationen** — `kueper-knowledge-graph` führt die semantische Verknüpfung zwischen den Projekten. |
+
+Private Authoring-Inhalte (`BW`) werden durch bloße technische Lesbarkeit
+nicht kanonisch, nicht publiziert und nicht automatisch nach `NXU`, `OTA`
+oder `KG` übertragen (`private source -> public target` ist deny-by-default,
+ECO-ARC-0030). Überführungen in eine andere Zuständigkeit erfordern eine
+ausdrückliche Promotion-Entscheidung.
 
 ## 4. Referenzieren ist erlaubt
 

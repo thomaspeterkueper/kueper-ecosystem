@@ -86,7 +86,7 @@ def parse_frontmatter(text):
             k,v=line.split(":",1);out[k.strip()]=parse_scalar(v)
     return out
 
-def system_code_map(): return {"ecosystem":"ECO","knowledge-graph":"KG","ssf":"SSF","noxia":"NOXIA","noxia-universe":"NXU","mishkenaz":"MISH","omnizedenz":"OMNI","avi-modell":"AVI","contracomology":"CONTRA","kueper-archive-schema":"ARCH","endia":"ENDIA","zereya":"ZEREYA","davaru":"DAVARU","fluide-hermeneutik":"FLHERM","resonanz-ethik":"RESETH","kueper-com":"KUE","ota":"OTA","thomas-kueper-de":"TKD"}
+def system_code_map(): return {"ecosystem":"ECO","knowledge-graph":"KG","ssf":"SSF","noxia":"NOXIA","noxia-universe":"NXU","mishkenaz":"MISH","omnizedenz":"OMNI","avi-modell":"AVI","contracomology":"CONTRA","kueper-archive-schema":"ARCH","endia":"ENDIA","zereya":"ZEREYA","davaru":"DAVARU","fluide-hermeneutik":"FLHERM","resonanz-ethik":"RESETH","kueper-com":"KUE","ota":"OTA","thomas-kueper-de":"TKD"}  # buecherwelten (BW) omitted: outbox routing to BW stays disabled (ECO-ARC-0031 §4); re-add when routing is enabled
 def load_projects():
     reg=json.loads(REGISTRY.read_text(encoding="utf-8"));codes=system_code_map();out=[]
     for p in reg["projects"]:

@@ -31,3 +31,21 @@ python3 tools/lint-external-tasks/lint.py --all <repo-root>
 ```
 
 Nur stdlib, kein Netzwerk, exit 1 bei Verstoß (CI-tauglich).
+
+## governance
+
+`governance/merge_gate.py` — deterministischer Merge-Gate für
+Owner-Governance-Entscheidungen (ECO-ARC-0027). Sperrt den Merge, solange der
+zu mergende Stand BW-Governance-Objekte (Code `BW` in
+`schemas/external-task.schema.json`, `lint-external-tasks/lint.py`,
+Code-Tabelle in ECO-ARC-0006 oder Registry-Eintrag `buecherwelten`) enthält,
+ohne dass ECO-ARC-0030 und ECO-ARC-0031 durch den Project Owner angenommen
+sind (`Status: accepted`). Wird in `.github/workflows/merge-gate.yml` bei jedem
+Pull Request ausgeführt.
+
+```bash
+python3 tools/governance/merge_gate.py <repo-root>
+python3 -m unittest tools/governance/test_merge_gate.py
+```
+
+Nur stdlib, kein Netzwerk, exit 1 bei gesperrtem Merge (CI-tauglich).

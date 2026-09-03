@@ -108,6 +108,8 @@ async function collectProject(p: Json, ids: Set<string>, token: string) {
       name: p.name,
       repository: repo,
       role: p.role,
+      code: p.code ?? null,
+      private: null,
       overall: "critical" as const,
       branch: null,
       version: null,
@@ -185,13 +187,18 @@ async function collectProject(p: Json, ids: Set<string>, token: string) {
     detail: integ,
   };
 
-  const version = await resolveVersion(repo, branch, p.version_source, token);
+  // Sensitive Repositories (sensitivity gesetzt, z. B. private-manuscript-source):
+  // Inhalte (package.json, VERSION, ...) duerfen vom Dashboard nicht gelesen werden
+  // (ECO-ARC-0031 §5) — daher keine inhaltsbasierte Versionsaufloesung.
+  const version = p.sensitivity ? null : await resolveVersion(repo, branch, p.version_source, token);
 
   return {
     id: p.id,
     name: p.name,
     repository: repo,
     role: p.role,
+    code: p.code ?? null,
+    private: data.private ?? null,
     overall: overall(Object.values(checks).map((c) => c.state)),
     branch,
     version,
@@ -230,7 +237,12 @@ export async function GET() {
   const projectsIn: Json[] = registry.projects || [];
   const ids = new Set<string>(projectsIn.map((p) => p.id));
 
-  const projects = await Promise.all(projectsIn.map((p) => collectProject(p, ids, token)));
+  // enabled: false deaktiviert die Überwachung (registry/README.md): das
+  // Projekt wird nicht abgefragt und nicht als kritisch gerendert, bis der
+  // Owner den Eintrag aktiviert (z. B. buecherwelten vor Owner-Abnahme).
+  const monitored = projectsIn.filter((p) => p.enabled !== false);
+
+  const projects = await Promise.all(monitored.map((p) => collectProject(p, ids, token)));
 
   const allTasks = projects.flatMap((p) => p.tasks);
   const counts: Record<string, number> = {};

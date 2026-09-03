@@ -34,6 +34,14 @@ kueper-knowledge-graph
 thomas-kueper.de
   |
   |-- öffentliche Autoren-, Werk- und Philosophieplattform
+
+buecherwelten
+  |
+  |-- private Authoring- und Entwicklungsschicht (Manuskripte, Szenen,
+      Kapitelstände, werkbezogene Medien)
+  |-- kein automatischer Inhaltstransfer an öffentliche Schichten
+      (noxia-universe, overtime-archive.org, kueper-knowledge-graph):
+      Promotion nur durch ausdrückliche Entscheidung (ECO-ARC-0030/0031)
 ```
 
 ## 3. Rollen der Ebenen
@@ -81,6 +89,14 @@ Beispiele:
 ### Fiktionale Archiv- und Anwendungsschicht
 
 `overtime-archive.org` erlaubt werkbezogene und fiktionale Kontexte, sofern sie korrekt auf reale Grundlagen und KUE/KG-Bezüge verweisen.
+
+### Private Authoring-Schicht
+
+`buecherwelten` hält private Arbeitsstände und Authoring-Zustände für
+Buchprojekte und werkbezogene Medien. Inhalte dieser Schicht sind nicht
+öffentlich, nicht kanonisch und werden ohne ausdrückliche
+Promotion-Entscheidung nicht in andere Schichten (NXU, OTA, KG) übertragen
+(ECO-ARC-0030/0031).
 
 ## 4. Verweisrichtungen
 

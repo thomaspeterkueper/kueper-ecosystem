@@ -1,0 +1,28 @@
+name: KUEPER Governance Merge Gate
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      # pull_request checks out the merge ref: geprueft wird der Stand, der
+      # nach dem Merge wirksam waere.
+      - name: Checkout merge ref
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Run deterministic merge gate tests
+        run: python3 -m unittest tools/governance/test_merge_gate.py
+
+      - name: Run governance merge gate
+        run: python3 tools/governance/merge_gate.py .

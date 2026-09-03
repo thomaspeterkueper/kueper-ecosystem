@@ -11,3 +11,11 @@ Momentaufnahme des beobachteten Zustands und wird beim nächsten Collector-Lauf
 Feldstruktur je Projekt: `overall` (healthy|degraded|critical|unknown) plus
 Einzel-`checks` (repository_reachable, open_pull_requests,
 governance_required_paths, external_tasks_open, integrations).
+
+## Private Repositories
+
+Für private Repositories (z. B. `buecherwelten`) enthält der Snapshot nur
+operative Metadaten: Erreichbarkeit, Default Branch, letzter Push, Anzahl
+offener PRs (keine Titel), Pfadprüfungen, Task-Dateinamen und das
+`private`-Flag. Inhalte privater Repositories werden vom Collector weder
+gelesen noch gespeichert (ECO-ARC-0031).

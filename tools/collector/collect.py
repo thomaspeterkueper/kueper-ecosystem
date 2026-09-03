@@ -56,6 +56,7 @@ def collect_project(p, id_to_repo, token):
         "name": p["name"],
         "repository": repo,
         "role": p["role"],
+        "code": p.get("code"),
         "enabled": p.get("enabled", True),
         "checks": checks,
     }
@@ -148,7 +149,12 @@ def main():
         reg = json.load(f)
     id_to_repo = {p["id"]: p["repository"] for p in reg["projects"]}
 
-    projects = [collect_project(p, id_to_repo, token) for p in reg["projects"]]
+    # enabled: false deaktiviert die Überwachung (registry/README.md): das
+    # Projekt wird weder überwacht noch in den Snapshot aufgenommen, bis der
+    # Owner den Eintrag aktiviert (z. B. buecherwelten vor Owner-Abnahme).
+    monitored = [p for p in reg["projects"] if p.get("enabled", True)]
+
+    projects = [collect_project(p, id_to_repo, token) for p in monitored]
 
     counts = {}
     for p in projects:

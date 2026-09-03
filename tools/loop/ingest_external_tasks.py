@@ -12,6 +12,7 @@ import base64
 import json
 import os
 import re
+import sys
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -31,7 +32,7 @@ CODES_TO_IDS = {
     "AVI": "avi-modell", "CONTRA": "contracomology", "ARCH": "kueper-archive-schema",
     "ENDIA": "endia", "ZEREYA": "zereya", "DAVARU": "davaru",
     "FLHERM": "fluide-hermeneutik", "RESETH": "resonanz-ethik", "KUE": "kueper-com",
-    "OTA": "ota", "TKD": "thomas-kueper-de",
+    "OTA": "ota", "TKD": "thomas-kueper-de", "BW": "buecherwelten",
 }
 
 
@@ -76,7 +77,11 @@ def enc(path: str) -> str:
 
 
 def default_branch(token: str, repo: str) -> str:
-    return gh(token, f"/repos/{repo}")["default_branch"]
+    data = gh(token, f"/repos/{repo}")
+    if not isinstance(data, dict) or "default_branch" not in data:
+        # gh() returns None on HTTP 404 (z. B. privates Repository ohne Token-Zugriff).
+        raise RuntimeError(f"could not resolve default branch for {repo}")
+    return data["default_branch"]
 
 
 def list_open(token: str, repo: str, branch: str) -> list[dict[str, Any]]:
@@ -134,6 +139,101 @@ def resolve_project(value: str | None, fallback: str, by_id: dict[str, dict[str,
     return fallback
 
 
+def scan_project(gh_token: str, supabase_url: str, supabase_secret: str, project: dict[str, Any], by_id: dict[str, dict[str, Any]], ingested: int) -> tuple[list[dict[str, Any]], int]:
+    """Scan one enabled project's `external-tasks/open` inbox. Returns (results, newly_ingested)."""
+    repo = project["repository"]
+    target_id = project["id"]
+    if project.get("sensitivity", {}).get("repository_class") == "private-manuscript-source":
+        # ECO-ARC-0030: aus private-manuscript-source duerfen keine regulären
+        # Cross-Repository-Tasks erzeugt werden, deren Payload Manuskripttext enthält.
+        print(f"SKIP {repo}: private-manuscript-source ist vom Inbox-Scan ausgeschlossen (ECO-ARC-0030)", file=sys.stderr)
+        return [{"repository": repo, "result": "skipped-private-manuscript-source"}], 0
+
+    results: list[dict[str, Any]] = []
+    ingested_count = 0
+    branch = default_branch(gh_token, repo)
+    for item in sorted(list_open(gh_token, repo, branch), key=lambda x: x.get("name", "")):
+        if ingested + ingested_count >= MAX_INGEST:
+            break
+        if item.get("type") != "file" or not item.get("name", "").endswith(".md"):
+            continue
+
+        path = item["path"]
+        text = read_file(gh_token, repo, path, branch)
+        fm = frontmatter(text)
+        if fm.get("status", "open").lower() != "open":
+            continue
+
+        external_id = fm.get("id") or Path(path).stem
+        source_hint = fm.get("source") or section(text, "Herkunft")
+        source_id = resolve_project(source_hint, "ecosystem", by_id)
+        resolved_target = resolve_project(fm.get("target"), target_id, by_id)
+        if resolved_target != target_id:
+            results.append({
+                "path": path, "repository": repo, "result": "target-mismatch",
+                "declared_target": resolved_target, "repository_target": target_id,
+            })
+            continue
+
+        requested_change = section(text, "Gewünschte Änderung") or section(text, "Ziel") or section(text, "KXF-Anforderung")
+        expected_result = section(text, "Erwartetes Ergebnis") or section(text, "KXF-Anforderung")
+        reason = section(text, "Anlass") or section(text, "Begründung") or section(text, "Herkunft")
+        instruction = requested_change or f"Bearbeite den External Task {external_id} gemäß Repository-Governance."
+        if expected_result and expected_result not in instruction:
+            instruction += f"\n\nErwartetes Ergebnis:\n{expected_result}"
+        instruction += f"\n\nLies den vollständigen External Task unter `{path}` vor der Implementierung."
+
+        priority = fm.get("priority", "medium").lower()
+        if priority not in {"low", "medium", "high", "critical"}:
+            priority = "medium"
+        cost_policy = fm.get("cost_policy", "prefer_off_peak" if priority in {"low", "medium"} else "immediate").lower()
+        if cost_policy not in VALID_COST_POLICIES:
+            cost_policy = "normal"
+        estimated_effort = fm.get("estimated_effort", "high").lower()
+        if estimated_effort not in VALID_EFFORT:
+            estimated_effort = "medium"
+
+        payload = {
+            "instruction": instruction,
+            "external_task_id": external_id,
+            "external_task_path": path,
+            "title": fm.get("title") or title(text) or external_id,
+            "reason": reason,
+            "source_repository": by_id.get(source_id, {}).get("repository"),
+            "target_repository": repo,
+            "routing_fingerprint": fm.get("routing_fingerprint"),
+            "autonomous_ingest": True,
+            "allow_repository_changes": True,
+            "allow_pull_request": True,
+            "allow_merge": False,
+            "cost_policy": cost_policy,
+            "estimated_effort": estimated_effort,
+        }
+        idem = f"external-task:{repo}:{external_id}"
+        created = rpc(supabase_url, supabase_secret, "kueper_create_task", {
+            "p_type": "IMPLEMENT_EXTERNAL_REQUIREMENT",
+            "p_source_project": source_id,
+            "p_target_project": target_id,
+            "p_payload": payload,
+            "p_priority": priority,
+            "p_external_id": external_id,
+            "p_idempotency_key": idem,
+            "p_preferred_provider": "deepseek",
+            "p_preferred_model": None,
+            "p_repository": repo,
+            "p_metadata": {"actor": "external-task-ingestor", "source": "github-external-task", "cost_policy": cost_policy, "estimated_effort": estimated_effort},
+        })
+        task_id = created.get("id") if isinstance(created, dict) else None
+        results.append({
+            "path": path, "repository": repo, "external_id": external_id,
+            "task_id": task_id, "result": "queued-or-existing",
+            "cost_policy": cost_policy, "estimated_effort": estimated_effort,
+        })
+        ingested_count += 1
+
+    return results, ingested_count
+
+
 def main() -> int:
     gh_token = os.environ.get("KUEPER_BOT_TOKEN")
     supabase_url = os.environ.get("SUPABASE_URL")
@@ -151,89 +251,20 @@ def main() -> int:
     results: list[dict[str, Any]] = []
     ingested = 0
 
-    for target_id, project in by_id.items():
+    for project in by_id.values():
         if ingested >= MAX_INGEST:
             break
-        repo = project["repository"]
-        branch = default_branch(gh_token, repo)
-        for item in sorted(list_open(gh_token, repo, branch), key=lambda x: x.get("name", "")):
-            if ingested >= MAX_INGEST:
-                break
-            if item.get("type") != "file" or not item.get("name", "").endswith(".md"):
-                continue
-
-            path = item["path"]
-            text = read_file(gh_token, repo, path, branch)
-            fm = frontmatter(text)
-            if fm.get("status", "open").lower() != "open":
-                continue
-
-            external_id = fm.get("id") or Path(path).stem
-            source_hint = fm.get("source") or section(text, "Herkunft")
-            source_id = resolve_project(source_hint, "ecosystem", by_id)
-            resolved_target = resolve_project(fm.get("target"), target_id, by_id)
-            if resolved_target != target_id:
-                results.append({
-                    "path": path, "repository": repo, "result": "target-mismatch",
-                    "declared_target": resolved_target, "repository_target": target_id,
-                })
-                continue
-
-            requested_change = section(text, "Gewünschte Änderung") or section(text, "Ziel") or section(text, "KXF-Anforderung")
-            expected_result = section(text, "Erwartetes Ergebnis") or section(text, "KXF-Anforderung")
-            reason = section(text, "Anlass") or section(text, "Begründung") or section(text, "Herkunft")
-            instruction = requested_change or f"Bearbeite den External Task {external_id} gemäß Repository-Governance."
-            if expected_result and expected_result not in instruction:
-                instruction += f"\n\nErwartetes Ergebnis:\n{expected_result}"
-            instruction += f"\n\nLies den vollständigen External Task unter `{path}` vor der Implementierung."
-
-            priority = fm.get("priority", "medium").lower()
-            if priority not in {"low", "medium", "high", "critical"}:
-                priority = "medium"
-            cost_policy = fm.get("cost_policy", "prefer_off_peak" if priority in {"low", "medium"} else "immediate").lower()
-            if cost_policy not in VALID_COST_POLICIES:
-                cost_policy = "normal"
-            estimated_effort = fm.get("estimated_effort", "high").lower()
-            if estimated_effort not in VALID_EFFORT:
-                estimated_effort = "medium"
-
-            payload = {
-                "instruction": instruction,
-                "external_task_id": external_id,
-                "external_task_path": path,
-                "title": fm.get("title") or title(text) or external_id,
-                "reason": reason,
-                "source_repository": by_id.get(source_id, {}).get("repository"),
-                "target_repository": repo,
-                "routing_fingerprint": fm.get("routing_fingerprint"),
-                "autonomous_ingest": True,
-                "allow_repository_changes": True,
-                "allow_pull_request": True,
-                "allow_merge": False,
-                "cost_policy": cost_policy,
-                "estimated_effort": estimated_effort,
-            }
-            idem = f"external-task:{repo}:{external_id}"
-            created = rpc(supabase_url, supabase_secret, "kueper_create_task", {
-                "p_type": "IMPLEMENT_EXTERNAL_REQUIREMENT",
-                "p_source_project": source_id,
-                "p_target_project": target_id,
-                "p_payload": payload,
-                "p_priority": priority,
-                "p_external_id": external_id,
-                "p_idempotency_key": idem,
-                "p_preferred_provider": "deepseek",
-                "p_preferred_model": None,
-                "p_repository": repo,
-                "p_metadata": {"actor": "external-task-ingestor", "source": "github-external-task", "cost_policy": cost_policy, "estimated_effort": estimated_effort},
-            })
-            task_id = created.get("id") if isinstance(created, dict) else None
-            results.append({
-                "path": path, "repository": repo, "external_id": external_id,
-                "task_id": task_id, "result": "queued-or-existing",
-                "cost_policy": cost_policy, "estimated_effort": estimated_effort,
-            })
-            ingested += 1
+        try:
+            per_project, added = scan_project(gh_token, supabase_url, supabase_secret, project, by_id, ingested)
+        except Exception as exc:
+            # Ein fehlgeschlagenes Projekt (z. B. privates Repository ohne
+            # Token-Zugriff, HTTP 404) darf den gesamten Sweep nicht abbrechen.
+            repo = project.get("repository", project.get("id", "?"))
+            print(f"ERROR scan {repo}: {exc}", file=sys.stderr)
+            per_project = [{"repository": repo, "result": "error", "error": str(exc)}]
+            added = 0
+        results.extend(per_project)
+        ingested += added
 
     print(json.dumps({"ingested": ingested, "limit": MAX_INGEST, "results": results}, ensure_ascii=False, indent=2))
     return 0

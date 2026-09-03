@@ -204,7 +204,19 @@ body {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted-2);
+}
+.card .role:last-of-type {
   margin-left: auto;
+}
+.card .private-tag {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--warn);
+  border: 1px solid var(--warn);
+  border-radius: 4px;
+  padding: 1px 5px;
 }
 .card .meta {
   font-family: var(--font-mono), monospace;

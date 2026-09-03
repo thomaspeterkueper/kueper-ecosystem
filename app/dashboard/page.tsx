@@ -22,6 +22,8 @@ type Project = {
   name: string;
   repository: string;
   role: string;
+  code: string | null;
+  private: boolean | null;
   overall: "healthy" | "degraded" | "critical" | "unknown";
   branch: string | null;
   version: string | null;
@@ -152,6 +154,8 @@ export default function Page() {
                 <div className="top">
                   <span className={`dot ${p.overall}`} />
                   <span className="name">{p.name}</span>
+                  {p.code ? <span className="role">{p.code}</span> : null}
+                  {p.private ? <span className="private-tag">privat</span> : null}
                   <span className="role">{p.role}</span>
                 </div>
                 <div className="meta">
