@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260903-87094555",
+  "status": "queued",
+  "created": "2026-09-03T08:11:18+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "Real-world technical substrate (surveillance, digital identity, encryption, automated moderation) and its feasibility ceilings for the 'Digital Rebellion' near-future setting",
+  "question": "Which currently deployed or near-term feasible surveillance, digital-identity, encryption and automated-content-moderation technologies — with documented capabilities, limits and failure modes from peer-reviewed computer-science literature, standards bodies and official-institution reports — form the real-world substrate for a near-future 'digital rebellion', so that the trilogy's fictional technology and the explainer content endia.de will host stay within engineering plausibility rather than relying on unconstrained or magical tech?",
+  "why_now": "The README names the trilogy premise ('Digital Rebellion'), and the worldbuilding-scientific profile requires researching the real-world constraint before stating what it permits or challenges in the worldbuilding. ECO-ARC-0016 confirms Endia's repository is the 'deepening layer' for the series, so the platform will explain the very technologies the plot depends on; those explanations should be grounded in state-of-the-art feasibility evidence while the books are still at worldbuilding stage. The one queued topic that touches this grounds the premise in rights movements, legal debates and literacy content but does not audit the underlying technical capability evidence.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Real-world state of the art and feasibility ceilings of surveillance, digital-identity, encryption and automated-moderation technology as documented in peer-reviewed CS research, standards-body specifications and official-institution technical reports",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.6875,
+  "scores": {
+    "project_relevance": 0.7,
+    "cross_project_reuse": 0.65,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [
+    "RES-20260826-47CC2438"
+  ],
+  "novelty_reason": "Genuine follow-up to RES-20260826-47CC2438, which selects the digital-rights movements, surveillance/data-protection debates (Netzpolitik, CCC, GDPR-era discourse) and digital-literacy content to draw on — a discourse/legal-political layer. That candidate does not establish the technical capability evidence: which technologies are actually deployed or feasible in the near future, their performance ceilings and failure modes, per engineering/CS and standards sources. That feasibility dimension, which determines what fictional technology is plausible, is materially unresolved by the prior candidate.",
+  "fingerprint": "870945557c07368b"
+}
