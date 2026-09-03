@@ -5,7 +5,8 @@ target: SYS:KUEPER:ecosystem
 priority: critical
 type: automation-governance
 created: 2026-08-31
-status: open
+status: done
+resolved: 2026-08-31
 affects: [NOXIA, KUEPER-Ecosystem]
 ---
 
@@ -73,3 +74,15 @@ Zusätzlich:
 ## Abgrenzung
 
 NOXIA definiert hier nur die beobachtete Anforderung an den zentralen Automationsdienst. Implementierung, Registry-Schema und globale Merge-Governance bleiben Source of Truth des KUEPER-Ecosystem-Repositories.
+
+## Umsetzung (2026-08-31)
+
+Umgesetzt im KUEPER-Ecosystem-Repository:
+
+- `schemas/project-registry.schema.json`: kanonische `merge_gate`-Policy-Struktur (`mode` + `required`, bekannte Check-Arten `vercel`/`supabase-preview`/`supabase-migrations`, benutzerdefinierte Check-Deskriptoren).
+- `registry/projects.json`: NOXIA deklariert `merge_gate` mit `mode: fail-closed` und `required: [vercel, supabase-preview, supabase-migrations]`.
+- `tools/loop/merge_gate.py`: fail-closed-Evaluator (Head-SHA-Bindung, missing/failed/incomplete/unknown/truncated blockieren; kein grünes Urteil aus fehlenden Daten).
+- `tools/loop/orchestrate.py`: `gh pr merge --auto` wird nur noch nach bestandener Gate-Auswertung aktiviert — für neu erzeugte und wiederbesuchte offene PRs.
+- `tools/loop/test_merge_gate.py`: deterministische Regressionstests inkl. des beobachteten Falls (Vercel grün, Supabase-Migrations rot → kein Merge).
+- Vertrag: `docs/architecture/EXTERNAL_CHECK_MERGE_GATE.md`; Loop-Doku: `docs/autonomous-loops.md`.
+

@@ -31,11 +31,15 @@ PRIORITY_ORDER = {"critical": 0, "high": 1, "medium": 2, "low": 3}
 REVIEW_ONLY_PREFIXES = (".github/", "migrations/", "supabase/migrations/", "infra/", "terraform/", "auth/", "security/")
 REVIEW_ONLY_FILES = {"package-lock.json", "pnpm-lock.yaml", "yarn.lock", "vercel.json"}
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import merge_gate  # noqa: E402
+
 class LoopError(RuntimeError): pass
 
 @dataclass(frozen=True)
 class Project:
     id: str; name: str; repository: str; code: str; enabled: bool
+    merge_gate: Any = None
 
 @dataclass(frozen=True)
 class Task:
@@ -90,7 +94,7 @@ def system_code_map(): return {"ecosystem":"ECO","knowledge-graph":"KG","ssf":"S
 def load_projects():
     reg=json.loads(REGISTRY.read_text(encoding="utf-8"));codes=system_code_map();out=[]
     for p in reg["projects"]:
-        if p["id"] in codes:out.append(Project(p["id"],p["name"],p["repository"],codes[p["id"]],p.get("enabled",True)))
+        if p["id"] in codes:out.append(Project(p["id"],p["name"],p["repository"],codes[p["id"]],p.get("enabled",True),p.get("merge_gate")))
     return out
 
 def list_open_tasks(token,project):
@@ -158,10 +162,46 @@ def requires_review(paths,task):
     return bool(reasons),sorted(set(reasons))
 def authenticated_clone_url(repo,token):return f"https://x-access-token:{urllib.parse.quote(token,safe='')}@github.com/{repo}.git"
 
+def pr_review_required(token,project,pr,task):
+    """Review requirement for an existing PR, derived from its changed files.
+
+    Fail-closed: if the file list cannot be enumerated or looks truncated, the
+    PR is treated as review-required and never becomes auto-mergeable.
+    """
+    number=pr.get("number")
+    if not number:return True,["pr-number-unknown"]
+    files=gh_request(token,"GET",f"/repos/{project.repository}/pulls/{number}/files?per_page=100")
+    if not isinstance(files,list):return True,["pr-files-unavailable"]
+    if len(files)>=100:return True,["pr-files-truncated"]
+    return requires_review([f.get("filename","") for f in files if f.get("filename")],task)
+
+def queue_auto_merge(token,project,repo,pr):
+    """Evaluate the fail-closed external-check merge gate, then queue auto-merge.
+
+    Returns (merge_status, gate). The merge command is only invoked when the
+    gate explicitly allows it; every failure mode returns without merging.
+    """
+    head_sha=str((pr.get("head") or {}).get("sha") or "").strip()
+    if not head_sha:return "merge-gate-blocked",{"blocking_reasons":["PR head SHA unavailable"],"checks":[]}
+    gate=merge_gate.gate_decision(token,project,repo,head_sha)
+    if not gate["allowed"]:return "merge-gate-blocked",gate
+    env=os.environ.copy();env["GH_TOKEN"]=token
+    cp=run(["gh","pr","merge",pr["html_url"],"--auto","--squash","--delete-branch"],env=env,check=False)
+    return ("auto-merge-queued" if cp.returncode==0 else "auto-merge-unavailable"),gate
+
 def process_task(token,task,agent_cmd,work_root,auto_merge):
     info=repo_info(token,task.project.repository);default_branch=info["default_branch"];observed=branch_head(token,task.project.repository,default_branch);bname=branch_name(task)
     existing=existing_open_pr(token,task.project.repository,bname)
-    if existing:return {"task":task.id,"result":"already-in-progress","pr":existing.get("html_url")}
+    if existing:
+        out={"task":task.id,"result":"already-in-progress","pr":existing.get("html_url")}
+        if auto_merge and not existing.get("auto_merge"):
+            review,reasons=pr_review_required(token,task.project,existing,task)
+            if review:out["merge"]="review-required";out["review_reasons"]=reasons
+            else:
+                try:merge,gate=queue_auto_merge(token,task.project,task.project.repository,existing)
+                except Exception as exc:merge,gate="merge-gate-error",{"error":str(exc)[:500]}
+                out["merge"]=merge;out["merge_gate"]=gate
+        return out
     run_dir=Path(tempfile.mkdtemp(prefix=f"{task.project.id}-",dir=str(work_root)))
     try:
         run(["git","clone","--quiet","--branch",default_branch,"--single-branch",authenticated_clone_url(task.project.repository,token),str(run_dir)])
@@ -175,10 +215,13 @@ def process_task(token,task,agent_cmd,work_root,auto_merge):
         if forbidden:return {"task":task.id,"result":"blocked-sensitive-files","files":forbidden}
         run(["git","config","user.name","KUEPER Ecosystem Bot"],cwd=run_dir);run(["git","config","user.email","ecosystem-bot@users.noreply.github.com"],cwd=run_dir);run(["git","add","-A"],cwd=run_dir);run(["git","commit","-m",f"chore(loop): execute {task.id}"],cwd=run_dir);run(["git","push","--quiet","origin",bname],cwd=run_dir)
         pr=gh_request(token,"POST",f"/repos/{task.project.repository}/pulls",{"title":f"[Loop] {task.id}: {task.title}","head":bname,"base":default_branch,"body":f"Autonomously executed `{task.id}` from `{task.source}`. Base HEAD: `{observed}`. Structured cross-repo follow-ups, if any, are emitted only to `.kueper/outbox/` for central routing.","draft":False})
-        review,reasons=requires_review(paths,task);merge="review-required"
+        review,reasons=requires_review(paths,task);merge="review-required";gate=None
         if auto_merge and not review:
-            env=os.environ.copy();env["GH_TOKEN"]=token;cp=run(["gh","pr","merge",pr["html_url"],"--auto","--squash","--delete-branch"],cwd=run_dir,env=env,check=False);merge="auto-merge-queued" if cp.returncode==0 else "auto-merge-unavailable"
-        return {"task":task.id,"result":"pr-created","pr":pr["html_url"],"merge":merge,"review_reasons":reasons,"changed_files":paths}
+            try:merge,gate=queue_auto_merge(token,task.project,task.project.repository,pr)
+            except Exception as exc:merge,gate="merge-gate-error",{"error":str(exc)[:500]}
+        out={"task":task.id,"result":"pr-created","pr":pr["html_url"],"merge":merge,"review_reasons":reasons,"changed_files":paths}
+        if gate is not None:out["merge_gate"]=gate
+        return out
     finally:shutil.rmtree(run_dir,ignore_errors=True)
 
 def main():

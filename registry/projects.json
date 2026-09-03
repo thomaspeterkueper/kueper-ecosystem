@@ -1,7 +1,7 @@
 {
   "$schema": "../schemas/project-registry.schema.json",
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-28",
+  "updated_at": "2026-08-31",
   "projects": [
     {
       "id": "ecosystem",
@@ -80,7 +80,15 @@
           "target": "noxia-universe",
           "required": true
         }
-      ]
+      ],
+      "merge_gate": {
+        "mode": "fail-closed",
+        "required": [
+          "vercel",
+          "supabase-preview",
+          "supabase-migrations"
+        ]
+      }
     },
     {
       "id": "ssf",

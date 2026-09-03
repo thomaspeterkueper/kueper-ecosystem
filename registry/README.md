@@ -37,6 +37,7 @@ Die Registry ist keine Source of Truth für fachliche Projektdaten. Sie enthält
 - `version_source` enthält geordnete Kandidaten. Der Collector verwendet die erste vorhandene und lesbare Quelle.
 - `required_paths` sind Governance-Erwartungen. Fehlende Pfade werden nicht automatisch angelegt, sondern als Abweichung gemeldet.
 - `integrations` beschreibt erwartete Beziehungen, nicht deren technische Implementierung.
+- `merge_gate` deklariert die vor einem Auto-Merge erforderlichen externen Checks (fail-closed). Fehlt die Policy, erfolgt kein Auto-Merge; `mode: "off"` ist der explizite Owner-Opt-out. Details: `docs/architecture/EXTERNAL_CHECK_MERGE_GATE.md`.
 - Unbekannte URLs oder Health-Endpunkte bleiben `null`. Sie dürfen nicht geraten werden.
 - Secret-Werte gehören niemals in die Registry.
 

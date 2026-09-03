@@ -28,6 +28,18 @@ OBSERVE → SELECT → PREFLIGHT → RESCAN/REPLAN → ACT → VERIFY
 RESULT → PR → MERGE GATE → NEXT SWEEP
 ```
 
+## Merge Gate (fail-closed)
+
+Vor einem automatischen Merge wertet der zentrale Loop (`tools/loop/orchestrate.py` → `tools/loop/merge_gate.py`) die externen CI-/Deployment-Checks des Ziel-Repositories **fail-closed** aus:
+
+- Maßgeblich ist die deklarative `merge_gate`-Policy des Ziel-Repositories in `registry/projects.json` (kanonische Struktur: `schemas/project-registry.schema.json`).
+- Jeder erforderliche Check muss ein abgeschlossenes, erfolgreiches Ergebnis für den **aktuellen** PR-Head-SHA haben; Ergebnisse älterer Heads zählen nie.
+- Fehlende, fehlgeschlagene, nicht abgeschlossene, widersprüchliche oder nicht auswertbare erforderliche Checks blockieren den Merge; ein grünes Urteil wird nie aus fehlenden Daten abgeleitet.
+- Keine deklarierte Policy → kein Auto-Merge; `mode: "off"` ist der explizite Owner-Opt-out.
+- Reviewpflichtige PRs (siehe Regel 6 der Verantwortungsgrenzen) erreichen den Merge-Pfad nicht.
+
+Details und Regressionstests: `docs/architecture/EXTERNAL_CHECK_MERGE_GATE.md`, `tools/loop/test_merge_gate.py`.
+
 ## Verantwortungsgrenzen
 
 1. `kueper-ecosystem` orchestriert, ist aber nicht fachliche Source of Truth.
