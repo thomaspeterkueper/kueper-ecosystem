@@ -1,6 +1,6 @@
 {
   "id": "RES-20260903-11C93480",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-03T08:11:17+00:00",
   "source_project": "endia",
   "source_repository": "thomaspeterkueper/endia.de",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Orthogonal to prior candidates: RES-20260826-868027AD asks which transmedia/game-in-literature design precedents make the in-book game coherent; RES-20260826-47CC2438 asks which digital-rights discourse and literacy content to draw on. Neither poses the empirical question of whether knowledge delivered inside a fictional frame is learned, retained and correctly attributed as fact vs. canon, nor which fact/fiction signalling guardrails the platform needs. This is therefore not a rephrasing or narrowing of either.",
-  "fingerprint": "11c934802bc53e5e"
+  "fingerprint": "11c934802bc53e5e",
+  "updated_at": "2026-09-03T08:22:14+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/106"
 }
