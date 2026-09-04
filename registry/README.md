@@ -1,7 +1,7 @@
 # Project Registry
 
-Version: 1.0.0  
-Stand: 2026-07-10
+Version: 1.1.0  
+Stand: 2026-08-29
 
 ## Zweck
 
@@ -40,6 +40,22 @@ Die Registry ist keine Source of Truth für fachliche Projektdaten. Sie enthält
 - Unbekannte URLs oder Health-Endpunkte bleiben `null`. Sie dürfen nicht geraten werden.
 - Secret-Werte gehören niemals in die Registry.
 
+## Repository-Klasse und Sensitivität
+
+Schema 1.1 ergänzt optionale Sicherheits- und Berechtigungsfelder, ohne bestehende 1.0-Einträge ungültig zu machen:
+
+- `repository_class`: `standard` oder `private-manuscript-source`
+- `data_sensitivity`: `public`, `internal` oder `confidential-authoring`
+- `permissions.ingest`
+- `permissions.derived_analysis`
+- `permissions.canonization`
+- `permissions.public_export`
+- `permissions.cross_repository_routing`
+
+Für `private-manuscript-source` erzwingt das Schema `data_sensitivity: confidential-authoring` sowie `canonization: false`, `public_export: false` und `cross_repository_routing: false`. Damit wird die Sicherheitsinvariante aus ECO-ARC-0030 maschinenlesbar: private Manuskriptquellen dürfen analysiert werden, erhalten dadurch aber weder Kanonisierungs- noch Veröffentlichungsrechte; reguläres Cross-Repository-Routing bleibt bis zu einer separat geprüften Erweiterung des External-Task-Formats deaktiviert.
+
+Die eigentliche Registrierung/Aktivierung eines privaten Repositories erfolgt separat. Eine Schema-Erweiterung allein aktiviert kein Repository und verändert keine Routing-Rechte.
+
 ## Validierung
 
 Die Datei wird gegen folgendes Schema validiert:
@@ -48,7 +64,16 @@ Die Datei wird gegen folgendes Schema validiert:
 schemas/project-registry.schema.json
 ```
 
-Eine ungültige Registry muss den Collector stoppen. Aus einer unvollständigen oder syntaktisch fehlerhaften Registry darf kein grüner Status erzeugt werden.
+Ausgeführt wird die Prüfung von `tools/validate-registry/validate.py` (nur stdlib):
+
+```bash
+python3 tools/validate-registry/validate.py
+```
+
+Die Prüfung ist in den Collector (`tools/collector/collect.py`) und in die CI
+(`.github/workflows/research-config-check.yml`) eingebunden. Eine ungültige
+Registry muss den Collector stoppen. Aus einer unvollständigen oder syntaktisch
+fehlerhaften Registry darf kein grüner Status erzeugt werden.
 
 ## Änderungen an anderen Repositories
 

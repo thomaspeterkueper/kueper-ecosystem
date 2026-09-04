@@ -6,9 +6,12 @@
   "additionalProperties": false,
   "required": ["schema_version", "updated_at", "projects"],
   "properties": {
+    "$schema": {
+      "type": "string"
+    },
     "schema_version": {
       "type": "string",
-      "const": "1.0.0"
+      "enum": ["1.0.0", "1.1.0"]
     },
     "updated_at": {
       "type": "string",
@@ -66,6 +69,41 @@
             "website",
             "infrastructure"
           ]
+        },
+        "repository_class": {
+          "type": "string",
+          "enum": [
+            "standard",
+            "private-manuscript-source"
+          ],
+          "default": "standard"
+        },
+        "data_sensitivity": {
+          "type": "string",
+          "enum": [
+            "public",
+            "internal",
+            "confidential-authoring"
+          ],
+          "default": "public"
+        },
+        "permissions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ingest",
+            "derived_analysis",
+            "canonization",
+            "public_export",
+            "cross_repository_routing"
+          ],
+          "properties": {
+            "ingest": { "type": "boolean" },
+            "derived_analysis": { "type": "boolean" },
+            "canonization": { "type": "boolean" },
+            "public_export": { "type": "boolean" },
+            "cross_repository_routing": { "type": "boolean" }
+          }
         },
         "production_url": {
           "type": ["string", "null"],
@@ -148,7 +186,30 @@
         "notes": {
           "type": "string"
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "repository_class": { "const": "private-manuscript-source" }
+            },
+            "required": ["repository_class"]
+          },
+          "then": {
+            "required": ["data_sensitivity", "permissions"],
+            "properties": {
+              "data_sensitivity": { "const": "confidential-authoring" },
+              "permissions": {
+                "properties": {
+                  "public_export": { "const": false },
+                  "canonization": { "const": false },
+                  "cross_repository_routing": { "const": false }
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   }
 }
