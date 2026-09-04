@@ -59,6 +59,7 @@
           "enum": [
             "control-plane",
             "application",
+            "engineering",
             "knowledge-platform",
             "knowledge-graph",
             "archive",
