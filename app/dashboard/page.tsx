@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import OperationsStrip from "./OperationsStrip";
 
 type Task = {
   project_id: string;
@@ -89,7 +90,7 @@ function resolveProject(projects: Project[], ref: string | null) {
 
 function EcosystemGraph({ projects, tasks, onSelect }: { projects: Project[]; tasks: Task[]; onSelect: (p: Project) => void }) {
   const graphProjects = useMemo(() => {
-    const active = new Set<string>(["ecosystem", "noxia", "ssf", "knowledge-graph", "ota", "kueper-com", "thomas-kueper-de"]);
+    const active = new Set<string>(["ecosystem", "engineering", "noxia", "ssf", "knowledge-graph", "ota", "kueper-com", "thomas-kueper-de"]);
     for (const t of tasks) {
       const s = resolveProject(projects, t.source);
       const d = resolveProject(projects, t.target);
@@ -248,6 +249,7 @@ export default function Page() {
             <div className="metric health-metric"><div className="leds"><span className="led"><span className="dot healthy" />{counts.healthy || 0}</span><span className="led"><span className="dot degraded" />{counts.degraded || 0}</span><span className="led"><span className="dot critical" />{counts.critical || 0}</span></div><span className="lbl">Systemzustand</span></div>
           </section>
 
+          <OperationsStrip />
           <EcosystemGraph projects={data.projects} tasks={data.tasks} onSelect={setSelected} />
 
           {selected && (
