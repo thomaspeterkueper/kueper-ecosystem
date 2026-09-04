@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kueper.com/schemas/product-registry.schema.json",
+  "title": "KUEPER Product Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "updated_at", "products"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "updated_at": { "type": "string", "format": "date" },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "repository", "provider", "enabled"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "repository": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+          "provider": { "type": "string", "enum": ["github"] },
+          "enabled": { "type": "boolean" },
+          "production_url": { "type": ["string", "null"], "format": "uri" },
+          "description": { "type": "string" },
+          "category": { "type": "string", "enum": ["business-application", "public-application", "internal-tool", "other"] }
+        }
+      }
+    }
+  }
+}
