@@ -120,13 +120,14 @@ jobs:
         run: |
           python -m unittest tools/worker/test_provider_router.py
           python -m unittest tools/worker/test_git_credentials.py
+          python -m unittest tools/worker/test_agent_worker_v75.py
 
       - name: Process bounded task batch
         if: steps.lease.outputs.should_run == 'true'
         shell: bash
         run: |
           set -euo pipefail
-          python tools/worker/agent_worker_v74.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
+          python tools/worker/agent_worker_v75.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
 
       - name: Finish scheduler heartbeat
         if: always() && steps.lease.outputs.should_run == 'true'
