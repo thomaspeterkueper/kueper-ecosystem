@@ -1,0 +1,17 @@
+{
+  "$schema": "../schemas/product-registry.schema.json",
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-04",
+  "products": [
+    {
+      "id": "centersoftware",
+      "name": "Centersoftware",
+      "repository": "thomaspeterkueper/centersoftware",
+      "provider": "github",
+      "enabled": true,
+      "production_url": null,
+      "category": "business-application",
+      "description": "Eigenständige operative Centersoftware. Wird vom KUEPER Ecosystem entwickelt und beobachtet, ist aber kein fachlicher Knoten des Ecosystem-Graphen."
+    }
+  ]
+}

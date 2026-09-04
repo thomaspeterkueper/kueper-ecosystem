@@ -47,7 +47,7 @@ def gh(token: str, method: str, path: str, body: dict[str, Any] | None = None) -
 def codes() -> dict[str, str]:
     return {
         "ecosystem": "ECO", "knowledge-graph": "KG", "ssf": "SSF", "noxia": "NOXIA",
-        "noxia-universe": "NXU", "mishkenaz": "MISH", "omnizedenz": "OMNI",
+        "engineering": "ENG", "noxia-universe": "NXU", "mishkenaz": "MISH", "omnizedenz": "OMNI",
         "avi-modell": "AVI", "contracomology": "CONTRA", "kueper-archive-schema": "ARCH",
         "endia": "ENDIA", "zereya": "ZEREYA", "davaru": "DAVARU",
         "fluide-hermeneutik": "FLHERM", "resonanz-ethik": "RESETH",

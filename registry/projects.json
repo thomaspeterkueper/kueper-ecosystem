@@ -1,7 +1,7 @@
 {
   "$schema": "../schemas/project-registry.schema.json",
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-28",
+  "updated_at": "2026-09-04",
   "projects": [
     {
       "id": "ecosystem",
@@ -15,24 +15,12 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
       "governance": {
-        "required_paths": [
-          "README.md",
-          "docs/source-of-truth.md",
-          "docs/cross-repository-workflow.md",
-          "decisions/README.md"
-        ]
+        "required_paths": ["README.md", "docs/source-of-truth.md", "docs/cross-repository-workflow.md", "decisions/README.md"]
       },
       "integrations": []
     },
@@ -48,39 +36,43 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
       "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
+        "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"]
       },
       "integrations": [
-        {
-          "target": "ssf",
-          "required": true
-        },
-        {
-          "target": "knowledge-graph",
-          "required": true
-        },
-        {
-          "target": "noxia-universe",
-          "required": true
-        }
+        { "target": "ssf", "required": true },
+        { "target": "knowledge-graph", "required": true },
+        { "target": "noxia-universe", "required": true },
+        { "target": "engineering", "required": false }
       ]
+    },
+    {
+      "id": "engineering",
+      "name": "KUEPER Engineering",
+      "repository": "thomaspeterkueper/kueper-engineering",
+      "provider": "github",
+      "enabled": true,
+      "role": "engineering",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "none",
+        "candidates": []
+      },
+      "governance": {
+        "required_paths": ["README.md", "PROJECT-BRIEF.md", "docs/GOVERNANCE.md", "docs/ecosystem-integration.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"]
+      },
+      "integrations": [
+        { "target": "ssf", "required": true },
+        { "target": "ota", "required": false },
+        { "target": "knowledge-graph", "required": false },
+        { "target": "noxia", "required": false }
+      ],
+      "notes": "Technischer Entwicklungsraum und Source of Truth fuer Anforderungen, Architekturen, Subsystemdesign, Berechnungen, Budgets, Trade Studies, Varianten und Validierung. ENG-Identitaeten sind keine OTA/KG-Kanonidentitaeten. Kernfluss: SSF -> Engineering -> OTA/KG -> NOXIA; Rueckanforderungen aus NOXIA und erzaehlerischen Projekten sind zulaessig. Engineering veraendert weder Kanon noch Gameplay direkt."
     },
     {
       "id": "ssf",
@@ -94,38 +86,17 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
       "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
+        "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"]
       },
       "integrations": [
-        {
-          "target": "knowledge-graph",
-          "required": true
-        },
-        {
-          "target": "noxia",
-          "required": false
-        },
-        {
-          "target": "noxia-universe",
-          "required": false
-        }
+        { "target": "knowledge-graph", "required": true },
+        { "target": "noxia", "required": false },
+        { "target": "noxia-universe", "required": false }
       ]
     },
     {
@@ -140,29 +111,13 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "json",
-            "path": "schema/version.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "json", "path": "schema/version.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
       "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
+        "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"]
       },
       "integrations": []
     },
@@ -178,34 +133,16 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
       "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
+        "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"]
       },
       "integrations": [
-        {
-          "target": "knowledge-graph",
-          "required": false
-        },
-        {
-          "target": "noxia-universe",
-          "required": true
-        }
+        { "target": "knowledge-graph", "required": false },
+        { "target": "noxia-universe", "required": true }
       ],
       "notes": "Default Branch ist derzeit master und wird vom Collector als beobachteter Ist-Zustand übernommen."
     },
@@ -221,38 +158,17 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
       "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
+        "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"]
       },
       "integrations": [
-        {
-          "target": "ota",
-          "required": false
-        },
-        {
-          "target": "knowledge-graph",
-          "required": false
-        },
-        {
-          "target": "noxia-universe",
-          "required": false
-        }
+        { "target": "ota", "required": false },
+        { "target": "knowledge-graph", "required": false },
+        { "target": "noxia-universe", "required": false }
       ]
     },
     {
@@ -264,56 +180,17 @@
       "role": "website",
       "production_url": null,
       "health_url": null,
-      "version_source": {
-        "strategy": "first-existing",
-        "candidates": [
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
-        ]
-      },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
+      "version_source": { "strategy": "first-existing", "candidates": [{ "type": "text", "path": "VERSION" }] },
+      "governance": { "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"] },
       "integrations": [
-        {
-          "target": "mishkenaz",
-          "required": true
-        },
-        {
-          "target": "omnizedenz",
-          "required": true
-        },
-        {
-          "target": "avi-modell",
-          "required": true
-        },
-        {
-          "target": "contracomology",
-          "required": false
-        },
-        {
-          "target": "endia",
-          "required": true
-        },
-        {
-          "target": "zereya",
-          "required": true
-        },
-        {
-          "target": "fluide-hermeneutik",
-          "required": false
-        },
-        {
-          "target": "resonanz-ethik",
-          "required": false
-        }
+        { "target": "mishkenaz", "required": true },
+        { "target": "omnizedenz", "required": true },
+        { "target": "avi-modell", "required": true },
+        { "target": "contracomology", "required": false },
+        { "target": "endia", "required": true },
+        { "target": "zereya", "required": true },
+        { "target": "fluide-hermeneutik", "required": false },
+        { "target": "resonanz-ethik", "required": false }
       ],
       "notes": "In der Repository-Landkarte gefuehrt, aber bis 2026-07-12 nicht registriert. Aufgenommen durch ECO-Audit. production_url bleibt null bis bestaetigt (nicht geraten). Ueberblick/Vertiefung-Verhaeltnis mit mishkenaz (ECO-ARC-0009), omnizedenz (ECO-ARC-0010), avi-modell (ECO-ARC-0011), endia und zereya (ECO-ARC-0016). contracomology bezieht Kontrakomologie-Inhalt teils von hier (ECO-ARC-0012, eigener Migrationsplan). fluide-hermeneutik/resonanz-ethik: bestehende Essay-Seiten, optionale Verlinkung."
     },
@@ -329,31 +206,12 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
-      "integrations": [
-        {
-          "target": "ota",
-          "required": false
-        }
-      ],
+      "governance": { "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"] },
+      "integrations": [{ "target": "ota", "required": false }],
       "notes": "Source of Truth fuer die NOXIA-Kontinuitaet speziell (Praezisierung ECO-ARC-0016) - NICHT Baumeister- oder Zereya-Kontinuitaet (eigene Zustaendigkeit, siehe zereya): Buecher, Figuren, Handlungen, Orte, Personen, Worldbuilding dieser Kontinuitaet - verwaltet in eigener Supabase-DB unter eigenem Namespace. NICHT die OTA-*-Archivdokumentebene: die bleibt beim OTA, noxia-universe schlaegt dorthin nur vor (ECO-ARC-0008). Code NXU. Supabase-Projekt in die Free-Tier-Organisation Kueper-Archives umgezogen (2026-07-14, Kostenoptimierung, zweiter Free-Slot neben kue-archive) - bestaetigt."
     },
     {
@@ -368,34 +226,14 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
+      "governance": { "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"] },
       "integrations": [
-        {
-          "target": "noxia-universe",
-          "required": false
-        },
-        {
-          "target": "thomas-kueper-de",
-          "required": true
-        }
+        { "target": "noxia-universe", "required": false },
+        { "target": "thomas-kueper-de", "required": true }
       ],
       "notes": "Sprachforschungsprojekt und zugleich In-universe-Sprache der Dvaraka-Ueberlebenden (physiologisch/umgebungsbedingter Sprachwandel). Doppelnatuerig wie SSF. Source of Truth fuer die linguistische Ausarbeitung (Phonologie, Grammatik, Lexikon, Dialekte). Owner-Entscheidung 2026-07-14: Migration der ausgereiften Inhalte von thomas-kueper.de (src/pages/mishkenaz/*) hierher; danach Ueberblick(thomas-kueper.de)/Vertiefung(hier)-Verhaeltnis, konsistenzpflichtig, wie bei Omnizedenz und AVI-Modell. Siehe ECO-ARC-0009 (Korrektur vom 2026-07-14)."
     },
@@ -411,34 +249,14 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
+      "governance": { "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"] },
       "integrations": [
-        {
-          "target": "thomas-kueper-de",
-          "required": true
-        },
-        {
-          "target": "resonanz-ethik",
-          "required": true
-        }
+        { "target": "thomas-kueper-de", "required": true },
+        { "target": "resonanz-ethik", "required": true }
       ],
       "notes": "Vertiefung des philosophischen Konzepts Omnizedenz (Resonanz-/Verantwortungs-Arbeitsmodell). Owner-Praezisierung 2026-07-14: Ueberblick/Vertiefung-Verhaeltnis mit thomas-kueper.de (dort grober Ueberblick, hier Vertiefung), beide muessen inhaltlich zusammenpassen; Aenderungen am Kernkonzept koennen beide Seiten betreffen. Praezisierung 2026-07-19: Scope umfasst zusaetzlich eine kurze, aus der Ontologie abgeleitete Fassung der Resonanz-Ethik (Symbole, Kernprinzipien) - volle Vertiefung bleibt bei resonanceethics.org (dreistufig mit thomas-kueper.de). Uebrige Einzelessays (Faust/Machiavelli/Wirtschaftspsychologie) bleiben exklusiv bei thomas-kueper.de. Code OMNI. Siehe ECO-ARC-0010, ECO-ARC-0016."
     },
@@ -454,31 +272,12 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
-      "integrations": [
-        {
-          "target": "thomas-kueper-de",
-          "required": true
-        }
-      ],
+      "governance": { "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"] },
+      "integrations": [{ "target": "thomas-kueper-de", "required": true }],
       "notes": "Vertiefung des kosmologischen Arbeitsmodells AVI (Axiomatisches Vakuum Integral). Scope: physikalisch/mathematische Untersuchung einer moeglichen Kopplung lokaler Raten/Zyklen an globale kosmologische bzw. informationelle Referenzparameter; Phi(a) wird als globaler, nicht-raeumlicher Arbeitsparameter bzw. integrierter Historienparameter behandelt. Fokus auf klar getrennte etablierte Grundlagen, Modellpostulate, Ableitungen und falsifizierbare Vorhersagen. AVI ist hier kein allgemeines Kreativ-, Text-, Musik- oder Weltbau-Modell. Ueberblick/Vertiefung-Verhaeltnis mit thomas-kueper.de bleibt konsistenzpflichtig. Code AVI; ECO-ARC-0011 ist inhaltlich an diesen korrigierten Scope anzupassen."
     },
     {
@@ -493,42 +292,16 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
+      "governance": { "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"] },
       "integrations": [
-        {
-          "target": "knowledge-graph",
-          "required": true
-        },
-        {
-          "target": "ota",
-          "required": false
-        },
-        {
-          "target": "kueper-com",
-          "required": false
-        },
-        {
-          "target": "thomas-kueper-de",
-          "required": false
-        }
+        { "target": "knowledge-graph", "required": true },
+        { "target": "ota", "required": false },
+        { "target": "kueper-com", "required": false },
+        { "target": "thomas-kueper-de", "required": false }
       ],
       "notes": "Reine Frontend-Fassade fuer Kontrakomologie (Zeit in Musik/Literatur) - kein Wissensspeicher. Bestand bereits vor der Registrierung (seit 2026-07-03, 30 Commits), migriert eine eigene Legacy-Seite contracomology.org nach eigenem Plan (docs/MIGRATION-FROM-LEGACY-SITE.md): KG-Begriffe (CON:L1:*) aus dem Knowledge Graph, Volltexte aus OTA/kueper.com. thomas-kueper.de haelt aktuell 18 Kontrakomologie-Essays als faktische Quelle bis zur eigenen Migration. Code CONTRA. Siehe ECO-ARC-0012."
     },
@@ -541,31 +314,12 @@
       "role": "infrastructure",
       "production_url": null,
       "health_url": null,
-      "version_source": {
-        "strategy": "none",
-        "candidates": []
-      },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
+      "version_source": { "strategy": "none", "candidates": [] },
+      "governance": { "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"] },
       "integrations": [
-        {
-          "target": "kueper-com",
-          "required": true
-        },
-        {
-          "target": "ota",
-          "required": true
-        },
-        {
-          "target": "knowledge-graph",
-          "required": false
-        }
+        { "target": "kueper-com", "required": true },
+        { "target": "ota", "required": true },
+        { "target": "knowledge-graph", "required": false }
       ],
       "notes": "Gemeinsames Datenbankschema (Migrationen, Typdefinitionen, Importer, Validatoren) fuer kanonische Dokumentarchive. Korrektur 2026-07-14: EIN gemeinsames Supabase-Projekt (kue-archive, Free Tier, Org Kueper-Archives, Frankfurt), getrennte Postgres-Schemas (public=KUE, ota=OTA) statt zwei Projekte -- Kostengruende. KUE laeuft produktiv. Gehoert weder kueper.com noch overtime-archive.org allein - zentral hier verantwortet. Code ARCH. Siehe ECO-ARC-0013."
     },
@@ -581,31 +335,12 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
-      "integrations": [
-        {
-          "target": "thomas-kueper-de",
-          "required": true
-        }
-      ],
+      "governance": { "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"] },
+      "integrations": [{ "target": "thomas-kueper-de", "required": true }],
       "notes": "YA-Trilogie (Digital Rebellion) - die erste begonnene Buchreihe, Urspung des gesamten Oekosystems. Ueberblick(thomas-kueper.de)/Vertiefung(hier)-Verhaeltnis, konsistenzpflichtig, wie Mishkenaz/Omnizedenz/AVI-Modell. Code ENDIA. Siehe ECO-ARC-0016."
     },
     {
@@ -620,31 +355,12 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
-      "integrations": [
-        {
-          "target": "thomas-kueper-de",
-          "required": true
-        }
-      ],
+      "governance": { "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"] },
+      "integrations": [{ "target": "thomas-kueper-de", "required": true }],
       "notes": "8-baendige Saga - eigenstaendige literarische Kontinuitaet (nicht Teil von noxia-universe), aus deren Arbeit das Baumeister- und Noxia-Universum entstand. Ueberblick(thomas-kueper.de)/Vertiefung(hier)-Verhaeltnis, konsistenzpflichtig. Code ZEREYA. Siehe ECO-ARC-0016."
     },
     {
@@ -659,31 +375,12 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
-      "integrations": [
-        {
-          "target": "endia",
-          "required": true
-        }
-      ],
+      "governance": { "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"] },
+      "integrations": [{ "target": "endia", "required": true }],
       "notes": "In-universe-Konzept aus Endia: 'Der Weg des DaVaRu', eine Ethik fuer Mensch und Kibzu, entstanden innerhalb von Endias fiktivem Spiel. Begleiter zu Endia, nicht zu thomas-kueper.de (dort kein bestehender Davaru-Inhalt). Code DAVARU. Siehe ECO-ARC-0016."
     },
     {
@@ -698,34 +395,14 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
+      "governance": { "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"] },
       "integrations": [
-        {
-          "target": "omnizedenz",
-          "required": true
-        },
-        {
-          "target": "thomas-kueper-de",
-          "required": false
-        }
+        { "target": "omnizedenz", "required": true },
+        { "target": "thomas-kueper-de", "required": false }
       ],
       "notes": "Vertiefung eines Omnizedenz-Teilaspekts (bereits als Essay unter thomas-kueper.de/philosophie/fluide-hermeneutik vorhanden). Code FLHERM. Siehe ECO-ARC-0016."
     },
@@ -741,34 +418,14 @@
       "version_source": {
         "strategy": "first-existing",
         "candidates": [
-          {
-            "type": "package-json",
-            "path": "package.json",
-            "json_pointer": "/version"
-          },
-          {
-            "type": "text",
-            "path": "VERSION"
-          }
+          { "type": "package-json", "path": "package.json", "json_pointer": "/version" },
+          { "type": "text", "path": "VERSION" }
         ]
       },
-      "governance": {
-        "required_paths": [
-          "README.md",
-          "external-tasks/open",
-          "external-tasks/done",
-          "external-tasks/rejected"
-        ]
-      },
+      "governance": { "required_paths": ["README.md", "external-tasks/open", "external-tasks/done", "external-tasks/rejected"] },
       "integrations": [
-        {
-          "target": "omnizedenz",
-          "required": true
-        },
-        {
-          "target": "thomas-kueper-de",
-          "required": false
-        }
+        { "target": "omnizedenz", "required": true },
+        { "target": "thomas-kueper-de", "required": false }
       ],
       "notes": "Vertiefung eines Omnizedenz-Teilaspekts (bereits als Essay unter thomas-kueper.de/philosophie/resonanz-ethik vorhanden). Code RESETH. Siehe ECO-ARC-0016."
     }
