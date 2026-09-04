@@ -14,6 +14,8 @@ type Worker = {
   github_run_id: number | null;
   last_error: string | null;
   created_at: string;
+  last_success_at: string | null;
+  last_failure_at: string | null;
 };
 
 type Operations = {
@@ -46,6 +48,11 @@ function label(worker: string) {
   if (worker === "agent-worker-v7") return "Agent Worker";
   if (worker === "pr-review-agent") return "PR Reviewer";
   return worker;
+}
+
+function attemptLabel(worker: Worker) {
+  if (worker.status === "skipped" && worker.last_error === "recent execution cooldown") return "skipped · cooldown";
+  return worker.status;
 }
 
 export default function OperationsStrip() {
@@ -88,10 +95,15 @@ export default function OperationsStrip() {
       <div className={styles.grid}>
         {cards.map((worker) => (
           <article className={styles.card} key={worker.worker_name}>
-            <div className={styles.cardTop}><span>{label(worker.worker_name)}</span><span className={`${styles.state} ${tone(worker.status)}`}>{worker.status}</span></div>
-            <div className={styles.value}>{age(worker.finished_at || worker.started_at || worker.created_at)}</div>
-            <div className={styles.caption}>seit letztem Lauf · {worker.source || "unknown source"}</div>
-            {worker.last_error && <div className={styles.errorText}>{worker.last_error}</div>}
+            <div className={styles.cardTop}>
+              <span>{label(worker.worker_name)}</span>
+              <span className={`${styles.state} ${tone(worker.status)}`}>{attemptLabel(worker)}</span>
+            </div>
+            <div className={styles.value}>{age(worker.last_success_at || worker.finished_at || worker.started_at || worker.created_at)}</div>
+            <div className={styles.caption}>
+              seit letztem Erfolg · letzter Versuch {age(worker.finished_at || worker.started_at || worker.created_at)}
+            </div>
+            {worker.last_error && worker.status !== "skipped" && <div className={styles.errorText}>{worker.last_error}</div>}
           </article>
         ))}
         <article className={styles.card}>
@@ -102,7 +114,7 @@ export default function OperationsStrip() {
         <article className={styles.card}>
           <div className={styles.cardTop}><span>Blocker</span><span className={`${styles.state} ${(data.blocked_tasks || 0) ? styles.warning : styles.ok}`}>{(data.blocked_tasks || 0) ? "attention" : "clear"}</span></div>
           <div className={styles.value}>{data.blocked_tasks || 0}</div>
-          <div className={styles.caption}>Tasks mit explizitem blocked_reason</div>
+          <div className={styles.caption}>aktive Tasks mit explizitem Blocker</div>
         </article>
       </div>
     </section>
