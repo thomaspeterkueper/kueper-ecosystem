@@ -115,11 +115,12 @@ jobs:
         if: steps.lease.outputs.should_run == 'true'
         run: python -m unittest tools/scheduler/test_run_guard.py
 
-      - name: Test provider router and credential policy
+      - name: Test provider router and mutation policy
         if: steps.lease.outputs.should_run == 'true'
         run: |
           python -m unittest tools/worker/test_provider_router.py
           python -m unittest tools/worker/test_git_credentials.py
+          python -m unittest tools/worker/test_direct_main_guard.py
 
       - name: Process bounded task batch
         if: steps.lease.outputs.should_run == 'true'
