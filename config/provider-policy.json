@@ -1,7 +1,7 @@
 {
-  "version": 2,
+  "version": 3,
   "timezone": "UTC",
-  "notes": "Peak windows are configuration, not hard-coded provider truth. Update them when DeepSeek publishes revised official windows.",
+  "notes": "DeepSeek is an escalation resource, not a default control-plane dependency. Peak windows are configuration, not provider truth.",
   "providers": {
     "deepseek": {
       "enabled": true,
@@ -13,23 +13,28 @@
         {"start": "06:00", "end": "10:00"}
       ],
       "defer_during_peak": ["low", "medium"],
-      "never_defer": ["high", "critical"]
+      "never_defer": ["critical"]
     }
   },
+  "routing": {
+    "pro_requires_explicit_evidence": true,
+    "explicit_deep_reasoning_flag": "requires_deep_reasoning"
+  },
   "task_classes": {
-    "RESEARCH_DISCOVERY": {"cost_sensitive": true, "complexity": "low"},
-    "RESEARCH": {"cost_sensitive": true, "complexity": "high"},
-    "CANON_VALIDATION": {"cost_sensitive": true, "complexity": "medium"},
-    "CLASSIFY": {"cost_sensitive": true, "complexity": "low"},
-    "ROUTE": {"cost_sensitive": true, "complexity": "low"},
-    "IMPLEMENT_EXTERNAL_REQUIREMENT": {"cost_sensitive": true, "complexity": "high"},
-    "IMPLEMENT_AGENT_RUNTIME": {"cost_sensitive": true, "complexity": "high"},
-    "LONG_SIMULATION_ANALYSIS": {"cost_sensitive": true, "complexity": "high"},
-    "CODE": {"cost_sensitive": false, "complexity": "high"},
-    "COMPLEX_CODING": {"cost_sensitive": false, "complexity": "high"},
-    "BUG": {"cost_sensitive": false, "complexity": "medium"},
-    "DEAD_END": {"cost_sensitive": false, "complexity": "medium"},
-    "BUILD_FAILED": {"cost_sensitive": false, "complexity": "high"},
-    "SECURITY": {"cost_sensitive": false, "complexity": "high"}
+    "RESEARCH_DISCOVERY": {"cost_sensitive": true, "complexity": "low", "allow_pro": false},
+    "RESEARCH": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
+    "CANON_VALIDATION": {"cost_sensitive": true, "complexity": "medium", "allow_pro": false},
+    "CLASSIFY": {"cost_sensitive": true, "complexity": "low", "allow_pro": false},
+    "ROUTE": {"cost_sensitive": true, "complexity": "low", "allow_pro": false},
+    "IMPLEMENT_EXTERNAL_REQUIREMENT": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
+    "IMPLEMENT_AGENT_RUNTIME": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
+    "LONG_SIMULATION_ANALYSIS": {"cost_sensitive": true, "complexity": "high", "allow_pro": true},
+    "REVIEW_FIX": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
+    "CODE": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
+    "COMPLEX_CODING": {"cost_sensitive": true, "complexity": "high", "allow_pro": true},
+    "BUG": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
+    "DEAD_END": {"cost_sensitive": true, "complexity": "medium", "allow_pro": false},
+    "BUILD_FAILED": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
+    "SECURITY": {"cost_sensitive": false, "complexity": "high", "allow_pro": true}
   }
 }
