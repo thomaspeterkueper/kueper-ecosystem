@@ -107,6 +107,8 @@ V7.3 has no auto-merge authority.
 
 A PASS transitions task state to `completed`, but merging remains outside this agent version. Research-candidate auto-merge policies remain separate and do not grant implementation PR merge authority.
 
+A blocked Ready/Merge transition is likewise no license for a default-branch write. When the connector cannot execute Ready/Merge, the PR stays open/draft and the technical blocker is recorded as review-/merge-blocked. Direct default-branch integration as a merge substitute — cherry-pick, re-committing the same changes on the base, or a Contents-API write — is forbidden and enforced fail-closed by `tools/worker/default_branch_guard.py` (decision guard, sandbox pre-push hook, post-run remote verification). See ECO-ARC-0031-2026-DE.
+
 ## Cost behavior
 
 Initial implementation follows the normal task cost policy. Review is part of task completion and runs promptly. Review generations are head-SHA deduplicated to prevent repeated model cost. REVIEW_FIX is high priority for normal implementations and critical when the originating task is critical.

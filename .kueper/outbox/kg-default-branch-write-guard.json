@@ -1,0 +1,11 @@
+{
+  "target": "KG",
+  "title": "Default-Branch-Schutz gegen direkte Integration als Merge-Ersatz",
+  "reason": "ECO-OPS-20260829: PR #38 content was committed directly to main (81aad150ac7b2180b00e73daa90b57a523d9490e) after a Ready/Merge connector failure. The ecosystem worker guard (ECO-ARC-0031-2026-DE, tools/worker/default_branch_guard.py) now covers the worker-driven agent path systemwide, but it cannot stop a KG-local agent or process from writing to main; the incident path itself therefore stays open without KG-side enforcement.",
+  "requested_change": "Enforce the fail-closed boundary in the KG repository: protect the default branch against direct pushes (require a PR, no direct pushes by bot tokens), and reuse tools/worker/default_branch_guard.py or an equivalent local guard (pre-push hook and/or AGENTS.md rule) so an open/draft PR is never replaced by direct integration of the same content when Ready/Merge is unavailable. Keep explicitly authorized operational metadata/task-routing writes only if they do not replicate open PR content.",
+  "expected_result": "Direct pushes or Contents-API writes to the KG default branch by automation are rejected or detected; a deterministic test or check proves that an open/draft PR with blocked Ready/Merge causes no default-branch content mutation.",
+  "priority": "high",
+  "parent_task": "8becbc95-b597-4161-b68d-77da1896f723",
+  "depth": 1,
+  "affects": ["source-code", "target-code"]
+}
