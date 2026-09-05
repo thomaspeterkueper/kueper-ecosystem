@@ -6,7 +6,7 @@ on:
       max_tasks:
         description: Maximum tasks for this run
         required: false
-        default: "3"
+        default: "1"
       scheduler_run_id:
         description: Supabase scheduler run UUID; leave empty for manual/fallback runs
         required: false
@@ -31,7 +31,7 @@ jobs:
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
       KUEPER_WORKFLOW_TOKEN: ${{ secrets.KUEPER_WORKFLOW_TOKEN }}
-      KUEPER_MAX_TASKS: ${{ inputs.max_tasks || '3' }}
+      KUEPER_MAX_TASKS: ${{ inputs.max_tasks || '1' }}
     steps:
       - name: Checkout control plane
         uses: actions/checkout@v6

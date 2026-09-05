@@ -103,6 +103,7 @@ jobs:
           python -m unittest tools/review/test_pr_review_agent_v04.py
           python -m unittest tools/review/test_pr_review_agent_v05.py
           python -m unittest tools/review/test_pr_review_agent_v06.py
+          python -m unittest tools/review/test_pr_review_agent_v07.py
           python -m unittest tools/review/test_direct_pr_intake.py
           python -m unittest tools/review/test_direct_pr_intake_v02.py
 
@@ -118,7 +119,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python tools/review/pr_review_agent_v06.py --max-reviews "$KUEPER_MAX_REVIEWS" | tee pr-review-report.json
+          python tools/review/pr_review_agent_v07.py --max-reviews "$KUEPER_MAX_REVIEWS" | tee pr-review-report.json
 
       - name: Finish scheduler heartbeat
         if: always() && steps.lease.outputs.should_run == 'true'
