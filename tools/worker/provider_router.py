@@ -72,6 +72,37 @@ def _complexity(task: dict[str, Any], task_policy: dict[str, Any]) -> str:
     return value if value in {"low", "medium", "high"} else "medium"
 
 
+def _explicit_deep_reasoning(task: dict[str, Any], policy: dict[str, Any]) -> bool:
+    payload = _payload(task)
+    flag = str(policy.get("routing", {}).get("explicit_deep_reasoning_flag") or "requires_deep_reasoning")
+    return bool(task.get(flag) or payload.get(flag))
+
+
+def _select_model(task: dict[str, Any], task_policy: dict[str, Any], provider_policy: dict[str, Any], policy: dict[str, Any]) -> tuple[str, str]:
+    preferred = str(task.get("preferred_model") or "").strip()
+    if preferred:
+        return preferred, "explicit preferred_model"
+
+    default_model = str(provider_policy.get("default_model") or "")
+    complex_model = str(provider_policy.get("complex_model") or default_model)
+    allow_pro = bool(task_policy.get("allow_pro", False))
+    complexity = _complexity(task, task_policy)
+    explicit_deep = _explicit_deep_reasoning(task, policy)
+    priority = str(task.get("priority") or "medium").lower()
+    task_type = str(task.get("type") or "").upper()
+
+    # Pro is an escalation tier. High estimated effort alone is not enough for ordinary
+    # implementation work: callers must either explicitly request deep reasoning, or the
+    # task must belong to a narrow intrinsically high-reasoning class.
+    intrinsic_pro = task_type in {"LONG_SIMULATION_ANALYSIS", "SECURITY"} and priority in {"high", "critical"}
+    research_pro = task_type == "RESEARCH" and priority in {"high", "critical"}
+    if allow_pro and (explicit_deep or intrinsic_pro or research_pro):
+        reason = "explicit deep-reasoning escalation" if explicit_deep else "high-risk task-class escalation"
+        return complex_model, reason
+
+    return default_model, f"Flash default; complexity={complexity} without Pro escalation evidence"
+
+
 def route(task: dict[str, Any], now: dt.datetime | None = None, policy: dict[str, Any] | None = None) -> RouteDecision:
     policy = policy or load_policy()
     now = now or dt.datetime.now(dt.timezone.utc)
@@ -81,7 +112,7 @@ def route(task: dict[str, Any], now: dt.datetime | None = None, policy: dict[str
 
     task_type = str(task.get("type") or "").upper()
     priority = str(task.get("priority") or "medium").lower()
-    task_policy = policy.get("task_classes", {}).get(task_type, {"cost_sensitive": False, "complexity": "medium"})
+    task_policy = policy.get("task_classes", {}).get(task_type, {"cost_sensitive": True, "complexity": "medium", "allow_pro": False})
     cost_policy = _cost_policy(task, task_policy)
 
     provider = str(task.get("preferred_provider") or "deepseek")
@@ -89,10 +120,7 @@ def route(task: dict[str, Any], now: dt.datetime | None = None, policy: dict[str
     if not provider_policy.get("enabled", False):
         raise RuntimeError(f"provider disabled or unknown: {provider}")
 
-    complexity = _complexity(task, task_policy)
-    model = str(task.get("preferred_model") or (
-        provider_policy.get("complex_model") if complexity == "high" else provider_policy.get("default_model")
-    ))
+    model, model_reason = _select_model(task, task_policy, provider_policy, policy)
 
     windows = provider_policy.get("peak_windows", [])
     in_peak = any(_in_window(now, w) for w in windows)
@@ -113,12 +141,12 @@ def route(task: dict[str, Any], now: dt.datetime | None = None, policy: dict[str
             model,
             False,
             resume.isoformat() if resume else None,
-            "cost-aware scheduling deferred task until provider peak window ends",
+            f"{model_reason}; cost-aware scheduling deferred task until provider peak window ends",
             multiplier,
             cost_policy,
         )
 
-    reason = "policy route"
+    reason = model_reason
     if in_peak and urgent:
         reason += "; peak accepted because task is urgent/immediate"
     elif in_peak and not wants_off_peak:
