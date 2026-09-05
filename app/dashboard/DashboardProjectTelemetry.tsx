@@ -67,10 +67,13 @@ function targetProjectId(task: LiveTask, projects: ProjectStatus[]) {
 export default function DashboardProjectTelemetry() {
   useEffect(() => {
     let cancelled = false;
+    let running = false;
 
     async function enhance() {
+      if (running || cancelled) return;
       const grid = document.querySelector<HTMLElement>(".project-grid-modern");
       if (!grid) return;
+      running = true;
 
       try {
         const [statusRes, tracesRes] = await Promise.all([
@@ -131,11 +134,21 @@ export default function DashboardProjectTelemetry() {
 
           card.querySelector("[data-project-blockers]")?.remove();
           if (blockers.length) {
+            const distinctReasons = [...new Set(blockers.map((task) => task.blocked_reason!).filter(Boolean))];
             const box = document.createElement("div");
             box.dataset.projectBlockers = "true";
             box.className = "project-blockers";
-            const distinctReasons = [...new Set(blockers.map((task) => task.blocked_reason!).filter(Boolean))];
-            box.innerHTML = `<span class="project-blocker-count">${blockers.length} Blocker</span><span class="project-blocker-reason" title="${distinctReasons.join(" | ").replace(/\"/g, "&quot;")}">${shortReason(distinctReasons[0])}${distinctReasons.length > 1 ? ` · +${distinctReasons.length - 1}` : ""}</span>`;
+
+            const count = document.createElement("span");
+            count.className = "project-blocker-count";
+            count.textContent = `${blockers.length} Blocker`;
+
+            const reason = document.createElement("span");
+            reason.className = "project-blocker-reason";
+            reason.title = distinctReasons.join(" | ");
+            reason.textContent = `${shortReason(distinctReasons[0])}${distinctReasons.length > 1 ? ` · +${distinctReasons.length - 1}` : ""}`;
+
+            box.append(count, reason);
             card.appendChild(box);
           }
 
@@ -156,12 +169,14 @@ export default function DashboardProjectTelemetry() {
         }
       } catch {
         // Dashboard remains usable with the base projection if live enrichment fails.
+      } finally {
+        running = false;
       }
     }
 
     const timer = window.setTimeout(enhance, 120);
     const observer = new MutationObserver(() => {
-      if (document.querySelector(".project-grid-modern .project-card")) enhance();
+      if (document.querySelector(".project-grid-modern .project-card:not([data-workload])")) enhance();
     });
     observer.observe(document.body, { childList: true, subtree: true });
 
