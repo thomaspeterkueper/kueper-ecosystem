@@ -4,7 +4,8 @@
 All provider-independent reconciliation from v0.6 remains intact. Live semantic
 review defaults to DeepSeek Flash. Pro is reserved for explicit high-risk evidence:
 critical/high task priority, critical scientific/evidence gates, security tasks, or
-changes touching privileged workflow/migration/security surfaces.
+changes touching privileged workflow/migration/security surfaces. Every semantic
+review must also reserve a slot from the shared daily LLM invocation budget.
 """
 from __future__ import annotations
 
@@ -28,11 +29,7 @@ PRO_PATH_PREFIXES = (
     "migrations/",
     "security/",
 )
-PRO_PATH_NAMES = {
-    "rls.sql",
-    "policies.sql",
-    "schema.sql",
-}
+PRO_PATH_NAMES = {"rls.sql", "policies.sql", "schema.sql"}
 
 
 def changed_paths(pr_url: str) -> list[str]:
@@ -90,10 +87,41 @@ class ModelAwareDB:
         return self.inner.rpc(name, payload)
 
 
+def reserve_review_budget(db: Any, task: dict[str, Any], model: str, reason: str) -> dict[str, Any]:
+    result = db.rpc(
+        "kueper_reserve_llm_invocation",
+        {
+            "p_provider": "deepseek",
+            "p_model": model,
+            "p_source": "pr-review-agent",
+            "p_task_id": task.get("id"),
+            "p_reason": reason,
+        },
+    )
+    return result if isinstance(result, dict) else {"allowed": bool(result), "reason": "unknown"}
+
+
 def cost_aware_review_task(task: dict[str, Any], db: Any) -> dict[str, Any]:
     pr_url = str(task.get("pr_url") or "").strip()
     paths = changed_paths(pr_url) if pr_url else ["__UNKNOWN_CHANGED_PATHS__"]
     model, reason = select_review_model(task, paths)
+
+    budget = reserve_review_budget(db, task, model, reason)
+    if not budget.get("allowed"):
+        print(
+            f"::notice title=Review budget deferred::{task.get('id')}: {budget.get('reason')} "
+            f"({budget.get('calls', 0)}/{budget.get('max_daily_calls', '?')} calls, "
+            f"{budget.get('pro_calls', 0)}/{budget.get('max_daily_pro_calls', '?')} Pro)",
+            flush=True,
+        )
+        return {
+            "task": task.get("id"),
+            "result": "budget-deferred",
+            "provider": "deepseek",
+            "model": model,
+            "reason": budget.get("reason"),
+        }
+
     original_run = worker.run
 
     def model_aware_run(cmd, *args, **kwargs):
