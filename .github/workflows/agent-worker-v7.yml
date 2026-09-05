@@ -6,7 +6,7 @@ on:
       max_tasks:
         description: Maximum tasks for this run
         required: false
-        default: "3"
+        default: "1"
       scheduler_run_id:
         description: Supabase scheduler run UUID; leave empty for manual/fallback runs
         required: false
@@ -31,7 +31,7 @@ jobs:
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
       KUEPER_WORKFLOW_TOKEN: ${{ secrets.KUEPER_WORKFLOW_TOKEN }}
-      KUEPER_MAX_TASKS: ${{ inputs.max_tasks || '3' }}
+      KUEPER_MAX_TASKS: ${{ inputs.max_tasks || '1' }}
     steps:
       - name: Checkout control plane
         uses: actions/checkout@v6
@@ -121,14 +121,13 @@ jobs:
           python -m unittest tools/worker/test_provider_router.py
           python -m unittest tools/worker/test_git_credentials.py
           python -m unittest tools/worker/test_agent_worker_v75.py
-          python -m unittest tools/worker/test_agent_worker_v76.py
 
       - name: Process bounded task batch
         if: steps.lease.outputs.should_run == 'true'
         shell: bash
         run: |
           set -euo pipefail
-          python tools/worker/agent_worker_v76.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
+          python tools/worker/agent_worker_v75.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
 
       - name: Finish scheduler heartbeat
         if: always() && steps.lease.outputs.should_run == 'true'
