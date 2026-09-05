@@ -57,8 +57,7 @@ jobs:
 
       - name: Explain duplicate skip
         if: steps.lease.outputs.should_run != 'true'
-        run: |
-          echo "Scheduler guard skipped this execution: ${{ steps.lease.outputs.skip_reason }}"
+        run: echo "Scheduler guard skipped this execution: ${{ steps.lease.outputs.skip_reason }}"
 
       - name: Set up Python
         if: steps.lease.outputs.should_run == 'true'
@@ -91,9 +90,7 @@ jobs:
               echo "$name: available"
             fi
           done
-          if [ "$missing" -ne 0 ]; then
-            exit 1
-          fi
+          if [ "$missing" -ne 0 ]; then exit 1; fi
           if [ -n "${KUEPER_WORKFLOW_TOKEN:-}" ]; then
             echo "KUEPER_WORKFLOW_TOKEN: available for privileged .github/workflows/* pushes"
           else
@@ -121,13 +118,14 @@ jobs:
           python -m unittest tools/worker/test_provider_router.py
           python -m unittest tools/worker/test_git_credentials.py
           python -m unittest tools/worker/test_agent_worker_v75.py
+          python -m unittest tools/worker/test_agent_worker_v76.py
 
       - name: Process bounded task batch
         if: steps.lease.outputs.should_run == 'true'
         shell: bash
         run: |
           set -euo pipefail
-          python tools/worker/agent_worker_v75.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
+          python tools/worker/agent_worker_v76.py --max-tasks "$KUEPER_MAX_TASKS" | tee agent-worker-report.json
 
       - name: Finish scheduler heartbeat
         if: always() && steps.lease.outputs.should_run == 'true'
