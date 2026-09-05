@@ -20,6 +20,7 @@ import pr_review_agent_v06 as v06  # noqa: E402
 
 base = v06.base
 worker = base.worker
+ORIGINAL_GUARDED_REVIEW_TASK = v06.v05.v04.guarded_review_task
 
 PRO_PATH_PREFIXES = (
     ".github/workflows/",
@@ -48,8 +49,6 @@ def changed_paths(pr_url: str) -> list[str]:
         check=False,
     )
     if cp.returncode != 0:
-        # Fail safe for cost routing: inability to inspect paths escalates the review,
-        # but does not fail the review lifecycle itself.
         return ["__UNKNOWN_CHANGED_PATHS__"]
     return [line.strip() for line in (cp.stdout or "").splitlines() if line.strip()]
 
@@ -80,8 +79,6 @@ def select_review_model(task: dict[str, Any], paths: list[str]) -> tuple[str, st
 
 
 class ModelAwareDB:
-    """Correct persisted reviewer model metadata while delegating all DB semantics."""
-
     def __init__(self, inner: Any, model: str):
         self.inner = inner
         self.model = model
@@ -118,14 +115,12 @@ def cost_aware_review_task(task: dict[str, Any], db: Any) -> dict[str, Any]:
 
     worker.run = model_aware_run
     try:
-        return v06.v05.v04.guarded_review_task(task, ModelAwareDB(db, model))
+        return ORIGINAL_GUARDED_REVIEW_TASK(task, ModelAwareDB(db, model))
     finally:
         worker.run = original_run
 
 
 def cost_aware_review_pending_batch(db: Any, max_reviews: int) -> tuple[list[dict[str, Any]], int]:
-    # Keep v0.6's provider-independent cleanup pass, then let v0.5 own queue and
-    # provider-pause semantics while swapping only the live semantic review function.
     cleanup = v06.reconcile_inactive_review_tasks(db, scan_limit=max(50, max_reviews * 10))
     original_guarded = v06.v05.v04.guarded_review_task
     v06.v05.v04.guarded_review_task = cost_aware_review_task
