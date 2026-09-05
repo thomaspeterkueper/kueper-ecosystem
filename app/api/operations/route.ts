@@ -15,25 +15,13 @@ function config() {
 export async function GET() {
   const { url, key } = config();
   if (!key) {
-    return NextResponse.json({
-      available: false,
-      generated_at: new Date().toISOString(),
-      reason: "Supabase server credentials are not configured for this deployment.",
-      workers: [],
-      queue: {},
-      providers: {},
-    });
+    return NextResponse.json({ available: false, generated_at: new Date().toISOString(), reason: "Supabase server credentials are not configured for this deployment.", workers: [], queue: {}, providers: {}, llm_budget: {} });
   }
 
   try {
     const response = await fetch(`${url}/rest/v1/rpc/kueper_control_room_operations`, {
       method: "POST",
-      headers: {
-        apikey: key,
-        Authorization: `Bearer ${key}`,
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
+      headers: { apikey: key, Authorization: `Bearer ${key}`, "Content-Type": "application/json", Accept: "application/json" },
       body: "{}",
       cache: "no-store",
     });
@@ -46,16 +34,10 @@ export async function GET() {
       workers: Array.isArray(payload?.workers) ? payload.workers : [],
       queue: payload?.queue && typeof payload.queue === "object" ? payload.queue : {},
       providers: payload?.providers && typeof payload.providers === "object" ? payload.providers : {},
+      llm_budget: payload?.llm_budget && typeof payload.llm_budget === "object" ? payload.llm_budget : {},
       blocked_tasks: Number(payload?.blocked_tasks || 0),
     });
   } catch (error: any) {
-    return NextResponse.json({
-      available: false,
-      generated_at: new Date().toISOString(),
-      reason: error?.message || "Control-plane telemetry unavailable.",
-      workers: [],
-      queue: {},
-      providers: {},
-    });
+    return NextResponse.json({ available: false, generated_at: new Date().toISOString(), reason: error?.message || "Control-plane telemetry unavailable.", workers: [], queue: {}, providers: {}, llm_budget: {} });
   }
 }
