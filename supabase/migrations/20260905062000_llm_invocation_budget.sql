@@ -35,7 +35,7 @@ create or replace function public.kueper_reserve_llm_invocation(
   p_reason text default null
 ) returns jsonb
 language plpgsql
-security invoker
+security definer
 set search_path = ''
 as $$
 declare
