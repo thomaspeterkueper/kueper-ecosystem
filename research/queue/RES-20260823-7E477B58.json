@@ -1,6 +1,6 @@
 {
   "id": "RES-20260823-7E477B58",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-08-23T04:06:21+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -18,5 +18,7 @@
     "uncertainty": 0.6,
     "evidence_potential": 0.8
   },
-  "fingerprint": "7e477b58ab49979d"
+  "fingerprint": "7e477b58ab49979d",
+  "updated_at": "2026-09-06T07:57:42+00:00",
+  "last_error": "queued item RES-20260823-7E477B58 requires source_path for evidence profile ota-archive-evidence"
 }
