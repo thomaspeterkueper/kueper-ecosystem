@@ -3,10 +3,14 @@
 
 V0.7 reserves budget per semantic review, but a failed semantic attempt can leave the
 same review_pending task at the head of the queue. Subsequent scheduled runs then
-reserve another daily slot for the same unchanged PR. V0.8 prevents that retry loop:
+reserve another daily slot for the same unchanged PR. V0.8 prevents that retry loop
+without turning a failed provider call into a permanent daily lock:
 
-- one unchanged task/head is admitted at most once per UTC day;
-- exhausted daily budget stops semantic batch work immediately;
+- one unchanged task/head with a retained reservation is admitted at most once per UTC day;
+- provider-unavailable attempts release their unused reservation so a later healthy run can retry;
+- discovered PR head metadata participates in the dedup key;
+- exhausted model-specific budget does not starve candidates routable to another model;
+- exhausted total daily budget stops semantic batch work immediately;
 - provider-independent stale PR reconciliation still runs before the budget guard.
 
 A changed PR head is a new review candidate and may be admitted again the same day.
@@ -27,8 +31,13 @@ v06 = v07.v06
 
 def _task_head_sha(task: dict[str, Any]) -> str:
     payload = task.get("payload") if isinstance(task.get("payload"), dict) else {}
-    for key in ("head_sha", "pr_head_sha", "head"): 
+    metadata = task.get("metadata") if isinstance(task.get("metadata"), dict) else {}
+    for key in ("head_sha", "pr_head_sha", "head"):
         value = payload.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+    for key in ("discovered_pr_head_sha", "head_sha", "pr_head_sha"):
+        value = metadata.get(key)
         if isinstance(value, str) and value.strip():
             return value.strip()
     for key in ("head_sha", "base_sha"):
@@ -53,6 +62,33 @@ def already_reserved_today(db: Any, task: dict[str, Any], reason: str) -> bool:
         },
     )
     return bool(result)
+
+
+def release_failed_reservation(db: Any, task: dict[str, Any], reason: str) -> None:
+    """Release a reservation when no semantic invocation could be executed.
+
+    ProviderUnavailable is raised for admission failures such as insufficient provider
+    balance. Such attempts do not produce a pr_review_run and should not consume the
+    daily retry/dedup slot permanently.
+    """
+    db.rpc(
+        "kueper_release_llm_invocation",
+        {
+            "p_provider": "deepseek",
+            "p_source": "pr-review-agent",
+            "p_task_id": task.get("id"),
+            "p_reason": reason,
+        },
+    )
+
+
+def stop_after_budget_deferred(reason: str | None) -> bool:
+    """Only a provider-wide total cap should terminate the batch.
+
+    Flash/Pro-specific exhaustion can still leave capacity for candidates routed to
+    the other model, so those results must not starve the rest of the bounded queue.
+    """
+    return str(reason or "") in {"daily-call-budget-exhausted", "provider-budget-disabled"}
 
 
 def cost_aware_review_task(task: dict[str, Any], db: Any) -> dict[str, Any]:
@@ -93,7 +129,11 @@ def cost_aware_review_task(task: dict[str, Any], db: Any) -> dict[str, Any]:
     original_reserve = v07.reserve_review_budget
     v07.reserve_review_budget = lambda _db, _task, _model, _reason: {"allowed": True, "reason": "pre-reserved"}
     try:
-        return v07.cost_aware_review_task(task, db)
+        try:
+            return v07.cost_aware_review_task(task, db)
+        except base.worker.ProviderUnavailable:
+            release_failed_reservation(db, task, reason)
+            raise
     finally:
         v07.reserve_review_budget = original_reserve
 
@@ -138,7 +178,9 @@ def budget_aware_review_pending_batch(db: Any, max_reviews: int) -> tuple[list[d
         results.append(result)
         outcome = str(result.get("result") or "")
         if outcome == "budget-deferred":
-            break
+            if stop_after_budget_deferred(result.get("reason")):
+                break
+            continue
         if outcome == "already-attempted-today":
             continue
         if outcome != "terminal":

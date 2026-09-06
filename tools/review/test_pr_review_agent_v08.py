@@ -22,6 +22,8 @@ class FakeDB:
         self.calls.append((name, payload))
         if name == "kueper_llm_invocation_reserved_today":
             return self.reserved
+        if name == "kueper_release_llm_invocation":
+            return True
         raise AssertionError(name)
 
 
@@ -30,9 +32,13 @@ class ReviewBudgetDedupTests(unittest.TestCase):
         task = {"payload": {"head_sha": "abc123"}}
         self.assertEqual(v08.review_reason(task, "routine review"), "routine review; head=abc123")
 
+    def test_reason_uses_discovered_head_metadata(self):
+        task = {"metadata": {"discovered_pr_head_sha": "def456"}}
+        self.assertEqual(v08.review_reason(task, "routine review"), "routine review; head=def456")
+
     def test_changed_head_changes_dedup_key(self):
-        a = v08.review_reason({"payload": {"head_sha": "aaa"}}, "routine review")
-        b = v08.review_reason({"payload": {"head_sha": "bbb"}}, "routine review")
+        a = v08.review_reason({"metadata": {"discovered_pr_head_sha": "aaa"}}, "routine review")
+        b = v08.review_reason({"metadata": {"discovered_pr_head_sha": "bbb"}}, "routine review")
         self.assertNotEqual(a, b)
 
     def test_daily_lookup_is_task_and_reason_scoped(self):
@@ -43,6 +49,27 @@ class ReviewBudgetDedupTests(unittest.TestCase):
         self.assertEqual(name, "kueper_llm_invocation_reserved_today")
         self.assertEqual(payload["p_task_id"], task["id"])
         self.assertEqual(payload["p_reason"], "routine; head=abc")
+
+    def test_failed_reservation_release_is_task_reason_scoped(self):
+        db = FakeDB()
+        task = {"id": "11111111-1111-1111-1111-111111111111"}
+        v08.release_failed_reservation(db, task, "high-priority; head=abc")
+        name, payload = db.calls[0]
+        self.assertEqual(name, "kueper_release_llm_invocation")
+        self.assertEqual(payload["p_task_id"], task["id"])
+        self.assertEqual(payload["p_reason"], "high-priority; head=abc")
+
+    def test_flash_budget_exhaustion_does_not_stop_batch(self):
+        self.assertFalse(v08.stop_after_budget_deferred("daily-flash-budget-exhausted"))
+
+    def test_pro_budget_exhaustion_does_not_stop_batch(self):
+        self.assertFalse(v08.stop_after_budget_deferred("daily-pro-budget-exhausted"))
+
+    def test_total_budget_exhaustion_stops_batch(self):
+        self.assertTrue(v08.stop_after_budget_deferred("daily-call-budget-exhausted"))
+
+    def test_disabled_provider_budget_stops_batch(self):
+        self.assertTrue(v08.stop_after_budget_deferred("provider-budget-disabled"))
 
 
 if __name__ == "__main__":
