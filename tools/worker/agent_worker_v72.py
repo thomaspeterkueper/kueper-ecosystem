@@ -12,6 +12,7 @@ from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import agent_worker as worker  # noqa: E402
 import agent_worker_v71 as v71  # noqa: E402
+import default_branch_guard as branch_guard  # noqa: E402
 
 TARGET_CODES = "ECO, KG, SSF, NOXIA, ENG, NXU, MISH, OMNI, AVI, CONTRA, ARCH, ENDIA, ZEREYA, DAVARU, FLHERM, RESETH, KUE, OTA, TKD"
 
@@ -27,12 +28,15 @@ def repo_task(task: dict[str, Any], model: str) -> dict[str, Any]:
         default_branch = worker.run(
             ["git", "symbolic-ref", "--short", "refs/remotes/origin/HEAD"], cwd=root
         ).stdout.strip().split("/", 1)[-1]
+        branch_guard.install_pre_push_hook(root)
+        initial_default_sha = branch_guard.initial_default_sha(worker.run, root, default_branch)
         current_sha = worker.run(["git", "rev-parse", "HEAD"], cwd=root).stdout.strip()
         expected_sha = task.get("base_sha")
         if expected_sha and current_sha != expected_sha:
             raise worker.WorkerError(f"base SHA moved: expected {expected_sha}, current {current_sha}")
 
         branch = f"ecosystem/task-{task['id'][:8]}"
+        branch_guard.assert_non_default_branch(branch, default_branch, context="repository task publication")
         worker.run(["git", "checkout", "-b", branch], cwd=root)
         payload = json.dumps(task.get("payload") or {}, ensure_ascii=False, indent=2)
         depth = int(task.get("depth") or 0)
@@ -53,6 +57,8 @@ Rules:
 - Run relevant tests/build/lint and repair failures caused by your changes.
 - Never expose secrets or weaken tests.
 - Do not edit other repositories.
+- Never commit, push, cherry-pick, reconstruct, or use a Contents/API write on the default branch as a substitute for a PR, Ready transition, review, or merge.
+- If a PR lifecycle operation is unavailable, leave the PR/head branch intact and surface the blocker; do not integrate equivalent content directly to the default branch.
 - If blocked by a genuine owner/creative decision, leave the repo unchanged and print `KUEPER_PARK_OWNER: <reason>`.
 - If blocked by a temporary internal dependency, leave the repo unchanged and print `KUEPER_PARK: <reason>`.
 - Finish with only intentional working-tree changes.
@@ -103,6 +109,21 @@ Cross-project follow-ups:
                 reason = output.split(marker, 1)[1].splitlines()[0].strip()
                 return {"kind": "park", "reason": reason, "requires_owner_decision": owner}
 
+        try:
+            branch_guard.assert_remote_default_unchanged(
+                worker.run, root, default_branch, initial_default_sha,
+                context=f"task {task['id'][:8]} agent run",
+            )
+        except branch_guard.DefaultBranchMutationDetected as exc:
+            return {
+                "kind": "park",
+                "reason": str(exc),
+                "requires_owner_decision": True,
+                "governance_violation": "default-branch-mutation",
+            }
+        except branch_guard.DefaultBranchVerificationFailed as exc:
+            return {"kind": "park", "reason": str(exc), "requires_owner_decision": False}
+
         status = worker.run(["git", "status", "--porcelain", "--untracked-files=all"], cwd=root).stdout.strip()
         if not status:
             return {"kind": "completed", "summary": "Agent found no repository change necessary", "agent_output": output[-4000:]}
@@ -111,6 +132,7 @@ Cross-project follow-ups:
         worker.run(["git", "config", "user.email", "ecosystem-bot@users.noreply.github.com"], cwd=root)
         worker.run(["git", "add", "-A"], cwd=root)
         worker.run(["git", "commit", "-m", f"chore(agent): execute task {task['id'][:8]}"], cwd=root)
+        branch_guard.assert_non_default_branch(branch, default_branch, context="repository task push")
         worker.run(["git", "push", "--quiet", "origin", branch], cwd=root)
         gh_env = env.copy()
         gh_env["GH_TOKEN"] = token

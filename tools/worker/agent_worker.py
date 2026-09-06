@@ -159,6 +159,8 @@ Rules:
 - Run relevant tests/build/lint and repair failures caused by your changes.
 - Never expose secrets or weaken tests.
 - Do not edit other repositories.
+- Never commit, push, cherry-pick, reconstruct, or use a Contents/API write on the default branch as a substitute for a PR, Ready transition, review, or merge.
+- If a PR lifecycle operation is unavailable, leave the PR/head branch intact and surface the blocker; do not integrate equivalent content directly to the default branch.
 - If blocked by a genuine owner/creative decision, leave the repo unchanged and print `KUEPER_PARK_OWNER: <reason>`.
 - If blocked by a temporary internal dependency, leave the repo unchanged and print `KUEPER_PARK: <reason>`.
 - Finish with only intentional working-tree changes.

@@ -21,6 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import agent_worker as worker  # noqa: E402
 import agent_worker_v71 as v71  # noqa: E402
 import agent_worker_v72 as v72  # noqa: E402
+import default_branch_guard as branch_guard  # noqa: E402
 
 
 def review_fix_repo_task(task: dict[str, Any], model: str) -> dict[str, Any]:
@@ -36,6 +37,7 @@ def review_fix_repo_task(task: dict[str, Any], model: str) -> dict[str, Any]:
     with tempfile.TemporaryDirectory(prefix="kueper-v73-review-fix-") as temp:
         root = Path(temp) / "repo"
         worker.run(["git", "clone", "--quiet", worker.clone_url(repo, token), str(root)])
+        branch_guard.install_pre_push_hook(root)
         gh_env = os.environ.copy()
         gh_env["GH_TOKEN"] = token
         pr_meta_raw = worker.run([
@@ -47,8 +49,19 @@ def review_fix_repo_task(task: dict[str, Any], model: str) -> dict[str, Any]:
 
         current_head = str(pr_meta.get("headRefOid") or "").lower()
         head_branch = str(pr_meta.get("headRefName") or "").strip()
+        base_ref = str(pr_meta.get("baseRefName") or "").strip()
         if not current_head or not head_branch:
             raise worker.WorkerError("could not resolve PR head")
+        if not base_ref:
+            raise worker.WorkerError("could not resolve PR base ref")
+        if head_branch == base_ref:
+            return {
+                "kind": "park",
+                "reason": f"REVIEW_FIX refuses to write: PR head branch {head_branch!r} equals its base branch; a fix there would be a direct default-branch write",
+                "requires_owner_decision": True,
+                "governance_violation": "default-branch-mutation",
+            }
+        initial_default_sha = branch_guard.initial_default_sha(worker.run, root, base_ref)
         if current_head != expected_head:
             return {
                 "kind": "completed",
@@ -73,7 +86,8 @@ Rules:
 - Preserve unrelated behavior and existing architecture boundaries.
 - Run relevant deterministic tests, typecheck/lint/build where practical.
 - Do not weaken or delete tests to obtain green output.
-- Do not merge the PR.
+- Do not merge the PR and do not switch it to Ready.
+- Never commit, push, cherry-pick, reconstruct, or use a Contents/API write on the PR base/default branch as a substitute for Ready or Merge; if a lifecycle operation is unavailable, leave the PR unchanged and surface the blocker.
 - Do not modify other repositories.
 - If a finding cannot be fixed without an owner/creative decision, leave the repository unchanged and print `KUEPER_PARK_OWNER: <reason>`.
 - Finish with only intentional working-tree changes.
@@ -103,6 +117,21 @@ Rules:
             reason = output.split("KUEPER_PARK_OWNER:", 1)[1].splitlines()[0].strip()
             return {"kind": "park", "reason": reason, "requires_owner_decision": True}
 
+        try:
+            branch_guard.assert_remote_default_unchanged(
+                worker.run, root, base_ref, initial_default_sha,
+                context="review-fix agent run",
+            )
+        except branch_guard.DefaultBranchMutationDetected as exc:
+            return {
+                "kind": "park",
+                "reason": str(exc),
+                "requires_owner_decision": True,
+                "governance_violation": "default-branch-mutation",
+            }
+        except branch_guard.DefaultBranchVerificationFailed as exc:
+            return {"kind": "park", "reason": str(exc), "requires_owner_decision": False}
+
         status = worker.run(["git", "status", "--porcelain", "--untracked-files=all"], cwd=root).stdout.strip()
         if not status:
             return {"kind": "park", "reason": "blocking review findings remain but REVIEW_FIX produced no change", "requires_owner_decision": False}
@@ -111,6 +140,7 @@ Rules:
         worker.run(["git", "config", "user.email", "ecosystem-bot@users.noreply.github.com"], cwd=root)
         worker.run(["git", "add", "-A"], cwd=root)
         worker.run(["git", "commit", "-m", f"fix(review): address findings for {expected_head[:8]}"], cwd=root)
+        branch_guard.assert_non_default_branch(head_branch, base_ref, context="review-fix push")
         worker.run(["git", "push", "--quiet", "origin", f"HEAD:{head_branch}"], cwd=root)
         new_head = worker.run(["git", "rev-parse", "HEAD"], cwd=root).stdout.strip()
         return {

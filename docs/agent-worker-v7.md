@@ -39,6 +39,10 @@ complete | fail/retry | park
 
 The worker clones the target repository itself. An optional `base_sha` is checked before agent execution. Claude Code runs against DeepSeek's Anthropic-compatible endpoint and may edit only the checked-out target repository. The worker, not the model, owns branch creation, commit, push and PR creation.
 
+## Default-branch write guard
+
+Publication paths are fail-closed against direct default-branch integration (ECO-ARC-0031-2026-DE): the worker refuses any branch that equals the default branch, installs a pre-push hook in the agent sandbox that rejects pushes to the default branch, and verifies after each agent run that the remote default branch ref is unchanged. A detected mutation parks the task as a governance violation with owner decision; an unverifiable check parks fail-closed. A blocked Ready/Merge transition must never be replaced by direct integration of the same content.
+
 Agent output markers:
 
 - `KUEPER_PARK: <reason>` — temporary internal blocker.
