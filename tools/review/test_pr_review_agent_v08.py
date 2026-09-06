@@ -44,6 +44,18 @@ class ReviewBudgetDedupTests(unittest.TestCase):
         self.assertEqual(payload["p_task_id"], task["id"])
         self.assertEqual(payload["p_reason"], "routine; head=abc")
 
+    def test_flash_budget_exhaustion_does_not_stop_batch(self):
+        self.assertFalse(v08.stop_after_budget_deferred("daily-flash-budget-exhausted"))
+
+    def test_pro_budget_exhaustion_does_not_stop_batch(self):
+        self.assertFalse(v08.stop_after_budget_deferred("daily-pro-budget-exhausted"))
+
+    def test_total_budget_exhaustion_stops_batch(self):
+        self.assertTrue(v08.stop_after_budget_deferred("daily-call-budget-exhausted"))
+
+    def test_disabled_provider_budget_stops_batch(self):
+        self.assertTrue(v08.stop_after_budget_deferred("provider-budget-disabled"))
+
 
 if __name__ == "__main__":
     unittest.main()
