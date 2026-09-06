@@ -6,7 +6,8 @@ same review_pending task at the head of the queue. Subsequent scheduled runs the
 reserve another daily slot for the same unchanged PR. V0.8 prevents that retry loop:
 
 - one unchanged task/head is admitted at most once per UTC day;
-- exhausted daily budget stops semantic batch work immediately;
+- exhausted model-specific budget does not starve candidates routable to another model;
+- exhausted total daily budget stops semantic batch work immediately;
 - provider-independent stale PR reconciliation still runs before the budget guard.
 
 A changed PR head is a new review candidate and may be admitted again the same day.
@@ -27,7 +28,7 @@ v06 = v07.v06
 
 def _task_head_sha(task: dict[str, Any]) -> str:
     payload = task.get("payload") if isinstance(task.get("payload"), dict) else {}
-    for key in ("head_sha", "pr_head_sha", "head"): 
+    for key in ("head_sha", "pr_head_sha", "head"):
         value = payload.get(key)
         if isinstance(value, str) and value.strip():
             return value.strip()
@@ -53,6 +54,15 @@ def already_reserved_today(db: Any, task: dict[str, Any], reason: str) -> bool:
         },
     )
     return bool(result)
+
+
+def stop_after_budget_deferred(reason: str | None) -> bool:
+    """Only a provider-wide total cap should terminate the batch.
+
+    Flash/Pro-specific exhaustion can still leave capacity for candidates routed to
+    the other model, so those results must not starve the rest of the bounded queue.
+    """
+    return str(reason or "") in {"daily-call-budget-exhausted", "provider-budget-disabled"}
 
 
 def cost_aware_review_task(task: dict[str, Any], db: Any) -> dict[str, Any]:
@@ -138,7 +148,9 @@ def budget_aware_review_pending_batch(db: Any, max_reviews: int) -> tuple[list[d
         results.append(result)
         outcome = str(result.get("result") or "")
         if outcome == "budget-deferred":
-            break
+            if stop_after_budget_deferred(result.get("reason")):
+                break
+            continue
         if outcome == "already-attempted-today":
             continue
         if outcome != "terminal":
