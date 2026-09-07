@@ -58,24 +58,35 @@ def already_reserved_today(db: Any, task: dict[str, Any], reason: str) -> bool:
     return bool(result)
 
 
-def cost_aware_review_task(task: dict[str, Any], db: Any) -> dict[str, Any]:
+def required_ci_gate(task: dict[str, Any]) -> dict[str, Any]:
     pr_url = str(task.get("pr_url") or "").strip()
     repository = str(task.get("repository") or "").strip()
+    if not pr_url or not repository:
+        return {"allowed": True, "reason": "no-pr-or-repository", "details": [], "head_sha": None}
+    return merge_gate.evaluate_pr(repository, pr_url)
 
-    if pr_url and repository:
-        gate = merge_gate.evaluate_pr(repository, pr_url)
+
+def blocked_gate_result(task: dict[str, Any], gate: dict[str, Any]) -> dict[str, Any]:
+    print(
+        f"::notice title=Required CI gate blocked::{task.get('id')}: {gate.get('reason')}",
+        flush=True,
+    )
+    return {
+        "task": task.get("id"),
+        "result": "ci-gate-blocked",
+        "reason": gate.get("reason"),
+        "head_sha": gate.get("head_sha"),
+        "checks": gate.get("details") or [],
+    }
+
+
+def cost_aware_review_task(task: dict[str, Any], db: Any, *, gate_prechecked: bool = False) -> dict[str, Any]:
+    pr_url = str(task.get("pr_url") or "").strip()
+
+    if not gate_prechecked:
+        gate = required_ci_gate(task)
         if not gate.get("allowed"):
-            print(
-                f"::notice title=Required CI gate blocked::{task.get('id')}: {gate.get('reason')}",
-                flush=True,
-            )
-            return {
-                "task": task.get("id"),
-                "result": "ci-gate-blocked",
-                "reason": gate.get("reason"),
-                "head_sha": gate.get("head_sha"),
-                "checks": gate.get("details") or [],
-            }
+            return blocked_gate_result(task, gate)
 
     paths = v07.changed_paths(pr_url) if pr_url else ["__UNKNOWN_CHANGED_PATHS__"]
     model, model_reason = v07.select_review_model(task, paths)
@@ -140,13 +151,17 @@ def budget_aware_review_pending_batch(db: Any, max_reviews: int) -> tuple[list[d
                 continue  # already handled by stale sweep
             if state != "OPEN":
                 continue
-            result = cost_aware_review_task(task, db)
-            if result.get("result") == "ci-gate-blocked":
-                results.append(result)
+
+            gate = required_ci_gate(task)
+            if not gate.get("allowed"):
+                results.append(blocked_gate_result(task, gate))
                 continue
+
             if not v06.v05._provider_available(db):
                 results.append({"task": task.get("id"), "result": "provider-paused", "provider": "deepseek"})
                 break
+
+            result = cost_aware_review_task(task, db, gate_prechecked=True)
         except base.worker.ProviderUnavailable as exc:
             v06.v05._pause_provider(db, exc)
             results.append({"task": task.get("id"), "result": "provider-paused", "provider": exc.provider, "code": exc.code})
