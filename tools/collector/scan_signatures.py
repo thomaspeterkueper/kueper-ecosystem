@@ -54,7 +54,15 @@ def defining_signatures(path, content):
     jede blosse Erwaehnung im Fliesstext (relatedDocuments, Prosa-Verweise
     auf andere Dossiers). Ein External Task, der z.B. 'OTA-TEC-0082' nur
     in einem Satz erwaehnt, definiert diese Signatur nicht und darf keine
-    Kollision ausloesen."""
+    Kollision ausloesen.
+
+    Abgeschlossene Vorgangsprotokolle unter external-tasks/done/ definieren
+    ebenfalls keine Signatur -- sie dokumentieren nur, dass ein frueherer
+    Zwischenstand verarbeitet wurde, und verweisen typischerweise explizit
+    auf die kanonische Fassung anderswo (Fund vom 2026-09-07: eine solche
+    Datei fuer OTA-TEC-0034 loeste faelschlich eine Kollisionsmeldung aus)."""
+    if "/done/" in path or path.startswith("done/"):
+        return set()
     found = set()
     fname_match = SIGNATURE_PATTERN.search(os.path.basename(path))
     if fname_match:
@@ -119,6 +127,27 @@ def load_registry():
         return json.load(f)
 
 
+def reset_scanned_state(registry):
+    """Entfernt vor einem neuen Lauf alle Signaturen und Kollisionen, die
+    aus einem frueheren GitHub-Scan stammen (location beginnt mit einem
+    Eintrag aus SCAN_REPOS), damit nicht mehr zutreffende Ergebnisse aus
+    frueheren Laeufen nicht unbegrenzt weiterbestehen (Bugfix: eine durch
+    einen frueheren Bug ausgeloeste Kollisionsmeldung fuer OTA-TEC-0034
+    blieb nach der Korrektur bestehen, weil Kollisionen nie zurueckgesetzt
+    wurden). Manuell gepflegte Eintraege (Drive-Anteil, location ohne
+    SCAN_REPOS-Praefix) bleiben unangetastet."""
+    scanned_prefixes = tuple(f"{repo}:" for repo, _ in SCAN_REPOS)
+    for entry in registry.get("series", {}).values():
+        entry["signatures"] = {
+            n: v for n, v in entry.get("signatures", {}).items()
+            if not v.get("location", "").startswith(scanned_prefixes)
+        }
+        entry["collisions"] = [
+            c for c in entry.get("collisions", [])
+            if not any(occ.split(" (")[0].startswith(scanned_prefixes) for occ in c.get("occurrences", []))
+        ]
+
+
 def merge_signature(registry, series, number, title, status, location, today):
     s = registry["series"].setdefault(
         series, {"nextFree": None, "signatures": {}, "collisions": []}
@@ -156,6 +185,7 @@ def main():
     token = _token()
     registry = load_registry()
     today = datetime.date.today().isoformat()
+    reset_scanned_state(registry)
 
     for repo, branch in SCAN_REPOS:
         for path in list_relevant_files(repo, branch, token):

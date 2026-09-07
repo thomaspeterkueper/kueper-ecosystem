@@ -1,7 +1,7 @@
 {
   "$schema": "../schemas/ota-signature-index.schema.json",
   "schema": "ota-signature-index.v1",
-  "lastScanned": "2026-09-07T19:12:55.779111+00:00",
+  "lastScanned": "2026-09-07T19:18:29.965136+00:00",
   "series": {
     "TEC": {
       "nextFree": 130,
@@ -28,12 +28,6 @@
           "title": "ASCE-Shuttle",
           "status": "AKTIV",
           "location": "overtime-archive/Drive:root",
-          "lastSeen": "2026-09-07"
-        },
-        "0034": {
-          "title": "external-tasks/done/OTA-TEC-0034-2026-DE.md",
-          "status": "UNKNOWN",
-          "location": "thomaspeterkueper/noxiagame:external-tasks/done/OTA-TEC-0034-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0035": {
@@ -149,18 +143,6 @@
           "status": "ENTWURF",
           "location": "overtime-archive/Drive:root",
           "lastSeen": "2026-09-07"
-        },
-        "0038": {
-          "title": "\"Erkundungsrover Typ P — Mond-Standardtyp, Frühphase\"",
-          "status": "UNKNOWN",
-          "location": "thomaspeterkueper/noxiagame:external-tasks/done/OTA-TEC-0038-2026-DE.md",
-          "lastSeen": "2026-09-07"
-        },
-        "0039": {
-          "title": "\"VEX-47 Explorationsdrohne — Korvus Dynamics, Basistyp\"",
-          "status": "UNKNOWN",
-          "location": "thomaspeterkueper/noxiagame:external-tasks/done/OTA-TEC-0039-2026-DE.md",
-          "lastSeen": "2026-09-07"
         }
       },
       "collisions": [
@@ -169,13 +151,6 @@
           "occurrences": [
             "OTA (legacy Drive-Ordner): Die Kette vom Hexenteich / Der Hoer-Stein / Die Splitterlupe",
             "overtime-archive (aktiver Ordner): frueher fuer Rover/VEX-Entwuerfe verwendet, inzwischen auf 0036/0037 im aktiven Ordner konsolidiert"
-          ]
-        },
-        {
-          "signature": "0034",
-          "occurrences": [
-            "overtime-archive/Drive:root (Wasserextraktor Typ M)",
-            "thomaspeterkueper/noxiagame:external-tasks/done/OTA-TEC-0034-2026-DE.md (external-tasks/done/OTA-TEC-0034-2026-DE.md)"
           ]
         }
       ]
