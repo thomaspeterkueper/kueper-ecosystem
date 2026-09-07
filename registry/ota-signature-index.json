@@ -1,45 +1,45 @@
 {
   "$schema": "../schemas/ota-signature-index.schema.json",
   "schema": "ota-signature-index.v1",
-  "lastScanned": "2026-09-07T19:18:29.965136+00:00",
+  "lastScanned": "2026-09-07T19:37:39.772209+00:00",
   "series": {
     "TEC": {
       "nextFree": 130,
       "signatures": {
         "0016": {
-          "title": "KITE-Shuttle",
-          "status": "AKTIV",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"OTA-TEC-0016-2063-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0016-2063-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0022": {
-          "title": "Antriebssysteme (Tier-System 2025-2200)",
-          "status": "AKTIV",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"OTA-TEC-0022-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0022-2025-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0025": {
-          "title": "Cislunares Transportsystem",
-          "status": "AKTIV",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"OTA-TEC-0025-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0025-2091-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0027": {
-          "title": "ASCE-Shuttle",
-          "status": "AKTIV",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"ASCE-SHUTTLE SYSTEM\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0027-2091-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0035": {
-          "title": "Die Kette vom Hexenteich",
-          "status": "AKTIV",
-          "location": "OTA (legacy, separate Serie/Universe)",
-          "lastSeen": "2026-07-21"
+          "title": "\"OTA-TEC-0035-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0035-2026-DE.md",
+          "lastSeen": "2026-09-07"
         },
         "0036": {
-          "title": "Erkundungsrover Typ P (Pioneer-Klasse)",
-          "status": "AKTIV",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Erkundungsrover Typ P — Pioneer-Klasse\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0036-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0036b": {
@@ -49,99 +49,369 @@
           "lastSeen": "2026-07-21"
         },
         "0082": {
-          "title": "CYGNUS CTV",
-          "status": "AKTIV",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"CYGNUS CTV — Cislunar Transporter Vehicle\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0082-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0083": {
-          "title": "Starport-Launcher",
-          "status": "AKTIV",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Starport-Launcher — Vollständig wiederverwendbarer Erde-Orbit-Träger\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0083-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0084": {
-          "title": "PELICAN Lunar Shuttle",
-          "status": "AKTIV",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"PELICAN Lunar Shuttle — Mond-Oberflächenzugangsfahrzeug\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0084-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0085": {
-          "title": "RL-25-Triebwerksklasse (Komponente)",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:Eingang",
+          "title": "\"RL-25-Triebwerksklasse — Hydrolox-Oberstufentriebwerk\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0085-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0086": {
-          "title": "Wasseraufbereitungsanlage (geschlossener Koloniekreislauf)",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Wasseraufbereitungsanlage — geschlossener Koloniekreislauf\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0086-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0087": {
-          "title": "Gateway-Station EML-2",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Gateway-Station EML-2 — Cislunarer Umschlagpunkt im Erde-Mond-Librationsraum\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0087-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0088": {
-          "title": "Mars Medical Center",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Mars Medical Center — autonome medizinische Versorgung für isolierte Kolonien\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0088-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0089": {
-          "title": "Mars Fabrication Center",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Mars Fabrication Center — lokale Ersatzteil- und Bauteilfertigung\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0089-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0090": {
-          "title": "Mars-Fahrwege (Strassen-/Pisten-/Schienenkorridore)",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Mars-Fahrwege — Straßen-, Pisten- und Schienenkorridore für Kolonien\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0090-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0091": {
-          "title": "Mars-Versorgungstrassen (Utility Corridors)",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Mars-Versorgungstrassen — Utility Corridors für Energie, Wasser, Abwasser und Daten\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0091-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0092": {
-          "title": "Fruehphase-Kombifahrzeug (Pioneer-Klasse Kombischiff)",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Frühphase-Kombifahrzeug — Direktlande-Transportsystem der Pionierphase (2040–2048)\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0092-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0093": {
-          "title": "Life-Support-Kernmodul (Komponente)",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Life-Support-Kernmodul — regeneratives Umweltkontroll- und Lebenserhaltungssystem\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0093-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0094": {
-          "title": "Tharsis Hub - Primaerenergie, Speicher, Black Start",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Tharsis Hub — Primärenergie-, Speicher- und Black-Start-System\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0094-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0095": {
-          "title": "Tharsis Hub - Wasser-ISRU, Aufbereitung, Reserven",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Tharsis Hub — Wasser-ISRU, Aufbereitung und Reserven\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0095-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0096": {
-          "title": "Tharsis Hub - Atmosphaeren- und ECLSS-Verbund",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Tharsis Hub — Atmosphären- und ECLSS-Verbund\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0096-2026-DE.md",
           "lastSeen": "2026-09-07"
         },
         "0097": {
-          "title": "Tharsis Hub - Habitatcluster und Drucksegmente",
-          "status": "ENTWURF",
-          "location": "overtime-archive/Drive:root",
+          "title": "\"Tharsis Hub — Habitatcluster und Drucksegmente\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0097-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0001": {
+          "title": "\"OTA-TEC-0001-2196-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0001-2196-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0003": {
+          "title": "\"Cydonia Robotics Surveyor-9 \\\"Spider\\\" (SN: SRV9-4402-B)\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0003-2087-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0004": {
+          "title": "\"OTA-TEC-0004-2087-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0004-2087-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0015": {
+          "title": "\"HeliosCorp LRV-15 \\\"Dust-Walker\\\" (Fahrzeug-ID: V-402)\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0015-2082-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0018": {
+          "title": "\"OTA-TEC-0018-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0018-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0019": {
+          "title": "\"OTA-TEC-0019-2095-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0019-2095-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0020": {
+          "title": "\"OTA-TEC-0020-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0020-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0021": {
+          "title": "\"MOF-STABILISIERUNG FÜR SUPERIONISCHES GOLDHYDRID\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0021-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0023": {
+          "title": "\"OTA-TEC-0023-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0023-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0024": {
+          "title": "\"OTA-TEC-0024-2150-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0024-2150-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0028": {
+          "title": "\"Post-Dotierungs-Halbleitertechnologie — Geometrische und thermische Kontrolle elektronischer Eigenschaften\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0028-2048-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0029": {
+          "title": "\"Quantensensorik & KI-Integration für LOD-Validierung\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0029-2048-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0030": {
+          "title": "\"OTA-TEC-0030-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0030-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0031": {
+          "title": "\"OTA-TEC-0031-2150-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0031-2150-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0032": {
+          "title": "\"OTA-TEC-0032-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0032-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0033": {
+          "title": "\"OTA-TEC-0033-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0033-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0034": {
+          "title": "\"Wasserextraktor Typ M — Regolith-Sublimationsanlage\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0034-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0037": {
+          "title": "\"VEX-47 Explorationsdrohne — Korvus Dynamics Basistyp\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0037-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0038": {
+          "title": "\"Tharsis Hub — Minimum Viable Mars Colony: Systemanforderungen für 497 Bewohner\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0038-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0081": {
+          "title": "\"ARTEFAKTDOKUMENTATION: DIE BRONZESCHEIBE (YH-002)\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0081-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0098": {
+          "title": "\"Tharsis Hub — Thermalkontrolle und Radiatorfelder\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0098-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0099": {
+          "title": "\"Tharsis Hub — Medizinischer Kern und Isolation\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0099-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0100": {
+          "title": "\"Tharsis Hub — Nahrung, Vorräte und Frischproduktion\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0100-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0101": {
+          "title": "\"Tharsis Hub — Werkstatt, Ersatzteile und lokale Fertigung\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0101-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0102": {
+          "title": "\"Tharsis Hub — Logistik- und Lagerkern\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0102-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0103": {
+          "title": "\"Tharsis Hub — Oberflächenfahrzeug-Funktionsklassen\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0103-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0104": {
+          "title": "\"Tharsis Hub — Fahrwege und Außenlogistik\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0104-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0105": {
+          "title": "\"Tharsis Hub — Redundante Mediennetze und Versorgungskorridore\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0105-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0106": {
+          "title": "\"Tharsis Hub — Kommunikation, Navigation und Systemkontrolle\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0106-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0107": {
+          "title": "\"Tharsis Hub — Reststoff- und Materialrückgewinnung\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0107-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0108": {
+          "title": "\"Rohstoffgewinnungsanlage — Mine und Aufbereitungsvorstufe\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0108-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0109": {
+          "title": "\"Solarfeld — Photovoltaische Energieerzeugung und Feldbetrieb\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0109-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0110": {
+          "title": "\"Technisches Labor — Analyse-, Forschungs- und Entwicklungsumgebung\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0110-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0111": {
+          "title": "\"Oberflächen-Scanner — Lokale Fernerkundung, Messung und Anomalieerkennung\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0111-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0112": {
+          "title": "\"Frachter Mk.I — modularer Basistransportrahmen\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0112-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0113": {
+          "title": "\"Schnellfrachter — modularer Hochtempo-Transportrahmen\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0113-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0114": {
+          "title": "\"Schwerfrachter — modularer Schwerlast-Transportrahmen\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0114-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0115": {
+          "title": "\"Erkundungsschiff — modularer Aufklärungs- und Surveyrahmen\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0115-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0116": {
+          "title": "\"Pionier-Konstrukteur — modularer Gründungs- und Baurahmen\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0116-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0117": {
+          "title": "\"Orbitales Solar-Array — modulares Stationsenergiemodul\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0117-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0118": {
+          "title": "\"Andockbucht — modulares Stations-Docking- und Transfermodul\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0118-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0119": {
+          "title": "\"Orbitales Wohnmodul — druckbeaufschlagtes Stationshabitat\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0119-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0120": {
+          "title": "\"Orbitales Forschungslabor — modulares Stationslabor\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0120-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0121": {
+          "title": "\"Orbitales Observatorium — Stationsmodul für astronomische und raumbezogene Beobachtung\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0121-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0122": {
+          "title": "\"Transferlogistik-Netz — Oberfläche, Orbit, Hubs und interplanetare Korridore\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0122-2026-DE.md",
           "lastSeen": "2026-09-07"
         }
       },
@@ -152,50 +422,855 @@
             "OTA (legacy Drive-Ordner): Die Kette vom Hexenteich / Der Hoer-Stein / Die Splitterlupe",
             "overtime-archive (aktiver Ordner): frueher fuer Rover/VEX-Entwuerfe verwendet, inzwischen auf 0036/0037 im aktiven Ordner konsolidiert"
           ]
+        },
+        {
+          "signature": "0019",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0019-2091-DE.md (\"OTA-TEC-0019-2091-DE\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0019-2095-DE.md (\"OTA-TEC-0019-2095-DE\")"
+          ]
+        },
+        {
+          "signature": "0023",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0023-2089-DE.md (\"OTA-TEC-0023-2089-DE\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0023-2091-DE.md (\"OTA-TEC-0023-2091-DE\")"
+          ]
+        },
+        {
+          "signature": "0028",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0028-2025-DE.md (\"NANOSPIEGEL-METAMATERIAL-SYSTEME\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0028-2048-DE.md (\"Post-Dotierungs-Halbleitertechnologie — Geometrische und thermische Kontrolle elektronischer Eigenschaften\")"
+          ]
+        },
+        {
+          "signature": "0029",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0029-2026-DE.md (\"OTA-TEC-0029-2026-DE\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0029-2048-DE.md (\"Quantensensorik & KI-Integration für LOD-Validierung\")"
+          ]
+        },
+        {
+          "signature": "0035",
+          "occurrences": [
+            "OTA (legacy, separate Serie/Universe) (Die Kette vom Hexenteich)",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-TEC-0035-2026-DE.md (\"OTA-TEC-0035-2026-DE\")"
+          ]
         }
       ]
     },
     "SCI": {
-      "nextFree": 45,
+      "nextFree": 86,
       "signatures": {
         "0044": {
-          "title": "JWST-Entdeckung organischer Chemie in IRAS 07251-0248",
-          "status": "AKTIV",
-          "location": "OTA (legacy)",
-          "lastSeen": "2026-07-21"
+          "title": "\"Extragalaktische organische Chemie: JWST-Befunde in IRAS 07251-0248\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0044-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0004": {
+          "title": "\"Spektralanalyse Axis-Kammer-Anomalie\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0004-2087-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0007": {
+          "title": "\"OTA-SCI-0007-2026-Cuancoa\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0007-2026-Cuancoa.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0008": {
+          "title": "\"OTA-SCI-0008-2096-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0008-2096-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0009": {
+          "title": "\"OTA-SCI-0009-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0009-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0010": {
+          "title": "\"VON DER STRATIGRAPHIE ZUR FREQUENZANALYSE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0010-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0012": {
+          "title": "\"OTA-SCI-0012-2188-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0012-2188-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0013": {
+          "title": "\"OTA-SCI-0013-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0013-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0014": {
+          "title": "\"OTA-SCI-0014-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0014-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0015": {
+          "title": "\"OTA-SCI-0015-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0015-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0016": {
+          "title": "\"OTA-SCI-0016-2150-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0016-2150-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0017": {
+          "title": "\"OTA-SCI-0017-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0017-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0018": {
+          "title": "\"OTA-SCI-0018-60000BCE-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0018-60000BCE-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0019": {
+          "title": "\"DIE FÜNF EPOCHEN DES GEHIRNS\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0019-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0020": {
+          "title": "\"OTA-SCI-0020-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0020-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0021": {
+          "title": "\"OTA-SCI-0021-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0021-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0022": {
+          "title": "\"Zhurong-Entdeckung: Wasser-Fenster auf Mars verlängert bis Amazonis-Epoche (~750 Mio. Jahre)\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0022-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0023": {
+          "title": "\"Schwefel, Quellen und Bewusstsein: Neurotoxikologische und geochemische Grundlagen hydrothermaler Dämpfe\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0023-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0024": {
+          "title": "\"OTA-SCI-0024-2026-EN\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0024-2026-EN.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0025": {
+          "title": "\"OTA-SCI-0025-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0025-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0026": {
+          "title": "\"OTA-SCI-0026-2048-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0026-2048-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0027": {
+          "title": "\"Graphen-Keramik-Verbundwerkstoffe: Ultra-Hochtemperatur-Keramiken für wiederverwendbare Hitzeschilde\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0027-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0028": {
+          "title": "\"Aerostatische Staudüsen: Elektrostatische Lageregelung für Raumfahrzeuge\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0028-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0029": {
+          "title": "\"SSTO-Massenbudget und Treibstoffchemie: Raketengleichung für Single-Stage-to-Orbit\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0029-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0030": {
+          "title": "\"OTA-SCI-0030-2090-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0030-2090-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0031": {
+          "title": "\"OTA-SCI-0031-2024-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0031-2024-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0032": {
+          "title": "\"OTA-SCI-0032-2024-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0032-2024-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0034": {
+          "title": "\"OTA-SCI-0034-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0034-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0035": {
+          "title": "\"OTA-SCI-0035-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0035-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0036": {
+          "title": "\"OMNIZEDENZ v2.3\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0036-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0037": {
+          "title": "\"OTA-SCI-0037-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0037-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0038": {
+          "title": "\"Quantum-Geometric Portals in Loop Quantum Gravity: A Testable Framework for Macroscopic Correlations\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0038-2026-EN.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0041": {
+          "title": "\"OTA-SCI-0041-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0041-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0042": {
+          "title": "\"PHÄNOMENOLOGISCHE ERDBEBENTHEORIE UND DIE LOD-SEISMIZITÄTS-BRÜCKE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0042-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0043": {
+          "title": "\"LLSVPs und die Kern-Mantel-Grenze: Strukturelle Grundlage der Geodynamo-Stabilität\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0043-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0045": {
+          "title": "\"OTA-SCI-0045-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0045-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0046": {
+          "title": "\"OTA-SCI-0046-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0046-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0047": {
+          "title": "\"OTA-SCI-0047-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0047-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0048": {
+          "title": "\"OTA-SCI-0048-NACHTRAG-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0048-NACHTRAG-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0057": {
+          "title": "\"Otjize als funktionales Materialsystem: Mineralogie, Nanophotophysik und kulturelle Dimension\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0057-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0058": {
+          "title": "\"Triclosan als entkoppelnder Selektionsdruck: Wirkmechanismus, Mikrobiom-Effekte und regulatorischer Status\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0058-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0059": {
+          "title": "\"OTA-SCI-0059-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0059-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0060": {
+          "title": "\"OTA-SCI-0060-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0060-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0061": {
+          "title": "\"Disulfidbrücken in Proteinen: Chemie, Strukturfunktion, Raman-Spektroskopie und Redox-Signaling\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0061-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0062": {
+          "title": "\"Der Mpemba-Effekt: Anomale Relaxation, universelles Prinzip und Wissen, das wie Fehler aussieht\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0062-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0063": {
+          "title": "\"Die Belousov-Zhabotinsky-Reaktion: Selbstorganisierte Dynamik, Nichtgleichgewicht und Systeme ohne Zentrum\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0063-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0064": {
+          "title": "\"Das Hautmikrobiom: Systemcharakter, Störbarkeit, Reversibilität und Geruch als Zustandsmarker\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0064-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0065": {
+          "title": "\"OTA-SCI-0065-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0065-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0066": {
+          "title": "\"OTA-SCI-0066-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0066-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0080": {
+          "title": "\"OTA-SCI-0080-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0080-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0081": {
+          "title": "\"Die Bronzescheibe: Kreisplatten-Akustik, Lapis-lazuli-Fluoreszenz, Bronzeintarsia und Sternkartographie\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0081-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0082": {
+          "title": "\"Der Himmel von 2700 BCE: Präzession, Thuban als Polarstern und MUL.APIN-Systematik\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0082-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0083": {
+          "title": "\"Eigenzeit, optische Atomuhren und relativistische Ausschlusslogik\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0083-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0084": {
+          "title": "\"The Microbiome-Temenon Paradox: Differential Eigentime Coupling in Prokaryotic-Eukaryotic Symbioses\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0084-2163-EN.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0085": {
+          "title": "\"Oral Pathobiont Translocation and Microglial Activation Under Chronic Temenon Exposure: Evidence for a Gut/Oral-Brain Inflammatory Axis\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0085-2164-EN.md",
+          "lastSeen": "2026-09-07"
         }
       },
-      "collisions": [],
+      "collisions": [
+        {
+          "signature": "0024",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0024-2026-DE.md (\"OTA-SCI-0024-2026-DE\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0024-2026-EN.md (\"OTA-SCI-0024-2026-EN\")"
+          ]
+        },
+        {
+          "signature": "0026",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0026-2025-DE.md (\"SABRE-Vorkühler-Technologie: Hyperschall-Luftatmung durch kryogene Wärmetauscher\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0026-2026-DE.md (\"OTA-SCI-0026-2026-DE\")"
+          ]
+        },
+        {
+          "signature": "0030",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0030-2025-DE.md (\"OTA-SCI-0030-2025-DE\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0030-2090-DE.md (\"OTA-SCI-0030-2090-DE\")"
+          ]
+        },
+        {
+          "signature": "0044",
+          "occurrences": [
+            "OTA (legacy) (JWST-Entdeckung organischer Chemie in IRAS 07251-0248)",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0044-2026-DE.md (\"Extragalaktische organische Chemie: JWST-Befunde in IRAS 07251-0248\")"
+          ]
+        },
+        {
+          "signature": "0048",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0048-2031-DE.md (\"ΛAMBDA-HAPLOGRUPPE: KLINISCHE KODIERUNG 2031\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-SCI-0048-NACHTRAG-2026-DE.md (\"OTA-SCI-0048-NACHTRAG-2026-DE\")"
+          ]
+        }
+      ],
       "note": "Unvollstaendig erfasst. KUE-SCI-* (z.B. KUE-SCI-0172/0173/0179/0180/0181/0182) ist ein separater Identitaetsraum (projektuebergreifende Realwissenschaftsanker), nicht identisch mit OTA-SCI-*. Beide Raeume vor Erstnutzung gesondert pruefen."
     },
     "FND": {
-      "nextFree": 15,
+      "nextFree": 33,
       "signatures": {
         "0012": {
-          "title": "Resonanz-Level-Schema fuer IRAS 07251-0248",
-          "status": "AKTIV",
-          "location": "OTA (legacy)",
-          "lastSeen": "2026-07-21"
+          "title": "\"OTA-FND-0012-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0012-2026-DE.md",
+          "lastSeen": "2026-09-07"
         },
         "0013": {
-          "title": "Resonanzklassifikations-Formalismus (RKF) - Basis",
-          "status": "AKTIV",
-          "location": "OTA (legacy)",
-          "lastSeen": "2026-07-21"
+          "title": "\"OTA-FND-0013B-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0013B-2026-DE.md",
+          "lastSeen": "2026-09-07"
         },
         "0014": {
-          "title": "RKF - Anwendung, Validierung, Ressourcen-Integration",
-          "status": "AKTIV",
-          "location": "OTA (legacy)",
-          "lastSeen": "2026-07-21"
+          "title": "\"RKF: Anwendung, Validierung und Ressourcen-Integration\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0014-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0001": {
+          "title": "\"OTA-FND-0001-NACHTRAG-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0001-NACHTRAG-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0002": {
+          "title": "\"OTA-FND-0002-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0002-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0004": {
+          "title": "\"OTA-FND-0004-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0004-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0005": {
+          "title": "\"OTA-FND-0005-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0005-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0006": {
+          "title": "\"OTA-FND-0006-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0006-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0007": {
+          "title": "\"OTA-FND-0007-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0007-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0008": {
+          "title": "\"OTA-FND-0008-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0008-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0009": {
+          "title": "\"OTA-FND-0009-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0009-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0010": {
+          "title": "\"OTA-FND-0010-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0010-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0015": {
+          "title": "\"RKF: Epistemologische Schichtung\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0015-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0016": {
+          "title": "\"SOL-HELIO-01 Kampagnenbericht\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0016-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0017": {
+          "title": "\"Λ-Africa: Migrationskorridore — Die L2a-Yemen-Route als Dvārakā-Brücke\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0017-NACHTRAG-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0018": {
+          "title": "\"Die Anunnaki-Verzerrung: Baumeister-Kontakt als transformierte Mythologie --- Ein ∇/ᐃ-Filtermodell\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0018-4000BCE-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0019": {
+          "title": "\"OTA-FND-0019-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0019-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0021": {
+          "title": "\"OTA-FND-0021-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0021-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0022": {
+          "title": "\"OTA-FND-0022-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0022-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0023": {
+          "title": "\"OTA-FND-0023-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0023-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0024": {
+          "title": "\"DIE KETTE VOM HEXENTEICH\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0024-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0025": {
+          "title": "\"OTA-FND-0025-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0025-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0026": {
+          "title": "\"OTA-FND-0026-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0026-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0027": {
+          "title": "\"MISHKENAZ-AKTIVIERUNGSSEQUENZEN FÜR SUN\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0027-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0029": {
+          "title": "\"MISHKENAZ ALS SCHÖPFUNGSSPRACHE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0029-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0030": {
+          "title": "\"MATHEMATISCHE KANONIK DES NOXIA-UNIVERSUMS\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0030-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0031": {
+          "title": "\"DAS BRUNNEN-SYMBOL\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0031-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0032": {
+          "title": "\"DIE ERSTEN — Vor den Uralten\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0032-2026-DE.md",
+          "lastSeen": "2026-09-07"
         }
       },
-      "collisions": [],
+      "collisions": [
+        {
+          "signature": "0001",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0001-2025-DE.md (\"OTA-FND-0001-2025-DE\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0001-NACHTRAG-2026-DE.md (\"OTA-FND-0001-NACHTRAG-2026-DE\")"
+          ]
+        },
+        {
+          "signature": "0012",
+          "occurrences": [
+            "OTA (legacy) (Resonanz-Level-Schema fuer IRAS 07251-0248)",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0012-2026-DE.md (\"OTA-FND-0012-2026-DE\")"
+          ]
+        },
+        {
+          "signature": "0013",
+          "occurrences": [
+            "OTA (legacy) (Resonanzklassifikations-Formalismus (RKF) - Basis)",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0013-2026-DE.md (\"Resonanzklassifikations-Formalismus (RKF)\")"
+          ]
+        },
+        {
+          "signature": "0014",
+          "occurrences": [
+            "OTA (legacy) (RKF - Anwendung, Validierung, Ressourcen-Integration)",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0014-2026-DE.md (\"RKF: Anwendung, Validierung und Ressourcen-Integration\")"
+          ]
+        },
+        {
+          "signature": "0017",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0017-2026-DE.md (\"OTA-FND-0017-2026-DE\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0017-NACHTRAG-2026-DE.md (\"Λ-Africa: Migrationskorridore — Die L2a-Yemen-Route als Dvārakā-Brücke\")"
+          ]
+        },
+        {
+          "signature": "0018",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0018-2026-DE.md (\"DIE ANUNNAKI-VERZERRUNG\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-FND-0018-4000BCE-DE.md (\"Die Anunnaki-Verzerrung: Baumeister-Kontakt als transformierte Mythologie --- Ein ∇/ᐃ-Filtermodell\")"
+          ]
+        }
+      ],
       "note": "Unvollstaendig erfasst, nur Stichprobe aus einem gefundenen Index-Dokument."
     },
     "BIO": {
-      "nextFree": null,
-      "signatures": {},
+      "nextFree": 38,
+      "signatures": {
+        "0000": {
+          "title": "\"OTA-BIO-0000-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0000-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0001": {
+          "title": "\"OTA-BIO-0001-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0001-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0003": {
+          "title": "\"OTA-BIO-0003-2195-EN\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0003-2195-EN.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0004": {
+          "title": "\"OTA-BIO-0004-2096-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0004-2096-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0005": {
+          "title": "\"OTA-BIO-0005-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0005-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0006": {
+          "title": "\"OTA-BIO-0006-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0006-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0007": {
+          "title": "\"OTA-BIO-0007-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0007-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0008": {
+          "title": "\"OTA-BIO-0008-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0008-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0009": {
+          "title": "\"OTA-BIO-0009-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0009-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0010": {
+          "title": "\"OTA-BIO-0010-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0010-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0011": {
+          "title": "\"OTA-BIO-0011-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0011-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0012": {
+          "title": "\"OTA-BIO-0012-2087-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0012-2087-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0013": {
+          "title": "\"OTA-BIO-0013-2089-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0013-2089-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0014": {
+          "title": "\"Kaelen — Generation Mars\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0014-2092-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0015": {
+          "title": "\"OTA-BIO-0015-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0015-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0016": {
+          "title": "\"OTA-BIO-0016-2123-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0016-2123-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0017": {
+          "title": "\"OTA-BIO-0017-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0017-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0018": {
+          "title": "\"OTA-BIO-0018-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0018-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0019": {
+          "title": "\"OTA-BIO-0019-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0019-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0020": {
+          "title": "\"OTA-BIO-0020-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0020-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0022": {
+          "title": "\"LILITH ADAR\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0022-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0023": {
+          "title": "\"OTA-BIO-0023-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0023-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0024": {
+          "title": "\"OTA-BIO-0024-2075-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0024-2075-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0025": {
+          "title": "\"OTA-BIO-0025-2075-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0025-2075-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0026": {
+          "title": "\"OTA-BIO-0026-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0026-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0027": {
+          "title": "\"OTA-BIO-0027-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0027-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0028": {
+          "title": "\"OTA-BIO-0028-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0028-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0029": {
+          "title": "\"OTA-BIO-0029-2147-EN\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0029-2147-EN.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0030": {
+          "title": "\"OTA-BIO-0030-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0030-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0031": {
+          "title": "\"OTA-BIO-0031-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0031-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0032": {
+          "title": "\"Dr. Elena Vasquez — Gründerin der Solar Science Foundation\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0032-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0033": {
+          "title": "\"OTA-BIO-0033-2156-EN\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0033-2156-EN.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0034": {
+          "title": "\"OTA-BIO-0034-2147-EN\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0034-2147-EN.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0035": {
+          "title": "\"Rashid Al-Mansouri — Generation Mars\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0035-2092-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0036": {
+          "title": "\"Lena Kowalski — Generation Mars\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0036-2092-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0037": {
+          "title": "\"Keiko Nakamura — Generation Mars\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-BIO-0037-2092-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
       "collisions": [],
       "note": "Noch nicht gescannt."
     },
@@ -259,6 +1334,524 @@
         }
       },
       "collisions": []
+    },
+    "ART": {
+      "nextFree": 2,
+      "signatures": {
+        "0001": {
+          "title": "\"OTA-ART-0001-2087-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-ART-0001-2087-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "CUL": {
+      "nextFree": 20,
+      "signatures": {
+        "0001": {
+          "title": "\"OTA-CUL-0001-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-CUL-0001-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0002": {
+          "title": "\"OTA-CUL-0002-60000BCE-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-CUL-0002-60000BCE-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0013": {
+          "title": "\"OTA-CUL-0013-MULTI-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-CUL-0013-MULTI-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0014": {
+          "title": "\"OTA-CUL-0014-2152-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-CUL-0014-2152-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0015": {
+          "title": "\"OTA-CUL-0015-MULTI-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-CUL-0015-MULTI-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0016": {
+          "title": "\"OTA-CUL-0016-MULTI-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-CUL-0016-MULTI-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0019": {
+          "title": "\"OTA-CUL-0019-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-CUL-0019-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": [
+        {
+          "signature": "0013",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-CUL-0013-2147-EN.md (\"OTA-CUL-0013-2147-EN\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-CUL-0013-MULTI-DE.md (\"OTA-CUL-0013-MULTI-DE\")"
+          ]
+        }
+      ]
+    },
+    "HIS": {
+      "nextFree": 10,
+      "signatures": {
+        "0003": {
+          "title": "\"DIE 14 TOTEN VON SEKTOR-7\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-HIS-0003-2087-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0004": {
+          "title": "\"OTA-HIS-0004-2085-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-HIS-0004-2085-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0006": {
+          "title": "\"GÖBEKLI TEPE IM BAUMEISTER-KONTEXT\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-HIS-0006-9500BCE-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0007": {
+          "title": "\"DER BRONZEZEIT-KOLLAPS\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-HIS-0007-1200BCE-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0008": {
+          "title": "\"DIE ENTSTEHUNG DER SCHRIFT\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-HIS-0008-MULTI-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0009": {
+          "title": "\"Der Verlust der Schrift: Schrift-Diaspora und die dunklen Jahrhunderte\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-HIS-0009-1200BCE-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": [
+        {
+          "signature": "0004",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-HIS-0004-2069-DE.md (\"Das erste Schweigen — PROMETHEUS und der Ursprung der Stille\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-HIS-0004-2085-DE.md (\"OTA-HIS-0004-2085-DE\")"
+          ]
+        },
+        {
+          "signature": "0008",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-HIS-0008-3500BCE-DE.md (\"Die Entstehung der Schrift: Von Proto-Schrift zu vollständigen Schriftsystemen\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-HIS-0008-MULTI-DE.md (\"DIE ENTSTEHUNG DER SCHRIFT\")"
+          ]
+        }
+      ]
+    },
+    "KARTE": {
+      "nextFree": 4,
+      "signatures": {
+        "0001": {
+          "title": "\"DIE FÜNF GEHIRN-EPOCHEN — Referenzmodul\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-KARTE-0001-Gehirn-Epochen.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0002": {
+          "title": "\"OTA-KARTE-0002-Epochen-g-Profile-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-KARTE-0002-Epochen-g-Profile-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0003": {
+          "title": "\"DAS GLOBALE BAUMEISTER-NETZWERK\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-KARTE-0003-Baumeister-Netzwerk-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "KOM": {
+      "nextFree": 4,
+      "signatures": {
+        "0001": {
+          "title": "\"OTA-KOM-0001-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-KOM-0001-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0002": {
+          "title": "\"OTA-KOM-0002-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-KOM-0002-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0003": {
+          "title": "\"OTA-KOM-0003-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-KOM-0003-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "LIM": {
+      "nextFree": 2,
+      "signatures": {
+        "0001": {
+          "title": "\"OTA-LIM-0001-2196-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-LIM-0001-2196-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "LIT": {
+      "nextFree": 5,
+      "signatures": {
+        "0001": {
+          "title": "\"OTA-LIT-0001 — Tessán-Vokabular: Kanonische Vektorableitungen\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-LIT-0001-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0002": {
+          "title": "\"OTA-LIT-0002 — Mishkenaz Klangprofil\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-LIT-0002-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0003": {
+          "title": "\"OTA-LIT-0003 — Mishkenaz Kernset: Zereya-Welt\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-LIT-0003-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0004": {
+          "title": "\"OTA-LIT-0004 — Mishkenaz Zyklusprofil: Das Gefälle\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-LIT-0004-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "LSC": {
+      "nextFree": 8,
+      "signatures": {
+        "0001": {
+          "title": "\"OTA-LSC-0001-2048-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-LSC-0001-2048-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0002": {
+          "title": "\"OTA-LSC-0002-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-LSC-0002-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0003": {
+          "title": "\"OTA-LSC-0003-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-LSC-0003-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0004": {
+          "title": "\"OTA-LSC-0004-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-LSC-0004-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0006": {
+          "title": "\"OTA-LSC-0006-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-LSC-0006-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0007": {
+          "title": "\"OTA-LSC-0007-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-LSC-0007-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "META": {
+      "nextFree": 3,
+      "signatures": {
+        "0001": {
+          "title": "\"Quellenkritik im OverTime Archive: Prinzipien, Grenzen, Verfahren\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-META-0001-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0002": {
+          "title": "\"OTA-TIMELINE-ABGLEICH — Kanonische Master-Timeline NOXIA\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-META-0002-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "MON": {
+      "nextFree": 3,
+      "signatures": {
+        "0002": {
+          "title": "\"TEMENON\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-MON-0002-2142-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "NAR": {
+      "nextFree": 6,
+      "signatures": {
+        "0001": {
+          "title": "\"\\\"Der Weg in die Nacht\\\" - Die Flucht von Kowalski und Nakahara\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-NAR-0001-2087-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0002": {
+          "title": "\"OTA-NAR-0002-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-NAR-0002-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0003": {
+          "title": "\"OTA-NAR-0003-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-NAR-0003-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0004": {
+          "title": "\"OTJIZE: Narrative Grundlagen und Epilog-Logik\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-NAR-0004-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0005": {
+          "title": "\"OTA-NAR-0005-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-NAR-0005-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "OBS": {
+      "nextFree": 10,
+      "signatures": {
+        "0001": {
+          "title": "\"OTA-OBS-0001-2025-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-OBS-0001-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0002": {
+          "title": "\"OTA-OBS-0002-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-OBS-0002-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0004": {
+          "title": "\"GÖBEKLI TEPE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-OBS-0004-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0005": {
+          "title": "\"LOD-REVERSAL\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-OBS-0005-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0006": {
+          "title": "\"SumTablets: KI-gestützte Keilschrift-Transliteration als Werkzeug der Altorientalistik\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-OBS-0006-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0007": {
+          "title": "\"Die Phaistos-Scheibe: Artefakt, Enigma, Resonanzknoten\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-OBS-0007-1700BCE-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0008": {
+          "title": "\"OTA-OBS-0008-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-OBS-0008-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0009": {
+          "title": "\"OTA-OBS-0009-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-OBS-0009-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "ORG": {
+      "nextFree": 8,
+      "signatures": {
+        "0001": {
+          "title": "\"OTA-ORG-0001-2079-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-ORG-0001-2079-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0002": {
+          "title": "\"OTA-ORG-0002-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-ORG-0002-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0003": {
+          "title": "\"OTA-ORG-0003-2089-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-ORG-0003-2089-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0004": {
+          "title": "\"OTA-ORG-0004-2075-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-ORG-0004-2075-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0005": {
+          "title": "\"OTA-ORG-0005-2090-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-ORG-0005-2090-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0006": {
+          "title": "\"MARS SAMPLE RETURN\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-ORG-0006-2025-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0007": {
+          "title": "\"SOLAR SCIENCE FOUNDATION\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-ORG-0007-2031-DE.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "RED": {
+      "nextFree": 26,
+      "signatures": {
+        "0003": {
+          "title": "\"OTA-RED-0003-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0003-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0012": {
+          "title": "\"OTA-RED-0012-2171-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0012-2171-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0015": {
+          "title": "\"OTA-RED-0015-2156-EN\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0015-2156-EN.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0016": {
+          "title": "\"OTA-RED-0016-2160-EN\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0016-2160-EN.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0017": {
+          "title": "\"OTA-RED-0017-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0017-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0018": {
+          "title": "\"OTA-RED-0018-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0018-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0019": {
+          "title": "\"OTA-RED-0019-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0019-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0020": {
+          "title": "\"OTA-RED-0020-2091-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0020-2091-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0021": {
+          "title": "\"ZHURONG + MSR = DEUTUNGSHOHEIT-SHIFT\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0021-2040-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0022": {
+          "title": "\"OTA-RED-0022-MULTI-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0022-MULTI-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0023": {
+          "title": "\"OTA-RED-0023-2026-DE\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0023-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0024": {
+          "title": "\"OTA-RED-0024-2160-EN\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0024-2160-EN.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0025": {
+          "title": "\"OTA-RED-0025-2155-EN\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0025-2155-EN.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": [
+        {
+          "signature": "0016",
+          "occurrences": [
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0016-2091-DE.md (\"OTA-RED-0016-2091-DE\")",
+            "thomaspeterkueper/overtime-archive.org:src/content/documents/OTA-RED-0016-2160-EN.md (\"OTA-RED-0016-2160-EN\")"
+          ]
+        }
+      ]
     }
-  }
+  },
+  "note": "Kollisionen mit gleicher Serie+Nummer aber unterschiedlichem Jahr-/Sprachsuffix (z.B. OTA-TEC-0019-2091-DE vs. -2095-DE, OTA-FND-0001-... vs. -NACHTRAG-...) koennen echte Doppelvergaben sein ODER ein beabsichtigtes Muster fuer In-Universe-Zeitstaende/Sprachvarianten desselben Dokuments -- ungeklaert, menschliche Pruefung noetig (Stand 2026-09-07)."
 }

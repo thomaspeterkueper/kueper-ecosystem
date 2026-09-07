@@ -37,10 +37,12 @@ REG_PATH = os.path.join(os.path.dirname(__file__), "..", "..", "registry", "ota-
 SCAN_REPOS = [
     ("thomaspeterkueper/noxiagame", "main"),
     ("thomaspeterkueper/kueper-engineering", "main"),
+    ("thomaspeterkueper/overtime-archive.org", "master"),
 ]
 
 RELEVANT_PATH_HINTS = ("external-tasks/", "requirements/", "spacecraft/", "vehicles/",
-                        "systems/", "stations/", "components/", "designs/", "calculations/")
+                        "systems/", "stations/", "components/", "designs/", "calculations/",
+                        "src/content/documents/")
 
 SIGNATURE_PATTERN = re.compile(r"\b(OTA|ENG)-([A-Z]+)-(\d{4})\b")
 FRONTMATTER_TITLE = re.compile(r"^title:\s*(.+)$", re.MULTILINE)
@@ -128,14 +130,26 @@ def load_registry():
 
 
 def reset_scanned_state(registry):
-    """Entfernt vor einem neuen Lauf alle Signaturen und Kollisionen, die
-    aus einem frueheren GitHub-Scan stammen (location beginnt mit einem
-    Eintrag aus SCAN_REPOS), damit nicht mehr zutreffende Ergebnisse aus
-    frueheren Laeufen nicht unbegrenzt weiterbestehen (Bugfix: eine durch
-    einen frueheren Bug ausgeloeste Kollisionsmeldung fuer OTA-TEC-0034
-    blieb nach der Korrektur bestehen, weil Kollisionen nie zurueckgesetzt
-    wurden). Manuell gepflegte Eintraege (Drive-Anteil, location ohne
-    SCAN_REPOS-Praefix) bleiben unangetastet."""
+    """Entfernt vor einem neuen Lauf:
+    (a) alle Signaturen und Kollisionen aus einem frueheren GitHub-Scan
+        (location beginnt mit einem SCAN_REPOS-Praefix), damit veraltete
+        Scan-Ergebnisse nicht unbegrenzt weiterbestehen;
+    (b) provisorische, von Hand eingetragene Drive-Vermutungen
+        ("overtime-archive/Drive:root" bzw. ".../Drive:Eingang"), sobald
+        das zugehoerige Objekt jetzt durch den echten Scan von
+        overtime-archive.org abgedeckt ist -- diese Vermutungen erzeugten
+        sonst systematisch Falsch-Kollisionen durch abweichende
+        Titel-Strings fuer dasselbe Objekt (Fund vom 2026-09-07: fast
+        alle TEC-Eintraege 0016-0097 wurden so faelschlich als Kollision
+        gemeldet, weil der manuelle Kurztitel nicht exakt dem echten
+        Frontmatter-Titel entsprach).
+
+    Manuell gepflegte Eintraege, die AUSSCHLIESSLICH in Google Drive und
+    NICHT im overtime-archive.org-Repo existieren (z.B. die "Kette vom
+    Hexenteich"-Familie im Legacy-Ordner), bleiben unangetastet -- diese
+    werden am Ende von main() gegen die frisch gescannten Repo-Daten
+    geprueft und nur entfernt, wenn ein Treffer mit identischer Serie/
+    Nummer im Scan auftaucht."""
     scanned_prefixes = tuple(f"{repo}:" for repo, _ in SCAN_REPOS)
     for entry in registry.get("series", {}).values():
         entry["signatures"] = {
@@ -145,6 +159,32 @@ def reset_scanned_state(registry):
         entry["collisions"] = [
             c for c in entry.get("collisions", [])
             if not any(occ.split(" (")[0].startswith(scanned_prefixes) for occ in c.get("occurrences", []))
+        ]
+
+
+def prune_superseded_drive_guesses(registry):
+    """Entfernt provisorische 'overtime-archive/Drive:root'/'Drive:Eingang'-
+    Eintraege, sobald dieselbe Serie+Nummer jetzt aus dem echten
+    overtime-archive.org-Scan vorliegt. Laeuft NACH der Scan-Schleife."""
+    for entry in registry.get("series", {}).values():
+        git_covered = {
+            n for n, v in entry.get("signatures", {}).items()
+            if v.get("location", "").startswith("thomaspeterkueper/overtime-archive.org:")
+        }
+        entry["signatures"] = {
+            n: v for n, v in entry.get("signatures", {}).items()
+            if not (
+                v.get("location", "").startswith(("overtime-archive/Drive:root", "overtime-archive/Drive:Eingang"))
+                and n in git_covered
+            )
+        }
+        entry["collisions"] = [
+            c for c in entry.get("collisions", [])
+            if not (
+                len(c["occurrences"]) == 2
+                and any(o.startswith(("overtime-archive/Drive:root", "overtime-archive/Drive:Eingang")) for o in c["occurrences"])
+                and any(o.startswith("thomaspeterkueper/overtime-archive.org:") for o in c["occurrences"])
+            )
         ]
 
 
@@ -207,6 +247,8 @@ def main():
 
     for series, entry in registry["series"].items():
         entry["nextFree"] = recompute_next_free(entry)
+
+    prune_superseded_drive_guesses(registry)
 
     registry["lastScanned"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
 
