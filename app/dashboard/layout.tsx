@@ -9,6 +9,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <nav className="dashboard-shell-nav" aria-label="Control Room">
           <Link href="/dashboard">Übersicht</Link>
           <Link href="/dashboard/traces">Traces</Link>
+          <Link href="/dashboard/signatures">Signaturen</Link>
         </nav>
       </div>
       {children}
