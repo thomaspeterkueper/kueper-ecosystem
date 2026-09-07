@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-09-07",
+  "policies": [
+    {
+      "repository": "thomaspeterkueper/noxiagame",
+      "mode": "fail-closed",
+      "required": [
+        {
+          "id": "vercel",
+          "source": "commit_status",
+          "context": "Vercel"
+        },
+        {
+          "id": "supabase-preview",
+          "source": "check_run",
+          "name": "Supabase Preview"
+        },
+        {
+          "id": "supabase-migrations",
+          "source": "check_run",
+          "name": "Supabase Preview",
+          "reject_output_patterns": ["❌", "error:", "failure", "failed"]
+        }
+      ]
+    }
+  ]
+}
