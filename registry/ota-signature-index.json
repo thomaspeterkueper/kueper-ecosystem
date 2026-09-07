@@ -1,35 +1,167 @@
 {
   "$schema": "../schemas/ota-signature-index.schema.json",
   "schema": "ota-signature-index.v1",
-  "lastScanned": "2026-09-07T18:00:00Z",
+  "lastScanned": "2026-09-07T19:12:55.779111+00:00",
   "series": {
     "TEC": {
       "nextFree": 130,
       "signatures": {
-        "0016": { "title": "KITE-Shuttle", "status": "AKTIV", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0022": { "title": "Antriebssysteme (Tier-System 2025-2200)", "status": "AKTIV", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0025": { "title": "Cislunares Transportsystem", "status": "AKTIV", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0027": { "title": "ASCE-Shuttle", "status": "AKTIV", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0034": { "title": "Wasserextraktor Typ M", "status": "AKTIV", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0035": { "title": "Die Kette vom Hexenteich", "status": "AKTIV", "location": "OTA (legacy, separate Serie/Universe)", "lastSeen": "2026-07-21" },
-        "0036": { "title": "Erkundungsrover Typ P (Pioneer-Klasse)", "status": "AKTIV", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0036b": { "title": "Die Splitterlupe", "status": "AKTIV", "location": "OTA (legacy, separate Serie/Universe)", "lastSeen": "2026-07-21" },
-        "0082": { "title": "CYGNUS CTV", "status": "AKTIV", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0083": { "title": "Starport-Launcher", "status": "AKTIV", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0084": { "title": "PELICAN Lunar Shuttle", "status": "AKTIV", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0085": { "title": "RL-25-Triebwerksklasse (Komponente)", "status": "ENTWURF", "location": "overtime-archive/Drive:Eingang", "lastSeen": "2026-09-07" },
-        "0086": { "title": "Wasseraufbereitungsanlage (geschlossener Koloniekreislauf)", "status": "ENTWURF", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0087": { "title": "Gateway-Station EML-2", "status": "ENTWURF", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0088": { "title": "Mars Medical Center", "status": "ENTWURF", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0089": { "title": "Mars Fabrication Center", "status": "ENTWURF", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0090": { "title": "Mars-Fahrwege (Strassen-/Pisten-/Schienenkorridore)", "status": "ENTWURF", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0091": { "title": "Mars-Versorgungstrassen (Utility Corridors)", "status": "ENTWURF", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0092": { "title": "Fruehphase-Kombifahrzeug (Pioneer-Klasse Kombischiff)", "status": "ENTWURF", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0093": { "title": "Life-Support-Kernmodul (Komponente)", "status": "ENTWURF", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0094": { "title": "Tharsis Hub - Primaerenergie, Speicher, Black Start", "status": "ENTWURF", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0095": { "title": "Tharsis Hub - Wasser-ISRU, Aufbereitung, Reserven", "status": "ENTWURF", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0096": { "title": "Tharsis Hub - Atmosphaeren- und ECLSS-Verbund", "status": "ENTWURF", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" },
-        "0097": { "title": "Tharsis Hub - Habitatcluster und Drucksegmente", "status": "ENTWURF", "location": "overtime-archive/Drive:root", "lastSeen": "2026-09-07" }
+        "0016": {
+          "title": "KITE-Shuttle",
+          "status": "AKTIV",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0022": {
+          "title": "Antriebssysteme (Tier-System 2025-2200)",
+          "status": "AKTIV",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0025": {
+          "title": "Cislunares Transportsystem",
+          "status": "AKTIV",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0027": {
+          "title": "ASCE-Shuttle",
+          "status": "AKTIV",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0034": {
+          "title": "external-tasks/done/OTA-TEC-0034-2026-DE.md",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/noxiagame:external-tasks/done/OTA-TEC-0034-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0035": {
+          "title": "Die Kette vom Hexenteich",
+          "status": "AKTIV",
+          "location": "OTA (legacy, separate Serie/Universe)",
+          "lastSeen": "2026-07-21"
+        },
+        "0036": {
+          "title": "Erkundungsrover Typ P (Pioneer-Klasse)",
+          "status": "AKTIV",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0036b": {
+          "title": "Die Splitterlupe",
+          "status": "AKTIV",
+          "location": "OTA (legacy, separate Serie/Universe)",
+          "lastSeen": "2026-07-21"
+        },
+        "0082": {
+          "title": "CYGNUS CTV",
+          "status": "AKTIV",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0083": {
+          "title": "Starport-Launcher",
+          "status": "AKTIV",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0084": {
+          "title": "PELICAN Lunar Shuttle",
+          "status": "AKTIV",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0085": {
+          "title": "RL-25-Triebwerksklasse (Komponente)",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:Eingang",
+          "lastSeen": "2026-09-07"
+        },
+        "0086": {
+          "title": "Wasseraufbereitungsanlage (geschlossener Koloniekreislauf)",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0087": {
+          "title": "Gateway-Station EML-2",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0088": {
+          "title": "Mars Medical Center",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0089": {
+          "title": "Mars Fabrication Center",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0090": {
+          "title": "Mars-Fahrwege (Strassen-/Pisten-/Schienenkorridore)",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0091": {
+          "title": "Mars-Versorgungstrassen (Utility Corridors)",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0092": {
+          "title": "Fruehphase-Kombifahrzeug (Pioneer-Klasse Kombischiff)",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0093": {
+          "title": "Life-Support-Kernmodul (Komponente)",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0094": {
+          "title": "Tharsis Hub - Primaerenergie, Speicher, Black Start",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0095": {
+          "title": "Tharsis Hub - Wasser-ISRU, Aufbereitung, Reserven",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0096": {
+          "title": "Tharsis Hub - Atmosphaeren- und ECLSS-Verbund",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0097": {
+          "title": "Tharsis Hub - Habitatcluster und Drucksegmente",
+          "status": "ENTWURF",
+          "location": "overtime-archive/Drive:root",
+          "lastSeen": "2026-09-07"
+        },
+        "0038": {
+          "title": "\"Erkundungsrover Typ P — Mond-Standardtyp, Frühphase\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/noxiagame:external-tasks/done/OTA-TEC-0038-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0039": {
+          "title": "\"VEX-47 Explorationsdrohne — Korvus Dynamics, Basistyp\"",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/noxiagame:external-tasks/done/OTA-TEC-0039-2026-DE.md",
+          "lastSeen": "2026-09-07"
+        }
       },
       "collisions": [
         {
@@ -38,23 +170,50 @@
             "OTA (legacy Drive-Ordner): Die Kette vom Hexenteich / Der Hoer-Stein / Die Splitterlupe",
             "overtime-archive (aktiver Ordner): frueher fuer Rover/VEX-Entwuerfe verwendet, inzwischen auf 0036/0037 im aktiven Ordner konsolidiert"
           ]
+        },
+        {
+          "signature": "0034",
+          "occurrences": [
+            "overtime-archive/Drive:root (Wasserextraktor Typ M)",
+            "thomaspeterkueper/noxiagame:external-tasks/done/OTA-TEC-0034-2026-DE.md (external-tasks/done/OTA-TEC-0034-2026-DE.md)"
+          ]
         }
       ]
     },
     "SCI": {
-      "nextFree": null,
+      "nextFree": 45,
       "signatures": {
-        "0044": { "title": "JWST-Entdeckung organischer Chemie in IRAS 07251-0248", "status": "AKTIV", "location": "OTA (legacy)", "lastSeen": "2026-07-21" }
+        "0044": {
+          "title": "JWST-Entdeckung organischer Chemie in IRAS 07251-0248",
+          "status": "AKTIV",
+          "location": "OTA (legacy)",
+          "lastSeen": "2026-07-21"
+        }
       },
       "collisions": [],
       "note": "Unvollstaendig erfasst. KUE-SCI-* (z.B. KUE-SCI-0172/0173/0179/0180/0181/0182) ist ein separater Identitaetsraum (projektuebergreifende Realwissenschaftsanker), nicht identisch mit OTA-SCI-*. Beide Raeume vor Erstnutzung gesondert pruefen."
     },
     "FND": {
-      "nextFree": null,
+      "nextFree": 15,
       "signatures": {
-        "0012": { "title": "Resonanz-Level-Schema fuer IRAS 07251-0248", "status": "AKTIV", "location": "OTA (legacy)", "lastSeen": "2026-07-21" },
-        "0013": { "title": "Resonanzklassifikations-Formalismus (RKF) - Basis", "status": "AKTIV", "location": "OTA (legacy)", "lastSeen": "2026-07-21" },
-        "0014": { "title": "RKF - Anwendung, Validierung, Ressourcen-Integration", "status": "AKTIV", "location": "OTA (legacy)", "lastSeen": "2026-07-21" }
+        "0012": {
+          "title": "Resonanz-Level-Schema fuer IRAS 07251-0248",
+          "status": "AKTIV",
+          "location": "OTA (legacy)",
+          "lastSeen": "2026-07-21"
+        },
+        "0013": {
+          "title": "Resonanzklassifikations-Formalismus (RKF) - Basis",
+          "status": "AKTIV",
+          "location": "OTA (legacy)",
+          "lastSeen": "2026-07-21"
+        },
+        "0014": {
+          "title": "RKF - Anwendung, Validierung, Ressourcen-Integration",
+          "status": "AKTIV",
+          "location": "OTA (legacy)",
+          "lastSeen": "2026-07-21"
+        }
       },
       "collisions": [],
       "note": "Unvollstaendig erfasst, nur Stichprobe aus einem gefundenen Index-Dokument."
@@ -66,12 +225,65 @@
       "note": "Noch nicht gescannt."
     },
     "CHRONO": {
-      "nextFree": null,
+      "nextFree": 3,
       "signatures": {
-        "0002": { "title": "Kolonisierungs-Timeline", "status": "AKTIV", "location": "kueper-engineering oder overtime-archive (Fundort nicht abschliessend geklaert)", "lastSeen": "2026-09-07" }
+        "0002": {
+          "title": "Kolonisierungs-Timeline",
+          "status": "AKTIV",
+          "location": "kueper-engineering oder overtime-archive (Fundort nicht abschliessend geklaert)",
+          "lastSeen": "2026-09-07"
+        }
       },
       "collisions": [],
       "note": "Noch nicht vollstaendig gescannt."
+    },
+    "CALC": {
+      "nextFree": 3,
+      "signatures": {
+        "0001": {
+          "title": "Cislunar Reference Δv — 400 km LEO to 100 km LLO",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/kueper-engineering:calculations/ENG-CALC-0001-cislunar-reference-dv.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0002": {
+          "title": "Frachter Mk.I — Propulsion mass-ratio sensitivity",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/kueper-engineering:calculations/ENG-CALC-0002-propulsion-mass-ratio.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "REQ": {
+      "nextFree": 3,
+      "signatures": {
+        "0001": {
+          "title": "NOXIA Frachter Mk.I — Engineering Requirement Baseline",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/kueper-engineering:requirements/ENG-REQ-0001-noxia-frachter-mk1.md",
+          "lastSeen": "2026-09-07"
+        },
+        "0002": {
+          "title": "Frachter Mk.I — Modular Carrier Requirement Baseline",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/kueper-engineering:requirements/ENG-REQ-0002-mk1-modular-carrier.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
+    },
+    "SCV": {
+      "nextFree": 2,
+      "signatures": {
+        "0001": {
+          "title": "Frachter Mk.I",
+          "status": "UNKNOWN",
+          "location": "thomaspeterkueper/kueper-engineering:spacecraft/ENG-SCV-0001-frachter-mk1.md",
+          "lastSeen": "2026-09-07"
+        }
+      },
+      "collisions": []
     }
   }
 }
