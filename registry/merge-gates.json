@@ -19,7 +19,8 @@
         {
           "id": "supabase-migrations",
           "source": "check_run",
-          "name": "Supabase Preview"
+          "name": "Supabase Preview",
+          "reject_output_patterns": ["❌", "error:", "failure", "failed"]
         }
       ]
     }
