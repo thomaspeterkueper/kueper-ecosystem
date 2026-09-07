@@ -6,6 +6,9 @@
   "additionalProperties": false,
   "required": ["schema_version", "updated_at", "projects"],
   "properties": {
+    "$schema": {
+      "type": "string"
+    },
     "schema_version": {
       "type": "string",
       "const": "1.0.0"
@@ -64,8 +67,30 @@
             "knowledge-graph",
             "archive",
             "website",
-            "infrastructure"
+            "infrastructure",
+            "authoring"
           ]
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9]*$",
+          "description": "Verbindlicher Ökosystem-Code, siehe ECO-ARC-0006-Code-Tabelle. Optional für Alt-Einträge bis zur vollständigen Rückbefüllung."
+        },
+        "data_sensitivity": {
+          "type": "string",
+          "enum": ["public", "private-manuscript-source"],
+          "description": "Fehlt dieses Feld, gilt 'public' (Standard für alle vor ECO-ARC-0030 registrierten Projekte). 'private-manuscript-source' aktiviert die deny-by-default-Regeln aus ECO-ARC-0030."
+        },
+        "access_policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Nur relevant/Pflicht bei data_sensitivity != 'public', siehe ECO-ARC-0030.",
+          "properties": {
+            "ingest_permission": { "type": "boolean" },
+            "canonization_permission": { "type": "boolean" },
+            "public_export_permission": { "type": "boolean" },
+            "derived_analysis_permission": { "type": "boolean" }
+          }
         },
         "production_url": {
           "type": ["string", "null"],
