@@ -2,8 +2,8 @@
 """Declarative fail-closed external-check gate for PR review completion.
 
 Policies live in registry/merge-gates.json. Every required check must resolve on the
-current PR head and be completed successfully. Missing, stale, pending, ambiguous, or
-failed required checks block semantic review/completion.
+current PR head and be completed successfully. Missing, stale, pending, ambiguous,
+failed, neutral, or skipped required checks block semantic review/completion.
 """
 from __future__ import annotations
 
@@ -15,7 +15,6 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_POLICY_PATH = ROOT / "registry" / "merge-gates.json"
-_SUCCESS_CONCLUSIONS = {"success", "neutral", "skipped"}
 
 
 class MergeGateError(RuntimeError):
@@ -83,7 +82,7 @@ def evaluate(policy: dict[str, Any], head_sha: str, status_payload: dict[str, An
             details.append({"id": req_id, "status": status, "conclusion": conclusion})
             if status != "completed":
                 return {"allowed": False, "reason": f"required-check-{req_id}-incomplete", "details": details}
-            if conclusion not in _SUCCESS_CONCLUSIONS:
+            if conclusion != "success":
                 return {"allowed": False, "reason": f"required-check-{req_id}-{conclusion or 'unknown'}", "details": details}
             continue
 
