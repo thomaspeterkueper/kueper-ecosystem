@@ -94,7 +94,7 @@ jobs:
         if: steps.lease.outputs.should_run == 'true'
         run: python -m unittest tools/scheduler/test_run_guard.py
 
-      - name: Run deterministic reviewer schema, transport and intake tests
+      - name: Run deterministic reviewer schema, transport, intake and merge-gate tests
         if: steps.lease.outputs.should_run == 'true'
         run: |
           python -m unittest tools/review/test_pr_review_agent.py
@@ -105,6 +105,7 @@ jobs:
           python -m unittest tools/review/test_pr_review_agent_v06.py
           python -m unittest tools/review/test_pr_review_agent_v07.py
           python -m unittest tools/review/test_pr_review_agent_v08.py
+          python -m unittest tools/review/test_merge_gate.py
           python -m unittest tools/review/test_direct_pr_intake.py
           python -m unittest tools/review/test_direct_pr_intake_v02.py
 
