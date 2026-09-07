@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""KUEPER PR reviewer v0.8 — budget-aware batch admission.
+"""KUEPER PR reviewer v0.8 — budget-aware batch admission plus external CI gate.
 
 V0.7 reserves budget per semantic review, but a failed semantic attempt can leave the
 same review_pending task at the head of the queue. Subsequent scheduled runs then
@@ -7,7 +7,9 @@ reserve another daily slot for the same unchanged PR. V0.8 prevents that retry l
 
 - one unchanged task/head is admitted at most once per UTC day;
 - exhausted daily budget stops semantic batch work immediately;
-- provider-independent stale PR reconciliation still runs before the budget guard.
+- provider-independent stale PR reconciliation still runs before the budget guard;
+- repository-specific required external checks are evaluated fail-closed before any
+  semantic review budget is reserved.
 
 A changed PR head is a new review candidate and may be admitted again the same day.
 """
@@ -20,6 +22,7 @@ from typing import Any
 REVIEW_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(REVIEW_DIR))
 import pr_review_agent_v07 as v07  # noqa: E402
+import merge_gate  # noqa: E402
 
 base = v07.base
 v06 = v07.v06
@@ -27,7 +30,7 @@ v06 = v07.v06
 
 def _task_head_sha(task: dict[str, Any]) -> str:
     payload = task.get("payload") if isinstance(task.get("payload"), dict) else {}
-    for key in ("head_sha", "pr_head_sha", "head"): 
+    for key in ("head_sha", "pr_head_sha", "head"):
         value = payload.get(key)
         if isinstance(value, str) and value.strip():
             return value.strip()
@@ -57,6 +60,23 @@ def already_reserved_today(db: Any, task: dict[str, Any], reason: str) -> bool:
 
 def cost_aware_review_task(task: dict[str, Any], db: Any) -> dict[str, Any]:
     pr_url = str(task.get("pr_url") or "").strip()
+    repository = str(task.get("repository") or "").strip()
+
+    if pr_url and repository:
+        gate = merge_gate.evaluate_pr(repository, pr_url)
+        if not gate.get("allowed"):
+            print(
+                f"::notice title=Required CI gate blocked::{task.get('id')}: {gate.get('reason')}",
+                flush=True,
+            )
+            return {
+                "task": task.get("id"),
+                "result": "ci-gate-blocked",
+                "reason": gate.get("reason"),
+                "head_sha": gate.get("head_sha"),
+                "checks": gate.get("details") or [],
+            }
+
     paths = v07.changed_paths(pr_url) if pr_url else ["__UNKNOWN_CHANGED_PATHS__"]
     model, model_reason = v07.select_review_model(task, paths)
     reason = review_reason(task, model_reason)
@@ -120,10 +140,13 @@ def budget_aware_review_pending_batch(db: Any, max_reviews: int) -> tuple[list[d
                 continue  # already handled by stale sweep
             if state != "OPEN":
                 continue
+            result = cost_aware_review_task(task, db)
+            if result.get("result") == "ci-gate-blocked":
+                results.append(result)
+                continue
             if not v06.v05._provider_available(db):
                 results.append({"task": task.get("id"), "result": "provider-paused", "provider": "deepseek"})
                 break
-            result = cost_aware_review_task(task, db)
         except base.worker.ProviderUnavailable as exc:
             v06.v05._pause_provider(db, exc)
             results.append({"task": task.get("id"), "result": "provider-paused", "provider": exc.provider, "code": exc.code})
@@ -139,7 +162,7 @@ def budget_aware_review_pending_batch(db: Any, max_reviews: int) -> tuple[list[d
         outcome = str(result.get("result") or "")
         if outcome == "budget-deferred":
             break
-        if outcome == "already-attempted-today":
+        if outcome in {"already-attempted-today", "ci-gate-blocked"}:
             continue
         if outcome != "terminal":
             semantic_attempts += 1
