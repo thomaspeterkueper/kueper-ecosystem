@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kueper.com/schemas/ota-signature-index.schema.json",
+  "title": "KUEPER Ecosystem OTA/ENG Signature Index",
+  "description": "Umsetzung von ECO-ARC-0032. Listet vergebene OTA-*/ENG-* Signaturen je Serie, die naechste freie Nummer und bekannte Kollisionen. Kein Ersatz fuer die fachliche Quelle (OTA/Engineering selbst).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "lastScanned", "series"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema": {
+      "type": "string",
+      "const": "ota-signature-index.v1"
+    },
+    "lastScanned": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "series": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/seriesEntry" }
+    }
+  },
+  "$defs": {
+    "seriesEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nextFree", "signatures", "collisions"],
+      "properties": {
+        "nextFree": {
+          "type": ["integer", "null"],
+          "description": "Naechste freie Nummer in dieser Serie, oder null falls noch nicht ermittelt."
+        },
+        "signatures": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/signatureEntry" }
+        },
+        "collisions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/collisionEntry" }
+        }
+      }
+    },
+    "signatureEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "status", "location", "lastSeen"],
+      "properties": {
+        "title": { "type": "string" },
+        "status": {
+          "type": "string",
+          "enum": ["ENTWURF", "AKTIV", "SUPERSEDED", "REJECTED", "UNKNOWN"]
+        },
+        "location": {
+          "type": "string",
+          "description": "Fundort, z.B. 'overtime-archive/Drive:root', 'overtime-archive/Drive:Eingang', 'OTA (legacy)', oder ein GitHub-Repo-Pfad."
+        },
+        "lastSeen": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "collisionEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["signature", "occurrences"],
+      "properties": {
+        "signature": { "type": "string" },
+        "occurrences": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 2
+        }
+      }
+    }
+  }
+}

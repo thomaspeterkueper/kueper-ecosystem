@@ -60,6 +60,8 @@ Wenn eine Änderung ein anderes Repository betrifft, wird sie nicht direkt umges
 
 Das verbindliche Dateiformat dieser Anforderungen legt [`decisions/ECO-ARC-0006-2026-DE.md`](decisions/ECO-ARC-0006-2026-DE.md) fest (Vorlage: [`docs/templates/external-task-template.md`](docs/templates/external-task-template.md), Prüfung: `tools/lint-external-tasks/lint.py`). Der beobachtete Ist-Zustand aller Projekte liegt in [`status/snapshot.json`](status/snapshot.json), erzeugt von `tools/collector/collect.py`.
 
+**Vor der Vergabe einer neuen `OTA-*`- oder `ENG-*`-Signatur muss [`registry/ota-signature-index.json`](registry/ota-signature-index.json) konsultiert werden** ([`decisions/ECO-ARC-0032-2026-DE.md`](decisions/ECO-ARC-0032-2026-DE.md)). Mehrfache unabhängig entstandene Kollisionen bei OTA-TEC-Signaturen (u. a. `0035`–`0037`, `0088`–`0097`) haben gezeigt, dass Stichproben-Suche allein nicht ausreicht. Der Google-Drive-Anteil des `overtime-archive`-Bestands ist noch nicht automatisiert erfasst und muss bis auf Weiteres von Hand aktuell gehalten werden.
+
 ## Status
 
 Initialer Architektur-Grundstock. Noch nicht kanonisch vollständig.
