@@ -7,6 +7,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
@@ -79,7 +80,7 @@ class DirectMainGuardTests(unittest.TestCase):
             worker.run = fake_run
             v74._BASE_REPO_TASK = base_task
             try:
-                with unittest.mock.patch.dict(os.environ, {"KUEPER_BOT_TOKEN": "bot", "KUEPER_WORKFLOW_TOKEN": "workflow"}):
+                with mock.patch.dict(os.environ, {"KUEPER_BOT_TOKEN": "bot", "KUEPER_WORKFLOW_TOKEN": "workflow"}):
                     result = v74.repo_task({"repository": "acme/repo"}, "deepseek-v4-flash")
             finally:
                 worker.run = original_run
