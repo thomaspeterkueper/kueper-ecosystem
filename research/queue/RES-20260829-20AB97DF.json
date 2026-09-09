@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-20AB97DF",
-  "status": "candidate-pr",
+  "status": "validation-error",
   "created": "2026-08-29T07:04:32+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -34,5 +34,7 @@
   "novelty_reason": "No prior topic covered the Mpemba effect. The gap is a pure freshness/accuracy audit: resolving the now-available DOI for the 2026 PRX unification paper and correcting the misdated/misattributed quantum-Mpemba citations (Zhang et al. 2025 vs 'Wu et al. 2024'), which the prior AVI/brain-epoch topics did not touch.",
   "fingerprint": "20ab97df31150fb8",
   "updated_at": "2026-08-29T10:27:21+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/36"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/36",
+  "validated_at": "2026-09-09T09:50:59+00:00",
+  "validation_error": "\"deepseek-v4-flash\" isn't described by this version's model catalog; update Claude Code, or map it with behavesAs on a modelPicker row (or modelOverrides, if it is a provider id of a model this version knows). Until then auto-compact keeps this session within 200k tokens (the context window it assumes); if the model accepts more, append [1m] to the model name for 1M, or set CLAUDE_CODE_MAX_CONTEXT_TOKENS to its real window; CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1 restores the previous wait-for-the-API behavior.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"generate_session_title\"}\nAPI Error: 402 Insufficient Balance\n"
 }
