@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-A464A32B",
-  "status": "candidate-pr",
+  "status": "validation-error",
   "created": "2026-08-29T14:33:23+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -40,5 +40,7 @@
   "novelty_reason": "No prior OTA research topic addresses the Dumont et al. (2025) planetary-forcing-of-seismicity result, the LOD-seismicity bridge, or the Le Mouël et al. (2025) SSN/LOD periodicity claims; the closest ecosystem documents (OTA-OBS-0005, OTA-SCI-0036) appear only as secondary context excerpts and were not previously researched. The internal [ESTABLISHED]/[HYPOTHETICAL] classification conflict is a materially unresolved audit target.",
   "fingerprint": "a464a32baf1ede15",
   "updated_at": "2026-08-29T14:48:28+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/40"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/40",
+  "validated_at": "2026-09-10T09:48:45+00:00",
+  "validation_error": "\"deepseek-v4-flash\" isn't described by this version's model catalog; update Claude Code, or map it with behavesAs on a modelPicker row (or modelOverrides, if it is a provider id of a model this version knows). Until then auto-compact keeps this session within 200k tokens (the context window it assumes); if the model accepts more, append [1m] to the model name for 1M, or set CLAUDE_CODE_MAX_CONTEXT_TOKENS to its real window; CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1 restores the previous wait-for-the-API behavior.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"generate_session_title\"}\nAPI Error: 402 Insufficient Balance\n"
 }
