@@ -1,7 +1,10 @@
 # Tools
 
-Ausführbare Hilfsprogramme der Control Plane. Sie prüfen und normalisieren,
-sie verändern keine Ziel-Repositories und geben keine Secrets aus.
+Ausführbare Hilfsprogramme der Control Plane. Sie prüfen und normalisieren und
+geben keine Secrets aus. Produktionswerkzeuge verändern Ziel-Repositories nur
+über die jeweils dokumentierten, review-gesteuerten Worker-Pfade. Isolierte
+E2E-Harnesses dürfen ausschließlich ihre ausdrücklich festgelegten Test-Branches
+und Testpfade verändern.
 
 ## collector
 
@@ -31,3 +34,16 @@ python3 tools/lint-external-tasks/lint.py --all <repo-root>
 ```
 
 Nur stdlib, kein Netzwerk, exit 1 bei Verstoß (CI-tauglich).
+
+## worker/v74_privileged_e2e.py
+
+Deterministischer, manueller E2E-Harness für den privilegierten
+Workflow-Credential-Pfad des V7.4-Workers. Er umgeht Supabase und Provider,
+verändert niemals `main` und darf ausschließlich
+`test/workflow-credential-smoke` sowie
+`.github/workflows/_v74-e2e-target.yml` verwenden.
+
+Der Harness prüft zusätzlich, dass der `origin` vor dem Push tatsächlich auf
+`KUEPER_WORKFLOW_TOKEN` umgeschaltet wurde und dass Bot- und Workflow-Token
+nicht identisch sind. Ausführung ausschließlich über den zugehörigen manuellen
+GitHub-Workflow und mit anschließendem `cleanup`.
