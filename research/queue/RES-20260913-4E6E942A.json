@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260913-4E6E942A",
+  "status": "queued",
+  "created": "2026-09-13T08:31:49+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "external-tasks/open/EXT-ENG-NOXIA-20260911-resource-intelligence.md",
+  "source_ref": "9a4ce91b30421854023c7c3e033b0e4296f60a0f",
+  "source_blob_sha": "66a1d49615a4f3f3620936070f7581fc42de7f51",
+  "title": "Which real prospecting instruments can detect which resources, at what resolution and depth — grounding the Resource Intelligence sensor ladder",
+  "question": "What do the real planetary remote-sensing and in-situ instrument literature and current missions establish about which instrument families (passive orbital imaging and VNIR/SWIR spectroscopy, neutron/gamma spectroscopy, radar/subsurface sounding, targeted active spectroscopy, Raman) can detect, discriminate and constrain which resources — at what spatial resolution, penetration depth and composition/depth uncertainty — so that NOXIA's Resource Intelligence state machine and sensor ladder map information classes and confidence to real capability, and so that long-range orbital Raman from 30–50 km is correctly held as an [H] gate and not canonized as today's capability?",
+  "why_now": "EXT-ENG-NOXIA-20260911-RESOURCE-INTELLIGENCE is open and asks NOXIA to design an explicit pre-deposit knowledge layer (remote sensing -> anomaly -> candidate -> composition_identified -> sampled -> resource_estimated). It names NASA NIAC 2026 'Interworld Slingshot Resource Surveys' 30–50 km Raman as a feasibility study and warns that orbital Raman must stay [H], not [R]. The Moon workstream has just committed to a real global selenographic map (docs/project-workstreams.md, 'Startentscheidung Mond') with geology/resource layers, and NOXIA-RESOURCE-0001/WORLD-0002 define the deposit/discovery-state model the sensor ladder must feed — so the information classes have to be decided now, before the Moon/Mars/Asteroid map layers are built.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "T",
+    "R",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Demonstrated detection capability, resolution and depth limits of real planetary prospecting instruments (e.g. CRISM, M3, Diviner, LEND, DAN, Mini-RF, SuperCam, SHERLOC) and the NASA NIAC 2026 'Interworld Slingshot Resource Surveys' 30–50 km orbital Raman feasibility study.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.81,
+  "scores": {
+    "project_relevance": 0.82,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.88
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Not a rephrase of RES-20260828-49AF01DE: that candidate asks which bodies physically contain which resources, with what ore grades and extraction feasibility. This gap asks a different question one layer earlier in the chain — which measurement techniques can detect, discriminate and bound those resources, and with what uncertainty — i.e. the detection/information side rather than the deposit side. It also directly serves an actively open Engineering request whose sensor ladder is marked [H]/feasibility-only.",
+  "fingerprint": "4e6e942a90247c88"
+}
