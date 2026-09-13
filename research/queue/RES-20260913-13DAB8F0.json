@@ -1,0 +1,45 @@
+{
+  "id": "RES-20260913-13DAB8F0",
+  "status": "queued",
+  "created": "2026-09-13T09:37:43+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0086-2026-DE.md",
+  "source_ref": "a1d2285e16be597be882400cdcad35273993fc92",
+  "source_blob_sha": "71b8648c21b2036a63ad2448c9aa9d4fe672c297",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 202,
+  "context_paths": [
+    "src/content/documents/OTA-TEC-0088-2026-DE.md",
+    "src/content/documents/OTA-TEC-0093-2026-DE.md",
+    "src/content/documents/OTA-TEC-0119-2026-DE.md"
+  ],
+  "title": "Schwerkraftschwellen-Audit fuer Geburt, neonatale Transition und Saeugetierentwicklung bei 0,16 g / 0,38 g: Geburtsphysiologie und Teilgravitations-Tiervidenz",
+  "question": "Source-grounded audit of the physiological and animal-evidence layer behind the birth, neonatal-transition and partial-gravity statements in OTA-SCI-0086-2026-DE (Sections 3, 6, 9, 10, 11, 12, 14) against peer-reviewed obstetric, neonatal, gravitational-biology and artificial-gravity literature. (1) Verify the [R] statement in Section 9 that uterine contraction is a muscular-hormonal process and not simply the child 'falling' under gravity: what does obstetric-physiology evidence establish about the relative contributions of myometrial contraction, maternal expulsive effort and gravity in the second stage of labour — including evidence from upright versus supine and immersion/water births, from deliveries in patients without normal weight-bearing or with impaired abdominal musculature, and from any documented delivery under microgravity or sustained free-fall conditions — and precisely where gravity is and is not mechanically required? (2) Audit the Section 11 [OFFEN] neonatal-transition items against real neonatal physiology: initiation of breathing and lung-fluid clearance, cardiovascular/ductal transition, thermoregulation and heat loss, airway/secretions management, and resuscitation; report which steps are gravity-dependent versus pressure-, oxygen- and thermally driven, and therefore which Section 9/11 engineering requirements are physically motivated rather than speculative. (3) Gravity-continuum evidence: what do the pregnant-rat biosatellite and Shuttle-era experiments (the body of work anchored by Section 17 source 4, Ronca 2004) and subsequent rodent reproductive studies under microgravity actually establish about conception, implantation, gestation, parturition and offspring development, and with which species, sample sizes, exposure durations and confounds? (4) Partial gravity: what do rodent partial-gravity studies (centrifugation at fractional g, hindlimb unloading, simulated reduced gravity) and mammalian embryo/early-development spaceflight experiments establish about the existence, magnitude or absence of a minimum-g threshold for any single phase, and is a single whole-chain threshold for 0.16 g or 0.38 g currently testable at all? (5) Artificial gravity (Section 14 [H]): what does the real artificial-gravity countermeasure literature establish about required g-level, daily exposure duration, continuous versus intermittent exposure, and tolerable rotation rate/radius, and does any of it involve pregnant, parturient or perinatal subjects? (6) Report which Section 3/6/9-14 wording must remain [H]/[OFFEN], which [R] statements require narrowing, and which quantitative-sounding statements must be prevented from being read as validated thresholds. Keep the minimum-g threshold question explicitly open: source count must never be used to establish a safe gravity level. Do NOT evaluate or alter the fictional NOXIA / 'Generation Mars' setting or any NOXIA/OTA balancing value.",
+  "why_now": "Sections 15 and 16 of OTA-SCI-0086 hand concrete engineering work to KUEPER Engineering — obstetrics/neonatology capability, delivery and monitoring rooms, fixation concepts for a parturient person, fluid/blood/aerosol management, emergency caesarean and anaesthesia, neonatal heat retention and resuscitation, radiation protection, and artificial gravity as an explicit trade. Those cannot be dimensioned while the underlying physiology and animal-evidence constraints remain unstated, and the dossier itself warns that 'künstliche Gravitation' must not be labelled a proven complete solution. The adjacent ecosystem documents OTA-TEC-0088 (Mars Medical Center, v1.2) and OTA-TEC-0119 (Orbital Habitat) leave the corresponding capability and module parameters [H]/[F]/[OFFEN], so the constraint map produced here is immediately reusable. The deliberately non-linear warning in Section 5 (no 0.38/0.16 scaling of terrestrial pregnancy) makes an explicit audit of what the animal and physiology evidence can and cannot constrain especially consequential.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Obstetric physiology of the second stage of labour and the role/non-role of gravity in fetal expulsion; neonatal transition physiology (first-breath initiation, lung-fluid clearance, ductal closure, neonatal thermoregulation); mammalian reproductive studies under microgravity including the pregnant-rat biosatellite and Shuttle-era experimental series referenced via Ronca 2004; rodent partial-gravity and hindlimb-unloading literature; mammalian embryo/early-development spaceflight culture experiments; and the artificial-gravity countermeasure literature on g-level, exposure duration and rotation rate/radius tolerance.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.91,
+    "cross_project_reuse": 0.78,
+    "uncertainty": 0.86,
+    "evidence_potential": 0.87
+  },
+  "related_research_ids": [
+    "RES-20260831-TEC0088A"
+  ],
+  "novelty_reason": "Distinct from RES-20260831-TEC0088A, which mapped EIMO capability classes and explicitly refused to derive staffing, bed-count or mass-casualty scaling. This gap attacks a different axis that prior OTA research has never touched: the physiological and gravitational-biology constraint layer — whether gravity is mechanistically required for parturition and the neonatal transition, and what mammalian evidence at microgravity and fractional g can legitimately bound for 0.16 g and 0.38 g. It is also distinct from the cislunar/ECLSS radiation audits (RES-20260831-TEC0082A/B, RES-20260831-TEC0093A): the questions here are obstetric mechanics, perinatal physiology and the existence or absence of a mammalian minimum-g threshold, not vehicle shielding or subsystem closure. The unresolved addition is a constraints-and-counterevidence map that keeps the threshold explicitly open rather than a source-count argument for a 'safe' gravity level.",
+  "fingerprint": "13dab8f057d2ebd0"
+}
