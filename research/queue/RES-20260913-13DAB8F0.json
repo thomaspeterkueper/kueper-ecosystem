@@ -1,6 +1,6 @@
 {
   "id": "RES-20260913-13DAB8F0",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-13T09:37:43+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -41,5 +41,7 @@
     "RES-20260831-TEC0088A"
   ],
   "novelty_reason": "Distinct from RES-20260831-TEC0088A, which mapped EIMO capability classes and explicitly refused to derive staffing, bed-count or mass-casualty scaling. This gap attacks a different axis that prior OTA research has never touched: the physiological and gravitational-biology constraint layer — whether gravity is mechanistically required for parturition and the neonatal transition, and what mammalian evidence at microgravity and fractional g can legitimately bound for 0.16 g and 0.38 g. It is also distinct from the cislunar/ECLSS radiation audits (RES-20260831-TEC0082A/B, RES-20260831-TEC0093A): the questions here are obstetric mechanics, perinatal physiology and the existence or absence of a mammalian minimum-g threshold, not vehicle shielding or subsystem closure. The unresolved addition is a constraints-and-counterevidence map that keeps the threshold explicitly open rather than a source-count argument for a 'safe' gravity level.",
-  "fingerprint": "13dab8f057d2ebd0"
+  "fingerprint": "13dab8f057d2ebd0",
+  "updated_at": "2026-09-13T09:51:56+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/113"
 }
