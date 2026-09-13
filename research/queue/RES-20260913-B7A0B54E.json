@@ -1,6 +1,6 @@
 {
   "id": "RES-20260913-B7A0B54E",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-13T09:37:43+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -41,5 +41,7 @@
     "RES-20260831-TEC0088A"
   ],
   "novelty_reason": "This is not a rephrasing of the Mars Medical Center audit. RES-20260831-TEC0088A audited Earth-Independent Medical Operations capability classes, staffing/bed scaling, blood supply, pharmacy, sterilization and mass-casualty logistics; it explicitly did not examine human reproduction, gametes, gestation, parturition or neonatal care, and it could not, because those capability requirements are newly surfaced by OTA-SCI-0086 Sections 15-16 (obstetrics/neonatology capability, delivery room, emergency caesarean, neonatal resuscitation). The materially new addition here is a bibliographic and evidence-state audit of a reproductive-medicine dossier — including whether the '16 human studies' figure and the five cited anchors hold, whether the central negative claim is current, and what the real in-utero radiation-protection baseline is. No prior OTA research topic in the program list addresses reproductive biology or obstetrics.",
-  "fingerprint": "b7a0b54e042c0e7f"
+  "fingerprint": "b7a0b54e042c0e7f",
+  "updated_at": "2026-09-13T09:44:01+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/112"
 }
