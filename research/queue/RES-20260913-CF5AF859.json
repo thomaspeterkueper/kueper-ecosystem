@@ -1,6 +1,6 @@
 {
   "id": "RES-20260913-CF5AF859",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-13T08:31:48+00:00",
   "source_project": "noxia",
   "source_repository": "thomaspeterkueper/noxiagame",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Not a rephrase of RES-20260828-79092FF4: that candidate covers consumable and hazard quantities (per-capita water, oxygen, food, energy, radiation dose; pressure loss, dust storms, perchlorate toxicity) for keeping an adult colony alive. This gap concerns the biology of people who are conceived, gestated, born and raised across gravity environments — reproduction, development and adaptation physiology — which 79092FF4 does not address. It is also distinct from RES-20260828-471FC77C (behavioural needs frameworks), which is about psychological needs, not physiology.",
-  "fingerprint": "cf5af85950c7b39c"
+  "fingerprint": "cf5af85950c7b39c",
+  "updated_at": "2026-09-13T08:38:14+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/109"
 }
