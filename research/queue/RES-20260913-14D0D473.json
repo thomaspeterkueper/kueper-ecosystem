@@ -1,0 +1,50 @@
+{
+  "id": "RES-20260913-14D0D473",
+  "status": "queued",
+  "created": "2026-09-13T08:35:17+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0003-2087-DE.md",
+  "source_ref": "a1d2285e16be597be882400cdcad35273993fc92",
+  "source_blob_sha": "455ff4db8e08965379e8d3aa42d6fccdbe822859",
+  "document_signature": "OTA-TEC-0003-2087-DE",
+  "title": "Engineering audit of the Cydonia Robotics Surveyor-9 'Spider' specification: vacuum-suction adhesion on Mars, UHF propagation through rock, lidar range/precision, XRF mineral count and mass-versus-weight notation",
+  "question": "Source-grounded audit of the exact OTA-TEC-0003-2087-DE specification table and field notes against real planetary-instrument, robotics and communications engineering evidence. (1) Locomotion: the document specifies '4 teleskopierbare Greifbeine mit Vakuum-Saugern' for a robot operating on the Mars surface. Mars mean surface pressure is roughly 6-7 mbar (about 0.6% of Earth's). Assess whether vacuum/suction-cup adhesion can function at all in that pressure regime, what the achievable pressure differential and holding force would be, and what real legged, climbing or anchoring approaches are actually used or developed for near-vacuum and low-gravity bodies (e.g. microspine grippers, anchoring drills, electrostatic or cold-weld concepts) as the physically defensible alternative. (2) Communications: the specification claims a backup 'UHF-Funkmodul, 50m durch Gestein'. Report realistic UHF/sub-GHz attenuation through rock and regolith in dB per metre, the resulting maximum usable depth at credible data rates, and how this compares with real through-rock and subsurface communication practice (mine/utility comms, ground-penetrating radar constraints); flag whether 50 m through solid rock is defensible or an error of one to two orders of magnitude. (3) Sensing: 'Lidar: NovaScan-V8, 500m Reichweite, +/- 0,5 mm Praezision' and 'Infrarot: Thermal-Eye Gen-4, 7,5-14 um Spektrum' - assess against real lidar time-of-flight ranging physics (laser power, aperture, jitter, beam divergence) and real planetary/high-precision lidar specifications, and report whether millimetre precision at 500 m is physically achievable from a 4.2 kg platform; confirm the 7.5-14 um band as the real terrestrial/planetary thermal-infrared atmospheric window used by LWIR imagers. (4) Composition: 'XRF-Spektrometer: 42 Minerale erkennbar' - clarify the real capability boundary between X-ray fluorescence (elemental) and X-ray diffraction (mineralogical) analysis, what Mars instruments such as Curiosity's APXS/CheMin and PIXL actually identify and how many distinct phases they resolve, and whether a discrete 'number of detectable minerals' is a meaningful instrument specification. (5) Mass and weight: the specification gives 'Gewicht: 4,2 kg (Mars-G), 11,1 kg (Erd-G)'. Assess this against Mars surface gravity (about 3.71 m/s2, i.e. 0.38 g) and correct SI usage of mass versus force/weight; report what the physically correct statement is and whether the document is conflating mass with weight or merely using kgf informally. (6) Energy and thermal: assess the claimed '[F] Festkörper-Akku, 6h autonom' against real solid-state and lithium battery specific energy for a 4.2 kg platform, the '1.000m Glasfaser-Tether, 10 Gbps' against real tethered-robot power/data and tether mass constraints, and the field-note thermal anomaly (constant -5 C surface against -18 C ambient at 802 m depth in lava tube 88-Beta) against real Mars subsurface and lava-tube temperature regimes. (7) Identify which specification lines should be narrowed, corrected or reclassified [R]/[S]/[F]/[OFFEN]. Do NOT evaluate or alter the fictional layer: Cydonia Robotics and model year 2084 Rev 3.1, serial SRV9-4402-B, the Sector 4 / Lava-Tube 88-Beta setting, operators Marek Kowalski and Darian Kostas, project lead Mahapula, the Axis-Kammer event linkage, or any NOXIA/OTA balancing value. Report which claimed values are physically incompatible without changing the fictional canon.",
+  "why_now": "This dossier is the upstream data source for OTA-SCI-0004-2087-DE (the Surveyor-9 Lidar scan is the 'Datenkristall' behind the Axis-Kammer analysis), so auditing it settles instrument-plausibility questions that currently propagate unexamined into the archaeology document. It is also the most claim-dense row in the snapshot: several of its figures are the kind that a real-world check classifies as clearly right or clearly wrong, which is exactly the evidence a short fragment flagged LOW_SUBSTANCE and GENERIC_SUMMARY can absorb. Its near-vacuum adhesion and through-rock-UHF statements are concrete falsifiable engineering errors whose correction is high-value and cheap, and no prior topic has addressed a planetary surface-robot specification.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "real_world_anchor": "Mars surface pressure (roughly 6-7 mbar) and the viability of suction adhesion in near-vacuum; real microspine/anchoring locomotion for low-gravity and vacuum bodies; UHF/sub-GHz attenuation through rock and regolith (dB/m) and real subsurface communications practice; lidar time-of-flight ranging limits versus claimed 500 m / +/-0.5 mm precision; the XRF-versus-XRD elemental/mineralogical capability boundary and real Mars instrument performance (APXS, CheMin, PIXL); Mars surface gravity (3.71 m/s2, 0.38 g) and mass-versus-weight/force notation; solid-state battery specific energy and real tethered-robot power/data tether constraints; real Mars subsurface and lava-tube thermal regimes.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.84,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.88,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260829-TEC0036A"
+  ],
+  "novelty_reason": "Related to RES-20260829-TEC0036A (lunar crewed rover environment, mobility, thermal and endurance, on OTA-TEC-0036) but not a duplicate: that audit covers a different document, a different body (Moon, not Mars) and a different claim set (pressurised crewed rover traction, dust, thermal rejection, batteries, multi-day endurance). This topic is a small uncrewed Martian field robot and its instrument/communications specification, raising claims that audit never reached - suction adhesion against a ~6 mbar atmosphere, UHF attenuation through rock, lidar range-versus-precision physics, XRF/XRD mineral-count limits and mass/weight notation. RES-20260903-F765D0E9 (OTA-TEC-0016 Mars EDL/methalox) is likewise disjoint in subject. The genuinely new dimension is instrument-level plausibility on the Martian surface, which the archive has not yet audited anywhere.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 280,
+    "quality_flags": [
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "14d0d473944f5774"
+}
