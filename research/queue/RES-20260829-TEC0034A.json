@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-TEC0034A",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-29T19:58:00+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -42,5 +42,27 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-29T20:06:43+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/45"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/45",
+  "validated_at": "2026-09-13T10:23:01+00:00",
+  "validation_summary": "Geprüft gegen OTA-TEC-0034-2026-DE (aktueller Stand Blob 6434681b…, Kandidat basiert auf 4f47ef26…). Der Kandidat wurde gegen OTA-TEC-0034-2026-DE v1.1 geprüft und trifft dort auf einen bereits nachgezogenen Kanon: Die fünf Kernkorrekturen des Evidenzaudits v1.1 (2026-08-30) sind identisch mit den Kandidatenbefunden zu (a) Energiebezugsgröße 15–40 kWh/m³, (b) 0–20 °C als niedriger Prozessbereich statt Obergrenze, (c) Mikrowellenpfad als Trade-off statt pauschal effizienter, (d) Eisgehalts-/Wirtschaftlichkeitsschwellen als szenarioabhängig, (e) atmosphärische Wassergewinnung als technisch möglich, aber ertragsarm. Auch die Tripelpunkt-Feinheit (Hellas >611,7 Pa, Salzgehalt) ist in §3 bereits als Nicht-Absolutheit der [R]-Aussage formuliert. Die [R]-Anker (Eisvorkommen mittlerer/hoher Breiten, Sublimation bei ~600 Pa, Perchlorat-Toxizität, Staubabrasion) sind bestätigt, nicht widerlegt. Damit liegt KEIN Konflikt vor: kein Kanonwert widerspricht stärkerer Evidenz. Unberührt und korrekt ge",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260913-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260913-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260913-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
