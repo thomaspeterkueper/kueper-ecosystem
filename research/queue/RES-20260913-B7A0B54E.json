@@ -1,0 +1,45 @@
+{
+  "id": "RES-20260913-B7A0B54E",
+  "status": "queued",
+  "created": "2026-09-13T09:37:43+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0086-2026-DE.md",
+  "source_ref": "a1d2285e16be597be882400cdcad35273993fc92",
+  "source_blob_sha": "71b8648c21b2036a63ad2448c9aa9d4fe672c297",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 202,
+  "context_paths": [
+    "src/content/documents/OTA-TEC-0088-2026-DE.md",
+    "src/content/documents/OTA-TEC-0093-2026-DE.md",
+    "src/content/documents/OTA-TEC-0119-2026-DE.md"
+  ],
+  "title": "Audit der [R]-Evidenz- und Zitatschicht in OTA-SCI-0086: Quellenkorpus, 16-Studien-Zahl, Negativbefund und Strahlenempfindlichkeit von Gameten und Fetus",
+  "question": "Source-grounded audit of the externally checkable [R] layer of OTA-SCI-0086-2026-DE (Sections 2.1, 2.2, 4, 7, 13, 17) against primary peer-reviewed and official sources. (1) Source verification: confirm or correct each of the five anchors in Section 17 — Gimunova M, Paludo AC, Bernacikova M, et al., 'The effect of space travel on human reproductive health: a systematic review', npj Microgravity 10, 10 (2024), DOI 10.1038/s41526-024-00351-1; Lung C-F, Lu H-H, Chung C-Y, Lin P-T, Hsu Y-C, iScience 29(2):114663 (2026), DOI 10.1016/j.isci.2026.114663; Ferraz M, Moeharram L, Frontiers in Space Technologies 7:1917547 (2026), DOI 10.3389/frspt.2026.1917547; Ronca AE, Advances in Space Research (2004), PMID 15000095; Mathyk B, Imudia AN, Quaas AM, et al., npj Women's Health (2024), DOI 10.1038/s44294-024-00009-z — report actual titles, authorship, journal, volume/article number, year, DOI/PMID and flag every discrepancy, misattribution or element that cannot be verified in an indexed record. (2) Quantified claim: does the cited 2024 systematic review really identify only 16 suitable human studies on reproductive health in the context of spaceflight, microgravity, radiation or analogs, and are the examined endpoints genuinely dominated by hormones, menstrual/endometrial parameters and male reproductive parameters, with completed pregnancies and births in space absent from any robust human study? Report the review's actual inclusion criteria, study count, endpoint taxonomy and stated limitations. (3) Negative central claim and freshness check: is the document's 2026 core assertion — that no reliable human evidence exists for conception, full pregnancy, parturition and neonatal development in microgravity or at ~0.16 g / ~0.38 g — still current, or has newer human or human-relevant evidence appeared since the cited reviews (new prospective cohorts, spaceflight gamete/embryo exposure experiments, reproductive-medicine follow-ups)? State explicitly whether the document's evidentiary cut-off is stale and which sentences are affected. (4) Assisted reproduction and cryopreservation (Section 13 [R/H]): which gamete and embryo spaceflight exposure, storage and recovery experiments actually exist in the peer-reviewed record, what do they demonstrate versus merely suggest, and which QA/radiation/temperature requirements are documented rather than assumed? (5) Radiation as a separate risk path (Section 7 [R]): verify the claim of development-stage-dependent embryonic and fetal radiosensitivity against the terrestrial radiation-protection corpus (ICRP/UNSCEAR/NCRP-class publications on in-utero exposure by trimester) and against official space-radiation environment characterizations for lunar surface, Mars surface and deep space; report what operational pregnancy radiation-protection limits exist in terrestrial occupational practice and whether any gestation-specific limit exists for spaceflight crews, so that the document's refusal to set a new dose limit can be judged against what actually exists. (6) Identify the wording in Sections 2.1, 2.2, 4, 7, 13 and 17 that should be narrowed, corrected or reclassified between [R], [H] and [OFFEN]. Do NOT evaluate or alter fictional canon or balancing values: the NOXIA / 'Generation Mars' setting, any colony-policy statement, or any NOXIA/OTA balancing value.",
+  "why_now": "OTA-SCI-0086-2026-DE is a v1.0 ENTWURF whose entire argumentative spine is a bibliographic and quantitative [R] layer plus a negative claim ('keine belastbare Human-Evidenz'). A negative claim decays as new literature appears, two of the five anchors are dated in the current year 2026, and one anchor is a 2004 PMID-only record. The dossier is already referenced by OTA-TEC-0088 (Mars Medical Center, v1.2) and OTA-TEC-0093 (Life-Support core module, v1.3) in the ecosystem, so unverified anchors propagate into medical and ECLSS planning assumptions. The Section 15 hand-off to KUEPER Engineering depends on the correctness of this evidence base.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "The document's own citation corpus (npj Microgravity 2024, iScience 2026, Frontiers in Space Technologies 2026, Ronca 2004/PMID 15000095, npj Women's Health 2024), the quantitative '16 human studies' finding attributed to the 2024 systematic review, the testable negative claim that no human pregnancy or birth has been documented in spaceflight, the spaceflight assisted-reproduction/cryopreservation literature, and the terrestrial plus spaceflight in-utero radiation-protection corpus (ICRP/UNSCEAR/NCRP class, NASA space-radiation environment data).",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.93,
+    "cross_project_reuse": 0.82,
+    "uncertainty": 0.72,
+    "evidence_potential": 0.92
+  },
+  "related_research_ids": [
+    "RES-20260831-TEC0088A"
+  ],
+  "novelty_reason": "This is not a rephrasing of the Mars Medical Center audit. RES-20260831-TEC0088A audited Earth-Independent Medical Operations capability classes, staffing/bed scaling, blood supply, pharmacy, sterilization and mass-casualty logistics; it explicitly did not examine human reproduction, gametes, gestation, parturition or neonatal care, and it could not, because those capability requirements are newly surfaced by OTA-SCI-0086 Sections 15-16 (obstetrics/neonatology capability, delivery room, emergency caesarean, neonatal resuscitation). The materially new addition here is a bibliographic and evidence-state audit of a reproductive-medicine dossier — including whether the '16 human studies' figure and the five cited anchors hold, whether the central negative claim is current, and what the real in-utero radiation-protection baseline is. No prior OTA research topic in the program list addresses reproductive biology or obstetrics.",
+  "fingerprint": "b7a0b54e042c0e7f"
+}
