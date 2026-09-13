@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-TEC0034B",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-29T19:59:00+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -42,5 +42,21 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-29T20:12:28+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/47"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/47",
+  "validated_at": "2026-09-13T10:26:15+00:00",
+  "validation_summary": "Der Kandidat prüft OTA-TEC-0034 (Wasserextraktor Typ M) gegen reale Mars-ISRU-Evidenz. Abgleich mit dem Repository: Die meisten Korrekturempfehlungen sind im aktuellen Dossierstand v1.1 (Evidenzaudit 2026-08-30) bereits umgesetzt — die 15–40 kWh/m³ sind auf 0,9–3,9 kWh/kg korrigiert und ausdrücklich verworfen, die Eisgehaltsspanne 2–40 Gew.-% ist auf poreneishaltigen Regolith eingegrenzt und auf massive Eislagerstätten als nicht abgedeckt markiert, die Schwellen > 5 / < 2 Gew.-% und Overburden < 2 m sind als Szenario-/Designgrößen statt als Physik gekennzeichnet, die Sublimationsaussage bei ~600 Pa ist um die Tripelpunkt-Nuance ergänzt, und die atmosphärische Wassergewinnung ist von 'unrealistisch' auf 'technisch möglich, aber ertragsarm' präzisiert. Die [R]-Bestätigungen (Eisverteilung, Staub, Perchlorat-Separation, MOXIE als CO₂→O₂-Pfad) decken sich mit dem Kanon und erzeugen keine Aktion; der Energie-Bezugsrahmen ist bereits über die offene Aufgabe EXT-KG-OTA-20260913-001 adressiert",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260913-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260913-005",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
