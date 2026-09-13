@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260913-1E741E90",
+  "status": "queued",
+  "created": "2026-09-13T08:31:50+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "lib/world/spatial/spaceportSuitability.ts",
+  "source_ref": "9a4ce91b30421854023c7c3e033b0e4296f60a0f",
+  "source_blob_sha": "ac3e55430eb6d5ac0a4d723f8ed99fc0fdf63d4d",
+  "title": "Real launch-site selection and range-safety criteria for the Earth spaceport, and their orbital-access consequences",
+  "question": "What do real launch-site licensing and range-safety standards (e.g. FAA 14 CFR Part 420/450, EASA/ESA and national airspace and land-use rules) and orbital mechanics require of a launch site — terrain, exclusion and downrange-overflight distance, population and airspace separation, weather and transport access — and what does that imply for NOX:TER:SAUERLAND-SPACEPORT at roughly 51.3°N in the Sauerland (reachable orbital inclinations, dogleg performance penalties, achievable LEO/other orbits, feasibility of a purely suborbital or shuttle-port role), so that the current siting heuristic is either aligned to real criteria or explicitly re-scoped as a suborbital/shuttle facility?",
+  "why_now": "The Earth workstream is active: docs/architecture/earth-real-geography-bootstrap.md and earth-spatial-world.md make the Sauerland the first real playable region, the Earth surface-logistics policy ends at NOX:TER:SAUERLAND-SPACEPORT and hands over to a Surface Transfer Shuttle, and lib/world/spatial/spaceportSuitability.ts plus spaceportAreaAnalysis.ts already score real terrain and OSM features with concrete thresholds (slope <= 3 deg bonus, road < 1200 m, exclusion < 250/600 m) while stating they are a planning heuristic that makes no launch-safety claim. sauerland2086Scenario.ts carries 'europeanSpaceportProgram: true' as an explicit narrative assumption. The siting logic is being coded now, so the missing real criteria are a live dependency rather than a future nice-to-have.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "T",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Launch-site licensing and range-safety standards (FAA 14 CFR Part 420/450, EASA/ESA and German airspace and planning law) together with launch-azimuth vs. target-inclination and downrange-overflight constraints from orbital mechanics.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.73,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.78,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Not a rephrase of RES-20260828-BF7F1B4D: that candidate covers orbital/physical body parameters and interplanetary Hohmann travel times. This gap covers surface-to-orbit access from one specific real site — launch-site siting criteria, range-safety separation and the latitude/inclination ceiling — which is a surface-to-LEO engineering-and-standards question, not an interplanetary trajectory or body-parameter question. It is also unrelated to the LVT/space-law candidate (RES-20260828-47D98879), which is about property rights rather than launch safety.",
+  "fingerprint": "1e741e903b815e06"
+}
