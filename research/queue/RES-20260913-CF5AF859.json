@@ -1,0 +1,36 @@
+{
+  "id": "RES-20260913-CF5AF859",
+  "status": "queued",
+  "created": "2026-09-13T08:31:48+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "external-tasks/open/EXT-OTA-NOXIA-20260911-reproductive-obstetric-capability-notice.md",
+  "source_ref": "9a4ce91b30421854023c7c3e033b0e4296f60a0f",
+  "source_blob_sha": "6e83214be92ad594cdaa10e791830cb0689fd1a3",
+  "title": "Human adaptation to partial gravity: reproduction, prenatal/neonatal/child development and gravity transitions",
+  "question": "What does the real space-medicine literature (NASA Human Research Program, ESA, ISS and rodent/analog studies) actually establish about human reproduction, prenatal/neonatal development, pediatric growth and multi-year physiological adaptation under partial gravity (~0.03 g Ceres, ~0.16 g Luna, ~0.38 g Mars, microgravity), and about the countermeasures and rehabilitation needed when a person transitions between gravity environments — and which quantities are genuinely unsupported so that NOXIA does not canonize fabricated fertility, gestation-length, complication-probability, minimum-safe-g thresholds or linear 'g = health multiplier' values?",
+  "why_now": "Three OTA notices opened on 2026-09-11 (OTA-SCI-0086 pregnancy/birth, OTA-SCI-0087 children of Ceres, OTA-SCI-0088 freighter birth) plus the gravity-biography request (OTA-SCI-0089 'Human Adaptation by Gravity Environment') are open and explicitly state that no validated human threshold exists — yet they require NOXIA to design a reproduction -> obstetrics -> neonatology -> pediatric_development -> gravity_transition capability chain now. The population engine and its person/knowledge/event model (NOXIA-LIVING-0001, NOXIA-LIVING-0005, 'Phase 1 bewusst nicht enthalten: Fortpflanzung') and the Maryem-Hamid/Kaiwu and Generation Mars/SSEP narrative threads all rest on the timeline and feasibility of humans being born and raised off Earth, so the capability skeleton must be built on externally grounded physiology rather than on invented coefficients.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Human physiological adaptation to partial gravity and microgravity: reproductive, prenatal, neonatal, pediatric-development and bone/muscle/cardiovascular outcomes, plus gravity-transition countermeasures, as documented by NASA Human Research Program/HRP evidence reports, ESA and peer-reviewed space-medicine, ISS and rodent/analog studies.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.88,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.82,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Not a rephrase of RES-20260828-79092FF4: that candidate covers consumable and hazard quantities (per-capita water, oxygen, food, energy, radiation dose; pressure loss, dust storms, perchlorate toxicity) for keeping an adult colony alive. This gap concerns the biology of people who are conceived, gestated, born and raised across gravity environments — reproduction, development and adaptation physiology — which 79092FF4 does not address. It is also distinct from RES-20260828-471FC77C (behavioural needs frameworks), which is about psychological needs, not physiology.",
+  "fingerprint": "cf5af85950c7b39c"
+}
