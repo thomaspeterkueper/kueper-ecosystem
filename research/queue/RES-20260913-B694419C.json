@@ -1,0 +1,48 @@
+{
+  "id": "RES-20260913-B694419C",
+  "status": "queued",
+  "created": "2026-09-13T08:35:17+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0004-2087-DE.md",
+  "source_ref": "a1d2285e16be597be882400cdcad35273993fc92",
+  "source_blob_sha": "00dc3d1e8c1c63c168e72cdb15234f6c8d8e782e",
+  "document_signature": "OTA-SCI-0004-2087-DE",
+  "title": "Real-world anchors for the Axis-Kammer spectral analysis: 432 Hz as 'sacred temple frequency', Kanheri/pre-Vedic architecture correlation, 127 Hz Mars crustal resonance and geometric-entropy discrimination",
+  "question": "Source-grounded audit of the exact OTA-SCI-0004-2087-DE text, restricted to the externally checkable real-world layer behind its [S]- and [F]-marked findings. (1) The document's central interpretive claim is that the reconstructed 432 Hz carrier 'entspricht der in antiken Tempeln verwendeten \"heiligen Frequenz\"'. Audit that claim against the history of tuning standards and the archaeoacoustics literature: what is the documented origin of the modern '432 Hz = cosmic/sacred tuning' assertion; what were historically attested standard pitches (e.g. Baroque/Classical A, A=440 adoption, regional variants); and does any peer-reviewed archaeoacoustic measurement of actual ancient temples (including Indian rock-cut temples, and comparators such as Chavin de Huantar, Hal Saflieni, Newgrange) report a measured room resonance near 432 Hz, and was any such resonance demonstrably intentional? (2) Verify the appendix claim of an '87,4% Korrelation mit pravedischer Sakralarchitektur' and the cited Konkan/Kanheri cave temples ('1. Jh. v. Chr.'): confirm the real date range, religious affiliation and geographic location of the Kanheri caves; assess whether the label 'pravedisch' (pre-Vedic) is archaeologically coherent for that site; and report whether any published quantitative shape-matching or symmetry-correlation method exists that could yield a figure such as 87.4%. (3) Verify the seismic statement '127 Hz = Resonanz der Mars-Kruste' against the real InSight/SEIS results: what are Mars's actually observed seismic hum/normal-mode and background-resonance frequencies and amplitudes, and is a single crustal resonance near 127 Hz supported, unsupported or simply not measured? (4) Assess the entropy argument (structural entropy 0.003 vs 'Natuerlich: >0,15') against real symmetry/complexity/entropy metrics applied to geological versus anthropogenic structures: is a Shannon- or symmetry-entropy threshold a meaningful discriminator between natural geology and built architecture, and what do such analyses actually report? (5) Assess the reported thermal anomaly (surface -5 C against -18 C ambient at 802 m depth in a lava tube) against real Mars subsurface and lava-tube thermal measurements and modelling: what ambient temperatures and anomaly magnitudes are supported, and is an isolated +13 C contrast at that depth physically defensible? (6) Identify the specific wording in Sections 3.1-4 and Anhang B that should be narrowed, corrected or reclassified between [R]/[S]/[F]/[OFFEN] on the basis of that evidence. Do NOT evaluate or alter the fictional Axis-Kammer narrative: the 2087 dating, Dr. Kasumi Nakahara and Kashmira Mahapula, Darian Kostas, the Ariadne v4.2 system, the 'chi-Feld'/Baumeister cosmology, the 14 deaths, the classified-status framing, or any NOXIA/OTA balancing value. Map supporting, null and constraining evidence without upgrading the speculative interpretation to established.",
+  "why_now": "The 432 Hz 'sacred temple frequency' assertion is load-bearing for the archive's entire frequency cosmology (OTA-SCI-0009 Schumann 12 Hz, OTA-SCI-0014 frequency hierarchy, OTA-RED-0016 432-FREQ-ECHO, OTA-NAR-0002). It currently appears as an unqualified interpretive finding inside a document whose own header only marks it [S]/[F]. The document is simultaneously flagged GENERIC_SUMMARY, RELATION_GAP, NO_VISUAL, NO_HEADINGS and LOW_SUBSTANCE at priority 10, so an evidence-grounded pass is the only intervention that would materially change it rather than merely reformat it. The Mars-resonance and entropy claims are time-sensitive: InSight results and archaeoacoustic measurement work have accumulated and can now settle questions the document could only speculate about.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker",
+    "S"
+  ],
+  "real_world_anchor": "432 Hz as an allegedly ancient 'sacred/sacred-temple' tuning frequency (a circulating real-world claim); the archaeoacoustics of Indian rock-cut and other ancient temples and whether measured resonances are intentional; the real history of pitch standards (A=440 and predecessors); the Kanheri cave temples (Konkan, Maharashtra, 1st century BCE onward) and their archaeological dating/affiliation; Mars seismic hum and normal modes as measured by InSight/SEIS; Shannon-/symmetry-entropy discrimination of natural geology versus built structures; real Mars subsurface and lava-tube thermal regimes.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior OTA research topic touches the Axis-Kammer line, archaeoacoustics, pitch-standard history, or Mars seismic resonance. The nearest prior entries concern a different [R] anchor family entirely (OTA-SCI-0021 brain epochs / Mousley et al., RES-20260902-0CDC9069; OTA-SCI-0042 seismology via Guglielmi and Dumont, RES-20260829-38AEA63E and RES-20260829-A464A32B; OTA-SCI-0043 LLSVPs). Those audit named modern publications, whereas this topic audits a historically grounded acoustic/tuning claim plus Mars seismology and entropy metrics that no prior task has raised, so there is no semantic overlap to deduplicate.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 252,
+    "quality_flags": [
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "b694419c153f43f6"
+}
