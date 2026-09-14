@@ -12,7 +12,7 @@ on:
       - "tools/research/**"
       - "tools/telemetry/**"
       - "tools/worker/agent_worker_v76.py"
-      - "supabase/migrations/*ai_usage_ledger.sql"
+      - "supabase/migrations/*ai_usage*.sql"
       - ".github/workflows/knowledge-research-loop.yml"
       - ".github/workflows/targeted-research.yml"
       - ".github/workflows/ota-workqueue-research.yml"
@@ -73,8 +73,10 @@ jobs:
           workqueue_source=(root/'tools/research/discover-ota-workqueue.py').read_text(encoding='utf-8')
           scoped_source=(root/'tools/research/discover-ota-scoped.py').read_text(encoding='utf-8')
           usage_source=(root/'tools/research/usage_observer.py').read_text(encoding='utf-8')
+          telemetry_source=(root/'tools/telemetry/ai_usage.py').read_text(encoding='utf-8')
           worker_source=(root/'tools/worker/agent_worker_v76.py').read_text(encoding='utf-8')
           ledger_sql=(root/'supabase/migrations/20260914044000_ai_usage_ledger.sql').read_text(encoding='utf-8')
+          attempt_sql=(root/'supabase/migrations/20260914122500_ai_usage_attempt_claim.sql').read_text(encoding='utf-8')
           workflows=[
             (root/'.github/workflows/knowledge-research-loop.yml').read_text(encoding='utf-8'),
             (root/'.github/workflows/targeted-research.yml').read_text(encoding='utf-8'),
@@ -95,13 +97,28 @@ jobs:
               assert 'CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT: "1"' in workflow
               assert 'SUPABASE_URL:' in workflow
               assert 'SUPABASE_SECRET_KEY:' in workflow
+              assert 'KUEPER_AI_RETRY_REASON:' in workflow
 
-          assert 'log_intent(' in usage_source and 'log_event(' in usage_source
-          assert 'Telemetry failure is fail-closed' in worker_source
-          assert 'usage_intent(candidate, decision)' in worker_source
+          assert 'claim_attempt(' in usage_source
+          assert 'if not claim.get("execute_allowed")' in usage_source
+          assert 'claim_attempt(' in worker_source
+          assert 'if not usage.get("execute_allowed")' in worker_source
+          assert 'Telemetry failure is fail-closed' not in worker_source or 'fail-closed' in worker_source
+          assert 'classify_failure' in usage_source and 'classify_failure' in worker_source
+          assert 'retry_request_from_env' in telemetry_source
+          assert 'return "manual", reason' in telemetry_source
+          assert 'provider-billing' in telemetry_source
+          assert "'network','timeout','rate-limit','provider-5xx'" in attempt_sql
+          assert 'pg_advisory_xact_lock' in attempt_sql
+          assert 'kueper_claim_ai_usage_attempt' in attempt_sql
+          assert "'execute_allowed',false" in attempt_sql.replace(' ', '')
+          assert 'manual retry requires retry_reason' in attempt_sql
+          assert 'automatic-retry-limit-reached' in attempt_sql
+          assert 'semantic_key' in attempt_sql and 'attempt_no' in attempt_sql
+          assert 'unreconciled_calls' in attempt_sql
+          assert 'actual_cost_usd' in attempt_sql
           assert 'create table if not exists ecosystem.ai_usage_intents' in ledger_sql
           assert 'create table if not exists ecosystem.ai_usage_events' in ledger_sql
-          assert 'kueper_ai_usage_dashboard' in ledger_sql
           assert 'revoke all on ecosystem.ai_usage_intents from public, anon, authenticated' in ledger_sql
           assert 'revoke all on ecosystem.ai_usage_events from public, anon, authenticated' in ledger_sql
 
@@ -118,7 +135,7 @@ jobs:
           counts=Counter(module.weighted_rotation_choice(eligible,day)['id'] for day in range(cycle))
           expected={entry['id']:weight for entry,weight in zip(eligible,scaled)}
           assert dict(counts)==expected,(counts,expected)
-          print(json.dumps({'ok':True,'deepseek_claude_compat':'guarded','ai_usage_ledger':'guarded','research_usage_provenance':'fail-closed','rotation_cycle_days':cycle},indent=2))
+          print(json.dumps({'ok':True,'deepseek_claude_compat':'guarded','ai_usage_ledger':'guarded','semantic_dedup':'atomic','automatic_retry_limit':1,'manual_retry':'reason-required','cost_reconciliation':'explicit','rotation_cycle_days':cycle},indent=2))
           PY
 
       - name: Run candidate merge gate tests
