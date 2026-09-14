@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260914-3AD6CB18",
+  "status": "queued",
+  "created": "2026-09-14T09:02:47+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "external-tasks/open/EXT-OTA-NXU-20260911-ceres-children-and-freighter-born-child-canon.md",
+  "source_ref": "0d0a80517fa63cfc8ef7c37bf0363cdc67ccebb8",
+  "source_blob_sha": "46c1bbdfb5ee2bde4208e4709ab04a791bddcea3",
+  "title": "Entwicklung unter extremer Teilgravitation: Ceres (~0,03 g), das 0,35-g-Rätsel und das auf einem Raumfrachter geborene Kind",
+  "question": "Welche belastbaren Befunde (peer-reviewed, vorrangig 2015–2026) existieren zur Entwicklung von Knochen, Muskulatur, Vestibularsystem und Herz-Kreislauf unter dauerhafter Teilgravitation zwischen ~0,03 g und ~0,4 g — gibt es eine Gravitationsschwelle, unterhalb derer gesundes Aufwachsen nicht möglich ist —, und was ist über Fortpflanzung (Konzeption, Schwangerschaft, Geburt, frühkindliche Entwicklung) in Hypogravitation bekannt? Konkret zu beantworten: Kann eine Population, die auf Ceres bei ~0,03 g geboren und aufgezogen wurde, physiologisch plausibel sein — oder erzwingt die reale Evidenz ein künstlich rotiertes Wohn-/Kindersegment, worauf auch die widersprüchliche Manuskriptangabe 0,35 g hindeuten könnte? Und welche körperlichen und psychologischen Folgen wären für ein auf einem Raumfrachter geborenes Mädchen wissenschaftlich erwartbar, das erst spät erstmals planetarer oder künstlicher Gravitation ausgesetzt wird?",
+  "why_now": "Der Task ist der jüngste offene Auftrag des Repos (Commit 0d0a805, 2026-09-11) und blockiert zwei OTA-Rahmendossiers (OTA-SCI-0087, OTA-SCI-0088). Er enthält eine ungeklärte, entscheidungserhebliche Zahlenabweichung (0,03 g vs. 0,35 g) und die ausdrückliche Frage, welche physiologischen Merkmale bewusst kanonisch und welche nur provisorische Manuskriptbeschreibung sind. Ohne reale Physiologie kann NXU weder den Manuskriptfehler noch die Frage nach künstlicher Gravitation entscheiden — der Task bleibt sonst bei Figurenkanon stehen, statt eine wissenschaftlich tragfähige Antwort zurückzugeben.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Reale Raumfahrt- und Skelettphysiologie: ISS-/Langzeit-Mikrogravitationsdaten, Bed-Rest- und Nagetierstudien zu Knochen- und Muskelabbau, Vestibular- und kardiovaskuläre Anpassung, sowie der Forschungsstand zu Fortpflanzung und Embryonalentwicklung in Hypogravitation und zur Frage einer Schwellengravitation (~0,15–0,4 g).",
+  "publication_route_hint": null,
+  "project_weight": 1.0,
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein vorangegangener Kandidat berührt Physiologie unter Teilgravitation. RES-20260829-862AA763 betraf Mars-Geologie, Vergrabungstiefe und Lavatunnel-Eis als Wasserquelle — also den geologischen und versorgungstechnischen Rahmen, nicht die Entwicklung von Kindern unter reduzierter Gravitation. RES-20260829-02C11838 betraf Frequenzarchitektur und Phonetik, RES-20260829-A7BD20AF Kosmologie. Die hier auditierten realen Behauptungen (Gravitationsschwelle, Fortpflanzung in Hypogravitation, physiologische Folgen später Gravitationsumstellung) sind neu.",
+  "fingerprint": "3ad6cb18afcbdfc5"
+}
