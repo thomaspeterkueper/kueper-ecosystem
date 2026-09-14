@@ -1,4 +1,4 @@
-# Path-scoped validation for research policy, profiles and rotation.
+# Path-scoped validation for research policy, profiles, rotation and AI usage provenance.
 name: Research Config Check
 
 on:
@@ -10,17 +10,13 @@ on:
       - "research/policy.json"
       - "research/contracts/**"
       - "registry/projects.json"
-      - "tools/research/discover.py"
-      - "tools/research/discover-targeted.py"
-      - "tools/research/discover-ota-scoped.py"
-      - "tools/research/discover-ota-scoped-dryrun.py"
-      - "tools/research/discover-ota-workqueue.py"
-      - "tools/research/audit-ota-tech-objects.py"
-      - "tools/research/execute.py"
-      - "tools/research/execute-targeted.py"
-      - "tools/research/test_candidate_merge_gate.py"
-      - "tools/research/test_ota_tech_object_audit.py"
-      - "tools/research/agent-with-exa.mjs"
+      - "tools/research/**"
+      - "tools/telemetry/**"
+      - "tools/worker/agent_worker_v76.py"
+      - "supabase/migrations/*ai_usage_ledger.sql"
+      - ".github/workflows/knowledge-research-loop.yml"
+      - ".github/workflows/targeted-research.yml"
+      - ".github/workflows/ota-workqueue-research.yml"
       - ".github/workflows/ota-evidence-sweep.yml"
       - ".github/workflows/ota-tech-object-audit.yml"
       - ".github/workflows/research-config-check.yml"
@@ -47,10 +43,17 @@ jobs:
           python -m json.tool research/policy.json >/dev/null
           python -m json.tool registry/projects.json >/dev/null
           python -m json.tool research/contracts/ota-tech-object-v1.json >/dev/null
-          python -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/discover-ota-scoped-dryrun.py tools/research/discover-ota-workqueue.py tools/research/audit-ota-tech-objects.py tools/research/execute.py tools/research/execute-targeted.py tools/research/test_ota_tech_object_audit.py
+          python -m py_compile \
+            tools/research/discover.py tools/research/discover-targeted.py \
+            tools/research/discover-ota-scoped.py tools/research/discover-ota-scoped-dryrun.py \
+            tools/research/discover-ota-workqueue.py tools/research/audit-ota-tech-objects.py \
+            tools/research/execute.py tools/research/execute-targeted.py \
+            tools/research/execute-ledger.py tools/research/execute-targeted-ledger.py \
+            tools/research/usage_observer.py tools/telemetry/ai_usage.py \
+            tools/worker/agent_worker_v76.py tools/research/test_ota_tech_object_audit.py
           node --check tools/research/agent-with-exa.mjs
 
-      - name: Validate profile mappings and weighted rotation
+      - name: Validate profile mappings and usage governance
         shell: bash
         run: |
           set -euo pipefail
@@ -78,9 +81,16 @@ jobs:
           workqueue_source = (root / 'tools/research/discover-ota-workqueue.py').read_text(encoding='utf-8')
           execute_source = (root / 'tools/research/execute.py').read_text(encoding='utf-8')
           tech_audit_source = (root / 'tools/research/audit-ota-tech-objects.py').read_text(encoding='utf-8')
+          usage_source = (root / 'tools/research/usage_observer.py').read_text(encoding='utf-8')
+          worker_source = (root / 'tools/worker/agent_worker_v76.py').read_text(encoding='utf-8')
+          ledger_sql = (root / 'supabase/migrations/20260914044000_ai_usage_ledger.sql').read_text(encoding='utf-8')
           tech_contract = json.loads((root / 'research/contracts/ota-tech-object-v1.json').read_text(encoding='utf-8'))
+          knowledge_workflow = (root / '.github/workflows/knowledge-research-loop.yml').read_text(encoding='utf-8')
+          targeted_workflow = (root / '.github/workflows/targeted-research.yml').read_text(encoding='utf-8')
+          ota_workqueue_workflow = (root / '.github/workflows/ota-workqueue-research.yml').read_text(encoding='utf-8')
           sweep_source = (root / '.github/workflows/ota-evidence-sweep.yml').read_text(encoding='utf-8')
           tech_audit_workflow = (root / '.github/workflows/ota-tech-object-audit.yml').read_text(encoding='utf-8')
+
           assert 'source_blob_sha' in discover_source and 'source_ref' in discover_source
           assert 'source_ref' in workqueue_source and 'source_blob_sha' in workqueue_source
           assert 'HEAD:{source_path}' in workqueue_source and 'rev-parse", "HEAD' in workqueue_source
@@ -98,6 +108,24 @@ jobs:
           assert 'no queue writes' in sweep_source
           assert 'items[:2]' in sweep_source
 
+          deepseek_workflows = [knowledge_workflow, targeted_workflow, ota_workqueue_workflow]
+          for workflow in deepseek_workflows:
+              assert 'ANTHROPIC_BASE_URL: "https://api.deepseek.com/anthropic"' in workflow
+              assert 'ANTHROPIC_MODEL: "deepseek-v4-flash"' in workflow
+              assert 'CLAUDE_CODE_SUBAGENT_MODEL: "deepseek-v4-flash"' in workflow
+              assert 'CLAUDE_CODE_AUTO_COMPACT_WINDOW: "786432"' in workflow
+              assert 'CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT: "1"' in workflow
+              assert 'SUPABASE_URL: ${{ secrets.SUPABASE_URL }}' in workflow
+              assert 'SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}' in workflow
+
+          assert 'log_intent(' in usage_source and 'log_event(' in usage_source
+          assert 'Telemetry failure is fail-closed' in worker_source
+          assert 'usage_intent(candidate, decision)' in worker_source
+          assert 'create table if not exists ecosystem.ai_usage_intents' in ledger_sql
+          assert 'create table if not exists ecosystem.ai_usage_events' in ledger_sql
+          assert 'kueper_ai_usage_dashboard' in ledger_sql
+          assert 'provider payloads' not in ledger_sql.lower()
+
           assert tech_contract['id'] == 'ota-tech-object-v1'
           assert tech_contract['publication']['auto_update_noxia'] is False
           assert tech_contract['impact_reporting']['write_noxia_balancing'] is False
@@ -111,7 +139,6 @@ jobs:
           eligible = policy['eligible_projects']
           assert eligible
           assert all(entry.get('evidence_profile') in profiles for entry in eligible)
-
           projects = {p['id']: p for p in registry['projects']}
           assert all(entry['id'] in projects and projects[entry['id']].get('enabled', True) for entry in eligible)
           assert 'Axiomatisches Vakuum Integral' in projects['avi-modell']['notes']
@@ -120,20 +147,17 @@ jobs:
           spec = importlib.util.spec_from_file_location('discover', root / 'tools/research/discover.py')
           module = importlib.util.module_from_spec(spec)
           spec.loader.exec_module(module)
-
           scaled = [max(1, round(float(entry.get('weight', 1.0)) * module.ROTATION_WEIGHT_SCALE)) for entry in eligible]
           cycle = sum(scaled)
           counts = Counter(module.weighted_rotation_choice(eligible, day)['id'] for day in range(cycle))
           expected = {entry['id']: weight for entry, weight in zip(eligible, scaled)}
           assert dict(counts) == expected, (counts, expected)
 
-          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts), 'ota_source_contract': 'pinned', 'ota_workqueue_source_contract': 'pinned', 'ota_weekly_sweep': True, 'ota_discovery_scope': 'deterministic-document-scope-v1', 'ota_discovery_dry_run': 'non-mutating', 'ota_tech_object_audit': 'exact-blob-coverage-v1'}, indent=2))
+          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts), 'deepseek_claude_compat': 'guarded', 'ai_usage_ledger': 'guarded', 'research_usage_provenance': 'fail-closed'}, indent=2))
           PY
 
       - name: Run candidate merge gate tests
-        shell: bash
         run: python3 tools/research/test_candidate_merge_gate.py
 
       - name: Run OTA tech object audit tests
-        shell: bash
         run: python3 tools/research/test_ota_tech_object_audit.py
