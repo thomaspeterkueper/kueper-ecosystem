@@ -126,6 +126,8 @@ def retry_request_from_env(*, automatic_default: bool = False) -> tuple[str, str
         if explicit_mode == "manual" and not reason:
             raise RuntimeError("KUEPER_AI_RETRY_REASON is required for manual AI retries")
         return explicit_mode, reason
+    if reason:
+        return "manual", reason
     return ("automatic", None) if automatic_default else ("none", None)
 
 
