@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """KUEPER V7.6 worker — route/availability/budget decisions happen before claim.
 
-A task attempt is now consumed only after the selected model has an atomically reserved
+A task attempt is consumed only after the selected model has an atomically reserved
 LLM budget slot. Cost-window and provider deferrals update a still-pending task and do
 not create task_runs or increment attempt_count.
 
-Every provider decision is also written to the central AI usage ledger before a paid
-provider call can happen. Telemetry failure is fail-closed: no unaccounted AI call.
+Every provider decision is also written to the central AI usage ledger. A semantic
+usage attempt must be atomically claimed before budget/provider execution; duplicate or
+non-retryable work is fail-closed before a paid provider call can happen.
 """
 from __future__ import annotations
 
@@ -25,7 +26,12 @@ import agent_worker as worker  # noqa: E402
 import agent_worker_v71 as v71  # noqa: E402
 import agent_worker_v74 as v74  # noqa: E402
 import agent_worker_v75 as v75  # noqa: E402
-from tools.telemetry.ai_usage import log_event, log_intent  # noqa: E402
+from tools.telemetry.ai_usage import (  # noqa: E402
+    claim_attempt,
+    classify_failure,
+    log_event,
+    retry_request_from_env,
+)
 
 BUDGET_REASONS = {"daily-call-budget-exhausted", "daily-pro-budget-exhausted", "provider-budget-disabled"}
 
@@ -54,25 +60,29 @@ def claim_for_execution(db: Any, task: dict[str, Any], worker_id: str, decision:
     return None, response
 
 
-def usage_intent(candidate: dict[str, Any], decision: Any) -> dict[str, Any]:
+def usage_attempt(candidate: dict[str, Any], decision: Any) -> dict[str, Any]:
     task_id = str(candidate["id"])
     repository = candidate.get("repository")
     external_id = candidate.get("external_id")
     task_type = str(candidate.get("type") or "unknown")
     trigger = os.environ.get("GITHUB_EVENT_NAME") or "worker"
-    dedup = f"agent-worker-v7:{task_id}:{decision.provider}:{decision.model}"
-    return log_intent(
+    semantic_key = f"agent-worker-v7:{task_id}:{decision.provider}:{decision.model}"
+    retry_mode, retry_reason = retry_request_from_env(
+        automatic_default=int(candidate.get("attempt_count") or 0) > 0,
+    )
+    return claim_attempt(
         source_system="agent-worker-v7",
         trigger_type=trigger,
         reason=f"{task_type}: {decision.reason}",
         provider=decision.provider,
         model=decision.model,
-        dedup_key=dedup,
+        semantic_key=semantic_key,
         repository=repository,
         task_id=task_id,
         workflow_run_id=workflow_run_id(),
         commit_sha=os.environ.get("GITHUB_SHA"),
-        is_retry=int(candidate.get("attempt_count") or 0) > 0,
+        retry_mode=retry_mode,
+        retry_reason=retry_reason,
         metadata={"external_id": external_id, "task_type": task_type, "priority": candidate.get("priority")},
     )
 
@@ -101,10 +111,20 @@ def main() -> int:
         decision = worker.route(candidate)
         task_id = str(candidate["id"])
 
-        # Governance invariant: a provider decision must have a durable reason before
-        # any availability/budget/claim/provider action can proceed.
-        intent = usage_intent(candidate, decision)
-        intent_id = str(intent["id"])
+        # Governance invariant: semantic work must be atomically claimed before
+        # provider availability, budget reservation or provider execution.
+        usage = usage_attempt(candidate, decision)
+        intent_id = str(usage["id"])
+        if not usage.get("execute_allowed"):
+            results.append({
+                "task": task_id,
+                "result": "usage-deduped",
+                "reason": usage.get("decision"),
+                "failure_class": usage.get("failure_class"),
+                "attempt_no": usage.get("attempt_no"),
+                "usage_intent": intent_id,
+            })
+            continue
 
         if decision.provider == "deepseek" and not db.rpc("kueper_provider_available", {"p_provider": "deepseek"}):
             available_at = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=6)).isoformat()
@@ -168,19 +188,24 @@ def main() -> int:
                           workflow_run_id=workflow_run_id(), metadata={"outcome": "completed"})
                 results.append({"task": task_id, "result": "completed", "provider": decision.provider, "model": decision.model, "budget": budget, "usage_intent": intent_id})
         except worker.ProviderUnavailable as exc:
+            failure_class = classify_failure(exc.code, exc.message)
             log_event(intent_id, "failed", provider=exc.provider, model=decision.model,
-                      workflow_run_id=workflow_run_id(), error_code=str(exc.code), error_message=exc.message)
+                      workflow_run_id=workflow_run_id(), error_code=str(exc.code), error_message=exc.message,
+                      failure_class=failure_class)
             db.rpc("kueper_pause_provider", {"p_provider": exc.provider, "p_reason": "billing-or-provider-unavailable", "p_error_code": exc.code, "p_error_message": exc.message[:2000], "p_pause_seconds": exc.pause_seconds})
             available_at = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(seconds=exc.pause_seconds)).isoformat()
             db.rpc("kueper_reschedule_provider_task", {"p_task_id": task_id, "p_lease_token": lease, "p_provider": exc.provider, "p_reason": str(exc), "p_available_at": available_at})
-            results.append({"task": task_id, "result": "provider-paused", "provider": exc.provider, "available_at": available_at, "usage_intent": intent_id})
+            results.append({"task": task_id, "result": "provider-paused", "provider": exc.provider, "failure_class": failure_class, "available_at": available_at, "usage_intent": intent_id})
             break
         except Exception as exc:
             task_failures += 1
             try:
+                message = str(exc)
+                failure_class = classify_failure("task-execution-error", message)
                 log_event(intent_id, "failed", provider=decision.provider, model=decision.model,
-                          workflow_run_id=workflow_run_id(), error_code="task-execution-error", error_message=str(exc))
-                db.rpc("kueper_fail_task", {"p_task_id": task_id, "p_lease_token": lease, "p_error": str(exc)[:4000], "p_retry_delay_seconds": 300})
+                          workflow_run_id=workflow_run_id(), error_code="task-execution-error", error_message=message,
+                          failure_class=failure_class)
+                db.rpc("kueper_fail_task", {"p_task_id": task_id, "p_lease_token": lease, "p_error": message[:4000], "p_retry_delay_seconds": 300})
             except Exception as fail_exc:
                 print(f"ERROR could not record task failure: {fail_exc}", flush=True)
             print(f"::error title=Task execution failed::{task_id}: {str(exc)[:500]}", flush=True)
