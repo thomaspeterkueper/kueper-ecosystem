@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-TEC0036A",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-29T20:11:00+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -43,5 +43,27 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-29T20:24:50+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/48"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/48",
+  "validated_at": "2026-09-14T10:47:22+00:00",
+  "validation_summary": "Der Kandidat prüft die [R]-Anker und [H]-Annahmen von OTA-TEC-0036 (Bemannter Erkundungsrover Typ P, Mond-Frühphase) gegen Apollo-LRV-Primärdaten (Betriebsgrenzen, Grand-Prix-Handling, Dust-Lessons), Diviner-Oberflächentemperaturen, NASA-STLE/ESMATS-Staubtests sowie die aktuellen Druckrover- und Batterieprogramme (NASA SEV, JAXA/Toyota Lunar Cruiser, Artemis LTV, GM/Solidion-Kältebatterien). Befund: Die zentralen [R]-Anker (1/6-g-Traktion und Sprung-/Rutschneigung, Regolith-Abrasivität und Elektrostatik, Temperaturband, fehlende Magnetosphäre, Druckverlustrisiko, Reichweitenlimitierung durch Energie und Life-Support) sind real und gut belegt; die [H]-Annahmen (Druckkabine 2–4 Personen, 8-h-Batterieendurance, Kälte-Batterierisiko) sind plausibel und durch heutige Referenzarchitekturen gestützt. Entscheidend für die Bewertung gegen den aktuellen Projektstand: Die drei gewichtigsten, vom Kandidaten markierten Korrekturen sind im Dossier bereits umgesetzt — §3 enthält die eingeengte Vakuum",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260914-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260914-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260914-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
