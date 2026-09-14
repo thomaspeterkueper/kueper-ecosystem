@@ -61,7 +61,7 @@ type AIUsage = {
 };
 
 function money(value: number | string | null | undefined) {
-  if (value === null || value === undefined) return "nicht reconciled";
+  if (value === null || value === undefined) return "—";
   const amount = Number(value);
   return `$${amount.toFixed(amount < 1 ? 3 : 2)}`;
 }
@@ -113,7 +113,7 @@ export default function AIUsagePage() {
             <article><span>Geplant</span><b>{usage.planned}</b><small>{usage.executed} tatsächlich gestartet</small></article>
             <article><span>Abgeschlossen</span><b>{usage.completed}</b><small>{usage.failed} fehlgeschlagen · {usage.blocked} blockiert</small></article>
             <article><span>Tokens</span><b>{totalTokens.toLocaleString("de-DE")}</b><small>{Number(usage.input_tokens || 0).toLocaleString("de-DE")} in · {Number(usage.output_tokens || 0).toLocaleString("de-DE")} out</small></article>
-            <article><span>Kosten heute</span><b>{money(usage.actual_cost_usd)}</b><small>{usage.unreconciled_calls} Calls noch nicht reconciled · {usage.deduped} dedupliziert</small></article>
+            <article><span>Kosten heute</span><b>{usage.actual_cost_usd === null ? "nicht reconciled" : money(usage.actual_cost_usd)}</b><small>{usage.unreconciled_calls} Calls offen · {money(usage.estimated_cost_usd)} geschätzt · {usage.deduped} dedupliziert</small></article>
           </section>
 
           <section className={styles.panel}>
@@ -124,7 +124,7 @@ export default function AIUsagePage() {
                   <strong>{source.source_system}</strong>
                   <span>{source.executed}/{source.planned} Calls</span>
                   <span>{source.completed} fertig · {source.blocked} blockiert · {source.skipped} übersprungen</span>
-                  <b>{money(source.actual_cost_usd)}</b>
+                  <b>{source.actual_cost_usd === null ? "nicht reconciled" : money(source.actual_cost_usd)}</b>
                   <small>{source.unreconciled_calls} unreconciled · {money(source.estimated_cost_usd)} geschätzt</small>
                 </article>
               ))}
