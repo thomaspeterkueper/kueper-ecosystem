@@ -1,6 +1,6 @@
 {
   "id": "RES-20260829-TEC0037A",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-29T20:11:20+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -42,5 +42,15 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-29T20:31:12+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/49"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/49",
+  "validated_at": "2026-09-14T10:48:49+00:00",
+  "validation_summary": "Der Kandidat auditiert die realen Sensor- und Umweltanker von OTA-TEC-0037-2026-DE (VEX-47, Basistyp) und bestaetigt die vorab klassifizierte Klasse R fuer alle vier Auditbereiche (Sensorprinzipien, Staub/Haze-Wirkung, Thermik/Packaging, Audio-Medium). Ergebnis der Widerspruchspruefung: kein Konflikt - weder gegen die Primaerliteratur (S1-S25) noch gegen den aktuellen Projektstand. Entscheidend fuer die Bewertung: Das Dossier liegt im Repository bereits als v1.1 mit einem 'Evidenzaudit v1.1 - 2026-08-30' vor. Drei der vier vom Kandidaten formulierten Wortlaut-Pflichten sind dort schon umgesetzt: (a) Audio-System mediumabhaengig, im Vakuum kein luftgetragener Schall, nur Koerperschall/Kontaktvibration oder Funk (§4, §8); (b) Titan-Optik als Haze-/NIR-Fenster-Umgebung und Mars-Staub als Sensor-Randbedingung (§3, §8); (c) Atmosphaerenanalyse umgebungsspezifisch, entfaellt in atmosphaerenlosen Asteroidenumgebungen (§3, §8); (e) Temperaturbereich -180 bis +120 °C ausdruecklich als Herstelle",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260914-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
