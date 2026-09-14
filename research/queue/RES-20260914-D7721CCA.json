@@ -1,6 +1,6 @@
 {
   "id": "RES-20260914-D7721CCA",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-14T09:02:48+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Die vorangegangenen Kandidaten betreffen Schumann-/432-Hz-Frequenzarchitektur, Mars-Geologie und Vergrabungstiefen sowie Kosmologie (S8-Spannung, LOD, Am-241, Euclid). Keiner berührt Bewusstseinstheorie, KI-Emergenz oder Falsifizierbarkeit von Bewusstseinszuschreibungen. Der Gegenstand ist neu und nicht als Umformulierung eines früheren Themas lesbar.",
-  "fingerprint": "d7721cca1774d51e"
+  "fingerprint": "d7721cca1774d51e",
+  "updated_at": "2026-09-14T09:17:47+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/117"
 }
