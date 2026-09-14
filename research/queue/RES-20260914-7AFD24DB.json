@@ -1,0 +1,36 @@
+{
+  "id": "RES-20260914-7AFD24DB",
+  "status": "queued",
+  "created": "2026-09-14T09:02:49+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "README.md",
+  "source_ref": "0d0a80517fa63cfc8ef7c37bf0363cdc67ccebb8",
+  "source_blob_sha": "bbb3f2fefdeb5714764e537ab3d4e9bf5554f943",
+  "title": "Baumeister-Ursprung ~60.000 BCE: Was Paläoanthropologie und Populationsgenetik für eine proto-menschliche Vorfahren-Zivilisation zulassen",
+  "question": "Was besagt der aktuelle Forschungsstand (Populationsgenetik, Archäologie, Quartärgeografie) zur Zeitspanne um 60.000 BCE: Zeitpunkt und Routen der Ausbreitung des Homo sapiens aus Afrika, effektive Populationsgrößen und Flaschenhälse, nachgewiesene technologische und organisatorische Komplexität (Seefahrt, Körperschmuck, Ocker, Siedlungsbau, Fernkontakte) sowie Küstenlinien und Landbrücken (Sundaland, Doggerland, arabischer Küstenweg)? Welche Elemente der Setzung „Die Baumeister waren proto-menschliche Vorfahren\" mit einer Diaspora und einem gemeinsamen Sprachursprung über ~62.000 Jahre werden dadurch gestützt, welche eingeschränkt, und wo müsste der Kanon auf reale Gegenbefunde reagieren — insbesondere bei der Frage, welche Organisations- und Technologiekomplexität für diesen Zeithorizont belegbar ist?",
+  "why_now": "Die Baumeister sind die tragende Vorgeschichte des Gesamtwerks, aber im Repo bislang reine Behauptung: `NXU-ADR-0001` §6 Schritt 6 („Import Baumeister-/Zereya-Material aus Der Große Rahmen\") steht noch aus, und `canon/` enthält keinen einzigen Baumeister-Inhalt. Zugleich sind Readme-Premisse („Rückkehr, nicht Invasion\", „proto-menschliche Vorfahren\") und der Zeithorizont ~60.000 BCE nirgends gegen den realen Befundstand gehalten. Der Import ist der nächste ohnehin anstehende Arbeitsschritt — die Prüfung sollte davor liegen, sonst wird der Ursprungsmythos in einem Zug über alle Räume eingefroren.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Paläoanthropologie und Populationsgenetik des oberen Pleistozäns um 60.000 BCE: Dispersionszeitpunkte und -korridore des Homo sapiens, aDNA-basierte Populationsgrößen und Admixturen, sowie der archäologische Befundstand zu maritimer Ausbreitung und symbolischem Verhalten an dieser Zeitschwelle.",
+  "publication_route_hint": null,
+  "project_weight": 1.0,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keiner der drei vorangegangenen Kandidaten behandelt Paläoanthropologie, Genetik oder Quartärgeografie. RES-20260829-862AA763 betraf Mars-Resurfacing und Lavatunnel-Eis, RES-20260829-02C11838 Frequenzen und Dhrupad-Phonetik, RES-20260829-A7BD20AF Kosmologie. Die Herkunftsebene des Gesamtwerks wurde bisher nicht extern geprüft.",
+  "fingerprint": "7afd24db2c6a5be4"
+}
