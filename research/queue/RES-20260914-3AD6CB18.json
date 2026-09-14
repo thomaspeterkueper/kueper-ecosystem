@@ -1,6 +1,6 @@
 {
   "id": "RES-20260914-3AD6CB18",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-14T09:02:47+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein vorangegangener Kandidat berührt Physiologie unter Teilgravitation. RES-20260829-862AA763 betraf Mars-Geologie, Vergrabungstiefe und Lavatunnel-Eis als Wasserquelle — also den geologischen und versorgungstechnischen Rahmen, nicht die Entwicklung von Kindern unter reduzierter Gravitation. RES-20260829-02C11838 betraf Frequenzarchitektur und Phonetik, RES-20260829-A7BD20AF Kosmologie. Die hier auditierten realen Behauptungen (Gravitationsschwelle, Fortpflanzung in Hypogravitation, physiologische Folgen später Gravitationsumstellung) sind neu.",
-  "fingerprint": "3ad6cb18afcbdfc5"
+  "fingerprint": "3ad6cb18afcbdfc5",
+  "updated_at": "2026-09-14T09:12:24+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/116"
 }
