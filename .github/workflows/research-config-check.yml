@@ -124,7 +124,8 @@ jobs:
           assert 'create table if not exists ecosystem.ai_usage_intents' in ledger_sql
           assert 'create table if not exists ecosystem.ai_usage_events' in ledger_sql
           assert 'kueper_ai_usage_dashboard' in ledger_sql
-          assert 'provider payloads' not in ledger_sql.lower()
+          assert 'revoke all on ecosystem.ai_usage_intents from public, anon, authenticated' in ledger_sql
+          assert 'revoke all on ecosystem.ai_usage_events from public, anon, authenticated' in ledger_sql
 
           assert tech_contract['id'] == 'ota-tech-object-v1'
           assert tech_contract['publication']['auto_update_noxia'] is False
