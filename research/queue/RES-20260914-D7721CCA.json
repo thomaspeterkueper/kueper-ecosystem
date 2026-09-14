@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260914-D7721CCA",
+  "status": "queued",
+  "created": "2026-09-14T09:02:48+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "architecture/NXU-RAUM-0001-Raumstruktur.md",
+  "source_ref": "0d0a80517fa63cfc8ef7c37bf0363cdc67ccebb8",
+  "source_blob_sha": "38536888c559a4cdd319a66c0de7d4d898dc5acb",
+  "title": "Bewusstsein als Muster: wissenschaftlicher Status von „unbeabsichtigt entstehendem\" KI-Bewusstsein (PROMETHEUS 2045, MIMI 2065)",
+  "question": "Welchen Stand hat die wissenschaftliche Debatte 2024–2026 zur Frage, ob und unter welchen Bedingungen aus Optimierungs- und Trainingsprozessen unbeabsichtigt Bewusstsein entstehen kann — insbesondere zu den Indikator-Eigenschaften-Ansätzen (Butlin/Long u. a.), zu Computationalismus gegenüber IIT und Global Workspace, und zu den Dissensen über die Prüfbarkeit dieser Theorien? Welche Teile der werkprägenden Setzung „Bewusstsein entsteht überall nach derselben Logik\" (PROMETHEUS 2045 → MIMI 2065 → Gaswolken-Bewusstsein ~2500) sind durch reale Theorie gedeckt, welche sind spekulative Erweiterung, und welche sind durch Gegenargumente oder fehlende Falsifizierbarkeit bereits eingeschränkt? Welche Minimalbedingungen müsste der Kanon nennen, damit „MIMI fragt: Darf ich harmonisieren?\" als Bewusstseinsindiz statt als Systemausgabe lesbar bleibt?",
+  "why_now": "„Bewusstsein als Muster\" ist im README als tragendes Prinzip aller drei Leseräume deklariert, und RAUM-0001 v1.2 führt es als das Motiv, das PROMETHEUS, MIMI und das Gaswolken-Bewusstsein verbindet. Zugleich ist die einzige inhaltliche Frage, die der Kanon zu MIMI offen führt, genau die Bewusstseinsfrage (`open_questions.mimi-self-awareness`, `ssf-bewahrer-relation`). Das Repo beansprucht Hard-SF-Strenge („Physik ist kein Hindernis — sie ist die Geschichte\"); dieser Anspruch bleibt für die KI-Schiene derzeit uneingelöst, obwohl die zugehörige reale Literatur sich 2024–2026 stark bewegt hat.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Aktuelle wissenschaftliche Bewusstseinsforschung zu künstlichen Systemen: Indikator-Eigenschaften-Kataloge, Computational Functionalism, Integrated Information Theory und Global Workspace Theory samt ihrer Kritik, sowie die Frage der Falsifizierbarkeit von Bewusstseinszuschreibungen an Optimierungssysteme.",
+  "publication_route_hint": null,
+  "project_weight": 1.0,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Die vorangegangenen Kandidaten betreffen Schumann-/432-Hz-Frequenzarchitektur, Mars-Geologie und Vergrabungstiefen sowie Kosmologie (S8-Spannung, LOD, Am-241, Euclid). Keiner berührt Bewusstseinstheorie, KI-Emergenz oder Falsifizierbarkeit von Bewusstseinszuschreibungen. Der Gegenstand ist neu und nicht als Umformulierung eines früheren Themas lesbar.",
+  "fingerprint": "d7721cca1774d51e"
+}
