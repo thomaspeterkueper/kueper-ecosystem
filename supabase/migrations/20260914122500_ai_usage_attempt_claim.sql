@@ -240,14 +240,18 @@ begin
     left(p_error_message,4000),coalesce(p_metadata,'{}'::jsonb)
   ) returning id into event_id;
 
-  update ecosystem.ai_usage_intents
-     set status = p_event_type,
-         updated_at = now(),
-         started_at = case when p_event_type='started' then coalesce(started_at,now()) else started_at end,
-         finished_at = case when p_event_type in ('completed','failed') then now() else finished_at end,
-         skip_reason = case when p_event_type in ('skipped','blocked') then coalesce(left(p_error_message,1000),skip_reason) else skip_reason end,
-         failure_class = case when p_event_type='failed' then p_failure_class else failure_class end
-   where id = p_intent_id;
+  -- deduped is an observation about a repeated request, not a lifecycle state of
+  -- the original completed/failed attempt. Preserve the attempt status.
+  if p_event_type <> 'deduped' then
+    update ecosystem.ai_usage_intents
+       set status = p_event_type,
+           updated_at = now(),
+           started_at = case when p_event_type='started' then coalesce(started_at,now()) else started_at end,
+           finished_at = case when p_event_type in ('completed','failed') then now() else finished_at end,
+           skip_reason = case when p_event_type in ('skipped','blocked') then coalesce(left(p_error_message,1000),skip_reason) else skip_reason end,
+           failure_class = case when p_event_type='failed' then p_failure_class else failure_class end
+     where id = p_intent_id;
+  end if;
 
   return event_id;
 end;
