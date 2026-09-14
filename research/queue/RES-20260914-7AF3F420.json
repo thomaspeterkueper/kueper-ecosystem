@@ -1,0 +1,48 @@
+{
+  "id": "RES-20260914-7AF3F420",
+  "status": "queued",
+  "created": "2026-09-14T09:18:54+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-RED-0003-2091-DE.md",
+  "source_ref": "37f84b65ef7e5f2c44510e292b2c6a641d8e23b5",
+  "source_blob_sha": "4475ff1d8a44f65355c803f62c7756d6339ad7fb",
+  "document_signature": "OTA-RED-0003-2091-DE",
+  "title": "Externer Anker-Audit zu OTA-RED-0003: LTT 9779 b (Cuancoa), die 19,008-h-Periode der Sequenz V41 und der Vergleich mit realen Rotations-/Umlaufperioden",
+  "question": "Source-grounded audit of the externally checkable layer of OTA-RED-0003-2091-DE (Sections I, II.2.1 and III.3.2), against primary exoplanet and solar-system literature. (1) The document states the external source of 'Sequenz V41' is 'LTT 9779 b (Cuancoa), Entfernung 260 Lichtjahre' with an 'Identisch' fundamental period of 19,008 h (+-0,003 h). Verify the real parameters of LTT 9779 b against the primary discovery and follow-up literature (Jenkins et al. 2020, Nature Astronomy, and subsequent TESS/Spitzer/HST/JWST-class publications): actual orbital period in days and converted to hours, distance in light-years and parsecs, host-star spectral type and effective temperature, planet mass/radius and any measured dayside/equilibrium temperature, discovery year, and current observational status. Report explicitly whether 260 ly and 19,008 h are numerically correct and give the correct values where they are not. (2) Assess whether 'Cuancoa' is an officially recognized IAU name for LTT 9779 b (or for its host star) and, if not, what the approved designation and any approved name actually is. (3) The document claims the period 'entspricht keiner bekannten Rotation im Sonnensystem', cites Mars 24,6 h, Erde 24,0 h, Jupiter 9,9 h and says the nearest match would be 'Neptuns Mond Proteus (26,9 h)'. Verify each cited rotation period, check whether any solar-system body (including satellites, tidally locked moons and ring/dust phenomena) or any documented real periodic astrophysical signal falls closer to 19,008 h, and state whether the 'nearest match' claim is correct. (4) Method and statistics: the document asserts a 'statistisch hochsignifikante Korrelation' (p < 0,0001) between a fictional monitored signal and the exoplanet, plus amplitude agreement 0,38 (+-0,02) vs 0,38 (+-0,04) and a correlation coefficient 0,9731. State what such figures can and cannot establish when the compared quantity is another body's orbital period, and what a defensible formulation would be for the archive. (5) Internal-consistency and instrument plausibility of Section I: seismograph passband 0,001-1000 Hz, EM-field detector DC-100 kHz, IR thermograph, redundant Noctis array, and a four-year total of 4,7 PB for 08.01.2087-31.12.2090 - compute the implied per-day data rate and report whether it is consistent with the stated sensor complement and with real planetary-geophysical monitoring practice. (6) Numerological claim: the seven phase durations are said to contain Pi (3,14 h) and Euler (2,72 h), and Section III lists a '72 Hz Hexagon-Oberton'. Compare the cited values with the real constants pi and e and with the real origin of hexagonal patterns in planetary/fluid contexts; report how many durations in a seven-part partition would be expected to land within a few percent of a named mathematical constant by chance, so the document's 'zu sauber, zu absichtlich' inference can be judged. (7) Identify the sentences in Sections I-III that should be reclassified [R]/[OFFEN] and those that must remain [F]/[W]. Do NOT evaluate or alter the fictional layer: the V41 sequence narrative, the monolith activation of 08.01.2087, the 03:14 event of 12.09.2091, the curator notes [KN-x.x], the LTT 9779 b 'Spiegel-Waechter'/Cuancoa framing, OTA-RED-0012-2171-DE, or any NOXIA/OTA balancing value. Do NOT re-ask the 127-Hz Mars-crustal-resonance and 432-Hz questions already handled by RES-20260913-B694419C; note only where those figures are reused incidentally.",
+  "why_now": "OTA-RED-0003 is a priority-10 workqueue item whose central 'external correlation' is anchored to a real, named exoplanet and a real numerical period. The document treats that numerical coincidence as statistically significant evidence (p < 0,0001) and uses it as the load-bearing bridge between the fictional monolith system and the saga's cosmological claims. LTT 9779 b's observational record has developed substantially since its 2020 discovery (follow-up atmosphere/dayside studies, refined ephemeris, possible IAU naming), and the current archive text asserts distance, period and naming as fact. Verifying now either hardens an unusually well-anchored document or stops the archive from presenting a chance numerical identity as a measured correlation.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "real_world_anchor": "The real ultra-hot Neptune LTT 9779 b: its actual orbital period, distance, host star and published parameters; official IAU exoplanet nomenclature; documented rotation and orbital periods of solar-system bodies; the real numerical values of pi and e; real planetary-geophysical sensor passbands and terrestrial monitoring data-rate practice.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260913-B694419C"
+  ],
+  "novelty_reason": "RES-20260913-B694419C audited OTA-SCI-0004-2087-DE and covered the 127-Hz 'Mars-Krusten-Resonanz' and 432-Hz 'sacred temple frequency' claims. This topic is materially distinct: it audits a different document (OTA-RED-0003-2091-DE) and a dimension never previously researched - the real exoplanet LTT 9779 b as the claimed external correlation partner, the correctness of its period/distance/name, the solar-system rotation comparison, the statistical meaning of a period identity, and the sensor/data-volume consistency of the monitoring array in Section I.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 935,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "7af3f420dd60ff3e"
+}
