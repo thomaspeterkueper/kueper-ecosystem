@@ -2,6 +2,11 @@ name: OTA Workqueue Research
 
 on:
   workflow_dispatch:
+    inputs:
+      retry_reason:
+        description: "Optional manual AI retry reason (for example: provider-balance-restored)"
+        required: false
+        type: string
   schedule:
     - cron: "53 3 * * *"
   push:
@@ -29,6 +34,7 @@ jobs:
       AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      KUEPER_AI_RETRY_REASON: ${{ github.event.inputs.retry_reason }}
       ANTHROPIC_BASE_URL: "https://api.deepseek.com/anthropic"
       ANTHROPIC_AUTH_TOKEN: ${{ secrets.DEEPSEEK_API_KEY }}
       ANTHROPIC_MODEL: "deepseek-v4-flash"
