@@ -1,0 +1,51 @@
+{
+  "id": "RES-20260914-6507B47E",
+  "status": "queued",
+  "created": "2026-09-14T09:18:54+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0015-2082-DE.md",
+  "source_ref": "37f84b65ef7e5f2c44510e292b2c6a641d8e23b5",
+  "source_blob_sha": "798fa86e0ff1a05c10fe8004939600511a21c7ef",
+  "document_signature": "OTA-TEC-0015-2082-DE",
+  "title": "Engineering-Audit der OTA-TEC-0015 LRV-15 'Dust-Walker' Spezifikation: SML-Reifen, Graphen-Aluminium, 6x40 kW Radnabenmotoren, 50-m-GPR-Hohlraumerkennung und S-Band-Direktlink",
+  "question": "Source-grounded audit of the exact OTA-TEC-0015-2082-DE specification sections 1-3 against real planetary-vehicle, materials, radar and telecommunications engineering evidence. (1) Tires: the document specifies shape-memory-alloy (SML) metal-mesh tires that adapt stiffness to sand/rock/ice and are described as 'pannenfrei' (puncture-free). Assess against real superelastic/SMA and metal-mesh ('spring tire') research for planetary rovers (NASA Glenn-class wire-mesh tires, NiTi superelasticity, fatigue and permanent-set behaviour) and state whether 'pannenfrei' is defensible or must be narrowed to a fatigue/permanent-deformation failure mode. (2) Structure: 'Graphen-verstaerktes Aluminium (Verbundbauweise)' - report the demonstrated state of graphene-reinforced aluminium composites (dispersion, load transfer, achievable property gains, manufacturing scale) and whether the term is defensible as a bulk chassis material for a 2082 production rover. (3) Drivetrain and thermal: six independent wheel-hub motors at 6 x 40 kW (240 kW total) with 45 km/h on level ground and 15 km/h off-road, raised to ~70 km/h by an unauthorized software modification. Using the stated or derivable vehicle mass, check the traction/power demand and whether sealed hub motors can reject their waste heat at Mars surface conditions (mean pressure ~6-7 mbar, negligible convective cooling); report whether the stated motor-temperature rise and lifetime penalty are physically plausible, and what a defensible specification would be. (4) GPR: 'Erkennung unterirdischer Hohlraeme bis 50 m Tiefe'. Compare with real Mars and lunar ground-penetrating radar results (Perseverance RIMFAX penetration depths, orbital MARSIS/SHARAD sounding, Chang'e-3/4 lunar penetrating radar) and report which frequency band and regolith/rock conditions could support ~50 m cavity detection on Mars, and where the claim must be narrowed. (5) Communications: 'High-Gain S-Band Antenne (Direkt zur Erde/Satellit)' - verify real Mars-Earth direct-to-Earth practice (X-band DTE from surface assets via the DSN, UHF relay via orbiters, S-band use by Mars missions), the achievable data rate for a rover-class high-gain S-band antenna against 34 m and 70 m DSN apertures, and the pointing/link-budget constraints; state whether the claim is defensible as written. (6) Life support and consumables: 2 crew nominal / 4 crew emergency, integrated CO2 scrubber plus electrolysis oxygen recovery, 14 days of standard supplies at 92% water recycling - compare with real regenerative ECLSS performance (ISS water recovery and oxygen generation) and with the consumable mass that 14 days for 4 crew implies; state whether 92% is realistic and what the emergency-4-crew configuration requires. (7) Identify which specification lines should be narrowed, corrected or reclassified between [S]/[R]/[F]. Do NOT evaluate or alter the fictional layer: HeliosCorp / Helios Dynamics, Utopia Planitia assembly, model year 2082, vehicle ID V-402, the Marek Kowalski modification annex (transponder ghosting, speed-limiter removal, EMI lead box, Kasumi Nakahara's second tablet), the curatorial note, or any NOXIA/OTA balancing value.",
+  "why_now": "OTA-TEC-0015 is a priority-10 workqueue item and the only Mars surface vehicle whose mobility, sensor and communications layer has never been externally audited, while comparable dossiers (Cydonia Robotics Surveyor-9 in RES-20260913-14D0D473, the lunar rover in RES-20260829-TEC0036A) have already been through evidence review. Its [S]-marked base specification is load-bearing: the same LRV-15 is referenced as canonical hardware by OTA-ORG-0001-2079-DE and the Kowalski/Nakahara document cluster. Sections 1-3 are written as quotable component facts (240 kW drivetrain, 50 m GPR, direct-to-Earth S-band, 92% water recycling), so the archive is currently publishing unverified engineering numbers as neutral specifications; auditing now prevents those numbers from propagating into further canonical documents.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "S"
+  ],
+  "real_world_anchor": "Real planetary rover tire and metal-mesh/SMA wheel research; graphene-reinforced aluminium composite literature; Mars surface pressure and convective heat-transfer limits for sealed electric hub motors; demonstrated Mars/lunar ground-penetrating radar penetration depths (RIMFAX, MARSIS/SHARAD, Chang'e-3/4 LPR); Mars direct-to-Earth and relay telecom practice and DSN link budgets; ISS regenerative ECLSS water-recovery and oxygen-generation performance.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260913-14D0D473",
+    "RES-20260829-TEC0036A"
+  ],
+  "novelty_reason": "RES-20260913-14D0D473 audited OTA-TEC-0003-2087-DE (Cydonia Surveyor-9: legged vacuum-suction adhesion, through-rock UHF, lidar/XRF) and RES-20260829-TEC0036A audited OTA-TEC-0036-2026-DE (lunar pressurized rover traction, dust, thermal). Neither covered OTA-TEC-0015-2082-DE nor its specifics: SMA/metal-mesh tires, graphene-aluminium chassis, 6 x 40 kW hub-motor thermal limits on Mars, 50 m GPR cavity detection, S-band direct-to-Earth link budget, or the 92%/14-day consumable claims for a 2-4 crew Mars LRV.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 312,
+    "quality_flags": [
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "6507b47e9aa548be"
+}
