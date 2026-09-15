@@ -1,0 +1,42 @@
+{
+  "id": "RES-20260915-D8CB8EC4",
+  "status": "queued",
+  "created": "2026-09-15T08:47:22+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/grammatik.astro",
+  "source_ref": "be279026e906ef54fcf4d453864e055e8f65d7e1",
+  "source_blob_sha": "ae2ef075da72365a3669e45f903adb57b498c3ce",
+  "title": "Resonanz-Aspekte (-om/-ath/-il) und -tum gegen die Typologie der Realitätsstatus- und Evidentialitätskategorien prüfen",
+  "question": "Welche grammatischen Kategorien sind in dokumentierten Sprachen für das Verhältnis von Vorgang zu Erwartung, Ziel oder Erfüllung belegt – insbesondere Frustrativ, Iamitiv/'already', Avertiv, Absentiv und verwandte Realitätsstatus-Marker –, wie werden sie typischerweise grammatikalisiert und mit Aspekt und Evidentialität kombiniert, und deckt der von Mishkenaz gesetzte semantische Bereich der drei Resonanz-Aspekte (-om stimmig/angekommen, -ath dissonant/nicht stimmig, -il suchend/offen) sowie des Missingness-Slots -tum einen in der typologischen Literatur anerkannten Funktionsbereich ab oder ist er als reine Kanon-Setzung ohne externes Gegenstück zu kennzeichnen?",
+  "why_now": "grammatik.astro §2 hält das Temporalsystem ausdrücklich offen ('Das Temporalsystem bleibt bis zur historischen Rekonstruktion separat offen'), §9 führt die erlaubten Kombinationen von Resonanz-Aspekt und Evidentialität als nicht-kanonisch. Gleichzeitig verlangt EXT-KG-MISH-20260831-001 für genau diese Merkmale eine Trennung von etabliertem Mechanismus, umstrittener Hypothese und bewusster Fiktion. Ohne externen Bezugspunkt bleibt diese Trennung für -om/-ath/-il beliebig; mit einem belegten Funktionsbereich (Realitätsstatus/Erwartung vs. Wirklichkeit) wird sie begründbar. Betroffen sind die Seiten Grammatik, Proto-Mishkenaz und die noch leere Wörterbuch-Seite.",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "pt"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "R",
+    "H",
+    "F",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Belegte grammatische Kategorien des Realitätsstatus bzw. der Erwartungs-Wirklichkeits-Relation (Frustrativ, Iamitiv/'already', Avertiv) und dokumentierte Evidentialitätssysteme samt ihren Kombinationen mit Aspektmarkern in beschriebenen Sprachen.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260822-69C82BFA"
+  ],
+  "novelty_reason": "RES-20260822-69C82BFA hat die Formen -om/-ath/-il als Frage nach belegten indo-arischen bzw. dravidischen Aspektmarkern behandelt und die Antwort ergeben, dass sie als solche nicht belegt sind und als Fiktion zu kennzeichnen sind; als reale Anker wurden dort der dentale -t- Perfektiv/Partizip, das tamilische Lokativ -il und der vedische -tha-/-atha-Suffix genannt. Offen blieb die davon verschiedene Frage, ob der von diesen Formen bezeichnete semantische Bereich – Erwartung vs. Wirklichkeit, Stimmigkeit, Dissonanz, Offenheit – als grammatischer Funktionsbereich überhaupt existiert und wie er typischerweise grammatikalisiert wird. Das ist eine materiell andere Dimension: sie entscheidet nicht, ob die Formen indo-arisch belegt sind, sondern ob das Kategoriendesign als plausibles Design oder als reine Setzung auszuweisen ist, und liefert damit die Grundlage für die von EXT-KG-MISH-20260831-001 geforderte epistemische Trennung.",
+  "fingerprint": "d8cb8ec4e280bbab"
+}
