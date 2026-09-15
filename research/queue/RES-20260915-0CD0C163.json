@@ -1,0 +1,43 @@
+{
+  "id": "RES-20260915-0CD0C163",
+  "status": "queued",
+  "created": "2026-09-15T08:47:21+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/proto-mishkenaz.astro",
+  "source_ref": "be279026e906ef54fcf4d453864e055e8f65d7e1",
+  "source_blob_sha": "41861bcc3efb4f22bb2c618099a97cb2195c29d0",
+  "title": "R1-Lautinventar, Silbenkanon und Prosodie auf südasiatischem Arealtyp-Befund gründen",
+  "question": "Welche Segmentinventare, Silbenstrukturen, prosodischen Systeme (Wortakzent, Vokalquantität, Aspiration, Retroflexion) und morphonologischen Prozesse an Morphemgrenzen sind für den südasiatischen Sprachbund (Indo-Arisch und Dravidisch) dokumentiert, wie sind sie in typologischen Datenbanken und Referenzgrammatiken belegt, und welche dieser Merkmale sind mit den zwölf artikulatorischen Urgesten (Oh, Ah, Om, Ma, Pa, Sa, Auv, Avi, Il, Ku, Bi, Ta) des Arbeitsmodells überhaupt vereinbar – sodass R1 ein begründetes Inventar, einen Silbenkanon, Betonungsregeln und nachvollziehbare Ableitungsregeln Urgeste→Laut erhält, statt eines erfundenen Systems?",
+  "why_now": "proto-mishkenaz.astro §5 benennt explizit, was für R1 noch fehlt: 'ein explizites Phoneminventar, zulässige Silbenstrukturen, Betonungsregeln und nachvollziehbare Ableitungsregeln zwischen Urgesten und realisierten Lauten'. grammatik.astro §9 führt zusätzlich die vollständige Morphophonologie an Morphemgrenzen als nicht-kanonisch. Gleichzeitig steht die Content-Migration EXT-ECO-MISH-20260714-001 an, die vier Jahrzehnte gewachsener Altformen importiert; deren Klassifikation als R1-stabil oder spätere Galut-Bildung ist ohne vorher fixiertes Inventar nicht möglich. Der step ist damit blockierend für die Migration und für die Seite Wörterbuch, die noch leerer Platzhalter ist.",
+  "languages": [
+    "en",
+    "de",
+    "sa",
+    "gu"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "R",
+    "H",
+    "F",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Dokumentierte Segmentinventare, Silbenstrukturen und prosodische Systeme des südasiatischen Sprachbunds (Indo-Arisch, Dravidisch) in typologischen Datenbanken (PHOIBLE, WALS, UPSID) und Referenzgrammatiken sowie die belegten Sandhi- und Assimilationsprozesse an Morpemgrenzen.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260828-4570466F",
+    "RES-20260822-69C82BFA"
+  ],
+  "novelty_reason": "RES-20260828-4570466F fragt nach empirisch belegten Mechanismen des Langzeit-Sprachwandels (Lautwandel, Grammatikalisierung, Kontakt, Isolation) und nach der Persistenz einzelner Merkmale; RES-20260822-69C82BFA fragt nach den physiologisch/umgebungsbedingten Treibern der Wandelprämisse und der Abbildung der benannten Formen auf indo-arische/dravidische Morphologie. Keiner der beiden liefert eine synchrone Inventarantwort: welcher Segmentsatz, welcher Silbenkanon, welche Prosodie für eine konkrete Stufe R1 anzusetzen ist und wie sich daraus Ableitungsregeln aus den zwölf Urgesten ergeben. Das ist keine Mechanismus-, sondern eine areal- und datenbankgestützte Typologiefrage mit einem konkreten Liefergegenstand (Inventartabelle, Silbenkanon, Betonungsregel, Sandhi-Regelsatz) – genau der in proto-mishkenaz.astro §5 als fehlend markierte Punkt.",
+  "fingerprint": "0cd0c1637390898d"
+}
