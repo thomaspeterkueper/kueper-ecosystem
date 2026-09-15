@@ -1,6 +1,6 @@
 {
   "id": "RES-20260830-415E863B",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-30T10:00:57+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -41,5 +41,27 @@
   "novelty_reason": "No prior OTA research topic covers OTA-SCI-0043 or the LLSVP/core-exsolution/BECMO and Biggin-2026 geodynamo-control claims; the closest prior topics (RES-20260829-A464A32B and RES-20260829-38AEA63E) audited the LOD-seismicity bridge in the separate OTA-SCI-0042 document and did not examine the LLSVP primary sources, their quantitative attributions, or the H-to-ESTABLISHED upgrade logic.",
   "fingerprint": "415e863bed38b249",
   "updated_at": "2026-08-30T10:10:32+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/50"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/50",
+  "validated_at": "2026-09-15T10:11:02+00:00",
+  "validation_summary": "Quellen-/Anker-Audit zu OTA-SCI-0043-2026-DE (LLSVPs, BECMO, Biggin et al. 2026). Ergebnis: Die drei Primärquellen existieren exakt wie zitiert, einschließlich Biggin et al. (2026, Nat. Geosci. 19, 345-352, online 03.02.2026 - sechs Tage vor dem Entwurfsdatum 09.02.2026); die strukturelle Grundlage des Dokuments trägt. Das Dokument enthält jedoch drei Klassen konkreter Fehler: (1) Die SV-Energie-Zahlen (12-18 % Oberfläche, 33-49 % CMB, 2,5x/1,3x Afrika/Pazifik) sind Biggin et al. (2026) fehlattribuiert; eigene Nachprüfung des extrahierten Volltexts (20 Seiten) bestätigt, dass 'COV-OBS', 'satellite', '12-18', '33-49', 'decadal' und 'stagnat'/'sluggish' im Paper nicht vorkommen - die Arbeit arbeitet mit q*, S|30|-Streuung und AD/NADTAF. Die Zahlen stammen aus Rogers, Beggan & Whaler (2025, PEPI 364, 107367). Zudem widerspricht die OTA-Ableitung 'Kernströmung ist dort nicht stagnierend' (§3.3) der Quelle, die 'Regional suppression of convection occurs beneath areas of low heat flux, which",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260915-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260915-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260915-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
