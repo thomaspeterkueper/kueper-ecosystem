@@ -1,0 +1,50 @@
+{
+  "id": "RES-20260915-19607D54",
+  "status": "queued",
+  "created": "2026-09-15T09:02:11+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-ORG-0002-2091-DE.md",
+  "source_ref": "db14e184818480ea90b6c05eed2c16acaac21588",
+  "source_blob_sha": "09114a5f5df9aee0d3c3a4b37cb91d781eed9dba",
+  "document_signature": "OTA-ORG-0002-2091-DE",
+  "title": "Realwelt-Audit der Lavaröhren-Geologie und Siedlungsbegründung von Iterius Prime: reale Mars-Lavaröhren-Dimensionen, Tiefenlage, geothermischer Gradient und Geothermie-Anteil",
+  "question": "Source-grounded audit of the externally checkable [R]/[R-Anker] geology, geophysics and infrastructure layer of OTA-ORG-0002-2091-DE (Sections I, II, IV, V, VI and curator note KN-01) against primary planetary-science data and peer-reviewed literature. (1) The KN-01 assertion 'Die Dimensionen in der Saga (bis 8 m Durchmesser für Korridore) entsprechen realen Mars-Lavaröhren-Messungen': report what real Mars lava-tube evidence actually establishes about tube cross-sections — the Mars Odyssey THEMIS cave-skylight candidates (Arsia Mons, 2007) with their measured pit diameters and depths, HiRISE/CTX 3D reconstructions, and pit-chain/collapsed-tube studies in Tharsis and Elysium Planitia — and state whether an 8 m corridor diameter is representative of, larger than or smaller than documented Martian lava-tube dimensions, and which comparison class (terrestrial analogue tubes such as Icelandic or Hawaiian systems) it actually matches. (2) Verify the curator's siting rationale that NASA/ESA identified lava tubes as ideal settlement sites because of 'natürlicher Strahlungsschutz, stabile Temperaturen, strukturelle Integrität': report what current studies actually support for GCR/SPE shielding by a rock roof and for thermal stability relative to the surface diurnal/seasonal cycle, and which caveats (required roof thickness, collapse probability, radiation streaming through skylights, water-ice stability) constrain that framing. (3) Depth architecture: the document places habitable levels at 200-900 m, a restricted research level at 1000-1200 m and the 'Sektor Omega' structures at 1200-1800+ m below the present surface; report at what depth below the present Martian surface lava tubes are observed or inferred, how roof thickness/roof collapse limits tube survival, and whether a connected tube network reaching ~1.8 km depth is supported, unsupported or simply untested. (4) Thermal claims: assess '22 °C konstant (geothermische Heizung)' at 820 m and '28-32 °C (geothermische Aktivität)' at 1200-1800 m against measured/estimated Martian surface temperature and the Martian geothermal gradient (including InSight heat-flow constraints); state what temperature a lava tube at 820 m depth would have without active heating, and whether 'geothermal heating' alone can produce the stated 22 °C / 28-32 °C values or whether these must be reclassified as active engineering. Explicitly EXCLUDE the already-audited 802 m lava-tube thermal anomaly of OTA-SCI-0004 (handled by RES-20260913-B694419C) — do not re-ask that question and do not re-open the 127 Hz crustal-resonance item. (5) Energy architecture: assess 'Geothermie (70%), Solar (20%), Nuklear-Backup (10%)' against the real Martian heat-flow budget and published assessments of geothermal power generation on Mars, including the required depth/temperature/flow-rate and conversion efficiency for electricity generation, and state whether a ~70 % geothermal share is defensible, must be narrowed to [H], or must stay [F]. (6) Supporting infrastructure numbers: check 'Wasser: 98 % Recycling' (Luft: O2 aus Elektrolyse + Hydroponik) against real ISS/ECLSS water-recovery and oxygen-generation performance, and check 'Erd-Komm: 4-20 Min. Verzögerung' against the actual Mars-Earth one-way light-time range. (7) Compare the document's discovery chronology (lava tubes '2069 entdeckt', settled from 2072) with the real discovery history of Martian cave skylights, keeping the fictional settlement timeline explicitly [F]. (8) Identify which sentences should be narrowed, reclassified between [R]/[H]/[F]/[OFFEN], or explicitly marked [R-Anker]. Do NOT evaluate or alter the fictional layer: Iterius Prime, the Mars-Föderation, ~30,000 inhabitants, the 'Geflecht' naming, the sector/level/depth table, the Kowalski/Nakamura family geography, the 2069/2072 dates, the Baumeister/χ-Feld layer, or any NOXIA/OTA balancing value.",
+  "why_now": "OTA-ORG-0002-2091-DE is priority 10 in the current workqueue and carries GENERIC_TITLE, GENERIC_SUMMARY, RELATION_GAP, NO_VISUAL and NO_HEADINGS. Unlike the deliberately abstract Tharsis/NOXIA dossiers, it contains a curator note (KN-01) that asserts as [R] that the saga's lava-tube dimensions 'correspond to real Mars lava-tube measurements' — an unchecked numeric real-geology claim embedded in the archival voice rather than in the fictional layer. The document is also a shared foundation: OTA-BIO-0013-2089-DE, OTA-FND-0008-2025-DE and OTA-HIS-0004-2085-DE all cite it as canonical, so an uncorrected geology error propagates across the archive. No prior research task has audited Martian lava-tube geometry, depth-to-tube, geothermal gradient or geothermal-power viability.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "R-Anker"
+  ],
+  "real_world_anchor": "Real Mars lava-tube evidence (Mars Odyssey THEMIS cave skylights at Arsia Mons, 2007; HiRISE/CTX imaging; Tharsis and Elysium Planitia pit chains), InSight-derived Martian heat flow and geothermal gradient, published assessments of geothermal power generation on Mars, real ISS ECLSS water-recovery performance, and the actual Mars-Earth one-way light time (about 3-22 minutes).",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.89,
+  "scores": {
+    "project_relevance": 0.93,
+    "cross_project_reuse": 0.88,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260913-B694419C"
+  ],
+  "novelty_reason": "RES-20260913-B694419C audited a different document (OTA-SCI-0004) and only the isolated lava-tube thermal anomaly at 802 m depth plus the 432 Hz / 127 Hz resonance claims. This topic targets a different document and a different evidence layer: real lava-tube cross-section dimensions and depth distribution, roof-thickness/survival limits, the Martian geothermal gradient profile, the feasibility of geothermal electricity generation on Mars, and the infrastructure numbers (98 % water recycling, Mars-Earth light time). The thermal-regime sub-question already answered for OTA-SCI-0004 is explicitly excluded from scope.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 719,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "19607d5477fd3109"
+}
