@@ -1,6 +1,6 @@
 {
   "id": "RES-20260915-0CD0C163",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-15T08:47:21+00:00",
   "source_project": "mishkenaz",
   "source_repository": "thomaspeterkueper/mishkenaz.org",
@@ -39,5 +39,7 @@
     "RES-20260822-69C82BFA"
   ],
   "novelty_reason": "RES-20260828-4570466F fragt nach empirisch belegten Mechanismen des Langzeit-Sprachwandels (Lautwandel, Grammatikalisierung, Kontakt, Isolation) und nach der Persistenz einzelner Merkmale; RES-20260822-69C82BFA fragt nach den physiologisch/umgebungsbedingten Treibern der Wandelprämisse und der Abbildung der benannten Formen auf indo-arische/dravidische Morphologie. Keiner der beiden liefert eine synchrone Inventarantwort: welcher Segmentsatz, welcher Silbenkanon, welche Prosodie für eine konkrete Stufe R1 anzusetzen ist und wie sich daraus Ableitungsregeln aus den zwölf Urgesten ergeben. Das ist keine Mechanismus-, sondern eine areal- und datenbankgestützte Typologiefrage mit einem konkreten Liefergegenstand (Inventartabelle, Silbenkanon, Betonungsregel, Sandhi-Regelsatz) – genau der in proto-mishkenaz.astro §5 als fehlend markierte Punkt.",
-  "fingerprint": "0cd0c1637390898d"
+  "fingerprint": "0cd0c1637390898d",
+  "updated_at": "2026-09-15T09:01:32+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/120"
 }
