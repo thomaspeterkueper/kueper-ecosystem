@@ -21,6 +21,9 @@ on:
       - "tools/research/test_candidate_merge_gate.py"
       - "tools/research/test_ota_tech_object_audit.py"
       - "tools/research/agent-with-exa.mjs"
+      - ".github/workflows/knowledge-research-loop.yml"
+      - ".github/workflows/targeted-research.yml"
+      - ".github/workflows/ota-workqueue-research.yml"
       - ".github/workflows/ota-evidence-sweep.yml"
       - ".github/workflows/ota-tech-object-audit.yml"
       - ".github/workflows/research-config-check.yml"
@@ -79,6 +82,9 @@ jobs:
           execute_source = (root / 'tools/research/execute.py').read_text(encoding='utf-8')
           tech_audit_source = (root / 'tools/research/audit-ota-tech-objects.py').read_text(encoding='utf-8')
           tech_contract = json.loads((root / 'research/contracts/ota-tech-object-v1.json').read_text(encoding='utf-8'))
+          knowledge_workflow = (root / '.github/workflows/knowledge-research-loop.yml').read_text(encoding='utf-8')
+          targeted_workflow = (root / '.github/workflows/targeted-research.yml').read_text(encoding='utf-8')
+          ota_workqueue_workflow = (root / '.github/workflows/ota-workqueue-research.yml').read_text(encoding='utf-8')
           sweep_source = (root / '.github/workflows/ota-evidence-sweep.yml').read_text(encoding='utf-8')
           tech_audit_workflow = (root / '.github/workflows/ota-tech-object-audit.yml').read_text(encoding='utf-8')
           assert 'source_blob_sha' in discover_source and 'source_ref' in discover_source
@@ -97,6 +103,14 @@ jobs:
           assert "discovery-only" in sweep_source
           assert 'no queue writes' in sweep_source
           assert 'items[:2]' in sweep_source
+
+          deepseek_workflows = [knowledge_workflow, targeted_workflow, ota_workqueue_workflow]
+          for workflow in deepseek_workflows:
+              assert 'ANTHROPIC_BASE_URL: "https://api.deepseek.com/anthropic"' in workflow
+              assert 'ANTHROPIC_MODEL: "deepseek-v4-flash"' in workflow
+              assert 'CLAUDE_CODE_SUBAGENT_MODEL: "deepseek-v4-flash"' in workflow
+              assert 'CLAUDE_CODE_AUTO_COMPACT_WINDOW: "786432"' in workflow
+              assert 'CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT: "1"' in workflow
 
           assert tech_contract['id'] == 'ota-tech-object-v1'
           assert tech_contract['publication']['auto_update_noxia'] is False
@@ -127,7 +141,7 @@ jobs:
           expected = {entry['id']: weight for entry, weight in zip(eligible, scaled)}
           assert dict(counts) == expected, (counts, expected)
 
-          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts), 'ota_source_contract': 'pinned', 'ota_workqueue_source_contract': 'pinned', 'ota_weekly_sweep': True, 'ota_discovery_scope': 'deterministic-document-scope-v1', 'ota_discovery_dry_run': 'non-mutating', 'ota_tech_object_audit': 'exact-blob-coverage-v1'}, indent=2))
+          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts), 'ota_source_contract': 'pinned', 'ota_workqueue_source_contract': 'pinned', 'deepseek_claude_compat': 'guarded', 'ota_weekly_sweep': True, 'ota_discovery_scope': 'deterministic-document-scope-v1', 'ota_discovery_dry_run': 'non-mutating', 'ota_tech_object_audit': 'exact-blob-coverage-v1'}, indent=2))
           PY
 
       - name: Run candidate merge gate tests
