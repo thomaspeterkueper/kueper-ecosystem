@@ -1,6 +1,6 @@
 {
   "id": "RES-20260914-7AFD24DB",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-14T09:02:49+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keiner der drei vorangegangenen Kandidaten behandelt Paläoanthropologie, Genetik oder Quartärgeografie. RES-20260829-862AA763 betraf Mars-Resurfacing und Lavatunnel-Eis, RES-20260829-02C11838 Frequenzen und Dhrupad-Phonetik, RES-20260829-A7BD20AF Kosmologie. Die Herkunftsebene des Gesamtwerks wurde bisher nicht extern geprüft.",
-  "fingerprint": "7afd24db2c6a5be4"
+  "fingerprint": "7afd24db2c6a5be4",
+  "updated_at": "2026-09-15T09:20:48+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/122"
 }
