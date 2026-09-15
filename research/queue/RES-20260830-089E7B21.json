@@ -1,6 +1,6 @@
 {
   "id": "RES-20260830-089E7B21",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-30T10:00:58+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -41,5 +41,27 @@
   "novelty_reason": "Prior topic RES-20260829-A464A32B verified the Dumont et al. (2025) planetary-forcing claims in OTA-SCI-0042 but did not address the spatial dimension introduced in OTA-SCI-0043 - whether LLSVP geometry modulates those periodicities and regional seismicity. This gap tests the materially unresolved KN-5.3 spatial-correlation hypothesis and its supporting/constraining literature, which is a distinct claim in a distinct source document.",
   "fingerprint": "089e7b21b8e286ba",
   "updated_at": "2026-08-30T10:18:39+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/51"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/51",
+  "validated_at": "2026-09-15T10:13:13+00:00",
+  "validation_summary": "Der Kandidat prüft den raeumlichen LLSVP-Filter-Claim in OTA-SCI-0043-2026-DE und bestaetigt den [H]-Status: Stand 2026-08-30 existiert keine publizierte Studie, die raeumlich aufgeloeste globale Seismizitaetsraten gegen LLSVP-Oberflaechenprojektionen, LLSVP-Raender oder CMB-Waermefluss-Heterogenitaet testet; [KN-5.3] ('Die Daten existieren. Niemand hat es gemacht.') bleibt damit zutreffend, eine Hochstufung waere nicht gedeckt. Drei neue, konkrete Projektbezuege ergeben sich: (1) Ein bislang nicht erfasster Zuschreibungsfehler in Abschnitt V.1 - das Dokument schreibt Dumont et al. (2025) eine Kausalkette mit Kern-Mantel-Kopplung zu und leitet daraus eine raeumliche LLSVP-Modulation ab, waehrend die Quelle einen Festkoerper-Hydrosphaere-/Wasser-Gestein-Mechanismus ohne LLSVP-, CMB- oder Raumkomponente vertritt; das bereits quellengestuetzt auditierte Schwesterdokument OTA-SCI-0042 v1.5 fuehrt dies korrekt und enthaelt weder die Kette noch irgendeinen LLSVP-Bezug, wird im Dokument aber ",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260915-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260915-005",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260915-006",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
