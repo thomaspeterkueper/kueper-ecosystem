@@ -133,7 +133,7 @@ def main()->int:
     try:
         run(["git","clone","--quiet","--depth","1",auth_url(project["repository"],token),str(root)])
         source_ref=run(["git","rev-parse","HEAD"],cwd=root).strip()
-        cmd=os.environ.get("KUEPER_DISCOVERY_AGENT_CMD","codex exec --full-auto").split()
+        cmd=os.environ.get("KUEPER_DISCOVERY_AGENT_CMD","claude -p --dangerously-skip-permissions").split()
         run(cmd+[prompt(project,choice.get("languages",POLICY["default_languages"]),profile_name,profile,previous)],cwd=root)
         f=root/".kueper-discovery.json"
         if not f.exists():raise RuntimeError("agent did not create .kueper-discovery.json")

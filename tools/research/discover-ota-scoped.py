@@ -296,7 +296,7 @@ def main() -> int:
     agent_started = time.monotonic()
     try:
         cmd = os.environ.get(
-            "KUEPER_DISCOVERY_AGENT_CMD", "codex exec --full-auto"
+            "KUEPER_DISCOVERY_AGENT_CMD", "claude -p --dangerously-skip-permissions"
         ).split()
         core.run(
             cmd

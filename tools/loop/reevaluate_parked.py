@@ -114,7 +114,7 @@ def assess(token,p,branch,item,payload,text):
     root=Path(tempfile.mkdtemp(prefix=f"parked-{p['id']}-"))
     try:
         run(["git","clone","--quiet","--branch",branch,"--single-branch",auth_url(p["repository"],token),str(root)])
-        cmd=shlex.split(os.environ.get("KUEPER_PARKED_AGENT_CMD","codex exec --full-auto"))
+        cmd=shlex.split(os.environ.get("KUEPER_PARKED_AGENT_CMD","claude -p --dangerously-skip-permissions"))
         cp=run(cmd+[prompt(p["repository"],text)],cwd=root,check=False)
         if cp.returncode: return {"task":item["name"],"result":"assessment-failed","error":(cp.stdout or "")[-2000:]}
         jf=root/".parked-assessment.json"

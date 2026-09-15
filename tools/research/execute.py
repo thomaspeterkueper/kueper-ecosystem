@@ -235,7 +235,8 @@ def execute(token:str,item:dict[str,Any],payload:dict[str,Any])->dict[str,Any]:
         default=repo_info(token,TARGET)["default_branch"]
         run(["git","clone","--quiet","--branch",default,"--single-branch",auth_url(TARGET,token),str(root)])
         run(["git","checkout","-b",branch],cwd=root)
-        cmd=shlex.split(os.environ.get("KUEPER_RESEARCH_AGENT_CMD",'codex exec --full-auto -c web_search="live"'))
+        run(["git","config","user.name","KUEPER Research Bot"],cwd=root);run(["git","config","user.email","research-bot@users.noreply.github.com"],cwd=root)
+        cmd=shlex.split(os.environ.get("KUEPER_RESEARCH_AGENT_CMD","claude -p --dangerously-skip-permissions"))
         cp=run(cmd+[research_prompt(item,source_context)],cwd=root,check=False)
         if cp.returncode:raise RuntimeError((cp.stdout or "")[-4000:])
         meta=validate_result(root,item);(root/".research-result.json").unlink()
@@ -245,7 +246,6 @@ def execute(token:str,item:dict[str,Any],payload:dict[str,Any])->dict[str,Any]:
             if p:paths.append(p)
         allowed=f"{POLICY['candidate_path']}/{item['id']}.md"
         if paths!=[allowed]:raise RuntimeError(f"research agent changed forbidden files: {paths}")
-        run(["git","config","user.name","KUEPER Research Bot"],cwd=root);run(["git","config","user.email","research-bot@users.noreply.github.com"],cwd=root)
         run(["git","add",allowed],cwd=root);run(["git","commit","-m",f"research: candidate {item['id']}"],cwd=root);run(["git","push","--quiet","origin",branch],cwd=root)
         pr=gh(token,"POST",f"/repos/{TARGET}/pulls",{"title":f"[Research] {item['id']}: {item['title']}","head":branch,"base":default,"body":f"Multilingual evidence candidate for `{item['source_project']}` using evidence profile `{evidence_profile(item)[0]}`. Evidence score: `{meta.get('evidence_score')}`. Publication recommendation: `{meta.get('publication_recommendation') or 'none'}`. This draft PR adds only non-canonical staging material under `{POLICY['candidate_path']}/`; it does not modify canonical KG data or publish to OTA/kueper.com. It must remain draft until explicit critical evidence review; the research executor never marks it ready, merges it, or enables auto-merge.","draft":True})
         merge="draft-review-required"

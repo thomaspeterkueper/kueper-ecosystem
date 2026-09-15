@@ -174,6 +174,8 @@ Rules:
             "CLAUDE_CODE_SUBAGENT_MODEL": "deepseek-v4-flash",
             "CLAUDE_CODE_EFFORT_LEVEL": "max",
         })
+        run(["git", "config", "user.name", "KUEPER Ecosystem Bot"], cwd=root)
+        run(["git", "config", "user.email", "ecosystem-bot@users.noreply.github.com"], cwd=root)
         agent = run(["claude", "-p", "--dangerously-skip-permissions", prompt], cwd=root, env=env, check=False)
         output = agent.stdout or ""
         if agent.returncode != 0:
@@ -190,8 +192,6 @@ Rules:
         status = run(["git", "status", "--porcelain", "--untracked-files=all"], cwd=root).stdout.strip()
         if not status:
             return {"kind": "completed", "summary": "Agent found no repository change necessary", "agent_output": output[-4000:]}
-        run(["git", "config", "user.name", "KUEPER Ecosystem Bot"], cwd=root)
-        run(["git", "config", "user.email", "ecosystem-bot@users.noreply.github.com"], cwd=root)
         run(["git", "add", "-A"], cwd=root)
         run(["git", "commit", "-m", f"chore(agent): execute task {task['id'][:8]}"], cwd=root)
         run(["git", "push", "--quiet", "origin", branch], cwd=root)

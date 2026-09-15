@@ -186,7 +186,7 @@ def validate_one(token,item,payload,projects):
     root=Path(tempfile.mkdtemp(prefix=f"validate-{item['id']}-"))
     try:
         run(["git","clone","--quiet","--depth","1",auth_url(primary["repository"],token),str(root)])
-        cmd=shlex.split(os.environ.get("KUEPER_VALIDATION_AGENT_CMD","codex exec --full-auto"));cp=run(cmd+[assessment_prompt(item,candidate,projects)],cwd=root,check=False)
+        cmd=shlex.split(os.environ.get("KUEPER_VALIDATION_AGENT_CMD","claude -p --dangerously-skip-permissions"));cp=run(cmd+[assessment_prompt(item,candidate,projects)],cwd=root,check=False)
         if cp.returncode:raise RuntimeError((cp.stdout or "")[-4000:])
         af=root/".canon-assessment.json"
         if not af.exists():raise RuntimeError("agent did not create .canon-assessment.json")
