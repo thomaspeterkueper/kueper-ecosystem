@@ -1,0 +1,51 @@
+{
+  "id": "RES-20260915-D7465012",
+  "status": "queued",
+  "created": "2026-09-15T09:02:11+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-RED-0018-2091-DE.md",
+  "source_ref": "db14e184818480ea90b6c05eed2c16acaac21588",
+  "source_blob_sha": "8ceab2959dcf1ce61f25fb578c8ffd931524ce99",
+  "document_signature": "OTA-RED-0018-2091-DE",
+  "title": "Realwelt-Audit der STUFE-OMEGA-Schwelle: obere Hörgrenze des Menschen bei 21,5 kHz (EHF-Audiometrie) und Beanspruchung einer 21,5-kHz-Lavaröhren-Eigenfrequenz gegen reale Lavaröhren-Akustik",
+  "question": "Source-grounded audit of the externally checkable real-world layer behind OTA-RED-0018-2091-DE (Sections II.1, II.2 and V) against primary audiology, acoustics and planetary-atmosphere literature. (1) Threshold claim: the document defines STUFE-OMEGA by an audiometric limit at 21,500 Hz (± 50 Hz) and treats a hearing range of 21,500-22,400 Hz as a rare, quarantine-worthy anomaly against a stated 'Normalbereich' of 20-20,000 Hz. Audit that against real extended-high-frequency (EHF) audiometry: what do population studies report for the upper frequency limit in children, adolescents and young adults (including the fraction reaching 20 kHz, 21.5 kHz and above), how does the limit decline with age, and which measurement conditions (transducer type, calibration, presentation level, ear-canal resonance, background noise, test-retest variability) determine the measured value? Report explicitly whether 21.5-23 kHz is anomalous or within the normal range for the stated age group, whether a hard cut-off of 21,500 Hz with ± 50 Hz tolerance is defensible as a screening criterion, and whether the 15-minute audiometric test described could resolve that tolerance. (2) 'Typ: Ultraschall (Lavaröhren-Eigenfrequenz)' and '21.500 Hz ist die primäre Resonanzfrequenz der Mars-Lavaröhren in Sektor-7-Tief (Dr. Hong Xi, 2084)': assess whether a lava-tube cavity can physically support a primary acoustic eigenmode near 21.5 kHz, using the real relationship between cavity geometry, sound speed and modal frequency; report which frequencies real lava-tube acoustics actually produce, including documented infrasound and audible resonance from lava tubes and volcanic conduits, the resonance behaviour of large air-filled versus rock-bounded cavities, and any published Mars or Moon lava-tube acoustic/infrasonic studies. (3) Medium and propagation: quantify what a 21.5 kHz airborne signal would do in the Sektor-7-Tief environment, separating Mars ambient conditions (~6-7 mbar, ~96 % CO2, sound speed ~240 m/s, strong high-frequency absorption) from a pressurised habitat atmosphere; state where the claim must be narrowed and which frequency range would be physically defensible for a tube of the size implied by the archive's lava-tube setting. (4) Separate real physiology/acoustics from protocol fiction: 'ca. 3 % der Mars-Bevölkerung', the 15-minute test procedure, the 'positive Resonanz-Reaktion' criterion (body 'schwingt mit'), the audiologist role of Dr. Tayo Dela Cruz and the linkage to the fictional Baumeister structures are [F]/[W]; identify precisely which sentences contain an externally checkable [R]/[R-Anker] core and which must remain fictional. (5) Identify wording that should be narrowed or reclassified between [R]/[R-Anker]/[H]/[F]/[OFFEN], and state which figures are defensible as realistic operational thresholds. Do NOT evaluate or alter the fictional STUFE-OMEGA classification itself, the 14 deaths of Sektor-7 (2087), Dr. Tayo Dela Cruz, Dr. Hong Xi, the Mars Council security framing, the OMEGA/GENEHMIGT statuses of Lena and Marek Kowalski, or any NOXIA/OTA balancing value. Do NOT re-ask the 432 Hz archaeoacoustics, 127 Hz Mars-crustal-resonance or 7.83 Hz Schumann-field questions already handled by RES-20260913-B694419C and RES-20260902-A2AB1E76; note only where those figures are reused incidentally.",
+  "why_now": "OTA-RED-0018-2091-DE is priority 12 — the highest-priority uncovered item in the current workqueue that is not already addressed by an existing research task (OTA-SCI-0004, OTA-TEC-0003, OTA-TEC-0015, OTA-TEC-0016, OTA-RED-0003 and OTA-TEC-0019-2095 all already have tasks). It carries GENERIC_TITLE, GENERIC_SUMMARY, RELATION_GAP and NO_HEADINGS, and its 21,500 Hz threshold is presented to readers as a real acoustic/audiological boundary rather than as a stipulated convention. The same 21.5 kHz / extended-hearing premise is load-bearing for the pending OTA-SCI-0013-2025-DE ('Frequenz-Sensitivität bei Mars-Kindern') and for OTA-BIO-0006/0036 and OTA-RED-0017, so resolving it now prevents the error propagating through the frequency thread of the saga.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker",
+    "R"
+  ],
+  "real_world_anchor": "Extended high-frequency audiometry and the real upper limit of human hearing (nominal 20 kHz versus measured 20-24 kHz in young listeners), ultrasonic perception mechanisms, acoustic eigenmodes and documented infrasound/audible resonance of lava tubes and volcanic conduits, and sound propagation and absorption in low-pressure CO2 (Mars ambient ~6-7 mbar, sound speed ~240 m/s).",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.83,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.82
+  },
+  "related_research_ids": [
+    "RES-20260913-B694419C",
+    "RES-20260902-A2AB1E76"
+  ],
+  "novelty_reason": "The prior frequency-domain audits covered different anchors in a different document: RES-20260913-B694419C audited the 432 Hz 'sacred temple frequency' / archaeoacoustics claim, the Kanheri correlation and the 127 Hz Mars-crustal resonance in OTA-SCI-0004; RES-20260902-A2AB1E76 audited the 7.83 Hz Schumann-resonance generator in OTA-TEC-0019-2095. Neither addressed human hearing-threshold physiology, extended-high-frequency audiometry, or the acoustic eigenmodes of a metre- to decametre-scale lava-tube cavity at ~21.5 kHz. This topic is therefore a new evidence layer (audiology plus low-pressure cavity acoustics), not a re-ask.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 447,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "d7465012b4758d35"
+}
