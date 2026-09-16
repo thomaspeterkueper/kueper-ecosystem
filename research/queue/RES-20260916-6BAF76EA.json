@@ -1,0 +1,52 @@
+{
+  "id": "RES-20260916-6BAF76EA",
+  "status": "queued",
+  "created": "2026-09-16T08:54:56+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-RED-0016-2091-DE.md",
+  "source_ref": "36ca94b6f1bc4cb7948cba5f82957e91bb9fd4de",
+  "source_blob_sha": "a082af74746efd08e919c02af7ec52dc6baea379",
+  "document_signature": "OTA-RED-0016-2091-DE",
+  "title": "Realwelt-Audit des 12-Hz-Ankers in OTA-RED-0016 (432-FREQ-ECHO): planetare Schumann-/Mars-Hohlraumresonanzen, die Belegkette in OTA-SCI-0009 (Ruf 2009, Haider 2019, Toledo-Redondo 2017) und die Wahrnehmbarkeit eines 12-Hz-Grundtons",
+  "question": "Source-grounded audit of the externally checkable real-world layer that OTA-RED-0016-2091-DE explicitly imports (Sections I.2, II.1 and the revision history) against primary planetary-atmospheric-electricity literature and psychoacoustics. (1) Anchor value: the document states that the attached 3-second audio file AUDIO_432.wav contains a 'konstanter Grundton bei 12 Hz --- die fundamentale Baumeister-Frequenz, dokumentiert in OTA-SCI-0009-2025-DE', and its revision history records the v1.1 change from 432 Hz to 12 Hz as a correction of 'Frequenz-Konsistenz'. Verify the real anchor: which frequencies are actually established as Schumann/cavity resonances of Earth (fundamental and first modes, amplitudes, Q factor), and which are measured, modelled or merely predicted for Mars? Where does the real measurement situation stand (in-situ surface, orbital, indirect)? State explicitly whether 12 Hz is a defensible planetary cavity resonance for Mars, for Earth, or for neither, and which real numerical statement should replace or qualify it. (2) Source verification: verify each source cited by the documentation the document relies on (OTA-SCI-0009-2025-DE, Sections I-II) --- 'Ruf et al. (2009)', DSN 34 m detection of non-thermal microwave radiation during a Mars dust storm with modulations at 7.83, 14.1 and 20.3 Hz (Geophys. Res. Lett. 36, L13202); 'Haider et al. (2019)', Mars-ionosphere modelling with fundamental modes at 19.9, 34.5 and 48.8 Hz at 18 km altitude (Adv. Space Res. 63, 2260-2275); 'Toledo-Redondo et al. (2017)', 3D-FDTD simulations with a fundamental varying between 9 Hz (day) and 14 Hz (night) and Q ~ 2 (Geophys. Res. Lett. 44, 648-656); the Earth values 7.83/14.3/20.8/27.3/33.8 Hz at Q ~ 4-6; the claimed ~50 lightning flashes per second; and the claimed null results of InSight (5-20 Hz), MAVEN (5-16 Hz) and Tianwen-1/Zhurong. Report actual titles, authorship, journal, volume/pages, DOI and the measured versus modelled values, flag every discrepancy or misattribution, and state which items are genuinely peer-reviewed primary results rather than review, simulation or press statements. (3) Perception layer: the document treats 12 Hz as a carried 'Grundton' that a frequency-sensitive character receives as a tone through a digital medium, while the sibling document OTA-RED-0017-2091-DE states that a '432-Hz-Unterton im Zentrifugenmotor' is heard by sensitive individuals but not by normal persons. Report the real lower limit of tonal hearing and the auditory versus vibrotactile/infrasound distinction, what is actually measurable in human listeners below 20 Hz, and whether a 12 Hz component can be described as a heard 'Grundton' or must be reclassified as infrasound, vibrotactile or subharmonic perception --- or as a fictional capability. (4) Name the sentences in OTA-RED-0016 (and, where the same figure is reused, its directly linked documents) that should be narrowed, corrected or reclassified between [R]/[T]/[F] on that basis, and which the document's own [F]-marking already covers. Explicitly EXCLUDE from evaluation: the fictional sender 432-FREQ-ECHO, Lena and Marek Kowalski, the Solar Student Exchange Program and its participant list, the '1-3-1-Muster', the VKS/36-vector arithmetic, the Baumeister/chi-Feld layer, the transgenerational 'Frequenzlinie', and all NOXIA/OTA balancing values. Do NOT re-ask the 7.83-Hz Earth-Schumann amplitude question (RES-20260902-A2AB1E76), the 432-Hz/127-Hz archaeoacoustics and Mars-crustal-resonance questions (RES-20260913-B694419C) or the 21.5-kHz EHF upper hearing limit (RES-20260915-D7465012); mention them only where the document reuses those figures incidentally.",
+  "why_now": "OTA-RED-0016-2091-DE stands at priority 12 in the current workqueue with five quality flags. Those flags (GENERIC_TITLE, GENERIC_SUMMARY, RELATION_GAP, NO_VISUAL, NO_HEADINGS) are editorial, but the document's own v1.1 revision history shows that the saga's central physical anchor was changed from 432 Hz to 12 Hz under the label 'Frequenz-Konsistenz' without any external verification, and the 12 Hz value is now the hinge of the whole saga - it is asserted as a documented planetary frequency, reused in more than 20 archive documents, and it is the value from which OTA-SCI-0009-2025-DE derives its [T] Mars range of 7-14 Hz. No prior research candidate has ever tested whether 12 Hz is a real planetary cavity resonance, nor verified the three primary citations that OTA-RED-0016 points to as its documentation. A verified or falsified anchor here materially changes the [R]/[T] wording in the entire 12-Hz cluster.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "real_world_anchor": "Planetare Schumann-/Hohlraumresonanzen von Erde und Mars (Fundamentalfrequenz, Moden, Guetefaktor, Messlage), die in OTA-SCI-0009-2025-DE zitierte Primaerliteratur (Ruf et al. 2009, Geophys. Res. Lett. 36, L13202; Haider et al. 2019, Adv. Space Res. 63, 2260-2275; Toledo-Redondo et al. 2017, Geophys. Res. Lett. 44, 648-656) sowie die untere Grenze der tonalen Hoerwahrnehmung und die Infraschall-/Vibrotaktilwahrnehmung des Menschen bei 12 Hz.",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.88,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260902-A2AB1E76",
+    "RES-20260913-B694419C",
+    "RES-20260915-D7465012"
+  ],
+  "novelty_reason": "RES-20260902-A2AB1E76 verified only the Earth 7.83-Hz fundamental and the expected natural field amplitude for an artificial-Schumann generator specification (document OTA-TEC-0019-2095); RES-20260913-B694419C covered the 127-Hz Mars-crustal-resonance and 432-Hz archaeoacoustics questions and excluded them from re-asking; RES-20260915-D7465012 covered only the upper EHF hearing limit at 21.5 kHz. None of them addresses (a) whether 12 Hz is a defensible planetary cavity resonance at all, (b) the Mars ionospheric-cavity literature and its measurement status, (c) the three primary citations in OTA-SCI-0009, or (d) the lower perception limit / infrasound behaviour at 12 Hz. The 12-Hz anchor chain is therefore a materially new, unresolved dimension rather than a repetition.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 614,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "6baf76ea84b386db"
+}
