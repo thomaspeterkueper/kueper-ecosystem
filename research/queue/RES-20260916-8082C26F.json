@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260916-8082C26F",
+  "status": "queued",
+  "created": "2026-09-16T08:41:46+00:00",
+  "source_project": "avi-modell",
+  "source_repository": "thomaspeterkueper/avi-modell",
+  "source_path": "docs/rate-observable-candidates-v0.1.md",
+  "source_ref": "af5c9a528aa584661ab8eafa1f34dd37d2d515a0",
+  "source_blob_sha": "ed3c91ee4703c27606f9c1bee24344f6f79e550a",
+  "title": "Gravitativer differentieller Referenzkanal: welche Experimente definieren überhaupt eine dimensionslose gravitative Vergleichsgrösse?",
+  "question": "Welche konkreten, bereits durchgeführten oder laufenden Experimente definieren eine sauber operationalisierbare dimensionslose gravitative Vergleichsgrösse, die als unabhängige Referenz für eine lokale physikalische Rate dienen könnte — etwa Frequenzvergleiche von Uhren in unterschiedlichen Gravitationspotentialen und Null-Rotverschiebungs-Tests, Tests der lokalen Positionsinvarianz, MICROSCOPE, Lunar Laser Ranging, Pulsar-Timing, Atomfontänen und Weltraumuhren? Welche publizierten Grenzen ergeben sich daraus für eine differentielle Kopplung verschiedener Prozesse an das Gravitationspotential, einschliesslich Grenzen auf eine mit dem Gravitationspotential korrelierte Variation von α, und welche Bedingungen müsste eine AVI-Ratenkopplung der Klasse B exakt erfüllen, damit sie nicht stillschweigend das Äquivalenzprinzip, die Universalität des freien Falls oder die lokale Positionsinvarianz verletzt?",
+  "why_now": "docs/rate-observable-candidates-v0.1.md §6 führt Kandidat D (gravitative Dynamik) mit der Priorität 'hoch als Constraint und möglicher differentieller Referenzkanal' und hält fest, dass Gravitation eine unabhängig definierte geometrische Referenz bereitstellt, dass Modelle mit variierenden Kopplungen aber häufig zusätzliche Felder oder Verletzungen der Universalität des freien Falls erzeugen. docs/system-signature-si-v0.1.md §8 listet 'gravitative dimensionslose Vergleichsgrössen, soweit ein konkretes Experiment sie definiert' — die Existenz einer solchen Grösse ist dort also ausdrücklich als offene Bedingung formuliert, nicht als gesichert vorausgesetzt. §12 fordert zusätzlich einen gravitativen Konsistenzkanal in der Sensitivitätsmatrix. Die S3-Variante aus §7 (Vergleich einer lokalen Rate gegen eine unabhängig bestimmte geometrische oder kosmologische Grösse) steht und fällt damit, ob eine solche Referenz operational definierbar ist; ohne externen Beleg bleibt S3 eine methodische Behauptung.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "avi-theoretical-cosmology",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Gravitations- und Äquivalenzprinzip-Tests als Präzisionsexperimente: optische Uhren in unterschiedlichen Gravitationspotentialen und Null-Rotverschiebungs-Tests, MICROSCOPE, Lunar Laser Ranging, Pulsar-Timing, Atomfontänen sowie suchbasierte Tests einer mit dem Gravitationspotential korrelierten Konstantenvariation.",
+  "publication_route_hint": null,
+  "project_weight": 0.85,
+  "relevance_score": 0.775,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Neue Achse gegenüber RES-20260828-0806A449, die auf die Formalisierung von Historienzuständen zielte. Hier steht weder xi noch Pfadabhängigkeit zur Debatte, sondern die empirische Frage, ob und durch welches konkrete Experiment eine unabhängige gravitative Vergleichsgrösse operativ definiert ist und welche publizierten Äquivalenzprinzip- und LPI-Grenzen eine differentielle Ratenkopplung bereits einschränken. Das ist der im Repository explizit als unentschieden markierte Punkt der S3-Variante.",
+  "fingerprint": "8082c26fb43c0d61"
+}
