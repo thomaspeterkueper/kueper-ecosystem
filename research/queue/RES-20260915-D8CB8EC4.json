@@ -1,6 +1,6 @@
 {
   "id": "RES-20260915-D8CB8EC4",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-15T08:47:22+00:00",
   "source_project": "mishkenaz",
   "source_repository": "thomaspeterkueper/mishkenaz.org",
@@ -38,5 +38,7 @@
     "RES-20260822-69C82BFA"
   ],
   "novelty_reason": "RES-20260822-69C82BFA hat die Formen -om/-ath/-il als Frage nach belegten indo-arischen bzw. dravidischen Aspektmarkern behandelt und die Antwort ergeben, dass sie als solche nicht belegt sind und als Fiktion zu kennzeichnen sind; als reale Anker wurden dort der dentale -t- Perfektiv/Partizip, das tamilische Lokativ -il und der vedische -tha-/-atha-Suffix genannt. Offen blieb die davon verschiedene Frage, ob der von diesen Formen bezeichnete semantische Bereich – Erwartung vs. Wirklichkeit, Stimmigkeit, Dissonanz, Offenheit – als grammatischer Funktionsbereich überhaupt existiert und wie er typischerweise grammatikalisiert wird. Das ist eine materiell andere Dimension: sie entscheidet nicht, ob die Formen indo-arisch belegt sind, sondern ob das Kategoriendesign als plausibles Design oder als reine Setzung auszuweisen ist, und liefert damit die Grundlage für die von EXT-KG-MISH-20260831-001 geforderte epistemische Trennung.",
-  "fingerprint": "d8cb8ec4e280bbab"
+  "fingerprint": "d8cb8ec4e280bbab",
+  "updated_at": "2026-09-16T08:49:57+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/124"
 }
