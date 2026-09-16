@@ -1,0 +1,48 @@
+{
+  "id": "RES-20260916-08FAD47F",
+  "status": "queued",
+  "created": "2026-09-16T08:54:56+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-KOM-0002-2026-DE.md",
+  "source_ref": "36ca94b6f1bc4cb7948cba5f82957e91bb9fd4de",
+  "source_blob_sha": "7bd45d3008737b558c003702a27240df1dd6bf39",
+  "document_signature": "OTA-KOM-0002-2026-DE",
+  "title": "Realwelt-Audit der musiktheoretischen und thai-sprachlichen [R-Anker] in OTA-KOM-0002 (The Resonance of Us): Lanna-Pentatonik, E-Lydisch versus E-Dur, Akkorddiatonik und die Umschrift des Thai-Textes",
+  "question": "Source-grounded audit of the layer that OTA-KOM-0002-2026-DE itself marks as [R-Anker] (Sections I, III and IV) against music-theory, ethnomusicological and Thai-linguistic scholarship. (1) Mode and key: Section III gives 'Tonart: E-Dur / E-Lydisch (Lanna-Pentatonik)' and [KN-02] presents the raised 4th degree (A#) as the Lydian marker. Test against real modal-harmony theory whether the stated chord progressions are diatonic to E Lydian at all: Verse 'Emaj7 | Amaj7' and Chorus 'Emaj7 | Bsus4 | C#m7 | Amaj7' contain A natural (Amaj7), while E Lydian requires A#. Report which mode or major key the progression actually belongs to (e.g. E Ionian, I-IV), how 'Bsus4' and 'C#m7' function differently under E Lydian versus E Ionian, and which formulation is defensible for an [R-Anker]. (2) 'Lanna-Pentatonik': is 'Lanna-Pentatonik' an attested ethnomusicological term? Report the scale and tuning systems that northern Thai (Lanna) traditional music and Thai classical music actually use - in particular the seven-tone, approximately equidistant Thai scale, the tuning practice of ranat-ek/piphat instruments, movable reference pitch, and regional 'thang' modal categories - and state whether the pitch set named in the document (E-F#-G#-B-C#, an anhemitonic major pentatonic) is specific to northern Thai temple music or must be described as a globally widespread pentatonic collection. Name any documented pentatonic subset formation in Thai/Lanna practice, if it exists. (3) Language layer: check the transliteration given in the main text against the Thai source text in the same document and against a real romanisation system (RTGS / Royal Institute / ISO 11940). Does 'Nai kwarm-ngao ... mee piang siang pleng tee wang-plao' correspond to the Thai line 'ในความเงียบงัน ... มีเพียงเสียงเพลงที่ว่างเปล่า', and which romanisation is correct (e.g. 'khwam ngiap ngan')? Is 'Prom-li-khit' an admissible rendering of พรหมลิขิต, what is the standard form, and is the meaning claimed in the document (fate/providence) correct? Check the remaining exceptional transliterations ('Dern tam ha ngao', 'tee-sood', 'loke bai mai', 'Nuer took lae phid') for character correspondence, syllable separation and tone marking. (4) Cultural frame: is 'nordthailaendische Tempelmusik-Stimmung' (Lanna) genuinely distinguishable from the central-Thai piphat/khon tradition, and which instruments and repertoires belong to each? (5) Finally, name which sentences in Sections I, III and IV can remain [R-Anker], which must be demoted to [H]/[S], and which concrete reformulations reflect the real musicological and linguistic finding. Do NOT evaluate or alter the fictional layer: the song as a work-level entity, the German lyrical version, the placement of the song in the novel 'Nichts gefragt' and on the deck of the Rim Niran, the curator notes as authorial decisions, the cross-reference to OTA-KOM-0003, or any NOXIA/OTA balancing value. Do NOT re-ask the 7.83-Hz Schumann amplitude question (RES-20260902-A2AB1E76), the 432-Hz/127-Hz questions (RES-20260913-B694419C) or the 21.5-kHz EHF limit (RES-20260915-D7465012).",
+  "why_now": "OTA-KOM-0002-2026-DE stands at priority 10 in the current workqueue. Its five flags are editorial, but the document carries the archive's only music-theoretical and Thai-language [R-Anker] and that anchor is currently asserted without any external check: the piece is labelled both E major and E Lydian while the printed chords require A natural, the term 'Lanna-Pentatonik' is presented as a real northern-Thai temple-music scale, and the Thai transliteration diverges from its own Thai source line. The document is part of a growing Thai-music cluster (OTA-KOM-0001-2026-DE, OTA-KOM-0003-2026-DE, OTA-CUL-0019-2026-DE) that no research candidate has ever audited, so a verified finding here propagates across the whole cluster, including the [R]-marked ranat-ek/piphat statements in OTA-CUL-0019.",
+  "languages": [
+    "de",
+    "en",
+    "th"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker"
+  ],
+  "real_world_anchor": "Musiktheoretische und musikethnologische Aussagen: E-Dur versus E-Lydisch, die Akkordbezeichnungen Emaj7, Amaj7, Bsus4 und C#m7, der Begriff 'Lanna-Pentatonik' und die Tonmenge E-F#-G#-B-C# als nordthailaendische Tempelmusik; sprachlicher Anker: der Thai-Originaltext, seine RTGS-nahe Transliteration (Prom-li-khit, kwarm-ngao u. a.) und die Aussage, Thai sei reale Sprache mit aufnahmepraktischer Umschrift.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.74,
+  "scores": {
+    "project_relevance": 0.72,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous research candidate addresses music theory, ethnomusicology or Thai language and romanisation; the prior candidate corpus is entirely physics, engineering, planetary science and medicine. The whole Thai-music cluster (OTA-KOM-0001, OTA-KOM-0002, OTA-KOM-0003, OTA-CUL-0019) is unverified. The only overlap with existing work is incidental: the 432-Hz figure appears in both this document family and RES-20260913-B694419C, but that task explicitly excluded re-asking the 432-Hz archaeoacoustics question and does not touch pitch-class spelling, modal diatonicism, Lanna/T hai scale systems or Thai orthography.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 843,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "08fad47f52bd2927"
+}
