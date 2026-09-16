@@ -1,0 +1,36 @@
+{
+  "id": "RES-20260916-2142E3AA",
+  "status": "queued",
+  "created": "2026-09-16T08:41:44+00:00",
+  "source_project": "avi-modell",
+  "source_repository": "thomaspeterkueper/avi-modell",
+  "source_path": "docs/system-signature-si-v0.1.md",
+  "source_ref": "af5c9a528aa584661ab8eafa1f34dd37d2d515a0",
+  "source_blob_sha": "192853c92160ce366cdcd10396876db0bc9edb43",
+  "title": "S_i-Sensitivitätsmatrix mit realen Präzisionssystemen: konkrete K_i^α, K_i^μ und aktuelle Nulltest-Grenzen",
+  "question": "Welche konkreten atomaren, molekularen und nuklearen Präzisionssysteme besitzen unabhängig bestimmte, nicht-degenerierte Sensitivitätskoeffizienten gegenüber dimensionslosen Größen (insbesondere K_i^α und K_i^μ, definiert über δν/ν = K · δq/q), mit welcher gemessenen beziehungsweise modellabhängigen Unsicherheit sind diese Koeffizienten derzeit behaftet, und welche publizierten Labor-, Geologie- und Astrophysikgrenzen auf eine Drift von α, μ und nuklearen Parametern setzt jeder einzelne Kanal bereits? Lässt sich daraus die in der Systemsignatur v0.1 geforderte Sensitivitätsmatrix mit realen Systemen, ihren experimentellen Grenzen und den dadurch ausgeschlossenen beziehungsweise stark eingeschränkten AVI-Kopplungsvarianten vollständig belegen, und ist die geforderte differentielle Antwort überhaupt erreichbar, ohne dass alle zulässigen Kanäle an derselben effektiven Größe hängen?",
+  "why_now": "docs/system-signature-si-v0.1.md §12 definiert als unmittelbaren nächsten Schritt eine kleine S_i-Sensitivitätsmatrix mit realen experimentellen Systemen (zwei optische/atomare Frequenzvergleiche mit deutlich verschiedenen Sensitivitäten, ein molekularer Vergleichskanal, ein nuklearer Langzeitkanal, ein gravitativer Konsistenzkanal, jeweils mit experimenteller Grenze) und kündigt an, erst danach über S1 versus S2/S3 zu entscheiden. §8 priorisiert S1 ausdrücklich als Kontroll- und Kalibrationsrahmen, und §5 verlangt eine messbare differentielle Antwort C_i/C_j != 1. Das Dokument enthält derzeit nur eine schematische Liste (α, Massenverhältnisse, QCD/nuklear, gravitativ) ohne Zahlenwerte. Ohne extern belegte Sensitivitätskoeffizienten kann weder die Matrix gebaut noch die Falsifikationsschranke aus §10 Punkt 3 (alle Kopplungen common-mode und damit lokal unbeobachtbar) geprüft werden. Zusätzlich ist die Sensitivität des nuklearen Kanals derzeit nicht unabhängig gesichert: die 2025 publizierte Analyse des 229Th-Übergangs liefert einen Koeffizienten mit grosser Modellunsicherheit, während molekulare und THz-Kanäle sowie Oklo- und Meteoritenarchive unterschiedlich modellabhängige Grenzen setzen — die Behauptung 'qualitativ anderer Ratenkanal' braucht daher eine belastbare Quellenlage statt einer plausiblen Vermutung.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "avi-theoretical-cosmology",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Publizierte Sensitivitätskoeffizienten K_i^α und K_i^μ für konkrete Uhr- und Spektroskopiesysteme (optische Ionen-/Gitteruhren, molekulare und THz-Übergänge, 229Th-Kernübergang) sowie die derzeitigen Labor- und Archivgrenzen auf α- und μ-Drift (Uran- und Molekülspektren, Oklo-Reaktor, Meteoriten-Datierung).",
+  "publication_route_hint": null,
+  "project_weight": 0.85,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.95
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Nicht identisch mit RES-20260828-0806A449: dort ging es um formale Frameworks für historien-/pfadabhängige Observablen und um die Kovarianz- und Testbarkeitsbedingungen des zusätzlichen Zustands xi bei identischem Y. Hier geht es ausschliesslich um die empirische Sensitivitäts- und Constraint-Landschaft etablierter Präzisionssysteme bei festem, unverändertem Gegenwartszustand — also um die Zahlenbasis für das etablierte S1-Kontrollregime, nicht um die Formalisierung von Historienabhängigkeit.",
+  "fingerprint": "2142e3aa87f50fb8"
+}
