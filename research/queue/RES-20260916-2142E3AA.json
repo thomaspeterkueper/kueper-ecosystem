@@ -1,6 +1,6 @@
 {
   "id": "RES-20260916-2142E3AA",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-09-16T08:41:44+00:00",
   "source_project": "avi-modell",
   "source_repository": "thomaspeterkueper/avi-modell",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Nicht identisch mit RES-20260828-0806A449: dort ging es um formale Frameworks für historien-/pfadabhängige Observablen und um die Kovarianz- und Testbarkeitsbedingungen des zusätzlichen Zustands xi bei identischem Y. Hier geht es ausschliesslich um die empirische Sensitivitäts- und Constraint-Landschaft etablierter Präzisionssysteme bei festem, unverändertem Gegenwartszustand — also um die Zahlenbasis für das etablierte S1-Kontrollregime, nicht um die Formalisierung von Historienabhängigkeit.",
-  "fingerprint": "2142e3aa87f50fb8"
+  "fingerprint": "2142e3aa87f50fb8",
+  "updated_at": "2026-09-16T08:55:33+00:00",
+  "last_error": "candidate for avi-theoretical-cosmology lacks a strong source type marker"
 }
