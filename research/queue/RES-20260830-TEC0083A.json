@@ -1,6 +1,6 @@
 {
   "id": "RES-20260830-TEC0083A",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-30T14:12:00+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -45,5 +45,27 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-30T14:24:57+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/52"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/52",
+  "validated_at": "2026-09-16T10:03:17+00:00",
+  "validation_summary": "Der Kandidat auditert die realwissenschaftlichen Anker von OTA-TEC-0083 (Starport-Launcher) und bestaetigt sie im Kern: Delta-v-Bedarf zu LEO, Massensensitivitaet der SSTO, TSTO als robuster Referenzmodus, Wiedereintritts-Herausforderung und die 100-150-t-Groessenordnung. Kein [R]-Anker wird widerlegt; die F/OFFEN-Markierungen (SSTO/TSTO-Hybrid, Propellantwahl, Abort) bleiben korrekt. Der Mehrwert liegt in quantitativen Praezisierungen (Aufstieg ~8,8-9,6 km/s inkl. Verluste, effektiver Missionswert ~9,5 km/s; Orbitalgeschwindigkeit bei 400 km 7,67 km/s statt ~7,8 km/s; Massenverhaeltnis ~8,8-9,5 hydrolox / ~16-17 methalox; zulaessiger Nicht-Treibstoff-Anteil eines SSTO inkl. Nutzlast <= ~6-11 % gegen reale Strukturkoeffizienten 0,04-0,13). Diese Schwellen treffen im Repository jedoch nicht primaer OTA-TEC-0083, sondern das kanonische Archivdokument OTA-SCI-0029-2025-DE (SSTO-Massenbudget des ASCE-Shuttles, dort als 'Reine Physik, keine Spekulation' und Hard-SF 9,8/10 gefuehrt): Dessen ",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260916-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260916-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260916-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
