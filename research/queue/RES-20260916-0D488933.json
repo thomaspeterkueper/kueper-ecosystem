@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260916-0D488933",
+  "status": "queued",
+  "created": "2026-09-16T08:41:45+00:00",
+  "source_project": "avi-modell",
+  "source_repository": "thomaspeterkueper/avi-modell",
+  "source_path": "docs/dynamical-closure-contract-v0.1.md",
+  "source_ref": "af5c9a528aa584661ab8eafa1f34dd37d2d515a0",
+  "source_blob_sha": "f5293ea068156a213bca985e94b22e9fdf776bbb",
+  "title": "Konsistente Energie- und Gravitationsinterpretation von ΔH_AVI²: Anschluss an etablierte Vakuum- und Laufende-Vakuum-Modelle",
+  "question": "Welche etablierten theoretischen Rahmen liefern eine konsistente Energie-Impuls- und Gravitationsinterpretation eines zusätzlichen Hintergrundbeitrags ΔH², der einen wohldefinierten Nullfall besitzt, kovariante Erhaltung beziehungsweise die Bianchi-Identität respektiert, Lorentz-Invarianz und Äquivalenzprinzip nicht verletzt und gleichzeitig mit BBN, CMB und BAO/SNe verträglich ist? Insbesondere: welche Formen einer expansionsabhängigen Vakuumenergiedichte (beispielsweise Λ(H) mit den Koeffizienten ν und ν̃, Vakuum-Metamorphose oder zerfallendes Vakuum) sind in der Literatur ausgearbeitet, welche statistischen Präferenzen und Ausschlüsse ergeben sich aus publizierten Fits an SNIa+BAO+H(z)+LSS+BBN+CMB, und welche dieser Modelle sind durch bestehende Daten bereits so stark eingeschränkt, dass sie als AVI-Klasse-A-Kandidat ausscheiden? Bildet eine solche expansionsabhängige Vakuumdichte überhaupt einen eigenständigen AVI-Zustand ab, oder ist sie gerade ein Beispiel für eine reine Funktion des momentanen Y und damit kein Träger von Test B?",
+  "why_now": "docs/dynamical-closure-contract-v0.1.md §7 verlangt für die Klasse A (Expansionskopplung) ausdrücklich 'eine konsistente Energie-/Gravitationsinterpretation von ΔH_AVI^2', und §11 hält Klasse A als separat prüfbare kosmologische Variante ausdrücklich offen. §5 betont, dass Φ in diesem Arbeitsmodell kein räumlich propagierendes Skalarfeld ist, und §10 verlangt einen reproduzierbaren Nullfall sowie mindestens einen durch Daten ausschliessbaren Parameterbereich. Bisher enthält das Repository dazu keine einzige externe Referenz; ohne Anschluss an die bestehende Literatur zur dynamischen Vakuumenergie riskiert AVI Klasse A, entweder bereits publizierte und längst eingeschränkte Modelle unter neuem Namen zu wiederholen oder eine Energieinterpretation zu postulieren, die an BBN- oder Äquivalenzprinzip-Grenzen scheitert. Die aktuelle Literatur zu laufender Vakuumenergie diskutiert zudem ausdrücklich die Kopplung an mögliche Zeitentwicklungen fundamentaler Konstanten, was die Schnittstelle zwischen AVI-Klasse A und der Klasse-B-Ratenkopplung direkt betrifft und deshalb vor jeder weiteren Modellentscheidung geklärt werden muss.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "avi-theoretical-cosmology",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Etablierte Modelle dynamischer beziehungsweise laufender Vakuumenergie (rho_vac(H) = (3/8 pi G)(C0 + nu H^2 + nu_tilde H_dot) + O(H^4), Vakuum-Metamorphose, zerfallendes Vakuum) und ihre publizierten Constraints und Evidenzvergleiche aus SNIa+BAO+H(z)+LSS+BBN+CMB.",
+  "publication_route_hint": null,
+  "project_weight": 0.85,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Nicht identisch mit RES-20260828-0806A449 und ausdrücklich keine verdeckte Wiederholung: dort war die Leitfrage, welche Frameworks Historien- oder Pfadabhängigkeit bei identischem Y erlauben und welche Bedingungen xi erfüllen muss. Hier wird eine andere, im Repository offen markierte Achse bearbeitet — ob ein zusätzlicher Expansionsbeitrag ΔH² überhaupt eine tragfähige Energie- und Gravitationsinterpretation besitzt. Der entscheidende inhaltliche Unterschied: eine Vakuumdichte der Form rho_vac(H) hängt nur vom momentanen Y ab und ist damit gerade kein Historienzustand; ihre Untersuchung klärt, welche Klasse-A-Kandidaten den Test-B-Mechanismus prinzipiell nicht tragen können.",
+  "fingerprint": "0d48893353a8cf0e"
+}
