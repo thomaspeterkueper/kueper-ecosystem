@@ -1,6 +1,6 @@
 {
   "id": "RES-20260830-TEC0083B",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-30T14:12:30+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -45,5 +45,27 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-30T14:32:58+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/53"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/53",
+  "validated_at": "2026-09-16T10:05:59+00:00",
+  "validation_summary": "Quellengestuetztes Audit der realwissenschaftlichen Anker von OTA-TEC-0083 (Starport-Launcher). Ergebnis: Kein Konflikt. Die [R]-Anker des Dossiers sind real gestuetzt (Tsiolkovsky, Delta-v 9,3-9,7 km/s, SSTO-Massensensitivitaet, Wiedereintritt/TPS-Last, Startphasenrisiko, Engine-out auf der Erststufe, kryogenes Betankungsrisiko), und die Trennung von [F/OFFEN]-Setzungen (Ticketpreise, Betreiber, Passagierzahlen, Flugzeit) ist korrekt und bleibt unangetastet - der Kandidat bestaetigt ausdruecklich, dass Wiederverwendbarkeit keine Preispunkte garantiert. Drei Formulierungen sind einzuengen: (a) der 24-72-h-Turnaround ist real nirgends demonstriert und sollte im Dossier als gesetzte Systemspezifikation/[H]-Ziel markiert werden; (b) dieselbe Zahl traegt in OTA-SCI-0029 in einer Vergleichstabelle gegen reale Traegerwerte, obwohl das Dokument nur [R,T] fuehrt; (c) 'Fluchtturm-/Abort-Erfordernis' in 14 benennt eine Bauform, obwohl real nur Abort-Faehigkeit normiert ist und die Architektur of",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260916-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260916-005",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260916-006",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
