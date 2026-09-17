@@ -1,6 +1,6 @@
 {
   "id": "RES-20260830-TEC0084B",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-30T14:17:30+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -45,5 +45,27 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-30T14:50:58+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/56"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/56",
+  "validated_at": "2026-09-17T10:07:40+00:00",
+  "validation_summary": "Der Kandidat ist ein quellengebundenes Realanker-Audit von OTA-TEC-0084-2026-DE (PELICAN) und bestaetigt saemtliche [R]-Anker des Dossiers (Kornmorphologie/Abrasion/Elektrostatik, Apollo-Reizsymptome ohne Silikose, PSI/Ejekta, Hardware-Wirkungen auf Dichtungen/Radiatoren/Optik) durch Primaer- und Peer-Review-Literatur; keine Retraktion, kein Materialwiderspruch, keine neue Kausalitaetsbehauptung. Damit ist kein conflict-Fall gegeben: die einzige materielle Spannung (Silikose-Angabe in OTA-TEC-0025 Abschnitt 4.3 gegen TEC-0084 und die NASA-Risikolage, ebenfalls Gegenstand dieses Kandidaten) ist bereits als EXT-KG-OTA-20260917-001 offen erfasst und wird hier nicht dupliziert; die vom Kandidaten ausdrueckliche Nicht-Hochstufung der Wartungskausalitaet zu [R] ist eine Bestaetigung, keine Aenderung. Drei substantielle Anreicherungen bleiben: (1) die Wartungskausalitaet ist in TEC-0084 inkonsistent markiert - §13 kennzeichnet sie als [H], §5 und §11 fuehren dieselbe Aussage unmarkiert -, und",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260917-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260917-005",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260917-006",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
