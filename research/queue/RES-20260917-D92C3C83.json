@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260917-D92C3C83",
+  "status": "queued",
+  "created": "2026-09-17T08:45:15+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0175-2026-de.md",
+  "source_ref": "78f1d2442b9d5e5f128b21e952f562c4cfdeca42",
+  "source_blob_sha": "526a8a98c3427309924b9507b8af34df68bd8ea3",
+  "title": "KUE-SCI-0175: Evidenzstand der Ultraweak Photon Emission 2014–2026 — Spektralfenster, Replikationslage und Status der Biophotonen-Kommunikationshypothese",
+  "question": "Was ist der aktuelle peer-reviewte Stand zu (1) den spektralen Grenzen und der Reproduzierbarkeit gemessener UPE-Spektren — ist der Bereich ≈350–1300 nm weiterhin der tragfähige Standardanker, und aus welcher Mess- oder Publikationstradition stammt das in §II als 'historisch' bezeichnete engere Fenster 200–800 nm, das dort als zu eng bzw. am kurzwelligen Ende anders definiert eingeordnet wird? (2) Welche quantitativen Emissionsraten und Nachweisgrenzen gelten heute für oxidativen Stress, und (3) wie ist die Replikationslage zu schwacher, nicht-oxidativer bzw. kohärenter Emission (verzögerte Lumineszenz, Ultraweak-Photonen-Kohärenz) einzuschätzen? (4) Gibt es seit 2014 präregistrierte Replikationsstudien, unabhängige methodische Kritiken oder systematische Reviews zur Hypothese informationskodierender oder interzellulärer photonischer Kommunikation, die die in KUE-SCI-0175 vorgenommene Dreistufung (Emission [R]; oxidativer Mechanismus/Spektralzuordnung [R/T]; biologische Kommunikationsfunktion [H]) verschieben würden?",
+  "why_now": "KUE-SCI-0175 ist ausdrücklich als realwissenschaftlicher Grundlagenanker für nachgelagerte Dokumente konstruiert (§VII: drei getrennt auszuweisende Evidenzebenen), stützt seinen Literaturanker aber im Wesentlichen auf zwei Übersichtsarbeiten von 2014 (Cifra & Pospíšil; Pospíšil). Die in §II aufgestellte Aussage über ein enges historisches 200–800-nm-Fenster und die in §V als [H] geführte Kommunikationshypothese sind genau die Punkte, an denen eine Weltsetzung andockt; eine Aktualisierung entscheidet unmittelbar, welche Ebene weiterhin als [R]-Anker geführt werden darf und welche als [H] zu kennzeichnen ist.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewte Photobiologie- und Photochemie-Literatur zur Ultraweak Photon Emission (UPE) 2014–2026: Spektralbereiche und Detektionsgrenzen, Mechanismen (ROS, angeregte Carbonyle, Singulett-Sauerstoff, ≈1270-nm-Bande), Reproduzierbarkeit und der Status der 'Biophotonen'-Kommunikationshypothese.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.7875,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein vorheriges Topic behandelt KUE-SCI-0175 oder die UPE-Evidenzlage. Das Topic zu KUE-SCI-0170 (menschliche Magnetorezeption, Alpha-ERD) betrifft ein anderes Dokument, einen anderen Messkanal und eine andere Literaturbasis; es liegt inhaltlich keine bloße Umformulierung vor.",
+  "fingerprint": "d92c3c839014c40f"
+}
