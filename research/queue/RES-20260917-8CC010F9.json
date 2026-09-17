@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260917-8CC010F9",
+  "status": "queued",
+  "created": "2026-09-17T08:45:14+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0174-2026-de.md",
+  "source_ref": "78f1d2442b9d5e5f128b21e952f562c4cfdeca42",
+  "source_blob_sha": "f6df0efaac17b597f1c31af1d3bc780fe68421ff",
+  "title": "KUE-SCI-0174: U/Th-Trägerminerale in marinen und levantinischen Phosphoriten sowie Spurenelemente historischer Kupfererze — Schließung der im Dokument selbst deklarierten Literaturlücke",
+  "question": "Welche quantitativen, lagerstättenspezifischen Primärbefunde existieren zu (a) U- und Th-Gehalten sowie deren Mineralträgern (Apatit/Carbonat-Fluorapatit/Collophan, Monazit, Thorit, organische Substanz) in marinen Phosphoriten, insbesondere levantinischen bzw. syrischen Vorkommen, und (b) U-/Th-Gehalten und Trägermineralen in historisch verhütteten Kupfererzen sowie deren Verbleib bei Röstung und Schmelze (Verteilung zwischen Schlacke, Flugstaub und Metall)? Lässt sich der in KUE-SCI-0174 verwendete Rechenanker (200 ppm natürliches U ⇒ ≈19,7 nW/kg Gestein; ein Fundstück von 100 g ⇒ ≈1,97 nW) für einen konkreten Regionalfall durch Literaturwerte stützen oder widerlegen, und welche Größenordnung radiogener Eigenwärme ist für ein handgroßes Artefakt aus solchem Material realistisch? Lässt sich die in §III aufgestellte Trennung — Phosphoritgürtel und Kupferparagenese sind getrennte Systeme — für ein konkretes Herkunftsgebiet belegen oder aufheben?",
+  "why_now": "KUE-SCI-0174 markiert die konkrete Zuordnung von U-/Th-Trägern zu einem historischen Kupfererz ausdrücklich als [H/T] und schreibt in seinem Quellenanker selbst, dass 'lagerstättenspezifische Fachliteratur zu marinen und syrischen Phosphoriten sowie zur Spurenelementgeochemie historischer Kupfererze für konkrete Regionalaussagen zusätzlich erforderlich' ist. Die Lücke ist damit keine erfundene Nice-to-have-Frage, sondern eine im Dokument deklarierte offene Abhängigkeit; ihre Schließung entscheidet unmittelbar über die Plausibilität der an dieses Grundlagendokument andockenden Material- und Artefaktbehauptungen.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Geochemische Primärliteratur zu U-/Th-Trägermineralen in marinen und levantinischen (syrischen) Phosphoriten (Apatit/Collophan, Monazit, Thorit) sowie archäometallurgische und lagerstättenkundliche Literatur zu Spurenelementgehalten historischer Kupfererze und zur Verteilung von U/Th zwischen Schlacke, Flugstaub und Metall bei Röstung und Schmelze.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.8375,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein vorheriges Topic berührt KUE-SCI-0174 oder die Lagerstättengeochemie von U/Th in Phosphoriten und historischen Kupfererzen. Die bisherigen Topics (0169, 0170, 0183, MTH-0006, OBS-0101, SCI-0001) prüfen andere Dokumente und andere Fachgebiete.",
+  "fingerprint": "8cc010f94976d0bb"
+}
