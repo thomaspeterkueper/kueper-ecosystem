@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260917-4DB36C45",
+  "status": "queued",
+  "created": "2026-09-17T08:45:14+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0168-2026-de.md",
+  "source_ref": "78f1d2442b9d5e5f128b21e952f562c4cfdeca42",
+  "source_blob_sha": "d8061c91ba8a72b55d51442e0e68712966538503",
+  "title": "KUE-SCI-0168: Publikationsstatus und Folgeevidenz der ΛΛ̄-Spinkorrelation — STAR-Nature-Messung versus vorläufiger CMS-Kreuzvergleich",
+  "question": "Welcher externe Evidenzstand ergibt sich (Stand September 2026) zu den Kernaussagen von KUE-SCI-0168? Konkret: (1) Ist CMS-PAS-HIN-26-002 inzwischen als peer-reviewte Publikation erschienen, und bleiben die quantitativen Aussagen — keine statistisch signifikante positive kurzreichweitige ΛΛ̄-Korrelation bei pp √s = 13 TeV und pPb √sNN = 8,16 TeV — dabei erhalten, oder verschieben sie sich? (2) Sind die STAR-Werte (P_ΛΛ̄ = 0,181 ± 0,035 (stat) ± 0,022 (sys), 4,4σ; SU(6)-Erwartung 0,096 ± 0,004) sowie die Feed-down-Korrekturen und der Dekohärenz-Rahmen durch unabhängige Reanalysen, HEPData-basierte Nachrechnungen (Record 159491) oder neue Messungen bestätigt, eingeschränkt oder revidiert worden? (3) Gibt es neue Arbeiten, die eine vollständige Zwei-Spin-Dichtematrix bzw. einen PPT/Peres-Horodecki-Test vorlegen, sowie nichtperturbative QCD-Modelle, die STAR und CMS gemeinsam quantitativ beschreiben?",
+  "why_now": "KUE-SCI-0168 liegt als Version 0.1 mit Status 'Reviewfähig' (2026-08-29) vor und trägt seine zentrale Kontrastaussage in §VIII ('Positive ΛΛ̄-Korrelation auch bei CMS/LHC-Energien — nicht bestätigt') ausdrücklich auf einem vorläufigen Kollaborationsergebnis (CMS-PAS-HIN-26-002, 17. Mai 2026). Genau dieser Vorläufigkeitsstatus ist der schwächste Punkt der Evidenztabelle: Eine Journalpublikation der CMS-Analyse oder eine weitere unabhängige Messung würde [R], [T] und [H] in §VIII messbar verschieben und entscheidet, ob der CMS-Vergleich als belastbarer Gegenbefund oder nur als Momentaufnahme im Dokument stehen darf.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewte Hochenergiephysik-Literatur zu Λ-Hyperon-Spinkorrelationen: STAR Collaboration, Nature 650, 65–71 (2026), DOI 10.1038/s41586-025-09920-0, arXiv:2506.05499, HEPData Record 159491; CMS-PAS-HIN-26-002 und dessen Publikationsstatus; unabhängige Feed-down- und Hadronisierungsmodelle.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.7875,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein vorheriges Topic dieses Projekts behandelt KUE-SCI-0168 oder die STAR/CMS-ΛΛ̄-Evidenzlage; die bisherigen Topics betreffen 0169, 0170, 0183, MTH-0006, OBS-0101 und SCI-0001. Der Gegenstand ist daher nicht nur eine Umformulierung, sondern eine bisher unbearbeitete Evidenzprüfung an einem anderen Dokument.",
+  "fingerprint": "4db36c452243b889"
+}
