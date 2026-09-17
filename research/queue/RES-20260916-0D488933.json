@@ -1,6 +1,6 @@
 {
   "id": "RES-20260916-0D488933",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-16T08:41:45+00:00",
   "source_project": "avi-modell",
   "source_repository": "thomaspeterkueper/avi-modell",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Nicht identisch mit RES-20260828-0806A449 und ausdrücklich keine verdeckte Wiederholung: dort war die Leitfrage, welche Frameworks Historien- oder Pfadabhängigkeit bei identischem Y erlauben und welche Bedingungen xi erfüllen muss. Hier wird eine andere, im Repository offen markierte Achse bearbeitet — ob ein zusätzlicher Expansionsbeitrag ΔH² überhaupt eine tragfähige Energie- und Gravitationsinterpretation besitzt. Der entscheidende inhaltliche Unterschied: eine Vakuumdichte der Form rho_vac(H) hängt nur vom momentanen Y ab und ist damit gerade kein Historienzustand; ihre Untersuchung klärt, welche Klasse-A-Kandidaten den Test-B-Mechanismus prinzipiell nicht tragen können.",
-  "fingerprint": "0d48893353a8cf0e"
+  "fingerprint": "0d48893353a8cf0e",
+  "updated_at": "2026-09-17T08:59:03+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/128"
 }
