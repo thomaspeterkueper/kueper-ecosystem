@@ -1,0 +1,53 @@
+{
+  "id": "RES-20260917-CAE06395",
+  "status": "queued",
+  "created": "2026-09-17T08:58:43+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-RED-0017-2091-DE.md",
+  "source_ref": "0f85b3b8d2e381259e4a8ee440c0828a42be89c8",
+  "source_blob_sha": "00836ae8be4705a8cc23e22731ccb009f8bbc21c",
+  "document_signature": "OTA-RED-0017-2091-DE",
+  "title": "Realwelt-Audit der Entwicklungs- und Statistikschicht in OTA-RED-0017: 0,38g-Effekte auf Innenohr- und Cochlea-Entwicklung, kosmische Strahlung und neuronale Plastizitat, und die Signifikanzbehauptung bei n=4 von 150",
+  "question": "Source-grounded audit of the externally checkable developmental-physiology and statistical-inference layer of OTA-RED-0017-2091-DE (Section III.3.1 'Gemeinsame Merkmale' and Section III.3.2 'Hypothese: chi-Feld-Adaptation', factor table) against primary vestibular/auditory developmental biology, space-radiation neuroscience and biostatistics literature. (1) Gravity factor: the factor table assigns the observed cluster to 'Schwerkraft: 0.38g verandert Innenohr-Entwicklung, erhoht Cochlea-Sensitivitat'. Report what is actually established about gravity-dependent development of the vestibular apparatus and the auditory system - rodent hindlimb-unloading, hypergravity/centrifugation, rotating-wall-vessel and ISS/biosatellite studies covering otoconia formation, hair-cell and spiral-ganglion development, and vestibular adaptation - naming species, exposure windows, sample sizes and confounds. State explicitly whether any evidence supports a shift in *hearing range or cochlear sensitivity* (as opposed to vestibular/otolith effects) under partial gravity, and whether any mammal has ever been gestated and matured at 0.38 g. (2) Radiation factor: verify 'Strahlung: Kosmische Strahlung beeinflusst neuronale Plastizitat' against the real space-radiation neuroscience corpus (ground-based Fe-56/HZE particle rodent work, hippocampal neurogenesis, cognitive and behavioural endpoints) and report which findings are established, contested or absent - in particular whether any study links radiation exposure to auditory-system or frequency-discrimination changes. (3) Statistical claim: Section III.3.2 asserts 'Die zweite Generation Mars-geborener Kinder zeigt eine statistisch signifikante Erhohung der Frequenz-Sensitivitat', while the document's own counts are 4 affected individuals among 150 nominees (146 after removal). Report what an n=4/150 observation can and cannot establish - absence of a Mars-born denominator, no unaffected Mars-born control cohort, selection by the exchange programme itself, audiometric test conditions and multiple-comparison exposure - and what sample size an effect of that magnitude would require at conventional power. State a defensible reformulation for an [R]-marked archive sentence. (4) Measurement coherence: report whether the reported individual values (21.500 / 21.800 / 22.400 / 23.100 Hz) are individually resolvable given real EHF audiometry test-retest variability and typical screening equipment, only insofar as required to judge whether the claimed spread is a real effect or measurement noise; do NOT re-ask the population-distribution question. (5) State briefly whether a rotating machine can produce a genuine 432 Hz subharmonic and whether the document's audibility asymmetry ('Normalpersonen horen diesen nicht') is physically meaningful; do NOT re-ask the tuning/archaeoacoustics question or the infrasound-versus-tonal-hearing question. (6) Identify which sentences must remain [F]/[W] work canon and which physiological sentences in the factor table must be narrowed to [H]/[OFFEN] or given a real anchor rather than reading as validated mechanisms. Do NOT evaluate or alter the fictional layer: the four redacted students, the Solar Student Exchange Program 2091, Lena Kowalski, the chi-Feld adaptation postulate, the Baumeister frequencies, the curator notes [KN-01]/[KN-02], or any NOXIA/OTA balancing value.",
+  "why_now": "OTA-RED-0017-2091-DE is a priority-12 workqueue fragment (GENERIC_TITLE, GENERIC_SUMMARY, RELATION_GAP, NO_VISUAL, NO_HEADINGS) that has never been source-audited. Its two sibling documents were audited and each explicitly left this layer open: RES-20260915-D7465012 settled the EHF audiometry population question and RES-20260916-6BAF76EA settled the 12-Hz infrasound/perception question, both excluding RED-0017's own text. What remains un-audited is the document's causal core - partial gravity as a shaper of inner-ear and cochlear development, radiation as a driver of neuronal plasticity, and an n=4 observation currently worded as a 'statistically significant' population-level finding. Those are exactly the sentences that would let a reader treat a fictional adaptation as an established physiological result.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "H",
+    "S",
+    "F"
+  ],
+  "real_world_anchor": "Gravity-dependent vestibular/otolith and auditory development in mammals and its microgravity, hypergravity and partial-gravity literature; GCR/HZE-particle effects on hippocampal neurogenesis and cognition; the statistical power of a 4-in-150 observation without a Mars-born denominator or control cohort; EHF audiometry test-retest variability.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.71,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.68,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.72
+  },
+  "related_research_ids": [
+    "RES-20260915-D7465012",
+    "RES-20260916-6BAF76EA",
+    "RES-20260913-13DAB8F0"
+  ],
+  "novelty_reason": "RED-0017 appears in prior topics only as an incidental comparator inside audits of its siblings: RES-20260916-6BAF76EA cites its '432-Hz-Unterton im Zentrifugenmotor' sentence when auditing OTA-RED-0016's perception layer, and RES-20260915-D7465012 audits the EHF hearing-range question for OTA-RED-0018 without touching RED-0017's developmental-biology or statistical layer. RES-20260913-13DAB8F0 audits birth/neonatal physiology at 0.16 g and 0.38 g in OTA-SCI-0086 (obstetric endpoints), not vestibular/auditory development or radiation neuroplasticity. The gravity-dependent inner-ear development claim, the radiation-plasticity claim and the n=4 statistical-significance claim are therefore all new, and the question explicitly fences off the already-answered audiometry, tuning and infrasound dimensions.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 638,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "cae063952211ab28"
+}
