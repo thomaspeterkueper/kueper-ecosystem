@@ -1,0 +1,51 @@
+{
+  "id": "RES-20260917-0E02295F",
+  "status": "queued",
+  "created": "2026-09-17T08:58:43+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0001-2196-DE.md",
+  "source_ref": "0f85b3b8d2e381259e4a8ee440c0828a42be89c8",
+  "source_blob_sha": "f65eda87cc3f268396d7067df19b5ccde1080a89",
+  "document_signature": "OTA-TEC-0001-2196-DE",
+  "title": "Realwelt-Audit der VEX-47-Technologieanker: Casimir-/Vakuumenergie-Antrieb, Solfeggio-Detektor (174-963 Hz, 528 Hz DNA-Reparatur) und Thorium-Mikrozelle als Energiequelle",
+  "question": "Source-grounded audit of the externally checkable physics, materials and metrology claims in OTA-TEC-0001-2196-DE (Sections 'Antrieb: Casimir-Drift-Array', 'Sensor-Suite / Lains Erweiterungen', 'Energiesystem' and 'Elaras Lied: 528 Hz') against primary physics, materials-science and scientific-standards literature. (1) Propulsion: the document specifies 4x Casimir-Drift-Emitter (CDE-mu7) whose 'Funktionsprinzip' is 'Lokale Vakuumenergie-Asymmetrie erzeugt gerichteten Schub', with the Besonderheit 'Funktioniert auch in Vakuum und extremer Atmosphare'. Report what the real Casimir effect actually is (attractive boundary-dependent force between closely spaced conductors), what the dynamic Casimir effect has actually been observed to do (e.g. photon creation from a modulated boundary), and whether any peer-reviewed result, laboratory test or flown demonstration supports net propellantless thrust from a vacuum-energy asymmetry. Audit the momentum-conservation constraint and the replication/null status of comparable propellantless-thrust programmes (EMDrive/EmDrive cavity-thrust claims and their null replications, Mach-effect/Woodward-type devices, torsion-balance thrust measurements). State which physical bound (momentum conservation, achievable field asymmetry, thermal/radiation-pressure artefacts) constrains the drone's claimed 12 m ceiling and 40 km/h top speed if no net thrust is available, and name what real propulsion class a 4.2 kg, 72 h endurance, 12 m ceiling platform would actually use. (2) Resonance detector and 233 Hz blind spot: the document states a detector built from a disassembled chi-Telegraph module 'erkennt Solfeggio-Frequenzen im Bereich 174-963 Hz' and fails at 233 Hz. Report the documented origin of the Solfeggio scale (Puleo/Horowitz, 1990s) and whether 174/285/396/417/528/639/741/852/963 Hz correspond to any measured acoustic, physiological, tuning-standard or instrumentally meaningful quantity; verify whether 233 Hz carries any documented physical or musical significance. (3) 'Elaras Lied: 528 Hz': audit the claim 'Grundfrequenz 528 Hz, die Liebesfrequenz des Solfeggio-Systems ... Frequenz der DNA-Reparatur und Transformation' against the peer-reviewed audible-range bioeffect literature; report explicitly whether frequency-specific DNA repair, cellular repair or 'love frequency' effects at 528 Hz are established, contested or unsupported, and separate this from the document's own [F] Omnizedenz framing. (4) Energy system: the document specifies a 'Thorium-Mikrozelle (HERMES-Ara)' as primary cell whose critical failure mode is 'Kernschmelze'. Report thorium's real nuclear properties (fertile Th-232, fissile U-233 breeding), whether a thorium-based micro power source is a real technology class at all (fission reactor vs. RTG vs. betavoltaic vs. decay heat), what real radioisotope or battery power source a ~4.2 kg platform with 72 h nominal endurance and 4 h solar recharge would actually require, and whether 'Kernschmelze' is a physically meaningful failure mode for the stated fuel. (5) Housing: assess 'Titan-Polymer-Legierung mit Mantrika-Kristall-Verstarkung, optimiert fur Temperaturextreme (-180 bis +120 C)' against real titanium-alloy and polymer-composite service ranges and against the actual Mars/space thermal environment. (6) Identify which sentences in this document carry an externally checkable [T] or [R] core and must be narrowed, supplied with a real-world anchor, or reclassified, and which are [F] work canon. Do NOT evaluate or alter the fictional layer: Korvus Dynamics and Ceres-Sektor 12, the 2178 build year, serial VEX-47-7734-KD, TIER 4 'Hybrid-Bio-Tech' / Post-Genesis-Ara, the Blackpearl-Kondensator, the emergent 'Halbwache' personality framing, Lain and Elara, the Genesis-Fuge, the Baumeister geometry, or any NOXIA/OTA balancing value.",
+  "why_now": "OTA-TEC-0001-2196-DE is a priority-10 workqueue fragment (GENERIC_TITLE, GENERIC_SUMMARY, RELATION_GAP, NO_VISUAL, NO_HEADINGS, 1062 words) that has never been source-audited, and it is the only document in the current workqueue carrying a [T] class that no existing audit covers. Its load-bearing 'technology' claims are each a real-world assertion with a decidable evidence status: propellantless vacuum-energy thrust (a documented null-result area), the Solfeggio/528-Hz scale (a documented non-scientific origin), and thorium as a micro power source (a real nuclear-property boundary). Pinning those anchors would let the archive keep the fiction while no longer letting three unmarked mechanism claims read as grounded physics, and would close the open KG/KUE grounding gap for the VEX object.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "T",
+    "R"
+  ],
+  "real_world_anchor": "Casimir effect and dynamic Casimir effect versus the momentum-conservation constraint on propellantless vacuum-energy thrust (with the EMDrive and Woodward/Mach-effect null-test record); documented 1990s origin of the Solfeggio scale and the absence of peer-reviewed evidence for 528 Hz DNA repair; thorium-232 as a fertile rather than fissile nuclide and the real space radioisotope/battery power classes; real titanium-alloy and polymer-composite service temperature ranges.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.69,
+  "scores": {
+    "project_relevance": 0.72,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.62,
+    "evidence_potential": 0.7
+  },
+  "related_research_ids": [
+    "RES-20260902-A2AB1E76",
+    "RES-20260831-3CFEFFA6"
+  ],
+  "novelty_reason": "No prior audit covers OTA-TEC-0001-2196-DE or the Casimir/vacuum-thrust, Solfeggio-scale and thorium-micro-cell claim families. RES-20260902-A2AB1E76 audits ELF/Schumann bioeffect evidence for an artificial habitat generator in OTA-TEC-0019-2095, not propellantless propulsion or the Solfeggio scale; RES-20260831-3CFEFFA6 audits Au2Hx MOF stabilisation in OTA-TEC-0021-2025, a different material and mechanism. The VEX technology tier (Casimir-Drift, Blackpearl, thorium micro-cell) appears in no prior topic, so this is a new document and a new claim family rather than a re-ask.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 1062,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "0e02295f6f9ba2d1"
+}
