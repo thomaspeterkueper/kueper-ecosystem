@@ -1,6 +1,6 @@
 {
   "id": "RES-20260830-TEC0084A",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-30T14:17:00+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -45,5 +45,27 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-30T14:43:05+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/55"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/55",
+  "validated_at": "2026-09-17T10:05:35+00:00",
+  "validation_summary": "Der Kandidat ist ein quellenbasierter Anker-Audit zu den [R]/[H]-Aussagen von OTA-TEC-0084-2026-DE (PELICAN Lunar Shuttle). Ergebnis: Die zentralen [R]-Anker des Dossiers sind bestätigt — insbesondere die Kernkorrektur, dass die Mondfluchtgeschwindigkeit (2,38 km/s) nicht das Oberfläche→LLO-Delta-v ist (reale Aufstiegsanforderung ~1,85 km/s, Apollo-APS-Fähigkeit 2,220 m/s), ebenso die Delta-v-Abgrenzung, die rein propulsive Antriebslandung, die Staubeigenschaften, die Apollo-Abort-Modi und die Sensorikanforderungen. Die [F]-Balancingwerte aus OTA-TEC-0025 werden auftragsgemäß nicht bewertet. Es entsteht daher KEIN Konflikt gegen die in OTA-TEC-0084 bereits enger gefassten Realanker. Drei konkrete Projektaktionen ergeben sich: (1) ein echter Kanonwiderspruch zwischen zwei aktiven OTA-Dokumenten zum Gesundheitsrisiko Mondstaub, den der Kandidat mit abdeckt — OTA-TEC-0025-2050-DE fuehrt 'Lungenschäden (Silikose)' als Staubeigenschaft, waehrend OTA-TEC-0084 die Ableitung einer dokumentiert",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260917-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260917-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260917-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
