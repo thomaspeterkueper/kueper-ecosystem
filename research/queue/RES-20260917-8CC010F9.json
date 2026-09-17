@@ -1,6 +1,6 @@
 {
   "id": "RES-20260917-8CC010F9",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-17T08:45:14+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein vorheriges Topic berührt KUE-SCI-0174 oder die Lagerstättengeochemie von U/Th in Phosphoriten und historischen Kupfererzen. Die bisherigen Topics (0169, 0170, 0183, MTH-0006, OBS-0101, SCI-0001) prüfen andere Dokumente und andere Fachgebiete.",
-  "fingerprint": "8cc010f94976d0bb"
+  "fingerprint": "8cc010f94976d0bb",
+  "updated_at": "2026-09-17T08:51:43+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/127"
 }
