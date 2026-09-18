@@ -1,6 +1,6 @@
 {
   "id": "RES-20260830-TEC0087B",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-30T15:25:00+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -46,5 +46,27 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-30T15:47:09+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/59"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/59",
+  "validated_at": "2026-09-18T09:55:50+00:00",
+  "validation_summary": "Zweiter Recherchedurchgang zu OTA-TEC-0087 (Gateway-Station EML-2), Schwerpunkt Depotarithmetik, kryogene Lagerung und Verkehrsarchitektur. Das Dossier ist ENTWURF und markiert drei Blocker vor AKTIV; der Kandidat liefert dazu reale Anker (NRHO-Parameter, LLO-NRHO-Luecke ~0,68-0,77 km/s je Richtung, Kryo-Boil-off- und ZBO-Zahlen) und bestaetigt die [OFFEN]-Markierungen methodisch. Der materielle Ertrag liegt nicht in neuen Realwerten, sondern in drei Abgleichen mit dem bestehenden Kanon: (1) OTA-TEC-0025-2050-DE (status AKTIV) benennt das Gateway-Depotmedium in §11.2 ausdruecklich als Treibstoff (LH2/LOX) und rahmt die 500 t als Reserve fuer ~15 CYGNUS-Fluege - OTA-TEC-0087 §5 erklaert dasselbe Medium dagegen zu [OFFEN] und verbietet die Gleichsetzung mit CYGNUS-LH2/LOX; zusaetzlich wird die kanonische Groesse in §3 als Liefer-/Befuellgroesse (33 t je Reservevorgang) umgedeutet, was mit der kanonischen CYGNUS-Kapazitaet von 75 t LH2/LOX nicht zusammengeht. (2) OTA-TEC-0084 (status AKTI",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260918-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260918-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260918-005",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
