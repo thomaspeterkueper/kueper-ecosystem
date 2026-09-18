@@ -1,0 +1,53 @@
+{
+  "id": "RES-20260918-400DDCC7",
+  "status": "queued",
+  "created": "2026-09-18T08:34:39+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-ORG-0001-2079-DE.md",
+  "source_ref": "555acd6ef911e2ca1d072c3aa73f9c5f3690742d",
+  "source_blob_sha": "71bdabcf1e10eff41ecd23cd1f1a22875285f6b0",
+  "document_signature": "OTA-ORG-0001-2079-DE",
+  "title": "Realwelt-Audit der Unit-7-Ausruestungsliste in OTA-ORG-0001: Mars-Atmosphaeren-VTOL-Transportflugzeug, Gravimetrie-Verfolgungsdrohne, optische/IR-Tarnung und EMP-Granate",
+  "question": "Source-grounded audit of the externally checkable equipment and setting layer of OTA-ORG-0001-2079-DE (Section IV 'Ausrüstung' 4.1-4.3, the capability table in Section I.2, and the chronology rows for the GD-7/GD-9 drones) against real aerospace, geophysical, photonics and electromagnetic-weapons engineering evidence. The document is entirely [F]-marked work canon; the audit verifies only the real-world technology classes it names and must not alter the canon. (1) Mars atmospheric VTOL transport: the document lists 'VTOL-7 Spectre: Atmosphärisches Transportflugzeug' as a unit vehicle. Report the real physics of heavier-than-air flight at Mars mean surface pressure (~6-7 mbar, roughly 1 % of Earth's surface density, CO2 atmosphere with sound speed ~240 m/s): achievable lift and disk loading for rotorcraft versus fixed-wing aircraft, the rotor-tip Mach and low-Reynolds-number constraints, and engine/power-class implications. Report the demonstrated state of the art (Ingenuity/Mars 2020 helicopter mass, rotor diameter and flight envelope; studied Mars-airplane concepts such as ARES and other fixed-wing aerial-platform studies; Titan rotorcraft as a contrasting dense-atmosphere case). State explicitly whether a VTOL aircraft large enough to transport personnel or equipment ('Transportflugzeug') is supported, unsupported, or reachable only under stated extrapolations, and which real vehicle class (large-disk rotorcraft, high-speed fixed wing with rocket/parachute deployment, or rocket-assisted hopper) the document's function could defensibly map onto. (2) 'GD-9 Seeker: Gravimetrie-Drohne zur Verfolgung' (GD-7 prototypes 2080, standard equipment 2083; an airborne gravity-gradiometry platform used for pursuit/person-tracking). Report what airborne gravity gradiometry actually measures and its real resolution, sensitivity, altitude and survey-speed dependence (exploration-class tensor/AGG systems, historical gravity-based submarine detection, gravity-aided inertial navigation), and whether gravity gradiometry can detect, localize or track individual persons, vehicles or subsurface voids at the scale implied by a pursuit asset. Name the real mission profiles the label could defensibly denote instead (subsurface anomaly/resource mapping, gravity-aided navigation, cavity detection). (3) 'SR-3 Shadow: Aufklärungsdrohne mit optischer Tarnung' and 'LRV-20 Phantom: Modifizierter Rover mit Tarnbeschichtung'. Report the real maturity and physical limits of optical invisibility/cloaking (metamaterial and metasurface cloaking: bandwidth, object size, angular constraints, laboratory versus field scale; active/adaptive camouflage) and of multi-spectral signature management for ground vehicles, separating visible-band camouflage from thermal/IR signature reduction. State what a Mars-surface thermal-signature problem actually is (cold background, low-pressure regolith, negligible convective cooling, dust) and which parts of the 'Tarnung' claim are defensible only as conventional camouflage or signature reduction rather than invisibility. (4) 'EMP-Granaten zur Elektronikstörung'. Report the real physics and engineering scaling of electromagnetic-pulse devices: nuclear EMP versus non-nuclear explosively pumped flux-compression generators and high-power-microwave sources; demonstrated compact HPM/EMP demonstrators and their mass, stored-energy and volume budget; effective radius as a function of victim hardening, coupling efficiency, pulse shape and antenna/volume trade-offs; and fratricide/collateral effects on the emitter's own unhardened electronics. State whether a grenade-sized, hand-emplaced EMP munition with a militarily meaningful radius is physically supported and what the limiting constraints are. (5) Report whether 'Phobos Station' as a permanent covert headquarters installation is consistent with the real Phobos environment (no atmosphere/near-vacuum, radiation, regolith and dust, thermal cycling, orbital constraints), limited to the physical-siting question. (6) Identify which sentences must remain [F]/[W] and which equipment lines should be narrowed, corrected or reclassified, and name for each fictional item the real technology class and capability ceiling it can legitimately borrow. Do NOT evaluate or alter the fictional layer: Unit-7 and the internal codename, the epithet 'Die Schwarzen Architekten', HeliosCorp Mars Division, the 2079 founding and the Valles Marineris Aufstand, Kashmira Mahapula, the Operative 'Vane', ~340 operators, the 2195 declassification/whistleblower framing, the model designations GD-9/SR-3/KD-1/LRV-20/VTOL-7, the 'Maximale Leugnung' doctrine, or any NOXIA/OTA balancing value.",
+  "why_now": "OTA-ORG-0001-2079-DE is one of the two highest-priority un-audited documents in the current workqueue (priority 10, AKTIV) and its diagnostic row flags GENERIC_TITLE, GENERIC_SUMMARY, RELATION_GAP, NO_VISUAL and NO_HEADINGS; the only externally checkable content in the document is the equipment list, so the editorial gaps and the missing real-world anchor are the same defect. The sibling organisation document has just been grounded (RES-20260915-19607D54 audited OTA-ORG-0002's lava-tube siting and geothermics), and the drones/vehicles this document names are the last ungrounded hardware class in the organisation series. Its Mars VTOL transport claim is a concrete, testable engineering assertion that no OTA task has ever checked, and it will be reused by every later Unit-7 and NOXIA vehicle object once the ORG series is canonicalised.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker",
+    "F",
+    "H"
+  ],
+  "real_world_anchor": "Powered heavier-than-air flight in the Mars atmosphere at ~6-7 mbar (Ingenuity/Mars 2020 as the only flown demonstration, studied Mars fixed-wing/aircraft concepts as extrapolation); airborne gravity gradiometry as a real exploration/defence measurement class with defined resolution and altitude limits; metamaterial/metasurface and adaptive camouflage in the visible and IR with defined TRL and bandwidth/size limits; compact non-nuclear EMP/HPM sources (flux-compression generators, HPM demonstrators) with defined energy-density and coupling scaling; the real Phobos orbital and surface environment.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.79,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260914-6507B47E",
+    "RES-20260913-14D0D473",
+    "RES-20260917-0E02295F"
+  ],
+  "novelty_reason": "No previous OTA research task has audited OTA-ORG-0001 or the Unit-7 equipment classes. The nearest prior tasks audit individual platforms and their own physics: RES-20260914-6507B47E (LRV-15 tires, drivetrain, GPR, S-band), RES-20260913-14D0D473 (Surveyor-9 vacuum suction, through-rock UHF, lidar) and RES-20260917-0E02295F (VEX-47 Casimir propulsion, Solfeggio detector, thorium cell). None of them addresses atmospheric heavier-than-air/VTOL flight in the Mars environment, airborne gravity gradiometry as a tracking modality, optical/thermal camouflage limits, or hand-held EMP-device energy scaling; RES-20260903-F765D0E9 covers Mars entry/descent/landing for the KITE shuttle only. The document itself has never been the declared source of a research task.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 942,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "400ddcc7500d2030"
+}
