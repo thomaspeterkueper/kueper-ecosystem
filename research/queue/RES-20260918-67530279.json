@@ -1,0 +1,36 @@
+{
+  "id": "RES-20260918-67530279",
+  "status": "queued",
+  "created": "2026-09-18T08:22:06+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "In-universe conversational AI character facing young-adult users: AI-interaction disclosure, manipulation limits and the double labelling problem of person and canon",
+  "question": "Which binding requirements and empirical findings govern a conversational AI character — a persistent in-universe persona such as the ENDIA character 'Sun' planned in the ecosystem runtime — that speaks directly to young-adult users on a public knowledge platform: the EU AI Act's duty to inform natural persons that they are interacting with an AI system (Art. 50(1)) and its prohibitions on manipulative techniques and on exploiting vulnerabilities related to age (Art. 5(1)(a) and (b)); DSA Art. 28 and the Commission's guidance on protection of minors; minors' data protection; and what does peer-reviewed research on children's and adolescents' trust in, anthropomorphism of, and attachment to conversational and social agents establish about the risks of a persona that is simultaneously a fictional character and an AI system?",
+  "why_now": "The ecosystem runtime plan schedules a persistent ENDIA character ('such as Sun') with memories, beliefs, relationships and canon guards as the final step of the agent-runtime roadmap for this project (docs/architecture/KUEPER_AGENT_RUNTIME.md in kueper-ecosystem), and README.md declares endia.de a website for a Young-Adult trilogy. Both the AI Act's transparency duty for direct AI interaction and its prohibitions on exploiting age-related vulnerability now apply, so the design rules must be settled before anything is built. The persona is a special case for the canon/evidence boundary this profile protects: it is a fictional figure, an AI system and an authoritative-looking explainer voice at the same time, so users must be able to tell 'this is an AI', 'this is fiction' and 'this is a checkable real-world fact' apart without the experience collapsing.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "R-Anker"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "EU AI Act Art. 50(1) (transparency for direct human-AI interaction) and Art. 5(1)(a)/(b) (prohibited manipulative techniques and exploitation of age-related vulnerability); DSA Art. 28 and European Commission guidelines on the protection of minors online; DSGVO provisions on children's data; peer-reviewed child-robot-interaction and conversational-agent research on trust calibration, anthropomorphism and parasocial attachment in minors.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "67530279218ff7aa"
+}
