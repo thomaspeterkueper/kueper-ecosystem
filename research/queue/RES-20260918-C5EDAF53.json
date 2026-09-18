@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260918-C5EDAF53",
+  "status": "queued",
+  "created": "2026-09-18T08:22:04+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "Youth-media-protection and accessibility baseline for a German public knowledge website whose declared audience is young adults",
+  "question": "Which binding German and EU requirements govern a public, German-language knowledge website whose declared audience is young adults — youth media protection (JMStV, BzKJ/KJM, Jugendmedienschutz), minors' data protection (DSGVO Art. 8 with the German age of consent of 16 and guardian consent), and Barrierefreiheit (BFSG, BITV 2.0, EN 301 549, WCAG 2.2 AA) — and what do the responsible official bodies and the empirical literature on age-appropriate design establish about how such a site must label content, handle accounts and analytics for under-18 users, and make itself accessible, so that endia.de is built compliantly from the start rather than retrofitted after launch?",
+  "why_now": "README.md declares endia.de to be the 'Website zur Buchreihe Endia — eine Young-Adult-Trilogie' and the ecosystem's knowledge-platform, but the repository is still an empty skeleton (README plus empty external-tasks folders). Every later architectural choice — accounts and progress, gamification, comments or community features, analytics, embedded media — inherits these constraints, and the onboarding rules already require the project to report whether it processes personal data and to state deletion timelines. The BFSG obligations for consumer-facing digital services have applied since 2025-06-28, and the ecosystem commits to systemwide AI transparency for public publications (ECO-ARC-0028), so this is a current legal baseline, not a hypothetical one.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "JMStV and BzKJ/KJM youth-media-protection regime; DSGVO/GDPR Art. 8 with the German implementation setting the age of consent at 16; DDG § 5 (Impressum) for public German sites; BFSG (in force since 2025-06-28) with BITV 2.0, EN 301 549 and WCAG 2.2 AA as the technical reference standards; comparative: ICO Age Appropriate Design Code as an official-institution benchmark.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "c5edaf53f22da71c"
+}
