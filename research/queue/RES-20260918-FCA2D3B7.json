@@ -1,0 +1,38 @@
+{
+  "id": "RES-20260918-FCA2D3B7",
+  "status": "queued",
+  "created": "2026-09-18T08:22:05+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "Legal reality of the acts a 'Digital Rebellion' depicts: criminal liability, whistleblower protection and the journalism/activism boundary in German and EU law",
+  "question": "What do German and EU statutes, directives and court decisions actually establish about the acts a near-future digital-rebellion plot relies on — unauthorized access to and interception of data (StGB §§ 202a–202c), data manipulation and computer sabotage (§§ 303a, 303b), forgery of data (§ 269), and the obtaining, leaking and publishing of protected material — and which of those acts are legally protected or privileged rather than criminal (Whistleblower-Schutzgesetz and Directive (EU) 2019/1937, Art. 5 GG, ECtHR case law on whistleblowers and journalistic source protection, § 3a UWG for the platform's own conduct), so that the trilogy's plot and the platform's explainer pages state the legal position accurately instead of inventing a permissive fictional law?",
+  "why_now": "README.md names the trilogy's premise ('Digital Rebellion') and the ecosystem makes endia.de the deepening layer that will explain the very world the books depict, yet the repository contains no legal material at all. A young-adult readership encountering hacktivism, leaks, circumvention and sabotage in fiction will form beliefs about what is lawful, what is prosecutable and what is protected; getting this wrong is both an educational-quality defect and a plausibility failure, because a plot whose protagonists face no legal consequence for § 202a/§ 303b conduct is as implausible as magical technology. The legal position is currently in flux (EU whistleblower and platform-regulation implementation, ongoing Chat-Control/circumvention debates), so it must be researched against primary sources rather than assumed.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "R-Anker"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "StGB §§ 202a–202c, 303a, 303b, 269; HinSchG and Directive (EU) 2019/1937 on whistleblower protection; Art. 5 GG; ECtHR jurisprudence on whistleblowers and the protection of journalistic sources; § 3a UWG for commercial conduct of the platform itself.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.775,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260826-47CC2438"
+  ],
+  "novelty_reason": "The prior topic asks which real-world digital-rights movements, surveillance debates and digital-literacy content the premise and platform should draw on — a sourcing question about discourse and content. This gap audits a materially different object: the binding legal facts (offence definitions, privileges, protection regimes, and the conduct limits on the platform itself) that constrain what the fictional protagonists can plausibly do and what endia.de may present as legally accurate. It requires primary legal sources and case law rather than movement discourse, and it answers a question the prior candidate does not address: not what to write about, but what the law actually permits or criminalizes.",
+  "fingerprint": "fca2d3b727a589a6"
+}
