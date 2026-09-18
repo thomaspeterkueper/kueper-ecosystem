@@ -1,6 +1,6 @@
 {
   "id": "RES-20260918-C5EDAF53",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-18T08:22:04+00:00",
   "source_project": "endia",
   "source_repository": "thomaspeterkueper/endia.de",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": null,
-  "fingerprint": "c5edaf53f22da71c"
+  "fingerprint": "c5edaf53f22da71c",
+  "updated_at": "2026-09-18T08:40:47+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/131"
 }
