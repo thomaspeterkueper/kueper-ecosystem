@@ -1,0 +1,50 @@
+{
+  "id": "RES-20260918-37BCA156",
+  "status": "queued",
+  "created": "2026-09-18T08:34:39+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-BIO-0003-2195-EN.md",
+  "source_ref": "555acd6ef911e2ca1d072c3aa73f9c5f3690742d",
+  "source_blob_sha": "a286b5f97b51c96e7c137849288b2738e48a2e93",
+  "document_signature": "OTA-BIO-0003-2195-EN",
+  "title": "Realwelt-Audit des Ankers 'non-local cardiac synchronization' in OTA-BIO-0003 (The Resonance Marriage): interpersonale Kardio-/HRV-Synchronie, Distanzbehauptung und die Todesursache 'prolonged low-gravity exposure'",
+  "question": "Source-grounded audit of the externally checkable real-world layer behind OTA-BIO-0003-2195-EN (the Phobos Encounter section, the Okonkwo research premise, the publication timeline, and the closing obituary) against primary psychophysiology, cardiac-autonomic and space-medicine literature. The χ-field, the VKS and the document's source-marker layer are [F]/[W] work canon and are not to be validated. (1) The document's scientific premise is Dr. Amara Okonkwo's field, described as 'non-local cardiac synchronization phenomena' and as the problem of 'why heart rhythms synchronized across impossible distances', anchored by the cited paper 'Non-local Synchronization of Cardiac Rhythms' (Okonkwo, A., 2149). Report what the peer-reviewed literature actually establishes about cardiac and inter-beat-interval synchronization between individuals: the real physiological-synchrony corpus (co-located dyads, mother-infant and romantic-partner studies, therapist-client and group/audience or performance settings), the mechanisms that have been identified (shared external stimulation, common autonomic drive, respiration-mediated coupling, sensorimotor coupling, emotional contagion) and the measurement/statistical requirements and critiques (surrogate-data and phase-randomization testing, non-stationarity and autocorrelation artefacts, time-lag and synchrony-versus-causality handling, multiple comparisons). State explicitly whether any controlled study demonstrates cardiac synchronization between individuals at a distance with no plausible physical channel, and report the status of the 'non-local'/distant-intentionality research line including its null replications and meta-analytic or review assessments, set against the established channel-mediated synchrony findings. (2) The document treats 'Okonkwo's HRV synchronization data' as 'the biological substrate' from which consciousness 'could be measured' via the VKS. Report what HRV is, which metric families are standard (time-domain, frequency-domain including LF and HF and their ratio, non-linear measures), what those metrics can and cannot index physiologically, and whether HRV can defensibly be described as a measure of 'coherence' or of coupling between two individuals in the sense the document requires. Separate the real measurement claim from the fictional postulate. (3) The obituary states 'Dr. Amara Okonkwo passed in 2189, following complications from prolonged low-gravity exposure.' Report the documented cardiovascular and systemic effects of long-duration spaceflight and sustained reduced gravity (cardiac atrophy and deconditioning, orthostatic intolerance, arrhythmia and radiation-related risk, bone and muscle loss, spaceflight-associated neuro-ocular syndrome) and what is actually known about mortality attributable to reduced gravity per se; state whether 'complications from prolonged low-gravity exposure' is medically coherent as a cause-of-death formulation and give a defensible [R]-anchored alternative. (4) Identify which sentences in the document carry an externally checkable [R] or [R-Anker] core and which must remain [F]/[W]; name the concrete real-world anchor each may legitimately borrow, and state which claims should be narrowed or reclassified (for example the non-local synchrony claim as [H]/[OFFEN] rather than as an established research result). Do NOT evaluate or alter the fictional layer: Dr. Yuki Hayashi-Okonkwo and Dr. Amara Okonkwo, Prof. Satoshi Yamamoto, the χ-field programme, the VKS in all revisions, the Chen/Okonkwo/Hayashi, Hayashi & Küper and Hayashi-Okonkwo/Küper/Zhu publication attributions, the Hexagonal Symmetry and Polar Coherence papers, the χ-Index 0.72, the 2151 Phobos hull breach and the seventeen-hour shelter, the marriage and byline narrative, T. P. Küper's Omnizedenz, or any NOXIA/OTA balancing value.",
+  "why_now": "OTA-BIO-0003-2195-EN is the highest-priority un-audited BIO document in the current workqueue (priority 9, AKTIV) and carries GENERIC_TITLE, RELATION_GAP, NO_VISUAL and NO_HEADINGS. More importantly, its entire scientific premise - a biology-physics synthesis built on cardiac synchrony across impossible distances - is presented in the document's own timeline as a real published research programme, while the surrounding archive has now been grounded in its sibling layers (RES-20260916-6BAF76EA and RES-20260917-CAE06395 grounded the resonance/signal layer, including an explicit instruction not to re-open the VKS/36-vector arithmetic, and RES-20260915-D7465012 grounded the audiometric threshold that the same saga reuses). The cardiac-synchrony premise and the low-gravity cause-of-death are the two remaining externally checkable statements in the Resonance-Marriage lineage and neither has ever been tested against its real literature.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker",
+    "F",
+    "H"
+  ],
+  "real_world_anchor": "The peer-reviewed interpersonal physiological/cardiac synchrony literature and its measurement standards (HRV metric families, surrogate-data and phase-randomization controls) versus the separately published 'non-local'/distant-intentionality claims and their null replications; documented cardiovascular and systemic effects of long-duration spaceflight and sustained reduced gravity, against the question of whether reduced gravity alone can be a medically coherent cause of death.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.73,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.65,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.7
+  },
+  "related_research_ids": [
+    "RES-20260913-13DAB8F0"
+  ],
+  "novelty_reason": "No prior OTA research task has audited interpersonal cardiac/HRV synchrony, the 'non-local' synchrony claim, or HRV as a measured quantity; the only adjacent prior task, RES-20260913-13DAB8F0, audits gravity thresholds for birth, neonatal transition and mammalian development, and RES-20260913-B7A0B54E audits reproductive-cell and fetal radiosensitivity - neither addresses adult cardiovascular physiology, mortality attributable to reduced gravity, or cardiac synchrony between individuals. The VKS/χ-field layer was explicitly excluded from RES-20260916-6BAF76EA, so this document's scientific premise has never been examined. OTA-BIO-0003-2195-EN itself has never been the declared source of a research task.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 699,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "37bca156f8280aa0"
+}
