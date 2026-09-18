@@ -1,6 +1,6 @@
 {
   "id": "RES-20260830-TEC0087A",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-30T15:25:00+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -45,5 +45,21 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-30T15:34:34+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/58"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/58",
+  "validated_at": "2026-09-18T09:53:10+00:00",
+  "validation_summary": "Der Kandidat ist ein interner Anker- und Terminologie-Audit zu OTA-TEC-0087-2026-DE (Gateway-Station EML-2). Er bestätigt alle [R]-Anker des Dossiers (L2-Punktgeometrie und kollineare Instabilität, Halo-/NRHO-Familienzugehörigkeit, Stationhaltungs-Delta-v, Finsternis-/Beleuchtungsbilanz, Erd-Sichtbarkeit, Südpol-Dwell, cislunare Strahlung) und liefert belastbare Realzahlen, die im Dossier bislang als [OFFEN] bzw. [H] geführt werden. Kein Kanonwert wird in Frage gestellt: die fiktionalen Infrastrukturwerte (8 Dock-Slots, 500 t Depot, CYGNUS-Flugzahl) bleiben unberührt und werden ausdrücklich nicht validiert. Zwei konkrete, nicht-triviale Projektbezüge bleiben übrig: (1) die Standortangabe 'EML-2' ist zwischen OTA-TEC-0025-2050-DE ('Position: Earth-Moon Lagrange Point 2', Status AKTIV) und OTA-TEC-0087 (§1 'L2-Librationsraum', §3 Bullet 3 [H/OFFEN], Dossier-Status Blocker 1) unentschieden und wird durch den Kandidaten als real auflösbare, aber kanonisch offene Punkt-vs-Bahn-Frage sichtba",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260918-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260918-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
