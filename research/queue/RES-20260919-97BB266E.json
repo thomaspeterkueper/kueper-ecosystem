@@ -1,0 +1,36 @@
+{
+  "id": "RES-20260919-97BB266E",
+  "status": "queued",
+  "created": "2026-09-19T08:10:55+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Resonanz-Ontologie der Zereya-Welt: was die reale Physik zulässt und was nicht",
+  "question": "Die Zereya-Saga stellt die Behauptung „Die Welt besteht nicht aus Atomen. Sie besteht aus Liedern.\" an den Anfang, und ihr Protagonist muss lernen, „dass das Wesentliche in den Schwingungen dazwischen liegt\". Welche Teile einer Resonanz-/Schwingungs-Ontologie des Weltsubstrats sind durch die etablierte Physik gedeckt (Normalschwingungen, gekoppelte Oszillatoren, Resonanzkatastrophe, Superposition und Dissipation) und inwiefern ist die moderne Quantenfeldtheorie — Teilchen als Anregungen von Feldern — eine tragfähige reale Stütze für ein solches Weltbild? Wo endet die physikalisch gestützte Aussage und beginnt die bewusste narrative Setzung? Die Saga-Inhalte selbst sind F und werden NICHT gegen Realwissenschaft geprüft; untersucht wird ausschließlich der reale physikalische Rahmen, den die Weltbeschreibung berührt oder verlässt.",
+  "why_now": "Dieses Repository ist laut README.md:7-9 über ECO-ARC-0016 als Vertiefungs-Wissensplattform („knowledge-platform\", Code ZEREYA) für die Zereya-Saga festgelegt und enthält derzeit außer README.md keinen Inhalt. Jede Seite, die hier entsteht, erbt die Resonanz-Prämisse der Saga. ECO-ARC-0016 macht die inhaltliche Konsistenz mit thomas-kueper.de/universen/zereya verbindlich; die realwissenschaftliche Grenze sollte deshalb festgelegt werden, bevor Inhalte geschrieben werden, statt sie nachträglich zu reparieren.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "F"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Etablierte Wellen- und Resonanzphysik (Normalschwingungen, gekoppelte Oszillatoren, Resonanzkatastrophe, Dissipation) sowie die Feld-Anregungs-Ontologie der Quantenfeldtheorie einschließlich der philosophisch-physikalischen Debatte, ob Teilchen angemessen als Felderregungen zu beschreiben sind.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.84,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Nicht identisch mit RES-20260827-358BDF84 (dort: kanonische Schreibweise und Etymologie geteilter Begriffe, u. a. ‚Zereya' und ‚Fluíde' — eine sprachlich-orthografische Frage) und nicht mit RES-20260827-46EBEEB6 (dort: Bestand der Omnizedenz-Essays und der Begriffe Fluíde Hermeneutik / Resonanz-Ethik als geisteswissenschaftliche Konzepte). Die hier gestellte Frage betrifft ausschließlich die reale Physik von Schwingung und Feldontologie; sie berührt weder Terminologiepolitik noch Essay-Bestände.",
+  "fingerprint": "97bb266e1e8e9d60"
+}
