@@ -1,0 +1,48 @@
+{
+  "id": "RES-20260919-D820B5A7",
+  "status": "queued",
+  "created": "2026-09-19T08:21:46+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0100-2026-DE.md",
+  "source_ref": "94189d67d37bc188fe135f7d9441f1fac37292ad",
+  "source_blob_sha": "a502458e0465d546a358ef5dd2c4e55295554834",
+  "document_signature": "OTA-TEC-0100-2026-DE",
+  "title": "Realwelt-Audit der Tharsis-30-Tage-Nahrungsreserve: realer Proviantmassen- und Kalorienbedarf pro Personentag, Lagerfaehigkeit der Reserve und die Tragfaehigkeit der Entscheidung 'kein Pflanzenmodul im Startbestand'",
+  "question": "Source-grounded audit of OTA-TEC-0100-2026-DE (Section 'Evidenzbasis [R]', 'Kanonische OTA-Architektur [F/H]' and 'Begruendung der Verschiebung') against primary human-spaceflight nutrition, food-system and bioregenerative life-support literature. The document's whole minimum-viable architecture rests on one [R]-marked provisioning figure and one consequential decision; audit only that real-world basis and leave the [F]/[H] canon untouched. (1) Verify the [R] claim 'SSF gibt fuer 497 Personen 0,57-0,91 t Nahrung/Tag und 17-27 t fuer 30 Tage als Groessenordnung an'. Convert to per-person-day (~1,15-1,83 kg) and test it against real provisioned food-system mass per crew-day, clearly separating edible mass, dry mass, packaged as-launched mass and rehydration water; report the real ISS/NASA figure range and state whether the cited band is defensible as provisioned mass at all. (2) Nutritional adequacy: report real daily energy and macronutrient/micronutrient requirements for an adult population performing physical work in a partial-gravity habitat, and what the evidence says about the nutritional adequacy of long-duration shelf-stable stored food (vitamin degradation, caloric density, sodium/energy density, food fatigue and variety), so that a purely stored 30-day reserve can be judged adequate-not-just-sufficient. (3) Shelf life: report real shelf lives of shelf-stable, thermostabilised, freeze-dried and retort-pouch foods used by spaceflight and military provisioning (typical documented ranges and the measurement basis), and state whether a fully stored 30-day reserve is a trivial or a non-trivial design driver -- i.e. whether the dossier's 'mindestens 27 t vollstaendig lagerfaehige 30-Tage-Nahrung' is sized by nutrition, by volume, by storage temperature or by nothing at all -- and what the Mars storage-temperature/thermal-cycling effect on quality and safety is. (4) The deferred plant module: assess the decision that an active fresh-production module is not part of the minimum viable start, using the real evidence on (a) mass, energy, volume, water and lighting cost per delivered kcal for current and planned hydroponic/bioregenerative fresh-food systems (ISS Veggie/APH-class and closed life-support test facilities), (b) the achievable fraction of caloric self-sufficiency they demonstrate, and (c) the documented psychological/quality-of-life and biological-regeneration value. State whether the dossier's framing (fresh production improves quality but is not survival-critical, hence phase 1) is supported, overstated or mis-framed, and name the real constraint that actually forces it into a later phase. (5) Coupling: quantify the water mass implied by stored food (rehydration water versus water already contained in food) and state whether the separately budgeted water domains in OTA-TEC-0095 need this food-coupled water stream made explicit to avoid a hidden double count. (6) Reclassify: name which sentences must remain [F]/[W] canon, which [R] figures need narrowing or correcting, and give defensible range statements instead of point values. Explicitly EXCLUDE from evaluation: NOXIA production rates, costs and unlocks, the three-storage-domain topology as canon, the 497-person setting as a canon value, the plant-module phase schedule as an authorial decision, and all NOXIA/OTA balancing values. Do not re-ask medicine/sterile-supply shelf life or medical staffing (handled by RES-20260831-TEC0088A) and do not re-ask general ECLSS closure or water-recovery performance (handled by RES-20260831-TEC0093A).",
+  "why_now": "This row carries an explicit [R] claim whose verification materially improves the document: a single provisioning figure underpins the 27 t stored reserve, the three storage domains and the deliberate exclusion of active fresh production from the minimum viable colony. If the evidence moves that figure or shows that stored-food quality/volume rather than mass is the binding constraint, the document's central engineering decision has to be re-argued rather than merely re-numbered, and the water/food coupling with OTA-TEC-0095 becomes visible. No open external task and no prior research topic in the ledger touches food provisioning, so the evidence path is clear and cheap; the Tharsis SSF handoff covered energy, water, radiatiors and ECLSS but never the food chain.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "real_world_anchor": "ISS/NASA food system mass per crew-day and packaged versus edible mass accounting; documented shelf lives of thermostabilised, freeze-dried and retort-pouch foods used for spaceflight and military provisioning; NASA human-spaceflight nutrition and energy requirements; ISS Veggie/APH and closed-chamber bioregenerative life-support experiments with their measured fresh-food output versus system mass/energy cost.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.695,
+  "scores": {
+    "project_relevance": 0.7,
+    "cross_project_reuse": 0.68,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.7
+  },
+  "related_research_ids": [
+    "RES-20260831-TEC0088A",
+    "RES-20260831-TEC0093A"
+  ],
+  "novelty_reason": "Both listed prior IDs are adjacent but disjoint by scope: RES-20260831-TEC0088A audits the *medical* centre (diagnosis, trauma, surgery, staffing scale, medicine shelf life, blood and sterilization), not food mass, nutrition or fresh-food production; RES-20260831-TEC0093A audits the regeneratively closed ECLSS core (oxygen, CO2, water recovery, crew scaling), not the food chain. The open task EXT-NOXIA-OTA-20260914-flex-photosynthesis-state-model concerns ESA FLEX as a reference model for NOXIA biosphere state dynamics, which is a gameplay/modelling question and not a provisioned-mass or shelf-life audit. No prior or open topic covers provisioned food mass per person-day, stored-food shelf life, or the caloric/self-sufficiency limits of bioregenerative fresh production, so this audit opens a genuinely new evidence dimension in the Tharsis family.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 276,
+    "quality_flags": [
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "d820b5a77c904313"
+}
