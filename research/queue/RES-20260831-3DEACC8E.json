@@ -1,6 +1,6 @@
 {
   "id": "RES-20260831-3DEACC8E",
-  "status": "candidate-pr",
+  "status": "validated-no-action",
   "created": "2026-08-31T06:09:30+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -44,5 +44,7 @@
   },
   "fingerprint": "3deacc8e7f3618c5",
   "updated_at": "2026-08-31T06:16:38+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/60"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/60",
+  "validated_at": "2026-09-19T09:38:03+00:00",
+  "validation_summary": "Kein Handlungsbedarf: Der R1-Kandidat beschreibt einen Evidenzabgleich, der im Repository bereits vollstaendig umgesetzt ist. OTA-TEC-0028-2048-DE fuehrt in Version 2.1 (Evidenzrevision 2026-09-06) im Aenderungsprotokoll ausdruecklich 'gegen RES-20260831-3DEACC8E R1 korrigiert'. Jede von R1 geforderte Korrektur ist im Text nachweisbar: korrekter Titel 'Nanosculpted 3D helices of a magnetic Weyl semimetal with switchable non-reciprocal electron transport', Nature Nanotechnology 21, 352-358 (2026), DOI 10.1038/s41565-025-02104-x, online 21.01.2026 (Z. 87, 162); reale Birch-Anker 3-14 um Laenge, 1-4 um Durchmesser, 0,5-2 um Pitch, 10-190 K, FIB-Fertigung, Nullfeld-Nichtreziprozitaet (Z. 95-102); die nicht belegten Werte 250-500 nm, 800-1200 nm, 5-8 Windungen, 50:1-200:1, $5000/cm2, '<77 K' und Raumtemperaturbetrieb sind ausdruecklich aus der [R]-Ebene ausgeschlossen (Z. 104, 192); Vogel et al., Advanced Materials 35(2), 2208698 (2023), DOI 10.1002/adma.202208698, first published 25.10.202"
 }
