@@ -1,0 +1,36 @@
+{
+  "id": "RES-20260919-5DFD8182",
+  "status": "queued",
+  "created": "2026-09-19T08:10:56+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Baumeister-Universum: reale Grenzen von Architektur- und Strukturakustik als Resonanzsysteme",
+  "question": "README.md:3 hält fest, dass das Baumeister-Universum — wie das Noxia-Universum — aus der Arbeit an Zereya entstanden ist. Welche realen Ingenieurgrenzen gelten für Gebäude und Bauteile als schwingungsfähige Systeme (Raummoden, Steifigkeit und Materialdämpfung, Körperschallausbreitung im Baugrund), und was leisten aktive Schwingungs- und Schallbeeinflussung sowie Infraschall in der Praxis tatsächlich? Ziel ist eine belastbare Grenzziehung zwischen physikalisch etablierter Wirkung, technischer Machbarkeit und spekulativer Erweiterung, damit die ‚Baumeister'-Motivik nicht in unbelegte Behauptungen abrutscht.",
+  "why_now": "Das Baumeister-Universum tritt in README.md:3 als eigenständig aus Zereya hervorgegangener Bestandteil auf, und die Zereya-Erzählung ist um einen Architekten zentriert, dessen Konflikt zwischen ‚lebendiger Freiheit und technologischer Kontrolle' ausgetragen wird. Bevor die Vertiefungs-Site Architektur- und Akustik-Weltbau aufbaut und mit thomas-kueper.de konsistent gehalten wird, sollten die realen Ingenieurgrenzen dokumentiert sein — inklusive der Frage, welche Schallbeeinflussungstechnik belegt und welche bloß erzählt ist.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Architektur- und Bauakustik, Strukturdynamik und Körperschall (Raummoden, Dämpfung, Baugrundausbreitung), aktive Schwingungs-/Schallbeeinflussung sowie Infraschall-Erzeugung und -Wirkung; Grundlagen- und Normenliteratur (u. a. DIN 4109, ISO 9613, ISO 226).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.78,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Gegenüber RES-20260827-C23DE6E3 (dort: Datenkonventionen, Entitäts-IDs und OTA-*-Dokumente für eine neue Kontinuität) klar abgegrenzt: hier geht es nicht um Kanon-Datenmodelle, sondern um physikalisch-ingenieurwissenschaftliche Machbarkeitsgrenzen. Abgrenzung zum vorstehenden Gap: Gap 1 prüft, ob eine Schwingungs-Ontologie des Weltsubstrats physikalisch anschlussfähig ist (etablierte Physik und Ontologie), dieser Gap prüft, was Technik und Bauwerk real leisten können (Machbarkeit) — genau die vom Profil geforderte Trennung zwischen physikalisch etablierter Grenze und spekulativer Erweiterung.",
+  "fingerprint": "5dfd8182ed0ae890"
+}
