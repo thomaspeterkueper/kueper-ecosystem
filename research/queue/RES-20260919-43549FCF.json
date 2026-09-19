@@ -1,6 +1,6 @@
 {
   "id": "RES-20260919-43549FCF",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-19T08:10:57+00:00",
   "source_project": "zereya",
   "source_repository": "thomaspeterkueper/zereya.de",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Weder RES-20260827-C23DE6E3 noch die übrigen Vorläufer behandeln Rechtstexte oder Barrierefreiheit; RES-20260827-C23DE6E3 betrifft Kanon-Entitäten, IDs und OTA-Dokumente, RES-20260827-46EBEEB6 den Essay-Bestand der Omnizedenz-Philosophie. Neu ist hier die externe Überprüfung einer im Ökosystem selbst aufgestellten Rechtsbehauptung (Onboarding §5) gegen Primärrecht sowie die bislang nirgends erfasste EAA-Frist.",
-  "fingerprint": "43549fcf020c45ab"
+  "fingerprint": "43549fcf020c45ab",
+  "updated_at": "2026-09-19T08:21:11+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/134"
 }
