@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260919-43549FCF",
+  "status": "queued",
+  "created": "2026-09-19T08:10:57+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Rechtlicher Realitätsrahmen für eine öffentliche deutsche Wissensplattform: Impressum, Datenschutz, Einwilligung und Barrierefreiheit digitaler Buchausgaben",
+  "question": "README.md:11-15 erklärt die Ökosystem-Onboarding-Regeln für verbindlich; diese behaupten in §5, ein Impressum sei „in Deutschland fast immer Pflicht, sobald eine Seite öffentlich erreichbar ist — unabhängig davon, ob Nutzerdaten verarbeitet werden\". Trifft diese Behauptung nach geltendem Recht zu (§5 DDG, früher §5 TMG), welche Informations- und Einwilligungspflichten folgen für einen rein informierenden, deutschsprachigen Webauftritt (Art. 13 DSGVO, §25 TDDDG), und greifen für die digitalen Buchausgaben zusätzlich die Pflichten des European Accessibility Act (Richtlinie (EU) 2019/882, anwendbar seit 28. Juni 2025)? Zu klären ist insbesondere, ob eine reine Informationsseite ohne E-Commerce unter die EAA fällt oder erst beim Vertrieb von E-Books.",
+  "why_now": "Das Repository ist laut README.md:3 die Website zur Zereya-Saga und damit ein öffentlich erreichbarer deutscher Webauftritt, während external-tasks/open/ weiterhin leer ist — der von Onboarding §5 verlangte External Task an KG zur Aufnahme von SYS:KUEPER:ZEREYA in die consumers-Liste der zentralen Rechtstexte existiert nicht. Da die EAA-Frist am 28. Juni 2025 bereits verstrichen ist, sind Barrierefreiheitspflichten für digitale Buchausgaben zum Zeitpunkt des Aufbaus der Seite keine Zukunftsfrage mehr. Die Prüfung erfolgt vor der Anlage von Inhalten, weil Rechtstexte laut Ökosystem-Vorgabe zentral bezogen und nicht selbst verfasst werden.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Geltendes deutsches und EU-Recht für einen öffentlichen deutschsprachigen Webauftritt: Impressumspflicht nach §5 DDG, Informationspflichten nach Art. 13 DSGVO, Einwilligung für Endgerätezugriffe nach §25 TDDDG sowie Barrierefreiheitspflichten der Richtlinie (EU) 2019/882 (European Accessibility Act) und der zugehörigen Norm EN 301 549.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.95,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Weder RES-20260827-C23DE6E3 noch die übrigen Vorläufer behandeln Rechtstexte oder Barrierefreiheit; RES-20260827-C23DE6E3 betrifft Kanon-Entitäten, IDs und OTA-Dokumente, RES-20260827-46EBEEB6 den Essay-Bestand der Omnizedenz-Philosophie. Neu ist hier die externe Überprüfung einer im Ökosystem selbst aufgestellten Rechtsbehauptung (Onboarding §5) gegen Primärrecht sowie die bislang nirgends erfasste EAA-Frist.",
+  "fingerprint": "43549fcf020c45ab"
+}
