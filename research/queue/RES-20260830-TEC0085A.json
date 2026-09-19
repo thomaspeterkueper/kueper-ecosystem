@@ -1,6 +1,6 @@
 {
   "id": "RES-20260830-TEC0085A",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-30T14:50:00+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -43,5 +43,27 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-31T10:02:55+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/63"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/63",
+  "validated_at": "2026-09-19T09:40:33+00:00",
+  "validation_summary": "Der Kandidat ist ein quellenbasiertes Audit von OTA-TEC-0085-2026-DE (RL-25/Hydrolox) und wurde vom Zielprojekt bereits weitgehend eingearbeitet: Revisionsverlauf v1.1 (2026-09-05) nennt das Audit ausdruecklich, der fruehere Auftrag EXT-KG-OTA-20260831-audited-tech-alignment-0019-0029-0085 ist abgeschlossen, und der Kandidat veraendert keinen Kanonwert (RL-25-Name, 450 kN, 4x-Konfiguration, NOXIA-Werte bleiben unberuehrt). Ein Konflikt liegt nicht vor: die kanonische Kombination 450 kN @ 465 s bleibt [F], die externe Pruefung [H], der 465-s-Einzelwert ist korrekt als realer oberer Randanker (RL10B-2/RL10C-2, 110,1 kN, 280:1) eingeordnet, und die reale Isp-Spanne (421-465,5 s) sowie Expander-/Kammerdruck-/Packaging-Constraints stehen bereits im Text. Geprueft gegen die Praezisierungsliste des Kandidaten sind jedoch drei Punkte nur teilweise umgesetzt: der Engine-out-Abschnitt nennt keine realen Praezedenzfaelle, der Restart-/Reuse-Abschnitt keine quantifizierten realen Envelopen, und di",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260919-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260919-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260919-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
