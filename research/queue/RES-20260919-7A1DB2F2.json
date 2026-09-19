@@ -1,0 +1,47 @@
+{
+  "id": "RES-20260919-7A1DB2F2",
+  "status": "queued",
+  "created": "2026-09-19T08:21:46+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0109-2026-DE.md",
+  "source_ref": "94189d67d37bc188fe135f7d9441f1fac37292ad",
+  "source_blob_sha": "2a071ce39fac50842d1f2c9618997592eb7a7102",
+  "document_signature": "OTA-TEC-0109-2026-DE",
+  "title": "Realwelt-Audit des Solarfeld-Dossiers: realer PV-Ertrag und Einstrahlung auf Mars/Mond, Staubdeposition, elektrostatische Anhaftung und Reinigungs-/Minderungswirkung",
+  "question": "Source-grounded audit of OTA-TEC-0109-2026-DE (Section 'Physikalisch-technische Prinzipien [R]', 'Umwelt- und Fehlerfälle' and the explicit refusal to set a universal kW-per-area figure) against primary planetary-science, photovoltaics and dust-mitigation literature. The document is a generic technical class dossier: only the real-world physics layer is audited, the NOXIA object identity `BLD:NOX:solarfeld-1` and all costs/build-ticks/energy-per-tick stay untouched. (1) Irradiance and spectrum: report the real solar constant at 1 AU (~1361 W/m2) and the mean Mars-orbit irradiance (~586-590 W/m2, roughly 43 % of Earth) including the orbital-eccentricity seasonal swing (order +/-19 %), the lunar value, and how the thin CO2 atmosphere (~6-7 mbar, ~95 % CO2) plus suspended dust (aerosol optical depth, clear-sky versus dust-loaded conditions) modifies direct and diffuse spectral irradiance at the surface. State explicitly which of 'Einstrahlung' and 'Spektrum' is a first-order and which a second-order yield driver for a Mars surface array. (2) Cell and field performance: give real temperature coefficients of power/voltage for space and terrestrial cell families (crystalline silicon versus III-V multi-junction), string/mismatch/shading/ohmic losses, MPPT and power-conditioning losses, and representative availability, so the dossier's list 'Einstrahlung, Spektrum, Einfallswinkel, Zelltemperatur, Verschattung, Alterung und Verschmutzung' can be judged complete or incomplete (name omissions such as operating-point/soiling-induced mismatch, storage round-trip losses where storage is in the module boundary, and micrometeoroid/thermal-cycle damage for Moon/Mars). (3) Dust: quantify real Mars dust deposition and its effect on array output using the Curiosity/InSight/Opportunity record and the 2001 and 2018 global dust storms, including the documented loss of a solar-powered surface asset; report demonstrated or studied cleaning and mitigation approaches (electrodynamic dust shield, electrostatic/electrodynamic cleaning, vibrational or brushing, robotic cleaning, dust-mitigation coatings) with their real efficacy, power/water cost and technology-readiness; and state whether 'Staub und elektrostatische Anhaftung koennen den Betrieb dominieren' is supported, overstated or environment-specific (Mars versus Moon charge environment, triboelectric regolith charging, surface potentials). (4) Degradation: report real PV degradation rates (terrestrial annual rate, space radiation-induced degradation, thermal cycling), so the dossier's 'Degradationsrate' operating quantity can be bounded rather than left abstract. (5) Capability bound: state for a Mars equatorial settlement (Tharsis setting) which dust-storm durations/opacities would force load-shedding to fission/storage, i.e. what a defensible evidence-grounded yield range and a defensible statement of solar as supplementary-but-not-life-support primary (as OTA-TEC-0094 already asserts) look like, without inventing a canonical kW/m2 value. (6) Reclassify: name which sentences in this dossier can remain [R], which must be narrowed to [H] (e.g. any implied universal yield or dust-dominance claim), and which must stay [OFFEN] for KUEPER Engineering. Explicitly EXCLUDE from evaluation: `BLD:NOX:solarfeld-1`, NOXIA costs, build ticks, energy per tick, the Tharsis energy architecture decision itself, and all NOXIA/OTA balancing values.",
+  "why_now": "The archive's own top-priority uncovered rows in this snapshot (OTA-BIO-0006/0010/0009/0011, OTA-NAR-0002) carry no externally checkable core and are pure [F]/[W] character and narrative canon, so they are excluded by the workqueue rules; among the rows with a real [R] layer, this dossier is the only wholly unaudited one with a concrete, load-bearing physics claim set and no open external task attached. OTA-TEC-0109 explicitly declares that OTA sets 'keine universelle kW-pro-Flaeche-Zahl' -- that number has to come from evidence before NOXIA can derive a defensible yield, and the same PV class is reused by the orbital solar array dossier OTA-TEC-0117, so the evidence is written once and spent twice. The SSF evidence handoff of 2026-08-30 fixed only the Tharsis architecture (solar as supplementary, not life-support primary) and left the PV class itself unquantified; the open tasks EXT-KG-OTA-20260913-004 (perchlorate feed chemistry) and EXT-KG-OTA-20260917-005 (lunar dust grain-size/exposure values) do not cover PV soiling, deposition or cleaning.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "OFFEN"
+  ],
+  "real_world_anchor": "Mars orbital and surface solar irradiance and atmospheric dust opacity (Mars orbital-eccentricity seasonal swing, global dust storms 2001/2018, loss of the Opportunity rover); Curiosity/InSight/ Opportunity dust-deposition and array-soiling record; measured PV temperature coefficients and degradation rates; NASA and partner electrodynamic-dust-shield / electrostatic dust-mitigation test results; lunar regolith triboelectric charging and surface-potential measurements.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.73,
+  "scores": {
+    "project_relevance": 0.72,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.75
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior or open research topic covers OTA-TEC-0109-2026-DE. The nearest prior work is RES-20260914-6507B47E (OTA-TEC-0015 LRV-15 wheel/thermal/GPR/telecom audit), which touches vehicle-hub heat rejection and telecom but not photovoltaic yield or array soiling, and the SSF evidence handoff of 2026-08-30, which set only the Tharsis energy architecture and explicitly declined any universal radiator or per-person energy figure. The dust-mitigation open task EXT-KG-OTA-20260917-005 concerns lunar dust health exposure limits (mg/m3, PM fractions), and EXT-KG-OTA-20260913-004 concerns perchlorate feed chemistry in the water chain -- neither addresses dust-induced PV soiling, deposition rates, electrostatic array cleaning or real PV degradation. The evidence domain (planetary PV energy yield with dust-driven soiling) is therefore materially new to this archive.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 222,
+    "quality_flags": [
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "7a1db2f252a3bd93"
+}
