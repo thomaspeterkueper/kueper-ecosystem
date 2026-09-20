@@ -1,6 +1,6 @@
 {
   "id": "RES-20260920-17CAC1A9",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-09-20T08:43:19+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -33,5 +33,7 @@
     "RES-20260831-EAA9EDD9"
   ],
   "novelty_reason": "Related to RES-20260831-EAA9EDD9 only at the level of 'critical raw materials deserve dated evidence'. That candidate asked for intrinsic, family-level property values of four permanent-magnet classes (Curie temperature, operating limits, coercivity, corrosion) plus their rare-earth dependence. This gap addresses a different commodity (platinum-group iridium, not a rare earth and not a magnet material), a different technology (PEM water electrolysis catalysts, not magnets), a different question type (verifying dated supply-criticality projections and a specific material-substitution claim against official statistics and peer-reviewed catalyst literature), and it covers the 12-metal 2045 criticality dashboard and per-turbine material intensities, which the magnet-property candidate did not examine.",
-  "fingerprint": "17cac1a979aecf00"
+  "fingerprint": "17cac1a979aecf00",
+  "updated_at": "2026-09-20T08:43:56+00:00",
+  "last_error": "[Errno 7] Argument list too long: 'node'"
 }
