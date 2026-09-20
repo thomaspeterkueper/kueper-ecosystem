@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260920-0112CCE5",
+  "status": "queued",
+  "created": "2026-09-20T08:43:21+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "lib/learningPaths.ts",
+  "source_ref": "3bcdd5346a6af83ce1342dbb37418719384c8502",
+  "source_blob_sha": "fca4ed9a0afad4c553ace0b3ea4cec2b361181af",
+  "title": "Re-audit the 'no liquid water below 611 Pa on Mars' claim and the triple-point framing in the vacuum / ISRU learning path",
+  "question": "PATH:SSF:PHY-WASSER-VAKUUM-0001 (lib/learningPaths.ts) teaches that because the Martian surface pressure (~600 Pa) lies below the triple point of water (611.7 Pa), liquid water is physically impossible on Mars, that ice can therefore only sublimate, and that this is what Phoenix 2008 observed. What does the current evidence actually support, and where must the framing change: the spatial and seasonal distribution of Martian surface pressure (low-lying basins above 611 Pa); the stability of metastable liquid water and of perchlorate/chloride brines below the triple point; the alternative published interpretations of the Phoenix observation and of recurring slope lineae / dark streak brine hypotheses; and the consequences for the water-extraction process chain that this same path gates (UNL:NOX:ISRU:WATER-EXTRACTION, including the condensation-trap design)? Which elements are direct measurement, which are accepted thermodynamic interpretation, and which remain open controversy that must be labelled as such?",
+  "why_now": "This path is the learning gate for a NOXIA ISRU unlock, so an absolute 'liquid water is impossible' statement is copied into unlock semantics and into the Mars-colony/Ota material budgets. The repository's own audited Mars documents are built on an explicit [R]/[S]/[A]/[H] separation of measured values, architecture assumptions and hypotheses, and the sibling Mars-regolith path already invokes brine-forming perchlorate chemistry — so the absolutist triple-point claim is internally inconsistent with the rest of the current corpus and is exactly the kind of 'measurement vs. accepted interpretation vs. open controversy' distinction the science evidence profile requires.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewed and mission evidence on Martian water phase behaviour: Mars surface-pressure datasets and basin pressures; metastable liquid water and perchlorate/chloride brine stability studies (Chevrier & Altheide; Martin-Torres et al.); the brine/recurring-slope-lineae controversy; Phoenix 2008 H2O and sublimation results (Smith et al. 2009); Mars water-ISRU extraction literature.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.8,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous candidate for this project addressed Martian water phase behaviour or pressure-dependent boiling/sublimation claims. Prior candidates covered interoperability (magnets), cleaning and kitchen chemistry, origin-of-life content and the Research Watch pipeline, none of which touches the triple-point or brine question.",
+  "fingerprint": "0112cce55a020f1f"
+}
