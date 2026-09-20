@@ -90,7 +90,10 @@ Betroffene Repositories: ...
 - [ECO-ARC-0026-2026-DE — Provider Circuit Breaker für Billing- und Verfügbarkeitsfehler](./ECO-ARC-0026-2026-DE.md) — `accepted`
 - [ECO-ARC-0027-2026-DE — Request, Task und Normierungsstelle](./ECO-ARC-0027-2026-DE.md) — `accepted`
 - [ECO-ARC-0028-2026-DE — Systemweite KI-Transparenz für öffentliche Publikationen](./ECO-ARC-0028-2026-DE.md) — `accepted`
-- [ECO-ARC-0029-2026-DE — Mehrfach-Agenten-Zusammenarbeit am selben Repository](./ECO-ARC-0029-2026-DE.md) — `accepted`
+- [ECO-ARC-0029-2026-DE — Mehrfach-Agenten-Zusammenarbeit am selben Repository](./ECO-ARC-0029-2026-DE.md) — `superseded` (siehe ECO-ARC-0034)
+- [ECO-ARC-0032-2026-DE — Cross-Repository Signatur-Registry](./ECO-ARC-0032-2026-DE.md) — `accepted`
+- [ECO-ARC-0033-2026-DE — Mehrfach-Agenten-Zusammenarbeit](./ECO-ARC-0033-2026-DE.md) — `superseded` (siehe ECO-ARC-0034)
+- [ECO-ARC-0034-2026-DE — Mehrfach-Agenten-Zusammenarbeit (konsolidierte Fassung)](./ECO-ARC-0034-2026-DE.md) — `accepted`
 - [ECO-ARC-0030-2026-DE — Private Manuscript Repositories](./ECO-ARC-0030-2026-DE.md) — `accepted`
 - [ECO-ARC-0031-2026-DE — Registry-Erweiterung, Buecherwelten, Engineering-Code](./ECO-ARC-0031-2026-DE.md) — `accepted`
 
