@@ -1,6 +1,6 @@
 {
   "id": "RES-20260831-C1748BD0",
-  "status": "candidate-pr",
+  "status": "validated-no-action",
   "created": "2026-08-31T10:09:53+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -47,5 +47,7 @@
   },
   "fingerprint": "c1748bd0bc34e4eb",
   "updated_at": "2026-08-31T10:26:46+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/66"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/66",
+  "validated_at": "2026-09-20T09:55:46+00:00",
+  "validation_summary": "Der Kandidat RES-20260831-C1748BD0 (Revision R1, ECLSS Survival-SOP OTA-TEC-0019) ist bereits vollständig in den OTA-Kanon eingearbeitet; es entsteht keine neue konkrete Aktion. Die zugehörige Aufgabe EXT-KG-OTA-20260831-eclss-survival-sop-r1 ist unter external-tasks/done/ mit exakt dieser Research-ID als 'done' (abgeschlossen 2026-09-05) registriert. Die Korrektur wurde in src/content/documents/OTA-TEC-0019-2091-DE.md umgesetzt: v1.1 (2026-09-05) arbeitet den R1-Evidenzaudit ein, v1.2 (2026-09-06) bindet zusätzlich DOC:KUE:KUE-SCI-0178-2026-DE als projektübergreifenden Realwissenschaftsanker ein. Eine Einzelprüfung aller neun belastbaren R1-Punkte gegen den aktuellen Dateitext zeigt, dass jeder Punkt bereits umgesetzt ist: nominaler ppCO2-Realanker (~3 mmHg) ist von den KITE-eigenen Off-nominal-Schwellen getrennt (Z. 75/79-82); die interne Inkonsistenz >15 mmHg ist konsistent als SCHWARZ geführt (Z. 82); aus den historischen ISS-Analogwerten 5,3/6,0/7,6 mmHg wird keine zwingende LiOH-"
 }
