@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260920-17CAC1A9",
+  "status": "queued",
+  "created": "2026-09-20T08:43:19+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "lib/learningPaths.ts",
+  "source_ref": "3bcdd5346a6af83ce1342dbb37418719384c8502",
+  "source_blob_sha": "fca4ed9a0afad4c553ace0b3ea4cec2b361181af",
+  "title": "Source and date the iridium / critical-raw-material supply figures in the CHE-IRIDIUM and ENV-ROHSTOFFE learning paths",
+  "question": "The learner-facing paths PATH:SSF:CHE-IRIDIUM-0001 and PATH:SSF:ENV-ROHSTOFFE-ENERGIEWENDE-0001 (both in lib/learningPaths.ts) state volatile market and supply-chain numbers as if they were timeless teaching facts: ~6.8 t annual global iridium production, an 85 t / 12.5x iridium demand for 2045, '12 of 14 metals' at risk, a 0.12 g Ir per kW catalyst loading, an iridium price rise from 826 to 4682 USD/oz, ~70 % South African supply concentration, per-turbine material intensities for a 3 MW turbine (335 t steel, 4.7 t Cu, 2 t Dy, 0.67 t Nd), and the strong claim that IrO2 at the PEM anode is currently irreplaceable by any other known material. Which of these can be traced to a dated primary or official source (DERA/BGR-Fraunhofer 'Rohstoffe fuer Zukunftstechnologien IV', 9 July 2026; USGS Mineral Commodity Summaries; IEA Global Critical Minerals Outlook), which are snapshot values that must be re-dated on every revision, and which are wrong or over-stated — in particular the per-capacity catalyst loading, the per-turbine dysprosium/neodymium intensities, and the 'no alternative anode material' claim in the light of peer-reviewed work on Ir-loading reduction, Ir dissolution under transient operation, and Ir-free / AEM and alkaline OER alternatives?",
+  "why_now": "The paths are prototype but learner-facing and carry NOXIA unlocks (CHEM:PLATINUM-GROUP, CHEM:IRIDIUM, ENV:CRITICAL-MATERIALS). The MAG-004/MAG-006 evidence_policy that was hardened in the 2026-08/09 magnet work explicitly forbids teaching undated costs, production concentration and recycling capacity as material properties, and EDITORIAL.md R-05 requires a source for every EP0-EP2 scientific statement — yet this path cites none. The claims also feed the OTA Mars/NOXIA resource chains, and the Research Watch topic registry currently monitors no critical-materials stream. A citable authoritative study (DERA/Fraunhofer Rohtech IV, July 2026) now exists, so the figures can be pinned to a dated source instead of floating.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Real-world iridium/platinum-group-metal production, demand-projection and electrolyser-catalyst data: DERA/BGR-Fraunhofer ISI/IZM 'Rohstoffe fuer Zukunftstechnologien IV' (2026) 2045 demand-vs-2023-production factors; USGS Mineral Commodity Summaries (platinum-group metals); IEA Global Critical Minerals Outlook; peer-reviewed PEM OER catalyst loading, iridium dissolution and Ir-free/AEM alternative literature.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.8,
+  "relevance_score": 0.8625,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260831-EAA9EDD9"
+  ],
+  "novelty_reason": "Related to RES-20260831-EAA9EDD9 only at the level of 'critical raw materials deserve dated evidence'. That candidate asked for intrinsic, family-level property values of four permanent-magnet classes (Curie temperature, operating limits, coercivity, corrosion) plus their rare-earth dependence. This gap addresses a different commodity (platinum-group iridium, not a rare earth and not a magnet material), a different technology (PEM water electrolysis catalysts, not magnets), a different question type (verifying dated supply-criticality projections and a specific material-substitution claim against official statistics and peer-reviewed catalyst literature), and it covers the 12-metal 2045 criticality dashboard and per-turbine material intensities, which the magnet-property candidate did not examine.",
+  "fingerprint": "17cac1a979aecf00"
+}
