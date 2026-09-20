@@ -1,0 +1,107 @@
+name: KUEPER Governance Sweep
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "5 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kueper-governance-sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+    steps:
+      - name: Checkout control plane
+        uses: actions/checkout@v4
+
+      - name: Run governance sweep
+        id: sweep
+        run: python3 tools/governance/sweep.py
+
+      - name: Commit updated report
+        run: |
+          set -euo pipefail
+          git config user.name "KUEPER Governance Sweep Bot"
+          git config user.email "governance-sweep-bot@users.noreply.github.com"
+          git add status/governance-sweep.json status/governance-sweep.md
+          if git diff --cached --quiet; then
+            echo "No change in report."
+          else
+            git commit -m "chore(governance-sweep): update report $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: File task for new findings
+        if: steps.sweep.outputs.has_new_findings == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, datetime, subprocess, pathlib
+
+          findings = json.loads(pathlib.Path(".governance-sweep-new-findings.json").read_text())
+          today = datetime.date.today().isoformat().replace("-", "")
+
+          lines = [
+              "---",
+              f"id: EXT-ECO-ECO-{today}-001",
+              "title: Governance-Sweep — neue Funde",
+              "status: open",
+              "source: ECO",
+              "target: ECO",
+              f"created: {datetime.date.today().isoformat()}",
+              "requested_by: T.P.K.",
+              "priority: low",
+              "affects: [ECO]",
+              "supersedes: []",
+              "---",
+              "",
+              f"# EXT-ECO-ECO-{today}-001 — Governance-Sweep: neue Funde",
+              "",
+              "## Anlass",
+              "",
+              "Automatischer täglicher Governance-Sweep (`tools/governance/sweep.py`, "
+              "ECO-ARC-0027/0034: reine Beobachtung, keine automatische Entscheidung) "
+              "hat neue, bisher nicht gemeldete Auffälligkeiten gefunden.",
+              "",
+              "## Gewünschte Änderung",
+              "",
+              "Punkte in `status/governance-sweep.md` prüfen und bei Bedarf entscheiden. "
+              "Neu seit dem letzten Lauf:",
+              "",
+          ]
+          for f in findings:
+              lines.append(f"- **[{f['severity']}] {f['category']}**: {f['message']}")
+          lines += [
+              "",
+              "## Begründung",
+              "",
+              "Der Sweep entscheidet nichts selbst (ECO-ARC-0027 §3: operational/domain/"
+              "fundamental-Grenze) — er macht nur sichtbar, was sonst unbemerkt bliebe.",
+              "",
+              "## Betroffene Repositories",
+              "",
+              "- `kueper-ecosystem` (und je nach Fund weitere, siehe Bericht)",
+              "",
+              "## Erwartetes Ergebnis",
+              "",
+              "Jeder gelistete Punkt ist geprüft und entweder behoben, bewusst zurückgestellt, "
+              "oder als Falschmeldung erkannt (dann bitte den Check in `tools/governance/"
+              "sweep.py` anpassen).",
+              "",
+          ]
+          path = pathlib.Path(f"external-tasks/open/EXT-ECO-ECO-{today}-001.md")
+          path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+          subprocess.run(["git", "add", str(path)], check=True)
+          subprocess.run(["git", "commit", "-m", f"chore(governance-sweep): file new-findings task {today}"], check=True)
+          subprocess.run(["git", "push"], check=True)
+          PY
