@@ -1,6 +1,6 @@
 {
   "id": "RES-20260831-TEC0082A",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-31T09:38:19+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -46,5 +46,27 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-31T10:13:01+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/64"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/64",
+  "validated_at": "2026-09-20T09:54:35+00:00",
+  "validation_summary": "Der Kandidat ist eine erneute Validierung der Ingenieursschicht von OTA-TEC-0082 (CYGNUS CTV) gegen den aktuellen Repository-Stand. Der Kern ist weitgehend bereits umgesetzt: OTA-TEC-0082 fuehrt seit v1.1/v1.3 (Commit b455d776, EXT-KG-OTA-20260831-cygnus-evidence-alignment) Hohmann nur noch als Zweikoerper-Referenz [R] mit patched-conic/Mehrkoerper-Qualifikation, TLI ~3,1 km/s als realen Anker, LOI 0,8-0,9 km/s ausdruecklich LLO-spezifisch mit offener Gateway-Abgrenzung, 72-84 h als schnelle Direkttransfer-Klasse, den Tsiolkovsky-Nichtschluss der Setzung 85/180/75 t bei 450-465 s (2,38-2,46 km/s bzw. 2,79-2,88 km/s) sichtbar als [F/OFFEN], sowie 'RL-25' als fiktionale Typbezeichnung ohne realen Arbeitspunkt. Der zentrale Massen-/Delta-v-Konflikt ist damit korrekt als bewusste Weltsetzung markiert und wird nicht als Fehler gewertet; NOXIA-/Oekonomie-/Flottenwerte bleiben unberuehrt. Drei Restpunkte sind konkret und noch nirgends im Repo abgedeckt: (1) die reale Boil-off-Envelope ist in ",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260920-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260920-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260920-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
