@@ -1,6 +1,6 @@
 {
   "id": "RES-20260920-D8270DC5",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-20T09:21:55+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -38,5 +38,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "New domain for the OTA discovery record: no prior topic addresses cosmological parameter inference, significance reporting or the observability limits of distance-redshift data. It is deliberately kept distinct from the companion source/fit-value audit of the same dossier by scope, not by rephrasing: that gap verifies bibliographic existence and numeric agreement with published datasets, whereas this gap audits the inferential framing (Bayes versus MAP versus ML), its robustness classification, and the theoretical claim that an SN distance dataset cannot by itself separate histories with equal present state. No prior ID is listed as related because none of the earlier requests touch cosmology.",
-  "fingerprint": "d8270dc52a267cfd"
+  "fingerprint": "d8270dc52a267cfd",
+  "updated_at": "2026-09-20T09:39:00+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/141"
 }
