@@ -1,0 +1,42 @@
+{
+  "id": "RES-20260920-D8270DC5",
+  "status": "queued",
+  "created": "2026-09-20T09:21:55+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0091-2026-DE.md",
+  "source_ref": "b8b9db6132440f030cd820c5da0e2a43d19dad2e",
+  "source_blob_sha": "33daaf7d88d2aea8a9e0a86771b78748d8a8be2f",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 191,
+  "context_paths": [
+    "src/content/documents/OTA-SCI-0037-2026-DE.md"
+  ],
+  "title": "Realwelt-Audit der statistischen Evidenzschicht in OTA-SCI-0091: 'schwache Bayes-Evidenz' gegen 2,5 sigma (MAP) und 3,1 sigma (ML), die Robustheitsoffenheit gegenueber Neu-Kalibration und SN-Kompilation, und die Beobachtbarkeitsgrenze historienintegrierter SN-Distanzen",
+  "question": "Source-grounded audit of the externally checkable statistical- and observability-layer of OTA-SCI-0091-2026-DE (Sections 4, 5.2, 5.3, 6, 7.1, 7.2, 8, 9) against primary cosmology-methodology literature. Tasks: (1) Significance triad - the document reports for time-varying dark energy a 'schwache' Bayesian preference, about 2.5 sigma frequentist at maximum-a-posteriori and about 3.1 sigma at maximum-likelihood, versus flat LambdaCDM, and concludes 'keine Entdeckung'. Report how the real DESI DR1/DR2 (with CMB and SN) analyses actually quantify their preference - profile likelihood versus MAP versus Bayesian evidence, which dataset combinations yield which figures, and the published sigma range - and state whether a three-way split into weak-Bayes / 2.5 sigma MAP / 3.1 sigma ML is a faithful representation of real practice, giving the real numbers with their dataset dependence. State what such sigma values can and cannot establish. (2) Bayesian versus frequentist - report what a Bayes-factor 'weak preference' means quantitatively on standard evidence scales, whether weak Bayesian evidence can coexist with a ~3 sigma frequentist preference, and what such a mismatch implies about prior-volume and parametrization dependence in w0waCDM (including the known volume effect of wa and the role of the chosen DE parametrization). (3) Robustness - the document leaves [OFFEN] whether the remaining preference survives further calibration revisions, alternative SN standardization, new BAO/CMB data and independent SN compilations. Report the real post-DR2 status of that debate: published critical/appraisal assessments, the effect of BAO dataset choice (DESI versus DES-Y6), CMB dataset choice, SN-compilation dependence, and any published rebuttal or null result; state which way the evidence has moved and whether [OFFEN] remains the correct classification. (4) Methodological [H] - audit the claim that the strength of a dark-energy preference is not reducible to a single sigma number and depends on whether physically independent probes under consistent treatment prefer the same expansion model; report what the real multi-probe-consistency literature establishes, including documented cases where the preference shifts with the probe set or the calibration. (5) Observability boundary [T] - assess Section 7.2/8's reasoning that SN-Ia luminosity distances are themselves history-integrated line-of-sight observables, so a distance-redshift dataset constrains the admissible expansion history but cannot by itself test 'history dependence at identical present state'. Report the real theoretical/methodological literature on this point (cosmography, reconstruction of H(z)/w(z) from distance data, the distinction between a parametrized expansion history and a history-dependent constitutive law, and any formal statement of which observables are sensitive to expansion history versus present-day state). Test only premises, constraints and falsifiability: external source count must never be used to validate the AVI model itself or to upgrade the AVI postulate. (6) Reclassify - name which sentences in Sections 4, 5.2, 5.3, 7.2, 8 and 9 may remain [R]/[H], which must be narrowed or explicitly marked as non-universal, and which must stay [OFFEN] for KUEPER Engineering. Explicitly EXCLUDE from evaluation: the AVI/chi-Feld/Omnizedenz theory layer as canon or postulate, the AVI-Testmatrix ordering in Section 7.3 as an authorial decision, the OTA-Eignung / AVI-Relevanz / AVI-Bestaetigung / Test-B decisions, and all NOXIA/OTA balancing values.",
+  "why_now": "The mapping between Bayesian evidence, MAP-based and ML-based frequentist sigma values is exactly where the current dynamical-dark-energy debate is most contested and most actively revised, and the dossier's Section 9 opens that question without answering it; because the document's own [H] and [OFFEN] markers hang on this, the audit is time-critical while critical reanalyses and new BAO/CMB/SN combinations are still appearing.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "T",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Published DESI DR1/DR2 evolving-dark-energy significance statements and their Bayesian-versus-frequentist framing, published critical/appraisal reanalyses of those constraints, and the standard cosmographic/methodology literature on reconstructing expansion history from distance-redshift data.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.9,
+  "relevance_score": 0.8625,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "New domain for the OTA discovery record: no prior topic addresses cosmological parameter inference, significance reporting or the observability limits of distance-redshift data. It is deliberately kept distinct from the companion source/fit-value audit of the same dossier by scope, not by rephrasing: that gap verifies bibliographic existence and numeric agreement with published datasets, whereas this gap audits the inferential framing (Bayes versus MAP versus ML), its robustness classification, and the theoretical claim that an SN distance dataset cannot by itself separate histories with equal present state. No prior ID is listed as related because none of the earlier requests touch cosmology.",
+  "fingerprint": "d8270dc52a267cfd"
+}
