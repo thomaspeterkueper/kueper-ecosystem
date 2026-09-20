@@ -1,0 +1,47 @@
+{
+  "id": "RES-20260920-E760DC70",
+  "status": "queued",
+  "created": "2026-09-20T08:56:56+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0106-2026-DE.md",
+  "source_ref": "b8b9db6132440f030cd820c5da0e2a43d19dad2e",
+  "source_blob_sha": "193b9db754ebfa9b3fdcefb8a52e7e8fb926fc41",
+  "document_signature": "OTA-TEC-0106-2026-DE",
+  "title": "Realwelt-Audit der Kommunikations-, Navigations- und Kontrollarchitektur in OTA-TEC-0106: Echtzeitgrenze Erde-Mars, reale Relay-/DTE-Praxis, Autonomiepraezedenz und die Belastbarkeit von 'zwei Kontrollknoten ohne alleinigen Master'",
+  "question": "Source-grounded audit of the externally checkable premises of OTA-TEC-0106-2026-DE (Sections 'Kanonische OTA-Architektur [F/H]', 'Informationsarchitektur', 'Zeitkritische Funktionen', 'Fehlerfaelle', 'Cyber-/Fehlbedienungsgrenze') against primary deep-space-communications, spacecraft-command-and-control and autonomy literature. The document's real-world content consists of architecture-class claims: colony operation remains possible without a real-time Earth link; Earth communication supplies advice, data and planning but no real-time safety release; network partitions must not immediately take down ECLSS, power, water or thermal control; and a single software fault or compromised lead node must not be able to trigger colony-wide depressurization or shutdown. Audit only those premises. (1) Real-time limit: establish the real Mars-Earth one-way light-time range as a premise (do not re-derive the bare figure already handled for OTA-ORG-0002 in RES-20260915-19607D54 item 6) and add the operational evidence that follows from it: solar-conjunction commanding moratoria, the plan-then-execute record of every Mars surface mission, and demonstrated on-board autonomy (e.g. autonomous science targeting) -- then state how strongly these support the dossier's claim that colony operations must and can run without a real-time link. (2) Relay and direct-to-Earth reality: report real Mars relay/DTE practice -- DSN 34 m/70 m X-band direct links from surface assets with representative data rates for high-gain-antenna-class vehicles, UHF relay via orbiters (MRO, MAVEN, TGO, Mars Express, Tianwen-1), relay pass statistics, data volumes and orbital-geometry constraints -- and state whether '2 getrennte Erde-/Orbital-Kommunikationsstationen' is a supported architecture class or an unsupported redundancy claim on the real record of single-high-gain-antenna assets. Report whether '3 lokale Oberflaechen-Relay-/Navigationspunkte' has any real precedent (no Mars surface navigation constellation exists; real surface navigation rests on orbital imagery, IMU and visual odometry, with relay-based positioning only as studied concepts) and what a defensible formulation would be. (3) Control architecture: report what real station and spacecraft command-and-control practice establishes about non-single-master control, replicated state, network partitioning and the independence of safety-critical interlocks (multiple control centres, redundant flight computers, safe-mode autonomy, hardware interlocks, human-rating requirement practice), including real radiation-induced single-event-upset and anomaly history and the design rules derived from it. State whether the dossier's 'a single fault or compromised master must not depressurize the colony' is established design principle, a claim requiring further engineering, or overstated, and name the real precedent it can borrow. (4) Degraded operation: assess the claimed time-critical autonomous functions (black start, pressure/fire isolation, pump/valve control, local rescue navigation) against real evidence from space stations and remote terrestrial analogue stations about black start, degraded-mode and offline operations, naming where the claims exceed demonstrated practice. (5) Cyber layer: report what real evidence and standards address spacecraft/ground-segment cybersecurity and delay-/disruption-tolerant networking security, so the dossier's cyber claim can be bounded without inventing a threat model or a NOXIA value. (6) Reclassify: name which sentences can remain [R]/[H], which must be narrowed, and confirm that the two-node/three-relay/two-station topology stays [F] world-setting and that no NOXIA range or gameplay parameter is touched. Explicitly EXCLUDE from evaluation: the NOXIA object handoff (two command/control nodes, three local relays, two long-range communication stations), all NOXIA ranges and gameplay values, the Tharsis architecture decision itself, and the bare Mars-Earth delay range already handled for OTA-ORG-0002 (RES-20260915-19607D54, item 6).",
+  "why_now": "OTA-TEC-0106 is the Tharsis-Hub Phase-2 dossier that fixes the colony's communication, navigation and control topology, and it is in the current diagnostic queue as a low-substance fragment whose claims are asserted as architecture without any real anchor. The KUE->OTA grounding map contains no communication/navigation/control anchor at all, no prior OTA research topic addresses relay/DTE practice, autonomy or control-node redundancy (the Mars-Earth light time appears only incidentally inside the ORG-0002 equipment audit), and no open external task targets OTA-TEC-0106. Because the dossier maps directly onto three NOXIA objects (command_node, surface_relay, longrange_comms) that carry redundancy semantics, an unanchored 'two nodes, three relays, two stations' reading can silently become an engineering claim; the audit fixes the boundary between real precedent, bounded extrapolation and open engineering before the NOXIA coverage handoff proceeds.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "real_world_anchor": "Mars-Earth one-way light time and solar-conjunction commanding moratoria; DSN X-band direct-to-Earth links from surface assets and their representative data rates; UHF relay via MRO/MAVEN/TGO/Mars Express/Tianwen-1 with published pass/data-volume statistics; the plan-then-execute record and demonstrated on-board autonomy of Mars surface missions; ISS-class command-and-control architecture with multiple control centres, redundant flight computers, hardware interlocks and safe-mode autonomy; documented single-event-upset and anomaly history and the resulting design requirements; NASA/ESA human-rating and cybersecurity requirement practice.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.75,
+  "scores": {
+    "project_relevance": 0.78,
+    "cross_project_reuse": 0.74,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.78
+  },
+  "related_research_ids": [
+    "RES-20260915-19607D54"
+  ],
+  "novelty_reason": "The only adjacent prior topic is RES-20260915-19607D54, which audited the lava-tube settlement of Iterius Prime and there used the Mars-Earth light-time range merely as one item (item 6) for OTA-ORG-0002; that figure is taken here as an established premise and explicitly not re-asked. No prior research or open task covers Mars relay/DTE architecture, surface navigation references, control-node redundancy, black start/degraded operation or spacecraft cyber requirements. The novelty is therefore the architecture-class evidence mapping (real precedent versus bounded extrapolation versus open engineering), not the light-time value.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 194,
+    "quality_flags": [
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "e760dc7030bcfd97"
+}
