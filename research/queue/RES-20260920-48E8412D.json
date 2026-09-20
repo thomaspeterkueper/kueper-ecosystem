@@ -1,6 +1,6 @@
 {
   "id": "RES-20260920-48E8412D",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-09-20T08:43:20+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No previous candidate for this project examined perchlorate exposure limits, Martian regolith perchlorate abundances or perchlorate removal assumptions. The Mars-colony work in this repository produced an audited evidence note and an external audit, but neither verified the perchlorate threshold taught in the learning path, which remains uncited.",
-  "fingerprint": "48e8412d9fd70ab4"
+  "fingerprint": "48e8412d9fd70ab4",
+  "updated_at": "2026-09-20T08:43:53+00:00",
+  "last_error": "[Errno 7] Argument list too long: 'node'"
 }
