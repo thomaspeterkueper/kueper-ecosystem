@@ -1,6 +1,6 @@
 {
   "id": "RES-20260920-9FF410A2",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-09-20T09:21:54+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -36,5 +36,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Not a rephrase of any prior OTA topic: no earlier discovery request addresses observational cosmology, Type-Ia supernova compilations or dark-energy constraints at all. The nearest prior topics are non-cosmological (RES-20260914-7AF3F420 audits one exoplanet's orbital period; RES-20260913-B694419C audits archaeoacoustics and Mars crustal seismics), so this is a genuinely new evidence domain for the OTA corpus rather than a follow-up, and no prior ID is listed as related.",
-  "fingerprint": "9ff410a2fe3abe5e"
+  "fingerprint": "9ff410a2fe3abe5e",
+  "updated_at": "2026-09-20T09:27:53+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/140"
 }
