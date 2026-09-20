@@ -1,0 +1,47 @@
+{
+  "id": "RES-20260920-1C540EFB",
+  "status": "queued",
+  "created": "2026-09-20T08:56:56+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0098-2026-DE.md",
+  "source_ref": "b8b9db6132440f030cd820c5da0e2a43d19dad2e",
+  "source_blob_sha": "ff66ef0a367e2829522ccefa4b3ee9bfbb0e7db6",
+  "document_signature": "OTA-TEC-0098-2026-DE",
+  "title": "Realwelt-Audit der Mars-Waermeabfuhr in OTA-TEC-0098: Staubwirkung auf Radiatoremission/Absorptivitaet, atmosphaerische IR-Rueckstrahlung, Konvektion im 6-7-mbar-Umfeld und die Flaechenimplikation der 6-MW-Auslegung",
+  "question": "Source-grounded audit of the [R]-marked physics layer and the [A/F]-marked sizing assumption of OTA-TEC-0098-2026-DE (Sections 'Evidenzgrenze', 'Kanonische OTA-Architektur [F/H]', 'Fluesse', 'Fehlerfaelle', 'Wartung') against primary planetary-science and spacecraft-thermal-engineering literature. The document's externally checkable content is exactly two [R] claims -- (a) Mars radiators have no universal W/m2 value because performance depends on temperature, emissivity, solar absorptivity, orientation, view factors, atmospheric IR load, thin convection and dust, and (b) Mars dust can significantly degrade effective emissivity -- plus the architecture assumption of >= 6 MW installed heat rejection [A/F] with five spatially separated radiator fields, two heat-network rings and N-1 behaviour. Audit only that layer; the five-field/two-ring topology, the NOXIA object handoff and all costs/build values stay untouched. (1) Radiative environment: quantify the real Mars surface radiative environment for a radiator (horizontal and vertical orientation): mean Mars-orbit irradiance at the surface, atmospheric infrared back-radiation flux under clear-sky versus dust-loaded conditions (e.g. during regional/global dust storms), resulting effective sink temperature, view factors to sky and regolith for a field on the surface, and the diurnal/seasonal variation at an equatorial (Tharsis) setting. State which term dominates for a low-temperature loop and by roughly how much. (2) Convection: report the real convective regime at ~6-7 mbar / ~95 % CO2 (density, transport properties, natural-convection scaling, wind-forced convection during dust-devil and storm events) and state whether the dossier's 'duenne Konvektion' may be treated as negligible or must be carried as a bounded term, with an order of magnitude. (3) Dust: quantify real dust deposition and its effect on radiator performance from the MER/MSL/InSight/Curiosity-MEDA record (deposition rates, areal coverage, grain size), and report measured or modelled effects of a dust layer on total hemispherical emissivity, solar absorptance and the resulting alpha/epsilon ratio of real radiator coatings. State explicitly whether 'Marsstaub kann die effektive Emissivitaet deutlich verschlechtern' is supported, overstated, or true only for specific coatings and layer thicknesses. (4) Sizing bound: using the real values above, derive the order of magnitude of radiator area required to reject ~6 MW from a low-temperature (~300 K or below) loop at Mars ambient conditions, at clean and at dust-degraded performance, and state what that footprint implies for the dossier's claim that five spatially separated fields can lose one field and survive with load shedding. Where the 6 MW figure cannot be evaluated because the underlying electrical/thermal load balance belongs to OTA-TEC-0094/OTA-TEC-0038, say so and bound only the conversion, never the load. (5) Mitigation: report the demonstrated or studied dust-mitigation approaches relevant to radiators (electrodynamic dust shield, electrostatic/electrodynamic cleaning, mechanical brushing or field rotation, dust-repellent or self-cleaning coatings, orientation/geometry strategies) with real efficacy, mass/power cost and technology readiness, and state which can defensibly underpin the dossier's 'aktive Staubminderung' and which must remain [H]/[OFFEN]. (6) Reclassify: name which sentences can remain [R], which must be narrowed or explicitly marked non-universal (any implied W/m2 value), and which must stay [OFFEN] for KUEPER Engineering; state that no canonical radiator area, field area or W/m2 value may be introduced. Explicitly EXCLUDE from evaluation: the NOXIA handoff (five radiator fields, two thermal main rings), all NOXIA costs and balancing values, the Tharsis thermal architecture decision as such, the >= 6 MW figure as a canonical value, and the photovoltaic surface-soiling question already handled by RES-20260919-7A1DB2F2 (use it only as an established premise and do not re-ask dust deposition on PV).",
+  "why_now": "OTA-TEC-0098 is a Phase-2 Tharsis-Hub dossier in the current diagnostic queue (low substance, no headings, no visual) whose entire 'Evidenzgrenze' block consists of two unanchored [R] assertions, one of which (dust degrades effective emissivity) is doing real engineering work while the architecture simultaneously assumes >= 6 MW of heat rejection over five separated fields. The KUE->OTA grounding map (docs/kue-science-grounding-map-2026-09-06.md, Block abgeschlossen 2026-09-06) contains no real anchor for the thermal/radiator domain (only 0080/0082/0085/0088/0090/0092/0093/0019/0021/0029/0045/0047/0048/LSC-0003 are grounded), no prior RES topic covers Mars-surface heat rejection, and no open external task targets radiators (the open thermal requests concern TEC-0037 sensor cooling classes, TEC-0082/0087 cryogenic storage and TEC-0034 extraction energy). Without the audit, an unfounded W/m2-like reading of the 6 MW figure can migrate into the Engineering-Closure path, which is precisely the escalation the archive wants to avoid.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "real_world_anchor": "Mars surface environment (~6-7 mbar, ~95 % CO2, mean orbit-to-surface irradiance far below 1 AU), atmospheric infrared back-radiation and dust optical depth including the 2001/2018 global dust storms, measured dust deposition rates and areal coverage from MER/MSL/InSight-MEDA/Curiosity, real alpha/epsilon values of spacecraft radiator coatings and their degradation by a dust layer, real low-temperature radiator sizing practice on planetary surfaces, and demonstrated or studied dust-mitigation hardware (e.g. electrodynamic dust shield, cleaning/coating approaches with published efficacy and TRL).",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.78,
+  "scores": {
+    "project_relevance": 0.82,
+    "cross_project_reuse": 0.78,
+    "uncertainty": 0.64,
+    "evidence_potential": 0.88
+  },
+  "related_research_ids": [
+    "RES-20260919-7A1DB2F2"
+  ],
+  "novelty_reason": "RES-20260919-7A1DB2F2 audits optical soiling of photovoltaic arrays (transmittance loss, deposition rate, electrostatic adhesion, cleaning efficacy) for OTA-TEC-0109. This topic concerns a physically different pathway -- infrared radiative heat rejection, total hemispherical emissivity and solar absorptance of a radiator surface, atmospheric IR back-radiation as an effective sink, and the resulting area/mass bound for a multi-MW heat-rejection field -- and therefore reads a different literature strand; dust is only a shared environmental input, is used here as a bounded term rather than the subject, and must not be re-asked in its PV form. No other prior OTA research or open external task addresses Mars-surface thermal control or radiator sizing.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 232,
+    "quality_flags": [
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "1c540efbe388652d"
+}
