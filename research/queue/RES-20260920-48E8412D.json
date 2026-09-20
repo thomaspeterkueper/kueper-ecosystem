@@ -1,0 +1,35 @@
+{
+  "id": "RES-20260920-48E8412D",
+  "status": "queued",
+  "created": "2026-09-20T08:43:20+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "lib/learningPaths.ts",
+  "source_ref": "3bcdd5346a6af83ce1342dbb37418719384c8502",
+  "source_blob_sha": "fca4ed9a0afad4c553ace0b3ea4cec2b361181af",
+  "title": "Verify the perchlorate exposure limits, regolith abundances and removal assumptions in the Mars-regolith learning path",
+  "question": "PATH:SSF:AST-MARS-REGOLITH-0001 (lib/learningPaths.ts) teaches a 'WHO-Grenzwert 0.7 mg/L' for perchlorate, 0.5-1 wt% perchlorate in Mars regolith, removal by filtration or thermal decomposition above 600 degC, plant lethality, and site-selection criteria ('Eisgehalt > 5 Gew.-% und Overburden < 2 m'; Utopia Planitia marked [R], Arabia Terra marked [H]). The stated limit differs from the WHO drinking-water guideline value of 0.07 mg/L (2016, 70 ug/L, PMTDI 0.01 mg/kg bw) by an order of magnitude, and the path uses a drinking-water limit as if it bounded a solid regolith concentration. Which values are supported by (a) the WHO Guidelines for Drinking-water Quality perchlorate monograph, (b) ATSDR/EPA perchlorate toxicity and reference-dose values, (c) the Phoenix Wet Chemistry Lab and Curiosity SAM perchlorate measurements, and (d) published perchlorate removal/ISRU and Mars agriculture work — and which must be corrected, re-scoped from a drinking-water limit to a soil/feedstock criterion, or explicitly labelled as an estimate rather than a measured value?",
+  "why_now": "Perchlorate handling is on the critical path of the OTA Tharsis Hub Phase 2 handover: the audited Mars evidence note keeps 'Perchloratbehandlung' as its own line in the water and food budgets and forbids reusing unverified numbers, while the learner-facing path teaches a threshold that is ten times the actual WHO guideline and gives a site-selection criterion and Utopia/Arabia ratings with no citation. The NOXIA water-processing path already teaches removal process chains, so the same facts propagate through two learning paths and into the unlock semantics.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Official and primary perchlorate evidence: WHO Guidelines for Drinking-water Quality perchlorate guideline value (0.07 mg/L, 2016) and PMTDI; ATSDR/EPA perchlorate toxicity values; Phoenix Wet Chemistry Lab (Hecht et al. 2009) and Curiosity SAM (Glavin et al. 2013 / Kounaves et al.) perchlorate measurements; published Mars perchlorate removal, regolith processing and ISRU site-selection studies.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.8,
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous candidate for this project examined perchlorate exposure limits, Martian regolith perchlorate abundances or perchlorate removal assumptions. The Mars-colony work in this repository produced an audited evidence note and an external audit, but neither verified the perchlorate threshold taught in the learning path, which remains uncited.",
+  "fingerprint": "48e8412d9fd70ab4"
+}
