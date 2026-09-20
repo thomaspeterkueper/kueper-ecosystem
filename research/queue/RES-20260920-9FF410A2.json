@@ -1,0 +1,40 @@
+{
+  "id": "RES-20260920-9FF410A2",
+  "status": "queued",
+  "created": "2026-09-20T09:21:54+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0091-2026-DE.md",
+  "source_ref": "b8b9db6132440f030cd820c5da0e2a43d19dad2e",
+  "source_blob_sha": "33daaf7d88d2aea8a9e0a86771b78748d8a8be2f",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 191,
+  "context_paths": [
+    "src/content/documents/OTA-SCI-0037-2026-DE.md"
+  ],
+  "title": "Realwelt-Audit der Unite-Datenbasis und der [R]-Fitwerte in OTA-SCI-0091: Pruefbarkeit von arXiv:2609.05053 / arXiv:2609.05321, die 2.884-SN-Ia-Stichprobe und der Abgleich von Omega_m = 0,310, (w0, wa) = (-0,861, -0,60) und der 30-%-Flaechenreduktion gegen Pantheon+, DES-SN5YR, DESI-DR1/DR2-BAO und DES-Y6",
+  "question": "Source-grounded audit of the [R]-marked source and fit layer of OTA-SCI-0091-2026-DE (Sections 2, 3, 4, 5.3, 6, 11, 12) against primary cosmology literature and official data releases. The document's externally checkable content is exactly: (a) the dataset 'Unite' of Camilleri et al. (2026), arXiv:2609.05053, described as combining Pantheon+ and DES-SN5YR into one joint Hubble diagram of 2,884 probable Type-Ia supernovae built on a unified analysis path; (b) the companion host-mass paper Lee et al. (2026), arXiv:2609.05321; (c) the flat-LambdaCDM SN-only result Omega_m = 0.310 (+0.012/-0.011); (d) the statement that an uncalibrated Hubble diagram does not determine H0 directly and must not be read as a new standalone H0 measurement; (e) the joint Unite+CMB+BAO w0waCDM result (Omega_m, w0, wa) = (0.305 +/- 0.004, -0.861 (+0.044/-0.042), -0.60 (+0.17/-0.19)); (f) the claim that the area of the w0-wa confidence region shrinks by roughly 30 % relative to earlier combined DES-Y6/DESI-DR2/CMB limits; (g) the list of unification elements (consistent SN modelling, common selection criteria, bias corrections, host-galaxy masses for >98 % of the sample, cross-survey photometry/calibration treatment, explicit systematics treatment). Tasks: (1) Source verification - establish whether arXiv:2609.05053 and arXiv:2609.05321 exist as cited (title, authorship, submission date 4 Sept 2026, dataset size); if an identifier cannot be verified in an indexed record, say so plainly and name the closest real precedent compilation(s) that actually combine Pantheon+ with DES-SN5YR rather than silently substituting one. (2) Sample size - report the real object counts, selection criteria and cross-survey overlap handling of Pantheon+ (Scolnic et al. 2022) and DES-SN5YR (DES Collaboration 2024), state whether 2,884 'probable SNe Ia' is consistent with the sum of the two real samples after de-duplication, and whether >98 % host-galaxy-mass coverage is plausible against the published host-mass completeness of those samples. (3) Fit values - compare each quoted number with the real published SN-only and SN+CMB+BAO constraints from Pantheon+, DES-SN5YR and subsequent DES SN releases, DESI DR1 and DR2 BAO, and independent compilations (e.g. Union3, DEHVILS, ZTF-class); state explicitly for each value whether it is consistent with, sharper than, or inconsistent with the real record, and in particular whether an SN-alone Omega_m near 0.310 matches real SN-only values or instead resembles a CMB/BAO-combined value. (4) Confidence-region shrinkage - verify the '~30 % smaller w0-wa contour area' against real DR1-to-DR2 and DES-Y6-SN improvements and report the actually published improvement figure where one exists. (5) H0 degeneracy - confirm that SN-only distance data leave H0 degenerate with the absolute magnitude/calibration and therefore cannot constitute a standalone H0 measurement. (6) Reclassify - name which sentences may remain [R] as written, which must be narrowed, given as a range or demoted to [H]/[OFFEN], and state that no canonical OTA cosmological parameter value, dataset size or sigma figure may be introduced. Explicitly EXCLUDE from evaluation: the AVI layer (xi, Phi(a), Historienseparation, Test B), the chi-Feld/Omnizedenz framing, the OTA-Eignung / AVI-Relevanz / Test-B-Evidenz decisions, the Kanonregel, and all NOXIA/OTA balancing values.",
+  "why_now": "The dossier is dated 14 September 2026 and its entire [R] layer rests on a preprint (arXiv:2609.05053) that is explicitly stated to be unpublished and un-peer-reviewed; the real Pantheon+, DES-SN5YR, DES-Y6 SN and DESI DR1/DR2 record is now large enough that every quoted number can be checked against published constraints, and the nine open checks listed in Section 9 are exactly the points where a verifiable or unverifiable source changes whether these sentences may stay [R].",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Pantheon+ (Scolnic et al. 2022) and DES-SN5YR (DES Collaboration 2024) supernova samples plus published DES-Y6 SN and DESI DR1/DR2 BAO+CMB dark-energy constraints - the real datasets and parameter values against which the dossier's 'Unite' claims, its 2,884-object sample and its quoted Omega_m, w0 and wa values must be verified.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.9,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.95
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Not a rephrase of any prior OTA topic: no earlier discovery request addresses observational cosmology, Type-Ia supernova compilations or dark-energy constraints at all. The nearest prior topics are non-cosmological (RES-20260914-7AF3F420 audits one exoplanet's orbital period; RES-20260913-B694419C audits archaeoacoustics and Mars crustal seismics), so this is a genuinely new evidence domain for the OTA corpus rather than a follow-up, and no prior ID is listed as related.",
+  "fingerprint": "9ff410a2fe3abe5e"
+}
