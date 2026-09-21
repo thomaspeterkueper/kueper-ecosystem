@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260921-966FA674",
+  "status": "queued",
+  "created": "2026-09-21T09:06:27+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0060-2026-DE.md",
+  "source_ref": "4fecdf0e4ecac80b5cd65d4c5ffc56760613b283",
+  "source_blob_sha": "6aea72cbc76b87005b01896a8bd23c44859ec3e1",
+  "title": "Realwelt-Audit der [R]-Schicht in OTA-SCI-0060: menschliche Magnetorezeption, Alpha-ERD-Transduktion (Wang et al. 2019) und biogenes Magnetit im Gehirn",
+  "question": "Quellengestuetzter Audit der [R]-Schicht von OTA-SCI-0060-2026-DE (Abschnitte I.1, I.2, II.1, II.2, III.3, IV.1, Evidenz-Zusammenfassung und Quellenliste), gepinnt auf Revision 4fecdf0e4ecac80b5cd65d4c5ffc56760613b283, gegen primaere Magnetorezeptions-, Biomagnetismus- und Replikationsliteratur. (1) Das Dossier markiert als [R]: 'Alpha-ERD nach Magnetfeldrotation (Caltech 2019)', 'Unbewusste Magnetfeldverarbeitung als sensorischer Input' und 'Das Gehirn verarbeitet Magnetfeldänderungen als sensorischen Input — unbewusst, aber mit derselben neuronalen Signatur wie Seh- und Hörstimuli'. Berichte, was die einzelne eNeuro-Arbeit von Wang, Kirschvink und Shimojo (2019) tatsaechlich gemessen hat und welche Grenzen sie selbst nennt: Zahl der Teilnehmenden und Anteil der Responder, die spezifischen Reizbedingungen (nur gegen den Uhrzeigersinn, nur bei abwaerts gerichteter Vertikalkomponente), die Effektstaerke, die Autorenvorbehalte und den Replikationsstand (Review-Literatur 2025: unabhaengige Replikation ist wesentlich und steht aus). Stelle dem die gescheiterten Replikationen angrenzender Magnetorezeptionslinien gegenueber (Bakers Displacement-Experimente, C.-elegans-AFD-Befunde, Magnetogenetik/ISCA1-MagR), damit die epistemische Klasse bestimmbar wird: Welcher Satz bleibt [R] als Quelleninhalt, welcher ist als etablierter Befund [H]/[OFFEN] und welcher war als [R] ueberzeichnet? (2) Kirschvink et al. (1992), PNAS 89(16), 7683-7687: verifiziere bibliographische Daten, die behauptete Kristallgroesse (19-24 nm), die Ortsangaben (Hirnstamm, Kleinhirn, Grosshirnrinde, Hippocampus; Neuronen und Astrozyten) und insbesondere die Zahl '~5 Mio. Magnetit-Nanokristalle/g Hirngewebe' — steht diese Zahl so in der Primaerarbeit, und was berichtet die neuere Literatur zur Frage biogen vs. exogen, zur Extraktionsmethodik und zu Kontaminations- und Messartefakten? Pruefe ebenso die Behauptung 'Faktor ~10-100 inter-individuell nach Kirschvink 1992'. (3) Alpha-ERD: berichte, was Alpha-ERD physiologisch indexiert und was nicht (Alpha/Mu-Ueberlappung, Aufmerksamkeit/Arousal, motorische Desynchronisation, Baseline- und Zustandsabhaengigkeit, Einzeltrial-Variabilitaet) und welche nicht-magnetorezeptiven Erzeugungswege ein magnetfeldbezogenes EEG-Signal erzeugen koennen (Induktion, Elektroden-/Leitungsartefakte, vestibulaere oder somatosensorische Cues, Erwartungseffekte). Ist 'dieselbe neuronale Signatur wie Seh- und Hoerstimuli' tragfaehig? (4) Pruefe die [R]-markierten Praemissen des Habituations-/Entzugsarguments (Hebbsche Plastizitaet, dopaminerge Konditionierung) und stelle klar, dass das 'Magnetit-Entzugsprofil' ausschliesslich [T/S -> F] ist, da laut Dossier selbst keine spezifische Literatur existiert. (5) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen, die zu '[R] Quelleninhalt, Einzelstudie mit ausstehender Replikation' abzuschwaechen sind, und die [H]/[OFFEN] werden muessen; stelle fest, dass kein kanonischer Satz 'menschliche Magnetorezeption ist nachgewiesen' eingefuehrt werden darf. Ausdruecklich AUSGESCHLOSSEN: Mia, Dr. Anton, Tim, der Schauplatz Hexenteich/Reckenhöhle, das fiktionale Magnetit-Entzugsprofil, die Album-/Romanplanung als solches, die Baumeister-Rahmung sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "OTA-FND-0024-2026-DE ('Die Kette vom Hexenteich', v1.1, Serienkonzept) fuehrt OTA-SCI-0059 und OTA-SCI-0060 ausdruecklich als 'ausstehend' und nennt KUE-SCI-0170-2026-DE 'Menschliche Magnetorezeption und Magnetit im Gehirn' als wissenschaftliche Ausleitung des Romans. Das aktuelle Werkprojekt (Roman plus Album) stuetzte seine Neuro- und Materialanker derzeit auf [R]-Marker, die im Dossier selbst als 'publikationsfaehig' bezeichnet werden, waehrend die zugrunde liegende Einzelstudie noch ohne unabhaengige Replikation ist. Eine falsche [R]-Stufe wirkt hier direkt in Weltbau und Vermittlungsqualitaet.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Wang, Kirschvink & Shimojo (2019), eNeuro 6(2) ENEURO.0483-18.2019 (Alpha-ERD unter Erdfeld-Rotation) und dessen Replikationsstatus; Kirschvink, Kobayashi-Kirschvink & Woodford (1992), PNAS 89(16) 7683-7687 (biogenes Magnetit im menschlichen Gehirn); Alpha-ERD-Physiologie; gescheiterte Replikationen menschlicher Magnetorezeption und der Magnetogenetik.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.8625,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "966fa67457415fa2"
+}
