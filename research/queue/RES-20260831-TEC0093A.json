@@ -1,6 +1,6 @@
 {
   "id": "RES-20260831-TEC0093A",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-31T11:30:50+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -46,5 +46,27 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-31T11:46:03+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/68"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/68",
+  "validated_at": "2026-09-21T10:57:06+00:00",
+  "validation_summary": "Der Kandidat ist ein quellengestütztes Audit der extern prüfbaren ECLSS-Ingenieursschicht von OTA-TEC-0093 (Life-Support-Kernmodul). Seine Kernaussagen sind im Repository bereits angekommen: OTA-TEC-0093 v1.1–v1.3 spiegeln die Bestätigung der vier [R]-Funktionsklassen, die unvollständige Stoffschließung, die nicht-lineare Crew-Skalierung, die Lesart von CANDIDATE_COMPONENT_OF als Technologiefamilie statt identischer Hardware und die Einordnung von 'dreifach redundant' als real ungedeckte ECLSS-Aussage; OTA-TEC-0082 §13 führt dieselbe Qualifizierung bereits kanonisch. Ein materieller Widerspruch des Kandidaten gegen die aktuelle Repository-Fassung besteht daher nicht. Konkrete Aktionen entstehen nur aus den Teilen, die die Evidenzanwendungen v1.1–v1.3 noch nicht absorbiert haben: (1) die quantifizierten Schließungsgrenzen (Sabatier-Ceiling ~50 %, CRA-Shutdown 2017, Wasser-Rückgewinnung nur mit Umfangsangabe), (2) die objektspezifische Präzisierung des CANDIDATE_COMPONENT_OF-Blocks in §1",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260921-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260921-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260921-005",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
