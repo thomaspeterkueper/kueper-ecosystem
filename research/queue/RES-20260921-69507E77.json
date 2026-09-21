@@ -1,0 +1,39 @@
+{
+  "id": "RES-20260921-69507E77",
+  "status": "queued",
+  "created": "2026-09-21T09:06:29+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0092-2026-DE.md",
+  "source_ref": "4fecdf0e4ecac80b5cd65d4c5ffc56760613b283",
+  "source_blob_sha": "20335016bcefe5aa53718dbb8e2c6ce652cda9c8",
+  "title": "Realwelt-Audit der [R]-Zitat- und Wertebasis in OTA-SCI-0092: Sharma et al. (Nature Astronomy 2026), die FRB-Stichprobe, der Feedback-Befund gegenueber eROSITA/ACT und der Bereich k ≈ 0,1-3 h/Mpc",
+  "question": "Quellengestuetzter Audit der [R]- und [H]-Aussagen von OTA-SCI-0092-2026-DE (Abschnitte 2-7), gepinnt auf Revision 4fecdf0e4ecac80b5cd65d4c5ffc56760613b283, gegen die Primaerpublikation und die weitere FRB-/Baryonen-Feedback-Literatur. (1) Quellenverifikation: Existiert die zitierten Arbeit von Sharma et al. (Nature Astronomy, 8. September 2026) wie angegeben — Titel, Autorschaft, Journal, Datum, Stichprobengroesse? Die reale Linie ist eine Caltech-geführte Analyse (Kritti Sharma, Vikram Ravi, Elisabeth Krause und Mitarbeitende) mit rund hundert lokalisierten FRBs, die den Feedback-Einfluss auf die Materieclusterung direkt misst; verifiziere die tatsaechliche Stichprobengroesse, die Herkunft der Lokalisationen (welche Surveys/Instrumente) und melde jede Abweichung von '114 lokalisierte FRBs' explizit. (2) Werktreue: Das Dossier berichtet nur, die FRB-Einschraenkungen 'konkurrieren hinsichtlich ihrer statistischen Aussagekraft mit ... ACT und eROSITA'. Berichte das tatsaechliche Hauptergebnis einschliesslich der Richtung — die veroeffentlichte Berichterstattung deutet auf eine *schwaächere* Feedback-Wirkung als von eROSITA- und ACT-Daten nahegelegt — und die quantifizierte Aussage (verwendeter Feedback-Parameter bzw. Unterdrueckung von P(k)) mit Signifikanz. Stelle fest, ob die [R]-Saetze des Dossiers als werktreu, unvollstaendig oder durch Auslassung irrefuehrend einzustufen sind. (3) Empirischer Bereich: pruefe 'z ≲ 0,3', 'k ≈ 0,1-3 h/Mpc' und 'M ≳ 10^13 M_sun' gegen die tatsaechlichen Skalen und Massenbereiche der Arbeit und gegen die weitere Literatur (Baryonification-DM-Wahrscheinlichkeitsdichten, CGM-Einzelstudien zu niedrigrotverschobenen FRB-Hosts, gemeinsame FRB+Shear+Clustering-Analysen). (4) Systematik: pruefe die Dossierliste (Rotverschiebungsentwicklung des Host-DM, Halo-Modellparameter, angenommene Kosmologie, Stellar-to-Halo-Mass-Relation) gegen den Systematikteil der Arbeit und ergaenze jede fehlende fuehrende Systematik (Streuung/Verbreiterung und deren Entfaltung, Modellierung des Milchstrassen-Halo-DM, Auswahl- und Instrumentenverzerrung, Host-Galaxientyp, Lokalisationsfehler). (5) Methodik: bewerte die [H]-Aussagen zu Multi-Probe-Nutzung (DM-Autokorrelation, DM-Galaxien-, DM-Shear-Korrelation) und zu den Prognosen groesserer Stichproben gegen die realen Vorhersagen (DSA-2000, CHIME/Outrigger und Vergleichbares) und deren angegebene Praezision. (6) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen, die zu '[R] Quelleninhalt' mit den Zahlen der Primaerarbeit abzuschwaechen sind, und die [H]/[OFFEN] werden muessen; stelle fest, dass kein kanonischer kosmologischer Parameter, keine kanonische FRB-Anzahl und kein kanonischer Skalenbereich eingefuehrt werden darf. Die im Dossier als [OFFEN] gefuehrte Frage der historienintegrierten Beobachtungsgroesse ist NICHT erneut zu stellen (bereits auditierte Aussage in RES-20260920-D8270DC5, Item 5) — sie ist nur als bestehende Grenze zu zitieren. Ausdruecklich AUSGESCHLOSSEN: die AVI-Theorieschicht (xi, Phi(a), Historienseparation, Test B als erfuellt), die chi-Feld-/Omnizedenz-Rahmung, die OTA-Eignung-/AVI-Relevanz-Entscheidungen und alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Der offene Auftrag EXT-AVI-OTA-20260915-frb-baryon-observation-channel (sourceDocuments: OTA-SCI-0092-2026-DE) verlangt, den peer-reviewten FRB-Befund als Kanal OBS-06 in die AVI-Beobachtungsmatrix zu uebernehmen, und fordert in den Akzeptanzkriterien ausdruecklich, dass Peer-Review-Status und Quelle sichtbar sind und der 'aktuelle empirische Bereich' (z, k, Halomassen) sowie die Hauptunsicherheiten dokumentiert werden. Solange die Werte und die Richtung des Befunds nicht gegen die Primaerarbeit geprueft sind, uebernimmt die Matrix falsche Zahlen. Der Befund ist real und aktuell, aber das Dossier gibt das Ergebnis nicht in seiner Richtung wieder.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Sharma/Ravi/Krause et al., Nature Astronomy 2026: lokalisierte FRB-Dispersionsmasse als direkte Messung der feedbackbedingten Unterdrueckung der Materieclusterung; Vergleich mit eROSITA- und ACT-Einschraenkungen; Baryonification-/DM-Wahrscheinlichkeitsdichte-Literatur und CHIME-/DSA-2000-Prognosen.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.8075,
+  "scores": {
+    "project_relevance": 0.88,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260920-9FF410A2",
+    "RES-20260920-D8270DC5"
+  ],
+  "novelty_reason": "Die beiden vorigen Kandidaten auditieren das Nachbardossier OTA-SCI-0091 (SN-Ia-Hubblediagramm 'Unite', Omega_m, w0-wa, Signifikanz-Triade, DESI-/SN-Vergleich und die Zitatpruefung von arXiv:2609.05053/2609.05321). Dieser Gap betrifft ein anderes Quelldokument (OTA-SCI-0092), einen anderen Beobachtungskanal (FRB-Dispersionsmasse als Baryonen-/Feedback-Sonde statt Leuchtkraftdistanzen) und einen anderen externen Anker (die reale FRB-Feedback-Messung gegen eROSITA/ACT statt DES/DESI/SH0ES). Die bereits auditierte Ueberlegung zur historienintegrierten Beobachtungsgroesse (RES-20260920-D8270DC5, Item 5) wird bewusst ausgeschlossen; neu ist hier die Pruefung, ob die im Dossier nur qualitativ als 'konkurrierend' beschriebenen FRB-Einschraenkungen tatsaechlich in Richtung und Groesse korrekt wiedergegeben sind.",
+  "fingerprint": "69507e77c6239d7f"
+}
