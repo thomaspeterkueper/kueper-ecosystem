@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260921-83EDB699",
+  "status": "queued",
+  "created": "2026-09-21T09:06:28+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0082-2026-DE.md",
+  "source_ref": "4fecdf0e4ecac80b5cd65d4c5ffc56760613b283",
+  "source_blob_sha": "7d35cdfa583bee3544fba96f0a1116c2a068c17c",
+  "title": "Realwelt-Audit der [R]-Schicht in OTA-SCI-0082: Thuban-Polarstern-Fenster, die Zuordnung des Cheops-Nordschachts, MUL.APIN-Datierung und heliakische Aufgaenge um 2700 BCE",
+  "question": "Quellengestuetzter Audit der [R]-, [R-Anker]- und [T]-Aussagen von OTA-SCI-0082-2026-DE (Abschnitte 1.1-1.3, 2.1-2.4, 3.1, 4.1 und die Zusammenfassung in Abschnitt V), gepinnt auf Revision 4fecdf0e4ecac80b5cd65d4c5ffc56760613b283, gegen primaere Archaeoastronomie-, Almanach- und Keilschrift-Editionsliteratur. (1) Praezessionsarithmetik: verifiziere ~50,3 Bogensekunden/Jahr und ~25.772 Jahre und pruefe, ob die lineare Extrapolation '50,3\" x 4.700 = ~65,7°' als Aussage ueber eine Polverschiebung ueberhaupt zulaessig ist oder durch die nichtlineare Behandlung der Praezession (ekliptikale vs. aequatoriale Praezession, Bezug auf den jeweiligen Pol) ersetzt werden muss. (2) Thuban-Fenster: verifiziere die Tabelle (~3942 BCE ~5°, Minimum ~2787 BCE ~0,1°, ~1700 BCE ~6°, Polaris 2026 ~0,7°, ~14000 CE Wega) gegen eine nachvollziehbare Rechnung; klaere, was die in der Literatur gelaeufige Jahreszahl 3942 BCE tatsaechlich bezeichnet (Beginn des Intervalls, in dem Thuban der naechste helle Polarstern war?) und liefere korrekte Werte samt Unsicherheit. Pruefe ferner 'weisser Ueberriese, ~303 Lichtjahre, ~200-fache Sonnenleuchtkraft'. (3) Der als [R] gefuehrte Satz 'Der aegyptische Nordschacht der Cheops-Pyramide (~2560 BCE) ist auf Thuban ausgerichtet — ein direkter archaeologischer Beleg dafuer, dass dieser Stern als Nordpol-Referenz aktiv genutzt wurde': Berichte den realen Forschungsstand zur Sternschacht-Hypothese — Bauvals Zuordnung des oberen Nordschachts (~32°36', um ~2425 BCE), Gantenbrinks Einwaende (Schaechte knicken mehrfach, extreme Winkelstreuungen, Enden nicht deckungsgleich, 'koennten auf rund 100 verschiedene Sterne zeigen'), Wall (2007) zum fehlenden Nachweis eines altenreichs-zeitlichen Interesses an Kulminationen und statistische Auswertungen, nach denen die vier Schachtziele nicht auf eine Epoche konvergieren und Zufallswinkel mit ~22 % Wahrscheinlichkeit auf helle Sterne treffen. Stelle fest, ob 'direkter archaeologischer Beleg' als [R] haltbar ist, und formuliere eine belastbare [R]/[H]-Fassung mit den noetigen Vorbehalten. (4) MUL.APIN: verifiziere Datierungsaussagen (aelteste erhaltene Tafeln 7. Jh. BCE; Inhalt 2. bis fruehes 1. Jt. BCE; heliakische Daten passen besser zu ~1400-1200 BCE), die Datierung der Komposition in der Forschung, die 17 Mondpfad-Sterne und deren moderne Zuordnung als Satz (welche Identifikationen sind gesichert, welche umstritten — z. B. RIN, DINGIR Anunitu, LU.HUN.GA) sowie die Uebersetzung 'Der Pflug'; benenne die massgeblichen Editionen (Hunger & Pingree 1989; Hunger & Steele 2019). (5) Der Himmel um 2700 BCE bei 36°N: verifiziere 'Fruehlingspunkt im Sternbild Stier' und die Tabelle der heliakischen Aufgaenge (Plejaden Mitte April, Aldebaran Ende April, Sirius Anfang August, Antares Mai, Arktur April) einschliesslich der Abhaengigkeit von Extinktionshorizont, Breite und Definition des heliakischen Aufgangs. (6) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen, die abzuschwaechen sind (insbesondere die Schachtzuordnung und die Selbstauskunft 'kueper.com-Kandidat: Ja — vollstaendig [R]-tauglich'), und die [T]/[S] bleiben muessen; stelle fest, dass kein kanonischer archaeologischer Datierungs- oder Ausrichtungswert eingefuehrt werden darf. Ausdruecklich AUSGESCHLOSSEN: Yin Hua, die Bronzescheibe YH-002 als Werkobjekt, die Delphi-Hypothese, die fiktionale Oertlichkeit Amara/Qatna, die Kuratornotizen und alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "OTA-SCI-0082-2026-DE deklariert im Kopf 'kueper.com-Kandidat: Ja — vollstaendig [R]-tauglich' und bildet zusammen mit OTA-SCI-0081-2026-DE ('Abschnitte I-IV vollstaendig uebertragbar') die astronomische Grundlage der Yin-Hua-/Bronzescheiben-Linie. Genau ein als [R] gesetzter Satz — der Cheops-Nordschacht als 'direkter archaeologischer Beleg' fuer Thuban — ist in der Fachliteratur bestritten; damit verletzt das Dossier seine eigene Regel, dass [R] nur extern pruefbare Befunde traegt, und gefaehrdet eine reale Veroeffentlichung der ohnehin als publikationsfaehig markierten Abschnitte.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "R-Anker",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Datum und Winkelabstand der groessten Annaeherung von alpha Draconis (Thuban) an den Nordhimmelspol; Sternschacht-Hypothese der Cheops-Pyramide (Bauval vs. Gantenbrink; Wall 2007) und deren statistische Pruefung; Edition und Datierung von MUL.APIN (Hunger & Pingree 1989; Hunger & Steele 2019); heliakische Aufgangsdaten bei 36°N um 2700 BCE.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.9,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "83edb699566ba81b"
+}
