@@ -1,6 +1,6 @@
 {
   "id": "RES-20260920-0112CCE5",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-09-20T08:43:21+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No previous candidate for this project addressed Martian water phase behaviour or pressure-dependent boiling/sublimation claims. Prior candidates covered interoperability (magnets), cleaning and kitchen chemistry, origin-of-life content and the Research Watch pipeline, none of which touches the triple-point or brine question.",
-  "fingerprint": "0112cce55a020f1f"
+  "fingerprint": "0112cce55a020f1f",
+  "updated_at": "2026-09-21T09:13:40+00:00",
+  "last_error": "[Errno 7] Argument list too long: 'node'"
 }
