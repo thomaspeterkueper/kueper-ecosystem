@@ -1,6 +1,6 @@
 {
   "id": "RES-20260831-TEC0082B",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-08-31T09:38:19+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -46,5 +46,21 @@
     "balancing_is_out_of_scope": true
   },
   "updated_at": "2026-08-31T11:31:47+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/67"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/67",
+  "validated_at": "2026-09-21T10:52:59+00:00",
+  "validation_summary": "Der Kandidat ist zum großen Teil bereits eingearbeitet: OTA-TEC-0082-2026-DE fuehrt ihn in der Versionshistorie (v1.2, 2026-08-31) und der Abschluss EXT-KG-OTA-20260831-cygnus-evidence-alignment nennt ihn als Evidenz. Geprueft gegen den Ist-Stand: §5 gibt die Rotationsrechnung korrekt wieder (r = 6 m, 0,2 g -> omega ~ 0,5717 rad/s ~ 5,46 U/min, arithmetisch bestaetigt) und haelt die Tolerabilitaet richtig als [R/H/OFFEN] mit 2 U/min als Designrichtwert statt Komfortgrenze; §9 fuehrt GCR als Hintergrund und SPE als Akutrisiko, Storm-Shelter als realen Ansatz und Fenster ausdruecklich als keinen Null-Schild; §13 kennzeichnet 'dreifach redundante Lebenserhaltung' korrekt als [F]-Label ohne Fehlertoleranzarchitektur; §6 fuehrt den Fenster-Trade-off. Der Life-Support-Teil ist zusaetzlich durch OTA-TEC-0093 abgedeckt (CO2-Entfernung, LiOH vs. regenerativ, Verbrauchsmittel, Redundanzdefinition). Auch der Rotationskriterien-Punkt ist bereits als offener externer Task EXT-KG-OTA-20260920-002 im",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260921-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20260921-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
