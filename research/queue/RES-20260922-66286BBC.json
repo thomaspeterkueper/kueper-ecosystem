@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260922-66286BBC",
+  "status": "queued",
+  "created": "2026-09-22T08:39:20+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/buecher/resonanzethik.md",
+  "source_ref": "340ef8b743c3c410004d8fb709afcec49b591388",
+  "source_blob_sha": "e76ae62bcd210ff4483b92c797ee73b35581a7e0",
+  "title": "Gleichwertigkeit von Körper, Intuition und Ratio: erkenntnistheoretische Setzung und ihre zitierten Forschungsbezüge",
+  "question": "Trägt die im Resonanzethik-Band gesetzte Behauptung, Körper, Intuition und Ratio seien gleichwertige Erkenntnisquellen, eine epistemische Parität oder nur die schwächere These, dass nicht-diskursive leibliche Information fallweise erkenntnisrelevant ist — und was folgt daraus für die Rolle von Evidenz, Begründung und Rationalität? Stützen die im Projekt genannten Anschlussstränge diese Parität oder lediglich die Plausibilität eines Teils: Spiegelneuronen (Rizzolatti u. a. 1996), Interozeption (Craig 2009), Embodied Cognition (Varela u. a. 1991) — und wie steht es um die innerfachliche Kritik an der Übertragung von Spiegelneuronbefunden auf Empathie und Verstehen? Wie lässt sich die Setzung so reformulieren und operationalisieren, dass sie prüfbar bleibt und nicht beliebig wird, und wie unterscheidet sie sich von etablierten Positionen zur Rolle von Intuition als Erkenntnisquelle in der Erkenntnistheorie?",
+  "why_now": "Die Konsistenzmatrix vom 16.09.2026 fordert unter „systematische Präzisierung“ ausdrücklich: „Aussage von der Gleichwertigkeit der Erkenntnisquellen prüfen; Ratio/Evidenz dürfen nicht relativiert werden.“ Die These steht als [T] im Buchkapitel und zugleich als [H]/[OFFEN] in den zugehörigen Prinzipiensymbolen (Saha), deren Forschungsbezüge ohne Einordnung zitiert werden. Die Seite /resonanzethik/ soll laut External Task EXT-ECO-OMNI-20260719-001 auf omnizedenz.org gekürzt und auf resonanceethics.org vertieft werden — die Fassung der Grundthese wirkt damit zugleich in ein Schwesterprojekt hinein.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Erkenntnistheorie und Philosophie des Geistes sowie Kognitions- und Neurowissenschaft: epistemische Parität von Intuition und leiblicher Wahrnehmung gegenüber diskursiver Rationalität, Interozeption, Embodied Cognition, Spiegelneuron- und Empathieforschung samt fachlicher Kritik",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.88,
+    "uncertainty": 0.82,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein Bezug zu RES-20260828-D6A60CB1: dort ging es um ontologische Nachbarschaften der Omnizedenz zu Pantheismus, Panentheismus und Prozessphilosophie. Hier geht es um eine erkenntnistheoretische These der Resonanzethik und die Belastbarkeit der zu ihr zitierten empirischen Forschungsbezüge — ein anderer Gegenstand auf anderer Ebene (Ethik/Erkenntnistheorie statt Ontologie).",
+  "fingerprint": "66286bbce5fde3e7"
+}
