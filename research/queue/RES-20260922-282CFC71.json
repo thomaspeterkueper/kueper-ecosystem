@@ -1,0 +1,37 @@
+{
+  "id": "RES-20260922-282CFC71",
+  "status": "queued",
+  "created": "2026-09-22T08:39:19+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/texte/zeit-und-omnizedenz.md",
+  "source_ref": "340ef8b743c3c410004d8fb709afcec49b591388",
+  "source_blob_sha": "4f5dfa84df495d17b738ebb9ff93c1c6f2baf769",
+  "title": "Blockzeit und Werden: was die Relativitätstheorie für ein Zeitbild trägt und was philosophische Zusatzannahme ist",
+  "question": "Welche Prämissen stehen tatsächlich hinter der im Kapitel gesetzten Aussage, die Relativitätstheorie stütze ein Bild, in dem Vergangenheit, Gegenwart und Zukunft gleichwertig existieren, und wie bestimmt die gegenwärtige Philosophie der Physik das Verhältnis von spezieller Relativität, Relativität der Gleichzeitigkeit, Eternalismus/Blockuniversum, dynamischer Gegenwart (A-/B-Theorie, „moving spotlight“, wachsender Block) und objektivem Werden? Stützt die Relativitätstheorie den Eternalismus, oder ist dieser eine metaphysische Zusatzannahme, die erst mit weiteren Prämissen folgt? Lässt sich der Kanonsatz „Was geschehen ist, kann nicht ungeschehen werden“ so fassen, dass physikalisches Zeitmodell, subjektive Gegenwart und ontologische Geschichtlichkeit getrennt bleiben, ohne dass eine metaphysische These als physikalisches Ergebnis erscheint — und wie verhalten sich zyklische Zeitvorstellungen in Hinduismus, Daoismus und jüdischer Mystik dazu, wenn sie als Texte und Deutungen, nicht als Belege behandelt werden?",
+  "why_now": "Der öffentliche Kapiteltext trägt den [T]-Marker direkt auf der Eternalismus-Aussage, während die Folgeaussage über die Wahrnehmungsperspektive bereits als [H] markiert ist. Die Konsistenzmatrix vom 16.09.2026 führt „Zeit“ als [OFFEN] und verlangt ausdrücklich, „physikalische Blockzeit, subjektive Zeit und ontologische Geschichtlichkeit sauber zu trennen“; der Text steht in Priorität B der anstehenden Neubearbeitung, und der Kanonsatz über die Unumkehrbarkeit des Geschehenen verlangt eine Neufassung des Zeitbegriffs.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Philosophie der Physik und Metaphysik der Zeit: Relativität der Gleichzeitigkeit, Rietdijk-Putnam-Argument, Eternalismus/Präsentismus, A-/B-Theorie der Zeit, objektives Werden",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein Bezug zu RES-20260828-D6A60CB1: dort wurde die Abgrenzung von Pantheismus, Panentheismus und Prozessphilosophie verhandelt, hier das Verhältnis von physikalischem Zeitmodell, subjektiver Gegenwart und ontologischem Werden. Der frühere Kandidat berührt den Zeitbegriff nicht; eine Überschneidung besteht nur insoweit, als beide denselben Textbestand betreffen.",
+  "fingerprint": "282cfc717191a1fc"
+}
