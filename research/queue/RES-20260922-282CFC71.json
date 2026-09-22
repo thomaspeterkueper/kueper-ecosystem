@@ -1,6 +1,6 @@
 {
   "id": "RES-20260922-282CFC71",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-09-22T08:39:19+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein Bezug zu RES-20260828-D6A60CB1: dort wurde die Abgrenzung von Pantheismus, Panentheismus und Prozessphilosophie verhandelt, hier das Verhältnis von physikalischem Zeitmodell, subjektiver Gegenwart und ontologischem Werden. Der frühere Kandidat berührt den Zeitbegriff nicht; eine Überschneidung besteht nur insoweit, als beide denselben Textbestand betreffen.",
-  "fingerprint": "282cfc717191a1fc"
+  "fingerprint": "282cfc717191a1fc",
+  "updated_at": "2026-09-22T08:54:08+00:00",
+  "last_error": "agent-with-exa: Exa evidence failed: Cannot read properties of undefined (reading 'exaSearch')\nagent-with-exa: falling back to the existing research agent without Exa\n\"deepseek-v4-flash\" isn't described by this version's model catalog; update Claude Code, or map it with behavesAs on a modelPicker row (or modelOverrides, if it is a provider id of a model this version knows). Until then auto-compact keeps this session within 200k tokens (the context window it assumes); if the model accepts more, append [1m] to the model name for 1M, or set CLAUDE_CODE_MAX_CONTEXT_TOKENS to its real window; CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1 restores the previous wait-for-the-API behavior.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"sdk\"}\nAPI Error: 402 Insufficient Balance\n"
 }
