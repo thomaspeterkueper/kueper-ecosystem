@@ -1,0 +1,39 @@
+{
+  "id": "RES-20260922-EFDF35CA",
+  "status": "queued",
+  "created": "2026-09-22T08:39:18+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/texte/phaistos.md",
+  "source_ref": "340ef8b743c3c410004d8fb709afcec49b591388",
+  "source_blob_sha": "0e64c933f9d392c2bd2d98fedd1c84294a594cda",
+  "title": "Diskos von Phaistos: gesicherter Forschungsstand gegenüber den im Projekt gesetzten minoischen Motivbezügen",
+  "question": "Was gilt in der heutigen minoischen Archäologie und Epigraphik zum Diskos von Phaistos als belegt und was als strittig: Datierung (minoische Periode, im Essay „etwa 1700 v. Chr.\"), Zeicheninventar (241 gestempelte Zeichen in 61 Zeichengruppen, 45 Stempelmotive), Leserichtung der Spirale, die konkurrierenden Nummerierungssysteme (Evans gegenüber der dem Essay zugeschriebenen Notation von Godart/Olivier) und der Stand der jüngeren Entzifferungs- und Deutungsbehauptungen? Und wie belastbar sind die konkreten minoischen Bezüge, die das Projekt den 45 Chronoglyphen zuordnet — etwa „Malia-Amulett“, „Schlangengöttin“, „Thera-Fresken“, „Dionysos-Kult“, „Tonflöten-Funde“ — als reale archäologische Referenz, wenn sie ausdrücklich nur Anregung und nicht Entzifferung sein sollen? Untersucht wird ausschließlich der realweltliche archäologische Unterbau; die frei erfundene Chronoglyphen-Bedeutung selbst steht nicht zur Validierung.",
+  "why_now": "Der Essay behauptet konkret, die verwendete Zeichennummerierung folge der wissenschaftlichen Notation Louis Godarts, und liefert zugleich die archäologischen Eckdaten als Grundlage des Gedankenexperiments. Daran hängen 45 Symbolseiten mit chronoglyphNr und minoischesBezug-Feld sowie die Einbindung in den Knowledge Graph (CON:L*-Anker). Der Text lädt selbst zur Prüfung ein („Wer das Rätsel eines Tages löst, wird vermutlich etwas ganz anderes finden“), und der Essay erklärt die Doppelvergabe zweier Zeichen ausdrücklich als offene Unstimmigkeit.",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "R",
+    "F",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Archäologie und Epigraphik des Diskos von Phaistos (minoische Kultur Kretas): Chronologie, Zeicheninventar und Zeichenzahl, Godart-/Olivier-Nummerierung, Leserichtung, Stand der Entzifferungsdebatte",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.89,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.88,
+    "evidence_potential": 0.92
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein Bezug zu RES-20260828-D6A60CB1 (dort: Abgrenzung Omnizedenz gegenüber Pantheismus, Panentheismus, Prozessphilosophie). Dieser Kandidat betrifft eine ganz andere Wissensdomäne — die minoische Archäologie und Epigraphik als realweltlicher Unterbau eines als [F] gekennzeichneten Symbolsystems — und berührt weder Ontologie-Vergleiche noch metaphysische Thesen.",
+  "fingerprint": "efdf35cab56d18a2"
+}
