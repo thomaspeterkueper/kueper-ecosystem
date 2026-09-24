@@ -1,7 +1,9 @@
 # Governance-Sweep — Bericht
 
-Erzeugt: 2026-09-23T11:26:35.572030+00:00
+Erzeugt: 2026-09-24T11:38:09.675071+00:00
 
-**0 Fund(e)** — 0 error, 0 warning, 0 info
+**1 Fund(e)** — 0 error, 0 warning, 1 info
 
-Keine Auffälligkeiten.
+## task_addressed_to_eco (1)
+- **[info]** Offener, an ECO adressierter Task in 'ecosystem': EXT-KUE-ECO-20260924-001.md
+
