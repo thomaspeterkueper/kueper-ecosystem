@@ -1,6 +1,6 @@
 {
   "id": "RES-20260921-69507E77",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-09-21T09:06:29+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -35,5 +35,7 @@
     "RES-20260920-D8270DC5"
   ],
   "novelty_reason": "Die beiden vorigen Kandidaten auditieren das Nachbardossier OTA-SCI-0091 (SN-Ia-Hubblediagramm 'Unite', Omega_m, w0-wa, Signifikanz-Triade, DESI-/SN-Vergleich und die Zitatpruefung von arXiv:2609.05053/2609.05321). Dieser Gap betrifft ein anderes Quelldokument (OTA-SCI-0092), einen anderen Beobachtungskanal (FRB-Dispersionsmasse als Baryonen-/Feedback-Sonde statt Leuchtkraftdistanzen) und einen anderen externen Anker (die reale FRB-Feedback-Messung gegen eROSITA/ACT statt DES/DESI/SH0ES). Die bereits auditierte Ueberlegung zur historienintegrierten Beobachtungsgroesse (RES-20260920-D8270DC5, Item 5) wird bewusst ausgeschlossen; neu ist hier die Pruefung, ob die im Dossier nur qualitativ als 'konkurrierend' beschriebenen FRB-Einschraenkungen tatsaechlich in Richtung und Groesse korrekt wiedergegeben sind.",
-  "fingerprint": "69507e77c6239d7f"
+  "fingerprint": "69507e77c6239d7f",
+  "updated_at": "2026-09-24T08:32:28+00:00",
+  "last_error": "agent-with-exa: Exa evidence failed: Cannot read properties of undefined (reading 'exaSearch')\nagent-with-exa: falling back to the existing research agent without Exa\n\"deepseek-v4-flash\" isn't described by this version's model catalog; update Claude Code, or map it with behavesAs on a modelPicker row (or modelOverrides, if it is a provider id of a model this version knows). Until then auto-compact keeps this session within 200k tokens (the context window it assumes); if the model accepts more, append [1m] to the model name for 1M, or set CLAUDE_CODE_MAX_CONTEXT_TOKENS to its real window; CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1 restores the previous wait-for-the-API behavior.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"sdk\"}\nAPI Error: 402 Insufficient Balance (request_id: 28e929d3-8ea6-476b-abe8-524aec383dbf)\n"
 }
