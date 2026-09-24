@@ -1,6 +1,6 @@
 {
   "id": "RES-20260913-4E6E942A",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-09-13T08:31:49+00:00",
   "source_project": "noxia",
   "source_repository": "thomaspeterkueper/noxiagame",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Not a rephrase of RES-20260828-49AF01DE: that candidate asks which bodies physically contain which resources, with what ore grades and extraction feasibility. This gap asks a different question one layer earlier in the chain — which measurement techniques can detect, discriminate and bound those resources, and with what uncertainty — i.e. the detection/information side rather than the deposit side. It also directly serves an actively open Engineering request whose sensor ladder is marked [H]/feasibility-only.",
-  "fingerprint": "4e6e942a90247c88"
+  "fingerprint": "4e6e942a90247c88",
+  "updated_at": "2026-09-24T08:32:24+00:00",
+  "last_error": "agent-with-exa: Exa evidence failed: Cannot read properties of undefined (reading 'exaSearch')\nagent-with-exa: falling back to the existing research agent without Exa\n\"deepseek-v4-flash\" isn't described by this version's model catalog; update Claude Code, or map it with behavesAs on a modelPicker row (or modelOverrides, if it is a provider id of a model this version knows). Until then auto-compact keeps this session within 200k tokens (the context window it assumes); if the model accepts more, append [1m] to the model name for 1M, or set CLAUDE_CODE_MAX_CONTEXT_TOKENS to its real window; CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1 restores the previous wait-for-the-API behavior.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"sdk\"}\nAPI Error: 402 Insufficient Balance (request_id: ba1d8362-bae8-4acb-92d5-3799da6ff505)\n"
 }
