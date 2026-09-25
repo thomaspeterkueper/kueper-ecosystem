@@ -1,6 +1,6 @@
 {
   "id": "RES-20260831-3CFEFFA6",
-  "status": "candidate-pr",
+  "status": "validation-error",
   "created": "2026-08-31T06:09:30+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -11,15 +11,26 @@
   "title": "Superionic gold hydride (Au2Hx) MOF-stabilization audit for OTA-TEC-0021-2025 against the 2025 European XFEL discovery",
   "question": "Source-grounded audit of the exact OTA-TEC-0021-2025-DE document: verify the real Au2Hx high-P/T anchor and evaluate the Cu3(HHTP)2 confinement proposal as a constrained, falsifiable hypothesis without upgrading it to established science.",
   "why_now": "OTA-TEC-0021-2025 contains a fresh real Au2Hx anchor but mixes it with unverified lifetime and MOF-stabilization claims. Critical review is needed before the evidence layer is reused.",
-  "languages": ["de", "en"],
+  "languages": [
+    "de",
+    "en"
+  ],
   "evidence_profile": "ota-archive-evidence",
-  "claim_classes": ["R", "H"],
+  "claim_classes": [
+    "R",
+    "H"
+  ],
   "real_world_anchor": "Frost et al. 2025 Au2Hx under >40 GPa / >2200 K and real material properties of Cu3(HHTP)2",
   "publication_route_hint": "fictional_archive_document",
   "external_research_required": true,
   "project_weight": 0.9,
   "relevance_score": 0.7375,
-  "scores": {"project_relevance": 0.7, "cross_project_reuse": 0.6, "uncertainty": 0.8, "evidence_potential": 0.85},
+  "scores": {
+    "project_relevance": 0.7,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
   "related_research_ids": [],
   "novelty_reason": "No prior research topic covers this Au2Hx/MOF stabilization dimension.",
   "fingerprint": "3cfeffa6ff6ee9ac",
@@ -28,5 +39,7 @@
   "superseded_candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/61",
   "critical_review_revision": "R1",
   "critical_review_head_sha": "fa58e35d0bf027ad584295c042e2d572fede25fc",
-  "superseded_merge_commit": "e0e3de7f94df6b38dc445ba0698c2db8c7abab0d"
+  "superseded_merge_commit": "e0e3de7f94df6b38dc445ba0698c2db8c7abab0d",
+  "validated_at": "2026-09-25T10:15:05+00:00",
+  "validation_error": "\"deepseek-v4-flash\" isn't described by this version's model catalog; update Claude Code, or map it with behavesAs on a modelPicker row (or modelOverrides, if it is a provider id of a model this version knows). Until then auto-compact keeps this session within 200k tokens (the context window it assumes); if the model accepts more, append [1m] to the model name for 1M, or set CLAUDE_CODE_MAX_CONTEXT_TOKENS to its real window; CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1 restores the previous wait-for-the-API behavior.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"sdk\"}\nAPI Error: 402 Insufficient Balance (request_id: 9b79439c-d6cc-408f-9530-f3dcc7a031ea)\n"
 }
