@@ -1,6 +1,6 @@
 {
   "id": "RES-20260831-4CE6D2E5",
-  "status": "candidate-pr",
+  "status": "validation-error",
   "created": "2026-08-31T10:09:53+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -11,16 +11,28 @@
   "title": "Quantum-sensor [R] claims and reference audit for OTA-TEC-0029 (optical lattice clocks, SQUIDs, atom interferometers)",
   "question": "Audit the exact OTA-TEC-0029 real-science layer: optical clocks, SQUIDs, atom interferometers, Dst and LOD/EOP claims, keeping uncertainty, stability, noise density, integration time, product definition and TRL separate.",
   "why_now": "OTA-TEC-0029 contains real sensor anchors but over-compresses heterogeneous metrics into institution-wide tables and includes a misdated Bothwell citation. Critical review is needed before reuse.",
-  "languages": ["de", "en"],
+  "languages": [
+    "de",
+    "en"
+  ],
   "evidence_profile": "ota-archive-evidence",
-  "claim_classes": ["R"],
+  "claim_classes": [
+    "R"
+  ],
   "real_world_anchor": "Real optical clocks, low-Tc SQUIDs, atom interferometers and IERS/Kyoto geophysical measurement products",
   "publication_route_hint": "fictional_archive_document",
   "external_research_required": true,
   "project_weight": 0.9,
   "relevance_score": 0.825,
-  "scores": {"project_relevance": 0.9, "cross_project_reuse": 0.7, "uncertainty": 0.8, "evidence_potential": 0.9},
-  "related_research_ids": ["RES-20260831-3DEACC8E"],
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260831-3DEACC8E"
+  ],
   "novelty_reason": "This companion document's own quantum-sensor, EOP and citation layer had not been critically reconciled.",
   "fingerprint": "4ce6d2e56ad025d8",
   "updated_at": "2026-08-31T20:00:00+00:00",
@@ -28,5 +40,7 @@
   "superseded_candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/65",
   "critical_review_revision": "R1",
   "critical_review_head_sha": "b31c7dcd11ae8a08a12bda4917c71a83289afdd6",
-  "superseded_merge_commit": "b0c75a1abda4ae084f49b453cc7a5a6605053305"
+  "superseded_merge_commit": "b0c75a1abda4ae084f49b453cc7a5a6605053305",
+  "validated_at": "2026-09-25T10:15:08+00:00",
+  "validation_error": "\"deepseek-v4-flash\" isn't described by this version's model catalog; update Claude Code, or map it with behavesAs on a modelPicker row (or modelOverrides, if it is a provider id of a model this version knows). Until then auto-compact keeps this session within 200k tokens (the context window it assumes); if the model accepts more, append [1m] to the model name for 1M, or set CLAUDE_CODE_MAX_CONTEXT_TOKENS to its real window; CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1 restores the previous wait-for-the-API behavior.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"sdk\"}\nAPI Error: 402 Insufficient Balance (request_id: 89bc9da3-1b1b-429c-a9a3-a0ad1726ef77)\n"
 }
