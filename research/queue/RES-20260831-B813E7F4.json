@@ -1,25 +1,37 @@
 {
   "id": "RES-20260831-B813E7F4",
-  "status": "candidate-pr",
+  "status": "validation-error",
   "created": "2026-08-31T09:54:59+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
   "source_path": "lib/learningPaths.ts",
   "source_ref": "a58fce20a9a595408124cd9bbb14b24271ac3389",
   "source_blob_sha": "4fae89e554754c85f6248264a0f4ec665e8c302e",
-  "source_anchors": ["PATH:SSF:CHE-KUECHE-KARAMELL-0001"],
+  "source_anchors": [
+    "PATH:SSF:CHE-KUECHE-KARAMELL-0001"
+  ],
   "title": "Verify and source the caramelization temperature claims in the kitchen-chemistry learning path (sugar melting/onset thresholds)",
   "question": "What are the scientifically correct melting points and caramelization onset temperatures for fructose, glucose, sucrose and maltose, and is the hard-threshold framing of the KARAMELL path ('Zucker beginnt bei etwa 160°C zu schmelzen', 'Unter 160°C passiert nichts', 'Fruchtzucker 110 / Traubenzucker 150 / Haushaltszucker 160 / Malzzucker 180 Grad') accurate, or is caramelization a temperature- and time-dependent rate process with sucrose actually melting near 186°C?",
   "why_now": "The prototype path PATH:SSF:CHE-KUECHE-KARAMELL-0001 teaches exact sugar thresholds as crisp facts to NOXIA learners. The current claims mix thermal events and reaction kinetics; a sourced correction is required before shipping.",
-  "languages": ["en", "de"],
+  "languages": [
+    "en",
+    "de"
+  ],
   "evidence_profile": "science",
-  "claim_classes": ["R"],
+  "claim_classes": [
+    "R"
+  ],
   "external_research_required": true,
   "real_world_anchor": "Melting/crystalline-structure-loss events and caramelization kinetics of fructose, glucose, sucrose and maltose; whether a hard 160°C threshold is scientifically accurate",
   "publication_route_hint": null,
   "project_weight": 0.8,
   "relevance_score": 0.825,
-  "scores": {"project_relevance": 0.9, "cross_project_reuse": 0.8, "uncertainty": 0.75, "evidence_potential": 0.85},
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.85
+  },
   "related_research_ids": [],
   "novelty_reason": null,
   "fingerprint": "b813e7f4ee43e9f5",
@@ -28,5 +40,7 @@
   "superseded_candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/89",
   "critical_review_revision": "R1",
   "critical_review_head_sha": "f75ab77cb49e9c42e13a93be1c256b9d85dc159b",
-  "superseded_merge_commit": "7aea3dc480a2f4c1c5e8ffab07f8e6458390d15d"
+  "superseded_merge_commit": "7aea3dc480a2f4c1c5e8ffab07f8e6458390d15d",
+  "validated_at": "2026-09-26T09:56:33+00:00",
+  "validation_error": "\"deepseek-v4-flash\" isn't described by this version's model catalog; update Claude Code, or map it with behavesAs on a modelPicker row (or modelOverrides, if it is a provider id of a model this version knows). Until then auto-compact keeps this session within 200k tokens (the context window it assumes); if the model accepts more, append [1m] to the model name for 1M, or set CLAUDE_CODE_MAX_CONTEXT_TOKENS to its real window; CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1 restores the previous wait-for-the-API behavior.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"sdk\"}\nAPI Error: 402 Insufficient Balance (request_id: 96c454dc-3db1-432a-ad96-8c6e0bcf0bb2)\n"
 }
