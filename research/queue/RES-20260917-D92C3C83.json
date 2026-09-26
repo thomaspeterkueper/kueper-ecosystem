@@ -1,6 +1,6 @@
 {
   "id": "RES-20260917-D92C3C83",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-09-17T08:45:15+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein vorheriges Topic behandelt KUE-SCI-0175 oder die UPE-Evidenzlage. Das Topic zu KUE-SCI-0170 (menschliche Magnetorezeption, Alpha-ERD) betrifft ein anderes Dokument, einen anderen Messkanal und eine andere Literaturbasis; es liegt inhaltlich keine bloße Umformulierung vor.",
-  "fingerprint": "d92c3c839014c40f"
+  "fingerprint": "d92c3c839014c40f",
+  "updated_at": "2026-09-26T08:40:39+00:00",
+  "last_error": "agent-with-exa: Exa evidence failed: Cannot read properties of undefined (reading 'exaSearch')\nagent-with-exa: falling back to the existing research agent without Exa\n\"deepseek-v4-flash\" isn't described by this version's model catalog; update Claude Code, or map it with behavesAs on a modelPicker row (or modelOverrides, if it is a provider id of a model this version knows). Until then auto-compact keeps this session within 200k tokens (the context window it assumes); if the model accepts more, append [1m] to the model name for 1M, or set CLAUDE_CODE_MAX_CONTEXT_TOKENS to its real window; CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1 restores the previous wait-for-the-API behavior.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"sdk\"}\nAPI Error: 402 Insufficient Balance (request_id: 29196a0c-aaab-440d-bf46-0382f74f06ac)\n"
 }
