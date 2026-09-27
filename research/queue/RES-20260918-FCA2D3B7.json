@@ -1,6 +1,6 @@
 {
   "id": "RES-20260918-FCA2D3B7",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-09-18T08:22:05+00:00",
   "source_project": "endia",
   "source_repository": "thomaspeterkueper/endia.de",
@@ -34,5 +34,7 @@
     "RES-20260826-47CC2438"
   ],
   "novelty_reason": "The prior topic asks which real-world digital-rights movements, surveillance debates and digital-literacy content the premise and platform should draw on — a sourcing question about discourse and content. This gap audits a materially different object: the binding legal facts (offence definitions, privileges, protection regimes, and the conduct limits on the platform itself) that constrain what the fictional protagonists can plausibly do and what endia.de may present as legally accurate. It requires primary legal sources and case law rather than movement discourse, and it answers a question the prior candidate does not address: not what to write about, but what the law actually permits or criminalizes.",
-  "fingerprint": "fca2d3b727a589a6"
+  "fingerprint": "fca2d3b727a589a6",
+  "updated_at": "2026-09-27T09:21:00+00:00",
+  "last_error": "agent-with-exa: Exa evidence failed: Cannot read properties of undefined (reading 'exaSearch')\nagent-with-exa: falling back to the existing research agent without Exa\n\"deepseek-v4-flash\" isn't described by this version's model catalog; update Claude Code, or map it with behavesAs on a modelPicker row (or modelOverrides, if it is a provider id of a model this version knows). Until then auto-compact keeps this session within 200k tokens (the context window it assumes); if the model accepts more, append [1m] to the model name for 1M, or set CLAUDE_CODE_MAX_CONTEXT_TOKENS to its real window; CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT=1 restores the previous wait-for-the-API behavior.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"sdk\"}\nAPI Error: 402 Insufficient Balance (request_id: cae3c271-823c-4ea4-9b25-5424a34c7af9)\n"
 }
