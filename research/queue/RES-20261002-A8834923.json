@@ -1,6 +1,6 @@
 {
   "id": "RES-20261002-A8834923",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-02T09:54:21+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine bisherige Recherche behandelt OTA-SCI-0100 oder Tidal-Torque-/Galaxienspin-Beobachtungen. Die Kosmologie-Vorarbeiten betreffen Dunkle Energie (SCI-0091), FRB-Feedback (SCI-0092), H0-Distanzleitern (SCI-0094 ist nicht Gegenstand frueherer Topics) — thematisch und quellenmaessig verschieden.",
-  "fingerprint": "a8834923c1d04b93"
+  "fingerprint": "a8834923c1d04b93",
+  "updated_at": "2026-10-02T09:59:59+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/160"
 }
