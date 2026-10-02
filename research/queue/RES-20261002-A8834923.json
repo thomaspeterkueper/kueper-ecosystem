@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261002-A8834923",
+  "status": "queued",
+  "created": "2026-10-02T09:54:21+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0100-2026-DE.md",
+  "source_ref": "04fd716bd7b883bef645e1fbf37359367883b917",
+  "source_blob_sha": "a30789194f5f4e42cc141344abaf1d4806256825",
+  "title": "Realwelt-Audit der primordialen Tidal-Torque-Signatur in heutigen Galaxienspins (OTA-SCI-0100): Sheng et al., Nature Astronomy 2026, ~7 sigma, die News-&-Views-Einordnung und die Rekonstruktionsgrenze des primordialen Dichtefelds",
+  "question": "Source-grounded audit of the [R]- und [T]-Schicht von OTA-SCI-0100-2026-DE (Sections 1-5 und 8), gepinnt auf Revision 04fd716bd7b883bef645e1fbf37359367883b917, gegen die primaere Tidal-Torque- und Galaxienspin-Literatur. (1) Quellenverifikation: Existieren die zitierten Arbeiten wie angegeben — Sheng et al., *A high-significance detection of primordial tidal torque imprints*, Nature Astronomy, 5. August 2026, und Xi Kang, *Persistent primordial signature in present-day galaxies*, Nature Astronomy, News & Views, 28. September 2026 (Titel, Autorschaft, Journal, Datum)? Berichte die tatsaechliche Signifikanz, den tatsaechlichen Stichprobenumfang (Galaxiengattung, 'Gaskomponente massereicher zentraler elliptischer Galaxien'), die verwendete Methodik (Kinematik plus Rekonstruktion des primordialen Dichtefelds) und jede Abweichung von '~7 sigma'. (2) Standardkorpus: berichte, was die reale Tidal-Torque-Theorie und die Beobachtungsliteratur zu Spin-/Gezeitenfeld-Korrelationen tatsaechlich etablieren (z. B. Lee & Pen, intrinsische Alignments, Galaxienspin-vs-Filament/Tidal-Feld-Studien, zuletzt publizierte Detektionen und ihre Signifikanzen) und ordne 7 sigma ein. (3) Rekonstruktionsgrenze: pruefe Abschnitt 5 gegen die reale Methodik — wird das primordiale Feld aus heutigen Strukturdaten rekonstruiert (modellabhaengig), und ist die Trennung '[R] Beobachtung' vs. '[T] Rekonstruktion/Standardkette' werktreu oder ueberzeichnet? Berichte die realen Rekonstruktionsunsicherheiten und gemeinsamen Datengrundlagen. (4) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen, die zu '[R] Quelleninhalt' mit den Zahlen der Primaerarbeit abzuschwaechen sind, und die [T]/[H]/[OFFEN] werden muessen; stelle fest, dass keine kanonische Signifikanz, kein kanonischer Galaxientyp und keine kanonische Rekonstruktionsmethode eingefuehrt werden darf. Ausdruecklich AUSGESCHLOSSEN: die AVI-Theorieschicht, die T1-T4-Triggerpruefung, die IR-1-/State-Carrier-Entscheidung und alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "OTA-SCI-0100 gehoert zum juengsten, noch nicht auditierten 2026er-Dossierstapel (SCI-0093-0101) und beruehrt mit 'Retention/History im Standardzustand' das konzeptionelle Kernargument der AVI-Linie. Der Befund wird als empirische Stuetze eines Standardmechanismus verwendet; ob die zitierte Arbeit und Signifikanz real ist, entscheidet ueber die Belastbarkeit dieser Einordnung.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Nachweis eines primordialen Tidal-Torque-Imprints in heutigen Galaxienspins (beanspruchte Nature-Astronomy-2026-Arbeit) und der reale Beobachtungsstand von Spin-Gezeitenfeld-Korrelationen.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine bisherige Recherche behandelt OTA-SCI-0100 oder Tidal-Torque-/Galaxienspin-Beobachtungen. Die Kosmologie-Vorarbeiten betreffen Dunkle Energie (SCI-0091), FRB-Feedback (SCI-0092), H0-Distanzleitern (SCI-0094 ist nicht Gegenstand frueherer Topics) — thematisch und quellenmaessig verschieden.",
+  "fingerprint": "a8834923c1d04b93"
+}
