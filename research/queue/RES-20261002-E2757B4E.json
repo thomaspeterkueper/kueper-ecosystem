@@ -1,0 +1,34 @@
+{
+  "id": "RES-20261002-E2757B4E",
+  "status": "queued",
+  "created": "2026-10-02T09:54:20+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0101-2026-DE.md",
+  "source_ref": "04fd716bd7b883bef645e1fbf37359367883b917",
+  "source_blob_sha": "06f541829609db5c70cf68ea11c800fa9658e8fa",
+  "title": "Realwelt-Audit des CHIME-21-cm-Autokorrelationsnachweises bei z ~ 1 in OTA-SCI-0101: ApJ-Publikation, 94 Beobachtungsnaechte, 608,2-707,8 MHz (z = 1,34-1,01), 12,4 sigma und die 0,4 < k < 1,5 h/Mpc-Skala",
+  "question": "Source-grounded audit of the [R]-marked observational layer of OTA-SCI-0101-2026-DE (Sections 1-4 and the source list), pinned to revision 04fd716bd7b883bef645e1fbf37359367883b917, against the primary 21-cm intensity-mapping literature. (1) Quellenverifikation: Existiert die zitierte CHIME-Collaboration-Arbeit im *Astrophysical Journal* vom 28. September 2026 wie angegeben (Titel, Autorschaft, Journal, Datum, DOI 10.3847/1538-4357/ae9835)? Verifiziere ebenso die als Begleitarbeit zitierte Interpretation (DOI 10.3847/1538-4357/ae9747). Falls eine Kennung nicht in einem indexierten Datensatz auffindbar ist, sage das ausdruecklich und nenne die naechstliegenden realen CHIME-21-cm-Publikationen, ohne sie stillschweigend zu substituieren. (2) Messwerte: pruefe '94 Beobachtungsnaechte', den Frequenzbereich 608,2-707,8 MHz, die Zuordnung z = 1,34-1,01, den Skalenbereich 0,4 < k < 1,5 h/Mpc, die globale Signifikanz 12,4 sigma und die Teilbandwerte 8,6 sigma (z ~ 1,08) bzw. 9,1 sigma (z ~ 1,24) gegen den tatsaechlichen Stand des CHIME-21-cm-Programms. Berichte, was real nachgewiesen, was nur als obere Grenze oder Kreuzkorrelation publiziert ist und welche Nachweisart (Autokorrelation vs. Kreuzkorrelation mit Galaxien-/Quasarkatalogen) real existiert; stelle insbesondere fest, ob ein Autokorrelations-Nachweis bei z ~ 1 mit ~12 sigma mit dem veroeffentlichten experimentellen Datensatz vereinbar ist. (3) Methodik/Systematik: prüfe die in Abschnitt 3 aufgefuehrte Liste (Hintergrundentfernung, RFI/Maskierung, Beamforming/Mapmaking, Bandpass-/Instrumentkalibration, Power-Spectrum-Schaetzer/Kovarianz, HI-Bias, RSD, nichtlineares Clustering) gegen die tatsaechliche CHIME-Pipeline- und Systematikliteratur und benenne fehlende fuehrende Systematiken. (4) IllustrisTNG-Vergleich: berichte, was die reale 21-cm-/hydrodynamik-Simulations-Vergleichsliteratur etabliert und ob 'Spannung gegenueber IllustrisTNG' als Modell-/Tracer-Diagnostik konsistent eingeordnet ist. (5) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen, die zu '[R] Quelleninhalt, community-unverifizierte Einzelarbeit' abzuschwaechen sind, und die [H]/[OFFEN] werden muessen; stelle fest, dass keine kanonische 21-cm-Signifikanz, kein kanonischer Rotverschiebungsbereich und kein kanonischer k-Bereich eingefuehrt werden darf. Ausdruecklich AUSGESCHLOSSEN: die AVI-P-Triggerpruefung T1-T4, die AVI-Beobachtungsmatrix-Entscheidung und alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "OTA-SCI-0101 ist der Gegenstand des juengsten Repository-Commits (04fd716 'docs: add OTA-SCI-0101 CHIME 21cm autocorrelation control') und traegt eine grosse Zahl sehr konkreter, extern pruefbarer Zahlen und DOIs, die bislang nicht auditiert wurden. Der Nachweis eines 21-cm-Autokorrelationssignals bei z ~ 1 waere ein wissenschaftlich bedeutender Befund; die Einordnung als neuer Standardbeobachtungskanal haengt vollstaendig an der Verifizierbarkeit der Primaerquelle.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "CHIME-21-cm-Intensity-Mapping: Existenz und Inhalt des als ApJ 2026 beanspruchten Autokorrelationsnachweises sowie der reale Nachweisstand von 21-cm-Autokorrelation gegenueber Kreuzkorrelationen bei z ~ 1.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine bisherige Recherche in dieser Projektreihe auditiert OTA-SCI-0101 oder das CHIME-21-cm-Programm; die vorhandenen Kosmologie-Audits betreffen SCI-0091 (DESI-Dunkle-Energie), SCI-0092 (FRB/Baryonen-Feedback) und SCI-0082/0086 (Archaeoastronomie bzw. Gravitationsbiologie) und ueberschneiden sich inhaltlich nicht mit 21-cm-Intensity-Mapping-Autokorrelation.",
+  "fingerprint": "e2757b4ebf921a43"
+}
