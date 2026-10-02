@@ -1,6 +1,6 @@
 {
   "id": "RES-20261002-E2757B4E",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-02T09:54:20+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -30,5 +30,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine bisherige Recherche in dieser Projektreihe auditiert OTA-SCI-0101 oder das CHIME-21-cm-Programm; die vorhandenen Kosmologie-Audits betreffen SCI-0091 (DESI-Dunkle-Energie), SCI-0092 (FRB/Baryonen-Feedback) und SCI-0082/0086 (Archaeoastronomie bzw. Gravitationsbiologie) und ueberschneiden sich inhaltlich nicht mit 21-cm-Intensity-Mapping-Autokorrelation.",
-  "fingerprint": "e2757b4ebf921a43"
+  "fingerprint": "e2757b4ebf921a43",
+  "updated_at": "2026-10-02T09:57:25+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/159"
 }
