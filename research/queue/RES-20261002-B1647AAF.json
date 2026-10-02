@@ -1,0 +1,39 @@
+{
+  "id": "RES-20261002-B1647AAF",
+  "status": "queued",
+  "created": "2026-10-02T09:54:22+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0096-2026-DE.md",
+  "source_ref": "04fd716bd7b883bef645e1fbf37359367883b917",
+  "source_blob_sha": "cedd64d6e8b291ca824171ad0be6bce9f6be40cb",
+  "title": "Realwelt-Audit der Magnetobiologie kuenstlicher Habitate (OTA-SCI-0096): Reed et al. (Aging 2026, Drosophila/Pink1) und Rishabh et al. (PNAS Nexus 2026, Planarien/Superoxid) — Hypomagnetfeld, ROS und Radical-Pair-Evidenzgrenzen",
+  "question": "Source-grounded audit of the [R]/[T]/[H]/[OFFEN]-Schicht von OTA-SCI-0096-2026-DE (Sections 2-6, 8 und 9), gepinnt auf Revision 04fd716bd7b883bef645e1fbf37359367883b917, gegen die primaere Magnetobiologie-, ROS- und Radical-Pair-Literatur. (1) Quellenverifikation Reed et al.: Existiert *Hypomagnetic fields modulate lifespan, physical ability and mitochondrial metabolism in a Pink1 model of neurodegeneration* in *Aging* (23. September 2026, DOI 10.18632/aging.206424) mit den genannten Autorinnen/Autoren (Reed, Fromhold, Moisoi, Mather, Chakrabarti)? Pruefe die Angaben: passives Abschirmen auf ~5 nT gegen ~25-60 µT, genotypabhaengige Lebensdauereffekte (Pink1 +~20 %, Wildtyp erniedrigt), Kletter- vs. Lokomotionsleistung, erhoehte Complex-II-bezogene OXPHOS-Kapazitaet beim Wildtyp und die NV-Diamant-/Quantensensorik zur Radikalerfassung — jeweils gegen Abstract/Ergebnisse der Primaerarbeit. (2) Quellenverifikation Rishabh et al.: Existiert *Verification of quantum biological predictions for weak magnetic field effects on superoxide in planarians* in *PNAS Nexus* (2026, DOI 10.1093/pnasnexus/pgag152) mit den genannten Autorinnen/Autoren (Rishabh, Vuckovic, Zadeh-Haghighi, Beane, Simon)? Pruefe die Feldbedingungen (gegen ~45 µT, hypomagnetisch, hoehere Feldstaerken), das Superoxid am Wundort in regenerierender *Schmidtea mediterranea* und die Radical-Pair-Modell-Uebereinstimmung. (3) Kontext/Mechanismus: berichte den realen Stand der Hypomagnetfeld-Biologie (inkl. Raumfahrt-/Abschirmungsexperimente) und der Radical-Pair-Magnetorezeption; stelle fest, ob die Aussage '[T] Radical-Pair-Mechanismuskandidat' und '[OFFEN] kein identifizierter Reaktionspfad' werktreu bleiben und ob '{magnetfeldabhaengiger Effekt} != {etablierter Radical-Pair-Mechanismus}' belastbar ist. (4) Habitatextrapolation [H]: berichte, was real zur Notwendigkeit eines erdaehnlichen Magnetfelds fuer menschliche Gesundheit/Altern bekannt ist (Mond-/Mars-/Deep-Space-Umgebung, technische Abschirmung) und ob die Formulierung als Forschungsoption statt Life-Support-Komponente gedeckt ist. (5) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen, die zu '[R] Einzelstudie mit ausstehender Replikation' abzuschwaechen sind, und die [T]/[H]/[OFFEN] bleiben muessen; stelle fest, dass kein kanonischer menschlicher Magnetfeldbedarf und kein kanonischer ROS-/Alterungsmechanismus eingefuehrt werden darf. Ausdruecklich AUSGESCHLOSSEN: die MIR-/Cristae-Hypothese als Bruecke, die NOXIA-NPC-/Forschungspfad-Nutzung, die KG-Relationen und alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "OTA-SCI-0096 ist bislang nicht auditiert und traegt zwei sehr konkrete 2026er Primaerzitate mit vollstaendigen bibliographischen Angaben, auf denen die gesamte [R]-Schicht und die Habitat-[H]-Ableitung ruhen. Zudem betrifft das Dossier direkt das Weltbaumotiv geschlossener Mars-/Orbitalhabitate ohne erdaehnliches Magnetfeld und speist NOXIA-Habitat-/Biologiemodule.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Hypomagnetfeld-Wirkungen auf mitochondriale Physiologie und ROS in Modellorganismen (die beiden beanspruchten 2026er Arbeiten) sowie der reale Evidenzstand zu Radical-Pair-Mechanismen und zur Human-/Habitat-Relevanz.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [
+    "RES-20260921-966FA674"
+  ],
+  "novelty_reason": "Das fruehere Topic RES-20260921-966FA674 auditiert die menschliche Magnetorezeption und den Alpha-ERD-Einzelbefund in OTA-SCI-0060. OTA-SCI-0096 betrifft dagegen die zellulaere Hypomagnetfeld-/ROS-/Mitochondrien-Ebene in Drosophila und Planarien mit zwei voellig anderen Primaerquellen (Aging 2026; PNAS Nexus 2026); die Schnittmenge beschraenkt sich auf das allgemeine Magnetobiologie-Thema, die konkreten Claims und Quellen sind verschieden.",
+  "fingerprint": "b1647aafe98acbeb"
+}
