@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261003-DB910392",
+  "status": "queued",
+  "created": "2026-10-03T09:17:37+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "external-tasks/open/2026-09-29-photophoretic-flight-consumer.md",
+  "source_ref": "b74146a41640054c701212f400ef2e2e3b1f8047",
+  "source_blob_sha": "8bc274fa8e25df3cb7950783a04e3b266eaa8012",
+  "title": "Photophoretic levitation operating windows in Earth, Mars, Venus and Titan atmospheres: what rarefied-gas physics actually supports",
+  "question": "What do the peer-reviewed photophoretic-levitation and rarefied-gas-dynamics literature, controlled-laboratory results and mesospheric/mission studies establish about the operating window for light-driven photophoretic flyers — the Knudsen-number/pressure regime, force per unit area, maximum supported areal mass, payload margin, and the dependence on thermal-acclimation temperature gradient, gas composition, particle size and pore geometry — and how far do those constraints transfer, or fail to transfer, to the rarefied Mars atmosphere and to the denser Venus and Titan atmospheres, so that NOXIA's photophoretic flight consumer can gate missions (day/night, dust/aerosol, thermal limits, horizontal control authority) on real physics rather than extrapolated operating windows?",
+  "why_now": "An open consumer request (external-tasks/open/2026-09-29-photophoretic-flight-consumer.md) requires NOXIA to consume shared outputs (mean_free_path_m, kn_pore, kn_body, force_per_area_N_m2, supported_areal_mass_kg_m2, payload_margin_kg_m2) from a Photophoretic engineering calculation (ENG-CALC-PHOTOPHORETIC-0001) that is not present in this repository, and it explicitly defers Mars/Venus/Titan vehicle scaling to future evidence ('Keep future vehicle scaling epistemically tagged as extrapolation'). The scientific premise behind those shared outputs is externally checkable now.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "T",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Photophoresis and photophoretic (light-driven) levitation in rarefied gases: Knudsen-number operating regimes, measured force per area and supported areal mass, demonstrated mesospheric microflyers (e.g. Nature 2018 'Flight of a photophoretic microflyer' and subsequent 3D photophoretic aircraft work), and proposed planetary-atmosphere flyer concepts.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.84,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic addressed rarefied-gas / photophoretic flight physics. Prior aeronomy-adjacent work concerned life-support consumables (RES-20260828-79092FF4) and launch-site range safety (RES-20260913-1E741E90); neither establishes photophoretic operating windows, areal-mass limits or cross-atmosphere transferability.",
+  "fingerprint": "db910392bca727a9"
+}
