@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:24:11.227000+00:00",
+  "generated_at": "2026-10-03T11:33:54.371351+00:00",
   "findings": [
     {
       "id": "e0571c7d10e4",
@@ -50,6 +50,12 @@
       "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20261001-001.md"
     },
     {
+      "id": "059dbb8cbcb9",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20261002-001.md"
+    },
+    {
       "id": "55953b06ceaf",
       "category": "task_addressed_to_eco",
       "severity": "info",
@@ -64,16 +70,10 @@
   ],
   "new_since_last_run": [
     {
-      "id": "66d23cd64266",
+      "id": "059dbb8cbcb9",
       "category": "task_addressed_to_eco",
       "severity": "info",
-      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20261001-001.md"
-    },
-    {
-      "id": "55953b06ceaf",
-      "category": "task_addressed_to_eco",
-      "severity": "info",
-      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ENG-ECO-20261002-kueper-products-bootstrap.md"
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20261002-001.md"
     }
   ]
 }
