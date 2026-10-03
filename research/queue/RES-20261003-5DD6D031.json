@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261003-5DD6D031",
+  "status": "queued",
+  "created": "2026-10-03T09:17:36+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "external-tasks/open/EXT-KG-NOXIA-20260924-ultracompact-white-dwarf-research-sites.md",
+  "source_ref": "b74146a41640054c701212f400ef2e2e3b1f8047",
+  "source_blob_sha": "fd5f547c03b0586f32d7b0a2a17aecdd0711cdc2",
+  "title": "Ultracompact double white dwarf binaries (e.g. eRASSU J060839.5-704014): what the astrophysics literature and mission documentation support as research sites and safe standoff distances",
+  "question": "What do the peer-reviewed astrophysics literature and official mission documentation establish about ultracompact double-degenerate / AM CVn binaries — orbital-decay (Pdot) and gravitational-wave emission, tidal and direct-impact accretion physics, X-ray and timing observability, and detectability as LISA verification binaries — and what standoff distances, measurement requirements and instrument classes follow for gravitational-wave, X-ray/timing and chirp-measurement research posts, so that NOXIA can use a system such as eRASSU J060839.5-704014 (P = 374.15013(2) s, Pdot = -4.7(1) x 10^-11 s/s) as a scientifically plausible research site and mission target without inventing physics or guessing safe measurement distances?",
+  "why_now": "This is an open worldbuilding_science request (external-tasks/open/EXT-KG-NOXIA-20260924-ultracompact-white-dwarf-research-sites.md) that names a specific real object and explicitly asks for a science/worldbuilding contract and 'sensible safety/measurement distances' before any gameplay mechanic is fixed. Its declared KG source of truth, docs/KG-0025-ULTRACOMPACT-WHITE-DWARF-BINARIES.md, is not present in this repository, so the object parameters (P, Pdot, direct-impact interpretation) are asserted in-repo but not backstopped here.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "H",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Ultracompact double white dwarf / AM CVn binaries and direct-impact accretors, concretely eRASSU J060839.5-704014 (P = 374.15013(2) s, Pdot = -4.7(1) x 10^-11 s/s); gravitational-wave emission and LISA verification-binary observability; X-ray/timing observations (NICER, Einstein Probe) and orbital-decay/chirp measurement campaigns.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.84,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Not covered by any previous topic: prior astronomy work addressed real solar-system bodies and Hohmann travel (RES-20260828-BF7F1B4D) and launch-site/orbital-access criteria (RES-20260913-1E741E90). This gap concerns Galactic compact-binary astrophysics (accretion physics, gravitational-wave emission, LISA verification binaries, observability and safe standoff distances), which the earlier candidates do not touch.",
+  "fingerprint": "5dd6d031c25b794c"
+}
