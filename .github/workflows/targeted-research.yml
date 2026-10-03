@@ -34,6 +34,9 @@ jobs:
       ANTHROPIC_DEFAULT_OPUS_MODEL: "deepseek-v4-pro[1m]"
       ANTHROPIC_DEFAULT_SONNET_MODEL: "deepseek-v4-flash"
       ANTHROPIC_DEFAULT_HAIKU_MODEL: "deepseek-v4-flash"
+      CLAUDE_CODE_SUBAGENT_MODEL: "deepseek-v4-flash"
+      CLAUDE_CODE_AUTO_COMPACT_WINDOW: "786432"
+      CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT: "1"
       KUEPER_RESEARCH_AGENT_CMD: node ${{ github.workspace }}/tools/research/agent-with-exa.mjs
       KUEPER_SYNTHESIS_AGENT_BIN: claude
     steps:
