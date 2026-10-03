@@ -1,6 +1,6 @@
 {
   "id": "RES-20261003-DB910392",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-03T09:17:37+00:00",
   "source_project": "noxia",
   "source_repository": "thomaspeterkueper/noxiagame",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No previous topic addressed rarefied-gas / photophoretic flight physics. Prior aeronomy-adjacent work concerned life-support consumables (RES-20260828-79092FF4) and launch-site range safety (RES-20260913-1E741E90); neither establishes photophoretic operating windows, areal-mass limits or cross-atmosphere transferability.",
-  "fingerprint": "db910392bca727a9"
+  "fingerprint": "db910392bca727a9",
+  "updated_at": "2026-10-03T09:27:48+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/178"
 }
