@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261003-3A897DEE",
+  "status": "queued",
+  "created": "2026-10-03T09:17:38+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "lib/game/cognition/runtime.ts",
+  "source_ref": "b74146a41640054c701212f400ef2e2e3b1f8047",
+  "source_blob_sha": "71b8f7f49ed7b2ecd28eb2a3d52865b4193b923c",
+  "title": "What the peer-reviewed hypomagnetic-field literature actually establishes about magnetic-field effects on mitochondrial and ROS endpoints",
+  "question": "Which measurable biological endpoints (e.g. mitochondrial respiration / membrane potential, ROS/superoxide proxies, cell viability) have replicate peer-reviewed evidence for alteration when the ambient field is changed from a geomagnetic baseline (~25-60 uT) to a hypomagnetic field (~nT range), what effect sizes and known confounds (temperature, vibration, oxygen, light, radical-pair vs magnetite mechanisms) are reported, and where is the literature contested or non-replicated — so that NOXIA's magnetobiology research vertical slice (baseline 45 uT vs 5 nT exposure, endpoints mitochondrial_respiration/superoxide_proxy, claimType 'magnetic_environment_affects_measured_biological_endpoint', confidence 0.35, status 'testing') is calibrated to the real evidence and its unresolved status is not flattened into a settled result by the research-exchange canonization path?",
+  "why_now": "The magnetobiology vertical slice is live in code (lib/game/cognition/runtime.ts createMagnetobiologyExperiment; values in lib/game/cognition/magnetobiologyResearch.test.ts) and feeds the shared research-exchange / evidence-assessment contracts. Its declared external evidence backstop, OTA-SCI-0096-2026-DE, is not present in this repository, and the code itself already refuses to assert human, therapeutic or habitat effects — making the strength (or absence) of the cellular evidence the decisive externally checkable question.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "H",
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Hypomagnetic-field biology and magnetoreception/magnetobiology: peer-reviewed reports of nT-range field effects on mitochondrial activity, membrane potential and reactive-oxygen-species/superoxide in cellular and animal models, against Earth's ~25-60 uT geomagnetic baseline, including radical-pair and magnetite mechanism reviews and replication disputes.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.81,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic concerned cellular magnetobiology. Prior medicine-adjacent work covered human partial-gravity adaptation and reproduction (RES-20260913-CF5AF859) and life-support/habitability parameters (RES-20260828-79092FF4); neither addresses magnetic-field exposure effects on cellular endpoints, so this is a materially distinct evidence question.",
+  "fingerprint": "3a897deeb594f6d1"
+}
