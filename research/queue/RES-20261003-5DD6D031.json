@@ -1,6 +1,6 @@
 {
   "id": "RES-20261003-5DD6D031",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-03T09:17:36+00:00",
   "source_project": "noxia",
   "source_repository": "thomaspeterkueper/noxiagame",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Not covered by any previous topic: prior astronomy work addressed real solar-system bodies and Hohmann travel (RES-20260828-BF7F1B4D) and launch-site/orbital-access criteria (RES-20260913-1E741E90). This gap concerns Galactic compact-binary astrophysics (accretion physics, gravitational-wave emission, LISA verification binaries, observability and safe standoff distances), which the earlier candidates do not touch.",
-  "fingerprint": "5dd6d031c25b794c"
+  "fingerprint": "5dd6d031c25b794c",
+  "updated_at": "2026-10-03T09:23:16+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/177"
 }
