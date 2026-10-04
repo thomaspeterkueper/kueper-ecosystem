@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261004-CD2164D1",
+  "status": "queued",
+  "created": "2026-10-04T09:54:24+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "spaces/noxia/characters/NXU-CHAR-TIRIN-KAL-NETWORK.md",
+  "source_ref": "49278b95663e7583d27aa179beb6176861a1ebde",
+  "source_blob_sha": "6745f1b50cf72a6cb01e813d26a74a14b13e8b22",
+  "title": "Genetische Diversität und Verwandtschaftsprüfung in kleinen, geschlossenen Raumfahrtpopulationen",
+  "question": "Was besagen Populationsgenetik, Konservationsbiologie und Weltraummedizin zur genetischen Tragfähigkeit kleiner, teilweise geschlossener menschlicher Populationen — etwa Mars ~3.800 (2091) und ~12.000 (2150), Q1 ~3.000, Ceres ~120 mit nur ~8–15 Kindern? Welche Gründer-Effekte, Inzuchtdepression, Geschlechter- und Substruktur-Probleme sowie welchen Nutzen und welche Grenzen hätte eine routinemäßige genetische Verwandtschaftsprüfung vor geplanter Zeugung (bei unvollständigem Abstammungsregister und anhaltender Zuwanderung)? Ist die im Kanon gesetzte Prüfung ein sinnvoller medizinischer Standard in Größenordnungen, in denen sie 'banal' wirkt (große Stationen), aber in jungen Außenkolonien entscheidend wird?",
+  "why_now": "NXU-CHAR-TIRIN-KAL-NETWORK.md §7 setzt genetische Verwandtschaftsprüfung als 'normalen medizinischen Standard' in kleinen Habitaten, und NXU-CHAR-TIRIN-KAL.md §12 leitet daraus eine kulturelle Trennung von Beziehung und Reproduktion ab; NXU-SOLAR-HUMAN-POPULATION-2060-2150.md §10–11 macht Geburten außerhalb der Erde und kleine Siedlungsgrößen kanonisch. Die zentrale Figur Sena Kal ist Reproduktionsmedizinerin für Populationsgesundheit — der Kanon ruht auf dieser Setzung, ohne sie wissenschaftlich zu prüfen.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "S"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Humangenetische Populationsforschung zu kleinen/isolatsartigen Populationen (Minimum Viable Population, Inzuchtdepression, Konsanguinität) sowie Praxis und Grenzen genetischer Verwandtschaftstests.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.84,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260914-3AD6CB18"
+  ],
+  "novelty_reason": "Die frühere Teilgravitations-Recherche behandelt Empfängnis, Schwangerschaft, Geburt und frühkindliche Entwicklung als Frage der Gravitationsphysiologie. Sie beantwortet nicht die genetische Dimension: effektive Populationsgröße, Inzuchtdepression, Gründereffekte und Nutzen/Grenzen von Verwandtschaftsscreenings in teilweise geschlossenen Off-world-Populationen. Diese Dimension ist im Kanon explizit gesetzt und bleibt bisher ungeprüft.",
+  "fingerprint": "cd2164d180c5236e"
+}
