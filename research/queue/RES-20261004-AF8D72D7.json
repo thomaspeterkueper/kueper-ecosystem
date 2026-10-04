@@ -1,6 +1,6 @@
 {
   "id": "RES-20261004-AF8D72D7",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-04T10:40:24+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -37,5 +37,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Neues Themenfeld: Kein bisheriges OTA-Discovery-Thema behandelt Tiefen-Erd-Seismologie, LLSVP/ULVZ oder die Kern-Mantel-Grenze. Der Gap ist kein Follow-up, sondern die erste quellenkritische Verifikation dieses Dossiers.",
-  "fingerprint": "af8d72d700c20ab0"
+  "fingerprint": "af8d72d700c20ab0",
+  "updated_at": "2026-10-04T10:44:44+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/186"
 }
