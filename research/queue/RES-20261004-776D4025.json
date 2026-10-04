@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261004-776D4025",
+  "status": "queued",
+  "created": "2026-10-04T09:54:23+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "spaces/noxia/infrastructure/NXU-MARS-QUADRATURE-NETWORK.md",
+  "source_ref": "49278b95663e7583d27aa179beb6176861a1ebde",
+  "source_blob_sha": "55fbdf01c8a6b0aefccf2146af03cc9c73e62543",
+  "title": "Heliozentrischer Quadratur-Kranz auf Marsbahn: Ist eine 90°-phasenversetzte Stationskette dynamisch zu halten?",
+  "question": "Was sagt die reale Astrodynamik über dauerhaft gepflegte künstliche Stationen bei ~90°/180°/270° Phasenversatz auf annähernd derselben heliozentrischen Bahn wie Mars (gleiche große Halbachse, keine Lagrangepunkte): Welches Stationkeeping-Delta-v ist über Jahrzehnte erforderlich, wie wächst es unter Störungen durch Planeten und den Mars selbst, wie stabil ist eine solche Phasenkonfiguration, und verbessert sie tatsächlich die Transfer-Erreichbarkeit von Mars, Asteroidengürtel und äußerem Sonnensystem sowie die Notfall-/Rettungsreichweite — oder ist sie dynamisch bloß eine gewöhnliche heliozentrische Driftbahn mit laufender Phasenkorrektur? Was davon stützt oder begrenzt das NXU-Design M+90/M+180/M+270?",
+  "why_now": "NXU-MARS-QUADRATURE-NETWORK.md setzt die 90°-Anordnung ausdrücklich als 'aktiv gepflegtes Verkehrs- und Logistiksystem, kein Satz natürlicher stabiler Lagrange-Punkte', und NXU-Q1-QUADRATURE-STATION.md §18 führt 'langfristige Phasenhaltung von Q1 relativ zu Mars und erforderliches Stationkeeping' als erstes offenes technisches Gate. Die gesamte Existenzberechtigung von Q1 als Verkehrs-, Rettungs- und Logistikknoten hängt an dieser Frage.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Astrodynamik phasenversetzter heliozentrischer Bahnen: Stationkeeping-Bedarf, Bahnstabilität unter Planetenstörungen und Transfergeometrie zu Mars, Belt und äußerem Sonnensystem.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Die frühere Mars-Recherche (RES-20260829-862AA763) betrifft Untergrundgeologie, Vergrabungstiefe und Lavatunnel-Eis, nicht Orbitaldynamik. Keine bisherige Recherche behandelt Bahnmechanik, Stationkeeping oder Transfergeometrie des Quadratur-Netzes.",
+  "fingerprint": "776d40254b22bd93"
+}
