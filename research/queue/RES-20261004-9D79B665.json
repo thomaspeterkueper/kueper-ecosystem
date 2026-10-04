@@ -1,6 +1,6 @@
 {
   "id": "RES-20261004-9D79B665",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-04T09:54:22+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine der bisherigen Recherchen behandelt Zeitmessung, Zeitnormung oder relativistische Uhrenkorrekturen. Die Frage ist an eine explizit offene Kanonfrage des Repos gekoppelt und daher kein rephrasing eines früheren Themas.",
-  "fingerprint": "9d79b66585380ed6"
+  "fingerprint": "9d79b66585380ed6",
+  "updated_at": "2026-10-04T09:58:26+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/184"
 }
