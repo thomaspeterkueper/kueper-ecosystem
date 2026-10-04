@@ -1,0 +1,43 @@
+{
+  "id": "RES-20261004-12206595",
+  "status": "queued",
+  "created": "2026-10-04T10:40:25+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0043-2026-DE.md",
+  "source_ref": "c66a618c567a011a5b84b2c933c52d5a9469969a",
+  "source_blob_sha": "d07191b7784acadcc664872c7597ce01581484e7",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 233,
+  "context_paths": [
+    "src/content/documents/OTA-OBS-0005-2026-DE.md",
+    "src/content/documents/OTA-SCI-0026-2025-DE.md",
+    "src/content/documents/OTA-SCI-0026-2026-DE.md"
+  ],
+  "title": "Realwelt-Audit der [H]/[OFFEN]-Schicht in OTA-SCI-0043: Ursprung der LLSVP/ULVZ (BMO/BECMO vs. thermochemische Piles vs. subduziertes Material) und die CMB-Heterogenitaet-Geodynamo-Kopplung inklusive South Atlantic Anomaly",
+  "question": "Source-grounded audit of the [H]/[T]/[OFFEN]-marked science layer of OTA-SCI-0043-2026-DE (Sections I.2, II, III, V, VI, IX), pinned to the v1.1 Quellenaudit of 2026-09-19, against the primary deep-mantle, ULVZ and geodynamo literature. (1) Ursprung: Berichte den realen Forschungsstand zur Frage primordial vs. recycelt fuer LLSVPs und ULVZs — die BMO-/BECMO-Modelle (Boukaré et al. 2025; Deng et al. 2025), thermochemische 'piles', subduziertes ozeanisches Krustenmaterial und Mischszenarien — und pruefe die im Dokument genannte Nebenbedingung eines geringen Ferroperiklas-Gehalts (~6–10 Gew.-%) sowie die geochemischen Anker (Si-, W-, He-Isotopensignaturen, OIB-Bezug). Stelle fest, ob 'Alternative Ursprünge ... sind ausgeschlossen: nein [OFFEN]' werktreu bleibt und ob die epistemische Matrix in Abschnitt 2.3 die Konkurrenzlage korrekt abbildet. (2) ULVZs: Pruefe die Aussage 'Teilaufschmelzung ist eine wichtige Erklaerung, aber nicht die einzige' und die Trennung ULVZ vs. LLSVP gegen die reale ULVZ-Literatur (Pachhai et al. 2022: geschichtete Dichte-/Vs-Struktur; chemische vs. Schmelz-Ursaenge; Fe-Anreicherung; fruehe Differentiationsrelikte) und gegen die im Dokument zitierte Uebersichts-/Modellliteratur. (3) CMB-Heterogenitaet und Geodynamo: Berichte, was die reale Literatur (palaeomagnetische Feldstatistik plus numerische Dynamos, Biggin et al. 2026; sowie unabhaengige Dynamostudien) tatsaechlich etabliert — den Einfluss lateraler CMB-Waermefluss-Heterogenitaet auf Feldmorphologie, Polaritaetswechsel-Frequenz und azimutale/longitudinale Strukturmasse — und ob die Saetze 'LLSVPs stabilisieren das Magnetfeld universell' [H] und 'LLSVP-Morphologie kontrolliert Reversal-Frequenz' [H/OFFEN] praezise bleiben. Pruefe, ob in der Primaerliteratur ein genereller Feldkollaps ohne Heterogenitaet berichtet wird (das Dokument streicht dies) und ob 'mehrere hundert Myr Einfluss' gedeckt ist. (4) South Atlantic Anomaly: Pruefe die Tarduno-et-al.-(2015)-Hypothese eines 'top-down control' der afrikanischen LLSVP/CMB-Struktur auf die SAA-Feldmorphologie gegen den aktuellen Stand (Kern-Dynamo-Erklaerungen, westwaerts driftende Flussanomalie) und ob 'SAA ist ein bereits validiertes natuerliches Seismizitaetsexperiment: nein' sowie die [OFFEN]-Klassifikation der LLSVP-bedingten Seismizitaetssignatur belastbar sind. (5) LLSVP-Seismizitaetskopplung: Pruefe die Aussage, es sei (Stand 2026-08-30) kein direkter globaler Test identifiziert worden, und ob inzwischen ein solcher Test publiziert ist; bewerte das im Dokument entworfene Testdesign (Plattenrand-Kontrolle, Tiefenfenster, multiple Tomographiemodelle, raeumliche Autokorrelation, Praeregistrierung) als belastbares Protokoll. (6) Reklassifiziere: nenne die Saetze, die [H]/[OFFEN] bleiben muessen, die als [R] nur den Quelleninhalt bezeichnen und die als 'stark gestuetzt' praeziser zu fassen sind; stelle fest, dass kein kanonischer Ursprungsmechanismus, keine kanonische SAA-Ursache und keine kanonische Geodynamo-Kopplung eingefuehrt werden darf. Ausdruecklich AUSGESCHLOSSEN: die AVI-/Omnizedenz-Theorieschicht und der werk-interne R(a)-Formalismus, K2,3(t), die LLSVP-Modenfilterung, die Propagationsentscheidungen in Abschnitt X und alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Die LLSVP-Ursprungsdebatte (Deng et al. 2025, Boukaré et al. 2025) und die Rolle der CMB-Heterogenitaet im Geodynamo (Biggin et al. 2026) sind 2025–2026 aktiv; das Dokument fuehrt beide Fronten ausdruecklich als [H]/[OFFEN], sodass eine aktuelle Bestandsaufnahme stuetzender, null- und einschraenkender Evidenz ansteht.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "H",
+    "T",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewed deep-mantle, ULVZ and geodynamo literature (Nature / Nature Geoscience / Science / PEPI / GJI), u. a. Biggin et al. (2026, Nature Geoscience 19, 345–352), Rogers et al. (2025, PEPI 364, 107367), Deng et al. (2025, Nature Geoscience 18, 1056–1062), Boukaré et al. (2025, Nature 640, 114–119), Pachhai et al. (2022, Nature Geoscience 15, 79–84), Tarduno et al. (2015, Nature Communications 6, 7865) sowie die reale SAA-/Geodynamo-Debatte.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.9,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Neues Themenfeld: Kein bisheriges OTA-Discovery-Thema behandelt Tiefen-Erd-Geophysik, LLSVP-/ULVZ-Ursprung oder Geodynamo. Der Gap prueft die offenen [H]/[OFFEN]-Fragen des Dossiers gegen die reale Literatur, ohne den werk-internen Ursprungs- oder Kopplungsanspruch zu validieren.",
+  "fingerprint": "122065957cc28725"
+}
