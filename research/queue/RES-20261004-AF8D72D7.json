@@ -1,0 +1,41 @@
+{
+  "id": "RES-20261004-AF8D72D7",
+  "status": "queued",
+  "created": "2026-10-04T10:40:24+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0043-2026-DE.md",
+  "source_ref": "c66a618c567a011a5b84b2c933c52d5a9469969a",
+  "source_blob_sha": "d07191b7784acadcc664872c7597ce01581484e7",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 233,
+  "context_paths": [
+    "src/content/documents/OTA-OBS-0005-2026-DE.md",
+    "src/content/documents/OTA-SCI-0026-2025-DE.md",
+    "src/content/documents/OTA-SCI-0026-2026-DE.md"
+  ],
+  "title": "Realwelt-Audit der Quellen- und Zahlenbasis in OTA-SCI-0043 (LLSVPs und Kern-Mantel-Grenze): die zitierten Arbeiten, LLSVP-Volumen, ULVZ-Geschwindigkeitsreduktionen, Dichteinversionen, die Biggin-/Rogers-Trennung und die Wang/Klemperer-Expression-of-Concern",
+  "question": "Source-grounded audit of the [R]-marked source and value layer of OTA-SCI-0043-2026-DE (Sections I, III, V.1, XI), pinned to the v1.1 Quellenaudit of 2026-09-19, against the primary deep-Earth and geomagnetism literature. (1) Quellenverifikation: Pruefe jede der zitierten Arbeiten auf Existenz, Autorschaft, Journal, Band/Seiten, Jahr und DOI — Deng, Miyazaki, Yuan & Du (Nature Geoscience 18, 1056–1062, DOI 10.1038/s41561-025-01797-y), Biggin, Davies, Mound et al. (Nature Geoscience 19, 345–352, DOI 10.1038/s41561-025-01910-1), Boukaré, Badro & Samuel (Nature 640, 114–119, DOI 10.1038/s41586-025-08701-z), Rogers, Beggan & Whaler (PEPI 364, 107367, DOI 10.1016/j.pepi.2025.107367), Dumont et al. (Frontiers in Earth Science 13:1587650, DOI 10.3389/feart.2025.1587650), Cottaar & Lekic (GJI 207, 1122–1136, DOI 10.1093/gji/ggw324), Lau et al. (Nature 551, 321–326, DOI 10.1038/nature24452), Koelemeijer, Deuss & Ritsema (Nature Communications 8, 15241), Pachhai et al. (Nature Geoscience 15, 79–84, DOI 10.1038/s41561-021-00871-5), Tarduno et al. (Nature Communications 6, 7865) und Wang & Klemperer (Science 391, 611–615, DOI 10.1126/science.adz4367). Kläre insbesondere die vage Zuschreibung 'Dannberg et al. / Cottaar et al. (2021), GJI 227' — welcher der beiden gemeint ist bzw. ob eine Verwechslung vorliegt. (2) Wang & Klemperer: Verifiziere die Editorial Expression of Concern (DOI 10.1126/science.aej0835), ihr Datum (2026-06-04) und den genannten Grund (hoehere Falsch-Positiv-Rate bei Mantelbeben); pruefe, ob 'hoechstens vorlaeufige Daten-/Methodenreferenz' die werktreue Einordnung ist. (3) Zahlenwerte: Pruefe gegen die Primaerarbeiten — LLSVP-Volumen 'ca. 8,0 ± 0,9 % des Mantelvolumens' (Cottaar & Lekic 2016), die ULVZ-S-Wellen-Reduktion '10–30 %, extrem bis ~50 %' und die im Dokument verworfene Angabe 'bis zu 90 %' (Pachhai et al. 2022), die Dichteinferenz 'im Mittel ca. +0,5 % ueber die unteren zwei Drittel' (Lau et al. 2017) samt Gegenbefund von Koelemeijer et al. (2017), sowie die Biggin-Heterogenitaetsparameter q* = 2,3 und q* = 5,0 und die Frage, ob diese Werte so in der Primaerarbeit stehen. (4) Rogers et al. (2025): Pruefe die im Dokument behaupteten Befunde (Unterschiede afrikanische vs. pazifische LLVP; Jerk-Zeitpunkte vs. Aenderungen regionaler SV-Energie) und ergaenze das tatsaechliche Hauptergebnis, einschliesslich der Zahlen zum SV-Energieverhaeltnis (afrikanische vs. pazifische LLVP an Erdoberflaeche vs. CMB) und der Feststellung, ob die Studie eine Unterdrueckung der SV unter den LLVPs findet oder ausdruecklich nicht findet. (5) Dumont et al. (2025): Pruefe 'rund 88 %' Rekonstruktion, die 'sieben quasi-periodischen Komponenten' und die QBO-Komponente '~2,35 Jahre' gegen Abstract/Ergebnisse; melde ausdruecklich, falls die Arbeit ~90 % statt 88 % berichtet, und ob die Autorenhypothese (Festkoerper-Hydrosphaere/Wasser-Gestein) korrekt als Autorenhypothese gefuehrt wird. (6) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen, die zu '[R] Quelleninhalt' abzuschwaechen sind und die [H]/[OFFEN] werden muessen; stelle fest, dass keine kanonische LLSVP-Zahl, kein kanonischer q*-Wert und keine kanonische Rekonstruktionsquote eingefuehrt werden darf. Ausdruecklich AUSGESCHLOSSEN: die AVI-/Omnizedenz-Schicht, ein werk-internes R(a)-Feld, K2,3(t)=f(LLSVP-Morphologie), die LLSVP-Modenfilterung, die Propagationsentscheidungen in Abschnitt X und alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Die v1.1-Fassung (Quellenaudit 2026-09-19) stuetzt sich auf mehrere 2025–2026-Publikationen und traegt mit der Wang/Klemperer-Expression-of-Concern (2026-06-04) ein zeitkritisches Statuselement; eine unabhaengige Verifikation der Bibliographie und der uebernommenen Zahlen schliesst die Frische- und Konfliktpruefung des Evidenzprofils ab.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewed deep-Earth and geomagnetism literature: Deng et al. (2025, Nature Geoscience 18, 1056–1062, DOI 10.1038/s41561-025-01797-y); Biggin et al. (2026, Nature Geoscience 19, 345–352, DOI 10.1038/s41561-025-01910-1); Boukaré, Badro & Samuel (2025, Nature 640, 114–119, DOI 10.1038/s41586-025-08701-z); Rogers, Beggan & Whaler (2025, PEPI 364, 107367); Cottaar & Lekic (2016, GJI 207, 1122–1136); Lau et al. (2017, Nature 551, 321–326); Koelemeijer et al. (2017, Nature Communications 8, 15241); Pachhai et al. (2022, Nature Geoscience 15, 79–84); Tarduno et al. (2015, Nature Communications 6, 7865); Wang & Klemperer (2026, Science 391, 611–615) nebst Editorial Expression of Concern (Science 392, 1029, DOI 10.1126/science.aej0835).",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.735,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.55,
+    "uncertainty": 0.62,
+    "evidence_potential": 0.92
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Neues Themenfeld: Kein bisheriges OTA-Discovery-Thema behandelt Tiefen-Erd-Seismologie, LLSVP/ULVZ oder die Kern-Mantel-Grenze. Der Gap ist kein Follow-up, sondern die erste quellenkritische Verifikation dieses Dossiers.",
+  "fingerprint": "af8d72d700c20ab0"
+}
