@@ -1,6 +1,6 @@
 {
   "id": "RES-20261004-12206595",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-04T10:40:25+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -39,5 +39,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Neues Themenfeld: Kein bisheriges OTA-Discovery-Thema behandelt Tiefen-Erd-Geophysik, LLSVP-/ULVZ-Ursprung oder Geodynamo. Der Gap prueft die offenen [H]/[OFFEN]-Fragen des Dossiers gegen die reale Literatur, ohne den werk-internen Ursprungs- oder Kopplungsanspruch zu validieren.",
-  "fingerprint": "122065957cc28725"
+  "fingerprint": "122065957cc28725",
+  "updated_at": "2026-10-04T10:48:31+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/187"
 }
