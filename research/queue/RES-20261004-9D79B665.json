@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261004-9D79B665",
+  "status": "queued",
+  "created": "2026-10-04T09:54:22+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "spaces/noxia/characters/NXU-CHAR-TIRIN-KAL.md",
+  "source_ref": "49278b95663e7583d27aa179beb6176861a1ebde",
+  "source_blob_sha": "053be589c7533ffbc6a5510742e3ba61d6c9f562",
+  "title": "Normierte Referenzzeit im Sonnensystem: Wie definiert man eine gemeinsame Zeit für Erde, Mars, Stationen und Schiffe?",
+  "question": "Was besagt der aktuelle Stand von Zeitmessung, Normung und Raumfahrtphysik zur Etablierung einer gemeinsamen, systemweiten Referenzzeit (Erde, Mond, Mars, heliozentrische Stationen, Schiffe) — insbesondere zu UTC/Schaltsekunden und ihrer Zukunft, zu offiziellen Vorschlägen wie Coordinated Lunar Time / einer Mars-Zeitskala, zu relativistischen Uhrenkorrekturen zwischen Erdorbit, Marsbahn und heliozentrischen Bahnen sowie zu Pulsar-/Atomuhren als Langzeitreferenz? Welche Genauigkeits-, Synchronisations- und Definitionsprobleme müsste der NXU-Kanon nennen, damit eine 'systemweit normierte Referenzzeit' neben lokalen Stations-/Schiffszeiten physikalisch plausibel bleibt (Rundfunk-Laufzeit Erde–Mars bis ~22 min, differentielle Zeitdilatation, fehlende gemeinsame Ephemeriden-Zeitskala)?",
+  "why_now": "NXU-CHAR-TIRIN-KAL.md §14 setzt eine gemeinsame normierte Referenzzeit als selbstverständliche Grundlage einer interplanetaren Gesellschaft, und §17 offene Kanonfrage 12 fragt ausdrücklich, wie diese Zeit im Kanon heißt und technisch definiert ist. Das ist ein offener, konkret benannter Punkt — genau der Typ Frage, der heute durch reale Normungsvorhaben (Mondzeit, Marszeit) beantwortbar oder eingrenzbar ist.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Reale Zeitnormung und Zeitdilatation im Sonnensystem: UTC/Schaltsekunde, Vorschläge für Coordinated Lunar Time und Mars-Zeitskalen, relativistische Uhrenkorrekturen (BIPM/IAU/NASA/ESA-Material).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine der bisherigen Recherchen behandelt Zeitmessung, Zeitnormung oder relativistische Uhrenkorrekturen. Die Frage ist an eine explizit offene Kanonfrage des Repos gekoppelt und daher kein rephrasing eines früheren Themas.",
+  "fingerprint": "9d79b66585380ed6"
+}
