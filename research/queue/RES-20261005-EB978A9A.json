@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261005-EB978A9A",
+  "status": "queued",
+  "created": "2026-10-05T10:35:28+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/grammatik.astro",
+  "source_ref": "40635b6cefacf987173523cafa659454f844cfcc",
+  "source_blob_sha": "0cb2dedee8633f98ea5a62050e627b609ed9d717",
+  "title": "Distributiv/Kollektiv-Numerus (-mira/-ona) und relationale Pronomina typologisch erden",
+  "question": "Welche dokumentierten Numerus-Systeme unterscheiden verteilte/individualisierte Mehrzahl von kollektiver Einheit (statt oder neben Singular/Dual/Plural), wie werden distributive und assoziative Pluralität sowie Pluraktionals markiert und mit Person kombiniert, und welche belegten Muster können das R1-Paradigma sa-i/ta-i/ku-i (Singular) vs. -mira (distributiv) vs. -ona (kollektiv) aus grammatik.astro §5 extern stützen? Zu prüfen ist u. a., ob der Verzicht auf einen Dual und die relationale (nicht rein numerische) Deutung in indo-arischen, dravidischen oder anderen Referenzgrammatiken und typologischen Datenbanken Entsprechungen haben.",
+  "why_now": "grammatik.astro §5 führt mit -mira (verteilte Einzelne) und -ona (Einheit) eine explizit 'relationale und nicht bloß numerische' Numerus-Unterscheidung ein und baut darauf das gesamte Pronominalsystem aus sa (Selbst/Quelle), ta (Gegenüber) und ku (Drittes). Das ist eine präzise, prüfbare morphologische Behauptung, die derzeit weder in der Epistemik-Box noch in der offenen Rekonstruktionsliste §10 adressiert wird. Da Wörterbuch und Rückübersetzung nach der Migration auf genau diesem Paradigma aufbauen, sollte die typologische Tragfähigkeit jetzt geklärt werden.",
+  "languages": [
+    "en",
+    "de",
+    "sa"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "F",
+    "R-Anker",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Typologie des grammatischen Numerus (Corbett: Singular/Dual/Plural, assoziativer und distributiver Plural, Kollektiva) und Pluraktionalitätsforschung sowie dokumentierte Numerus-Paradigmen indo-arischer und dravidischer Sprachen.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.74,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.72,
+    "uncertainty": 0.62,
+    "evidence_potential": 0.82
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriges Topic berührt nominale Kategorien: RES-20260915-D8CB8EC4 behandelt Realitätsstatus/Evidentialität und Aspekt, RES-20260915-3ADB7DC0 Lexikalisierung und semantische Primitive, RES-20260822-69C82BFA verbale/derivationale Wortbildungsanker. Distributiv-vs-Kollektiv-Numerus und die relationale Personendeixis sa/ta/ku sind damit ein unberührtes, eigenständiges morphologisches Forschungsfeld.",
+  "fingerprint": "eb978a9a692e7634"
+}
