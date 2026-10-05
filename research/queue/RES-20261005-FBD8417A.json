@@ -1,0 +1,41 @@
+{
+  "id": "RES-20261005-FBD8417A",
+  "status": "queued",
+  "created": "2026-10-05T10:35:29+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/proto-mishkenaz.astro",
+  "source_ref": "40635b6cefacf987173523cafa659454f844cfcc",
+  "source_blob_sha": "8177e7a68910adfd1527549b8eebf90e70d76af2",
+  "title": "Lautsymbolische Erdung der zwölf Urgesten→Bedeutungs-Zuordnungen",
+  "question": "Was belegt die sprachvergleichende und experimentelle Forschung zur Nicht-Arbitrarität von Form-Bedeutungs-Beziehungen (Lautsymbolik, Phonästheme, Ideophone, Größe-/Form-/Rundheits-Ikonizität, nasale und labiale Muster wie mama/papa), und welche der zwölf Zuordnungen in proto-mishkenaz.astro (z. B. Ma = Bindung/Nähren, Pa = Impuls/Echo, Oh/Ah = Weite, Il = Bewegung/Suche, Sa = Schwelle/Bruch, Ku = Hohlraum/Mangel) haben dokumentierte sprachübergreifende Stützung, welche sind rein konventionelle Kanon-Setzung, und welche werden von der Evidenz eher nicht gestützt? Wie ist der Status der Seite als 'Gestaltungshypothese' gegenüber universaler Lautbedeutung präzise zu fassen?",
+  "why_now": "proto-mishkenaz.astro §2 ordnet jeder der zwölf artikulatorischen Urgesten eine Bedeutungsrichtung zu und erklärt in der Epistemik-Box ausdrücklich, dies sei eine 'Gestaltungshypothese', kein 'Nachweis einer universalen Lautbedeutung'. Zugleich trägt die Statusspalte offene Punkte ('Bi … historisch zu prüfen', 'Sa … Artikulationsort zu präzisieren', Auv 'phonetische Realisierung offen'). Vor dem Aufbau von Wörterbuch und Vektorseiten, die auf diesen Assoziationen aufbauen, fehlt eine belastbare Trennung zwischen empirisch dokumentierter Lautsymbolik, bloßer Kanon-Konvention und widerlegter Zuordnung.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "F",
+    "H",
+    "R-Anker",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Sprachvergleichende und experimentelle Lautsymbolik-/Phonästhem-/Ideophon-Forschung, u. a. cross-linguistische mama/papa-Muster, bouba/kiki- (Größe/Form) und Nasalitäts-/Rundungsassoziationen.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.81,
+  "scores": {
+    "project_relevance": 0.86,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.72,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [
+    "RES-20260822-721DDB2D",
+    "RES-20260915-0CD0C163"
+  ],
+  "novelty_reason": "RES-20260915-0CD0C163 prüft die zwölf Urgesten nur auf die phonologische Formseite (Segmentinventar, Silbenkanon, Urgeste→Laut), nicht auf die Bedeutungskopplung; RES-20260822-721DDB2D behandelt die gestische Sprachursprungshypothese (Pantomime, Home Sign, Nicaraguanische Gebärdensprache), also die Herkunft von Sprache aus Gestik, nicht lautsymbolische Form-Bedeutungs-Ikonizität im gesprochenen Wort. Die Frage, welche der Urgeste→Bedeutungs-Zuordnungen durch Lautsymbolik-Forschung gedeckt sind, ist damit ein neuer, eigenständiger Prüfstrang.",
+  "fingerprint": "fbd8417acf7b8066"
+}
