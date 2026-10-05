@@ -1,6 +1,6 @@
 {
   "id": "RES-20261003-3A897DEE",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-03T09:17:38+00:00",
   "source_project": "noxia",
   "source_repository": "thomaspeterkueper/noxiagame",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No previous topic concerned cellular magnetobiology. Prior medicine-adjacent work covered human partial-gravity adaptation and reproduction (RES-20260913-CF5AF859) and life-support/habitability parameters (RES-20260828-79092FF4); neither addresses magnetic-field exposure effects on cellular endpoints, so this is a materially distinct evidence question.",
-  "fingerprint": "3a897deeb594f6d1"
+  "fingerprint": "3a897deeb594f6d1",
+  "updated_at": "2026-10-05T10:40:25+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/194"
 }
