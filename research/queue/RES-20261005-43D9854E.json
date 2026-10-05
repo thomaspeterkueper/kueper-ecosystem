@@ -1,0 +1,39 @@
+{
+  "id": "RES-20261005-43D9854E",
+  "status": "queued",
+  "created": "2026-10-05T10:35:27+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/grammatik.astro",
+  "source_ref": "40635b6cefacf987173523cafa659454f844cfcc",
+  "source_blob_sha": "0cb2dedee8633f98ea5a62050e627b609ed9d717",
+  "title": "R1-Syntax (verbinitial, rollenkodiert, bi'/la') typologisch erden",
+  "question": "Welche belegten Sprachen sind überwiegend verbinitial (VSO/VOS) und markieren die beteiligten Größen primär nach semantischer Rolle statt nach Subjekt/Objekt, wie werden Quell- ('von'/Ablativ/Elativ) und Ziel-Relation ('zu'/Allativ/Dativ) typischerweise markiert und asymmetrisch grammatikalisiert, und welche dokumentierten Muster – einschließlich Fragebildung ohne Inversion und der Unterscheidung von head- vs. dependent-marking – können die R1-Struktur PREDIKAT — bi'QUELLE — la'ZIEL (grammatik.astro §1, §7) extern verankern, sodass Mishkenaz' Syntax auf belegter Typologie statt auf Setzung beruht? Zu prüfen ist auch, wie die Sanskrit-Grammatik (kāraka-Theorie, Pāṇini) und südasiatische Referenzgrammatiken Rollen- und Kasusrelationen beschreiben.",
+  "why_now": "Die Grammatik-Seite ist die inhaltlich am weitesten ausgearbeitete Seite des Repos und stellt in §1 mit 'verbinitial und rollenkodiert', bi'=Quelle und la'=Ziel eine syntaktische Grundbehauptung auf, deren Epistemik-Box ausdrücklich reale Vergleichsfälle beansprucht, aber keinen einzigen externen Anker nennt. Vor der in EXT-ECO-MISH-20260714-001 geplanten Content-Migration und angesichts der offenen Rekonstruktionsliste in §10 ist jetzt der Zeitpunkt, diese Grundstruktur gegen dokumentierte Wortstellungs- und Alignment-Typologie abzugleichen, statt sie ungeprüft in den Kanon zu überführen.",
+  "languages": [
+    "en",
+    "de",
+    "sa"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "F",
+    "H",
+    "R-Anker",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Typologie verbinitialer Wortstellung (VSO/VOS) und asymmetrischer Quell-/Ziel-Kasusmarkierung (Ablativ/Elativ vs. Allativ/Dativ) sowie Rollen-/Alignment-Muster (aktivische und split-S-Systeme, kāraka-Theorie) in belegten Sprachen.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.785,
+  "scores": {
+    "project_relevance": 0.88,
+    "cross_project_reuse": 0.78,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.88
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine der bisherigen Topics behandelt Klausebene, Wortstellung oder Alignment: RES-20260915-0CD0C163 ist rein phonologisch (Segmentinventar, Silbenkanon, Prosodie), RES-20260822-69C82BFA behandelt Wortbildungsanker (-t-, -il, -tha-) und Diaspora-Mechanismen, RES-20260915-D8CB8EC4 und -3ADB7DC0 betreffen Aspekt/Evidentialität und Lexikalisierungstypologie. Die Frage, ob 'verbinitial + rollenkodiert + bi'/la'-Quell/Ziel' überhaupt an dokumentierte Wortstellungs- und Kasussysteme anschließt, ist damit materiell unberührt.",
+  "fingerprint": "43d9854ec6eed3af"
+}
