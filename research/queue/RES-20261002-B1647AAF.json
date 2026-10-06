@@ -1,6 +1,6 @@
 {
   "id": "RES-20261002-B1647AAF",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-02T09:54:22+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -35,5 +35,7 @@
     "RES-20260921-966FA674"
   ],
   "novelty_reason": "Das fruehere Topic RES-20260921-966FA674 auditiert die menschliche Magnetorezeption und den Alpha-ERD-Einzelbefund in OTA-SCI-0060. OTA-SCI-0096 betrifft dagegen die zellulaere Hypomagnetfeld-/ROS-/Mitochondrien-Ebene in Drosophila und Planarien mit zwei voellig anderen Primaerquellen (Aging 2026; PNAS Nexus 2026); die Schnittmenge beschraenkt sich auf das allgemeine Magnetobiologie-Thema, die konkreten Claims und Quellen sind verschieden.",
-  "fingerprint": "b1647aafe98acbeb"
+  "fingerprint": "b1647aafe98acbeb",
+  "updated_at": "2026-10-06T10:31:36+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/198"
 }
