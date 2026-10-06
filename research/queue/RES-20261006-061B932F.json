@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261006-061B932F",
+  "status": "queued",
+  "created": "2026-10-06T10:27:24+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/archiv/kanonstand-relationale-prozessontologie-2026-09-24.md",
+  "source_ref": "a7f5968b7597ef843184f85d29765ca7d92a57de",
+  "source_blob_sha": "720720fa072a7e5118553d10c32f6497029cb3d2",
+  "title": "Bewusstsein als offene These: fundamental, emergent oder „feldartig“ — Anschluss an die Philosophie des Geistes",
+  "question": "Das Projekt hält ausdrücklich offen, ob Bewusstsein ontologisch fundamental, emergent, graduell oder in einem noch anders bestimmten Sinn feldartig ist, und möchte die antireduktionistische Intuition als Forschungsimpuls bewahren, ohne „das Feld erkennt sich selbst“ als geklärte Ontologie auszugeben. Wie definieren gegenwärtige Positionen der Philosophie des Geistes diese Optionen — Panpsychismus/Panexperientialismus, Kosmopsychismus, Russellscher Monismus, Emergentismus, höherstufige und prädiktive Verarbeitungstheorien —, welche sind die stärksten Einwände (Kombinationsproblem, Subjekt-Kombination, kausale Geschlossenheit), und welche dieser Optionen ist mit einer relationalen Prozessontologie überhaupt vereinbar? Lässt sich die antireduktionistische Intuition als verteidigbare philosophische Position statt als behauptete Ontologie formulieren, und welche Formulierungen auf der öffentlichen Seite sind dafür zu stark?",
+  "why_now": "Die Offenheit „fundamental/emergent/feldartig“ wird über mehrere öffentliche Texte hinweg wiederholt (philosophie.astro, buecher/einfuehrung.md, Kanonstand §12) und in der Konsistenzmatrix als [OFFEN] geführt; zugleich warnt der Kanonstand, dass „Materie ist ein Produkt der Resonanz“ nicht als begründete Folgerung erscheinen darf. Vor dem systematischen Hauptwerk („Umfassende Gedanken“ Band 1) muss geklärt sein, wie weit die Omnizedenz hier gehen darf und welche Position sie tatsächlich vertritt.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "T",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Zeitgenössische Philosophie des Geistes: Panpsychismus/Kosmopsychismus, Russellscher Monismus, Emergentismus, das Bewusstseinsproblem und seine Standardeinwände",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.74,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.75
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Der frühere Kandidat RES-20260828-D6A60CB1 vergleicht Omnizedenz mit Pantheismus, Panentheismus und Prozessphilosophie — also theistische Modelle —, nicht mit Positionen der Philosophie des Geistes zur Natur des Bewusstseins. RES-20260922-66286BBC behandelt die Erkenntnistheorie von Körper/Intuition/Ratio. Die Frage „ist Bewusstsein fundamental, emergent oder feldartig“ ist eine andere, im Repo als [OFFEN] markierte und bislang nicht extern geprüfte Frage.",
+  "fingerprint": "061b932f9eac6087"
+}
