@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261006-4DC8006B",
+  "status": "queued",
+  "created": "2026-10-06T10:27:23+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/archiv/kanonstand-werden-spielraum-hermeneutik-2026-09-15.md",
+  "source_ref": "a7f5968b7597ef843184f85d29765ca7d92a57de",
+  "source_blob_sha": "ca05521a95ef3818e93aa37b265ec78383ff3410",
+  "title": "„Fluide Hermeneutik“: eigenständige Methode oder Neuetiketttierung etablierter hermeneutischer Theorien?",
+  "question": "Das Projekt beansprucht eine „fluide Hermeneutik“: ein überlieferter Text könne bestimmt, aber nicht erschöpfend ausgedeutet sein; mehrere Lesarten dürfen nebeneinander bestehen, wenn sie vom Text getragen werden und ihre Voraussetzungen offenlegen; Deutung darf den Wortlaut und historischen Kontext nicht rückwirkend ersetzen; Text, historische Deutung, spätere Resonanz und gegenwärtige Interpretation müssen getrennt bleiben. Wie verhält sich dieses Programm zu etablierten Hermeneutiken und Interpretationstheorien — Gadamers Wirkungsgeschichte und Horizontverschmelzung, Ricoeurs Überschuss des Sinns und narrative Identität, Rezeptionsästhetik (Jauss, Iser), Ecos Unterscheidung von intentio operis und intentio lectoris, Hirschs Validität der Interpretation, philosophische Hermeneutik bei Schleiermacher/Dilthey? Welche Elemente sind genuin eigenständig, welche sind Umbenennungen bereits vorhandener Positionen, und welche prüfbaren Kriterien verhindern, dass die Methode beliebige Deutungen lizenziert?",
+  "why_now": "Der Kanonstand vom 15.09.2026 führt „das Verhältnis zur fluiden Hermeneutik als eigenständiger Methode“ explizit als nächsten Prüfpunkt; die Konsistenzmatrix (Priorität B) und die Redaktionsregel §8 bauen bereits auf ihr auf. Da dieselbe Methode die Brücke zu biblischen und anderen Traditionen bilden soll, hängt die wissenschaftliche Anschlussfähigkeit des Projekts an der Klärung, ob hier eine eigene Position oder eine Überschneidung mit bestehender Hermeneutik vorliegt.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "T",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Etablierte Hermeneutik und Interpretationstheorie (Gadamer, Ricoeur, Jauss/Iser, Eco, Hirsch, Schleiermacher/Dilthey) sowie deren methodologische Standards",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Kandidat betrifft Interpretationsmethodik. Die Zeit-/Blockzeit-Frage und die (fehlerhafte) Pantheismus/Panentheismus-Frage behandeln metaphysische Klassifikation, nicht Hermeneutik; die Phaistos-Frage betrifft ausschließlich den realen archäologischen Unterbau. Die Klärung, ob „fluide Hermeneutik“ eine eigenständige Methode ist, ist im Repo als offen markiert und von keinem vorherigen Kandidaten beantwortet.",
+  "fingerprint": "4dc8006b4d600979"
+}
