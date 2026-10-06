@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261006-5A34ED3B",
+  "status": "queued",
+  "created": "2026-10-06T10:27:22+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/buecher/gott-ist-eine-wolke.md",
+  "source_ref": "a7f5968b7597ef843184f85d29765ca7d92a57de",
+  "source_blob_sha": "4bc38fffba6d1faf9b22524ad8f9de88bba99c50",
+  "title": "Apostelgeschichte 17,28 (Areopagrede): historisch-kritischer Anker für das Dialogbuch „Gott ist eine Wolke“",
+  "question": "Was sagt die gegenwärtige historisch-kritische Bibelwissenschaft und Religionsgeschichte über Herkunft und Kontext von Apostelgeschichte 17,28 („in ihm leben, weben und sind wir“) — die Zitate aus Epimenides (Kreta) und Aratos (Phainomena), den stoischen Pantheismus/Panentheismus der zitierten Quellen, die redaktionelle Funktion in der lukanischen Areopagrede — und was folgt daraus für die These des Buches, die Stelle drücke ein Feld-/Immanenz-Verständnis Gottes aus, das mit Omnizedenz resoniert, ohne die Bibel zum nachträglichen Beweis zu machen? Wie sind entlang der im Projekt selbst gesetzten vier Ebenen Text, historische Deutung, vergleichende Analogie und KUEPER-Systembehauptung zu trennen, und welche Formulierungen müssen als Vergleich, welche als Exegese und welche als Omnizedenz-Aussage markiert werden?",
+  "why_now": "„Gott ist eine Wolke“ (Zielgruppe: progressive Christen/Theologen) ist laut Frontmatter zu 40 % fertig und stützt sich tragend auf Apg 17,28. Die Konsistenzmatrix verlangt ausdrücklich „Keine biblische Stelle als Beweis der Omnizedenz behandeln“ und der Kanonstand vom 15.09.2026 listet „konkrete biblische Resonanzen“ als nächsten Prüfbereich. Die historisch-kritische Einordnung der stoischen Quelle ist der Angelpunkt, an dem sich entscheidet, ob das Buch theologisch belastbar ist oder eine spätere Synthese in den Text zurückschreibt.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "H",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Apostelgeschichte 17,28 und die Areopagrede; die zitierten griechischen Quellen Epimenides (Kreta) und Aratos (Phainomena); stoischer Pantheismus/Panentheismus in hellenistischer Zeit; historisch-kritische Exegese und Religionsgeschichte des Neuen Testaments",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.79,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Kandidat berührt biblische Exegese oder christliche Theologie. Die vorherigen Themen betreffen Erkenntnistheorie (Spiegelneurone/Interozeption), Physik/Zeit (Relativitätstheorie, Blockzeit) und minoische Archäologie (Diskos von Phaistos); die Frage ist weder eine Umformulierung noch eine Ausweitung davon, sondern ein neuer, im Repo ausdrücklich offener Prüfbereich.",
+  "fingerprint": "5a34ed3b9d2199fc"
+}
