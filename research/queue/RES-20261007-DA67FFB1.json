@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261007-DA67FFB1",
+  "status": "queued",
+  "created": "2026-10-07T10:22:40+00:00",
+  "source_project": "avi-modell",
+  "source_repository": "thomaspeterkueper/avi-modell",
+  "source_path": "docs/manifests/SCM-HYST-001-v0.1.md",
+  "source_ref": "efca05474a88ea0a72aac13b8d2fa34c271b5d82",
+  "source_blob_sha": "bf4a2c9432b611125a34b8209bfbc5c09922bcc1",
+  "title": "State-reconstruction completeness am TRGB-H0-Kanal: reale Distanzmessungen und Pekuliargeschwindigkeits-Rekonstruktionen als drittes Manifest-Testbed",
+  "question": "Welche unabhängig publizierten TRGB- und verwandten lokalen H0-Bestimmungen sowie welche öffentlich verfügbaren Rekonstruktionen des lokalen Dichte- und Pekuliargeschwindigkeitsfelds existieren, und wie gross ist die Feld-zu-Feld- bzw. Rekonstruktions-Streuung in H0 im Vergleich zur Streuung zwischen Modellvarianten innerhalb einer festgehaltenen Rekonstruktion? Stützt die reale Datenlage die im Repo übernommene Aussage, dass die Rekonstruktionsstreuung die Modellvarianten-Streuung übersteigt, oder ist der Kanal tatsächlich epistemisch dominiert? Lässt sich daraus ein operationales, marginalisiertes P(Ω|D,M) — mit getrennten Rollen für Y_true, die datenbedingte Rekonstruktion P(Y|D,M) und den Kanalzustand C — für einen vollständigen OBS-08-End-to-End-Lauf des State-Completeness-Manifests bauen, und erzeugt dieser Lauf korrekt einen scheinbaren Closure-Defekt ohne Z-Erweiterung?",
+  "why_now": "SCM-HYST-001 §15 legt OBS-08/OTA-SCI-0094 als nächsten, dritten End-to-End-Test fest — als ersten Fall, der den vollständigen posterior-prädiktiven Pfad P(Ω|D,M) statt nur die Zuordnung einer bekannten Standardkomponente prüft. OBS-04 (lokale H0) ist in der Beobachtungs-Testmatrix noch lediglich 'vorgesehen'. Der Test ist damit der offene methodische Engpass, bevor OBS-02..OBS-04 mit konkreten Releases belegt und das Manifest auf reale kosmologische Fragen angewendet werden darf.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "avi-theoretical-cosmology",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Unabhängige TRGB-basierte und verwandte lokale H0-Messungen sowie öffentliche Rekonstruktionen lokaler Dichte-/Pekuliargeschwindigkeitsfelder (z. B. cosmicflows-artige Produkte, 2M++/CF4-Konstruktionen) samt publizierter Feld-zu-Feld-Streuung.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.85,
+  "relevance_score": 0.74,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Frühere Topics behandeln weder die TRGB-Distanzleiter noch Pekuliargeschwindigkeits-/Dichterekonstruktionen noch die posterior-prädiktive Zustandsrekonstruktion. Insbesondere ist dies nicht die S_i-Sensitivitätsmatrizen-Frage (RES-20260916-2142E3AA, atomare/nukleare Kanäle) und nicht die Gravitationsreferenzkanalfrage (RES-20260916-8082C26F, Uhrvergleiche/WEP). Neu ist die epistemische Rekonstruktionsstreuung als Testfall für das Manifest.",
+  "fingerprint": "da67ffb1c2c9b05a"
+}
