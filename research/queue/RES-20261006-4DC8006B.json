@@ -1,6 +1,6 @@
 {
   "id": "RES-20261006-4DC8006B",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-06T10:27:23+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früherer Kandidat betrifft Interpretationsmethodik. Die Zeit-/Blockzeit-Frage und die (fehlerhafte) Pantheismus/Panentheismus-Frage behandeln metaphysische Klassifikation, nicht Hermeneutik; die Phaistos-Frage betrifft ausschließlich den realen archäologischen Unterbau. Die Klärung, ob „fluide Hermeneutik“ eine eigenständige Methode ist, ist im Repo als offen markiert und von keinem vorherigen Kandidaten beantwortet.",
-  "fingerprint": "4dc8006b4d600979"
+  "fingerprint": "4dc8006b4d600979",
+  "updated_at": "2026-10-07T10:31:26+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/206"
 }
