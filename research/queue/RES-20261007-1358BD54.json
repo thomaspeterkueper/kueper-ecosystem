@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261007-1358BD54",
+  "status": "queued",
+  "created": "2026-10-07T10:22:41+00:00",
+  "source_project": "avi-modell",
+  "source_repository": "thomaspeterkueper/avi-modell",
+  "source_path": "docs/relational-response-selection-gate-v0.1.md",
+  "source_ref": "efca05474a88ea0a72aac13b8d2fa34c271b5d82",
+  "source_blob_sha": "652eb43756a659d49043e2bcc128190bd298327d",
+  "title": "Minimal Response Algebra gegen etablierte constrained-response- und Kausalitäts-Frameworks: existiert eine sparsamere Struktur als generische EFT?",
+  "question": "Welche etablierten mathematischen/physikalischen Rahmen — lineare Response-/Kubo-Suszeptibilitätsmatrizen, constrained/low-rank Response, Symmetrie-/Darstellungs-basierte Selektionsregeln, relationale bzw. conditional-state maps, nichtlokale Kerne mit kausaler Unterstützung sowie quanteninformationelle No-Signalling-/Kausalstrukturen (process matrices, quantum causal models) — erzwingen bereits ohne Ad-hoc-Annahmen feste Relationen zwischen mehreren lokalen dimensionslosen Responsekopplungen und kommen mit strikt weniger freien Parametern aus als eine generische lokale EFT? Welche dieser Klassen erfüllen zusätzlich (1) Kovarianz/operationale Eindeutigkeit, (2) eine präregistrierbare Nullrichtung in V_obs, (3) eine feste cross-observable Ratio Δ_i/Δ_j, (4) exakten QFT+GR-Nullfall, (5) No-Signalling und (6) Backreaction-/Energieerhaltung — und welche sind durch bestehende Präzisionstests (Uhrenverhältnisse, WEP, MICROSCOPE) bereits als unvereinbar ausgeschlossen? Ergebnis der Prüfung: Reduziert jede konkrete Realisierung entweder auf QFT+GR oder auf generische EFT mit unabhängigen Wilson-Koeffizienten — das im Falsifikationssatz des Gates definierte FAIL — oder überlebt mindestens eine Klasse als sparsame Response-Algebra?",
+  "why_now": "Das Relational Response Selection Gate (2026-09-28) setzt AVI-R1 auf HOLD mit der starken Negativbedingung, dass der nächste Fortschritt nicht durch einen weiteren freien Zustand oder Operator erfolgen darf. Es deklariert MRA-1 ausdrücklich als nächsten Kern-Gate-Test und formuliert mit §15/§16 die Kriterien und den Falsifikationssatz. Ein externer Task (EXT-AVI-20260928-minimal-response-algebra-screen) ist offen. MRA-1 entscheidet, ob O1/O2 als fundamentaler AVI-Mechanismus geschlossen und AVI auf methodische Rollen reduziert werden muss.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "avi-theoretical-cosmology",
+  "claim_classes": [
+    "H",
+    "F"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Etablierte constrained-response- und Quanten-Kausalstruktur-Formalismen (lineare Response/Kubo, Positivität/Passivität, No-Signalling- und process-matrix-Bedingungen, nichtlokale Kerne mit kausaler Trägerschaft) sowie deren bereits publizierte Ausschlüsse durch Präzisionstests.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.85,
+  "relevance_score": 0.75,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.7
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Die frühere Recherche RES-20260828-0806A449 fragt nach historien-/pfadabhängigen Zustandsbeschreibungen (also nach zusätzlichem Zustand ξ). MRA-1 fragt das Gegenteil: ob eine sparsame Response-Algebra mit weniger Freiheitsgraden als generische EFT überhaupt existiert, ohne einen neuen Zustand oder freie Kopplungen einzuführen. Die früheren Topics zu ΔH²-Modellen (0D488933) und S_i-Sensitivitäten (2142E3AA) behandeln andere Objekte. Neu ist die Prüfung etablierter Kausal-/constrained-response-Frameworks gegen die MRA-1-Kriterien und den expliziten Falsifikationssatz.",
+  "fingerprint": "1358bd54b0af4c1c"
+}
