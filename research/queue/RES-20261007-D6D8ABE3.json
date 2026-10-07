@@ -1,6 +1,6 @@
 {
   "id": "RES-20261007-D6D8ABE3",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-07T10:22:39+00:00",
   "source_project": "avi-modell",
   "source_repository": "thomaspeterkueper/avi-modell",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine der früheren Recherchen behandelt die kosmische Doppelbrechung, CB-1 oder CMB-Polarisationssystematiken. Die früheren Topics betreffen Gravitationsreferenzkanäle, vakuumenergetische ΔH²-Modelle, die S_i-Sensitivitätsmatrix und historienabhängige Zustandsbeschreibungen — alle ohne Bezug zu TB/EB-Paritätskorrelationen, Winkelkalibration oder einem χ→β-Transferkernel.",
-  "fingerprint": "d6d8abe366d32056"
+  "fingerprint": "d6d8abe366d32056",
+  "updated_at": "2026-10-07T10:26:53+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/205"
 }
