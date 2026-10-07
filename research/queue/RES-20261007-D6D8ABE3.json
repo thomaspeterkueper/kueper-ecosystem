@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261007-D6D8ABE3",
+  "status": "queued",
+  "created": "2026-10-07T10:22:39+00:00",
+  "source_project": "avi-modell",
+  "source_repository": "thomaspeterkueper/avi-modell",
+  "source_path": "docs/cosmic-birefringence-observation-gate-v0.1.md",
+  "source_ref": "efca05474a88ea0a72aac13b8d2fa34c271b5d82",
+  "source_blob_sha": "566f6e3084440c0088f797562427ae3ae018ec2d",
+  "title": "Evidenzbasis der kosmischen Doppelbrechung: unabhängige β-Messungen, gemeinsame Systematiken und modellunabhängiger χ→β-Transferkernel",
+  "question": "Welche publizierten Messungen und Grenzen der isotropen und anisotropen kosmischen Doppelbrechung β existieren zum Stand 2026, getrennt nach Planck PR4/NPIPE, ACT DR6, WMAP/SPTpol/POLARBEAR/BICEP sowie kommenden unabhängigen Polarisationsexperimenten? Für jeden Datensatz: Frequenzen, Himmelsanteil, Observable, rekonstruiertes β bzw. Constraint, Kalibrationsmethode, Foreground-Behandlung und welche Eingangskarten/Systematiken mit welchen anderen Datensätzen geteilt werden — damit methodische von echter Datenunabhängigkeit unterschieden werden kann. Welches vollständige QFT+GR/ΛCDM-Nullmodell (instrumentelle Winkelkalibration, Minami-Komatsu-Kalibrationspfad, galaktisches foreground-EB, Intensität-zu-Polarisation-Leakage, Frequenzabhängigkeit) ist vor jedem Residualclaim abzuziehen, und welche publizierte, modellunabhängige Transferbeziehung verbindet ein generisches pseudoskalares Feld χ über den Sichtlinien-/Rekombinationsintegral mit β, TB- und EB-Observablen (CB-1B0)? Trägt die derzeit zitierte Signifikanz (z. B. β = 0.37 ± 0.12 deg) eine unabhängige Datenbestätigung, oder beruht sie ausschliesslich auf denselben Eingangsdaten?",
+  "why_now": "Der CB-1-Kanal wurde am 2026-09-25 aufgenommen und stützt sich auf neue, ungeprüfte Claim-Lagen (Lonappan/Keating/Arnold 2026; Diego-Palazuelos ACT DR6 2026; Eskilt joint ACT+Planck 2026). Vier externe Tasks (CB-1C Systematik-/Nullmodellregister, CB-1D Isotropie-Diskriminator, CB-1E Datenmatrix) sind offen. Das Operator Minimality Gate und CB-1A haben jede AVI-spezifische Vorhersage auf HOLD gesetzt; damit bleibt die belastbare, nicht-anomaliegefittete Evidenzbasis der einzige derzeit zulässige Nutzen des Kanals. Ohne verifizierte Unabhängigkeit und vollständiges Nullmodell wäre jede spätere CB-1-Aussage zirkulär.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "avi-theoretical-cosmology",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewte/publizierte CMB-Polarisationsmessungen der kosmischen Doppelbrechung (Planck/NPIPE, ACT DR6, SPTpol/POLARBEAR/BICEP) mit ihren Kalibrations- und Foreground-Systematiken sowie die etablierte pseudoskalar–Photon-Transferphysik (Lue/Wang/Kamionkowski; Liu/Lee/Ng; Murai et al.).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.85,
+  "relevance_score": 0.83,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.65,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine der früheren Recherchen behandelt die kosmische Doppelbrechung, CB-1 oder CMB-Polarisationssystematiken. Die früheren Topics betreffen Gravitationsreferenzkanäle, vakuumenergetische ΔH²-Modelle, die S_i-Sensitivitätsmatrix und historienabhängige Zustandsbeschreibungen — alle ohne Bezug zu TB/EB-Paritätskorrelationen, Winkelkalibration oder einem χ→β-Transferkernel.",
+  "fingerprint": "d6d8abe366d32056"
+}
