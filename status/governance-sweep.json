@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T13:13:50.433469+00:00",
+  "generated_at": "2026-10-07T13:12:48.037479+00:00",
   "findings": [
     {
       "id": "e0571c7d10e4",
@@ -74,6 +74,12 @@
       "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20261005-001.md"
     },
     {
+      "id": "598597d84511",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20261006-001.md"
+    },
+    {
       "id": "55953b06ceaf",
       "category": "task_addressed_to_eco",
       "severity": "info",
@@ -88,10 +94,10 @@
   ],
   "new_since_last_run": [
     {
-      "id": "47cd8a9e5dfe",
+      "id": "598597d84511",
       "category": "task_addressed_to_eco",
       "severity": "info",
-      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20261005-001.md"
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20261006-001.md"
     }
   ]
 }
