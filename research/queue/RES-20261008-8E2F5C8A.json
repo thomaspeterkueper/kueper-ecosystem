@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261008-8E2F5C8A",
+  "status": "queued",
+  "created": "2026-10-08T10:42:35+00:00",
+  "source_project": "contracomology",
+  "source_repository": "thomaspeterkueper/contracomology",
+  "source_path": "app/[locale]/course/page.tsx",
+  "source_ref": "b1dcb6fc4ef20893697a642d0e11ba8e213696f8",
+  "source_blob_sha": "be5d18218f11cc80898529d874d094d3489a254d",
+  "title": "Rückwirkende Zeit: kontrakomologische 'bidirektionale Zeitarchitektur' zwischen Hermeneutik, Phänomenologie und Narratologie",
+  "question": "Wie verhält sich die These, dass ein Ende rückwirkend den Anfang verändert ('Rückwirkung', 'bidirektionale Zeitarchitektur'), zu philosophischen und narratologischen Konzepten retroaktiver Sinnbildung — Gadamers hermeneutischer Zirkel und Wirkungsgeschichte, Ricoeurs narrativer Konfiguration in Zeit und Erzählung, Husserls Retention/Protention, Kermodes 'sense of an ending' sowie der musiktheoretischen Kategorie kumulativer bzw. retro-spektiver Form (Hepokoski)? Ist 'bidirektionale Zeit' ein eigenständiges Phänomen oder eine musikbezogene Neuformulierung eines breit theorisierten hermeneutischen Sachverhalts, und welche Beispiele (Beethoven op. 27/2, Chopin op. 52, Coltrane A Love Supreme) tragen den Anspruch?",
+  "why_now": "Rückwirkung ist die am stärksten wiederkehrende Behauptung des Projekts: Sie strukturiert Lektion 04 des Kurses, mehrere Werk-Grundlagen und die Kompositionsprinzipien ('Formlogik: Rückwirkung'). Zugleich ist sie philosophisch so anschlussfähig an Hermeneutik und Narratologie, dass ohne Abgrenzung unklar bleibt, was das genuin Kontrakomologische ist. Die Evidenzprofil-Regel verlangt, hier philosophische Position und vergleichende Analogie sauber zu unterscheiden, statt die These durch Belegzahl zu 'beweisen'.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "kuper-system-claim",
+    "comparative-analogy",
+    "scholarly-interpretation"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Hermeneutische, phänomenologische und narratologische Theorien retroaktiver Sinnbildung: Hans-Georg Gadamer (Wahrheit und Methode: Zirkel, Wirkungsgeschichte), Paul Ricoeur (Temps et récit / Zeit und Erzählung), Edmund Husserl (Retention/Protention), Frank Kermode (The Sense of an Ending), sowie James Hepokoski (kumulative/rotational form) als musiktheoretisches Gegenstück.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine früheren Forschungsthemen vorhanden. Die Recherche adressiert eine bislang offene Dimension: nicht die illustrierende Werkbeschreibung, sondern den Status der 'bidirektionalen Zeitarchitektur' im Vergleich zu bereits vollständig ausgearbeiteten hermeneutischen und narratologischen Modellen rückwirkender Sinnkonstitution.",
+  "fingerprint": "8e2f5c8a1c6a6a3a"
+}
