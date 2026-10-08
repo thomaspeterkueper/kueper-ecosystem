@@ -1,6 +1,6 @@
 {
   "id": "RES-20261008-031971A1",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-08T10:42:33+00:00",
   "source_project": "contracomology",
   "source_repository": "thomaspeterkueper/contracomology",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine früheren Forschungsthemen für dieses Projekt vorhanden. Der Beitrag ist neu, weil die Behauptung im Repository bisher keinerlei philosophische Situierung hat; die Recherche soll die vorhandenen Positionen und die verschiedenen Sinnvarianten von 'Zeit erzeugen' vergleichend herausarbeiten und so KUEPER-System-Claim, philosophische Position und empirisch prüfbare Teilaussage trennen.",
-  "fingerprint": "031971a1126577c4"
+  "fingerprint": "031971a1126577c4",
+  "updated_at": "2026-10-08T10:54:27+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/210"
 }
