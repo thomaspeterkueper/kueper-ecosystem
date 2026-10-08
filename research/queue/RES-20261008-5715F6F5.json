@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261008-5715F6F5",
+  "status": "queued",
+  "created": "2026-10-08T10:42:34+00:00",
+  "source_project": "contracomology",
+  "source_repository": "thomaspeterkueper/contracomology",
+  "source_path": "app/[locale]/documents/[slug]/page.tsx",
+  "source_ref": "b1dcb6fc4ef20893697a642d0e11ba8e213696f8",
+  "source_blob_sha": "f9f131e073c7b6038823ec2b8130330a75917107",
+  "title": "Sind die 'Zeitformen' neue Kategorien oder Umbenennungen bestehender Zeittypologien?",
+  "question": "Wie verhalten sich die kontrakomologischen Zeitformen (strukturelle Gleichzeitigkeit, retrospektive Zeitrichtung, emergente Offenzeit, gerichtete Transformation, Resonanzzeit, Pulsflusszeit, stehende Innenzeit, Transformationszeit) zu bereits etablierten Typologien musikalischer Temporalität — Kramers Unterscheidung linear/nichtlinear, gerichtet/nicht gerichtet, multiply-directed und Momentzeit; Stockhausens Momentform; Cages Indeterminacy; Ecos Poetik des offenen Kunstwerks; Adornos Problem der musikalischen Zeit — und an welchen Stellen ergänzen, duplizieren oder widersprechen sie diese? Behält der Anspruch Bestand, dass die Begriffe 'aus dem Hören der Werke' und nicht aus einer vorgegebenen Theorie entstehen?",
+  "why_now": "Der Systemtext 'Zeitformen der Kontrakomologie' ist derzeit das Kernstück der Methode und wird über Systemmatrix und Diagnosefragen im praxisbasierten Kurs (Lektion 03, 06) durchgängig vorausgesetzt. Wenn die Zeitformen bestehende Kategorien ungenannt umbenennen, sinkt die fachliche Plausibilität und der didaktische Wert; wenn sie darüber hinausgehen, ist genau das der publikationsfähige Kern. Da der Text den Anspruch erhebt, gerade nicht zu klassifizieren, ist die vergleichende Einordnung unmittelbar entscheidungsrelevant.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "kuper-system-claim",
+    "scholarly-interpretation",
+    "comparative-analogy"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Musiktheoretische und musikphilosophische Zeittypologien: Jonathan D. Kramer (The Time of Music), Karlheinz Stockhausen (Momentform / ...wie die Zeit vergeht...), John Cage (Indeterminacy), Umberto Eco (Opera aperta / The Poetics of the Open Work), Theodor W. Adorno (Über das Problem der musikalischen Zeit), Gisèle Brelet (Le temps musical), Karol Berger (Bachs Zyklus, Mozarts Pfeil) zur zyklischen vs. gerichteten Zeit.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine früheren Forschungsthemen vorhanden. Die Frage zielt nicht auf eine bloße Bestätigung der Taxonomie, sondern auf die bislang in keiner Datei beantwortete Abgrenzung: Welche Zeitformen sind Neuschöpfungen, welche sind Übersetzungen vorhandener Begriffe, und welche impliziten musikontologischen Annahmen trägt die Zuordnung von Werken zu Zeitformen.",
+  "fingerprint": "5715f6f5e0dfcc34"
+}
