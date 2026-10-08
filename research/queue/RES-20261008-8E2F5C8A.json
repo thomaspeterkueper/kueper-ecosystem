@@ -1,6 +1,6 @@
 {
   "id": "RES-20261008-8E2F5C8A",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-08T10:42:35+00:00",
   "source_project": "contracomology",
   "source_repository": "thomaspeterkueper/contracomology",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine früheren Forschungsthemen vorhanden. Die Recherche adressiert eine bislang offene Dimension: nicht die illustrierende Werkbeschreibung, sondern den Status der 'bidirektionalen Zeitarchitektur' im Vergleich zu bereits vollständig ausgearbeiteten hermeneutischen und narratologischen Modellen rückwirkender Sinnkonstitution.",
-  "fingerprint": "8e2f5c8a1c6a6a3a"
+  "fingerprint": "8e2f5c8a1c6a6a3a",
+  "updated_at": "2026-10-08T11:00:29+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/211"
 }
