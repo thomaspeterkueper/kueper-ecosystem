@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261008-031971A1",
+  "status": "queued",
+  "created": "2026-10-08T10:42:33+00:00",
+  "source_project": "contracomology",
+  "source_repository": "thomaspeterkueper/contracomology",
+  "source_path": "app/[locale]/page.tsx",
+  "source_ref": "b1dcb6fc4ef20893697a642d0e11ba8e213696f8",
+  "source_blob_sha": "abe54ed6427338e276ffaeebe70747afb24a14f9",
+  "title": "Ontologie der musikalischen Zeit: Ist Musik 'in' der Zeit oder erzeugt sie Zeit?",
+  "question": "In welchem Sinn kann der kontrakomologische Leitsatz 'Musik ist nicht in der Zeit. Musik erzeugt Zeit.' als philosophische Position rekonstruiert werden, und wie verhält er sich zu den etablierten Positionen der Phänomenologie und Musikphilosophie — Husserls Analyse des inneren Zeitbewusstseins (Retention/Protention), Ingardens intentionaler Gegenstand 'Musikwerk' mit seiner quasi-zeitlichen Struktur, Zuckerkandls Unterscheidung von metrischer und musikalischer Zeit, Langers 'hörbar gemachter' emotiver Zeit und Kramers Unterscheidung von absoluter, realer und virtueller Zeit? Welche dieser Positionen stützen den Satz, welche widersprechen ihm, und in welchen unterschiedlichen Bedeutungen kann 'Zeit erzeugen' überhaupt wahr oder falsch sein?",
+  "why_now": "Der Satz steht als Leitbehauptung auf der neuen praxisorientierten Startseite (Lead) und als Lektion 01 des Einführungskurses, wird aber nirgends als philosophische These verortet oder eingegrenzt. Die Evidenzprofil-Regel verlangt ausdrücklich, metaphysische Aussagen als philosophische Positionen auszuweisen statt als verifizierte Wahrheit; der KG-Beschreibungstext zu KD:KON:N1 bezeichnet Contracomology selbst als 'Werk-Theorie; kein empirischer Befund und nicht peer-reviewed'. Eine vergleichende Verortung würde die Startseite bildungsehrlicher machen und verhindern, dass eine ontologische These wie ein musikwissenschaftlicher Befund gelesen wird.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "kuper-system-claim",
+    "comparative-analogy",
+    "scholarly-interpretation"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Philosophische und phänomenologische Literatur zur Zeitlichkeit/Ontologie der Musik: Husserl (Vorlesungen zur Phänomenologie des inneren Zeitbewusstseins), Roman Ingarden (Das Musikwerk und das Problem seiner Identität), Victor Zuckerkandl (Sound and Symbol), Susanne K. Langer (Philosophy in a New Key / Feeling and Form), Jonathan D. Kramer (The Time of Music), Theodor W. Adorno (Musik und Zeit), Gisèle Brelet (Le temps musical).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine früheren Forschungsthemen für dieses Projekt vorhanden. Der Beitrag ist neu, weil die Behauptung im Repository bisher keinerlei philosophische Situierung hat; die Recherche soll die vorhandenen Positionen und die verschiedenen Sinnvarianten von 'Zeit erzeugen' vergleichend herausarbeiten und so KUEPER-System-Claim, philosophische Position und empirisch prüfbare Teilaussage trennen.",
+  "fingerprint": "031971a1126577c4"
+}
