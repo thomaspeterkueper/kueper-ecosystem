@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261009-CC828645",
+  "status": "queued",
+  "created": "2026-10-09T10:42:17+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "lib/game/cognition/personHabit.ts",
+  "source_ref": "04185aaa39a9c9c97b2f075cc0d044719b80f425",
+  "source_blob_sha": "719e6a80a9b85d932f38cb1ad670dc0dc93dc298",
+  "title": "Empirical grounding for the habit-learning model's automaticity curve, context keys and activation gates",
+  "question": "Which peer-reviewed habit-formation and dual-process (goal-directed vs. habitual) control research supports or contradicts the parameterization in lib/game/cognition/personHabit.ts — the practice curve practice = 1 − exp(−repetitions/8), the bounded action bias of ±0.18·strength·successExpectation, the gate thresholds (≥4 repetitions, ≥0.6 success expectation, ≥0.42 strength) that let a habit bypass deliberative cognition, and the assumption that repeated failed attempts create familiarity but cannot certify utility? Specifically: what do measured automaticity asymptotes and their between-person/between-behaviour dispersion, context-cue specificity (stable vs. low-cardinality cues), reward/outcome dependence, and extinction/relapse findings imply for whether these constants model real habit acquisition, and what parameter ranges would be defensible instead of asserted?",
+  "why_now": "The most recent commit on this branch (04185aa, 2026-10-09, 'feat(habit): classify execution evidence separately from outcomes') and docs/decisions/NOXIA-LIVING-0011-habit-persistence-gates.md deliberately gate live habit learning behind authoritative outcome evidence, but the merged scorer already fixes the curve, bias and gate constants with no cited empirical basis. The decision to let strong habits 'skip deliberative cognition' is a real cost/competence claim and currently rests on invented numbers.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewed habit-formation research: observed automaticity asymptotes and their dispersion in real behaviour-change studies, habit-strength measurement (self-report habit indices), context-dependent repetition and cue specificity, outcome/reward dependence of habit strength, and extinction/relapse evidence from dual-process (goal-directed vs. habitual) psychology.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.79,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.62,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Distinct from the prior needs-model topic (RES-20260828-471FC77C), which covers Maslow/Max-Neef/Self-Determination Theory need dynamics and scored decision weighting. Habit automaticity, context-cue learning, automaticity thresholds and deliberation-bypass gates are a separate construct with a separate literature and are not addressed by any previous NOXIA/KUEPER research question.",
+  "fingerprint": "cc828645aa6931ba"
+}
