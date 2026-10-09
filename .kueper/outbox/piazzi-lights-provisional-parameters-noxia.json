@@ -1,0 +1,11 @@
+{
+  "target": "NOXIA",
+  "title": "Piazzi-Lights-Parameter bis Engineering-Closure nicht als final hartkodieren",
+  "reason": "EXT-NXU-ECO-20260921 übergibt die technische Schließung der Piazzi-Lights-/Ceres-2091-Infrastruktur an KUEPER Engineering und verlangt ausdrücklich, dass Spiel-/Realtime-Implementierungen die provisorischen Torusparameter nicht als finale technische Fakten hartkodieren, bis der Engineering-Abschluss zurückgemeldet ist. Das Ecosystem hat die Eigentümergrenze und die Verbraucherregel in ECO-ARC-0035 registriert; die Regel muss im konsumierenden Repository umgesetzt werden.",
+  "requested_change": "Piazzi-Lights-/Ceres-2091-Parameter (u. a. Torusgeometrie ~180 m Durchmesser / ~90 m Hauptradius / ~18 m Röhrenklasse, belegter Bodenradius ~99 m, 1-g-Referenz ~3,0 rpm, Bevölkerungsbänder ~100–140) in noxiagame als explizit provisorisch und zentral konfigurierbar führen statt final hartzukodieren. Werte aus dem NOXIA-Universum-Dokument NXU-CERES-PIAZZI-LIGHTS-2091 bzw. dem späteren Engineering-Closure-Envelope beziehen und nach Closure an einer Stelle aktualisierbar halten.",
+  "expected_result": "Piazzi-Lights-Parameter sind im Spiel/Realtime als vorläufig gekennzeichnet und an einer zentralen Stelle änderbar; kein finaler technischer Wert ist verstreut hartkodiert, und ein Engineering-Closure-Update ist ohne verteilte Codeänderungen möglich.",
+  "priority": "medium",
+  "parent_task": "2a7c4cb1-d4a4-4f88-917e-4219530aa47a",
+  "depth": 1,
+  "affects": ["NOXIA", "NXU", "ENG"]
+}
