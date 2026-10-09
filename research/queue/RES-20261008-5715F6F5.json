@@ -1,6 +1,6 @@
 {
   "id": "RES-20261008-5715F6F5",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-08T10:42:34+00:00",
   "source_project": "contracomology",
   "source_repository": "thomaspeterkueper/contracomology",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine früheren Forschungsthemen vorhanden. Die Frage zielt nicht auf eine bloße Bestätigung der Taxonomie, sondern auf die bislang in keiner Datei beantwortete Abgrenzung: Welche Zeitformen sind Neuschöpfungen, welche sind Übersetzungen vorhandener Begriffe, und welche impliziten musikontologischen Annahmen trägt die Zuordnung von Werken zu Zeitformen.",
-  "fingerprint": "5715f6f5e0dfcc34"
+  "fingerprint": "5715f6f5e0dfcc34",
+  "updated_at": "2026-10-09T10:46:58+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/212"
 }
