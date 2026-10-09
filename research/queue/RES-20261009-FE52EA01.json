@@ -1,6 +1,6 @@
 {
   "id": "RES-20261009-FE52EA01",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-09T10:42:19+00:00",
   "source_project": "noxia",
   "source_repository": "thomaspeterkueper/noxiagame",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Not covered by any prior topic. RES-20260828-471FC77C covers need frameworks and relationship trust/affinity dynamics, not memory retention, consolidation, source monitoring or testimony transmission. No previous NOXIA/KUEPER research question addresses the epistemic memory model or its forgetting/distortion constants.",
-  "fingerprint": "fe52ea01ba4a53c0"
+  "fingerprint": "fe52ea01ba4a53c0",
+  "updated_at": "2026-10-09T10:51:12+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/213"
 }
