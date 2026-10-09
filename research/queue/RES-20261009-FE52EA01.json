@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261009-FE52EA01",
+  "status": "queued",
+  "created": "2026-10-09T10:42:19+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "lib/game/cognition/npcRelationalMemory.ts",
+  "source_ref": "04185aaa39a9c9c97b2f075cc0d044719b80f425",
+  "source_blob_sha": "8b776e551a237b9acb17b15e58710627a9309496",
+  "title": "Cognitive-memory grounding for NPC forgetting, consolidation and testimony-fidelity parameters",
+  "question": "What do the peer-reviewed memory-science and cultural-transmission literatures establish about forgetting curves and their dependence on salience and rehearsal, sleep-dependent consolidation, source monitoring and confidence decay, and serial-reproduction/testimony fidelity, so that NOXIA's NPC memory model models real retention and distortion? Concretely: are the state ladder (fresh/consolidated/fading/forgotten), the consolidation strength threshold 0.45 with a ±0.08 confidence change during sleep, the forgetting threshold scaled by resistance = 1 + salience + 0.25·rehearsals, the default confidence 0.65, and the 0.85× speaker-confidence transfer on testimony defensible against measured retention, rehearsal and transmission effects — and does the architecture claim that forgetting/distortion are reasoned mechanisms (perception, time, retrieval, motivation, channel) rather than arbitrary random corruption match the evidence?",
+  "why_now": "NOXIA-KNOWLEDGE-0001 (2026-10-08) and its stage-1 code (lib/game/knowledge/transmission.ts, npcTestimony.ts, npcRelationalMemory.ts, threeGenerationExperiment.test.ts) are implemented and explicitly move toward a stage-3 end-to-end 'erleben → erinnern → erzählen → weitererzählen → aufzeichnen → vergessen/wiederentdecken' test over simulated generations, and the SSF history/knowledge education content depends on the claim that knowledge without a real channel equals zero. Every retention, consolidation and distortion constant is currently asserted, so grounding them is required before generation-scale results are treated as meaningful.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Cognitive and cultural memory science: forgetting-curve and retention-interval empirical work, spacing/rehearsal and salience effects, sleep-dependent memory consolidation, source-monitoring and confidence-accuracy research, and serial-reproduction/transmission-chain studies of narrative distortion and fidelity.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.82,
+    "cross_project_reuse": 0.72,
+    "uncertainty": 0.78,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Not covered by any prior topic. RES-20260828-471FC77C covers need frameworks and relationship trust/affinity dynamics, not memory retention, consolidation, source monitoring or testimony transmission. No previous NOXIA/KUEPER research question addresses the epistemic memory model or its forgetting/distortion constants.",
+  "fingerprint": "fe52ea01ba4a53c0"
+}
