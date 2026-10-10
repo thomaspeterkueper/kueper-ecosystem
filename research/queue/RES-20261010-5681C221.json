@@ -1,6 +1,6 @@
 {
   "id": "RES-20261010-5681C221",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-10T09:58:38+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine der bisherigen Topics berührt Bodenbiologie, Perchlorat-Bioremediation oder pilzbasierte Ökopoiese. Die früheren Mars-Topics betrafen Geologie/Reservoir (RES-20260829-862AA763) und Teilgravitation (RES-20260914-3AD6CB18), nicht die lebende Substrat-Infrastruktur. Der Gap ist ein direkt offener TODO dieses Repos.",
-  "fingerprint": "5681c221c75d19d9"
+  "fingerprint": "5681c221c75d19d9",
+  "updated_at": "2026-10-10T10:01:53+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/214"
 }
