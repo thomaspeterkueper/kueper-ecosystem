@@ -1,6 +1,6 @@
 {
   "id": "RES-20261006-5A34ED3B",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-06T10:27:22+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früherer Kandidat berührt biblische Exegese oder christliche Theologie. Die vorherigen Themen betreffen Erkenntnistheorie (Spiegelneurone/Interozeption), Physik/Zeit (Relativitätstheorie, Blockzeit) und minoische Archäologie (Diskos von Phaistos); die Frage ist weder eine Umformulierung noch eine Ausweitung davon, sondern ein neuer, im Repo ausdrücklich offener Prüfbereich.",
-  "fingerprint": "5a34ed3b9d2199fc"
+  "fingerprint": "5a34ed3b9d2199fc",
+  "updated_at": "2026-10-10T10:05:40+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/215"
 }
