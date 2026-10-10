@@ -2,7 +2,7 @@
 
 Status: implementiert (Projektion v0.2.0)  
 Repository: `kueper-ecosystem`  
-External Task: `external-tasks/open/EXT-OTA-ECO-20260911-utopia-mars-chronology-projection.md`  
+External Task: `external-tasks/done/EXT-OTA-ECO-20260911-utopia-mars-chronology-projection.md`  
 OTA-Quelle: `overtime-archive.org` PR #60 (Branch `canon/utopia-mars-corridor`)  
 Vertrag: ECO-ARC-0018-2026-DE (Timeline als Consumer, keine Source of Truth)
 
