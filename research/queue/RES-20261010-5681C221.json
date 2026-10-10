@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261010-5681C221",
+  "status": "queued",
+  "created": "2026-10-10T09:58:38+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "external-tasks/open/EXT-ENG-NXU-20260925-fungi-mars-settlement-ecopoiesis.md",
+  "source_ref": "92d87a0770d546032cb73fade252ca9e1c0185dd",
+  "source_blob_sha": "4331b71ab64f372e03b82d04471c276f62036f7b",
+  "title": "Pilz-/Myzel-Systeme als Mars-Infrastruktur: reale Grenzen von Perchlorat-Abbau, Regolith-Bodenbildung und Sukzession",
+  "question": "Was sagt die peer-reviewte Forschung zur Nutzung von Pilzen und Myzel-Systemen in Mars-Siedlungen und zur Ökopoiese? Konkret: Wie toxisch sind Perchlorate im Marsregolith für Organismen, und lässt sich Regolith realistisch mit Pilzen und mikrobiellen Gemeinschaften zu tragfähigem, künstlichem Substrat umbauen? Welche Rolle spielen Mykorrhiza und Saprophyten beim Nährstoffkreislauf, und wie tolerant sind Pilze unter Marsbedingungen (UV, Perchlorat, niedriger Druck/Atmosphäre, GCR)? Welche Sukzessionsschritte von sterilem/aufbereitetem Regolith zu komplexeren Böden sind plausibel, welche spekulativ — und wo muss der Kanon Fehlschläge, Kontamination und Grenzen statt eines linearen Fortschritts zeigen?",
+  "why_now": "Der offene External Task `EXT-ENG-NXU-20260925-fungi-mars-settlement-ecopoiesis` (mit dem Schwester-Task `mars-living-infrastructure`) verlangt genau diese Konsolidierung, verweist aber auf 'prior Mars-settlement research', die im Repository selbst nicht als externe Quelle vorliegt. Ohne realen Anker kann das geforderte 'engineered substrate / living infrastructure'-Kanon die dokumentierte Evidenzgrenze nicht sauber von spekulativer Erweiterung trennen.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "physically-established-constraint",
+    "speculative-extension",
+    "narrative-choice"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Perchlorat-Chemie des Marsregoliths, peer-reviewte Wachstums- und Bioremediationsstudien von Pilzen auf Mars-Regolith-Simulanten (z. B. MGS-1), Mykorrhiza-Symbiosen und strahlungs-/UV-tolerante Pilze (Chernobyl-, ISS-/Antarktis-Isolate).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.81,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine der bisherigen Topics berührt Bodenbiologie, Perchlorat-Bioremediation oder pilzbasierte Ökopoiese. Die früheren Mars-Topics betrafen Geologie/Reservoir (RES-20260829-862AA763) und Teilgravitation (RES-20260914-3AD6CB18), nicht die lebende Substrat-Infrastruktur. Der Gap ist ein direkt offener TODO dieses Repos.",
+  "fingerprint": "5681c221c75d19d9"
+}
