@@ -1,6 +1,6 @@
 {
   "id": "RES-20261011-3AE8B95C",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-11T10:54:58+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -36,5 +36,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriges OTA-Thema prueft die Mars-Eisressourcen-Verteilung, das Sublimationsregime bei ~600 Pa oder die Dampfdiffusion durch Ueberburden. Das naechstliegende Thema RES-20260919-7A1DB2F2 behandelt PV-Ertrag und Staubdeposition auf Mars/Mond, nicht die Eis-Ressourcen-/Transportphysik; RES-20260920-1C540EFB behandelt Mars-Waermeabfuhr von Radiatorflaechen, nicht subsurace vapour transport. Kein Rephrasing, keine Uebersetzung und keine kosmetische Verengung eines frueheren Themas.",
-  "fingerprint": "3ae8b95cd804fe2f"
+  "fingerprint": "3ae8b95cd804fe2f",
+  "updated_at": "2026-10-11T11:04:20+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/219"
 }
