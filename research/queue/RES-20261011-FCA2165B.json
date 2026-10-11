@@ -1,6 +1,6 @@
 {
   "id": "RES-20261011-FCA2165B",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-11T10:54:57+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -36,5 +36,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriges OTA-Thema behandelt die Energie- oder Thermodynamikbasis der Regolith-Wasserextraktion. Benachbarte Themen beruehren nur Randbereiche (RES-20260919-7A1DB2F2: PV-Ertrag/Staub auf Mars/Mond; RES-20260919-D820B5A7: Proviantmasse/Kalorien; RES-20260920-E760DC70: Kommunikationsarchitektur) und tragen keine der hier geprueften ISRU-Energieanker. Kein Rephrasing, keine Uebersetzung und keine kosmetische Verengung eines frueheren Themas.",
-  "fingerprint": "fca2165be654925d"
+  "fingerprint": "fca2165be654925d",
+  "updated_at": "2026-10-11T10:59:25+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/218"
 }
