@@ -1,6 +1,6 @@
 {
   "id": "RES-20261005-43D9854E",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-05T10:35:27+00:00",
   "source_project": "mishkenaz",
   "source_repository": "thomaspeterkueper/mishkenaz.org",
@@ -35,5 +35,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine der bisherigen Topics behandelt Klausebene, Wortstellung oder Alignment: RES-20260915-0CD0C163 ist rein phonologisch (Segmentinventar, Silbenkanon, Prosodie), RES-20260822-69C82BFA behandelt Wortbildungsanker (-t-, -il, -tha-) und Diaspora-Mechanismen, RES-20260915-D8CB8EC4 und -3ADB7DC0 betreffen Aspekt/Evidentialität und Lexikalisierungstypologie. Die Frage, ob 'verbinitial + rollenkodiert + bi'/la'-Quell/Ziel' überhaupt an dokumentierte Wortstellungs- und Kasussysteme anschließt, ist damit materiell unberührt.",
-  "fingerprint": "43d9854ec6eed3af"
+  "fingerprint": "43d9854ec6eed3af",
+  "updated_at": "2026-10-11T10:13:47+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/217"
 }
