@@ -1,0 +1,40 @@
+{
+  "id": "RES-20261011-3AE8B95C",
+  "status": "queued",
+  "created": "2026-10-11T10:54:58+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0034-2026-DE.md",
+  "source_ref": "bb0a055fe95dd2ff2aeadee35bb89478e021e433",
+  "source_blob_sha": "2655edd5eeb87949fb5089bc3872ade64ff9d6e5",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 226,
+  "context_paths": [
+    "src/content/documents/OTA-TEC-0086-2026-DE.md"
+  ],
+  "title": "Realwelt-Audit der Eis-Ressourcen- und Transportphysik in OTA-TEC-0034: Sublimationsregime bei ~600 Pa, Dampfdiffusion durch Ueberburden (Hudson 2007) und die Trennung Regolith-Poreneis vs. massive Eisagerstaetten (Dundas 2018/2023)",
+  "question": "Quellengestuetzter Realwelt-Audit der [R]/[H]-Schicht von OTA-TEC-0034-2026-DE (Abschnitte 3, 8, 15 und Evidenzaudit v1.3), gepinnt auf Revision v1.3, gegen primaere Mars-Eisstabilitaets-, Dampftransport- und Ressourcenliteratur. (1) Sublimationsregime: Pruefe die [R]-Aussage, bei fuer grosse Teile der Marsoberflaeche repraesentativem Druck um ~600 Pa (nahe Tripelpunkt 611,7 Pa) gehe Wassereis unter typischen Oberflaechenbedingungen 'ueberwiegend direkt' in Dampf ueber, samt Einschraenkung (Druck, Salzgehalt, Topographie). Berichte den realen Stand zu Tripelpunktnaehe des Marsmitteldrucks, Sublimations- vs. Verdampfungsdominanz und der Rolle von Salzloesungen/Kryobrines auf die Phasenbedingungen. (2) Dampfdiffusion durch Ueberburden: Verifiziere Hudson et al. (2007), 'Water vapor diffusion in Mars subsurface environments', JGR, DOI 10.1029/2006JE002815 — Existenz, Autorschaft, Journal, DOI — sowie die zitierten Werte 'etwa 3,7 ± 0,5 cm2/s fuer JSC Mars-1 bei 600 Pa auf 200 K extrapoliert' und 'kompakter Feinstaub lag deutlich niedriger'. Pruefe die Aussage, die Schutzwirkung der Ueberdeckung sei 'nicht rein diffusiv', gegen die reale Eisstabilitaets-/Dampftransportmodellierung (Temperaturprofil, Porenstruktur, Adsorption, Rekondensation; z. B. Mellon & Jakosky, Chevrier, Fisher, Piqueux) und benenne die massgeblichen Arbeiten. (3) Ressourcenklassen: Pruefe Dundas et al. (2018), 'Exposed subsurface ice sheets in the Martian mid-latitudes', Science, DOI 10.1126/science.aao1619 (>100 m Maechtigkeit, lokal 1-2 m unter der Oberflaeche) und Dundas et al. (2023), 'A Large New Crater Exposes the Limits of Water Ice on Mars', GRL, DOI 10.1029/2022GL100747 (~35 Grad N, relativ reiner regionaler Eisrest, fruehere Maechtigkeit mehrere zehn Meter) gegen die Primaerarbeiten und den weiteren Stand (SWIM-Kartierung, Mid-Latitude-Ice-Arbeiten, Reinheit/Regolithgehalt, Zugaenglichkeitstiefe). Ist die Trennung in poreneishaltigen Regolith (2-40 Gew.-%) und massive/naeherungsweise reine Eisagerstaetten als 'andere Abbau- und Prozessklasse' realweltlich gedeckt, und stimmen die Expositionstiefen von '1-2 m' mit dem tatsaechlich berichteten Bereich ueberein? (4) Designschwellen: Bewerte die [H]-Schwellen ('> 5 Gew.-%', '< 2 Gew.-%', 'Overburden < 2 m') als Szenario-/Designwerte gegen die reale Verteilung des near-surface ice statt als physikalische Grenzen. (5) Mond-PSR-Vergleichsklasse: Pruefe die [R]-Aussage, permanente Schattenregionen boeten 'teils reineres Eis' bei hoeherem Energiebedarf, gegen die reale Mond-Permafrost-/PSR-Literatur (z. B. LCROSS, LRO), nur soweit sie als Vergleichsklasse dient. (6) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen, die auf '[R] Modell-/Extrapolationswert' abzuschwaechen sind, und die [H]/[OFFEN] werden muessen; stelle fest, dass kein kanonischer Eisgehalt, keine kanonische Maechtigkeit, keine kanonische Expositionstiefe und kein kanonisches Abbauverfahren eingefuehrt werden darf. Ausdruecklich AUSGESCHLOSSEN: das NOXIA-Objekt wasserextraktor-mars-typ-m, Produktions-/Bauwerte [F], die Perchlorat-/Aufbereitungsprozesswahl (gehoert zu OTA-TEC-0086-2026-DE), die generationale Versionshistorie, alle NOXIA-/OTA-Balancing-Werte und die narrative Rahmung (sabotierbare Aussenposten, Baumeister-Artefakte).",
+  "why_now": "Die Ressourcenklassen-Trennung (Poreneis-Regolith vs. massive Eisagerstaetten) wurde erst in v1.3 mit Dundas 2018/2023 und dem Hudson-2007-Diffusionsanker quantitativ unterlegt und traegt seitdem zentrale Aussagen der Abschnitte 3, 5 und 11. Der Stand der Near-Surface-Ice-Kartierung und der Eisstabilitaetsmodellierung ist seither gewachsen, sodass zu pruefen ist, ob die Designschwellen und die Klassengrenze unveraendert tragfaehig bleiben.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewte Mars-Eisstabilitaets- und Dampftransportliteratur (Hudson et al. 2007, JGR, DOI 10.1029/2006JE002815; Standards zur subsurace ice stability) sowie die dokumentierten Expositionsbefunde von Dundas et al. (2018, Science, DOI 10.1126/science.aao1619) und Dundas et al. (2023, GRL, DOI 10.1029/2022GL100747), ergaenzt um die orbitale Near-Surface-Ice-Kartierung (SWIM-Klasse).",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.78,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriges OTA-Thema prueft die Mars-Eisressourcen-Verteilung, das Sublimationsregime bei ~600 Pa oder die Dampfdiffusion durch Ueberburden. Das naechstliegende Thema RES-20260919-7A1DB2F2 behandelt PV-Ertrag und Staubdeposition auf Mars/Mond, nicht die Eis-Ressourcen-/Transportphysik; RES-20260920-1C540EFB behandelt Mars-Waermeabfuhr von Radiatorflaechen, nicht subsurace vapour transport. Kein Rephrasing, keine Uebersetzung und keine kosmetische Verengung eines frueheren Themas.",
+  "fingerprint": "3ae8b95cd804fe2f"
+}
