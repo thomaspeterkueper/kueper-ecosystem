@@ -1,6 +1,6 @@
 {
   "id": "RES-20261009-CC828645",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-09T10:42:17+00:00",
   "source_project": "noxia",
   "source_repository": "thomaspeterkueper/noxiagame",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Distinct from the prior needs-model topic (RES-20260828-471FC77C), which covers Maslow/Max-Neef/Self-Determination Theory need dynamics and scored decision weighting. Habit automaticity, context-cue learning, automaticity thresholds and deliberation-bypass gates are a separate construct with a separate literature and are not addressed by any previous NOXIA/KUEPER research question.",
-  "fingerprint": "cc828645aa6931ba"
+  "fingerprint": "cc828645aa6931ba",
+  "updated_at": "2026-10-11T10:10:57+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/216"
 }
