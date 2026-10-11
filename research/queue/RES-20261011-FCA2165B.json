@@ -1,0 +1,40 @@
+{
+  "id": "RES-20261011-FCA2165B",
+  "status": "queued",
+  "created": "2026-10-11T10:54:57+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0034-2026-DE.md",
+  "source_ref": "bb0a055fe95dd2ff2aeadee35bb89478e021e433",
+  "source_blob_sha": "2655edd5eeb87949fb5089bc3872ade64ff9d6e5",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 226,
+  "context_paths": [
+    "src/content/documents/OTA-TEC-0086-2026-DE.md"
+  ],
+  "title": "Realwelt-Audit der Energiebasis in OTA-TEC-0034: thermodynamischer Referenzboden ~0,8 kWh/kg, das 12-Gew.-%-Szenario (~3,24 MJ/kg thermisch + ~0,86 MJ/kg Bohren ≈ 4,1 MJ/kg ≈ 1,14 kWh/kg) und das 0,9-3,9-kWh/kg-Band",
+  "question": "Quellengestuetzter Audit der [R]/[T]-Energie- und Zahlenbasis von OTA-TEC-0034-2026-DE (Abschnitte 5, 11, 20 und Evidenzaudit v1.3), gepinnt auf die im SOURCE.md vorliegende Revision v1.3 (2026-09-22), gegen primaere Mars-ISRU-/Sublimations- und Thermodynamikliteratur. (1) Thermodynamischer Referenzboden: Pruefe die als [R] gefuehrte Aussage, Aufheizung plus Phasenwechsel setzten einen physikalischen Mindestbedarf 'in der Groessenordnung von etwa 0,8 kWh/kg'. Zerlege den Wert gegen die reale Physik — Sublimationsenthalpie von Wassereis (~2,83 MJ/kg ≈ 0,79 kWh/kg), Schmelz-/Verdampfungsenthalpie (~0,33 bzw. ~2,26 MJ/kg), Waermekapazitaet von Basalt-/Marsregolith im Fenster 223-273 K, Eisgehaltsabhaengigkeit und Bezug pro kg H2O vs. pro kg Regolith — und stelle fest, ob 0,8 kWh/kg als Untergrenze haltbar ist, welcher Term sie dominiert und ob Bezugsrahmen und ein-/ausgeschlossene Terme praeziser gefasst werden muessen. (2) 12-Gew.-%-Szenario: Pruefe gegen die Primaerliteratur, ob 'fuer 12 Gew.-% Eis experimentell fuer Erwaermung von ~223 K auf 273 K plus Sublimation ungefaehr 3,24-5,04 MJ/kg H2O' sowie '3,24 MJ/kg thermische Trocknung plus ~0,86 MJ/kg elektrische Bohrenergie ≈ 4,1 MJ/kg ≈ 1,14 kWh/kg' so belegt sind — welche Arbeit das berichtet, welche Prozessgrenze (thermisch vs. elektrisch vs. Gesamtanlage, Waermerueckgewinnung) sie definiert und ob die Addition von Waerme- und Bohr-/Mechanikenergie energetisch und bilanziell zulaessig ist. (3) Quellenverifikation: Existiert Inglezakis (2026), 'Martian Aqua: Occurrence of Water and Appraisal of Acquisition Technologies', Advances in Space Research, DOI 10.1016/j.asr.2025.11.002, wie zitiert, und traegt sie die genannten Zahlen (12-Gew.-%-Szenario, Bohr-/Mechanikanteil)? Nenne die tatsaechlich berichteten Energiebaender und jede Abweichung, ohne stillschweigend zu substituieren. (4) 0,9-3,9-kWh/kg-Band: Pruefe, ob dieser als 'MISWE-/Simulantenszenario' gefuehrte Heizenergieanker in realen Mars-ISRU-/Simulanten-Extraktionsarbeiten (z. B. Ethridge/NASA NTRS 20110009919, Cole et al. 2023, Acta Astronautica, DOI 10.1016/j.actaastro.2023.04.035) in dieser Spanne gestuetzt ist und welchen Bezugsrahmen (Eisgehalt, Feed, Prozessgrenze) die Werte real haben. (5) Scope-Grenze: Pruefe, ob die Verweigerung eines universellen elektrischen kWh/kg-Gesamtwerts (Kuehlfalle/Kondensator, Vakuumpumpen, Foerdertechnik, Aufbereitung bleiben [OFFEN], kein erfundener COP) dem realen Stand publizierter ISRU-System- und Missionsstudien entspricht oder ob diese bereits belastbare Gesamtbilanzen liefern. (6) Reklassifiziere: nenne die Saetze, die [R]/[T] bleiben koennen, die als '[R] Prozess-/Heizenergieanker, keine Anlagenbilanz' praeziser zu fassen sind, und die [OFFEN] bleiben muessen; stelle fest, dass kein kanonischer kWh/kg-Wert, keine kanonische Produktionsrate und kein NOXIA-Balancingwert eingefuehrt werden darf. Ausdruecklich AUSGESCHLOSSEN: die Produktionsrate 200-500 L/Tag [F], Bauzeit/Kosten [F], das NOXIA-Objekt wasserextraktor-mars-typ-m, die generationale Versionshistorie und alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Das Dossier hat seine Energiebezugsgroesse erst in v1.3 (2026-09-22) ausdruecklich neu gefasst (thermischer Anker vs. Anlagenstrom, 12-Gew.-%-Szenario, Inglezakis 2026). Die reale ISRU-Energiebilanzliteratur (inkl. neuer Systemauswertungen und Microwave-In-Situ-Extraction-Studien) ist damit unmittelbar anschlussfaehig, und die Frage, ob der '~0,8 kWh/kg'-Boden und die 4,1-MJ/kg-Addition belastbar sind, ist entscheidungsrelevant fuer jede spaetere OTA-Energieaussage.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Thermodynamik des Wassers (Sublimationsenthalpie ~2,83 MJ/kg, Schmelz-/Verdampfungsenthalpie, Waermekapazitaet von Basaltregolith) sowie die reale Mars-ISRU- und Simulanten-Extraktionsliteratur, insbesondere Inglezakis (2026, Adv. Space Res., DOI 10.1016/j.asr.2025.11.002), Cole et al. (2023, Acta Astronautica, DOI 10.1016/j.actaastro.2023.04.035) und NASA/NTRS-ISRU-Energieangaben (z. B. NTRS 20110009919).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.9,
+  "relevance_score": 0.79,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriges OTA-Thema behandelt die Energie- oder Thermodynamikbasis der Regolith-Wasserextraktion. Benachbarte Themen beruehren nur Randbereiche (RES-20260919-7A1DB2F2: PV-Ertrag/Staub auf Mars/Mond; RES-20260919-D820B5A7: Proviantmasse/Kalorien; RES-20260920-E760DC70: Kommunikationsarchitektur) und tragen keine der hier geprueften ISRU-Energieanker. Kein Rephrasing, keine Uebersetzung und keine kosmetische Verengung eines frueheren Themas.",
+  "fingerprint": "fca2165be654925d"
+}
