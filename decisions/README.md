@@ -96,6 +96,7 @@ Betroffene Repositories: ...
 - [ECO-ARC-0034-2026-DE — Mehrfach-Agenten-Zusammenarbeit (konsolidierte Fassung)](./ECO-ARC-0034-2026-DE.md) — `accepted`
 - [ECO-ARC-0030-2026-DE — Private Manuscript Repositories](./ECO-ARC-0030-2026-DE.md) — `accepted`
 - [ECO-ARC-0031-2026-DE — Registry-Erweiterung, Buecherwelten, Engineering-Code](./ECO-ARC-0031-2026-DE.md) — `accepted`
+- [ECO-ARC-0039-2026-DE — Forschungsdokumente: Revision, Evidenz und Visualisierung](./ECO-ARC-0039-2026-DE.md) — `proposed`
 
 ## Erste mögliche Entscheidungen
 
