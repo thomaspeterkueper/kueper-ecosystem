@@ -20,6 +20,13 @@ status/governance-sweep.md (human-readable), both always overwritten.
 A finding is only turned into an External Task in this repository's own
 inbox if its stable id was not already present in the previous run's
 report -- repeat sweeps of an unresolved issue do not spam new tasks.
+
+That escalation path is itself an EXT-ECO-ECO-<date>-001.md file in this
+repository's open/ inbox, so the sweep must not report its own escalation
+artifacts back to itself: each run would otherwise escalate the previous
+run's escalation (observed as a daily chain from 2026-09-24 to 2026-10-10).
+Self-addressed task files (source and target both ECO) are therefore
+skipped by the task_addressed_to_eco check; see is_eco_addressed_task.
 """
 
 from __future__ import annotations
@@ -244,6 +251,19 @@ class GitHub:
         return None
 
 
+def is_eco_addressed_task(text: str) -> bool:
+    """True if the file is a task addressed to ECO from another project.
+
+    Self-addressed files (source *and* target ECO) return False: ECO-ARC-0006
+    requires source != target, and in the control plane these are exactly the
+    sweep's own escalation artifacts. Reporting them made every run escalate
+    the previous run's escalation (the EXT-ECO-ECO-<date>-001 daily chain).
+    """
+    if not re.search(r"^target:\s*ECO\s*$", text, re.MULTILINE):
+        return False
+    return re.search(r"^source:\s*ECO\s*$", text, re.MULTILINE) is None
+
+
 def check_repositories(result: SweepResult, registry: dict[str, Any], gh: GitHub) -> None:
     for p in registry.get("projects", []):
         if not p.get("enabled") or p.get("provider") != "github":
@@ -274,7 +294,7 @@ def check_repositories(result: SweepResult, registry: dict[str, Any], gh: GitHub
                 if not f["name"].endswith(".md"):
                     continue
                 text = gh.text(repo, f["path"], branch)
-                if text and re.search(r"^target:\s*ECO\s*$", text, re.MULTILINE):
+                if text and is_eco_addressed_task(text):
                     result.add(
                         "task_addressed_to_eco", "info",
                         f"Offener, an ECO adressierter Task in '{pid}': {f['name']}",
