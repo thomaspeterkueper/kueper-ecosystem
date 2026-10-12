@@ -1,10 +1,10 @@
 # Governance-Sweep — Bericht
 
-Erzeugt: 2026-10-11T12:40:48.043305+00:00
+Erzeugt: 2026-10-12T15:13:07.354629+00:00
 
-**19 Fund(e)** — 0 error, 0 warning, 19 info
+**20 Fund(e)** — 0 error, 0 warning, 20 info
 
-## task_addressed_to_eco (19)
+## task_addressed_to_eco (20)
 - **[info]** Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20260924-001.md
 - **[info]** Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20260925-001.md
 - **[info]** Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20260926-001.md
@@ -22,6 +22,7 @@ Erzeugt: 2026-10-11T12:40:48.043305+00:00
 - **[info]** Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20261008-001.md
 - **[info]** Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20261009-001.md
 - **[info]** Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20261010-001.md
+- **[info]** Offener, an ECO adressierter Task in 'ecosystem': EXT-ECO-ECO-20261011-001.md
 - **[info]** Offener, an ECO adressierter Task in 'ecosystem': EXT-ENG-ECO-20261002-kueper-products-bootstrap.md
 - **[info]** Offener, an ECO adressierter Task in 'ecosystem': EXT-KUE-ECO-20260924-001.md
 
