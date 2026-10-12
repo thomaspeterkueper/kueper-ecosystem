@@ -1,6 +1,6 @@
 {
   "id": "RES-20261012-0D0D5A86",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-10-12T11:01:34+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -35,5 +35,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein vorheriger Research-Topic und keine offene externe Aufgabe behandelt die Obsidian-Materialwissenschaft oder -Archaeometrie (Grep ueber external-tasks/, docs/, research/ findet 'Obsidian' nur in den Werkdokumenten selbst). Der Audit erschliesst damit ein fachlich neues Feld (Archaeometrie/Magnetomineralogie) fuer das OTA-Archiv.",
-  "fingerprint": "0d0d5a868f501403"
+  "fingerprint": "0d0d5a868f501403",
+  "updated_at": "2026-10-12T11:11:11+00:00",
+  "last_error": "candidate for ota-archive-evidence lacks a strong source type marker"
 }
