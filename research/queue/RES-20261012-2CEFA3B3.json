@@ -1,6 +1,6 @@
 {
   "id": "RES-20261012-2CEFA3B3",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-12T11:01:33+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -36,5 +36,7 @@
     "RES-20260921-966FA674"
   ],
   "novelty_reason": "Die einzige thematisch beruehrte Vorarbeit (RES-20260921-966FA674, Audit der OTA-SCI-0060-Magnetorezeptions-Schicht) klaerte die humane Magnetorezeption, Alpha-ERD und biogenes Magnetit im Gehirn. Der Hör-Stein-Audit prueft einen anderen, dort nicht behandelten Gegenstand: die Gesteins-/Werkstoffphysik des als Lodestone gefuehrten Objekts (Hc, Feldabnahme, LRM, Sauerland-Geologie) und die artefaktuebergreifende Materialaequivalenz-Behauptung. Item 6 (biogenes Magnetit als Sensor) wird ausdruecklich nur als geerbte Praemisse zitiert und nicht erneut gestellt.",
-  "fingerprint": "2cefa3b3914a3872"
+  "fingerprint": "2cefa3b3914a3872",
+  "updated_at": "2026-10-12T11:06:08+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/220"
 }
