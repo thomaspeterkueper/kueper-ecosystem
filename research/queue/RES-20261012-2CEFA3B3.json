@@ -1,0 +1,40 @@
+{
+  "id": "RES-20261012-2CEFA3B3",
+  "status": "queued",
+  "created": "2026-10-12T11:01:33+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0123-2026-DE.md",
+  "source_ref": "6776cb7c2a06be726ef42d31da6e86b4fa63f372",
+  "source_blob_sha": "a7f5c963d8cfd63e04447a20446d7d4b1ec4327c",
+  "title": "Realwelt-Audit der [R-Anker]-Physik des Hör-Steins (OTA-TEC-0123, v1.3, AKTIV): Lodestone-Koerzitivität, µT-Feldstärke bei 25-30 cm, blitzinduzierte Remanenz (LRM) und Magnetit im Devon des Märkischen Sauerlands",
+  "question": "Quellengestuetzter Realwelt-Audit der [R-Anker]/[R]/[T]-Schicht von OTA-TEC-0123-2026-DE (Abschnitte I, 2.1, 2.2, III F-Tim-1, IV.1, VIII), gepinnt auf Revision v1.3. Das Dokument traegt mehrere konkrete numeric R-Anker-Anker, die bisher nirgends belegt sind und deren geplante SCI-Basis (OTA-SCI-0085 'Magnetit-Eisenstein/Lodestone') im Repository nicht existiert (die Nummer 0085 ist an OTA-SCI-0085-2164-EN, Oral-Pathobiont-Translocation, vergeben). (1) Lodestone-Eigenschaften: Pruefe 'Lodestone / Magnetit-Eisenstein' als 'natuerlich magnetisierten Magnetit' [R-Anker] und die Zahlen 'Hc ~ 10-30 mT' gegen die reale Gesteinsmagnetismus-Literatur (Koerzitivfeld, Remanenz, Saettigungsmagnetisierung von Magnetit vs. natuerlich magnetisiertem Lodestone; Verwey-Uebergang, Kornfraktion SD/PSD/MD). Ist Hc 10-30 mT fuer natuerlichen Magnetit-Lodestone belastbar, zu hoch oder zu niedrig, und welche Groessenordnung meldet die Primaerliteratur? (2) Feldstaerke: Verifiziere 'erzeugt in ~25-30 cm Abstand ein Feld im µT-Bereich (Groessenordnung 1-20 µT)' gegen die reale Feldabnahme eines magnetisierten Dipols/Koerper endlicher Ausdehnung (Geometrie, Momenthypothese, Randbedingungen). Ist die Kombination aus Hc 10-30 mT, Probenmasse in Handgroesse und 1-20 µT bei 25-30 cm physikalisch konsistent, und welcher Term dominiert die Abschaetzung? (3) LRM: Pruefe die Kernthese 'einmalig durch Blitzschlag (LRM) magnetisiert' als Mechanismus fuer ein seit der Gesteinsbildung STABILES gerichtetes Gleichfeld gegen die reale Literatur zur lightning-induced remanent magnetization (LRM) in Gesteinen/Boden (Verrier & Rochette und Folgeliteratur; Stabilitaet, Koerzivitaetsspektrum, Dominanz harter vs. weicher TRM nach Blitzschlag, chemische/thermische Remanenz). Ist ein durch Blitz einmalig magnetisierter Magnetitstein als stabiler Ein-Ereignis-Traeger real plausibel, und wie unterscheidet sich LRM von TRM/CRM? (4) Regionale Geologie: Pruefe 'Das Maerkische Sauerland ... Magnetit (Fe3O4) tritt hier in Verbindung mit devonischen Schichten auf' [R] und die 'Eisenerzformation Sauerland (Devonische Schichten)' gegen die reale Lagerstaettenkunde des Rheinischen Schiefergebirges/Sauerlands (Devonische Roteisenstein-/Magnetitvorkommen um Brilon, Warstein, Schmallenberg; Genese, Magnetitfuehrung, tatsaechliche natuerliche Remanenz). (5) Materialaequivalenz: Pruefe den Satz 'Magnetit = dieselbe Verbindung wie in der Kette (OTA-SCI-0059) und im Obsidian der Splitterlupe (OTA-SCI-0083) - alle drei Artefakte haben denselben magnetischen Grundstoff' [R] gegen die Materialangaben der zitierten Dossiers (OTA-SCI-0059: meteoritisches Eisen als Fe-Ni-Kamacit/Taenit mit nur untergeordneten Magnetit-Mikrodomaenen; OTA-TEC-0124: Obsidian mit Magnetit-Nanoeinschluessen). Ist die Gleichsetzung 'derselbe magnetische Grundstoff' realweltlich haltbar oder eine unzulaessige Vereinfachung (Magnetit vs. Fe-Ni-Metall vs. glashosted Nano-Magnetit)? (6) Biogenes Magnetit als Sensor: Der Satz 'Magnetfeldmodulation im Hz-Bereich, µT-Groessenordnung stimuliert biogenes Magnetit im Gehirn' [R-Anker/F] uebernimmt die bereits auditierte Praemisse aus OTA-SCI-0060 - hier nur als geerbte Grenze zu zitieren, NICHT erneut zu pruefen. (7) Reklassifiziere: nenne die Saetze, die [R]/[R-Anker] bleiben koennen, die zu '[R] Modell-/Extrapolationswert' abzuschwaechen sind und die [T]/[F]/[OFFEN] bleiben muessen; stelle fest, dass keine kanonische Hc-Zahl, keine kanonische Feldstaerke und kein kanonischer Magnetisierungsmechanismus eingefuehrt werden darf. AUSGESCHLOSSEN: die gesamte Temenon-/FTB-Theorieschicht, die Beta-/Temenon-Taxonomie (OTA-FND-0025), die Narration um Tim/Mia und die Kette, sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Der Hör-Stein ist mit v1.3 (AKTIV) das zweitneueste kanonisierte Proto-Temenon-Objekt des zuletzt erweiterten Sauerland-Clusters ('Die Kette vom Hexenteich'). Das Dokument markiert selbst 'SCI-Basis ausstehend: OTA-SCI-0085 (Magnetit-Eisenstein/Lodestone - geplant)'; diese Basis fehlt, und die [R-Anker]-Zahlen (Hc 10-30 mT; 1-20 µT bei 25-30 cm; LRM) sind die einzige reale Stuetze der Figur. Ohne Audit ist nicht entscheidbar, ob die Objektphysik plausibel ist oder eine ungepruefte Fiktion.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker",
+    "R",
+    "T",
+    "F"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Natuerlich magnetisierter Magnetit (Lodestone): Koerzitivfeld/Remanenz/Saettigungsmagnetisierung; Dipolfeldabnahme auf µT-Niveau bei ~25-30 cm; lightning-induced remanent magnetization (LRM) als Stabilitaetsmechanismus; Magnetitfuehrung der devonischen Roteisenstein-Lagerstaetten des Rheinischen Schiefergebirges (Brilon/Warstein); Abgrenzung magnetitischer vs. Fe-Ni-metallischer vs. glashosted Nano-Magnetit-Traeger.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260921-966FA674"
+  ],
+  "novelty_reason": "Die einzige thematisch beruehrte Vorarbeit (RES-20260921-966FA674, Audit der OTA-SCI-0060-Magnetorezeptions-Schicht) klaerte die humane Magnetorezeption, Alpha-ERD und biogenes Magnetit im Gehirn. Der Hör-Stein-Audit prueft einen anderen, dort nicht behandelten Gegenstand: die Gesteins-/Werkstoffphysik des als Lodestone gefuehrten Objekts (Hc, Feldabnahme, LRM, Sauerland-Geologie) und die artefaktuebergreifende Materialaequivalenz-Behauptung. Item 6 (biogenes Magnetit als Sensor) wird ausdruecklich nur als geerbte Praemisse zitiert und nicht erneut gestellt.",
+  "fingerprint": "2cefa3b3914a3872"
+}
