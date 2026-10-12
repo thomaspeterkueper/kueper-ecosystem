@@ -1,0 +1,39 @@
+{
+  "id": "RES-20261012-0D0D5A86",
+  "status": "queued",
+  "created": "2026-10-12T11:01:34+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0124-2026-DE.md",
+  "source_ref": "6776cb7c2a06be726ef42d31da6e86b4fa63f372",
+  "source_blob_sha": "27eeb172d691e2a483c47679d6a32413ead2b075",
+  "title": "Realwelt-Audit der [R-Anker]-Archäometrie der Splitterlupe (OTA-TEC-0124, v1.0, AKTIV): Obsidian-Identifikation, pXRF-Herkunftsanalyse, FTIR-Hydratationsdatierung, magnetische Domänen und die fehlende SCI-Obsidianbasis",
+  "question": "Quellengestuetzter Realwelt-Audit der [R-Anker]-Schicht von OTA-TEC-0124-2026-DE (Abschnitte I, 2.1, 2.2, 2.3, 2.4, V), gepinnt auf Revision v1.0. Das Protokoll stuetzt sich auf 'OTA-SCI-0083 (Obsidian: Materialwissenschaft...)' und 'OTA-SCI-0084 (Obsidian: Archaeometrie...)'; diese Signaturen sind im Repository jedoch an fachfremde Dossiers vergeben (OTA-SCI-0083 = Eigenzeit/optische Atomuhren; OTA-SCI-0084 = Kryoporoese Oberflaeche auf Eiswelten). Eine dokumentierte reale Obsidian-Basis fehlt damit vollstaendig - die [R-Anker] sind derzeit unbelegt. (1) Identifikation: Pruefe die materialespezifischen [R-Anker] gegen die reale Obsidian-/Glasliteratur: 'Konchoidaler Bruch -> eindeutig Glas', 'Dichte ~2,3-2,4 g/cm3 -> konsistent mit Obsidian', 'Mohs-Haerte ritzt Fensterglas -> H ~5-6', 'Schwach reagierend auf Stabmagneten -> Magnetit-Einschluesse'. Sind die Bereiche korrekt und unterscheidungskraeftig, und welche realen Obsidian-Kennwerte (Dichte, Haerte, magnetische Suszeptibilitaet) meldet die Primaerliteratur? (2) Herkunftsanalyse: Pruefe die pXRF-Methodik und die vorgeschlagenen Quellengruppen 'Karpathisch 1 (Tokaj)', 'Karpathisch 2a/2b', 'Lipari/Pantelleria', 'Mexiko/Mesoamerika' mit den Spurenelementen 'Rb, Sr, Zr, Y, Nb' gegen die reale Obsidian-Sourcing-Literatur (pXRF-Referenzdatensaetze, Elementdiskriminanz, Nachweisgrenzen, Zuverlaessigkeit; tatsaechliche mitteleuropaeische Verbreitung karpathischer bzw. mediterraner Obsidiane im Neolithikum). Insbesondere: Lassen sich diese Gruppen mit 'Rb, Sr, Zr, Y, Nb' ueberhaupt zuverlaessig trennen, und gibt es real Obsidian in der Bilsteinhoehle/Warstein oder im Sauerland, oder muss ein Fund dort Import sein? (3) Hydratationsdatierung: Pruefe die FTIR-basierte 'H2O-Diffusionsschicht'-Methode und die Angaben 'Politur: d = O(10 µm); Bruchkante: d << 1 µm' gegen die reale Obsidian-Hydration-Dating-Literatur (Diffusionsrate als Funktion von Temperatur/Zusammensetzung, Sekundaerhydratation, Kalibrierungsprobleme, Anfaelligkeiten; ob Dicke allein datierbar ist). (4) Magnetische Domänen/TRM: Pruefe 'Magnetische Phasen: SD, PSD, MD, SP - alle vier vorhanden' [R-Anker] und 'Palaeomagnetische Signatur: Stabil, TRM-fixiert' [R-Anker], ferner die Mikrostruktur-Hypothese 'hohes SP-Nanomagnetit-Anteil, starke palaeomagnetische Signatur' [T] gegen die reale Literatur zur Magnetomineralogie vulkanischer Glaeser/Obsidiane (Magnetit-Nanoeinschluesse, Kornfraktion, TRM/TMR-Stabilitaet, AC-Entmagnetisierungsverhalten), und ob ein Obsidian als stabiler TRM-Traeger taugt. (5) Reklassifiziere: nenne die Saetze, die [R]/[R-Anker] bleiben koennen, die zu '[R] Quelleninhalt/Methodenanker' abzuschwaechen sind (insb. die [OFFEN]-Provenienzzuordnung und die spezifischen FTIR-Werte) und die [T]/[F]/[OFFEN] bleiben muessen; stelle fest, dass keine kanonische Dichte, Haerte, Provenienzgruppe, Hydratationsdicke oder Domänenpopulation eingefuehrt werden darf. AUSGESCHLOSSEN: die Splitterlupe als Werkobjekt und ihr Loeschmechanismus gegen die Kette, Antons Interpretation, die Narration um Anton/Mia/Tim sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Die Splitterlupe ist neben Hör-Stein und Kette das dritte vollstaendig kanonisierte Artefakt des zuletzt erweiterten Sauerland-Clusters (AKTIV). Ihre gesamte 'materialwissenschaftlich korrekte' Grundlage (Dichte, Haerte, pXRF, FTIR, Domänen) wird als [R-Anker] gefuehrt, ist aber an SCI-Signaturen gekoppelt, die faktisch andere Themen tragen - die reale Basis fehlt. Ohne Audit ist unklar, welche der als sachlich korrekt gezeichneten Materialaussagen tragen und welche reine Fiktion sind.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker",
+    "R",
+    "T",
+    "F",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Obsidian-Identifikation und -Archaeometrie: konchoidaler Bruch, Dichte 2,3-2,4 g/cm3, Mohs 5-6; pXRF-Spurenelementsourcing (Karpathisch/Tokaj, Lipari/Pantelleria, Mesoamerika) mit Rb/Sr/Zr/Y/Nb; FTIR-Obsidian-Hydratation-Dating und ihre Kalibrierungsgrenzen; Magnetomineralogie vulkanischer Glaeser (Magnetit-Nanoeinschluesse, SD/PSD/MD/SP, TRM); natuerliches Obsidianvorkommen bzw. neolithischer Import im Sauerland (Bilsteinhoehle, Warstein).",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein vorheriger Research-Topic und keine offene externe Aufgabe behandelt die Obsidian-Materialwissenschaft oder -Archaeometrie (Grep ueber external-tasks/, docs/, research/ findet 'Obsidian' nur in den Werkdokumenten selbst). Der Audit erschliesst damit ein fachlich neues Feld (Archaeometrie/Magnetomineralogie) fuer das OTA-Archiv.",
+  "fingerprint": "0d0d5a868f501403"
+}
