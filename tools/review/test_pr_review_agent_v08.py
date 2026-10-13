@@ -55,6 +55,23 @@ class ReviewBudgetDedupTests(unittest.TestCase):
         self.assertIn("head=fresh", db.calls[0][1]["p_reason"])
         self.assertEqual(task["payload"]["head_sha"], "stale")
 
+    def test_no_policy_fetches_current_head_from_github(self):
+        from unittest.mock import patch
+        task = {"pr_url": "https://github.com/owner/repo/pull/1"}
+        gate = {"allowed": True, "reason": "no-required-check-policy", "head_sha": None}
+        with patch.object(v08.merge_gate, "_run_json", return_value={
+            "headRefOid": "current-head", "state": "OPEN"
+        }) as gh:
+            self.assertEqual(v08.current_pr_head(task, gate), "current-head")
+        gh.assert_called_once()
+
+    def test_closed_pr_cannot_supply_head(self):
+        from unittest.mock import patch
+        with patch.object(v08.merge_gate, "_run_json", return_value={
+            "headRefOid": "old-head", "state": "MERGED"
+        }):
+            self.assertIsNone(v08.current_pr_head({"pr_url": "https://github.com/owner/repo/pull/1"}, {}))
+
     def test_missing_live_head_does_not_reserve_budget(self):
         from unittest.mock import patch
         task = {"id": "t", "repository": "owner/repo", "pr_url": "https://github.com/owner/repo/pull/1"}
