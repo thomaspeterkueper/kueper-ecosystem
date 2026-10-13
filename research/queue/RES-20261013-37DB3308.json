@@ -1,6 +1,6 @@
 {
   "id": "RES-20261013-37DB3308",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-13T10:44:47+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No prior topic in this project touches tardigrades, Dsup/CAHS, or radiation biology. The only earlier biology-adjacent candidates were the Miller-Urey prebiotic-atmosphere question and the interstellar erythrulose detection, which are unrelated to organismal stress tolerance.",
-  "fingerprint": "37db330894776e87"
+  "fingerprint": "37db330894776e87",
+  "updated_at": "2026-10-13T10:49:56+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/221"
 }
