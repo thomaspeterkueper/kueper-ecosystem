@@ -78,7 +78,7 @@ class ReviewBudgetDedupTests(unittest.TestCase):
         db = FakeDB()
         with patch.object(v08, "required_ci_gate", return_value={
             "allowed": True, "reason": "no-required-check-policy", "head_sha": None, "details": [],
-        }), patch.object(v08.v07, "changed_paths", return_value=[]), patch.object(
+        }), patch.object(v08, "current_pr_head", return_value=None), patch.object(v08.v07, "changed_paths", return_value=[]), patch.object(
             v08.v07, "select_review_model", return_value=("deepseek-v4-flash", "routine")
         ):
             result = v08.cost_aware_review_task(task, db)
