@@ -90,6 +90,17 @@ def cost_aware_review_task(task: dict[str, Any], db: Any, *, gate_prechecked: bo
 
     paths = v07.changed_paths(pr_url) if pr_url else ["__UNKNOWN_CHANGED_PATHS__"]
     model, model_reason = v07.select_review_model(task, paths)
+    # Reconcile the task's cached SHA against the live PR head before reserving budget.
+    if pr_url:
+        live_gate = required_ci_gate(task)
+        if not live_gate.get("allowed"):
+            return blocked_gate_result(task, live_gate)
+        live_head = live_gate.get("head_sha")
+        if not live_head:
+            return blocked_gate_result(task, {"reason": "missing-current-head", "head_sha": None, "details": []})
+        task = dict(task)
+        task["payload"] = dict(task.get("payload") or {})
+        task["payload"]["head_sha"] = live_head
     reason = review_reason(task, model_reason)
 
     if already_reserved_today(db, task, reason):
