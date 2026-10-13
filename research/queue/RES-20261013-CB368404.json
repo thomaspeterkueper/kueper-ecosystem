@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261013-CB368404",
+  "status": "queued",
+  "created": "2026-10-13T10:44:49+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "external-tasks/open/SSF-REQ-20261006-longitudinal-brain-health.md",
+  "source_ref": "e5bd5be92682211dd646c5ddaa2d626e8ba1346a",
+  "source_blob_sha": "8a446efc5b8ed52aa00ac7cf8e12af9afccc8c0a",
+  "title": "Verify the Lancet-Commission and WHO evidence base and the PAF-vs-individual-risk framing for the life-course brain-health path",
+  "question": "Open request SSF-REQ-20261006 (priority high) instructs SSF to use 'the Lancet 14-factor model and WHO 2026 multidomain guidance as evidence anchors' for a life-course brain-health path. What is externally verifiable? Specifically: (a) what does the current Lancet Commission on dementia prevention, intervention and care report (2020 and 2024 updates, plus any 2026 revision) list as the modifiable risk factors, how many are there, and what population attributable fraction is assigned to each and to the combined model — and is '14-factor' the correct current count? (b) Does a WHO '2026 multidomain guidance' on dementia risk reduction actually exist in that form, and what does the relevant WHO guideline/position actually recommend (which domains, what strength of recommendation)? (c) For each factor, which evidence is association/observational versus trial/intervention evidence (e.g. hypertension, hearing-aid use, education/cognitive reserve), so that the path can separate risk reduction from guaranteed prevention and population attributable risk from individual risk? (d) Which claims must be labelled as modelling-dependent (PAF calculations depend on prevalence and interaction assumptions) rather than direct measurements?",
+  "why_now": "SSF-REQ-20261006-longitudinal-brain-health is an open, high-priority request whose whole didactic integrity rests on two named external anchors (Lancet factor count/model, WHO 2026 guidance). If the factor count or the WHO document is misstated, every downstream module and quiz inherits a citable error.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Lancet Commission dementia prevention/intervention/care reports (2020, 2024) and their risk-factor/PAF model; WHO dementia risk-reduction guidance and its recommended multidomain interventions.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.8,
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior topic addresses dementia/brain-health epidemiology, the Lancet Commission risk-factor model, or population attributable fraction framing. Earlier candidates were single-claim corrections (caramelization, red wine, Miller-Urey) and Mars/raw-material audits, none of which overlap.",
+  "fingerprint": "cb368404926c3fb1"
+}
