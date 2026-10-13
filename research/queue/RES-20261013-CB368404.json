@@ -1,6 +1,6 @@
 {
   "id": "RES-20261013-CB368404",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-13T10:44:49+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No prior topic addresses dementia/brain-health epidemiology, the Lancet Commission risk-factor model, or population attributable fraction framing. Earlier candidates were single-claim corrections (caramelization, red wine, Miller-Urey) and Mars/raw-material audits, none of which overlap.",
-  "fingerprint": "cb368404926c3fb1"
+  "fingerprint": "cb368404926c3fb1",
+  "updated_at": "2026-10-13T10:53:13+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/222"
 }
