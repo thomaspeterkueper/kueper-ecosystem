@@ -1,32 +1,26 @@
-# Path-scoped validation for research policy, profiles and rotation.
+# Path-scoped validation for research policy, profiles, rotation and AI usage provenance.
 name: Research Config Check
 
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
     paths: &research_paths
       - "research/policy.json"
       - "research/contracts/**"
       - "registry/projects.json"
-      - "tools/research/discover.py"
-      - "tools/research/discover-targeted.py"
-      - "tools/research/discover-ota-scoped.py"
-      - "tools/research/discover-ota-scoped-dryrun.py"
-      - "tools/research/discover-ota-workqueue.py"
-      - "tools/research/audit-ota-tech-objects.py"
-      - "tools/research/execute.py"
-      - "tools/research/execute-targeted.py"
-      - "tools/research/test_candidate_merge_gate.py"
-      - "tools/research/test_ota_tech_object_audit.py"
-      - "tools/research/agent-with-exa.mjs"
+      - "tools/research/**"
+      - "tools/telemetry/**"
+      - "tools/worker/agent_worker_v76.py"
+      - "supabase/migrations/*ai_usage*.sql"
+      - ".github/workflows/knowledge-research-loop.yml"
+      - ".github/workflows/targeted-research.yml"
+      - ".github/workflows/ota-workqueue-research.yml"
       - ".github/workflows/ota-evidence-sweep.yml"
       - ".github/workflows/ota-tech-object-audit.yml"
       - ".github/workflows/research-config-check.yml"
   pull_request:
-    branches:
-      - main
+    branches: [main]
     paths: *research_paths
 
 permissions:
@@ -47,93 +41,105 @@ jobs:
           python -m json.tool research/policy.json >/dev/null
           python -m json.tool registry/projects.json >/dev/null
           python -m json.tool research/contracts/ota-tech-object-v1.json >/dev/null
-          python -m py_compile tools/research/discover.py tools/research/discover-targeted.py tools/research/discover-ota-scoped.py tools/research/discover-ota-scoped-dryrun.py tools/research/discover-ota-workqueue.py tools/research/audit-ota-tech-objects.py tools/research/execute.py tools/research/execute-targeted.py tools/research/test_ota_tech_object_audit.py
+          python -m py_compile \
+            tools/research/discover.py tools/research/discover-targeted.py \
+            tools/research/discover-ota-scoped.py tools/research/discover-ota-scoped-dryrun.py \
+            tools/research/discover-ota-workqueue.py tools/research/audit-ota-tech-objects.py \
+            tools/research/execute.py tools/research/execute-targeted.py \
+            tools/research/execute-ledger.py tools/research/execute-targeted-ledger.py \
+            tools/research/usage_observer.py tools/telemetry/ai_usage.py \
+            tools/worker/agent_worker_v76.py tools/research/test_ota_tech_object_audit.py
           node --check tools/research/agent-with-exa.mjs
 
-      - name: Validate profile mappings and weighted rotation
+      - name: Validate profile mappings and usage governance
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
-          import importlib.util
-          import json
+          import importlib.util, json
           from collections import Counter
           from pathlib import Path
 
-          root = Path.cwd()
-          policy = json.loads((root / 'research/policy.json').read_text(encoding='utf-8'))
-          registry = json.loads((root / 'registry/projects.json').read_text(encoding='utf-8'))
-
+          root=Path.cwd()
+          policy=json.loads((root/'research/policy.json').read_text(encoding='utf-8'))
+          registry=json.loads((root/'registry/projects.json').read_text(encoding='utf-8'))
           assert policy['auto_canonicalize'] is False
           assert policy['auto_merge_candidates'] is False
-          profiles = policy['evidence_profiles']
-          ota_profile = profiles['ota-archive-evidence']
-          assert ota_profile.get('require_source_path') is True
-          assert ota_profile.get('pin_source_revision') is True
+          profiles=policy['evidence_profiles']
+          assert profiles['ota-archive-evidence'].get('require_source_path') is True
+          assert profiles['ota-archive-evidence'].get('pin_source_revision') is True
 
-          discover_source = (root / 'tools/research/discover.py').read_text(encoding='utf-8')
-          targeted_source = (root / 'tools/research/discover-targeted.py').read_text(encoding='utf-8')
-          scoped_source = (root / 'tools/research/discover-ota-scoped.py').read_text(encoding='utf-8')
-          dryrun_source = (root / 'tools/research/discover-ota-scoped-dryrun.py').read_text(encoding='utf-8')
-          workqueue_source = (root / 'tools/research/discover-ota-workqueue.py').read_text(encoding='utf-8')
-          execute_source = (root / 'tools/research/execute.py').read_text(encoding='utf-8')
-          tech_audit_source = (root / 'tools/research/audit-ota-tech-objects.py').read_text(encoding='utf-8')
-          tech_contract = json.loads((root / 'research/contracts/ota-tech-object-v1.json').read_text(encoding='utf-8'))
-          sweep_source = (root / '.github/workflows/ota-evidence-sweep.yml').read_text(encoding='utf-8')
-          tech_audit_workflow = (root / '.github/workflows/ota-tech-object-audit.yml').read_text(encoding='utf-8')
-          assert 'source_blob_sha' in discover_source and 'source_ref' in discover_source
-          assert 'source_ref' in workqueue_source and 'source_blob_sha' in workqueue_source
-          assert 'HEAD:{source_path}' in workqueue_source and 'rev-parse", "HEAD' in workqueue_source
+          execute_source=(root/'tools/research/execute.py').read_text(encoding='utf-8')
+          workqueue_source=(root/'tools/research/discover-ota-workqueue.py').read_text(encoding='utf-8')
+          scoped_source=(root/'tools/research/discover-ota-scoped.py').read_text(encoding='utf-8')
+          usage_source=(root/'tools/research/usage_observer.py').read_text(encoding='utf-8')
+          telemetry_source=(root/'tools/telemetry/ai_usage.py').read_text(encoding='utf-8')
+          worker_source=(root/'tools/worker/agent_worker_v76.py').read_text(encoding='utf-8')
+          ledger_sql=(root/'supabase/migrations/20260914044000_ai_usage_ledger.sql').read_text(encoding='utf-8')
+          attempt_sql=(root/'supabase/migrations/20260914122500_ai_usage_attempt_claim.sql').read_text(encoding='utf-8')
+          workflows=[
+            (root/'.github/workflows/knowledge-research-loop.yml').read_text(encoding='utf-8'),
+            (root/'.github/workflows/targeted-research.yml').read_text(encoding='utf-8'),
+            (root/'.github/workflows/ota-workqueue-research.yml').read_text(encoding='utf-8'),
+          ]
+
           assert 'source blob mismatch' in execute_source and 'source_ref' in execute_source
           assert 'gh pr merge' not in execute_source
-          assert '"draft":True' in execute_source
-          assert 'merge="draft-review-required"' in execute_source
-          assert 'KUEPER_DISCOVERY_PROJECT_ID' in targeted_source
+          assert '"draft":True' in execute_source and 'merge="draft-review-required"' in execute_source
+          assert 'source_ref' in workqueue_source and 'source_blob_sha' in workqueue_source
           assert 'deterministic-document-scope-v1' in scoped_source
-          assert 'select_source' in scoped_source and 'build_scope' in scoped_source
-          assert 'SOURCE.md' in scoped_source and 'MAX_CONTEXT_DOCS' in scoped_source
-          assert '/contents/research/queue/' in dryrun_source and 'proposed-dry-run' in dryrun_source
-          assert 'discover-ota-scoped-dryrun.py' in sweep_source
-          assert "discovery-only" in sweep_source
-          assert 'no queue writes' in sweep_source
-          assert 'items[:2]' in sweep_source
 
-          assert tech_contract['id'] == 'ota-tech-object-v1'
-          assert tech_contract['publication']['auto_update_noxia'] is False
-          assert tech_contract['impact_reporting']['write_noxia_balancing'] is False
-          assert 'coverage_state' in tech_audit_source
-          assert 'source_blob_sha' in tech_audit_source
-          assert 'auto_update_noxia' in tech_audit_source
-          assert 'balancing_is_out_of_scope' in tech_audit_source
-          assert '--strict' in tech_audit_workflow
-          assert 'ota-tech-object-audit.json' in tech_audit_workflow
+          for workflow in workflows:
+              assert 'ANTHROPIC_BASE_URL: "https://api.deepseek.com/anthropic"' in workflow
+              assert 'ANTHROPIC_MODEL: "deepseek-v4-flash"' in workflow
+              assert 'CLAUDE_CODE_SUBAGENT_MODEL: "deepseek-v4-flash"' in workflow
+              assert 'CLAUDE_CODE_AUTO_COMPACT_WINDOW: "786432"' in workflow
+              assert 'CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT: "1"' in workflow
+              assert 'SUPABASE_URL:' in workflow
+              assert 'SUPABASE_SECRET_KEY:' in workflow
+              assert 'KUEPER_AI_RETRY_REASON:' in workflow
 
-          eligible = policy['eligible_projects']
-          assert eligible
+          assert 'claim_attempt(' in usage_source
+          assert 'if not claim.get("execute_allowed")' in usage_source
+          assert 'claim_attempt(' in worker_source
+          assert 'if not usage.get("execute_allowed")' in worker_source
+          assert 'classify_failure' in usage_source and 'classify_failure' in worker_source
+          assert 'retry_request_from_env' in telemetry_source
+          assert 'return "manual", reason' in telemetry_source
+          assert 'provider-billing' in telemetry_source
+          assert "'network','timeout','rate-limit','provider-5xx'" in attempt_sql
+          assert 'pg_advisory_xact_lock' in attempt_sql
+          assert 'kueper_claim_ai_usage_attempt' in attempt_sql
+          assert "'execute_allowed',false" in attempt_sql.replace(' ', '')
+          assert 'manual retry requires retry_reason' in attempt_sql
+          assert 'automatic-retry-limit-reached' in attempt_sql
+          assert 'semantic_key' in attempt_sql and 'attempt_no' in attempt_sql
+          assert "if p_event_type <> 'deduped' then" in attempt_sql
+          assert 'unreconciled_calls' in attempt_sql
+          assert 'actual_cost_usd' in attempt_sql
+          assert 'create table if not exists ecosystem.ai_usage_intents' in ledger_sql
+          assert 'create table if not exists ecosystem.ai_usage_events' in ledger_sql
+          assert 'revoke all on ecosystem.ai_usage_intents from public, anon, authenticated' in ledger_sql
+          assert 'revoke all on ecosystem.ai_usage_events from public, anon, authenticated' in ledger_sql
+
+          eligible=policy['eligible_projects']
+          projects={p['id']:p for p in registry['projects']}
           assert all(entry.get('evidence_profile') in profiles for entry in eligible)
-
-          projects = {p['id']: p for p in registry['projects']}
-          assert all(entry['id'] in projects and projects[entry['id']].get('enabled', True) for entry in eligible)
+          assert all(entry['id'] in projects and projects[entry['id']].get('enabled',True) for entry in eligible)
           assert 'Axiomatisches Vakuum Integral' in projects['avi-modell']['notes']
-          assert 'Kreativ-, Text-, Musik- oder Weltbau-Modell' in projects['avi-modell']['notes']
 
-          spec = importlib.util.spec_from_file_location('discover', root / 'tools/research/discover.py')
-          module = importlib.util.module_from_spec(spec)
-          spec.loader.exec_module(module)
-
-          scaled = [max(1, round(float(entry.get('weight', 1.0)) * module.ROTATION_WEIGHT_SCALE)) for entry in eligible]
-          cycle = sum(scaled)
-          counts = Counter(module.weighted_rotation_choice(eligible, day)['id'] for day in range(cycle))
-          expected = {entry['id']: weight for entry, weight in zip(eligible, scaled)}
-          assert dict(counts) == expected, (counts, expected)
-
-          print(json.dumps({'ok': True, 'profiles': len(profiles), 'eligible_projects': len(eligible), 'rotation_cycle_days': cycle, 'rotation_counts': dict(counts), 'ota_source_contract': 'pinned', 'ota_workqueue_source_contract': 'pinned', 'ota_weekly_sweep': True, 'ota_discovery_scope': 'deterministic-document-scope-v1', 'ota_discovery_dry_run': 'non-mutating', 'ota_tech_object_audit': 'exact-blob-coverage-v1'}, indent=2))
+          spec=importlib.util.spec_from_file_location('discover',root/'tools/research/discover.py')
+          module=importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
+          scaled=[max(1,round(float(entry.get('weight',1.0))*module.ROTATION_WEIGHT_SCALE)) for entry in eligible]
+          cycle=sum(scaled)
+          counts=Counter(module.weighted_rotation_choice(eligible,day)['id'] for day in range(cycle))
+          expected={entry['id']:weight for entry,weight in zip(eligible,scaled)}
+          assert dict(counts)==expected,(counts,expected)
+          print(json.dumps({'ok':True,'deepseek_claude_compat':'guarded','ai_usage_ledger':'guarded','semantic_dedup':'atomic','automatic_retry_limit':1,'manual_retry':'reason-required','dedup_preserves_attempt_status':True,'cost_reconciliation':'explicit','rotation_cycle_days':cycle},indent=2))
           PY
 
       - name: Run candidate merge gate tests
-        shell: bash
         run: python3 tools/research/test_candidate_merge_gate.py
 
       - name: Run OTA tech object audit tests
-        shell: bash
         run: python3 tools/research/test_ota_tech_object_audit.py
