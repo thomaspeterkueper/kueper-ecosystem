@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261013-90685E99",
+  "status": "queued",
+  "created": "2026-10-13T10:44:50+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "external-tasks/open/SSF-REQ-20261006-gold-across-scales.md",
+  "source_ref": "e5bd5be92682211dd646c5ddaa2d626e8ba1346a",
+  "source_blob_sha": "20fa3eea347a547e979cdf839cf71903fd78a219",
+  "title": "Establish the peer-reviewed status of the QCD critical-point search and the Au-197 reference data for the 'gold across scales' path",
+  "question": "Open request SSF-REQ-20261006-gold-across-scales asks SSF to teach 'the distinction between a statistically significant non-monotonic observable and a confirmed QCD critical point'. What does the current experimental record actually establish? Specifically: (a) what do STAR Beam Energy Scan (BES-I and BES-II) and complementary HADES/NA61 measurements of net-proton/number cumulant ratios and their non-monotonic energy dependence show, where is the reported significance, and why is a non-monotonic fluctuation signature NOT the same as a confirmed critical point (finite-size, acceptance, volume-fluctuation, baryon-number-conservation and model-dependence caveats)? (b) What is the current status of the search for the critical point (BES-II energy scan, fixed-target, future facilities) and which open questions remain? (c) Which Au-197 nuclear properties are established reference values (spin/parity, nuclear magnetic moment, natural abundance, stability, relativistic contraction effects relevant to gold's colour and chemistry), so the atom-to-nucleus transition in the path is anchored in evaluated nuclear data rather than narrative? (d) Which statements in this chain are measurement, which are standard accepted interpretation, and which are model-dependent extrapolation that must be labelled as such?",
+  "why_now": "SSF-REQ-20261006-gold-across-scales is an open cross-project request (research intake) whose explicitly stated teaching goal is the epistemics of a non-monotonic observable versus a confirmed critical point; the path cannot be built without the sourced BES status and the evaluated Au-197 reference data.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "STAR Beam Energy Scan net-proton cumulant measurements and the QCD critical-point search programme; evaluated nuclear data for Au-197 (NNDC/ENSDF).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.8,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior topic covers heavy-ion physics, the QCD phase diagram or nuclear-data reference values. The earlier critical-materials candidates concerned iridium supply chains and permanent-magnet properties — different material and different claim class (market/supply snapshots), so there is no semantic overlap.",
+  "fingerprint": "90685e996e210738"
+}
