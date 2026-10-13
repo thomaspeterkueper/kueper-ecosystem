@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261013-37DB3308",
+  "status": "queued",
+  "created": "2026-10-13T10:44:47+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "external-tasks/open/SSF-REQ-20261008-biological-robustness-tardigrades.md",
+  "source_ref": "e5bd5be92682211dd646c5ddaa2d626e8ba1346a",
+  "source_blob_sha": "1fc97bcd2c68928a44db2f160a50bf5f8382e22d",
+  "title": "Ground the tardigrade 'biological robustness' learning path in the primary literature (Dsup, CAHS and the limits of human relevance)",
+  "question": "Open request SSF-REQ-20261008 asks SSF to build a tardigrade-based path that separates damage prevention, damage tolerance, repair, clearance and recovery, and to CORRECT the 'one supergene makes humans radiation-proof' narrative. What does the primary literature actually support? Specifically: (a) what is the demonstrated role and evidentiary strength of Dsup / Dsup-family proteins (Hashimoto et al., Nat. Commun. 2016, Ramazzottius varieornatus) versus the CAHS/SAHS intrinsically disordered proteins (Boothby et al., Mol. Cell 2017) and trehalose/matrix-vitrification and antioxidant/DNA-repair systems, and how do these partition across the five requested categories? (b) What is actually demonstrated for Dsup when expressed in human cells or other heterologous systems, versus what remains an extrapolation that has NOT been shown to confer whole-organism radiation resistance in a mammal? (c) Which findings are old and now recirculated as 'new' media discoveries (e.g. 2006 Ramazzottius radiation work, 2016 Dsup, 2017 CAHS) so that dates and evidence levels can be attached? (d) Which real radiation-biology anchors (absorbed vs equivalent dose, RBE, LET, LNT debate, spaceflight GCR/SPE) and which proteostasis/oxidative-stress anchors should link the mechanism layer, and where must the path explicitly label something as hypothesis versus demonstrated?",
+  "why_now": "The most recent commit (e5bd5be 'Add biological robustness tardigrade learning request') is exactly this open request, and it carries an explicit correction mandate ('Correct the \"one supergene makes humans radiation-proof\" narrative') and an evidence-grading requirement. SSF cannot build that path or its quiz from the request text alone; it needs a dated, graded primary-literature base first.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewed tardigrade stress-tolerance experiments — Horikawa et al. 2006 (Ramazzottius varieornatus radiation tolerance), Hashimoto et al. 2016 Nature Communications (Dsup), Boothby et al. 2017 Molecular Cell (CAHS proteins) — and the literature on heterologous/human-cell expression and its limits.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.8,
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No prior topic in this project touches tardigrades, Dsup/CAHS, or radiation biology. The only earlier biology-adjacent candidates were the Miller-Urey prebiotic-atmosphere question and the interstellar erythrulose detection, which are unrelated to organismal stress tolerance.",
+  "fingerprint": "37db330894776e87"
+}
