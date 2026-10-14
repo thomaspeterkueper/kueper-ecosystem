@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261014-66EBD92A",
+  "status": "queued",
+  "created": "2026-10-14T08:51:17+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "docs/backlog/KUE-FOUNDATION-MINING-2026-09-22.md",
+  "source_ref": "9ea34132c8cb549883bf13633effa27603230ccb",
+  "source_blob_sha": "577902ab42f565ee0595a8faa6b4f8ef13630aff",
+  "title": "Kriechen, Creep-Fatigue und Hochtemperatur-Lebensdauer als nächster Mechanik-Realanker (Anschluss an KUE-SCI-0190/0193/0194)",
+  "question": "Welcher peer-reviewte Evidenzstand trägt einen eigenständigen KUE-Mechanikanker zu zeitabhängiger Hochtemperaturverformung? Konkret: (1) Welche Kriechmechanismen (Diffusionskriechen: Nabarro-Herring/Coble; Versetzungskriechen; Korngrenzengleiten) sind für welche Werkstoffklassen und Temperatur-/Spannungsfenster belegt, und wie werden sie in Deformationsmechanismus-Karten und in der Norton-/Bailey-Norton-Kinetik dargestellt? (2) Wie ist der Stand zu Kriechen unter kombinierter statischer und zyklischer Last (Creep-Fatigue-Interaktion), zu Haltezeit-Effekten und zu den dafür verwendeten Schädigungs-/Lebensdauermodellen (Larson-Miller, Robinson, Duktilitäts-Erschöpfung) — welche gelten als belastbar, welche als werkstoff- und regimeabhängig? (3) Wie sind Extrapolationsverfahren für lange Lebensdauern (Zeit-Temperatur-Parameter, gestufte Datenlage) und die damit verbundenen Unsicherheiten zu bewerten, damit die Kette Belastung ≠ Spannung ≠ Kriechrate ≠ Schädigung ≠ Restlebensdauer ≠ Freigabe sauber bleibt? (4) Welche Primär-/Regelwerksquellen (z. B. ASME BPVC Section III/Appendix, ASTM-E-Aktivitäten zu Kriechen und Risswachstum, ECSS/ESA-Handbücher) tragen diese Grundlage, und welche offenen Punkte blieben für eine [H]-Einstufung konkreter Bauteilfreigaben?",
+  "why_now": "Der direkte Mechanikblock KUE-SCI-0190 (Tensor-/Fließmechanik), KUE-SCI-0193 (Bruchmechanik) und KUE-SCI-0194 (Ermüdung) wurde am 2026-09-28 geschlossen; der Foundation-Backlog benennt Kriechen/Creep-Fatigue/Hochtemperatur-Lebensdauer ausdrücklich als sinnvollen nächsten eigenständigen Mechanikanker (Pass 14, §20) und als bereits bei der Mechanik-II-Anlage identifizierten Anschlusskandidaten (§16). Das Thema ist damit die konkret nächste priorisierte Foundation-Lücke, nicht eine fernliegende Ergänzung.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Werkstoffmechanische Primär- und Regelliteratur zu Kriechmechanismen, Deformationsmechanismus-Karten, Creep-Fatigue-Interaktion und Zeit-Temperatur-Lebensdauerextrapolation (z. B. ASME BPVC, ASTM-Normungsaktivitäten, ECSS/ESA-Handbücher sowie peer-reviewte Übersichten).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.89,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Research-Topic dieses Projekts behandelt zeitabhängige Hochtemperaturverformung (Kriechen/Creep-Fatigue). Die bisherigen Themen betreffen KUE-SCI-0175/0168/0174/0169/0170/0183, MTH-0006, OBS-0101 und SCI-0001; Ermüdung/Bruchmechanik wurden als 0193/0194 bereits geschlossen, Kriechen ist der dort ausdrücklich als noch offen markierte Anschluss.",
+  "fingerprint": "66ebd92ad61254de"
+}
