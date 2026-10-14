@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261014-72C16339",
+  "status": "queued",
+  "created": "2026-10-14T08:51:19+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0167-2026-de.md",
+  "source_ref": "9ea34132c8cb549883bf13633effa27603230ccb",
+  "source_blob_sha": "4d68be38b5bf1a46eadcf317a29ce3ce86146c64",
+  "title": "Verifikation der KUE-SCI-0167-Kernbefunde zu W/AISI-415-Grenzflächen in PBF-LB/M und Stand der Neutronenbestrahlungs-Evidenz",
+  "question": "Stimmen die in KUE-SCI-0167 v1.1 als [R] referenzierten Befunde und Zitate mit der Primärliteratur überein, und hat sich die als [OFFEN]/[H] markierte Lage verschoben? Konkret: (1) Sind die zitierten Arbeiten Garrivier et al. 2025 (Additive Manufacturing, DOI 10.1016/j.addma.2025.105055) und Garrivier et al. 2026 (Materials & Design, DOI 10.1016/j.matdes.2026.116057) korrekt wiedergegeben — insbesondere Nachweis und Stöchiometrie der intermetallischen μ-Phase Fe₇W₆, der Befund laserbahn-korrelierter Restaustenit-Anteile bis ca. 0,5 Gew.-%, die Nachweisgrenzen-Argumentation (Synchrotron ~0,1 Vol% vs. Labor-XRD ~1–5 Vol%) sowie die Energiegradientenstrategie zur Reduktion der Phasenbildung? (2) Gibt es Korrekturen/Errata oder unabhängige Nachfolgearbeiten, die Fe₇W₆, die Restaustenit-Verteilung oder die Prozessstrategie replizieren, einschränken oder revidieren? (3) Wie ist der aktuelle externe Stand zur explizit [OFFEN] gelassenen Frage des Langzeitverhaltens laserbahn-korrelierten Restaustenits unter 14,1-MeV-Neutronenfluss (dpa-Bereiche ITER/DEMO, γ-vs.-α-Swellen, Erhalt des TRIP-Effekts nach Bestrahlungszyklen) sowie zur [H]-markierten Übertragbarkeit auf W/Cu, W/V und RAFM-Stahl/W (EUROFER97, F82H)? (4) Ist der Status der als [OFFEN] geführten 3D-Phasenkartierung an PETRA IV (Inbetriebnahmezeitraum, erwartete Auflösung) unverändert?",
+  "why_now": "KUE-SCI-0167 ist ein als 'Reviewfähig' geführter kanonischer Grundlagenkörper, dessen Kernaussagen auf zwei konkrete DOIs und eine DESY-Pressemitteilung gestützt sind; ein Teil der Aussagen ist ausdrücklich [OFFEN] oder [H]. Eine externe Bestandsprüfung entscheidet, ob die Einstufungen (Fe₇W₆ [R], Generalisierbarkeit [H], Bestrahlungsverhalten [OFFEN]) unverändert tragfähig sind oder aktualisiert werden müssen.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewte Primärliteratur zur additiven Fertigung von Wolfram/Stahl- und Wolfram/RAFM-Verbunden (PBF-LB/M), zur μ-Phase Fe₇W₆, zu Restaustenit in ferritisch-martensitischen Stählen sowie zu deren Verhalten unter Neutronenbestrahlung; konkret die Garrivier-Arbeiten (DOI 10.1016/j.addma.2025.105055, 10.1016/j.matdes.2026.116057) und unabhängige Bestrahlungs-/Fusionsmaterialstudien.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Research-Topic dieses Projekts betrifft additiv gefertigte W/Stahl-Verbunde oder Fusionsmaterialien. Frühere Topics prüften UPE (0175), ΛΛ̄-Spinkorrelation (0168), U/Th-Geochemie (0174), Seismizität (0169), Magnetorezeption (0170), Goldhydrid (0183), Autonomiegradient (MTH-0006), TNO-Atmosphären (OBS-0101) und DESI-Dunkle-Energie (SCI-0001); keine berührt KUE-SCI-0167.",
+  "fingerprint": "72c16339499e3471"
+}
