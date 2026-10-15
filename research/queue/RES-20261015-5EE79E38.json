@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261015-5EE79E38",
+  "status": "queued",
+  "created": "2026-10-15T08:26:08+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "What 'Young Adult' actually denotes for a German-language trilogy, and the real reading-competence reality of the target age band",
+  "question": "Which real-world definitions and empirical evidence establish the 'Young Adult' category for German-language books and their readers — the age bands used by library and publishing classification (ALA/YALSA definitions of Young Adult, the German book-trade and national-library categorisation of Jugendbuch/Jugendroman and the adjacent 'New Adult' segment), and empirical data on who actually reads YA and at what reading competence (PISA and IGLU reading-literacy distributions, Stiftung Lesen and Börsenverein readership studies) — and what does that establish for a knowledge platform built around this trilogy: which age band the site should treat as its audience, what reading level its German prose may assume, and how the conventional YA band (roughly 12–18) must be reconciled with the legal thresholds the site itself applies (16 for data-protection consent, staggered ages under youth-protection law) rather than treating 'Young Adult' as a self-evident audience definition?",
+  "why_now": "README.md line 3 declares the trilogy a 'Young-Adult-Trilogie', and every downstream decision on the platform — content rating, language level, consent flow, analytics and community rules — is derived from that single label. The repository currently holds no content and no audience specification beyond that word, so this is the moment at which the label either becomes a precise, evidence-based audience definition or silently imports a vague publishing convention. The project's own prior research assumed 'young adults' as already defined and only asked which legal duties follow; the definition itself remains unestablished.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Real-world category definitions and readership evidence for the Young Adult segment: library/publishing classification standards (ALA/YALSA; German book-trade and Deutsche Nationalbibliothek categorisation, including the Jugendbuch/New-Adult boundary) and empirical reading-competence and readership data for 12–18-year-olds (PISA, IGLU, Stiftung Lesen, Börsenverein des Deutschen Buchhandels).",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.725,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.65,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.75
+  },
+  "related_research_ids": [
+    "RES-20260918-C5EDAF53"
+  ],
+  "novelty_reason": "A genuine follow-up that addresses a dimension the prior candidate left unresolved. RES-20260918-C5EDAF53 takes 'whose declared audience is young adults' as a given premise and asks what binding duties follow from it (JMStV, DSGVO Art. 8, BFSG/BITV). This gap asks the prior, defining question that candidate presupposed: what the Young Adult category actually denotes in the German book market and among real readers, what reading competence the band implies, and how the conventional 12–18 category maps onto the 16 and 18 legal thresholds the platform must apply. Answering it changes C5EDAF53's inputs rather than repeating its question.",
+  "fingerprint": "5ee79e381872a401"
+}
