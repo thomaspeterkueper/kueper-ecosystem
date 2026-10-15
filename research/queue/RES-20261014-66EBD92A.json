@@ -1,6 +1,6 @@
 {
   "id": "RES-20261014-66EBD92A",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-14T08:51:17+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früherer Research-Topic dieses Projekts behandelt zeitabhängige Hochtemperaturverformung (Kriechen/Creep-Fatigue). Die bisherigen Themen betreffen KUE-SCI-0175/0168/0174/0169/0170/0183, MTH-0006, OBS-0101 und SCI-0001; Ermüdung/Bruchmechanik wurden als 0193/0194 bereits geschlossen, Kriechen ist der dort ausdrücklich als noch offen markierte Anschluss.",
-  "fingerprint": "66ebd92ad61254de"
+  "fingerprint": "66ebd92ad61254de",
+  "updated_at": "2026-10-15T08:32:25+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/223"
 }
