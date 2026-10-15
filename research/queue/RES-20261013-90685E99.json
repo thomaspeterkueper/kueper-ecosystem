@@ -1,6 +1,6 @@
 {
   "id": "RES-20261013-90685E99",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-13T10:44:50+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No prior topic covers heavy-ion physics, the QCD phase diagram or nuclear-data reference values. The earlier critical-materials candidates concerned iridium supply chains and permanent-magnet properties — different material and different claim class (market/supply snapshots), so there is no semantic overlap.",
-  "fingerprint": "90685e996e210738"
+  "fingerprint": "90685e996e210738",
+  "updated_at": "2026-10-15T08:38:00+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/224"
 }
