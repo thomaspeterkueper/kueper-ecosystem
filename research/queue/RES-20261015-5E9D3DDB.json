@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261015-5E9D3DDB",
+  "status": "queued",
+  "created": "2026-10-15T08:26:10+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "Which officially recognised digital-literacy competence frameworks the platform's real-world explainer content should be mapped to",
+  "question": "Which binding or officially endorsed digital-competence and media-literacy frameworks define what knowledge content a public German-language platform aimed at roughly 15–19-year-olds should deliver — the EU DigComp 2.2 framework, the KMK Bildungsstandards and the Länder Medienkompetenzrahmen, the OECD PISA 2025 framework 'Learning in the Digital World', and UNESCO/official media-and-information-literacy guidance — and what do those standards, together with the empirical evaluation literature on digital-literacy interventions, establish about which competences such pages must actually build (data-protection and privacy literacy, source and evidence evaluation, digital-rights literacy, algorithmic and platform literacy), so that endia.de's factual content is mapped to credited competences with stated attainment targets instead of being assembled ad hoc from whatever topics the fiction happens to touch?",
+  "why_now": "README.md defines the repository's role as the website of the trilogy, and the ecosystem role of this repository is a knowledge-platform whose factual pages sit next to fictional ones. Because the repository is empty apart from the README, the content taxonomy — which topics become explainer pages and how they are structured and assessed — is still completely open. Mapping pages to an official competence framework now gives the platform a defensible educational rationale and makes its content reusable in other KUEPER education projects; doing it after the first pages are written means re-authoring them. Prior research resolved the learning-science question of whether facts embedded in fiction are learned, but not the curricular question of which competences the content is expected to certify.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Official and standard-setting competence frameworks and their evidence base: DigComp 2.2 (EU), KMK Bildungsstandards and Länder Medienkompetenzrahmen (Germany), the OECD PISA 2025 'Learning in the Digital World' framework, UNESCO media-and-information-literacy guidance, and peer-reviewed evaluation studies of digital-literacy interventions.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.7625,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [
+    "RES-20260826-47CC2438",
+    "RES-20260903-11C93480"
+  ],
+  "novelty_reason": "A genuine follow-up addressing a dimension both prior candidates left unresolved. RES-20260826-47CC2438 treats 'digital-literacy content' only as one of several real-world discourses the trilogy and platform could draw on, without asking which competences are standardised or expected; RES-20260903-11C93480 asks empirically whether factual knowledge embedded in fiction is learned and correctly source-attributed, not which official competence frameworks the content should satisfy or be mapped to. Neither asks for the standards-mapping question that determines the platform's page taxonomy and learning objectives.",
+  "fingerprint": "5e9d3ddbd5c7c728"
+}
