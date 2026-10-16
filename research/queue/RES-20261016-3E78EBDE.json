@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261016-3E78EBDE",
+  "status": "queued",
+  "created": "2026-10-16T08:18:37+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Verweisen statt kopieren: dauerhafte Referenz- und Konsistenzsicherung für eine Seite, die nur verlinkt",
+  "question": "README.md:15 bindet dieses Projekt an die Regel, zentrale Ökosystem-Dokumente zu verlinken statt ihren Inhalt zu kopieren; README.md:17-23 verbietet zugleich direkte Änderungen an fremden Repositories. Welche empirisch gemessene Stabilität haben Web-Referenzen (Link-Rot und Content-Drift über Jahre bis Jahrzehnte) und welche etablierten Standards für dauerhafte Referenzierung und Archivierung — persistente Identifikatoren (ISO 26324), Web-Archivierung (ISO 28500/WARC), Memento-Content-Negotiation (RFC 7089) sowie die W3C Best Practices für Daten im Web — tragen eine Wissensplattform, die dauerhaft mit einer separaten Überblicksseite auf thomas-kueper.de übereinstimmen muss? Zu klären ist, ob Verlinkung allein genügt oder ob Snapshots, persistente Identifier oder ein Redundanzmodell nötig sind.",
+  "why_now": "Das Repository besteht derzeit nur aus README.md und den leeren Ordnern external-tasks/{open,done,rejected}. Die Verweisstrategie wird also festgelegt, bevor überhaupt Inhalte existieren, und ist später nur mit erheblichem Migrationsaufwand änderbar.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Empirische Link-Rot- und Content-Drift-Studien zu Web- und Fachreferenzen sowie Normen für persistente Identifikatoren und Web-Archivierung (ISO 26324/DOI, ISO 28500/WARC, RFC 7089/Memento, W3C Data on the Web Best Practices)",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.8375,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.95,
+    "uncertainty": 0.65,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früheres Thema berührt Referenzstabilität oder die Entscheidung 'verlinken statt kopieren'. Die bisherigen Themen prüften Rechtsrahmen (Impressum/DSGVO/EAA), Terminologie, Kanon-Datenmodelle, physikalische Grenzen und Omnizedenz-Bestände — die Dauerhaftigkeit der Verweise selbst war nie Gegenstand.",
+  "fingerprint": "3e78ebde995f9fda"
+}
