@@ -1,6 +1,6 @@
 {
   "id": "RES-20261016-88579799",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-16T08:18:39+00:00",
   "source_project": "zereya",
   "source_repository": "thomaspeterkueper/zereya.de",
@@ -33,5 +33,7 @@
     "RES-20260919-97BB266E"
   ],
   "novelty_reason": "Das frühere Thema prüfte eine Inhaltsfrage: welche Aussagen einer Resonanz-Ontologie durch etablierte Physik gedeckt sind. Dieses Thema prüft die davon unabhängige Darstellungs- und Provenienzfrage, wie eine öffentliche Plattform belegtes Wissen und kanonische Setzung für Lesende unterscheidbar hält. Es wird keine Physik erneut validiert und kein Kanon gegen Realwissenschaft geprüft.",
-  "fingerprint": "8857979977e72798"
+  "fingerprint": "8857979977e72798",
+  "updated_at": "2026-10-16T08:33:23+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/226"
 }
