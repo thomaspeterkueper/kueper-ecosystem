@@ -1,6 +1,6 @@
 {
   "id": "RES-20261016-3E78EBDE",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-16T08:18:37+00:00",
   "source_project": "zereya",
   "source_repository": "thomaspeterkueper/zereya.de",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früheres Thema berührt Referenzstabilität oder die Entscheidung 'verlinken statt kopieren'. Die bisherigen Themen prüften Rechtsrahmen (Impressum/DSGVO/EAA), Terminologie, Kanon-Datenmodelle, physikalische Grenzen und Omnizedenz-Bestände — die Dauerhaftigkeit der Verweise selbst war nie Gegenstand.",
-  "fingerprint": "3e78ebde995f9fda"
+  "fingerprint": "3e78ebde995f9fda",
+  "updated_at": "2026-10-16T08:27:02+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/225"
 }
