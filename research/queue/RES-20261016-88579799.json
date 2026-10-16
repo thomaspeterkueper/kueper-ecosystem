@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261016-88579799",
+  "status": "queued",
+  "created": "2026-10-16T08:18:39+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Kanon-Grenze auf der öffentlichen Plattform: belegtes Wissen und Weltbaustein für Lesende unterscheidbar halten",
+  "question": "Die Zereya-Saga ist laut README.md:3 eine eigenständige literarische Kontinuität und zugleich Ausgangspunkt wissenschaftsnaher Weltbilder (Baumeister- und Noxia-Universum). Welche empirisch belegten Effekte hat die Vermischung fiktionaler und faktischer Darstellung auf die Überzeugungen von Lesenden, und welche belegten Praxisformen — Provenienz- und Quellenkennzeichnung, sichtbare Trennung von kanonischer Setzung und extern belegtem Wissen, Kennzeichnungs- und Quellenleitlinien offizieller Wissenschaftskommunikations-Einrichtungen — eignen sich, damit die Plattform Weltbau nicht als gesichertes Wissen erscheinen lässt?",
+  "why_now": "Die Plattform wird als 'knowledge-platform' neu aufgebaut und trägt das Evidenzprofil worldbuilding-scientific. Die Kennzeichnungs- und Provenienzkonventionen sind Formatentscheidungen, die jedes später veröffentlichte Artikelformat prägen; nachträglich lassen sie sich nur über alle Inhalte hinweg ändern.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewte Wissenschaftskommunikations- und Medienwirkungsforschung zum Übergang fiktionaler Darstellungen in Faktenüberzeugungen sowie Leitlinien offizieller Institutionen zur Kennzeichnung, Quellenangabe und Einordnung von Wissen",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [
+    "RES-20260919-97BB266E"
+  ],
+  "novelty_reason": "Das frühere Thema prüfte eine Inhaltsfrage: welche Aussagen einer Resonanz-Ontologie durch etablierte Physik gedeckt sind. Dieses Thema prüft die davon unabhängige Darstellungs- und Provenienzfrage, wie eine öffentliche Plattform belegtes Wissen und kanonische Setzung für Lesende unterscheidbar hält. Es wird keine Physik erneut validiert und kein Kanon gegen Realwissenschaft geprüft.",
+  "fingerprint": "8857979977e72798"
+}
