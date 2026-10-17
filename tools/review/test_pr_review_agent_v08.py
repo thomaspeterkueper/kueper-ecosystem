@@ -35,6 +35,57 @@ class ReviewBudgetDedupTests(unittest.TestCase):
         b = v08.review_reason({"payload": {"head_sha": "bbb"}}, "routine review")
         self.assertNotEqual(a, b)
 
+    def test_live_head_replaces_stale_task_head_before_dedup(self):
+        from unittest.mock import patch
+        task = {
+            "id": "11111111-1111-1111-1111-111111111111",
+            "repository": "owner/repo",
+            "pr_url": "https://github.com/owner/repo/pull/1",
+            "payload": {"head_sha": "stale"},
+        }
+        db = FakeDB(reserved=True)
+        with patch.object(v08, "required_ci_gate", return_value={
+            "allowed": True, "reason": "all-required-checks-green",
+            "head_sha": "fresh", "details": [],
+        }), patch.object(v08.v07, "changed_paths", return_value=["README.md"]), patch.object(
+            v08.v07, "select_review_model", return_value=("deepseek-v4-flash", "routine")
+        ):
+            result = v08.cost_aware_review_task(task, db)
+        self.assertEqual(result["result"], "already-attempted-today")
+        self.assertIn("head=fresh", db.calls[0][1]["p_reason"])
+        self.assertEqual(task["payload"]["head_sha"], "stale")
+
+    def test_no_policy_fetches_current_head_from_github(self):
+        from unittest.mock import patch
+        task = {"pr_url": "https://github.com/owner/repo/pull/1"}
+        gate = {"allowed": True, "reason": "no-required-check-policy", "head_sha": None}
+        with patch.object(v08.merge_gate, "_run_json", return_value={
+            "headRefOid": "current-head", "state": "OPEN"
+        }) as gh:
+            self.assertEqual(v08.current_pr_head(task, gate), "current-head")
+        gh.assert_called_once()
+
+    def test_closed_pr_cannot_supply_head(self):
+        from unittest.mock import patch
+        with patch.object(v08.merge_gate, "_run_json", return_value={
+            "headRefOid": "old-head", "state": "MERGED"
+        }):
+            self.assertIsNone(v08.current_pr_head({"pr_url": "https://github.com/owner/repo/pull/1"}, {}))
+
+    def test_missing_live_head_does_not_reserve_budget(self):
+        from unittest.mock import patch
+        task = {"id": "t", "repository": "owner/repo", "pr_url": "https://github.com/owner/repo/pull/1"}
+        db = FakeDB()
+        with patch.object(v08, "required_ci_gate", return_value={
+            "allowed": True, "reason": "no-required-check-policy", "head_sha": None, "details": [],
+        }), patch.object(v08, "current_pr_head", return_value=None), patch.object(v08.v07, "changed_paths", return_value=[]), patch.object(
+            v08.v07, "select_review_model", return_value=("deepseek-v4-flash", "routine")
+        ):
+            result = v08.cost_aware_review_task(task, db)
+        self.assertEqual(result["result"], "ci-gate-blocked")
+        self.assertEqual(result["reason"], "missing-current-head")
+        self.assertEqual(db.calls, [])
+
     def test_daily_lookup_is_task_and_reason_scoped(self):
         db = FakeDB(reserved=True)
         task = {"id": "11111111-1111-1111-1111-111111111111"}
