@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261017-1285FDBC",
+  "status": "queued",
+  "created": "2026-10-17T07:54:47+00:00",
+  "source_project": "avi-modell",
+  "source_repository": "thomaspeterkueper/avi-modell",
+  "source_path": "docs/branch-decision-gate-o1-o3-v0.1.md",
+  "source_ref": "990b8e6d0c7666a58fa0837282f90263c7cfabe5",
+  "source_blob_sha": "8450541105fdbeecead042c5d39eaa43b72b1a30",
+  "title": "Markov-Embedding-Gate gegen die mathematische Literatur: Wann ist eine nicht-Markovsche Response irreduzibel, und ist O3-F physikalisch wohldefiniert?",
+  "question": "Welche etablierten mathematischen und physikalischen Resultate — Quanten-Prozess-Tensor/Prozessmatrix, höhere Markov-Ordnung, Hidden-Markov- und Dilationssätze, kanonische Formen nicht-Markovscher Mastergleichungen, Nicht-Markovianitätsmaße sowie Markovsche Einbettung offener Systeme — legen fest, ob eine gegebene historienabhängige Response eine exakte endlich-dimensionale Markovsche Einbettung in einen erweiterten Standardzustand besitzt? Existieren rigorose No-Go-Resultate oder explizite Gegenbeispiele (Prozesse ohne endliche Markov-Ordnung, nicht-dilatierbare Prozessmatrizen, irreduzible System-Umwelt-Korrelationen), die O3-F als physikalisch wohldefinierte Klasse stützen, oder fällt jede konkrete O3-F-Realisierung auf O1 in einem größeren Zustandsraum zurück? Welche operationalen Kriterien unterscheiden eine fundamentale von einer nur effektiven Nicht-Markovianität, und welche dieser Kriterien sind im AVI-Kontext überhaupt messbar?",
+  "why_now": "Das Branch Decision Gate O1/O3 stützt die Wahl von O1-minimal und das HOLD für O3-F wesentlich auf ein Markov-Embedding-Gate. Dieses Gate wird im Repository behauptet, aber weder bewiesen noch gegen die mathematische Literatur geprüft. Wenn jede physikalisch zulässige nicht-Markovsche Response eine endliche Markov-Einbettung besitzt, ist O3-F als eigenständige Klasse zu schließen; wenn es rigorose Gegenbeispiele gibt, verliert die O1-Begründung ihre Ausschließlichkeit. Die Antwort verändert direkt den verbleibenden Ontologie-Raum des Projekts.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "avi-theoretical-cosmology",
+  "claim_classes": [
+    "D",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Mathematische Physik nicht-Markovscher Quantenprozesse: Prozessmatrizen und Prozess-Tensoren, Markov-Ordnung, Dilations- und Einbettungssätze für offene Systeme.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.85,
+  "relevance_score": 0.7425,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.65,
+    "uncertainty": 0.55,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260828-0806A449"
+  ],
+  "novelty_reason": "Die frühere Topic fragte, welche Frameworks historien-/pfadabhängige Observablen erlauben und welche Bedingungen ein ξ erfüllen müsste; sie prüfte nicht die mathematische Gültigkeit des im Repository entscheidenden Markov-Embedding-Gates und die Existenz rigoroser No-Go-/Gegenbeispiele für irreduzible Nicht-Markovianität. Genau diese Prämisse entscheidet zwischen O1 und O3-F und ist damit eine materiell andere, bislang unbeantwortete Dimension.",
+  "fingerprint": "1285fdbcfb5bf491"
+}
