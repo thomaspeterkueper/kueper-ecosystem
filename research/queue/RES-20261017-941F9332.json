@@ -1,0 +1,39 @@
+{
+  "id": "RES-20261017-941F9332",
+  "status": "queued",
+  "created": "2026-10-17T07:54:46+00:00",
+  "source_project": "avi-modell",
+  "source_repository": "thomaspeterkueper/avi-modell",
+  "source_path": "docs/core-formalization-v0.2.md",
+  "source_ref": "990b8e6d0c7666a58fa0837282f90263c7cfabe5",
+  "source_blob_sha": "dbcd278fa78768caf37757f9fe129b9d9c186048",
+  "title": "Wohldefiniertheit von Ω_A ≡_std Ω_B über verschiedene kosmologische Historien: eichinvariante Vergleichsdefinition für den Strong History Test",
+  "question": "Wie lässt sich in einer allgemein kovarianten Gravitationstheorie und insbesondere in FLRW-Modellen operational und eichinvariant definieren, dass zwei verschiedene kosmologische Historien A und B zum Vergleichszeitpunkt a* denselben vollständigen Standardzustand Ω=(Y,B,G,C) besitzen? Welche etablierten Frameworks — relationale Observablen, eichinvariante kosmologische Störungstheorie, Initial-Value-Formulierung, kosmologische Mittelung/Backreaction sowie der Vergleich von Raumzeiten ohne gemeinsame Hintergrundmetrik — liefern eine belastbare Äquivalenzrelation ≡_std, und welche Freiheiten (Zeitschnitt, Referenzuhr, Skalenfaktor-Konvention, Dichtedefinition, globale Identifikation, Beobachterweltlinie) bleiben dabei unvermeidlich? Ist der im Repository definierte Strong History Test für zwei Expansionshistorien überhaupt konstruierbar, oder setzt er stillschweigend eine metrische Identifikation und einen bevorzugten kosmischen Zeitschnitt voraus, die in GR nicht gauge-invariant sind? Welche minimale Zusatzstruktur müsste die Definition von ≡_std enthalten, damit Ω_A ≡_std Ω_B weder trivial noch unprüfbar wird?",
+  "why_now": "Core Formalization v0.2 (§5.2) und die Beobachtungsmatrix (Test B) setzen Ω_A ≡_std Ω_B über zwei verschiedene Historien voraus. Die Definition bleibt jedoch an FLRW-Koordinaten und einen gemeinsamen Vergleichszeitpunkt a* gebunden; eichinvariante Observablen, Zeitschnitt- und Uhrenabhängigkeit sowie der Vergleich von Raumzeiten ohne gemeinsame Metrik werden nicht behandelt. Da alle späteren Closure- und Test-B-Aussagen auf dieser Äquivalenzrelation beruhen, entscheidet ihre Wohldefiniertheit über die Konstruierbarkeit des zentralen AVI-Tests.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "avi-theoretical-cosmology",
+  "claim_classes": [
+    "D",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Allgemeine Relativitätstheorie und Kosmologie: eichinvariante und relationale Observablen, kosmologische Störungstheorie, Initial-Value-Formulierung und Raumzeit-Vergleich.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.85,
+  "relevance_score": 0.75,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.55,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [
+    "RES-20260828-0806A449"
+  ],
+  "novelty_reason": "Die frühere Topic untersuchte, welche Frameworks historien-/pfadabhängige Observablen zulassen und welche formalen Bedingungen ein zusätzlicher Zustand ξ erfüllen müsste. Sie klärte nicht, ob und wie die Vergleichsrelation ≡_std selbst über verschiedene Raumzeiten und Expansionshistorien eichinvariant definiert werden kann. Genau diese Prämisse entscheidet, ob der Strong History Test konstruierbar ist; die Frage betrifft die Äquivalenzrelation, nicht die Ontologie von ξ.",
+  "fingerprint": "941f933296317fb5"
+}
