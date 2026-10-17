@@ -1,6 +1,6 @@
 {
   "id": "RES-20261014-5CB2DFAE",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-14T08:51:20+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früherer Research-Topic dieses Projekts berührt Gedächtnis-, Rekonsolidierungs- oder Engrammforschung. Das nächstliegende frühere Thema (MTH-0006, Autonomiegradient/LUCA) betrifft Biologie-Autonomie und Ursprung des Stoffwechsels, nicht Kognitionswissenschaft; KUE-PHI-0002 selbst wurde bisher nicht recherchiert.",
-  "fingerprint": "5cb2dfae757a09d0"
+  "fingerprint": "5cb2dfae757a09d0",
+  "updated_at": "2026-10-17T08:17:22+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/228"
 }
