@@ -1,6 +1,6 @@
 {
   "id": "RES-20261018-16792C5C",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-10-18T08:09:29+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine der bisherigen Themen behandelt Weltindividuation, generative Herkunft ohne gemeinsame Zeit, Grounding oder Possible-Worlds-Metaphysik. Die Blockzeit- und Pantheismus-Themen betreffen Zeitmodelle bzw. begriffliche Abgrenzung, nicht die Ontologie hypothetischer Welten und die Kriterien von Weltgrenzen.",
-  "fingerprint": "16792c5c6cd68403"
+  "fingerprint": "16792c5c6cd68403",
+  "updated_at": "2026-10-18T08:18:28+00:00",
+  "last_error": "candidate for philosophy-comparative lacks a strong source type marker"
 }
