@@ -1,6 +1,6 @@
 {
   "id": "RES-20261018-F009F97A",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-10-18T08:56:29+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -38,5 +38,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriges OTA-Research-Topic behandelt lunare Regolith-Korngroessen, die NESC-Feinfraktionsluecke oder NASA-STD-3001-Expositionsgrenzwerte. Die naechstliegende Nachbararbeit RES-20260919-7A1DB2F2 betrifft Staubdeposition auf PV-Feldern und den Mars-/Mond-Ladungshaushalt, nicht die Partikelcharakterisierung, die respirable Fraktion oder das Human-System-Limit; RES-20260920-E760DC70 betrifft Mars-Radiatoren. Materiell neu ist die Pruefung der drei zentralen Zahlenanker und der medizinischen Negativaussage.",
-  "fingerprint": "f009f97acb32186e"
+  "fingerprint": "f009f97acb32186e",
+  "updated_at": "2026-10-18T09:18:21+00:00",
+  "last_error": "research agent changed forbidden files: ['downloads/20200000867.pdf', 'downloads/20205008219.pdf', 'downloads/Chapter07.pdf', 'downloads/Chapter09.pdf', 'downloads/acta2026.pdf', 'downloads/gaier.pdf', 'downloads/gaier.txt', 'downloads/gaier_tm.pdf', 'downloads/graf1993.pdf', 'downloads/ladtag.pdf', 'downloads/lpcc2025.pdf', 'downloads/lsc_10084.pdf', 'downloads/lsc_14163.pdf', 'downloads/lsc_70181.pdf', 'downloads/lsc_72141.pdf', 'downloads/lsgsd.zip', 'downloads/myths.pdf', 'downloads/nasa-std-3001-vol-2-app-d-requirements-compliance-matrix.pdf', 'downloads/nesc.pdf', 'downloads/nesc2026.pdf', 'downloads/npj2022.pdf', 'downloads/ochmo-tb-015-spaceflight-toxicology.pdf', 'downloads/ochmo_brief.pdf', 'downloads/risk2024.pdf', 'downloads/risk2025.pdf', 'downloads/roadmap2024.pdf', 'downloads/s41526-023-00275-2.pdf', 'downloads/taylor-geotech-prop-1-24-05.pdf', 'research/candidates/RES-20261018-F009F97A.md']"
 }
