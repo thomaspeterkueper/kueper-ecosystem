@@ -17,7 +17,7 @@ POLICY=json.loads((ROOT/"research/policy.json").read_text(encoding="utf-8"))
 CONTROL="thomaspeterkueper/kueper-ecosystem"
 KG=POLICY["target_repository"]
 MAX_ITEMS=int(os.environ.get("KUEPER_MAX_CANDIDATE_VALIDATIONS","3"))
-CODES={"ecosystem":"ECO","knowledge-graph":"KG","ssf":"SSF","noxia":"NOXIA","noxia-universe":"NXU","mishkenaz":"MISH","omnizedenz":"OMNI","avi-modell":"AVI","contracomology":"CONTRA","kueper-archive-schema":"ARCH","endia":"ENDIA","zereya":"ZEREYA","davaru":"DAVARU","fluide-hermeneutik":"FLHERM","resonanz-ethik":"RESETH","kueper-com":"KUE","ota":"OTA","thomas-kueper-de":"TKD"}
+CODES={"ecosystem":"ECO","knowledge-graph":"KG","ssf":"SSF","noxia":"NOXIA","noxia-universe":"NXU","mishkenaz":"MISH","omnizedenz":"OMNI","avi-modell":"AVI","contracomology":"CONTRA","kueper-archive-schema":"ARCH","endia":"ENDIA","zereya":"ZEREYA","davaru":"DAVARU","fluide-hermeneutik":"FLHERM","resonanz-ethik":"RESETH","kueper-com":"KUE","ota":"OTA","products":"PROD","thomas-kueper-de":"TKD"}
 
 def gh(token:str,method:str,path:str,body:dict[str,Any]|None=None)->Any:
     data=None if body is None else json.dumps(body).encode()

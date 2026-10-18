@@ -12,7 +12,7 @@ from typing import Any
 API="https://api.github.com"
 ROOT=Path(__file__).resolve().parents[2]
 REG=json.loads((ROOT/"registry/projects.json").read_text(encoding="utf-8"))
-CODES={"ecosystem":"ECO","knowledge-graph":"KG","ssf":"SSF","noxia":"NOXIA","noxia-universe":"NXU","mishkenaz":"MISH","omnizedenz":"OMNI","avi-modell":"AVI","contracomology":"CONTRA","kueper-archive-schema":"ARCH","endia":"ENDIA","zereya":"ZEREYA","davaru":"DAVARU","fluide-hermeneutik":"FLHERM","resonanz-ethik":"RESETH","kueper-com":"KUE","ota":"OTA","thomas-kueper-de":"TKD"}
+CODES={"ecosystem":"ECO","knowledge-graph":"KG","ssf":"SSF","noxia":"NOXIA","noxia-universe":"NXU","mishkenaz":"MISH","omnizedenz":"OMNI","avi-modell":"AVI","contracomology":"CONTRA","kueper-archive-schema":"ARCH","endia":"ENDIA","zereya":"ZEREYA","davaru":"DAVARU","fluide-hermeneutik":"FLHERM","resonanz-ethik":"RESETH","kueper-com":"KUE","ota":"OTA","products":"PROD","thomas-kueper-de":"TKD"}
 
 def gh(token:str,method:str,path:str,body:dict[str,Any]|None=None):
     data=None if body is None else json.dumps(body).encode();req=urllib.request.Request(API+path,data=data,method=method)

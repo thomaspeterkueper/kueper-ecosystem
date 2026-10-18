@@ -46,16 +46,13 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[2]
 REGISTRY = ROOT / "registry" / "projects.json"
+REGISTRY_SCHEMA = ROOT / "schemas" / "project-registry.schema.json"
 DECISIONS = ROOT / "decisions"
 STATUS_JSON = ROOT / "status" / "governance-sweep.json"
 STATUS_MD = ROOT / "status" / "governance-sweep.md"
 CONTROL_PLANE_REPO = "thomaspeterkueper/kueper-ecosystem"
 API = "https://api.github.com"
 
-VALID_ROLES = {
-    "control-plane", "application", "engineering", "knowledge-platform",
-    "knowledge-graph", "archive", "website", "infrastructure", "authoring",
-}
 CODE_PATTERN = re.compile(r"^[A-Z][A-Z0-9]*$")
 DECISION_FILE_PATTERN = re.compile(r"^ECO-ARC-(\d{4})-2026-DE\.md$")
 
@@ -80,6 +77,15 @@ class SweepResult:
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_valid_roles() -> set[str]:
+    """Derive valid roles from the registry schema so the two cannot drift."""
+    schema = load_json(REGISTRY_SCHEMA)
+    return set(schema["$defs"]["project"]["properties"]["role"]["enum"])
+
+
+VALID_ROLES = load_valid_roles()
 
 
 def normalize_title(title: str) -> str:
