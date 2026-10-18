@@ -14,7 +14,7 @@ import agent_worker as worker  # noqa: E402
 import agent_worker_v71 as v71  # noqa: E402
 from direct_main_guard import install_pre_push_guard  # noqa: E402
 
-TARGET_CODES = "ECO, KG, SSF, NOXIA, ENG, NXU, MISH, OMNI, AVI, CONTRA, ARCH, ENDIA, ZEREYA, DAVARU, FLHERM, RESETH, KUE, OTA, TKD"
+TARGET_CODES = "ECO, KG, SSF, NOXIA, ENG, NXU, MISH, OMNI, AVI, CONTRA, ARCH, ENDIA, ZEREYA, DAVARU, FLHERM, RESETH, KUE, OTA, TKD, PROD"
 
 
 def repo_task(task: dict[str, Any], model: str) -> dict[str, Any]:
