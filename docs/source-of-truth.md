@@ -37,6 +37,8 @@ Kein Repository darf fremde Domänen stillschweigend kanonisieren.
 | NOXIA-Unlocks und Gameplay-Anwendung | `noxiagame` |
 | Autorenwebsite und öffentliche Werkdarstellung | `thomas-kueper.de` |
 | Fiktionale Archiv- und Werkbezüge | `overtime-archive.org` |
+| Technische Anforderungen, Architektur und Subsystemdesign (Engineering) | `kueper-engineering` |
+| Provisorische, noch nicht engineering-geschlossene Infrastruktur-/Weltparameter (z. B. Piazzi-Lights/Ceres 2091) | jeweiliges Kanon-Repository (z. B. `noxia-universe`); der Status „provisorisch" ist Teil der Aussage (ECO-ARC-0035) |
 
 ## 4. Referenzieren ist erlaubt
 
