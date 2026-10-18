@@ -66,6 +66,19 @@ def required_ci_gate(task: dict[str, Any]) -> dict[str, Any]:
     return merge_gate.evaluate_pr(repository, pr_url)
 
 
+def current_pr_head(task: dict[str, Any], gate: dict[str, Any]) -> str | None:
+    """Resolve the live PR head, including repositories without a required-check policy."""
+    pr_url = str(task.get("pr_url") or "").strip()
+    if not pr_url:
+        return None
+    if gate.get("head_sha"):
+        return str(gate["head_sha"]).strip() or None
+    meta = merge_gate._run_json(["gh", "pr", "view", pr_url, "--json", "headRefOid,state"])
+    if str(meta.get("state") or "").upper() != "OPEN":
+        return None
+    return str(meta.get("headRefOid") or "").strip() or None
+
+
 def blocked_gate_result(task: dict[str, Any], gate: dict[str, Any]) -> dict[str, Any]:
     print(
         f"::notice title=Required CI gate blocked::{task.get('id')}: {gate.get('reason')}",
@@ -90,6 +103,22 @@ def cost_aware_review_task(task: dict[str, Any], db: Any, *, gate_prechecked: bo
 
     paths = v07.changed_paths(pr_url) if pr_url else ["__UNKNOWN_CHANGED_PATHS__"]
     model, model_reason = v07.select_review_model(task, paths)
+
+    # Daily dedup must follow the live GitHub head, not a stale task payload.
+    if pr_url:
+        live_gate = required_ci_gate(task)
+        if not live_gate.get("allowed"):
+            return blocked_gate_result(task, live_gate)
+        live_head = current_pr_head(task, live_gate)
+        if not live_head:
+            return blocked_gate_result(
+                task,
+                {"reason": "missing-current-head", "head_sha": None, "details": []},
+            )
+        task = dict(task)
+        task["payload"] = dict(task.get("payload") or {})
+        task["payload"]["head_sha"] = live_head
+
     reason = review_reason(task, model_reason)
 
     if already_reserved_today(db, task, reason):
