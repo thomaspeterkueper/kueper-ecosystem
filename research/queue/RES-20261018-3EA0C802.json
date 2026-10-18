@@ -1,0 +1,41 @@
+{
+  "id": "RES-20261018-3EA0C802",
+  "status": "queued",
+  "created": "2026-10-18T08:09:31+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/buecher/gott-ist-eine-wolke.md",
+  "source_ref": "6a585cccc4ceb1b3dac2a07eec76121b598d8a1f",
+  "source_blob_sha": "4bc38fffba6d1faf9b22524ad8f9de88bba99c50",
+  "title": "Die Wolke als biblische Gegenwartsmetapher: Textbefund, Traditionsgeschichte und die Grenzen der Omnizedenz-Analogie",
+  "question": "Das Buch „Gott ist eine Wolke“ behauptet, die Wolke sei „eine alte, biblische Metapher — Zeichen der Gegenwart Gottes, sichtbar und doch nicht greifbar, alles durchdringend, ohne alles zu beherrschen“. Was belegen die alttestamentlichen und frühjüdisch-frühchristlichen Primärtexte tatsächlich über Wolkentheophanie (Ex 13; 19; 24; 33; 40; 1 Kön 8; Jes 19; Ez 1; Dan 7; Synoptiker; Offb), welche Funktionen trägt die Wolke (Führung, Verhüllung, Gericht, Wohnen, Menschensohn), und wie verhalten sich rabbinische Schekhina-Traditionen und christliche Auslegung dazu? Trägt der Satz „alles durchdringend, ohne alles zu beherrschen“ den Textbefund, oder vermischt er Exegese, Rezeptionsgeschichte und Omnizedenz-Deutung? Welche Formulierungen müssen als Textbefund, welche als historische Deutung, welche als vergleichende Analogie und welche als KUEPER-Systembehauptung markiert werden?",
+  "why_now": "„Gott ist eine Wolke“ ist zu 40 Prozent in Arbeit, und die Wolke ist die titelgebende Zentralmetapher der Leseprobe. Der Text behauptet einen biblischen Anker, ohne ihn exegetisch zu belegen; die bisherige Bibelrecherche zu Apostelgeschichte 17,28 deckt nur einen anderen Vers und nicht das Wolkentheophanie-Motiv ab. Ohne diese Klärung droht die Buchmetapher als nachträglicher Beweis zu wirken, was der Kanonstand vom 15.09.2026 ausdrücklich ausschließt.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "R",
+    "I",
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Alttestamentliche und frühchristliche Wolkentheophanie-Texte sowie ihre historisch-kritische, rabbinische und christliche Auslegung (Exodus, 1 Könige, Jesaja, Ezechiel, Daniel, Synoptiker, Offenbarung; Schekhina-Tradition).",
+  "publication_route_hint": null,
+  "project_weight": 0.65,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.88,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20261006-5A34ED3B"
+  ],
+  "novelty_reason": "Nicht identisch mit RES-20261006-5A34ED3B: Dort geht es um Apostelgeschichte 17,28, die Areopagrede und den stoischen Panentheismus. Hier geht es um das eigenständige Wolkentheophanie-Motiv und die exegetische Tragfähigkeit der Buchtitel-Metapher; Textkorpus, Fragestellung und die Unterscheidung von Textbefund und Rezeptionsgeschichte sind andere.",
+  "fingerprint": "3ea0c802bb77e6f0"
+}
