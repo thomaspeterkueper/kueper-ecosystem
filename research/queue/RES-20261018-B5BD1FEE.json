@@ -1,6 +1,6 @@
 {
   "id": "RES-20261018-B5BD1FEE",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-18T08:56:30+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -41,5 +41,7 @@
     "RES-20260919-7A1DB2F2"
   ],
   "novelty_reason": "Kein bisheriges Topic prueft lunare Regolith-Abrasivitaet, Dichtungsverschleiss oder Plume-Erosionsminderung durch Verdichtung. RES-20260919-7A1DB2F2 behandelt Staub auf PV-Feldern (Deposition, Reinigung, Ertrag) und RES-20260920-E760DC70 Mars-Radiatoren; beide beruehren weder Tribologie und Dichtungen noch Landeplatz-PSI oder EDS-Reifegrade. Die hier geforderte Pruefung der zwei zentralen Neuzitate und ihrer Vakuum-Uebertragbarkeit ist materiell neu.",
-  "fingerprint": "b5bd1fee38da0719"
+  "fingerprint": "b5bd1fee38da0719",
+  "updated_at": "2026-10-18T09:28:59+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/229"
 }
