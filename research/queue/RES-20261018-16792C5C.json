@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261018-16792C5C",
+  "status": "queued",
+  "created": "2026-10-18T08:09:29+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/archiv/arbeitsentwurf-weltgenese-spielraum-verantwortung-2026-10-13.md",
+  "source_ref": "6a585cccc4ceb1b3dac2a07eec76121b598d8a1f",
+  "source_blob_sha": "e2121fbf84fbc882051b7596fbfe7bd3d0b82b15",
+  "title": "Weltindividuation ohne gemeinsame Zeit: Possible Worlds, Grounding und generative Herkunft",
+  "question": "Der Arbeitsentwurf vom 13. Oktober 2026 unterscheidet Existenzabhängigkeit, generative Herkunft und fortdauernde Abhängigkeit und fragt, ob eine Welt aus einer anderen hervorgehen kann, ohne eine gemeinsame Zeitordnung oder fortdauernde Wechselwirkung zu teilen. Welche Präzisierungen bieten die gegenwärtige Metaphysik möglicher Welten (Lewis, Stalnaker), die Debatte um metaphysical grounding (Fine, Schaffer, Rosen, Correia/Schnieder) sowie die Literatur zu ontologischer Abhängigkeit und Fundamentality für diese Unterscheidung? Sind Asymmetrie, Azyklizität und Transitivität der generativen Relation begründbar, oder sind sie metaphysische Zusatzannahmen? Welches nichtzirkuläre Kriterium unterscheidet eine „Welt“ von einer Region, einer Simulation oder einer bloß abstrakt beschriebenen Formation — und ist Welt-Eigenständigkeit graduell oder kategorial? Wo endet begriffliche Kohärenz, und wo beginnt eine physikalisch ungeklärte Behauptung?",
+  "why_now": "Der jüngste Commit (2026-10-13) ergänzt genau diese Fallunterscheidungen und endet mit dem offenen Prüfauftrag, den Weltbegriff über Individuation, interne Relationen und Grenzen zu testen. Der Kanonstand vom 24.09.2026 liefert dafür noch kein Kriterium; die öffentliche Ontologie, das geplante Hauptwerk und die Weltgenese-Passagen hängen an dieser Klärung.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Analytische Metaphysik möglicher Welten, ontologische Abhängigkeit, metaphysisches Grounding und Fundamentality (Lewis, Fine, Schaffer, Rosen, Correia/Schnieder; Stanford Encyclopedia of Philosophy).",
+  "publication_route_hint": null,
+  "project_weight": 0.65,
+  "relevance_score": 0.89,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine der bisherigen Themen behandelt Weltindividuation, generative Herkunft ohne gemeinsame Zeit, Grounding oder Possible-Worlds-Metaphysik. Die Blockzeit- und Pantheismus-Themen betreffen Zeitmodelle bzw. begriffliche Abgrenzung, nicht die Ontologie hypothetischer Welten und die Kriterien von Weltgrenzen.",
+  "fingerprint": "16792c5c6cd68403"
+}
