@@ -1,0 +1,45 @@
+{
+  "id": "RES-20261018-B5BD1FEE",
+  "status": "queued",
+  "created": "2026-10-18T08:56:30+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0084-2026-DE.md",
+  "source_ref": "ff99db86923e2490345fd384d9b24da25bf6032a",
+  "source_blob_sha": "4e33b75018a992fc803ac76c6c3c3d6c9c2b6298",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 214,
+  "context_paths": [
+    "src/content/documents/OTA-TEC-0016-2063-DE.md",
+    "src/content/documents/OTA-TEC-0025-2050-DE.md",
+    "src/content/documents/OTA-TEC-0025-2091-DE.md"
+  ],
+  "title": "Realwelt-Audit der Staubabrasion, der Landeplatzverdichtung und des EDS-Reifegrads in OTA-TEC-0084 (v1.2, Abschnitte 4.1, 5, 7, 11, 17): Kalácska et al. 2024, Dotson et al. 2025 und NASA-TRL 7",
+  "question": "Quellengestuetzter Audit der [R]/[R/H]/[H]-Staubmechanik und Mitigationspfade von OTA-TEC-0084-2026-DE, gepinnt auf Dokumentversion v1.2 (Evidenzaudit 2026-09-22), gegen primaere Tribologie-, Plume-Surface-Interaction- und Technologiereifeliteratur. (1) Kalácska et al. (2024), Materials 17(17):4240, DOI 10.3390/ma17174240: Verifiziere Existenz, Autorschaft, Journal, Band/Artikelnummer und DOI. Berichte das tatsaechliche Versuchsdesign: welche zwei lunaren und zwei marsianischen Simulanzien, welcher Drei-Koerper-Abrasionstest, welche Edelstahl-/PTFE-Dichtungspaarung, welche Messgroesse (Masseverlust, Verschleissrate, Oberflaechenanalyse) und welche Effektgroesse/Statistik. Pruefe, ob 'signifikant geringere abrasive Wirkung' der marsianischen Simulanzien so berichtet wird, ob die Richtung Mond > Mars auch fuer andere Materialpaarungen gilt und welche Autorengrenzen genannt werden (Simulanz vs. echter Regolith, Koernungsform, Atmosphäre vs. Vakuum, nanophasiges Eisen). (2) Abrasionskorpus: Berichte den realen Stand zur Abrasivitaet lunarer Simulanzien und echten Regoliths (Gaier/NASA-Dust-Effects-Arbeiten, Dichtungs-/Elastomer-/Lager-verschleiss, ESMATS-/Tribologie-Studien), damit die Aussage 'lunare Staubabrasion kann fuer Dichtungen/Rotationskontakte besonders anspruchsvoll sein' als [R] eingeordnet werden kann und die im Dossier ausdruecklich verworfene Wartungsdominanz [H] bleibt. (3) Dotson et al. (2025), Planetary and Space Science 261:106117, DOI 10.1016/j.pss.2025.106117: Verifiziere bibliographische Daten und Versuchsaufbau (Simulant, subsonische nichtreaktive Stroemung, Schuettdichte-Stufen, Druckbereich, Messung der viskosen Erosionsrate). Pruefe die Zahl 'bis zu etwa 50 % geringere Erosionsrate' vom unverdichteten zum leicht verdichteten Zustand, den nichtlinearen Kohaesionseffekt oberhalb von etwa 1000 Pa und die Autorengrenzen. Ist 'viscous erosion' im verduennten lunaren Plume-Regime (Knudsen-Zahl, freie Molekuelstroemung, Ueberschall) ueberhaupt der dominante Erosionsmechanismus, oder muss die Uebertragung auf ein Vakuum-Landepad als offener Skalierungsschritt gefuehrt werden? (4) PSI-Realitaet: Berichte den realen Stand zu Plume-Surface-Interaction und Landeplatzstabilisierung (Apollo-Landeplatzbeobachtungen und Erosionsspuren, LRO/LADEE-Auswertungen, IM-1-Odysseus-Erosionsbefund 2024, Labor-/Vakuumkammer-Experimente, Modellliteratur), und stelle fest, ob passive Verdichtung als demonstrierte Mitigation fuer lunare Landepads gilt oder nur als plausibler Laborpfad; nenne Alternativen (Sinterregolith-Pads, Bermen, erhoehte Schwebehoehe, Mehrfach-Landeplaetze). (5) EDS-TRL: Verifiziere die Aussage 'NASA fuehrt das EDS-Kernkonzept inzwischen mit TRL 7', welche konkrete Implementierung und Umgebung diesen Reifegrad traegt, und ob die Differenzierung 'Varianten und konkrete Anwendungen liegen teils darunter' werktreu ist; berichte den aktuellen EDS-/Dust-Mitigation-Stand (NASA-Portfolio, Flug-/Mondmissionseinsatz, offene Qualifikationen). (6) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen, die als '[R] Quelleninhalt, eine Materialpaarung/ein Laborregime' zu praezisieren sind, und die [H]/[OFFEN] bleiben muessen; stelle fest, dass kein kanonisches Wartungsintervall, keine kanonische Landepad-Ausfuehrung und keine kanonische PELICAN-Dichtungsqualifikation eingefuehrt werden darf. AUSGESCHLOSSEN: Flotten-, Frequenz-, Kosten- und NOXIA-Werte, die 20-min-Phase, Δv-/Massenbilanz, Abortarchitektur, die [F]-Setzungen und die bereits anderweitig auditierte Staubdeposition auf PV-Feldern.",
+  "why_now": "v1.2 hat am 2026-09-22 die beiden juengsten und spezifischsten Belege des Dossiers (Kalácska 2024, Dotson 2025) sowie den EDS-TRL-7-Anker als tragende [R]-Saetze eingefuehrt. Beide Arbeiten sind erst ein bis zwei Jahre alt, ihre Uebertragbarkeit auf Vakuum, echten Regolith und ein wiederverwendbares Landefahrzeug ist im Dossier selbst nur behauptet, und der PSI-Stand hat sich durch die IM-1-Landeerosion 2024 und die laufende Mondlanderwelle verschoben.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Der Drei-Koerper-Abrasionstest an lunaren vs. marsianischen Regolith-Simulanzien (Kalácska et al. 2024), die Schuettdichteabhaengigkeit viskoser Plume-Erosion (Dotson et al. 2025) und der von NASA beanspruchte TRL 7 des Electrodynamic Dust Shield.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.8525,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [
+    "RES-20260919-7A1DB2F2"
+  ],
+  "novelty_reason": "Kein bisheriges Topic prueft lunare Regolith-Abrasivitaet, Dichtungsverschleiss oder Plume-Erosionsminderung durch Verdichtung. RES-20260919-7A1DB2F2 behandelt Staub auf PV-Feldern (Deposition, Reinigung, Ertrag) und RES-20260920-E760DC70 Mars-Radiatoren; beide beruehren weder Tribologie und Dichtungen noch Landeplatz-PSI oder EDS-Reifegrade. Die hier geforderte Pruefung der zwei zentralen Neuzitate und ihrer Vakuum-Uebertragbarkeit ist materiell neu.",
+  "fingerprint": "b5bd1fee38da0719"
+}
