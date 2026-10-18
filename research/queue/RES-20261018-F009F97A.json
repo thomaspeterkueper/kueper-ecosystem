@@ -1,0 +1,42 @@
+{
+  "id": "RES-20261018-F009F97A",
+  "status": "queued",
+  "created": "2026-10-18T08:56:29+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0084-2026-DE.md",
+  "source_ref": "ff99db86923e2490345fd384d9b24da25bf6032a",
+  "source_blob_sha": "4e33b75018a992fc803ac76c6c3c3d6c9c2b6298",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 214,
+  "context_paths": [
+    "src/content/documents/OTA-TEC-0016-2063-DE.md",
+    "src/content/documents/OTA-TEC-0025-2050-DE.md",
+    "src/content/documents/OTA-TEC-0025-2091-DE.md"
+  ],
+  "title": "Realwelt-Audit der lunaren Staubkorngroessen, der Feinfraktion <45 µm und des NASA-STD-3001-Expositionslimits in OTA-TEC-0084 (v1.2, 2026-09-22, Abschnitte 3, 4.1, 4.2)",
+  "question": "Quellengestuetzter Audit der [R]- und [R/OFFEN]-Staubcharakterisierung von OTA-TEC-0084-2026-DE, gepinnt auf Dokumentversion v1.2 (Evidenzaudit 2026-09-22; im gescopten Workspace ist keine Git-Revision auslesbar, daher Bindung an Version und Datum), gegen primaere lunare Regolith-, Standard- und Toxikologieliteratur. (1) Korngroessen: Pruefe die Saetze 'Apollo-/Luna-basierte Engineering-Zusammenfassungen geben fuer submillimetergroesse lunare Boeden einen Medianbereich von etwa 40-130 µm mit einem mittleren Wert um 70 µm an; grob 10-20 Gew.-% liegen unter 20 µm' gegen die tatsaechlichen Datensaetze und Uebersichten (Carrier 1973; McKay et al.; Heiken/Vaniman in Lunar Sourcebook 1991; Graf 1993; Taylor et al. 2005; Park et al. 2008; Liu & Taylor; Apollo-Bodenproben 10084, 14163, 70181, 72141). Klaere, ob '40-130 µm' ein Medianbereich ueber verschiedene Boeden, eine Mittelwertspanne oder eine Standort-/Tiefenspanne bezeichnet, wie der 'mittlere Wert um 70 µm' definiert ist (arithmetisches Mittel der Submillimeterfraktion?), und welche realen Massenanteile fuer <20 µm und <45 µm die Primaerliteratur meldet. Melde jede Abweichung der Gewichtsprozentangabe und benenne die Streuung zwischen Landeplatzen und Tiefen. (2) NESC-Wissensluecke: Verifiziere die Aussage, der NASA-NESC-Dust-Workshop 2020 stufe die Eigenschaften der Fraktion <45 µm als 'Very High Priority'-Wissensluecke ein, samt Berichtsidentitaet (NASA/TM-2020-5008219 bzw. die tatsaechliche NESC-/Workshop-Publikation), Datum und Wortlaut; pruefe, ob die Aussage 'die Unsicherheit nimmt mit kleinerer Partikelgroesse zu' so im Bericht steht, und berichte den aktuellen Stand nach 2020 (Folge-Workshops, LuSTR-/Dust-Mitigation-Portfolio, aktualisierte Wissenslueckenlisten). (3) Expositionsgrenzwert: Verifiziere NASA-STD-3001 Vol. 2 Rev. F, Abschnitt 6.2.8.3 bzw. Kennung [V2 6053], und den Wert 0,3 mg/m3 zeitgewichtetes Mittel fuer Partikel <10 µm bei intermittierender taeglicher Exposition ueber bis zu sechs Monate. Pruefe die aktuelle Revision des Standards (Rev. G oder spaeter), ob der Grenzwert unveraendert gilt, auf welcher toxikologischen Basis er beruht und ob fuer lunaren Staub ein separater SMAC-/PEL-Wert oder eine missionsspezifische Ableitung existiert. Ist die Formulierung 'Human-System-Grenzwert, kein zulaessiger Aussenstaubwert' werktreu? (4) Gesundheit: Pruefe die Apollo-Symptomliste (Niesen, verstopfte Nase, Augen-/Haut-/Rachenreizung, 'lunar hay fever') gegen NASA/CR-2007-214685 (Gaier) und die biomedizinischen Apollo-Auswertungen; pruefe die Negativaussage, eine dokumentierte Silikose sei bei Apollo nicht belegt, gegen die medizinische und toxikologische Literatur (Silika-Reaktivitaet, nanophasiges Eisen, ROS-Bildung, Partikelgroesse <2,5 µm) und gegen spaetere Astronauten-Gesundheitsstudien. Berichte, ob 'keine dokumentierte Silikose' als [R]-Negativbefund tragfaehig bleibt oder als 'kein Nachweis in der zugänglichen Literatur' praeziser zu fassen ist, und ob Langzeitfolgen weiterhin [OFFEN] sind. (5) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen, die zu '[R] Quelleninhalt/Groessenordnung mit Standort- und Populationsabhaengigkeit' abzuschwaechen sind, und die [R/OFFEN]/[OFFEN] bleiben muessen; stelle fest, dass keine kanonische Korngroessenverteilung, kein kanonischer Feinfraktionsanteil und kein kanonischer Expositionsgrenzwert fuer PELICAN-Landeplaetze eingefuehrt werden darf. AUSGESCHLOSSEN: Fahrzeugwerte, Flotte, Frequenzen, die 20-min-Powered-Descent-Phase, Δv-/Massenbilanz, Abortarchitektur, NOXIA-Balancing und alle [F]-Setzungen.",
+  "why_now": "Das Dossier wurde am 2026-09-22 auf v1.2 gehoben und dabei erstmals mit konkreten Korngroessen-, Feinfraktions- und Expositionsankern quantifiziert; diese Anker tragen die gesamte Gesundheits- und Materialgrenze des Dokuments, sind aber bislang nur als Kurzformeln ohne Primaerquellenpruefung gefuehrt. Der offene Cross-Document-Abgleich mit OTA-TEC-0025 (dort noch 'Silikose' und '20 min Abstieg') macht die Belastbarkeit genau dieser Saetze zeitkritisch.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Lunare Regolith-Korngroessenverteilungen (Median ~40-130 µm, Mittel ~70 µm, 10-20 Gew.-% <20 µm), die NASA-NESC-Wissensluecke zur Fraktion <45 µm und der NASA-STD-3001-Vol.-2-Grenzwert 0,3 mg/m3 fuer Partikel <10 µm ueber sechs Monate, einschliesslich der Apollo-Symptom- und Silikose-Negativaussage.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.8375,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.78,
+    "uncertainty": 0.72,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriges OTA-Research-Topic behandelt lunare Regolith-Korngroessen, die NESC-Feinfraktionsluecke oder NASA-STD-3001-Expositionsgrenzwerte. Die naechstliegende Nachbararbeit RES-20260919-7A1DB2F2 betrifft Staubdeposition auf PV-Feldern und den Mars-/Mond-Ladungshaushalt, nicht die Partikelcharakterisierung, die respirable Fraktion oder das Human-System-Limit; RES-20260920-E760DC70 betrifft Mars-Radiatoren. Materiell neu ist die Pruefung der drei zentralen Zahlenanker und der medizinischen Negativaussage.",
+  "fingerprint": "f009f97acb32186e"
+}
