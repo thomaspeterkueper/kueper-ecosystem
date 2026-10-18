@@ -1,7 +1,7 @@
 {
   "$schema": "../schemas/project-registry.schema.json",
   "schema_version": "1.0.0",
-  "updated_at": "2026-09-04",
+  "updated_at": "2026-10-06",
   "projects": [
     {
       "id": "ecosystem",
@@ -870,6 +870,55 @@
       },
       "integrations": [],
       "notes": "Private Authoring-/Entwicklungsschicht fuer Buchprojekte, Textfragmente, Rechercheunterlagen. Sammelort, nicht Publikationsquelle: automatische Kanonisierung, oeffentlicher Export und KG/OTA-Promotion sind untersagt (ECO-ARC-0030, deny-by-default). Ingest/Kontinuitaetsanalyse erlaubt, Ergebnisse bleiben nicht-kanonisch bis zu einer ausdruecklichen Promotion-Entscheidung. Keine regulaeren Cross-Repo-Tasks mit Manuskripttext/vertraulichem Inhalt. Code BW."
+    },
+    {
+      "id": "products",
+      "name": "KUEPER Products",
+      "repository": "thomaspeterkueper/kueper-products",
+      "provider": "github",
+      "enabled": true,
+      "role": "productization",
+      "production_url": null,
+      "health_url": null,
+      "version_source": {
+        "strategy": "none",
+        "candidates": []
+      },
+      "governance": {
+        "required_paths": [
+          "README.md",
+          "PROJECT-BRIEF.md",
+          "research-watch",
+          "opportunities",
+          "external-tasks/open",
+          "external-tasks/done",
+          "external-tasks/rejected"
+        ]
+      },
+      "integrations": [
+        {
+          "target": "engineering",
+          "required": true
+        },
+        {
+          "target": "ota",
+          "required": false
+        },
+        {
+          "target": "knowledge-graph",
+          "required": false
+        },
+        {
+          "target": "ssf",
+          "required": false
+        },
+        {
+          "target": "noxia",
+          "required": false
+        }
+      ],
+      "notes": "Source of Truth fuer Produktentdeckung, Produktportfolio, Zielnutzer, Use Cases, Produktanforderungen, Produktfamilien, Gebrauchstauglichkeit, Varianten, Produkt-BOM/Assembly-Konzept, Sourcing, Zielkosten, Service, Verpackung, Compliance-Planung und Produktreife. Product-Potential-Gate: wissenschaftliche Relevanz allein reicht nicht; Routing erfolgt bei plausiblem Nutzeneffekt/Problem, Engineering-Capability ohne Produktschicht, realweltlichem NOXIA-Analogon oder sinnvoll materialisierbarem SSF-Demonstrator. GitHub bleibt Produktindex/Entscheidungsschicht; grosse Arbeitsartefakte koennen referenziert in Google Drive liegen.",
+      "code": "PROD"
     }
   ]
 }
