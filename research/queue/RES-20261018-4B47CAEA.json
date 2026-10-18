@@ -1,6 +1,6 @@
 {
   "id": "RES-20261018-4B47CAEA",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-10-18T08:09:30+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keines der bisherigen Themen behandelt prokreative Ethik, das Nicht-Identitätsproblem, Antinatalismus oder Theodizee. Das Thema zu Körper, Intuition und Ratio ist erkenntnistheoretisch, nicht normativ; die Pantheismus- und Bewusstseinsthemen berühren diese Zurechnungsfrage nicht.",
-  "fingerprint": "4b47caea7adec24c"
+  "fingerprint": "4b47caea7adec24c",
+  "updated_at": "2026-10-18T08:29:20+00:00",
+  "last_error": "candidate for philosophy-comparative lacks a strong source type marker"
 }
