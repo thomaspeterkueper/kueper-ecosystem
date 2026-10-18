@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261018-4B47CAEA",
+  "status": "queued",
+  "created": "2026-10-18T08:09:30+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/archiv/arbeitsentwurf-weltgenese-spielraum-verantwortung-2026-10-13.md",
+  "source_ref": "6a585cccc4ceb1b3dac2a07eec76121b598d8a1f",
+  "source_blob_sha": "e2121fbf84fbc882051b7596fbfe7bd3d0b82b15",
+  "title": "Verantwortung gegenüber künftigen, noch nicht existierenden Betroffenen: Nicht-Identitätsproblem, Antinatalismus und Theodizee",
+  "question": "Der Arbeitsentwurf fordert zu prüfen, wie Verantwortung für künftig mögliche, noch nicht existierende Betroffene zu begründen ist, und welche Einwände aus antinatalistischer Ethik und Theodizee folgen. Was tragen Parfits Nicht-Identitätsproblem, Benatars Asymmetrie, die Debatte um procreative beneficence (Savulescu/Kahane) und die Literatur zu Pflichten gegenüber künftigen Generationen (Rawls, Gardiner, Caney) für die im Entwurf behauptete asymmetrische Verantwortung des Welt-Erzeugers aus? Lässt sich eine nicht-personale oder relationale Begründung formulieren, die ohne die umstrittene Annahme eines geborenen Subjekts auskommt? Welche Theodizee-Einwände (Problem des Leidens, skeptische Theodizee) treffen die Weltgenese-These, und welche bleiben bloße Analogien? Wo muss der Entwurf von einer moralischen auf eine bloß funktionale Regelungsverantwortung zurückgehen?",
+  "why_now": "Der Arbeitsentwurf vom 13.10.2026 nennt in den offenen Prüfaufträgen 4 und 5 ausdrücklich die Begründung von Verantwortung für noch nicht existierende Betroffene sowie die Einwände aus Antinatalismus und Theodizee. Dieselbe Frage trägt die Resonanzethik und die NOXIA-Ethik künftiger Ressourcen- und Weltgestaltung; der Entwurf markiert sie selbst als ungelöst.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Normative Ethik der Fortpflanzung und künftiger Generationen: Parfits Nicht-Identitätsproblem, Benatars Antinatalismus, Savulescu/Kahane zur procreative beneficence, Rawls/Gardiner/Caney zu Pflichten gegenüber künftigen Generationen; Theodizee und Problem des Übels.",
+  "publication_route_hint": null,
+  "project_weight": 0.65,
+  "relevance_score": 0.88,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.88,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keines der bisherigen Themen behandelt prokreative Ethik, das Nicht-Identitätsproblem, Antinatalismus oder Theodizee. Das Thema zu Körper, Intuition und Ratio ist erkenntnistheoretisch, nicht normativ; die Pantheismus- und Bewusstseinsthemen berühren diese Zurechnungsfrage nicht.",
+  "fingerprint": "4b47caea7adec24c"
+}
