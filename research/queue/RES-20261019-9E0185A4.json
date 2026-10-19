@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261019-9E0185A4",
+  "status": "queued",
+  "created": "2026-10-19T09:01:44+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/pages/resonanzethik.astro",
+  "source_ref": "6a585cccc4ceb1b3dac2a07eec76121b598d8a1f",
+  "source_blob_sha": "93762d36a2a0661b72f583b16df589cea57c035a",
+  "title": "Spielraum gegenüber Capability-Set, Optionsfreiheit und Nicht-Beherrschung: eigenständig oder Neuetikettierung?",
+  "question": "Die Resonanzethik setzt 'Spielraum ist die Möglichkeit, anders weiterzugehen' als ethischen Prüfbegriff und formuliert eine negative Mindestregel gegen die dauerhafte Zerstörung fremder Möglichkeiten. Zu prüfen ist, wie sich dieser Begriff zu etablierten Theorien verhält: Sens und Nussbaums Capability Approach (capability set, functionings, Umwandlungsfaktoren), Berliner negative und positive Freiheit, Rawls' primäre Güter und rationaler Lebensplan, Pettits republikanische Nicht-Beherrschung, Raz' Autonomie- und Optionsbegriff sowie 'opportunity sets' in der Entscheidungstheorie. Welche Elemente sind genuin eigenständig (Relationalität, Gradualität, Regenerierbarkeit statt Reversibilität, Gemeinraum als emergenter Möglichkeitsraum), welche sind Umbenennungen bereits vorhandener Positionen? Welche Operationalisierungs- und Messprobleme ergeben sich, und welche Einwände (Vagheit, Paternalismus, Aggregations- und Vergleichbarkeitsprobleme von Spielräumen, Vernachlässigung von Rechten) treffen den Ansatz? Wo muss die Ethik von einer eigenen Theorie auf eine bescheidene Ergänzung etablierter Ansätze zurückgehen?",
+  "why_now": "Der Kanonstand vom 24.09.2026 macht Spielraum zum zentralen ethischen Prüfbegriff; die Resonanzethik ist als Buch (Fortschritt 20 %) und als öffentliche Seite in Arbeit, aber nirgends gegen die reichhaltige Freiheits- und Capability-Literatur positioniert. Ohne diese Abgrenzung bleibt unklar, was der Begriff gegenüber etablierten Ansätzen leistet.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "T",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Politische Philosophie der Freiheit und Capabilities (Sen, Nussbaum, Berlin, Pettit, Raz), opportunity sets in der Entscheidungstheorie sowie der Affordanzbegriff.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Research-Kandidat behandelt den Spielraum-Begriff oder sein Verhältnis zur Capability-, Freiheits- und Nicht-Beherrschungsliteratur. RES-20260922-66286BBC betraf Körper/Intuition/Ratio als Erkenntnisquellen, nicht die normative Grundlage der Spielraumethik.",
+  "fingerprint": "9e0185a4c0dec228"
+}
