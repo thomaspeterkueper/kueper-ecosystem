@@ -97,6 +97,7 @@ Betroffene Repositories: ...
 - [ECO-ARC-0030-2026-DE — Private Manuscript Repositories](./ECO-ARC-0030-2026-DE.md) — `accepted`
 - [ECO-ARC-0031-2026-DE — Registry-Erweiterung, Buecherwelten, Engineering-Code](./ECO-ARC-0031-2026-DE.md) — `accepted`
 - [ECO-ARC-0035-2026-DE — Registrierung KUEPER Products, Rolle productization und Code PROD](./ECO-ARC-0035-2026-DE.md) — `accepted`
+- [ECO-ARC-0036-2026-DE — Herkunftsebene und Prüfstand von Aussagen](./ECO-ARC-0036-2026-DE.md) — `proposed`
 
 ## Erste mögliche Entscheidungen
 
