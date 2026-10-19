@@ -1,6 +1,6 @@
 {
   "id": "RES-20261018-3EA0C802",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-10-18T08:09:31+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -37,5 +37,7 @@
     "RES-20261006-5A34ED3B"
   ],
   "novelty_reason": "Nicht identisch mit RES-20261006-5A34ED3B: Dort geht es um Apostelgeschichte 17,28, die Areopagrede und den stoischen Panentheismus. Hier geht es um das eigenständige Wolkentheophanie-Motiv und die exegetische Tragfähigkeit der Buchtitel-Metapher; Textkorpus, Fragestellung und die Unterscheidung von Textbefund und Rezeptionsgeschichte sind andere.",
-  "fingerprint": "3ea0c802bb77e6f0"
+  "fingerprint": "3ea0c802bb77e6f0",
+  "updated_at": "2026-10-19T09:15:53+00:00",
+  "last_error": "candidate for philosophy-comparative lacks a strong source type marker"
 }
