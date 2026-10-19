@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261019-886AF4A9",
+  "status": "queued",
+  "created": "2026-10-19T09:01:45+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/archiv/kanonstand-relationale-prozessontologie-2026-09-24.md",
+  "source_ref": "6a585cccc4ceb1b3dac2a07eec76121b598d8a1f",
+  "source_blob_sha": "720720fa072a7e5118553d10c32f6497029cb3d2",
+  "title": "Welche Resonanz? Abgrenzung von Hartmut Rosas Resonanzsoziologie und ihrer fachlichen Kritik",
+  "question": "Der Kanonstand vom 24.09.2026 (§11) bestimmt Resonanz als besondere Form oder Erfahrungsweise relationalen Geschehens, nicht als ontologischen Grundstoff und nicht als moralischen Maßstab, und betont, dass auch geschlossene, manipulative oder asymmetrische Formationen starke Resonanz erzeugen. Zu prüfen ist, wie sich dieser Begriff zu Hartmut Rosas Resonanztheorie (Resonanz: Eine Soziologie der Weltbeziehung, 2016) verhält: dessen Verständnis von Resonanz als Antwortbeziehung, die Resonanzachsen, die Unterscheidung von Resonanz und Entfremdung sowie die normative Aufladung des Begriffs. Welche fachlichen Einwände gegen Rosa sind dokumentiert (Normativität und Unschärfe, empirische Operationalisierung, kulturelle Partikularität, Nähe zu Adornos Entfremdungsbegriff, Kritik an 'Resonanz' als spätmoderner Imperativ)? Deckt sich die projektinterne Warnung vor Resonanz in asymmetrischen Formationen mit dieser Kritik, oder widerspricht sie ihr? Welche Rolle spielt 'Resonanz' außerdem in Physik und Akustik, und wo muss die Übertragung auf Ontologie und Ethik ausdrücklich als Analogie markiert werden? Zu klären ist, ob die Omnizedenz einen eigenen, klar abgrenzbaren Resonanzbegriff hat oder einen bereits stark besetzten Terminus umdeutet.",
+  "why_now": "Resonanz ist Namensgeber und zentraler Wahrnehmungsbegriff der Resonanzethik, doch der gesamte Werkbestand setzt sich nirgends mit der gegenwärtig einflussreichsten soziologischen Resonanztheorie auseinander. Das schwächt sowohl die öffentliche Anschlussfähigkeit als auch die wissenschaftliche Fundierung von Band 1.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "T",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Hartmut Rosas Resonanztheorie (Resonanz: Eine Soziologie der Weltbeziehung, 2016), ihre Rezeption und fachliche Kritik sowie die physikalisch-akustische Bedeutung von Resonanz als Vergleichsfolie.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.65,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Research-Kandidat behandelt den Resonanzbegriff oder Rosa. RES-20260828-D6A60CB1 betraf Pantheismus, Panentheismus und Prozessphilosophie, nicht Resonanzsoziologie; RES-20260922-66286BBC betraf leibliche Erkenntnisquellen.",
+  "fingerprint": "886af4a964830e57"
+}
