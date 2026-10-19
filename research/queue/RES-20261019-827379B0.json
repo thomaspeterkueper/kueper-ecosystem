@@ -1,6 +1,6 @@
 {
   "id": "RES-20261019-827379B0",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-19T09:01:43+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -36,5 +36,7 @@
     "RES-20260922-282CFC71"
   ],
   "novelty_reason": "RES-20261018-16792C5C fragte nach Weltindividuation ohne gemeinsame Zeit, Possible Worlds und Grounding, nicht aber nach den am 13.10.2026 neu eingeführten drei Historizitätsbegriffen, dem zeitlosen-Welt-Gegenbeispiel oder der Spannung zwischen einer insgesamt prozessualen Ontologie und gänzlich statischen Formationen. RES-20260922-282CFC71 behandelte physikalische Zeitmodelle und Werden, nicht nichtzeitliche Generativität oder 'Geschichte' ohne Zeit. Die neue Untersuchung adressiert damit einen materiell ungelösten Punkt beider Vorläufer.",
-  "fingerprint": "827379b0315b403b"
+  "fingerprint": "827379b0315b403b",
+  "updated_at": "2026-10-19T09:26:53+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/233"
 }
