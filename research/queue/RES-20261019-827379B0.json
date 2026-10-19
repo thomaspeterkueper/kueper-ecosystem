@@ -1,0 +1,40 @@
+{
+  "id": "RES-20261019-827379B0",
+  "status": "queued",
+  "created": "2026-10-19T09:01:43+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/archiv/arbeitsentwurf-weltgenese-spielraum-verantwortung-2026-10-13.md",
+  "source_ref": "6a585cccc4ceb1b3dac2a07eec76121b598d8a1f",
+  "source_blob_sha": "e2121fbf84fbc882051b7596fbfe7bd3d0b82b15",
+  "title": "Geschichte ohne Zeit: drei Historizitätsbegriffe und die Grenze der prozessualen Weltontologie",
+  "question": "Der Arbeitsentwurf vom 13. Oktober 2026 unterscheidet in §11 innere, generative und relationale Geschichte und führt eine 'zeitlose Tochterwelt' sowie eine 'elternlose, zeitlose Formation' als Grenzfälle ein. Zu prüfen ist: (1) Lässt sich 'Geschichte' ohne jede Zeitordnung kohärent definieren, oder setzt der Begriff notwendig eine Ordnung von früher/später voraus — und was leisten stattdessen Begriffe wie explanatorische Priorität, metaphysical grounding, gen identity, Cambridge change und ontologische Abhängigkeit? (2) Kann eine insgesamt prozessual verfasste Wirklichkeit (Kanon vom 24.09.2026) überhaupt gänzlich statische Formationen enthalten, oder ist Prozessualität dann nur global und nicht lokal zu verstehen — und wie verhält sich das zu Whiteheadscher Prozessphilosophie sowie zu statischen bzw. veränderungslosen Welten in der analytischen Metaphysik? (3) Welches nichtzirkuläre Individuationskriterium bleibt für eine vollkommen unterschiedslose oder unveränderliche Formation, wenn weder innere Ereignisse noch genealogische Vergangenheit zur Verfügung stehen (Identität der Ununterscheidbaren, haecceitas, strukturelle Individuation)? (4) Sind die drei Historizitätsbegriffe trennscharf, oder vermischen sie Beschreibungs-, Erklärungs- und Seinsebenen? Die Untersuchung soll philosophische Positionen und ihre Einwände referieren; sie darf die Omnizedenz-Weltgenese nicht als empirisch bestätigt ausgeben.",
+  "why_now": "Der jüngste Commit (6a585cc) fügt genau diese Gegenprobe hinzu und markiert sie selbst als offenen Prüfstand ('Prüfproblem', 'Nächster Schritt'). Die Antwort entscheidet, ob der im Entwurf verwendete Weltbegriff und die Unterscheidung von innerer, generativer und relationaler Geschichte tragfähig sind oder zurückgenommen werden müssen.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Analytische Metaphysik von Zeit, Persistenz und Prozess: B-Theorie/Eternalismus, statische und veränderungslose Welten, Identität der Ununterscheidbaren, gen identity, Whiteheadsche Prozessontologie sowie die Frage, ob 'Geschichte' ohne Zeitordnung kohärent ist.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20261018-16792C5C",
+    "RES-20260922-282CFC71"
+  ],
+  "novelty_reason": "RES-20261018-16792C5C fragte nach Weltindividuation ohne gemeinsame Zeit, Possible Worlds und Grounding, nicht aber nach den am 13.10.2026 neu eingeführten drei Historizitätsbegriffen, dem zeitlosen-Welt-Gegenbeispiel oder der Spannung zwischen einer insgesamt prozessualen Ontologie und gänzlich statischen Formationen. RES-20260922-282CFC71 behandelte physikalische Zeitmodelle und Werden, nicht nichtzeitliche Generativität oder 'Geschichte' ohne Zeit. Die neue Untersuchung adressiert damit einen materiell ungelösten Punkt beider Vorläufer.",
+  "fingerprint": "827379b0315b403b"
+}
