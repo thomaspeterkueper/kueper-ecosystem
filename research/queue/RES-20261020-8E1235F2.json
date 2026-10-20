@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261020-8E1235F2",
+  "status": "queued",
+  "created": "2026-10-20T08:40:38+00:00",
+  "source_project": "contracomology",
+  "source_repository": "thomaspeterkueper/contracomology",
+  "source_path": "lib/i18n.ts",
+  "source_ref": "b1dcb6fc4ef20893697a642d0e11ba8e213696f8",
+  "source_blob_sha": "49aa847ad6044cbb34bf52b723899941f637c24f",
+  "title": "Analytische Methode oder 'Haltung zum Klingen'? Der ungeklärte Status der Kontrakomologie",
+  "question": "Die UI bezeichnet die Kontrakomologie als 'analytische Methode zur Beschreibung von Zeitstrukturen', während die Publikationsseite erklärt, sie sei 'keine Analysetechnik', sondern 'eine Haltung zum Klingen – aus der heraus Musik entstehen kann'. Welcher Status kommt ihr zu – deskriptive Analyse, normative Poetik, Ontologie oder hermeneutische Praxis –, und wie unterscheiden vergleichbare Entwürfe (Kramers Zeit-Diskurs, Adornos Materialtheorie, Lewins transformationale Analyse, Cooks und Taruskins Kritik analytischer Ansprüche) zwischen diesen Rollen?",
+  "why_now": "Der Widerspruch steht in zwei zentral ausgelieferten Dateien und betrifft Startseite, Kurs und Publikationsprogramm. Er entscheidet, was der Kurs lehrt, was als Fachclaim zählt und ob die Diagnosefragen als Analysewerkzeug oder als Haltung gelesen werden sollen.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "methodological",
+    "philosophical-position"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Philosophie der Musikanalyse und Methodologie der Geisteswissenschaften (Kramer, Adorno, Lewin, Cook, Taruskin).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.87,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.86,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Die bisherigen Themen prüfen einzelne Thesen (Ontologie, Zeitformen, Rückwirkung), nicht den methodologischen Status des Gesamtunternehmens. Die Frage ist auch keine Umformulierung von RES-20261008-5715F6F5: Dort geht es um die Neuheit der Kategorien, hier um den im Repo ausdrücklich gegeneinander gesetzten Unterschied zwischen Analyse, Poetik und Haltung.",
+  "fingerprint": "8e1235f24b03e111"
+}
