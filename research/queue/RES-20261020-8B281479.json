@@ -1,6 +1,6 @@
 {
   "id": "RES-20261020-8B281479",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-10-20T08:40:35+00:00",
   "source_project": "contracomology",
   "source_repository": "thomaspeterkueper/contracomology",
@@ -35,5 +35,7 @@
     "RES-20261008-8E2F5C8A"
   ],
   "novelty_reason": "RES-20261008-031971A1 rekonstruiert 'Zeit erzeugen' nur für Musik (Husserl, Ingarden-Musikwerk, Zuckerkandl, Langer, Kramer); RES-20261008-8E2F5C8A behandelt retroaktive Sinnbildung in Hermeneutik und Narratologie. Keine der beiden prüft, ob die Ontologie auf Literatur übertragbar ist und ob 'Zeiterzeugung' im Lesen dieselbe Behauptung ist. Genau diese Transferbedingung ist hier der Gegenstand.",
-  "fingerprint": "8b28147961950245"
+  "fingerprint": "8b28147961950245",
+  "updated_at": "2026-10-20T08:50:48+00:00",
+  "last_error": "candidate for philosophy-comparative lacks a strong source type marker"
 }
