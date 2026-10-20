@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261020-8B57880B",
+  "status": "queued",
+  "created": "2026-10-20T08:40:37+00:00",
+  "source_project": "contracomology",
+  "source_repository": "thomaspeterkueper/contracomology",
+  "source_path": "app/[locale]/documents/page.tsx",
+  "source_ref": "b1dcb6fc4ef20893697a642d0e11ba8e213696f8",
+  "source_blob_sha": "58e0016174d95ebd94e3208c85c81ca906a8c09d",
+  "title": "Vier Stimmen, keine Hauptrolle? Eine quellenkritische Prüfung des Bach-Paradigmas 'Die Kunst der Fuge'",
+  "question": "Die Seite führt Bachs Die Kunst der Fuge BWV 1080 als 'vier Stimmen, keine Hauptrolle' und als Paradigma struktureller Gleichzeitigkeit. Wie ist der Zyklus tatsächlich besetzt und organisiert – 14 Fugen und 4 Kanons, wechselnde Stimmigkeit, unvollendete Quadrupelfuge –, und wie beschreiben Quellenkritik und Bach-Forschung (NBA, Wolff, Yearsley, Dreyfus) seine Großform und Stimmarchitektur? Stützt diese Struktur die kontrakomologische Zeitform, oder wird ein Teil des Zyklus auf eine globale Kategorie reduziert?",
+  "why_now": "Bach ist der erste Fall auf der Startseite, im Kurs und im Publikationskatalog; die Formel 'vier Stimmen, keine Hauptrolle' ist die sichtbarste musikhistorische Tatsachenbehauptung des Repos und trägt die Zeitform 'strukturelle Gleichzeitigkeit'.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "historical-fact",
+    "musicological-interpretation"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Johann Sebastian Bach, Die Kunst der Fuge BWV 1080, sowie quellenkritische und analytische Bach-Forschung (NBA, Wolff, Yearsley, Dreyfus).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.81,
+  "scores": {
+    "project_relevance": 0.88,
+    "cross_project_reuse": 0.72,
+    "uncertainty": 0.78,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine der bisherigen Recherchen prüft ein einzelnes Werkbeispiel quellenkritisch. RES-20261008-5715F6F5 fragt nach der Typologie der Zeitformen, RES-20261008-8E2F5C8A nach Rückwirkung an Beethoven, Chopin und Coltrane. Die Zyklusstruktur von BWV 1080 und die Reichweite der Kategorie 'strukturelle Gleichzeitigkeit' sind dort nicht Gegenstand.",
+  "fingerprint": "8b57880ba12754f8"
+}
