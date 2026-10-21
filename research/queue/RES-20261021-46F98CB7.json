@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261021-46F98CB7",
+  "status": "queued",
+  "created": "2026-10-21T08:42:21+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0013-2026-de.md",
+  "source_ref": "36d25ee76ff2dda4a65baf2683a22849468c74e3",
+  "source_blob_sha": "057141c2f9301009481f202320cca7fc6e786dfd",
+  "title": "KUE-SCI-0013: Phyllo-cellulares Kryoeis — Primärbefund, Terminologie und Gravitationsskalierung",
+  "question": "Stimmen die zentralen Befunde und die Extrapolation in KUE-SCI-0013 v1.0 mit der Primärliteratur überein? Konkret: (1) Sind die Angaben zum Großversuch von Choukroun et al. (2026, EPSL 685, 119999) — ca. 40 kg niedrig salines Wasser, Nahe-Vakuum, millimeterdünne Eislamellen, zentimeterdicke Dampfhohlräume, ca. 10 cm Schichthöhe — korrekt, und ist „phyllo-cellular ice“ ein in der Literatur etablierter Terminus? (2) Stützt die Publikation die wiedergegebene Gravitationsskalierung auf Mächtigkeiten von „einigen zehn Metern“, oder ist das eine weitergehende, nicht gedeckte Extrapolation? (3) Gibt es unabhängige Labor-, Modell- oder Feldarbeiten, die die lamellare Morphologie, die Porositätswerte und die mechanische Anisotropie reproduzieren oder einschränken? (4) Sind die Juno-Mikrowellenbefunde (McKinnon et al. 2026, Nature Astronomy 10, 84–91) korrekt als Vereinbarkeit mit Rissen/Poren bis in hunderte Meter Tiefe — nicht als Nachweis phyllo-cellularen Eises — wiedergegeben? (5) Welche belastbaren Werte für Dichte, effektive Wärmeleitfähigkeit, Druckfestigkeit und Sinterverhalten poröser Eislaminate existieren, und welche davon sind auf Europa-/Enceladus-Gravitation übertragbar?",
+  "why_now": "KUE-SCI-0013 ist als „Reviewfähig“ geführt und wird laut Backlog bereits von OTA-SCI-0084 „Kryoporöse Eiswelten“ als Basis zitiert; zugleich verlangt der Foundation-Backlog ausdrücklich die Aufnahme in die gemeinsame Kataloglogik. Die zentrale Aussage stützt sich auf eine einzelne 2026er Publikation und eine weitreichende Skalierung, deren Fehler direkt in OTA-Weltbau und Lande-/Mobilitätsannahmen einfließen würde.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Die Choukroun-et-al.-2026-Experimente und die Gravitationsskalierung, unabhängige Labor-/Modellarbeiten zu porösem Kryoeis sowie die Juno-Mikrowellenbefunde zur Europa-Eiskruste.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.87,
+  "scores": {
+    "project_relevance": 0.84,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.86,
+    "evidence_potential": 0.88
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früheres Topic behandelt phyllo-cellulares Kryoeis oder die Kryogeologie von Europa/Enceladus. RES-20260825-D5E30168 betrifft TNO-Atmosphären um 2002 XV93, nicht die poröse Eismorphologie und Tragfähigkeit eisiger Monde.",
+  "fingerprint": "46f98cb747507855"
+}
