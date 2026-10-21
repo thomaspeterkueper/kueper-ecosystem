@@ -1,6 +1,6 @@
 {
   "id": "RES-20261021-640F4624",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-21T08:42:18+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früherer Rechercheauftrag betrifft KUE-HIS-0001 oder die Geschichte der Vermessung. Die bisherigen Topics decken SCI-, PHI-, OBS- und MTH-Dokumente ab; die historischen Anker (Si.427, Śulbasūtras, Haidao Suanjing, Qanat, al-Bīrūnī) sind darin nicht enthalten.",
-  "fingerprint": "640f4624e73beb4a"
+  "fingerprint": "640f4624e73beb4a",
+  "updated_at": "2026-10-21T08:54:34+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/236"
 }
