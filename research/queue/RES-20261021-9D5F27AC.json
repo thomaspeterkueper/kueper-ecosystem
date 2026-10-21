@@ -1,6 +1,6 @@
 {
   "id": "RES-20261021-9D5F27AC",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-21T08:42:20+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früheres Topic behandelt elementares Gold, seine Nukleosynthese oder die STAR-/RHIC-Befunde. RES-20260902-BA7C8605 betrifft Au₂Hₓ unter Hochdruck und superionische Hydride, also eine andere Material- und Evidenzfrage.",
-  "fingerprint": "9d5f27ac056c5f31"
+  "fingerprint": "9d5f27ac056c5f31",
+  "updated_at": "2026-10-21T09:15:42+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/237"
 }
