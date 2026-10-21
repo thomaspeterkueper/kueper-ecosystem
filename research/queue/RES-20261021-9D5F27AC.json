@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261021-9D5F27AC",
+  "status": "queued",
+  "created": "2026-10-21T08:42:20+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0195-2026-de.md",
+  "source_ref": "36d25ee76ff2dda4a65baf2683a22849468c74e3",
+  "source_blob_sha": "afd3876445ab1d84831048988bb390c46112e782",
+  "title": "KUE-SCI-0195: Numerische und experimentelle Gold-Anker (STAR-2026, CMS-/LHCb-Anomalien, r-Prozess, Elementdaten)",
+  "question": "Stimmen die als [R] gesetzten numerischen und experimentellen Anker in KUE-SCI-0195 v0.3 mit der Primärliteratur überein? Konkret: (1) Existiert die zitierte STAR-Arbeit „Non-Monotonicity of Transverse Momentum Correlations in Au+Au Collisions at RHIC“ (2026, DOI 10.1103/2xsn-rgx3) in dieser Form, und gibt sie die nichtmonotone Energieabhängigkeit transversaler Impulskorrelationen im Bereich 3,0–7,7 GeV pro Nukleonenpaar korrekt wieder? (2) Trägt der Befund die im Dokument gezogene Grenze, dass damit kein kritischer Punkt der QCD nachgewiesen ist, oder vertritt die Arbeit bzw. die Community eine stärkere Deutung? (3) Welche CMS-/LHCb-Anomalien in seltenen Beauty-Zerfällen wurden im Oktober 2026 tatsächlich diskutiert, und ist die behauptete strikte Trennung von Flavor-Physik und kollektiver QCD-Materie sachlich richtig? (4) Wie ist der quantitative Beitrag von Neutronensternverschmelzungen (GW170817-Kilonova) zur Goldproduktion heute belegt, und welche weiteren Produktionsorte (z. B. Magnetare, Kollapsare) sind wie stark gestützt? (5) Sind die Elementdaten (Standardatomgewicht, Dichte, Schmelz-/Siedepunkt, ¹⁹⁷Au als einziges stabiles Isotop, fcc) sowie die Aussage zur relativistischen Farbursache auf dem Stand von NIST/IUPAC und der relativistischen Festkörperchemie?",
+  "why_now": "KUE-SCI-0195 v0.3 ist ein aktueller Entwurf (2026-10-17) und fordert in der Fußzeile ausdrücklich die „vertiefte numerische Primärquellenprüfung und fachliche Redaktion vor Veröffentlichung“. Das Dokument verweist auf die OTA-Dokumente SCI-0105, SCI-0106 und SCI-0107 sowie auf die literarische Nutzung in „Eigenzeit“; fehlerhafte Zahlen würden in mehrere Projekte propagieren.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "I",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Die 2026er STAR-Publikation zu Au+Au-Kollisionen, die Oktober-2026-Diskussion zu CMS-/LHCb-Beauty-Anomalien, die GW170817-Kilonova-Literatur zum r-Prozess sowie NIST/IUPAC-Elementdaten.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.8725,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.82,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früheres Topic behandelt elementares Gold, seine Nukleosynthese oder die STAR-/RHIC-Befunde. RES-20260902-BA7C8605 betrifft Au₂Hₓ unter Hochdruck und superionische Hydride, also eine andere Material- und Evidenzfrage.",
+  "fingerprint": "9d5f27ac056c5f31"
+}
