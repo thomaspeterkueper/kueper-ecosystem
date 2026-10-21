@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261021-640F4624",
+  "status": "queued",
+  "created": "2026-10-21T08:42:18+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/his/kue-his-0001-2026-de.md",
+  "source_ref": "36d25ee76ff2dda4a65baf2683a22849468c74e3",
+  "source_blob_sha": "bff5dfe4c2cf73f11d165ac364271ebc2fc7b5e6",
+  "title": "KUE-HIS-0001: Belastbarkeit der [R]-Anker und der [H]/[OFFEN]-Markierungen in der frühen Vermessungsgeschichte",
+  "question": "Sind die in KUE-HIS-0001 v0.1 gesetzten epistemischen Marker historisch korrekt? Konkret: (1) Trägt die Tafel Si.427 (Sippar, ca. 1900–1600 v. Chr.) die Aussage angewandter Feldteilung, und ist die Bezeichnung als „ältestes Beispiel“ (Mansfield 2021) Forschungskonsens oder eine Zuspitzung? (2) Sind die Datierung der älteren Śulbasūtras (ca. 800–500 v. Chr.), die Aussage, Baudhāyana formuliere den allgemeinen Diagonalzusammenhang eines Rechtecks, und die genannten Tripel 3-4-5, 5-12-13, 8-15-17 durch Primärtexte und Fachliteratur gedeckt? (3) Geht der Name „indischer Kreis“ tatsächlich auf al-Bīrūnī zurück, und ist die Schattenkreis-Methode im Kātyāyana-Śulbasūtra korrekt beschrieben? (4) Ist die harpēdonaptai-/3-4-5-Knotenseil-Erzählung zu Recht als neuzeitliche Legende markiert, und ist das Clemens-von-Alexandria-Demokrit-Zitat der einzige Beleg? (5) Halten die Inō-Tadataka-Angaben (zehn Kampagnen 1800–1816, ca. 35.000 km, 28,2 ri je Breitengrad), die Qanat-Datierung (Charga, 5. Jh. v. Chr., datierte Ostraka) und die al-Bīrūnī-Fehlerrechnung (R = h·cosθ/(1−cosθ), ca. 6300 km, ca. 6 % pro Bogenminute) der Prüfung stand? (6) Sind die [H]-Markierungen (u. a. Seschat-Kopfzeichen als Visierinstrument, Cheops-Ausrichtung, Shen-Kuos Nivellement) angemessen, oder müssten einzelne Aussagen als [R] bzw. ausdrücklich als Legende umgestuft werden?",
+  "why_now": "KUE-HIS-0001 ist der jüngste Commit des Repositories (2026-10-19) und als Entwurf 0.1 ausdrücklich nicht zur Veröffentlichung freigegeben. Das Dokument bekennt selbst, Primärtexte nur über Sekundärliteratur geprüft zu haben, während die SSF-Lernreihe „Vermessen ohne Laser und GPS“ und mehrere KG-Begriffe bereits darauf aufbauen.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Die historisch-kritisch prüfbaren Datierungen, Zuschreibungen und Zahlenangaben zu Si.427, den Śulbasūtras, dem Haidao Suanjing, Inō Tadataka, den Qanaten und al-Bīrūnī in Primärtexten und der geschichtswissenschaftlichen Forschung.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.9125,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.88,
+    "evidence_potential": 0.92
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Rechercheauftrag betrifft KUE-HIS-0001 oder die Geschichte der Vermessung. Die bisherigen Topics decken SCI-, PHI-, OBS- und MTH-Dokumente ab; die historischen Anker (Si.427, Śulbasūtras, Haidao Suanjing, Qanat, al-Bīrūnī) sind darin nicht enthalten.",
+  "fingerprint": "640f4624e73beb4a"
+}
