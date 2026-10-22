@@ -1,6 +1,6 @@
 {
   "id": "RES-20261019-9E0185A4",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-19T09:01:44+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früherer Research-Kandidat behandelt den Spielraum-Begriff oder sein Verhältnis zur Capability-, Freiheits- und Nicht-Beherrschungsliteratur. RES-20260922-66286BBC betraf Körper/Intuition/Ratio als Erkenntnisquellen, nicht die normative Grundlage der Spielraumethik.",
-  "fingerprint": "9e0185a4c0dec228"
+  "fingerprint": "9e0185a4c0dec228",
+  "updated_at": "2026-10-22T09:03:57+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/242"
 }
