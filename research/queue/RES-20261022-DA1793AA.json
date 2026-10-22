@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261022-DA1793AA",
+  "status": "queued",
+  "created": "2026-10-22T08:44:36+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "Stable bibliographic identity and canon-citation scheme for citing the trilogy's volumes and passages",
+  "question": "Which bibliographic identifiers, metadata standards and deposit rules actually govern a German-language YA trilogy and establish how its official website should cite individual volumes and passages so citations survive edition changes — ISBN-13/GTIN under ISO 2108 and the German ISBN agency, ONIX 3.0 trade metadata, registration in the Deutsche Nationalbibliografie and DNB legal deposit, schema.org Book/BookSeries markup, and DOI/Crossref registration for books where a publisher assigns one — and what do those standards require of a citation scheme that maps an explainer page to a specific canon passage rather than to an informal Band/Kapitel reference?",
+  "why_now": "README.md defines the project as the website of the Endia trilogy, but no content or citation convention exists yet; every future explainer page will need a stable target, and changing identifiers after pages are written means rewriting the whole canon-to-evidence map. The repository is still at initial-structure stage, so the convention is cheap to fix now.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Bibliographic metadata standards (ISO 2108, ONIX 3.0, schema.org Book/BookSeries), German legal deposit and national-bibliography practice, and persistent identifier schemes for books.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.7875,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No queued topic addresses how the books themselves are identified and cited. RES-20261015-00F9F49D covers quotation rights in the novels' text and cover art, not bibliographic identity, edition tracking or a stable canon-citation scheme.",
+  "fingerprint": "da1793aaa5184c1c"
+}
