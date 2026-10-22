@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261022-5C288045",
+  "status": "queued",
+  "created": "2026-10-22T08:44:34+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "Which official German and EU digital-literacy content the platform may link to, quote or adapt — and under what reuse terms",
+  "question": "What do the established official German and EU digital-literacy and media-education offerings (Bundeszentrale für politische Bildung, klicksafe, Deutschland sicher im Netz, Verbraucherzentrale, and the EU's DigComp and DSA-related resources) actually provide, for which age group and at what depth, and which licences and statutory reuse rules — the specific Creative Commons terms of each provider, § 62 UrhG for official works where it applies, the PSI/Open Data Directive (EU) 2019/1024, and the rules on linking and embedding — permit endia.de to reference, quote, embed or adapt that material, so that the platform can build on authoritative content instead of duplicating it and can state which gap remains that justifies original explainer pages?",
+  "why_now": "README.md makes referencing instead of copying an explicit ecosystem rule (line 15: Bitte auf diesen Link verweisen statt den Inhalt zu kopieren) and the project role is knowledge-platform; before any explainer content is commissioned, the platform needs to know what authoritative material already exists and what may legally be reused, or it will spend effort recreating official content and risk both inaccuracy and licence violations.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "The published catalogue, coverage and licence terms of official German/EU digital-literacy providers, plus statutory reuse rules for public-sector and official works (CC licences, § 62 UrhG, Directive (EU) 2019/1024).",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20261015-5E9D3DDB"
+  ],
+  "novelty_reason": "RES-20261015-5E9D3DDB asks which competence frameworks (DigComp 2.2, KMK, PISA 2025, UNESCO MIL) define the required content and how pages should be mapped to them; it does not ask which existing official content already supplies that material, at what depth and for which age group, or what each provider's licence and the PSI/official-works rules permit in terms of linking, quotation, embedding and adaptation. This gap adds the missing supply-and-reuse dimension that must be settled before the competence mapping can be implemented.",
+  "fingerprint": "5c288045253f6518"
+}
