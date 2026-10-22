@@ -36,6 +36,8 @@ export async function GET() {
       providers: payload?.providers && typeof payload.providers === "object" ? payload.providers : {},
       llm_budget: payload?.llm_budget && typeof payload.llm_budget === "object" ? payload.llm_budget : {},
       blocked_tasks: Number(payload?.blocked_tasks || 0),
+      provider_deferred_tasks: Number(payload?.provider_deferred_tasks || 0),
+      budget_deferred_tasks: Number(payload?.budget_deferred_tasks || 0),
     });
   } catch (error: any) {
     return NextResponse.json({ available: false, generated_at: new Date().toISOString(), reason: error?.message || "Control-plane telemetry unavailable.", workers: [], queue: {}, providers: {}, llm_budget: {} });
