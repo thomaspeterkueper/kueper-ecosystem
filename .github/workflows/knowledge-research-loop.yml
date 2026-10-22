@@ -2,6 +2,11 @@ name: KUEPER Knowledge Research Loop
 
 on:
   workflow_dispatch:
+    inputs:
+      retry_reason:
+        description: "Optional manual AI retry reason (for example: provider-balance-restored)"
+        required: false
+        type: string
   schedule:
     - cron: "23 3 * * *"
   push:
@@ -25,12 +30,18 @@ jobs:
       KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      KUEPER_AI_RETRY_REASON: ${{ github.event.inputs.retry_reason }}
       ANTHROPIC_BASE_URL: "https://api.deepseek.com/anthropic"
       ANTHROPIC_AUTH_TOKEN: ${{ secrets.DEEPSEEK_API_KEY }}
       ANTHROPIC_MODEL: "deepseek-v4-flash"
       ANTHROPIC_DEFAULT_OPUS_MODEL: "deepseek-v4-pro[1m]"
       ANTHROPIC_DEFAULT_SONNET_MODEL: "deepseek-v4-flash"
       ANTHROPIC_DEFAULT_HAIKU_MODEL: "deepseek-v4-flash"
+      CLAUDE_CODE_SUBAGENT_MODEL: "deepseek-v4-flash"
+      CLAUDE_CODE_AUTO_COMPACT_WINDOW: "786432"
+      CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT: "1"
       KUEPER_DISCOVERY_AGENT_CMD: claude -p --dangerously-skip-permissions
       KUEPER_RESEARCH_AGENT_CMD: node ${{ github.workspace }}/tools/research/agent-with-exa.mjs
       KUEPER_SYNTHESIS_AGENT_BIN: claude
@@ -54,8 +65,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test -n "$KUEPER_BOT_TOKEN" || { echo "Missing KUEPER_BOT_TOKEN"; exit 2; }
-          test -n "$DEEPSEEK_API_KEY" || { echo "Missing DEEPSEEK_API_KEY"; exit 2; }
+          missing=0
+          for name in KUEPER_BOT_TOKEN DEEPSEEK_API_KEY SUPABASE_URL SUPABASE_SECRET_KEY; do
+            if [ -z "${!name:-}" ]; then echo "Missing $name"; missing=1; fi
+          done
+          test "$missing" -eq 0
           if [ -z "$AI_GATEWAY_API_KEY" ]; then
             echo "::warning::AI_GATEWAY_API_KEY is not configured; Exa external evidence will fall back to the existing live-search path."
           fi
@@ -67,15 +81,15 @@ jobs:
         run: |
           set -euo pipefail
           python3 -m json.tool research/policy.json >/dev/null
-          python3 -m py_compile tools/research/discover.py tools/research/execute.py tools/research/validate_ota_pilot.py
+          python3 -m py_compile tools/research/discover.py tools/research/execute.py tools/research/execute-ledger.py tools/research/usage_observer.py tools/telemetry/ai_usage.py tools/research/validate_ota_pilot.py
           python3 tools/research/validate_ota_pilot.py
           node --check tools/research/agent-with-exa.mjs
 
       - name: Discover one project's highest-value research gaps
         run: python3 tools/research/discover.py | tee research-discovery-report.json
 
-      - name: Research queued topics
-        run: python3 tools/research/execute.py | tee research-execution-report.json
+      - name: Research queued topics with usage ledger
+        run: python3 tools/research/execute-ledger.py | tee research-execution-report.json
 
       - name: Upload research reports
         if: always()
