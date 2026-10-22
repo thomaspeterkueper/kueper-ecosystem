@@ -1,6 +1,6 @@
 {
   "id": "RES-20261021-46F98CB7",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-21T08:42:21+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früheres Topic behandelt phyllo-cellulares Kryoeis oder die Kryogeologie von Europa/Enceladus. RES-20260825-D5E30168 betrifft TNO-Atmosphären um 2002 XV93, nicht die poröse Eismorphologie und Tragfähigkeit eisiger Monde.",
-  "fingerprint": "46f98cb747507855"
+  "fingerprint": "46f98cb747507855",
+  "updated_at": "2026-10-22T08:50:39+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/241"
 }
