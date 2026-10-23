@@ -1,6 +1,6 @@
 {
   "id": "RES-20261020-8B57880B",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-20T08:40:37+00:00",
   "source_project": "contracomology",
   "source_repository": "thomaspeterkueper/contracomology",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine der bisherigen Recherchen prüft ein einzelnes Werkbeispiel quellenkritisch. RES-20261008-5715F6F5 fragt nach der Typologie der Zeitformen, RES-20261008-8E2F5C8A nach Rückwirkung an Beethoven, Chopin und Coltrane. Die Zyklusstruktur von BWV 1080 und die Reichweite der Kategorie 'strukturelle Gleichzeitigkeit' sind dort nicht Gegenstand.",
-  "fingerprint": "8b57880ba12754f8"
+  "fingerprint": "8b57880ba12754f8",
+  "updated_at": "2026-10-23T09:00:53+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/243"
 }
