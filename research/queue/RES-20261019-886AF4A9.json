@@ -1,6 +1,6 @@
 {
   "id": "RES-20261019-886AF4A9",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-10-19T09:01:45+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früherer Research-Kandidat behandelt den Resonanzbegriff oder Rosa. RES-20260828-D6A60CB1 betraf Pantheismus, Panentheismus und Prozessphilosophie, nicht Resonanzsoziologie; RES-20260922-66286BBC betraf leibliche Erkenntnisquellen.",
-  "fingerprint": "886af4a964830e57"
+  "fingerprint": "886af4a964830e57",
+  "updated_at": "2026-10-23T08:49:36+00:00",
+  "last_error": "candidate for philosophy-comparative lacks a strong source type marker"
 }
