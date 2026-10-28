@@ -38,6 +38,12 @@ Der Agent Worker V7 läuft weiter erfolgreich (94/94); er nutzt den Token offenb
 1. Neues Fine-grained-Token für `KUEPER_BOT_TOKEN` anlegen (Rechte wie bisher, nur die registrierten Repos) und in den Repository-Secrets von `kueper-ecosystem` ersetzen.
 2. **Ablaufdatum notieren** – in die Secrets-Inventur aus ECO-OPS-20261028-secret-health (nur Datum, nie der Wert).
 
+## Stand 28.10.2026, 13:50 Uhr
+
+- Owner-Handlung erledigt: Token von Thomas regeneriert und Secret ersetzt.
+- Nachweis: PR Review Run 40691372914 (12:52 UTC) erfolgreich, inklusive „Discover direct PRs from registry“.
+- Offen: Ablaufdatum in die Secrets-Inventur übernehmen; Governance-Sweep, Autonomous Loop und OTA-Workflows beim nächsten Lauf prüfen.
+
 ## Gewünschte Änderung
 
 Nach der Erneuerung durch Thomas:
