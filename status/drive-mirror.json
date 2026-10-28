@@ -1,0 +1,24 @@
+{
+  "_comment": "Zuordnung für den Google-Drive-Spiegel der KUE-/OTA-Dokumente (ECO-ARC-0037). Gepflegt von der geplanten Aufgabe „Drive-Spiegel abgleichen“. GitHub ist Source of Truth; Drive ist Lese- und Sicherungskopie.",
+  "drive": {
+    "root": "1RydR1IIXRqL2FVddl5iNRvCXqnrKTKs5",
+    "readme": "1AkAOhWZtVc2kY00lA3eXRQUGRWC6IFYwWPWrqT-Ex-4",
+    "kue": "1w0U_s7dHxsvyUVptZ2xqnW0YJhACk6yY",
+    "ota": "1YXCUxBCHwZGvkI4z8rCTvSmLcHWgBI0A",
+    "pruefberichte": "1MEgHSPa3FLPGBz9BlAJFlRLHX0q8ASBw",
+    "eingang": "13URQRrVTppduKbzBttGwt_Ki0hr_gVg0",
+    "altbestand": "16z8ClaKdv-zTEdUV4c8YjDC06_At8WjQ",
+    "kannWeg": "1dL_x91VoDbYyuCQKMeYbqWdblzKwMIqv",
+    "subfolders": {}
+  },
+  "lastSync": {
+    "kueper.com": null,
+    "overtime-archive.org": null,
+    "kueper-ecosystem/reviews": null
+  },
+  "documents": {},
+  "altbestand": {
+    "checked": {},
+    "onlyInDrive": []
+  }
+}
