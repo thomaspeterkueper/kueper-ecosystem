@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261029-9BDD2E8E",
+  "status": "queued",
+  "created": "2026-10-29T10:08:33+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "external-tasks/open/EXT-ENG-NU-20261018-iterius-alpha7-site-mapping.md",
+  "source_ref": "5a229e4199e69f2068790c8eeb0fb38cc885c1c7",
+  "source_blob_sha": "9c87c2e45d030a63be0caa94b82a763cdf120d2d",
+  "title": "Noctis Labyrinthus / westliche Valles Marineris als Siedlungsstandort: Was reale Marsgeologie und Untergrund-Geotechnik für Alpha-7 (80/180/420/≥820 m) zulassen",
+  "question": "Was belegen peer-reviewte Marsgeologie, Radar-/Neutronenspektrometer-Daten und terrestrische Kollaps-Analoga zu Noctis Labyrinthus und den westlichen Valles Marineris — Entstehung der Graben- und Pit-Krater-Felder durch Kollaps über entzogenem Material, Wand- und Dachstabilität, Thermalfeld, Verteilung und Nachweisbarkeit von Untergrundeis in niedrigen Breiten sowie Massenbewegungen und Staub — und welche Siedlungs- bzw. Ausbautiefen (80/180/420/≥820 m als getrennte Ingenieursektoren, nicht als eine natürliche Riesenhöhle) sowie welche survey- und ISRU-abhängige Wasserstrategie sind damit vereinbar? Wo muss der Kanon In-situ-Datenlücken, Standortunsicherheit und mögliche Fehlschläge offenlegen, statt Alpha-7 als natürlich prädestinierten Hohlraum zu erzählen?",
+  "why_now": "Der jüngste Commit des Repos (2026-10-18) ist genau dieser offene Engineering-Task. Er verlangt vor der Standortkarte belastbare Aussagen zu Tiefenankern, getrennten Lande-/Hochindustriezonen, survey-abhängigem Wasser und einer Forschungsidentität aus Noctis-/Valles-/Tharsis-Geologie. Ohne externe geologische und geotechnische Prüfung bleibt die Standortkarte eine plausible Behauptung.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Reale Marsgeologie und Untergrund-Geotechnik von Noctis Labyrinthus und der westlichen Valles Marineris: Graben-/Pit-Krater-Kollaps, Hang- und Dachstabilität, Untergrundeis-Verteilung in niedrigen Breiten (MARSIS/FREND), Thermalfeld, Massenbewegungen sowie terrestrische Kollaps- und Pit-Krater-Analoga.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 0.8375,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260829-862AA763"
+  ],
+  "novelty_reason": "Der frühere Mars-Geologie-Kandidat RES-20260829-862AA763 prüft Vergrabungs-/Resurfacing-Raten für Sektor-7 (864/1.247 m) und Lavatunnel-Eis im Hellas-Becken. Der Alpha-7-Task (2026-10-18) betrifft eine andere Region (Noctis Labyrinthus/westliche Valles Marineris), andere Tiefenanker (80/180/420/≥820 m als getrennte Ingenieursektoren) und eine andere Frage: geotechnische Standortwahl, Kollaps-/Grabenmechanik, Hang- und Dachstabilität sowie survey-abhängige Wasser-/ISRU-Strategie. Diese Dimension ist durch den früheren Kandidaten nicht beantwortet.",
+  "fingerprint": "9bdd2e8ed83edbf6"
+}
