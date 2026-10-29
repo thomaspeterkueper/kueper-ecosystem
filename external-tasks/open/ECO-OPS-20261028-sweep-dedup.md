@@ -37,3 +37,7 @@ Zusätzlich liegen 11 ältere Tasks ohne Frontmatter in `open/` (u. a. `EXT-NOXI
 
 - `external-tasks/open/` enthält höchstens eine Sweep-Datei.
 - Der Linter läuft bei jedem PR, alle offenen Tasks bestehen ihn.
+
+## Bearbeitungsstand 2026-10-29
+
+Erledigt: Punkte 1–3 (rollierende Datei `ECO-OPS-governance-sweep.md` in `sweep.py`, `task_addressed_to_eco` eskaliert nicht mehr, 19 Alt-Dateien nach `done/`; Tests ergänzt). Offen: `EXT-ECO-ECO-20261024-001` (wartet auf bot-token-401), Punkt 4 (Linter-Workflow, ECO-ARC-0006-Ergänzung = Architekturentscheidung), Punkt 5 (11 Alt-Tasks ohne Frontmatter).

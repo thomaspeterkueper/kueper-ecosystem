@@ -119,5 +119,37 @@ class IsEcoAddressedTaskTests(unittest.TestCase):
         self.assertFalse(mod.is_eco_addressed_task("# Not a task file\n"))
 
 
+class RollingTaskTest(unittest.TestCase):
+    def setUp(self):
+        import tempfile
+        self.tmp = pathlib.Path(tempfile.mkdtemp())
+        self.orig = (mod.ROLLING_OPEN, mod.ROLLING_DONE)
+        mod.ROLLING_OPEN = self.tmp / "open.md"
+        mod.ROLLING_DONE = self.tmp / "done" / "done.md"
+
+    def tearDown(self):
+        mod.ROLLING_OPEN, mod.ROLLING_DONE = self.orig
+
+    def result(self, *categories):
+        r = mod.SweepResult(generated_at="2026-10-29T00:00:00+00:00")
+        for c in categories:
+            r.add(c, "warning", "msg " + c, key=c)
+        return r
+
+    def test_actionable_finding_writes_single_file(self):
+        mod.update_rolling_task(self.result("governance_path_missing"))
+        self.assertIn("governance_path_missing", mod.ROLLING_OPEN.read_text())
+
+    def test_task_addressed_to_eco_does_not_escalate(self):
+        mod.update_rolling_task(self.result("task_addressed_to_eco"))
+        self.assertFalse(mod.ROLLING_OPEN.exists())
+
+    def test_resolved_moves_to_done(self):
+        mod.update_rolling_task(self.result("governance_path_missing"))
+        mod.update_rolling_task(self.result())
+        self.assertFalse(mod.ROLLING_OPEN.exists())
+        self.assertTrue(mod.ROLLING_DONE.exists())
+
+
 if __name__ == "__main__":
     unittest.main()

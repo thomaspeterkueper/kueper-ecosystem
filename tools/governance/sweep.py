@@ -17,16 +17,12 @@ what needs a look, not making the call itself.
 
 Output: status/governance-sweep.json (machine-readable) and
 status/governance-sweep.md (human-readable), both always overwritten.
-A finding is only turned into an External Task in this repository's own
-inbox if its stable id was not already present in the previous run's
-report -- repeat sweeps of an unresolved issue do not spam new tasks.
-
-That escalation path is itself an EXT-ECO-ECO-<date>-001.md file in this
-repository's open/ inbox, so the sweep must not report its own escalation
-artifacts back to itself: each run would otherwise escalate the previous
-run's escalation (observed as a daily chain from 2026-09-24 to 2026-10-10).
-Self-addressed task files (source and target both ECO) are therefore
-skipped by the task_addressed_to_eco check; see is_eco_addressed_task.
+Actionable findings are mirrored into ONE rolling task,
+external-tasks/open/ECO-OPS-governance-sweep.md, which is rewritten on every
+run and moved to done/ once nothing is left (no more daily EXT-ECO-ECO-*
+files). task_addressed_to_eco findings never create a task: the tasks they
+point at are already open. Self-addressed task files (source and target both
+ECO) are skipped by that check; see is_eco_addressed_task.
 """
 
 from __future__ import annotations
@@ -50,6 +46,11 @@ REGISTRY_SCHEMA = ROOT / "schemas" / "project-registry.schema.json"
 DECISIONS = ROOT / "decisions"
 STATUS_JSON = ROOT / "status" / "governance-sweep.json"
 STATUS_MD = ROOT / "status" / "governance-sweep.md"
+ROLLING_OPEN = ROOT / "external-tasks" / "open" / "ECO-OPS-governance-sweep.md"
+ROLLING_DONE = ROOT / "external-tasks" / "done" / "ECO-OPS-governance-sweep.md"
+# Findings that only point at tasks which are already open elsewhere; they stay
+# in the report but never justify a task of their own.
+NON_ESCALATING = {"task_addressed_to_eco", "sweep_incomplete"}
 CONTROL_PLANE_REPO = "thomaspeterkueper/kueper-ecosystem"
 API = "https://api.github.com"
 
@@ -334,6 +335,45 @@ def render_markdown(result: SweepResult) -> str:
     return "\n".join(lines) + "\n"
 
 
+def render_rolling_task(findings: list[Finding], generated_at: str) -> str:
+    lines = [
+        "---",
+        "id: ECO-OPS-governance-sweep",
+        "title: Governance-Sweep — offene Funde",
+        "status: open",
+        f"created: {generated_at[:10]}",
+        "requested_by: T.P.K.",
+        "priority: low",
+        "type: operations / governance",
+        "---",
+        "",
+        "# ECO-OPS-governance-sweep — offene Funde",
+        "",
+        "Rollierende Task: wird vom täglichen Sweep (`tools/governance/sweep.py`) "
+        "aktualisiert und nach `done/` verschoben, sobald nichts Offenes mehr vorliegt. "
+        "Der Sweep entscheidet nichts selbst (ECO-ARC-0027). Details: `status/governance-sweep.md`.",
+        "",
+        f"Stand: {generated_at}",
+        "",
+        "## Offene Funde",
+        "",
+    ]
+    lines += [f"- **[{f.severity}] {f.category}**: {f.message}" for f in findings]
+    return "\n".join(lines) + "\n"
+
+
+def update_rolling_task(result: SweepResult) -> None:
+    """Maintain exactly one rolling task instead of one file per day."""
+    actionable = [f for f in result.findings if f.category not in NON_ESCALATING]
+    if actionable:
+        ROLLING_OPEN.write_text(
+            render_rolling_task(actionable, result.generated_at), encoding="utf-8"
+        )
+    elif ROLLING_OPEN.exists():
+        ROLLING_DONE.parent.mkdir(parents=True, exist_ok=True)
+        ROLLING_OPEN.replace(ROLLING_DONE)
+
+
 def main() -> int:
     result = SweepResult(generated_at=datetime.now(timezone.utc).isoformat())
 
@@ -381,16 +421,7 @@ def main() -> int:
     for f in new_findings:
         print(f"  NEU [{f.severity}] {f.category}: {f.message}")
 
-    # Signal to the workflow whether a new-findings task should be filed.
-    gha_output = os.environ.get("GITHUB_OUTPUT")
-    if gha_output:
-        with open(gha_output, "a", encoding="utf-8") as fh:
-            fh.write(f"has_new_findings={'true' if new_findings else 'false'}\n")
-    if new_findings:
-        (ROOT / ".governance-sweep-new-findings.json").write_text(
-            json.dumps([f.__dict__ for f in new_findings], indent=2, ensure_ascii=False),
-            encoding="utf-8",
-        )
+    update_rolling_task(result)
 
     return 0
 
