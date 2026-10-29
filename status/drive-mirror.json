@@ -9,16 +9,556 @@
     "eingang": "13URQRrVTppduKbzBttGwt_Ki0hr_gVg0",
     "altbestand": "16z8ClaKdv-zTEdUV4c8YjDC06_At8WjQ",
     "kannWeg": "1dL_x91VoDbYyuCQKMeYbqWdblzKwMIqv",
-    "subfolders": {}
+    "subfolders": {
+      "KUE/sci": "13MHnPhXgIDpG-V4aD3nFP12spWYOJOIx",
+      "KUE/met": "193AG2Y0-ycblAcmyxO6Uz9vxYMahgoOT",
+      "KUE/phi": "11ChuEFR1il1R6aFeDJLcQYi7PJisJLL-",
+      "KUE/obs": "1qxY-q8o8o2UF6_OVW72waf5ZYZyDJLai",
+      "KUE/his": "1Li9lHKKOmPP8Bgnn3TYf98VkwXivb666",
+      "KUE/science": "1kEKTe8Hcud64RM8CTYlKdbdnDMAnpNVR"
+    }
   },
   "lastSync": {
-    "kueper.com": null,
-    "overtime-archive.org": null,
-    "kueper-ecosystem/reviews": null
+    "kueper.com": "138eef668b257f9fbb6a6740b637a70a6f4b9f4d",
+    "overtime-archive.org": "6255efdfb7ee1f5c3bce70e79c20f0f324b97003",
+    "kueper-ecosystem/reviews": "663d485f6aa818fc68bd1a79666be60f1bd06632"
   },
-  "documents": {},
+  "documents": {
+    "kueper-ecosystem/reviews/2026-10-29-KUE-SCI-0004-2026-DE.md": {
+      "fileId": "1ZnggbL24VHhjxZstVhbtXOnOcW-oCMwry2s-MMSwFK4",
+      "hash": "26794694f0ceb61bb5c86887b3f7f1b4dc538432",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper-ecosystem/reviews/2026-10-29-KUE-SCI-0059-2026-DE.md": {
+      "fileId": "1ebk160bOMSb9JVp4quuPZRDOkUqwk4dQqsRyQrGQmHo",
+      "hash": "14b7b88dd93d72304136642c49e691f5627aedef",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper-ecosystem/reviews/2026-10-29-OTA-SCI-0031-2024-DE.md": {
+      "fileId": "1AMi2zXJHtza4NVDhnGzl3R0nlygN4mVYs3MEqYaLBEs",
+      "hash": "337eee459cffff25474c3b61abff1c94631f3b19",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper-ecosystem/reviews/2026-10-29-OTA-SCI-0032-2024-DE.md": {
+      "fileId": "1rqiVIujStYLGGnT4X_DHAs-KXwtWBa7Dzcp4dguHgj8",
+      "hash": "ad9a159026817d61b8862dc5376870283c9152a2",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper-ecosystem/reviews/2027-10-10-myzelbaustoffe-naturverbundenes-bauen.md": {
+      "fileId": "1tR-agLRMFY9UHmJretJ6Dy9kJSWpaGSnwKJuJRHtIDQ",
+      "hash": "106551291b8bc00191ff63d8ae58cda88fb70f24",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/his/kue-his-0001-2026-de.md": {
+      "fileId": "19ygmktSafwItMw62ZB7_WL0bngHZZA7wDKWYj0ninjE",
+      "hash": "bff5dfe4c2cf73f11d165ac364271ebc2fc7b5e6",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/met/KUE-MTH-0001-2026-DE.md": {
+      "fileId": "1WFQicOVvq_esSAE2DfjYieg9fk5tEBIQj-mT4Wvhi5g",
+      "hash": "99f7a6f2adc544955a240b31b80e5828834aa760",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/met/KUE-MTH-0002-2026-DE.md": {
+      "fileId": "17D7sctMDemMoRBuT9jrUfU7f6SW8vqK1T89_lPBa3_Y",
+      "hash": "cfe216984248b22c413585d638cd3495cf4043f9",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/met/KUE-MTH-0003-2026-DE.md": {
+      "fileId": "16Tqb_MBFi38clkXelJ3R3HWi0sZRoD1n4wi7804qVGM",
+      "hash": "675fa5090e5723d18aa0ce2bebb1665c87989c79",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/met/KUE-MTH-0004-2026-DE.md": {
+      "fileId": "1lfW8h_G6UdmAIgGZDUJALPsCu6Kx9UIIO4-1ClNV4gU",
+      "hash": "8eeb321adf2856d0c614f2b66e821e5fc7a9956f",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/met/KUE-MTH-0005-2026-DE.md": {
+      "fileId": "1cbqn3Sp__U1-LRsv46jBRB8q6wb8rUIL2vNwCBXZLF4",
+      "hash": "7874a91b6ea27b6cd85719ed9647239ae5f847a0",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/met/KUE-MTH-0006-2026-DE.md": {
+      "fileId": "1P8aNTp9hQrdP0q1esoTho6aZ244Q7XJOec9WkXo3iec",
+      "hash": "3274f7e08d927faa21238a992663f7cba5215bb8",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/obs/KUE-OBS-0101-2026-DE.md": {
+      "fileId": "1jXwULbKGlT_e8RRJ83fBWHqJLk5H0wAu0BKIZbFyPpI",
+      "hash": "a5d3599ff863c19bedf9448077c75aa188b7a698",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/obs/KUE-OBS-0102-2026-DE.md": {
+      "fileId": "1yEKOJK2q41OzvwWPdXn6c0B85CEAuZtCUNMH7g98ijg",
+      "hash": "2ec72762e19c41a0d3173fb15fd6fd91d4168fba",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/phi/kue-phi-0001-2026-de.md": {
+      "fileId": "1eRL1AhTY2PlFnYR-hKSnMT639Gu39DAClter6o47NtQ",
+      "hash": "885338e80e0046ff3547e49d1301a85b4b5185d4",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/phi/kue-phi-0003-2026-de.md": {
+      "fileId": "1BOx03DhjpxuhPgP_wJgFEnKzlrz5dakRZSr8foW3JV8",
+      "hash": "9228feb5b1e5463df7947fe44bf9e683ac494ac8",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/phi/kue-phi-erhellter-blick-2026-de.md": {
+      "fileId": "1CgfIOExhqglwMEjqHeQFC2iVLsvYZx211KDmunnDPZI",
+      "hash": "01b4eded45f9e7e32dc45e6b76d81688071c6cc6",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/phi/kue-phi-verantwortung-erkennens-2026-de.md": {
+      "fileId": "1XFkuMM4UDOzOXG8CTMqnFH9LHTF3AP_ncmuoXQLRgCg",
+      "hash": "c70b45b4cec8143037c3d5eb133f01d1d9d78518",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/KUE-SCI-0064-2026-DE.md": {
+      "fileId": "1Zw6_OLlM3jntQqvneQJOYdiaJkcvUEAO4QLXj-kNn6k",
+      "hash": "9d9de1a7f77c846457f6c51f0b8480cd68f17b21",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0001-2026-de.md": {
+      "fileId": "1-NC0nodrxdGVC5BCGDaAmXKrNpYmaW0TszbkQ7x_BPk",
+      "hash": "bea1a7e112cc3209e1145c89d963ae4d919d706d",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0004-2026-de.md": {
+      "fileId": "1F-7BQDeXEumAcmP-_jxop7aSfwAGCfzXyFkymhbaGvA",
+      "hash": "d7e73bee737310a2ec4bebb616c790e96258b021",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0012-2026-de.md": {
+      "fileId": "1CSqzHLu0L3OhXg61xcT3BbR8LHc9qdZPgH8q-DCJFX4",
+      "hash": "7d821412f84080356ebb210fae1457edd8cc11e9",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0013-2026-de.md": {
+      "fileId": "1v38sSFkrtaJ_NPJBElHvVmHVy-H5TyxYKLuC5j1S2Q0",
+      "hash": "057141c2f9301009481f202320cca7fc6e786dfd",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0059-2026-de.md": {
+      "fileId": "1vsz4A8XQHYxhm0OtLA9tC2d8gPzVX-pCXJFxJuelYIc",
+      "hash": "589dd3c5c4c0998ee1d54c898d6095f6ffc2216e",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0100-2026-de.md": {
+      "fileId": "15sKgMPTozRpG9pglKA8Cw1YMxYSTIzxlC7nZ4Cxycfo",
+      "hash": "c284e75972013793816a6c26c1d25c85d16e6652",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0167-2026-de.md": {
+      "fileId": "1WMIv0gzC4o3PJmmT-BwRmo4W8KNGvLE-73NgnNJnKMc",
+      "hash": "4d68be38b5bf1a46eadcf317a29ce3ce86146c64",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0168-2026-de.md": {
+      "fileId": "12KUISM2BIpiXwBJOMYnV2SSe8Oan5RaA3OwBcVQWnyI",
+      "hash": "d8061c91ba8a72b55d51442e0e68712966538503",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0169-2026-de.md": {
+      "fileId": "1Fmjpmv0MssiXfP3pYUZhnKzuDhiNb9VwJ_7HpNkrc6M",
+      "hash": "d06d392eaaab63520b446db0b8590d0e05105699",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0170-2026-de.md": {
+      "fileId": "1STnuwq2JnGiIe57WZEycbZISMgbfwvWd46CCh07uBZ0",
+      "hash": "001e45c9dc4f943d5509dd3fb99c4ba636fe441f",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0171-2026-de.md": {
+      "fileId": "1Sh66PgheSetHWgmsKB9WAwlxQUjaJJJyTLJsZcFJWcs",
+      "hash": "f4150c5813a53dd11122bf9d87e9bba724c4e037",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0172-2026-de.md": {
+      "fileId": "1hEo8HvuOVxkMczTEAK7dzgwUsjZg2ibXKvW3O4o75qw",
+      "hash": "180c87ec64e67e9e9c3d02fe9df40faa22745082",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0173-2026-de.md": {
+      "fileId": "1sIw4rvJoGpqs41en0g94hRgmCNMimpt_Trzp9XBw77Q",
+      "hash": "c7256f861b5d7b3c262f03d07b9f15ae9f86c23c",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0174-2026-de.md": {
+      "fileId": "1O6zfDwP1bG4BSc8I7mOqzWq8TvpJfDwjmGUr3Bfb4SE",
+      "hash": "f6df0efaac17b597f1c31af1d3bc780fe68421ff",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0175-2026-de.md": {
+      "fileId": "1-pphzQjFinZX2n_Pd-48EkPK8MKRGJeOLdUXLlvgg1I",
+      "hash": "526a8a98c3427309924b9507b8af34df68bd8ea3",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0177-2026-de.md": {
+      "fileId": "1pjWtl2drdUrPKZlkAKBNpj0jJmdfvFTLPakNeovE024",
+      "hash": "a7de79ce031027d48ef1b290b004e3a4a69a6bff",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0178-2026-de.md": {
+      "fileId": "1THSG840csrdGseGCMh9Fi1iZgh2eLkPYuk_pQDOHdBM",
+      "hash": "dc10b2ee324dfcba58770c9de2d1d6d7e857a1a8",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0179-2026-de.md": {
+      "fileId": "1w-mizWUDtQ5L9SjxMww6W5LlQf0fImrM8Pc_xOXaubQ",
+      "hash": "5ae7a83ceb3c7c281cc37d18bbbe1ab291506d92",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0180-2026-de.md": {
+      "fileId": "1-q8kCaDue2oWXhWTMGzkok1MB3GVjT9aW41odqWNdoA",
+      "hash": "3740970659b4c0f6ecb803e835b2229917a68d07",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0181-2026-de.md": {
+      "fileId": "1CWnupqL-VIZmuZrXqqDYOkQbb2g7LMji4nWQDLYKcfM",
+      "hash": "3725d04572b2d94f557ef002636badfd283ce325",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0182-2026-de.md": {
+      "fileId": "1uQZUbIil8uLkPRXIDOC9X1D9KlARnguaFCn4Tp0NMRE",
+      "hash": "7e7fdef10dce121690188dab47e88a7572bf662c",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0183-2026-de.md": {
+      "fileId": "1jKrLJ9tcKtiAAoQNQJFdNznQ2ZdE-NIStTBdvfC_wN0",
+      "hash": "ba8a4d5887642d659066c92bc80e335ed20f6049",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0184-2026-de.md": {
+      "fileId": "1MM3tL8haCa004gYPFNsEEiGbJ0bFDtMdSFZVKBraT_k",
+      "hash": "a78009105059641f12d773ce2f86beea74421595",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0185-2026-de.md": {
+      "fileId": "1fcWf8J3kJf9uVoQB0BhMPPruu7BIiz_ZzoK64mNTMgs",
+      "hash": "519f2d4b7658f7e6cecd5a435334a7424a11f5d8",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0186-2026-de.md": {
+      "fileId": "12llCSLVt2nQn66jylbmDqyXYiGFkLp4arQQhYCOXLDo",
+      "hash": "69f327030a7cf51895103a733de2f5309731d753",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0187-2026-de.md": {
+      "fileId": "1EQ4XPKki7iDi5INfVRP3QFxcY24GAKt_g_klDr7F0L8",
+      "hash": "fae8534cf27c8c03ffc54b9c1bf266d8b4aa43c1",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0188-2026-de.md": {
+      "fileId": "1wdwkJtZzDoZnb-kW-6rZyrsoL4KT0G1x0mABqyQkqEQ",
+      "hash": "f7427f59e5162a8a2b19a1adf1e614b9bae35dde",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0189-2026-de.md": {
+      "fileId": "1z06N--CG5-FvD5_UfBWG7LSV-I17LYXJzXtI3fK9QrY",
+      "hash": "2e28c158888afb0aa2181bb72916fec72a4cd37a",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0190-2026-de.md": {
+      "fileId": "1Br6XQf3SVzJcAjBK4_Jzw3PVl0noyB0tc2psFwHcf60",
+      "hash": "23964e978b04d289a4aac67a0ba11b161f588508",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0191-2026-de.md": {
+      "fileId": "1s_VLqR-3XdTKHdymmEYz0WtxTuyrkAmtnbU0OGzlo1I",
+      "hash": "80c3e66257e0a4762d6d674d01a2622c441c496d",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0192-2026-de.md": {
+      "fileId": "1bH2A6-SxySzSHXyOLAdJgjX4cfWNJrnefHp0V3Kfo8k",
+      "hash": "aebc52d32c4b8e38ac7fbf47749d5325e79ad46c",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0193-2026-de.md": {
+      "fileId": "1YW5EKyvXp2N-tAYf7Oj6r1LVXg089FXtspZ1NMvF1sk",
+      "hash": "e8b885bd8e40bebb6e50b8fbccc4456003c1e6d5",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0194-2026-de.md": {
+      "fileId": "1TDYiQ7WPhNFAcRQDAh3t9D6twbo9a5xvJjoXYOj-wPs",
+      "hash": "10feb08ce56e0048c90cd11ded9bb6031be34c99",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0195-2026-de.md": {
+      "fileId": "18OsfLkUey4W5aJyFAJRaGQXXIlK9XRGcZO9wAn4ta9E",
+      "hash": "afd3876445ab1d84831048988bb390c46112e782",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0196-2026-de.md": {
+      "fileId": "1N1IwsJIJ01vwpGLIHdzPTgKdX_ITPVewdrYINnRia8A",
+      "hash": "2d171cbfaa8eed7a01387fe1f5633af4d5e407c9",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0197-2026-de.md": {
+      "fileId": "1sibIFA6z7BVYxzkXNPHYb4ovOHtFXYwoqjGkk63sXRI",
+      "hash": "99ab33d70de5edf94232ceb5a87371d298b94c6e",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0198-2026-de.md": {
+      "fileId": "1VixEu-VQS0PSWXbUmM_NjwMdN_dxAJQChyLItyMs5EM",
+      "hash": "3743609c42b635fc7fcb4c159561ef5cee48fbf1",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0199-2026-de.md": {
+      "fileId": "1FcDZYmF4cBbGd5Aa0KgIiKVxEhfz0yszOwZg4VUNQdc",
+      "hash": "e3cc8e9b32511d94e7d981ec18afa39245321509",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0200-2026-de.md": {
+      "fileId": "1IPHQ8IEyJz19Bk8zjuw5cEoO8qC2OheGtRWrBThxvAg",
+      "hash": "fe922ce710a9239086e37c40db2aebd7fb755998",
+      "syncedAt": "2026-10-29"
+    },
+    "kueper.com/src/content/kue/science/KUE-SCI-QUANTUM-GRAVITY-2026-DE.md": {
+      "fileId": "1PJtqoPskEktyiCbELVBCBUwDtg-kdnkFPzdz9xS0XBM",
+      "hash": "8334d0f994b63331179c0aca2e806b5e58e5c9eb",
+      "syncedAt": "2026-10-29"
+    }
+  },
   "altbestand": {
     "checked": {},
-    "onlyInDrive": []
+    "onlyInDrive": [
+      {
+        "fileId": "19ZqS7RPHM-6nWn2GIxg04vjb_UHq7p2w",
+        "title": "KUE-GEO-0001-2026-DE.md",
+        "folder": "files (alt, KUE-Kopien Juni 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Atmosphären – Erde, Mars, Venus im Vergleich: Foundation Node v1.0 (24.06.2026): Vergleich der Atmosphären von Erde, Mars, Venus inkl. Mars-Terraforming-Konzepte.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md",
+        "hinweis": "identische Kopie der gleichnamigen Datei in „OTA (alt, bis Okt. 2026)“"
+      },
+      {
+        "fileId": "1pJDWp3l0ALpQxtrxSdSs-2mNJgRBbzwd",
+        "title": "KUE-MAT-0002-2026-DE.md",
+        "folder": "files (alt, KUE-Kopien Juni 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Orbitalmechanik – Grundlagen der Himmelsmechanik: Foundation Node v1.0: Zweikörperproblem, Keplerelemente, Δv/Tsiolkovsky, Hohmann, Lagrange-Punkte, Flyby, Störungen.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md",
+        "hinweis": "identische Kopie der gleichnamigen Datei in „OTA (alt, bis Okt. 2026)“"
+      },
+      {
+        "fileId": "13Jxj0pXn40fLXS9x6ytqQPjonxDvlbOG",
+        "title": "KUE-PHY-0002-2026-DE.md",
+        "folder": "files (alt, KUE-Kopien Juni 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Gravitation – von Newton zu Einstein: Foundation Node v1.0: Newtonsche Gravitation, Kepler, ART, Zeitdilatation/GPS, Skalen, offene Fragen.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md",
+        "hinweis": "identische Kopie der gleichnamigen Datei in „OTA (alt, bis Okt. 2026)“"
+      },
+      {
+        "fileId": "1hESDBp_rnedQsZLkp7Kp-39TQp9TAauO",
+        "title": "KUE-HIS-0002-2026-DE.md",
+        "folder": "files (alt, KUE-Kopien Juni 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Frühe Zivilisationen – Entstehung, Strukturen, Kollaps: Überblick v1.0: Neolithische Revolution, frühe Stadtstaaten, Spätbronzezeit-Kollaps, Achsenzeit, Rom bis 500 CE.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md",
+        "hinweis": "identische Kopie der gleichnamigen Datei in „OTA (alt, bis Okt. 2026)“"
+      },
+      {
+        "fileId": "1aDOW7Ei7JS7txhTu7wF6lc9kS-NHM5s5",
+        "title": "KUE-PHY-0001-2026-DE.md",
+        "folder": "files (alt, KUE-Kopien Juni 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Energie – Grundlagen und Erhaltungsprinzipien: Foundation Node v1.0: Energieformen, Erhaltungssatz, Noether, Wirkungsgrade, E=mc², Energieskalen.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md",
+        "hinweis": "identische Kopie der gleichnamigen Datei in „OTA (alt, bis Okt. 2026)“"
+      },
+      {
+        "fileId": "1cOhA8mAggAIHiTn_U2CbbeCeHRa2shk-",
+        "title": "KUE-HIS-0001-2026-DE.md",
+        "folder": "files (alt, KUE-Kopien Juni 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Geschichte der Naturwissenschaften – Überblick: Überblick v1.0: Wissenschaftsgeschichte von ionischer Naturphilosophie bis Molekularbiologie.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md",
+        "hinweis": "identische Kopie der gleichnamigen Datei in „OTA (alt, bis Okt. 2026)“"
+      },
+      {
+        "fileId": "1e43ZUMPGZKFjm3sxd-LtGLxaeMbHMDVg",
+        "title": "KUE-MAT-0001-2026-DE.md",
+        "folder": "files (alt, KUE-Kopien Juni 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Vektoren und lineare Algebra – Grundlagen: Foundation Node v1.0: Vektoren, Skalar-/Kreuzprodukt, Matrizen, Eigenwerte, Koordinatensysteme, Gradient/Divergenz/Rotation.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md",
+        "hinweis": "identische Kopie der gleichnamigen Datei in „OTA (alt, bis Okt. 2026)“"
+      },
+      {
+        "fileId": "1yBYOTYacF-cxyzF2VXVIY6vYuTp1kO_1",
+        "title": "KUE-CHE-0001-2026-DE.md",
+        "folder": "files (alt, KUE-Kopien Juni 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Wasser – Chemie, Physik und Vorkommen im Sonnensystem: Foundation Node v1.0: Molekülstruktur, Anomalien, Phasendiagramm, Wasser auf Mars/Ceres/Europa/Enceladus, Wasser und Leben.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md",
+        "hinweis": "identische Kopie der gleichnamigen Datei in „OTA (alt, bis Okt. 2026)“"
+      },
+      {
+        "fileId": "1aHoqSceuElKK-UrjxH_zvDIFA14EpIri",
+        "title": "KUE-AST-0001-2026-DE.md",
+        "folder": "files (alt, KUE-Kopien Juni 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Das Sonnensystem – Aufbau, Entstehung, Objekte: Überblick v1.0: Sonne, Planeten, Asteroidengürtel, TNOs, Entstehung, Detailprofile Mars und Ceres, habitable Zone.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md",
+        "hinweis": "identische Kopie der gleichnamigen Datei in „OTA (alt, bis Okt. 2026)“"
+      },
+      {
+        "fileId": "1bMXz0DNvDM61Aw_68oWR6l_3wL1pas-K",
+        "title": "KUE-BIO-0001-2026-DE.md",
+        "folder": "files (alt, KUE-Kopien Juni 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Evolution – Mechanismen und Evidenz: Foundation Node v1.0: Selektion, Mutation, Drift, Genfluss, Evidenz, Zeitskalen, Epigenetik, neutrale Theorie, Astrobiologie.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md",
+        "hinweis": "identische Kopie der gleichnamigen Datei in „OTA (alt, bis Okt. 2026)“"
+      },
+      {
+        "fileId": "1hUnllpcRAFZ3CtAYCvJQNAlPuIDyh2SW",
+        "title": "KUE-AST-0002-2026-DE.md",
+        "folder": "files (alt, KUE-Kopien Juni 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Raumfahrtgeschichte und aktuelle Missionen: Überblick v1.0: Raumfahrtmeilensteine, Marsmissionen (MOXIE), Antriebe, Lebenserhaltung, Marskolonisation, Weltraumrecht.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md",
+        "hinweis": "identische Kopie der gleichnamigen Datei in „OTA (alt, bis Okt. 2026)“"
+      },
+      {
+        "fileId": "1fYNyRWLis9QX8aWmDVDF_igMjvVy5iyo",
+        "title": "KUE-MAT-0001-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Vektoren und lineare Algebra – Grundlagen: Foundation Node v1.0: Vektoren, Skalar-/Kreuzprodukt, Matrizen, Eigenwerte, Koordinatensysteme, Gradient/Divergenz/Rotation.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md"
+      },
+      {
+        "fileId": "1qMom8V96Nj0Io3-WrOa7g3QVEY-RQAMX",
+        "title": "KUE-PHY-0001-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Energie – Grundlagen und Erhaltungsprinzipien: Foundation Node v1.0: Energieformen, Erhaltungssatz, Noether, Wirkungsgrade, E=mc², Energieskalen.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md"
+      },
+      {
+        "fileId": "14g1aP6x7nSzNRICEvc3m0rcyh87v38tO",
+        "title": "KUE-PHY-0002-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Gravitation – von Newton zu Einstein: Foundation Node v1.0: Newtonsche Gravitation, Kepler, ART, Zeitdilatation/GPS, Skalen, offene Fragen.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md"
+      },
+      {
+        "fileId": "1IWb3beykYl7UtE0Ubby9kLyqwvL-P3qP",
+        "title": "KUE-MAT-0002-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Orbitalmechanik – Grundlagen der Himmelsmechanik: Foundation Node v1.0: Zweikörperproblem, Keplerelemente, Δv/Tsiolkovsky, Hohmann, Lagrange-Punkte, Flyby, Störungen.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md"
+      },
+      {
+        "fileId": "1-zbHEeSMFKrSzjJjy5H2hMZexA5ZsS8V",
+        "title": "KUE-AST-0001-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Das Sonnensystem – Aufbau, Entstehung, Objekte: Überblick v1.0: Sonne, Planeten, Asteroidengürtel, TNOs, Entstehung, Detailprofile Mars und Ceres, habitable Zone.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md"
+      },
+      {
+        "fileId": "1jIJ3e-9O6ABYXddqS1her6G_azAiomq1",
+        "title": "KUE-AST-0002-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Raumfahrtgeschichte und aktuelle Missionen: Überblick v1.0: Raumfahrtmeilensteine, Marsmissionen (MOXIE), Antriebe, Lebenserhaltung, Marskolonisation, Weltraumrecht.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md"
+      },
+      {
+        "fileId": "16zZ6X6wvrAcqhXPLGlpJE4pmv1ZG-88p",
+        "title": "KUE-HIS-0002-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Frühe Zivilisationen – Entstehung, Strukturen, Kollaps: Überblick v1.0: Neolithische Revolution, frühe Stadtstaaten, Spätbronzezeit-Kollaps, Achsenzeit, Rom bis 500 CE.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md"
+      },
+      {
+        "fileId": "1p02qJuzsFg7eoZ0XyOUsiHOUfF8DI6SL",
+        "title": "KUE-HIS-0001-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Geschichte der Naturwissenschaften – Überblick: Überblick v1.0: Wissenschaftsgeschichte von ionischer Naturphilosophie bis Molekularbiologie.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md"
+      },
+      {
+        "fileId": "1BZ5S5szn59E5Jke1MtTloioJN6bnLD6a",
+        "title": "KUE-GEO-0001-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Atmosphären – Erde, Mars, Venus im Vergleich: Foundation Node v1.0 (24.06.2026): Vergleich der Atmosphären von Erde, Mars, Venus inkl. Mars-Terraforming-Konzepte.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md"
+      },
+      {
+        "fileId": "1MlLePGRPljZGy2sHDh5Hn1K_dMEbUKTS",
+        "title": "KUE-CHE-0001-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Wasser – Chemie, Physik und Vorkommen im Sonnensystem: Foundation Node v1.0: Molekülstruktur, Anomalien, Phasendiagramm, Wasser auf Mars/Ceres/Europa/Enceladus, Wasser und Leben.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md"
+      },
+      {
+        "fileId": "1JoXsrQgdzmsRTS-PPtCdGfPmqB3kjrt3",
+        "title": "KUE-BIO-0001-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Evolution – Mechanismen und Evidenz: Foundation Node v1.0: Selektion, Mutation, Drift, Genfluss, Evidenz, Zeitskalen, Epigenetik, neutrale Theorie, Astrobiologie.",
+        "checkedAt": "2026-10-29",
+        "request": "kueper.com/external-tasks/open/EXT-ECO-KUE-20261029-001.md"
+      },
+      {
+        "fileId": "1VLaJbXx_-tbZQlT7yLsGN1dtogyalNE3",
+        "title": "OTA_TEC_KOMPONENTENSCHEMA_v1_0_VORSCHLAG.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "unklar",
+        "beschreibung": "Vorschlag OTA-TEC-Komponentenschema v1.0 (14 Punkte, Relationen, Grundregeln, Testfall RL-25).",
+        "checkedAt": "2026-10-29",
+        "hinweis": "Auf GitHub gibt es eine neuere, überarbeitete Fassung (zusätzliche [R]/[H]/[F]-Regeln, Testfall OTA-TEC-0085). Dort fehlen aber das YAML-Metadaten-Template, die Erläuterungen zu jedem der 14 Punkte und der Anlass-Absatz (CYGNUS-Evidenzaudit). Inhaltlich also nicht vollständig deckungsgleich; höchstens das YAML-Template und die Erläuterungen zu den 14 Punkten ergänzen, falls gewünscht."
+      },
+      {
+        "fileId": "1EqPdzcjj-ZdZLt0Fn1KPcEXRsBg5iqJ4",
+        "title": "OTA_TEC_INSTANZSCHEMA_v1_0.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "OTA-TEC-Instanzschema v1.0: 12-Punkte-Struktur und Grundregeln für Instanzreferenzen (Typ vs. Exemplar), Ausgangsfall VEX-47/Vex.",
+        "checkedAt": "2026-10-29",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261029-001.md"
+      },
+      {
+        "fileId": "1Jx_FnCPBHnZQdFofNtIsjLe6OefBM-Nq",
+        "title": "ERKENNTNISNOTIZ_Hexenteich_Nummernkollision.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "nurDrive",
+        "beschreibung": "Arbeitsnotiz vom 30.08.2026 zur Nummernkollision der Hexenteich-Nebendokumente (Hör-Stein, Splitterlupe, Mishkenaz) mit NOXIA-Rover/VEX-47.",
+        "checkedAt": "2026-10-29",
+        "hinweis": "Anliegen erledigt (OTA-TEC-0123/0124/0125-MULTI), Prozessnotiz – kein Request"
+      }
+    ]
   }
 }
