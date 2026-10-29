@@ -1,6 +1,6 @@
 {
   "id": "RES-20261029-598703D4",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-10-29T10:08:36+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriger Kandidat behandelt Strahlendosis oder Abschirmmasse. Die Ceres-Kandidatin RES-20260914-3AD6CB18 betrifft Teilgravitation und Entwicklung, die Fungi-Kandidatin Perchlorat und Regolith-Bodenbildung, die Mars-Geologie-Kandidatin Vergrabung und Lavatunnel-Eis. Die hier zu prüfenden 200–300 g/cm² bzw. 20 g/cm² sind interne Engineering-Setzungen, die extern noch nicht gegen Dosisgrenzwerte und Transportmodelle gehalten wurden.",
-  "fingerprint": "598703d4f0f1dbb8"
+  "fingerprint": "598703d4f0f1dbb8",
+  "updated_at": "2026-10-29T10:34:38+00:00",
+  "last_error": "research agent changed forbidden files: ['research/candidates/RES-20261029-598703D4.md', 'work/cancer.txt', 'work/cheata.txt', 'work/crater.txt', 'work/dl/ad993.pdf', 'work/dl/boscolo.pdf', 'work/dl/cancer.pdf', 'work/dl/cheata.pdf', 'work/dl/crater.pdf', 'work/dl/dlr2013.pdf', 'work/dl/esa_wp.pdf', 'work/dl/fid.html', 'work/dl/geo.html', 'work/dl/globus.pdf', 'work/dl/hassler.html', 'work/dl/hassler.json', 'work/dl/iop.pdf', 'work/dl/kstate.pdf', 'work/dl/llamas.pdf', 'work/dl/nasa3001.pdf', 'work/dl/nasa3001c.pdf', 'work/dl/ralha.html', 'work/dl/reitz2016.pdf', 'work/dl/roestel.pdf', 'work/dl/simonsen.pdf', 'work/dl/unscear2024.pdf', 'work/dl/zhang2022.pdf', 'work/dlrde.txt', 'work/globus.txt', 'work/iop.txt', 'work/llamas.txt', 'work/nasa3001.txt', 'work/ralha.html', 'work/reitz.txt', 'work/scripts/extract.py', 'work/simonsen.txt', 'work/unscear.txt', 'work/zhang.txt']"
 }
