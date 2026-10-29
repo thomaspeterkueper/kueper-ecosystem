@@ -87,3 +87,9 @@ jobs:
             research-execution-report.json
           if-no-files-found: ignore
           retention-days: 30
+
+      - name: Heartbeat
+        if: success()
+        env:
+          HEARTBEAT_RESEARCH_LOOP: ${{ secrets.HEARTBEAT_RESEARCH_LOOP }}
+        run: bash tools/ops/heartbeat.sh HEARTBEAT_RESEARCH_LOOP

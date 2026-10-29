@@ -143,3 +143,9 @@ jobs:
             pr-review-report.json
           if-no-files-found: ignore
           retention-days: 30
+
+      - name: Heartbeat
+        if: success()
+        env:
+          HEARTBEAT_PR_REVIEW: ${{ secrets.HEARTBEAT_PR_REVIEW }}
+        run: bash tools/ops/heartbeat.sh HEARTBEAT_PR_REVIEW

@@ -147,3 +147,9 @@ jobs:
           path: agent-worker-report.json
           if-no-files-found: ignore
           retention-days: 30
+
+      - name: Heartbeat
+        if: success()
+        env:
+          HEARTBEAT_AGENT_WORKER: ${{ secrets.HEARTBEAT_AGENT_WORKER }}
+        run: bash tools/ops/heartbeat.sh HEARTBEAT_AGENT_WORKER

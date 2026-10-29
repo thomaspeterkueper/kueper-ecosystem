@@ -43,3 +43,8 @@ Ausfälle werden heute erst bemerkt, wenn jemand nachsieht: PR Review war ab ca.
 ## Hinweise
 
 Für noxiagame (minütlicher Cron `/api/cron/transits`, stündlicher `population`) gilt dasselbe – siehe EXT-ECO-NOXIA-20261028-003.
+
+## Stand 29.10.2026 (Routine)
+
+- Umgesetzt: `tools/ops/heartbeat.sh`, Heartbeat-Schritt (`if: success()`) in Agent Worker V7, PR Review, Research Loop, Governance-Sweep; Doku in `docs/operations/heartbeats.md`.
+- Offen: Owner-Handlung (Dienst, Secrets, Push), `/fail`-Variante optional, Status-Collector-Prüfung (`status/snapshot.json`), noxiagame-Crons.

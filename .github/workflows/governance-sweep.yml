@@ -105,3 +105,9 @@ jobs:
           subprocess.run(["git", "commit", "-m", f"chore(governance-sweep): file new-findings task {today}"], check=True)
           subprocess.run(["git", "push"], check=True)
           PY
+
+      - name: Heartbeat
+        if: success()
+        env:
+          HEARTBEAT_GOVERNANCE_SWEEP: ${{ secrets.HEARTBEAT_GOVERNANCE_SWEEP }}
+        run: bash tools/ops/heartbeat.sh HEARTBEAT_GOVERNANCE_SWEEP
