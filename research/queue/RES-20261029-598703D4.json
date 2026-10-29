@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261029-598703D4",
+  "status": "queued",
+  "created": "2026-10-29T10:08:36+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "external-tasks/open/EXT-ENG-NXU-20260921-piazzi-lights-canonization.md",
+  "source_ref": "5a229e4199e69f2068790c8eeb0fb38cc885c1c7",
+  "source_blob_sha": "d2e62be409896bac876f32f302af59e3efa9ac0f",
+  "title": "Strahlenschutz in Mars-/Ceres-/Orbitalhabitaten: Was 200–300 g/cm² Regolith und ~20 g/cm² Wasser gegen GCR/SPE tatsächlich leisten",
+  "question": "Was besagen Strahlentransportmodelle, RAD/MSL- und LRO-Messungen, NASA-/ESA-Karrieregrenzwerte und peer-reviewte Abschirmstudien darüber, welche Dosis 200–300 g/cm² lokales Regolith-Äquivalent gegen galaktische Kosmische Strahlung (GCR) und solare Teilchenereignisse (SPE) tatsächlich reduzieren, wie viel wasserstoffreiche Zusatzabschirmung (~20 g/cm²) für Sturm-Safe-Havens nötig ist und welche Aussagen über 'Hintergrundniveau' oder sichere Karrierelängen zulässig sind? Welche Zielwerte, Unsicherheiten und Verteilungsanforderungen müsste der Kanon für Mars-Oberfläche, Ceres (~0,03 g, Oberflächen-/Untergrundkomplex) und Q1 (Orbital, Marsbahn) nennen — und wo sind die intern gesetzten 200–300 g/cm² zu optimistisch, zu konservativ oder schlicht nicht belegbar?",
+  "why_now": "Die Piazzi-Lights-Engineering-Closure (2026-09-21) setzt bereits ~200–300 g/cm² lokales Materialäquivalent und ~20 g/cm² wasserstoffreiche Sturmabschirmung, verbietet aber ausdrücklich die Aussage, die Abschirmung reduziere die Langzeitbelastung auf irdisches Hintergrundniveau. Q1 §18 Gate 6 (Strahlenschutzmasse und Safe-Haven-Verteilung) und Ceres §9 ('genaue erforderliche Flächenmasse bleibt Engineering-Aufgabe') lassen dieselbe Frage offen. Ohne externe Dosis-/Abschirmprüfung bleibt unklar, welche kanonischen Aussagen zulässig sind.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Reale Weltraum-Strahlungsdosimetrie und Abschirmphysik: GCR-/SPE-Transportmodelle, RAD/MSL-Oberflächendosis auf Mars, NASA-/ESA-Karrieregrenzwerte und Risikomodelle, Regolith-/Wasser-Abschirmexperimente und -simulationen sowie die Unterscheidung zwischen Dosisreduktion und Erreichen irdischen Hintergrundniveaus.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.8375,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger Kandidat behandelt Strahlendosis oder Abschirmmasse. Die Ceres-Kandidatin RES-20260914-3AD6CB18 betrifft Teilgravitation und Entwicklung, die Fungi-Kandidatin Perchlorat und Regolith-Bodenbildung, die Mars-Geologie-Kandidatin Vergrabung und Lavatunnel-Eis. Die hier zu prüfenden 200–300 g/cm² bzw. 20 g/cm² sind interne Engineering-Setzungen, die extern noch nicht gegen Dosisgrenzwerte und Transportmodelle gehalten wurden.",
+  "fingerprint": "598703d4f0f1dbb8"
+}
