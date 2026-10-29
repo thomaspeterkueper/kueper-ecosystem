@@ -1,6 +1,6 @@
 {
   "id": "RES-20261029-9BDD2E8E",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-29T10:08:33+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -34,5 +34,7 @@
     "RES-20260829-862AA763"
   ],
   "novelty_reason": "Der frühere Mars-Geologie-Kandidat RES-20260829-862AA763 prüft Vergrabungs-/Resurfacing-Raten für Sektor-7 (864/1.247 m) und Lavatunnel-Eis im Hellas-Becken. Der Alpha-7-Task (2026-10-18) betrifft eine andere Region (Noctis Labyrinthus/westliche Valles Marineris), andere Tiefenanker (80/180/420/≥820 m als getrennte Ingenieursektoren) und eine andere Frage: geotechnische Standortwahl, Kollaps-/Grabenmechanik, Hang- und Dachstabilität sowie survey-abhängige Wasser-/ISRU-Strategie. Diese Dimension ist durch den früheren Kandidaten nicht beantwortet.",
-  "fingerprint": "9bdd2e8ed83edbf6"
+  "fingerprint": "9bdd2e8ed83edbf6",
+  "updated_at": "2026-10-29T10:19:28+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/259"
 }
