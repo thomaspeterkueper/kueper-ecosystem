@@ -1,9 +1,8 @@
 ---
 id: ECO-OPS-20261028-bot-token-401
 title: KUEPER_BOT_TOKEN liefert HTTP 401 – fünf Workflows ausgefallen
-status: done
+status: parked
 created: 2026-10-28
-resolved: 2026-10-28
 requested_by: T.P.K.
 priority: critical
 estimated_effort: low
@@ -14,9 +13,8 @@ type: operations / credentials
 
 **Origin:** Ressourcen- und Redundanz-Analyse (Chat 28.10.2026)
 **Target:** kueper-ecosystem
-**Status:** done
+**Status:** parked
 **Created:** 2026-10-28
-**Resolved:** 2026-10-28
 **Type:** operations / credentials
 
 ## Anlass
@@ -89,7 +87,7 @@ Governance-Sweep und OTA Tech Object Audit sind tägliche Cron-Jobs; die beiden 
 | OTA Tech Object Audit | 2026-10-29, 04:47 (`47 4 * * *`) | „Checkout OTA source“ erfolgreich, Audit grün |
 | Governance-Sweep | 2026-10-29, 06:05 (`5 6 * * *`) | `status/governance-sweep.md` ohne `repository_unreachable` |
 
-`status/governance-sweep.md` enthält bis dahin unverändert die 21 alten 401-Funde vom 28.10., 12:42 UTC (letzter Lauf vor der Erneuerung); der letzte Eintrag in `research/queue` stammt vom 23.10.2026 (`RES-20261023-C4FA4833.json`). Beides ist erwartet und kein neuer Fehler. Sollte einer der vier Läufe am 29.10. nicht grün sein, ist das als neuer Incident zu erfassen; dieser Task bleibt abgeschlossen.
+`status/governance-sweep.md` enthält bis dahin unverändert die 21 alten 401-Funde vom 28.10., 12:42 UTC (letzter Lauf vor der Erneuerung); der letzte Eintrag in `research/queue` stammt vom 23.10.2026 (`RES-20261023-C4FA4833.json`). Beides ist erwartet und kein neuer Fehler. **Der Task bleibt bis zur bestätigten Wiederherstellung geparkt und wird nicht vorab geschlossen.** Sollte einer der vier Läufe am 29.10. nicht grün sein, bleibt der Task offen und der Fehlschlag ist als neuer Incident zu erfassen.
 
 ### Nachträgliche Reviews der ohne KUEPER-Review gemergten PRs
 
@@ -111,20 +109,40 @@ Ermittlung: GitHub-Suche über alle Repositories des Owners nach gemergten PRs i
 
 **Querschnitt:** In allen 20 Diffs keine Secrets, kein `eval`/`exec`, keine deaktivierten Tests oder `.only`-Marker, keine neuen Workflow-Berechtigungen.
 
-### Ergebnis gegenüber den Abnahmekriterien
+### Ergebnis gegenüber den Abnahmekriterien (Stand 29.10.2026, 00:20 UTC)
 
-| Kriterium | Stand 28.10.2026 |
+| Kriterium | Stand |
 |---|---|
 | PR Review grün | erfüllt (40691372914, 40700385241) |
 | Autonomous Loop grün | erfüllt (40702567557) |
-| OTA Tech Object Audit grün | durch Token-Lesebeleg stark gestützt, endgültig erst am 29.10. 04:47 UTC |
-| Governance-Sweep ohne `repository_unreachable` | endgültig erst am 29.10. 06:05 UTC; alter Bericht bleibt bis dahin stehen |
-| Neue Einträge in `research/queue` | endgültig erst am 29.10. 03:23/03:53 UTC |
+| OTA Tech Object Audit grün | **offen** – Lauf 29.10. 04:47 UTC prüfen |
+| Governance-Sweep ohne `repository_unreachable` | **offen** – Lauf 29.10. 06:05 UTC prüfen; alter Bericht (21 × HTTP 401) bleibt bis dahin stehen |
+| Neue Einträge in `research/queue` | **offen** – Läufe 29.10. 03:23/03:53 UTC prüfen; letzter Eintrag vom 23.10. |
 | PRs ohne Review nachträglich geprüft | erfüllt (20 PRs) |
+
+**Gesamtstatus:** Drei Abnahmekriterien sind noch nicht verifiziert. Der Task ist deshalb `parked`, nicht `done`; eine Schließung erfolgt erst nach bestätigter Wiederherstellung (siehe `## Rückfrage`).
 
 ### Nebenbefund (nicht Teil dieses Tasks)
 
 Beim Prüfen des Ingests fiel auf: `tools/loop/ingest_external_tasks.py` zählt auch bereits vorhandene Tasks gegen `KUEPER_MAX_EXTERNAL_INGEST` (Standard 5) und bricht dann die Schleife ab. Da `ecosystem` in der Registry zuerst kommt und dort derzeit 39 offene External Tasks liegen, werden pro Lauf nur die ersten fünf Dateien betrachtet; später sortierte Tasks anderer Repositories kommen erst an die Reihe, wenn der Kopf der Liste abgearbeitet ist. Das ist ein vom Token unabhängiger Engpass. Ob der Deckel als reine Arbeits-/Kostengrenze bewusst so gewählt ist, ist eine eigene Entscheidung und wurde hier nicht geändert.
+
+## Rückfrage
+
+**Blocker:** Drei Abnahmekriterien lassen sich erst nach den planmäßigen Läufen am 29.10.2026 prüfen (Knowledge Research Loop 03:23 UTC, OTA Workqueue Research 03:53 UTC, OTA Tech Object Audit 04:47 UTC, Governance-Sweep 06:05 UTC). Vor 06:05 UTC belegen `status/governance-sweep.md` und `research/queue` nur den alten Ausfallzustand; daraus folgt weder Erfolg noch Misserfolg. Der Task bleibt deshalb `parked` und wird nicht vorab auf `done` gesetzt.
+
+**Wiederaufnahme:** Der Parked-Reevaluation-Loop (`tools/loop/reevaluate_parked.py`, alle 15 Minuten im Autonomous Ecosystem Loop) prüft diesen Task automatisch und öffnet ihn wieder, sobald der Repository-Zustand die fehlende Voraussetzung zeigt:
+
+- `status/governance-sweep.md` wurde nach dem 29.10.2026, 06:05 UTC neu erzeugt und enthält keine `repository_unreachable`-Funde mehr;
+- in `research/queue` liegen neue Einträge mit Datum ab 29.10.2026.
+
+**Abschließende Abnahme:** Nach der Wiederaufnahme prüft der nächste Task-Lauf zusätzlich die vier Workflow-Ergebnisse vom 29.10.2026 (über die öffentliche GitHub-Actions-API, dafür sind keine Schreib-Credentials nötig):
+
+1. Knowledge Research Loop, 03:23 UTC – grün und neue Datei unter `research/queue`;
+2. OTA Workqueue Research, 03:53 UTC – grün und neue Datei unter `research/queue`;
+3. OTA Tech Object Audit, 04:47 UTC – grün, insbesondere Schritt „Checkout OTA source“;
+4. Governance-Sweep, 06:05 UTC – grün und `status/governance-sweep.md` ohne `repository_unreachable`.
+
+Erst wenn alle vier Läufe grün sind und beide Repository-Belege vorliegen, wird der Task auf `done` gesetzt. Schlägt einer der Läufe fehl, bleibt der Task offen und der Fehlschlag wird als neuer Incident erfasst; ein fehlgeschlagener Lauf erfüllt die Abnahmekriterien nicht nachträglich. Ein gerouteter Follow-up-Request an `ECO` ist nach `docs/autonomous-loops.md` ausgeschlossen (Source und Target wären identisch); die Verifikation bleibt daher Bestandteil dieses Tasks.
 
 ## Hinweise
 
