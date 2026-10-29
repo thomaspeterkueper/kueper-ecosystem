@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261029-1298ACCC",
+  "status": "queued",
+  "created": "2026-10-29T10:08:34+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "external-tasks/open/EXT-ENG-NXU-20260925-energy-grid-evolution.md",
+  "source_ref": "5a229e4199e69f2068790c8eeb0fb38cc885c1c7",
+  "source_blob_sha": "54d80b9f030df2b0c6277c74d68d944b2d27d162",
+  "title": "Energiearchitektur einer Mars-Siedlung 2060–2150: Was reale Fissions-/Solar-/Speicher- und Netztechnik für ~3.800 bis ~12.000 Menschen zulässt",
+  "question": "Welche belastbaren Befunde (peer-reviewed, Missions- und Behördendaten) gibt es zu Energieversorgung und Netzen auf Mars und Mond — Solarertrag bei ~1,52 AU, Ausfälle durch lokale und globale Staubstürme, Fissions-/Kilopower-/FSP-Leistungsklassen, Speicherdauer für ~12-h-Nächte und mehrwöchige Stürme, Wärmeabfuhr, Verteilungs- und Hochspannungsprobleme bei niedrigem Druck, Mikronetz-, Islanding- und Lastprioritätsarchitekturen — und welche Größenordnungen (kW/MW pro Person, Reserve, Speichermasse, Brennstoff- und Ersatzteilabhängigkeit) sind für ~3.800 Menschen (2091) bzw. ~12.000 (2150) plausibel? Wo muss der Kanon Engpässe, Curtailment, veraltete Telemetrie und Ausfallmodi zeigen, statt 'reiche Energie' als gelöstes Problem zu setzen?",
+  "why_now": "Zwei offene Tasks (2026-09-25 und 2026-09-28, letzterer priority: high) fordern eine canon-kompatible Energie- und Netzevolution; Q1 §10/§18 lässt Leistung, Arrayfläche, Speicherchemie und Reservequelle ausdrücklich offen, und der E0-NPC-Seed Samira Haddad macht Energie-/Speicherinfrastruktur bereits zur Figurenrolle. Die konkreten Zahlen fehlen, obwohl Piazzi-Lights bereits eine Fissions-/Solar-/Speicher-Topologie und 0,3–0,6 MW Habitatlast setzt.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Reale Energie- und Netztechnik für Mars und Mond: Solarertrag und Staubsturm-Statistik, Fissions-/Kilopower-/FSP-Klassen, Energiespeicherdauer und -masse, Wärmeabfuhr im Vakuum/Niederdruck, Verteilungsprobleme bei niedrigem Atmosphärendruck, Mikronetze, Islanding und Lastpriorisierung.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.8325,
+  "scores": {
+    "project_relevance": 0.88,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger Kandidat behandelt Energieversorgung oder Netzarchitektur. Die Liste enthält Dvārakā, Isolation, Fungi, Genetik, Quadratur-Astrodynamik, Zeit, 60.000 BCE, KI-Bewusstsein, Ceres-Teilgravitation, Mishkenaz, Mars-Geologie und χ-Feld — keine Energie-, Speicher- oder Verteilungsfrage. Die beiden offenen Tasks fordern diese Aufarbeitung explizit, ohne sie zu beantworten.",
+  "fingerprint": "1298accc882d8afc"
+}
