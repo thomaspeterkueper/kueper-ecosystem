@@ -1,6 +1,6 @@
 {
   "id": "RES-20261029-1298ACCC",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-10-29T10:08:34+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriger Kandidat behandelt Energieversorgung oder Netzarchitektur. Die Liste enthält Dvārakā, Isolation, Fungi, Genetik, Quadratur-Astrodynamik, Zeit, 60.000 BCE, KI-Bewusstsein, Ceres-Teilgravitation, Mishkenaz, Mars-Geologie und χ-Feld — keine Energie-, Speicher- oder Verteilungsfrage. Die beiden offenen Tasks fordern diese Aufarbeitung explizit, ohne sie zu beantworten.",
-  "fingerprint": "1298accc882d8afc"
+  "fingerprint": "1298accc882d8afc",
+  "updated_at": "2026-10-30T10:08:28+00:00",
+  "last_error": "agent-with-exa: Exa evidence failed: Cannot read properties of undefined (reading 'exaSearch')\nagent-with-exa: falling back to the existing research agent without Exa\nClaude Code doesn't recognize the model \"deepseek-v4-flash\", so it assumes a context window of 200k tokens. Update Claude Code, or see https://code.claude.com/docs/en/model-config#correct-the-window-for-a-gateway-or-custom-model-id to set the window.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"sdk\"}\nAPI Error: 402 Insufficient Balance (request_id: eb1b6803-20e3-4b3d-bb84-4bbfcc956358)\n"
 }
