@@ -1,6 +1,6 @@
 {
   "id": "RES-20261022-5C288045",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-10-22T08:44:34+00:00",
   "source_project": "endia",
   "source_repository": "thomaspeterkueper/endia.de",
@@ -33,5 +33,7 @@
     "RES-20261015-5E9D3DDB"
   ],
   "novelty_reason": "RES-20261015-5E9D3DDB asks which competence frameworks (DigComp 2.2, KMK, PISA 2025, UNESCO MIL) define the required content and how pages should be mapped to them; it does not ask which existing official content already supplies that material, at what depth and for which age group, or what each provider's licence and the PSI/official-works rules permit in terms of linking, quotation, embedding and adaptation. This gap adds the missing supply-and-reuse dimension that must be settled before the competence mapping can be implemented.",
-  "fingerprint": "5c288045253f6518"
+  "fingerprint": "5c288045253f6518",
+  "updated_at": "2026-10-30T10:08:31+00:00",
+  "last_error": "agent-with-exa: Exa evidence failed: Cannot read properties of undefined (reading 'exaSearch')\nagent-with-exa: falling back to the existing research agent without Exa\nClaude Code doesn't recognize the model \"deepseek-v4-flash\", so it assumes a context window of 200k tokens. Update Claude Code, or see https://code.claude.com/docs/en/model-config#correct-the-window-for-a-gateway-or-custom-model-id to set the window.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"sdk\"}\nAPI Error: 402 Insufficient Balance (request_id: fb4f6004-5ea3-4e04-8979-3e4803128f48)\n"
 }
