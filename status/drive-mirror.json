@@ -1573,7 +1573,7 @@
     "remainingUncheckedApprox": 467
   },
   "encodingDefects": {
-    "_comment": "Quelldateien mit doppelt kodiertem UTF-8 (Mojibake/Steuerzeichen); werden nicht gespiegelt, bis repariert",
+    "_comment": "Alle 14 Quelldateien am 2026-10-31 auf GitHub repariert (Rückumwandlung cp1252->UTF-8). Die 7 Dateien in notMirrored werden beim nächsten Lauf gespiegelt; SCI-0038-EN: „⁶“ und „μ“ aus Mustern erschlossen.",
     "checkedAt": "2026-10-31",
     "files": [
       "OTA-TEC-0028-2025-DE.md",
@@ -1599,6 +1599,7 @@
       "OTA-HIS-0006-9500BCE-DE.md",
       "OTA-KARTE-0001-Gehirn-Epochen.md",
       "OTA-KARTE-0003-Baumeister-Netzwerk-DE.md"
-    ]
+    ],
+    "repairedAt": "2026-10-31"
   }
 }
