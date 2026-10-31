@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261031-0311A259",
+  "status": "queued",
+  "created": "2026-10-31T09:47:31+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/archiv/genese-werden-spiel-spielraum-2026-09-12.md",
+  "source_ref": "4cd2493653648ea25569991c139e72d9340a1f02",
+  "source_blob_sha": "f4069a17fc8d5674b42184fd004e80cd2e2cb0c4",
+  "title": "Spiel oder Feld? Līlā, Spieltheorie und die ungeklärte Gleichsetzung „Gott ist das Spiel“",
+  "question": "Der Genese-Text vom 12.09.2026 nennt die Klärung des Verhältnisses von Spiel, Feld und Resonanz sowie die Prüfung der Werkstattthese „Gott ist das Spiel“ gegen „Das Göttliche ist das Feld“ ausdrücklich als offene Arbeit; das Symbol Lila und das Buch „Gott ist eine Wolke“ (Kap. 3: „Liebe, Lila oder Komplexitätsdrang?“) führen den Spielbegriff bereits. Zu klären ist, was die philosophische Spieltradition (Huizinga, Caillois, Gadamer, Fink) und der hinduistische Begriff līlā in Primärtexten und seriöser Forschung tatsächlich besagen: Ist Spiel ein Vollzugsmodus, eine Welterschließung, ein ontologisches Prinzip oder eine theologische Aussage über göttliches Schöpfertum? Wo deckt sich die Projektdefinition „Spiel ist Freiheit innerhalb wirklicher Bedingungen“ mit diesen Positionen, wo ist sie eine Neuetikettierung, und wo muss die Gleichsetzung „Gott ist das Spiel“ als Metapher, theologische Analogie oder KUEPER-Systembehauptung markiert werden? Welche Einwände (Ästhetisierung des Leidens, Theodizee, unzulässige Übertragung von līlā, Missbrauch des Spielbegriffs) treffen die These, und welche Formulierungen auf der öffentlichen Seite sind zu stark?",
+  "why_now": "Der Genese-Text vom 12.09.2026 (§6 und §13) bezeichnet „Gott ist das Spiel“ als Werkstattthese, die eigener systematischer Ausarbeitung bedarf, und listet „Verhältnis von Spiel, Feld und Resonanz genauer bestimmen“ sowie den Vergleich mit „Das Göttliche ist das Feld“ als offene Arbeit. Gleichzeitig plant „Gott ist eine Wolke“ ein Kapitel „Liebe, Lila oder Komplexitätsdrang?“, und das Symbol Lila trägt den Spielbegriff bereits öffentlich. Die Frage entscheidet mit, ob der Spielbegriff ein eigenständiger ontologischer Begriff ist oder nur eine Metapher für relationales Werden.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Philosophische Spieltheorien (Huizinga, Caillois, Gadamer, Fink) und der hinduistische Begriff līlā in Primärtexten und religionswissenschaftlicher Forschung.",
+  "publication_route_hint": null,
+  "project_weight": 0.65,
+  "relevance_score": 0.8875,
+  "scores": {
+    "project_relevance": 0.93,
+    "cross_project_reuse": 0.84,
+    "uncertainty": 0.86,
+    "evidence_potential": 0.92
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Der bisherige Auftrag RES-20261019-9E0185A4 prüft „Spielraum“ als ethischen Prüfbegriff gegenüber Capability-Set, Freiheit und Nicht-Beherrschung; er behandelt nicht den ontologischen oder theologischen Spielbegriff, die Gleichsetzung „Gott ist das Spiel“ oder līlā. Die neue Frage liegt auf einer anderen Ebene (Vollzugsmodus vs. Möglichkeitsraum) und ist keine Übersetzung des alten Auftrags.",
+  "fingerprint": "0311a2595e354d05"
+}
