@@ -1,6 +1,6 @@
 {
   "id": "RES-20261031-0311A259",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-10-31T09:47:31+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Der bisherige Auftrag RES-20261019-9E0185A4 prüft „Spielraum“ als ethischen Prüfbegriff gegenüber Capability-Set, Freiheit und Nicht-Beherrschung; er behandelt nicht den ontologischen oder theologischen Spielbegriff, die Gleichsetzung „Gott ist das Spiel“ oder līlā. Die neue Frage liegt auf einer anderen Ebene (Vollzugsmodus vs. Möglichkeitsraum) und ist keine Übersetzung des alten Auftrags.",
-  "fingerprint": "0311a2595e354d05"
+  "fingerprint": "0311a2595e354d05",
+  "updated_at": "2026-10-31T09:58:21+00:00",
+  "last_error": "candidate for philosophy-comparative lacks a strong source type marker"
 }
