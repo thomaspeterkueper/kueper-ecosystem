@@ -1,6 +1,6 @@
 {
   "id": "RES-20261031-E1778D8B",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-31T09:47:32+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriger Auftrag behandelt Tod, personale Identität oder Auferstehung. RES-20261019-827379B0 („Geschichte ohne Zeit“) und RES-20261018-16792C5C („Weltindividuation“) betreffen Weltgeschichte, Gründung und Individuation von Welten, nicht persönliche Fortexistenz. Der Prozessphilosophie-Auftrag RES-20260828-D6A60CB1 vergleicht Gotteslehren, nicht Thanatologie; Whitehead/Hartshorne sind hier nur eine Vergleichsposition.",
-  "fingerprint": "e1778d8b46480e65"
+  "fingerprint": "e1778d8b46480e65",
+  "updated_at": "2026-10-31T10:13:40+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/263"
 }
