@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261031-AC8CF198",
+  "status": "queued",
+  "created": "2026-10-31T09:47:34+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/pages/philosophie.astro",
+  "source_ref": "4cd2493653648ea25569991c139e72d9340a1f02",
+  "source_blob_sha": "bd438056e3f36856772c5f3754a9f7f26e4f3fd9",
+  "title": "Omnizedenz, Zedenz, Transzendenz: ist die Wortbildung tragfähig und der Terminus neu?",
+  "question": "Die öffentliche Startseite und die Philosophie-Seite behaupten, „Omnizedenz“ verbinde omni mit „Zedenz“, einer bewussten Wortbildung aus „Transzendenz“ durch Entfall von trans-; die Konsistenzmatrix vom 16.09.2026 schützt diese Herleitung als Kanon und erklärt alternative Herleitungen für nicht kanonisch. Zu prüfen ist erstens die tatsächliche Morphologie und Begriffsgeschichte von transcendentia/transcendence/Transzendenz in lateinischen und deutschen philosophischen Lexika und Belegen, zweitens ob „Zedenz“ als selbständiges Morphem oder Terminus in Philosophie, Theologie oder Esoterik belegt ist, drittens ob „Omnizedenz“ vor diesem Projekt Verwendung findet (Korpus-, Bibliotheks- und Web-Recherche), und viertens welche Konsequenzen daraus folgen: Ist die Derivation eine legitime Neuschöpfung, eine analogische Rückbildung oder eine etymologisch irreführende Volksetymologie? Welche Formulierung darf die öffentliche Seite verwenden, ohne eine historische Herleitung zu behaupten, die sich nicht belegen lässt, und wie ist die Wortbildung von der philosophischen Setzung zu trennen?",
+  "why_now": "Die Startseite und die Philosophie-Seite tragen die Herleitung „Zedenz aus Transzendenz ohne trans-“ als Namensgrundlage; die Konsistenzmatrix vom 16.09.2026 erklärt sie für geschützt und alternative Herleitungen für nicht kanonisch. Dieselbe Namensbildung wird im gesamten Ökosystem (u. a. Mishkenaz und resonanceethics) mitgeführt. Die Behauptung ist zugleich ein faktischer sprachgeschichtlicher Satz und ein Identitätsmerkmal des Projekts; eine falsche oder unbelegte Etymologie würde die öffentliche Plausibilität und die Cross-Repository-Konsistenz beschädigen.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Historische Morphologie und Begriffsgeschichte von transcendentia/transcendence/Transzendenz in philosophischen Lexika sowie lexikographische und korpusbezogene Belege für „Zedenz“ und „Omnizedenz“.",
+  "publication_route_hint": null,
+  "project_weight": 0.65,
+  "relevance_score": 0.845,
+  "scores": {
+    "project_relevance": 0.88,
+    "cross_project_reuse": 0.86,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.84
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger Auftrag prüft die Wortbildung oder die Priorität des Terminus. Der Pantheismus-/Panentheismus-Auftrag RES-20260828-D6A60CB1 vergleicht Begriffe und Lehren, nicht die lexikalische Herleitung von „Omnizedenz“ und „Zedenz“. Die Frage ist eine sprachgeschichtliche und korpusbezogene Ergänzung, keine Wiederholung des Begriffsvergleichs.",
+  "fingerprint": "ac8cf198c7e84b91"
+}
