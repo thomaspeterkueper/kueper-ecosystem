@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261031-E1778D8B",
+  "status": "queued",
+  "created": "2026-10-31T09:47:32+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/content/archiv/kanonstand-werden-spielraum-hermeneutik-2026-09-15.md",
+  "source_ref": "4cd2493653648ea25569991c139e72d9340a1f02",
+  "source_blob_sha": "ca05521a95ef3818e93aa37b265ec78383ff3410",
+  "title": "Tod ohne Rückkehr: objektive Unsterblichkeit, Auferstehung und die Grenze der Prozessontologie",
+  "question": "Der Kanon vom 15.09.2026 hält fest: „Was geworden ist, kann aufhören, als Teil fortzubestehen. Es kann nicht aufhören, geschehen zu sein.“ Der Kanon vom 24.09.2026 und die Konsistenzmatrix führen Tod, persönliche Fortexistenz und Auferstehung ausdrücklich als offen; die Einführung (Kap. 5, „Tod, Ende und Geschichte“) und „Gott ist eine Wolke“ (Kap. 6, „Tod und Auferstehung — Zyklus oder linearer Übergang?“) müssen dazu Stellung nehmen. Zu prüfen ist, welche Positionen die Philosophie des Todes und der personalen Identität (Epikur, Lukrez, Nagel, Williams, Parfit) sowie die christliche Auferstehungstradition (1 Kor 15, frühchristliche und rabbinische Texte) und Whitehead/Hartshorne (objektive Unsterblichkeit) anbieten. Trägt der Satz „Was geschehen ist, kann nicht ungeschehen werden“ eine Form von Fortbestehen, oder nur die ontologische Unlöschbarkeit von Geschichte? Wo ist „Tod als Rückkehr“ überholt, wo bleibt „Auferstehung“ eine theologische Behauptung, die nicht aus der Prozessontologie folgt, und wo wird aus einer Analogie unzulässig ein Beweis? Welche Formulierungen müssen als Textbefund, philosophische Position, vergleichende Analogie und KUEPER-Systembehauptung getrennt werden?",
+  "why_now": "Der Kanon vom 15.09.2026 macht den Satz „Was geworden ist, kann aufhören, als Teil fortzubestehen. Es kann nicht aufhören, geschehen zu sein“ ausdrücklich für die spätere Neubearbeitung von Tod, Erinnerung und Fortbestehen zentral. Die Konsistenzmatrix vom 16.09.2026 führt „Tod“ als [OFFEN] und hält fest, dass daraus keine persönliche Unsterblichkeit folgt. Die Einführung (Kap. 5) und „Gott ist eine Wolke“ (Kap. 6) sind noch ungeschrieben, während die öffentliche Seite bereits von „Tod als Rückkehr“ als historischer Schicht spricht.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Philosophie des Todes und der personalen Identität (Epikur, Lukrez, Nagel, Williams, Parfit), 1 Kor 15 und frühchristliche/rabbinische Auferstehungstraditionen sowie Whitehead/Hartshorne zur objektiven Unsterblichkeit.",
+  "publication_route_hint": null,
+  "project_weight": 0.65,
+  "relevance_score": 0.8475,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.74,
+    "uncertainty": 0.84,
+    "evidence_potential": 0.91
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger Auftrag behandelt Tod, personale Identität oder Auferstehung. RES-20261019-827379B0 („Geschichte ohne Zeit“) und RES-20261018-16792C5C („Weltindividuation“) betreffen Weltgeschichte, Gründung und Individuation von Welten, nicht persönliche Fortexistenz. Der Prozessphilosophie-Auftrag RES-20260828-D6A60CB1 vergleicht Gotteslehren, nicht Thanatologie; Whitehead/Hartshorne sind hier nur eine Vergleichsposition.",
+  "fingerprint": "e1778d8b46480e65"
+}
