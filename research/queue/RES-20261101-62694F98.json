@@ -1,6 +1,6 @@
 {
   "id": "RES-20261101-62694F98",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-01T11:23:32+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -39,5 +39,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriger OTA-Forschungstopik prueft Raumfahrt-Reproduktionsbiologie oder Teilgravitations-Tierversuche. Die vorhandenen TEC-Audits betreffen Habitat-, ECLSS-, Medizin-, Kommunikations- und Energiearchitektur (OTA-TEC-0088/0093/0098/0106/0109/0119), die SCI-Audits betreffen Magnetobiologie (OTA-SCI-0060/0096), Kosmologie, Geowissenschaften und Archaeoastronomie. Die hier zu pruefende 1/6-g-Mausbehauptung und die Nagetier-Reproduktionsbilanz sind in keinem Vorgaenger enthalten.",
-  "fingerprint": "62694f98ffa3924c"
+  "fingerprint": "62694f98ffa3924c",
+  "updated_at": "2026-11-01T11:34:54+00:00",
+  "last_error": "GitHub HTTP 403: {\n\t\"message\": \"API rate limit exceeded for user ID 259063969. If you reach out to GitHub Support for help, please include the request ID 1CC1:13ACC:E9EC4C:3014C5C:6AE723DE and timestamp 2026-11-01 11:34:54 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https:\\/\\/docs.github.com\\/en\\/site-policy\\/github-terms\\/github-terms-of-service)\",\n\t\"documentation_url\": \"https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api#rate-limiting\",\n\t\"status\": \"403\"\n}\n"
 }
