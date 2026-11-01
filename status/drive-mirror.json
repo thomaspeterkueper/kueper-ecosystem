@@ -10,11 +10,11 @@
     "altbestand": "16z8ClaKdv-zTEdUV4c8YjDC06_At8WjQ",
     "kannWeg": "1dL_x91VoDbYyuCQKMeYbqWdblzKwMIqv",
     "subfolders": {
-      "KUE/sci": "13MHnPhXgIDpG-V4aD3nFP12spWYOJOIx",
-      "KUE/met": "193AG2Y0-ycblAcmyxO6Uz9vxYMahgoOT",
-      "KUE/phi": "11ChuEFR1il1R6aFeDJLcQYi7PJisJLL-",
-      "KUE/obs": "1qxY-q8o8o2UF6_OVW72waf5ZYZyDJLai",
       "KUE/his": "1Li9lHKKOmPP8Bgnn3TYf98VkwXivb666",
+      "KUE/met": "193AG2Y0-ycblAcmyxO6Uz9vxYMahgoOT",
+      "KUE/obs": "1qxY-q8o8o2UF6_OVW72waf5ZYZyDJLai",
+      "KUE/phi": "11ChuEFR1il1R6aFeDJLcQYi7PJisJLL-",
+      "KUE/sci": "13MHnPhXgIDpG-V4aD3nFP12spWYOJOIx",
       "KUE/science": "1kEKTe8Hcud64RM8CTYlKdbdnDMAnpNVR",
       "OTA/ART": "16qO7wvsGO1N_LM95tKOiibjEezTGIc1r",
       "OTA/BIO": "1RTVqv1EOjYT1hqFownJ-ODqgO1DpLAQE",
@@ -26,13 +26,19 @@
       "OTA/KOM": "1AMYbR9w77M48YXHweJxI9IA3k9-rTU9K",
       "OTA/LIM": "11JCRGU_qjqOOlIoskzEfYRw1_kg7XwmB",
       "OTA/LIT": "1XuphHVEJvUjAaCHMpH535x8iAsFxpeGa",
-      "OTA/LSC": "1wmVWHzBNNV8AkJ0rG-rfAqFHSmwjvtDu"
+      "OTA/LSC": "1wmVWHzBNNV8AkJ0rG-rfAqFHSmwjvtDu",
+      "OTA/META": "1DFxf--oe2Uqrkd2CPsHinFXv11nJS3ms",
+      "OTA/MON": "1JMbP2mOQAkU1UWs02aSAkSALreDnyOJF",
+      "OTA/NAR": "1oTL4SDFfGxKzZvUTTITZW186NVYw-Bgz",
+      "OTA/OBS": "1Y_nTNJIs0Zxn5WNxoQrnp1EsJ_-gSx20",
+      "OTA/ORG": "1Vy9bb2M2xhhBlNF7EKb6zGPCBNZLrbVf",
+      "OTA/RED": "1whWwBuwCjLnF5zVBy1eBhynzM4qefgwW"
     }
   },
   "lastSync": {
-    "kueper.com": "023762c700e59a16610bf58f8be46061382d8b77",
-    "overtime-archive.org": "e965917189a726b4bad6ad13d9086bf8884687f1",
-    "kueper-ecosystem/reviews": "2151b7df47d68afa3272718aedfd558ceaef85f9"
+    "kueper.com": "4b0223aa9744caeefe4be1669c105845970cc92d",
+    "overtime-archive.org": "e47203f90a522838324f43cce4390010140c3271",
+    "kueper-ecosystem/reviews": "f44b070ad221bc200ac2b37f6078c0b9aefb4251"
   },
   "documents": {
     "kueper-ecosystem/reviews/2026-10-29-KUE-SCI-0004-2026-DE.md": {
@@ -94,6 +100,26 @@
       "fileId": "1toIRMKBFxn_vEPq3b9Z6PNQT1Xq-tr7ZxGTXjUX6-S0",
       "hash": "1e6db9a13c48ec22c3055cc54fb7a5f7485aab9c",
       "syncedAt": "2026-10-31"
+    },
+    "kueper-ecosystem/reviews/2026-11-01-OTA-BIO-0022-2026-DE.md": {
+      "fileId": "1Y0MunEV0cf6y3RRbBo6V9vll7EZDUbABGavUHvG91hA",
+      "hash": "2f376fdf5b2552b070b7d9e9b8a716ebfe5d1348",
+      "syncedAt": "2026-11-01"
+    },
+    "kueper-ecosystem/reviews/2026-11-01-OTA-LSC-0001-2048-DE.md": {
+      "fileId": "1Vpy7b2cUSS1LMWxzmTm7PQIvCeNr9H8MrlbnaUzJ16k",
+      "hash": "72f48729cfbc03effc81f6363b1c57f02dbff2ed",
+      "syncedAt": "2026-11-01"
+    },
+    "kueper-ecosystem/reviews/2026-11-01-OTA-LSC-0006-2026-DE.md": {
+      "fileId": "1MZLTewtS5XLb31fut9-c7nibigaFVsCJzR5a_ClXoXY",
+      "hash": "78830c1bf9a82c1d1509ed169e1433fc080a3916",
+      "syncedAt": "2026-11-01"
+    },
+    "kueper-ecosystem/reviews/2026-11-01-OTA-LSC-0007-2026-DE.md": {
+      "fileId": "1C6XT4k3oMKkTp4-fDLbICshWPNl4XF5WhdV6R0nbiu4",
+      "hash": "1091ec01b307df83817e346ee3bc7df7f5ca0d8b",
+      "syncedAt": "2026-11-01"
     },
     "kueper-ecosystem/reviews/2027-10-10-myzelbaustoffe-naturverbundenes-bauen.md": {
       "fileId": "1tR-agLRMFY9UHmJretJ6Dy9kJSWpaGSnwKJuJRHtIDQ",
@@ -375,10 +401,15 @@
       "hash": "fe922ce710a9239086e37c40db2aebd7fb755998",
       "syncedAt": "2026-10-29"
     },
+    "kueper.com/src/content/kue/sci/kue-sci-0201-2026-de.md": {
+      "fileId": "1R6oHdLFOUGnCFAhzYrA0ddGSe-nBUw4y7zaIR9nhxho",
+      "hash": "dd9c4c1985c48111cab1c4875354ce677d8c3b48",
+      "syncedAt": "2026-11-01"
+    },
     "kueper.com/src/content/kue/science/KUE-SCI-QUANTUM-GRAVITY-2026-DE.md": {
-      "fileId": "1PJtqoPskEktyiCbELVBCBUwDtg-kdnkFPzdz9xS0XBM",
-      "hash": "8334d0f994b63331179c0aca2e806b5e58e5c9eb",
-      "syncedAt": "2026-10-29"
+      "fileId": "1cE4m5EzOySYZFcBh85a5bbYC9fKd28C54Ih_lHGSULs",
+      "hash": "8809b415d3fff887d3a30d6323662479dc376760",
+      "syncedAt": "2026-11-01"
     },
     "overtime-archive.org/src/content/documents/OTA-ART-0001-2087-DE.md": {
       "fileId": "1sw2TR4yaJ3WsJCtQADSYOT7XBS1fF6fCXfD1cp7ucDc",
@@ -486,9 +517,9 @@
       "syncedAt": "2026-10-30"
     },
     "overtime-archive.org/src/content/documents/OTA-BIO-0022-2026-DE.md": {
-      "fileId": "1XzJBTYDHCANP_nuKFlUtgeoAQuO8lL8hGFi8CzKGBXM",
-      "hash": "4ae68ba5395090395e131f488663b4dc772c0f68",
-      "syncedAt": "2026-10-30"
+      "fileId": "1T_BjWikwW-jpbnmHX2opnG3IpZXoVzIk6jDD27MXpwA",
+      "hash": "02352ae6491c802efe327a8da4f0e8019d64a819",
+      "syncedAt": "2026-11-01"
     },
     "overtime-archive.org/src/content/documents/OTA-BIO-0023-2025-DE.md": {
       "fileId": "1woljUQnhHcFIUXyFr6N202iEMNJug1MJgSwjXGsZdOM",
@@ -675,10 +706,30 @@
       "hash": "ed40a1e431d32a65dc243ce57578453989e8665e",
       "syncedAt": "2026-10-31"
     },
+    "overtime-archive.org/src/content/documents/OTA-FND-0013A-2026-DE.md": {
+      "fileId": "1BW_qNp68kCrk9f1-plQKg2v7o4lDTDK1KlgvNLK5QaA",
+      "hash": "bea52ea36a51296d3932a11d3266748d1b52b4a1",
+      "syncedAt": "2026-11-01"
+    },
     "overtime-archive.org/src/content/documents/OTA-FND-0013B-2026-DE.md": {
       "fileId": "1RfJUjDe_Ircv6IK0OTYw0Js-O_ppbAfbtmLuYPc7brU",
       "hash": "7d899d53d7ec762be3478ec49d3582d138bdc4d6",
       "syncedAt": "2026-10-31"
+    },
+    "overtime-archive.org/src/content/documents/OTA-FND-0014-2026-DE.md": {
+      "fileId": "1MJwb3HAPbe2uA-PIRZE_SJiA1Wrmcs886xNxxRDBRnc",
+      "hash": "f2a21f83a2ad68fc29face9bb1ff3ed6cdea733f",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-FND-0015-2026-DE.md": {
+      "fileId": "1QSNYjwIw_ftGg7jW7sjfpGTVae2qBSqMIE0TwslU_l0",
+      "hash": "f6762c10c156603798eb634a5b86724acedd0814",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-FND-0016-2026-DE.md": {
+      "fileId": "1U6W4cfB38UkJRjL29sk1pBDf3RbY3a0f7zH-annDuUQ",
+      "hash": "70d7ffbde82a2356b86b113a22e16dd74cb98c5d",
+      "syncedAt": "2026-11-01"
     },
     "overtime-archive.org/src/content/documents/OTA-FND-0017-2026-DE.md": {
       "fileId": "1ACrK5mFuN6jSvbcWpda2RX_wf9SweBZwAg9R7-ynrTw",
@@ -790,10 +841,15 @@
       "hash": "ab4b46b019d5fbdb848f0ad0140f2fb8fc72c34e",
       "syncedAt": "2026-10-31"
     },
+    "overtime-archive.org/src/content/documents/OTA-HIS-0006-9500BCE-DE.md": {
+      "fileId": "1eWqGRpw4G7GqEV-yuN0OWVF2gkginECji1DqnfeUYME",
+      "hash": "6268d7e6c74c6dc40b58a1ff03cd2f996b52ba0a",
+      "syncedAt": "2026-11-01"
+    },
     "overtime-archive.org/src/content/documents/OTA-HIS-0007-1200BCE-DE.md": {
-      "fileId": "1HXQWb9NduHTSi98IKNsPjwoAGc9mGchYiQCW_tCuw18",
-      "hash": "f0d8291fa13977f7967e735aa19ecbd55d88e379",
-      "syncedAt": "2026-10-31"
+      "fileId": "1JUOlDHyz_BT93skmWQdJPUg4C-6RF0-nKAnljoIwdTY",
+      "hash": "5ad7c1334f59afe8f918f5cc81f6ae76f86ddf64",
+      "syncedAt": "2026-11-01"
     },
     "overtime-archive.org/src/content/documents/OTA-HIS-0007-2080-DE.md": {
       "fileId": "1MIMAsQSDPk0SfoP42nWFYUyYLXsbSP1rXadlQ5rfVxo",
@@ -840,10 +896,20 @@
       "hash": "2ea912b26431c82ea953a7785e55934690308237",
       "syncedAt": "2026-10-31"
     },
+    "overtime-archive.org/src/content/documents/OTA-KARTE-0001-Gehirn-Epochen.md": {
+      "fileId": "1ZdRCIm-A9kqziEHnIv43MbsEyUrYNa6B2_QjyOIXtaM",
+      "hash": "f5637eec7ad60beaa142ad38f9106dfcce98696a",
+      "syncedAt": "2026-11-01"
+    },
     "overtime-archive.org/src/content/documents/OTA-KARTE-0002-Epochen-g-Profile-DE.md": {
       "fileId": "1BVRoIbGHWWJFz0tW7Lj36zMpyaJRtusHXorc84SpMeA",
       "hash": "a8c60b66569f920b5bc50f6135203118510578be",
       "syncedAt": "2026-10-31"
+    },
+    "overtime-archive.org/src/content/documents/OTA-KARTE-0003-Baumeister-Netzwerk-DE.md": {
+      "fileId": "1qPzSYwzqsWH-_v8XP8S3AZZjWHYkP0Ul9KQbV18p-KM",
+      "hash": "12672f682c4f4be3ab613d74167296a805881138",
+      "syncedAt": "2026-11-01"
     },
     "overtime-archive.org/src/content/documents/OTA-KOM-0001-2026-DE.md": {
       "fileId": "182UzuWNh9AemY5JCK29ANh8zYXgb0ji6alcrRgDttL8",
@@ -886,14 +952,234 @@
       "syncedAt": "2026-10-31"
     },
     "overtime-archive.org/src/content/documents/OTA-LSC-0001-2048-DE.md": {
-      "fileId": "1qW8fZN6QnXVpV_aEjFqeQvPnSx1kkjppkIqgpT2o7_s",
-      "hash": "2692e4f8706fc07c58ecdb67455a1b0a6f0a8404",
-      "syncedAt": "2026-10-31"
+      "fileId": "1dSlXJ61wZtHd2qIbZiMPjVsJXBOtpc1ealBL-xLPrBI",
+      "hash": "34184c7e392879ad66178a03bbfe9088d4a3935c",
+      "syncedAt": "2026-11-01"
     },
     "overtime-archive.org/src/content/documents/OTA-LSC-0002-2026-DE.md": {
       "fileId": "181BzyXoRVLf8lQk44l13VG63GfsY8YkF1p78s3uBBuo",
       "hash": "69977230d3c43efc44bb93704f3e6829937fcc76",
       "syncedAt": "2026-10-31"
+    },
+    "overtime-archive.org/src/content/documents/OTA-LSC-0003-2026-DE.md": {
+      "fileId": "1I6kX5lJJvU-4TqGAJIYq9jte29GAWlc2iEuHocxq-vc",
+      "hash": "9e3adacb339c20ccff63afcd760eb1621344f037",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-LSC-0004-2026-DE.md": {
+      "fileId": "1EFrCYcoCAtQ3AyW2JnjFXCbubZEbsLjqh18zMbDjCZE",
+      "hash": "72773194ad41c5f5f50987d5689327ab66351427",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-LSC-0006-2026-DE.md": {
+      "fileId": "1xVNmLK4tTGdJUxxlED-5o8RmtvPZcw7mgXSSEMGb9Cc",
+      "hash": "07c244a7341297a3f65a937fde5a6261555b6c5c",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-LSC-0007-2026-DE.md": {
+      "fileId": "1ZKnWeC9UqDMuXgMJeibt89HjWWW4xyKP1UNKiGqoVVI",
+      "hash": "84ae81220434c5dc29534f2656626bcb1abd0a1e",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-META-0001-2026-DE.md": {
+      "fileId": "1hzRWOJ9vqpx-68jJ1qzV88RTGyZDXpXUOCm9amFhgLo",
+      "hash": "e32cc33c47d7c68bfd0909e513377f0b4b6f5f36",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-META-0002-2026-DE.md": {
+      "fileId": "1-MbHtBV9PWe0-E4rwU6iuO8Sw4h3qr2nmAIxDGy0Gsc",
+      "hash": "76ecc1a0e3ec3e838865413b071a95ad0bb251db",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-META-0003-2045-DE.md": {
+      "fileId": "1n7F9wZt53jazX34H_ZX33Sj_P9HlZJBLg3DYZND9rUQ",
+      "hash": "a8c05a2c2021bf1f6e525d28ebe8aa9f1d4e8e3d",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-META-0004-2076-DE.md": {
+      "fileId": "1AUJ9iBF6EVp7OxlhHKevXgeMQ3IuTTjlDr5n6DKdL_I",
+      "hash": "b727ed9aeda65c3368000b0cddc5d90180c7e57d",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-META-0005-2026-DE.md": {
+      "fileId": "19UP5mDF4xvvRUn-FxA6xJPr54j3H6q-BdUvRIJkH1n0",
+      "hash": "82d375fdf54ffc8eac7168656c35aad8cbb5ba26",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-META-0005-2091-DE.md": {
+      "fileId": "1S345q1vT1BOWpZvx7pliUtCRpoIhNldVpmtEA9FZF9A",
+      "hash": "fab2b0431dad0224ff1f4918ffe1df273ea89835",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-META-0006-2091-DE.md": {
+      "fileId": "1CQl4ABURxySAVyZ4o8R_xZb9vwfy6DhxsqEZLshZ91Y",
+      "hash": "72bd5ece52e9cab005d1f5fecd657b1ad0a439db",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-META-0007-2091-DE.md": {
+      "fileId": "1TeNRyMi8LbL-KUlWzgTiYB7mWh_J47G8Tphf5_OPnbA",
+      "hash": "cd77b27c0b6a5dea553a372408c5075f09d7966f",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-META-0008-2091-DE.md": {
+      "fileId": "1-ZpXBUctYU8KRkZTI2vo4ulE22AD7PlGCa6WrTAB3ec",
+      "hash": "0cf39105ef844ce362e47d11f1f6c7d5102cc158",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-META-0009-2091-DE.md": {
+      "fileId": "143yzvdRs8l7oW9hWX0-p5tfADlpcMfEgEr67ejK-Qlg",
+      "hash": "a8a30172f9d26abdf1c0eee45e24cd7196b0ff19",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-META-0010-2091-DE.md": {
+      "fileId": "1k0fdfMYO-_wu74_xnQPLeqw1orzANj8PrqwAjKn1gEk",
+      "hash": "a357674667e6da0b35dbcac99877620afdbf9b44",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-MON-0002-2142-DE.md": {
+      "fileId": "1BW5_HIj4roIfNxUWjCs5Jie1YgKglajmYJW1Vj_vfE0",
+      "hash": "59014ecb39dd43d9e33b9218d439f60b7dd59aeb",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-NAR-0001-2087-DE.md": {
+      "fileId": "1ww9tOzewNNOgH7CIi5ea8_X9n0ETqet4tnwXEXKP7xM",
+      "hash": "8402e4f9dddac0b9b5b3e01a310f55d32bb6256d",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-NAR-0002-2025-DE.md": {
+      "fileId": "1N9kLCSRkeKQKkGoQzwt0IAEYrlopluXlsd7ZZvnS4IM",
+      "hash": "a6551746942965e82a00c43380302fc441591758",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-NAR-0003-2026-DE.md": {
+      "fileId": "1CKZsBoV0R5Q3Q1bG62q_x-jQZvPJSRQtS2e8ni2MKMg",
+      "hash": "1a8ee4929c3456e5890071a7e26ca7137f64bc0c",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-NAR-0004-2026-DE.md": {
+      "fileId": "1WxA4P5aAQ75_fgxfRyFnMAm2ek28Sjo9HPEgfHQHma0",
+      "hash": "95e508b15a4614ff69d127b59ab6bb4ac77fb5bd",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-NAR-0005-2026-DE.md": {
+      "fileId": "1A_9BEoHMI2Pnr3_GcELid4WxXqrY5jSOZ9Mll81WFG8",
+      "hash": "ad7c240a6b9cb67269a123e24b083ef6cc5978bc",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-OBS-0001-2025-DE.md": {
+      "fileId": "1Ttk8lthMC8ucWdVq6F9gYqItcOx2w-gh5W5wNhins6E",
+      "hash": "55d94eca9807adf0ee4867b19c4abdc0aab30633",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-OBS-0002-2026-DE.md": {
+      "fileId": "1SCCXoAN1qMUooTW3iC7ZerCC3qwORaTB2ObxzYAUnl8",
+      "hash": "cd68ab7d4c20b6eefeac86214bc535e9241dd4c7",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-OBS-0004-2026-DE.md": {
+      "fileId": "1y-PvVw4fg_4Nz2ZRnK3csG_noSoSxZcehiqQ1KOOyZg",
+      "hash": "5b1247c472b5b6620c3d5a4ff7b70a0246bfba41",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-OBS-0005-2026-DE.md": {
+      "fileId": "1ILh5LMJcczwftzvIxY7-moEKrjcjax5U7Cjtq_Chc4A",
+      "hash": "1f2c58d1a99bf8e6a50116cef79e53ecf73c0bd7",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-OBS-0006-2026-DE.md": {
+      "fileId": "1-PooUUHf9GGpCT9HiyBuihAmmN2mT7ABfO0Dfmd9PEk",
+      "hash": "e6e8e6550114d2691afabc4eb78697edee2d9564",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-OBS-0007-1700BCE-DE.md": {
+      "fileId": "1zxKmAOMlqQMLAVGlJJxHI2mrB-OV0AnNNnW-kPhd0Xg",
+      "hash": "b8d2b3bea06738bac6e5d3e18aee13e958265e18",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-OBS-0008-2026-DE.md": {
+      "fileId": "1MqxL8L6j5sPYAAMKNNGOijIynK-Q3BiTyLuX_nNAjN8",
+      "hash": "f7a1e55e4164377b8cf65b9ff630c1eaa2d13ce9",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-OBS-0009-2026-DE.md": {
+      "fileId": "1nzvO3_6Rdn9CCpnkNhCxeAwp1bKU32xlQINHgTfIUJ0",
+      "hash": "34e79b0bb1100284e8869e172ad172435f4a2914",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-ORG-0001-2079-DE.md": {
+      "fileId": "1EbTOQ8hXdCBe8WWH72EyP6c4kWzTTiYCfbwdAJ-FJ2c",
+      "hash": "797d24b43f7e981b6e7e23b6a929a074a46741a2",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-ORG-0002-2091-DE.md": {
+      "fileId": "1ygO75RtbFONai2GMr-QoJjdaXe_BqmXmKk_oZpFP2B0",
+      "hash": "8020abb2f5db461a236f857aebd9f7d64b31d5e8",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-ORG-0003-2089-DE.md": {
+      "fileId": "1d-h6LNAVPuOkFy1Qh2k-3PVwzkz75kP_FJqHJedAcoM",
+      "hash": "34b253e88df2834c596d0e5ad701aa17ca1ba5d5",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-ORG-0004-2075-DE.md": {
+      "fileId": "1tpGSbw_pzvOpbFCpFhO0AwPId2ROJ6ukJw2Hp1DQthg",
+      "hash": "738863d699bb10dbcddc66c8c87c8532f7dedd12",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-ORG-0005-2090-DE.md": {
+      "fileId": "1-89EmLDAz7lRCfV9K60pbMgJFy-w8J-YynQvLW6QFzs",
+      "hash": "4c0801d76a4cb01dbcb7ec38119c4ab982471177",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-ORG-0006-2025-DE.md": {
+      "fileId": "1lHjVuD-i7Jrkos5AF2Ta67ACiOilLllFQJ4DbY03xsM",
+      "hash": "570ccc0264f655c1bec3cac1a2a5a9de5a6e9023",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-ORG-0007-2031-DE.md": {
+      "fileId": "1J2nW4cUAVX0Z0rO0x7KC4EiwEvxWPvs5BitFqigWuX4",
+      "hash": "8748b14654f6b912fbbe4fcdf77e605a93326a55",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-ORG-0007-2045-DE.md": {
+      "fileId": "1SadmNp8-3AXEmnOfl2KV7LGh1Guf9gKN7uM8jZKk0yo",
+      "hash": "838c264f227f07e3e381433a6bed92fd642cb037",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-ORG-0008-2087-DE.md": {
+      "fileId": "17a89IJs1RDwwsdYENFpe3x8tUpiY75xdmt4vX2B66Nc",
+      "hash": "78e21cf1ab8cb441f0846566a4921add4b430e70",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-RED-0003-2091-DE.md": {
+      "fileId": "154cmyAktcQiJQEO0sJFeTcBxwYtn9TI-aElnynZuEP0",
+      "hash": "aa5a10caf241c73bcfe7e7a77fcb95298ae42f81",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-RED-0012-2171-DE.md": {
+      "fileId": "18KGzFwJe3c4NAY1Oec0UuinfwhS00zjOFyFj9GwkfNk",
+      "hash": "0c2dba7fef4d9c6ee9acbf1cc23b7baffbdb7e8c",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-RED-0015-2156-EN.md": {
+      "fileId": "1zR70GBQemN3OnG04NxaLwOQDbkP-NUFDUK5nqz4kw_w",
+      "hash": "01902fb299300defe440b57bf56ba13bf085410e",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-RED-0016-2091-DE.md": {
+      "fileId": "1W4s5V6w6YKaSfIwjwcnTdQfpwDWdmw6NsKocIiUUQLA",
+      "hash": "c0c8bb1765e286cff6f3a743b9099889f18647c5",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-RED-0016-2160-EN.md": {
+      "fileId": "1e19F5uLDu6iKyYHMlVwcRaODSNjUq3Jy5bmhbFytIcs",
+      "hash": "28fb79908c1df2fb152178a92cdb147a26b49fac",
+      "syncedAt": "2026-11-01"
+    },
+    "overtime-archive.org/src/content/documents/OTA-RED-0017-2091-DE.md": {
+      "fileId": "11rQrXmH8OSNfPJywnnNOmoF2mRaV_bLO5IhpcgVvhyU",
+      "hash": "410885bc6dca1a011aaba8ab3dcc11449e2d59a5",
+      "syncedAt": "2026-11-01"
     }
   },
   "altbestand": {
@@ -1044,6 +1330,118 @@
         "status": "doppelt",
         "fundstelle": "overtime-archive.org/src/content/documents/OTA-ART-0001-2087-DE.md (gleiche Fassung v3.0)",
         "checkedAt": "2026-10-31"
+      },
+      "1twUNGoog4r4gKeN60dnEKwV90nDrfySy": {
+        "title": "OTA-NAR-0005-2026-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/NAR",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-NAR-0005-2026-DE.md (v1.0, alle Abschnitte)",
+        "checkedAt": "2026-11-01"
+      },
+      "191HXvuK_mJ_sOqMva7g-IaU_fsjWzAk0": {
+        "title": "OTA-NAR-0004-2026-DE-v1_0 (1).md",
+        "folder": "OTA (alt, bis Okt. 2026)/NAR",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-NAR-0004-2026-DE.md (v1.0, inhaltsgleich)",
+        "checkedAt": "2026-11-01"
+      },
+      "12VT0PPngWGcreNc_HT85wroUBPYkv1jA": {
+        "title": "OTA-NAR-0003-2026-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/NAR",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-NAR-0003-2026-DE.md (v1.0, gleiche Struktur; Kap. 2–16 nur in Nalgae_Version_1.docx)",
+        "checkedAt": "2026-11-01"
+      },
+      "1PZEugq52mUgvuSjGL6KnjpYLsoBHrEnX": {
+        "title": "OTA-NAR-0002-2025-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/NAR",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-NAR-0002-2025-DE.md (v1.0, alle Abschnitte)",
+        "checkedAt": "2026-11-01"
+      },
+      "1QRF4NllWXoNJEoDvegTeQipuMNXo_1Zs": {
+        "title": "OTA-NAR-0001-2087-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/NAR",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-NAR-0001-2087-DE.md (v1.0, vollständig)",
+        "checkedAt": "2026-11-01"
+      },
+      "1R5h7w8hoF7rQCUMu6s99IZVIJ91KWC9f": {
+        "title": "OTA-NAR-0004-2026-DE-v1_0.md",
+        "folder": "OTA (alt, bis Okt. 2026)/NAR",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-NAR-0004-2026-DE.md (v1.0, inhaltsgleich)",
+        "checkedAt": "2026-11-01"
+      },
+      "1jW9_Iej9HCYWioH5P0oGvekGfd0lTgkD": {
+        "title": "OTA-LSC-0007-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/LSC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-LSC-0007-2026-DE.md (v1.0, alle Protokolle)",
+        "checkedAt": "2026-11-01"
+      },
+      "1GvESrbe0Vle03Fuj0Onw7vQS9yUxMC1h": {
+        "title": "OTA-ARC-0002-MULTI-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/ARC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/internal/arc/OTA-ARC-0002-MULTI-DE.md (v1.0, identisch + Frontmatter)",
+        "checkedAt": "2026-11-01"
+      },
+      "1FboDcOdIJw_ivfyVdNDsAoTndAcHfJ62": {
+        "title": "OTA-ARC-0003-2091-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/ARC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/internal/arc/OTA-ARC-0003-2091-DE.md (v1.0, identisch + Frontmatter)",
+        "checkedAt": "2026-11-01"
+      },
+      "1-bDZrldXgOXiEJURroayHLBBBQnSBbFw": {
+        "title": "OTA-CUL-0013-MULTI-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/CUL",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-CUL-0013-MULTI-DE.md (v1.0, identisch)",
+        "checkedAt": "2026-11-01"
+      },
+      "13bRLqcjPMZS4NUG_svx26MyA_dDRNbBu": {
+        "title": "OTA-CUL-0019-2026-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/CUL",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-CUL-0019-2026-DE.md (v1.0, identisch)",
+        "checkedAt": "2026-11-01"
+      },
+      "1-QXGhRnHCCeOCJcCci-sri9uehOjuTFw": {
+        "title": "OTA-CUL-0016-MULTI-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/CUL",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-CUL-0016-MULTI-DE.md (v1.0)",
+        "checkedAt": "2026-11-01"
+      },
+      "1jRtOseIAmER-8dgISKybFoqHOdIs53Gv": {
+        "title": "OTA-CUL-0014-2152-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/CUL",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-CUL-0014-2152-DE.md (v1.0, alle Kapitel)",
+        "checkedAt": "2026-11-01"
+      },
+      "1V5t1Ic0d0f9dSkQAGzuieVCIH-Q4f-IV": {
+        "title": "OTA-CUL-0002-60000BCE-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/CUL",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-CUL-0002-60000BCE-DE.md (v1.0, identisch)",
+        "checkedAt": "2026-11-01"
+      },
+      "1SHi7dZ6I4bXl3Tc-SK2eRf992ixdZCWs": {
+        "title": "OTA-CUL-0013-2147-EN (1).docx",
+        "folder": "OTA (alt, bis Okt. 2026)/CUL",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-CUL-0013-2147-EN.md (v2.0, Section I; Kaelen -> Nemeth)",
+        "checkedAt": "2026-11-01"
+      },
+      "1gWY36N_ZzoPtiBPtpx77EL-KbBvINf27": {
+        "title": "OTA-CUL-0001-2025-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/CUL",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-CUL-0001-2025-DE.md (Inhaltsversion 2.0)",
+        "checkedAt": "2026-11-01"
       }
     },
     "onlyInDrive": [
@@ -1534,6 +1932,78 @@
         "beschreibung": "inhaltlich doppelt, aber sauberes UTF-8 – Reparaturvorlage für die GitHub-Datei",
         "checkedAt": "2026-10-31",
         "request": null
+      },
+      {
+        "fileId": "1gFNyTugGP4JGF2O7UCJxCHKf2X7qyjWQ",
+        "title": "OTA-ARC-0001-2025-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/ARC",
+        "status": "nurDrive",
+        "beschreibung": "Stilrichtlinien und Dokumentationsstandards v1.0 (15 Kapitel) – ausführlichste Fassung; ARC-0001 auf GitHub nur referenziert.",
+        "checkedAt": "2026-11-01",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261101-001.md"
+      },
+      {
+        "fileId": "1GEZcyiK09tyj1jPNQDFSHr_OoK3odhGC",
+        "title": "OTA-ARC-0001-2025-DE (1).docx",
+        "folder": "OTA (alt, bis Okt. 2026)/ARC",
+        "status": "nurDrive",
+        "beschreibung": "Stilrichtlinien v1.1 (gekürzt) – LIM-Serie mit Aufnahmekriterien und OBS-Kriterien, nur hier.",
+        "checkedAt": "2026-11-01",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261101-001.md"
+      },
+      {
+        "fileId": "1ja6WLAEol8tIG3o6um0A1WyBUWoI5yEH",
+        "title": "OTA-ARC-0001-2025-DE-v1.2.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/ARC",
+        "status": "nurDrive",
+        "beschreibung": "Stilrichtlinien v1.2 (gekürzt) – Quellenmarker [T], Verweis FND-0005.",
+        "checkedAt": "2026-11-01",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261101-001.md"
+      },
+      {
+        "fileId": "1OTI2gSfjOwJSW0QaYtilp5m4WNrlzIst",
+        "title": "OTA-ARC-0004-2026-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/ARC",
+        "status": "nurDrive",
+        "beschreibung": "Einführung der Serie LSC – Definition, Abgrenzung zu BIO/SCI, Klassifikationsregeln; auf GitHub nur im Index.",
+        "checkedAt": "2026-11-01",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261101-001.md"
+      },
+      {
+        "fileId": "1cuweWYvdkZNXTUt181RrRYSU518zW4Mv",
+        "title": "OTA-ARC-0005-2026-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/ARC",
+        "status": "nurDrive",
+        "beschreibung": "Mishkenaz-Vernetzungsdokument (Charakter-Polaritäten, Lilith/Adam-Spirale, Saga-Integration); Signatur auf GitHub anders belegt.",
+        "checkedAt": "2026-11-01",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261101-001.md"
+      },
+      {
+        "fileId": "197jxSsT7RRTVKa7vBrGWrWfxs-vtQxdT",
+        "title": "OTA-ARC-0005-2026-DE (1).docx",
+        "folder": "OTA (alt, bis Okt. 2026)/ARC",
+        "status": "nurDrive",
+        "beschreibung": "Textgleiche Kopie des Mishkenaz-Vernetzungsdokuments.",
+        "checkedAt": "2026-11-01",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261101-001.md"
+      },
+      {
+        "fileId": "1wLCuoTWoxmyPcryK5JlwCaFIxi3M0uSD",
+        "title": "OTA-CUL-0018-2025-DE-v1_2.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/CUL",
+        "status": "nurDrive",
+        "beschreibung": "ENDIA-Kuratorenbericht v1.2 – auf GitHub nur verlinkt, Dokument fehlt.",
+        "checkedAt": "2026-11-01",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261101-002.md"
+      },
+      {
+        "fileId": "1DmmmDMnAYVIQnigbSoGYc2n3qUmzozr5",
+        "title": "OTA-CUL-0013-2147-EN.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/CUL",
+        "status": "nurDrive",
+        "beschreibung": "Langfassung Ceres-Dialog Demir vs. Kaelen – Part IV: Aftermath und KN-0.4 fehlen in GitHub v2.0.",
+        "checkedAt": "2026-11-01",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261101-002.md"
       }
     ],
     "movedFolders": [
@@ -1568,12 +2038,20 @@
           "from": "OTA (alt, bis Okt. 2026)"
         },
         "movedAt": "2026-10-31"
+      },
+      {
+        "folder": {
+          "fileId": "1cFJh5ItlC3FwmJs0m0RyX-Ez5-cp3V0B",
+          "title": "NAR",
+          "from": "OTA (alt, bis Okt. 2026)"
+        },
+        "movedAt": "2026-11-01"
       }
     ],
-    "remainingUncheckedApprox": 467
+    "remainingUncheckedApprox": 443
   },
   "encodingDefects": {
-    "_comment": "Alle 14 Quelldateien am 2026-10-31 auf GitHub repariert (Rückumwandlung cp1252->UTF-8). Die 7 Dateien in notMirrored werden beim nächsten Lauf gespiegelt; SCI-0038-EN: „⁶“ und „μ“ aus Mustern erschlossen.",
+    "_comment": "Alle 14 Quelldateien am 2026-10-31 auf GitHub repariert (Rückumwandlung cp1252->UTF-8). Die 7 Dateien in notMirrored werden beim nächsten Lauf gespiegelt; SCI-0038-EN: „⁶“ und „μ“ aus Mustern erschlossen. notMirrored am 2026-11-01 gespiegelt.",
     "checkedAt": "2026-10-31",
     "files": [
       "OTA-TEC-0028-2025-DE.md",
@@ -1591,15 +2069,7 @@
       "OTA-OBS-0004-2026-DE.md",
       "OTA-KARTE-0001-Gehirn-Epochen.md"
     ],
-    "notMirrored": [
-      "OTA-FND-0013A-2026-DE.md",
-      "OTA-FND-0014-2026-DE.md",
-      "OTA-FND-0015-2026-DE.md",
-      "OTA-FND-0016-2026-DE.md",
-      "OTA-HIS-0006-9500BCE-DE.md",
-      "OTA-KARTE-0001-Gehirn-Epochen.md",
-      "OTA-KARTE-0003-Baumeister-Netzwerk-DE.md"
-    ],
+    "notMirrored": [],
     "repairedAt": "2026-10-31"
   }
 }
