@@ -1,6 +1,6 @@
 {
   "id": "RES-20261101-7836BB83",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-01T10:37:01+00:00",
   "source_project": "contracomology",
   "source_repository": "thomaspeterkueper/contracomology",
@@ -34,5 +34,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine der bisherigen Topics prüft die Namens- und Kernmetapher. 8B57880B untersucht Bachs Stimmarchitektur, 8E1235F2 den Methodenstatus, 5715F6F5 die Zeitformen; keine davon fragt, ob der Begriff des Kontrapunkts überhaupt auf die Koexistenz von Wahrheiten übertragbar ist.",
-  "fingerprint": "7836bb8327401ea0"
+  "fingerprint": "7836bb8327401ea0",
+  "updated_at": "2026-11-01T11:04:45+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/265"
 }
