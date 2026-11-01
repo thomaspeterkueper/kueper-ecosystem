@@ -1,0 +1,40 @@
+{
+  "id": "RES-20261101-092EDFEE",
+  "status": "queued",
+  "created": "2026-11-01T10:37:02+00:00",
+  "source_project": "contracomology",
+  "source_repository": "thomaspeterkueper/contracomology",
+  "source_path": "app/[locale]/course/page.tsx",
+  "source_ref": "b1dcb6fc4ef20893697a642d0e11ba8e213696f8",
+  "source_blob_sha": "be5d18218f11cc80898529d874d094d3489a254d",
+  "title": "Vom Laienhören zur validen Aussage: Trägt der übungsbasierte Einführungskurs seine erkenntnistheoretische Last?",
+  "question": "Der neue Kurs verlangt von Lernenden ohne Vorkenntnisse, die Zeitwirkung eines Werks zunächst in Alltagssprache zu notieren, die eigene erste Beobachtung zu prüfen und erst danach eine Zeitform zu benennen; Ziel ist 'keine richtige Einordnung, sondern eine nachvollziehbare Beobachtung'. Welche Kriterien machen eine solche Hörbeschreibung intersubjektiv nachvollziehbar und prüfbar, und wie verhält sich das zu Adornos strukturellem Hören und dessen Kritik, zu Cooks Kritik des Strukturhörens, zu Levinsons Musikverstehen, zur musikpsychologischen Expertiseforschung (Sloboda, Clarke, Huron) und zu musikpädagogischen Ansätzen (Reimer, Elliott)? Ist die Übung ein Verfahren zur Generierung von Werkaussagen, eine hermeneutische Selbstbildung oder eine ästhetische Praxis – und was kann ein Anfänger auf dieser Grundlage tatsächlich warrantieren?",
+  "why_now": "Der letzte Commit hat den Kurs von einer Darstellung zu sieben Übungen plus Abschlussanalyse umgebaut. Damit hängt die Glaubwürdigkeit des gesamten Kurses an einer ungeprüften Erkenntnistheorie des Laienhörens: Die Übungen fordern Beobachtungen, deren Kriterien nirgends angegeben werden, und die Abschlussanalyse soll zeigen, 'was standhält' und 'was verworfen werden muss'.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "scholarly-interpretation",
+    "comparative-analogy",
+    "kueper-system-claim"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Philosophy of music education and empirical research on listening expertise (Adorno, Cook, Levinson; Sloboda, Clarke, Huron; Reimer, Elliott).",
+  "publication_route_hint": null,
+  "project_weight": 0.65,
+  "relevance_score": 0.8525,
+  "scores": {
+    "project_relevance": 0.93,
+    "cross_project_reuse": 0.88,
+    "uncertainty": 0.78,
+    "evidence_potential": 0.82
+  },
+  "related_research_ids": [
+    "RES-20261020-8E1235F2",
+    "RES-20261008-5715F6F5"
+  ],
+  "novelty_reason": "8E1235F2 fragt, welchen Status die Kontrakomologie als Methode hat; 5715F6F5 fragt, ob ihre Zeitformen neue Kategorien sind und ob sie aus dem Hören entstehen. Keine der beiden Fragen behandelt die pädagogische und epistemische Warrant eines übungsbasierten Laienhörens, die Kriterien der 'Nachvollziehbarkeit' oder die Bewertung von Lernendenaussagen. Genau diese Dimension ist durch den letzten Commit neu entstanden.",
+  "fingerprint": "092edfeebec44594"
+}
