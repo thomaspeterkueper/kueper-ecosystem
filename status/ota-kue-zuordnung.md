@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-01 · Grundlage: ECO-ARC-0038-2026-DE (proposed), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-01 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -14,7 +14,7 @@ Maschinelle Vorsortierung aller nicht archivierten OTA-Dokumente mit realen Mark
 | Gruppe | Anzahl | Vorgehen |
 |---|---|---|
 | K – KUE-Gegenstück existiert bereits | 18 | OTA-Realteil auf Verweis `DOC:KUE:…` kürzen; Differenzen nach KUE übertragen |
-| A – Kandidat für vollständigen Umzug | 20 | neues KUE-Dokument; OTA-Fassung wird Verweis-/Brückendokument oder archiviert (Thomas) |
+| A – Kandidat für vollständigen Umzug | 20 | neues KUE-Dokument; OTA-Fassung wird schlankes Brückendokument (§3a) |
 | B – Teile nach KUE | 51 | Realteil als KUE-Dokument (oder Ergänzung eines bestehenden), Setzung bleibt in OTA |
 | T – eigene Hypothesen/Modelle von Thomas | 9 | Entscheidung Thomas: KUE als gekennzeichnete Hypothese [H] oder in OTA |
 | C – bleibt in OTA | 122 | Realteil ist dienend (Anker für Setzung); keine Aktion |
