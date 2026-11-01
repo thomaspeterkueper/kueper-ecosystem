@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261101-7836BB83",
+  "status": "queued",
+  "created": "2026-11-01T10:37:01+00:00",
+  "source_project": "contracomology",
+  "source_repository": "thomaspeterkueper/contracomology",
+  "source_path": "app/[locale]/page.tsx",
+  "source_ref": "b1dcb6fc4ef20893697a642d0e11ba8e213696f8",
+  "source_blob_sha": "abe54ed6427338e276ffaeebe70747afb24a14f9",
+  "title": "Kontrapunkt als Modell der Koexistenz: Trägt die Namensmetapher der Kontrakomologie?",
+  "question": "Die Startseite leitet den Namen der Kontrakomologie aus dem Kontrapunkt ab: Mehrere Stimmen verlaufen gleichzeitig, 'jede nach ihrer eigenen Logik', und daraus wird gefragt, 'wie viele Wahrheiten in einem Moment gleichzeitig wahr' sind. Deckt sich diese Beschreibung mit der historischen Kontrapunktlehre – Artenkontrapunkt, Cantus firmus, Imitation, Konsonanz- und Dissonanzregeln bei Zarlino und Fux – und mit philosophischen Appropriationen des Kontrapunkts (Adornos dialektischer Kontrapunkt, Saids 'contrapuntal reading', Bachtins Polyphonie)? Oder wird eine geregelte Kompositionstechnik in eine epistemische oder ontologische These über die Koexistenz von Wahrheiten umgedeutet, und was kann 'jede nach ihrer eigenen Logik' angesichts der hierarchischen Stimmführung und der Unterscheidung von Haupt-, Neben- und Begleitstimme überhaupt bedeuten?",
+  "why_now": "Der Name und die Metapher tragen die gesamte Publikation: Sie stehen auf der Startseite, in der neuen Kurslektion 2 ('Mehrere Stimmen gleichzeitig') und im Legacy-Modul 'Kontrapunktisches Bewusstsein'. Die Ableitung ist bislang nirgends quellenkritisch geprüft; solange sie ungeklärt ist, steht die zentrale Selbstbeschreibung auf einer möglichen Äquivokation.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "textual-historical",
+    "scholarly-interpretation",
+    "comparative-analogy",
+    "kueper-system-claim"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "History and theory of counterpoint (Zarlino, Fux, species counterpoint) and philosophical appropriations of counterpoint/polyphony (Adorno, Said, Bakhtin).",
+  "publication_route_hint": null,
+  "project_weight": 0.65,
+  "relevance_score": 0.8475,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.82,
+    "uncertainty": 0.74,
+    "evidence_potential": 0.88
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine der bisherigen Topics prüft die Namens- und Kernmetapher. 8B57880B untersucht Bachs Stimmarchitektur, 8E1235F2 den Methodenstatus, 5715F6F5 die Zeitformen; keine davon fragt, ob der Begriff des Kontrapunkts überhaupt auf die Koexistenz von Wahrheiten übertragbar ist.",
+  "fingerprint": "7836bb8327401ea0"
+}
