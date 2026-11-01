@@ -1,6 +1,6 @@
 {
   "id": "RES-20261101-092EDFEE",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-01T10:37:02+00:00",
   "source_project": "contracomology",
   "source_repository": "thomaspeterkueper/contracomology",
@@ -36,5 +36,7 @@
     "RES-20261008-5715F6F5"
   ],
   "novelty_reason": "8E1235F2 fragt, welchen Status die Kontrakomologie als Methode hat; 5715F6F5 fragt, ob ihre Zeitformen neue Kategorien sind und ob sie aus dem Hören entstehen. Keine der beiden Fragen behandelt die pädagogische und epistemische Warrant eines übungsbasierten Laienhörens, die Kriterien der 'Nachvollziehbarkeit' oder die Bewertung von Lernendenaussagen. Genau diese Dimension ist durch den letzten Commit neu entstanden.",
-  "fingerprint": "092edfeebec44594"
+  "fingerprint": "092edfeebec44594",
+  "updated_at": "2026-11-01T10:46:05+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/264"
 }
