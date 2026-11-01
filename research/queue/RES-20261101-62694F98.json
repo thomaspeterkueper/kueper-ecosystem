@@ -1,0 +1,43 @@
+{
+  "id": "RES-20261101-62694F98",
+  "status": "queued",
+  "created": "2026-11-01T11:23:32+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0086-2026-DE.md",
+  "source_ref": "01326d92e14a95152c83bc3044339ad55401c958",
+  "source_blob_sha": "883cedeb71c397ec0493a3442b25c664152131fa",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 211,
+  "context_paths": [
+    "src/content/documents/OTA-TEC-0088-2026-DE.md",
+    "src/content/documents/OTA-TEC-0093-2026-DE.md",
+    "src/content/documents/OTA-TEC-0119-2026-DE.md"
+  ],
+  "title": "Realwelt-Audit der Teilgravitations-Saeugetierdaten in OTA-SCI-0086 (v1.2, Abschnitte 2.2, 2.3, 12.1, 12.6): die '1/6-g-Mausdaten', NASA OS-694, die historische Nagetier-Reproduktionsbilanz im Raumflug und die Behauptung der fehlenden Kette Geburt bis Erwachsenenalter",
+  "question": "Quellengestuetzter Realwelt-Audit der Teilgravitations- und Saeugetierbasis von OTA-SCI-0086-2026-DE (Abschnitte 2.2, 2.3, 12.1, 12.6 und Quellenanker 6-7), gepinnt auf Dokumentversion v1.2 (Status ENTWURF, Evidenzstand 2026; im gescopten Workspace ist keine Git-Revision auslesbar, daher Bindung an Version und Datum), gegen die primaere Raumfahrt-Reproduktionsbiologie und Teilgravitations-Tierversuchsliteratur. (1) 1/6-g-Mausdaten: Identifiziere die konkrete Studie hinter der [R]-Aussage, 'aktuelle Mausdaten mit zentrifugal erzeugter 1/6-g-Exposition' zeigten, dass lunare Teilgravitation einzelne mikrogravitationsbedingte Veraenderungen teilweise, aber organspezifisch und nicht vollstaendig abmildern kann. Klaere, ob die Exposition auf der ISS (JAXA Mouse Habitat Unit / Multiple Artificial Gravity) oder in einer Boden-Boden-Zentrifuge erfolgte, welches g-Niveau, welche Dauer, welche Stichprobengroesse, welche Gewebe und welche Endpunkte gemessen wurden, und ob 'teilweise, organspezifisch, nicht vollstaendig' die berichtete Effektlage trifft. Pruefe insbesondere, ob Quellenanker 7 (NASA ISS Annual Highlights of Results 2025, Mouse Habitat Unit) tatsaechlich eine 1/6-g-Bedingung fuehrt oder ob dort nur Mikrogravitation gegen 1 g kuenstliche Gravitation verglichen wurde, und ob das ISS-MAG-System ueberhaupt 1/6 g erzeugen kann. (2) NASA OS-694: Pruefe Quellenanker 6 (NASA Open Science Data Repository, 'Maintenance of Skeletal Integrity in Spaceflight: Interaction among Partial Weight Bearing, Microgravity and Novel Therapeutics') auf Existenz, Studiendesign, Teilgravitationsniveau (Partial Weight Bearing vs. echte 1/6 g), Spezies und Aussagekraft; bewerte, ob die Kennzeichnung 'indirekte muskuloskelettale Evidenz, keine Entwicklungsvalidierung' werktreu ist. (3) Historische Reproduktionsbilanz: Berichte, was im Raumflug real gezeigt wurde - Nagetier-Mating und Traechtigkeit an Bord (z. B. Cosmos-Experimente, Foton-M1/M3, STS-90 Neurolab/NIH.R-Serie, SJ-10, Tiangong) -, ob lebende Nachkommen gezeugt oder geboren wurden, mit welcher Rate an Entwicklungsauffaelligkeiten, und ob Nachkommen fertil waren. Pruefe die [R]-Aussage, 'mehrere Aspekte von Schwangerschaft, Geburt und frueher Entwicklung koennen auch unter veraenderter Gravitation prinzipiell ablaufen', auf werktreue Begrenzung (Mikrogravitation vs. Teilgravitation, Geburt nach Rueckkehr vs. Geburt an Bord, Spezies). (4) Teilgravitation als eigene Kategorie: Pruefe die [R/OFFEN]-Aussage, fuer kontinuierliche Teilgravitation auf Mond- oder Marsniveau existierten praktisch keine direkten mammalischen Langzeitdaten ueber die vollstaendige Sequenz von Konzeption bis Geburt und postnataler Entwicklung, gegen reale Boden-Zentrifugenstudien mit Nagern bei 0,16 g, 0,33 g und 0,5 g, Partial-Weight-Bearing-Modelle und etwaige flugbasierte Teilgravitations-Plattformen. Berichte jede Arbeit, die die Aussage abschwaecht oder stuetzt, und halte durchgehend getrennt, was Mikrogravitations-, was Analog- und was echte Teilgravitationsdaten sind. (5) Aktualitaet: Pruefe, ob zwischen 2024 und November 2026 Publikationen erschienen sind, die das Bild aendern (ISS-Rodent-Reproduction, chinesische Teilgravitations-Zentrifugen, ESA-/NASA-Roadmaps, 'Mice in space'-Programme), und ob die Evidenzmatrix 12.6 (Zeilen Mond und Mars) nach dieser Pruefung [R/OFFEN] bleiben muss. (6) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen, die zu '[R] Quelleninhalt, Bodenzentrifuge oder Flug, Einzelstudie' abzuschwaechen sind und die [OFFEN] bleiben muessen; stelle fest, dass kein kanonischer g-Schwellenwert, keine kanonische Entwicklungsprognose und keine kanonische Aussage '1/6 g ist hinreichend' eingefuehrt wird. AUSGESCHLOSSEN: die kuenstliche-Gravitations-Trade-Studie (Abschnitt 15), die vier Siedlungsfaehigkeitsklassen und die Kanonregel [F], die [H]-Engineering-Schnittstelle, NOXIA-Balancingwerte, Geburtenraten und Baukosten sowie klinische Empfehlungen fuer reale Schwangerschaften.",
+  "why_now": "Abschnitt 12.1 ist die einzige Stelle, an der das Dossier eine konkrete neue Teilgravitations-Tierdatengrundlage als [R] behauptet, ohne Primaerzitat; die Aussage traegt die Evidenzmatrix 12.6 (Zeile Mond) und die zentrale These, 0,16 g und 0,38 g seien keine validierten Schwellen. Wenn '1/6-g-Mausdaten' real nur Mikrogravitation-vs.-1-g-Daten oder Bodenzentrifugen-Einzelstudien sind, muss die Zeile zu [R/OFFEN] oder [H] werden; wenn dagegen belastbare Teilgravitations-Saeugetierdaten existieren, aendert sich die Begruendung der vierten Siedlungsfaehigkeitsklasse. Die Pruefung entscheidet damit unmittelbar ueber die Kanonisierbarkeit der Capability-Klassen.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "JAXA Mouse Habitat Unit / Multiple Artificial Gravity auf der ISS, NASA OS-694 (Partial Weight Bearing), die historischen Nagetier-Reproduktionsexperimente (Cosmos, Foton-M1/M3, STS-90 Neurolab/NIH.R, SJ-10, Tiangong) und Boden-Zentrifugenstudien zu Teilgravitation mit Nagern.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.84,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger OTA-Forschungstopik prueft Raumfahrt-Reproduktionsbiologie oder Teilgravitations-Tierversuche. Die vorhandenen TEC-Audits betreffen Habitat-, ECLSS-, Medizin-, Kommunikations- und Energiearchitektur (OTA-TEC-0088/0093/0098/0106/0109/0119), die SCI-Audits betreffen Magnetobiologie (OTA-SCI-0060/0096), Kosmologie, Geowissenschaften und Archaeoastronomie. Die hier zu pruefende 1/6-g-Mausbehauptung und die Nagetier-Reproduktionsbilanz sind in keinem Vorgaenger enthalten.",
+  "fingerprint": "62694f98ffa3924c"
+}
