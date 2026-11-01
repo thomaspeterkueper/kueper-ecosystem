@@ -1,0 +1,43 @@
+{
+  "id": "RES-20261101-ABDA8DBD",
+  "status": "queued",
+  "created": "2026-11-01T11:23:31+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0086-2026-DE.md",
+  "source_ref": "01326d92e14a95152c83bc3044339ad55401c958",
+  "source_blob_sha": "883cedeb71c397ec0493a3442b25c664152131fa",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 211,
+  "context_paths": [
+    "src/content/documents/OTA-TEC-0088-2026-DE.md",
+    "src/content/documents/OTA-TEC-0093-2026-DE.md",
+    "src/content/documents/OTA-TEC-0119-2026-DE.md"
+  ],
+  "title": "Realwelt-Audit der Human-Evidenzbasis in OTA-SCI-0086 (v1.2, Abschnitte 2.1, 4, 7): die '16 Studien' der systematischen Uebersichtsarbeit von 2024 (Gimunova et al., npj Microgravity 10:10), der tatsaechliche Endpunktumfang und der reale Stand der Human-Reproduktionsdaten im Raumflug",
+  "question": "Quellengestuetzter Realwelt-Audit der Human-Evidenzbasis von OTA-SCI-0086-2026-DE (Abschnitte 2.1, 4, 7, 12.8 und Quellenanker), gepinnt auf Dokumentversion v1.2 (Status ENTWURF, Evidenzstand 2026; im gescopten Workspace ist keine Git-Revision auslesbar, daher Bindung an Version und Datum), gegen die primaere reproduktionsmedizinische und spaceflight-medizinische Literatur. (1) Tragende Zahl: Pruefe die [R]-Aussage, eine systematische Uebersichtsarbeit von 2024 habe nur 16 geeignete Humanstudien zu reproduktiver Gesundheit im Kontext von Raumfahrt, Mikrogravitation, Strahlung oder Analoga gefunden. Verifiziere bibliographisch Gimunova M, Paludo AC, Bernacikova M, et al., The effect of space travel on human reproductive health: a systematic review, npj Microgravity 10, 10 (2024), DOI 10.1038/s41526-024-00351-1 - Existenz, Autorschaft, Journal, Band/Artikelnummer, DOI - und berichte die tatsaechliche Studienzahl, die Einschlusskriterien, die durchsuchten Datenbanken, das Suchfenster und die real abgedeckten Endpunktkategorien. Melde jede Abweichung von '16' ausdruecklich und stelle fest, ob die Arbeit Humanstudien im engeren Sinn zaehlt oder Analog-, Tier- und Zellstudien mit einschliesst. (2) Weitere Quellenanker: Pruefe, ob Mathyk B, Imudia AN, Quaas AM et al., npj Women's Health (2024), DOI 10.1038/s44294-024-00009-z; Lung C-F et al., iScience 29(2):114663 (2026), DOI 10.1016/j.isci.2026.114663; Ferraz M & Moeharram L, Frontiers in Space Technologies 7:1917547 (2026), DOI 10.3389/frspt.2026.1917547; Ronca AE, Advances in Space Research (2004), PMID 15000095; Deblieck C et al., npj Microgravity (2026), DOI 10.1038/s41526-026-00656-3 in dieser Form existieren und ob sie die ihnen im Dossier zugewiesene Rolle tatsaechlich tragen. Ersetze keine Kennung stillschweigend durch eine aehnliche Arbeit, sondern benenne die naechstliegende reale Publikation und melde die Abweichung. (3) Endpunkte: Berichte den realen Stand zu Sexualhormonen, Menstruationszyklus, Spermienkonzentration/Motilitaet/Morphologie/DNA-Fragmentationsindex, ovarieller Reserve und endometrialen/lutealen Parametern bei Raumfahrerinnen und Raumfahrern mit Studiengroesse, Design und Effektrichtung, und ordne ein, welche Punkte der in Abschnitt 4 als [R] gefuehrten Aufzaehlung real durch mehrere unabhaengige Arbeiten gedeckt sind und welche auf Einzelstudien oder Analogmodellen beruhen. (4) Vollstaendige Kette: Pruefe die Aussage, vollstaendige Schwangerschaften und Geburten im Weltraum seien nicht Gegenstand belastbarer Humanstudien; berichte den realen Status (keine dokumentierte humane Konzeption, Schwangerschaft oder Geburt im Raumflug; flugmedizinische Zulassungs- und Ausschlussregeln der Agenturen; dokumentierte postflugale Schwangerschaften und deren Ausgaenge) und ob die Aussage als [R] haltbar bleibt oder als 'kein Nachweis in der zugaenglichen Literatur' praeziser zu fassen ist. (5) Stressorentrennung: Pruefe die [R/H]-Aussage, Mikrogravitation und Strahlung seien getrennt und kombiniert zu behandeln und Ergebnisse simulierter Mikrogravitation (Random Positioning Machine, Clinostat, Rotating Wall Vessel, Hindlimb-Unloading) duerften nicht automatisch auf reale Mikrogravitation oder auf Strahlung uebertragen werden, gegen die reale Validierungs- und Analogliteratur einschliesslich der dokumentierten Grenzen dieser Plattformen. (6) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen, die als '[R] Quelleninhalt, Stichprobe und Endpunkt' abzuschwaechen sind und die [OFFEN] bleiben muessen, und stelle fest, dass keine kanonische Studienzahl, keine kanonische Effektstaerke, kein kanonischer Grenzwert und keine klinische Empfehlung in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die vier Siedlungsfaehigkeitsklassen und die Kanonregel in Abschnitt 19 als [F], die [H]-Engineering-Schnittstelle, NOXIA-Geburtenraten/-Abzuege/-Baukosten, die Abschnitte 9-11 als Operationsanforderungen sowie jede Aussage, 0,16 g oder 0,38 g seien validierte Schwellen.",
+  "why_now": "Das Dossier v1.2 (ENTWURF, 2026) begruendet seine zentrale Evidenzregel und die vier Siedlungsfaehigkeitsklassen (Abschnitt 19) unmittelbar mit dieser Humanbilanz; genau eine Zahl aus genau einer Uebersichtsarbeit traegt die Aussage, dass 2026 keine belastbare Human-Evidenz existiert. Vier der neun Quellenanker sind 2026 datiert und im gescopten Workspace nicht gegengeprueft, und die Reproduktions-Capability speist OTA-TEC-0088 (Mars Medical Center) sowie die NOXIA-Faehigkeitsklassen. Solange Studienzahl, Endpunktumfang und der reale Stand der Human-Daten nicht verifiziert sind, ist 'pregnancy-and-birth-capable' nicht sauber begruendet, und eine falsche Zahl wuerde stillschweigend kanonisch.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Gimunova et al. (2024), npj Microgravity 10:10, DOI 10.1038/s41526-024-00351-1 (systematische Uebersichtsarbeit zu Raumfahrt und reproduktiver Gesundheit) sowie die reale Human- und Analogliteratur zu Hormon-, Menstruations- und Spermienparametern im Raumflug und die flugmedizinischen Zulassungsregeln der Agenturen.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger OTA-Forschungstopik behandelt menschliche Reproduktion, Schwangerschaft oder Entwicklung unter Mikro- oder Teilgravitation. Die naechsten biomedizinischen Auditlinien (RES-20260921-966FA674 zu OTA-SCI-0060 Magnetorezeption; RES-20261002-B1647AAF zu OTA-SCI-0096 Hypomagnetfeld/ROS) pruefen andere Endpunkte, und die TEC-Audits zu OTA-TEC-0088/0106/0109 betreffen medizinische Autonomie, Kommunikation und PV-Ertrag, nicht die reproduktionsmedizinische Evidenzbasis. Es gibt daher keinen Vorgaenger-ID-Anschluss.",
+  "fingerprint": "abda8dbdef2a6f5e"
+}
