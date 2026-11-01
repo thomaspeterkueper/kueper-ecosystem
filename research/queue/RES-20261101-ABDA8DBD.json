@@ -1,6 +1,6 @@
 {
   "id": "RES-20261101-ABDA8DBD",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-01T11:23:31+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -39,5 +39,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriger OTA-Forschungstopik behandelt menschliche Reproduktion, Schwangerschaft oder Entwicklung unter Mikro- oder Teilgravitation. Die naechsten biomedizinischen Auditlinien (RES-20260921-966FA674 zu OTA-SCI-0060 Magnetorezeption; RES-20261002-B1647AAF zu OTA-SCI-0096 Hypomagnetfeld/ROS) pruefen andere Endpunkte, und die TEC-Audits zu OTA-TEC-0088/0106/0109 betreffen medizinische Autonomie, Kommunikation und PV-Ertrag, nicht die reproduktionsmedizinische Evidenzbasis. Es gibt daher keinen Vorgaenger-ID-Anschluss.",
-  "fingerprint": "abda8dbdef2a6f5e"
+  "fingerprint": "abda8dbdef2a6f5e",
+  "updated_at": "2026-11-01T11:34:53+00:00",
+  "last_error": "candidate for ota-archive-evidence reports invalid claim class"
 }
