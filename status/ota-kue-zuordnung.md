@@ -80,8 +80,8 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-HIS-0008-MULTI-DE | DIE ENTSTEHUNG DER SCHRIFT | FRST | TEIL I: PROTO-SYMBOLIK UND FRÜHE KODIERUNG [R]; TEIL II: DIE SECHS FRÜHEN SCHRIF | offen |
 | OTA-KARTE-0003-Baumeister-Netzwerk-DE | DAS GLOBALE BAUMEISTER-NETZWERK | FRST | 2.1 Etablierte Primärknoten [R/S] | offen |
 | OTA-LSC-0004-2026-DE | Mitochondriale Basistherapie bei Λ-FSS — Lebensstil · E | FRST | TEIL I: DAS DREI-EBENEN-MODELL [R]; TEIL II: EBENE 1 — BELASTUNGEN REDUZIEREN [R | offen |
-| OTA-LSC-0006-2026-DE | OTA-LSC-0006-2026-DE | FRST | TEIL I: FASZIEN ALS BIOPHYSIKALISCHES NETZWERK [R]; 1.2 Piezoelektrizität von Ko | offen |
-| OTA-LSC-0007-2026-DE | OTA-LSC-0007-2026-DE | FRST | PROTOKOLL A: FASZIEN-VIBRATIONSTRAINING (8 WOCHEN) [R→T]; PROTOKOLL B: PHOTOBIOM | offen |
+| OTA-LSC-0006-2026-DE | OTA-LSC-0006-2026-DE | FRST | TEIL I: FASZIEN ALS BIOPHYSIKALISCHES NETZWERK [R]; 1.2 Piezoelektrizität von Ko | geprüft 2026-11-01 – Teile nach KUE (Teile I–III), erst nach Quellenbereinigung OTA-REQ-20261101-003 |
+| OTA-LSC-0007-2026-DE | OTA-LSC-0007-2026-DE | FRST | PROTOKOLL A: FASZIEN-VIBRATIONSTRAINING (8 WOCHEN) [R→T]; PROTOKOLL B: PHOTOBIOM | geprüft 2026-11-01 – Teile nach KUE (Protokolle A/B als Evidenzübersicht), erst nach OTA-REQ-20261101-004 |
 | OTA-MON-0002-2142-DE | TEMENON | FR | Reale wissenschaftliche Grundlagen [R] | offen |
 | OTA-SCI-0007-2026-Cuancoa | OTA-SCI-0007-2026-Cuancoa | RST |  | offen |
 | OTA-SCI-0015-2025-DE | Schumann-Resonanz: Biologische Relevanz und ISS-Referen | RST |  | offen |
@@ -140,5 +140,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0042-2026-DE | PHÄNOMENOLOGISCHE ERDBEBENTHEORIE UND DIE LOD-SEISMIZIT | HRS | eigene Erdbebentheorie | offen |
 
 ## C – bleibt in OTA
+
+Geprüft 2026-11-01: OTA-BIO-0022-2026-DE, OTA-LSC-0001-2048-DE (bleiben OTA).
 
 122 Dokumente: Biografien, Weltdokumente, Mars-/Tharsis-Infrastruktur der Romanwelt, Artefakte, In-universe-Handbücher. Ihr Realteil ist Anker für die Setzung und bleibt dort, verweist aber nach Möglichkeit auf KUE bzw. KG.
