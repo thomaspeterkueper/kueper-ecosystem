@@ -1,6 +1,6 @@
 # Governance-Sweep — Bericht
 
-Erzeugt: 2026-11-01T13:12:02.767313+00:00
+Erzeugt: 2026-11-02T15:38:12.973955+00:00
 
 **2 Fund(e)** — 0 error, 0 warning, 2 info
 
