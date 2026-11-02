@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261102-0988FCE0",
+  "status": "queued",
+  "created": "2026-11-02T11:21:07+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0200-2026-de.md",
+  "source_ref": "4fdca55453170671b53e7c69587783f1d0e7038d",
+  "source_blob_sha": "fe922ce710a9239086e37c40db2aebd7fb755998",
+  "title": "KUE-SCI-0200: Perm-Magnetostratigraphie, Paläointensität und Guadalupium-Biokrise — Primärquellen- und Kausalitätsprüfung",
+  "question": "Stimmen die in KUE-SCI-0200 v0.1 als [R]/[T] gesetzten Anker mit der Primärliteratur überein? Konkret: (1) Berichtet Zhang et al. (2026, National Science Review, DOI 10.1093/nsr/nwag647) im Fengshan-Profil tatsächlich 29 Magnetozonen und eine maximale Umkehrrate von etwa 11 pro Million Jahre für 262,5–258,75 Ma, und rahmen die Autoren die Verbindung zur end-Guadalupium-Krise selbst als nicht kausal? (2) Meldet Yue et al. (2026, Nature Communications, DOI 10.1038/s41467-026-77506-z) ein zeitgemitteltes Dipolmoment von (4,1 ± 0,7) × 10²² A m², rund 51 % des heutigen Werts, und folgern die Autoren ausdrücklich, dass die Magnetosphäre für den postulierten Ozon-/UVB-Pfad nicht hinreichend geschwächt war? (3) Sind die Datierung der end-Guadalupium-Krise (~261 Ma) und ihre Trennung von der Perm-Trias-Grenze (~252 Ma) nach ICS/IUGS korrekt? (4) Gibt es unabhängige Magnetostratigraphien oder Einzelkorn-Paläointensitätsarbeiten, die Umkehrhäufigkeit, Feldstärke oder den vorgeschlagenen Mantel→Kern-Mantel-Grenze→Geodynamo-Mechanismus stützen, einschränken oder widerlegen? (5) Wie ist der aktuelle Forschungsstand zur Kopplung von Umkehrrate, Feldstärke und biologischer Wirkung im Perm — gilt die im Dokument gezogene Grenze 'Korrelation ist keine Ursache' als Konsens, oder vertreten die zitierten Arbeiten eine stärkere Kausalthese?",
+  "why_now": "KUE-SCI-0200 ist seit 2026-10-26 als draft_productive/published_foundation_document ohne review-Block geführt und damit öffentlich; seine zentralen Zahlen stammen aus zwei 2026er Arbeiten plus einem t3n-Artikel als Medienanlass. Die Aussage ist weltbildprägend für die im Dokument genannten Anschlüsse (KG-Geosphäre, SSF-Fallstudie, NOXIA, AVI) und muss vor einer Kanonisierung extern geprüft werden.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Zhang et al. 2026, National Science Review, DOI 10.1093/nsr/nwag647; Yue et al. 2026, Nature Communications, DOI 10.1038/s41467-026-77506-z; ICS/IUGS Geological Time Scale (Guadalupian/Lopingian boundary)",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.82,
+    "uncertainty": 0.82,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein vorheriges Forschungsthema behandelt KUE-SCI-0200, permische Magnetostratigraphie oder Paläointensität. RES-20260917-8CC010F9 betrifft U/Th-Trägerminerale in Phosphoriten, RES-20260902-341335E2 astronomisch-planetares Forcing der Seismizität; beide sind thematisch getrennt.",
+  "fingerprint": "0988fce0b607c07f"
+}
