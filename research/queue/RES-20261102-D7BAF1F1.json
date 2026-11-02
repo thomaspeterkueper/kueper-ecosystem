@@ -1,6 +1,6 @@
 {
   "id": "RES-20261102-D7BAF1F1",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-02T11:21:09+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein vorheriges Forschungsthema behandelt KUE-SCI-0196, GW250114, Ringdown-Spektroskopie oder die Gregory-Laflamme-/Pair-of-pants-Frage. Die früheren Physikthemen betreffen Gold-Nukleosynthese (RES-20261021-9D5F27AC), Kryoeis (RES-20261021-46F98CB7) und Wolfram-Grenzflächen (RES-20261014-72C16339); keine Überschneidung mit Gravitationswellen- oder Horizonttopologie-Fragen.",
-  "fingerprint": "d7baf1f1322eeab5"
+  "fingerprint": "d7baf1f1322eeab5",
+  "updated_at": "2026-11-02T11:28:18+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/267"
 }
