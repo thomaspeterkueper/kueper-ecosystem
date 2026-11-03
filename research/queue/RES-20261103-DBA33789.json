@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261103-DBA33789",
+  "status": "queued",
+  "created": "2026-11-03T11:02:14+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "Durability of outbound evidence links: reference rot, snapshotting and archiving policy",
+  "question": "What do empirical measurements and archival standards establish about reference rot in web citations — measured decay rates for scholarly, legal and institutional links; the Memento protocol (RFC 7089), WARC (ISO 28500), Perma.cc, the Internet Archive and the Deutsche Nationalbibliothek's web archiving — and what practice follows for a platform whose reuse model is 'link instead of copy'? Which external links must be snapshotted at citation time, how should stable URLs be designed so they survive domain and CMS changes, and what technical choices keep endia.de's own pages citable and archivable for as long as the ecosystem cites them?",
+  "why_now": "README.md lines 8, 13 and 23 make other repositories the source of truth via links, and line 15 states the ecosystem norm 'Bitte auf diesen Link verweisen statt den Inhalt zu kopieren' — linking is the reuse mechanism, so link death breaks reuse. Prior research (RES-20261022-5C288045) recommends linking to official digital-literacy content rather than duplicating it. With no URL or archiving policy defined yet, this is the moment to set one.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewed measurement of link and reference rot together with archival standards: RFC 7089 (Memento), ISO 28500 (WARC), the Deutsche Nationalbibliothek web-archiving programme, Perma.cc and the Internet Archive.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20261022-DA1793AA",
+    "RES-20261022-5C288045"
+  ],
+  "novelty_reason": "DA1793AA is about identifiers for the trilogy's own volumes and passages so canon citations survive edition changes; this is about the survival of third-party URLs the site cites, a different object and a different literature (link-rot measurement, web-archiving standards). 5C288045 asks which official digital-literacy content may be linked, quoted or adapted and under which licences — an inbound-rights question; it does not ask how those links stay resolvable or how the site itself is archived. Neither prior topic covers reference rot or snapshot and archiving policy.",
+  "fingerprint": "dba33789fb5c36f1"
+}
