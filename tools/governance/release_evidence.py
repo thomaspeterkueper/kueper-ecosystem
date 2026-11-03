@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Read-only PR release evidence audit. Never merges or changes branch protection."""
-import json, os, sys, urllib.parse, urllib.request, urllib.error
+import json, os, sys, urllib.request, urllib.error
 
 REPOS = [
     "thomaspeterkueper/noxiagame",
@@ -31,19 +31,28 @@ def inspect(repo, pr):
         if login and review.get("submitted_at"):
             latest[login] = review["state"]
     checks = get(root + "/commits/" + sha + "/check-runs?per_page=100")
+    combined = get(root + "/commits/" + sha + "/status")
     runs = checks.get("check_runs", [])
     failures = [r["name"] for r in runs if r.get("conclusion") in ("failure", "timed_out", "cancelled", "action_required")]
     pending = [r["name"] for r in runs if r.get("status") != "completed"]
     approvals = [user for user, state in latest.items() if state == "APPROVED" and user != pr["user"]["login"]]
+    # Reviews may apply to an older head; report them, but never treat them as current-head approval.
+    review_heads = {r.get("user", {}).get("login"): r.get("commit_id") for r in reviews if r.get("submitted_at") and r.get("user")}
+    stale_approvals = [user for user in approvals if review_heads.get(user) != sha]
+    current_approvals = [user for user in approvals if user not in stale_approvals]
     blockers = []
     if pr.get("draft"): blockers.append("draft")
-    if not approvals: blockers.append("no_independent_approval")
+    if not current_approvals: blockers.append("no_current_head_independent_approval")
+    if stale_approvals: blockers.append("stale_approvals_observed")
+    if combined.get("state") in ("failure", "error", "pending"): blockers.append("commit_status_" + combined["state"])
     if failures: blockers.append("failed_checks")
     if pending: blockers.append("pending_checks")
-    if not runs: blockers.append("no_check_runs_observed")
+    if not runs and not combined.get("statuses"): blockers.append("no_ci_evidence_observed")
     if checks.get("total_count", 0) > len(runs): blockers.append("check_runs_pagination_incomplete")
+    if len(reviews) == 100: blockers.append("reviews_pagination_incomplete")
     return {"repo": repo, "pr": number, "head_sha": sha, "draft": pr["draft"],
-            "independent_approvals": approvals, "failed_checks": failures,
+            "independent_approvals": current_approvals, "stale_approvals": stale_approvals,
+            "combined_commit_status": combined.get("state"), "failed_checks": failures,
             "pending_checks": pending, "blockers": blockers, "assessment": "needs_review" if blockers else "evidence_present_not_release_authorization"}
 
 def main():
