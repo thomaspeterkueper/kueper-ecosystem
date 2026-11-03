@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-02 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-03 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -27,7 +27,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 |---|---|---|---|---|
 | OTA-FND-0024-2026-DE | DIE KETTE VOM HEXENTEICH | FHRW | KUE-SCI-0170 | offen |
 | OTA-LSC-0003-2026-DE | OTA-LSC-0003-2026-DE | FHRST | KUE-SCI-0175 | offen |
-| OTA-SCI-0017-2025-DE | Superionisches Goldhydrid als Resonanzanker — Eine theo | HRT | KUE-SCI-0183 | offen |
+| OTA-SCI-0017-2025-DE | Superionisches Goldhydrid als Resonanzanker — Eine theo | HRT | KUE-SCI-0183 | geprüft 2026-11-03 – KUE-Gegenstück vorhanden (KUE-SCI-0183 v0.2), AVI-Teil bleibt; Korrektur/Kürzung OTA-REQ-20261103-001 (wartet auf Thomas), EXT-OTA-KUE-20261103-001 |
 | OTA-SCI-0047-2026-DE | OTA-SCI-0047-2026-DE | HRT | KUE-SCI-0175 | offen |
 | OTA-SCI-0064-2026-DE | Das Hautmikrobiom: Systemcharakter, Störbarkeit, Revers | RT | KUE-SCI-0064 (gleicher Titel – Dublette) | offen |
 | OTA-SCI-0080-2026-DE | OTA-SCI-0080-2026-DE | RST | KUE-SCI-0174 | offen |
@@ -39,7 +39,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0113-2026-DE | GW250114 – Hawkings Flächensatz, Kerr-Ringdown und star | IOFFENR | KUE-SCI-0196 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Realteil in KUE-SCI-0196 v0.2 übernommen, Kürzung OTA-REQ-20261102-001 |
 | OTA-SCI-0114-2026-DE | Horizontfragmentierung – theoretische Grenzfälle und Bu | HIOFFENR | KUE-SCI-0196 | offen |
 | OTA-SCI-0115-2026-DE | Einzelpositron im Quantenzyklotron – Messfähigkeit stat | IOFFENR | KUE-SCI-0197 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Verschlankung OTA-REQ-20261102-002 |
-| OTA-SCI-0116-2026-DE | Andromeda als Welteninsel – Distanzmessung, Kalibration | IOFFENR | KUE-SCI-0198 | offen |
+| OTA-SCI-0116-2026-DE | Andromeda als Welteninsel – Distanzmessung, Kalibration | IOFFENR | KUE-SCI-0198 | geprüft 2026-11-03 – KUE-Gegenstück vorhanden; Realteil in KUE-SCI-0198 v0.2 übernommen, Brückendokument OTA-REQ-20261103-002 |
 | OTA-TEC-0019-2091-DE | OTA-TEC-0019-2091-DE | FHRT | KUE-SCI-0178 | offen |
 | OTA-TEC-0021-2025-DE | MOF-STABILISIERUNG FÜR SUPERIONISCHES GOLDHYDRID | FHRS | KUE-SCI-0183 | offen |
 | OTA-TEC-0029-2048-DE | Quantensensorik & KI-Integration für LOD-Validierung | FHRT | KUE-SCI-0177 | offen |
