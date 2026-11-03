@@ -1,6 +1,6 @@
 {
   "id": "RES-20261103-2F2CCD44",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-03T11:02:13+00:00",
   "source_project": "endia",
   "source_repository": "thomaspeterkueper/endia.de",
@@ -33,5 +33,7 @@
     "RES-20260903-11C93480"
   ],
   "novelty_reason": "RES-20261022-DA1793AA covers bibliographic identifiers and citation of the trilogy's volumes and passages (ISBN, ONIX, DNB, DOI) so canon citations survive edition changes; it does not address encoding the epistemic status of a real-world claim. RES-20260903-11C93480 covers reader-facing design guardrails (fiction/fact signalling, source labels) and whether readers learn from fiction; it does not evaluate machine-readable vocabularies or cross-project interoperability. This gap asks which standard can be consumed by search engines and sibling KUEPER tools — a dimension neither prior topic resolves.",
-  "fingerprint": "2f2ccd449d33c01d"
+  "fingerprint": "2f2ccd449d33c01d",
+  "updated_at": "2026-11-03T11:30:28+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/270"
 }
