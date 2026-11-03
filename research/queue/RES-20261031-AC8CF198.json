@@ -1,6 +1,6 @@
 {
   "id": "RES-20261031-AC8CF198",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-10-31T09:47:34+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriger Auftrag prüft die Wortbildung oder die Priorität des Terminus. Der Pantheismus-/Panentheismus-Auftrag RES-20260828-D6A60CB1 vergleicht Begriffe und Lehren, nicht die lexikalische Herleitung von „Omnizedenz“ und „Zedenz“. Die Frage ist eine sprachgeschichtliche und korpusbezogene Ergänzung, keine Wiederholung des Begriffsvergleichs.",
-  "fingerprint": "ac8cf198c7e84b91"
+  "fingerprint": "ac8cf198c7e84b91",
+  "updated_at": "2026-11-03T11:15:14+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/269"
 }
