@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-03 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-04 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -29,10 +29,10 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-LSC-0003-2026-DE | OTA-LSC-0003-2026-DE | FHRST | KUE-SCI-0175 | offen |
 | OTA-SCI-0017-2025-DE | Superionisches Goldhydrid als Resonanzanker — Eine theo | HRT | KUE-SCI-0183 | geprüft 2026-11-03 – KUE-Gegenstück vorhanden (KUE-SCI-0183 v0.2), AVI-Teil bleibt; Korrektur/Kürzung OTA-REQ-20261103-001 (wartet auf Thomas), EXT-OTA-KUE-20261103-001 |
 | OTA-SCI-0047-2026-DE | OTA-SCI-0047-2026-DE | HRT | KUE-SCI-0175 | offen |
-| OTA-SCI-0064-2026-DE | Das Hautmikrobiom: Systemcharakter, Störbarkeit, Revers | RT | KUE-SCI-0064 (gleicher Titel – Dublette) | offen |
+| OTA-SCI-0064-2026-DE | Das Hautmikrobiom: Systemcharakter, Störbarkeit, Revers | RT | KUE-SCI-0064 (gleicher Titel – Dublette) | geprüft 2026-11-04 – KUE-Gegenstück vorhanden; OTJIZE-Teil bleibt, Kürzung OTA-REQ-20261104-001, Belegkorrekturen KUE-REQ-20261104-001 |
 | OTA-SCI-0080-2026-DE | OTA-SCI-0080-2026-DE | RST | KUE-SCI-0174 | offen |
 | OTA-SCI-0086-2026-DE | Reproduktion und Entwicklung von der Konzeption bis zum | HOFFENR | KUE-SCI-0187 | offen |
-| OTA-SCI-0091-2026-DE | Supernovae Unite — 2.884 Typ-Ia-Supernovae und die Evid | HOFFENR | KUE-SCI-0191 | offen |
+| OTA-SCI-0091-2026-DE | Supernovae Unite — 2.884 Typ-Ia-Supernovae und die Evid | HOFFENR | KUE-SCI-0191 | geprüft 2026-11-04 – KUE-Gegenstück vorhanden (KUE-SCI-0191 v0.2), AVI-Teil bleibt; Kürzung OTA-REQ-20261104-002 |
 | OTA-SCI-0105-2026-DE | Seltene b→sμμ-Zerfälle – CMS- und LHCb-Spannungen mit d | IOFFENR | KUE-SCI-0195 | offen |
 | OTA-SCI-0106-2026-DE | Gold über die Skalen – Nukleosynthese, Material, Ressou | IOFFENR | KUE-SCI-0195 | offen |
 | OTA-SCI-0107-2026-DE | STAR: Nichtmonotone transversale Impulskorrelationen in | IOFFENR | KUE-SCI-0195 | offen |
