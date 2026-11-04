@@ -1,6 +1,6 @@
 {
   "id": "RES-20261103-DBA33789",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-03T11:02:14+00:00",
   "source_project": "endia",
   "source_repository": "thomaspeterkueper/endia.de",
@@ -34,5 +34,7 @@
     "RES-20261022-5C288045"
   ],
   "novelty_reason": "DA1793AA is about identifiers for the trilogy's own volumes and passages so canon citations survive edition changes; this is about the survival of third-party URLs the site cites, a different object and a different literature (link-rot measurement, web-archiving standards). 5C288045 asks which official digital-literacy content may be linked, quoted or adapted and under which licences — an inbound-rights question; it does not ask how those links stay resolvable or how the site itself is archived. Neither prior topic covers reference rot or snapshot and archiving policy.",
-  "fingerprint": "dba33789fb5c36f1"
+  "fingerprint": "dba33789fb5c36f1",
+  "updated_at": "2026-11-04T11:34:55+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/273"
 }
