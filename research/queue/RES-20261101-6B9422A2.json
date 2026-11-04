@@ -1,6 +1,6 @@
 {
   "id": "RES-20261101-6B9422A2",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-01T10:37:03+00:00",
   "source_project": "contracomology",
   "source_repository": "thomaspeterkueper/contracomology",
@@ -36,5 +36,7 @@
     "RES-20261008-031971A1"
   ],
   "novelty_reason": "031971A1 rekonstruiert den Leitsatz im Feld von Husserl, Ingarden, Zuckerkandl, Langer und Kramer und fragt nach der Bedeutung von 'Zeit erzeugen'. Die physikalisch-kosmologische Dimension und die Legacy-These 'Bach trifft Urknall' bleiben dort ungeprüft. Diese Frage trennt Erfahrungszeit, ontologische Behauptung und Kosmologie und prüft, ob die negative Abgrenzung der Startseite ausreicht.",
-  "fingerprint": "6b9422a2c2483f38"
+  "fingerprint": "6b9422a2c2483f38",
+  "updated_at": "2026-11-04T11:16:40+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/272"
 }
