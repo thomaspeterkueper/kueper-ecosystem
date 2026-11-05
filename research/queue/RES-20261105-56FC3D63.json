@@ -1,6 +1,6 @@
 {
   "id": "RES-20261105-56FC3D63",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-05T11:06:59+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -33,5 +33,7 @@
     "RES-20260831-EAA9EDD9"
   ],
   "novelty_reason": "The prior magnet-materials candidate sourced property values for MAG-004/005 (Curie temperature, maximum operating temperature, energy product, coercivity, cost and rare-earth dependence). It did not audit the conceptual spin/magnetism model or the legacy path's claims about wood, copper, aluminium and 'rotating electrons'. This gap addresses a different unresolved dimension: the physical explanation and the learner-facing misconceptions, and it is not a rephrasing of the property-data request.",
-  "fingerprint": "56fc3d63b3af80cc"
+  "fingerprint": "56fc3d63b3af80cc",
+  "updated_at": "2026-11-05T11:07:40+00:00",
+  "last_error": "[Errno 7] Argument list too long: 'node'"
 }
