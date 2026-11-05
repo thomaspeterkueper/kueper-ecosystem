@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261105-3E55F317",
+  "status": "queued",
+  "created": "2026-11-05T11:07:01+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "components/learning/PiezoMaterialExperiment.tsx",
+  "source_ref": "16c03cf926303ad0f1ce96b2089946e317dc2275",
+  "source_blob_sha": "63adc90c3a96a41a0aa821b4e144f658a3a8f5ed",
+  "title": "Correct the PZT-versus-BaZrS3 rankings and the voltage-only power model in the piezo material comparison",
+  "question": "The piezo learning path (PATH:SSF:PHY-PIEZO-0001) and components/learning/PiezoMaterialExperiment.tsx teach that PZT is 'the most powerful known piezoelectric material', that the 2024 RPI chalcogenide-perovskite material is 'only 0.3 mm thin' and 'almost as strong as PZT', and that piezoelectric harvesting yields a calculable power in mW from a voltage-only model. What does the primary literature actually establish? Specifically: (a) what is the 2024 RPI material (BaZrS3/chalcogenide perovskite, Nature Communications DOI 10.1038/s41467-024-50130-5), what was actually measured (PFM, composite film, device), and what does '0.3 mm' refer to; (b) how do PZT, PMN-PT/relaxor single crystals, BaZrS3 and other lead-free piezoelectrics compare on d33 or voltage coefficient and energy-harvesting figures of merit, and is 'PZT is the strongest known' defensible; (c) is the path's symmetry rule ('no symmetry axis' / 'centrosymmetric crystals cannot be piezoelectric') consistent with the BaZrS3 claim of strain-induced piezoelectricity in a centrosymmetric material; (d) what is a physically defensible order of magnitude for power from a footstep or vibration harvester, and which load, area and frequency assumptions are needed; (e) which statements are measured material properties, which are device demonstrations, and which are press-release extrapolations?",
+  "why_now": "Lead-free piezoelectrics are an active materials topic and the 2024 RPI paper is recent enough to be widely misreported. The live path and its interactive hard-code unsupported rankings and an arbitrary V-squared/10000 power display, while the path feeds NOXIA's SENSOR:PIEZO and TOOL:ENERGY-HARVESTING unlocks.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "BaZrS3 chalcogenide-perovskite piezoelectricity (Nature Communications 2024, DOI 10.1038/s41467-024-50130-5); PZT and PMN-PT piezoelectric coefficients; piezoelectric energy-harvesting figures of merit",
+  "publication_route_hint": null,
+  "project_weight": 0.8,
+  "relevance_score": 0.84,
+  "scores": {
+    "project_relevance": 0.86,
+    "cross_project_reuse": 0.76,
+    "uncertainty": 0.86,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic covers piezoelectric materials or this 2024 paper. The prior magnet-materials and iridium candidates concern permanent magnets and platinum-group supply, not piezoelectricity, lead-free piezoceramics or energy-harvesting device claims. This is a distinct repository-grounded audit.",
+  "fingerprint": "3e55f317a9942b3c"
+}
