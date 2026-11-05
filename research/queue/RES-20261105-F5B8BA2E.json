@@ -1,6 +1,6 @@
 {
   "id": "RES-20261105-F5B8BA2E",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-05T11:06:58+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No previous topic covers lunar surface navigation. The earlier Mars water and perchlorate candidates concern Mars thermodynamics and regolith chemistry, not lunar navigation, and the gold, brain-health and tardigrade candidates are unrelated. This is a new repository-grounded audit, not a rephrasing.",
-  "fingerprint": "f5b8ba2e87969056"
+  "fingerprint": "f5b8ba2e87969056",
+  "updated_at": "2026-11-05T11:07:37+00:00",
+  "last_error": "[Errno 7] Argument list too long: 'node'"
 }
