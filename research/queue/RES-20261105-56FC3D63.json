@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261105-56FC3D63",
+  "status": "queued",
+  "created": "2026-11-05T11:06:59+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "lib/learningPaths.ts",
+  "source_ref": "16c03cf926303ad0f1ce96b2089946e317dc2275",
+  "source_blob_sha": "d5698fb3a9d58b633d8cf66177475fbe7a2e143a",
+  "title": "Correct the 'rotating electron' spin model and the binary magnetic/non-magnetic account in the live magnetism path",
+  "question": "PATH:SSF:PHY-MAGNETISMUS-0001 (lib/learningPaths.ts) and its interactive material matrix teach that electron spin is a literal rotation of the electron about its own axis, that this rotation 'creates' the magnetic field, that in wood 'all electron spins rotate randomly and cancel', that copper and aluminium are simply 'not magnetic', that iron's ferromagnetism is just aligned rotating electrons, and that permanent magnets and electromagnets work by the same 'moving electrons' principle. What is the physically correct account, and which statements must be corrected or re-labelled? Specifically: (a) what is spin in modern physics, how does the electron magnetic moment relate to spin and orbital angular momentum, and why is the classical rotating-charge picture misleading (g-factor, no literal rotation, quantum angular momentum); (b) how do dia-, para-, ferro-, ferri- and antiferromagnetism actually differ, and what roles do exchange interaction, domains, anisotropy and temperature play; (c) are the path's claims about wood, copper, aluminium, iron and the Curie temperature correct, oversimplified or false; (d) how should the path be reconciled with the newer PATH:SSF:MAGNETISM-MATERIALS and the KG's magnetism concepts, and which claims are established measurement/theory versus didactic model?",
+  "why_now": "Two magnetism paths coexist in the registry: the legacy PATH:SSF:PHY-MAGNETISMUS-0001 still teaches a classical spin-as-rotation model and a binary material matrix, while the newer PATH:SSF:MAGNETISM-MATERIALS and the KG use modern dia/para/ferro concepts. The legacy path is registered and learner-facing, so the contradiction is visible to learners now.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Electron spin and magnetic moment; exchange interaction and magnetic domains; dia-, para-, ferro-, ferri- and antiferromagnetism; Curie temperature",
+  "publication_route_hint": null,
+  "project_weight": 0.8,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.78,
+    "evidence_potential": 0.95
+  },
+  "related_research_ids": [
+    "RES-20260831-EAA9EDD9"
+  ],
+  "novelty_reason": "The prior magnet-materials candidate sourced property values for MAG-004/005 (Curie temperature, maximum operating temperature, energy product, coercivity, cost and rare-earth dependence). It did not audit the conceptual spin/magnetism model or the legacy path's claims about wood, copper, aluminium and 'rotating electrons'. This gap addresses a different unresolved dimension: the physical explanation and the learner-facing misconceptions, and it is not a rephrasing of the property-data request.",
+  "fingerprint": "56fc3d63b3af80cc"
+}
