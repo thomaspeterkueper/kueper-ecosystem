@@ -3057,6 +3057,13 @@
         "status": "doppelt",
         "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0035-2026-DE.md (v1.3, bei Übernahme bereinigt); auf Anweisung von Thomas übernommen (EXT-ECO-OTA-20261106-001)",
         "checkedAt": "2026-11-06"
+      },
+      "1UobrcMhMRqfZIfTHCcTHHw-RcIGAfQHf": {
+        "title": "OTA-TEC-0035-UPDATE-v1_3-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0035-2026-DE.md (v1.3, alle Eingriffe) + OTA-FND-0025-2026-DE.md (KN-3.2, KN-Baumeister)",
+        "checkedAt": "2026-11-06"
       }
     },
     "onlyInDrive": [
@@ -3848,16 +3855,6 @@
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261105-001.md"
       },
       {
-        "fileId": "1UobrcMhMRqfZIfTHCcTHHw-RcIGAfQHf",
-        "title": "OTA-TEC-0035-UPDATE-v1_3-2026-DE.md",
-        "folder": "OTA (alt, bis Okt. 2026)/TEC",
-        "status": "nurDrive",
-        "beschreibung": "Update-Protokoll TEC-0035 v1.2 → v1.3 mit externer Begutachtung.",
-        "checkedAt": "2026-11-06",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261106-001.md",
-        "hinweis": "v1.3 übernommen; bleibt liegen bis KN-Baumeister (Protokoll) bzw. KN-3 (docx v1.2) gesichert sind"
-      },
-      {
         "fileId": "1bV2M92YebF2agWxz-UnxN9jCvtOa91sv",
         "title": "OTA-TEC-0035-2026-DE (1).docx",
         "folder": "OTA (alt, bis Okt. 2026)/TEC",
@@ -3865,7 +3862,7 @@
         "beschreibung": "TEC-0035 v1.2 (Fußzeile v1.1), durch v1.3 überholt; nur hier KN-3.",
         "checkedAt": "2026-11-06",
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261106-001.md",
-        "hinweis": "v1.3 übernommen; bleibt liegen bis KN-Baumeister (Protokoll) bzw. KN-3 (docx v1.2) gesichert sind"
+        "hinweis": "v1.3 übernommen; bleibt liegen, bis Thomas über KN-3 entscheidet"
       }
     ],
     "movedFolders": [
