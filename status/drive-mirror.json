@@ -3029,6 +3029,27 @@
         "status": "doppelt",
         "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0044-2026-DE.md (Kopie, gleiche Größe wie geprüfte Datei)",
         "checkedAt": "2026-11-06"
+      },
+      "1zNLsCTa-xG5_tHXz2BHdWVsHyUs-utO5": {
+        "title": "OTA-SCI-0083-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/SCI",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0117-2026-DE.md (migriert, v1.1); auf Anweisung von Thomas übernommen (EXT-ECO-OTA-20261106-001)",
+        "checkedAt": "2026-11-06"
+      },
+      "1Yy6zYaocyKBPAFgJ1_1EkuGnoDAbXyOj": {
+        "title": "OTA-SCI-0084-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/SCI",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0118-2026-DE.md (migriert, v1.1); auf Anweisung von Thomas übernommen (EXT-ECO-OTA-20261106-001)",
+        "checkedAt": "2026-11-06"
+      },
+      "1qS3WR2Ziqlkpxn1r6V-x9TjRcVhoO-Zr": {
+        "title": "OTA-SCI-0085-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/SCI",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0119-2026-DE.md (migriert, v1.3); auf Anweisung von Thomas übernommen (EXT-ECO-OTA-20261106-001)",
+        "checkedAt": "2026-11-06"
       }
     },
     "onlyInDrive": [
@@ -3843,33 +3864,6 @@
         "folder": "OTA (alt, bis Okt. 2026)/TEC",
         "status": "unklar",
         "beschreibung": "Zwischenstand TEC-0035 (2026-04-04, nach v1.0, vor v1.3); nicht im Detail geprüft.",
-        "checkedAt": "2026-11-06",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261106-001.md"
-      },
-      {
-        "fileId": "1zNLsCTa-xG5_tHXz2BHdWVsHyUs-utO5",
-        "title": "OTA-SCI-0083-2026-DE.md",
-        "folder": "OTA (alt, bis Okt. 2026)/SCI",
-        "status": "nurDrive",
-        "beschreibung": "Hexenteich-SCI Obsidian: Materialwissenschaft; Nummer auf GitHub anders belegt (Eigenzeit).",
-        "checkedAt": "2026-11-06",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261106-001.md"
-      },
-      {
-        "fileId": "1Yy6zYaocyKBPAFgJ1_1EkuGnoDAbXyOj",
-        "title": "OTA-SCI-0084-2026-DE.md",
-        "folder": "OTA (alt, bis Okt. 2026)/SCI",
-        "status": "nurDrive",
-        "beschreibung": "Hexenteich-SCI Obsidian: Archäometrie; Nummer auf GitHub anders belegt.",
-        "checkedAt": "2026-11-06",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261106-001.md"
-      },
-      {
-        "fileId": "1qS3WR2Ziqlkpxn1r6V-x9TjRcVhoO-Zr",
-        "title": "OTA-SCI-0085-2026-DE.md",
-        "folder": "OTA (alt, bis Okt. 2026)/SCI",
-        "status": "nurDrive",
-        "beschreibung": "Hexenteich-SCI Lodestone/Magnetit-Eisenstein; GitHub nur SCI-0085-2164-EN (anderer Inhalt).",
         "checkedAt": "2026-11-06",
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261106-001.md"
       }
