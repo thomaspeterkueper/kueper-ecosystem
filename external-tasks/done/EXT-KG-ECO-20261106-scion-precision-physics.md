@@ -1,7 +1,8 @@
 ---
 id: EXT-KG-ECO-20261106-001
 title: SCION-Wissenshandoff an KG-REQ-20261022 anschließen (GW250114, Positron, M31)
-status: open
+status: done
+completed: 2026-11-06
 source: KG
 target: ECO
 created: 2026-11-06
@@ -40,3 +41,7 @@ So prüft SCION nicht nur Beispieldaten, sondern auch, dass die IDs, die SSF und
 
 - `kueper-ecosystem` (Tests, Workflow)
 - `kueper-knowledge-graph` (nur lesend; PR #274 als Voraussetzung)
+
+## Abschluss (2026-11-06)
+
+Umgesetzt in PR #129 nach dem Merge von kueper-knowledge-graph PR #274. Der Workflow checkt das private KG-Repo mit `secrets.KUEPER_BOT_TOKEN` aus (wie `ota-tech-object-audit.yml`). CI-Lauf gegen KG-`main`: alle sechs Tests grün, `test_consumed_kg_ids_exist` nicht übersprungen.
