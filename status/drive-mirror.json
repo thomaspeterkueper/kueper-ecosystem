@@ -3050,6 +3050,13 @@
         "status": "doppelt",
         "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0119-2026-DE.md (migriert, v1.3); auf Anweisung von Thomas übernommen (EXT-ECO-OTA-20261106-001)",
         "checkedAt": "2026-11-06"
+      },
+      "1YqKaw8W-lOP1IhlpoFqTOLqqgUEr0Mlo": {
+        "title": "OTA-TEC-0035-2026-DE-v1_3.md",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0035-2026-DE.md (v1.3, bei Übernahme bereinigt); auf Anweisung von Thomas übernommen (EXT-ECO-OTA-20261106-001)",
+        "checkedAt": "2026-11-06"
       }
     },
     "onlyInDrive": [
@@ -3841,31 +3848,24 @@
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261105-001.md"
       },
       {
-        "fileId": "1YqKaw8W-lOP1IhlpoFqTOLqqgUEr0Mlo",
-        "title": "OTA-TEC-0035-2026-DE-v1_3.md",
-        "folder": "OTA (alt, bis Okt. 2026)/TEC",
-        "status": "nurDrive",
-        "beschreibung": "Die Kette vom Hexenteich v1.3 (IV.0, IV.6, F1/F2, VII, neue Schreibregeln); GitHub nur v1.0.",
-        "checkedAt": "2026-11-06",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261106-001.md"
-      },
-      {
         "fileId": "1UobrcMhMRqfZIfTHCcTHHw-RcIGAfQHf",
         "title": "OTA-TEC-0035-UPDATE-v1_3-2026-DE.md",
         "folder": "OTA (alt, bis Okt. 2026)/TEC",
         "status": "nurDrive",
         "beschreibung": "Update-Protokoll TEC-0035 v1.2 → v1.3 mit externer Begutachtung.",
         "checkedAt": "2026-11-06",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261106-001.md"
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261106-001.md",
+        "hinweis": "v1.3 übernommen; bleibt liegen bis KN-Baumeister (Protokoll) bzw. KN-3 (docx v1.2) gesichert sind"
       },
       {
         "fileId": "1bV2M92YebF2agWxz-UnxN9jCvtOa91sv",
         "title": "OTA-TEC-0035-2026-DE (1).docx",
         "folder": "OTA (alt, bis Okt. 2026)/TEC",
-        "status": "unklar",
-        "beschreibung": "Zwischenstand TEC-0035 (2026-04-04, nach v1.0, vor v1.3); nicht im Detail geprüft.",
+        "status": "nurDrive",
+        "beschreibung": "TEC-0035 v1.2 (Fußzeile v1.1), durch v1.3 überholt; nur hier KN-3.",
         "checkedAt": "2026-11-06",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261106-001.md"
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261106-001.md",
+        "hinweis": "v1.3 übernommen; bleibt liegen bis KN-Baumeister (Protokoll) bzw. KN-3 (docx v1.2) gesichert sind"
       }
     ],
     "movedFolders": [
