@@ -26,6 +26,7 @@ jobs:
         with:
           repository: thomaspeterkueper/kueper-knowledge-graph
           path: kg
+          token: ${{ secrets.KUEPER_BOT_TOKEN }}
       - run: python -m unittest discover -s tools/loop -p 'test_scion_science_handoff.py' -v
         env:
           KG_ROOT: ${{ github.workspace }}/kg
