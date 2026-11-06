@@ -3064,6 +3064,13 @@
         "status": "doppelt",
         "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0035-2026-DE.md (v1.3, alle Eingriffe) + OTA-FND-0025-2026-DE.md (KN-3.2, KN-Baumeister)",
         "checkedAt": "2026-11-06"
+      },
+      "1bV2M92YebF2agWxz-UnxN9jCvtOa91sv": {
+        "title": "OTA-TEC-0035-2026-DE (1).docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0035-2026-DE.md (v1.3 überholt v1.2; KN-3 als KN-I übernommen) + OTA-NAR-0005-2026-DE.md (Schreibregeln)",
+        "checkedAt": "2026-11-06"
       }
     },
     "onlyInDrive": [
@@ -3853,16 +3860,6 @@
         "hinweis": "Mit OTA-BIO-0004-2096-DE abgleichen; evtl. Konsistenz (Ort Olympus-Polis, Kasper Voss) prüfen.",
         "checkedAt": "2026-11-05",
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261105-001.md"
-      },
-      {
-        "fileId": "1bV2M92YebF2agWxz-UnxN9jCvtOa91sv",
-        "title": "OTA-TEC-0035-2026-DE (1).docx",
-        "folder": "OTA (alt, bis Okt. 2026)/TEC",
-        "status": "nurDrive",
-        "beschreibung": "TEC-0035 v1.2 (Fußzeile v1.1), durch v1.3 überholt; nur hier KN-3.",
-        "checkedAt": "2026-11-06",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261106-001.md",
-        "hinweis": "v1.3 übernommen; bleibt liegen, bis Thomas über KN-3 entscheidet"
       }
     ],
     "movedFolders": [
