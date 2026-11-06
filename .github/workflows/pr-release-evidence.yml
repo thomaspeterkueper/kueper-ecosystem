@@ -16,6 +16,8 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - name: Run offline evidence regression tests
+        run: python3 -m unittest discover -s tests -p 'test_release_evidence.py' -v
       - name: Check cross-repository read token
         env:
           KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
