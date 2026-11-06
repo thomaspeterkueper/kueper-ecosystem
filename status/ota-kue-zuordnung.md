@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-05 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-06 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -28,9 +28,9 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-FND-0024-2026-DE | DIE KETTE VOM HEXENTEICH | FHRW | KUE-SCI-0170 | offen |
 | OTA-LSC-0003-2026-DE | OTA-LSC-0003-2026-DE | FHRST | KUE-SCI-0175 | offen |
 | OTA-SCI-0017-2025-DE | Superionisches Goldhydrid als Resonanzanker — Eine theo | HRT | KUE-SCI-0183 | geprüft 2026-11-03 – KUE-Gegenstück vorhanden (KUE-SCI-0183 v0.2), AVI-Teil bleibt; Korrektur/Kürzung OTA-REQ-20261103-001 (wartet auf Thomas), EXT-OTA-KUE-20261103-001 |
-| OTA-SCI-0047-2026-DE | OTA-SCI-0047-2026-DE | HRT | KUE-SCI-0175 | offen |
+| OTA-SCI-0047-2026-DE | OTA-SCI-0047-2026-DE | HRT | KUE-SCI-0175 | geprüft 2026-11-06 – KUE-Gegenstück vorhanden; Humanstudien/Studienlage in KUE-SCI-0175 v0.2 übernommen, Halo/Λ bleiben; Korrektur/Kürzung OTA-REQ-20261106-002 (pEEG-Teil wartet auf Thomas) |
 | OTA-SCI-0064-2026-DE | Das Hautmikrobiom: Systemcharakter, Störbarkeit, Revers | RT | KUE-SCI-0064 (gleicher Titel – Dublette) | geprüft 2026-11-04 – KUE-Gegenstück vorhanden; KUE-SCI-0064 v1.1 korrigiert, OTA-SCI-0064 v1.2 als Brückendokument gekürzt (erledigt 2026-11-04) |
-| OTA-SCI-0080-2026-DE | OTA-SCI-0080-2026-DE | RST | KUE-SCI-0174 | offen |
+| OTA-SCI-0080-2026-DE | OTA-SCI-0080-2026-DE | RST | KUE-SCI-0174 | geprüft 2026-11-06 – KUE-Gegenstück vorhanden; Regionalwerte in KUE-SCI-0174 v0.2 übernommen, Werkanker bleiben; Korrektur/Kürzung OTA-REQ-20261106-001 |
 | OTA-SCI-0086-2026-DE | Reproduktion und Entwicklung von der Konzeption bis zum | HOFFENR | KUE-SCI-0187 | geprüft 2026-11-05 – KUE-Gegenstück vorhanden; fehlende Teile in KUE-SCI-0187 v0.2 übernommen, §19 bleibt; Kürzung OTA-REQ-20261105-002 |
 | OTA-SCI-0091-2026-DE | Supernovae Unite — 2.884 Typ-Ia-Supernovae und die Evid | HOFFENR | KUE-SCI-0191 | geprüft 2026-11-04 – KUE-Gegenstück vorhanden (KUE-SCI-0191 v0.2), AVI-Teil bleibt; Kürzung OTA-REQ-20261104-002 |
 | OTA-SCI-0105-2026-DE | Seltene b→sμμ-Zerfälle – CMS- und LHCb-Spannungen mit d | IOFFENR | KUE-SCI-0195 | offen |
