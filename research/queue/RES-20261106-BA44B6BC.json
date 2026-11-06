@@ -1,0 +1,39 @@
+{
+  "id": "RES-20261106-BA44B6BC",
+  "status": "queued",
+  "created": "2026-11-06T11:03:14+00:00",
+  "source_project": "avi-modell",
+  "source_repository": "thomaspeterkueper/avi-modell",
+  "source_path": "docs/observational-test-matrix-v0.1.md",
+  "source_ref": "62702bf97a4cc9f9a5acf231b5a5ecf48b87c66e",
+  "source_blob_sha": "503d4f20134d4d143f688ef09a1ffa15f6f59cb7",
+  "title": "OBS-07 GW-Standardsirenen: empirische Basis der Sichtlinienbeschleunigungs-Systematik und ihrer H0-Verschiebung",
+  "question": "Welche publizierten, unabhängigen Analysen quantifizieren den Effekt von Sichtlinienbeschleunigung, Pekuliargeschwindigkeiten und lokaler Materieumgebung auf die H0-Inferenz aus GW-Standardsirenen, und stützt die Literatur die im Repo übernommene Aussage, dass ein nicht modellierter Kanalzustand C die Leuchtkraftdistanz kohärent verschieben kann und mehr Ereignisse diesen Bias nicht ausmitteln? Welche Ereignisse (GW170817, GWTC-3, zukünftige ET/CE-Erwartungen) und welche veröffentlichten Pekuliargeschwindigkeits-/Dichtefeld-Rekonstruktionen erlauben eine quantitative Abschätzung, wie groß der Effekt im Vergleich zu Wellenform-, Kalibrations-, Lensing- und Populationssystematiken ist? Lässt sich daraus ein operationales, über C marginalisiertes P(H0|D,M) bauen, oder ist OBS-07 als negative Kalibrierung des State-Completeness-Manifests überzeichnet?",
+  "why_now": "Das State-Completeness-Manifest ist die operative Vorbedingung für alle künftigen Strong-History-Tests und führt OBS-07 ausdrücklich als C-Referenzfall. Bevor das Manifest auf reale Kanäle angewendet wird, muss die empirische Basis dieses Negativkalibrierungsfalls belastbar sein; andernfalls wird eine methodische Regel auf eine möglicherweise nicht reproduzierte Modellbehauptung gestützt.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "avi-theoretical-cosmology",
+  "claim_classes": [
+    "H",
+    "D",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "GW-Standardsirenen-H0-Messungen und publizierte Pekuliargeschwindigkeits-/Sichtlinienbeschleunigungs-Systematiken (GW170817, GWTC-3, ET/CE-Prognosen)",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.85,
+  "relevance_score": 0.785,
+  "scores": {
+    "project_relevance": 0.78,
+    "cross_project_reuse": 0.82,
+    "uncertainty": 0.72,
+    "evidence_potential": 0.82
+  },
+  "related_research_ids": [
+    "RES-20261007-DA67FFB1",
+    "RES-20261017-941F9332"
+  ],
+  "novelty_reason": "DA67FFB1 behandelt TRGB und die Rekonstruktion des lokalen Dichte-/Pekuliargeschwindigkeitsfelds, 941F9332 die eichinvariante Definition von ≡_std. Keines prüft den davon verschiedenen GW-Standardsirenen-Kanal OBS-07 und die dort behauptete, nicht ausmittelnde Sichtlinienbeschleunigungs-Systematik. Die neue Frage ist kanal- und systematikspezifisch und testet die negative Kalibrierung des State-Completeness-Manifests, nicht die allgemeine Rekonstruktionsunsicherheit.",
+  "fingerprint": "ba44b6bc42840148"
+}
