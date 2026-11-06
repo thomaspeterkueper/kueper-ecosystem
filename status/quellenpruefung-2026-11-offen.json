@@ -1,0 +1,2237 @@
+[
+ {
+  "sig": "OTA-LSC-0001-2048-DE",
+  "angabe": "Canolty & Knight 2010, TiCS",
+  "original": "[2] Canolty & Knight (2010): \"Oscillatory Phase Coupling\", Trends Cogn. Sci.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Canolty R.T. & Knight R.T. (2010) The functional role of cross-frequency coupling. Trends Cogn. Sci. 14(11), 506–515",
+  "pruefquelle": "Eigenwissen (WebSearch-Budget erschöpft, nicht online verifiziert)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-LSC-0001-2048-DE.md"
+ },
+ {
+  "sig": "OTA-LSC-0001-2048-DE",
+  "angabe": "Gelman & Loken 2014, American Scientist",
+  "original": "[3] Gelman & Loken (2014): \"Garden of forking paths\", American Scientist",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Gelman A. & Loken E. (2014) The statistical crisis in science. American Scientist 102(6), 460–465 (\"garden of forking paths\" ist Titel des Working Papers 2013)",
+  "pruefquelle": "Eigenwissen (WebSearch-Budget erschöpft, nicht online verifiziert)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-LSC-0001-2048-DE.md"
+ },
+ {
+  "sig": "OTA-LSC-0003-2026-DE",
+  "angabe": "Pospíšil 2014, JPPB 139, 1",
+  "original": "Pospíšil, P. (2014): Ultra-weak photon emission from living systems — from mechanism to application. Journal of Photochemistry and Photobiology B 139, 1.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Vermutung: Editorial des Themenhefts JPPB 139 (2014); oder gemeint Pospíšil P., Prasad A., Rác M. (2014) Role of reactive oxygen species in ultra-weak photon emission in biological systems. JPPB 139, 11–23",
+  "pruefquelle": "Suche: JPPB 139 2014 editorial ultra-weak photon emission Pospíšil; Titelsuche",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-LSC-0003-2026-DE.md"
+ },
+ {
+  "sig": "OTA-OBS-0002-2026-DE",
+  "angabe": "Lombard 2020, tip of the iceberg, J Archaeol Sci",
+  "original": "Lombard, M. (2020). \"The tip of the iceberg: Challenges in recognizing early poisoned projectiles\". Journal of Archaeological Science.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Vermutung: Lombard M. (2020) The tip cross-sectional areas of poisoned bone arrowheads from southern Africa. J Archaeol Sci Reports 33, 102477 (nur eine Suche möglich)",
+  "pruefquelle": "Suche: Lombard 2020 \"tip of the iceberg\" poisoned projectiles",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-OBS-0002-2026-DE.md"
+ },
+ {
+  "sig": "OTA-OBS-0004-2026-DE",
+  "angabe": "Clare et al. 2019, Building the New Göbekli Tepe, Anatolian Metal IX",
+  "original": "Clare, L. et al. (2019), „Building the New Göbekli Tepe\", Anatolian Metal IX, 193–212.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Vermutung: Clare L. (2020) Göbekli Tepe, Turkey. A brief summary of research at a new World Heritage Site (2015–2019). e-Forschungsberichte des DAI 2020/2, 1–13 (Anatolian Metal ist eine Montan-/Metallurgie-Reihe)",
+  "pruefquelle": "Suche: Clare Göbekli Tepe Anatolian Metal; Suche: \"Anatolian Metal IX\" contents; https://publications.dainst.org/journals/efb/article/view/2596",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-OBS-0004-2026-DE.md"
+ },
+ {
+  "sig": "OTA-OBS-0007-1700BCE-DE",
+  "angabe": "Torrence & Cherry 1986 (im Text)",
+  "original": "Pernier 1908; Godart & Olivier 1996; Chadwick 1973; Torrence & Cherry 1986",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "keine Phaistos-bezogene Arbeit Torrence & Cherry 1986 nachweisbar; fehlt im Literaturverzeichnis",
+  "pruefquelle": "Suche: Torrence Cherry 1986 Phaistos disc Minoan",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-OBS-0007-1700BCE-DE.md"
+ },
+ {
+  "sig": "OTA-OBS-0007-1700BCE-DE",
+  "angabe": "Eisenberg 2008, Minerva 19",
+  "original": "Eisenberg, J. (2008): The Phaistos Disk: One Hundred Year Old Hoax? Minerva 19(1), 9--24.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Eisenberg J.M. (2008) The Phaistos Disk: A one hundred-year-old hoax? Minerva 19(4) (Juli/August 2008), 9–24",
+  "pruefquelle": "https://ciphermysteries.com/2008/07/16/phaistos-disc-hoax",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-OBS-0007-1700BCE-DE.md"
+ },
+ {
+  "sig": "OTA-OBS-0007-1700BCE-DE",
+  "angabe": "Papakitsos & Kenanidis 2013, Protolinear vs. Linear B",
+  "original": "Papakitsos, H. & Kenanidis, I. (2013): A Comparison between the Cretan Protolinear Script and the Linear B. Journal of Archaeology and Fine Arts.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Vermutung: Kenanidis I. & Papakitsos E.C. (2013) Yet another suggestion about the origins of the Sumerian language. International Journal of Linguistics 5(5), 30–44; Vorname ist Evangelos, nicht Harold",
+  "pruefquelle": "Suche: Papakitsos Kenanidis Cretan Protolinear; https://saspublishers.com/article/12728/download",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-OBS-0007-1700BCE-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0007-2026-Cuancoa",
+  "angabe": "Ramirez Reyes et al. 2025, A&A 695 A26",
+  "original": "Ramirez Reyes, R. et al. (2025). A closer look at LTT 9779b: The ESPRESSO endeavour. Astronomy & Astrophysics, 695, A26.",
+  "bewertung": "ungeprueft",
+  "korrekt": null,
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0007-2026-Cuancoa.md"
+ },
+ {
+  "sig": "OTA-SCI-0007-2026-Cuancoa",
+  "angabe": "Radica et al. 2024, ApJL 962 L20",
+  "original": "Radica, M. et al. (2024). Atmospheric analysis of LTT 9779 b with JWST NIRISS. The Astrophysical Journal Letters, 962, L20.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Radica M. et al. (2024) Muted features in the JWST NIRISS transmission spectrum of hot Neptune LTT 9779b. ApJL 962, L20",
+  "pruefquelle": "Eigenwissen (WebSearch-Budget erschöpft, nicht online verifiziert)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0007-2026-Cuancoa.md"
+ },
+ {
+  "sig": "OTA-SCI-0007-2026-Cuancoa",
+  "angabe": "Fernández Fernández et al. 2024, MNRAS 527",
+  "original": "Fernandez Fernandez, J. et al. (2024). The high-energy environment of LTT 9779. MNRAS, 527, 911.",
+  "bewertung": "ungeprueft",
+  "korrekt": null,
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0007-2026-Cuancoa.md"
+ },
+ {
+  "sig": "OTA-SCI-0015-2025-DE",
+  "angabe": "Wever 1974, Chronobiologia 1(1)",
+  "original": "Wever, R. (1974). \"Influence of electric fields on some parameters of circadian rhythms in man.\" Chronobiologia, 1(1), 26-27.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Wever R. (1971) Influence of electric fields on some parameters of circadian rhythms in man. In: Menaker M. (ed.) Biochronometry. Washington: National Academy of Sciences, 117–133",
+  "pruefquelle": "https://clocktool.org/index.php/clock-modules/clock-references/item/influence-of-electric-fields-on-some-parameters-of-circadian-rhythms-in-man-7.html",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0015-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0015-2025-DE",
+  "angabe": "Basner et al. 2021, Sci Rep 11:10144",
+  "original": "Basner, M. et al. (2021). \"Cognition aboard the International Space Station.\" Scientific Reports, 11, 10144.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Vermutung: verwechselt mit Arbeiten zur Cognition Test Battery (Basner et al. 2015, Aerosp Med Hum Perform 86(11), 942–952) bzw. Basner et al. 2021 Front Physiol 12, 643854 (Bettruhe)",
+  "pruefquelle": "Suche: Basner 2021 Cognition ISS Scientific Reports 10144; Suche: \"Scientific Reports\" 2021 11 10144",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0015-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0018-60000BCE-DE",
+  "angabe": "Oliveira et al. 2012, Current Biology",
+  "original": "Oliveira, A.G. et al. (2012). \"Circadian control sheds light on fungal bioluminescence\". Current Biology.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Oliveira A.G. et al. (2015) Circadian control sheds light on fungal bioluminescence. Current Biology 25(7), 964–968",
+  "pruefquelle": "Eigenwissen (WebSearch-Budget erschöpft, nicht online verifiziert)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0018-60000BCE-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0019-2025-DE",
+  "angabe": "Univ. Cambridge Pressemitteilung Nov. 2025",
+  "original": "University of Cambridge, Department of Psychiatry (26. November 2025). \"Scientists identify five ages of the human brain over lifetime\".",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Seite nennt 27. November 2025 und Titel \"Scientists identify five ages of the human brain over a lifetime\"",
+  "pruefquelle": "https://www.psychiatry.cam.ac.uk/news/scientists-identify-five-ages-human-brain-over-lifetime",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0019-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0019-2025-DE",
+  "angabe": "MDR, NBC, El País (Nov. 2025)",
+  "original": "MDR WISSEN (25. November 2025) …; NBC News (26. November 2025) …; El Pa­s English Edition (25. November 2025) …",
+  "bewertung": "ungeprueft",
+  "korrekt": "Hinweis: \"El Pa­s\" Zeichenfehler (El País)",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0019-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "Pressemeldung: China's Mars Rover Discovers Longer Water Existence on Red Planet. Chinese Acade",
+  "original": "1. China's Mars Rover Discovers Longer Water Existence on Red Planet. Chinese Academy of Sciences (2026).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Medienbericht ohne Autor/URL; Primärstudie nicht genannt",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "Pressemeldung: China's Zhurong Rover reveals Mars held liquid water longer than previously beli",
+  "original": "2. China's Zhurong Rover reveals Mars held liquid water longer than previously believed. Anadolu Agency (2025).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Medienbericht ohne Autor/URL; Primärstudie nicht genannt",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "Pressemeldung: Chinese rover finds evidence that water was present on Mars more recently than t",
+  "original": "4. Chinese rover finds evidence that water was present on Mars more recently than thought. Phys.org (2022).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Medienbericht ohne Autor/URL; Primärstudie nicht genannt",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "Pressemeldung: Significant water activity existed on surface of Mars until late Amazonian perio",
+  "original": "5. Significant water activity existed on surface of Mars until late Amazonian period. Global Times (2026).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Medienbericht ohne Autor/URL; Primärstudie nicht genannt",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "Pressemeldung: Huge ice dome in Greenland vanished 7000 years ago. Live Science (2026).",
+  "original": "6. Huge ice dome in Greenland vanished 7000 years ago. Live Science (2026).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Medienbericht ohne Autor/URL; Primärstudie nicht genannt",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "Pressemeldung: Greenland's Prudhoe Dome Melted 7000 Years Ago. Discover Magazine (2026).",
+  "original": "7. Greenland's Prudhoe Dome Melted 7000 Years Ago. Discover Magazine (2026).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Medienbericht ohne Autor/URL; Primärstudie nicht genannt",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "Pressemeldung: Greenland's Prudhoe Dome melted during Holocene heat. Nature Asia (2026).",
+  "original": "8. Greenland's Prudhoe Dome melted during Holocene heat. Nature Asia (2026).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Medienbericht ohne Autor/URL; Primärstudie nicht genannt",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "Pressemeldung: Greenland's Prudhoe Dome ice cap was completely gone. Phys.org (2026).",
+  "original": "9. Greenland's Prudhoe Dome ice cap was completely gone. Phys.org (2026).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Medienbericht ohne Autor/URL; Primärstudie nicht genannt",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "Pressemeldung: Northern Greenland ice dome melted before and could melt again. New Scientist (2",
+  "original": "10. Northern Greenland ice dome melted before and could melt again. New Scientist (2026).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Medienbericht ohne Autor/URL; Primärstudie nicht genannt",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "Pressemeldung: Evidence of Ancient Beaches Shows Us a Mars With Large, Ice-Free Oceans. Discove",
+  "original": "17. Evidence of Ancient Beaches Shows Us a Mars With Large, Ice-Free Oceans. Discover Magazine (2025).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Medienbericht ohne Autor/URL; Primärstudie nicht genannt",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "Holocene temperature conundrum, PNAS 2020",
+  "original": "13. Global temperature modes shed light on the Holocene temperature conundrum. PNAS (2020).",
+  "bewertung": "ungeprueft",
+  "korrekt": "ohne Autor; Zeitschrift/Jahr nicht verifiziert",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "GRL 2017, late Hesperian–Amazonian habitability",
+  "original": "15. Persistent or repeated surface habitability on Mars during late Hesperian to early Amazonian. GRL (2017).",
+  "bewertung": "ungeprueft",
+  "korrekt": "ohne Autor",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0020-2026-DE",
+  "angabe": "Carbonate formation … habitability on Mars, Nat Commun 2024",
+  "original": "16. Carbonate formation and fluctuating habitability on Mars. Nature Communications (2024).",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutlich Kite E.S. et al. (2025) Carbonate formation and fluctuating habitability on Mars. Nature 643",
+  "pruefquelle": "Eigenwissen (WebSearch-Budget erschöpft, nicht online verifiziert)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0020-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0023-2025-DE",
+  "angabe": "Rumbeiha et al. 2016, H2S-Neuropathologie",
+  "original": "Rumbeiha WK, et al. (2016). \"Acute hydrogen sulfide–induced neuropathology and neurological sequelae.\" Neurol Int 8(2):6228.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Rumbeiha W. et al. (2016) Acute hydrogen sulfide-induced neuropathology and neurological sequelae: challenges for translational neuroprotective research. Ann N Y Acad Sci 1378(1), 5–16",
+  "pruefquelle": "Eigenwissen (WebSearch-Budget erschöpft, nicht online verifiziert)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0023-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0023-2025-DE",
+  "angabe": "Anantharam et al. 2017, Toxicology",
+  "original": "Anantharam et al. (2017). \"Hydrogen sulfide neurotoxicity mechanisms.\" Toxicology.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Vermutung: Anantharam P. et al. (2017) Characterizing a mouse model for evaluation of countermeasures against hydrogen sulfide-induced neurotoxicity and neurological sequelae. Ann N Y Acad Sci 1400(1), 46–64",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0023-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0023-2025-DE",
+  "angabe": "Hirsch 2002, H2S ohne Bewusstseinsverlust",
+  "original": "Hirsch AR (2002). \"Hydrogen sulfide exposure without loss of consciousness: chronic effects in four cases.\" Hum Exp Toxicol 21(1):35–41. / Quellennachweis: Archives of Environmental Health.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Hirsch A.R. (2002) Hydrogen sulfide exposure without loss of consciousness: chronic effects in four cases. Toxicology and Industrial Health 18(2), 51–61 (zwei widersprüchliche Zeitschriftenangaben im Dokument)",
+  "pruefquelle": "Eigenwissen (WebSearch-Budget erschöpft, nicht online verifiziert)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0023-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0023-2025-DE",
+  "angabe": "Yao et al. 2015, Environ Res 137",
+  "original": "Yao G, et al. (2015). \"Chronic SO₂ inhalation above environmental standard impairs neuronal behavior and represses glutamate receptor gene expression.\" Environ Res 137:85–93.",
+  "bewertung": "ungeprueft",
+  "korrekt": null,
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0023-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0023-2025-DE",
+  "angabe": "Sang & Yun 2011, Toxicol Sci 124(2)",
+  "original": "Sang N, Yun Y (2011). \"SO₂-induced neurotoxicity is mediated by cyclooxygenases-2-derived prostaglandin E₂.\" Toxicol Sci 124(2):400–413.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Autorenreihenfolge evtl. Yun Y. et al.; nicht verifiziert",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0023-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0023-2025-DE",
+  "angabe": "Yun et al. 2013, Chemosphere 93(10)",
+  "original": "Yun Y, et al. (2013). \"SO₂ inhalation causes synaptic injury in rat hippocampus via its derivatives in vivo.\" Chemosphere 93(10):2426–2432.",
+  "bewertung": "ungeprueft",
+  "korrekt": null,
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0023-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0023-2025-DE",
+  "angabe": "Zare Mehrjerdi et al. 2020 (bzw. 2018), J Basic Clin Physiol Pharmacol",
+  "original": "Zare Mehrjerdi F, et al. (2020). \"Effect of endogenous sulfur dioxide on spatial learning ...\" J Basic Clin Physiol Pharmacol 31(3):20190227. / Quellennachweis: Zare Mehrjerdi et al. (2018) … Journal of Basic and Clinical Physiology.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Dokument-intern widersprüchlich (2020 vs. 2018); Angabe 2020, 31(3), 20190227 ist plausibel (Zeitschrift: J Basic Clin Physiol Pharmacol); online nicht verifiziert",
+  "pruefquelle": "Eigenwissen (WebSearch-Budget erschöpft, nicht online verifiziert)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0023-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0023-2025-DE",
+  "angabe": "Jin et al. 2013, Physiol Res 62 Suppl 1",
+  "original": "Jin HF, et al. (2013). \"Sulfur dioxide reduces hippocampal cell death ...\" Physiol Res 62(Suppl 1):S83–S93. / Quellennachweis: *PMC*.",
+  "bewertung": "ungeprueft",
+  "korrekt": "\"PMC\" im Quellennachweis ist keine Zeitschrift",
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0023-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0023-2025-DE",
+  "angabe": "Wang et al. 2015, Eur J Pharmacol 764",
+  "original": "Wang XB, et al. (2015). \"Signal pathways involved in the biological effects of sulfur dioxide.\" Eur J Pharmacol 764:94–99.",
+  "bewertung": "ungeprueft",
+  "korrekt": null,
+  "pruefquelle": "Suchbudget erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0023-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0030-2090-DE",
+  "angabe": "Pedalino et al., Nature 634, 340–344 (2026)",
+  "original": "Pedalino et al., Nature 634, 340-344 (2026)",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Pedalino, S. et al.: Probing quantum mechanics with nanoparticle matter-wave interferometry. Nature (online Jan. 2026), DOI 10.1038/s41586-025-09917-9. Band 634 gehört zu Okt. 2024 – Band/Seiten passen nicht; korrekte Band-/Seitenzahl nicht verifiziert",
+  "pruefquelle": "https://www.brightsurf.com/news/LQ403Y58/metal-clumps-in-quantum-state-vienna-research-team-breaks-records.html",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0030-2090-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0026-2025-DE",
+  "angabe": "Reaction Engines 2019, HTX Ground Test Campaign Final Report",
+  "original": "Reaction Engines Ltd., \"HTX Ground Test Campaign Final Report\", 2019",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Kein öffentlicher Abschlussbericht nachweisbar; belegt sind nur Pressemitteilungen zum HTX-Test (Mach 5, Colorado, Okt. 2019), z. B. UK Gov/Reaction Engines 22.10.2019 „Precooler test hits Mach 5“",
+  "pruefquelle": "https://www.gov.uk/government/news/reaction-engines-precooler-test-hits-mach-5",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0026-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0026-2025-DE",
+  "angabe": "Webber et al. 2013, Heat Exchanger Development for the SABRE Engine, AIAA Space Planes Conf.",
+  "original": "Webber, H., et al., \"Heat Exchanger Development for the SABRE Engine\", *AIAA Space Planes and Hypersonic Systems Conference*, 2013",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Vermutung: Webber, H., Feast, S., Bond, A. (2009): Heat Exchanger Design in Combined Cycle Engines. JBIS 62, 122–130 (nicht verifiziert); die AIAA-Konferenz 2013 hieß zudem „Int. Space Planes and Hypersonic Systems and Technologies Conference“ (nicht mit diesem Titel nachweisbar)",
+  "pruefquelle": "Suche: Webber heat exchanger SABRE AIAA 2013",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0026-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0026-2048-DE",
+  "angabe": "Chao et al. 2020, Variations in LOD and AAM, Surv. Geophys.",
+  "original": "\\[4\\] Chao et al. (2020): \\\"Variations in LOD and Atmospheric\n    Angular Momentum\\\", Surv. Geophys.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Keine Arbeit dieses Titels nachweisbar; Vermutung: eine der LOD-Arbeiten von B.F. Chao in Surveys in Geophysics (z. B. 2024, DOI 10.1007/s10712-024-09858-4) oder klassische AAM-LOD-Literatur",
+  "pruefquelle": "Suche: Chao 2020 Surveys in Geophysics LOD AAM (2 Suchen)",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0026-2048-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0027-2025-DE",
+  "angabe": "NASA Glenn 2023, Graphene-Enhanced UHTC, NASA/TM-2023-20230012345",
+  "original": "NASA Glenn Research Center, \"Graphene-Enhanced Ultra-High Temperature Ceramics\", NASA/TM-2023-20230012345, 2023",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Nicht in NTRS nachweisbar; Nummer „…12345“ wirkt fingiert – keine Vermutung möglich (gilt auch für Eintrag 7, gleiche Nummer)",
+  "pruefquelle": "Suche: \"Graphene-Enhanced Ultra-High Temperature Ceramics\" NASA Glenn",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0027-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0027-2025-DE",
+  "angabe": "Zhang et al. 2022, Graphene/SiC Composites, Advanced Materials 34",
+  "original": "Zhang, Y., et al., \"Graphene/Silicon Carbide Composites: Synthesis and Properties\", *Advanced Materials*, Vol. 34, 2022",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Kein Nachweis einer Arbeit dieses Titels in Adv. Mater. 34 (2022)",
+  "pruefquelle": "Suche: Zhang 2022 Advanced Materials graphene silicon carbide composites",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0027-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0027-2025-DE",
+  "angabe": "Hu et al. 2022, Thermal Conductivity of Graphene-Ceramic Nanocomposites, JACerS 105",
+  "original": "Hu, C., et al., \"Thermal Conductivity of Graphene-Ceramic Nanocomposites\", *Journal of the American Ceramic Society*, Vol. 105, 2022",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Kein Nachweis; thematisch ähnlich z. B. „The temperature-dependent thermal conductivity of pressure-sintered graphene-ceramic matrix composites“ (BIT) – nur Vermutung",
+  "pruefquelle": "Suche: Hu 2022 JACerS thermal conductivity graphene ceramic nanocomposites",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0027-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0028-2025-DE",
+  "angabe": "Brophy et al. 2007, DAWN Ion Propulsion System, AIAA Space Conference",
+  "original": "Brophy, J., et al., \"DAWN Ion Propulsion System\", *AIAA Space Conference*, 2007",
+  "bewertung": "ungeprueft",
+  "korrekt": "Vermutung (aus Vorwissen, nicht verifiziert): Brophy, J.R. et al. „The Dawn Ion Propulsion System“, AIAA 2006-4319 (Joint Propulsion Conf. 2006) bzw. Space Science Reviews 163 (2011) 251–261",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0028-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0028-2025-DE",
+  "angabe": "NASA NIAC 2019, Miniaturized Electrostatic Thrusters for CubeSats, Phase I",
+  "original": "NASA NIAC, \"Miniaturized Electrostatic Thrusters for CubeSats\", Phase I Report, 2019",
+  "bewertung": "ungeprueft",
+  "korrekt": "Aus Vorwissen kein NIAC-Projekt dieses Titels bekannt – wahrscheinlich nicht existent, aber nicht per Suche geprüft",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0028-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0029-2025-DE",
+  "angabe": "Dresia et al., MDO of Reusable Launch Vehicles…, JSR, DOI 10.2514/1.A34944",
+  "original": "Dresia et al., *Multidisciplinary Design Optimization of Reusable Launch Vehicles for Different Propellants and Objectives*, Journal of Spacecraft and Rockets, DOI 10.2514/1.A34944",
+  "bewertung": "ungeprueft",
+  "korrekt": "Titel/Autor (K. Dresia, DLR) plausibel (JSR 2021); DOI und Jahr nicht verifiziert, Jahr fehlt im Dokument",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0029-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0029-2025-DE",
+  "angabe": "Spaceflight Now 25.11.2024, B1080 Turnaround 13 d 12 h 44 min",
+  "original": "Spaceflight Now, 25.11.2024 — Falcon-9-Booster B1080: 13 d 12 h 44 min Turnaround.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Plausibel (Rekord-Turnaround B1080 Ende Nov. 2024), Artikeltitel fehlt; nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0029-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0029-2025-DE",
+  "angabe": "NASA NTRS, Overview of STS ground operations / orbiter turnaround STS-1 bis STS-7",
+  "original": "NASA NTRS, *Overview of STS ground operations/orbiter turnaround STS-1 through STS-7* — Verbesserung bis 60 Tage bei STS-7.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Autor, Jahr, NTRS-ID fehlen; Titel wirkt paraphrasiert – nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0029-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0030-2025-DE",
+  "angabe": "Pressequellen UNIGE, Grenzwissenschaft Aktuell, scinexx (2025)",
+  "original": "University of Geneva (2025): \"Eine neue Supererde in erreichbarer Nähe?\"",
+  "bewertung": "ungeprueft",
+  "korrekt": "Pressemeldungen mit Titel, plausibel (UNIGE-Meldung Jan. 2025 „A new super-Earth within reach?“); nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0030-2025-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0031-2024-DE",
+  "angabe": "Dholakia et al. 2024, Gliese-12b … Ideal for Atmospheric Transmission Spectroscopy, AJ (submitted)",
+  "original": "Dholakia, S., et al. (2024): \"Gliese-12b: A Temperate Earth-sized Planet at 12 pc Ideal for Atmospheric Transmission Spectroscopy.\" *The Astronomical Journal* (submitted).",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutung aus Vorwissen (nicht verifiziert): Titel gehört zu Kuzuhara, M. et al. (2024), ApJL 967, L21; Dholakia, S., Palethorpe, L. et al. (2024) erschien in MNRAS 531, 1276 („Gliese 12 b, a temperate Earth-sized planet at 12 parsecs discovered with TESS and CHEOPS“)",
+  "pruefquelle": "Vorwissen – Suchkontingent erschöpft",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0031-2024-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0031-2024-DE",
+  "angabe": "Palethorpe et al. 2024, Gliese-12b …, MNRAS (accepted)",
+  "original": "Palethorpe, L., et al. (2024): \"Gliese-12b, a Temperate Earth-sized Exoplanet at 12 parsecs Ideal for Transmission Spectroscopy.\" *Monthly Notices of the Royal Astronomical Society* (accepted).",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutung: Dholakia, S., Palethorpe, L. et al. (2024): Gliese 12 b, a temperate Earth-sized planet at 12 parsecs discovered with TESS and CHEOPS. MNRAS 531(1), 1276–1293 (Erstautor Dholakia; veröffentlicht, nicht nur „accepted“)",
+  "pruefquelle": "Vorwissen – Suchkontingent erschöpft",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0031-2024-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0031-2024-DE",
+  "angabe": "NASA Goddard 2024, TESS Discovers Venus-Sized Exoplanet Gliese-12b",
+  "original": "NASA Goddard (2024): \"NASA's TESS Discovers Venus-Sized Exoplanet Gliese-12b\"",
+  "bewertung": "ungeprueft",
+  "korrekt": "Vermutung: NASA-Meldung 23.05.2024 „NASA's TESS Finds Intriguing World Sized Between Earth, Venus“",
+  "pruefquelle": "Vorwissen – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0031-2024-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0031-2024-DE",
+  "angabe": "ESA 2024 CHEOPS Confirms Gliese-12b Transit; scinexx 2024",
+  "original": "ESA (2024): \"CHEOPS Confirms Gliese-12b Transit\"",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0031-2024-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0032-2024-DE",
+  "angabe": "Mahadevan et al. 2024, Temperate Super-Earth in HZ of GJ 251, AJ, DOI 10.3847/1538-3881/ae0e20",
+  "original": "Mahadevan, S., et al. (2024): \"A Temperate Super-Earth in the Habitable Zone of GJ 251.\" *The Astronomical Journal*, DOI: 10.3847/1538-3881/ae0e20",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutung aus Vorwissen: Veröffentlichung Okt. 2025 (AJ 170; DOI-Präfix „ae…“ entspricht AAS-Artikeln 2025), Titel ggf. abweichend; Pressemeldungen Penn State/UCI ebenfalls 2025 – nicht verifiziert",
+  "pruefquelle": "Vorwissen – Suchkontingent erschöpft",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0032-2024-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0032-2024-DE",
+  "angabe": "Pressequellen Penn State, Grenzwissenschaft Aktuell, UC Irvine (2024)",
+  "original": "Penn State University (2024): \"Habitable-Zone Planet Finder discovers new super-Earth\"",
+  "bewertung": "ungeprueft",
+  "korrekt": "Vermutlich 2025 statt 2024 (wie Primärquelle); nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0032-2024-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0034-2026-DE",
+  "angabe": "Naidu et al. 2026, MoM-z14 …, arXiv 2505.11263",
+  "original": "Naidu, R., et al. (2026): \"MoM-z14: A Luminous Galaxy at z = 14.44 Challenges Models of Early Galaxy Formation.\" *arXiv-Preprint*. DOI: 10.48550/arXiv.2505.11263",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutung aus Vorwissen: Naidu, R.P. et al. (2025): A Cosmic Miracle: A Remarkably Luminous Galaxy at z_spec = 14.44 Confirmed with JWST. arXiv:2505.11263 (Preprint Mai 2025) – nicht verifiziert",
+  "pruefquelle": "Vorwissen – Suchkontingent erschöpft",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0034-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0034-2026-DE",
+  "angabe": "NASA/STScI 2026 Webb Discovers Most Distant Galaxy Yet; scinexx 2026",
+  "original": "NASA / Space Telescope Science Institute (2026): \"Webb Discovers Most Distant Galaxy Yet\"",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0034-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0035-2026-DE",
+  "angabe": "Leist et al. 2025, Stationary Atoms in Liquid Metals…, ACS Nano 19(50), 42002–42012",
+  "original": "Leist, C., Ghaderzadeh, S., Kohlrausch, E.C., … Khlobystov, A.N. (2025): \"Stationary Atoms in Liquid Metals and Their Role in Solidification Mechanisms.\" *ACS Nano* 19(50):42002–42012. DOI: 10.1021/acsnano.5c08201",
+  "bewertung": "ungeprueft",
+  "korrekt": "Plausibel (Nottingham/Ulm, Dez. 2025); nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0035-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0035-2026-DE",
+  "angabe": "Pressequellen ScienceDaily 11.12.2025, Uni Ulm, Physics World, Graphene-Info, Phys.org (2025)",
+  "original": "University of Nottingham (2025): \"Researchers catch atoms standing still inside molten metal.\" ScienceDaily, 11. Dezember 2025.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0035-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0037-2026-DE",
+  "angabe": "STAR Collaboration, Nature 2026, Spin-Korrelation/QCD-Confinement, DOI 10.1038/s41586-025-09920-0, arXiv:2506.05499",
+  "original": "STAR Collaboration: „Probing QCD Confinement with Spin Entanglement\" /\n„Measuring spin correlation between quarks during QCD confinement\",\n*Nature* (2026). DOI: 10.1038/s41586-025-09920-0. arXiv: 2506.05499.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Plausibel; zwei Titelvarianten angegeben – nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0037-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0037-2026-DE",
+  "angabe": "BNL Press Release 04.02.2026 Glimpse into the Quantum Vacuum",
+  "original": "Brookhaven National Laboratory Press Release: „Scientists Capture a\nGlimpse into the Quantum Vacuum\" (4. Februar 2026).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0037-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0037-2026-DE",
+  "angabe": "CMS-PAS-HIN-26-002 (2026) Λ-Spin-Korrelationen",
+  "original": "CMS Collaboration: „Measurements of Λ hyperon spin correlations in\nproton-proton and proton-lead collisions\", CMS-PAS-HIN-26-002 (17. Mai\n2026)",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0037-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0038-2026-EN",
+  "angabe": "[24] Ambjørn, Jurkiewicz, Loll 2012, CDT…, Found. Phys. 42, 341",
+  "original": "[24] Ambj¸rn, J., Jurkiewicz, J. & Loll, R. (2012). \"Causal dynamical triangulations and the quest for quantum gravity.\" *Found. Phys.* 42(2): 341—“370.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Name kodierungsbeschädigt (Ambjørn – sicher); Fundstelle zweifelhaft: Arbeit erschien als Buchkapitel in „Foundations of Space and Time“ (CUP 2012), arXiv:1004.0352 – Found. Phys. 42 nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0038-2026-EN.md"
+ },
+ {
+  "sig": "OTA-SCI-0038-2026-EN",
+  "angabe": "[11] Menezes, Yokomizo et al. 2025, Nonlocal correlations … LQG, arXiv:2506.19729",
+  "original": "[11] Menezes, G., Yokomizo, N. et al. (2025). \"Nonlocal correlations for semiclassical states in loop quantum gravity.\" *arXiv:2506.19729* [gr-qc].",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0038-2026-EN.md"
+ },
+ {
+  "sig": "OTA-SCI-0038-2026-EN",
+  "angabe": "[16] Chen & Wang 2014, Vector field models of dark energy, PRD",
+  "original": "[16] Chen, G. & Wang, B. (2014). \"Vector field models of dark energy.\" *Phys. Rev. D*.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Ohne Band/Seite; aus Vorwissen keine solche Arbeit bekannt – wahrscheinlich fehlerhaft/fiktiv, nicht per Suche geprüft",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0038-2026-EN.md"
+ },
+ {
+  "sig": "OTA-SCI-0038-2026-EN",
+  "angabe": "[22] Asante, Dittrich, Padua-Argüelles 2024, Effective spinfoam models…, arXiv:2407.19036",
+  "original": "[22] Asante, S.K., Dittrich, B. & Padua-Argüelles, J. (2024). \"Effective spinfoam models for Lorentzian quantum gravity.\" *arXiv:2407.19036* [gr-qc].",
+  "bewertung": "ungeprueft",
+  "korrekt": "Vermutung: Arbeit dieses Titels erschien 2021 (Class. Quantum Grav. 38, 195002; arXiv:2104.00485); Jahr/arXiv-Nr. vermutlich falsch – nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0038-2026-EN.md"
+ },
+ {
+  "sig": "OTA-SCI-0038-2026-EN",
+  "angabe": "[30] Decca et al. 2007, PRD 75, 077101",
+  "original": "[30] Decca, R.S. et al. (2007). \"Tests of new physics from precise Casimir pressure measurements.\" *Phys. Rev. D* 75(7): 077101.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutung: Originaltitel „Tests of new physics from precise measurements of the Casimir pressure between two gold-coated plates“ (Fundstelle stimmt) – nicht verifiziert",
+  "pruefquelle": "Vorwissen – ungeprüft – Suchkontingent erschöpft",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0038-2026-EN.md"
+ },
+ {
+  "sig": "OTA-SCI-0038-2026-EN",
+  "angabe": "[32] Graham et al. 2013, Dark matter direct detection with accelerometers, PRD 88, 035023",
+  "original": "[32] Graham, P.W. et al. (2013). \"Dark matter direct detection with accelerometers.\" *Phys. Rev. D* 88(3): 035023.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutung: Graham, P.W., Kaplan, D.E., Mardon, J., Rajendran, S., Terrano, W.A. (2016): Dark matter direct detection with accelerometers. PRD 93, 075029 – nicht verifiziert",
+  "pruefquelle": "Vorwissen – ungeprüft – Suchkontingent erschöpft",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0038-2026-EN.md"
+ },
+ {
+  "sig": "OTA-SCI-0038-2026-EN",
+  "angabe": "[37b] Marchetti & Oriti 2022, Effective relational cosmological dynamics, JHEP 2022: 025",
+  "original": "See also: Marchetti, L. & Oriti, D. (2022). \"Effective relational cosmological dynamics from quantum gravity.\" *JHEP* 2022: 025.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutung: JHEP 05 (2021) 025 (Jahr 2021) – nicht verifiziert",
+  "pruefquelle": "Vorwissen – ungeprüft – Suchkontingent erschöpft",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0038-2026-EN.md"
+ },
+ {
+  "sig": "OTA-SCI-0038-2026-EN",
+  "angabe": "[40] Barvinsky 2015, Nonlocal effective gravitational action…, Phys. Rep. 587",
+  "original": "[40] Barvinsky, A.O. (2015). \"Nonlocal effective gravitational action and initial state of the universe.\" *Phys. Rep.* 587: 1—“30.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert; Titel/Fundstelle aus Vorwissen nicht bestätigbar",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0038-2026-EN.md"
+ },
+ {
+  "sig": "OTA-SCI-0038-2026-EN",
+  "angabe": "[43] LVK Collaboration 2025, Observational Science White Paper, LIGO-T2400403",
+  "original": "[43] LIGO-Virgo-KAGRA Collaboration (2025). \"Observational Science White Paper (2025).\" LIGO-T2400403.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "ungeprüft – Suchkontingent erschöpft",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0038-2026-EN.md"
+ },
+ {
+  "sig": "OTA-SCI-0041-2026-DE",
+  "angabe": "Le Mouël, Lopes & Courtillot 2025, Pseudo-periodic cycles in LOD and sunspot numbers",
+  "original": "19\\. Le Mouël, J.-L., Lopes, F. & Courtillot, V. (2025). „Pseudo-periodic cycles in LOD and sunspot numbers.\" \\[Referenz zu ergänzen\\].",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Kein Werk mit diesem Titel/Jahr gefunden (Le Mouël † 2020; Titel im Dokument selbst als Platzhalter markiert). Vermutung: eine der LOD-/Sonnenzyklus-Arbeiten von Le Mouël, Lopes, Courtillot et al. (2019–2021, z. B. PEPI/Frontiers); nicht eindeutig zuordenbar",
+  "pruefquelle": "Suche: Le Mouël Lopes Courtillot length of day sunspot pseudo-cycles",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0041-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0042-2026-DE",
+  "angabe": "Guglielmi et al. 2023, The fundamentals of a phenomenological theory of earthquakes, J. Volcanol. Seismol. 17(5)",
+  "original": "4. Guglielmi, A.V., Klain, B.I., Zavyalov, A.D. & Zotov, O.D. (2023). *The fundamentals of a phenomenological theory of earthquakes.* Journal of Volcanology and Seismology 17(5), 428–438.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Seiten laut Katalog 428–437; DOI 10.1134/S0742046323700239",
+  "pruefquelle": "https://bvbvf1.bib-bvb.de/vufind/PrimoRecord/cdi_proquest_journals_2876500782",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0042-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0080-2026-DE",
+  "angabe": "Asfahani et al. 2019, Radioactive heat production of Syrian territory, Applied Radiation and Isotopes",
+  "original": "Asfahani, J. et al. (2019). Radioactive heat production of Syrian territory. Applied Radiation and Isotopes, Elsevier.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Vermutung: eine der Asfahani-Arbeiten zu Radioaktivität/Gammaspektrometrie in Syrien, z. B. Asfahani, Aissa & Al-Hent (2016), Applied Radiation and Isotopes 107, 259–271, DOI 10.1016/j.apradiso.2015.10.029; Band/Seiten fehlen ohnehin",
+  "pruefquelle": "Suche: Asfahani radioactive heat production Syria Applied Radiation and Isotopes (2 Suchwege)",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0080-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0081-2026-DE",
+  "angabe": "Fraysse et al. 2014, UV luminescence of lapis lazuli: a re-assessment, Spectrochimica Acta 118",
+  "original": "Fraysse, V. et al. (2014). UV luminescence of lapis lazuli: a re-assessment. *Spectrochimica Acta*, 118, 207–213.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Vermutung: gemeint sind Lumineszenz-Studien der Turiner Gruppe zur Lapis-Provenienz, z. B. Re, A. et al. bzw. Angelici, D. et al. (2015/2016), oder Czelusniak et al. (2016) NIMB; kein Artikel 'Fraysse 2014' nachweisbar",
+  "pruefquelle": "Suche: UV luminescence lapis lazuli Fraysse 2014 Spectrochimica Acta; Suche: lapis lazuli luminescence Spectrochimica Acta Part A 2014 vol 118",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0081-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0081-2026-DE",
+  "angabe": "Harlow 1994, Gem minerals: Properties and environments, Elements 10",
+  "original": "Harlow, G.E. (1994). Gem minerals: Properties and environments. *Elements*, 10, 163–168.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Zeitschrift Elements erscheint erst seit 2005 – 1994 unmöglich. Vermutung: Beitrag aus dem Gems-Themenheft Elements 5(3), 2009 (Harlow als Mitherausgeber)",
+  "pruefquelle": "Suche: Harlow Gem minerals Elements; https://store.elementsmagazine.org/gems-poster-v5n3",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0081-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0081-2026-DE",
+  "angabe": "Pernier 1908, Un singolare monumento della scrittura pittografica cretese, Ausonia 3 – Titel/Organ vermengt",
+  "original": "Pernier, L. (1908). Un singolare monumento della scrittura pittografica cretese. *Ausonia*, 3.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Pernier, L. (1908). Il disco di Phaestos con caratteri pittografici. Ausonia 3, 255–302. – 'Un singolare monumento della scrittura pittografica cretese' erschien in den Rendiconti der Accademia dei Lincei (Sonderdruck Rom 1909)",
+  "pruefquelle": "https://en.wikipedia.org/wiki/Luigi_Pernier",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0081-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0081-2026-DE",
+  "angabe": "Ribichini 1999, Bethyls ..., in: Mettinger, No Graven Image? – Mettingers Buch ist Monographie (1995), kein Sammelband",
+  "original": "Ribichini, S. (1999). Bethyls and related concepts in the ancient Near East. In: Mettinger, T. *No Graven Image?* Almqvist & Wiksell.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Vermutung: Ribichini, S. (1999). Baetyl. In: van der Toorn, K., Becking, B. & van der Horst, P.W. (Hg.), Dictionary of Deities and Demons in the Bible, 2. Aufl., Leiden: Brill, 157–159; bzw. separat Mettinger, T.N.D. (1995). No Graven Image? Israelite Aniconism in Its Ancient Near Eastern Context. Stockholm: Almqvist & Wiksell",
+  "pruefquelle": "Suche: Ribichini Baetyl Dictionary of Deities and Demons 1999",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0081-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0082-2026-DE",
+  "angabe": "Rickard & Simion 2007, Thuban and the Great Pyramid, Griffith Observer 71(3)",
+  "original": "Rickard, B. & Simion, G. (2007). Thuban and the Great Pyramid. *Griffith Observer*, 71(3).",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Kein Nachweis; vermutlich erfunden. Für Thuban/Pyramidenausrichtung stattdessen Spence (2000) Nature 408 oder Fernie, J.D. ('Astronomy and the Great Pyramid', American Scientist) heranziehen",
+  "pruefquelle": "Suche: Griffith Observer Thuban Great Pyramid 2007 Rickard; https://griffithobservatory.lacity.gov/wp-content/uploads/2021/02/Observer_Cumulative_Index_20200428.pdf (Index nur bis 1968)",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0082-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0082-2026-DE",
+  "angabe": "Zotti et al. 2021, Stellarium 0.21, Journal of Open Source Software 6(59), 3096 – Zeitschrift/Titel vermutlich falsch",
+  "original": "Zotti, G. et al. (2021). Stellarium 0.21. *Journal of Open Source Software*, 6(59), 3096.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Zotti, G., Hoffmann, S.M., Wolf, A., Chéreau, F. & Chéreau, G. (2021). The Simulated Sky: Stellarium for Cultural Astronomy Research. Journal of Skyscape Archaeology 6(2), 221–258. DOI 10.1558/jsa.17822 (JOSS-Eintrag konnte nicht mehr gegengeprüft werden – Suchbudget erschöpft)",
+  "pruefquelle": "https://arxiv.org/abs/2104.01019",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0082-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0084-2026-DE",
+  "angabe": "Choukroun et al. 2026, Layered bubble-rich structures on icy worlds, EPSL 685, 119999",
+  "original": "Choukroun, M. et al. (2026): *Layered bubble-rich structures on icy worlds: near-vacuum experiments with large volumes of low-salinity water*. Earth and Planetary Science Letters 685, 119999. DOI: 10.1016/j.epsl.2026.119999.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifizierbar (doi.org gesperrt, Suchbudget erschöpft); Artikelnummer 119999 auffällig rund – vorrangig nachprüfen",
+  "pruefquelle": "doi.org blockiert; WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0084-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0084-2026-DE",
+  "angabe": "McKinnon et al. 2026, Europa's ice thickness ... Juno microwave radiometer, Nature Astronomy 10, 84–91",
+  "original": "McKinnon, W. B. et al. (2026): *Europa’s ice thickness and subsurface structure characterized by the Juno microwave radiometer*. Nature Astronomy 10, 84–91.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutung (aus Vorwissen, nicht online gegengeprüft): Erstautor ist S. M. Levin (Juno-MWR-Team), online Dez. 2025, Nature Astronomy; Band/Seiten prüfen",
+  "pruefquelle": "Vorwissen; Online-Prüfung wegen Suchlimit nicht möglich",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0084-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0086-2026-DE",
+  "angabe": "Lung et al. 2026, A systematic review of microgravity on reproductive systems, iScience 29(2):114663",
+  "original": "Lung C-F, Lu H-H, Chung C-Y, Lin P-T, Hsu Y-C. **A systematic review of microgravity on reproductive systems: Implications for space biology and human health.** *iScience* 29(2):114663 (2026). DOI: 10.1016/j.isci.2026.114663.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifizierbar (doi.org gesperrt, Suchbudget erschöpft)",
+  "pruefquelle": "doi.org blockiert; WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0086-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0086-2026-DE",
+  "angabe": "Ronca 2004, Studies toward birth and early mammalian development in space, Adv. Space Res., PMID 15000095",
+  "original": "Ronca AE. **Studies toward birth and early mammalian development in space.** *Advances in Space Research* (2004). PMID: 15000095.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutung (Vorwissen, PubMed-Seite lieferte keinen Inhalt): Ronca AE (2003). Adv Space Res 32(8), 1483–1490; PubMed-Indexierung 2004. Band/Seiten ergänzen",
+  "pruefquelle": "https://pubmed.ncbi.nlm.nih.gov/15000095/ (kein Inhalt abrufbar)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0086-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0095-2026-DE",
+  "angabe": "Yoon 2026, A characteristic phantom-halo surface-density scale in Verlinde-inspired emergent gravity, Phys. Dark Universe",
+  "original": "Youngsub Yoon (2026), *A characteristic phantom-halo surface-density scale in Verlinde-inspired emergent gravity*, Physics of the Dark Universe, DOI 10.1016/j.dark.2026.102462.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifizierbar (doi.org/ScienceDirect gesperrt, Suchlimit); Band fehlt",
+  "pruefquelle": "doi.org blockiert; WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0095-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0095-2026-DE",
+  "angabe": "scinexx 24.09.2026, Neue Gravitationstheorie passt zu zentraler Oberflächendichte von Dunkler Materie",
+  "original": "Begleitende Forschungsnachricht: scinexx, 24. September 2026, \"Neue Gravitationstheorie passt zu zentraler Oberflächendichte von Dunkler Materie\".",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht online geprüft (Suchlimit); URL ergänzen",
+  "pruefquelle": "keine Prüfung (Suchlimit)",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0095-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0096-2026-DE",
+  "angabe": "Reed et al. 2026, Hypomagnetic fields modulate lifespan ... Pink1 model, Aging 18:1316–1330",
+  "original": "Reed J, Fromhold M, Moisoi N, Mather M, Chakrabarti L. *Hypomagnetic fields modulate lifespan, physical ability and mitochondrial metabolism in a Pink1 model of neurodegeneration*. Aging. 2026;18:1316–1330. DOI: 10.18632/aging.206424.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifizierbar (Verlagsseite nicht abrufbar, doi.org gesperrt, Suchlimit)",
+  "pruefquelle": "https://www.aging-us.com/article/206424 (Abruf fehlgeschlagen)",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0096-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0096-2026-DE",
+  "angabe": "Rishabh et al. 2026, Verification of quantum biological predictions for weak magnetic field effects on superoxide in planarians, PNAS Nexus 5(5):pgag152",
+  "original": "Rishabh R, Vučković J, Zadeh-Haghighi H, Beane WS, Simon C. *Verification of quantum biological predictions for weak magnetic field effects on superoxide in planarians*. PNAS Nexus. 2026;5(5):pgag152. DOI: 10.1093/pnasnexus/pgag152.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifizierbar (OUP nicht abrufbar, Suchlimit)",
+  "pruefquelle": "academic.oup.com (Abruf fehlgeschlagen)",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0096-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0098-2026-DE",
+  "angabe": "Zhang et al. 2026, orbitaler WEP-Quantentest China Space Station, Science Advances 12(35), eaeh4502",
+  "original": "Peer reviewed: *Science Advances* 12(35), eaeh4502 (2026), DOI 10.1126/sciadv.aeh4502.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifizierbar (science.org nicht abrufbar, Suchlimit); Titel der Arbeit fehlt im Dokument",
+  "pruefquelle": "science.org (Abruf fehlgeschlagen)",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0098-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0100-2026-DE",
+  "angabe": "Sheng et al. 2026, A high-significance detection of primordial tidal torque imprints, Nature Astronomy",
+  "original": "**Peer reviewed:** Ming-Jie Sheng et al., *A high-significance detection of primordial tidal torque imprints*, Nature Astronomy (2026), veröffentlicht 5. August 2026.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert; DOI fehlt im Dokument",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0100-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0100-2026-DE",
+  "angabe": "Kang 2026, Persistent primordial signature in present-day galaxies, Nature Astronomy News & Views",
+  "original": "Xi Kang, *Persistent primordial signature in present-day galaxies*, Nature Astronomy, News & Views, 28. September 2026.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert; DOI fehlt",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0100-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0101-2026-DE",
+  "angabe": "CHIME Collaboration 2026, 21-cm-Autokorrelation z~1, ApJ, DOI 10.3847/1538-4357/ae9835",
+  "original": "Peer reviewed: *The Astrophysical Journal* (2026), DOI 10.3847/1538-4357/ae9835.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert; Titel/Band fehlen im Dokument (zu ungenau ohne Titel)",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0101-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0102-2026-DE",
+  "angabe": "Moreno et al. 2026, Autophagy Flux Is Remodeled Sex- and Cell Type-Specifically During Human Aging ..., Aging Cell 25(10):e70734",
+  "original": "Moreno et al. *Autophagy Flux Is Remodeled Sex- and Cell Type-Specifically During Human Aging, and Is Linked to Reduced Physical Function in Older Adults.* Aging Cell. 2026;25(10):e70734. DOI: **10.1111/acel.70734**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert (Wiley nicht abrufbar); Initialen des Erstautors fehlen",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0102-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0102-2026-DE",
+  "angabe": "Bektas et al. 2025, Preservation of Autophagy May Be a Mechanism Behind Healthy Aging, Aging Cell 24(11):e70246",
+  "original": "Bektas A et al. *Preservation of Autophagy May Be a Mechanism Behind Healthy Aging.* Aging Cell. 2025;24(11):e70246. DOI: **10.1111/acel.70246**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0102-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0102-2026-DE",
+  "angabe": "Singh et al. 2026, Reduced dietary protein intake does not alter autophagy in human blood, Clin Nutr 65:106778",
+  "original": "Singh S et al. *Reduced dietary protein intake does not alter autophagy in human blood: A randomized crossover study in healthy adults.* Clinical Nutrition. 2026;65:106778. DOI: **10.1016/j.clnu.2026.106778**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0102-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0102-2026-DE",
+  "angabe": "Sereda et al. 2026, Decline of chaperone-mediated autophagy in aging impairs macrophage clearance of senescent cells, Nature Aging",
+  "original": "Sereda R et al. *Decline of chaperone-mediated autophagy in aging impairs macrophage clearance of senescent cells.* Nature Aging. 2026. DOI: **10.1038/s43587-026-01240-w**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert (nature.com-Abruf fehlgeschlagen)",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0102-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0102-2026-DE",
+  "angabe": "Steinhauser et al. 2026, Lysosomes and lysosomal dysfunction in ageing biology, Nat Cell Biol 28:1626–1639",
+  "original": "Steinhauser ML et al. *Lysosomes and lysosomal dysfunction in ageing biology.* Nature Cell Biology. 2026;28:1626–1639. DOI: **10.1038/s41556-026-02007-6**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert (nature.com-Abruf fehlgeschlagen)",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0102-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0102-2026-DE",
+  "angabe": "Niño et al. 2026, Mitochondrial complex-derived ROS ... APOE4, BBA Mol Basis Dis 1872(5):168211",
+  "original": "Niño SA et al. *Mitochondrial complex-derived ROS induces lysosomal dysfunction and impairs autophagic flux in human cells carrying the APOE4 allele.* Biochim Biophys Acta Mol Basis Dis. 2026;1872(5):168211. DOI: **10.1016/j.bbadis.2026.168211**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0102-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0102-2026-DE",
+  "angabe": "Tsui et al. 2026, Mitochondrial quality control as a central pharmacological target in aging, Pharmacol Res 227:108188",
+  "original": "Tsui KH et al. *Mitochondrial quality control as a central pharmacological target in aging.* Pharmacological Research. 2026;227:108188. DOI: **10.1016/j.phrs.2026.108188**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0102-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0103-2026-DE",
+  "angabe": "WHO 2026, Risk reduction of cognitive decline and dementia: WHO guidelines, 2nd ed., ISBN 978-92-4-012355-7",
+  "original": "World Health Organization. *Risk reduction of cognitive decline and dementia: WHO guidelines, second edition.* 2026. ISBN **978-92-4-012355-7**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0103-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0103-2026-DE",
+  "angabe": "WHO 2026, Risk reduction ... executive summary, 2nd ed., B09867",
+  "original": "World Health Organization. *Risk reduction of cognitive decline and dementia: executive summary, second edition.* 2026. WHO reference **B09867**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0103-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0103-2026-DE",
+  "angabe": "Howard, Mukadam et al. 2024, The effects of sleep duration on the risk of dementia incidence ..., Sleep Medicine",
+  "original": "Howard C, Mukadam N et al. *The effects of sleep duration on the risk of dementia incidence in short and long follow-up studies: A systematic review and meta-analysis.* Sleep Medicine. 2024. DOI: **10.1016/j.sleep.2024.10.022**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert; Band/Seiten fehlen",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0103-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0103-2026-DE",
+  "angabe": "Liu et al. 2025/2026, Sleep disorders and the risk of cognitive decline or dementia ..., J Neurol",
+  "original": "Liu Y et al. *Sleep disorders and the risk of cognitive decline or dementia: an updated systematic review and meta-analysis of longitudinal studies.* Journal of Neurology. 2025/2026 corrected version. DOI: **10.1007/s00415-025-13372-x**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert (Springer gesperrt); Jahr '2025/2026' und Band fehlen – präzisieren",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0103-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0103-2026-DE",
+  "angabe": "Jafari, Andrew & Rockwood 2025, Diagnostic utility of speech-based biomarkers in MCI, Age and Ageing 54(10):afaf316",
+  "original": "Jafari Z, Andrew MK, Rockwood K. *Diagnostic utility of speech-based biomarkers in mild cognitive impairment: a systematic review and meta-analysis.* Age and Ageing. 2025;54(10):afaf316. DOI: **10.1093/ageing/afaf316**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht verifiziert",
+  "pruefquelle": "nicht prüfbar: Verlagsseite/doi.org gesperrt, WebSearch-Limit erreicht",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0103-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0119-2026-DE",
+  "angabe": "Wasilewski 1977, Lodestone NASA TM X-73635",
+  "original": "Wasilewski, P.J. (1977). Lodestone: Nature's own permanent magnet. *NASA Technical Report*, NASA TM X-73635.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Report-Nummer nicht geprüft (Suchbudget erschöpft)",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0119-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0119-2026-DE",
+  "angabe": "Fließtext: Wasilewski & Kletetschka 1977, 1979",
+  "original": "`[R]` für alle Werte (Wasilewski 1999; Wasilewski & Kletetschka 1977, 1979)",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Kletetschka-Koautorschaft 1977/1979 unplausibel; gemeint vermutlich Wasilewski 1977 (NASA TM) bzw. Wasilewski & Kletetschka 1999; im Quellenteil keine 1979-Angabe",
+  "pruefquelle": "Abgleich mit Quellenliste des Dokuments",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0119-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0119-2026-DE",
+  "angabe": "Kletetschka et al. 2013, Lightning-induced RM Vredefort, GJI 195(1)",
+  "original": "Kletetschka, G. et al. (2013). Lightning-induced remanent magnetization — the Vredefort impact structure. *Geophysical Journal International*, 195(1), 117–128.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Vermutung: Vredefort-Blitz-Remagnetisierung ist v. a. bei Carporzen et al. 2005 (Nature 435) beschrieben; Angabe prüfen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0119-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0109-2026-DE",
+  "angabe": "BNetzA Netzreserve (Webseite)",
+  "original": "Bundesnetzagentur, **Netzreserve / Reservekraftwerksleistung**, Stand 2026.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Webseite mit URL, nicht abgerufen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0109-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0109-2026-DE",
+  "angabe": "BNetzA Redispatch 2.0 (Webseite)",
+  "original": "Bundesnetzagentur, **Redispatch / Redispatch 2.0**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Webseite mit URL, nicht abgerufen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0109-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0109-2026-DE",
+  "angabe": "BNetzA Stromspeicher Netzanschluss (Webseite)",
+  "original": "Bundesnetzagentur, **Stromspeicher – Netzanschluss**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Webseite mit URL, nicht abgerufen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0109-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0109-2026-DE",
+  "angabe": "BNetzA §14a EnWG (Webseite)",
+  "original": "Bundesnetzagentur, **§14a EnWG – Integration steuerbarer Verbrauchseinrichtungen**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Webseite mit URL, nicht abgerufen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0109-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0109-2026-DE",
+  "angabe": "BNetzA NEP Strom 2025–2037/2045",
+  "original": "Bundesnetzagentur, **Netzentwicklungsplan Strom 2025–2037/2045**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Webseite mit URL, nicht abgerufen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0109-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0110-2026-DE",
+  "angabe": "NIST Vogl, Cornelius & Jia 2026, Roadmap AI/ML Smart Manufacturing, DOI 10.1088/3049-4761/ae5967",
+  "original": "NIST, Vogl, Cornelius & Jia (2026), **2026 Roadmap on Artificial Intelligence and Machine Learning for Smart Manufacturing**. DOI: 10.1088/3049-4761/ae5967.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Zeitschriftenname fehlt (IOP-DOI); nicht geprüft",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0110-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0110-2026-DE",
+  "angabe": "NIST Malik, Shao & Tarakhovsky 2024, Digital Twins for Robot Systems",
+  "original": "NIST, Malik, Shao & Tarakhovsky (2024), **Digital Twins for Robot Systems in Manufacturing**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Publikationsart/Nummer fehlt",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0110-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0110-2026-DE",
+  "angabe": "NIST Kim et al. 2023, Conceptual Architecture DT Human-in-the-Loop",
+  "original": "NIST, Kim et al. (2023), **Conceptual Architecture of Digital Twins with Human-in-the-Loop-Based Smart Manufacturing**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Publikationsart/Nummer fehlt",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0110-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0110-2026-DE",
+  "angabe": "NIST Denno & Kibira 2023, Human-centered Framework DT",
+  "original": "NIST, Denno & Kibira (2023), **A Human-centered Framework to Update Digital Twins**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Publikationsart/Nummer fehlt",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0110-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0110-2026-DE",
+  "angabe": "NIST Halle & Shao 2026, Standards-Based DT Composition",
+  "original": "NIST, Halle & Shao (2026), **Standards-Based Digital Twin Composition: Robot Arm and Gripper**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0110-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0110-2026-DE",
+  "angabe": "NISTIR 8604 2025, Improved Robotic Workcell OT Research",
+  "original": "NISTIR 8604 (2025), **An Improved Robotic Workcell for Operational Technology (OT) Research**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0110-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0110-2026-DE",
+  "angabe": "Fraunhofer IMS 29.04.2026, GenSATIOn-Edge",
+  "original": "Fraunhofer IMS (29.04.2026), **GenSATIOn-Edge: Selbstlernende Sensorsysteme zur Überwachung industrieller Fertigungsprozesse**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0110-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0110-2026-DE",
+  "angabe": "Siemens PM 06.01.2026 CES 2026",
+  "original": "Siemens (06.01.2026), **Siemens unveils technologies to accelerate the industrial AI revolution at CES 2026**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0110-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0110-2026-DE",
+  "angabe": "Siemens PM 16.04.2026 Humanoid",
+  "original": "Siemens (16.04.2026), **Siemens and Humanoid bring Physical AI to the factory floor**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0110-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0110-2026-DE",
+  "angabe": "Siemens PM 16.04.2026 KION",
+  "original": "Siemens (16.04.2026), **Siemens and KION partner to shape the supply chains of the future**.",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0110-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0111-2026-DE",
+  "angabe": "Shiohira et al. 2024, Auroral radio emission β Pic b, MNRAS 528(2)",
+  "original": "Shiohira, Y. et al. (2024), **A search for auroral radio emission from β Pictoris b**, *Monthly Notices of the Royal Astronomical Society* 528(2), 2136–2144. DOI: 10.1093/mnras/stad3990.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Angabe plausibel (MNRAS 2024, uGMRT), Band/Seiten/DOI nicht verifiziert",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0111-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0111-2026-DE",
+  "angabe": "NASA Science, The Search for Other Earths",
+  "original": "NASA Science, **The Search for Other Earths**",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0111-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0111-2026-DE",
+  "angabe": "ESO 15.07.2026, Faintest planet ever imaged",
+  "original": "ESO (15.07.2026), **Faintest planet ever imaged from Earth found after more than 10 years of hide-and-seek**",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0111-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0112-2026-DE",
+  "angabe": "NASA/TM-20250001897, Space Crop Considerations",
+  "original": "NASA, **Space Crop Considerations for Human Exploration**, NASA/TM-20250001897.",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0112-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0115-2026-DE",
+  "angabe": "Myers et al. 2026, One-Positron Quantum Cyclotron, PRL 137, 173001",
+  "original": "**Primärquelle:** Myers et al., *One-Positron Quantum Cyclotron*, Physical Review Letters 137, 173001 (2026), https://doi.org/10.1103/gbkc-6nlj .",
+  "bewertung": "ungeprueft",
+  "korrekt": "doi.org blockiert, Suchbudget erschöpft",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0115-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0028-2025-DE",
+  "angabe": "Alam et al. 2020, Ultrafast all-optical switching via coherent modulation, Nature Photonics",
+  "original": "Alam et al. (2020): *Ultrafast all-optical switching via coherent modulation*",
+  "bewertung": "ungeprueft",
+  "korrekt": "Vermutung: nicht existent bzw. falsch zusammengesetzt (kein bekanntes Nature-Photonics-Paper dieses Titels); Band/DOI fehlen – nachprüfen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0028-2025-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0028-2025-DE",
+  "angabe": "Yang et al. 2025, Nanofabrication for Nanophotonics, Acta Nanotech.",
+  "original": "Yang et al. (2025): *Nanofabrication for Nanophotonics*, Acta Nanotech.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Zeitschrift „Acta Nanotech.“ unbekannt; Vermutung: fehlerhafte/erfundene Angabe (ähnlich: Yang et al., Review „Nanofabrication for Nanophotonics“, ACS Nano 2025?) – nachprüfen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0028-2025-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0028-2048-DE",
+  "angabe": "Birch et al. 2026, Nanosculpted 3D helices Weyl semimetal, Nat. Nanotech. 21",
+  "original": "Birch, M. et al. (2026): *Nanosculpted 3D helices of a magnetic Weyl semimetal with switchable non-reciprocal electron transport*, Nature Nanotechnology 21, 352–358. DOI: `10.1038/s41565-025-02104-x`. [R]",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0028-2048-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0028-2048-DE",
+  "angabe": "Vogel et al. 2023, A Switchable One-Compound Diode, Adv. Mater. 35(2)",
+  "original": "Vogel, A. et al. (2023): *A Switchable One-Compound Diode*, Advanced Materials 35(2), 2208698. First Published 25.10.2022. DOI: `10.1002/adma.202208698`. [R]",
+  "bewertung": "ungeprueft",
+  "korrekt": "DOI-Format und Artikelnummer konsistent; nicht verifiziert",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0028-2048-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0029-2026-DE",
+  "angabe": "Jafari Ghalekohneh & Zhao 2025, Perfect heat rectification, Phys. Rev. Research",
+  "original": "Jafari Ghalekohneh, S. & Zhao, B. (2025): \"Perfect heat rectification and circulation with nonreciprocal radiative surfaces in the far field.\" *Physical Review Research*. DOI: 10.1103/7p58-n6yv",
+  "bewertung": "ungeprueft",
+  "korrekt": "Band/Artikelnr. fehlen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0029-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0029-2026-DE",
+  "angabe": "Jafari Ghalekohneh & Zhao 2026, Asymmetric thermal conductivity, PRB",
+  "original": "Jafari Ghalekohneh, S. & Zhao, B. (2026): \"Asymmetric thermal conductivity mediated by nonreciprocal polaritons.\" *Physical Review B*. DOI: 10.1103/pplf-ytqm",
+  "bewertung": "ungeprueft",
+  "korrekt": "Band/Artikelnr. fehlen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0029-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0029-2026-DE",
+  "angabe": "Nabavi et al. 2025, High-Temperature Strong Nonreciprocal Thermal Radiation, ACS Photonics 12",
+  "original": "Nabavi, B., Jafari Ghalekohneh, S., Shayegan, K., Tervo, E., Atwater, H., & Zhao, B. (2025): \"High-Temperature Strong Nonreciprocal Thermal Radiation from Semiconductors.\" *ACS Photonics*, 12, 2767.",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0029-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0029-2026-DE",
+  "angabe": "University of Houston 2026, One-Way Heat Control (PM)",
+  "original": "University of Houston (2026): \"Researchers Develop One-Way Heat Control to Extend Battery Life\"",
+  "bewertung": "ungeprueft",
+  "korrekt": "Datum/URL fehlen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0029-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0029-2026-DE",
+  "angabe": "Ingenieur.de 2026, Physiker knacken ein Grundproblem",
+  "original": "Ingenieur.de (2026): \"Physiker knacken ein Grundproblem moderner Elektronik\"",
+  "bewertung": "ungeprueft",
+  "korrekt": "Datum/URL fehlen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0029-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0029-2026-DE",
+  "angabe": "TechXplore 2026, Thermal diode design",
+  "original": "TechXplore (2026): \"'Thermal diode' design promises to improve heat regulation, prolonging battery life\"",
+  "bewertung": "ungeprueft",
+  "korrekt": "Datum/URL fehlen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0029-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0031-2150-DE",
+  "angabe": "STAR/RHIC 2026, Λ-Λ̄-Spinkorrelation aus QCD-Vakuum, DOI 10.1038/s41586-025-09920-0",
+  "original": "RHIC/STAR (2026): (18 ± 4)% Spinkorrelation zwischen Λ/Λ̄ aus Strange-Quark-Paaren des Vakuums. DOI: 10.1038/s41586-025-09920-0.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Titel/Band fehlen im Dokument",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0031-2150-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0034-2026-DE",
+  "angabe": "NASA ISRU water-cleanup study NTRS 20120001775",
+  "original": "NASA ISRU water-cleanup study NTRS `20120001775`",
+  "bewertung": "ungeprueft",
+  "korrekt": "Titel/Autor fehlen; NTRS-Nummer nicht geprüft",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0034-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0034-2026-DE",
+  "angabe": "Cole et al. 2023, Water extraction icy lunar simulants microwave, Acta Astronautica",
+  "original": "Cole et al. (2023), *Water extraction from icy lunar simulants using low power microwave heating*, Acta Astronautica, DOI 10.1016/j.actaastro.2023.04.035",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0034-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0034-2026-DE",
+  "angabe": "Inglezakis 2026, Martian Aqua, Adv. Space Res.",
+  "original": "Inglezakis (2026), *Martian Aqua: Occurrence of Water and Appraisal of Acquisition Technologies*, Advances in Space Research, DOI 10.1016/j.asr.2025.11.002.",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0034-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0084-2026-DE",
+  "angabe": "NASA/CR-2007-214685, Effects of Lunar Dust on EVA Systems (Apollo)",
+  "original": "NASA/CR-2007-214685 (*The Effects of Lunar Dust on EVA Systems During the Apollo Missions* / lunar-regolith engineering properties)",
+  "bewertung": "ungeprueft",
+  "korrekt": "Vermutung: Titel gehört zu Gaier (2005), NASA/TM-2005-213610; Reportnummer/Titel-Zuordnung prüfen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0084-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0084-2026-DE",
+  "angabe": "NASA-STD-3001 Vol. 2 Rev. F, [V2 6053]",
+  "original": "NASA-STD-3001 Vol. 2 Rev. F, [V2 6053] (§6.2.8.3)",
+  "bewertung": "ungeprueft",
+  "korrekt": "Revisionsstand nicht geprüft",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0084-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0086-2026-DE",
+  "angabe": "NASA ISRU water-cleanup study NTRS 20120001775",
+  "original": "NASA ISRU water-cleanup study NTRS `20120001775`",
+  "bewertung": "ungeprueft",
+  "korrekt": "Titel/Autor fehlen; NTRS-Nummer nicht geprüft",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0086-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0086-2026-DE",
+  "angabe": "Wu et al. 2026, Microbial purification of perchlorate Martian BLSS, Acta Astronautica 241",
+  "original": "Wu et al. (2026), *Microbial purification of perchlorate in a simulated Martian water to ensure its plant cultivation for Martian BLSS*, Acta Astronautica 241, 224–233, DOI 10.1016/j.actaastro.2025.12.059.",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0086-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0087-2026-DE",
+  "angabe": "NASA NTRS 20190029093, Cloud Computing Methods NRHO Trajectory Design",
+  "original": "NASA NTRS `20190029093`, *Cloud Computing Methods for Near Rectilinear Halo Orbit Trajectory Design*",
+  "bewertung": "ungeprueft",
+  "korrekt": "Autor/Jahr fehlen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0087-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0087-2026-DE",
+  "angabe": "NASA HLS-UG-001, HLS Lunar Thermal Analysis Guidebook",
+  "original": "NASA HLS-UG-001, *Human Landing System Lunar Thermal Analysis Guidebook*",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0087-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0087-2026-DE",
+  "angabe": "NASA-TM-104476, MLI-isolierter LH2-Tank",
+  "original": "NASA-TM-104476 — MLI-isolierter LH₂-Tank",
+  "bewertung": "ungeprueft",
+  "korrekt": "Titel/Autor fehlen",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0087-2026-DE.md"
+ },
+ {
+  "sig": "OTA-TEC-0126-2026-DE",
+  "angabe": "Jiménez-Cano et al. 2022, Cable-Suspended Pick-and-Place Aerial Multi-robot, JIRS 105:68",
+  "original": "Jiménez-Cano, A. E. et al. (2022): *Precise Cable-Suspended Pick-and-Place with an Aerial Multi-robot System*, Journal of Intelligent & Robotic Systems 105:68.",
+  "bewertung": "ungeprueft",
+  "korrekt": "–",
+  "pruefquelle": "–",
+  "grund": "ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-TEC-0126-2026-DE.md"
+ },
+ {
+  "sig": "KUE-OBS-0101-2026-DE",
+  "angabe": "CNN 4.5.2026, Atmosphere spotted around small, distant solar system object",
+  "original": "CNN (2026, 4. Mai). Atmosphere spotted around small, distant solar system object.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Vermutung: CNN (4. Mai 2026) 'Astronomers believe they've detected an atmosphere around a tiny, icy world beyond Pluto'; URL fehlt",
+  "pruefquelle": "Suche: CNN atmosphere tiny icy world beyond Pluto (21alivenews.com CNN-Syndikat)",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "kueper.com/src/content/kue/obs/KUE-OBS-0101-2026-DE.md"
+ },
+ {
+  "sig": "KUE-SCI-0001-2026-DE",
+  "angabe": "Solà Peracaula et al. 2019, Running vacuum in the Universe, MPLA 32, 1950035",
+  "original": "Solà Peracaula, J. et al. (2019). Running vacuum in the Universe. *MPLA*, 32, 1950035.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Band 32 passt nicht zu Artikelnr. 1950035 (wäre 2019 = Bd. 34). Vermutung: Solà, J. (2016) 'Cosmological constant vis-à-vis dynamical vacuum: bold challenging the ΛCDM', IJMPA 31(23), 1630035; oder Solà (2015) 'Running Vacuum in the Universe: current phenomenological status', MG14-Proceedings (arXiv:1601.01668)",
+  "pruefquelle": "Suche: \"1950035\" Mod. Phys. Lett. A Solà; https://arxiv.org/abs/1601.01668; https://diposit.ub.edu/dspace/handle/2445/142204",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0001-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0004-2026-DE",
+  "angabe": "NASA 2021, ISS ECLSS, NASA/TP-2021-5009761",
+  "original": "NASA (2021). *International Space Station Environmental Control and Life Support System.* NASA/TP-2021-5009761.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Reportnummer im NTRS nicht nachweisbar. Vermutung: gemeint ein ICES-Statuspapier, z. B. 'International Space Station as a Testbed for Exploration ECLSS – 2020 Status' oder ICES-2021-384 'FY2021 ECLSS Overview'",
+  "pruefquelle": "Suche: NASA/TP-2021-5009761 ECLSS (NTRS-Treffer ohne diese Nummer)",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0004-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0012-2026-DE",
+  "angabe": "Landau & Lifshitz 1976, Mechanics, Kap. 6 (Eigenfrequenzen, Dämpfung)",
+  "original": "Eigenfrequenzen, Dämpfung: Landau & Lifshitz, *Mechanics* (1976), Kap. 6",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Landau & Lifshitz, Mechanics, 3rd ed. (1976), Kap. V 'Small oscillations' (§§21–30; Dämpfung §25). Kap. VI behandelt Starrkörperbewegung",
+  "pruefquelle": "Standardwerk (Eigenwissen)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0012-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0012-2026-DE",
+  "angabe": "Arnold 1963, Beweis des Kolmogorov-Satzes (KAM)",
+  "original": "KAM-Theorie: Arnold, *Proof of Kolmogorov's theorem on conservation of conditionally-periodic motions* (1963)",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Arnold, V. I. (1963). Proof of a theorem of A. N. Kolmogorov on the preservation of conditionally periodic motions under a small perturbation of the Hamiltonian. Russian Math. Surveys 18(5), 9–36 (Titel nur paraphrasiert)",
+  "pruefquelle": "Eigenwissen (Suchbudget erschöpft, nicht online nachgeprüft)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0012-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0013-2026-DE",
+  "angabe": "Choukroun et al. 2026, Layered bubble-rich structures on icy worlds, EPSL 685, 119999",
+  "original": "Choukroun, M. et al. (2026): *Layered bubble-rich structures on icy worlds: near-vacuum experiments with large volumes of low-salinity water*. Earth and Planetary Science Letters 685, 119999. DOI: 10.1016/j.epsl.2026.119999.",
+  "bewertung": "ungeprueft",
+  "korrekt": "UNGEPRÜFT: WebSearch-Budget der Sitzung erschöpft; erneut prüfen",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0013-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0013-2026-DE",
+  "angabe": "Cheng & Lin 2007, vacuum cooling and freezing, J Food Eng 78(2) 569–576",
+  "original": "Cheng, H.-P.; Lin, C.-T. (2007): *The morphological visualization of the water in vacuum cooling and freezing process*. Journal of Food Engineering 78(2), 569–576. DOI: 10.1016/j.jfoodeng.2005.10.025.",
+  "bewertung": "ungeprueft",
+  "korrekt": "UNGEPRÜFT: WebSearch-Budget der Sitzung erschöpft; erneut prüfen (Angabe formal plausibel)",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0013-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0013-2026-DE",
+  "angabe": "McKinnon et al. 2026, Europa’s ice thickness ... Juno microwave radiometer, Nature Astronomy 10, 84–91",
+  "original": "McKinnon, W. B. et al. (2026): *Europa’s ice thickness and subsurface structure characterized by the Juno microwave radiometer*. Nature Astronomy 10, 84–91.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutung (Eigenwissen, nicht online geprüft): Erstautor ist Levin, S. M. et al. (online Dez. 2025, Nature Astronomy 10); McKinnon Koautor. Band/Seiten prüfen",
+  "pruefquelle": "Eigenwissen (Suchbudget erschöpft, nicht online nachgeprüft)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0013-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0064-2026-DE",
+  "angabe": "Ravikrishnan et al. 2026, Host recovery after skin barrier disruption..., bioRxiv",
+  "original": "Ravikrishnan, A. et al. (27 Autoren, u. a. Common, J., Lim, Y.S., Nagarajan, N.). Host recovery after skin barrier disruption is individual-specific and associated with microbial functions. *bioRxiv*, 27. März 2026. DOI: 10.64898/2026.03.25.714117",
+  "bewertung": "ungeprueft",
+  "korrekt": "UNGEPRÜFT: WebSearch-Budget der Sitzung erschöpft; erneut prüfen",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/KUE-SCI-0064-2026-DE.md"
+ },
+ {
+  "sig": "KUE-SCI-0167-2026-DE",
+  "angabe": "DESY-Pressemitteilung 5.5.2026",
+  "original": "DESY-Pressemitteilung vom 05.05.2026: *Was im Inneren von 3D-gedrucktem Stahl für Fusionsreaktoren passiert.* https://desy.de/desy_aktuell/2026/3d_gedruckter_stahl_fuer_fusion/",
+  "bewertung": "ungeprueft",
+  "korrekt": "Seite blockiert Abruf (robots); UNGEPRÜFT: WebSearch-Budget der Sitzung erschöpft; erneut prüfen",
+  "pruefquelle": "https://desy.de/desy_aktuell/2026/3d_gedruckter_stahl_fuer_fusion/ (nicht abrufbar)",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0167-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0167-2026-DE",
+  "angabe": "Eder 2026, ingenieur.de Kernfusion/Grenzflächen",
+  "original": "Eder, S. W. (07.05.2026). *Kernfusion: Warum die Grenzflächen bei 3D-gedrucktem Stahl entscheidend sind.* ingenieur.de.",
+  "bewertung": "ungeprueft",
+  "korrekt": "UNGEPRÜFT: WebSearch-Budget der Sitzung erschöpft; erneut prüfen",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0167-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0167-2026-DE",
+  "angabe": "Spätig, Chen, Odette 2019, Ferritic/Martensic Steel — overview, in: Structural Alloys for Nuclear Energy Applications",
+  "original": "Spätig, P., Chen, J.-C., Odette, G. R. (2019). *Ferritic/Martensic Steel — overview.* In: Structural Alloys for Nuclear Energy Applications.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Spätig, P., Chen, J.-C., Odette, G. R. (2019). Ferritic and Tempered Martensitic Steels. In: Odette, G. R. & Zinkle, S. J. (Hrsg.), Structural Alloys for Nuclear Energy Applications, Elsevier, S. 485–527 (Eigenwissen; 'Martensic' ist zudem Tippfehler)",
+  "pruefquelle": "Eigenwissen (Suchbudget erschöpft, nicht online nachgeprüft)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0167-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0169-2026-DE",
+  "angabe": "Guglielmi, Klain, Zavyalov, Zotov 2023, The fundamentals of a phenomenological theory of earthquakes, J. Volcanol. Seismol. 17(5), 428–438",
+  "original": "Guglielmi, A.V., Klain, B.I., Zavyalov, A.D. & Zotov, O.D. (2023). **The fundamentals of a phenomenological theory of earthquakes.** *Journal of Volcanology and Seismology* 17(5), 428–438.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Seiten laut Katalog 428–437; DOI 10.1134/S0742046323700239",
+  "pruefquelle": "https://bvbvf1.bib-bvb.de/vufind/PrimoRecord/cdi_proquest_journals_2876500782",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0169-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0171-2026-DE",
+  "angabe": "Bryson et al. 2008, Stability of ice on Mars and the water vapor diurnal cycle, Icarus 196(2), 446–458",
+  "original": "4. Bryson, K. L., Chevrier, V., Sears, D. W. G. & Ulrich, R. (2008). **Stability of ice on Mars and the water vapor diurnal cycle: Experimental study of the sublimation of ice through a fine-grained basaltic regolith.** *Icarus* 196(2), 446–458. DOI: 10.1016/j.icarus.2008.02.011.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft, doi.org gesperrt – nicht geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0171-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0171-2026-DE",
+  "angabe": "Inglezakis et al. 2026, Martian aqua, Adv. Space Res. 77(1), 635–670",
+  "original": "5. Inglezakis, V. et al. (2026). **Martian aqua: occurrence of water and appraisal of acquisition technologies.** *Advances in Space Research* 77(1), 635–670. DOI: 10.1016/j.asr.2025.11.002.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft, doi.org gesperrt – nicht geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0171-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0171-2026-DE",
+  "angabe": "Wasilewski 2018, Evaluation of drilling-based water extraction methods for Martian ISRU, PSS 158, 16–24",
+  "original": "6. Wasilewski, T. G. (2018). **Evaluation of drilling-based water extraction methods for Martian ISRU from mid-latitude ice resources.** *Planetary and Space Science* 158, 16–24. DOI: 10.1016/j.pss.2018.05.012.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft – nicht geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0171-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0171-2026-DE",
+  "angabe": "Zacny et al. 2012, Mobile In-Situ Water Extractor (MISWE), AIAA SPACE 2012",
+  "original": "7. Zacny, K., Chu, P., Paulsen, G. et al. (2012). **Mobile In-Situ Water Extractor (MISWE) for Mars, Moon, and Asteroids ISRU.** AIAA SPACE 2012. DOI: 10.2514/6.2012-5168.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft – nicht geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0171-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0171-2026-DE",
+  "angabe": "Cole et al. 2023, Water extraction from icy lunar simulants using low power microwave heating, Acta Astronaut. 209, 95–103",
+  "original": "8. Cole, J. D., Lim, S., Sargeant, H. M., Sheridan, S., Anand, M. & Morse, A. (2023). **Water extraction from icy lunar simulants using low power microwave heating.** *Acta Astronautica* 209, 95–103. DOI: 10.1016/j.actaastro.2023.04.035.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft – nicht geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0171-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0171-2026-DE",
+  "angabe": "Cheng, Cheng, Baoyin 2026, Microwave-assisted water extraction from lunar regolith, Adv. Space Res. 77(12)",
+  "original": "9. Cheng, Y., Cheng, B. & Baoyin, H. (2026). **Microwave-assisted water extraction from lunar regolith: Multiphysics modeling.** *Advances in Space Research* 77(12). DOI: 10.1016/j.asr.2026.04.003.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft – nicht geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0171-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0172-2026-DE",
+  "angabe": "NASA TechPort 17550, SpaceCraft Oxygen Recovery (SCOR)",
+  "original": "7. NASA TechPort: **SpaceCraft Oxygen Recovery (SCOR)**, Projektstand 2026. https://techport.nasa.gov/projects/17550",
+  "bewertung": "ungeprueft",
+  "korrekt": "TechPort-Seite nur mit JavaScript lesbar; Projekt-ID nicht verifiziert",
+  "pruefquelle": "https://techport.nasa.gov/projects/17550",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0172-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0173-2026-DE",
+  "angabe": "NTRS 19900016723, „Required Velocity Changes“ (TLI 3,155 / LOI 0,915 km/s)",
+  "original": "2. NASA Technical Reports Server: **Required Velocity Changes** — Apollo-basierte Δv-Abschätzung mit TLI 3,155 km/s und LOI 0,915 km/s für definierte LEO/LLO-Randbedingungen. https://ntrs.nasa.gov/api/citations/19900016723/downloads/19900016723.pdf",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Unter dieser URL liegt „Preliminary Subsystem Designs for the Assured Crew Return Vehicle (ACRV)“, Penn State 1990 – weder Abschnitt „Required Velocity Changes“ noch TLI/LOI-Werte gefunden; gemeinte Quelle unbekannt (falsche NTRS-ID?)",
+  "pruefquelle": "https://ntrs.nasa.gov/api/citations/19900016723/downloads/19900016723.pdf",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0173-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0175-2026-DE",
+  "angabe": "Pospíšil 2014, Editorial Ultra-weak photon emission from living systems, J. Photochem. Photobiol. B 139, 1",
+  "original": "- Pospíšil, P. (2014): *Ultra-weak photon emission from living systems — from mechanism to application.* Journal of Photochemistry and Photobiology B 139, 1.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Editorial des Themenhefts; Autorenschaft (evtl. mehrere Gastherausgeber) Suchbudget erschöpft, doi.org gesperrt – nicht online geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0175-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0175-2026-DE",
+  "angabe": "Salari et al. 2025, Imaging UPE from Living and Dead Mice and Plants under Stress, J. Phys. Chem. Lett.",
+  "original": "- Salari, V. et al. (2025): *Imaging Ultraweak Photon Emission from Living and Dead Mice and from Plants under Stress.* The Journal of Physical Chemistry Letters. DOI: 10.1021/acs.jpclett.4c03546.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft, doi.org gesperrt – nicht online geprüft (Band/Seiten fehlen)",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0175-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0175-2026-DE",
+  "angabe": "Casey et al. 2025, Exploring ultraweak photon emissions as optical markers of brain activity, iScience 28(3), 112019",
+  "original": "- Casey, H.; DiBerardino, I.; Bonzanni, M.; Rouleau, N.; Murugan, N. J. (2025): *Exploring ultraweak photon emissions as optical markers of brain activity.* iScience 28(3), 112019. DOI: 10.1016/j.isci.2025.112019.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft, doi.org gesperrt – nicht online geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0175-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0175-2026-DE",
+  "angabe": "Salari et al. 2026, Revisiting claims of extracranial biophoton detection, arXiv:2603.26630",
+  "original": "- Salari, V.; Seshan, V.; Rishabh, R.; Oblak, D.; Simon, C. (2026): *Revisiting claims of extracranial biophoton detection from the human brain.* arXiv:2603.26630 (Preprint, v2 vom 2026-05-26).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft, doi.org gesperrt – nicht online geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0175-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0176-2026-DE",
+  "angabe": "Morris et al. 2020, Non-CpG methylation biases bisulphite PCR ... mtDNA, Environ. Epigenet. 6(1)",
+  "original": "- Morris, M. J. et al. (2020): *Non-CpG methylation biases bisulphite PCR towards low or unmethylated mitochondrial DNA: recommendations for the field.* Environmental Epigenetics 6(1).",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutung (Fachkenntnis, nicht online geprüft): Morris, M. J. et al. (2018), Environmental Epigenetics 4(2), dvy018",
+  "pruefquelle": "keine Suche – Fachkenntnis",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0176-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0178-2026-DE",
+  "angabe": "NASA, 25 Years Ago: Fire Aboard Space Station Mir",
+  "original": "- NASA: *25 Years Ago: Fire Aboard Space Station Mir* — historische SFOG-Nutzung und Brandereignis.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Wahrscheinlich NASA-History-Artikel (2022); Suchbudget erschöpft, doi.org gesperrt – nicht online geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0178-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0178-2026-DE",
+  "angabe": "NASA Lessons Learned 1143, Russian SFOG safety assessment",
+  "original": "- NASA Lessons Learned 1143: Sicherheitsbewertung des russischen Solid Fuel Oxygen Generator für die ISS.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft, doi.org gesperrt – nicht online geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0178-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0181-2026-DE",
+  "angabe": "NASA 2026 Civil Space Shortfalls",
+  "original": "- NASA 2026 Civil Space Shortfalls: Earth-independent health and medical care capabilities als fortbestehende Exploration-Lücke.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Bekannt ist das STMD-Civil-Space-Shortfall-Ranking (2024); Ausgabe 2026 Suchbudget erschöpft, doi.org gesperrt – nicht online geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0181-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0183-2026-DE",
+  "angabe": "Frost et al. 2025, Synthesis of Gold Hydride at High Pressure and High Temperature, Angew. Chem. Int. Ed. 64, e202505811",
+  "original": "- Frost, M.; Abraham, K.; Goncharov, A. F.; McWilliams, R. S.; … Redmer, R.; Glenzer, S. H. (2025): **Synthesis of Gold Hydride at High Pressure and High Temperature.** *Angewandte Chemie International Edition* 64, e202505811. DOI: 10.1002/anie.202505811. Freie Fassung: OSTI 2589240.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Arbeit plausibel (SLAC-Goldhydrid 2025); Details Suchbudget erschöpft, doi.org gesperrt – nicht online geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0183-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0183-2026-DE",
+  "angabe": "de Lourdes Gonzalez-Juarez et al. 2020, Electrochemical deposition ... 2-D MOF thin film, J. Mater. Chem. A 8, 13197–13206",
+  "original": "- de Lourdes Gonzalez-Juarez, M. et al. (2020): **Electrochemical deposition and thermoelectric characterisation of a semiconducting 2-D metal–organic framework thin film.** *Journal of Materials Chemistry A* 8, 13197–13206. DOI: 10.1039/D0TA04939E.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft, doi.org gesperrt – nicht online geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0183-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0183-2026-DE",
+  "angabe": "Scheiger et al. 2025, Dirac-cone induced metallic conductivity in Cu3(HHTP)2, Mater. Horiz.",
+  "original": "- Scheiger, C.; Pöhls, J. F.; Mostaghimi, M.; … Weitz, R. T.; Wöll, C. (2025): **Dirac-cone induced metallic conductivity in Cu₃(HHTP)₂: high-quality MOF thin films fabricated via ML-driven robotic synthesis.** *Materials Horizons* (2025). DOI: 10.1039/D5MH00813A.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft, doi.org gesperrt – nicht online geprüft (Band/Seiten fehlen)",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0183-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0183-2026-DE",
+  "angabe": "Guo et al. 2026, Intrinsic Thermal Conductivity in Layered Conductive MOF Single Crystals, arXiv:2604.02657",
+  "original": "- Guo, J.-K. et al. (2026): **Unraveling Intrinsic Thermal Conductivity in Layered Conductive MOF Single Crystals.** Preprint, arXiv:2604.02657 (nicht begutachtet).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft, doi.org gesperrt – nicht online geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0183-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0184-2026-DE",
+  "angabe": "NASA NIAC 2026, Interworld Slingshot Resource Surveys (Phase I)",
+  "original": "5. NASA NIAC (2026): *Interworld Slingshot Resource Surveys*, Phase I concept, published 21 July 2026.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Suchbudget erschöpft, doi.org gesperrt – nicht online geprüft",
+  "pruefquelle": "—",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0184-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0187-2026-DE",
+  "angabe": "Shiba et al./JAXA MHU, Sci Rep 2024, microgravity & lunar gravity murine skeletal/immune",
+  "original": "3. Shiba, D. et al. / JAXA MHU research; zusammengefasst in: *Impact of microgravity and lunar gravity on murine skeletal and immune systems during space travel*. Scientific Reports (2024), DOI: 10.1038/s41598-024-79315-0.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft; Autorangabe 'Shiba et al. / JAXA MHU research' unklar – Erstautor der Sci-Rep-Arbeit prüfen",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0187-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0187-2026-DE",
+  "angabe": "Hong ... Christenson 2026, Female reproductive dysfunction ..., PNAS 123(27)",
+  "original": "5a. Hong, X. …, Christenson, L. K. (2026): *Female reproductive dysfunction and transgenerational consequences following prolonged spaceflight exposure*. PNAS 123 (27). DOI: 10.1073/pnas.2606092123.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0187-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0187-2026-DE",
+  "angabe": "McPherson 2026, simulierte Mikrogravitation Spermiennavigation, Commun Biol",
+  "original": "5b. McPherson, N. et al. (2026): Simulierte Mikrogravitation beeinträchtigt die Navigation von Säugerspermien und die Befruchtung. Communications Biology. DOI: 10.1038/s42003-026-09734-4.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft; Originaltitel (englisch) fehlt, nur deutsche Paraphrase",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0187-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0187-2026-DE",
+  "angabe": "Gimunová 2024, Effect of space travel on human reproductive health, npj Microgravity 10, 10",
+  "original": "5c. Gimunová, M. et al. (2024): *The effect of space travel on human reproductive health: a systematic review*. npj Microgravity 10, 10. DOI: 10.1038/s41526-024-00351-1.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft; Arbeit nach Fachwissen existent, Artikelnummer nicht verifiziert",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0187-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0187-2026-DE",
+  "angabe": "Lung 2026, Systematic review microgravity reproductive systems, iScience 29(2)",
+  "original": "5d. Lung, C.-F. et al. (2026): *A systematic review of microgravity on reproductive systems: Implications for space biology and human health*. iScience 29(2), 114663. DOI: 10.1016/j.isci.2026.114663.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0187-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0187-2026-DE",
+  "angabe": "Ferraz & Moeharram 2026, Past, present and future of human reproduction in space, Front Space Technol 7",
+  "original": "5e. Ferraz, M. & Moeharram, L. (2026): *Past, present and future of human reproduction and development in space*. Frontiers in Space Technologies 7, 1917547. DOI: 10.3389/frspt.2026.1917547.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0187-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0187-2026-DE",
+  "angabe": "NASA NTRS 2016, Mission concept multigenerational mammalian reproduction partial gravity, 20160010342",
+  "original": "7. NASA NTRS (2016): *A Mission Concept to Study Multigenerational Mammalian Reproduction in Partial Gravity*, NTRS 20160010342.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0187-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0187-2026-DE",
+  "angabe": "NASA NTRS 2016, MICEHAB, 20160006579",
+  "original": "8. NASA NTRS (2016): *Multigenerational Independent Colony for Extraterrestrial Habitation, Autonomy, and Behavior Health (MICEHAB)*, NTRS 20160006579.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft; MICEHAB (NASA Langley 2016) nach Fachwissen existent, NTRS-Nr. nicht verifiziert",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0187-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0187-2026-DE",
+  "angabe": "Donovan & Gresser 2018, Review mouse/rat responses micro/hyper/partial gravity, NTRS 20180002559",
+  "original": "9. Donovan, F. M. & Gresser, A. L. (2018): *A Review and Comparison of Mouse and Rat Responses to Micro Gravity, Hyper Gravity and Simulated Models of Partial Gravity*. NASA NTRS 20180002559.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0187-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0187-2026-DE",
+  "angabe": "NASA OSDR OS-867, Effects of Partial Gravity ...",
+  "original": "10. NASA OSDR OS-867: *Effects of Partial Gravity on Multi-system Mammalian Physiology*.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft; OSDR-Kennungen lauten üblicherweise 'OSD-…' – möglicher Tippfehler",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0187-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0188-2026-DE",
+  "angabe": "ESA 2026, FLEX and Sentinel-3C launched",
+  "original": "1. ESA (2026): *FLEX and Sentinel-3C launched*, 15 September 2026.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0188-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0188-2026-DE",
+  "angabe": "Madani 2026, Intercomparison global SIF products, Earth Space Sci",
+  "original": "9. Madani, N. et al. (2026): *Intercomparison of Global Solar Induced Chlorophyll Fluorescence Products*. Earth and Space Science. DOI: 10.1029/2026EA005048.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0188-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0189-2026-DE",
+  "angabe": "Chen 2026, GBD Nd-Fe-B diffusion sources, J Alloys Compd 1050",
+  "original": "6. Chen, S. et al. (2026): *Progress on grain boundary diffused Nd-Fe-B magnets: Developing cost effective diffusion sources and improving service performance*. Journal of Alloys and Compounds 1050, 185724. DOI: 10.1016/j.jallcom.2025.185724.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0189-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0190-2026-DE",
+  "angabe": "NASA-STD-5001B w/Change 3, Structural Design and Test Factors of Safety",
+  "original": "7. NASA-STD-5001B w/Change 3: *Structural Design and Test Factors of Safety for Spaceflight Hardware*.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft; Norm existiert, Change-Stand nicht verifiziert",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0190-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0190-2026-DE",
+  "angabe": "NASA-STD-5002B (2026), Load Analyses of Spacecraft and Payloads",
+  "original": "8. NASA-STD-5002B (2026): *Load Analyses of Spacecraft and Payloads*.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft; bekannt ist NASA-STD-5002A (2019) – Revision B 2026 nicht verifiziert",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0190-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0191-2026-DE",
+  "angabe": "Camilleri 2026, Supernovae Unite, arXiv:2609.05053",
+  "original": "8. Camilleri, R. et al. (2026): *Supernovae Unite: Combining Pantheon+ and DES-SN5YR*, arXiv:2609.05053, Preprint.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0191-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0191-2026-DE",
+  "angabe": "Lee 2026, Supernovae Unite: Host-Galaxy Mass, arXiv:2609.05321",
+  "original": "9. Lee, J. et al. (2026): *Supernovae Unite: Host-Galaxy Mass Measurements of Type Ia Supernovae and Their Impact on Cosmology*, arXiv:2609.05321, Preprint.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0191-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0191-2026-DE",
+  "angabe": "DES 2026, Dynamical Dark Energy Multiple Probes Full DES, arXiv:2605.27221",
+  "original": "13. DES Collaboration (2026): *Constraints on Dynamical Dark Energy from Multiple Probes in the Full DES*, arXiv:2605.27221; zur Veröffentlichung in Physical Review Letters angenommen (laut DES-Y6-Publikationsseite).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0191-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0191-2026-DE",
+  "angabe": "Layton, Hall & Robertson 2026, Evolving Dark Energy Jeffreys prior, arXiv:2610.26493",
+  "original": "14. Layton, J., Hall, A. & Robertson, N. C. (2026): *Exploring the Evidence for Evolving Dark Energy with the Jeffreys prior*, arXiv:2610.26493, Preprint (19.10.2026).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0191-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0191-2026-DE",
+  "angabe": "Fay, Artola & Perivolaropoulos 2026, distance-duality tilt, arXiv:2610.16496",
+  "original": "15. Fay, S., Artola, M. & Perivolaropoulos, L. (2026): *Sensitivity of calibration-free DESI DR2 BAO–supernova constraints to a distance-duality tilt*, arXiv:2610.16496, Preprint (12.10.2026).",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0191-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0192-2026-DE",
+  "angabe": "Khrykin et al./related 2025, Baryon partition, Nature Astronomy",
+  "original": "4. Khrykin, I. S. et al. / related localized-FRB baryon-partition work (2025): late-Universe partition of missing baryons; Nature Astronomy.",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutung: Connor, L. et al. (2025): A gas-rich cosmic web revealed by the partitioning of the missing baryons. Nature Astronomy 9 (2025) – Khrykin et al. 2024 ist ApJ (FLIMFLAM), nicht Nat. Astron.",
+  "pruefquelle": "Fachwissen (Suche nicht mehr möglich)",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0192-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0192-2026-DE",
+  "angabe": "Yu 2026, Baryon fraction diffuse gas 124 FRBs, PRD 114, 043537",
+  "original": "5. Yu, H. et al. (2026): *Constraining the baryon fraction in the extragalactic diffuse ionized gas with 124 localized fast radio bursts*. Physical Review D 114, 043537. DOI: 10.1103/mdvc-wq7t.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0192-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0192-2026-DE",
+  "angabe": "Sharma 2026, Suppressed matter clustering FRBs, Nat Astron",
+  "original": "6. Sharma, K. et al. (2026): *Signatures of suppressed matter clustering revealed by fast radio bursts*. Nature Astronomy, published 08.09.2026. DOI: 10.1038/s41550-026-02957-9.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0192-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0192-2026-DE",
+  "angabe": "Zhang 2025, PDF of DM from extragalactic medium, PRD 112, 083516",
+  "original": "7. Zhang, Y. et al. (2025): *Probability density function for dispersion measure of fast radio burst from extragalactic medium*. Physical Review D 112, 083516. DOI: 10.1103/n757-1nmx.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0192-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0192-2026-DE",
+  "angabe": "Zhang 2026, Removing Milky Way DM contributions, arXiv:2606.29761",
+  "original": "8. Zhang, Y. et al. (2026): *Estimating Cosmological Parameters from Localized Fast Radio Bursts: A Method for Removing Milky Way Dispersion-Measure Contributions*. arXiv:2606.29761.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0192-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0192-2026-DE",
+  "angabe": "Jia 2026, Host DM distributions FRB cosmology, PLB 877",
+  "original": "9. Jia, J.-Y. et al. (2026): *Generalized distributions of host dispersion measures in the fast radio burst cosmology*. Physics Letters B 877, 140473. DOI: 10.1016/j.physletb.2026.140473.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0192-2026-de.md"
+ },
+ {
+  "sig": "KUE-SCI-0192-2026-DE",
+  "angabe": "Sales 2026, Baryon density FRBs non-parametric H(z), arXiv:2605.01990",
+  "original": "10. Sales, L. L. et al. (2026): *Constraints on the baryon density from fast radio bursts using a non-parametric reconstruction of the Hubble parameter*. arXiv:2605.01990.",
+  "bewertung": "ungeprueft",
+  "korrekt": "Nicht geprüft – Websuche-Budget erschöpft",
+  "pruefquelle": "keine",
+  "grund": "ungeprueft",
+  "pfad": "kueper.com/src/content/kue/sci/kue-sci-0192-2026-de.md"
+ },
+ {
+  "sig": "OTA-FND-0012-2026-DE",
+  "angabe": "Kaiser et al. 2010, PMC3021054",
+  "original": "5. Kaiser et al. (2010): PMC3021054",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Vermutlich Jones, B. M.; Zhang, F.; Kaiser, R. I. et al. (2011): Formation of benzene in the interstellar medium. PNAS 108(2), 452–457, doi:10.1073/pnas.1012468108 (Kaiser Ko-/Seniorautor; online Dez. 2010). PMC-Zuordnung nicht direkt einsehbar (Captcha)",
+  "pruefquelle": "Suche: Kaiser 2010 benzene PNAS PMC; https://discovery.fiu.edu/display/pub109644",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-FND-0012-2026-DE.md"
+ },
+ {
+  "sig": "OTA-FND-0018-2026-DE",
+  "angabe": "SumTablets-Dataset, 91.606 Tafeln, 'seit Februar 2026'",
+  "original": "Seit Februar 2026 liegt mit SumTablets (OTA-OBS-0006) ein öffentlich zugängliches Dataset vor, das 91.606 Keilschrifttafeln in Unicode-Transliteration enthält",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Simmons, C.; Diehl Martinez, R.; Jurafsky, D. (2024): SumTablets: A Transliteration Dataset of Sumerian Tablets. Proc. ML4AL Workshop (ACL 2024) – veröffentlicht 2024, nicht Feb. 2026 (aus Kenntnis, Suche wegen Budget nicht mehr möglich)",
+  "pruefquelle": "Kenntnis; nicht per Suche verifiziert",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-FND-0018-2026-DE.md"
+ },
+ {
+  "sig": "OTA-HIS-0011-2030-DE",
+  "angabe": "ScienceDirect PII S0032063314002840 (Planetary and Space Science, ca. 2014/15)",
+  "original": "https://www.sciencedirect.com/science/article/abs/pii/S0032063314002840",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Nur URL ohne Autor/Titel; Link-Format plausibel (PSS), Inhalt aus der Sandbox nicht verifizierbar (Seite gesperrt) – manuell prüfen",
+  "pruefquelle": "Suche: S0032063314002840 / PSS Arsia glacial; Seite nicht abrufbar",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-HIS-0011-2030-DE.md"
+ },
+ {
+  "sig": "OTA-RED-0023-2026-DE",
+  "angabe": "Babcock et al. 2024, Biosystems",
+  "original": "Babcock\net al. (2024), Biosystems.",
+  "bewertung": "nicht_auffindbar",
+  "korrekt": "Vermutung: Babcock, N. S. et al. (2024): Ultraviolet superradiance from mega-networks of tryptophan in biological architectures. J. Phys. Chem. B 128, 4035–4046 (Zeitschrift dann falsch)",
+  "pruefquelle": "Suche: Babcock 2024 Biosystems (2 Suchwege)",
+  "grund": "nicht_auffindbar_nachsuchen",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-RED-0023-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0084-2163-EN",
+  "angabe": "Stefka et al. 2014, Altered Schaedler Flora and gnotobiotic model systems",
+  "original": "11. Stefka AT et al. (2014). Altered Schaedler Flora and gnotobiotic model systems",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Stefka et al. (2014) heißt real: Commensal bacteria protect against food allergen sensitization. PNAS 111, 13145. Für ASF passender wäre Wymore Brand, M. et al. (2015): The Altered Schaedler Flora: continued applications of a defined murine microbial community. ILAR J 56(2), 169–178 (Vermutung)",
+  "pruefquelle": "https://pubmed.ncbi.nlm.nih.gov/25157157/",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0084-2163-EN.md"
+ },
+ {
+  "sig": "OTA-SCI-0085-2164-EN",
+  "angabe": "Young et al. 2018, Microglial morphometric analysis via skeletal reconstruction",
+  "original": "9. Young K et al. (2018). Microglial morphometric analysis via skeletal reconstruction",
+  "bewertung": "fehlerhaft",
+  "korrekt": "Paraphrasierter Titel; gemeint wohl: Young, K. & Morrison, H. (2018): Quantifying microglia morphology from photomicrographs of immunohistochemistry prepared tissue using ImageJ. J Vis Exp (136), e57648 (zwei Autoren, kein 'et al.')",
+  "pruefquelle": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6103256",
+  "grund": "fehlerhaft_nicht_belegt",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0085-2164-EN.md"
+ },
+ {
+  "sig": "OTA-SCI-0043-2026-DE",
+  "grund": "dokument_ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0043-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0044-2026-DE",
+  "grund": "dokument_ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0044-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0045-2026-DE",
+  "grund": "dokument_ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0045-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0047-2026-DE",
+  "grund": "dokument_ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0047-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0048-2031-DE",
+  "grund": "dokument_ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0048-2031-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0057-2026-DE",
+  "grund": "dokument_ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0057-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0058-2026-DE",
+  "grund": "dokument_ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0058-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0059-2026-DE",
+  "grund": "dokument_ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0059-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0060-2026-DE",
+  "grund": "dokument_ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0060-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0061-2026-DE",
+  "grund": "dokument_ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0061-2026-DE.md"
+ },
+ {
+  "sig": "OTA-SCI-0062-2026-DE",
+  "grund": "dokument_ungeprueft",
+  "pfad": "overtime-archive.org/src/content/documents/OTA-SCI-0062-2026-DE.md"
+ }
+]
