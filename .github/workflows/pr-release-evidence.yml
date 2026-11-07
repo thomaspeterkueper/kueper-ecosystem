@@ -1,0 +1,40 @@
+name: KUEPER PR Release Evidence (read-only)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 7 * * *'
+
+permissions:
+  contents: read
+  pull-requests: read
+  checks: read
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run offline evidence regression tests
+        run: python3 -m unittest discover -s tests -p 'test_release_evidence.py' -v
+      - name: Check cross-repository read token
+        env:
+          KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+        run: |
+          if [ -z "$KUEPER_BOT_TOKEN" ]; then
+            echo 'Missing KUEPER_BOT_TOKEN; cross-repository audit cannot be trusted.' >&2
+            exit 1
+          fi
+      - name: Inspect PR reviews and checks without mutations
+        env:
+          GITHUB_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
+        run: python3 tools/governance/release_evidence.py > release-evidence.json
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-evidence-${{ github.run_id }}
+          path: release-evidence.json
+          if-no-files-found: warn
+          retention-days: 14
