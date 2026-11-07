@@ -33,7 +33,7 @@ def inspect(repo, pr):
             if previous is None or (review["submitted_at"], review.get("id", 0)) > (previous["submitted_at"], previous.get("id", 0)):
                 latest[login] = review
     checks = get(root + "/commits/" + sha + "/check-runs?per_page=100")
-    combined = get(root + "/commits/" + sha + "/status")
+    combined = get(root + "/commits/" + sha + "/status?per_page=100")
     runs = checks.get("check_runs", [])
     failures = [r["name"] for r in runs if r.get("conclusion") in ("failure", "timed_out", "cancelled", "action_required")]
     pending = [r["name"] for r in runs if r.get("status") != "completed"]
@@ -48,12 +48,12 @@ def inspect(repo, pr):
     if combined.get("state") in ("failure", "error", "pending"): blockers.append("commit_status_" + combined["state"])
     if failures: blockers.append("failed_checks")
     if pending: blockers.append("pending_checks")
-    if any(r.get("conclusion") not in ("success", "skipped", "neutral") for r in runs): blockers.append("non_successful_check_runs")
+    if any(r.get("conclusion") not in ("success", "skipped", "neutral", "stale") for r in runs): blockers.append("non_successful_check_runs")
     if combined.get("state") not in ("success", "pending") and combined.get("statuses"): blockers.append("non_successful_commit_status")
     if not runs and not combined.get("statuses"): blockers.append("no_ci_evidence_observed")
     if checks.get("total_count", 0) > len(runs): blockers.append("check_runs_pagination_incomplete")
     if len(reviews) == 100: blockers.append("reviews_pagination_incomplete")
-    if len(combined.get("statuses", [])) == 100: blockers.append("commit_statuses_pagination_incomplete")
+    if combined.get("total_count", 0) > len(combined.get("statuses", [])): blockers.append("commit_statuses_pagination_incomplete")
     return {"repo": repo, "pr": number, "head_sha": sha, "draft": pr["draft"],
             "independent_approvals": current_approvals, "stale_approvals": stale_approvals,
             "combined_commit_status": combined.get("state"), "failed_checks": failures,

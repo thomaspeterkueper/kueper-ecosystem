@@ -48,5 +48,39 @@ class EvidenceTests(unittest.TestCase):
     def test_failed_check_blocks(self, _):
         self.assertIn("failed_checks", module.inspect("owner/repo", PR)["blockers"])
 
+    @patch.object(module, "get", side_effect=lambda path: (
+        {"total_count": 2, "check_runs": [
+            {"name": "build", "status": "completed", "conclusion": "stale"},
+            {"name": "build", "status": "completed", "conclusion": "success"},
+        ]}
+        if "/check-runs?" in path else
+        [{"id": 4, "user": {"login": "reviewer"}, "state": "APPROVED", "submitted_at": "2026-11-03T10:00:00Z", "commit_id": "newsha"}]
+        if "/reviews?" in path else fake_get(path)
+    ))
+    def test_superseded_stale_check_run_does_not_block(self, _):
+        result = module.inspect("owner/repo", PR)
+        self.assertNotIn("non_successful_check_runs", result["blockers"])
+
+    @patch.object(module, "get", side_effect=lambda path: (
+        {"state": "success", "total_count": 55, "statuses": [{"state": "success"}] * 30}
+        if "/status" in path else
+        [{"id": 5, "user": {"login": "reviewer"}, "state": "APPROVED", "submitted_at": "2026-11-03T10:00:00Z", "commit_id": "newsha"}]
+        if "/reviews?" in path else fake_get(path)
+    ))
+    def test_incomplete_commit_status_page_blocks(self, _):
+        result = module.inspect("owner/repo", PR)
+        self.assertIn("commit_statuses_pagination_incomplete", result["blockers"])
+
+    def test_commit_status_request_uses_max_page_size(self):
+        paths = []
+
+        def recording_get(path):
+            paths.append(path)
+            return fake_get(path)
+
+        with patch.object(module, "get", side_effect=recording_get):
+            module.inspect("owner/repo", PR)
+        self.assertTrue(any("/status?" in path and "per_page=100" in path for path in paths))
+
 if __name__ == "__main__":
     unittest.main()
