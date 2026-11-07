@@ -72,10 +72,16 @@ jobs:
           node --check tools/research/agent-with-exa.mjs
 
       - name: Discover one project's highest-value research gaps
-        run: python3 tools/research/discover.py | tee research-discovery-report.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/research/discover.py | tee research-discovery-report.json
 
       - name: Research queued topics
-        run: python3 tools/research/execute.py | tee research-execution-report.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/research/execute.py | tee research-execution-report.json
 
       - name: Upload research reports
         if: always()
