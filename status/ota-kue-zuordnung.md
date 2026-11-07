@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-06 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-07 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -36,9 +36,9 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0105-2026-DE | Seltene b→sμμ-Zerfälle – CMS- und LHCb-Spannungen mit d | IOFFENR | KUE-SCI-0195 | offen |
 | OTA-SCI-0106-2026-DE | Gold über die Skalen – Nukleosynthese, Material, Ressou | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-05 – KUE-Gegenstück vorhanden; Realdossier ohne Werkbezug, Lagerstätten/Recycling/Provenienz in KUE-SCI-0195 v0.4 übernommen; Brückendokument OTA-REQ-20261105-001 |
 | OTA-SCI-0107-2026-DE | STAR: Nichtmonotone transversale Impulskorrelationen in | IOFFENR | KUE-SCI-0195 | offen |
-| OTA-SCI-0113-2026-DE | GW250114 – Hawkings Flächensatz, Kerr-Ringdown und star | IOFFENR | KUE-SCI-0196 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Realteil in KUE-SCI-0196 v0.2 übernommen, Kürzung OTA-REQ-20261102-001 |
-| OTA-SCI-0114-2026-DE | Horizontfragmentierung – theoretische Grenzfälle und Bu | HIOFFENR | KUE-SCI-0196 | offen |
-| OTA-SCI-0115-2026-DE | Einzelpositron im Quantenzyklotron – Messfähigkeit stat | IOFFENR | KUE-SCI-0197 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Verschlankung OTA-REQ-20261102-002 |
+| OTA-SCI-0113-2026-DE | GW250114 – Hawkings Flächensatz, Kerr-Ringdown und star | IOFFENR | KUE-SCI-0196 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Realteil in KUE-SCI-0196 v0.2 übernommen, Kürzung OTA-REQ-20261102-001 – umgesetzt 2026-11-07 (v1.1) |
+| OTA-SCI-0114-2026-DE | Horizontfragmentierung – theoretische Grenzfälle und Bu | HIOFFENR | KUE-SCI-0196 | geprüft 2026-11-07 – KUE-Gegenstück vorhanden (KUE-SCI-0196 v0.2 vollständig); Quellenkorrektur/Kürzung OTA-REQ-20261107-001 |
+| OTA-SCI-0115-2026-DE | Einzelpositron im Quantenzyklotron – Messfähigkeit stat | IOFFENR | KUE-SCI-0197 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Verschlankung OTA-REQ-20261102-002 – umgesetzt 2026-11-07 (v0.2) |
 | OTA-SCI-0116-2026-DE | Andromeda als Welteninsel – Distanzmessung, Kalibration | IOFFENR | KUE-SCI-0198 | geprüft 2026-11-03 – KUE-Gegenstück vorhanden; Realteil in KUE-SCI-0198 v0.2 übernommen, Brückendokument OTA-REQ-20261103-002 |
 | OTA-TEC-0019-2091-DE | OTA-TEC-0019-2091-DE | FHRT | KUE-SCI-0178 | offen |
 | OTA-TEC-0021-2025-DE | MOF-STABILISIERUNG FÜR SUPERIONISCHES GOLDHYDRID | FHRS | KUE-SCI-0183 | offen |
@@ -66,7 +66,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0109-2026-DE | Stromnetz-Engpässe: Erzeugung, Transportkapazität, Redi | HOFFENRT |  | offen |
 | OTA-SCI-0110-2026-DE | Adaptive Fertigung und Physical AI: Digitale Zwillinge, | HIOFFENR |  | offen |
 | OTA-SCI-0111-2026-DE | β Pictoris b im Radio: Aurorale Emission, Magnetfeld-In | HIOFFENR |  | offen |
-| OTA-SCI-0112-2026-DE | Mars-Siedlungen als Stoffstromsystem: ECLSS, Nahrung, I | HIOFFENR |  | offen |
+| OTA-SCI-0112-2026-DE | Mars-Siedlungen als Stoffstromsystem: ECLSS, Nahrung, I | HIOFFENR |  | geprüft 2026-11-07 – ganz nach KUE (Realteil), NOXIA-Regeln §18/21/24/27/30 bleiben; EXT-OTA-KUE-20261107-001, danach Brückendokument OTA-REQ-20261107-002 |
 | OTA-TEC-0126-2026-DE | Verteilte Robotik und MiniNode: Evidenzbasis für hetero | HOFFENRT |  | offen |
 
 ## B – Teile nach KUE
