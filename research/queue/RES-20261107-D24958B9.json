@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261107-D24958B9",
+  "status": "queued",
+  "created": "2026-11-07T10:25:38+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-OBS-0001-2025-DE.md",
+  "source_ref": "4cd2149f822c7d3f5cad1bfe201ff1534843716b",
+  "source_blob_sha": "55d94eca9807adf0ee4867b19c4abdc0aab30633",
+  "title": "Realwelt-Audit der [R]-Schicht von OTA-OBS-0001 (v1.0, 2025-12-28, AKTIV, 'Kanonisch'): Surya-Siddhanta-Masse und Gravitationsbehauptung, die 110-Hz-/70+114-Hz-Archaeoakustik-Kette und die Konkan-Petroglyphen-Datierung",
+  "question": "Quellengestuetzter Audit der als [R] gefuehrten 'Realien' von OTA-OBS-0001-2025-DE (Abschnitte II, III, V, VI), gepinnt auf Revision 4cd2149f822c7d3f5cad1bfe201ff1534843716b (Dokumentversion v1.0, Erstellung 2025-12-28; frontmatter-epistemicStatus ['R','W']). Das Dokument definiert sich ausdruecklich als Ausnahme 'ohne Fiktion, ohne Spekulation' und als Grenzlehre 'wo Wissenschaft endet und Spekulation beginnt'; seine [R]-Aussagen werden im Repo als kanonisch weitergetragen (u. a. OTA-KARTE-0003-Baumeister-Netzwerk-DE Abschnitt 2.1 fuehrt 'Htal Saflieni 70 + 114 Hz' und 'Chavin 50-150 Hz' als '[R] Kanonisch', OTA-SCI-0010-2025-DE und OTA-HIS-0006-9500BCE-DE verweisen darauf). (1) Surya Siddhanta: Pruefe die Tabelle 'Erddurchmesser 8.000 Meilen (modern 7.928)', 'Monddurchmesser 2.400 (~2.160)', 'Erde-Mond-Distanz 258.000 (~238.000)' — welche Yojana-Umrechnung (5,0 / 8,0 / 8,9 Meilen) ergibt 8.000, ist der Vergleich methodisch zulaessig, und was sagen die Editionen (Shukla 1957; Pingree 1978; Plofker 2009) tatsaechlich? Pruefe insbesondere die Aussage 'Der Text beschreibt Gravitation 1000 Jahre vor Newton' gegen den Wortlaut und die Forschungsbewertung: gibt es eine Anziehungs-/Schwerkraftaussage, und ist 'Gravitation' die richtige Kategorie oder eine moderne Rueckprojektion? Pruefe ferner 'sphaerische Erde' und die Datierung '4.-5. Jahrhundert n.Chr. (in heutiger Form), oral viel aelter'. (2) Archaeoakustik: Pruefe 'Htal Saflieni Hypogeum: Doppelresonanz 70 Hz und 114 Hz, Nachhall bis 13 Sekunden', 'Newgrange 110 Hz, 19-m-Gang wie Blasinstrument', 'Stonehenge: Cox & Fazenda (Salford 2020)', 'Chavin de Huantar: Kolar, Klanguebertragung ueber 1 km mit Pututu-Muscheltrompeten' gegen die tatsaechliche Messliteratur (Reznikoff; Eneix/OTSF; Watson & Betts; Cox & Fazenda) und stelle fest, welche Werte begutachtet, welche Graue-Literatur/Heritage-Berichte und welche unabhaengig repliziert sind. Pruefe das als [R] gefuehrte Zitat 'ICRL-Forscher: Alle untersuchten Kammern ... 95-120 Hz, die meisten 110-112 Hz' (Quelle, Stichprobe, Auswahlkriterium) und die Behauptung zu Cook et al. (UCLA 2008) ueber 'abrupte Verschiebung der Aktivitaet im praefrontalen Kortex' (Stichprobengroesse, Aufgabe, Replikationsstand, ob EEG-Alpha-ERD ueberhaupt so interpretierbar ist). (3) Konkan-Petroglyphen: Pruefe 'ueber 1.500 Petroglyphen an 70+ Standorten (2024)', 'geschaetztes Alter 10.000-12.000 Jahre (Mesolithikum)', '18 m Elefant auf Kasheli-Plateau' und 'Status: UNESCO-Tentativliste' gegen ASI/Maharashtra-State-Archaeology- und UNESCO-Records; berichte die tatsaechliche Datierungsgrundlage und den Forschungsstreit (mesolithisch vs. juenger). (4) 432-Numerologie: Pruefe die als [R] gefuehrte 'Mathematik von 432' (432 x 2 = 864; Sonnendurchmesser 864.000 Meilen; 432/2 = 216; Monddurchmesser 2.160 Meilen) und stelle fest, ob arithmetisch zutreffende Zahlenspiele hier als Evidenz praesentiert werden und wie die Grenze zu [S] zu ziehen ist. (5) Downstream-Korrektur: benenne die Saetze, die nach dem Audit in OTA-KARTE-0003 und OTA-SCI-0010 nachzuziehen sind. (6) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen (mythologische Attestierung Maya/Mayasura im Mahabharata; Existenz der Fundorte und der genannten Forschergruppen), die zu '[R] Quelleninhalt, nicht begutachtete Messung' bzw. '[R] Quelleninhalt, Umrechnung/Vergleich strittig' abzuschwaechen sind (8.000 Meilen, 110-Hz-Praeferenz, 70/114 Hz, 13 s Nachhall, 10.000-12.000 Jahre) und die [H]/[OFFEN]/[S] werden muessen; stelle fest, dass keine kanonische Resonanzfrequenz, keine kanonische Tempelakustik-These und kein kanonisches Alter der Konkan-Petroglyphen in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die Saga-Extrapolationen um 'Die Baumeister', Omnizedenz und Dvaraka, die Narrativfunktion des Dokuments sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "OTA-OBS-0001 ist das aelteste OBS-Grundlagendokument, traegt Status 'Kanonisch' und speist als Frequenz-Grundlage direkt OTA-KARTE-0003 (dort als '[R] Kanonisch'), OTA-SCI-0010 und OTA-HIS-0006. Die archäoakustische Literatur und die Konkan-Datierung sind seit 2020/2024 gewachsen und teils umstritten; eine Korrektur der [R]-Labels jetzt verhindert die weitere Verbreitung nicht begutachteter Frequenzzahlen in Karten- und Erzaehlschicht.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Sanskrit-Editionen und Sekundaerliteratur zum Surya Siddhanta (Shukla 1957; Pingree 1978; Plofker 2009); begutachtete Archaeoakustik-Messungen zu Htal Saflieni, Newgrange, Stonehenge und Chavin de Huantar (Reznikoff; Eneix/OTSF; Watson & Betts; Cox & Fazenda; Kolar) sowie Cook et al. 2008; ASI-/UNESCO-Records zu den Konkan-Petroglyphen.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.8925,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger Auftrag prueft OTA-OBS-0001 oder die Archaeoakustik-/Surya-Siddhanta-Schicht. RES-20260921-83EDB699 (OTA-SCI-0082) auditiert aegyptische Archaeoastronomie (Thuban, Cheops-Schaechte, MUL.APIN), also einen anderen Himmels- und Quellenkorpus; RES-20261012-2C4E7C35 (Hallstatt) betrifft archaeologische Rohstoffwirtschaft. Neu ist hier die Pruefung einer als 'nur verifizierbar' deklarierten Grundlagenschrift, deren Frequenzzahlen bereits in die kanonische Karte OTA-KARTE-0003 eingegangen sind.",
+  "fingerprint": "d24958b9193dce35"
+}
