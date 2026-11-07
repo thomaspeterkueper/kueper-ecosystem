@@ -1,6 +1,6 @@
 {
   "id": "RES-20261107-34465AF9",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-07T10:25:37+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Die bisherigen AVI-Audits (RES-20260920-D8270DC5, RES-20260920-9FF410A2) betreffen ausschliesslich die Kosmologie-/SN-Ia-Evidenzschicht von OTA-SCI-0091 und den dortigen Test B; kein bisheriger Auftrag prueft die LOD-/Erdrotations-Evidenz, die IERS-Datenreihe oder das Falsifikationsprotokoll von OTA-OBS-0005. Neuer Gegenstand ist die einzige im Repo als 'Echtzeit-Validierung' gefuehrte Vorhersage samt ihrer Chronologie (Peak Juli 2024 vs. Postulat 2025).",
-  "fingerprint": "34465af93d0c57da"
+  "fingerprint": "34465af93d0c57da",
+  "updated_at": "2026-11-07T10:36:56+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/278"
 }
