@@ -1,6 +1,6 @@
 {
   "id": "RES-20261107-D24958B9",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-07T10:25:38+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriger Auftrag prueft OTA-OBS-0001 oder die Archaeoakustik-/Surya-Siddhanta-Schicht. RES-20260921-83EDB699 (OTA-SCI-0082) auditiert aegyptische Archaeoastronomie (Thuban, Cheops-Schaechte, MUL.APIN), also einen anderen Himmels- und Quellenkorpus; RES-20261012-2C4E7C35 (Hallstatt) betrifft archaeologische Rohstoffwirtschaft. Neu ist hier die Pruefung einer als 'nur verifizierbar' deklarierten Grundlagenschrift, deren Frequenzzahlen bereits in die kanonische Karte OTA-KARTE-0003 eingegangen sind.",
-  "fingerprint": "d24958b9193dce35"
+  "fingerprint": "d24958b9193dce35",
+  "updated_at": "2026-11-07T10:55:44+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/279"
 }
