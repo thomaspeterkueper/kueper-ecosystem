@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261108-129A9E76",
+  "status": "queued",
+  "created": "2026-11-08T10:31:03+00:00",
+  "source_project": "products",
+  "source_repository": "thomaspeterkueper/kueper-products",
+  "source_path": "external-tasks/open/EXT-ECO-PROD-20261006-photophoretic-product-pilot.md",
+  "source_ref": "91a307e81227eecaea9c75e6ce1eaa3959113b59",
+  "source_blob_sha": "fcc234813dc5dfe9732bab397bbe8068fea4ba44",
+  "title": "Bounded operating envelope for photophoretic / thermal-transpiration lift",
+  "question": "What do peer-reviewed experiments and models actually establish about photophoretic (radiometric / thermal-transpiration) levitation at low pressure - achievable lift or payload per unit area, the pressure and Knudsen-number regime, heat-balance and material limits, and scaling - and where precisely is the boundary between measured centimetre-scale demonstrations and modelled payload, altitude or Mars extrapolations?",
+  "why_now": "Products has been assigned the first end-to-end Product-Potential pilot with a mandatory falsification gate: hold or reject if the Engineering baseline shows no useful payload/force margin inside a realistically manufacturable material and thermal envelope. That gate cannot be applied while 'centimeter-scale experimental demonstrations' and 'modelled payload/scaling claims and Mars extrapolation' remain separated only by assertion; a sourced envelope is needed to judge whether any sensing payload is physically available.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R",
+    "T",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Photophoresis / radiometric force and thermal transpiration at low pressure: peer-reviewed levitation experiments, measured lift or payload capacity versus pressure, and the modelling assumptions used to extrapolate to payload scale or Mars conditions.",
+  "publication_route_hint": null,
+  "project_weight": 0.9,
+  "relevance_score": 0.8725,
+  "scores": {
+    "project_relevance": 0.86,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.88
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "129a9e76e338047a"
+}
