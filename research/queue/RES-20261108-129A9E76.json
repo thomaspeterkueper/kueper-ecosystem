@@ -1,6 +1,6 @@
 {
   "id": "RES-20261108-129A9E76",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-08T10:31:03+00:00",
   "source_project": "products",
   "source_repository": "thomaspeterkueper/kueper-products",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": null,
-  "fingerprint": "129a9e76e338047a"
+  "fingerprint": "129a9e76e338047a",
+  "updated_at": "2026-11-08T10:41:39+00:00",
+  "last_error": "candidate for science lacks a strong source type marker"
 }
