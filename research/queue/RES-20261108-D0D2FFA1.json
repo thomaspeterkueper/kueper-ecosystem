@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261108-D0D2FFA1",
+  "status": "queued",
+  "created": "2026-11-08T10:31:02+00:00",
+  "source_project": "products",
+  "source_repository": "thomaspeterkueper/kueper-products",
+  "source_path": "small-products/gravity-irrigation.md",
+  "source_ref": "91a307e81227eecaea9c75e6ce1eaa3959113b59",
+  "source_blob_sha": "ae7123a519e8d85e673b56136f520a950dad232b",
+  "title": "Do pressure-compensating drip emitters actually regulate at rain-barrel head (0.3-1.5 m)?",
+  "question": "Do pressure-compensating and low-head flow-regulating drip emitters maintain usable discharge uniformity in the 0.03-0.15 bar (0.3-1.5 m water column) range typical of rain barrels, and what does peer-reviewed drip-irrigation hydraulics establish about minimum operating head, discharge exponent, emitter clogging and flow variation across that low-pressure range?",
+  "why_now": "The gravity-irrigation candidate is closed only as a prioritisation decision, and its own reopen condition names exactly this check: 'Ob sie bei Regentonnen-Druck (grob 0,03-0,15 bar, 0,3-1,5 m Wassersäule) funktionieren, wurde nicht geprüft'. The Gen-0 pass gate ('substantially lower flow variation across the test head range than the simplest orifice baseline') is only meaningful once the compensation range of real emitters is known, so this single external fact decides between justified reopening and definitive closure.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Hydraulics of pressure-compensating drip emitters and low-head gravity-fed irrigation: manufacturer discharge-vs-head curves, ISO 9261 emitter performance classes, and published low-head/bucket-kit irrigation trials.",
+  "publication_route_hint": null,
+  "project_weight": 0.9,
+  "relevance_score": 0.7725,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.62,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.82
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "d0d2ffa13a5365cb"
+}
