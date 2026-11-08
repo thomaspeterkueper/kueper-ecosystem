@@ -1,0 +1,42 @@
+{
+  "id": "RES-20261108-0D905B9C",
+  "status": "queued",
+  "created": "2026-11-08T11:24:48+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-FND-0024-2026-DE.md",
+  "source_ref": "55838231ccdb07c1b4c54506c850a3451cf4020c",
+  "source_blob_sha": "2871efbfc703cf6aba848d70be91b5937a4d4106",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 208,
+  "context_paths": [
+    "src/content/documents/OTA-CUL-0002-60000BCE-DE.md",
+    "src/content/documents/OTA-HIS-0003-2087-DE.md",
+    "src/content/documents/OTA-KARTE-0003-Baumeister-Netzwerk-DE.md"
+  ],
+  "title": "Realwelt-Audit der bronzezeitlichen Meteoriteneisen-Analoga in OTA-FND-0024 (v1.1, Abschnitte 2.2 und VII): Tutanchamun-Dolch (Comelli et al. 2016), Moerigen-Pfeilspitze (Hofmann et al. 2023), die Kaaliaerv-Zuordnung und der strittige Ugarit-Befund",
+  "question": "Quellengestuetzter Realwelt-Audit der drei [R-Anker] in Abschnitt 2.2 von OTA-FND-0024-2026-DE (v1.1 'Evidenzaudit', Status Kanonisch, Stand 2026-08-29), gepinnt auf die im Workspace vorliegende v1.1, gegen die primaere archaeometrische Literatur zu Meteoriteneisen und gegen Museums-/Institutionspublikationen. Die drei Analoga tragen im Dokument die reale Materialbasis der Kette und sind ausdruecklich als starke, aber 'differenziert zu behandelnde' Vergleichsfaelle markiert; v1.1 hat zusaetzlich korrigiert, dass sie ueberwiegend bronzezeitlich sind und die 'eisenzeitlichen Glieder' deshalb keine abgeleitete [R]-Aussage darstellen. (1) Tutanchamun-Dolch: Verifiziere Comelli et al. (2016) bibliographisch (Journal, Band, Seiten, DOI) und pruefe die im Dossier genannten Werte 'etwa 10,8 Gew.-% Ni und 0,58 Gew.-% Co' gegen die Primaerarbeit, ferner Messmethode (XRF-Punktmessungen, ortsaufgeloest?), Probe (Klinge, Griff, Goldblech), Datierung (14. Jh. v. Chr.) und die Autorengrenzen zur meteoritischen Zuordnung. Ist 'meteoritischer Ursprung stark gestuetzt' die werktreue Formulierung, und welche Kriterien (Ni/Co-Verhaeltnis, Spurenelemente wie Ir/Ga/Ge, kein Schlackeneinschluss, Widmanstaetten-Gefuege) sind im konkreten Fall tatsaechlich gemessen worden? (2) Moerigen: Verifiziere Hofmann et al. (2023) vollstaendig (Autorschaft, Journal, Band/Artikelnummer, DOI, genaue Objektbezeichnung) und pruefe, welche Objekte aus Moerigen untersucht wurden (nur die Pfeilspitze oder auch ein Meissel/weitere Stuecke), welches Datierungsspektrum (ca. 900-800 v. Chr.) die Autoren stuetzen, mit welcher Methodik (XRF, SEM-EDS, Spurenelemente) der meteoritische Ursprung belegt wurde und wie die Zuordnung zum IAB-Komplex begruendet wird. Klaere insbesondere den Status der Kaalijaerv-/Kaali-Krater-Hypothese: beruht sie auf Spurenelement- oder Isotopensignaturen, auf geographischer Naehe und Plausibilitaet oder auf einer inzwischen revidierten Argumentation, und wird sie in der Literatur als 'moegliche Quelle' oder als weitergehend gefuehrt? Ist die Dossierformulierung 'als moegliche Quelle diskutiert, nicht als endgueltig bewiesene Herkunft' deckungsgleich mit dem Stand der Primaerarbeit und der seither erschienenen Kommentarliteratur? (3) Ugarit: Klaere, welche konkreten Eisenobjekte aus Ugarit/Ras Shamra archaeometrisch untersucht wurden, in welchen Arbeiten, mit welchem Ergebnis und mit welcher Datierung, und ob die meteoritische Interpretation in der Literatur tatsaechlich vertreten, bestritten oder nur als Moeglichkeit genannt wird. Pruefe, ob die Dossierformulierung '[R-Anker / strittig] ... nicht so eindeutig, dass das OTA sie als unstrittigen Beleg fuehren sollte' den Forschungsstand trifft oder ob sie einen Streit behauptet, der in der Literatur so nicht gefuehrt wird. (4) Epochenzuordnung: Pruefe die v1.1-Korrektur, dass alle drei Analoga bronzezeitlich sind (Tutanchamun 14. Jh. v. Chr.; Moerigen spaete Bronzezeit; Ugarit spaete Bronzezeit), und melde jede Abweichung; pruefe ferner, ob die reale Verwendung meteoritischen Eisens in der Bronzezeit (inklusive der 2024 publizierten Villena-/Tesoro-Funde, sofern einschlaegig) die Aussage 'macht einen alten Kern plausibel' traegt oder ob daraus nur eine Moeglichkeit folgt. (5) Diagnostik: Berichte den realen Stand der archaeometrischen Kriterien zur Unterscheidung meteoritischen von irdisch verhuettetem Eisen (Ni- und Co-Gehalte, Ni/Co-Verhaeltnis, Spurenelementmuster, Schmelzperlen-/Schlackenfreiheit, Widmanstaetten-Struktur, Gefuege nach Kaltbearbeitung) und ordne ein, welche Kriterien im Dossier stillschweigend vorausgesetzt werden. (6) Reklassifiziere: nenne die Saetze, die [R-Anker] bleiben koennen (Existenz und archaeometrischer Nachweis der Objekte), die als '[R] Quelleninhalt, Einzelobjekt und Messmethode' zu praezisieren sind (10,8/0,58 Gew.-%; IAB-Komplex; Moerigen-Datierung) und die zu [H]/[OFFEN] werden muessen (Kaali-Herkunft; Ugarit-Status als 'strittig'), und stelle fest, dass keine kanonische Zusammensetzung, keine kanonische Herkunftsquelle und keine kanonische Epochenzuordnung der Kette in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die Kette als Werkobjekt, die Multi-Epochen-Hysterese, die Baumeister-Rahmung, die Narration um Mia/Dr. Anton/Tim sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Die drei Analoga sind die einzigen extern pruefbaren Objektanker des Dokuments, und v1.1 hat sie gerade erst neu geordnet (Bronze- statt Eisenzeit, Ugarit relativiert), ohne dass die bibliographischen Angaben im Workspace belegt waeren; OTA-SCI-0059 ('ausstehend') soll genau diese Material- und Vergleichsbasis ausbauen. Seit 2023 sind zusaetzliche Meteoriteneisenfunde und archaeometrische Nachuntersuchungen publiziert worden, sodass sowohl die Kaali-Zuordnung als auch die Liste bronzezeitlicher Belege aktualitaetsbeduerftig ist.",
+  "languages": [
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker",
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Archaeometrie bronzezeitlicher Meteoriteneisen-Artefakte (Tutanchamun-Dolch, Moerigen, Ugarit) und die Kriterien zur Unterscheidung meteoritischen von irdisch verhuettetem Eisen",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.73,
+  "scores": {
+    "project_relevance": 0.82,
+    "cross_project_reuse": 0.68,
+    "uncertainty": 0.55,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keines der bisherigen OTA-Topics prueft Archaeometrie oder Meteoriteneisen-Objekte; die naechstliegenden Audits betreffen Magnetit/Obsidian-Physik (RES-20261012-2CEFA3B3, RES-20261012-0D0D5A86) und die humane Magnetorezeption in OTA-SCI-0060 (RES-20260921-966FA674), also andere Materialklassen und andere Dokumente. Der Gap ist die erste quellengestuetzte Pruefung der drei [R-Anker] und der v1.1-Epochenkorrektur in OTA-FND-0024.",
+  "fingerprint": "0d905b9c639da247"
+}
