@@ -1,0 +1,41 @@
+{
+  "id": "RES-20261108-16A8D3D4",
+  "status": "queued",
+  "created": "2026-11-08T11:24:47+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-FND-0024-2026-DE.md",
+  "source_ref": "55838231ccdb07c1b4c54506c850a3451cf4020c",
+  "source_blob_sha": "2871efbfc703cf6aba848d70be91b5937a4d4106",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 208,
+  "context_paths": [
+    "src/content/documents/OTA-CUL-0002-60000BCE-DE.md",
+    "src/content/documents/OTA-HIS-0003-2087-DE.md",
+    "src/content/documents/OTA-KARTE-0003-Baumeister-Netzwerk-DE.md"
+  ],
+  "title": "Realwelt-Audit der Thorium-/Monazit-Praemisse in OTA-FND-0024 (v1.1, Abschnitte 2.5 und VII): der Th-Gehalt von Eisenmeteoriten um 10^-11 g/g, Monazit/Thorit als angebliche Einschlussphase und die Th-232-Waermebilanz",
+  "question": "Quellengestuetzter Realwelt-Audit der [R]-Praemisse in Abschnitt 2.5 von OTA-FND-0024-2026-DE (Serienkonzept 'DIE KETTE VOM HEXENTEICH', v1.1 'Evidenzaudit', Status Kanonisch, Stand 2026-08-29), gepinnt auf die im Workspace vorliegende v1.1, gegen die primaere Meteoriten-Geochemie, Radionuklid- und Einschlussliteratur. Der Abschnitt verwirft die fruehere Behauptung, Monazit-/Thorit-Einschluesse seien aus dem Asteroid-Schmelzprozess in Eisenmeteoriten plausibel, und traegt diese Verwerfung mit drei Aussagen: '[R] Thorium ist stark lithophil', '[R] historische Messungen an Eisenmeteoriten ergeben extrem geringe Th-Gehalte in der Groessenordnung von etwa 10^-11 g/g' und '[R/F] wahrnehmbare Waerme durch Th-232-Zerfall ist bei solchen Spurengehalten keine plausible Energiequelle'. Die dritte Aussage haengt vollstaendig an der zweiten Zahl; faellt sie, aendert sich die Begruendung des Abschnitts, auch wenn die narrativ ohnehin auf [F] zurueckgefuehrte Kettenwaerme davon unberuehrt bleibt. (1) Th-Gehalte: Pruefe gegen die reale Spurenanalytik von Eisenmeteoriten (Neutronenaktivierungsanalysen der 1950er-1970er Jahre, spaetere Massenspektrometrie- und ICP-MS-Erhebungen, sofern verfuegbar) und gegen Uebersichten zur Nuklidgeochemie von Eisenmeteoriten, welche Th- und U-Konzentrationen fuer Eisenmeteoriten tatsaechlich berichtet werden, mit welcher Bezugsbasis (Metallphase vs. Gesamtgestein, inklusive oder exklusive Silikateinschluesse), mit welcher Nachweisgrenze und welcher Streuung zwischen Klassen (z. B. magmatische IIAB/IIIAB/IVB gegen silikatreiche IAB). Melde ausdruecklich jede Abweichung von 'etwa 10^-11 g/g' nach oben oder unten und stelle fest, ob die Angabe als Messbefund, als obere Grenze oder als Groessenordnungs-Schaetzung zu fuehren ist. (2) Einschlussphasen: Pruefe, welche Th-/REE-traegenden Phasen in Eisenmeteoriten real dokumentiert sind (Phosphate wie Chlorapatit, Whitlockit/Merrillit; Silikateinschluesse; etwaige Monazit- oder Thorit-Funde) und ob 'Monazit/Thorit' als typische oder auch nur als bekannte Einschlussphase ueberhaupt in der Literatur auftritt. Berichte, in welchen Meteoritenklassen silikatische und phosphatische Einschluesse vorkommen und wie haeufig sie sind, und ob die Verwerfung im Dossier als 'keine belastbare Standardphase' werktreu ist oder als zu starke Negativaussage praeziser gefasst werden muss. (3) Lithophilie-Argument: Pruefe die Aussage 'Thorium ist stark lithophil' gegen die reale Geochemie (Goldschmidt-Klassifikation, Verteilung zwischen Metall- und Silikatphase bei Differentiationsprozessen) und bewerte, ob das Argument in Abschnitt 2.5 als eigenstaendiger [R]-Traeger taugt oder nur als Plausibilitaetsanker neben der Konzentrationsangabe. (4) Waermebilanz: Rechne die Behauptung nach — spezifische Aktivitaet von Th-232 (Groessenordnung 4 MBq/g) und die Summe der Zerfallsenergien der Th-232-Reihe, daraus die spezifische Waermeleistung pro Gramm Th und, bei 10^-11 g/g und einer Artefaktmasse in Ketten-Groessenordnung, die absolute Leistung. Vergleiche sie mit Koerperwaerme, Waermeleitung im Kontakt, Waermekapazitaet des Artefakts und einer realistischen Nachweisgrenze fuer wahrnehmbare Erwaermung. Ist die Folgerung 'keine plausible Energiequelle' quantitativ belastbar, und welche Groessenordnung von Th-Gehalt waere noetig, um sie zu erschuettern? (5) Aktualitaet: Pruefe, ob zwischen 2020 und November 2026 Arbeiten erschienen sind, die die Th-/U-Datenbasis fuer Eisenmeteoriten oder das Vorkommen von REE-Phosphaten in Eisenmeteoriten veraendern, und ob die Angabe in v1.1 damit als aktuell, als ueberholt oder als unbelegt zu fuehren ist. (6) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen (Lithophilie; 'Th-Gehalte in Eisenmeteoriten sind extrem niedrig' als Groessenordnung; Monazit/Thorit nicht als typische Phase), die zu '[R] Quelleninhalt, Bezugsbasis und Messmethode offen' abzuschwaechen sind (insbesondere 10^-11 g/g) und die [OFFEN] werden muessen, falls keine eisenmeteorit-spezifische Messreihe auffindbar ist; stelle fest, dass keine kanonische Th-Konzentration, keine kanonische Einschlussphase und kein kanonischer Waermebeitrag in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die Kette als Werkobjekt und ihre fiktionale Waerme, die 7-Sekunden- und Entrainment-Setzungen, die Baumeister-Rahmung, die Figuren Mia/Dr. Anton/Tim sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "v1.1 hat die Thorium-Praemisse aktiv zurueckgestuft und dabei eine sehr spezifische Zahl (10^-11 g/g) als Begruendung kanonisch festgeschrieben; gleichzeitig ist OTA-SCI-0059 ('Meteoritisches Eisen / Widmanstaetten-Struktur') weiterhin 'ausstehend' und soll genau diese Materialbasis tragen. Wird die Zahl jetzt nicht geprueft, wandert eine moeglicherweise falsch skalierte Spurenkonzentration ungeprueft in die Materialdossiers, und die im Dokument selbst formulierte Regel '[KN-2] Praezision ist nur dann ein Gewinn, wenn die Zahl wirklich zur Quelle gehoert' bleibt fuer den eigenen Text unangewendet.",
+  "languages": [
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Spurengelhalte von Thorium und Uran in Eisenmeteoriten sowie die spezifische Aktivitaet und Zerfallsenergie der Th-232-Reihe (Meteoriten-Geochemie, Radionuklid-Physik)",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.69,
+  "scores": {
+    "project_relevance": 0.72,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.62,
+    "evidence_potential": 0.82
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger OTA-Forschungstopik-Audit behandelt OTA-FND-0024 oder die Thorium-/Monazit-Praemisse; auch RES-20261012-2CEFA3B3, das OTA-SCI-0059 nur als Materialreferenz zitiert (Fe-Ni-Kamacit/Taenit mit untergeordneten Magnetit-Mikrodomaenen), prueft weder Th/U-Spurengehalte noch Einschlussphasen noch die Zerfallswaerme. Die Frage ist daher keine Umformulierung eines bestehenden Topics, sondern die erste Pruefung eines bislang unbelegten kanonischen Zahlenankers.",
+  "fingerprint": "16a8d3d4be509f26"
+}
