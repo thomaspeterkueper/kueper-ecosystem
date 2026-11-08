@@ -1,6 +1,6 @@
 {
   "id": "RES-20261108-16A8D3D4",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-08T11:24:47+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -37,5 +37,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriger OTA-Forschungstopik-Audit behandelt OTA-FND-0024 oder die Thorium-/Monazit-Praemisse; auch RES-20261012-2CEFA3B3, das OTA-SCI-0059 nur als Materialreferenz zitiert (Fe-Ni-Kamacit/Taenit mit untergeordneten Magnetit-Mikrodomaenen), prueft weder Th/U-Spurengehalte noch Einschlussphasen noch die Zerfallswaerme. Die Frage ist daher keine Umformulierung eines bestehenden Topics, sondern die erste Pruefung eines bislang unbelegten kanonischen Zahlenankers.",
-  "fingerprint": "16a8d3d4be509f26"
+  "fingerprint": "16a8d3d4be509f26",
+  "updated_at": "2026-11-08T11:34:41+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/282"
 }
