@@ -1,6 +1,6 @@
 {
   "id": "RES-20261108-5DA5CE14",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-08T10:31:01+00:00",
   "source_project": "products",
   "source_repository": "thomaspeterkueper/kueper-products",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": null,
-  "fingerprint": "5da5ce1433afd58f"
+  "fingerprint": "5da5ce1433afd58f",
+  "updated_at": "2026-11-08T10:57:54+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/281"
 }
