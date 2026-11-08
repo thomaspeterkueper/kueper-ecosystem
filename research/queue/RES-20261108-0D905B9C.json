@@ -1,6 +1,6 @@
 {
   "id": "RES-20261108-0D905B9C",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-08T11:24:48+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -38,5 +38,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keines der bisherigen OTA-Topics prueft Archaeometrie oder Meteoriteneisen-Objekte; die naechstliegenden Audits betreffen Magnetit/Obsidian-Physik (RES-20261012-2CEFA3B3, RES-20261012-0D0D5A86) und die humane Magnetorezeption in OTA-SCI-0060 (RES-20260921-966FA674), also andere Materialklassen und andere Dokumente. Der Gap ist die erste quellengestuetzte Pruefung der drei [R-Anker] und der v1.1-Epochenkorrektur in OTA-FND-0024.",
-  "fingerprint": "0d905b9c639da247"
+  "fingerprint": "0d905b9c639da247",
+  "updated_at": "2026-11-08T11:45:59+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/283"
 }
