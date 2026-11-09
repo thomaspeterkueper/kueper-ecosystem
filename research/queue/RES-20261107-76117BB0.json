@@ -1,6 +1,6 @@
 {
   "id": "RES-20261107-76117BB0",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-07T10:25:39+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -34,5 +34,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriger Auftrag betrifft OTA-TEC-0126, die MiniNode-Evidenzbasis oder Robotik-Programmstatus. Die bisherigen Technik-Audits gelten Mars-ISRU/Staub/Thermik (OTA-TEC-0034, -0084, -0098) bzw. Eis- und Energiepfaden; auch RES-20260920-1C540EFB (OTA-TEC-0098) prueft Radiatoren, nicht Missionsreifegrade. Neu ist die Pruefung der programmbezogenen Realanker einer heterogenen Schwarmroboter-Evidenzmatrix.",
-  "fingerprint": "76117bb071ed8999"
+  "fingerprint": "76117bb071ed8999",
+  "updated_at": "2026-11-09T11:59:22+00:00",
+  "last_error": "candidate for ota-archive-evidence lacks a strong source type marker"
 }
