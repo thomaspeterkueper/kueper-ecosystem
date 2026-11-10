@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261110-95EAB857",
+  "status": "queued",
+  "created": "2026-11-10T11:25:09+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "spaces/noxia/infrastructure/NXU-Q1-QUADRATURE-STATION.md",
+  "source_ref": "5a229e4199e69f2068790c8eeb0fb38cc885c1c7",
+  "source_blob_sha": "5d1a4457dd3ccb745154e47c4a9ea9a5cdb04a12",
+  "title": "ECLSS-Schließungsraten und Resupply-Massen für Q1 und Mars: Was ISS-, CELSS- und MELiSSA-Daten für 1.000–4.000 Personen belegen",
+  "question": "Welche real belegten Schließungsraten, Resupply-Massen und Energiekosten ergeben sich für Wasser, Sauerstoff, Stickstoff und Kohlenstoff in Habitaten für 1.000–4.000 Menschen aus ISS-ECLSS-Flugdaten, NASA-CELSS-, ESA-MELiSSA- und peer-reviewten bioregenerativen Life-Support-Studien? Welche Puffer-, Ersatzteil- und Wartungsmassen pro Person und Jahr bleiben, welche Ausfallmodi (Biofilm, Sole, Katalysator-/Adsorberalterung, Sensordrift, Kontamination) und Skalierungsgrenzen sind belegt, und wie verhalten sich die kanonischen 96-h-/7-d-/14-d-Reserven zu realistischen Reparatur- und Nachschubzeiten? Wo muss der Kanon für Q1 und Mars von 'stark geschlossenen Kreisläufen' zu konkreten Quoten, Verlustpfaden und Reparaturzeiten übergehen?",
+  "why_now": "NXU-Q1-QUADRATURE-STATION §12 behauptet stark geschlossene, aber keine perfekten Kreisläufe; §18 führt 'ECLSS-, Wasser- und Reservearchitektur' als offenes technisches Gate. Das Mars Settlement Systems Kernel verlangt Reservoir-/Fluss-Vektoren, aber der Kanon nennt keine belegten Schließungsraten; diese bestimmen Bevölkerungsgrenzen, Nachschub und die Zwei-Jahres-Isolation.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "ISS Environmental Control and Life Support System flight performance; NASA CELSS; ESA MELiSSA; peer-reviewed water/oxygen/nitrogen recovery and bioregenerative life-support studies.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.8625,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine bisherige Recherche behandelt ECLSS-Schließungsraten, Resupply-Massen und Ausfallmodi; die Energierecherche betrifft Erzeugung, Speicher und Netze, die Pilzrecherche Substrat und Nährstoffkreisläufe im Boden, nicht Wasser-/Luft-/Stickstoffschließung und Puffermassen.",
+  "fingerprint": "95eab857a319d685"
+}
