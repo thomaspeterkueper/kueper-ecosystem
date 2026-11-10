@@ -2,7 +2,7 @@
 // Input must have explicit UTC ISO timestamps and fixed duration in minutes.
 const EVIDENCE_TIERS=new Set(["synthetic","simulation","lab","operational"]);
 export function hourlyEnergy(rows, {source, zone, retrievedAt, evidence} = {}) {
- if (!source?.trim() || !zone?.trim() || !Number.isFinite(Date.parse(retrievedAt)) ||
+ if (!["synthetic","operational"].includes(evidence) || !source?.trim() || !zone?.trim() || typeof retrievedAt !== "string" || !/^\\d{4}-/.test(retrievedAt) || !Number.isFinite(Date.parse(retrievedAt)) ||
      !EVIDENCE_TIERS.has(evidence) || !Array.isArray(rows) || rows.length===0)
   throw Error("Provenance, evidence tier and data required");
  const sorted=[...rows].sort((a,b)=>Date.parse(a.start)-Date.parse(b.start));
