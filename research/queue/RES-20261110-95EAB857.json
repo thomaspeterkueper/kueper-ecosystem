@@ -1,6 +1,6 @@
 {
   "id": "RES-20261110-95EAB857",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-10T11:25:09+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine bisherige Recherche behandelt ECLSS-Schließungsraten, Resupply-Massen und Ausfallmodi; die Energierecherche betrifft Erzeugung, Speicher und Netze, die Pilzrecherche Substrat und Nährstoffkreisläufe im Boden, nicht Wasser-/Luft-/Stickstoffschließung und Puffermassen.",
-  "fingerprint": "95eab857a319d685"
+  "fingerprint": "95eab857a319d685",
+  "updated_at": "2026-11-10T11:37:07+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/288"
 }
