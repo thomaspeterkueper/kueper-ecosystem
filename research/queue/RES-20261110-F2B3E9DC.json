@@ -1,6 +1,6 @@
 {
   "id": "RES-20261110-F2B3E9DC",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-10T11:25:07+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine bisherige Recherche behandelt die quantitative Nahrungsmittel- und Kalorienbilanz der Marsbevölkerung; die Pilz-/Myzel-Recherche betrifft Substratbildung und Perchlorat, die Energie-Recherche Erzeugung und Netze, nicht Anbaufläche, Erträge und Energie pro essbarer Kalorie.",
-  "fingerprint": "f2b3e9dc89545038"
+  "fingerprint": "f2b3e9dc89545038",
+  "updated_at": "2026-11-10T11:50:07+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/289"
 }
