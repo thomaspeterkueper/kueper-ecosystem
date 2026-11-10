@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-09 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-10 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -28,12 +28,12 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-FND-0024-2026-DE | DIE KETTE VOM HEXENTEICH | FHRW | KUE-SCI-0170 | offen |
 | OTA-LSC-0003-2026-DE | OTA-LSC-0003-2026-DE | FHRST | KUE-SCI-0175 | offen |
 | OTA-SCI-0017-2025-DE | Superionisches Goldhydrid als Resonanzanker — Eine theo | HRT | KUE-SCI-0183 | geprüft 2026-11-03 – KUE-Gegenstück vorhanden (KUE-SCI-0183 v0.2), AVI-Teil bleibt; Korrektur/Kürzung OTA-REQ-20261103-001 (wartet auf Thomas), EXT-OTA-KUE-20261103-001 |
-| OTA-SCI-0047-2026-DE | OTA-SCI-0047-2026-DE | HRT | KUE-SCI-0175 | geprüft 2026-11-06 – KUE-Gegenstück vorhanden; Humanstudien/Studienlage in KUE-SCI-0175 v0.2 übernommen, Halo/Λ bleiben; Korrektur/Kürzung OTA-REQ-20261106-002 (pEEG-Teil wartet auf Thomas) |
+| OTA-SCI-0047-2026-DE | OTA-SCI-0047-2026-DE | HRT | KUE-SCI-0175 | geprüft 2026-11-06 – KUE-Gegenstück vorhanden; Humanstudien/Studienlage in KUE-SCI-0175 v0.2 übernommen, Halo/Λ bleiben; Korrektur/Kürzung OTA-REQ-20261106-002 (pEEG-Teil wartet auf Thomas) – umgesetzt 2026-11-10 (v1.3) |
 | OTA-SCI-0064-2026-DE | Das Hautmikrobiom: Systemcharakter, Störbarkeit, Revers | RT | KUE-SCI-0064 (gleicher Titel – Dublette) | geprüft 2026-11-04 – KUE-Gegenstück vorhanden; KUE-SCI-0064 v1.1 korrigiert, OTA-SCI-0064 v1.2 als Brückendokument gekürzt (erledigt 2026-11-04) |
-| OTA-SCI-0080-2026-DE | OTA-SCI-0080-2026-DE | RST | KUE-SCI-0174 | geprüft 2026-11-06 – KUE-Gegenstück vorhanden; Regionalwerte in KUE-SCI-0174 v0.2 übernommen, Werkanker bleiben; Korrektur/Kürzung OTA-REQ-20261106-001 |
+| OTA-SCI-0080-2026-DE | OTA-SCI-0080-2026-DE | RST | KUE-SCI-0174 | geprüft 2026-11-06 – KUE-Gegenstück vorhanden; Regionalwerte in KUE-SCI-0174 v0.2 übernommen, Werkanker bleiben; Korrektur/Kürzung OTA-REQ-20261106-001 – umgesetzt 2026-11-10 (v1.4) |
 | OTA-SCI-0086-2026-DE | Reproduktion und Entwicklung von der Konzeption bis zum | HOFFENR | KUE-SCI-0187 | geprüft 2026-11-05 – KUE-Gegenstück vorhanden; fehlende Teile in KUE-SCI-0187 v0.2 übernommen, §19 bleibt; Kürzung OTA-REQ-20261105-002 – umgesetzt 2026-11-09 (v1.3) |
 | OTA-SCI-0091-2026-DE | Supernovae Unite — 2.884 Typ-Ia-Supernovae und die Evid | HOFFENR | KUE-SCI-0191 | geprüft 2026-11-04 – KUE-Gegenstück vorhanden (KUE-SCI-0191 v0.2), AVI-Teil bleibt; Kürzung OTA-REQ-20261104-002 – umgesetzt 2026-11-08 (v1.1) |
-| OTA-SCI-0105-2026-DE | Seltene b→sμμ-Zerfälle – CMS- und LHCb-Spannungen mit d | IOFFENR | KUE-SCI-0195 | offen |
+| OTA-SCI-0105-2026-DE | Seltene b→sμμ-Zerfälle – CMS- und LHCb-Spannungen mit d | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-10 – kein KUE-Gegenstück (KUE-SCI-0195 nur Abgrenzungssatz), tatsächlich Teile nach KUE, AVI-P bleibt; EXT-OTA-KUE-20261110-002, danach Kürzung OTA-REQ-20261110-002 |
 | OTA-SCI-0106-2026-DE | Gold über die Skalen – Nukleosynthese, Material, Ressou | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-05 – KUE-Gegenstück vorhanden; Realdossier ohne Werkbezug, Lagerstätten/Recycling/Provenienz in KUE-SCI-0195 v0.4 übernommen; Brückendokument OTA-REQ-20261105-001 – umgesetzt 2026-11-09 (v0.3) |
 | OTA-SCI-0107-2026-DE | STAR: Nichtmonotone transversale Impulskorrelationen in | IOFFENR | KUE-SCI-0195 | offen |
 | OTA-SCI-0113-2026-DE | GW250114 – Hawkings Flächensatz, Kerr-Ringdown und star | IOFFENR | KUE-SCI-0196 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Realteil in KUE-SCI-0196 v0.2 übernommen, Kürzung OTA-REQ-20261102-001 – umgesetzt 2026-11-07 (v1.1) |
@@ -59,7 +59,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0058-2026-DE | Triclosan als entkoppelnder Selektionsdruck: Wirkmechan | RT |  | geprüft 2026-11-09 – Teile nach KUE (II–VI, IX), Leitsatz/Systemvergleich Otjize bleibt; EXT-OTA-KUE-20261109-001, danach Kürzung OTA-REQ-20261109-001 |
 | OTA-SCI-0060-2026-DE | OTA-SCI-0060-2026-DE | HRT |  | offen |
 | OTA-SCI-0062-2026-DE | Der Mpemba-Effekt: Anomale Relaxation, universelles Pri | RT |  | geprüft 2026-11-08 – Teile nach KUE (II–VII), VIII/Zuva bleibt; EXT-OTA-KUE-20261108-002, danach Kürzung OTA-REQ-20261108-002 (Leitsatz wartet auf Thomas) |
-| OTA-SCI-0082-2026-DE | Der Himmel von 2700 BCE: Präzession, Thuban als Polarst | RST |  | offen |
+| OTA-SCI-0082-2026-DE | Der Himmel von 2700 BCE: Präzession, Thuban als Polarst | RST |  | geprüft 2026-11-10 – Teile nach KUE (I, II, III.1), Bronzescheibe/Szene/Delphi bleiben; EXT-OTA-KUE-20261110-001, danach Korrektur/Kürzung OTA-REQ-20261110-001 (KN-1.2 wartet auf Thomas) |
 | OTA-SCI-0102-2026-DE | Autophagie im menschlichen Altern — Flux, Zelltyp, Gesc | IOFFENR |  | offen |
 | OTA-SCI-0103-2026-DE | Longitudinale Gehirngesundheit — Lebenslauf-Risiken, Pr | IOFFENR |  | offen |
 | OTA-SCI-0108-2026-DE | Ultrakompakte Doppel-Weiße-Zwerge: Orbitalzerfall, Dire | HIOFFENR |  | offen |
