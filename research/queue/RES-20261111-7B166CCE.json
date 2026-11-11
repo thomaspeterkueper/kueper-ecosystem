@@ -1,6 +1,6 @@
 {
   "id": "RES-20261111-7B166CCE",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-11T11:09:52+00:00",
   "source_project": "mishkenaz",
   "source_repository": "thomaspeterkueper/mishkenaz.org",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriger Kandidat behandelt Relativität, Obligatorik oder Effabilität. RES-20261005-43D9854E prüft die verbinitiale Rollensyntax, RES-20260915-3ADB7DC0 die Lexikalisierung der 42 Vektoren; beide setzen die Sagbarkeitsfrage nicht voraus und beantworten sie nicht.",
-  "fingerprint": "7b166cceffd9e15b"
+  "fingerprint": "7b166cceffd9e15b",
+  "updated_at": "2026-11-11T11:18:40+00:00",
+  "last_error": "candidate for historical-linguistic lacks a strong source type marker"
 }
