@@ -53,7 +53,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-OBS-0004-2026-DE | GÖBEKLI TEPE | R |  | offen |
 | OTA-OBS-0006-2026-DE | SumTablets: KI-gestützte Keilschrift-Transliteration al | IRT |  | offen |
 | OTA-SCI-0019-2025-DE | DIE FÜNF EPOCHEN DES GEHIRNS | RS |  | geprüft 2026-11-09 – Teile nach KUE (I–III, Studie Mousley et al.), GANDHAKA/noχ-Extrapolationen bleiben; EXT-OTA-KUE-20261109-002, danach Kürzung OTA-REQ-20261109-002 |
-| OTA-SCI-0021-2025-DE | Mikrogravitation und Gehirnarchitektur | IRST |  | geprüft 2026-11-11 – kein KUE-Gegenstück; wegen Werkbezug tatsächlich Teile nach KUE (Realanker unbelegt, Quellen im Request), Matrix/KN-5.1 bleiben; EXT-OTA-KUE-20261111-002, danach Kürzung OTA-REQ-20261111-001 |
+| OTA-SCI-0021-2025-DE | Mikrogravitation und Gehirnarchitektur | IRST |  | geprüft 2026-11-11 – kein KUE-Gegenstück; wegen Werkbezug tatsächlich Teile nach KUE (Realanker unbelegt, Quellen im Request), Matrix/KN-5.1 bleiben; EXT-OTA-KUE-20261111-002, danach Kürzung OTA-REQ-20261111-001; v1.1 ergänzt (II–IV, Epochen IV–V) nach Entscheidung Thomas 2026-11-11 |
 | OTA-SCI-0022-2025-DE | Zhurong-Entdeckung: Wasser-Fenster auf Mars verlängert  | R |  | offen |
 | OTA-SCI-0057-2026-DE | Otjize als funktionales Materialsystem: Mineralogie, Na | RST |  | geprüft 2026-11-08 – Teile nach KUE (II–VI, VIII), Werkbezug OTJIZE bleibt; EXT-OTA-KUE-20261108-001, danach Kürzung OTA-REQ-20261108-001 |
 | OTA-SCI-0058-2026-DE | Triclosan als entkoppelnder Selektionsdruck: Wirkmechan | RT |  | geprüft 2026-11-09 – Teile nach KUE (II–VI, IX), Leitsatz/Systemvergleich Otjize bleibt; EXT-OTA-KUE-20261109-001, danach Kürzung OTA-REQ-20261109-001 |
