@@ -1,6 +1,6 @@
 {
   "id": "RES-20261110-8485B58D",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-10T11:25:10+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Keine bisherige Recherche behandelt religiöse Zeit- und Orientierungspraxis außerhalb der Erde; die Mishkenaz-Recherche betrifft Frequenzen und Phonetik, die Baumeister-Recherche Paläoanthropologie, nicht gegenwärtige oder zukünftige Religionspraxis.",
-  "fingerprint": "8485b58d5088aa58"
+  "fingerprint": "8485b58d5088aa58",
+  "updated_at": "2026-11-11T11:29:39+00:00",
+  "last_error": "candidate for worldbuilding-scientific lacks a strong source type marker"
 }
