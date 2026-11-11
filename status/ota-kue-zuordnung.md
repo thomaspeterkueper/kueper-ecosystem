@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-10 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-11 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -35,9 +35,9 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0091-2026-DE | Supernovae Unite — 2.884 Typ-Ia-Supernovae und die Evid | HOFFENR | KUE-SCI-0191 | geprüft 2026-11-04 – KUE-Gegenstück vorhanden (KUE-SCI-0191 v0.2), AVI-Teil bleibt; Kürzung OTA-REQ-20261104-002 – umgesetzt 2026-11-08 (v1.1) |
 | OTA-SCI-0105-2026-DE | Seltene b→sμμ-Zerfälle – CMS- und LHCb-Spannungen mit d | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-10 – kein KUE-Gegenstück (KUE-SCI-0195 nur Abgrenzungssatz), tatsächlich Teile nach KUE, AVI-P bleibt; EXT-OTA-KUE-20261110-002, danach Kürzung OTA-REQ-20261110-002 |
 | OTA-SCI-0106-2026-DE | Gold über die Skalen – Nukleosynthese, Material, Ressou | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-05 – KUE-Gegenstück vorhanden; Realdossier ohne Werkbezug, Lagerstätten/Recycling/Provenienz in KUE-SCI-0195 v0.4 übernommen; Brückendokument OTA-REQ-20261105-001 – umgesetzt 2026-11-09 (v0.3) |
-| OTA-SCI-0107-2026-DE | STAR: Nichtmonotone transversale Impulskorrelationen in | IOFFENR | KUE-SCI-0195 | offen |
+| OTA-SCI-0107-2026-DE | STAR: Nichtmonotone transversale Impulskorrelationen in | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-11 – KUE-Gegenstück vorhanden (KUE-SCI-0195 v0.4); Signifikanzen/arXiv nach KUE per EXT-OTA-KUE-20261111-001, AVI-P/Omnizedenz bleiben; Kürzung OTA-REQ-20261111-002 |
 | OTA-SCI-0113-2026-DE | GW250114 – Hawkings Flächensatz, Kerr-Ringdown und star | IOFFENR | KUE-SCI-0196 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Realteil in KUE-SCI-0196 v0.2 übernommen, Kürzung OTA-REQ-20261102-001 – umgesetzt 2026-11-07 (v1.1) |
-| OTA-SCI-0114-2026-DE | Horizontfragmentierung – theoretische Grenzfälle und Bu | HIOFFENR | KUE-SCI-0196 | geprüft 2026-11-07 – KUE-Gegenstück vorhanden (KUE-SCI-0196 v0.2 vollständig); Quellenkorrektur/Kürzung OTA-REQ-20261107-001 |
+| OTA-SCI-0114-2026-DE | Horizontfragmentierung – theoretische Grenzfälle und Bu | HIOFFENR | KUE-SCI-0196 | geprüft 2026-11-07 – KUE-Gegenstück vorhanden (KUE-SCI-0196 v0.2 vollständig); Quellenkorrektur/Kürzung OTA-REQ-20261107-001 – umgesetzt 2026-11-11 (v0.2) |
 | OTA-SCI-0115-2026-DE | Einzelpositron im Quantenzyklotron – Messfähigkeit stat | IOFFENR | KUE-SCI-0197 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Verschlankung OTA-REQ-20261102-002 – umgesetzt 2026-11-07 (v0.2) |
 | OTA-SCI-0116-2026-DE | Andromeda als Welteninsel – Distanzmessung, Kalibration | IOFFENR | KUE-SCI-0198 | geprüft 2026-11-03 – KUE-Gegenstück vorhanden; Realteil in KUE-SCI-0198 v0.2 übernommen, Brückendokument OTA-REQ-20261103-002 – umgesetzt 2026-11-08 (v0.2) |
 | OTA-TEC-0019-2091-DE | OTA-TEC-0019-2091-DE | FHRT | KUE-SCI-0178 | offen |
@@ -53,7 +53,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-OBS-0004-2026-DE | GÖBEKLI TEPE | R |  | offen |
 | OTA-OBS-0006-2026-DE | SumTablets: KI-gestützte Keilschrift-Transliteration al | IRT |  | offen |
 | OTA-SCI-0019-2025-DE | DIE FÜNF EPOCHEN DES GEHIRNS | RS |  | geprüft 2026-11-09 – Teile nach KUE (I–III, Studie Mousley et al.), GANDHAKA/noχ-Extrapolationen bleiben; EXT-OTA-KUE-20261109-002, danach Kürzung OTA-REQ-20261109-002 |
-| OTA-SCI-0021-2025-DE | Mikrogravitation und Gehirnarchitektur | IRST |  | offen |
+| OTA-SCI-0021-2025-DE | Mikrogravitation und Gehirnarchitektur | IRST |  | geprüft 2026-11-11 – kein KUE-Gegenstück; wegen Werkbezug tatsächlich Teile nach KUE (Realanker unbelegt, Quellen im Request), Matrix/KN-5.1 bleiben; EXT-OTA-KUE-20261111-002, danach Kürzung OTA-REQ-20261111-001 |
 | OTA-SCI-0022-2025-DE | Zhurong-Entdeckung: Wasser-Fenster auf Mars verlängert  | R |  | offen |
 | OTA-SCI-0057-2026-DE | Otjize als funktionales Materialsystem: Mineralogie, Na | RST |  | geprüft 2026-11-08 – Teile nach KUE (II–VI, VIII), Werkbezug OTJIZE bleibt; EXT-OTA-KUE-20261108-001, danach Kürzung OTA-REQ-20261108-001 |
 | OTA-SCI-0058-2026-DE | Triclosan als entkoppelnder Selektionsdruck: Wirkmechan | RT |  | geprüft 2026-11-09 – Teile nach KUE (II–VI, IX), Leitsatz/Systemvergleich Otjize bleibt; EXT-OTA-KUE-20261109-001, danach Kürzung OTA-REQ-20261109-001 |
