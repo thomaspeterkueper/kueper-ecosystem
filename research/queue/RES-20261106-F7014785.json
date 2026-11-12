@@ -1,0 +1,43 @@
+{
+  "id": "RES-20261106-F7014785",
+  "status": "candidate-pr",
+  "created": "2026-11-06T11:03:13+00:00",
+  "source_project": "avi-modell",
+  "source_repository": "thomaspeterkueper/avi-modell",
+  "source_path": "docs/operator-minimality-selection-rule-v0.1.md",
+  "source_ref": "62702bf97a4cc9f9a5acf231b5a5ecf48b87c66e",
+  "source_blob_sha": "67be6602ba6df3335ec8b9fe79b334ff068e0835",
+  "title": "Class-B-Ratenkopplung bei fixierter Expansion: Stress-Energie, Bianchi-Erhaltung und die Grenze zu Class C",
+  "question": "Existiert ein etabliertes theoretisches Framework für eine lokale differentielle Ratenkopplung bei exakt unveränderter FLRW-Hintergrundexpansion (Class B), das (i) einen wohldefinierten Stress-Energie-Träger besitzt oder explizit als nicht-gravitative Kopplung formuliert ist, (ii) die Bianchi-Identität bzw. ∇_μT^{μν}=0 respektiert, (iii) nicht durch Backreaction zur Class C wird und (iv) im Nullfall exakt QFT+GR reproduziert? Welche Modelle — varying constants, screened/moduli-Kopplungen, umgebungsabhängige Constraints, offene/dissipative Kopplungen, nichtminimale Gravitationskopplungen — erfüllen diese Bedingungen, welche sind durch publizierte Präzisionsgrenzen bereits ausgeschlossen, und folgt aus einem No-Go, dass striktes Class B nur als effektive Näherung eines Class-C-Modells existieren kann? Welche minimale Zusatzstruktur müsste AVI liefern, damit Class B nicht als generische EFT oder als versteckte Class C endet?",
+  "why_now": "Das Repo hat Class B als konservativsten Pfad gewählt und die minimale Kopplung D=λξn präregistriert; zugleich markiert das Backreaction Gate striktes Class B ausdrücklich als unbewiesenen Approximationskandidaten und Class C als verpflichtenden Vergleichszweig. Vor jedem weiteren Fit oder einer erneuten Öffnung von O1 ist daher zu klären, ob Class B überhaupt konsistent existieren kann.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "avi-theoretical-cosmology",
+  "claim_classes": [
+    "H",
+    "D",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Etablierte Literatur zu varying constants, screened scalar fields, Energie-Impuls-Erhaltung und Backreaction in gekoppelten kosmologischen Modellen",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.85,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.72,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [
+    "RES-20260916-8082C26F",
+    "RES-20260916-0D488933",
+    "RES-20260916-2142E3AA",
+    "RES-20261007-1358BD54"
+  ],
+  "novelty_reason": "Die früheren Topics decken gravitative Referenzkanäle/WEP (8082C26F), die Class-A-Interpretation von ΔH² (0D488933), S_i-Sensitivitätskoeffizienten und Nulltests (2142E3AA) sowie die Existenz einer sparsamen Response-Algebra (1358BD54) ab. Keines prüft die hier offene Frage, ob eine Class-B-Ratenkopplung bei exakt H=H_std einen konsistenten Stress-Energie-Träger besitzen kann, ohne zur Class C zu werden, und ob ein No-Go striktes Class B als effektive Näherung entlarvt. Genau diese Backreaction-/Bianchi-Frage ist im Repo als Gate-Punkt markiert, aber nicht extern untersucht.",
+  "fingerprint": "f7014785778ca6ba",
+  "updated_at": "2026-11-06T11:21:40+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/276"
+}

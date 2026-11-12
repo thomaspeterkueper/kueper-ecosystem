@@ -1,0 +1,39 @@
+{
+  "id": "RES-20261107-34465AF9",
+  "status": "candidate-pr",
+  "created": "2026-11-07T10:25:37+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-OBS-0005-2026-DE.md",
+  "source_ref": "4cd2149f822c7d3f5cad1bfe201ff1534843716b",
+  "source_blob_sha": "1f2c58d1a99bf8e6a50116cef79e53ecf73c0bd7",
+  "title": "Realwelt-Audit des LOD-Validierungsprotokolls in OTA-OBS-0005 (v1.0, 2026-02-04, AKTIV): IERS-Daten 2016-2026, die angebliche +1,63-ms-Projektion vom Maerz 2025 und die Falsifizierbarkeit der AVI-LOD-Vorhersage",
+  "question": "Quellengestuetzter Audit der [R]- und [H]-Schicht von OTA-OBS-0005-2026-DE (Abschnitte I-IV, VII, X-XI), gepinnt auf Revision 4cd2149f822c7d3f5cad1bfe201ff1534843716b (Datei zuletzt in diesem Commit geaendert; Dokumentversion v1.0, Stand 2026-02-04). Das Dokument ist als laufendes Falsifikationsprotokoll angelegt und nennt selbst 'Naechstes Update: Mai 2026 (Q1 2026 Daten komplett)'; dieser Termin ist am heutigen 2026-11-07 um rund sechs Monate ueberschritten, und der im Dokument definierte Maerz-2025-Test ('Falls NEIN -> Modell-Revision noetig') ist laengst entscheidbar. (1) [R]-Datenreihe: Pruefe die Jahresmittel-Tabelle (2016 +1,34 ms; 2017 +1,02; 2018 +0,65; 2019 +0,39; 2020 +0,08; 2021 -0,12; 2022 -0,25; 2023 -0,08; 2024 +0,15 prelim.) und die Extremtage (19.07.2020 -1,47 ms; 29.06.2022 -1,59 ms; 05.07.2024 -1,66 ms; 09.07.2025 -1,23; 22.07.2025 -1,36; 05.08.2025 -1,25) gegen IERS Bulletin A/B und die C04-Serie sowie die Jahresmittel 2024 und 2025. Klaere insbesondere, ob 2024 tatsaechlich ein Jahr mit positivem LOD-Mittel war (das Dokument behauptet +0,15 ms) und ob die behauptete 'Abschwaechung' 2025 so messbar ist. (2) Die '+1,63 ms'-Angabe fuer Maerz 2025: Pruefe, ob es eine IERS-/GFZ-/USNO-Projektion dieses Werts ueberhaupt gibt, welcher Monatswert real gemessen wurde und ob die Zahl eine Projektion, ein Lesefehler oder eine nicht belegte Kuratoreneinschaetzung ist. Das ist der im Dokument selbst gesetzte Primaertest; seine Aufloesung entscheidet ueber 'BESTAETIGT' vs. 'Modell-Revision'. (3) Vorhersagechronologie: Das Dokument behauptet zugleich 'Das AVI-Modell hatte genau diesen Peak vorhergesagt' und 'Das AVI-Modell postulierte 2025' sowie in der Tabelle 'Peak 2024 - Nicht vorhergesagt / Vorhergesagt (2025) [H]'. Pruefe anhand der im Repo vorhandenen AVI-Dokumente (u. a. OTA-FND-0005-2025-DE, OTA-SCI-0036-2026-DE, OTA-FND-0030-2026-DE) und der Revisionsdaten, ob vor dem Peak vom 05.07.2024 eine datierte, quantifizierte AVI-LOD-Vorhersage existiert; falls nein, ist die Aussage 'vorhergesagt' als post-hoc-Fit zu reklassifizieren. (4) Konkurrenzerklaerungen: Berichte den realen Stand zur ~6-jaehrigen LOD-Oszillation, zur Chandler-Wobble-Kopplung und zur Kern-Mantel-Kopplung (u. a. Madsen & Holme, GJI 2025; Shahvandi et al., ETH 2024; Zotov; Agnew 2024) und pruefe die Behauptung, konventionelle Modelle haetten den Peak 'NICHT vorhergesagt'. Liegt das Juli-2024-Minimum innerhalb der bekannten Amplitude der ~6-Jahres-Oszillation, und ist ein 'Reversal' ueberhaupt ein von dieser Oszillation unterscheidbares Signal? (5) Falsifikationsprotokoll: Bewerte die Kriterien (95%-Konfidenz ohne definierte Nullverteilung; R^2 > 0,85; Zeitkonstante d = 3,0 +/- 0,5 Jahre; Kontrollhypothesen H0 linear, H1 6-Jahres-Sinus, H2 Random Walk) und die im Monitoring-Abschnitt vorgesehene jaehrliche 'Anpassung Falsifikationskriterien'. Berichte, was die Literatur zur Vorhersagbarkeit von LOD ueberhaupt zulaesst, und ob die Kontrollhypothese H1 (6-Jahres-Oszillation) das Reversal-Fenster 2028-2032 mit dem AVI-Exponentialmodell verwechselbar macht. (6) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen (IERS-Messwerte, Definition LOD, Existenz der Rekorde), die zu '[R] Quelleninhalt/Einzelprojektion' abzuschwaechen sind (+1,63 ms; 2024-Jahresmittel; 'unabhaengige Forscher bestaetigen das Reversal'), die [H] bleiben muessen (AVI-Prediktion, tau_rev, Reversal-Fenster) und die [OFFEN] werden muessen (Validierung bis 2032, Exponentialfit); stelle fest, dass kein kanonischer LOD-Schwellenwert, keine kanonische Zeitkonstante und kein kanonisches Reversal-Datum eingefuehrt werden. AUSGESCHLOSSEN: die AVI-/Omnizedenz-Theorieschicht als Postulat, die chi-Feld-/R(a)-Formalismen, die 'Kette'-Narrative und alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Das Dokument ist als Echtzeit-Validierungslogbuch mit quartalsweisen OTA-Updates angelegt und nennt selbst Mai 2026 als naechsten Update-Termin; dieser ist am 2026-11-07 seit rund sechs Monaten ueberfaellig. Der intern definierte Maerz-2025-Test ('+1,63 ms? Falls NEIN -> Modell-Revision') ist laengst mit IERS-Daten entscheidbar, und der naechste im Dokument genannte Meilenstein (Dezember 2026, erster Exponentialfit) steht unmittelbar bevor. Eine Klaerung jetzt verhindert, dass ein ueberholtes 'BESTAETIGT' im kanonischen Bestand weiterlaeuft.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "IERS Earth Orientation Parameters (Bulletin A/B, C04-Serie) fuer LOD 2016-2026; begutachtete Literatur zur ~6-jaehrigen LOD-Oszillation, Chandler-Wobble- und Kern-Mantel-Kopplung (u. a. Madsen & Holme 2025, Shahvandi et al. 2024, Agnew 2024, Zotov).",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.9475,
+  "scores": {
+    "project_relevance": 0.97,
+    "cross_project_reuse": 0.92,
+    "uncertainty": 0.95,
+    "evidence_potential": 0.95
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Die bisherigen AVI-Audits (RES-20260920-D8270DC5, RES-20260920-9FF410A2) betreffen ausschliesslich die Kosmologie-/SN-Ia-Evidenzschicht von OTA-SCI-0091 und den dortigen Test B; kein bisheriger Auftrag prueft die LOD-/Erdrotations-Evidenz, die IERS-Datenreihe oder das Falsifikationsprotokoll von OTA-OBS-0005. Neuer Gegenstand ist die einzige im Repo als 'Echtzeit-Validierung' gefuehrte Vorhersage samt ihrer Chronologie (Peak Juli 2024 vs. Postulat 2025).",
+  "fingerprint": "34465af93d0c57da",
+  "updated_at": "2026-11-07T10:36:56+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/278"
+}

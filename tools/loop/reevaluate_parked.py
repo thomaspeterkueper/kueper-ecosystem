@@ -28,7 +28,7 @@ CODES = {
     "noxia-universe":"NXU","mishkenaz":"MISH","omnizedenz":"OMNI","avi-modell":"AVI",
     "contracomology":"CONTRA","kueper-archive-schema":"ARCH","endia":"ENDIA","zereya":"ZEREYA",
     "davaru":"DAVARU","fluide-hermeneutik":"FLHERM","resonanz-ethik":"RESETH",
-    "kueper-com":"KUE","ota":"OTA","thomas-kueper-de":"TKD"
+    "kueper-com":"KUE","ota":"OTA","products":"PROD","thomas-kueper-de":"TKD"
 }
 
 def gh(token:str, method:str, path:str, body:dict[str,Any]|None=None)->Any:

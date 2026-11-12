@@ -51,7 +51,8 @@ def codes() -> dict[str, str]:
         "avi-modell": "AVI", "contracomology": "CONTRA", "kueper-archive-schema": "ARCH",
         "endia": "ENDIA", "zereya": "ZEREYA", "davaru": "DAVARU",
         "fluide-hermeneutik": "FLHERM", "resonanz-ethik": "RESETH",
-        "kueper-com": "KUE", "ota": "OTA", "thomas-kueper-de": "TKD",
+        "kueper-com": "KUE", "ota": "OTA", "products": "PROD",
+        "thomas-kueper-de": "TKD",
     }
 
 

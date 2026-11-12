@@ -1,0 +1,40 @@
+{
+  "id": "RES-20261011-C874A1DB",
+  "status": "queued",
+  "created": "2026-10-11T10:07:19+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/grammatik.astro",
+  "source_ref": "40635b6cefacf987173523cafa659454f844cfcc",
+  "source_blob_sha": "0cb2dedee8633f98ea5a62050e627b609ed9d717",
+  "title": "Standard-Negation wi-: Trennung von Negation, Nullpunkt (avi-) und Deprivation (-tum) typologisch erden",
+  "question": "Wie markieren dokumentierte Sprachen die Standard-Negation (Partikel, Präfix, Negationsverb, bipartite/doppelte Negation, Jespersen-Zyklus) und wie unterscheiden sie sie systematisch von Existenz-Absenz, privativen/abessiven/caritiven Kategorien sowie von Potenzial- oder Null-Kategorien? Welche belegten Muster – insbesondere aus südasiatischen Sprachen (vedisch/sanskritisches na und mā, neuindoarische Negationspartikeln, dravidische Negationskonjugation) – können die R1-Setzung stützen, dass wi- die reguläre Verneinung eines Vorgangs/Zustands ist, dass avi- ausdrücklich keine Negation (sondern Nullpunkt/Potenz) ist und dass -tum eine davon getrennte Kategorie des schmerzhaften, unwiederbringlichen Fehlens markiert?",
+  "why_now": "Die Negationsform wird in grammatik.astro §6 definiert und in §2/§4 ausdrücklich gegen Avi und -tum abgegrenzt; der Migrationsquellentext enthält genau diese Formen. Bisher fehlt jede externe Rückbindung der Negationskategorie. Ohne sie drohen wi-, avi- und -tum bei der Migration als beliebig gesetzte, aber ungeprüfte Formen zu erscheinen.",
+  "languages": [
+    "en",
+    "de",
+    "sa",
+    "hi"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "R",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Cross-linguistische Typologie der Standard-Negation (Miestamo/Dryer) und ihre formale/funktionale Trennung von negativer Existenz, privativ-abessiv-caritiven Kategorien und Potenzial-Null-Kategorien, einschließlich der Negation im Sanskrit und in neuindoarischen Sprachen.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 0.69,
+  "scores": {
+    "project_relevance": 0.72,
+    "cross_project_reuse": 0.66,
+    "uncertainty": 0.58,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [
+    "RES-20260915-D8CB8EC4"
+  ],
+  "novelty_reason": "Der Aspekt-Kandidat RES-20260915-D8CB8EC4 prüft -om/-ath/-il und den Missingness-Slot -tum gegen Realitätsstatus- und Evidentialitätskategorien (Frustrativ, Iamitiv, Avertiv, Absentiv). Er behandelt aber nicht die klausale Standard-Negation und nicht die Abgrenzung Negation vs. Nullpunkt/Potenz. Neu ist hier die Negations-Typologie (Standard-Negation, negative Existenz, Privativ/Abessiv/Caritiv) sowie die Frage der formalen Eigenständigkeit von wi- gegenüber avi- und -tum – ein eigenes Subsystem, das der Aspekt-Kandidat nicht abdeckt.",
+  "fingerprint": "c874a1dbc2f2e8dc"
+}

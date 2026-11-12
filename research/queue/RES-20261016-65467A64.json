@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261016-65467A64",
+  "status": "queued",
+  "created": "2026-10-16T08:18:38+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Bibliografische Identität einer achtbändigen Reihe: ISBN-, DOI- und ONIX-Regeln für Gesamtwerk, Band und Sprachausgabe",
+  "question": "README.md:3 beschreibt zereya.de als Website zu einer achtbändigen Buchreihe. Was schreiben ISO 2108 (ISBN) und das ISBN-Handbuch für mehrbändige Werke vor — Gesamtwerk-ISBN versus Band-ISBN, Kennzeichnung einzelner Bände, Vergabe bei inhaltlich gleichen Ausgaben in mehreren Sprachen — und wie werden mehrbändige Werke samt digitalen Ausgaben in DOI/DataCite- und ONIX-Metadaten abgebildet? Was folgt daraus für Katalog-, Zitier- und Verweisschema der Plattform und für die Anbindung an die Buchprojekte des Ökosystems?",
+  "why_now": "Vier Punkte laufen gerade zusammen: Das Repository ist im Aufbau; ECO-ARC-0016 lässt 'konkrete ID-Schemata innerhalb der fünf neuen Projekte' ausdrücklich offen; die Plattform muss laut ECO-ARC-0016 mit der Überblicksseite auf thomas-kueper.de zusammenpassen; und für digitale Buchausgaben sind bereits Pflichten nach dem European Accessibility Act im Gespräch (vgl. RES-20260919-43549FCF). Identifikatoren müssen vor dem ersten Katalogeintrag feststehen.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "ISBN-Norm ISO 2108 und ISBN-Handbuch zur Vergabe bei mehrbändigen Werken sowie DOI/DataCite- und ONIX-Metadatenmodelle für mehrbändige und mehrsprachige Ausgaben",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.7875,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260827-C23DE6E3"
+  ],
+  "novelty_reason": "Das frühere Thema fragte nach der Kompatibilität von Kanon-Datenmodellen und Entitäts-IDs zwischen zereya.de und fremden Repositories (und ging mit validation-error nicht durch). Hier geht es um die davon unabhängige, real normierte Frage bibliografischer Identifikation mehrbändiger und mehrsprachiger Werkausgaben — ein extern belegbarer Normsachverhalt, den jenes Thema nicht berührte.",
+  "fingerprint": "65467a64e9a5c42f"
+}

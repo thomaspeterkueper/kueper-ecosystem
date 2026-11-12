@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261102-08EC0C91",
+  "status": "queued",
+  "created": "2026-11-02T11:21:10+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0201-2026-de.md",
+  "source_ref": "4fdca55453170671b53e7c69587783f1d0e7038d",
+  "source_blob_sha": "dd9c4c1985c48111cab1c4875354ce677d8c3b48",
+  "title": "KUE-SCI-0201: Optomechanische Verschränkung bei Raumtemperatur — Science-Arbeit, Separabilitätswert und Autorenzuordnung verifizieren",
+  "question": "Stimmen die in KUE-SCI-0201 v0.1 als [R] gesetzten Angaben mit der Primärliteratur überein? Konkret: (1) Ist die Arbeit Deplano, Pontin, Marino & Marin, 'Stationary entanglement of a levitated oscillator with an optical field', Science 2026, DOI 10.1126/science.aeh1375, in dieser Form erschienen, und ist die im Dokument vorgenommene Zuordnung 'Team um Francesco Marin in Florenz' sowie die Unterscheidung der Autoren Francesco Marino und Francesco Marin korrekt? (2) Berichtet die Arbeit einen Separabilitätsparameter von 0,918 ± 0,029 gegen die Trennschwelle 1, eine nachgewiesene Verschränkung über mehr als 40 kHz, eine Glaskugel von ca. 100 nm und einen bei Raumtemperatur betriebenen Aufbau? (3) Welches Separabilitäts-/Verschränkungskriterium wird verwendet, und welche Annahmen (Gaußsche Zustände, Verluste, Kalibrierung, Referenzstrahl) trägt es? (4) Ist die Formulierung 'stationäre Verschränkung zwischen Bewegung und austretendem Lichtfeld' die korrekte Lesart, und wie sind Besetzungszahl, Kühlung und Dekohärenzraten im Experiment tatsächlich? (5) Gibt es unabhängige Kommentare, Replikationen oder methodische Einwände, und stimmt die CNR-INO-Mitteilung mit der Publikation überein? (6) Sind die im Dokument gezogenen Grenzen (keine überlichtschnelle Kommunikation, keine makroskopische Alltagsverschränkung) im Lichte des tatsächlichen Experiments angemessen?",
+  "why_now": "KUE-SCI-0201 ist mit Datum 2026-10-30 das jüngste wissenschaftliche Dokument im Bestand, als draft_productive/published_foundation_document ohne review-Block geführt und stützt seine gesamte quantitative Aussage auf eine einzige Science-Arbeit, eine Institutsmitteilung und einen deutschen Populärbericht. Eine Fehlzuschreibung von DOI, Autoren oder Messwert würde das öffentlich publizierte Grundlagenblatt unmittelbar entwerten.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Deplano, Pontin, Marino & Marin 2026, Science, DOI 10.1126/science.aeh1375; CNR-INO-Mitteilung vom 14.10.2026",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.74,
+  "scores": {
+    "project_relevance": 0.78,
+    "cross_project_reuse": 0.68,
+    "uncertainty": 0.78,
+    "evidence_potential": 0.72
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein vorheriges Forschungsthema behandelt KUE-SCI-0201 oder Quantenoptomechanik. Die früheren Quantenthemen betreffen Goldhydride (RES-20260902-BA7C8605), UPE (RES-20260917-D92C3C83) und ΛΛ̄-Spinkorrelation (RES-20260917-4DB36C45); keine Überschneidung mit levitierter Optomechanik oder Separabilitätskriterien.",
+  "fingerprint": "08ec0c91eb31470a"
+}

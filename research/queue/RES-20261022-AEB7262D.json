@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261022-AEB7262D",
+  "status": "queued",
+  "created": "2026-10-22T08:44:37+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "Whether 'Endia' may be used as the series title and as endia.de: trademark, title protection and domain clearance",
+  "question": "What do German and EU trademark and title-protection law and the relevant registers establish about using 'Endia' as the title of the trilogy and as the domain of its official website — protection of work titles under § 5 MarkenG and the practice of Titelschutzanzeiger notices, existing registered marks in the Nice classes relevant to books and online content (9, 16, 41) at DPMA and EUIPO, and the domain-dispute rules (DENIC DIS for .de, UDRP) — and what does that require of the site's branding, any coexistence or licensing steps, and the way the site names the series?",
+  "why_now": "The repository and planned site are named endia.de and README.md presents the project as the official web presence of the series; a conflict discovered after launch would force rebranding of the domain, the series title and every ecosystem reference that points here.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "German/EU trademark and work-title law, the DPMA and EUIPO registers, Titelschutzanzeiger practice, and DENIC DIS / UDRP domain-dispute rules.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.7875,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "The queued legal topics cover quotation and reuse of the novels (RES-20261015-00F9F49D), provider/press duties and advertising labelling, and youth protection (RES-20260918-C5EDAF53); none examines whether the series name and the endia.de domain may lawfully be used at all, which is a distinct pre-launch clearance question.",
+  "fingerprint": "aeb7262d49e23114"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261111-7B166CCE",
+  "status": "needs-review",
+  "created": "2026-11-11T11:09:52+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/index.astro",
+  "source_ref": "7a81274bbaaa6d7863eec806cd03cf558bfe3d10",
+  "source_blob_sha": "3db0734bf9ddbec1d86801fd98e0dc284bf452b2",
+  "title": "Grenzen der Sagbarkeit: Relativitäts- und Effabilitätsbefunde für die Behauptung, Mishkenaz erzwinge relationale Rede",
+  "question": "Was belegt die empirische Forschung zu sprachlicher Relativität, obligatorischen grammatischen Kategorien, 'thinking for speaking' und Effabilität darüber, ob eine Grammatik bestimmte Aussagen erzwingt oder unmöglich macht? Konkret: Stützt die Evidenz die Aussage, wer Mishkenaz spreche, könne 'nicht einfach Stein sagen, ohne zu fragen, in welcher Beziehung zur Welt', oder handelt es sich um eine Design-Entscheidung, die als solche zu kennzeichnen ist? Und ist die Behauptung, eine Grammatik 'mache Selbstkorrektur sagbar', 'verhindere aber keine Übergriffigkeit', ein belegter kausaler Effekt grammatischer Kategorien oder eine umstrittene Whorfianische Hypothese? Zu prüfen ist auch, ob die Kennzeichnung der Aspekte als bloße Sprecherstellungnahme mit der Forschung zu obligatorischen epistemischen Kategorien vereinbar ist.",
+  "why_now": "index.astro stellt die relationale Redepflicht in den Hauptabschnitt 'Das System' und rahmt sie als Eigenschaft der Sprache, nicht als Gestaltungsentscheidung. Dieselbe Kausalfigur steht in der Erledigung von EXT-TKD-MISH-20261101-001 ('eine Grammatik verhindert keine Übergriffigkeit, sie macht Selbstkorrektur sagbar') und in grammatik.astro §3/§9. Der Abschnitt 'Was real ist, was offen ist, was erfunden ist' nennt Phonetik, Lautwandel und Sprachkontakt, aber nicht Relativität; das angekündigte Sachbuch 'Anatomie einer erfundenen Sprache' wird die Aussage einem größeren Publikum zumuten.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "T",
+    "F"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Empirische Relativitäts-, Obligatorik- und Effabilitätsforschung (Lucy; Slobin, thinking for speaking; Gleitman & Papafragou; Everett/Deutscher-Debatte).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.83,
+  "scores": {
+    "project_relevance": 0.86,
+    "cross_project_reuse": 0.82,
+    "uncertainty": 0.78,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger Kandidat behandelt Relativität, Obligatorik oder Effabilität. RES-20261005-43D9854E prüft die verbinitiale Rollensyntax, RES-20260915-3ADB7DC0 die Lexikalisierung der 42 Vektoren; beide setzen die Sagbarkeitsfrage nicht voraus und beantworten sie nicht.",
+  "fingerprint": "7b166cceffd9e15b",
+  "updated_at": "2026-11-11T11:18:40+00:00",
+  "last_error": "candidate for historical-linguistic lacks a strong source type marker"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261023-1D1D68B3",
+  "status": "queued",
+  "created": "2026-10-23T08:40:05+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Rechte- und Provenienzkette abgeleiteter Kontinuitäten: was die öffentliche Aussage „aus der Arbeit entstanden“ belegbar macht",
+  "question": "README.md:3 behauptet, das Baumeister- und das Noxia-Universum seien aus der Arbeit an der Zereya-Saga entstanden. Welche urheber- und verlagsrechtlichen Regeln des deutschen und europäischen Rechts gelten für Bearbeitungen, Umgestaltungen und eigenständige Fortführungen eines literarischen Werks (§§ 2, 3, 23 UrhG; Richtlinie 2001/29/EG), und welche belegten Praktiken der Rechte- und Provenienzkennzeichnung — Copyright- und Lizenzvermerke, Angabe von Rechteinhabern, Rechtekette bei Spin-offs — sollte eine öffentliche Wissensplattform führen, damit die Ableitungsaussage nachvollziehbar ist und nicht als unbelegte Behauptung erscheint?",
+  "why_now": "Das Repository-README präsentiert die Ableitung der beiden Universen als Tatsache. Ohne dokumentierte Rechts- und Provenienzangaben ist später nicht mehr sauber belegbar, worauf sich die drei Kontinuitäten stützen, wer die Ableitung autorisiert hat und welche Teile unter welcher Lizenz stehen.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Deutsches und europäisches Urheberrecht zu Bearbeitung und abgeleiteten Werken sowie dokumentierte Verlagspraxis zu Rechtekette, Rechteinhaberschaft und Copyright-Vermerken.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.6725,
+  "scores": {
+    "project_relevance": 0.7,
+    "cross_project_reuse": 0.74,
+    "uncertainty": 0.55,
+    "evidence_potential": 0.7
+  },
+  "related_research_ids": [
+    "RES-20260919-43549FCF"
+  ],
+  "novelty_reason": "Die frühere rechtliche Kandidatin RES-20260919-43549FCF prüft Impressum, Datenschutz, Einwilligung und EAA-Barrierefreiheit digitaler Buchausgaben. Urheberrechtliche Bearbeitungsrechte, Rechtekette und Provenienzkennzeichnung abgeleiteter Kontinuitäten sind darin nicht enthalten und werden hier erstmals als eigener Gegenstand behandelt.",
+  "fingerprint": "1d1d68b3a4d6ebfb"
+}

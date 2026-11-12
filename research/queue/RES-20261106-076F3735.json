@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261106-076F3735",
+  "status": "queued",
+  "created": "2026-11-06T11:03:15+00:00",
+  "source_project": "avi-modell",
+  "source_repository": "thomaspeterkueper/avi-modell",
+  "source_path": "docs/research/AVI-OBS-2026-10-12-GW250114-horizontflaeche-entropie-beobachtung.md",
+  "source_ref": "62702bf97a4cc9f9a5acf231b5a5ecf48b87c66e",
+  "source_blob_sha": "526b6a12639c97088225dadc8c67ebc56a49843d",
+  "title": "GW250114: Flächenposteriors, Ringdown-Modellabhängigkeit und Belastbarkeit des Hawking-Flächensatz-Tests",
+  "question": "Welche publizierten Posteriorverteilungen, Signifikanzniveaus und Modellabhängigkeiten liegen der GW250114-Analyse zugrunde, und trägt der Datensatz die im Repo notierte Aussage, dass die rekonstruierte Endhorizontfläche größer als die Summe der Ausgangsflächen ist und mit dem klassischen Hawking-Flächensatz sowie einem dominanten Kerr-Quadrupol plus erstem Oberton vereinbar ist? Wie stark hängen die Flächenposteriors von Wellenform-, Ringdown-, Vorgänger- und Kalibrationsannahmen sowie von der Massen-/Spin-Rekonstruktion ab, und ist der Flächensatz-Test tatsächlich ein Test der klassischen ART oder der Bekenstein-Hawking-Entropie? Welche unabhängigen Ereignisse und Analysen reproduzieren den Befund, und welche der genannten Pressewerte (240.000/400.000 km²) sind daraus überhaupt ableitbar?",
+  "why_now": "Die GW250114-Notiz ist als externer empirischer Prüfstein und als Lehrfall indirekter Modellinferenz in die Integrity-of-Observation-Methodik eingebunden; sie nennt Originaltabellen, Signifikanz und Kalibrationssystematik ausdrücklich als offene Prüfaufgabe. Da das Repo Evidenz- und Deutungsebenen strikt trennt, muss dieser Anker vor der nächsten Review (2027-10-12) gegen die Primärliteratur geprüft werden.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "avi-theoretical-cosmology",
+  "claim_classes": [
+    "R",
+    "I"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "LIGO/Virgo/KAGRA-Ereignis GW250114 und die PRL-Analyse zu Hawking-Flächensatz und Kerr-Natur",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.85,
+  "relevance_score": 0.73,
+  "scores": {
+    "project_relevance": 0.62,
+    "cross_project_reuse": 0.78,
+    "uncertainty": 0.66,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früheres Topic behandelt GW250114, den Hawking-Flächensatz oder die Kerr-Ringdown-Rekonstruktion. Das Repo führt die Originaltabellen, Signifikanz und Kalibrationssystematik ausdrücklich als offene Prüfaufgabe; die neue Frage adressiert genau diese Lücke und nicht die bereits bearbeiteten Themen zu ≡_std, TRGB oder Closure-Kalibrierung.",
+  "fingerprint": "076f3735b766bf19"
+}

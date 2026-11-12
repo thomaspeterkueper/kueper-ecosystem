@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261112-C472DAEA",
+  "status": "queued",
+  "created": "2026-11-12T11:27:43+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "docs/world/chronomap-jesus/07-letzte-tage-in-jerusalem.md",
+  "source_ref": "c0c473c3379de90813a7552fcdab569a18aedac8",
+  "source_blob_sha": "c9bafebad4882347873b2cd4064d3ea01bbc7efc",
+  "title": "Astronomical and calendar basis for the Passion chronology and the Chronomap's two-track time axis",
+  "question": "What do modern astronomical and calendar reconstructions establish about the possible dates of the Passion between 26 and 36 CE: which years had a Friday 14 or 15 Nisan, how sensitive are the candidates (7 April 30 and 3 April 33) to observational versus calculated crescent visibility, intercalation and the Qumran/364-day calendar, and what follows for the reported darkness and the lunar-eclipse argument? Was a solar eclipse possible at Passover (full moon), and what does the 3 April 33 lunar eclipse actually show? The Chronomap displays two parallel Passion chronologies (Synoptic 15 Nisan vs Johannine 14 Nisan) and two candidate years; which astronomical statements are [A], which are [S]/[H], and where must the time axis display uncertainty rather than a single date?",
+  "why_now": "Chapter 07 currently offers '7 April 30 or 3 April 33' as a bare pair and runs two parallel Passion chronologies. The time axis is a core display element, and the daily research run has not yet evaluated the astronomical or calendar evidence behind either date.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Astronomical and calendar reconstruction of 14/15 Nisan in 26–36 CE (JPL/NASA ephemerides, lunar and solar visibility criteria, Second Temple calendar scholarship).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.81,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.58,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.92
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic covers the Chronomap's Passion chronology, Second Temple calendar reconstruction or the astronomical dating of 14/15 Nisan; the existing queue is about NOXIA's simulated time, cognition and physical systems.",
+  "fingerprint": "c472daeab63f1e32"
+}

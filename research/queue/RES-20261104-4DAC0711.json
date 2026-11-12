@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261104-4DAC0711",
+  "status": "queued",
+  "created": "2026-11-04T11:03:58+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Kanon-Hierarchie und Retcon-Verfahren: welche Quelle gilt, wenn Band, Website und Autorenaussage einander widersprechen?",
+  "question": "Die Website dokumentiert laut README.md:1 und :3 eine achtbändige Reihe und wird durch diese Dokumentation selbst zur öffentlichen Kanon-Referenz. Welche belegten Kanon-Hierarchien und Retcon-Verfahren verwenden etablierte Mehrband-Franchises — veröffentlichte Kanon-Policies, offizielle Errata- und Changelog-Praktiken von Verlagen, die Kennzeichnung überholter Aussagen in großen Fan-Wikis — und welche dieser Praktiken sind belegt, um innerhalb einer Kontinuität eine nachvollziehbare Rangfolge (Primärtext vs. Website vs. Autorenaussage) sowie spätere Korrekturen zu dokumentieren, ohne die Kontinuität gegenüber den beiden abgeleiteten Universen zu verwischen?",
+  "why_now": "Das Repository steht am Anfang (nur README.md und external-tasks/); die Kanon-Konventionen der künftigen Wissensplattform werden jetzt festgelegt und sind später nur mit Migration änderbar. Die bestehende Discovery deckt die Trennung zwischen den drei Kontinuitäten ab, nicht die Rangfolge der Quellen innerhalb von Zereya.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Öffentlich dokumentierte Kanon-Policies etablierter Franchises (Primärquellen der Rechteinhaber), Errata-/Changelog-Verfahren von Verlagen und redaktionelle Kanon-Regeln großer Fan-Wikis sowie medienwissenschaftliche Forschung zu Kanon, Retcon und Serienkontinuität.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.7825,
+  "scores": {
+    "project_relevance": 0.88,
+    "cross_project_reuse": 0.82,
+    "uncertainty": 0.68,
+    "evidence_potential": 0.75
+  },
+  "related_research_ids": [
+    "RES-20261023-C4FA4833",
+    "RES-20261016-88579799"
+  ],
+  "novelty_reason": "C4FA4833 fragt nach Navigation und Kennzeichnung zwischen drei getrennten Kontinuitäten, 88579799 nach der Grenze zwischen Fakt und Fiktion. Keine der beiden behandelt die Rangfolge der Quellen innerhalb einer Kontinuität (Buchtext vs. Website vs. Autorenaussage) oder das Verfahren, mit dem Retcons und überholte Aussagen dokumentiert werden — genau die Frage, die entsteht, sobald die Website selbst Kanon zitiert.",
+  "fingerprint": "4dac07112cdb283c"
+}

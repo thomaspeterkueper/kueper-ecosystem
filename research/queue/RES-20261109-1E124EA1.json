@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261109-1E124EA1",
+  "status": "queued",
+  "created": "2026-11-09T11:46:27+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "docs/decisions/NOXIA-LIVING-0014-time-zones-languages-cultures.md",
+  "source_ref": "4f46728515c9ae37dfa3fbdfbb137ecff3b7bebf",
+  "source_blob_sha": "fa1a014cb17e9238fe011246b738aec865123416",
+  "title": "Language acquisition schedule and contact-language formation for Mars-born speakers",
+  "question": "What do peer-reviewed developmental-psycholinguistic studies establish about the ages at which phoneme discrimination, word segmentation, referential word learning, productive speech, grammatical morphology and pragmatic skill become adult-like, and how strong is the sensitive-period evidence for phonology and grammar in second-language learners? Separately, what do contact-linguistics and new-dialect-formation studies (koineization, dialect leveling, nativization in new sign languages and isolated founder communities) establish about how quickly a mixed settler population's contact language stabilizes and becomes a native language for locally born children? The aim is to calibrate or revise NOXIA's languageDevelopmentCapacity() age ramps and the canon that Mars-born people speak Marsianisch as a mother tongue while newcomers learn it over years.",
+  "why_now": "NOXIA-LIVING-0014 (accepted 13.10.2026) makes Marsianisch a canon colonial language and asserts that Mars-born people speak it natively while newcomers learn it over years, and that local dialects grow with isolation. lib/game/cognition/languageSystem.ts implements a smooth age ramp (phoneme learning 0-1.2 years, word segmentation 0.25-1.8, referential learning 0.55-3, productive speech 0.75-4, grammar 1.2-8, pragmatics 1.5-10) and explicitly labels it approximate rather than universal. The conversation AI, NPC language display and early-language simulation already consume these values.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Developmental psycholinguistics of first-language acquisition and sensitive periods; contact linguistics, koineization, dialect leveling and new-language nativization in isolated founder communities.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.77,
+  "scores": {
+    "project_relevance": 0.82,
+    "cross_project_reuse": 0.65,
+    "uncertainty": 0.78,
+    "evidence_potential": 0.82
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic covers language acquisition, multilingualism or dialect formation. The research is not an attempt to validate the fictional Marsianisch lexicon; it tests the real-world premise that a contact language can be nativized by locally born children within one or two generations and that isolation drives dialect divergence, and it supplies empirical ranges for the acquisition ramps in languageSystem.ts.",
+  "fingerprint": "1e124ea139756fa6"
+}

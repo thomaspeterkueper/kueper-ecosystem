@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261017-9CA4DC6E",
+  "status": "queued",
+  "created": "2026-10-17T07:54:48+00:00",
+  "source_project": "avi-modell",
+  "source_repository": "thomaspeterkueper/avi-modell",
+  "source_path": "docs/state-completeness-manifest-v0.1.md",
+  "source_ref": "990b8e6d0c7666a58fa0837282f90263c7cfabe5",
+  "source_blob_sha": "96b1f7c1e9033493cc64139705ed95138a5ecd0d",
+  "title": "Kalibrierte Closure-Tests: valide Nullverteilung und Entscheidungsregel für Δ_cl bei hochdimensionaler Zustandsrekonstruktion",
+  "question": "Welche etablierten Verfahren der Bayesianischen Modellkritik und Vorhersagekalibrierung — posterior-predictive p-Werte, kalibrierte Bayesianische p-Werte, Simulation-Based Calibration, e-Werte/Test-Martingale, konforme Vorhersage, Profile-Likelihood sowie Reusable Holdout/Kreuzvalidierung — liefern für eine vorab registrierte Closure-Statistik T eine korrekte Nullverteilung und Entscheidungsregel, wenn P(Ω|D_control,M_std) hochdimensional, nur approximiert und zugleich für Rekonstruktion und Test verwendet wird? Welche bekannten Fehlermodi (Doppelverwendung der Daten, Priorabhängigkeit, Nicht-Uniformität unter Modellmisspezifikation, Look-elsewhere, multiple Kanäle, korrelierte Residuen) müssen dokumentiert und kontrolliert werden, damit Δ_cl ≠ 0 nicht als Ontologie fehlinterpretiert wird? Welches minimale Präregistrierungs- und Reportingschema ist erforderlich, damit ein Closure-Defekt über Kanäle, Datensätze und Modellvarianten hinweg reproduzierbar bewertet werden kann?",
+  "why_now": "Core Formalization v0.2 (§8–9) nennt mögliche Teststatistiken für Δ_cl, und das State-Completeness-Manifest (§10) verlangt expected_null_distribution, decision_rule, multiple_testing_policy und look_elsewhere_policy — lässt aber offen, mit welchem Verfahren diese Kalibrierung bei approximierter, hochdimensionaler Posterior-Marginalisierung erreicht wird. Der nächste geplante End-to-End-Lauf (OBS-08) soll einen Closure-Defekt erzeugen; ohne kalibrierte Nullverteilung ist ein solcher Defekt nicht von Rekonstruktions-, Approximations- und Modellmisspezifikationsartefakten unterscheidbar.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "avi-theoretical-cosmology",
+  "claim_classes": [
+    "D",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Statistische Modellkritik und Bayesianische Vorhersagekalibrierung: posterior predictive checks, Simulation-Based Calibration, e-values/Test-Martingale, konforme Vorhersage und Kreuzvalidierung.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.85,
+  "relevance_score": 0.73,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.82,
+    "uncertainty": 0.35,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine frühere Topic behandelt die statistische Kalibrierung des Closure-Defekts. Die bisherigen Topics betreffen Modellphysik, Beobachtungsdaten, Sensitivitätsmatrizen oder Zustandsdefinitionen; die Nullverteilung und Entscheidungsregel der zentralen Falsifikationsstatistik Δ_cl wurden nicht untersucht.",
+  "fingerprint": "9ca4dc6e9dea0728"
+}

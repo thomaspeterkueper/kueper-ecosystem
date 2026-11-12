@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261104-EE26A7E9",
+  "status": "queued",
+  "created": "2026-11-04T11:04:02+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Angekündigt, aber nicht erschienen: Belegstatus und Metadaten für die noch nicht veröffentlichten Bände einer achtbändigen Reihe",
+  "question": "README.md:3 bezeichnet Zereya als achtbändige Buchreihe; eine öffentliche Wissensplattform muss daher auch Bände dokumentieren, die noch nicht erschienen sind. Welche realen Regeln gelten für den Publikationsstatus mehrbändiger Werke — ONIX-Publishing-Status-Codes, Zeitpunkt der ISBN-Vergabe vor Erscheinen, separate ISBN je Band und Ausgabe, Behandlung angekündigter Titel in Bibliotheks- und Handelssystemen — und welche belegten Kennzeichnungspraktiken (Statuslabel, Datumsangaben, Quelle der Ankündigung) verhindern, dass die Plattform Angekündigtes als gesicherten Kanon ausgibt?",
+  "why_now": "Der Aufbau der Plattform beginnt jetzt; Statusfelder und Kennzeichnungen müssen im Datenmodell von Anfang an vorgesehen sein, sonst entstehen später unmarkierte Kanon-Behauptungen über unveröffentlichte Bände. Die bestehende Discovery behandelt Band- und Werk-ISBNs, aber nicht den zeitlichen Status der Veröffentlichung.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "ONIX-3.0-Codelisten zum Publikationsstatus, ISBN-Handbuch und Vergaberegeln der nationalen ISBN-Agenturen zur Nummernvergabe vor Erscheinen sowie Bibliotheks- und Handelspraxis für angekündigte Titel (MARC/RDA, VLB).",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.7275,
+  "scores": {
+    "project_relevance": 0.78,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.65,
+    "evidence_potential": 0.78
+  },
+  "related_research_ids": [
+    "RES-20261016-65467A64"
+  ],
+  "novelty_reason": "65467A64 fragt nach der Identifier-Vergabe für Gesamtwerk, Band und Sprachausgabe sowie nach ONIX-/DOI-Metadaten. Unbeantwortet bleibt dort die zeitliche Dimension: wann eine ISBN vor Erscheinen vergeben wird, wie ONIX den Publikationsstatus abbildet und wie eine Wissensplattform angekündigte, aber unveröffentlichte Bände kennzeichnet, ohne sie als gesicherten Kanon zu behandeln.",
+  "fingerprint": "ee26a7e967ac303f"
+}

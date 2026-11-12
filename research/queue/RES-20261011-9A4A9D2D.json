@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261011-9A4A9D2D",
+  "status": "queued",
+  "created": "2026-10-11T10:07:18+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/grammatik.astro",
+  "source_ref": "40635b6cefacf987173523cafa659454f844cfcc",
+  "source_blob_sha": "0cb2dedee8633f98ea5a62050e627b609ed9d717",
+  "title": "R1 ohne grammatisches Tempus: tenselose Zeitreferenz und Aspektdominanz typologisch erden",
+  "question": "Welche dokumentierten Sprachen arbeiten nachweislich ohne grammatikalisches Tempus ('tenseless'), und wie drücken sie temporale Referenz aus – über Aspekt, temporale Adverbien, Deixis, Diskurskontext, narrative Konventionen –, wie verhalten sich tenselose Systeme zu Aspektdominanz und zur späteren Grammatikalisierung von Tempus, und welche belegten Muster (besonders aus südasiatischen Sprachen und aus der Typologie von 'tenseless languages') können die Aussage in grammatik.astro §2 stützen, dass der R1-Kern kein Tempussystem besitzt und Zeit zunächst lexikalisch, deiktisch und kontextuell eingeordnet wird – einschließlich der in §10 als offen markierten 'lexikalischen/deiktischen Zeitreferenz in R1' und der späteren Tempusgrammatik der Galut-Schichten? Zu prüfen ist auch, ob die Trennung von Aspekt und Tempus in R1 mit dokumentierten tenselosen/aspekt-dominanten Sprache so vereinbar ist, dass R1 als belegte Typologie und nicht als Setzung erscheint.",
+  "why_now": "Alle drei inhaltstragenden Seiten (grammatik/proto-mishkenaz/vektoren) besitzen jetzt echten Inhalt, während woerterbuch und rueckuebersetzung noch Platzhalter sind; die Content-Migration aus thomas-kueper.de (EXT-ECO-MISH-20260714-001) steht unmittelbar an. Die Temporalisierungsfrage steht in grammatik.astro ausdrücklich als offener Rekonstruktionspunkt (§2, §10); sie muss vor der Migration extern verankert werden, weil sonst ein tenseloses R1 entweder als bloße Setzung oder – schlimmer – stillschweigend als 'weil natürlich' präsentiert wird.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "R",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Typologie tenseloser Sprachen und der Ausdruck temporaler Referenz ohne grammatisches Tempus (Aspekt, Temporaladverbien, Deixis, Kontext), einschließlich südasiatischer Verhältnisse von Aspekt und Tempus.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 0.705,
+  "scores": {
+    "project_relevance": 0.78,
+    "cross_project_reuse": 0.62,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.82
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Kandidat berührt Tempus oder Zeitreferenz. Die nächstliegenden Themen behandeln Aspekt/Realitätsstatus (-om/-ath/-il, -tum; RES-20260915-D8CB8EC4), Satzsyntax/Wortstellung (RES-20261005-43D9854E) und Phonologie (RES-20260915-0CD0C163) – keine davon prüft die tenselose Grundthese noch die typologische Zulässigkeit eines rein aspektuellen Tempusersatzes.",
+  "fingerprint": "9a4a9d2dc1ff2a52"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261010-2E3C4B95",
+  "status": "queued",
+  "created": "2026-10-10T09:58:40+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "canon/NXU-EPOCH-MODEL.md",
+  "source_ref": "92d87a0770d546032cb73fade252ca9e1c0185dd",
+  "source_blob_sha": "9e2c1f55dabe726ec5f633f60a2b583831cb894b",
+  "title": "Dvārakā als versunkene Küstenstadt: Stand der Unterwasser-Archäologie im Golf von Khambhat und der holozänen Meeresspiegel-/Subsidenzgeschichte",
+  "question": "Was belegen Unterwasser-Archäologie, Quartärgeologie und Datierungsmethoden zum mutmaßlich versunkenen Dvārakā vor der Küste Gujarats und zu vergleichbaren Harappan-Küstensiedlungen? Welche Strukturen sind dokumentiert, welche Datierungen (bis ~9.500 BCE) sind peer-reviewt belegt und welche umstritten, und durch welche Mechanismen (postglazialer Meeresspiegelanstieg, tektonische Subsidenz an der Khambhat-Störung) kann eine bronze-/chalkolithische Küstenstadt tatsächlich versinken? Was davon stützt oder begrenzt die kanonischen B2-'Dvārakā-/Diaspora-Phasen' mit Zerfall, Migration und Weitergabe — und wo sollte der Kanon Fehldatierung oder Legendenbildung bewusst als narrative Option offenhalten, statt eine einzige Untergangsursache zu setzen?",
+  "why_now": "Baumeister ist einer der drei Leseräume und trägt mit B2 ('komplexe urbane Systeme … Zerfall, Migration') einen als Spielstart 'sehr gut geeigneten' Kernanker; `Das Lied von Dvārakā` ist eine tragende Werkschicht. Trotzdem existiert zu Dvārakā keine reale historisch-geologische Grundlage im Repository — die Diaspora-Setzung hängt an einem ungeprüften Untergangsbild.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "historical-attestation",
+    "physically-established-constraint",
+    "narrative-choice"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Marine Archäologie von Dwarka und des Golf von Khambhat (S. R. Rao, Journal of Marine Archaeology/Current Science) sowie holozäne Meeresspiegel- und tektonische Subsidenz-Datensätze der Gujarat-Küste.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 0.71,
+  "scores": {
+    "project_relevance": 0.68,
+    "cross_project_reuse": 0.6,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.7
+  },
+  "related_research_ids": [],
+  "novelty_reason": "RES-20260914-7AFD24DB behandelt die Paläoanthropologie der Ausbreitung um 60.000 BCE (Ursprung/Flaschenhälse), nicht eine bronzezeitliche Küstenstadt, ihre Datierung oder ihren Untergang. Dieser Gap adressiert eine materiell andere, ungelöste Dimension der Baumeister-Tiefenschicht (B2-Stadtphase und Küsten-Diaspora).",
+  "fingerprint": "2e3c4b952b4f11e3"
+}

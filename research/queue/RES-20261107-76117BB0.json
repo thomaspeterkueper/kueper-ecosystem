@@ -1,0 +1,40 @@
+{
+  "id": "RES-20261107-76117BB0",
+  "status": "needs-review",
+  "created": "2026-11-07T10:25:39+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0126-2026-DE.md",
+  "source_ref": "4cd2149f822c7d3f5cad1bfe201ff1534843716b",
+  "source_blob_sha": "d05d81e55ea7b81de2a55060899f91c9da7ef3f2",
+  "title": "Realwelt-Audit der missions- und programmbezogenen Realanker in OTA-TEC-0126 (v1.0 ENTWURF, 2026-10-18): CADRE-Missionsstatus nach IM-2, DARPA OFFSET, HEAP/Gravis-Kommerzialisierung, EU-SWARM/CANOPIES und die IEEE-IoT-Review-Kennung",
+  "question": "Quellengestuetzter Audit der [R-D]/[R-O]/[P]-Evidenzmatrix und der Quellenliste von OTA-TEC-0126-2026-DE (Abschnitte 5, 8, 9, 10, 15, 18), gepinnt auf Revision 4cd2149f822c7d3f5cad1bfe201ff1534843716b (Dokumentversion v1.0, Status ENTWURF, Stand 18.10.2026). Das Dossier ist die Evidenzbasis der MiniNode-Architektur und wird bereits von OTA-SCI-0110 und OTA-SCI-0112 referenziert; Fehler in der Reifegrad-Einstufung wirken daher direkt in Engineering-Roadmap und NOXIA-Weltsimulation. (1) CADRE: Pruefe die reale Missionsgeschichte von NASA/JPL CADRE (Auswahl, Start an Bord von IM-2/Athena im Februar 2025, Landung am 6. Maerz 2025, Umkippen des Landers, nicht erfolgte Rover-Deployment, Missionsende; etwaige Nachfolge-/Reflugplaene) und stelle fest, ob die Saetze 'Stand 2026 ist CADRE eine aktive/future Technology Demonstration' (Abschnitt 5.1) und die Matrixzeilen 'Mesh-Kommunikation kleiner Rover | CADRE-Hardware/Tests, Mission noch Demo | [P]' bzw. 'verteilte planetare Exploration | CADRE | [P/H]' (Abschnitt 15) den tatsaechlichen Stand treffen. Berichte, welche CADRE-Faehigkeiten (Mesh, Multi-Agent-Autonomie, verteilte Kartierung) real am Boden getestet und welche auf dem Mond nie demonstriert wurden, und schlage die korrekte Evidenzklasse vor. (2) DARPA OFFSET: Pruefe 'Abschluss-Feldexperiment 2021' und die Angabe 'Schwaerme bis etwa 250 Plattformen' sowie Art und Umfang der real demonstrierten Feldexperimente (UAV/UGV-Mix, urbane Umgebung, Human-Swarm-Interface) gegen DARPA-Abschlussberichte und die begleitende Literatur. (3) HEAP/Gravis: Verifiziere Jud et al. (2021), Automation in Construction 129:103783, und Johns et al. (2023), Science Robotics 8(84):eabp9758, sowie die Angaben 'etwa 65 m lange und bis zu 6 m hohe Trockensteinmauer' und insbesondere 'Gravis-Robotics-Technik wird 2026 laut ETH auf Dutzenden kommerziellen Baustellen eingesetzt'. Pruefe, ob diese Kommerzialisierungszahl belegt ist, was 'Dutzende' umfasst und ob die Aussage als [R-O] oder nur als [P]/[OFFEN] gefuehrt werden darf. (4) EU-Projekte: Pruefe SWARM (kollaborative elektrische Landwirtschaftsfahrzeuge; Flotte aus Fuehrungsmaschine und unbemannten leichten Robotern) und CANOPIES (heterogene Farming-/Logistikroboter mit menschlichen Arbeitskraeften im Weinbau) auf Projektkennung, Laufzeit, Enddatum und tatsaechlich oeffentlich demonstrierte Ergebnisse; melde, wenn ein Projekt 2026 bereits beendet ist oder die Demonstration nur simuliert/Teilprototyp war. (5) Weitere Kennungen: Verifiziere die IEEE-Internet-of-Things-Journal-Review 2026, DOI 10.1109/JIOT.2026.3699696 (Titel, Autorschaft, Existenz) und Jimenez-Cano et al. (2022), Journal of Intelligent & Robotic Systems 105:68 (G-Fly-Crane), sowie die 1.000-Kilobot-Angabe (Rubenstein/Cornejo/Nagpal, Science 345(6198):795-799). (6) Reklassifiziere: nenne die Matrixzeilen, die [R-D] bzw. [R-O] bleiben koennen, die auf [P] mit explizitem Missionsausgang abzuschwaechen sind (CADRE), die zu [OFFEN] werden muessen (Gravis-Kommerzialisierung, EU-Projektstatus) und die [H/T] bleiben; stelle fest, dass keine MiniNode-Systemfaehigkeit durch den Audit aufgewertet wird und dass kein kanonischer Reifegrad, keine kanonische Schwarmgroesse und kein kanonisches Docking-/Batteriekonzept eingefuehrt wird. AUSGESCHLOSSEN: das konkrete MiniNode-Systemdesign und die offenen Engineering-Trades (ENG-SYS-MININODE-0001), Chassisgroessen, Busspannung, Dockinggeometrie, MRTA-Algorithmus, BOM/Budget sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "OTA-TEC-0126 ist am 18.10.2026 als ENTWURF entstanden und bereits von OTA-SCI-0110 und OTA-SCI-0112 als Referenz zitiert; die CADRE-Mission liegt aber zeitlich vor der Formulierung 'aktive/future Technology Demonstration'. Da das Dossier ausdruecklich den Anspruch erhebt, reale Demonstration von Integrationsannahmen zu trennen, ist eine Statuskorrektur vor der weiteren Verwendung in Engineering-Roadmap und NOXIA-Simulation besonders wirksam.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "T",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "NASA/JPL-CADRE-Missionsverlauf (IM-2/Athena, 2025) und NASA-Projektstatus; DARPA-OFFSET-Abschlussberichte; Jud et al. 2021 und Johns et al. 2023 (HEAP); ETH-Zuerich-/Gravis-Robotics-Angaben 2026; CORDIS-Eintraege zu SWARM und CANOPIES; IEEE-IoT-Journal-DOI 10.1109/JIOT.2026.3699696.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.82,
+    "cross_project_reuse": 0.88,
+    "uncertainty": 0.78,
+    "evidence_potential": 0.82
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger Auftrag betrifft OTA-TEC-0126, die MiniNode-Evidenzbasis oder Robotik-Programmstatus. Die bisherigen Technik-Audits gelten Mars-ISRU/Staub/Thermik (OTA-TEC-0034, -0084, -0098) bzw. Eis- und Energiepfaden; auch RES-20260920-1C540EFB (OTA-TEC-0098) prueft Radiatoren, nicht Missionsreifegrade. Neu ist die Pruefung der programmbezogenen Realanker einer heterogenen Schwarmroboter-Evidenzmatrix.",
+  "fingerprint": "76117bb071ed8999",
+  "updated_at": "2026-11-09T11:59:22+00:00",
+  "last_error": "candidate for ota-archive-evidence lacks a strong source type marker"
+}

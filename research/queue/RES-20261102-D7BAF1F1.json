@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261102-D7BAF1F1",
+  "status": "candidate-pr",
+  "created": "2026-11-02T11:21:09+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0196-2026-de.md",
+  "source_ref": "4fdca55453170671b53e7c69587783f1d0e7038d",
+  "source_blob_sha": "bba7d0d628ed8080b1a004b1d16fc98c2564252d",
+  "title": "KUE-SCI-0196: Schwarze Löcher — PRD-Fragmentierungsarbeit und GW250114-Ringdown-Anker gegen die Primärquellen prüfen",
+  "question": "Stimmen die in KUE-SCI-0196 v0.2 als [R]/[I]/[H] gesetzten Aussagen mit den Primärquellen überein? Konkret: (1) Ist Cacciapaglia, Del Piano, Sannino & Vellucci (2026) tatsächlich unter dem Titel 'When Black Holes Admit Pair-of-pants Topologies' in Physical Review D erschienen (DOI 10.1103/cx69-t466), und enthält die publizierte Fassung die im Dokument und in der SDU-Mitteilung wiedergegebenen Einschränkungen zum weitgehend geschlossenen Kerr-Fenster, zu Extradimensionen und zu primordialen Schwarzen Löchern? (2) Sind die GW250114-Eckdaten korrekt (Detektion 14.01.2025, Netzwerk-SNR ≈ 80, Ausgangsmassen ≈ 33,6 und 32,2 M☉)? (3) Testet LVK (PRL 135, 111403, 2025) den Flächensatz mit der genannten Robustheit auch beim Ausschluss der fünf stärksten Zyklen? (4) Berichtet LVK (PRL 136, 041403, 2026) Grundton, ersten Oberton und einen dritten Ton bei etwa doppelter Frequenz sowie zwei- bis dreifach engere Schranken als GWTC-4.0? (5) Existieren die Nature-Arbeit zum Horizontsignal (Lu, Ma, Piccinni et al., DOI 10.1038/s41586-026-10696-0) und die beiden Preprints (Suzuki et al., arXiv:2605.03576; Li, arXiv:2604.17558) in der zitierten Form, und werden ihre Aussagen — insbesondere die Signifikanzsteigerung des ersten Obertons von 82,5 % auf 99,9 % — korrekt wiedergegeben? (6) Gibt es unabhängige Reanalysen, die die Ringdown-Signifikanzen, die Obertöne oder die Horizontsignal-Deutung stützen, einschränken oder bestreiten?",
+  "why_now": "Das Dokument wurde am 2026-11-02 begutachtet und dabei nach eigenem Revisionsvermerk ausdrücklich mit 'Realangaben aus OTA-SCI-0113' ergänzt, also aus einem vorgelagerten Dossier und nicht aus unabhängiger Primärquellenprüfung. Es trägt die AVI-/OTA-Abgrenzung, ist bis 2027-05-02 zur Wiedervorlage markiert und enthält mehrere belastende 2026er Einzelarbeiten, deren Status und Zahlen die gesamte Argumentation tragen.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "I",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Cacciapaglia et al. 2026, Physical Review D, DOI 10.1103/cx69-t466 / arXiv:2606.24642; LVK PRL 135, 111403 (2025); LVK PRL 136, 041403 (2026); Lu, Ma, Piccinni et al., Nature, DOI 10.1038/s41586-026-10696-0; arXiv:2605.03576; arXiv:2604.17558",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.87,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.88
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein vorheriges Forschungsthema behandelt KUE-SCI-0196, GW250114, Ringdown-Spektroskopie oder die Gregory-Laflamme-/Pair-of-pants-Frage. Die früheren Physikthemen betreffen Gold-Nukleosynthese (RES-20261021-9D5F27AC), Kryoeis (RES-20261021-46F98CB7) und Wolfram-Grenzflächen (RES-20261014-72C16339); keine Überschneidung mit Gravitationswellen- oder Horizonttopologie-Fragen.",
+  "fingerprint": "d7baf1f1322eeab5",
+  "updated_at": "2026-11-02T11:28:18+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/267"
+}

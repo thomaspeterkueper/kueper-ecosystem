@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261015-00F9F49D",
+  "status": "queued",
+  "created": "2026-10-15T08:26:07+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "Legal reality of running endia.de as the official website of a published fiction series: quotation/reuse rights, provider and press-law duties, and the labelling of in-universe fictional and promotional content aimed at young readers",
+  "question": "What do German and EU statutes, court decisions and official guidance actually establish about operating a website that is the official site of a published German-language Young-Adult trilogy and that deliberately mixes real explainer content with in-universe fictional pages: (a) how far the novels' text, cover art and worldbuilding material may be quoted, reused and remixed on the site itself (UrhG §§ 50, 51 and § 51a as amended by the DSM Directive (EU) 2019/790, Art. 17(7)); (b) which identification and press-law duties attach to the site as a publicly reachable commercial offering (now § 5 DDG in place of § 5 TMG, § 18 MStV) and what changes when content is addressed to minors; and (c) whether in-universe fictional pages, invented institutions and promotional framing must be explicitly marked as fiction or as advertising so that visitors — including young visitors — are not misled (UWG §§ 5, 5a on misleading omissions, MStV § 6 on separation and labelling of advertising), including the relevant case law and the guidance of the responsible bodies? The goal is that the platform's own pages describe this legal position accurately rather than assuming a permissive fictional law.",
+  "why_now": "The repository is at its initial-structure commit (faf48e6): README.md plus empty external-tasks/open, done and rejected slots. No content pages, no labelling scheme and no rights framework exist yet, so the decisions this research informs — how canon material may be quoted on the site, what imprint/press-law notices the site carries, and whether in-universe pages get a fiction marker — are still free to make correctly. Once explainer pages and in-universe pages are authored, retrofitting a labelling scheme and re-clearing quoted material is far more expensive. This is the load-bearing legal question the README's first sentence creates and that no prior topic in this project addresses.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R",
+    "F"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "German and EU copyright, press and competition law as applied to a real commercial website that publishes fictional in-universe content alongside factual explainer content: quotation and reuse rules (UrhG §§ 50, 51, 51a; Directive (EU) 2019/790 Art. 17(7)), provider identification and press duties (§ 5 DDG, § 18 MStV), and misleading-omission and advertising-separation rules (UWG §§ 5, 5a; MStV § 6), with case law and regulator guidance.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.75,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Not a rephrasing of any prior topic. The closest prior candidates audit entirely different legal domains: RES-20260918-C5EDAF53 covers youth media protection (JMStV, BzKJ/KJM), minors' data protection (DSGVO Art. 8) and accessibility (BFSG, BITV 2.0, EN 301 549); RES-20260918-67530279 covers AI-interaction disclosure under AI Act Art. 50, AI Act Art. 5 manipulation bans, DSA Art. 28 and minors' trust in conversational agents; RES-20260918-FCA2D3B7 covers criminal liability for hacking and whistleblowing. None of them asks about copyright/quotation rights, provider and press-law duties, or the legal duty to mark in-universe fiction and advertising as such — i.e. the content-side legal basis of the site itself, as distinct from the user-side protective duties already researched.",
+  "fingerprint": "00f9f49d64e9ab96"
+}

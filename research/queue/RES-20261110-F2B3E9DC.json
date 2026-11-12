@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261110-F2B3E9DC",
+  "status": "candidate-pr",
+  "created": "2026-11-10T11:25:07+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "spaces/noxia/infrastructure/NXU-MARS-RACE-2050-2091.md",
+  "source_ref": "5a229e4199e69f2068790c8eeb0fb38cc885c1c7",
+  "source_blob_sha": "f4eb2cbf79872c4c028ef9a1ab70f603f4f56a28",
+  "title": "Lokale Kalorienproduktion auf Mars 2091: Was reale CELSS-/Gewächshausforschung für die 65–80-%-Setzung zulässt",
+  "question": "Was besagen peer-reviewte Controlled-Environment-Agriculture-, Weltraum-Pflanzenphysiologie- und bioregenerative-Life-Support-Studien (NASA CELSS, ESA MELiSSA, Wageningen-Mars-Gewächshaustests) zu realistischen Erträgen, Anbauflächen, LED-/Solarenergiebädern, Wasser- und Nährstoffkreisläufen sowie Ernte- und Verlustraten für eine Marsbevölkerung von ~3.800 Menschen um 2091? Lässt sich die kanonische Arbeitszahl von ~65–80 % lokaler Kalorienproduktion damit stützen, und welche Importmassen (Saatgut, Mikronährstoffe, Dünger, Spezial- und Kulturlebensmittel) bleiben unvermeidlich? Wie müsste der Kanon Kalorien, Protein, Mikronährstoffe und kulturelle Nahrung getrennt ausweisen, statt eine einzige Autarkiequote zu behaupten?",
+  "why_now": "NXU-MARS-RACE-2050-2091 setzt ~65–80 % lokale Kalorienproduktion als Arbeitswert, während die aktuellen Engineering-Integrationsaufgaben Energie, Wasser, Gase, Robotik und Siedlungsentwicklung prüfen, aber keine Nahrungsmittelmasse oder Energie pro Kalorie. Die Zahl trägt Importlogistik, Siedlungsfläche und die Glaubwürdigkeit der 3.800-Bevölkerung.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Controlled-environment agriculture and bioregenerative food production: NASA CELSS, ESA MELiSSA, Wageningen Mars-greenhouse trials, peer-reviewed space-crop/LED-energy literature; Mars surface irradiance, dust and radiation constraints.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.8375,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine bisherige Recherche behandelt die quantitative Nahrungsmittel- und Kalorienbilanz der Marsbevölkerung; die Pilz-/Myzel-Recherche betrifft Substratbildung und Perchlorat, die Energie-Recherche Erzeugung und Netze, nicht Anbaufläche, Erträge und Energie pro essbarer Kalorie.",
+  "fingerprint": "f2b3e9dc89545038",
+  "updated_at": "2026-11-10T11:50:07+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/289"
+}

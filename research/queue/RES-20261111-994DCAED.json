@@ -1,0 +1,42 @@
+{
+  "id": "RES-20261111-994DCAED",
+  "status": "queued",
+  "created": "2026-11-11T11:09:53+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/grammatik.astro",
+  "source_ref": "7a81274bbaaa6d7863eec806cd03cf558bfe3d10",
+  "source_blob_sha": "9eebe240f525d63e64908915a6f85ff2614b990d",
+  "title": "Ta-Konstante: Trägt der Sanskrit-Dental -ta- den behaupteten Anker wirklich?",
+  "question": "Was belegen Vedische und Sanskrit-Grammatik sowie die vergleichende indogermanische Morphologie über das Verhältnis von deiktischem Stamm ta- ('jener, der andere') und dem Partizip Perfekt Passiv auf -ta- (PIE *-to-)? Sind beide etymologisch identisch oder nur homophon, ist *-to- resultativ/passivisch und nicht temporal, und wie wurde daraus in den neuindoarischen Sprachen ein Perfektiv- bzw. Vergangenheitsmarker? Lässt sich daraus ein belastbarer realer Anker für die 'Ta-Konstante' (Grenze/Gegenüber) gewinnen, oder muss die in EXT-KG-MISH-20260831-002 vorgeschlagene Gleichsetzung von Ta mit einem Dental-Temporalmarker als Kategorienfehler und Fiktion gekennzeichnet werden?",
+  "why_now": "Der offene Task EXT-KG-MISH-20260831-002 weist die Content-Arbeit an, den 'dental -t- perfective/past marker ... which underlies the Ta-Konstante' als reale Analogie zu verwenden. grammatik.astro §8 definiert Ta dagegen als 'Gegenüber, Grenze, das Andere', und index.astro führt die Ta-Konstante unter 'erfunden'. Nach der Kanonrevision vom 25.10.2026 tragen Pa'Ta, Om'Ta und Ma'Ta'U die Ta-Konstante; die Frage, ob der vorgeschlagene Anker trägt, ist damit kanonrelevant und derzeit unentschieden.",
+  "languages": [
+    "sa",
+    "en",
+    "de"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "H",
+    "R",
+    "R-Anker",
+    "F"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Vedische und Sanskrit-Belege zu ta-/-ta-, Pāṇinis Grammatik, PIE *-to- und die Grammatikalisierung des resultativen Partizips zum neuindoarischen Perfektiv.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.785,
+  "scores": {
+    "project_relevance": 0.84,
+    "cross_project_reuse": 0.68,
+    "uncertainty": 0.72,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260822-69C82BFA",
+    "RES-20261005-43D9854E"
+  ],
+  "novelty_reason": "RES-20260822-69C82BFA nennt den Dental -t- nur als Kandidatenanker, ohne zu prüfen, ob deiktisches ta- und partizipiales -ta- kognat sind oder ob 'Grenze/Anderes' die Grammatikalisierung motiviert. RES-20261005-43D9854E behandelt kāraka-Rollen und Pāṇini, nicht das Partizip. Der neue Schritt entscheidet, ob der Anker tragfähig ist oder als Homophonie und Fiktion reklassifiziert werden muss.",
+  "fingerprint": "994dcaeddd3c5502"
+}

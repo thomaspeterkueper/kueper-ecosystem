@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261110-8485B58D",
+  "status": "needs-review",
+  "created": "2026-11-10T11:25:10+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "spaces/noxia/characters/NXU-CHAR-SAMIR.md",
+  "source_ref": "5a229e4199e69f2068790c8eeb0fb38cc885c1c7",
+  "source_blob_sha": "a797dce04915322f8dc399842acc5effa2e0c701",
+  "title": "Religiöse Zeit- und Orientierungspraxis außerhalb der Erde: Gebetszeiten, Qibla, Schabbat und Kalender auf Mars und Stationen",
+  "question": "Was besagen islamische und jüdische Rechtsgutachten, peer-reviewte Religionswissenschaft und reale Raumfahrtpraxis zu Gebetszeiten, Qibla-Richtung, Schabbat, Fasten und religiösen Kalendern außerhalb der Erde — insbesondere auf Mars (Sonnentag ~24 h 39 min, lange Dämmerung, Staubstürme) und in künstlichen Tag-Nacht-Zyklen von Stationen? Welche Lösungen sind belegt oder ernsthaft diskutiert (Übergangsregeln, irdische vs. lokale Zeit, Ersatzzeiten, Gemeinschaftskalender), welche sind umstritten, und welche Fragen müsste der Kanon für Samir, David und Lan offenhalten, statt eine einzige Antwort zu setzen?",
+  "why_now": "Die Figuren David, Lan und Samir sind als tragende religiöse Stimmen angelegt; Samirs Dokument fragt explizit nach Gebetszeiten, Fastenpraxis und religiösen Kalendern in künstlichen Zyklen oder auf anderen Planeten, Davids Dokument nach jüdischer Praxis bei technisch erzeugtem Sonnenuntergang und Tag. Die NPC-Seeds nennen religiöse Gemeinschaften als bislang unterrepräsentiert.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "H",
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Islamic and Jewish legal responses to prayer times, qibla, Shabbat and calendars off Earth; Mars solar-day/twilight astronomy; ISS and spaceflight religious-practice reports.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.75
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Keine bisherige Recherche behandelt religiöse Zeit- und Orientierungspraxis außerhalb der Erde; die Mishkenaz-Recherche betrifft Frequenzen und Phonetik, die Baumeister-Recherche Paläoanthropologie, nicht gegenwärtige oder zukünftige Religionspraxis.",
+  "fingerprint": "8485b58d5088aa58",
+  "updated_at": "2026-11-11T11:29:39+00:00",
+  "last_error": "candidate for worldbuilding-scientific lacks a strong source type marker"
+}

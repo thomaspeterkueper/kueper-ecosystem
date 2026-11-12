@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261112-51078EC0",
+  "status": "queued",
+  "created": "2026-11-12T11:27:42+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "docs/world/chronomap-jesus/04-wirken-in-galilaea.md",
+  "source_ref": "c0c473c3379de90813a7552fcdab569a18aedac8",
+  "source_blob_sha": "bc0ca6a0923e70070d9c2ea2c64bd0d853d70d7d",
+  "title": "First-century Galilee: defensible site identifications, road connections and walking times for the Chronomap map",
+  "question": "What do excavation reports, archaeological surveys and peer-reviewed historical-geography scholarship establish about the identification, extent and first-century road connections of the Lower Galilean sites the Chronomap must anchor — Capernaum, Magdala, Kana (Khirbet Qana vs Kafr Kanna), Nain, Kursi/Gergesa, Bethsaida (et-Tell vs el-Araj) and Enon/Salim — and what do terrain, the Roman road network and documented travel speeds imply for the walking times asserted in chapter 04 (Nazareth–Capernaum about 40 km as 'one long day or two', Capernaum–Nain about 35 km, Kana–Capernaum over 25 km)? Which identifications and WGS84 coordinates are defensible as [A]/[S], which must remain [T] or openly unresolved, and which travel-time figures need correction?",
+  "why_now": "Chronomap Jesus was merged on 12.11.2026 and its daily research run begins with about 75 '(prüfen)' markers. Chapter 04 fixes the first two playable places (Capernaum, Magdala) and publishes a travel-time table, but six site identifications and all walking times are still open; the map cannot be built on unresolved coordinates.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "S"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "First-century CE settlement archaeology and historical geography of Lower Galilee (Capernaum, Magdala, Kana, Nain, Kursi, Bethsaida/et-Tell vs el-Araj, Enon/Salim), the Roman road network and terrain-based walking speeds.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.82,
+  "scores": {
+    "project_relevance": 0.94,
+    "cross_project_reuse": 0.62,
+    "uncertainty": 0.82,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic addresses the Chronomap Jesus subproject or first-century Galilean historical geography; the prior queue concerns NOXIA simulation science, and this gap is grounded in the newly merged chapter 04 and its explicit '(prüfen)' location and travel-time claims.",
+  "fingerprint": "51078ec07543e6da"
+}

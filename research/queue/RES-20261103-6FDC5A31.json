@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261103-6FDC5A31",
+  "status": "queued",
+  "created": "2026-11-03T11:02:16+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "README.md",
+  "source_ref": "faf48e6f6f735ec3773724c470d72f3d0d722d3d",
+  "source_blob_sha": "8f05350ab52f0b2712b10cd635e7b17b72ab4a03",
+  "title": "Outbound licensing and machine-readable reuse terms for endia.de's own explainer pages",
+  "question": "Under which outbound licence and machine-readable terms should endia.de publish its own explainer pages so that sibling KUEPER projects and the public may reuse them, given that a page may combine original text, quotations from the novels (publisher and author rights) and adapted third-party material under its own licence? What do the Creative Commons 4.0 licences, the § 44b UrhG / Art. 4 Directive (EU) 2019/790 text-and-data-mining reservation, CC REL and schema.org licence markup actually permit or require; how must a mixed-rights page be attributed and partitioned so that an open licence does not purport to license material the platform does not own; and what does that imply for the ecosystem's 'link instead of copy' norm?",
+  "why_now": "README.md line 15 sets 'link instead of copy' as the binding ecosystem norm but names no licence, and lines 19-23 make this repository a node that other projects address through external tasks. RES-20261022-5C288045 analysed only inbound reuse of other providers' material. The licence and rights carve-up gate whether explainer pages can be reused across KUEPER at all, and are cheapest to fix before any content exists.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "The Creative Commons 4.0 licence suite, § 44b UrhG and Art. 4 of Directive (EU) 2019/790 (text-and-data-mining reservation), CC REL and schema.org licence markup.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.75,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.75
+  },
+  "related_research_ids": [
+    "RES-20261022-5C288045"
+  ],
+  "novelty_reason": "RES-20261022-5C288045 asks which licences and statutory rules permit endia.de to reference, quote, embed or adapt other providers' digital-literacy material — an inbound question about what the platform may take. This is the inverse: which licence the platform grants for its own pages, how a mixed-rights page (novel quotations, third-party material and original text) constrains that grant, and whether a TDM reservation should be asserted. No prior topic addresses outbound licensing, rights partitioning or TDM reservation.",
+  "fingerprint": "6fdc5a3130682d2b"
+}

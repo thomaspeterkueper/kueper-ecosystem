@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261023-C4FA4833",
+  "status": "queued",
+  "created": "2026-10-23T08:40:03+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Drei Kontinuitäten, eine Herkunft: belegte Leserführung zwischen Zereya, Baumeister- und Noxia-Universum",
+  "question": "README.md:3 sagt, dass das Baumeister- und das Noxia-Universum aus der Arbeit an der Zereya-Saga entstanden sind. Die Website muss daher mindestens drei verwandte, aber eigenständige fiktionale Kontinuitäten nebeneinander darstellen. Welche empirisch belegten Effekte hat die gleichzeitige Rezeption mehrerer verwandter Storyworlds auf Verständnis, Erinnerung und Kanonzuschreibung (Forschung zu source monitoring, narrative transportation und Inferenzübertragung zwischen fiktionalen Welten), und welche belegten Kennzeichnungs- und Navigationspraktiken — explizite Kontinuitätslabels, stabile Entitäts-IDs, Herkunftsvermerke „abgeleitet von“, dokumentierte Canon-Konventionen in Fan-Wikis — senken das Risiko, dass Lesende Figuren, Ereignisse und Regeln zwischen den drei Kontinuitäten verwechseln, ohne die Zusammengehörigkeit zu verdecken?",
+  "why_now": "Mit der Anlage der Wissensplattform wird die Beziehung der drei Kontinuitäten strukturbildend. Wird sie nur redaktionell-intuitiv gelöst, sind spätere Entitäts-, URL- und Navigationsentscheidungen teuer zu korrigieren und die Abgrenzung bleibt uneinheitlich.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Kognitionspsychologische Forschung zu source monitoring und narrativer Verarbeitung sowie empirische Studien zu Kanon- und Navigationspraktiken in Fan-Wikis und Shared-Universe-Plattformen.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.75,
+  "scores": {
+    "project_relevance": 0.88,
+    "cross_project_reuse": 0.82,
+    "uncertainty": 0.62,
+    "evidence_potential": 0.68
+  },
+  "related_research_ids": [
+    "RES-20261016-88579799"
+  ],
+  "novelty_reason": "Die frühere Kandidatin RES-20261016-88579799 behandelt ausschließlich die Grenze zwischen fiktionaler Setzung und extern belegtem Wissen (F vs. R). Sie beantwortet nicht, wie mehrere eigenständige fiktionale Kontinuitäten, die auseinander hervorgegangen sind, voneinander unterscheidbar bleiben. Hier ist genau die F-zu-F-Abgrenzung samt Ableitungsprovenienz der Gegenstand; die externe Evidenz betrifft Leserkognition und Kanon-Navigation, nicht die Validierung von Kanon.",
+  "fingerprint": "c4fa4833249034f8"
+}

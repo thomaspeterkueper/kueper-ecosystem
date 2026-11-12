@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261105-F5B8BA2E",
+  "status": "needs-review",
+  "created": "2026-11-05T11:06:58+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "lib/learningPaths.ts",
+  "source_ref": "16c03cf926303ad0f1ce96b2089946e317dc2275",
+  "source_blob_sha": "d5698fb3a9d58b633d8cf66177475fbe7a2e143a",
+  "title": "Verify the lunar-navigation path's horizon, star-visibility and Apollo-LRV claims, and date its 'no GPS' premise",
+  "question": "PATH:SSF:AST-MONDNAVIGATION-0001 (lib/learningPaths.ts) teaches five lunar navigation methods and states, among other things, that at 1.8 m eye height the lunar horizon is ~6.7 km 'because the Moon's radius is smaller than Earth's', that stars are 'always visible' because there is no atmosphere, that the Apollo LRV's odometry/gyro navigation was so accurate that astronauts 'always knew where they were', and that a beacon signal 'completely eliminates' inertial drift. What do the actual geometry and mission record support? Specifically: (a) what is the correct horizon distance for a 1.8 m observer on the Moon, and how does it compare with Earth; (b) when are stars actually visible from the lunar surface (day/night, solar exclusion, star-tracker limits), and is 'no scintillation' the only relevant difference; (c) what did the Apollo LRV navigation system actually consist of, and what was its demonstrated accuracy and limitations; (d) what is the current status of lunar GNSS/beacon infrastructure (NASA LunaNet, ESA Moonlight, commercial landers), and how should the path's 'there is no GPS' premise be dated and qualified; (e) which statements are direct measurement or geometry, which are engineering interpretation, and which are future-system hypothesis that must be labelled as such?",
+  "why_now": "The path is live and learner-facing, and its quiz currently teaches a horizon distance that is off by a factor of roughly 2.7. Artemis/CLPS operations and the LunaNet/Moonlight lunar-GNSS programmes also make the path's absolute 'no GPS' framing time-sensitive rather than timeless.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Lunar horizon geometry; Apollo Lunar Roving Vehicle navigation records; lunar star-tracker visibility; NASA LunaNet and ESA Moonlight lunar GNSS/beacon plans",
+  "publication_route_hint": null,
+  "project_weight": 0.8,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic covers lunar surface navigation. The earlier Mars water and perchlorate candidates concern Mars thermodynamics and regolith chemistry, not lunar navigation, and the gold, brain-health and tardigrade candidates are unrelated. This is a new repository-grounded audit, not a rephrasing.",
+  "fingerprint": "f5b8ba2e87969056",
+  "updated_at": "2026-11-05T11:07:37+00:00",
+  "last_error": "[Errno 7] Argument list too long: 'node'"
+}

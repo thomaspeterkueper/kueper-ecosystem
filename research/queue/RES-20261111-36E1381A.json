@@ -1,0 +1,41 @@
+{
+  "id": "RES-20261111-36E1381A",
+  "status": "candidate-pr",
+  "created": "2026-11-11T11:09:55+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/grammatik.astro",
+  "source_ref": "7a81274bbaaa6d7863eec806cd03cf558bfe3d10",
+  "source_blob_sha": "9eebe240f525d63e64908915a6f85ff2614b990d",
+  "title": "Meta-Operator -ira: Egophorizität, conjunct/disjunct und die Grammatik des Sich-selbst-Bemerkens",
+  "question": "Welche dokumentierten grammatischen Kategorien markieren die sprecherseitige Involviertheit in einen Vorgang und das Bemerken der eigenen epistemischen Haltung – insbesondere Egophorizität, conjunct/disjunct-Systeme, Mirativität, Middle/Reflexiv und Marker der Selbstkorrektur –, wie werden sie typologisch definiert und grammatikalisiert, und deckt der Mishkenaz-Operator -ira ('der Sprecher bemerkt sein eigenes Verhältnis zum Vorgang, und dieses Bemerken kann sein weiteres Handeln verändern') einen anerkannten Funktionsbereich ab oder ist er eine neue, ausdrücklich als Kanon zu kennzeichnende Kombination? Zu prüfen ist auch, ob die Stellung STAMM – -ira – RES und die Kombination mit -ath/-il typologisch plausibel sind.",
+  "why_now": "-ira wurde am 25.10.2026 von 'Attraktor' zu 'Selbstreflexion' umbedeutet und ist seither V40 sowie Bestandteil der Mitleid-Konstellation und der Prüfung des eigenen Blicks. grammatik.astro §3a und docs/sprachwelt-ebenen-und-konkordanz.md begründen die Neufassung innerkanonisch, aber ohne typologische Prüfung. Der bisherige Kandidat RES-20260915-D8CB8EC4 deckt nur die Realitätsstatus-Marker der drei Aspekte und -tum ab, nicht -ira.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "T",
+    "R-Anker",
+    "F"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Egophorizität und conjunct/disjunct-Systeme (Tibeto-Burman, Newar, Tibetan), Mirativitäts- und Evidentialitätstypologie.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.82,
+  "scores": {
+    "project_relevance": 0.82,
+    "cross_project_reuse": 0.86,
+    "uncertainty": 0.76,
+    "evidence_potential": 0.84
+  },
+  "related_research_ids": [
+    "RES-20260915-D8CB8EC4"
+  ],
+  "novelty_reason": "RES-20260915-D8CB8EC4 prüft Frustrativ, Iamitiv, Avertiv, Absentiv und Evidentialität für -om/-ath/-il und -tum. Es fragt nicht nach sprecherseitiger Involviertheit, Egophorizität oder conjunct/disjunct für den Meta-Operator -ira, der erst nach jenem Kandidaten kanonisch wurde. Die neue Frage adressiert eine andere morphologische Position und einen anderen Funktionsbereich.",
+  "fingerprint": "36e1381a01713286",
+  "updated_at": "2026-11-12T11:49:29+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/291"
+}

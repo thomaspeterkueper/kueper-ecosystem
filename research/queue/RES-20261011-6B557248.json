@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261011-6B557248",
+  "status": "queued",
+  "created": "2026-10-11T10:07:20+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/grammatik.astro",
+  "source_ref": "40635b6cefacf987173523cafa659454f844cfcc",
+  "source_blob_sha": "0cb2dedee8633f98ea5a62050e627b609ed9d717",
+  "title": "Slot-Ordnung der R1-Morphologie (NEG–INTENS–STAMM–KOLLEKTIV–RES–DEPR) gegen Affixordnungs-Universalien prüfen",
+  "question": "Welche cross-linguistisch belegten Prinzipien der Affix- und Morphemanordnung – Relevanzhierarchie (Bybee), scope-basierte/Mirror-Principle-Ordnung, Suffigierungstendenz sowie typische Stellung von Negations-, Intensitäts-, Aspekt- und Kategorienmarkern – sind durch Referenzgrammatiken und typologische Datenbanken gestützt, und ist die kanonische R1-Reihenfolge (Negation und Intensität außen, Aspekt/RES und Deprivation innen am Stamm) mit diesen belegten Ordnungsprinzipien vereinbar? Welche Muster stützen speziell einen agglutinierenden, aspekt-dominanten Verbal-Template, und wie ist der in §10 als offen markierte Intensitäts-Slot typologisch plausibel zu positionieren?",
+  "why_now": "grammatik.astro §2 setzt mit dem Template (NEG)—(INTENS)—STAMM—(KOLLEKTIV)—(RES)—(DEPR) die morphologische Grundarchitektur R1 und markiert zugleich die Funktion des INTENS-Slots als 'noch auszuarbeiten' (§2, §10). Vor der Migration muss die Slot-Ordnung als belegt-plausibel oder als bewusste Setzung ausgewiesen sein, damit der R1-Bau nicht als reine Erfindung erscheint.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Cross-linguistische Universalien der Affix-/Morphemordnung (Relevanzhierarchie, scope-basierte Ordnung, Suffigierungstendenz) und Typologie templatischer/aspekt-dominanter Verbalmorphologie.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 0.6725,
+  "scores": {
+    "project_relevance": 0.7,
+    "cross_project_reuse": 0.64,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.75
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Kandidat behandelt die interne Anordnung der R1-Morpheme. Die Themen zu Satzsyntax (RES-20261005-43D9854E), Numerus (RES-20261005-EB978A9A), Phonologie/Morphonologie (RES-20260915-0CD0C163) und Lexikalisierung (RES-20260915-3ADB7DC0) betreffen Klauselbau, Numerusmarker, Lautgrenzen bzw. Wortstatus – nicht die Reihenfolge der Funktionsslots und deren Vereinbarkeit mit Affixordnungs-Universalien.",
+  "fingerprint": "6b557248169b4b7c"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261012-2C4E7C35",
+  "status": "queued",
+  "created": "2026-10-12T11:01:35+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "docs/research/OTA-HIS-HALLSTATT-2026-10.md",
+  "source_ref": "6776cb7c2a06be726ef42d31da6e86b4fa63f372",
+  "source_blob_sha": "e114c96731aca4cc6cf188403c0fac81faa1f7ad",
+  "title": "Realwelt-Audit des Hallstatt-Forschungsdossiers (docs/research/OTA-HIS-HALLSTATT-2026-10.md, Stand HEAD 6776cb7): NHM-Kernbohrungsbefunde 2026, Kammerdimensionen, Nutzungs- und Erdrutschchronologie, Produktionsschaetzung und Taphonomie-Vergleich",
+  "question": "Quellengestuetzter Audit des Realwelt-Kerns des OTA-Forschungsdossiers docs/research/OTA-HIS-HALLSTATT-2026-10.md (Abschnitte 1, 3, 4, 5, 7), das ausdruecklich als quellenbasiertes, nicht-fiktionales Forschungs- und Reflexionsdossier angelegt ist und mehrere Angaben selbst als 'weiter zu pruefen' markiert. (1) Kernbohrungsbefund 2026: Verifiziere gegen die Primaer-/Institutionsquellen (NHM Wien, Projekt H3/Hipercorig Hallstatt History; ORF Oberoesterreich 11.09.2026) die Angaben 'Ausdehnung etwa 300 Meter', 'einzelne Kammern etwa 25 Meter Breite und 20 Meter Hoehe', 'Verbund mehrerer parallel und auf verschiedenen Niveaus verlaufender Abbaukammern' und 'seit 2022 mit Kernbohrungen'. Klaere, worauf sich die 300 m beziehen (nachverfolgtes System vs. vermessene Halle) und melde jede Abweichung. (2) Chronologie: Pruefe 'erste Nutzung des Salzbergs vor etwa 7.300 Jahren', 'grossmassstaeblicher Abbau etwa ab 1200 v. Chr.' sowie die Erdrutsch-Chronologie 'bronzezeitliche Phase endet um 1061 v. Chr.' und 'spaeterer Rutsch um 662 v. Chr.' gegen die zitierte Forschungsliteratur (u. a. die im Dossier genannten Barth & Reschreiter 2019, Grabner et al. 2021, Festi et al. 2021). Verifiziere Existenz, Autorschaft, Journal/Jahr und Befundbezug dieser Arbeiten und stelle die Datenlage zu den beiden Hangrutschen dar. (3) Produktionszahl: Qualifiziere die Presseangabe 'ca. 1,5 Tonnen Salz taeglich' nach Methode, Zeitraum und Bezugsgroesse gegen die reale archaeologische Hallstatt-Literatur; das Dossier uebernimmt sie bewusst nicht als Messung - bestaetige oder korrigiere diese Enthaltung. (4) Erhaltung/Taphonomie: Pruefe den im Dossier gezogenen Methodenvergleich Hallstatt - Abric Romani - Schoenigen (selektive Erhaltung, Travertin- vs. Salz-Konservierung, 'Fehlen ist kein Nachweis der Abwesenheit') gegen die reale Taphonomie-/Fundstellenliteratur und benenne, wo der Vergleich als Methoden-, nicht Kulturfolgenargument tragfaehig ist. (5) Institutionelle Nachhaltigkeitsthese: Pruefe die NHM-Aussage zur 'nachhaltig gestalteten Umweltintervention' als wissenschaftliche Schlussfolgerung mit Datensatzbezug. (6) Reklassifiziere: nenne die Saetze, die als [R] (beobachteter Kernbohrungsbefund), [R-Anker]/Institutionsaussage, [H] (Deutung/Rekonstruktion) und [OFFEN] (unverifizierte Zahl) zu fuehren sind, und stelle fest, dass keine kanonische Kammerdimension, kein kanonisches Datum und keine kanonische Foerderrate in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die literarischen Resonanzraeume (Die Uralten/Buecherwelten, Dvaraka, NOXIA-Simulation) und jede Ableitung einer 'unbekannten Hochtechnologie' oder Kontinuitaetsbehauptung - sie sind ausdruecklich nicht Auditgegenstand.",
+  "why_now": "Dies ist mit Stand 11.10.2026 das neueste Forschungsartefakt des Repositories und traegt ein explizites 'Pruefprogramm' (Abschnitt 7), dessen Punkte 1-5 (NHM-2026-Pressemitteilung/Bohrkernauswertung, Kartierung, Alters-/Erdrutschchronologie, Produktionszahlen, Erhaltungsvergleich) sowie die bibliographische Verifikation der genannten Arbeiten offen ausgewiesen sind. Das Dossier speist direkt mehrere OTA-Straenge (HIS/FND, Bildung, NOXIA-Referenz), weshalb seine Verifikation unmittelbar kanonrelevante Genauigkeit liefert.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "R-Anker",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Hallstatt-Archaeologie (NHM Wien, Forschungsprojekt H3/Hipercorig): Kernbohrungsergebnisse 2022-2026, eisenzeitliche Salz-Abbaukammern (Ausdehnung/Dimensionen), Nutzungs- und Hangrutsch-Chronologie (~7.300 Jahre; ~1200 v. Chr.; ~1061 v. Chr.; ~662 v. Chr.), Schätzungen der Salzfoerderung und die Taphonomie-/Erhaltungsfrage im Vergleich zu Abric Romani und Schoenigen.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.9,
+  "relevance_score": 0.775,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Weder ein vorheriger Research-Topic noch eine offene externe Aufgabe adressiert Hallstatt oder das Dossier (Grep ueber external-tasks/ findet 'Hallstatt' nur im Dossier selbst). Es handelt sich um reine, nicht-fiktionale Archaeologie und damit um einen neuen Realwelt-Strang neben den bisherigen OTA-Realwelt-Audits (Astro-, Mars-, Materialphysik).",
+  "fingerprint": "2c4e7c35dd41cd14"
+}

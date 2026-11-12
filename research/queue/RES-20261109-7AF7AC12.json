@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261109-7AF7AC12",
+  "status": "candidate-pr",
+  "created": "2026-11-09T11:46:26+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "lib/game/construction/materials.ts",
+  "source_ref": "4f46728515c9ae37dfa3fbdfbb137ecff3b7bebf",
+  "source_blob_sha": "7ae92a7097e331d56ba36101d7016a1f1a879048",
+  "title": "Sintered regolith as a habitat construction material: strength, energy per tonne and mass per m2",
+  "question": "What do peer-reviewed materials-science studies and NASA/ESA technical documentation establish about sintering lunar and Martian regolith into construction elements: achievable compressive and tensile strength, porosity, thermal-cycling and vacuum durability, sintering temperature and energy per tonne? What do habitat shielding and structural-mass studies imply for the 0.8 t/m2 sintered-regolith and 0.06 t/m2 steel allocation in NOXIA's habitat bill of materials? Specifically, is sintered regolith defensible as a pressure-retaining habitat shell, or only as shielding, paving or non-structural infill, and what energy per tonne and mass per m2 follow for a habitat of a given floor area and shape?",
+  "why_now": "NOXIA-MAT-0001 introduced material bills on 28.10.2026. lib/game/construction/materials.ts now carries the provisional off-world habitat row (regolith 0.8 t/m2, steel 0.06 t/m2) and marks all quantities as provisional; coordination/open/20261028-0042 explicitly asks the Knowledge Graph for 'Regolith als Baustoff (Sintern, Energie je t)'. These values already feed building cost display and the Mars/Moon worldbuilding, so an evidence-backed range would replace an asserted number now.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Sintering of lunar and Martian regolith simulants; mechanical, thermal and vacuum durability of sintered regolith; habitat shielding mass and embodied-energy budgets.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.81,
+  "scores": {
+    "project_relevance": 0.88,
+    "cross_project_reuse": 0.78,
+    "uncertainty": 0.72,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic addresses materials processing or structural engineering. RES-20260828-49AF01DE asks which bodies contain which resources and at what ore grade; it does not establish whether regolith can be sintered into a pressure shell, what strength it reaches, or how much energy and mass per m2 a habitat requires. RES-20260828-79092FF4 covers per-capita consumables and hazards, not construction mass.",
+  "fingerprint": "7af7ac12f07122c2",
+  "updated_at": "2026-11-09T12:12:47+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/284"
+}

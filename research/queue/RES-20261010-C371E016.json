@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261010-C371E016",
+  "status": "queued",
+  "created": "2026-10-10T09:58:39+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "canon/timeline/NXU-TIMELINE-DRAFT-2026-07.md",
+  "source_ref": "92d87a0770d546032cb73fade252ca9e1c0185dd",
+  "source_blob_sha": "9317fd98852d9a80526bedc7fa9f1453cb1b9bdd",
+  "title": "Zweijährige Erde–Mars-Isolation (Das Schweigen 2067–2069): was reale ICE-Analogforschung über ~1.000 isolierte Siedler aussagt",
+  "question": "Was besagt die peer-reviewte Human-Factors-Forschung zu isolierten, geschlossenen und extremen (ICE-)Umgebungen — Antarktis-Winterüberwinterung, Mars-500/SIRIUS/HI-SEAS-, U-Boot- und Langzeit-Raumfahrtmissionen — über die psychologischen, sozialen, medizinischen und Governance-Folgen einer ~1.000-köpfigen Marssiedlung ohne Erdkontakt über zwei Jahre? Wie wirken Kommunikationslatenz- bzw. -ausfall, Rollen-/Rangverlust, Gruppenkohäsion, Konflikt- und 'Third-Quarter'-Muster, Schlaf-, Immun- und Stimmungsverläufe? Welche Teile der Kanon-Setzung (die Kolonie 'überlebt'; 'Das Schweigen' als kollektive Prägung) sind gestützt, und welche müssten Mortalität/Morbidität, Führungsversagen oder Institutionenbildung realistisch berücksichtigen?",
+  "why_now": "Das Schweigen (2067–2069) ist ein 🔒-Schlüsselereignis der Master-Timeline und der Hintergrund von Generation Mars, aber nirgends im Repository durch reale Analogevidenz unterlegt. Die Aussage '2 Jahre vollständige Isolation, ~1.000 Menschen, Kolonie überlebt' ist eine prüfbare reale Belastbarkeitsthese, keine bloße F-/W-Setzung.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "physically-established-constraint",
+    "narrative-choice"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewte Human-Factors-Literatur zu isolierten, geschlossenen, extremen (ICE-)Umgebungen: Antarktis-Winter-over-Studien (z. B. Palinkas, Sandal), Mars-500/SIRIUS/HI-SEAS-Analogmissionen sowie Kommunikationslatenz-Experimente.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.76,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriges Topic behandelt Isolation, Konfinement oder Gruppenpsychologie. Die früheren medizinisch-physiologischen Topics (Teilgravitation, Genetik) und das Bewusstseins-Topic überschneiden sich nicht mit Human Factors in abgeschlossenen Populationen.",
+  "fingerprint": "c371e0166f7da243"
+}

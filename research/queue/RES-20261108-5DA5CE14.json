@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261108-5DA5CE14",
+  "status": "candidate-pr",
+  "created": "2026-11-08T10:31:01+00:00",
+  "source_project": "products",
+  "source_repository": "thomaspeterkueper/kueper-products",
+  "source_path": "prototypes/gen0-mininode-environment-sensor.md",
+  "source_ref": "91a307e81227eecaea9c75e6ce1eaa3959113b59",
+  "source_blob_sha": "8e44d95b433fb22fe6cd505e2a66abe5ee1f5a08",
+  "title": "Enclosure-induced lag and condensation bias in the MiniNode T/RH measurement chain",
+  "question": "What does peer-reviewed metrology and sensor-characterization evidence establish about the achievable accuracy, response time and high-humidity/condensation bias of a low-cost capacitive RH/T sensor (SHT40-class) mounted in a passively ventilated enclosure, and what reference instrument, traceability level and uncertainty budget are required before a 72-hour logger run can legitimately be judged 'tracks the reference sufficiently to justify calibration work'?",
+  "why_now": "MiniNode is the only active portfolio candidate and Engineering has already frozen the Gen-0 architecture (SHT40-class sensor, 2xAA, BLE) with P0/P1/P2 gates that include 'reference comparison' and 'condensation-safe vented enclosure; stable sensor response'. The current Gen-0 spec makes the pass decision depend on an unspecified reference device and an unquantified 'enclosure response delay', so the acceptance test cannot be interpreted or reproduced without an external metrology baseline.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Metrology of low-cost capacitive relative-humidity/temperature sensors in passively ventilated radiation shields: response-time constant, radiation/ventilation error, condensation and wet-bias behaviour, and traceable calibration against a reference hygrometer.",
+  "publication_route_hint": null,
+  "project_weight": 0.9,
+  "relevance_score": 0.8625,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.78,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": null,
+  "fingerprint": "5da5ce1433afd58f",
+  "updated_at": "2026-11-08T10:57:54+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/281"
+}

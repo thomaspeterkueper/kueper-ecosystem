@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261109-0C11B2B1",
+  "status": "queued",
+  "created": "2026-11-09T11:46:28+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "lib/game/food/chain.ts",
+  "source_ref": "4f46728515c9ae37dfa3fbdfbb137ecff3b7bebf",
+  "source_blob_sha": "5f8f8d7cfd3943ce08688992487677fe44f8a43a",
+  "title": "Controlled-environment crop yields and regolith substrate conditioning for off-world food production",
+  "question": "What do controlled-environment-agriculture experiments, space-agency life-support studies and peer-reviewed plant-science literature establish about edible biomass yield per m2 per day, energy per edible kg, water transpired per kg and harvest index for candidate Mars crops under LED lighting? What conditioning steps are required before Martian regolith can serve as a growth medium: perchlorate removal, salinity management, bioavailable N/P/K, microbial or mycorrhizal inoculation and pathogen control, and what yield penalties remain after conditioning? Concretely, is the 10 kg vegetables/day, 20 kg water and 0.15 MWh per hydroponic module in NOXIA's food chain consistent with measured controlled-environment productivity, and what growing area, light power and substrate state (S0-S4) follow?",
+  "why_now": "NOXIA-FOOD-0002 (accepted 27.10.2026) and lib/game/food/chain.ts carry the hydroponic module as a provisional parameter; coordination/open/20261027-0932 asks for canonical yields, energy and shelf-life values. external-tasks/open/EXT-ENG-NOXIA-20260927-soil-ecology-runtime-integration.md requests an S0-S4 substrate runtime with salinity, toxicity and pathogen pressure. The colony food model and every statement about Mars food autarky depend on these numbers.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Controlled-environment agriculture productivity and energy/water budgets; perchlorate toxicity and remediation in Martian regolith; plant-microbe interactions and salinity in regolith-based substrates.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.78,
+  "scores": {
+    "project_relevance": 0.86,
+    "cross_project_reuse": 0.68,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.84
+  },
+  "related_research_ids": [
+    "RES-20260828-79092FF4"
+  ],
+  "novelty_reason": "RES-20260828-79092FF4 asks what a person consumes per day and which hazards exist; it does not establish production-side edible yield per m2, energy and water per edible kg, or the substrate-conditioning chain. RES-20260828-49AF01DE asks where resources occur, not how regolith is made agronomically productive. This is the production-side complement needed to calibrate the food chain and the soil-ecology S0-S4 ladder, not a rephrasing of the consumption model.",
+  "fingerprint": "0c11b2b13037e7b6"
+}
