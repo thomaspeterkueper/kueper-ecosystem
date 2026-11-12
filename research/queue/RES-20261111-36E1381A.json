@@ -1,6 +1,6 @@
 {
   "id": "RES-20261111-36E1381A",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-11T11:09:55+00:00",
   "source_project": "mishkenaz",
   "source_repository": "thomaspeterkueper/mishkenaz.org",
@@ -35,5 +35,7 @@
     "RES-20260915-D8CB8EC4"
   ],
   "novelty_reason": "RES-20260915-D8CB8EC4 prüft Frustrativ, Iamitiv, Avertiv, Absentiv und Evidentialität für -om/-ath/-il und -tum. Es fragt nicht nach sprecherseitiger Involviertheit, Egophorizität oder conjunct/disjunct für den Meta-Operator -ira, der erst nach jenem Kandidaten kanonisch wurde. Die neue Frage adressiert eine andere morphologische Position und einen anderen Funktionsbereich.",
-  "fingerprint": "36e1381a01713286"
+  "fingerprint": "36e1381a01713286",
+  "updated_at": "2026-11-12T11:49:29+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/291"
 }
