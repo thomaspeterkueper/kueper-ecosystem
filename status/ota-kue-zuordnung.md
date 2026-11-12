@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-11 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-12 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -42,7 +42,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0116-2026-DE | Andromeda als Welteninsel – Distanzmessung, Kalibration | IOFFENR | KUE-SCI-0198 | geprüft 2026-11-03 – KUE-Gegenstück vorhanden; Realteil in KUE-SCI-0198 v0.2 übernommen, Brückendokument OTA-REQ-20261103-002 – umgesetzt 2026-11-08 (v0.2) |
 | OTA-TEC-0019-2091-DE | OTA-TEC-0019-2091-DE | FHRT | KUE-SCI-0178 | offen |
 | OTA-TEC-0021-2025-DE | MOF-STABILISIERUNG FÜR SUPERIONISCHES GOLDHYDRID | FHRS | KUE-SCI-0183 | offen |
-| OTA-TEC-0029-2048-DE | Quantensensorik & KI-Integration für LOD-Validierung | FHRT | KUE-SCI-0177 | offen |
+| OTA-TEC-0029-2048-DE | Quantensensorik & KI-Integration für LOD-Validierung | FHRT | KUE-SCI-0177 | geprüft 2026-11-12 – KUE-Gegenstück vorhanden, aber unvollständig; Uhrenwerte/Atominterferometer/Tageslänge nach KUE per EXT-OTA-KUE-20261112-002, AVI-/SSF-Teil bleibt; Kürzung OTA-REQ-20261112-002 |
 
 ## A – Kandidaten für vollständigen Umzug
 
@@ -54,7 +54,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-OBS-0006-2026-DE | SumTablets: KI-gestützte Keilschrift-Transliteration al | IRT |  | offen |
 | OTA-SCI-0019-2025-DE | DIE FÜNF EPOCHEN DES GEHIRNS | RS |  | geprüft 2026-11-09 – Teile nach KUE (I–III, Studie Mousley et al.), GANDHAKA/noχ-Extrapolationen bleiben; EXT-OTA-KUE-20261109-002, danach Kürzung OTA-REQ-20261109-002 |
 | OTA-SCI-0021-2025-DE | Mikrogravitation und Gehirnarchitektur | IRST |  | geprüft 2026-11-11 – kein KUE-Gegenstück; wegen Werkbezug tatsächlich Teile nach KUE (Realanker unbelegt, Quellen im Request), Matrix/KN-5.1 bleiben; EXT-OTA-KUE-20261111-002, danach Kürzung OTA-REQ-20261111-001; v1.1 ergänzt (II–IV, Epochen IV–V) nach Entscheidung Thomas 2026-11-11 |
-| OTA-SCI-0022-2025-DE | Zhurong-Entdeckung: Wasser-Fenster auf Mars verlängert  | R |  | offen |
+| OTA-SCI-0022-2025-DE | Zhurong-Entdeckung: Wasser-Fenster auf Mars verlängert  | R |  | geprüft 2026-11-12 – kein KUE-Gegenstück; wegen Werkbezug Teile nach KUE (Realteil unbelegt/fehlerhaft, Quellen im Request), Relikt-Fenster/2070/2091 bleiben; EXT-OTA-KUE-20261112-001, danach Korrektur/Kürzung OTA-REQ-20261112-001 (Kuratortext/Marker warten auf Thomas) |
 | OTA-SCI-0057-2026-DE | Otjize als funktionales Materialsystem: Mineralogie, Na | RST |  | geprüft 2026-11-08 – Teile nach KUE (II–VI, VIII), Werkbezug OTJIZE bleibt; EXT-OTA-KUE-20261108-001, danach Kürzung OTA-REQ-20261108-001 |
 | OTA-SCI-0058-2026-DE | Triclosan als entkoppelnder Selektionsdruck: Wirkmechan | RT |  | geprüft 2026-11-09 – Teile nach KUE (II–VI, IX), Leitsatz/Systemvergleich Otjize bleibt; EXT-OTA-KUE-20261109-001, danach Kürzung OTA-REQ-20261109-001 |
 | OTA-SCI-0060-2026-DE | OTA-SCI-0060-2026-DE | HRT |  | offen |
