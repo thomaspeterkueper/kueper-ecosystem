@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261112-4ACC4DA4",
+  "status": "queued",
+  "created": "2026-11-12T11:27:45+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "docs/world/chronomap-jesus/worte/README.md",
+  "source_ref": "c0c473c3379de90813a7552fcdab569a18aedac8",
+  "source_blob_sha": "2874246ecbf3f15953ce401b4f5624ea2bcf6209",
+  "title": "What 'oldest recoverable text' means for the Word Register: manuscript witnesses, critical editions and variant uncertainty",
+  "question": "What do current critical editions and manuscript databases — NA28/Editio Critica Maior, the CBGM, P52/P66/P75, Codex Sinaiticus/Vaticanus/Bezae, the Old Syriac and Latin versions — establish about the earliest recoverable text and the date and weight of the witnesses behind the Word Register's 38 text-critical (TS) and 20 translation (UF) entries? Specifically, where does 'oldest surviving manuscript' diverge from 'earliest recoverable text' in cases such as Mark 16:9–20, John 7:53–8:11, Luke 22:43–44, Luke 23:34a, the Lord's Prayer in Luke 11:2–4, Mark 1:2 and Romans 16:7, and how should the register present witness dates, lacunae and contested reconstructions without turning a critical-edition judgment into a settled fact, or a claim of politically motivated alteration into a finding?",
+  "why_now": "The Word Register is the core mechanic for the figure Jesus and was created on 12.11.2026 under E12 ('oldest found writings' as standard). It now holds 38 TS and 20 UF entries, but several entries currently cite the SBLGNT apparatus or Wikipedia pages; the daily run still has to supply witness dates and adjudicate readings, and the premise that 'oldest manuscript' equals 'earliest text' needs external grounding before it is displayed as fact.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "New Testament textual criticism: NA28/Editio Critica Maior, the CBGM, papyri P52/P66/P75, Codex Sinaiticus/Vaticanus/Bezae, and Old Syriac and Latin versional evidence.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.84,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.72,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic addresses New Testament textual criticism, manuscript dating or the Word Register's 'oldest recoverable text' premise; this is a new evidence dimension created by the Chronomap's 12.11.2026 decisions E12/E13, not a rephrasing of any queued NOXIA topic.",
+  "fingerprint": "4acc4da4ae3bb0bc"
+}
