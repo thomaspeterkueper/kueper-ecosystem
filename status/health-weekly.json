@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-11-13T23:49:07+00:00",
+  "repos": {},
+  "github_note": "kein Token (GH_TOKEN/GITHUB_TOKEN) oder --no-github",
+  "external_tasks": {
+    "buckets": {
+      "0-7": 0,
+      "8-30": 4,
+      ">30": 12
+    },
+    "unknown": 0,
+    "total": 16,
+    "over_limit": [
+      "EXT-ENG-ECO-20260924-robotics-program-routing",
+      "EXT-ENG-ECO-20260925-energy-grid-learning-routing",
+      "EXT-KUE-ECO-20260924-001",
+      "EXT-NOXIA-ECO-20260925-adaptive-industry-routing",
+      "EXT-NOXIA-ECO-20260925-living-infrastructure-integration",
+      "EXT-NOXIA-ECO-20260925-mycology-ecopoiesis-routing",
+      "EXT-NOXIA-ECO-20260925-planetary-architecture-routing",
+      "EXT-NOXIA-ECO-20260925-planetary-evolution-routing",
+      "EXT-NOXIA-ECO-20260925-planetary-remote-sensing-routing",
+      "EXT-NOXIA-ECO-20260927-mars-settlement-kernel-routing",
+      "EXT-NXU-ECO-20260921-piazzi-lights-engineering-handoff",
+      "EXT-OTA-ECO-20260911-utopia-mars-chronology-projection"
+    ]
+  },
+  "research_queue": {
+    "total": 259,
+    "status": {
+      "candidate-pr": 104,
+      "needs-review": 51,
+      "queued": 37,
+      "validation-error": 36,
+      "consumer-requests": 22,
+      "reconciled": 6,
+      "validated-no-action": 3
+    },
+    "top_reasons": [
+      {
+        "reason": "API Error: 402 Insufficient Balance",
+        "count": 46
+      },
+      {
+        "reason": "candidate for philosophy-comparative lacks a strong source type marker",
+        "count": 6
+      },
+      {
+        "reason": "[Errno 7] Argument list too long: 'node'",
+        "count": 5
+      }
+    ],
+    "created_per_week": {
+      "2026-W38": 12,
+      "2026-W39": 6,
+      "2026-W40": 11,
+      "2026-W41": 23,
+      "2026-W42": 23,
+      "2026-W43": 15,
+      "2026-W44": 11,
+      "2026-W45": 23,
+      "2026-W46": 15
+    },
+    "needs_review_by_profile": {
+      "avi-theoretical-cosmology": {
+        "items": 13,
+        "needs_review": 2,
+        "share": 0.154
+      },
+      "general": {
+        "items": 15,
+        "needs_review": 3,
+        "share": 0.2
+      },
+      "historical-linguistic": {
+        "items": 13,
+        "needs_review": 2,
+        "share": 0.154
+      },
+      "ohne Profil": {
+        "items": 22,
+        "needs_review": 6,
+        "share": 0.273
+      },
+      "ota-archive-evidence": {
+        "items": 91,
+        "needs_review": 8,
+        "share": 0.088
+      },
+      "philosophy-comparative": {
+        "items": 25,
+        "needs_review": 9,
+        "share": 0.36
+      },
+      "science": {
+        "items": 15,
+        "needs_review": 6,
+        "share": 0.4
+      },
+      "technical-scientific": {
+        "items": 18,
+        "needs_review": 5,
+        "share": 0.278
+      },
+      "worldbuilding-scientific": {
+        "items": 47,
+        "needs_review": 10,
+        "share": 0.213
+      }
+    },
+    "newest_entry": "2026-11-13"
+  },
+  "findings": [
+    {
+      "kind": "tasks",
+      "severity": 0.6000000000000001,
+      "text": "12 offene External Task(s) älter als 30 Tage",
+      "action": "Alte Tasks erledigen, parken (mit Rückfrage) oder schließen."
+    }
+  ]
+}

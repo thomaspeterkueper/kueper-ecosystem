@@ -47,3 +47,18 @@ python3 -m unittest discover -s tools/ops -p 'test_*.py'
 
 Exit 1 bei `error`, `expiring` (< 14 Tage) oder `low`. Inventur:
 `docs/operations/SECRETS_INVENTORY.md`.
+
+`ops/weekly_health.py` — Wöchentlicher Gesundheitsbericht
+(ECO-OPS-20261028-weekly-health). Je registriertem Repo Erfolgsquote je
+Workflow (7 Tage), längste Rotphase, PRs nach Alter, Branches; dazu offene
+External Tasks nach Alter und die Research-Queue (Status, Top-3-Fehlergründe,
+Durchsatz je Woche, `needs-review` je Evidenzprofil). Vergleicht mit dem
+letzten Bericht (↑/↓) und nennt höchstens drei Vorschläge aus Schwellwerten.
+Nur lesend; ohne Token entfallen die GitHub-Kennzahlen („nicht erhoben“).
+
+```bash
+GH_TOKEN=<token> python3 tools/ops/weekly_health.py [--alert-file external-tasks/open/ECO-OPS-health-alert.md] [--no-github]
+```
+
+Schreibt `status/health-weekly.md` und `status/health-weekly.json`; die
+Alert-Task wird überschrieben bzw. entfernt, sobald nichts mehr auffällt.
