@@ -1,19 +1,20 @@
 ---
 id: ECO-OPS-20261028-bot-token-401
 title: KUEPER_BOT_TOKEN liefert HTTP 401 – fünf Workflows ausgefallen
-status: open
+status: done
 created: 2026-10-28
 requested_by: T.P.K.
 priority: critical
 estimated_effort: low
 type: operations / credentials
+Erledigt: 2026-11-13
 ---
 
 # ECO-OPS-20261028-bot-token-401 — KUEPER_BOT_TOKEN liefert HTTP 401
 
 **Origin:** Ressourcen- und Redundanz-Analyse (Chat 28.10.2026)
 **Target:** kueper-ecosystem
-**Status:** open
+**Status:** done
 **Created:** 2026-10-28
 **Type:** operations / credentials
 
@@ -61,3 +62,17 @@ Nach der Erneuerung durch Thomas:
 ## Hinweise
 
 Verhindern, dass das wieder unbemerkt passiert: ECO-OPS-20261028-secret-health und ECO-OPS-20261028-heartbeats.
+
+## Abschluss 13.11.2026 (Ökosystem-Kreislauf, Claude)
+
+Status: done  
+Erledigt: 2026-11-13  
+Umgesetzt: Erneuerung durch Thomas am 28.10.2026; Wirkung nachgeprüft.
+
+- Governance-Sweep: `status/governance-sweep.md` vom 13.11.2026 enthält keine `repository_unreachable`-Funde mehr (nur 2 Info-Funde `task_addressed_to_eco`).
+- Autonomous Ecosystem Loop: Läufe seit 10.11.2026 grün.
+- Automated PR Review: 23 grüne Läufe seit 10.11.2026; seit 13.11.2026 abgeschaltet und durch den Claude-Lauf „Ökosystem-Kreislauf“ ersetzt (`docs/operations/claude-laeufe.md`).
+- `research/queue`: wieder neue Einträge (z. B. RES-20261113-477236C3, RES-20261113-AA5ECC0E).
+- OTA Tech Object Audit: Checkout des OTA mit dem Token gelingt wieder. Der Workflow scheitert seit 13.11.2026 aus einem **anderen** Grund – Metadatenfehler in OTA-TEC-0112 bis -0121 (`objectId` ≠ `mappings.noxia.objectId`); als Umschlag an OTA gemeldet (`.kueper/outbox/ota-tec-0112-0121-objectid-mismatch.json`).
+- Nicht nachgeholt: nachträgliches Review von PRs, die in der Ausfallzeit 24.–28.10.2026 ohne Review gemergt wurden. Das Review läuft künftig im Ökosystem-Kreislauf.
+- Vorbeugung bleibt offen in ECO-OPS-20261028-secret-health und ECO-OPS-20261028-heartbeats.

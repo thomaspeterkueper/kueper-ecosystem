@@ -1,0 +1,9 @@
+{
+  "target": "OTA",
+  "title": "OTA-TEC-0112 bis -0121: objectId und mappings.noxia.objectId angleichen",
+  "reason": "Der Workflow 'OTA Tech Object Audit' (tools/research/audit-ota-tech-objects.py --strict) scheitert seit 13.11.2026 bei jedem Lauf. Für zehn Dokumente (OTA-TEC-0112-2026-DE bis OTA-TEC-0121-2026-DE) weicht das Top-Level-Feld objectId vom Feld mappings.noxia.objectId ab, z. B. OTA-TEC-0112: objectId 'noxia-ship-frame-mk1', mappings.noxia.objectId 'mk1' (Lauf 43427015193).",
+  "requested_change": "In den zehn Dokumenten die beiden objectId-Felder auf denselben Wert setzen. Welcher Wert kanonisch ist (Top-Level oder Mapping), entscheidet das OTA; dabei die Objekt-IDs, die NOXIA bereits konsumiert, berücksichtigen.",
+  "expected_result": "OTA Tech Object Audit läuft mit --strict ohne metadata_errors; counts.invalid ist 0.",
+  "priority": "high",
+  "depth": 1
+}
