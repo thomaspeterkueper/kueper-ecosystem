@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261113-477236C3",
+  "status": "queued",
+  "created": "2026-11-13T11:10:24+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "spaces/noxia/infrastructure/NXU-CERES-PIAZZI-LIGHTS-2091.md",
+  "source_ref": "5a229e4199e69f2068790c8eeb0fb38cc885c1c7",
+  "source_blob_sha": "c1d58dd6fffa5e9d17f192da996483a05e0b1f79",
+  "title": "3,0 rpm bei 99 m und 1,5 rpm bei 400 m: reale vestibuläre und medizinische Grenzen rotierender Habitate",
+  "question": "Was besagen peer-reviewte Vestibular-, Raumfahrtmedizin- und Artificial-Gravity-Studien zu Rotationsraten, Coriolis-Effekten, cross-coupled Illusions, Bewegungskrankheit, Adaptationsdauer und Langzeitfolgen bei 1 g durch Rotation — insbesondere zu ~3,0 rpm bei ~99 m Radius (Ceres) und ~1,5 rpm bei ~400 m (Q1)? Welche rpm-/Radius-Kombinationen gelten als tolerierbar, welche erfordern Selektion oder Adaptation, und was ist über Schwangerschaft, Kinder und alternde Bewohner bekannt? Wo muss der Kanon Rotation als medizinische Betriebsentscheidung mit Ausschlusskriterien, Übergangsprotokollen und Ausfallfolgen zeigen, statt „~3 rpm bleiben vestibulär relevant“ nur zu konstatieren?",
+  "why_now": "NXU-CERES-PIAZZI-LIGHTS-2091 setzt ~3,0 rpm bei ~99 m als 1-g-Referenz und nennt Rotation „vestibulär relevant“, ohne Toleranzgrenzen, Adaptationsdauer oder medizinische Ausschlusskriterien zu belegen; Q1 plant ~1,5 rpm bei ~400 m. Beide Kernhabitate und die Familien-/Geburtsmedizin hängen an dieser Annahme.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewte Vestibular- und Raumfahrtmedizin zu Rotationsraten, Coriolis-/cross-coupled-Effekten, Bewegungskrankheit und Adaptation; NASA Artificial-Gravity-Workshops und Human Research Program als Behörden-/Primärquellen; Langzeitdaten aus Zentrifugen-, Bettruhe- und Flugstudien.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.8375,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260914-3AD6CB18"
+  ],
+  "novelty_reason": "RES-20260914-3AD6CB18 fragt, ob ~0,03 g auf Ceres für Entwicklung tragfähig ist und ob ein künstlich rotiertes Segment erzwungen wird. Es prüft nicht die spezifischen rpm-/Radius-Kombinationen, Coriolis-Toleranz, Adaptationszeiten und medizinischen Ausschlusskriterien bei 1 g durch Rotation. Genau diese Dimension entscheidet über die 3,0-rpm-/99-m- und 1,5-rpm-/400-m-Architektur und ist dort ungelöst.",
+  "fingerprint": "477236c335539dbb"
+}
