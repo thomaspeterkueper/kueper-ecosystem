@@ -1,7 +1,7 @@
 ---
 id: ECO-OPS-20261028-heartbeats
 title: Heartbeats und Erreichbarkeits-Monitore für Worker, Crons und Websites
-status: open
+status: parked
 created: 2026-10-28
 requested_by: T.P.K.
 priority: high
@@ -13,7 +13,7 @@ type: operations / monitoring
 
 **Origin:** Ressourcen- und Redundanz-Analyse (Chat 28.10.2026)
 **Target:** kueper-ecosystem
-**Status:** open
+**Status:** parked
 **Created:** 2026-10-28
 **Type:** operations / monitoring
 
@@ -43,3 +43,18 @@ Ausfälle werden heute erst bemerkt, wenn jemand nachsieht: PR Review war ab ca.
 ## Hinweise
 
 Für noxiagame (minütlicher Cron `/api/cron/transits`, stündlicher `population`) gilt dasselbe – siehe EXT-ECO-NOXIA-20261028-003.
+
+## Stand 13.11.2026 (Ökosystem-Kreislauf, Claude)
+
+Claude-Status: wartet auf Thomas
+
+- Skript erledigt: `tools/ops/heartbeat.sh` (tut ohne Secret nichts, gibt die URL nie aus, bricht bei Netzfehler nichts ab), 6 Tests in `tools/ops/test_heartbeat.py`.
+- Dokumentation erledigt: `docs/operations/heartbeats.md` mit Intervallen und Vorlage für den Workflow-Schritt.
+- Status-Collector geklärt: `collect.py` läuft in keinem Workflow, `snapshot.json` ist seit 19.07.2026 eingefroren; `/api/status` rechnet live. Als ersetzt dokumentiert (`status/README.md`).
+- Lage geändert: Agent Worker, PR Review und Knowledge Research Loop sind seit heute abgeschaltet. Heartbeats lohnen sich nur noch für `governance-sweep.yml`, `autonomous-loop.yml` und `ota-tech-object-audit.yml`.
+- Offen: Owner-Handlung 1–4 (Konto, Monitore, Secrets, Push) und der Einbau in die Workflows (`.github/`, reviewpflichtig).
+
+## Rückfrage
+
+1. Darf der Ökosystem-Kreislauf den Heartbeat-Schritt in `governance-sweep.yml`, `autonomous-loop.yml` und `ota-tech-object-audit.yml` einbauen (Secrets `HEARTBEAT_GOVERNANCE_SWEEP`, `HEARTBEAT_AUTONOMOUS_LOOP`, `HEARTBEAT_OTA_AUDIT`; ohne gesetztes Secret wirkungslos)? „ja“ genügt.
+2. Sollen auch die beiden Claude-Läufe einen Heartbeat senden? Dann bräuchte jeder Lauf die Heartbeat-URL im Auftragstext – sie ist kein starkes Geheimnis, wäre dann aber im Lauf-Prompt sichtbar. „ja“ oder „nein“.

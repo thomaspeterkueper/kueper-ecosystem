@@ -4,6 +4,8 @@
 `tools/collector/collect.py` (ECO-ARC-0005). Er hält den zuletzt ermittelten,
 normalisierten Ist-Zustand aller registrierten Projekte fest.
 
+**Stand 13.11.2026:** Der Collector läuft in keinem Workflow; `snapshot.json` stammt vom 19.07.2026 und wird nicht mehr erneuert. Den aktuellen Zustand liefert `/api/status` (`app/api/status/route.ts`) live. Siehe `docs/operations/heartbeats.md`.
+
 Der Snapshot ist **kein** Source of Truth für fachliche Projektdaten. Er ist eine
 Momentaufnahme des beobachteten Zustands und wird beim nächsten Collector-Lauf
 überschrieben. Er enthält niemals Secret-Werte.
