@@ -31,3 +31,11 @@ Der Sweep entscheidet nichts selbst. Bei **neuen** Funden (nicht bereits im
 vorherigen Bericht enthalten) legt der Workflow automatisch einen Task in
 `external-tasks/open/` dieses Repositories an (`EXT-ECO-ECO-*`) — wiederholte
 Meldung desselben, noch nicht behobenen Fundes erzeugt keinen weiteren Task.
+
+## health-weekly.md / health-weekly.json
+
+Ausgabe von `tools/ops/weekly_health.py` (ECO-OPS-20261028-weekly-health):
+Trends über Workflows, PRs, Branches, External Tasks und Research-Queue mit
+Vorwochenvergleich. Die JSON-Datei ist der Vergleichsstand für den nächsten
+Lauf. Ein Workflow `weekly-health.yml` ist noch nicht angelegt (Freigabe für
+`.github/` offen); bis dahin wird der Bericht von Hand bzw. vom Claude-Lauf erzeugt.
