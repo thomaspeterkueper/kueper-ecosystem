@@ -31,3 +31,19 @@ python3 tools/lint-external-tasks/lint.py --all <repo-root>
 ```
 
 Nur stdlib, kein Netzwerk, exit 1 bei Verstoß (CI-tauglich).
+
+## ops
+
+`ops/credential_health.py` — Credential-Check der Control Plane
+(ECO-OPS-20261028-secret-health). Je Secret ein lesender Aufruf (GitHub,
+DeepSeek-Guthaben, AI-Gateway-Guthaben, Supabase); Ausgabe nur Status,
+Ablaufdatum und Restguthaben, niemals Werte. Fehlende Secrets gelten als
+`missing`, nicht als Fehler.
+
+```bash
+python3 tools/ops/credential_health.py [--json] [--alert-file external-tasks/open/ECO-OPS-credential-alert.md]
+python3 -m unittest discover -s tools/ops -p 'test_*.py'
+```
+
+Exit 1 bei `error`, `expiring` (< 14 Tage) oder `low`. Inventur:
+`docs/operations/SECRETS_INVENTORY.md`.
