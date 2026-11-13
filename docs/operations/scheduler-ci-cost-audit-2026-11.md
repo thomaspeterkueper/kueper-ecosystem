@@ -2,7 +2,7 @@
 
 ## Scope and evidence
 
-This is a **read-only audit**, not a claim about the live Supabase scheduler. GitHub Actions currently cannot launch new jobs because the account has no available billed Actions budget. No job, billing setting, cron setting, lease or task has been changed in production by this document.
+This originally began as a **read-only audit**. The live scheduler was subsequently identified and adjusted as documented in the remediation section below. GitHub Actions currently cannot launch new jobs because the account has no available billed Actions budget. No job, billing setting, cron setting, lease or task has been changed in production by this document.
 
 | Source | Current `main` / historical SQL | Draft proposal | Impact |
 | --- | --- | --- | --- |
@@ -12,6 +12,30 @@ This is a **read-only audit**, not a claim about the live Supabase scheduler. Gi
 | `supabase/migrations/20260829143000_external_scheduler_control_plane.sql` | `kueper_enable_external_scheduler()` explicitly defines two *independent* pg_cron jobs with 15-minute cadence | **Not changed** | If enabled in the live DB, can still dispatch GitHub work every 15 minutes |
 
 The same historical SQL defines `kueper_scheduler_health()` with a **25-minute** maximum age for both workers. An hourly cadence would cause false stale alerts if not adjusted. Do **not** edit historical applied migrations in place.
+
+## Live control-plane remediation — 2026-11-13
+
+**Database identified:** Supabase project `kueper-knowledge-graph` (the connected project containing `ecosystem.scheduler_runs`, `ecosystem.scheduler_leases` and the named `cron.job` entries). Other connected projects NOXIA/SSF do not contain these tables.
+
+Verified before change:
+- `kueper-external-agent-worker-v7`: `*/15 * * * *`, active, command `select public.kueper_scheduler_dispatch('agent-worker-v7');`
+- `kueper-external-pr-review-agent`: `7,22,37,52 * * * *`, active, command `select public.kueper_scheduler_dispatch('pr-review-agent');`
+- In the previous 48h, each Cron job recorded 192 succeeded *pg_cron invocations* (not proof of successful paid GitHub execution).
+- The live `kueper_scheduler_health()` used a 25-minute stale tolerance.
+
+**Applied in one guarded transaction, and verified read-back:**
+1. `cron.alter_job` changed Agent Worker to `5 * * * *` and reviewer to `35 * * * *`. Job name, active state and dispatch command unchanged.
+2. `public.kueper_scheduler_health()` now tolerates 85 minutes between observed scheduler events, preventing false stale classification due solely to the new hourly interval.
+3. `public.kueper_enable_external_scheduler()` now recreates the same hourly schedules upon explicit re-enable (instead of silently restoring 15-minute runs).
+4. Read-back verified both jobs active and hourly, both function definitions updated and current health rows `stale=false`.
+
+No task queue, provider budget, Billing configuration, secrets or GitHub main branch changed. The operations change **was made live** in the connected control-plane DB; it is not merely a proposal. The prior migration file is retained as historical record and must not be rewritten.
+
+**Caveats:** The separate native GitHub fallback `schedule` entries on `main` remain at their prior cadence until Draft PR #135 merges; current GitHub Actions billing block may prevent those jobs from running. Reduced Cron cadence reduces scheduled invocations but requires measured GitHub runner consumption to quantify money saved.
+
+**Rollback if operationally required:** after verifying the original job identities and their exact commands, set Worker schedule back to `*/15 * * * *` and reviewer schedule back to `7,22,37,52 * * * *` with `cron.alter_job`; adjust health tolerance and the re-enable function together. Do not roll back the two schedules alone, as re-enable/health would become inconsistent.
+
+**Follow-up:** Check the next hourly `cron.job_run_details` and `ecosystem.scheduler_runs` entries; compare expected dispatch records and no duplicate task execution. Record the changes as a forward-only schema/ops migration after review instead of retroactively editing the applied migration.
 
 ## Read-only live verification — correct control-plane database required
 
