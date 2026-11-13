@@ -1,7 +1,7 @@
 ---
 id: ECO-OPS-20261028-security-baseline
 title: Kostenlose Sicherheitsprüfungen für alle Repos aktivieren
-status: open
+status: parked
 created: 2026-10-28
 requested_by: T.P.K.
 priority: low
@@ -13,7 +13,7 @@ type: operations / security
 
 **Origin:** Ressourcen- und Redundanz-Analyse (Chat 28.10.2026)
 **Target:** kueper-ecosystem
-**Status:** open
+**Status:** parked
 **Created:** 2026-10-28
 **Type:** operations / security
 
@@ -31,3 +31,22 @@ type: operations / security
 
 - Jedes Repo hat Secret-Erkennung und Abhängigkeits-Warnungen.
 - Neue Funde landen im wöchentlichen Gesundheitsbericht (ECO-OPS-20261028-weekly-health).
+
+## Stand 14.11.2026 (Ökosystem-Kreislauf, Claude)
+
+Claude-Status: wartet auf Thomas
+
+Geparkt ohne Umsetzung: Punkt 1 ändert Repository-Einstellungen, Punkt 2 legt Workflows unter `.github/` an – beides darf der Claude-Lauf nicht ohne Freigabe. Lesend geprüft (nur die drei Repos, die der Lauf per API sieht):
+
+| Repo | Sichtbarkeit | Secret-Scanning | Push-Schutz | Dependabot-Sicherheitsupdates |
+| --- | --- | --- | --- | --- |
+| kueper-ecosystem | öffentlich | an | an | aus |
+| noxiagame | privat | – (nicht verfügbar) | – | – |
+| kueper-knowledge-graph | privat | – (nicht verfügbar) | – | – |
+
+Hinweis: In der Liste unter Punkt 2 fehlt `noxiagame`, das ebenfalls privat ist.
+
+## Rückfrage
+
+1. Darf `tools/ops/enable-security.sh` angelegt und einmal von dir (oder mit deiner Freigabe vom Claude-Lauf) ausgeführt werden – es schaltet in allen öffentlichen Repos Dependabot-Warnungen und -Sicherheitsupdates, Secret-Scanning mit Push-Schutz und CodeQL-Standard-Setup ein?
+2. Private Repos: `gitleaks`-PR-Workflow plus Dependabot-Versionsupdates (`.github/dependabot.yml`) je Repo – ja? Gilt das auch für `noxiagame`, wo Lockfiles und CI besonders empfindlich sind?
