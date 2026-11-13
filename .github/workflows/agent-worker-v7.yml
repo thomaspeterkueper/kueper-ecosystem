@@ -12,7 +12,7 @@ on:
         required: false
         default: ""
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "7,37 * * * *"
 
 permissions:
   contents: read
