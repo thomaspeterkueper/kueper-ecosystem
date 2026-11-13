@@ -7,6 +7,10 @@ on:
         description: "Comma-separated queued research IDs"
         required: true
         type: string
+      retry_reason:
+        description: "Optional manual AI retry reason (for example: provider-balance-restored)"
+        required: false
+        type: string
   push:
     branches:
       - main
@@ -28,12 +32,18 @@ jobs:
       KUEPER_BOT_TOKEN: ${{ secrets.KUEPER_BOT_TOKEN }}
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      KUEPER_AI_RETRY_REASON: ${{ github.event.inputs.retry_reason }}
       ANTHROPIC_BASE_URL: "https://api.deepseek.com/anthropic"
       ANTHROPIC_AUTH_TOKEN: ${{ secrets.DEEPSEEK_API_KEY }}
       ANTHROPIC_MODEL: "deepseek-v4-flash"
       ANTHROPIC_DEFAULT_OPUS_MODEL: "deepseek-v4-pro[1m]"
       ANTHROPIC_DEFAULT_SONNET_MODEL: "deepseek-v4-flash"
       ANTHROPIC_DEFAULT_HAIKU_MODEL: "deepseek-v4-flash"
+      CLAUDE_CODE_SUBAGENT_MODEL: "deepseek-v4-flash"
+      CLAUDE_CODE_AUTO_COMPACT_WINDOW: "786432"
+      CLAUDE_CODE_DISABLE_UNKNOWN_MODEL_WINDOW_ENFORCEMENT: "1"
       KUEPER_RESEARCH_AGENT_CMD: node ${{ github.workspace }}/tools/research/agent-with-exa.mjs
       KUEPER_SYNTHESIS_AGENT_BIN: claude
     steps:
@@ -54,10 +64,8 @@ jobs:
           from pathlib import Path
           data=json.loads(Path('research/targeted-request.json').read_text(encoding='utf-8'))
           ids=data.get('research_ids') or []
-          if isinstance(ids,str):
-              print(ids)
-          else:
-              print(','.join(str(x) for x in ids))
+          if isinstance(ids,str): print(ids)
+          else: print(','.join(str(x) for x in ids))
           PY
           )"
           fi
@@ -80,20 +88,21 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test -n "$KUEPER_BOT_TOKEN" || { echo "Missing KUEPER_BOT_TOKEN"; exit 2; }
-          test -n "$DEEPSEEK_API_KEY" || { echo "Missing DEEPSEEK_API_KEY"; exit 2; }
-          test -n "$AI_GATEWAY_API_KEY" || { echo "Missing AI_GATEWAY_API_KEY"; exit 2; }
-          test -n "$KUEPER_RESEARCH_IDS" || { echo "Missing KUEPER_RESEARCH_IDS"; exit 2; }
-          python3 -m py_compile tools/research/execute.py tools/research/execute-targeted.py
+          missing=0
+          for name in KUEPER_BOT_TOKEN DEEPSEEK_API_KEY AI_GATEWAY_API_KEY KUEPER_RESEARCH_IDS SUPABASE_URL SUPABASE_SECRET_KEY; do
+            if [ -z "${!name:-}" ]; then echo "Missing $name"; missing=1; fi
+          done
+          test "$missing" -eq 0
+          python3 -m py_compile tools/research/execute.py tools/research/execute-targeted.py tools/research/execute-targeted-ledger.py tools/research/usage_observer.py tools/telemetry/ai_usage.py
           node --check tools/research/agent-with-exa.mjs
           claude --version
           node --version
 
-      - name: Research selected queued topics
+      - name: Research selected queued topics with usage ledger
         shell: bash
         run: |
           set -euo pipefail
-          python3 tools/research/execute-targeted.py | tee targeted-research-report.json
+          python3 tools/research/execute-targeted-ledger.py | tee targeted-research-report.json
 
       - name: Upload research report
         if: always()
