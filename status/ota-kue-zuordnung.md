@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-12 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-13 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -57,10 +57,10 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0022-2025-DE | Zhurong-Entdeckung: Wasser-Fenster auf Mars verlängert  | R |  | geprüft 2026-11-12 – kein KUE-Gegenstück; wegen Werkbezug Teile nach KUE (Realteil unbelegt/fehlerhaft, Quellen im Request), Relikt-Fenster/2070/2091 bleiben; EXT-OTA-KUE-20261112-001, danach Korrektur/Kürzung OTA-REQ-20261112-001 (Kuratortext/Marker warten auf Thomas) |
 | OTA-SCI-0057-2026-DE | Otjize als funktionales Materialsystem: Mineralogie, Na | RST |  | geprüft 2026-11-08 – Teile nach KUE (II–VI, VIII), Werkbezug OTJIZE bleibt; EXT-OTA-KUE-20261108-001, danach Kürzung OTA-REQ-20261108-001 |
 | OTA-SCI-0058-2026-DE | Triclosan als entkoppelnder Selektionsdruck: Wirkmechan | RT |  | geprüft 2026-11-09 – Teile nach KUE (II–VI, IX), Leitsatz/Systemvergleich Otjize bleibt; EXT-OTA-KUE-20261109-001, danach Kürzung OTA-REQ-20261109-001 |
-| OTA-SCI-0060-2026-DE | OTA-SCI-0060-2026-DE | HRT |  | offen |
+| OTA-SCI-0060-2026-DE | OTA-SCI-0060-2026-DE | HRT | KUE-SCI-0170 | geprüft 2026-11-13 – KUE-Gegenstück vorhanden (KUE-SCI-0170 v0.1, faktisch Gruppe K), Werkbezug bleibt; Kürzung OTA-REQ-20261113-001 (A–D umgesetzt 2026-11-13, E wartet auf Thomas), EXT-OTA-KUE-20261113-001 |
 | OTA-SCI-0062-2026-DE | Der Mpemba-Effekt: Anomale Relaxation, universelles Pri | RT |  | geprüft 2026-11-08 – Teile nach KUE (II–VII), VIII/Zuva bleibt; EXT-OTA-KUE-20261108-002, danach Kürzung OTA-REQ-20261108-002 (Leitsatz wartet auf Thomas) |
 | OTA-SCI-0082-2026-DE | Der Himmel von 2700 BCE: Präzession, Thuban als Polarst | RST |  | geprüft 2026-11-10 – Teile nach KUE (I, II, III.1), Bronzescheibe/Szene/Delphi bleiben; EXT-OTA-KUE-20261110-001, danach Korrektur/Kürzung OTA-REQ-20261110-001 (KN-1.2 wartet auf Thomas) |
-| OTA-SCI-0102-2026-DE | Autophagie im menschlichen Altern — Flux, Zelltyp, Gesc | IOFFENR |  | offen |
+| OTA-SCI-0102-2026-DE | Autophagie im menschlichen Altern — Flux, Zelltyp, Gesc | IOFFENR |  | geprüft 2026-11-13 – ganz nach KUE, OTA bleibt Brückendokument; EXT-OTA-KUE-20261113-002, OTA-REQ-20261113-002 |
 | OTA-SCI-0103-2026-DE | Longitudinale Gehirngesundheit — Lebenslauf-Risiken, Pr | IOFFENR |  | offen |
 | OTA-SCI-0108-2026-DE | Ultrakompakte Doppel-Weiße-Zwerge: Orbitalzerfall, Dire | HIOFFENR |  | offen |
 | OTA-SCI-0109-2026-DE | Stromnetz-Engpässe: Erzeugung, Transportkapazität, Redi | HOFFENRT |  | offen |
