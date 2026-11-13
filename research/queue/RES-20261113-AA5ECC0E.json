@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261113-AA5ECC0E",
+  "status": "queued",
+  "created": "2026-11-13T11:10:22+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "external-tasks/open/EXT-ENG-NU-20261018-iterius-alpha7-site-mapping.md",
+  "source_ref": "5a229e4199e69f2068790c8eeb0fb38cc885c1c7",
+  "source_blob_sha": "9c87c2e45d030a63be0caa94b82a763cdf120d2d",
+  "title": "Start- und Landefeldabstände für Alpha-7: reale Blast-, Trümmer- und Akustikgrenzen auf Mars",
+  "question": "Was besagen reale Start- und Landeplatz-Sicherheitsstandards (RCC 321-20, FAA 14 CFR Part 450, NASA-Richtlinien), peer-reviewte Plume-Surface-Interaction- und Ejektastudien sowie Apollo-/Mars-2020-Landeerfahrungen zu Überdruck, Trümmerwurf, Akustik, Staub und thermischer Belastung — und welche Mindestabstände zwischen Lande-/Startzonen, hochenergetischer Industrie und dauerhaft bewohnten Sektoren folgen daraus für eine Mars-Siedlung mit ~3.200 Bewohnern und mehreren Betreibern? Wo muss die Alpha-7-Karte Gelände, Unsicherheit und Konflikte zwischen Landerechten, Wohnausbau und Industriezonen explizit zeigen, statt „getrennte Zonen“ nur zu behaupten?",
+  "why_now": "Der jüngste Commit (EXT-ENG-NU-20261018) fordert für die Alpha-7-Karte ausdrücklich, Lande-/Startzonen und hochenergetische Industrie räumlich von Wohnsektoren zu trennen, nennt aber keine Kriterien oder Zahlen. Ohne belegte Gefahrenradien bleibt die Karte eine Behauptung; zugleich hängen Siedlungsgeschichte, Landerechte und die 80/180/420/≥820-m-Sektoren direkt an dieser Geometrie.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Start-/Landesicherheit: RCC 321-20 und FAA 14 CFR Part 450 als Standard-/Behördenrahmen; NASA-Studien zu Plume-Surface Interaction und Ejekta (Apollo, Mars 2020); peer-reviewte Arbeiten zu Überdruck, Trümmerwurf, Akustik und Staub auf luftlosem bzw. dünnatmosphärischem Untergrund.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20261029-9BDD2E8E"
+  ],
+  "novelty_reason": "Die Noctis-Studie RES-20261029-9BDD2E8E klärt Geologie, Wand-/Dachstabilität, Untergrundeis und Ausbautiefen, aber nicht Start-/Landesicherheit, Gefahrenradien oder die Trennung von Industrie- und Wohnzonen. Diese ingenieurtechnische Dimension ist für die im jüngsten Commit angeforderte Alpha-7-Karte ungelöst und wird hier erstmals als eigenes Forschungsthema gefasst.",
+  "fingerprint": "aa5ecc0edbcdf1e8"
+}
