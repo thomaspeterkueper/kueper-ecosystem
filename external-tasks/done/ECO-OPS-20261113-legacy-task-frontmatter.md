@@ -1,7 +1,7 @@
 ---
 id: ECO-OPS-20261113-legacy-task-frontmatter
 title: Elf Alt-Tasks ohne Frontmatter ins kanonische Format überführen oder begründet schließen
-status: open
+status: done
 created: 2026-11-13
 requested_by: T.P.K.
 priority: low
@@ -14,7 +14,7 @@ parent_task: ECO-OPS-20261028-sweep-dedup
 
 **Origin:** abgetrennt aus ECO-OPS-20261028-sweep-dedup, Punkt 5 (Ökosystem-Kreislauf 13.11.2026)
 **Target:** kueper-ecosystem
-**Status:** open
+**Status:** done
 **Created:** 2026-11-13
 
 ## Anlass
@@ -49,3 +49,15 @@ Gehört zur Pflege der eigenen Inbox des Control Plane.
 
 - Keine Datei in `external-tasks/open/` ohne Frontmatter.
 - `tools/lint-external-tasks/lint.py` meldet für diese elf Dateien keine Frontmatter-Fehler mehr.
+
+## Erledigt
+
+13.11.2026, Ökosystem-Kreislauf (Claude), Branch `claude/ECO-OPS-20261113-legacy-task-frontmatter`.
+
+## Umgesetzt
+
+- Alle elf Dateien haben YAML-Frontmatter (`id`, `title`, `status`, `source`, `target`, `created`, `requested_by`, `affects`, `supersedes`) und die fünf Pflicht-Sektionen. Der ursprüngliche Auftragstext steht unverändert unter „Gewünschte Änderung“, Kopfangaben bleiben erhalten.
+- Bedarf geprüft: Für keines der neun Programme (Robotics, Energy Grid, Adaptive Industry, Living Infrastructure, Mycology, Planetary Architecture/Evolution/Remote Sensing, Mars Settlement Kernel) gibt es im Ecosystem bisher eine Registrierung; Piazzi-Lights- und Utopia-Projektion sind ebenfalls nicht umgesetzt. Alle elf bleiben daher `open`; keine wurde geschlossen. Den Stand in Engineering, OTA und NOXIA Universe konnte dieser Lauf nicht einsehen (kein Zugriff).
+- `tools/lint-external-tasks/lint.py`: keine Frontmatter-Pflichtfeld- und Sektionsfehler mehr. Es bleiben je Datei zwei Namensfehler (Dateiname und `id` nicht im Muster `…-NNN`) – wie schon bei `EXT-ENG-ECO-20261002-kueper-products-bootstrap.md`.
+- Bewusst nicht umbenannt: `tools/loop/ingest_external_tasks.py` bildet den Idempotenzschlüssel aus der `id` (`external-task:<repo>:<id>`). Eine neue `id` würde im Task-Bus Dubletten der bereits eingespeisten Tasks erzeugen. Ob umbenannt oder das Muster im Linter für Alt-Tasks gelockert wird, gehört zur offenen Rückfrage in `external-tasks/parked/ECO-OPS-20261028-sweep-dedup.md` (Linter-Muster).
+- `python3 -m pytest tools`: 149 bestanden, 1 übersprungen.

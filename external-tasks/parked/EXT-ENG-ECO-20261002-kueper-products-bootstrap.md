@@ -1,7 +1,7 @@
 ---
 id: EXT-ENG-ECO-20261002-kueper-products-bootstrap
 title: Eigenständiges Projekt und Repository kueper-products etablieren
-status: open
+status: parked
 source: ENG
 target: ECO
 created: 2026-10-02
@@ -142,3 +142,22 @@ Erledigt ist der Task, wenn:
 ## Hinweise
 
 KUEPER Engineering PR #96 wurde nach dieser Entscheidung bereits so korrigiert, dass Engineering kein eigenes Produktportfolio mehr besitzen soll.
+
+## Stand 13.11.2026 (Ökosystem-Kreislauf, Claude)
+
+Claude-Status: wartet auf Thomas
+
+Im Ecosystem bereits erfüllt:
+
+- Registrierung als Projekt `products`, Code `PROD`, Rolle `productization` mit Source-of-Truth-Beschreibung und Pflichtpfaden (`registry/projects.json`, `decisions/ECO-ARC-0035-2026-DE.md`).
+- Source-of-Truth-Grenzen und Engineering↔Products-Abgrenzung samt Product-Potential-Gate: `docs/architecture/KUEPER_PRODUCTS_ROUTING.md`.
+
+Offen – liegt überwiegend in `kueper-products` selbst (PROJECT-BRIEF, External-Task-Verzeichnisse, Produktkandidaten-Template, Small-Products- und Research-to-Product-Backlog). Dieser Lauf hat keinen Zugriff auf das Repository und kann nicht sehen, ob es schon existiert. Neu anlegen darf der Kreislauf kein Repository.
+
+Offen – Entscheidung: die eigene Produkt-ID-Konvention („durch ECO festzulegen“). Dafür gibt es bisher keine Entscheidung und keinen Entwurf.
+
+## Rückfrage
+
+1. Gibt es `thomaspeterkueper/kueper-products` schon? Wenn ja: bitte für die Claude-Läufe freigeben – dann werden die fehlenden Grundstrukturen dort als eigener Branch angelegt. Wenn nein: bitte selbst anlegen (leer genügt).
+2. Produkt-ID: Vorschlag `PROD-NNNN` (fortlaufend, ohne Familien-Kürzel im Kennzeichen; Familie und Skala Small/Advanced als Felder), festgehalten als Entscheidung ECO-ARC im Ecosystem. Antwort „ja“ genügt, sonst bitte das gewünschte Muster nennen.
+
