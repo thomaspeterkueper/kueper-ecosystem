@@ -1,0 +1,25 @@
+# Vorlage: Dependabot-Versionsupdates für private KUEPER-Repositories
+# (ECO-OPS-20261028-security-baseline).
+#
+# Zielpfad im Ziel-Repository: .github/dependabot.yml
+# Ökosysteme ergänzen, die im jeweiligen Repository tatsächlich vorhanden
+# sind (z. B. npm, pip, docker, github-actions). Dependabot legt für
+# Ökosysteme ohne Manifest keine Pull Requests an.
+#
+# Dependabot-Warnungen und -Sicherheitsupdates werden zusätzlich über
+# tools/ops/enable-security.sh aktiviert; sie brauchen keine eigene Datei.
+# Renovate ist eine gleichwertige Alternative zu dieser Vorlage.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+
+  # Beispiel für ein Node-Projekt:
+  # - package-ecosystem: "npm"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #   open-pull-requests-limit: 5

@@ -47,3 +47,22 @@ python3 -m unittest discover -s tools/ops -p 'test_*.py'
 
 Exit 1 bei `error`, `expiring` (< 14 Tage) oder `low`. Inventur:
 `docs/operations/SECRETS_INVENTORY.md`.
+
+`ops/enable-security.sh` — Sicherheitsbaseline der registrierten Repositories
+(ECO-OPS-20261028-security-baseline). Aktiviert für öffentliche Repositories
+Dependabot-Alerts, Dependabot-Sicherheitsupdates, Secret Scanning samt
+Push-Schutz und CodeQL im Standard-Setup. Für private Repositories aktiviert
+es Dependabot-Alerts/-Sicherheitsupdates und prüft, ob `gitleaks`-Workflow
+und Dependabot-/Renovate-Konfiguration vorhanden sind. Idempotent, schreibt
+keine Dateien in Ziel-Repositories, gibt keine Secrets aus.
+
+```bash
+GH_TOKEN=<admin-pat> tools/ops/enable-security.sh --check
+GH_TOKEN=<admin-pat> tools/ops/enable-security.sh
+GH_TOKEN=<admin-pat> tools/ops/enable-security.sh --check --json
+GH_TOKEN=<admin-pat> tools/ops/enable-security.sh --check --markdown
+```
+
+Exit 1 bei Abweichung oder Fehler, 2 bei Aufruf-/Auth-Fehlern. Dokumentation:
+`docs/operations/SECURITY_BASELINE.md`. Vorlagen für private Repositories:
+`tools/ops/templates/`.

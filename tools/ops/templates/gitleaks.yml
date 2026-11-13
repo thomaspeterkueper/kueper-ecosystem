@@ -1,0 +1,40 @@
+# Vorlage: gitleaks-PR-Workflow für private KUEPER-Repositories
+# (ECO-OPS-20261028-security-baseline).
+#
+# Zielpfad im Ziel-Repository: .github/workflows/gitleaks.yml
+# Default-Branch in `on.push.branches` anpassen, falls er nicht `main` heißt.
+#
+# GitHub Secret Scanning ist für öffentliche Repositories kostenlos, für
+# private nicht. Deshalb prüft dieser Workflow private Repositories bei jedem
+# Pull Request und bei Pushes auf den Default-Branch auf eingecheckte Secrets.
+# Der Lauf bricht bei einem Fund ab (Exitcode != 0) und annotiert die
+# betroffene Stelle. Der Workflow braucht keine Schreibrechte.
+#
+# Hinweis für Organisationen: gitleaks-action@v2 verlangt dort zusätzlich
+# ein `GITLEAKS_LICENSE`-Secret. Für das persönliche Konto von Thomas ist
+# keine Lizenz nötig.
+name: gitleaks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

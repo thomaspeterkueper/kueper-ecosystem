@@ -35,6 +35,7 @@ Workflow `weekly-health.yml` (montags früh, plus `workflow_dispatch`), stdlib-P
 3. Task-Bus (über die vorhandene aggregierte RPC, keine Ledger-Details): erledigt/geparkt/fehlgeschlagen je Woche, Anteil Fallback (sobald ECO-OPS-20261028-llm-fallback steht).
 4. Ausgabe `status/health-weekly.md` mit Vorwoche zum Vergleich (Pfeile ↑/↓) und **höchstens drei** konkreten Verbesserungsvorschlägen, abgeleitet aus Schwellwerten (z. B. Workflow < 80 % grün, PR > 30 Tage, Profil mit > 40 % `needs-review`).
 5. Überschreitet etwas einen Schwellwert, eine rollierende Task `ECO-OPS-health-alert.md` pflegen.
+6. Sicherheitslage aus `tools/ops/enable-security.sh --check --json` (ECO-OPS-20261028-security-baseline) aufnehmen: Repositories mit `result != "ok"`, neue offene Dependabot-/Secret-/CodeQL-Funde und fehlende private Schutzmaßnahmen (`gitleaks`, Versionsupdates).
 
 ## Erwartetes Ergebnis
 
