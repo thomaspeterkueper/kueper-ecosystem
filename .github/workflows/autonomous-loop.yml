@@ -15,7 +15,7 @@ on:
       - "tools/loop/**"
       - ".github/workflows/autonomous-loop.yml"
   schedule:
-    - cron: "7,37 * * * *"
+    - cron: "17 * * * *"
 
 permissions:
   contents: read
