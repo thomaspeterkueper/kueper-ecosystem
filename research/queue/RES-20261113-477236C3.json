@@ -1,6 +1,6 @@
 {
   "id": "RES-20261113-477236C3",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-13T11:10:24+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -32,5 +32,7 @@
     "RES-20260914-3AD6CB18"
   ],
   "novelty_reason": "RES-20260914-3AD6CB18 fragt, ob ~0,03 g auf Ceres für Entwicklung tragfähig ist und ob ein künstlich rotiertes Segment erzwungen wird. Es prüft nicht die spezifischen rpm-/Radius-Kombinationen, Coriolis-Toleranz, Adaptationszeiten und medizinischen Ausschlusskriterien bei 1 g durch Rotation. Genau diese Dimension entscheidet über die 3,0-rpm-/99-m- und 1,5-rpm-/400-m-Architektur und ist dort ungelöst.",
-  "fingerprint": "477236c335539dbb"
+  "fingerprint": "477236c335539dbb",
+  "updated_at": "2026-11-13T11:31:23+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/293"
 }
