@@ -1,7 +1,7 @@
 ---
 id: ECO-OPS-20261028-llm-fallback
 title: LLM-Fallback-Kette über das Vercel AI Gateway statt Warten bei 402/429
-status: parked
+status: open
 created: 2026-10-28
 requested_by: T.P.K.
 priority: high
@@ -64,3 +64,10 @@ Was soll mit dieser Task geschehen?
 - **C – vollständig:** wie beschrieben, obwohl `provider_router.py` derzeit ruht; ebenfalls mit Modellnamen je Stufe.
 
 Antwort „A“, „B <Modell>“ oder „C <Modelle>“ genügt.
+
+
+## Wieder geöffnet (13.11.2026)
+
+Thomas, 13.11.2026: DeepSeek wird nicht abgeschaltet; die GitHub Actions laufen wieder und übernehmen einen Teil der Arbeit, Claude-Läufe ergänzen (`docs/operations/claude-laeufe.md`, Hybridbetrieb). Die Fallback-Kette ist damit wieder relevant. Die Rückfrage oben (A/B/C) ist hinfällig; offen bleibt nur die Wahl der Ausweichmodelle je Stufe – dafür „Claude-Status: wartet auf Thomas“.
+
+Claude-Status: wartet auf Thomas
