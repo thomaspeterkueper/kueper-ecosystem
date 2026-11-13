@@ -1,0 +1,34 @@
+{
+  "id": "RES-20261113-2E01358E",
+  "status": "queued",
+  "created": "2026-11-13T11:10:23+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "spaces/noxia/infrastructure/NXU-MARS-RACE-2050-2091.md",
+  "source_ref": "5a229e4199e69f2068790c8eeb0fb38cc885c1c7",
+  "source_blob_sha": "f4eb2cbf79872c4c028ef9a1ab70f603f4f56a28",
+  "title": "Regolith als Konstruktionswerkstoff: Was Sintern, Geopolymer und 3D-Druck für Mars-Siedlungen wirklich tragen",
+  "question": "Was belegen peer-reviewte Material- und Bauwissenschaft sowie NASA-/ESA-Programme zu gesintertem, geopolymerem und additiv gefertigtem Marsregolith — Druckfestigkeit, Zug-/Scherfestigkeit, Porosität, Vakuum- und Thermowechselbeständigkeit, Wasser-/Energiebedarf, Maßtoleranzen und Langzeitalterung — und welche Bauteile (Druckhüllen, Schachtauskleidung, Strahlenschutzmasse, Fundamente) lassen sich damit für eine ~3.200-Personen-Siedlung und 80–820 m tiefe Ingenieursektoren lokal fertigen? Wo muss der Kanon Importabhängigkeiten, Ausschussraten, Reparaturgrenzen und Fertigungstiefe nennen, statt „Regolith dominiert bei Masse und Strahlenschutz“ als gelöst zu setzen?",
+  "why_now": "NXU-MARS-RACE-2050-2091 §8 setzt, dass Regolith, lokale mineralische Rohstoffe, Keramik, Glas und Aggregate bei Masse und Strahlenschutz dominieren; die Alpha-7-Sektoren bis ≥820 m und der Ausbau auf ~3.200 Bewohner hängen an dieser Materialannahme. Belegt sind bisher weder Bauteilklassen noch Ausschuss, Wasser-/Energiebedarf oder die verbleibende Importgrenze.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewte Materialwissenschaft zu gesintertem, geopolymerem und additiv gefertigtem Marsregolith-Simulant; NASA 3D-Printed Habitat Challenge und ESA-/DLR-Regolithbauprogramme als Primär-/Institutionsquellen; terrestrische Geopolymer-, Keramik- und Druckbehälterstandards als Vergleichsrahmen.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger Forschungspunkt behandelt Regolith als tragenden Konstruktionswerkstoff. RES-20261029-598703D4 prüft nur die Abschirmwirkung von Regolith, RES-20261010-5681C221 nur pilzbasierte biologische Materialien; Bauweisen, Festigkeiten, Degradation, Ausschuss und lokale Fertigungstiefe bleiben offen.",
+  "fingerprint": "2e01358ec16d9ea0"
+}
