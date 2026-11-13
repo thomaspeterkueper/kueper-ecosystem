@@ -1,6 +1,6 @@
 {
   "id": "RES-20261113-AA5ECC0E",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-13T11:10:22+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -32,5 +32,7 @@
     "RES-20261029-9BDD2E8E"
   ],
   "novelty_reason": "Die Noctis-Studie RES-20261029-9BDD2E8E klärt Geologie, Wand-/Dachstabilität, Untergrundeis und Ausbautiefen, aber nicht Start-/Landesicherheit, Gefahrenradien oder die Trennung von Industrie- und Wohnzonen. Diese ingenieurtechnische Dimension ist für die im jüngsten Commit angeforderte Alpha-7-Karte ungelöst und wird hier erstmals als eigenes Forschungsthema gefasst.",
-  "fingerprint": "aa5ecc0edbcdf1e8"
+  "fingerprint": "aa5ecc0edbcdf1e8",
+  "updated_at": "2026-11-13T11:22:37+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/292"
 }
