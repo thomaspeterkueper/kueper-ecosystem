@@ -1,7 +1,7 @@
 ---
 id: ECO-OPS-20261028-llm-fallback
 title: LLM-Fallback-Kette über das Vercel AI Gateway statt Warten bei 402/429
-status: open
+status: parked
 created: 2026-10-28
 requested_by: T.P.K.
 priority: high
@@ -13,7 +13,7 @@ type: operations / provider routing
 
 **Origin:** Ressourcen- und Redundanz-Analyse (Chat 28.10.2026)
 **Target:** kueper-ecosystem
-**Status:** open
+**Status:** parked
 **Created:** 2026-10-28
 **Type:** operations / provider routing
 
@@ -44,3 +44,23 @@ Das Vercel AI Gateway ist bereits im Einsatz (`AI_GATEWAY_API_KEY`, Research-Loo
 
 - Owner-Handlung (Thomas): Guthabenwarnung bei DeepSeek und im AI Gateway einrichten; das Gateway-Guthaben ist vorab gekauft.
 - noxiagame bekommt dasselbe für NPC-Gespräche über `docs/workstreams/hospitality.md` G-7.
+
+## Stand 13.11.2026 (Ökosystem-Kreislauf, Claude)
+
+Claude-Status: wartet auf Thomas
+
+Die Lage hat sich mit der Ablösung durch Claude-Läufe (`docs/operations/claude-laeufe.md`, 13.11.2026) grundlegend geändert:
+
+- `agent-worker-v7.yml` (nutzt `provider_router.py`) und die Recherche-Workflows `knowledge-research-loop.yml`, `ota-workqueue-research.yml`, `ota-evidence-sweep.yml`, `canon-conflict-loop.yml` sind abgeschaltet. Punkte 1–4 (Fallback in `provider_router.py`) hätten derzeit keinen aktiven Nutzer.
+- Einziger aktiver DeepSeek-Nutzer ist der manuelle Workflow `targeted-research.yml`: Claude Code mit `ANTHROPIC_AUTH_TOKEN = DEEPSEEK_API_KEY` plus `agent-with-exa.mjs` über das AI Gateway (Modell `deepseek/deepseek-v4-flash-0731` aus `research/policy.json`). Punkt 5 beträfe also nur diesen manuellen Lauf.
+- Nicht umgesetzt: Die Modellwahl je Stufe ist eine Kosten- und Anbieterentscheidung (Task: „nicht raten“), und `provider_router.py` umzubauen, solange niemand ihn aufruft, wäre Arbeit auf Vorrat.
+
+## Rückfrage
+
+Was soll mit dieser Task geschehen?
+
+- **A – schließen:** Durch die Claude-Läufe überholt; nach `done/` mit Vermerk „überholt durch claude-laeufe.md“. Bei Rückkehr zu den DeepSeek-Workflows wieder öffnen.
+- **B – nur Punkt 5:** Fallback-Kette nur für `agent-with-exa.mjs` (manuelle gezielte Recherche). Dann bitte das Ausweichmodell im AI Gateway nennen (z. B. ein Modell eines anderen Anbieters, das du freigibst).
+- **C – vollständig:** wie beschrieben, obwohl `provider_router.py` derzeit ruht; ebenfalls mit Modellnamen je Stufe.
+
+Antwort „A“, „B <Modell>“ oder „C <Modelle>“ genügt.
