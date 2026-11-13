@@ -15,7 +15,7 @@ on:
       - "tools/loop/**"
       - ".github/workflows/autonomous-loop.yml"
   schedule:
-    - cron: "7,22,37,52 * * * *"
+    - cron: "7,37 * * * *"
 
 permissions:
   contents: read
@@ -105,4 +105,4 @@ jobs:
             ecosystem-external-ingest-report.json
             ecosystem-outbox-cleanup-report.json
           if-no-files-found: ignore
-          retention-days: 30
+          retention-days: 7
