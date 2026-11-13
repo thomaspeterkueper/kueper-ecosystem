@@ -1,7 +1,7 @@
 ---
 id: ECO-OPS-20261028-offsite-backup
 title: Externe Sicherung der drei Supabase-Projekte und Git-Spiegel aller Repos
-status: open
+status: parked
 created: 2026-10-28
 requested_by: T.P.K.
 priority: medium
@@ -13,7 +13,7 @@ type: operations / backup
 
 **Origin:** Ressourcen- und Redundanz-Analyse (Chat 28.10.2026)
 **Target:** kueper-ecosystem
-**Status:** open
+**Status:** parked
 **Created:** 2026-10-28
 **Type:** operations / backup
 
@@ -49,3 +49,16 @@ type: operations / backup
 ## Hinweise
 
 Supabase-PITR (kostenpflichtiges Add-on) erst erwägen, wenn diese Sicherung läuft.
+
+## Stand 14.11.2026 (Ökosystem-Kreislauf, Claude)
+
+Claude-Status: wartet auf Thomas
+
+Geparkt ohne Umsetzung: Alle drei Workflows liegen unter `.github/` (reviewpflichtig nach `docs/autonomous-loops.md`) und brauchen Secrets, die nur Thomas anlegen kann (Owner-Handlung 1–4). Ohne Ziel und Schlüssel ließe sich nichts testen; ein Workflow mit Platzhaltern würde täglich rot laufen. `docs/operations/RESTORE.md` erst, wenn das Sicherungsformat feststeht.
+
+## Rückfrage
+
+1. Sind R2-Bucket und Verschlüsselungsschlüssel angelegt? Wenn ja: unter welchen Secret-Namen (Vorschlag `BACKUP_R2_ACCOUNT_ID`, `BACKUP_R2_ACCESS_KEY_ID`, `BACKUP_R2_SECRET_ACCESS_KEY`, `BACKUP_R2_BUCKET`, `BACKUP_AGE_RECIPIENT` – nur der öffentliche age-Schlüssel, der private bleibt offline)?
+2. Datenbank-Zugang: je Projekt ein eigener lesender Backup-Nutzer als `BACKUP_DB_URL_NOXIA`, `BACKUP_DB_URL_KG`, `BACKUP_DB_URL_SSF` – einverstanden?
+3. Git-Spiegel: welcher Zielhost (Forgejo, GitLab.com oder keiner vorerst)?
+4. Darf der Ökosystem-Kreislauf danach `offsite-backup.yml`, `restore-drill.yml` und `git-mirror.yml` unter `.github/workflows/` anlegen?
