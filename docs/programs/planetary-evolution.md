@@ -54,7 +54,7 @@ geroutet. Diese Registrierung legt sie zusammen und erzeugt keine doppelten Auft
 
 | Nachbarprogramm | Referenz | Verhältnis |
 |---|---|---|
-| Planetare Fernerkundung | `external-tasks/open/EXT-NOXIA-ECO-20260925-planetary-remote-sensing-routing.md` | Liefert Beobachtungen, aus denen Rekonstruktionen entstehen; Beobachtung ist nicht die verborgene Geschichte |
+| Planetare Fernerkundung | [`planetary-remote-sensing.md`](planetary-remote-sensing.md) | Liefert Beobachtungen, aus denen Rekonstruktionen entstehen; Beobachtung ist nicht die verborgene Geschichte |
 | Systemgenerierung | ENG `systems/impact-surface-evolution-architecture-v0.1.md`; NOXIA-Generator (Tabelle oben) | Prozedurale Planeten- und Oberflächenentwicklung nutzt die gekoppelten Verträge |
 | Geologie und Ressourcen | ENG `systems/planetary-resource-reconnaissance-architecture-0.1.md` | Lagerstätten und Erkundung als Folge der Planetengeschichte |
 | Biosphären | [`mycology-soil-ecopoiesis.md`](mycology-soil-ecopoiesis.md) | Bodenleben und Ecopoiesis als biologische Seite der Kopplung |
