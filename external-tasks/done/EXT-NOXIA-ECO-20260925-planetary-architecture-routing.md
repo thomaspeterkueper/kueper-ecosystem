@@ -1,7 +1,7 @@
 ---
 id: EXT-NOXIA-ECO-20260925-planetary-architecture-routing
 title: Planetary architecture / learning routing
-status: open
+status: done
 source: NOXIA
 target: ECO
 created: 2026-09-25
@@ -15,7 +15,7 @@ supersedes: []
 - **Origin:** NOXIA research intake
 - **Target:** KUEPER Ecosystem
 - **Date:** 2026-09-25
-- **Status:** open
+- **Status:** done
 
 ## Anlass
 
@@ -53,3 +53,15 @@ Querschnittsprogramm über mehrere Repositories. Registrierung und Zuständigkei
 - Programm in `kueper-ecosystem` registriert, Zuständigkeiten wie unter „Gewünschte Änderung“ festgehalten.
 - Querverweise zu den genannten Nachbarprogrammen dokumentiert.
 - Folgearbeiten in den Ziel-Repositories als External Tasks geroutet.
+
+## Erledigt
+
+Status: done – Ökosystem-Kreislauf (Claude), 15.11.2026.
+
+## Umgesetzt
+
+- Programm registriert: `docs/programs/planetary-architecture.md` mit Zweck, Geltungsbereich, Zuständigkeiten (OTA, KG, NXU, ENG, NOXIA; `noxia-realtime` zurückgestellt) und Regeln.
+- Trennung von beobachteter Geometrie und Entstehungsgeschichte sowie die epistemische Regel ausdrücklich festgehalten.
+- Querverweise zu Astronomie/Fernerkundung, Navigation, Systemgenerierung, Exploration und der NOXIA-Lernmodulfamilie.
+- Folgearbeiten: bereits ab 25.09.2026 geroutet (KG `ONT:KG:SPIN-ORBIT-ARCHITECTURE-0.1` und ENG `ENG-CONTRACT-ORBIT-PLANE-0001` erledigt; OTA-Fallstudie GJ 3090 b, NXU-Mehrfachgeschichten, NOXIA-Generierung/Lernmodul und Übernahme des Bahnebenen-Vertrags offen) und als Stand zusammengeführt; keine doppelten Aufträge erzeugt.
+- Register `docs/programs/README.md` und `docs/system-map.md` ergänzt; Verweis in `docs/programs/planetary-remote-sensing.md` auf die Registrierung ergänzt.

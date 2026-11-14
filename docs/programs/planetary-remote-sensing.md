@@ -56,7 +56,7 @@ geroutet. Diese Registrierung legt sie zusammen und erzeugt keine doppelten Auft
 | Nachbarprogramm | Referenz | Verhältnis |
 |---|---|---|
 | Planetary Evolution | [`planetary-evolution.md`](planetary-evolution.md) | Fernerkundung liefert die Beobachtungen, aus denen Planetengeschichte rekonstruiert wird |
-| Systemgenerierung, retrograde und nicht-koplanare Architekturen | NOXIA-Task zur nicht-koplanaren Generierung und OTA-Fallstudie GJ 3090 b (Tabelle oben) | Generierte Systeme müssen beobachtbar sein, ohne die Wahrheit preiszugeben |
+| Systemgenerierung, retrograde und nicht-koplanare Architekturen | [`planetary-architecture.md`](planetary-architecture.md); NOXIA-Task zur nicht-koplanaren Generierung und OTA-Fallstudie GJ 3090 b (Tabelle oben) | Generierte Systeme müssen beobachtbar sein, ohne die Wahrheit preiszugeben |
 | Navigation und Exploration | NOXIA `external-tasks/open/EXT-ENG-NOXIA-20260911-resource-intelligence.md`; ENG `systems/planetary-resource-reconnaissance-architecture-0.1.md` | Erkundung und Ressourcenaufklärung nutzen dieselbe Beobachtungs- und Inferenzkette |
 | NOXIA-Lernmodule | NOXIA-Tasks oben; `solarsciencefoundation` für Lernpfade | Lernmodule konsumieren KG-Ontologie und ENG-Verträge; Lernfortschritt bleibt SSF |
 
