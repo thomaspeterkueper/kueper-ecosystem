@@ -1,7 +1,7 @@
 ---
 id: EXT-NOXIA-ECO-20260925-living-infrastructure-integration
 title: Living infrastructure integration
-status: open
+status: done
 source: NOXIA
 target: ECO
 created: 2026-09-25
@@ -50,3 +50,15 @@ Querschnittsprogramm über mehrere Repositories. Registrierung und Zuständigkei
 - Programm in `kueper-ecosystem` registriert, Zuständigkeiten wie unter „Gewünschte Änderung“ festgehalten.
 - Querverweise zu den genannten Nachbarprogrammen dokumentiert.
 - Folgearbeiten in den Ziel-Repositories als External Tasks geroutet.
+
+## Erledigt
+
+Status: done – Ökosystem-Kreislauf (Claude), 14.11.2026.
+
+## Umgesetzt
+
+- Living Infrastructure als Cross-Repository-Programm registriert: `docs/programs/living-infrastructure.md` mit Zweck, Geltungsbereich, Zuständigkeitsverteilung, Integrationsrichtung und Abgrenzung.
+- Programmregister `docs/programs/README.md` angelegt und aus `README.md` sowie `docs/system-map.md` verlinkt.
+- Querverweise zu Mycology/Soil Ecology/Ecopoiesis, Planetary Evolution, Mars Settlement Kernel, Energy Grid, Adaptive Industry, Robotics/MiniNode sowie zu ECLSS und Myzelbaustoffen dokumentiert.
+- Folgearbeit-Envelopes für `ENG` (konservierte Flüsse/Systemverträge), `KG` (Material-/Prozessidentitäten) und `OTA` (Evidenz/Provenienz) in `.kueper/outbox/` erzeugt; das Routing in die Ziel-Repositories übernimmt der Ecosystem-Loop.
+- `NXU` und `NOXIA` bewusst nachgelagert, `noxia-realtime` gemäß Auftrag ausgeschlossen.
