@@ -20,32 +20,14 @@ import {
   zoomViewport,
   type TimelineViewport,
 } from "./timeline-math";
-
-type UniverseEvent = {
-  id: string;
-  title: string;
-  summary: string;
-  location?: string;
-  characters?: string[];
-  time: {
-    start?: string;
-    end?: string;
-    precision: string;
-    certainty: "exact" | "approximate" | "speculative";
-    display: string;
-  };
-  universe_or_scope: string;
-  canonicality: "canonical" | "provisional" | "draft" | "deprecated";
-  epistemic_status: "established" | "theoretical" | "speculative" | "fictional";
-  source_refs: string[];
-  relation_refs: string[];
-};
+import type { UniverseEvent } from "./seed-projection";
 
 type ApiResponse = {
   generated_at: string;
   source: string;
   canonical: boolean;
   note: string;
+  caveats?: string[];
   events: UniverseEvent[];
 };
 
@@ -336,6 +318,15 @@ export default function UniverseTimelinePage() {
         {data && <p style={{ color: "#7b8494", fontStyle: "italic" }}>{filtered.length} / {data.events.length} Ereignisse</p>}
       </header>
 
+      {data && data.caveats && data.caveats.length > 0 && (
+        <details style={styles.caveatBox}>
+          <summary style={styles.listSummary}>Projektionshinweise ({data.caveats.length}) · nicht kanonisch</summary>
+          <ul style={styles.caveatList}>
+            {data.caveats.map((caveat) => <li key={caveat}>{caveat}</li>)}
+          </ul>
+        </details>
+      )}
+
       <div style={styles.controls}>
         <input
           type="text"
@@ -433,6 +424,8 @@ const styles: Record<string, React.CSSProperties> = {
   tickLine: { position: "absolute", top: AXIS_HEIGHT - 1, bottom: 0, borderLeft: "1px solid #182231" },
   laneLabel: { position: "absolute", left: 9, top: 7, zIndex: 2, padding: "0.12rem 0.35rem", background: "rgba(5,7,12,0.78)", color: "#aab2bf", fontFamily: "Lato, sans-serif", fontSize: "0.56rem", letterSpacing: "0.09em", textTransform: "uppercase", pointerEvents: "none" },
   marker: { position: "absolute", top: "55%", border: "2px solid #05070c", borderRadius: "50%", color: "#05070c", fontFamily: "Lato, sans-serif", fontWeight: 800, fontSize: "0.58rem", lineHeight: 1, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", boxShadow: "0 0 0 1px rgba(255,255,255,0.12)" },
+  caveatBox: { maxWidth: 980, margin: "1rem auto 0", padding: "0.7rem 1rem", background: "#0c1119", border: "1px solid #1e2733", borderRadius: "3px", textAlign: "left" },
+  caveatList: { margin: "0.5rem 0 0", paddingLeft: "1.1rem", color: "#9aa3b2", fontSize: "0.78rem", lineHeight: 1.6 },
   detailPanel: { maxWidth: 980, margin: "1.2rem auto 0", padding: "1.2rem 1.4rem", background: "#0c1119", border: "1px solid #263244", borderLeft: "3px solid #cba25f", borderRadius: "3px" },
   detailLine: { marginTop: "0.45rem", color: "#9aa3b2", fontSize: "0.82rem" },
   listSummary: { color: "#9aa3b2", cursor: "pointer", fontFamily: "Lato, sans-serif", fontSize: "0.75rem", letterSpacing: "0.08em", textTransform: "uppercase" },
