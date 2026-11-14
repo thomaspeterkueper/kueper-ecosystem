@@ -1,0 +1,50 @@
+{
+  "id": "RES-20261114-CF45C0BC",
+  "status": "queued",
+  "created": "2026-11-14T11:02:53+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0015-2082-DE.md",
+  "source_ref": "276caf69289f13ca95e6a0c9cf5bc914d7150bca",
+  "source_blob_sha": "798fa86e0ff1a05c10fe8004939600511a21c7ef",
+  "document_signature": "OTA-TEC-0015-2082-DE",
+  "title": "Realwelt-Audit der LRV-15-\"Dust-Walker\"-Spezifikation (OTA-TEC-0015, v1.0, 2082): 6x40-kW-Radnabenantrieb, 'pannenfreie' Shape-Memory-Reifen, 50-m-GPR-Hohlraumerkennung, S-Band-Direktverbindung und die 14-Tage-Lebenserhaltung fuer 4 Personen",
+  "question": "Quellengestuetzter Realwelt-Audit der als [S] gefuehrten Spezifikationszeilen von OTA-TEC-0015-2082-DE (Abschnitte 1-3 und Anhang A), gepinnt auf die im Workspace vorliegende v1.0 (Status AKTIV; Frontmatter-evidenceStatus ['F','T','R'], im Text dagegen '[S] Speculative (Basis-Specs) / [F] Fictional (Modifikationen)'). Dieser Klassifikationswiderspruch ist selbst Auditgegenstand. Das Dokument ist das kanonische Spezifikationsblatt des LRV-15 'Dust-Walker', auf das OTA-NAR-0001-2087-DE, OTA-BIO-0007-2025-DE, OTA-TEC-0004-2087-DE, OTA-TEC-0016-2063-DE und OTA-ORG-0001-2079-DE verweisen; seine Zahlen sind bisher nirgends gegen die reale Technikgrenze geprueft. (1) Antriebsleistung: Pruefe '6 unabhaengige Radnabenmotoren à 40 kW' (Summe 240 kW) gegen eine reale Traktionsleistungsbilanz. Berichte den elektrischen Leistungsbedarf realer Mars-Rover (MER, MSL, Perseverance) und studierter bemannter Druckrover (NASA SEV/MMSEV-Klasse), rechne ueberschlaegig die fuer 45 km/h auf ebener Flaeche und 15 km/h im Gelaende bei plausibler Fahrzeugmasse (2-4 t) und Marsgravitation (0,38 g) benoetigte Radleistung, und stelle fest, um welchen Faktor 240 kW ueber dem Bedarf liegt, welche Folgen das fuer Batterie-/Brennstoffzellenmasse, Abwaerme und Kuehlung im 6-7-mbar-Umfeld hat und ob Radnabenmotoren (ungefederte Masse, Staub, thermische Last) fuer Mars realistisch sind. (2) Bereifung: Pruefe 'Shape-Memory-Legierung (SML)', 'metallisches Geflecht passt Steifigkeit an' und 'pannenfrei' gegen die realen SML-/nichtpneumatischen Reifenprogramme (NASA-Glenn-Superelastic-SMA-Tire, Michelin Tweel, weitere non-pneumatic-Ansätze). Berichte TRL, demonstrierte Lasten/Geschwindigkeiten, Rollwiderstand/Hysterese, Staub- und Kaelteverhalten und stelle fest, ob 'pannenfrei' als absolute Eigenschaft oder nur als Ziel-Eigenschaft eines Prototyps haltbar ist. (3) Sensorik: Pruefe 'Bodenradar (GPR): Erkennung unterirdischer Hohlraeume bis 50 m Tiefe' gegen reale Mars-GPR (RIMFAX auf Perseverance, MARSIS/SHARAD als orbitaler Kontext) und die Physik der Dielektrizitaets-/Verlustdaempfung in Marsregolith; berichte reale Eindringtiefen, die Frequenz-Eindringtiefe-Beziehung und ob 50 m Hohlraumerkennung mit einem rover-tauglichen GPR physikalisch erreichbar ist oder um welchen Faktor die Zeile zu optimistisch ist. (4) Kommunikation: Pruefe 'High-Gain S-Band Antenne (Direkt zur Erde/Satellit)' gegen die reale Mars-Direkt-zu-Erde-Praxis (X-Band-HGA von MSL/MRO, S-Band-Raten, DSN-34/70-m-Klasse) und gib an, welche Datenrate eine rover-skalige S-Band-HGA ueber 0,5-2,5 AE real liefert. (5) Lebenserhaltung: Pruefe '2 Personen Normal / 4 Notfall', '14 Tage Standard', 'Wasser-Recycling 92 %', 'CO2-Scrubber + Elektrolyse-O2-Rueckgewinnung' gegen reale ISS-ECLSS-Leistung (Wasser-Recycling ca. 93-98 %, Sabatier/Elektrolyse) und reale Verbrauchsmassen (kg/Person/Tag) fuer 2 bzw. 4 Personen ueber 14 Tage; nenne die sich ergebende Vorratsmasse und stelle fest, ob 14 Tage fuer 4 Personen im Notfall mit dem Fahrzeugvolumen vereinbar sind. (6) Modifikationen: Pruefe A.2 ('45 -> 70 km/h', Motortemperatur) gegen die Leistungs-/thermische Reserve aus (1); pruefe A.3 ('Blei-Behälter ... bietet elektromagnetische Abschirmung gegen Ortungssysteme') gegen die reale Physik - Blei ist ein Leiter und daempft RF ueber die Skintiefe, ist aber primaer Gammastrahlungs-Schutz (fuer 'heisse' Proben) und nicht als EMI-/Ortungsschutz ausgelegt; trenne Strahlungsschutz von HF-/EMI-Schutz, nenne die bei S-Band/UHF relevante Skintiefe und das Masseproblem, und beurteile, ob die Zeile zwei Funktionen unzulaessig vermischt. A.1 (Transponder-Ghosting) ist als [F] zu fuehren; nur die reale Plausibilitaet von Telemetrie-/Positionsspoofing ist als Kontext zu nennen. (7) Reklassifiziere: nenne die Zeilen, die als [R]-Realanker bleiben koennen (reale Geraeteklasse und Faehigkeitsgrenze: nichtpneumatischer SMA-Reifen als Prototyp, rover-taugliches GPR als Klasse, S-Band-DTE als Klasse), die auf '[S] mit eingeschraenktem Betriebsfenster' abzuschwaechen sind (240 kW, 50 m GPR, 'pannenfrei', 4-Personen-14-Tage) und die [F]/[OFFEN] bleiben muessen; stelle den Frontmatter-/Text-Widerspruch der Epistemologie fest und dass keine kanonische Motorleistung, keine kanonische GPR-Tiefe, keine kanonische Recyclingrate und kein kanonisches Massenbudget in den Kanon aufgenommen wird. AUSGESCHLOSSEN: Marek Kowalskis Flucht/Narration, die Kuratornotiz, die HeliosCorp-Weltsetzung, NOXIA-Balancingwerte sowie die Frage der Diebstahl-/Tarnnutzung.",
+  "why_now": "Prioritaet-10-Fragment ohne bisherigen Forschungseintrag. Die uebrigen Dokumente der Prioritaet-10-Stufe sind bereits bedient (OTA-TEC-0003 durch RES-20261114-2822BB29, OTA-KOM-0002 durch RES-20260916-08FAD47F) bzw. werden in dieser Runde separat adressiert (OTA-SCI-0004), sodass TEC-0015 das letzte unbediente Prioritaet-10-Dokument ist. Seine Spezifikationszahlen sind kanonisch referenziert und werden ohne Pruefung als [T]/[R] weitergetragen; der Frontmatter-/Text-Widerspruch der Epistemologie ist ein lokaler Klassifikationsfehler, der ohne die reale Technikgrenze nicht aufloesbar ist.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "S",
+    "T"
+  ],
+  "real_world_anchor": "Reale Geraeteklassen und -grenzen: nichtpneumatische superelastische SMA-Reifen (NASA Glenn), rover-taugliches Mars-GPR (RIMFAX, ca. 10 m; MARSIS/SHARAD als orbitaler Kontext), S-Band-/X-Band-Direkt-zu-Erde ueber DSN, ISS-ECLSS-Wasser-Recycling (ca. 93-98 %) und die Traktionsleistung studierter bemannter Rover (NASA SEV/MMSEV-Klasse).",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.86,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20261114-2822BB29"
+  ],
+  "novelty_reason": "Kein bisheriger Forschungseintrag zu OTA-TEC-0015. Der nächstliegende Audit RES-20261114-2822BB29 betrifft OTA-TEC-0003 (Surveyor-9-Kletterroboter) und dort ausdruecklich andere Baugruppen (Vakuumsauger, Lidar, Tether, UHF); Fahrwerk, Radnabenantrieb, GPR, ECLSS und Direktkommunikation des LRV-15 sind nicht Gegenstand.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 312,
+    "quality_flags": [
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "cf45c0bcc9dfbc03"
+}
