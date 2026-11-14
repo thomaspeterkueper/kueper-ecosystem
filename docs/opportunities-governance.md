@@ -8,7 +8,7 @@ Dieses Dokument beschreibt den **gemeinsamen Metadatenvertrag** für Förderprog
 
 ## Opportunity v0.1 – Pflichtfelder
 
-- `id`: stabile ID `OPP-YYYY-NNNN`, nach Vergabe unveränderlich
+- `id`: stabile ID `OPP-YYYY-NNNN`, nach Vergabe unveränderlich; `YYYY` ist das Jahr der Ersterfassung (nicht Frist- oder Vergabejahr). Bis zur Freigabe des ID-Raums (siehe „ID-Vergabe“) ist `id: null`.
 - `title`, `type`: `grant | prize | collaboration | publication`
 - `organizer`, `official_url`, `source_checked_at`: Primärquelle und Zeitpunkt der Prüfung (ISO-8601)
 - `status`: `discovered | screening | prioritized | preparing | submitted | awarded | rejected | archived`
@@ -18,7 +18,16 @@ Dieses Dokument beschreibt den **gemeinsamen Metadatenvertrag** für Förderprog
 - `projects`: Liste vorhandener Projekt-/Repository-IDs
 - `owner`: verantwortliche Rolle oder Person für die nächste Entscheidung
 
+Alle Pflichtfelder müssen in jedem Datensatz vorhanden sein. `source_checked_at` und `eligibility_checked_at` dürfen nur dann `null` sein, wenn noch keine offizielle Quelle geprüft wurde; dann gilt zwingend `eligibility: unclear` (siehe Regel 1 und 2).
+
 Optionale Felder: `deadline_at` mit Zeitzone; `funding_amount` plus Währung; `country`; `language`; `partner_requirements`; `degree_requirements`; `publication_requirements`; `institution_requirements`; `residency_requirements`; `legal_form_requirements`; `allowed_ai_use`; `ip_terms`; `submission_url`; `evidence_refs` (kanonische IDs/URLs); `notes`; `next_action`; `last_reviewed_at`.
+
+## ID-Vergabe
+
+`OPP-*` ist ein neuer systemweiter Identitätsraum. Laut `decisions/ECO-ARC-0032-2026-DE.md` ist die Aufnahme weiterer Identitätsräume in die Signatur-Registry ausdrücklich nicht entschieden; parallele Vergabe nach Stichprobe hat dort bereits zu Kollisionen geführt. Daher gilt:
+
+- Es wird **keine** `OPP-*`-ID vergeben, bevor eine angenommene Architekturentscheidung (ECO-ARC) festlegt, wer IDs vergibt und wie Eindeutigkeit gesichert wird (z. B. Erweiterung der Signatur-Registry um die Serie `OPP` mit `nextFree`, Kollisionsprüfung und Lint).
+- Bis dahin tragen Datensätze `id: null` und werden über normierte `official_url` + Ausrichter + Ausschreibungsrunde identifiziert (Regel 5).
 
 ## Prüf- und Entscheidungsregeln
 
@@ -32,15 +41,23 @@ Optionale Felder: `deadline_at` mit Zeitzone; `funding_amount` plus Währung; `c
 
 ## Testfall: Chen Institute & Science Prize 2027
 
-`title`: Chen Institute & Science Prize for AI Accelerated Research 2027  
-`type`: prize  
-`official_url`: https://cheninstitute.org/prize  
-`deadline_at`: **unklar bis zur Prüfung der offiziellen Uhrzeit und Zeitzone** (Mitteilung nennt 2026-12-13)  
-`eligibility`: ineligible für individuelle Bewerbung ohne verlangten Abschluss  
-`eligibility_reason`: akademische formale Voraussetzung nicht erfüllt; eine mögliche Partnerkonstellation wäre gesondert anhand der offiziellen Regeln zu prüfen  
-`status`: screening  
-`projects`: [kueper-knowledge-graph, noxiagame]  
-`evidence_refs`: [https://github.com/thomaspeterkueper/kueper-ecosystem/issues/131]
+```yaml
+id: null                         # nicht vergeben – ID-Raum noch nicht freigegeben (siehe „ID-Vergabe“)
+title: Chen Institute & Science Prize for AI Accelerated Research 2027
+type: prize
+organizer: Chen Institute       # laut Mitteilung; gegen offizielle Teilnahmebedingungen zu bestätigen
+official_url: https://cheninstitute.org/prize
+source_checked_at: null          # offizielle Teilnahmebedingungen noch nicht geprüft
+status: screening
+eligibility: unclear             # Gate erst nach Prüfung der offiziellen Bedingungen
+eligibility_reason: Offizielle Teilnahmebedingungen noch nicht mit Abrufdatum hinterlegt. Hinweis aus #131 – möglicherweise formale akademische Voraussetzung, die individuell nicht erfüllt wäre; eine zulässige Partnerkonstellation wäre gesondert anhand der offiziellen Regeln zu prüfen.
+eligibility_checked_at: null
+projects: [kueper-knowledge-graph, noxiagame]
+owner: Thomas Küper (Projekt Owner)
+deadline_at: null                # Mitteilung nennt 2026-12-13; Uhrzeit und Zeitzone nicht bestätigt
+evidence_refs: [https://github.com/thomaspeterkueper/kueper-ecosystem/issues/131]
+next_action: Offizielle Teilnahmebedingungen abrufen, Abrufdatum eintragen, dann Eligibility-Gate entscheiden.
+```
 
 Dies ist ein **Schema-Beispiel**, noch kein Datensatz im Produktivsystem. Vor operativer Nutzung alle Anforderungen und Quellen neu prüfen.
 
