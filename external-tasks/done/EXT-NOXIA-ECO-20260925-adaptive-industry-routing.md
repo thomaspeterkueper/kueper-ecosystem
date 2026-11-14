@@ -1,7 +1,7 @@
 ---
 id: EXT-NOXIA-ECO-20260925-adaptive-industry-routing
 title: Adaptive industry program routing
-status: open
+status: done
 source: NOXIA
 target: ECO
 created: 2026-09-25
@@ -15,7 +15,7 @@ supersedes: []
 - **Origin:** NOXIA research intake
 - **Target:** KUEPER Ecosystem
 - **Date:** 2026-09-25
-- **Status:** open
+- **Status:** done
 
 ## Anlass
 
@@ -54,3 +54,14 @@ Querschnittsprogramm über mehrere Repositories. Registrierung und Zuständigkei
 - Programm in `kueper-ecosystem` registriert, Zuständigkeiten wie unter „Gewünschte Änderung“ festgehalten.
 - Querverweise zu den genannten Nachbarprogrammen dokumentiert.
 - Folgearbeiten in den Ziel-Repositories als External Tasks geroutet.
+
+## Erledigt
+
+Status: done – Ökosystem-Kreislauf (Claude), 15.11.2026.
+
+## Umgesetzt
+
+- Programm registriert: `docs/programs/adaptive-industry.md` mit Zweck, Geltungsbereich, Zuständigkeiten (OTA, KG, ENG, NXU, NOXIA; `noxia-realtime` zurückgestellt) und Regeln.
+- Querverweise zu Energy Grid Layer, MiniNode/Roboterschwarm, Bergbau/Ressourcen, Logistik, Gebäuden/Siedlungen (Mars Settlement Kernel, Living Infrastructure) und der NOXIA-Lernmodulfamilie.
+- Folgearbeiten: bereits ab 25.09.2026 geroutet (OTA `OTA-SCI-0110-2026-DE`, KG `ONT:KG:ADAPTIVE-MANUFACTURING-0.1` und ENG `ENG-SYS-AFCA-0001` erledigt; NXU-Entwicklung und -Integration sowie NOXIA-Gameplay/Lernmodul offen) und als Stand zusammengeführt; keine doppelten Aufträge erzeugt.
+- Register `docs/programs/README.md` und `docs/system-map.md` ergänzt; Verweise in `living-infrastructure.md` und `mycology-soil-ecopoiesis.md` auf die Registrierung umgestellt.
