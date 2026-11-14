@@ -1,7 +1,7 @@
 ---
 id: EXT-NOXIA-ECO-20260925-mycology-ecopoiesis-routing
 title: Mycology / soil ecology / ecopoiesis routing
-status: open
+status: done
 source: NOXIA
 target: ECO
 created: 2026-09-25
@@ -15,7 +15,7 @@ supersedes: []
 - **Origin:** NOXIA research intake
 - **Target:** KUEPER Ecosystem
 - **Date:** 2026-09-25
-- **Status:** open
+- **Status:** done
 
 ## Anlass
 
@@ -54,3 +54,14 @@ Querschnittsprogramm über mehrere Repositories. Registrierung und Zuständigkei
 - Programm in `kueper-ecosystem` registriert, Zuständigkeiten wie unter „Gewünschte Änderung“ festgehalten.
 - Querverweise zu den genannten Nachbarprogrammen dokumentiert.
 - Folgearbeiten in den Ziel-Repositories als External Tasks geroutet.
+
+## Erledigt
+
+Status: done – Ökosystem-Kreislauf (Claude), 14.11.2026.
+
+## Umgesetzt
+
+- Programm registriert: `docs/programs/mycology-soil-ecopoiesis.md` mit Zweck, Geltungsbereich, Zuständigkeiten (OTA, KG, ENG, NXU, NOXIA; `noxia-realtime` zurückgestellt) und Abgrenzung zu Living Infrastructure (Fachdomäne unter der Integrationsschicht, keine eigenen Ressourcenzähler).
+- Anschluss an die bestehende Mars-Siedlungsforschung statt Parallelsilo: Querverweise zu Living Infrastructure, Mars Settlement Kernel, Planetary Evolution, ECLSS/Landwirtschaft/Abfall, Ressourcen/Habitaten und Myzelbaustoffen.
+- Folgearbeiten: bereits am 25.–27.09.2026 geroutet (KG-Ontologie und ENG-Bodenökologie-Architektur erledigt; OTA-Dossier, NXU-Kanon und NOXIA-Gameplay offen) und in der Registrierung als Stand zusammengeführt; keine doppelten Aufträge erzeugt.
+- Register `docs/programs/README.md` und `docs/system-map.md` ergänzt; Verweis in `docs/programs/living-infrastructure.md` auf die Registrierung umgestellt.
