@@ -422,9 +422,13 @@ ensure_codeql() {
       esac
       ;;
     404)
-      cq_state="not_applicable"
-      cq_detail="CodeQL-Endpunkt 404 (kein analysierbarer Code oder nicht verfügbar)"
-      return 0
+      # 404 belegt kein fehlendes Standard-Setup: GitHub antwortet bei
+      # vorhandenem Endpunkt mit 200/not-configured und bei fehlenden
+      # Sprachen mit 422. Ein 404 kann auf fehlende Rechte oder ein
+      # API-Problem hindeuten. Im Check-Modus bleibt der Zustand deshalb
+      # unknown; im Apply-Modus wird der PATCH dennoch versucht.
+      cq_state="unknown"
+      cq_detail="GET HTTP 404: $GH_BODY (CodeQL-Endpunkt nicht verfügbar; Rechte oder API-Problem?)"
       ;;
     *)
       cq_state="error"; cq_detail="GET HTTP $GH_STATUS: $GH_BODY"

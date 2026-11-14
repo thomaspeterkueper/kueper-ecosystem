@@ -5,7 +5,9 @@
   "requested_change": "In thomaspeterkueper/kueper-knowledge-graph .github/workflows/gitleaks.yml nach der Vorlage https://github.com/thomaspeterkueper/kueper-ecosystem/blob/main/tools/ops/templates/gitleaks.yml anlegen (on.push.branches an den Default-Branch anpassen) und .github/dependabot.yml nach https://github.com/thomaspeterkueper/kueper-ecosystem/blob/main/tools/ops/templates/dependabot.yml mit den tatsächlich genutzten Ökosystemen ergänzen. Keine Secrets committen.",
   "expected_result": "gitleaks läuft bei Pull Requests und Pushes auf den Default-Branch; Dependabot erzeugt wöchentliche Versionsupdate-PRs. tools/ops/enable-security.sh --check meldet für das Repository gitleaks_workflow=present und dependency_updates=present.",
   "priority": "low",
+  "cost_policy": "prefer_off_peak",
+  "estimated_effort": "low",
   "parent_task": "b283ffbf-c081-4494-9e17-e59ae62f73b8",
   "depth": 1,
-  "affects": ["source-code", "target-code"]
+  "affects": ["ECO", "KG"]
 }

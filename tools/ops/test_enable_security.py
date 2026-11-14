@@ -504,6 +504,30 @@ class EnableSecurityTests(unittest.TestCase):
         controls = self.json_result(result)["repositories"][0]["controls"]
         self.assertEqual(controls["codeql_default_setup"]["state"], "not_applicable")
 
+    def test_codeql_get_404_is_action_required_in_check_mode(self):
+        self.state["repos"]["acme/public"] = healthy_entry(False)
+        self.state["repos"]["acme/public"]["codeql"] = "unavailable"
+        self.write_state()
+
+        result = self.run_script(["--check", "--repo", "acme/public", "--json"])
+        self.assertEqual(result.returncode, 1, result.stdout + result.stderr)
+        row = self.json_result(result)["repositories"][0]
+        self.assertEqual(row["result"], "action_required")
+        self.assertEqual(row["controls"]["codeql_default_setup"]["state"], "unknown")
+        self.assertNotIn("PATCH", self.methods())
+
+    def test_codeql_get_404_attempts_patch_in_apply_mode(self):
+        self.state["repos"]["acme/public"] = healthy_entry(False)
+        self.state["repos"]["acme/public"]["codeql"] = "unavailable"
+        self.write_state()
+
+        result = self.run_script(["--repo", "acme/public", "--json"])
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("PATCH", self.methods())
+        controls = self.json_result(result)["repositories"][0]["controls"]
+        self.assertEqual(controls["codeql_default_setup"]["state"], "enabled")
+        self.assertEqual(self.read_state()["repos"]["acme/public"]["codeql"], "configured")
+
     # ------------------------------------------------------------------
     # Fehler, Ausgabe, Authentifizierung
     # ------------------------------------------------------------------
