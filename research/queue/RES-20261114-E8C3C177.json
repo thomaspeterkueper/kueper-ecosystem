@@ -1,0 +1,45 @@
+{
+  "id": "RES-20261114-E8C3C177",
+  "status": "queued",
+  "created": "2026-11-14T00:50:50+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0107-2026-DE.md",
+  "source_ref": "f9bb7d5e91b69886d94292e95bf5c96762164017",
+  "source_blob_sha": "72150307cccc809fe93657b9b1668646db798689",
+  "document_signature": "OTA-SCI-0107-2026-DE",
+  "title": "Realwelt-Audit der STAR-Impulskorrelationen in OTA-SCI-0107: die Kennung PRL 137, 132301 (DOI 10.1103/2xsn-rgx3) gegen arXiv:2604.06434, die tatsaechliche Observable und Signifikanz der Nichtmonotonie bei sqrt(s_NN) = 3,0-7,7 GeV und ihr Verhaeltnis zur realen BES-II-Kritischer-Punkt-Evidenz",
+  "question": "Quellengestuetzter Audit der [R]-Schicht von OTA-SCI-0107-2026-DE (Abschnitte 'Primaerquelle' und 'Messung [R]'), gepinnt auf die im Workspace vorliegende v1.0 (Status ENTWURF, Stand 17.10.2026). Das Dokument nennt eine exakte Zeitschriftenkennung und eine arXiv-Kennung, enthaelt aber selbst keine einzige Zahl: keine Effektgroesse, keine Signifikanz, keine Systematikbilanz — und es fordert in 'Interpretation [I/OFFEN]' ausdruecklich, 'Praezise Quantifizierung und systematische Fehlerbilanzen aus Volltext und Daten nachtragen'. Genau diese Luecke ist der Auditgegenstand. (1) Quellenstatus: Pruefe die Angaben 'STAR Collaboration, Non-Monotonicity of Transverse Momentum Correlations in Au+Au Collisions at RHIC, Physical Review Letters 137, 132301 (2026), veroeffentlicht 22. September 2026, arXiv:2604.06434, DOI 10.1103/2xsn-rgx3'. Klaere, ob die arXiv-Kennung (eingereicht 07.04.2026) existiert und ob sie inzwischen eine Journal-Referenz traegt, ob PRL 137, 132301 und die DOI 10.1103/2xsn-rgx3 unabhaengig bestaetigt werden koennen und ob Titel, Autorschaft (Kollaborationspublikation) und Datum stimmen. Melde jede Nichtbestaetigung ausdruecklich und nenne die naechstliegenden realen STAR-BES-II-Arbeiten zu Transverssimpuls-Fluktuationen und zur Kritischer-Punkt-Suche, ohne sie stillschweigend zu substituieren. (2) Observable: Klaere, was 'ereignisweise Korrelationen des transversalen Impulses geladener Teilchen' in der Arbeit tatsaechlich bezeichnet — skalierter pT-Korrelator bzw. 1/sqrt(N_part)-Skalierung, Delta-pT-Momente, Zwei-Teilchen-Korrelationen —, welche Detektorkonfiguration und welches Fixed-Target-Setup (iTPC, Zentralitaetsdefinition, Akzeptanz) verwendet werden und welche Zentralitaetsklassen getrennt ausgewertet werden. (3) Signifikanz und Nichtmonotonie: Pruefe, mit welcher Signifikanz die Kollaboration die Abweichung von einer glatten Energieabhaengigkeit angibt (in der internen Begutachtung vom 2026-11-11 wurden ~5 sigma in zentralen Stoessen, ~2 sigma fuer Transportmodelle und ~1,4 sigma fuer mittelzentrale Daten notiert — verifiziere diese Zahlen am Volltext), ob es sich um eine lokale oder globale Signifikanz handelt, ob ein Energie-Scan mit multiplen Tests vorliegt und wie damit umgegangen wird, und gegen welche Baseline (glatte Interpolation, Transportmodell, Statistical-Model-Rechnung) die Nichtmonotonie definiert ist. (4) Verhaeltnis zur realen Kritischer-Punkt-Evidenz: Berichte den realen Stand des BES-II-Programms — net-proton-Kumulanten (C4/C2, Vierter-Ordnung), die ~3-sigma-Anomalie bei 3,0-7,7 GeV und ihre Kritik, Blindanalyse-/Reproduktionsstatus, Konsistenz mit anderen Observablen (gemischte Kumulanten, leichte Kerne, Fluss) — und ordne ein, ob nichtmonotone pT-Korrelationen ein etablierter Traeger der kritischen-Punkt-Suche sind oder ein neuer, schwaecherer Kanal. (5) Nichtkritische Erklaerungen: Pruefe die im Dokument nur pauschal genannten Alternativen (hadronische Rescattering-/Transporteffekte, Mini-Jets, kollektiver Fluss, Energie- und Impulserhaltung, Zentralitaets- und Akzeptanzfluktuationen) gegen die reale Literatur und gib an, welche davon quantitativ geeignet sind, ein nichtmonotones Signal dieser Groesse zu erzeugen. (6) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen (Existenz einer STAR-Messung nichtmonotoner pT-Korrelationen; Fixed-Target-Energiebereich 3,0-7,7 GeV; Richtung des Befunds), die fehlenden Zahlen, die aus dem Volltext nachzutragen sind (Effektgroesse, Signifikanz, Systematikbudget, Zentralitaetsabhaengigkeit), die zu '[R] Quelleninhalt, Kennung und Signifikanz offen' abzuschwaechen sind, und die [I]/[OFFEN] bleiben muessen; stelle fest, dass kein kanonischer Signifikanzwert, keine kanonische Korrelationsgroesse und kein kanonischer Kritischer-Punkt-Parameter in den Kanon aufgenommen wird. NICHT erneut zu pruefen: die AVI-P-Triggerpruefung T1-T4 und das Omnizedenz-Urteil (Autorenentscheidung), die Gegenueberstellung mit OTA-SCI-0105 sowie die editorische Auslagerung des Realteils nach KUE-SCI-0195 (OTA-REQ-20261111-002) — letztere nur als Kontext zitieren.",
+  "why_now": "Das Dokument verlangt in seinem eigenen [OFFEN]-Abschnitt das Nachtragen von Quantifizierung und Systematikbilanzen aus dem Volltext, liefert aber weder Effektgroesse noch Signifikanz; die interne Begutachtung vom 2026-11-11 konnte die PRL-Kennung und die DOI nicht unabhaengig bestaetigen und hat die fehlenden Angaben nur als offenen Punkt vermerkt. Damit ist die zentrale [R]-Aussage des Dokuments derzeit weder nachpruefbar noch auf dem Stand, den die eigene Wiedervorlage (2027-05-11) verlangt.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "real_world_anchor": "Reale STAR-Beam-Energy-Scan-II-Fixed-Target-Physik bei sqrt(s_NN) = 3,0-7,7 GeV am RHIC: Transverssimpuls-Fluktuationen und -Korrelationen, net-proton-Kumulanten und die publizierte, kritisierte Kritischer-Punkt-Evidenz; arXiv- und APS-Publikationsregister als pruefbare Kennungsquelle.",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.71,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.45,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein frueherer OTA-Rechercheauftrag behandelt RHIC/STAR, QCD-Phasendiagramm, Baryonen-/Kumulantenobservablen oder Fixed-Target-Schwerionenphysik; die naechstliegenden Auftraege (z. B. RES-20261002-E2757B4E zu CHIME-21-cm, RES-20260920-D8270DC5 zur Kosmologie) teilen nur die Methodenfrage nach Signifikanz und Systematik. Der offene Task OTA-REQ-20261111-002 ist rein editorisch (Verlagern des Realteils nach KUE-SCI-0195) und trifft keine physikalische Einordnung; dieser Audit ergaenzt die fehlende Volltext-Quantifizierung und die Einordnung gegenueber der realen net-proton-Kumulanten-Evidenz.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 267,
+    "quality_flags": [
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "e8c3c1771630f643"
+}
