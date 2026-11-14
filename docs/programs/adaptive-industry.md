@@ -59,7 +59,7 @@ geroutet. Diese Registrierung legt sie zusammen und erzeugt keine doppelten Auft
 | MiniNode / Roboterschwarm | `external-tasks/open/EXT-ENG-ECO-20260924-robotics-program-routing.md`; ENG `ENG-SYS-MININODE-0001` (`systems/mininode-robot-swarm-platform-r1.md`) | Anbindung über Fähigkeits-, Energie- und Zustandsverträge |
 | Bergbau und Ressourcen | ENG `ENG-SYS-PRR-0001` (`systems/planetary-resource-reconnaissance-architecture-0.1.md`) | Rohstoffe und Materialidentität am Eingang der Fertigung |
 | Logistik | ENG `ENG-SYS-STL-0001` (`systems/solar-transfer-logistics-architecture-0.2.md`) | Material- und Teilefluss zwischen Standorten |
-| Gebäude und Siedlungen | Mars Settlement Systems Kernel (`external-tasks/open/EXT-NOXIA-ECO-20260927-mars-settlement-kernel-routing.md`); [`living-infrastructure.md`](living-infrastructure.md) | Fertigung nutzt gemeinsame Reservoire und Flüsse der Siedlung; keine doppelten Ressourcenzähler |
+| Gebäude und Siedlungen | Mars Settlement Systems Kernel ([`mars-settlement-kernel.md`](mars-settlement-kernel.md)); [`living-infrastructure.md`](living-infrastructure.md) | Fertigung nutzt gemeinsame Reservoire und Flüsse der Siedlung; keine doppelten Ressourcenzähler |
 | NOXIA-Lernmodulfamilie | NOXIA-Task oben; `solarsciencefoundation` für Lernpfade | Lernmodule konsumieren KG-Ontologie und ENG-Verträge; Lernfortschritt bleibt SSF |
 
 ## 6. Regeln und Abgrenzungen

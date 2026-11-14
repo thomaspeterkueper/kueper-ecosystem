@@ -1,7 +1,7 @@
 ---
 id: EXT-NOXIA-ECO-20260927-mars-settlement-kernel-routing
 title: Mars Settlement Systems Kernel routing
-status: open
+status: done
 source: NOXIA
 target: ECO
 created: 2026-09-27
@@ -15,7 +15,7 @@ supersedes: []
 - **Origin:** NOXIA integration
 - **Target:** KUEPER Ecosystem
 - **Date:** 2026-09-27
-- **Status:** open
+- **Status:** done
 
 ## Anlass
 
@@ -58,3 +58,14 @@ Querschnittsprogramm über mehrere Repositories. Registrierung und Zuständigkei
 - Mars Settlement Systems Kernel in `kueper-ecosystem` als Integrationsinstanz registriert, Zuständigkeiten wie unter „Gewünschte Änderung“ festgehalten.
 - Regel „gemeinsame Reservoirs/Flüsse statt doppelter Ressourcenzähler“ und die epistemische Trennung dokumentiert.
 - Folgearbeiten in den Ziel-Repositories als External Tasks geroutet.
+
+## Erledigt
+
+Status: done – Ökosystem-Kreislauf (Claude), 15.11.2026.
+
+## Umgesetzt
+
+- Mars Settlement Systems Kernel als Integrationsinstanz registriert: `docs/programs/mars-settlement-kernel.md` mit verbundenen Systemen (Energy Grid, ECLSS/Wasser, Living Infrastructure/Mykologie, Landwirtschaft, Abfall/Recycling, Adaptive Industry, Logistik, MiniNodes/Robotik) und Zuständigkeiten (ENG, KG, OTA, NXU, NOXIA; `noxia-realtime` als späterer Konsument zurückgestellt).
+- Regel „gemeinsame Reservoire und Flüsse statt doppelter Ressourcenzähler“ und die epistemische Trennung dokumentiert.
+- Folgearbeiten: bereits ab 27.09.2026 geroutet (ENG `ENG-SYS-MSSK-0001`, KG `ONT:KG:SETTLEMENT-SYSTEMS-KERNEL-0.1` v0.1.1, OTA `OTA-SCI-0112-2026-DE` erledigt; NXU-Entwicklungsmodell und -Kanonisierung sowie NOXIA-Simulation und -Integration offen) und als Stand zusammengeführt; keine doppelten Aufträge erzeugt.
+- Register `docs/programs/README.md` und `docs/system-map.md` ergänzt; Verweise in `living-infrastructure.md`, `mycology-soil-ecopoiesis.md`, `planetary-evolution.md` und `adaptive-industry.md` auf die Registrierung umgestellt.

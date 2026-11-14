@@ -18,6 +18,7 @@ als External Tasks.
 | Planetare Fernerkundung / Beobachtende Astronomie | Erkenntniskette von der physikalischen Eigenschaft über Messung bis zur Schlussfolgerung; Instrumente, Entdeckungsgeschichte, Beobachtungs-Gameplay | [`planetary-remote-sensing.md`](planetary-remote-sensing.md) | registriert 2026-11-14 |
 | Planetensystem-Architekturen (nicht-koplanar/retrograd) | Bahnebenen, Neigungen und rückläufige Umläufe von der Evidenz über Kanon und Bahnmechanik bis zu Generierung und Lernmodul | [`planetary-architecture.md`](planetary-architecture.md) | registriert 2026-11-15 |
 | Adaptive Industry | Adaptive Fertigung, digitale Zwillinge und Physical AI von der Evidenz über Anlagen- und Steuerungsarchitektur bis zu Produktions-Gameplay | [`adaptive-industry.md`](adaptive-industry.md) | registriert 2026-11-15 |
+| Mars Settlement Systems Kernel | Integrationsinstanz für Siedlungssysteme: gemeinsame Reservoire und Flüsse für Energie, ECLSS/Wasser, Biologie, Landwirtschaft, Abfall, Industrie, Logistik und Robotik | [`mars-settlement-kernel.md`](mars-settlement-kernel.md) | registriert 2026-11-15 |
 
 ## Aufnahme weiterer Programme
 
