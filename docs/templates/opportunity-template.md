@@ -3,16 +3,16 @@
 > **Nicht** in `external-tasks/open/` speichern: das ist ausschließlich für kanonische projektübergreifende Entwicklungsanforderungen reserviert. Der operative Ablageort wird im Zuge von Issue #131 festgelegt.
 
 ```yaml
-id: OPP-YYYY-NNNN
+id: null                         # OPP-YYYY-NNNN erst nach Freigabe des ID-Raums (siehe docs/opportunities-governance.md, „ID-Vergabe“)
 title: ""
 type: prize                      # grant | prize | collaboration | publication
 organizer: ""
 official_url: ""
-source_checked_at: ""           # ISO-8601 inklusive Zeitzone
+source_checked_at: null          # ISO-8601 inklusive Zeitzone; null nur solange eligibility: unclear
 status: discovered               # discovered | screening | prioritized | preparing | submitted | awarded | rejected | archived
 eligibility: unclear             # eligible | partner_required | ineligible | unclear
 eligibility_reason: ""
-eligibility_checked_at: ""       # ISO-8601 inklusive Zeitzone
+eligibility_checked_at: null     # ISO-8601 inklusive Zeitzone; null nur solange eligibility: unclear
 projects: []
 owner: ""
 deadline_at: null                # ISO-8601 mit Zeitzone; null wenn Uhrzeit/Zone nicht bestätigt
