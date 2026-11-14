@@ -55,7 +55,7 @@ eigene Ressourcenzähler oder Begriffe zu duplizieren.
 
 | Nachbarprogramm | Referenz | Verhältnis |
 |---|---|---|
-| Mycology / Soil Ecology / Ecopoiesis | `external-tasks/open/EXT-NOXIA-ECO-20260925-mycology-ecopoiesis-routing.md` | Fachliche Nachbardomäne; Living Infrastructure ist die Integrationsschicht, kein konkurrierendes Programm. Ecopoiesis bleibt Zukunftserweiterung. |
+| Mycology / Soil Ecology / Ecopoiesis | [`mycology-soil-ecopoiesis.md`](mycology-soil-ecopoiesis.md) | Fachliche Nachbardomäne; Living Infrastructure ist die Integrationsschicht, kein konkurrierendes Programm. Ecopoiesis bleibt Zukunftserweiterung. |
 | Planetary Evolution / Deep Time | `external-tasks/open/EXT-NOXIA-ECO-20260925-planetary-evolution-routing.md` | Liefert langfristige Geosphäre-Biosphäre-Randbedingungen; Living Infrastructure arbeitet auf Siedlungs- und Engineering-Zeitskalen. |
 | Mars Settlement Systems Kernel | `external-tasks/open/EXT-NOXIA-ECO-20260927-mars-settlement-kernel-routing.md` | Übergeordnete Integrationsautorität für Siedlungssysteme; Living Infrastructure nutzt gemeinsame Reservoire und erzeugt keine doppelten Ressourcenzähler. |
 | Energy Grid Layer | `external-tasks/open/EXT-ENG-ECO-20260925-energy-grid-learning-routing.md` | Energieflüsse und Schnittstellen werden geteilt, nicht parallel modelliert. |

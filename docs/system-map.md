@@ -108,6 +108,7 @@ Source-of-Truth-Grenzen zu verschieben. Registrierung und Querverweise liegen in
 | Programm | Rolle | Registrierung |
 |---|---|---|
 | Living Infrastructure | Integrationsschicht für Mykologie/Bodenökologie, geschlossene Lebenserhaltung, Landwirtschaft, Abfall/Recycling, Planetare Evolution und künftige Ecopoiesis | [`docs/programs/living-infrastructure.md`](programs/living-infrastructure.md) |
+| Mykologie / Bodenökologie / Ecopoiesis | Fachdomäne Pilze, Myzel, Bodenleben und kontrollierte Ecopoiesis; nutzt die Flüsse von Living Infrastructure | [`docs/programs/mycology-soil-ecopoiesis.md`](programs/mycology-soil-ecopoiesis.md) |
 
 ## 6. Nicht-Ziele dieser Systemkarte
 
