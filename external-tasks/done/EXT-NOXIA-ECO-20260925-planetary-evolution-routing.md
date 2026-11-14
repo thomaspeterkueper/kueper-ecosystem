@@ -1,7 +1,7 @@
 ---
 id: EXT-NOXIA-ECO-20260925-planetary-evolution-routing
 title: Planetary evolution / Deep Time routing
-status: open
+status: done
 source: NOXIA
 target: ECO
 created: 2026-09-25
@@ -15,7 +15,7 @@ supersedes: []
 - **Origin:** NOXIA research intake
 - **Target:** KUEPER Ecosystem
 - **Date:** 2026-09-25
-- **Status:** open
+- **Status:** done
 
 ## Anlass
 
@@ -54,3 +54,15 @@ Querschnittsprogramm über mehrere Repositories. Registrierung und Zuständigkei
 - Programm in `kueper-ecosystem` registriert, Zuständigkeiten wie unter „Gewünschte Änderung“ festgehalten.
 - Querverweise zu den genannten Nachbarprogrammen dokumentiert.
 - Folgearbeiten in den Ziel-Repositories als External Tasks geroutet.
+
+## Erledigt
+
+Status: done – Ökosystem-Kreislauf (Claude), 14.11.2026.
+
+## Umgesetzt
+
+- Programm registriert: `docs/programs/planetary-evolution.md` mit Zweck, Geltungsbereich, Zuständigkeiten (OTA, KG, ENG, NXU, NOXIA; `noxia-realtime` zurückgestellt) und Regeln.
+- Trennung von verborgener Geschichte und rekonstruiertem Wissen sowie föderierte Zuständigkeit ausdrücklich festgehalten.
+- Querverweise zu Fernerkundung, Systemgenerierung, Geologie/Ressourcen, Biosphären (Mykologie/Bodenökologie), Siedlungswissenschaft (Living Infrastructure, Mars Settlement Kernel) und künftigem Terraforming.
+- Folgearbeiten: bereits ab 25.09.2026 geroutet (KG-Ontologie und ENG-Kopplungsautorität erledigt; OTA-Dossier, NXU-Planetengeschichten und NOXIA-Generator/Rekonstruktion offen) und als Stand zusammengeführt; keine doppelten Aufträge erzeugt.
+- Register `docs/programs/README.md` und `docs/system-map.md` ergänzt; Verweise in den Programmen Living Infrastructure und Mykologie auf die Registrierung umgestellt.
