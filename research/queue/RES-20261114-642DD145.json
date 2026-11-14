@@ -1,0 +1,44 @@
+{
+  "id": "RES-20261114-642DD145",
+  "status": "queued",
+  "created": "2026-11-14T00:50:50+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0098-2026-DE.md",
+  "source_ref": "f9bb7d5e91b69886d94292e95bf5c96762164017",
+  "source_blob_sha": "af80440017b857876d2c5fa9dc45c34b12cc3aa2",
+  "document_signature": "OTA-SCI-0098-2026-DE",
+  "title": "Realwelt-Audit des orbitalen WEP-Quantentests in OTA-SCI-0098: Zhang et al. (Science Advances 12(35), eaeh4502, 2026), 85Rb/87Rb-Dual-Species-Atominterferometrie auf der China Space Station, 280 Tage Daten, 2,8e-8 Testunsicherheit und (-2,7 +/- 4,7)e-7",
+  "question": "Quellengestuetzter Audit der vollstaendig als [R] gefuehrten Aussagen von OTA-SCI-0098-2026-DE (Abschnitte 'Befund' und 'Standarderklaerung'), gepinnt auf die im Workspace vorliegende v1.0 (Status ENTWURF). Das Dokument besteht ausschliesslich aus einer externen Literaturbehauptung — es hat keine fiktionale Schicht ausser der AVI-P-Rahmung — und traegt seine gesamte Aussage auf einer einzigen bibliographischen Kennung und vier Zahlen. (1) Quellenverifikation: Pruefe, ob Zhang et al., 'orbitaler WEP-Quantentest mit einem 85Rb/87Rb-Dual-Species-Atominterferometer auf der China Space Station', Science Advances 12(35), eaeh4502 (2026), DOI 10.1126/sciadv.aeh4502, Veroeffentlichungsdatum 28. August 2026, in dieser Form existiert — Titel, Autorschaft (ist Zhang der Erstautor?), Journal, Band, Artikelnummer, DOI, Peer-Review-Status. Ist eine Kennung nicht verifizierbar, sage das ausdruecklich und nenne die naechstliegenden realen orbitalen bzw. Mikrogravitations-WEP-Tests, ohne sie stillschweigend zu substituieren. (2) Messwerte: Pruefe '280 Tage WEP-Daten', die 'Testunsicherheit von 2.8e-8' und das Ergebnis '(-2.7 +/- 4.7)e-7' gegen Abstract und Ergebnisteil. Klaere insbesondere, was 'Testunsicherheit' in der Arbeit bezeichnet (systematisches Budget, statistische Unsicherheit, kombinierte Unsicherheit) und ob die im Dokument stehende Kombination aus 2,8e-8 und +/-4,7e-7 ueberhaupt konsistent ist oder zwei verschiedene Groessen vermischt. (3) Praezisionsbehauptung: Pruefe den Satz, die Praezision verbessere sich 'gegenueber frueheren atominterferometrischen WEP-Tests in Mikrogravitation um etwa drei Groessenordnungen'. Welche realen mikrogravitativen Atominterferometrie-WEP-Tests gibt es (Falltuerme, Parabelflug, Hoehenballon, ISS-/CSS-Konzepte), welche Testunsicherheiten erreichten sie, und traegt der Faktor 10^3? (4) Einordnung in die reale WEP-Landschaft: Berichte die tatsaechlich besten WEP-Grenzen — MICROSCOPE (eta ~ 1e-15), Eoet-Wash-/Torsionswaagen-Grenzen, Labor-Atominterferometrie (z. B. Schlippert et al. 2014 und Folgearbeiten), STE-QUEST-Studien — mit Zahlen und Konfidenzniveau, und ordne (-2,7 +/- 4,7)e-7 darin ein. Ist die Formulierung 'Präzisions-Nullkanal' werktreu, oder suggeriert sie eine Weltrangstellung, die der Wert nicht traegt? Trenne dabei ausdruecklich: Weltbeste WEP-Grenze vs. bester orbitaler Atominterferometrie-Test vs. erster Test auf einer Raumstation. (5) Plattform und Instrument: Pruefe, ob auf der China Space Station real ein solches Dual-Species-Atominterferometer betrieben wird/wurde, welche realen chinesischen Nutzlasten es gibt (Tiangong-2-Kaltatomuhr, geplante/geflogene Atominterferometrie- und Kaltatom-Experimente), wie die Mikrogravitationsumgebung und die Plattformbeschleunigungs-Stoerungen einzuordnen sind und ob '280 Tage' als kontinuierliche Messkampagne plausibel ist. (6) Interpretation: Berichte, was ein solches Nullresultat physikalisch einschraenkt (kompositionsabhaengiger differentieller Freifall, Isotopenpaar 85Rb/87Rb, Verhaeltnis von gravitations- zu Traegheitsmasse) und was es fuer reale Erweiterungen bedeutet (fuenfte Kraft, Dilaton-/Moduli-Kopplung, UFF-Grenzen), ohne daraus eine Bestaetigung oder Widerlegung der AVI-P-Schicht abzuleiten. (7) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen (Existenz eines peer-reviewten orbitalen Atominterferometrie-WEP-Tests; Richtung des Befunds als Nullresultat), die zu '[R] Quelleninhalt, Zahlen und Bezugsgroesse offen' abzuschwaechen sind (2,8e-8, (-2,7 +/- 4,7)e-7, 'drei Groessenordnungen', Band/Artikelnummer falls abweichend) und die [OFFEN] werden muessen; stelle fest, dass keine kanonische WEP-Grenze, keine kanonische Testunsicherheit und kein kanonischer Isotopenvergleich in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die AVI-P-Triggerpruefung T1-T4 als Bewertung, das AVI-P-Relevanzurteil, die Matrixaufnahme-Entscheidung, der KUE-Handoff nach KUE-SCI-0197/0198-Kontext sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Das Dokument ist eine reine [R]-Behauptung ohne jede Innenabsicherung: eine einzige Kennung, vier Zahlen, null Inline-Referenzen. Es ist im November 2026 weder in der Quellenpruefung 2026-11 noch in einem offenen externen Task erfasst und hat keinen KUE-Gegenpart. Gleichzeitig ist es das einzige Dokument im aktuellen Workqueue-Snapshot, dessen saemtlicher Inhalt extern pruefbar ist und dessen Aussage bei falscher Kennung oder falsch gelesener Unsicherheit vollstaendig kollabiert. Der 12-Monats-Takt bis zur naechsten Begutachtung (2027-11-02) macht jetzt den einzigen guenstigen Zeitpunkt.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "real_world_anchor": "Reale WEP-Praezisionstests: MICROSCOPE (CNES, eta = (-1,5 +/- 2,3)e-15, 2022), Eoet-Wash-Torsionswaagen, Labor- und Fallturm-Atominterferometrie (Schlippert et al., PRL 2014; Dual-Species-Rb/K-Experimente), STE-QUEST-Studien; reale chinesische Kaltatom-/Atominterferometrie-Nutzlasten auf Tiangong-2 und der China Space Station.",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.74,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.45,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein frueherer OTA-Rechercheauftrag behandelt das schwache Aequivalenzprinzip, Atominterferometrie, Penning-/Fallturmpraezision oder chinesische Raumfahrtnutzlasten; die naechstliegenden Auftraege (RES-20260921-966FA674 Magnetorezeption, RES-20261004-12206595 Mantelgeophysik) beruehren keine dieser Groessen. Das Dokument hat ausserdem keinen offenen Aufraeum- oder KUE-Auslagerungstask, sodass der Audit nicht mit einer laufenden Migration kollidiert.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 189,
+    "quality_flags": [
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "642dd1456026ed07"
+}
