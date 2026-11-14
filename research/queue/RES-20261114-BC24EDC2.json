@@ -1,0 +1,46 @@
+{
+  "id": "RES-20261114-BC24EDC2",
+  "status": "queued",
+  "created": "2026-11-14T00:28:27+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0099-2026-DE.md",
+  "source_ref": "f9bb7d5e91b69886d94292e95bf5c96762164017",
+  "source_blob_sha": "165ab270260c29a4517193c0210a78719ba8c572",
+  "document_signature": "OTA-SCI-0099-2026-DE",
+  "title": "Realwelt-Audit der Károlyházy-Ausschlusslogik in OTA-SCI-0099: Bortolotti et al. (New Journal of Physics 28, 064511, 2026), die Grenzen R_K > 4,64 m gegen R_K < 1,98 m, der Detektor der VIP-Kollaboration und die Reichweite des Ausschlusses der 'generalisierten' Modellklasse",
+  "question": "Quellengestuetzter Audit der [R]- und [NULL]-Schicht von OTA-SCI-0099-2026-DE (Abschnitte 'Befund' und 'Evidenzgrenze'), gepinnt auf die im Workspace vorliegende v1.0 (Status ENTWURF), gegen die primaere Dekohaerenz-, Kollapsmodell- und Niedriguntergrund-Detektorliteratur. Das Dokument ist die selbsternannte 'Null-/Falsifikationsreferenz' des Archivs fuer AVI-P-Retentionspfade und traegt seine Aussage vollstaendig auf einer bibliographischen Kennung und zwei Zahlen. (1) Quellenverifikation: Pruefe, ob Bortolotti et al., New Journal of Physics 28, 064511 (2026), DOI 10.1088/1367-2630/ae774c, zuvor arXiv:2601.00651, in dieser Form existiert - Titel, Autorschaft, Journal, Band, Artikelnummer, DOI, Veroeffentlichungsdatum, Peer-Review-Status. Melde jede Abweichung ausdruecklich und nenne, falls die Kennung nicht verifizierbar ist, die naechstliegende reale Arbeit (z. B. die Gran-Sasso-Niedriguntergrund- und Dekohaerenz-Grenzliteratur), ohne sie stillschweigend zu substituieren. (2) Ausschlusslogik: Das Dokument behauptet, der experimentelle Grenzwert R_K > 4,64 m (95% C.L.) schliesse zusammen mit der theoretischen Obergrenze R_K < 1,98 m 'nach der Modellstruktur der Autoren' die untersuchte generalisierte Károlyházy-Modellklasse aus. Rekonstruiere, was R_K in diesem Modell physikalisch ist (Laengen-/Lokalisierungsparameter), in welchem Parameterraum die beiden Grenzen liegen (gleiche Observable? gleiche Konfidenz? untere gegen obere Schranke), und pruefe, ob eine experimentelle untere Schranke gegen eine theoretische obere Schranke tatsaechlich eine Ausschlussaussage traegt oder ob es sich um eine parameterraumabhaengige Einschraenkung handelt, die nur unter zusaetzlichen Modellannahmen zum Ausschluss wird. Berichte die im Paper tatsaechlich formulierte Aussage und ihre Autorengrenzen. (3) Modellklasse: Klaere, was 'generalisiertes Károlyházy-Modell' hier bezeichnet und wie es sich vom Originalmodell (Károlyházy 1966; Diósi) unterscheidet. Berichte die real publizierten Grenzen an Károlyházy-artige gravitationsinduzierte Dekohaerenz (insbesondere Cold-Atom-Interferometrie-Grenzen, z. B. Bilardello et al. 2016/2018, und die von Diósi/anderweitig gefuehrten Modellvarianten) mit Zahlen, Konfidenzniveau und getestetem Parameterfenster und ordne die 4,64 m / 1,98 m darin ein: ist der neue Ausschluss staerker, komplementaer oder nur ein anderer Sektor? (4) Detektor und Kollaboration: Pruefe die Aussage, die Daten stammten von einem 'hochreinen Germaniumdetektor der VIP-Kollaboration am INFN Gran Sasso'. Berichte, welche Detektoren die VIP-Kollaboration real betreibt (VIP-2: Silizium-Drift-Detektoren; Germanium-Niedriguntergrunddetektoren anderer LNGS-Experimente wie GERDA/LEGEND), und stelle fest, ob die Detektorzuordnung im Dossier korrekt, verwechselt oder als Quelleninhalt zu fuehren ist. Pruefe ferner, ob die zitierte Arbeit ueberhaupt eine VIP-Autorenschaft traegt. (5) Uebertragung auf CSL: Pruefe die Aussage, die Autoren uebertrugen den Ausschluss 'auf eine zugehoerige experimentell aequivalente nicht-Markovsche CSL-Formulierung', gegen die reale CSL-/Kollapsmodell-Literatur (CSL-Parameterraum r_C/lambda, Nicht-Markovsche Erweiterungen, bestehende CSL-Grenzen aus Rausch-, Interferometrie- und Untergrunddaten) und stelle fest, ob 'experimentell aequivalent' die tragende Formulierung ist oder praeziser gefasst werden muss. (6) Titelreichweite: Das Dossier traegt 'Ausschluss des generalisierten Károlyházy-Dekohaerenzmodells' als Ueberschrift und in der summary. Pruefe, ob diese Reichweite der getesteten Unterklasse entspricht, oder ob der Titel eine allgemeinere Aussage behauptet, als die Arbeit stuetzt; schlage die werktreue Fassung vor. (7) Aktualitaet: Pruefe, ob zwischen 2024 und November 2026 weitere Arbeiten zu Károlyházy-/gravitationsinduzierter Dekohaerenz, Nicht-Markovschen Kollapsmodellen oder Niedriguntergrund-Detektorconstraints erschienen sind, die den Befund bestaetigen, verschaerfen oder relativieren, und ob die Einordnung 'Null-/Falsifikationsreferenz' danach unveraendert bleibt. (8) Reklassifiziere: nenne die Saetze, die [R] bleiben koennen (Existenz und Inhalt einer peer-reviewten Arbeit; Richtung des Befunds), die zu '[R] Quelleninhalt, Modell-/Parametersektor und Detektor offen' abzuschwaechen sind (4,64 m, 1,98 m, Germaniumdetektor, CSL-Aequivalenz), und die [H]/[OFFEN] bleiben muessen; stelle fest, dass kein kanonisches R_K, kein kanonischer CSL-Parameter und keine kanonische Ausschlussgrenze in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die AVI-/Omnizedenz-Theorieschicht, die T1-T4-Bewertung selbst (T1/T2 NICHT ERFUELLT, T3/T4 MATERIELL EINGESCHRAENKT), die Sätze 'Non-Markovianity is not evidence of irreducible AVI retention' und das OTA-Fazit als Autorenentscheidung, die Matrixeinstufung sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Das Dokument dient der Beobachtungsmatrix ausdruecklich als Null-/Falsifikationsreferenz fuer kuenftige T3/T4-Kandidaten; ein Fehler in der Ausschlusslogik oder in der Quellenkennung wuerde also nicht nur diesen Eintrag, sondern die Begruendungspraxis der Evidenzmatrix treffen. Gleichzeitig ist die tragende Kennung (NJP 28, 064511, DOI 10.1088/1367-2630/ae774c) bisher nirgends unabhaengig bestaetigt, und der Fall OTA-SCI-0107 zeigt, dass unverifizierte Journal-Referenzen im Archiv ein wiederkehrender Fehlermodus sind. Der Befund ist ein 2026er-Paper in einem sich bewegenden Feld; die naechste Wiedervorlage ist gesetzt, der Realteil aber nie gegen die Primaerliteratur und die frueheren Károlyházy-Grenzen gestellt worden.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "OFFEN"
+  ],
+  "real_world_anchor": "Primaere Dekohaerenz-/Kollapsmodell-Literatur: das Original- und die generalisierten Károlyházy-Modelle (Károlyházy; Diósi) und die bereits publizierten Cold-Atom-Interferometrie-Grenzen (Bilardello et al. 2016/2018); der reale CSL-Parameterraum (r_C, lambda) mit seinen Nicht-Markovschen Erweiterungen und bestehenden experimentellen Grenzen; die reale Detektor- und Kollaborationslandschaft am INFN Gran Sasso (VIP-2 mit Silizium-Drift-Detektoren; Germanium-Niedriguntergrunddetektoren von GERDA/LEGEND); die Publikationslage von New Journal of Physics 28 (2026) und die arXiv-Kennung 2601.00651.",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.7875,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein vorheriger Topic behandelt Dekohaerenz-, Kollaps- oder Károlyházy-Modelle; die naechstliegenden Eintraege (RES-20260920-D8270DC5, RES-20261004-12206595, RES-20260920-1C540EFB) betreffen Kosmologie-, Geodynamo- und Thermoarchitektur-Fragen. Neu ist insbesondere die Pruefung, ob eine experimentelle untere Schranke gegen eine theoretische obere Schranke ueberhaupt einen Modellklassen-Ausschluss traegt - eine methodische Frage, die in keinem bisherigen Audit gestellt wurde.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 110,
+    "quality_flags": [
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "bc24edc25831d82c"
+}
