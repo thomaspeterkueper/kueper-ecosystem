@@ -53,9 +53,11 @@ def gh(token: str, method: str, path: str, body: dict[str, Any] | None = None) -
         ) from exc
 
 
-def run(cmd: list[str], cwd: Path | None = None) -> str:
+def run(cmd: list[str], cwd: Path | None = None, stdin: str | None = None) -> str:
+    # Prompts gehen über stdin, nicht argv: lange Prompts sprengen sonst ARG_MAX (E2BIG).
     cp = subprocess.run(
         cmd,
+        input=stdin,
         cwd=str(cwd) if cwd else None,
         text=True,
         stdout=subprocess.PIPE,
@@ -259,7 +261,7 @@ def main() -> int:
         source_ref = run(["git", "rev-parse", "HEAD"], cwd=temp).strip()
         workqueue = build_workqueue(temp)
         agent_cmd = os.environ.get("KUEPER_DISCOVERY_AGENT_CMD", "claude -p --dangerously-skip-permissions").split()
-        run(agent_cmd + [prompt(workqueue, previous)], cwd=temp)
+        run(agent_cmd, cwd=temp, stdin=prompt(workqueue, previous))
         proposal = temp / ".kueper-ota-workqueue-discovery.json"
         if not proposal.exists():
             raise RuntimeError("agent did not create .kueper-ota-workqueue-discovery.json")

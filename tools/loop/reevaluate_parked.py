@@ -45,8 +45,9 @@ def gh(token:str, method:str, path:str, body:dict[str,Any]|None=None)->Any:
         payload = exc.read().decode(errors="replace")
         raise RuntimeError(f"GitHub {method} {path}: HTTP {exc.code}: {payload}") from exc
 
-def run(cmd:list[str], cwd:Path|None=None, check=True):
-    cp = subprocess.run(cmd, cwd=str(cwd) if cwd else None, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+def run(cmd:list[str], cwd:Path|None=None, check=True, stdin:str|None=None):
+    # Prompt über stdin statt argv (ARG_MAX/E2BIG).
+    cp = subprocess.run(cmd, input=stdin, cwd=str(cwd) if cwd else None, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     if check and cp.returncode: raise RuntimeError(cp.stdout)
     return cp
 
@@ -115,7 +116,7 @@ def assess(token,p,branch,item,payload,text):
     try:
         run(["git","clone","--quiet","--branch",branch,"--single-branch",auth_url(p["repository"],token),str(root)])
         cmd=shlex.split(os.environ.get("KUEPER_PARKED_AGENT_CMD","claude -p --dangerously-skip-permissions"))
-        cp=run(cmd+[prompt(p["repository"],text)],cwd=root,check=False)
+        cp=run(cmd,cwd=root,check=False,stdin=prompt(p["repository"],text))
         if cp.returncode: return {"task":item["name"],"result":"assessment-failed","error":(cp.stdout or "")[-2000:]}
         jf=root/".parked-assessment.json"
         if not jf.exists(): return {"task":item["name"],"result":"assessment-missing"}
