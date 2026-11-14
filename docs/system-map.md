@@ -99,7 +99,17 @@ Praktisch:
 - `noxiagame` darf Wissen spielerisch anwenden.
 - `overtime-archive.org` darf fiktionale Kontexte auf reale Grundlagen zurückführen.
 
-## 5. Nicht-Ziele dieser Systemkarte
+## 5. Cross-Repository-Programme
+
+Cross-Repository-Programme bündeln Zuständigkeiten mehrerer Repositories, ohne die
+Source-of-Truth-Grenzen zu verschieben. Registrierung und Querverweise liegen in
+[`docs/programs/README.md`](programs/README.md).
+
+| Programm | Rolle | Registrierung |
+|---|---|---|
+| Living Infrastructure | Integrationsschicht für Mykologie/Bodenökologie, geschlossene Lebenserhaltung, Landwirtschaft, Abfall/Recycling, Planetare Evolution und künftige Ecopoiesis | [`docs/programs/living-infrastructure.md`](programs/living-infrastructure.md) |
+
+## 6. Nicht-Ziele dieser Systemkarte
 
 Diese Datei entscheidet noch nicht im Detail über:
 

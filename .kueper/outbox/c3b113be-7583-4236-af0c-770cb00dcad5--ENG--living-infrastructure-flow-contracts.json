@@ -1,0 +1,11 @@
+{
+  "target": "ENG",
+  "title": "Living-Infrastructure conserved-flow and system contracts",
+  "reason": "Living Infrastructure was registered in kueper-ecosystem (docs/programs/living-infrastructure.md) as the integration layer joining mycology/soil ecology, closed-loop life support, agriculture, waste/recycling, Planetary Evolution and future ecopoiesis. Engineering owns the conserved-flow and system contracts, but no stable contract currently exists for the shared mass, water, carbon/nutrient and energy reservoirs that KG identities and downstream Universe/Game consumers must reference. Without it, each domain would create duplicate resource counters and incompatible process boundaries.",
+  "requested_change": "Define the smallest stable living-infrastructure contract in kueper-engineering. Cover conserved reservoirs and flows (mass, water, carbon/nutrients, energy), process boundaries for mycology/soil ecology, closed-loop life support, agriculture and waste/recycling, and interface points to the Energy Grid Layer and Mars Settlement Systems Kernel. Reuse the settlement kernel's shared reservoirs instead of introducing parallel counters; state units, fidelity and resilience assumptions; record open assumptions explicitly. Reference the existing mycelium-material research (docs/research/MYCO-0001-pilzbasierte-baustoffe-materialkreislaeufe.md) rather than duplicating it. Do not define game values or canon.",
+  "expected_result": "kueper-engineering publishes a reviewed living-infrastructure flow/system contract naming reservoirs, process boundaries, units, interfaces and open assumptions, so KG can map canonical terms and Universe/Game can consume the contract without inventing duplicate resource accounting.",
+  "priority": "high",
+  "parent_task": "c3b113be-7583-4236-af0c-770cb00dcad5",
+  "depth": 1,
+  "affects": ["ENG", "KG", "ECO"]
+}
