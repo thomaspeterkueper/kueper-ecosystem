@@ -1,4 +1,4 @@
-# Living Infrastructure — Programmregistrierung
+# Living Infrastructure – Programmregistrierung
 
 Status: registriert (2026-11-14)  
 Repository: `kueper-ecosystem`  
@@ -37,7 +37,7 @@ ersetzt keine der beteiligten Domänen.
 | `noxia-universe` (`NXU`) | Historische und kulturelle Konsequenzen | Siedlungsgeschichte, Institutionen, Kultur und Konflikte, die aus lebender Infrastruktur folgen; keine technische Dimensionierung |
 | `noxiagame` (`NOXIA`) | Spielerische Schleifen | Player-facing Loops, Balancing, UX und Lernmodule auf Basis stabiler Verträge; keine kanonischen Definitionen |
 | `overtime-archive.org` (`OTA`) | Evidenz | Provenienz, Reifegrad, Unsicherheit und Konsolidierung der Forschung, einschließlich früherer Mars-Pilz-Arbeiten |
-| `noxia-realtime` | — | erst nach stabilen Verträgen; derzeit nicht adressiert |
+| `noxia-realtime` | – | erst nach stabilen Verträgen; derzeit nicht adressiert |
 
 ## 4. Integrations- und Ableitungsrichtung
 
@@ -63,7 +63,7 @@ eigene Ressourcenzähler oder Begriffe zu duplizieren.
 | Robotics / MiniNode | `external-tasks/open/EXT-ENG-ECO-20260924-robotics-program-routing.md` | Physische Operationen und Automatisierung konsumieren die Flussverträge; keine Voraussetzung für die Registrierung. |
 | Geschlossene Lebenserhaltung, Landwirtschaft, Abfall/Recycling | [`reviews/2026-11-13-KUE-SCI-0172-2026-DE.md`](../../reviews/2026-11-13-KUE-SCI-0172-2026-DE.md) | Noch kein eigenes Programm-Request; als Bausteine hier und im Mars Settlement Kernel geführt. Evidenzhoheit bleibt OTA. |
 | Myzelbaustoffe / naturverbundenes Bauen | [`reviews/2027-10-10-myzelbaustoffe-naturverbundenes-bauen.md`](../../reviews/2027-10-10-myzelbaustoffe-naturverbundenes-bauen.md) | Bestehender Querbezug zu ENG (`MYCO-0001`) und NXU; zeigt vorhandene Myzel-Forschung und wird 2027 überprüft. |
-| `noxia-realtime` | — | Keine Adressierung, bis stabile Verträge vorliegen. |
+| `noxia-realtime` | – | Keine Adressierung, bis stabile Verträge vorliegen. |
 
 ## 6. Regeln und Abgrenzungen
 

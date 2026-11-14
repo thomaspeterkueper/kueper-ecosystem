@@ -53,7 +53,7 @@ Querschnittsprogramm über mehrere Repositories. Registrierung und Zuständigkei
 
 ## Erledigt
 
-Status: done – Ökosystem-Kreislauf (Claude), 14.11.2026.
+Status: done – Agent Worker V7.2 (DeepSeek), 14.11.2026; zweites Review Ökosystem-Kreislauf (Claude).
 
 ## Umgesetzt
 
