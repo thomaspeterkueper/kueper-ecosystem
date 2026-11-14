@@ -29,8 +29,9 @@ def gh(token:str,method:str,path:str,body:dict[str,Any]|None=None)->Any:
     except urllib.error.HTTPError as exc:
         raise RuntimeError(f"GitHub HTTP {exc.code}: {exc.read().decode(errors='replace')}") from exc
 
-def run(cmd:list[str],cwd:Path|None=None):
-    cp=subprocess.run(cmd,cwd=str(cwd) if cwd else None,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+def run(cmd:list[str],cwd:Path|None=None,stdin:str|None=None):
+    # Prompt über stdin statt argv (ARG_MAX/E2BIG).
+    cp=subprocess.run(cmd,input=stdin,cwd=str(cwd) if cwd else None,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
     if cp.returncode:raise RuntimeError(cp.stdout)
     return cp.stdout
 
@@ -134,7 +135,7 @@ def main()->int:
         run(["git","clone","--quiet","--depth","1",auth_url(project["repository"],token),str(root)])
         source_ref=run(["git","rev-parse","HEAD"],cwd=root).strip()
         cmd=os.environ.get("KUEPER_DISCOVERY_AGENT_CMD","claude -p --dangerously-skip-permissions").split()
-        run(cmd+[prompt(project,choice.get("languages",POLICY["default_languages"]),profile_name,profile,previous)],cwd=root)
+        run(cmd,cwd=root,stdin=prompt(project,choice.get("languages",POLICY["default_languages"]),profile_name,profile,previous))
         f=root/".kueper-discovery.json"
         if not f.exists():raise RuntimeError("agent did not create .kueper-discovery.json")
         data=json.loads(f.read_text(encoding="utf-8"))
