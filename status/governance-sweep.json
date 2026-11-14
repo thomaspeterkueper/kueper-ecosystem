@@ -1,18 +1,127 @@
 {
-  "generated_at": "2026-11-13T14:28:30.750239+00:00",
+  "generated_at": "2026-11-14T13:24:29.818954+00:00",
   "findings": [
     {
-      "id": "55953b06ceaf",
+      "id": "c4ce2fef7bb5",
       "category": "task_addressed_to_eco",
       "severity": "info",
-      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ENG-ECO-20261002-kueper-products-bootstrap.md"
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ENG-ECO-20260924-robotics-program-routing.md"
     },
     {
-      "id": "6565a67e7b41",
+      "id": "eeca1e181c3c",
       "category": "task_addressed_to_eco",
       "severity": "info",
-      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-KUE-ECO-20260924-001.md"
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ENG-ECO-20260925-energy-grid-learning-routing.md"
+    },
+    {
+      "id": "e7a855e9599d",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260925-adaptive-industry-routing.md"
+    },
+    {
+      "id": "388da7b8cd8e",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260925-living-infrastructure-integration.md"
+    },
+    {
+      "id": "f1d29e2c2dad",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260925-mycology-ecopoiesis-routing.md"
+    },
+    {
+      "id": "15b73164e731",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260925-planetary-architecture-routing.md"
+    },
+    {
+      "id": "57dd80ab507c",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260925-planetary-evolution-routing.md"
+    },
+    {
+      "id": "9bd77c089cfc",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260925-planetary-remote-sensing-routing.md"
+    },
+    {
+      "id": "c85a7aef8ced",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260927-mars-settlement-kernel-routing.md"
+    },
+    {
+      "id": "11d5e79bcd0d",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NXU-ECO-20260921-piazzi-lights-engineering-handoff.md"
     }
   ],
-  "new_since_last_run": []
+  "new_since_last_run": [
+    {
+      "id": "c4ce2fef7bb5",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ENG-ECO-20260924-robotics-program-routing.md"
+    },
+    {
+      "id": "eeca1e181c3c",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ENG-ECO-20260925-energy-grid-learning-routing.md"
+    },
+    {
+      "id": "e7a855e9599d",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260925-adaptive-industry-routing.md"
+    },
+    {
+      "id": "388da7b8cd8e",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260925-living-infrastructure-integration.md"
+    },
+    {
+      "id": "f1d29e2c2dad",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260925-mycology-ecopoiesis-routing.md"
+    },
+    {
+      "id": "15b73164e731",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260925-planetary-architecture-routing.md"
+    },
+    {
+      "id": "57dd80ab507c",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260925-planetary-evolution-routing.md"
+    },
+    {
+      "id": "9bd77c089cfc",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260925-planetary-remote-sensing-routing.md"
+    },
+    {
+      "id": "c85a7aef8ced",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20260927-mars-settlement-kernel-routing.md"
+    },
+    {
+      "id": "11d5e79bcd0d",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NXU-ECO-20260921-piazzi-lights-engineering-handoff.md"
+    }
+  ]
 }
