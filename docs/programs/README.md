@@ -17,6 +17,7 @@ als External Tasks.
 | Planetary Evolution / Geosphäre–Biosphäre | Gekoppelte Entwicklung von Geo-, Hydro-, Atmo- und Biosphäre über Deep Time; Evidenz, Kanon, Generierung und Rekonstruktion | [`planetary-evolution.md`](planetary-evolution.md) | registriert 2026-11-14 |
 | Planetare Fernerkundung / Beobachtende Astronomie | Erkenntniskette von der physikalischen Eigenschaft über Messung bis zur Schlussfolgerung; Instrumente, Entdeckungsgeschichte, Beobachtungs-Gameplay | [`planetary-remote-sensing.md`](planetary-remote-sensing.md) | registriert 2026-11-14 |
 | Planetensystem-Architekturen (nicht-koplanar/retrograd) | Bahnebenen, Neigungen und rückläufige Umläufe von der Evidenz über Kanon und Bahnmechanik bis zu Generierung und Lernmodul | [`planetary-architecture.md`](planetary-architecture.md) | registriert 2026-11-15 |
+| Adaptive Industry | Adaptive Fertigung, digitale Zwillinge und Physical AI von der Evidenz über Anlagen- und Steuerungsarchitektur bis zu Produktions-Gameplay | [`adaptive-industry.md`](adaptive-industry.md) | registriert 2026-11-15 |
 
 ## Aufnahme weiterer Programme
 

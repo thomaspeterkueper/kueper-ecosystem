@@ -74,7 +74,7 @@ Prozessidentitäten), `overtime-archive.org` `EXT-ECO-OTA-20261114-001`
 | Mars Settlement Systems Kernel | `external-tasks/open/EXT-NOXIA-ECO-20260927-mars-settlement-kernel-routing.md`; ENG `systems/mars-settlement-systems-kernel-r1.md` | Gemeinsame Reservoire und Flüsse; keine doppelten Ressourcenzähler |
 | Planetary Evolution / Geosphäre–Biosphäre | [`planetary-evolution.md`](planetary-evolution.md) | Langfristige Randbedingungen; Biosphären und künftiges Terraforming |
 | Geschlossene Lebenserhaltung, Landwirtschaft, Abfall/Recycling | ENG `ENG-SYS-ECLSS-0001`; Living Infrastructure | Bausteine, die Substrat- und Nährstoffkreisläufe teilen |
-| Ressourcen und Habitate | Mars Settlement Kernel; Adaptive Industry (`external-tasks/open/EXT-NOXIA-ECO-20260925-adaptive-industry-routing.md`) | Material- und Prozessschnittstellen über KG-Identitäten und ENG-Verträge |
+| Ressourcen und Habitate | Mars Settlement Kernel; Adaptive Industry ([`adaptive-industry.md`](adaptive-industry.md)) | Material- und Prozessschnittstellen über KG-Identitäten und ENG-Verträge |
 | Myzelbaustoffe | [`reviews/2027-10-10-myzelbaustoffe-naturverbundenes-bauen.md`](../../reviews/2027-10-10-myzelbaustoffe-naturverbundenes-bauen.md); ENG `MYCO-0001` | Bestehende Myzel-Forschung, wird referenziert statt dupliziert |
 
 ## 6. Regeln und Abgrenzungen
