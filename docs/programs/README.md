@@ -14,6 +14,7 @@ als External Tasks.
 |---|---|---|---|
 | Living Infrastructure | Integrationsschicht für Mykologie/Bodenökologie, geschlossene Lebenserhaltung, Landwirtschaft, Abfall/Recycling, Planetare Evolution und künftige Ecopoiesis | [`living-infrastructure.md`](living-infrastructure.md) | registriert 2026-11-14 |
 | Mykologie / Bodenökologie / Ecopoiesis | Fachdomäne Pilze, Myzel, Bodenleben und kontrollierte Ecopoiesis; nutzt die Flüsse von Living Infrastructure | [`mycology-soil-ecopoiesis.md`](mycology-soil-ecopoiesis.md) | registriert 2026-11-14 |
+| Planetary Evolution / Geosphäre–Biosphäre | Gekoppelte Entwicklung von Geo-, Hydro-, Atmo- und Biosphäre über Deep Time; Evidenz, Kanon, Generierung und Rekonstruktion | [`planetary-evolution.md`](planetary-evolution.md) | registriert 2026-11-14 |
 
 ## Aufnahme weiterer Programme
 

@@ -109,6 +109,7 @@ Source-of-Truth-Grenzen zu verschieben. Registrierung und Querverweise liegen in
 |---|---|---|
 | Living Infrastructure | Integrationsschicht für Mykologie/Bodenökologie, geschlossene Lebenserhaltung, Landwirtschaft, Abfall/Recycling, Planetare Evolution und künftige Ecopoiesis | [`docs/programs/living-infrastructure.md`](programs/living-infrastructure.md) |
 | Mykologie / Bodenökologie / Ecopoiesis | Fachdomäne Pilze, Myzel, Bodenleben und kontrollierte Ecopoiesis; nutzt die Flüsse von Living Infrastructure | [`docs/programs/mycology-soil-ecopoiesis.md`](programs/mycology-soil-ecopoiesis.md) |
+| Planetary Evolution / Geosphäre–Biosphäre | Gekoppelte Entwicklung von Geo-, Hydro-, Atmo- und Biosphäre über Deep Time; Evidenz, Kanon, Generierung und Rekonstruktion | [`docs/programs/planetary-evolution.md`](programs/planetary-evolution.md) |
 
 ## 6. Nicht-Ziele dieser Systemkarte
 
