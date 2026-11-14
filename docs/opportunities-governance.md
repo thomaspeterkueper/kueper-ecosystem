@@ -15,12 +15,17 @@ Dieses Dokument beschreibt den **gemeinsamen Metadatenvertrag** für Förderprog
 - `eligibility`: `eligible | partner_required | ineligible | unclear`
 - `eligibility_reason`: nachvollziehbarer Grund, kein bloßer Score
 - `eligibility_checked_at`: Prüfdatum (ISO-8601)
-- `projects`: Liste vorhandener Projekt-/Repository-IDs
-- `owner`: verantwortliche Rolle oder Person für die nächste Entscheidung
+- `projects`: Liste von Projekt-IDs aus `registry/projects.json` (Feld `id`, z. B. `knowledge-graph`, `noxia`), keine Repository-Namen
+- `topics`: Liste von Themen-Schlagworten (Freitext v0.1; spätere Bindung an KG-Domains offen)
+- `call_round`: Ausschreibungsrunde bzw. Ausgabejahr (z. B. `2027`); Teil des Dedup-Schlüssels (Regel 5), `null` nur bei fortlaufend offenen Programmen
+- `owner`: interne Rolle oder Person für die nächste Entscheidung
+- `effort`: `low | medium | high | unknown` plus `effort_note` (Begründung, z. B. geschätzte Personentage)
+- `assessment`: getrennte Bewertungsdimensionen nach Regel 3, je Dimension `rating` (`low | medium | high | unknown`) und `reason`; Dimensionen: `research_fit`, `validation_level`, `benefit`, `visibility`, `collaboration_potential`, `ip_risk`. Vor dem Eligibility-Gate alle `unknown`.
+- `status_history`: Auditliste nach Regel 6, je Eintrag `at` (ISO-8601), `by`, `from`, `to`, `reason`; der erste Eintrag hat `from: null`
 
 Alle Pflichtfelder müssen in jedem Datensatz vorhanden sein. `source_checked_at` und `eligibility_checked_at` dürfen nur dann `null` sein, wenn noch keine offizielle Quelle geprüft wurde; dann gilt zwingend `eligibility: unclear` (siehe Regel 1 und 2).
 
-Optionale Felder: `deadline_at` mit Zeitzone; `funding_amount` plus Währung; `country`; `language`; `partner_requirements`; `degree_requirements`; `publication_requirements`; `institution_requirements`; `residency_requirements`; `legal_form_requirements`; `allowed_ai_use`; `ip_terms`; `submission_url`; `evidence_refs` (kanonische IDs/URLs); `notes`; `next_action`; `last_reviewed_at`.
+Optionale Felder: `deadline_at` mit Zeitzone; `contact` (externer Ansprechpartner beim Ausrichter, nur dienstliche Kontaktangaben aus der offiziellen Quelle); `funding_amount` plus Währung; `country`; `language`; `partner_requirements`; `degree_requirements`; `publication_requirements`; `institution_requirements`; `residency_requirements`; `legal_form_requirements`; `allowed_ai_use`; `ip_terms`; `submission_url`; `evidence_refs` (kanonische IDs/URLs); `notes`; `next_action`; `last_reviewed_at`.
 
 ## ID-Vergabe
 
@@ -33,10 +38,10 @@ Optionale Felder: `deadline_at` mit Zeitzone; `funding_amount` plus Währung; `c
 
 1. Vor Bewertung müssen **offizielle** Teilnahmebedingungen mit Abrufdatum hinterlegt werden. Die Einreichungsfrist wird als exakte lokale Zeit mit Zeitzone erfasst; ist sie nicht bekannt, `deadline_at` nicht erfinden.
 2. **Eligibility ist ein Gate, keine gewichtete Punktzahl.** Fehlen Nachweise, ist der Status `unclear`; erforderlicher eigener Hochschulabschluss fehlt ⇒ `ineligible`, sofern es keine legitime alternative Bewerberkonstellation gibt. `partner_required` nur bei belegbar zulässiger kooperativer Bewerbung, nicht zur Umgehung von Regeln.
-3. Erst danach: fachlicher Fit, Forschungs-/Validierungsreife, Aufwand, Frist, Nutzen, IP-Risiko und Sichtbarkeit als getrennte, dokumentierte Dimensionen beurteilen. Keine aggregierte Scheingenauigkeit ohne Kalibrierung.
+3. Erst danach: fachlicher Fit, Forschungs-/Validierungsreife, Nutzen, Sichtbarkeit, Kooperationspotenzial und IP-Risiko (Feld `assessment`), Aufwand (`effort`) und Frist (`deadline_at`) als getrennte, dokumentierte Dimensionen beurteilen. Keine aggregierte Scheingenauigkeit ohne Kalibrierung.
 4. Evidenzstatus strikt trennen: `idea | hypothesis | simulated | experimentally_tested | independently_replicated | peer_reviewed`. Eine Simulation ersetzt weder Messung noch unabhängige Replikation.
 5. Projektbezüge nur als kanonische Referenzen. Duplikate über normierte `official_url` + Ausrichter + Ausschreibungsrunde prüfen; gleicher Preis in anderem Jahr ist nicht automatisch Duplikat.
-6. Statuswechsel auditieren (wer, wann, von/nach, Begründung). Bewerbungen werden **nie** automatisch verschickt.
+6. Statuswechsel auditieren (wer, wann, von/nach, Begründung) im Feld `status_history`. Bewerbungen werden **nie** automatisch verschickt.
 7. KI-Einsatz-, Urheber-, Datenschutz- und Publikationsregeln **je Ausschreibung** beachten. Insbesondere darf ein generativer Textentwurf nicht eingereicht werden, wenn der Wettbewerb dies untersagt.
 
 ## Testfall: Chen Institute & Science Prize 2027
@@ -52,8 +57,22 @@ status: screening
 eligibility: unclear             # Gate erst nach Prüfung der offiziellen Bedingungen
 eligibility_reason: Offizielle Teilnahmebedingungen noch nicht mit Abrufdatum hinterlegt. Hinweis aus #131 – möglicherweise formale akademische Voraussetzung, die individuell nicht erfüllt wäre; eine zulässige Partnerkonstellation wäre gesondert anhand der offiziellen Regeln zu prüfen.
 eligibility_checked_at: null
-projects: [kueper-knowledge-graph, noxiagame]
+projects: [knowledge-graph, noxia]   # IDs aus registry/projects.json
+topics: [AI-accelerated research]
+call_round: "2027"
 owner: Thomas Küper (Projekt Owner)
+effort: unknown
+effort_note: Erst nach Prüfung der offiziellen Bedingungen abschätzbar.
+assessment:                      # vor dem Eligibility-Gate alle unknown (Regel 3)
+  research_fit: {rating: unknown, reason: ""}
+  validation_level: {rating: unknown, reason: ""}
+  benefit: {rating: unknown, reason: ""}
+  visibility: {rating: unknown, reason: ""}
+  collaboration_potential: {rating: unknown, reason: ""}
+  ip_risk: {rating: unknown, reason: ""}
+status_history:
+  - {at: "2026-11-09", by: "Issue #131", from: null, to: discovered, reason: "Hinweis im Issue"}
+  - {at: "2026-11-09", by: "Issue #131", from: discovered, to: screening, reason: "Referenzfall für Filterlogik"}
 deadline_at: null                # Mitteilung nennt 2026-12-13; Uhrzeit und Zeitzone nicht bestätigt
 evidence_refs: [https://github.com/thomaspeterkueper/kueper-ecosystem/issues/131]
 next_action: Offizielle Teilnahmebedingungen abrufen, Abrufdatum eintragen, dann Eligibility-Gate entscheiden.
