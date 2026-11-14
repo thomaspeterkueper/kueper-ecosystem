@@ -1,0 +1,40 @@
+{
+  "id": "RES-20261114-478CCB53",
+  "status": "queued",
+  "created": "2026-11-14T10:41:51+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/rueckuebersetzung.astro",
+  "source_ref": "7a81274bbaaa6d7863eec806cd03cf558bfe3d10",
+  "source_blob_sha": "ffb390eb735d095d51ddef31522a899cbc790eff",
+  "title": "Rückübersetzungen als reductive Paraphrase: Trägt die Zerlegung von saudade, han, hiraeth, hygge und Fernweh in Vektoren philologisch?",
+  "question": "Ist die auf rueckuebersetzung.astro angewandte Methode – ein kultur-spezifisches Lexem in eine konstruierte, endliche Vektor-Metasprache zu zerlegen – als Variante der reductiven Paraphrase (Natural Semantic Metalanguage, semantische Primitive) methodisch tragfähig, und was sagt die Kritik an NSM und am Diskurs der 'unübersetzbaren Wörter' über ihre Grenzen? Konkret zu prüfen: Sind die konkreten Glossen philologisch haltbar oder folk-linguistische Klischees – insbesondere 'han' als 'kollektiver Schmerz, der in veränderter Gestalt wiederkehrt' (Sa-h-Ori), 'saudade' als 'Hunger nach dem Sehen, der im Zerfall liegt' (Ku-Saha-h) und 'hiraeth' als 'Hunger nach einer verlorenen Ganzheit' (Ku-Ona-h)? Welche dieser Zerlegungen lassen sich als Interpretation verteidigen, welche müssen als populäre Mystifikation gekennzeichnet werden, und ändert sich dadurch die Statusangabe der Seite ('Mishkenaz-Interpretationen, keine etymologischen Aussagen')?",
+  "why_now": "Die Rückübersetzungsseite ist eine der fünf Hauptnavigationsseiten und wird derzeit aus thomas-kueper.de in den Kanon geführt (EXT-ECO-MISH-20260714-001, erledigt 25.10.2026). Sie präsentiert Zerlegungen realer Kulturwörter als Werkzeug, ohne einen externen Maßstab für die Validität dieser Zerlegungen zu nennen; ein Teil der Glossen (han, saudade) ist in der Forschung umstritten. Da die Seite öffentlich Lehrmaterial ist, ist die Grenze zwischen Interpretation und Klischee hier unmittelbar bildungsrelevant.",
+  "languages": [
+    "de",
+    "en",
+    "ko"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "attested",
+    "comparative-inference",
+    "fictional-extrapolation"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Natural Semantic Metalanguage und ihre Kritik; Philologie und Semantik der Lexeme saudade, han, hiraeth, hygge, Fernweh, Weltschmerz; Forschung zur Problematik 'unübersetzbarer Wörter'.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.7875,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260915-3ADB7DC0"
+  ],
+  "novelty_reason": "RES-20260915-3ADB7DC0 nutzt NSM als Kriterium dafür, welche der 42 Vektornamen als einfache R1-Formen taugen können; die Richtung ist dort Vektor → Benennung. Hier wird umgekehrt geprüft, ob die Zerlegung fremder Kulturlexeme in das Vektor-Inventar überhaupt ein valides Verfahren ist und ob die einzelnen Glossen philologisch stimmen. Das ist eine andere Fragestellung mit anderem Prüfobjekt (die Rückübersetzungsseite und ihre konkreten Wortdeutungen), die der frühere Kandidat nicht beantwortet.",
+  "fingerprint": "478ccb530bd29d29"
+}
