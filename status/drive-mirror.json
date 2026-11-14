@@ -40,9 +40,9 @@
     }
   },
   "lastSync": {
-    "kueper.com": "b1769820557fdbb01e6d5ba8672933dbf0c2209f",
-    "overtime-archive.org": "bb1a252c3c72dee4661da5c61af68025001c7482",
-    "kueper-ecosystem/reviews": "62bce5e39e99f706c67f45ece5e26cd687b6450d"
+    "kueper.com": "187b20399c66bde7c784d2cf49260d696fcf1fa6",
+    "overtime-archive.org": "276caf69289f13ca95e6a0c9cf5bc914d7150bca",
+    "kueper-ecosystem/reviews": "64e51cd2131bfe19477a8ecf1007a8e80cdbda51"
   },
   "documents": {
     "kueper-ecosystem/reviews/2026-10-29-KUE-SCI-0004-2026-DE.md": {
@@ -345,6 +345,46 @@
       "hash": "1c07d44a3a3169a11842d7d5ab00177bcba246ce",
       "syncedAt": "2026-11-12"
     },
+    "kueper-ecosystem/reviews/2026-11-13-KUE-SCI-0172-2026-DE.md": {
+      "fileId": "1QN88OYMLZ0Dnmu6y0bZtfAGt4GfpFDtBYlafzNhh15s",
+      "hash": "bf8e1380f17197988bfea6feacd9ec78cd111346",
+      "syncedAt": "2026-11-13"
+    },
+    "kueper-ecosystem/reviews/2026-11-13-KUE-SCI-0176-2026-DE.md": {
+      "fileId": "1mf6r8dgaEqck-tnUDBkbK2hzmwiaG6j02AAF1cFUcqs",
+      "hash": "b533162b0479eca9a3496dd5bf3aa607cc04f997",
+      "syncedAt": "2026-11-13"
+    },
+    "kueper-ecosystem/reviews/2026-11-13-OTA-SCI-0060-2026-DE.md": {
+      "fileId": "1ZDkSwHDnL9t-DeYausyeTLP1zeG2MTH3tdt_LXJ1rYU",
+      "hash": "b63aefeb19174993c00f24b1064e731faf8eb296",
+      "syncedAt": "2026-11-13"
+    },
+    "kueper-ecosystem/reviews/2026-11-13-OTA-SCI-0102-2026-DE.md": {
+      "fileId": "1vyrTO4livt94Xvnix03rEm8jPjr2yxcjG_VCotTz9p0",
+      "hash": "84c3522ac37e058a98cb84372a4e64f16df9d0b2",
+      "syncedAt": "2026-11-13"
+    },
+    "kueper-ecosystem/reviews/2026-11-14-KUE-SCI-0177-2026-DE.md": {
+      "fileId": "1PYPE5dCX00isg_BrkYwCRNGZpDVYMtzG72xqhfOhd8Q",
+      "hash": "1cec4181b77800fb6e5a3cb619923920704b83a7",
+      "syncedAt": "2026-11-14"
+    },
+    "kueper-ecosystem/reviews/2026-11-14-KUE-SCI-0178-2026-DE.md": {
+      "fileId": "1RN7H6juTGDRDTuSQUVkDtovJu6_Od69-42jGT6SMsTI",
+      "hash": "43e165605050a612cd6de63056ec776186b0facf",
+      "syncedAt": "2026-11-14"
+    },
+    "kueper-ecosystem/reviews/2026-11-14-OTA-TEC-0019-2091-DE.md": {
+      "fileId": "1bio74G1Ag-NVWWyJCaVlYmlyKQUpZpFRkUmt2HSsyxg",
+      "hash": "b044502a6040653f8bd731aad1bd432bb58eafd5",
+      "syncedAt": "2026-11-14"
+    },
+    "kueper-ecosystem/reviews/2026-11-14-OTA-TEC-0021-2025-DE.md": {
+      "fileId": "1JEv6RccTmO0WoGYFH7Q5Sa4gOANLTAgVlJqNuNxbeMg",
+      "hash": "f1188a84a6160815d23c067fdb6221cdc9069ec2",
+      "syncedAt": "2026-11-14"
+    },
     "kueper-ecosystem/reviews/2027-10-10-myzelbaustoffe-naturverbundenes-bauen.md": {
       "fileId": "1tR-agLRMFY9UHmJretJ6Dy9kJSWpaGSnwKJuJRHtIDQ",
       "hash": "106551291b8bc00191ff63d8ae58cda88fb70f24",
@@ -506,14 +546,14 @@
       "syncedAt": "2026-11-13"
     },
     "kueper.com/src/content/kue/sci/kue-sci-0177-2026-de.md": {
-      "fileId": "1pjWtl2drdUrPKZlkAKBNpj0jJmdfvFTLPakNeovE024",
-      "hash": "a7de79ce031027d48ef1b290b004e3a4a69a6bff",
-      "syncedAt": "2026-10-29"
+      "fileId": "1xLwkvaQon_aygJ6BKo6NvVB95Ryppk4Iw1qAmZq7nOM",
+      "hash": "f54c4283ba6b1483d08a15df3dfccc8cfe5a04da",
+      "syncedAt": "2026-11-14"
     },
     "kueper.com/src/content/kue/sci/kue-sci-0178-2026-de.md": {
-      "fileId": "1THSG840csrdGseGCMh9Fi1iZgh2eLkPYuk_pQDOHdBM",
-      "hash": "dc10b2ee324dfcba58770c9de2d1d6d7e857a1a8",
-      "syncedAt": "2026-10-29"
+      "fileId": "17laY5nyr81O8rY55PR7SCtMehDe4ZTkzdzrUK_5fyHU",
+      "hash": "ceeb18094f5f61406fa80908799df8966a20a9dc",
+      "syncedAt": "2026-11-14"
     },
     "kueper.com/src/content/kue/sci/kue-sci-0179-2026-de.md": {
       "fileId": "1w-mizWUDtQ5L9SjxMww6W5LlQf0fImrM8Pc_xOXaubQ",
@@ -1961,9 +2001,9 @@
       "syncedAt": "2026-11-04"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0019-2091-DE.md": {
-      "fileId": "1N8BkI3RpULKCfmafNWxIXY8MtUcY4pRCZ1ZCyvPDaFQ",
-      "hash": "620a2b247ff3909110e094a8f234bee89eec99fd",
-      "syncedAt": "2026-11-04"
+      "fileId": "1_JqcHDrjQipfZuB44DbvyHs3Da_ugQTAPZNZ-KCNjig",
+      "hash": "6237bbc32cf3c652d29b22be502e9284fd36c8a9",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0019-2095-DE.md": {
       "fileId": "1DtaRfH7p5B-a_3yq_Jo0UKJwAxIIAc9fYWtsVBKV6J0",
@@ -1976,9 +2016,9 @@
       "syncedAt": "2026-11-04"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0021-2025-DE.md": {
-      "fileId": "1J8vbEtyemuqsNWL7LvkjAR6s3V9vO_agAY48asP2rsg",
-      "hash": "ba4515edb39957e25aa0b06bd48d2f3ef68ff4da",
-      "syncedAt": "2026-11-04"
+      "fileId": "1CVUb-qllohuN-D1_JoJtNCux3pxxuJGTlA03Tv8is1I",
+      "hash": "b5cce425d96a15f91eef63576e4d4825d81c8f5b",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0022-2025-DE.md": {
       "fileId": "1WcR5c1F8DSeJCFBp1T0JfvZMskTQj2JMOiWKUg7ScnE",
@@ -2031,9 +2071,9 @@
       "syncedAt": "2026-11-04"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0029-2048-DE.md": {
-      "fileId": "1418c032dGxLiTohBzf3eqHnMhvaCDZPCuUVc5fJKcvk",
-      "hash": "4ba3fa06a42ba730378f88d3e7bcf74ff66193f2",
-      "syncedAt": "2026-11-12"
+      "fileId": "1umFzSoL1xFUFXcu-PGh2eovFY64Pa7VZgR5wDOD8lWQ",
+      "hash": "fa9934417d7a4f161af374e3a079d89e5a171bd5",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0030-2091-DE.md": {
       "fileId": "1JOvkrtaxrAlZsE4jj7qd9LqnBIJaI6wwA0pCMf0u8Tg",
@@ -2241,54 +2281,54 @@
       "syncedAt": "2026-11-05"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0112-2026-DE.md": {
-      "fileId": "15oeJAwskQZV8EkC6qN8vXo_aQ0uOFd09iShLR7tYy58",
-      "hash": "ac19c7fc21e275f3325c7483e4d8544c2d90802f",
-      "syncedAt": "2026-11-05"
+      "fileId": "14wrmvVEV0sB91NrkTQduhv0NXF7KkYcOLSBB-se5G_4",
+      "hash": "b763d111e34548a9c5bd61300a92132816e0c5ed",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0113-2026-DE.md": {
-      "fileId": "1AcTeBoeYc3cpJf4E0h8sP4WH22tvS3xeyWri0SVfEZ4",
-      "hash": "f5a8fef0a8a83654a6d1087f061335040b55df50",
-      "syncedAt": "2026-11-05"
+      "fileId": "1A-j9GZZ1Xw1Tlza7jepJ-gCyX8swQOTmwrmT6ka3B70",
+      "hash": "73bf72345272eef02f376af9160adadbd6d3146f",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0114-2026-DE.md": {
-      "fileId": "19eGioQlG_X_6F1IcvouQ-NvHAGxhSlpybF1VIgnlB54",
-      "hash": "88e399623aab65a135ea31d9c52e187d31b00d46",
-      "syncedAt": "2026-11-05"
+      "fileId": "19xeVVkmmg_chyQpTP28CCVTuwlg0qawmZO1ZvzxGn0M",
+      "hash": "13a241a4835c6471aeee47a47a0634d628a8c4cf",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0115-2026-DE.md": {
-      "fileId": "1NXwZvzXsoheshnfz1-rWbb-Gk7wXnplzVoo5DHCwHIM",
-      "hash": "acc96c0045e090dc9819e3596b36368a5b9b859f",
-      "syncedAt": "2026-11-05"
+      "fileId": "17td7a9SqirnG5kqfXWiE2V5dIJJbXYkmO7unXALZtO4",
+      "hash": "2d52eb09a502d91f64214060060c5c125964b37a",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0116-2026-DE.md": {
-      "fileId": "1sMPiOvNnI8h8C1j08sP7pbP0NiUamAXUFU6FWyNnUio",
-      "hash": "0dba9d22c96d2256669c515ce7df8965c89a21ea",
-      "syncedAt": "2026-11-05"
+      "fileId": "1tmGyEeqysV9j992GP2AkMKpp2kw_UDUug3zDKY_ffdg",
+      "hash": "ca97c8d145e9880c0d9d52959b9983ca3a49ce9d",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0117-2026-DE.md": {
-      "fileId": "1upaThdoEJPVh7tTETRkbZgbjhxqJNbMwgngf44xeGaw",
-      "hash": "47b95df3ac6dcf1d0ea4dc40fab1159e5910d6ba",
-      "syncedAt": "2026-11-05"
+      "fileId": "1kjlDKQSADTuL6q9MN514UtT9oXXjx2KqDnuxKhd5w8Y",
+      "hash": "8b963b101f1fd1409859a6c1842c2ef08a9eb5bc",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0118-2026-DE.md": {
-      "fileId": "1GX631jKIW3yQW0_I9mvj03vr7-89Z2QgQ79LsZVKecg",
-      "hash": "b91c28a6be119dfc9fb587bea115ba0dc8665e80",
-      "syncedAt": "2026-11-05"
+      "fileId": "10C1JdVjT3FxuWAJ2d7M9VlxSkWKPCM4x0cbmBe7jHMs",
+      "hash": "93fa72c1e3acb3565e35d721cc6adfa03b516eea",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0119-2026-DE.md": {
-      "fileId": "1rCpIHxg0PhGjiYHVHc_pfomyOd7I2D17lfJW0KeeCCA",
-      "hash": "1bd06a0941a6c62ed26be25bd9c924f8d170c375",
-      "syncedAt": "2026-11-05"
+      "fileId": "1KZrzunrynap8hINwSvKYxGf_GHnXvstx5y_5TqyBjRw",
+      "hash": "8098d41652e61c063d7bf29527f8f71e884612af",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0120-2026-DE.md": {
-      "fileId": "1vHl2FywzoFdAuKY1u-K0iKeg7HlZICQ4Rd30K5Ve6R4",
-      "hash": "0196a4be7652d5fe0767f7a07c690c0b73d831b4",
-      "syncedAt": "2026-11-05"
+      "fileId": "16N28QxDJ_1E-RvG7s2bibgF_mTDzA_bPr_ATKypAf1U",
+      "hash": "f4369f1180718d54975846e68043545a3cf85399",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0121-2026-DE.md": {
-      "fileId": "1kdH0MWcZ7uong6Y7c0R-RTCVoi22J9O9YjhILxqYtpM",
-      "hash": "7a0b0083d1a8ac29f2a17ccd03f0d0d502d2d1f0",
-      "syncedAt": "2026-11-05"
+      "fileId": "121t7geHDsOklRvL0JRlmcqFA9KQExjcsyp-lkywJTT0",
+      "hash": "b756ab13a91e98a0b901b78cc7d644d132f03b6e",
+      "syncedAt": "2026-11-14"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0122-2026-DE.md": {
       "fileId": "11KTrg-oNaLXWLYYl0SIEaV4H72oYKjiWueJwNKl-BCA",
@@ -2319,26 +2359,6 @@
       "fileId": "1EAu6hcQRgxGpMUOaNLLnw7YLzImgwxRzwSK3PvPEsso",
       "hash": "c21f7b7b6ac7e52db6545e16d41fb1d12d1e23b7",
       "syncedAt": "2026-11-05"
-    },
-    "kueper-ecosystem/reviews/2026-11-13-KUE-SCI-0172-2026-DE.md": {
-      "fileId": "1QN88OYMLZ0Dnmu6y0bZtfAGt4GfpFDtBYlafzNhh15s",
-      "hash": "bf8e1380f17197988bfea6feacd9ec78cd111346",
-      "syncedAt": "2026-11-13"
-    },
-    "kueper-ecosystem/reviews/2026-11-13-KUE-SCI-0176-2026-DE.md": {
-      "fileId": "1mf6r8dgaEqck-tnUDBkbK2hzmwiaG6j02AAF1cFUcqs",
-      "hash": "b533162b0479eca9a3496dd5bf3aa607cc04f997",
-      "syncedAt": "2026-11-13"
-    },
-    "kueper-ecosystem/reviews/2026-11-13-OTA-SCI-0060-2026-DE.md": {
-      "fileId": "1ZDkSwHDnL9t-DeYausyeTLP1zeG2MTH3tdt_LXJ1rYU",
-      "hash": "b63aefeb19174993c00f24b1064e731faf8eb296",
-      "syncedAt": "2026-11-13"
-    },
-    "kueper-ecosystem/reviews/2026-11-13-OTA-SCI-0102-2026-DE.md": {
-      "fileId": "1vyrTO4livt94Xvnix03rEm8jPjr2yxcjG_VCotTz9p0",
-      "hash": "84c3522ac37e058a98cb84372a4e64f16df9d0b2",
-      "syncedAt": "2026-11-13"
     }
   },
   "altbestand": {
@@ -4309,6 +4329,181 @@
         "status": "doppelt",
         "fundstelle": "overtime-archive.org/src/content/documents/OTA-RED-0025-2155-EN.md (größengleich)",
         "checkedAt": "2026-11-13"
+      },
+      "1bHMuJZqzVcmy-f87I2aEG3TrBZWBglSu": {
+        "title": "OTA-SCI-0108-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0108-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1DD7oMuuKVnKGJLIWVYlSs65uNenvGfAg": {
+        "title": "OTA-SCI-0109-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0109-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1nuliKVDn0hc4qwiY-OyDYfh08RAWStme": {
+        "title": "OTA-SCI-0111-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0111-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "12_dlDcFVH3hodR515s1oICqNjOjwtLUK": {
+        "title": "OTA-SCI-0103-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0103-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1xBHJeokwI8o8ISYdXzhp6yV_FlmSXMN0": {
+        "title": "OTA-SCI-0110-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0110-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1WpANTi0lYWWl8YN3D8tRagkSGufKqZ1p": {
+        "title": "OTA-SCI-0101-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0101-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1_ud-CZhIsVFnM6GZKiJkA-YlfBoGsadR": {
+        "title": "OTA-SCI-0100-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0100-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1gE-WL35_d0sMwDY-Og7AYjooJS96A5vc": {
+        "title": "OTA-SCI-0048-2031-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0048-2031-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "14Ckiq1MFffCN6VGec0e8TFvLw38k6kXy": {
+        "title": "OTA-SCI-0044-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0044-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1l-6YL7Xo94dLUs_3zfGi2-6YF_5v_oMb": {
+        "title": "OTA-SCI-0041-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0041-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1FuH09IQd8cH7loRtinXLYSruJ63Hs-o7": {
+        "title": "OTA-SCI-0045-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0045-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1EodFd9S-27WKVMcpnkvwH-vzXlYr9iaT": {
+        "title": "OTA-SCI-0043-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0043-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "15XbexJwbt1nq-240pqG2EU4vbg50qNER": {
+        "title": "OTA-SCI-0046-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0046-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1ksB-RNW2y-ApXQvHqJ0E0S38ES2t59ut": {
+        "title": "OTA-SCI-0042-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0042-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1RxSxJvJJXvM3GpSdLih-mZ2ehahpn6j9": {
+        "title": "OTA-SCI-0030-2090-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0030-2090-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1Kam_UxJjvmnJ37KPHkYHYRmEfhbWRPmL": {
+        "title": "OTA-SCI-0036-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0036-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1h2odiHLdCQzwzak_CeWuzMRsIyt90Scx": {
+        "title": "OTA-SCI-0030-2025-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0030-2025-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1r0QX6KdFuB5xHzg9Gx_Ob-8pN7bl5lyx": {
+        "title": "OTA-SCI-0035-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0035-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1-xc0PzSDA1ZLloCMXn8v7L4Y4M7FvoR5": {
+        "title": "OTA-SCI-0037-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0037-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1fK9B0TZVSMxKRFDRUvBgVgICjiCEitnp": {
+        "title": "OTA-SCI-0026-2048-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0026-2048-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1oVZQhDY7YUmtCaxITE275eG0XZ-7vZ9t": {
+        "title": "OTA-SCI-0023-2025-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0023-2025-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "14-1DIoqCR96LW_AnZvZXN6i5VjI9cQjW": {
+        "title": "OTA-SCI-0026-2026-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0026-2026-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1C-K_EZzgx54FfaVuscRfLgJVaTb37cQO": {
+        "title": "OTA-SCI-0027-2025-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0027-2025-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "18pJ5SlywV6wI6S2M9tc_bNH4PxE3dfui": {
+        "title": "OTA-SCI-0025-2091-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0025-2091-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
+      },
+      "1mjms4Jqvqy0vnhi9IEZHkg79chASXCjj": {
+        "title": "OTA-SCI-0029-2025-DE.md",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0029-2025-DE.md (byte-identisch)",
+        "checkedAt": "2026-11-14"
       }
     },
     "onlyInDrive": [
@@ -5356,8 +5551,8 @@
         "movedAt": "2026-11-02"
       }
     ],
-    "remainingUncheckedApprox": 208,
-    "note": "Stand 2026-11-13: 26 größengleiche .md aus _GITHUB/overtime-archive (ID 1napWe1wbAl6dJoHpRuMGMU0r3izp6W10) als doppelt nach _Kann weg verschoben (NAR, OBS, ORG, RED-0003…0025); Inhaltsgleichheit per Stichprobe ORG-0007-2031 (Volltext) bestätigt. Vollständige Auflistung des Ordners (search_files mit orderBy=modifiedTime desc und pageSize=1000 liefert alles ohne Paginierungsfehler): dort verbleiben 208 Dateien – 154 größengleich mit GitHub (v. a. SCI, TEC, HIS, FND, BIO, …), 53 mit Größenabweichung (u. a. TEC-0028/0029/0035/0123/0124, SCI-0007-Cuancoa, SCI-0017–0116 diverse, KARTE-0003, SCI-0062, BIO-0019/0024) sowie das Google Doc „OTA-SCI-0093-2026-DE – Umgebungsbeschleunigung …“ ohne GitHub-Gegenstück gleichen Namens. Die frühere Schätzung von rund 75 war zu niedrig. Ferner Unterordner kueper.com/{his,science,met,phi,obs,…} und _sync-history."
+    "remainingUncheckedApprox": 183,
+    "note": "Stand 2026-11-14: 25 größengleiche .md aus _GITHUB/overtime-archive (ID 1napWe1wbAl6dJoHpRuMGMU0r3izp6W10) heruntergeladen und byte-identisch mit GitHub bestätigt, als doppelt nach _Kann weg verschoben (OTA-SCI-0023…0111). Dort verbleiben 183 Dateien – 129 größengleich mit GitHub, 53 mit Größenabweichung (u. a. TEC-0028/0029/0035/0123/0124, SCI-0007-Cuancoa, SCI-0017–0116 diverse, KARTE-0003, SCI-0062, BIO-0019/0024) sowie das Google Doc „OTA-SCI-0093-2026-DE – Umgebungsbeschleunigung …“ ohne GitHub-Gegenstück gleichen Namens. Ferner Unterordner kueper.com/{his,science,met,phi,obs,…} und _sync-history. Hinweis: create_file mit Dateireferenz (base64Content = sha256:…:Pfad) funktioniert; fileSize zeigt direkt nach dem Anlegen 1, der Inhalt wird kurz danach befüllt."
   },
   "encodingDefects": {
     "_comment": "Alle 14 Quelldateien am 2026-10-31 auf GitHub repariert (Rückumwandlung cp1252->UTF-8). Die 7 Dateien in notMirrored werden beim nächsten Lauf gespiegelt; SCI-0038-EN: „⁶“ und „μ“ aus Mustern erschlossen. notMirrored am 2026-11-01 gespiegelt.",
