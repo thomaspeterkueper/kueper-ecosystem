@@ -11,6 +11,12 @@ on:
 permissions:
   contents: read
 
+# Cancel only an older validation of the same PR. Manual diagnostic runs
+# and different PRs must never cancel one another.
+concurrency:
+  group: review-head-dedup-${{ github.event_name }}-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   unit-tests:
     runs-on: ubuntu-latest
