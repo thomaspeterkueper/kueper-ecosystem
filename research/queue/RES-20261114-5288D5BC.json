@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261114-5288D5BC",
+  "status": "queued",
+  "created": "2026-11-14T10:41:49+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/grammatik.astro",
+  "source_ref": "7a81274bbaaa6d7863eec806cd03cf558bfe3d10",
+  "source_blob_sha": "9eebe240f525d63e64908915a6f85ff2614b990d",
+  "title": "Markierter Schweigeplatz: Ist die ausgelassene Aspektkategorie eine belegte grammatische Kategorie – und wie notiert man sie?",
+  "question": "Welche dokumentierten Sprachen behandeln die Auslassung eines in ihrem Paradigma erwartbaren Markers als eigene, vom Sprecher gewählte Bedeutungsposition – etwa als markierte Null, als Evidenzialität der Nicht-Information, als unmarkierten Default oder als pragmatisch bedeutsames Schweigen –, und wie unterscheiden Referenzgrammatiken und Typologie solche Fälle von bloßer Ellipse, Paradigmenlücke und reinem Default-Null? Welche Notationskonventionen haben sich für markierte Leerstellen in deskriptiven Grammatiken etabliert? Konkret zu prüfen: Deckt der in grammatik.astro §3 gesetzte 'Schweigeplatz' (bewusste Auslassung von -om/-ath/-il, ausdrücklich nicht -il) einen anerkannten Funktionsbereich ab, oder ist er als Kanon-Setzung zu kennzeichnen – und welche Notation ist für §10 sowie für den Wörterbucheintrag 'Mitleid' tragfähig?",
+  "why_now": "Der erledigte Task EXT-TKD-MISH-20261101-001 hat den Schweigeplatz als Anwendungsfall in Grammatik und Wörterbuch etabliert, aber ausdrücklich offengelassen, wie er notiert wird ('Kein Beispielsatz, da die Notation des markierten Schweigeplatzes noch nicht festgelegt ist'). Gleichzeitig behauptet die Grammatik 'Der Schweigeplatz selbst bleibt markiert' und führt die Kombinatorik in §10 als offen. Die Seite steht damit vor einer Kanonentscheidung, für die jede externe Vergleichsgrundlage fehlt.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "historical-linguistic",
+  "claim_classes": [
+    "comparative-inference",
+    "fictional-extrapolation",
+    "open"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Typologie der Nullmarkierung und Markiertheit, Evidenzialität und 'Nicht-Information', Paradigmenlücken und Default-Kategorien sowie interaktionale Linguistik des Schweigens; Notationspraxis deskriptiver Grammatiken.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.8375,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Kandidat prüft die Auslassung als Paradigmenwert. RES-20260915-D8CB8EC4 untersucht die Semantik von -om/-ath/-il/-tum gegen Reality-Status-Kategorien (Frustrativ, Iamitiv, Avertiv, Absentiv), RES-20261011-6B557248 die Slot-Ordnung; die markierte Null, ihre Abgrenzung von Ellipse und Default und ihre Notation sind in beiden nicht Gegenstand. Die Frage ist auch keine Validierung des Kanons: Getestet wird, ob die Kategorie extern existiert; falls nicht, muss sie als Setzung markiert werden.",
+  "fingerprint": "5288d5bc86729278"
+}
