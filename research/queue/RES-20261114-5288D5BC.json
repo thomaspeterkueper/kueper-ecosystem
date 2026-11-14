@@ -1,6 +1,6 @@
 {
   "id": "RES-20261114-5288D5BC",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-14T10:41:49+00:00",
   "source_project": "mishkenaz",
   "source_repository": "thomaspeterkueper/mishkenaz.org",
@@ -33,5 +33,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früherer Kandidat prüft die Auslassung als Paradigmenwert. RES-20260915-D8CB8EC4 untersucht die Semantik von -om/-ath/-il/-tum gegen Reality-Status-Kategorien (Frustrativ, Iamitiv, Avertiv, Absentiv), RES-20261011-6B557248 die Slot-Ordnung; die markierte Null, ihre Abgrenzung von Ellipse und Default und ihre Notation sind in beiden nicht Gegenstand. Die Frage ist auch keine Validierung des Kanons: Getestet wird, ob die Kategorie extern existiert; falls nicht, muss sie als Setzung markiert werden.",
-  "fingerprint": "5288d5bc86729278"
+  "fingerprint": "5288d5bc86729278",
+  "updated_at": "2026-11-14T10:49:57+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/297"
 }
