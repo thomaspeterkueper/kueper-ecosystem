@@ -12,7 +12,7 @@ on:
         required: false
         default: ""
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "17 * * * *"
 
 permissions:
   contents: read
@@ -55,30 +55,36 @@ jobs:
             --scheduler-run-id "$SCHEDULER_RUN_ID" \
             --source "$source_name"
 
+      - name: Peek runnable queue before expensive setup
+        id: probe
+        if: steps.lease.outputs.should_run == 'true'
+        shell: bash
+        run: python3 tools/scheduler/run_guard.py probe
+
       - name: Explain duplicate skip
         if: steps.lease.outputs.should_run != 'true'
         run: |
           echo "Scheduler guard skipped this execution: ${{ steps.lease.outputs.skip_reason }}"
 
       - name: Set up Python
-        if: steps.lease.outputs.should_run == 'true'
+        if: steps.lease.outputs.should_run == 'true' && steps.probe.outputs.has_work == 'true'
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Set up Node
-        if: steps.lease.outputs.should_run == 'true'
+        if: steps.lease.outputs.should_run == 'true' && steps.probe.outputs.has_work == 'true'
         uses: actions/setup-node@v6
         with:
           node-version: "22"
           package-manager-cache: false
 
       - name: Install Claude Code agent frontend
-        if: steps.lease.outputs.should_run == 'true'
+        if: steps.lease.outputs.should_run == 'true' && steps.probe.outputs.has_work == 'true'
         run: npm install --global @anthropic-ai/claude-code
 
       - name: Verify required secrets
-        if: steps.lease.outputs.should_run == 'true'
+        if: steps.lease.outputs.should_run == 'true' && steps.probe.outputs.has_work == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -99,7 +105,7 @@ jobs:
           fi
 
       - name: Verify runtime
-        if: steps.lease.outputs.should_run == 'true'
+        if: steps.lease.outputs.should_run == 'true' && steps.probe.outputs.has_work == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -110,11 +116,11 @@ jobs:
           gh --version
 
       - name: Test scheduler guard
-        if: steps.lease.outputs.should_run == 'true'
+        if: steps.lease.outputs.should_run == 'true' && steps.probe.outputs.has_work == 'true'
         run: python -m unittest tools/scheduler/test_run_guard.py
 
       - name: Test provider router and mutation policy
-        if: steps.lease.outputs.should_run == 'true'
+        if: steps.lease.outputs.should_run == 'true' && steps.probe.outputs.has_work == 'true'
         run: |
           python -m unittest tools/worker/test_provider_router.py
           python -m unittest tools/worker/test_git_credentials.py
@@ -123,7 +129,7 @@ jobs:
           python -m unittest tools/worker/test_agent_worker_v76.py
 
       - name: Process bounded task batch
-        if: steps.lease.outputs.should_run == 'true'
+        if: steps.lease.outputs.should_run == 'true' && steps.probe.outputs.has_work == 'true'
         shell: bash
         run: |
           set -euo pipefail
