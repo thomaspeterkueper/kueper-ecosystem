@@ -111,6 +111,7 @@ Source-of-Truth-Grenzen zu verschieben. Registrierung und Querverweise liegen in
 | Mykologie / Bodenökologie / Ecopoiesis | Fachdomäne Pilze, Myzel, Bodenleben und kontrollierte Ecopoiesis; nutzt die Flüsse von Living Infrastructure | [`docs/programs/mycology-soil-ecopoiesis.md`](programs/mycology-soil-ecopoiesis.md) |
 | Planetary Evolution / Geosphäre–Biosphäre | Gekoppelte Entwicklung von Geo-, Hydro-, Atmo- und Biosphäre über Deep Time; Evidenz, Kanon, Generierung und Rekonstruktion | [`docs/programs/planetary-evolution.md`](programs/planetary-evolution.md) |
 | Planetare Fernerkundung / Beobachtende Astronomie | Erkenntniskette von der physikalischen Eigenschaft über Messung bis zur Schlussfolgerung; Instrumente, Entdeckungsgeschichte, Beobachtungs-Gameplay | [`docs/programs/planetary-remote-sensing.md`](programs/planetary-remote-sensing.md) |
+| Planetensystem-Architekturen (nicht-koplanar/retrograd) | Bahnebenen, Neigungen und rückläufige Umläufe von der Evidenz über Kanon und Bahnmechanik bis zu Generierung und Lernmodul | [`docs/programs/planetary-architecture.md`](programs/planetary-architecture.md) |
 
 ## 6. Nicht-Ziele dieser Systemkarte
 

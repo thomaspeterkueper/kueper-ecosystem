@@ -16,6 +16,7 @@ als External Tasks.
 | Mykologie / Bodenökologie / Ecopoiesis | Fachdomäne Pilze, Myzel, Bodenleben und kontrollierte Ecopoiesis; nutzt die Flüsse von Living Infrastructure | [`mycology-soil-ecopoiesis.md`](mycology-soil-ecopoiesis.md) | registriert 2026-11-14 |
 | Planetary Evolution / Geosphäre–Biosphäre | Gekoppelte Entwicklung von Geo-, Hydro-, Atmo- und Biosphäre über Deep Time; Evidenz, Kanon, Generierung und Rekonstruktion | [`planetary-evolution.md`](planetary-evolution.md) | registriert 2026-11-14 |
 | Planetare Fernerkundung / Beobachtende Astronomie | Erkenntniskette von der physikalischen Eigenschaft über Messung bis zur Schlussfolgerung; Instrumente, Entdeckungsgeschichte, Beobachtungs-Gameplay | [`planetary-remote-sensing.md`](planetary-remote-sensing.md) | registriert 2026-11-14 |
+| Planetensystem-Architekturen (nicht-koplanar/retrograd) | Bahnebenen, Neigungen und rückläufige Umläufe von der Evidenz über Kanon und Bahnmechanik bis zu Generierung und Lernmodul | [`planetary-architecture.md`](planetary-architecture.md) | registriert 2026-11-15 |
 
 ## Aufnahme weiterer Programme
 
