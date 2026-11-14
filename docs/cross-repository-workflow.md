@@ -166,3 +166,22 @@ Ergebnis:
 Wenn eine ID-Regel alle Repositories betrifft, gehört die Architekturentscheidung zuerst nach `kueper-ecosystem`.
 
 Danach können Ziel-Repositories externe Anforderungen zur Umsetzung erhalten.
+
+### Beispiel D: Foundation Mining (wiederkehrendes Muster)
+
+Ein Repository erschließt wiederverwendbare Realwissenschaft aus Beständen anderer Repositories, z. B. `kueper.com` (KUE) aus OTA- und SSF-Dokumenten (Arbeitsinventar: `kueper.com/docs/backlog/KUE-FOUNDATION-MINING-2026-09-22.md`).
+
+Zuständigkeits- und Ableitungsrichtung:
+
+```text
+Primärliteratur → KUE-Realgrundlage → KG-Identität/Relation → SSF-Didaktik bzw. OTA/NOXIA-Anwendung
+```
+
+Die Pfeilkette beschreibt, wer wofür zuständig ist und in welche Richtung abgeleitet wird – keine Pflicht zur linearen technischen Verarbeitung. Sie ändert keine Zuständigkeit aus `docs/source-of-truth.md`.
+
+Regeln:
+
+- KUE übernimmt nur, was projektübergreifend, realwissenschaftlich, quellenfähig und gegenüber dem bestehenden KUE-Kanon eigenständig ist; vorher Deduplizierung gegen den Bestand.
+- Projektspezifische Parameter (Spielwerte, Weltbau-Annahmen, technische Dimensionierung) bleiben im Herkunfts-Repository bzw. in `kueper-engineering` und werden nicht nach KUE übernommen.
+- Bedarf in KG, SSF, OTA oder NOXIA läuft als External Task ins jeweilige Ziel-Repository; das Quell-Repository wird durch das Mining nicht Source of Truth für die abgeleitete Grundlage.
+- Grounding-Audits prüfen Verweise entlang dieser Richtung: Anwendungen verweisen auf KG-IDs bzw. KUE-Dokumente, nicht umgekehrt.
