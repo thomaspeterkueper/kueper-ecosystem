@@ -1,6 +1,6 @@
 {
   "id": "RES-20261113-2E01358E",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-13T11:10:23+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -30,5 +30,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriger Forschungspunkt behandelt Regolith als tragenden Konstruktionswerkstoff. RES-20261029-598703D4 prüft nur die Abschirmwirkung von Regolith, RES-20261010-5681C221 nur pilzbasierte biologische Materialien; Bauweisen, Festigkeiten, Degradation, Ausschuss und lokale Fertigungstiefe bleiben offen.",
-  "fingerprint": "2e01358ec16d9ea0"
+  "fingerprint": "2e01358ec16d9ea0",
+  "updated_at": "2026-11-14T11:04:26+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/298"
 }
