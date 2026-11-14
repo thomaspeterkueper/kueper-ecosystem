@@ -1,0 +1,52 @@
+{
+  "id": "RES-20261114-7317E7B4",
+  "status": "queued",
+  "created": "2026-11-14T11:02:53+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0004-2087-DE.md",
+  "source_ref": "276caf69289f13ca95e6a0c9cf5bc914d7150bca",
+  "source_blob_sha": "00dc3d1e8c1c63c168e72cdb15234f6c8d8e782e",
+  "document_signature": "OTA-SCI-0004-2087-DE",
+  "title": "Realwelt-Anker-Audit der Kanheri-/'praevedisch'-Behauptung in OTA-SCI-0004 (v1.0, 2087): Datierung und Religionszuordnung der Kanheri-Hoehlentempel, die Kategorie 'praevedische Sakralarchitektur', der 'Ariadne-Match' von 87,4 % und die Entropie-Schwelle 0,003 vs. >0,15",
+  "question": "Realwelt-Anker-Audit der archaeologischen und methodischen Behauptungen in OTA-SCI-0004-2087-DE (Abschnitte 3.1, 3.3, 4 und Anhang B), gepinnt auf die im Workspace vorliegende v1.0 (Status AKTIV; Frontmatter ['F','T','S'], im Text '[S] Methodik / [F] Interpretation'), gegen die primaere Archaeologie-, Kunstgeschichte- und Geoarchaeologie-Literatur. Das Dokument ist selbst [F]/[S] und traegt keinen eigenen [R]-Block; auditierbar sind ausschliesslich die realweltlichen Anker, auf die seine [F]-Aussagen sich berufen - und diese sind bisher nicht geprueft, obwohl dieselbe 87,4-%-Behauptung in OTA-TEC-0023-2089-DE (Z. 198) und die Kanheri-Zeile in OTA-SCI-0010-2025-DE (Z. 326, 'Resonanzkammern') weitergetragen werden. NICHT erneut zu pruefen: die 432-Hz-/127-Hz-Archaeoakustik und die 802-m-Lavaroehren-Thermalanomalie (bereits RES-20260913-B694419C) - sie sind nur als bestehende Grenzen zu zitieren. (1) Kanheri: Pruefe 'Kanheri-Hoehlentempel, 1. Jh. v. Chr.' gegen die reale Archaeologie: Lage (Borivali/Sanjay-Gandhi-Nationalpark, Konkan-Kueste, Mumbai), Zahl der Hoehlen, Felsgestein, Ausgrabungs-/Nutzungszeitraum (frueheste Phase bis 11. Jh. n. Chr.), religioese Zuordnung (buddhistisch; Hinayana/Mahayana), Architekturtypen (Vihara, Chaitya, Zisternen). Ist '1. Jh. v. Chr.' als frueheste Phase korrekt, und ist Kanheri damit 'praevedisch'? (2) Kategorie: Klaere, was 'praevedische Sakralarchitektur' bezeichnen soll, ob dies eine etablierte archaeologische/kunsthistorische Kategorie ist (vedische Periode ca. 1500-500 v. Chr.; Kanheri ist buddhistisch und nach-vedisch) und ob die Gleichsetzung von Kanheri/Konkan-Architektur mit 'praevedischer Sakralarchitektur' eine Kategorieverwechslung ist; schlage die werktreue Fassung vor. (3) Ariadne-Match: Pruefe die Aussage '87,4 % Korrelation mit praevedischer Sakralarchitektur'. Ariadne v4.2 ist ein fiktives Analysewerkzeug; berichte, welche reale Methode (Form-, Proportions-, Symmetrieanalyse) einen solchen Prozentwert ueberhaupt definieren koennte, ob Vergleichskorpora (Kanheri vs. welche Referenzarchitektur?) dokumentiert sind, und stelle fest, dass der Wert als [F]/[S] und nicht als reale Korrelation zu fuehren ist. (4) Entropie-Metrik: Pruefe 'Entropie 0,003 (Natuerlich: >0,15)' gegen reale Symmetrie-/Entropiemasse in Geoarchaeologie und Strukturgeologie (Shannon-Entropie von Kluftnetzen, Symmetrieindizes, Fraktalmase); berichte, welche Wertebereiche fuer natuerliche Basaltklueftung und fuer kuenstliche Architektur real berichtet werden, ob eine Schwelle 0,15 diskriminierend ist und ob eine Punktwolken-Entropie ueberhaupt zwischen 'kuenstlich' und 'natuerlich' trennen kann. (5) 120-Grad-Geometrie: Pruefe die '120 Grad Winkel-Architektur' gegen dokumentierte Winkelgeometrien in Felsarchitektur (Kanheri/Konkan, indische Felsentempel) und stelle fest, ob 120 Grad ein belegtes Konstruktionsprinzip oder eine nachtraegliche Beschreibung ist. (6) Downstream: Benenne die Saetze, die in OTA-SCI-0010-2025-DE und OTA-TEC-0023-2089-DE nachzuziehen sind. (7) Reklassifiziere: nenne die Aussagen, die als [R-Anker] bleiben koennen (Existenz und Lage der Kanheri-Hoehlen; buddhistische Felsarchitektur; frueheste Phase um die Zeitenwende), die als '[R] Quelleninhalt / Kategorie strittig' abzuschwaechen sind ('praevedisch', 'Konkan-Architektur' als Stil), die [F] bleiben muessen (Ariadne 87,4 %, 120-Grad-Anomalie, 432-Hz-Traeger) und die [OFFEN] werden; stelle fest, dass keine kanonische Korrelation, keine kanonische Entropieschwelle und keine kanonische Datierung in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die Axis-Kammer als Werkobjekt, die Interpretationen in Abschnitt 4, die Kuratornotiz, die Narration um Nakahara/Kostas/Mahapula, die Konzernsicherheits-Uebernahme sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Prioritaet-10-Dokument am Kopf der laufenden Bearbeitungsstufe. Die physischen Anker (802-m-Thermalanomalie, 127 Hz, 432 Hz) sind bereits auditiert, der archaeologische Anker ist es nicht - obwohl er bereits in OTA-TEC-0023 und OTA-SCI-0010 weitergetragen wird. Die Formulierungen '87,4 %' und 'praevedisch' sind mit einer einfachen archaeologischen Quellenpruefung entscheidbar und korrigieren zugleich zwei Downstream-Dokumente; die Entropie-Schwelle 0,15 ist die einzige bislang ungeprueft gebliebene quantitative Methodenzeile des Dokuments.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker",
+    "F",
+    "S"
+  ],
+  "real_world_anchor": "Kanheri-Hoehlentempel als reale buddhistische Felsarchitektur (Borivali/Mumbai, frueheste Phase um die Zeitenwende bis 11. Jh. n. Chr.); geoarchaeologische Symmetrie-/Entropiemasse fuer natuerliche Basaltklueftung und kuenstliche Architektur; dokumentierte Winkelgeometrien indischer Felsentempel.",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.71,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.65,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.65
+  },
+  "related_research_ids": [
+    "RES-20260913-B694419C",
+    "RES-20261107-D24958B9"
+  ],
+  "novelty_reason": "Kein bisheriger Audit der Kanheri-/'praevedisch'-Behauptung. RES-20260913-B694419C deckt nur die 802-m-Thermalanomalie und die 127-Hz-Krustenresonanz; RES-20261107-D24958B9 deckt die Archaeoakustik von Htal Saflieni/Newgrange/Chavin, nicht Kanheri und nicht die Kategorie 'praevedische Sakralarchitektur'. Die Fragen nach Datierung, Religionszuordnung, Kategorie und Entropie-Metrik sind neu.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 252,
+    "quality_flags": [
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "7317e7b4c22fb873"
+}
