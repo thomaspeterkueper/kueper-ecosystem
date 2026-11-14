@@ -40,9 +40,9 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0114-2026-DE | Horizontfragmentierung – theoretische Grenzfälle und Bu | HIOFFENR | KUE-SCI-0196 | geprüft 2026-11-07 – KUE-Gegenstück vorhanden (KUE-SCI-0196 v0.2 vollständig); Quellenkorrektur/Kürzung OTA-REQ-20261107-001 – umgesetzt 2026-11-11 (v0.2) |
 | OTA-SCI-0115-2026-DE | Einzelpositron im Quantenzyklotron – Messfähigkeit stat | IOFFENR | KUE-SCI-0197 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Verschlankung OTA-REQ-20261102-002 – umgesetzt 2026-11-07 (v0.2) |
 | OTA-SCI-0116-2026-DE | Andromeda als Welteninsel – Distanzmessung, Kalibration | IOFFENR | KUE-SCI-0198 | geprüft 2026-11-03 – KUE-Gegenstück vorhanden; Realteil in KUE-SCI-0198 v0.2 übernommen, Brückendokument OTA-REQ-20261103-002 – umgesetzt 2026-11-08 (v0.2) |
-| OTA-TEC-0019-2091-DE | OTA-TEC-0019-2091-DE | FHRT | KUE-SCI-0178 | offen |
-| OTA-TEC-0021-2025-DE | MOF-STABILISIERUNG FÜR SUPERIONISCHES GOLDHYDRID | FHRS | KUE-SCI-0183 | offen |
-| OTA-TEC-0029-2048-DE | Quantensensorik & KI-Integration für LOD-Validierung | FHRT | KUE-SCI-0177 | geprüft 2026-11-12 – KUE-Gegenstück vorhanden, aber unvollständig; Uhrenwerte/Atominterferometer/Tageslänge nach KUE per EXT-OTA-KUE-20261112-002, AVI-/SSF-Teil bleibt; Kürzung OTA-REQ-20261112-002 |
+| OTA-TEC-0019-2091-DE | OTA-TEC-0019-2091-DE | FHRT | KUE-SCI-0178 | geprüft 2026-11-14 – KUE-Gegenstück vorhanden (KUE-SCI-0178 v0.2 mit NASA-O₂/CO₂-Werten), Realteil bereits minimal, KITE-Setzung bleibt; CO₂-Anker per OTA-REQ-20261114-001 – umgesetzt 2026-11-14 (v1.4); Trinkwasser-Anker nach KUE per EXT-OTA-KUE-20261114-001 |
+| OTA-TEC-0021-2025-DE | MOF-STABILISIERUNG FÜR SUPERIONISCHES GOLDHYDRID | FHRS | KUE-SCI-0183 | geprüft 2026-11-14 – KUE-Gegenstück vorhanden (KUE-SCI-0183 v0.2), Realteil bereits auf Grundinformation + Verweis reduziert, Konfinement-Hypothese/Saga bleiben; kein Request |
+| OTA-TEC-0029-2048-DE | Quantensensorik & KI-Integration für LOD-Validierung | FHRT | KUE-SCI-0177 | geprüft 2026-11-12 – KUE-Gegenstück vorhanden, aber unvollständig; Uhrenwerte/Atominterferometer/Tageslänge nach KUE per EXT-OTA-KUE-20261112-002, AVI-/SSF-Teil bleibt; Kürzung OTA-REQ-20261112-002 – KUE-SCI-0177 v0.2 gemergt 2026-11-14, umgesetzt 2026-11-14 (v1.3) |
 
 ## A – Kandidaten für vollständigen Umzug
 
