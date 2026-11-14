@@ -113,6 +113,7 @@ Source-of-Truth-Grenzen zu verschieben. Registrierung und Querverweise liegen in
 | Planetare Fernerkundung / Beobachtende Astronomie | Erkenntniskette von der physikalischen Eigenschaft über Messung bis zur Schlussfolgerung; Instrumente, Entdeckungsgeschichte, Beobachtungs-Gameplay | [`docs/programs/planetary-remote-sensing.md`](programs/planetary-remote-sensing.md) |
 | Planetensystem-Architekturen (nicht-koplanar/retrograd) | Bahnebenen, Neigungen und rückläufige Umläufe von der Evidenz über Kanon und Bahnmechanik bis zu Generierung und Lernmodul | [`docs/programs/planetary-architecture.md`](programs/planetary-architecture.md) |
 | Adaptive Industry | Adaptive Fertigung, digitale Zwillinge und Physical AI von der Evidenz über Anlagen- und Steuerungsarchitektur bis zu Produktions-Gameplay | [`docs/programs/adaptive-industry.md`](programs/adaptive-industry.md) |
+| Mars Settlement Systems Kernel | Integrationsinstanz für Siedlungssysteme: gemeinsame Reservoire und Flüsse für Energie, ECLSS/Wasser, Biologie, Landwirtschaft, Abfall, Industrie, Logistik und Robotik | [`docs/programs/mars-settlement-kernel.md`](programs/mars-settlement-kernel.md) |
 
 ## 6. Nicht-Ziele dieser Systemkarte
 

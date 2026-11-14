@@ -71,7 +71,7 @@ Prozessidentitäten), `overtime-archive.org` `EXT-ECO-OTA-20261114-001`
 | Nachbarprogramm | Referenz | Verhältnis |
 |---|---|---|
 | Living Infrastructure | [`living-infrastructure.md`](living-infrastructure.md) | Integrationsschicht für die Flüsse; dieses Programm liefert die ökologische Fachdomäne |
-| Mars Settlement Systems Kernel | `external-tasks/open/EXT-NOXIA-ECO-20260927-mars-settlement-kernel-routing.md`; ENG `systems/mars-settlement-systems-kernel-r1.md` | Gemeinsame Reservoire und Flüsse; keine doppelten Ressourcenzähler |
+| Mars Settlement Systems Kernel | [`mars-settlement-kernel.md`](mars-settlement-kernel.md); ENG `systems/mars-settlement-systems-kernel-r1.md` | Gemeinsame Reservoire und Flüsse; keine doppelten Ressourcenzähler |
 | Planetary Evolution / Geosphäre–Biosphäre | [`planetary-evolution.md`](planetary-evolution.md) | Langfristige Randbedingungen; Biosphären und künftiges Terraforming |
 | Geschlossene Lebenserhaltung, Landwirtschaft, Abfall/Recycling | ENG `ENG-SYS-ECLSS-0001`; Living Infrastructure | Bausteine, die Substrat- und Nährstoffkreisläufe teilen |
 | Ressourcen und Habitate | Mars Settlement Kernel; Adaptive Industry ([`adaptive-industry.md`](adaptive-industry.md)) | Material- und Prozessschnittstellen über KG-Identitäten und ENG-Verträge |

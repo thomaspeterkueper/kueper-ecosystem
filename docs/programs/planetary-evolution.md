@@ -58,7 +58,7 @@ geroutet. Diese Registrierung legt sie zusammen und erzeugt keine doppelten Auft
 | Systemgenerierung | ENG `systems/impact-surface-evolution-architecture-v0.1.md`; NOXIA-Generator (Tabelle oben) | Prozedurale Planeten- und Oberflächenentwicklung nutzt die gekoppelten Verträge |
 | Geologie und Ressourcen | ENG `systems/planetary-resource-reconnaissance-architecture-0.1.md` | Lagerstätten und Erkundung als Folge der Planetengeschichte |
 | Biosphären | [`mycology-soil-ecopoiesis.md`](mycology-soil-ecopoiesis.md) | Bodenleben und Ecopoiesis als biologische Seite der Kopplung |
-| Siedlungswissenschaft | [`living-infrastructure.md`](living-infrastructure.md); `external-tasks/open/EXT-NOXIA-ECO-20260927-mars-settlement-kernel-routing.md` | Siedlungen arbeiten auf kürzeren Zeitskalen; Planetary Evolution liefert die Randbedingungen |
+| Siedlungswissenschaft | [`living-infrastructure.md`](living-infrastructure.md); [`mars-settlement-kernel.md`](mars-settlement-kernel.md) | Siedlungen arbeiten auf kürzeren Zeitskalen; Planetary Evolution liefert die Randbedingungen |
 | Künftiges Terraforming | – | Zukunftserweiterung; erst nach stabilen Verträgen |
 
 ## 6. Regeln und Abgrenzungen
