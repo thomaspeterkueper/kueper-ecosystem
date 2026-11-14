@@ -1,7 +1,7 @@
 ---
 id: EXT-NOXIA-ECO-20260925-planetary-remote-sensing-routing
 title: Planetary remote-sensing program routing
-status: open
+status: done
 source: NOXIA
 target: ECO
 created: 2026-09-25
@@ -15,7 +15,7 @@ supersedes: []
 - **Origin:** NOXIA research intake
 - **Target:** KUEPER Ecosystem
 - **Date:** 2026-09-25
-- **Status:** open
+- **Status:** done
 
 ## Anlass
 
@@ -54,3 +54,15 @@ Querschnittsprogramm über mehrere Repositories. Registrierung und Zuständigkei
 - Programm in `kueper-ecosystem` registriert, Zuständigkeiten wie unter „Gewünschte Änderung“ festgehalten.
 - Querverweise zu den genannten Nachbarprogrammen dokumentiert.
 - Folgearbeiten in den Ziel-Repositories als External Tasks geroutet.
+
+## Erledigt
+
+Status: done – Ökosystem-Kreislauf (Claude), 14.11.2026.
+
+## Umgesetzt
+
+- Programm registriert: `docs/programs/planetary-remote-sensing.md` mit Zweck, Geltungsbereich, Zuständigkeiten (OTA, KG, ENG, NXU, NOXIA; `noxia-realtime` zurückgestellt) und Regeln.
+- Trennung von physikalischer Wahrheit und Akteurs-/Spielerwissen ausdrücklich festgehalten.
+- Querverweise zu Planetary Evolution, Systemgenerierung (retrograde/nicht-koplanare Architekturen), Navigation/Exploration und den NOXIA-Lernmodulen.
+- Folgearbeiten: bereits ab 25.09.2026 geroutet (KG-Ontologie, ENG-Instrumentautorität und OTA-Fallstudie Beta Pictoris b erledigt; OTA GJ 3090 b, NXU-Beobachtungsschicht und Mehrfachgeschichten, NOXIA-Lernmodule offen) und als Stand zusammengeführt; keine doppelten Aufträge erzeugt.
+- Register `docs/programs/README.md` und `docs/system-map.md` ergänzt; Verweis in `docs/programs/planetary-evolution.md` auf die Registrierung umgestellt.
