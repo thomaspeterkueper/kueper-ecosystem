@@ -1,0 +1,52 @@
+{
+  "id": "RES-20261114-2822BB29",
+  "status": "queued",
+  "created": "2026-11-14T00:28:27+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0003-2087-DE.md",
+  "source_ref": "f9bb7d5e91b69886d94292e95bf5c96762164017",
+  "source_blob_sha": "455ff4db8e08965379e8d3aa42d6fccdbe822859",
+  "document_signature": "OTA-TEC-0003-2087-DE",
+  "title": "Realwelt-Audit der Surveyor-9-Spezifikation (OTA-TEC-0003, v1.0, 2087): Vakuum-Saugfueße bei ~6-7 mbar, Lidar 500 m bei +/-0,5 mm, 1000-m-Glasfaser-Tether mit 10 Gbps, UHF-Funk durch 50 m Gestein und die 6-h-Energiebilanz eines 4,2-kg-Kletterroboters",
+  "question": "Quellengestuetzter Audit der als [S]/[T] gefuehrten Spezifikations- und Einsatzzeilen von OTA-TEC-0003-2087-DE (Abschnitte 1.1-1.3 und 2), gepinnt auf die im Workspace vorliegende v1.0 (Datum 12.04.2087, Status REVIDIERT JULI 2087; Frontmatter-evidenceStatus ['F','T','R']), gegen die primaere Planetary-Robotics-, Messtechnik-, Tether- und Untergrund-Kommunikationsliteratur. Das Dokument ist die Geraetespezifikation des Surveyors, dessen Lidar-/IR-/Seismikdaten die Axis-Kammer-Befunde (OTA-SCI-0004-2087-DE) tragen; seine Fahigkeitszeilen sind bisher nirgends gegen die reale Technikgrenze geprueft. (1) Fortbewegung: Pruefe '4 teleskopierbare Greifbeine mit Vakuum-Saugern' und 'Kaltgas-Steuerduesen' gegen die reale Physik der Vakuum-Adhaesion. Bei einem Marsumgebungsdruck von ~6-7 mbar ist die maximale Druckdifferenz eines Saugnapfs rund 0,6-0,7 kPa; berechne die Haltekraft fuer plausible Napfflaechen, bewerte Dichtheit auf poroesem, staub- und regolithbedecktem Basalt, Leckage/Sublimation, Ansaugleistung und die Frage, ob die Haltekraft bei 0,38 g fuer ein 4,2-kg-Geraet mit Hebelarm ausreicht. Benenne die real belegten Mobilitaetsklassen fuer senkrechte/ueberhaengende Gelaende (Mikrospine-/Klauen-Greifer wie JPL LEMUR, gecko-inspirierte Adhaesiv-Greifer, Schubduesen-Anpressung, Tether-gestuetzte Seilroboter wie Axel) samt demonstriertem Reifegrad und Masse, und stelle fest, welche reale Klasse die Sauger-Zeile ersetzen muss. Klaere ausserdem die Massenkonvention: 'Gewicht: 4,2 kg (Mars-G), 11,1 kg (Erd-G)' ist nur als Gewichtskraft (4,21 kgf = 11,1 kgf x 0,379) konsistent; ist die Zeile als Masse oder als Gewichtskraft zu lesen, und welche Formulierung ist fuer ein technisches Archivdokument zulaessig? (2) Lidar: Pruefe 'NovaScan-V8, 500 m Reichweite, +/- 0,5 mm Praezision' auf gleichzeitige Erfuellbarkeit. Berichte anhand realer Scanning-/ToF-Lidar- und Laserentfernungsmesser-Spezifikationen (Mars-Rover-Instrumente wie SuperCam/RIMFAX-Kontext, terrestrische Long-Range-Scanner, Laser-Altimeter) die Abhaengigkeit von Strahldivergenz, Spotgroesse auf 500 m, Empfangsleistung (1/R^2), Laufzeitaufloesung, Kalibrierung und Messrate und ordne +/-0,5 mm bei 500 m (~1 ppm) ein; nenne den Bereich, in dem eine solche Genauigkeit real erreichbar ist, und welche konkrete Instrumentenklasse die Zeile traegt. (3) XRF: Pruefe '42 Minerale erkennbar' gegen die reale Leistungsfaehigkeit von Roentgenfluoreszenz. XRF misst Elemente, nicht Minerale; berichte, was Handheld-/Rover-XRF (PIXL, APXS, kommerzielle HH-XRF) real identifiziert, welche Rolle XRD/Raman fuer Mineralphasen spielt, welchen Probenabstand und welche Messzeit die Genauigkeit bestimmen und ob '42 Minerale' als Geraetespezifikation oder nur als Bibliotheksumfang haltbar ist; pruefe Masse-/Leistungsbudget eines XRF-Kopfs fuer ein 4,2-kg-Geraet. (4) Tether: Pruefe '1.000 m Glasfaser-Tether, 10 Gbps' gegen reale Tether-Systeme fuer Hoehlen-/Eiskundung (Axel, PUFFER-/Spelunker-Konzepte, terrestrische ROV-Glasfaser-Tether). Berechne Masse und Spulenvolumen von 1 km Faser plus Zug-/Schutzmantel, die Schlepp- und Reibungslast beim Auslegen in einer Lavaroehre bei 0,38 g und den Leistungsbedarf; pruefe, ob 10 Gbps Glasfaser gegenueber einer einfacheren Loesung (z. B. Kupfer/1 Gbps) technisch begruendet ist und ob die Tether-Zeile mit der 6-h-Autonomie und dem 4,2-kg-Budget vereinbar ist. (5) UHF-Rueckfall: Pruefe 'UHF-Funkmodul, 50 m durch Gestein' gegen die reale elektromagnetische Daempfung in Basalt/Regolith. Berichte die frequenzabhaengige Penetrationstiefe (UHF ~300-3000 MHz vs. GPR bei 100-500 MHz vs. niederfrequente Systeme), die realen Mars-Untergrundfunk-/Radarergebnisse (RIMFAX, MARSIS/SHARAD als Bahnkontext, terrestrische Lavaroehren-GPR) und stelle fest, ob 50 m Durchdringung bei UHF physikalisch haltbar ist oder ob die Zeile auf eine niedrigere Frequenz und/oder eine geringere Distanz umgeschrieben werden muss. (6) Energie: Pruefe 'Festkörper-Akku, 6h autonom' gegen eine nachvollziehbare Energiebilanz (Lidar-Scan, IR-Kamera, XRF-Messungen, Funk/Tether, Antrieb der vier Beine, Thermalkontrolle bei -18 C Umgebung) und gegen reale Festkoerperzellen-Energiedichte; nenne den Faktor, um den die genannte Laufzeit bei realistischer Sensorlast zu hoch oder zu niedrig liegt, und sage, welche Zeile [OFFEN] bleiben muss. (7) Reklassifiziere: nenne die Saetze, die als [R] (reale Geraeteklasse und Fahigkeitsgrenze) bleiben koennen, die zu '[R] Quelleninhalt/Geraeteklasse mit eingeschraenktem Betriebsfenster' abzuschwaechen sind, und die [S]/[OFFEN] werden muessen; stelle fest, dass keine kanonische Lidar-Genauigkeit, keine kanonische Tether-Laenge, keine kanonische Funkreichweite und kein kanonisches Massenbudget in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die Axis-Kammer als Werkobjekt, die Interpretationen in OTA-SCI-0004 (432 Hz, 127 Hz, Ariadne-Match, 'praevedische Sakralarchitektur'), die Kuratornotiz, die Narration um Marek Kowalski, Darian Kostas und Kashmira Mahapula, die Konzernsicherheits-Uebernahme sowie alle NOXIA-/OTA-Balancing-Werte. NICHT erneut zu pruefen: die bereits auditierte 802-m-Lavaroehren-Thermalanomalie und die 127-Hz-Krustenresonanz (RES-20260913-B694419C) - sie sind hier nur als geerbte Groessen zu zitieren.",
+  "why_now": "OTA-TEC-0003 steht mit Prioritaet 10 und vier Qualitaetsflaggen in der aktuellen Archivdiagnostik, ist aber als einziger der vier Prioritaet-10-Traeger noch nie extern geprueft worden: OTA-TEC-0015 (LRV-15) wurde am 2026-09-14 auditiert (RES-20260914-6507B47E), OTA-KOM-0002 am 2026-09-16 (RES-20260916-08FAD47F), OTA-SCI-0004 ist ueber RES-20260913-B694419C abgedeckt. Zugleich ist das Dokument die Datenquelle der Axis-Kammer-Kette und traegt Fahigkeitsannahmen (Klettern per Saugnapf, Lidar-Praezision im Fernbereich, Tether-Datenrate, Untergrund-UHF), die in der Oberflaechenfahrzeug-Klasse (OTA-TEC-0103, OTA-TEC-0111, OTA-TEC-0108) und in der Tharsis-Logistik weiterverwendet werden. Eine ungeprueft plausible, aber physikalisch fragwuerdige Spezifikation ist genau der Fall, in dem Aussen evidenz den Dokumentwert aendert.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker",
+    "R",
+    "T",
+    "OFFEN"
+  ],
+  "real_world_anchor": "Reale Fahigkeitsgrenzen von Planetary-Robotics und Messtechnik: Vakuum-Adhaesion bei Umgebungsdruck ~6-7 mbar (max. Druckdifferenz <1 kPa) und demonstrierte Alternative (Mikrospine-/Klauen-Greifer, Gecko-Adhaesive, Schub-Anpressung, Tether-Roboter wie JPL LEMUR/Axel); reale Scanning-Lidar- und Laserentfernungsmesser-Spezifikationen (Divergenz, 1/R^2-Signal, ppm-Genauigkeit); XRF als Element- statt Mineralmethode (PIXL, APXS, HH-XRF) gegenueber XRD/Raman; Masse/Volumen/Leistung realer Glasfaser-Tether-Systeme; frequenzabhaengige EM-Daempfung in Basalt und reale Mars-Untergrundradar-Ergebnisse (RIMFAX, MARSIS/SHARAD); Energiedichte und Lastprofil von Festkoerperzellen.",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.8625,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20260914-6507B47E"
+  ],
+  "novelty_reason": "Kein vorheriger Topic prueft dieses Dokument. Der einzige verwandte Audit (RES-20260914-6507B47E) betrifft ein anderes Fahrzeug (LRV-15 Dust-Walker) und eine disjunkte Befundmenge (SML-Reifen, Graphen-Aluminium, 6x40-kW-Radnabenmotoren, 50-m-GPR, S-Band-Direktlink); OTA-TEC-0003 fuehrt dagegen Kletterlokomotion, Fernbereichs-Lidar-Metrologie, Tether-Datenuebertragung und Untergrund-UHF - keine Ueberschneidung. Auch die uebrigen TEC-Topics (OTA-ORG-0001-Ausruestung, OTA-TEC-0106, OTA-TEC-0098) behandeln weder Adhaesionslokomotion bei Marstiefdruck noch die Lidar-Genauigkeitskopplung.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 280,
+    "quality_flags": [
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "2822bb29670c66ac"
+}
