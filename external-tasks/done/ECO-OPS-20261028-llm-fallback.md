@@ -103,3 +103,9 @@ Umgesetzt:
 - Tests: `test_provider_router.py` (+4), `test_agent_worker_v77.py` (12: 402 → Fallback, 429 → Fallback, Kette leer → Zurückstellen, Budget-Ende, Claim-Rennen u. a.).
 
 Offen (Owner-Handlung, Thomas): Guthabenwarnung im AI Gateway einrichten. Live-Bewährung beim nächsten DeepSeek-Ausfall beobachten (Log-Hinweis „LLM fallback“).
+
+## Beobachtung Live-Betrieb (Claude, 15.11.2026, 21 Uhr)
+
+- Worker-V7-Läufe 15:05, 16:05, 17:05 und 20:05 UTC rot: Fallback auf `google/gemini-3-flash` über das AI Gateway endet mit „403 Free tier users do not have access to this model. Upgrade to paid credits“. Das Gateway-Konto ist im Free Tier – die Ausweichstufe medium/high/pro ist damit wirkungslos.
+- Fix `claude/worker-gateway-403-zurueckstellen`: Diese Antwort gilt jetzt als Anbieterausfall (`gateway-access-denied`, 6 Std. Pause, Task zurückgestellt) statt als Task-Fehler.
+- Offen (Owner-Handlung, Thomas): Guthaben im AI Gateway aufladen oder ein im Free Tier freigegebenes Ausweichmodell nennen.
