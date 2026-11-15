@@ -154,3 +154,29 @@ def route(task: dict[str, Any], now: dt.datetime | None = None, policy: dict[str
     elif not in_peak and wants_off_peak:
         reason += "; preferred off-peak window available"
     return RouteDecision(provider, model, True, None, reason, multiplier, cost_policy)
+
+
+def fallback_chain(task: dict[str, Any], decision: RouteDecision, policy: dict[str, Any] | None = None) -> list[tuple[str, str]]:
+    """Ordered (provider, model) alternatives after the primary decision.
+
+    Pro escalations use the separate heavy tier; everything else follows the task complexity.
+    """
+    policy = policy or load_policy()
+    chains = policy.get("fallback_chain") or {}
+    primary = policy.get("providers", {}).get(decision.provider, {})
+    if decision.model and decision.model == primary.get("complex_model"):
+        key = "pro"
+    else:
+        task_type = str(task.get("type") or "").upper()
+        task_policy = policy.get("task_classes", {}).get(task_type, {"complexity": "medium"})
+        key = _complexity(task, task_policy)
+    result: list[tuple[str, str]] = []
+    for entry in chains.get(key, []):
+        provider = str(entry.get("provider") or "")
+        model = str(entry.get("model") or "")
+        if not provider or not model or (provider, model) == (decision.provider, decision.model):
+            continue
+        if not policy.get("providers", {}).get(provider, {}).get("enabled", False):
+            continue
+        result.append((provider, model))
+    return result
