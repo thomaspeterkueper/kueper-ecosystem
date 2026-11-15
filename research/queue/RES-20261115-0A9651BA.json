@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261115-0A9651BA",
+  "status": "queued",
+  "created": "2026-11-15T11:15:17+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0109-2026-DE.md",
+  "source_ref": "160b71e8e7e7cc877f93b3ee67895a5c1d159779",
+  "source_blob_sha": "2e6783181bfbf117de400fe93c2d8c092133aef0",
+  "title": "Realwelt-Audit der Bundesnetzagentur-/SMARD-Realanker in OTA-SCI-0109 (v1.0, §2–4): 30.319 vs. 30.318 GWh Netzengpassmanagement 2025/2024, 15.549/9.379 GWh, 3,5-%-Anteil, 3,071 Mrd. € und 400 GW/661 GWh Speicheranschlussanfragen",
+  "question": "Quellengestützter Audit der als [R] geführten Stromnetz-Realanker von OTA-SCI-0109-2026-DE, gepinnt auf die im Workspace vorliegende v1.0 (Status ENTWURF, Stand 18.10.2026; Frontmatter-evidenceStatus ['R','H','T','OFFEN']). Das Dokument begründet mit diesen Zahlen die NOXIA-Regel, dass Erzeugung, Anschlussleistung, Transportkapazität, Redispatch und Flexibilität getrennte Größen sind; es ist in der Quellenprüfung 2026-11 nicht als befundbehaftet geführt und wurde nie inhaltlich geprüft. (1) Mengen: Prüfe 'Für 2025 wurden rund 30.319 GWh Netzengpassmanagement-Maßnahmen ausgewiesen', 'nahezu exakt auf dem Niveau von 2024 (30.318 GWh)', 'Reduktion von Einspeisung 15.549 GWh', davon '9.379 GWh Erneuerbare', sowie die Energieträgeraufteilung Offshore-Wind 3.351 GWh, Onshore-Wind 3.225 GWh, Photovoltaik 2.704 GWh gegen die zitierten BNetzA/SMARD-Quellen (Themenartikel 219906 vom 30.03.2026) und die zugrunde liegenden Datensätze. Der 1-GWh-Unterschied zwischen zwei Jahren ist entweder eine reale Koinzidenz oder ein Transkriptionsartefakt – genau davon hängt die Überschrift 'Maßnahmenvolumen im Gesamtjahr stabil' ab. Melde den tatsächlichen Vorjahreswert. (2) Abgeleitete Aussagen nachrechnen: '3,5 % der gesamten erneuerbaren Stromerzeugung' (9.379 GWh / 0,035 ergibt eine Nennergröße von rund 268 TWh – stimmt das mit der realen EE-Erzeugung 2025 überein?), 'mehr als 96 % genutzt', sowie die Aufteilung '59 % der EE-Reduzierungen Anlagen im Verteilnetz' gegenüber 'etwa 65 % der Engpässe im Übertragungsnetz und rund 35 % im Verteilnetz'. Kläre, ob Zähler und Nenner dieser beiden Prozentangaben überhaupt dieselbe Grundgesamtheit haben. (3) Definitionen: Kläre, was die BNetzA unter 'Netzengpassmanagement' summiert (Redispatch, Countertrading, Reservekraftwerke, Abregelung) und ob die 15.549 GWh 'Reduktion von Einspeisung' mit den 9.379 GWh EE-Anteil und mit den 30.319 GWh Gesamtmaßnahmen konsistent saldierbar sind. (4) Kosten: Prüfe '3,071 Mrd. € vorläufig' und die Aufteilung (konventioneller Redispatch 1,176 Mrd.; Ausgleich abgeregelter EE 433 Mio.; Reservekraftwerke 1,359 Mrd.; Countertrading 102 Mio.) samt Additivität und Status 'vorläufig' gegenüber einer inzwischen vorliegenden Jahresendabrechnung. (5) 2026-Aussagen: Prüfe 'Bedarf von rund 7.407 MW Netzreserveleistung für 2026/2027' und '8.274 MW für 2028/2029' gegen die BNetzA-Netzreserve-Feststellung und kläre, auf welches Verfahren und welchen Beschluss sie sich beziehen. Prüfe ferner die Aussage, im ersten Quartal 2026 seien die Einsatzkosten des konventionellen Redispatch gegenüber Q1 2025 zurückgegangen. (6) Anschlusskapazität: Prüfe '9.710 Anschlussanfragen für Batteriespeicher ab Mittelspannungsebene (2024)', 'rund 400 GW Leistung und 661 GWh Speicherkapazität' sowie 'Anschlusszusagen rund 25 GW / 46 GWh' gegen die BNetzA-Pressemitteilung vom 12.11.2025, insbesondere ob sich die Anfragen auf Leistung oder Kapazität, auf alle Netzebenen oder ab Mittelspannung beziehen und ob der Zeitraum 2024 oder ein rollierendes Fenster ist. (7) Reklassifiziere: Nenne die Sätze, die [R] bleiben können (Deutschland betreibt aktives Netzengpassmanagement; Größenordnungen von Abregelung und Kosten; Speicherpipeline übersteigt Anschlusszusagen deutlich), die zu '[R] Quelleninhalt, Bezugsjahr und Abgrenzung offen' abzuschwächen sind (30.319/30.318, 15.549, 9.379, 3,5 %, 3,071 Mrd., 400 GW/661 GWh, 7.407/8.274 MW), die als [T] zu führen sind (die Übertragung auf Mond/Mars/Orbitalstationen in §9) und die [OFFEN] bleiben; stelle fest, dass kein kanonischer Curtailment-Anteil, keine kanonische Redispatch-Menge und kein kanonischer Speicherwert in den Kanon oder in NOXIA-Standardwerte aufgenommen wird. AUSGESCHLOSSEN: die NOXIA-Netzmodellimplementierung, Knoten-/Leitungsparameter, Spielwerte, die Mond-/Mars-/Orbitalübertragung als Weltsetzung sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Der Review-Zyklus des Dokuments läuft bis 2027; die Zahlen sind der einzige quantitative Realanker, mit dem die NOXIA-Energieökonomie und die Mars-Siedlungsdokumente (u. a. OTA-SCI-0112, OTA-TEC-0090) begründen, warum Erzeugung nicht Lieferfähigkeit ist. Ein falscher Vorjahreswert würde die tragende Aussage 'Volumen stabil' und damit die gesamte Argumentationslinie verschieben – und der Audit ist billig, weil alle Größen in amtlichen Datensätzen offen liegen.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Amtliche Bundesnetzagentur-/SMARD-Daten zum Netzengpassmanagement 2024 und 2025, zur Netzreservefeststellung 2026/27 und 2028/29 sowie zur Batteriespeicher-Anschlussstatistik 2024.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.65,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früheres Thema berührt Stromnetze, Redispatch oder Anschlusskapazität. Die bisherigen Audits decken Raumfahrt-, Archäologie-, Material- und Physikanker ab; RES-20261107-76117BB0 prüft Missions- und Programmstatus (CADRE, DARPA OFFSET, HEAP/Gravis), nicht Infrastrukturstatistik. Neu ist die Prüfung amtlicher Mengen-, Kosten- und Anschlussdaten einschließlich der Frage, ob die im Dokument gezogenen Prozent- und Stabilitätsaussagen aus denselben Grundgesamtheiten folgen.",
+  "fingerprint": "0a9651ba5a014ade"
+}
