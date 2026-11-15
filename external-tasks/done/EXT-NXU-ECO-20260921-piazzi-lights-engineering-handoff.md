@@ -1,7 +1,7 @@
 ---
 id: EXT-NXU-ECO-20260921-piazzi-lights-engineering-handoff
 title: Piazzi-Lights engineering handoff
-status: open
+status: done
 source: NXU
 target: ECO
 created: 2026-09-21
@@ -93,3 +93,14 @@ Die Zuständigkeitsgrenze zwischen NOXIA-Autorenarbeit und KUEPER Engineering be
 
 - Zuständigkeitsgrenze Piazzi-Lights (NOXIA Universe ↔ Engineering) im Ecosystem dokumentiert bzw. dort referenziert, wo Cross-Repo-Abhängigkeiten entstehen.
 - Vorläufige Autorenparameter sind als „provisional-selected“ gekennzeichnet, bis Engineering die technische Schließung zurückmeldet.
+
+## Erledigt
+
+Status: done – Ökosystem-Kreislauf (Claude), 15.11.2026.
+
+## Umgesetzt
+
+- Zuständigkeitsgrenze Piazzi-Lights (NOXIA-Autorenarbeit ↔ KUEPER Engineering) registriert: `docs/programs/piazzi-lights.md` mit Zuständigkeiten (ENG, OTA, NXU, NOXIA; `noxia-realtime` zurückgestellt), Routing-Regel und Parameterstatus.
+- Vorläufige Autorenparameter als „provisional-selected“ gekennzeichnet, bis `noxia-universe` die Engineering-Schließung kanonisiert; kein biologischer Sicherheitsanspruch für g-Wert, Drehrate oder Exposition.
+- Stand der Folgearbeiten zusammengeführt: ENG `ENG-SYS-PLH-0001` erledigt (21.09.2026), NXU-Kanonisierung `EXT-ENG-NXU-20260921-piazzi-lights-canonization` offen; keine doppelten Aufträge erzeugt.
+- Register `docs/programs/README.md` und `docs/system-map.md` ergänzt.
