@@ -65,7 +65,7 @@ geroutet. Diese Registrierung legt sie zusammen und erzeugt keine doppelten Auft
 | Adaptive Industry | [`adaptive-industry.md`](adaptive-industry.md) | MiniNodes binden sich über Fähigkeits-, Energie- und Zustandsverträge an Fertigung und digitale Zwillinge an |
 | Mars Settlement Systems Kernel | [`mars-settlement-kernel.md`](mars-settlement-kernel.md) | Robotik nutzt die gemeinsamen Reservoire und Flüsse der Siedlung; keine doppelten Ressourcenzähler |
 | Living Infrastructure | [`living-infrastructure.md`](living-infrastructure.md) | Physische Operationen und Automatisierung konsumieren die Flussverträge |
-| Energy Grid Layer | `external-tasks/open/EXT-ENG-ECO-20260925-energy-grid-learning-routing.md`; ENG `ENG-SYS-EGCA-0001` | Lade- und Energiebedarf der Knoten innerhalb der Kapazitätsgrenzen |
+| Energy Grid Layer | [`energy-grid.md`](energy-grid.md); ENG `ENG-SYS-EGCA-0001` | Lade- und Energiebedarf der Knoten innerhalb der Kapazitätsgrenzen |
 | Planetare Fernerkundung | [`planetary-remote-sensing.md`](planetary-remote-sensing.md) | Scout-Knoten als Mess- und Erkundungsträger; Messung ≠ Schlussfolgerung |
 
 ## 6. Regeln und Abgrenzungen

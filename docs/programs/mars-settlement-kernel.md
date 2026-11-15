@@ -22,7 +22,7 @@ der Flüsse und Prozessverträge bleibt in `kueper-engineering`
 
 | System | Registrierung bzw. Referenz |
 |---|---|
-| Energy Grid | `external-tasks/open/EXT-ENG-ECO-20260925-energy-grid-learning-routing.md`; ENG `ENG-SYS-EGCA-0001` (`systems/energy-grid-capacity-architecture-r1.md`) |
+| Energy Grid | [`energy-grid.md`](energy-grid.md); ENG `ENG-SYS-EGCA-0001` (`systems/energy-grid-capacity-architecture-r1.md`) |
 | ECLSS / Wasser | ENG `ENG-SYS-ECLSS-0001` (`systems/eclss-core-family-r1.md`, `systems/eclss-conserved-flow-contract-r1.json`) |
 | Living Infrastructure / Mykologie | [`living-infrastructure.md`](living-infrastructure.md); [`mycology-soil-ecopoiesis.md`](mycology-soil-ecopoiesis.md) |
 | Landwirtschaft, Abfall/Recycling | als Bausteine in [`living-infrastructure.md`](living-infrastructure.md) geführt; noch kein eigenes Programm |

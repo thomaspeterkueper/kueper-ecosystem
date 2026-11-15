@@ -55,7 +55,7 @@ geroutet. Diese Registrierung legt sie zusammen und erzeugt keine doppelten Auft
 
 | Nachbarprogramm | Referenz | Verhältnis |
 |---|---|---|
-| Energy Grid Layer | `external-tasks/open/EXT-ENG-ECO-20260925-energy-grid-learning-routing.md`; ENG `ENG-SYS-EGCA-0001` (`systems/energy-grid-capacity-architecture-r1.md`) | Energie- und Wärmekapazität begrenzt die Fertigungsplanung; ungeklärte Kapazität führt zu fail-closed |
+| Energy Grid Layer | [`energy-grid.md`](energy-grid.md); ENG `ENG-SYS-EGCA-0001` (`systems/energy-grid-capacity-architecture-r1.md`) | Energie- und Wärmekapazität begrenzt die Fertigungsplanung; ungeklärte Kapazität führt zu fail-closed |
 | MiniNode / Roboterschwarm | [`robotics-mininode.md`](robotics-mininode.md); ENG `ENG-SYS-MININODE-0001` (`systems/mininode-robot-swarm-platform-r1.md`) | Anbindung über Fähigkeits-, Energie- und Zustandsverträge |
 | Bergbau und Ressourcen | ENG `ENG-SYS-PRR-0001` (`systems/planetary-resource-reconnaissance-architecture-0.1.md`) | Rohstoffe und Materialidentität am Eingang der Fertigung |
 | Logistik | ENG `ENG-SYS-STL-0001` (`systems/solar-transfer-logistics-architecture-0.2.md`) | Material- und Teilefluss zwischen Standorten |

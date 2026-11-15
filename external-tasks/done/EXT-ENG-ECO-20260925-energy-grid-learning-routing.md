@@ -1,7 +1,7 @@
 ---
 id: EXT-ENG-ECO-20260925-energy-grid-learning-routing
 title: Energy-grid / learning-module routing
-status: open
+status: done
 source: ENG
 target: ECO
 created: 2026-09-25
@@ -15,7 +15,7 @@ supersedes: []
 - **Origin:** NOXIA cross-project
 - **Target:** KUEPER Ecosystem
 - **Date:** 2026-09-25
-- **Status:** open
+- **Status:** done
 
 ## Anlass
 
@@ -54,3 +54,14 @@ Querschnittsprogramm über mehrere Repositories. Registrierung und Zuständigkei
 - Programm in `kueper-ecosystem` registriert, Zuständigkeiten wie unter „Gewünschte Änderung“ festgehalten.
 - Querverweise zu den genannten Nachbarprogrammen dokumentiert.
 - Folgearbeiten in den Ziel-Repositories als External Tasks geroutet.
+
+## Erledigt
+
+Status: done – Ökosystem-Kreislauf (Claude), 15.11.2026.
+
+## Umgesetzt
+
+- Programm registriert: `docs/programs/energy-grid.md` mit Zweck, Geltungsbereich, Zuständigkeiten (ENG, OTA, KG, NXU, NOXIA, Lernpfad SSF; `noxia-realtime` zurückgestellt) und Regeln.
+- Querverweise zu Robotik/MiniNode, Adaptive Industry, Gebäuden/Siedlungen (Mars Settlement Kernel, Living Infrastructure), Bergbau/Ressourcen und Transport/Logistik.
+- Folgearbeiten: bereits ab 25.09.2026 geroutet (ENG `ENG-SYS-EGCA-0001`, KG `exports/ontology-energy-grid-learning-0.1.json` und OTA `OTA-SCI-0109-2026-DE` erledigt; NXU-Entwicklung und -Integration, NOXIA-Lernmodul und SSF-Lernpfad offen) und als Stand zusammengeführt; keine doppelten Aufträge erzeugt.
+- Register `docs/programs/README.md` und `docs/system-map.md` ergänzt; Verweise in `adaptive-industry.md`, `living-infrastructure.md`, `mars-settlement-kernel.md` und `robotics-mininode.md` auf die Registrierung umgestellt.
