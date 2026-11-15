@@ -1,0 +1,42 @@
+{
+  "id": "RES-20261115-48D2DB51",
+  "status": "queued",
+  "created": "2026-11-15T12:00:38+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0085-2026-DE.md",
+  "source_ref": "160b71e8e7e7cc877f93b3ee67895a5c1d159779",
+  "source_blob_sha": "f98eed81dd2cbdd4770e07084a626a292f54b71b",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 206,
+  "context_paths": [
+    "src/content/documents/OTA-TEC-0025-2050-DE.md",
+    "src/content/documents/OTA-TEC-0025-2091-DE.md",
+    "src/content/documents/OTA-TEC-0082-2026-DE.md"
+  ],
+  "title": "Realwelt-Audit der Restart-, Reuse- und Lebensdaueranker in OTA-TEC-0085 (v1.4, §7): sieben RL10-Zündungen mit 5¼-h-Küste, Vinci-Restarts mit APU, SSME-Rezertifizierung nach zehn Flügen, 15.000 Hot Fires / 2,3 Mio. s und die [OFFEN]-Frage nach 50–150 Zündungen",
+  "question": "Quellengestützter Audit der [R]-Betriebs- und Lebensdaueranker von OTA-TEC-0085-2026-DE (Abschnitt 7 und 'Reale Quellenanker dieser Revision'), gepinnt auf die im Workspace vorliegende v1.4 (Status ENTWURF, Stand 2026-09-22). Das Dokument trägt die einzige Aussage über die zeitliche Belastbarkeit der fiktiven RL-25-Klasse vollständig auf vier Programmhistorien, und die Reuse-Frage ist der einzige Punkt, an dem die kanonische Kombination 450 kN @ 465 s mit einer 50–150-Zündungs-Perspektive kollidiert. (1) RL10-Restart-Envelope: Prüfe 'sieben Zündungen in einer Mission' (Titan-Centaur/Helios-Ära), die 'Küstenphase von etwa 5¼ Stunden' zwischen zwei Zündungen und 'die erste Zwei-Burn-Mission eines wasserstoffbetriebenen RL10/Centaur-Systems datiert auf Oktober 1966'. Kläre, welche konkrete Mission und welche NASA-/Programmdokumentation die Zahlen trägt, ob die Zählung die Primärzündung einschließt und ob 'Zündungen in einer Mission' bei Centaur nicht teilweise Ventil-/Restart-Tests statt Bahnmanöver waren. (2) Vinci: Prüfe 'bis zu vier Wiederzündungen', die APU-Funktion (Tankdruckhaltung und blasenfreie Treibstoffzufuhr/Propellant Settling), die zweite In-flight-Zündung nach rund 35-minütiger Küstenphase beim Ariane-6-Erstflug sowie den APU-bedingten Ausfall der dritten Zündung. Berichte, ob 'bis zu vier' eine Auslegungs- oder eine flugdemonstrierte Zahl ist, und ob die APU-Funktion im Dossier korrekt als Restart-Voraussetzung (nicht als Schubmittel) beschrieben ist. (3) SSME/RS-25: Prüfe 'NASA-Dokumentation der 1980er führte zehn Flüge als damalige Rezertifizierungsgrenze' und 'einzelne SSME flogen zehnmal oder öfter'. Berichte, was Rezertifizierung konkret umfasste (welche Komponenten getauscht bzw. inspiziert wurden), wie viele Flüge einzelne Triebwerke real erreichten und ob 'Wiederverwendung mit Wartung' die im Dossier gezogene Grenze zu 'wartungsfreier 50–150-Zündungs-Lebensdauer' trägt. (4) Familienstatistik: Prüfe 'rund 15.000 Hot Fires und >2,3 Mio. s kumulierte Test-/Brennzeit' der RL10-Familie auf Zeitraum, Bezugsgröße (alle Varianten und Teststände?), Quelle und Einheit; melde, ob es sich um eine Familien-, Programm- oder Firmenstatistik handelt und ob die Zahl als Vergleichsmaßstab für ein Einzeltriebwerk überhaupt zulässig ist. (5) Qualifikationslogik [OFFEN]: Prüfe die Aussage, ein typisches cislunares Missionsprofil mit mehreren Burns könne grundsätzlich innerhalb real demonstrierter Einzelmissions-Restart-Envelopen liegen, eine wiederverwendbare Anwendung über viele Missionen mit insgesamt etwa 50–150+ Starts würde diese Evidenz jedoch deutlich überschreiten. Berichte die realen Qualifikationsphilosophien für mehrfach gezündete und wiederverwendete Kryo-Oberstufentriebwerke (Zündungs-Lebensdauer-Nachweis, Inspektionsintervalle, Shuttle-SSME-Zyklus, Expendable-RL10-Praxis, Studien zu wiederverwendbaren Oberstufen) und ordne ein, um wie viele Größenordnungen 50–150 Zündungen über dem real qualifizierten Bereich liegen. (6) Reklassifiziere: nenne die Sätze, die [R] bleiben können (Mehrfachzündung im Flug ist real demonstriert; Vinci ist wiederzündbar ausgelegt; SSME/RS-25 wurde wiederholt wiederverwendet, aber mit Inspektion und Wartung; Kryo-Oberstufen brauchen Tankdruck-/Settling-Management für Restarts), die zu '[R] Quelleninhalt, Mission und Bezugsgröße offen' abzuschwächen sind ('sieben Zündungen' und '5¼ Stunden'; 'bis zu vier' Vinci-Restarts; 'zehn Flüge' als Rezertifizierungsmarke; 15.000 Hot Fires / 2,3 Mio. s), und die [OFFEN] bleiben müssen (maximale Zündzahl, Einzelbrenndauer und kumulierte Lebensdauer der RL-25-Klasse). Stelle fest, dass keine kanonische Zündzahl, keine kanonische Einzelbrenndauer und kein kanonisches Reuse- oder Inspektionsintervall in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die Engine-out-Präzedenzfälle aus Abschnitt 9 (EUS-4→3-Redundanz, Apollo 6 mit zwei J-2-Abschaltungen, 58-s-Brennverlängerung, 33-%-Impulsskalierung) — eigener Prüfgegenstand und hier nicht mitgeführt; ferner die [F]-Setzung 450 kN @ 465 s, das CYGNUS-Missionsprofil, NOXIA-Spielwerte und die Schema-/SSOT-Entscheidung.",
+  "why_now": "Die Reuse-Zeile ist der einzige [OFFEN]-Block, den v1.4 unangetastet gelassen hat, obwohl die Revision ausdrücklich 'Restart-/Reuse-Grenzen geschärft' beansprucht. Da OTA-TEC-0082 in §2 CYGNUS als wiederverwendbaren, depotgestützten Ferry setzt und NOXIA daran Betriebszyklen ableitet, entscheidet dieser Punkt mit darüber, ob die Komponenten-SSOT überhaupt auf OTA-TEC-0085 verlagert werden kann.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Dokumentierte Programmhistorien mehrfach gezündeter und wiederverwendeter Kryo-Oberstufentriebwerke: RL10/Centaur (Titan-Centaur/Helios), Vinci auf Ariane 6 (inkl. APU und Erstflug-Restart), SSME/RS-25 (Rezertifizierung und Flugzahlen) sowie die kumulierte RL10-Teststatistik.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.65,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "OTA-TEC-0085 ist in der Topic-Liste nicht vertreten; kein früheres Topic behandelt Triebwerks-Restart, Reuse-Qualifikation oder Zündungslebensdauer. Der Gegenstand ist zudem materiell getrennt vom Leistungsaudit (Gap 1): dort geht es um Isp/Schub/Geometrie, hier um Zündzyklen, Küstenzeiten und Qualifikationslogik — die beiden Prüfungen teilen keine Überschneidung und keine Belegkette.",
+  "fingerprint": "48d2db516c85ebdc"
+}
