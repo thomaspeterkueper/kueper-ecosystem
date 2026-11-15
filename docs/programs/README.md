@@ -21,6 +21,7 @@ als External Tasks.
 | Mars Settlement Systems Kernel | Integrationsinstanz für Siedlungssysteme: gemeinsame Reservoire und Flüsse für Energie, ECLSS/Wasser, Biologie, Landwirtschaft, Abfall, Industrie, Logistik und Robotik | [`mars-settlement-kernel.md`](mars-settlement-kernel.md) | registriert 2026-11-15 |
 | Robotik / MiniNode | Familie interoperabler autonomer Roboterknoten von der Evidenz über Ontologie und Systemarchitektur bis zu Kanon, Gameplay und realem Prototypenpfad | [`robotics-mininode.md`](robotics-mininode.md) | registriert 2026-11-15 |
 | Energy Grid Layer | Energienetz-Schicht und Lernmodul: Kapazität, Engpässe, Speicher, Inselbetrieb und Lernszenarien von der Evidenz bis zum Spiel | [`energy-grid.md`](energy-grid.md) | registriert 2026-11-15 |
+| Piazzi-Lights / Ceres 2091 | Zuständigkeitsgrenze NOXIA-Autorenarbeit ↔ Engineering für die Ceres-Siedlung; Autorenparameter provisional-selected bis zur Kanonisierung | [`piazzi-lights.md`](piazzi-lights.md) | registriert 2026-11-15 |
 
 ## Aufnahme weiterer Programme
 
