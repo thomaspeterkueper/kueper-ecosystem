@@ -1,7 +1,7 @@
 ---
 id: EXT-ENG-ECO-20260924-robotics-program-routing
 title: Cross-project robotics program routing
-status: open
+status: done
 source: ENG
 target: ECO
 created: 2026-09-24
@@ -15,7 +15,7 @@ supersedes: []
 - **Origin:** KUEPER Engineering / NOXIA
 - **Target:** KUEPER Ecosystem
 - **Date:** 2026-09-24
-- **Status:** open
+- **Status:** done
 
 ## Anlass
 
@@ -54,3 +54,14 @@ Querschnittsprogramm über mehrere Repositories. Registrierung und Zuständigkei
 - Programm in `kueper-ecosystem` registriert, Zuständigkeiten wie unter „Gewünschte Änderung“ festgehalten.
 - Querverweise zu den genannten Nachbarprogrammen dokumentiert.
 - Folgearbeiten in den Ziel-Repositories als External Tasks geroutet.
+
+## Erledigt
+
+Status: done – Ökosystem-Kreislauf (Claude), 15.11.2026.
+
+## Umgesetzt
+
+- Programm registriert: `docs/programs/robotics-mininode.md` mit Zweck, Geltungsbereich, Zuständigkeiten (ENG, KG, OTA, NXU, NOXIA, Produktpfad `kueper-products`; `noxia-realtime` zurückgestellt) und Regeln; der reale Garten-Roboterschwarm ist als künftiges, kapitalabhängiges Programm festgehalten.
+- Querverweise zu Adaptive Industry, Mars Settlement Systems Kernel, Living Infrastructure, Energy Grid Layer und Planetarer Fernerkundung.
+- Folgearbeiten: bereits ab 24.09.2026 geroutet (ENG `ENG-SYS-MININODE-0001` und `ENG-SYS-MININODE-ENV-0001`, KG `ONT:KG:MODULAR-ROBOTICS-0.1` und OTA `OTA-TEC-0126-2026-DE` erledigt; NXU-Linie und -Integration, NOXIA-Gameplay und Products-Handoff offen) und als Stand zusammengeführt; keine doppelten Aufträge erzeugt.
+- Register `docs/programs/README.md` und `docs/system-map.md` ergänzt; Verweise in `adaptive-industry.md`, `living-infrastructure.md` und `mars-settlement-kernel.md` auf die Registrierung umgestellt.

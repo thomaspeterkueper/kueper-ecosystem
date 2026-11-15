@@ -19,6 +19,7 @@ als External Tasks.
 | Planetensystem-Architekturen (nicht-koplanar/retrograd) | Bahnebenen, Neigungen und rückläufige Umläufe von der Evidenz über Kanon und Bahnmechanik bis zu Generierung und Lernmodul | [`planetary-architecture.md`](planetary-architecture.md) | registriert 2026-11-15 |
 | Adaptive Industry | Adaptive Fertigung, digitale Zwillinge und Physical AI von der Evidenz über Anlagen- und Steuerungsarchitektur bis zu Produktions-Gameplay | [`adaptive-industry.md`](adaptive-industry.md) | registriert 2026-11-15 |
 | Mars Settlement Systems Kernel | Integrationsinstanz für Siedlungssysteme: gemeinsame Reservoire und Flüsse für Energie, ECLSS/Wasser, Biologie, Landwirtschaft, Abfall, Industrie, Logistik und Robotik | [`mars-settlement-kernel.md`](mars-settlement-kernel.md) | registriert 2026-11-15 |
+| Robotik / MiniNode | Familie interoperabler autonomer Roboterknoten von der Evidenz über Ontologie und Systemarchitektur bis zu Kanon, Gameplay und realem Prototypenpfad | [`robotics-mininode.md`](robotics-mininode.md) | registriert 2026-11-15 |
 
 ## Aufnahme weiterer Programme
 

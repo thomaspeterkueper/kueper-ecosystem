@@ -114,6 +114,7 @@ Source-of-Truth-Grenzen zu verschieben. Registrierung und Querverweise liegen in
 | Planetensystem-Architekturen (nicht-koplanar/retrograd) | Bahnebenen, Neigungen und rückläufige Umläufe von der Evidenz über Kanon und Bahnmechanik bis zu Generierung und Lernmodul | [`docs/programs/planetary-architecture.md`](programs/planetary-architecture.md) |
 | Adaptive Industry | Adaptive Fertigung, digitale Zwillinge und Physical AI von der Evidenz über Anlagen- und Steuerungsarchitektur bis zu Produktions-Gameplay | [`docs/programs/adaptive-industry.md`](programs/adaptive-industry.md) |
 | Mars Settlement Systems Kernel | Integrationsinstanz für Siedlungssysteme: gemeinsame Reservoire und Flüsse für Energie, ECLSS/Wasser, Biologie, Landwirtschaft, Abfall, Industrie, Logistik und Robotik | [`docs/programs/mars-settlement-kernel.md`](programs/mars-settlement-kernel.md) |
+| Robotik / MiniNode | Familie interoperabler autonomer Roboterknoten von der Evidenz über Ontologie und Systemarchitektur bis zu Kanon, Gameplay und realem Prototypenpfad | [`docs/programs/robotics-mininode.md`](programs/robotics-mininode.md) |
 
 ## 6. Nicht-Ziele dieser Systemkarte
 
