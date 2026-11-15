@@ -1,0 +1,47 @@
+{
+  "id": "RES-20261115-0C48D6FB",
+  "status": "queued",
+  "created": "2026-11-15T11:39:24+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-KARTE-0002-Epochen-g-Profile-DE.md",
+  "source_ref": "160b71e8e7e7cc877f93b3ee67895a5c1d159779",
+  "source_blob_sha": "a8c60b66569f920b5bc50f6135203118510578be",
+  "document_signature": "OTA-KARTE-0002-Epochen-g-Profile-DE",
+  "title": "Realwelt-Audit der Gehirn-Epochen-Referenzmatrix (OTA-KARTE-0002): die [R]-Zuschreibungen 'maximale Plastizität', 'Peak bei ~32' und 'Demenzvulnerabilität', die Epochengrenzen 9/32/66/83 und die [S]-Spalte 0,38 g",
+  "question": "Quellengestützter Audit der Referenzmatrix OTA-KARTE-0002 'Gehirn-Epochen × g-Profile', gepinnt auf die im Workspace vorliegende v1.0 (Status AKTIV, Stand 2026-09-08; Frontmatter ['R','S','W']). Die Matrix ist eine Schnellreferenz für Charakter- und Siedlungsdokumente und leitet ihre 1g-Spalte ausdrücklich als [R] aus 'Mousley et al. (2025) + Raumfahrtmedizin (2014–2025)' ab; die 0,38-g-Spalte ist als [S] markiert. (1) [R]-Spalte: Prüfe, welche der fünf Zellbeschreibungen tatsächlich Befunde der zitierten Studie sind und welche Interpretationen darstellen – insbesondere 'Netzwerkkonsolidierung, maximale Plastizität, synaptische Blüte' (Epoche I), 'Effizienzsteigerung, Peak bei ~32, höchste neuronale Dynamik' (II), 'strukturelle Stabilität, Plateau, längste stabile Phase' (III), 'Reorganisation durch Abbau, erhöhte Demenzvulnerabilität' (IV) und 'lokale Dominanz, hohe Fragilität, dünne Datenbasis' (V). Berichte Design, Stichprobe, Altersbereich, Bildgebungsmodalität, abgeleitete Netzwerkmetriken und die Schätzmethode der Wendepunkte (~9/32/66/83 Jahre) der Studie nur so weit, wie es für diese Zuschreibungen nötig ist, und stelle ausdrücklich fest, dass es sich um querschnittliche Populationsmittel handelt. Kläre, ob die Studie Netzwerktopologie misst und was sie über Plastizität, Synapsendichte, Pruning, Myelinisierung oder kognitive Leistungsfähigkeit aussagt – und ob 'maximale Plastizität' bzw. 'höchste neuronale Dynamik' als [R] haltbar sind oder als [T]/[S] zu führen wären. (2) Demenz: Prüfe 'erhöhte Demenzvulnerabilität' (Epoche IV) gegen die reale Inzidenz-/Prävalenz- und Risikofaktorenliteratur und trenne altersabhängige Inzidenz von der Behauptung einer eigenen Vulnerabilitätsepoche; prüfe ebenso 'dünne Datenbasis' für 83+. (3) Epochengrenzen: Prüfe, ob 9/32/66/83 als Populationswendepunkte mit Unsicherheitsintervallen berichtet werden, ob das Fünf-Epochen-Modell konsensual oder eines von mehreren Modellen ist und ob die Matrix die Grenzen als gemessene Individualverläufe missverständlich darstellt. (4) g-Spalte: Stelle fest, dass für menschliche Teilgravitation (0,38 g) keine direkten Gehirndaten existieren; berichte den realen Stand (Raumflug-MRT: Hirnverschiebung, Ventrikelerweiterung, sensomotorische Veränderungen; Boden-/Tierstudien mit 0,16/0,33/0,5 g) und prüfe, ob die Matrixzellen 'vestibuläre Regewichtung von Geburt an', 'Epoche 2.5 (18–25)' und 'maximal vulnerabel bei 1g-Wechsel' irgendeine reale Stütze haben oder als [S]/[OFFEN] zu führen sind. (5) Reklassifiziere: Nenne die Sätze, die [R] bleiben können (z. B. Hirnnetzwerke verändern sich über die Lebensspanne; Raumflug verändert Hirnstruktur), die zu '[R] Quelleninhalt, Populationsmittel, Querschnitt' abzuschwächen sind, die [S] bleiben müssen (gesamte 0,38-g-Spalte) und die [OFFEN] werden; stelle fest, dass keine kanonische Epochengrenze, kein kanonisches g-Schwellenwertmodell und keine kanonische Demenzprognose in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die narrative Verwendung der Epochen für OTA-Charaktere/NOXIA, die Romanfiguren, die Omega-7-/SYELP-Setzungen sowie die bereits an KUE ausgelagerte Zusammenfassung der Mousley-Studie (OTA-REQ-20261109-002 / EXT-OTA-KUE-20261109-002) – diese ist nur als bestehende Grenze zu zitieren und nicht neu zu erheben.",
+  "why_now": "Die Matrix ist eine aktive Schnellreferenz, aus der Charakter- und Siedlungsdokumente ihre Alters- und g-Annahmen ziehen. Seit dem Cleanup vom 2026-11-09 ist die Studienzusammenfassung nach KUE ausgelagert, die [R]/[S]-Trennung der Matrix selbst und die 0,38-g-Spalte wurden dabei aber nicht geprüft. Ein Fehler in der [R]-Spalte wirkt systemisch in OTA-SCI-0021, OTA-KARTE-0001 und alle BIO-Profile.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "S"
+  ],
+  "real_world_anchor": "Mousley et al. (2025), Nature Communications: Querschnitts-Diffusions-MRT an rund 4.000 Menschen (0–90 Jahre) mit Wendepunkten der Hirnnetzwerk-Topologie um 9, 32, 66 und 83 Jahre; reale Literatur zu Hirnalterung, Plastizität, Demenzinzidenz sowie Raumflug- und Teilgravitations-Neuroimaging.",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.76,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.75
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer OTA-Rechercheauftrag zu Mousley, Hirnalterungsepochen oder Teilgravitations-Neuroimaging. Der offene KUE-Auftrag EXT-OTA-KUE-20261109-002 baut nur die Studienzusammenfassung auf, nicht die [R]/[S]-Klassifikation der Matrix oder die 0,38-g-Extrapolation – das ist die materielle neue Dimension.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 223,
+    "quality_flags": [
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "0c48d6fb561f04f6"
+}
