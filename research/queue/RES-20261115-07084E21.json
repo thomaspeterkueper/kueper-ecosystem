@@ -1,0 +1,42 @@
+{
+  "id": "RES-20261115-07084E21",
+  "status": "queued",
+  "created": "2026-11-15T12:00:37+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0085-2026-DE.md",
+  "source_ref": "160b71e8e7e7cc877f93b3ee67895a5c1d159779",
+  "source_blob_sha": "f98eed81dd2cbdd4770e07084a626a292f54b71b",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 206,
+  "context_paths": [
+    "src/content/documents/OTA-TEC-0025-2050-DE.md",
+    "src/content/documents/OTA-TEC-0025-2091-DE.md",
+    "src/content/documents/OTA-TEC-0082-2026-DE.md"
+  ],
+  "title": "Realwelt-Audit der Hydrolox-Leistungsreihe und des [H]-Extrapolationspfads in OTA-TEC-0085 (v1.4, §3 und §5): RL10B-2/RL10C-2 110 kN @ 465,5 s, Vinci 180 kN @ 457 s, RD-0120 1.961 kN @ 455 s, RS-25 2.279 kN @ 452 s, J-2X 1.307 kN @ 448 s und die Behauptung, Pc ≥ 200 bar mit ε ≈ 240–280:1 trage 450 kN @ 465 s",
+  "question": "Quellengestützter Audit der [R]- und [H]-Leistungsschicht von OTA-TEC-0085-2026-DE (Abschnitte 3 und 5), gepinnt auf die im Workspace vorliegende v1.4 (Status ENTWURF, Stand 2026-09-22; Frontmatter-evidenceStatus ['R','H','F','OFFEN']). Das Dokument ist der erste Testfall des OTA-TEC-Komponentenschemas und trägt seine gesamte reale Leistungsaussage auf einer einzigen Beispielreihe, einem Bereichsrand und einer einzigen [H]-Extrapolationsannahme; über OTA-TEC-0082 hängen die CYGNUS-Kenndaten und über NOXIA die Spielwerte daran. (1) Beispielreihe verifizieren: Prüfe RL10B-2/RL10C-2 ca. 110 kN bei 465,5 s, Vinci ca. 180 kN bei 457 s, RD-0120 ca. 1.961 kN bei 455 s, RS-25 ca. 2.279 kN bei 452 s, J-2X ca. 1.307 kN bei 448 s gegen NASA-/ESA-/Hersteller-Primärdokumentation und die begutachtete Antriebsliteratur. Kläre für jeden Eintrag: Vakuumschub und Vakuum-Isp der jeweils selben Variante (kein Mischen aus Modifikationen, Düsenverlängerungen oder Seehöhenwerten), zugehöriger Kammerdruck, Expansionsverhältnis und Massenstrom, sowie den Status (geflogen / nur Teststand / nur Studie) — J-2X und Vinci sind dabei ausdrücklich nicht derselbe Reifegrad wie RS-25. (2) Unterer Rand: Prüfe 'grob 421 bis 465,5 s'. Welche realen LH₂/LOX-Vakuumtriebwerke liegen bei 421–435 s, und ist 421 s ein tragfähiger unterer Rand für die im Dokument gemeinte Klasse leistungsfähiger Vakuum-Oberstufentriebwerke oder ein Artefakt aus Frühvarianten, kleiner Expansionsstufe oder Seehöhen-/Nominalwerten? Nenne die real niedrigste Isp eines einschlägigen geflogenen Hydrolox-Vakuumtriebwerks. (3) Trade-Gesetz: Prüfe die Aussage 'besonders hohe Werte oberhalb 460 s sind real bislang bei niedrigerem Schub realisiert' als physikalische Regelmäßigkeit und nicht nur als Bibliothekskoinzidenz. Rekonstruiere den realen Zusammenhang von Vakuum-Isp, Kammerdruck, Expansionsverhältnis, Zyklus und Schub; gib an, ob die beobachtete Anti-Korrelation Schub/Isp zwingend, historisch kontingent oder durch die kleine Stichprobe geflogener Hydrolox-Triebwerke verzerrt ist, und benenne den real höchsten demonstrierten Vakuum-Isp sowie den höchsten Schub, mit dem ≥460 s real geflogen wurden. (4) Nichtbelegtheit der Kombination: Prüfe die [F]/[H]-Kernaussage, kein reales bzw. geflogenes Triebwerk belege 450 kN @ 465 s. Berichte, welches reale Triebwerk der Kombination am nächsten kommt (Schub und Isp getrennt, mit prozentualer Abweichung) und stelle ausdrücklich fest, dass ein Existenzbeweis 'nicht belegt' keine Aussage über 'nicht erreichbar' trägt. (5) Extrapolationspfad [H] nachrechnen: Prüfe die im Dokument genannte Begründung — hochdruckfähige gestufte Verbrennung (fuel-rich staged combustion), Kammerdruck in der Größenordnung ≥200 bar, Expansionsverhältnis ca. 240–280:1 — gegen die reale Hochdruck-Hydrolox-Literatur, insbesondere RD-0120 als geflogene Hochdruckreferenz, RS-25 und die Studien zur Leistungssteigerung über 200 bar. Rechne überschlägig nach, ob Pc ≥ 200 bar und ε ≈ 240–280 bei F = 450 kN einen Vakuum-Isp von 465 s tragen (Schubkoeffizient Cf, Halsfläche, Massenstrom, Düsenwirkungsgrad) und benenne die Verluste, die den Gewinn aufzehren (Verbrennungseffizienz, Divergenz-/Boundary-Layer-Verluste, Frozen-Flow, Kühlungs- und Turbinenentnahme). Melde, ob der Pfad physikalisch trägt, nur knapp trägt oder um wie viele Sekunden er zu kurz greift. (6) Zyklusgrenze: Prüfe '[R] Geschlossene Expander-Zyklen sind bei der 450-kN-Klasse nicht die naheliegende Referenz'. Berichte den real höchsten Schub eines flugerprobten geschlossenen Expander-Hydrolox-Triebwerks (RL10-Serie, Vinci, LE-5B), ob 'closed expander' bei ~450 kN thermodynamisch ausscheidet (Wärmetauschfläche, Turbinenleistung, Pumpenarbeitsvermögen) oder nur unüblich ist, und ob Expander-Bleed bzw. Zwischenformen den Bereich verschieben. (7) Reklassifiziere: nenne die Sätze, die [R] bleiben können (LH₂/LOX ist eine etablierte, real geflogene Treibstoffkombination; Vakuum-Isp im Bereich etwa 440–466 s ist real; hohe Expansionsverhältnisse erhöhen die Vakuumeffizienz; hoher Außendruck kann Überexpansion und Strömungsablösung begrenzen), die zu '[R] Quelleninhalt, Variante und Bezugspunkt offen' abzuschwächen sind (die fünf Beispielpaare im Einzelnen; '421 s' als unterer Rand; die Formulierung eines durchgängigen Schub-/Isp-Trades), und die [H] bleiben müssen (Pc ≥ 200 bar und ε 240–280 als Träger von 465 s bei 450 kN; die Zykluswahl). Stelle fest, dass kein kanonischer Isp-Wert, kein kanonischer Kammerdruck, kein kanonisches Expansionsverhältnis, kein kanonischer Austrittsdurchmesser und keine kanonische Zyklusentscheidung in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die [F]-Setzung 450 kN @ 465 s selbst, die Vierfach-Integration und das CYGNUS-Massen-/Δv-Budget (OTA-TEC-0082), die NOXIA-Spielwerte, die Engine-out-Präzedenzfälle aus Abschnitt 9 sowie die Schema-/SSOT-Entscheidung (14 vs. 22 Punkte, COMPONENT_OF/USES_COMPONENT). NICHT erneut zu erheben: die bereits an KUE-SCI-0179 ausgelagerte Zusammenfassung realer Hydrolox-Leistungsbereiche — sie ist nur als bestehende Grenze zu zitieren; hier geht es um die OTA-spezifische Zahlenreihe und den [H]-Pfad.",
+  "why_now": "Das Dossier ist seit v1.4 (2026-09-22) als Testfall freigegeben, aber die in §Dossier-Status ausdrücklich offen gelassene Frage 3 (Zyklus, Kammerdruck, Düsengeometrie für 450 kN @ 465 s) ist der einzige Punkt, der die Kanonisierung der Komponenten-SSOT blockiert. v1.4 hat drei Research-Validations reconciled, aber die Beispielreihe und der [H]-Pfad wurden dabei nur referenziert, nie gegen Primärdokumentation geprüft — und solange OTA-TEC-0082 die Kanonquelle bleibt, wirkt jeder Zahlfehler direkt in CYGNUS und NOXIA.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Reale Hydrolox-Vakuumtriebwerke (RL10B-2/RL10C-2, Vinci, RD-0120, RS-25, J-2X) mit publizierten Paaren aus Vakuumschub und Vakuum-Isp sowie der physikalische Zusammenhang von Kammerdruck, Expansionsverhältnis, Zyklus und spezifischem Impuls.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.84,
+  "scores": {
+    "project_relevance": 0.93,
+    "cross_project_reuse": 0.88,
+    "uncertainty": 0.6,
+    "evidence_potential": 0.95
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früheres OTA-Research-Topic behandelt OTA-TEC-0085 oder überhaupt Raketenantrieb; die Topic-Liste enthält keinen Eintrag zu Hydrolox-Leistungsdaten, Triebwerkszyklen oder Düsengeometrie. Der Audit ist damit weder Wiederholung noch kosmetische Verengung eines bestehenden Themas, sondern die erste externe Prüfung der Kenndaten-Grundlage von CYGNUS/RL-25.",
+  "fingerprint": "07084e21406e50e0"
+}
