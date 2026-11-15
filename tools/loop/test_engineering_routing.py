@@ -39,3 +39,22 @@ def test_engineering_is_a_canonical_followup_target() -> None:
 def test_worker_prompt_allows_eng_followups() -> None:
     worker = load_module(ROOT / "tools" / "worker" / "agent_worker_v72.py", "agent_worker_v72")
     assert "ENG" in {code.strip() for code in worker.TARGET_CODES.split(",")}
+
+
+def test_affects_keeps_only_project_codes() -> None:
+    router = load_module(ROOT / "tools" / "loop" / "route_followups.py", "route_followups")
+
+    assert router.normalize_affects(["source-code", "target-code"], "NOXIA", "ENG") == ["NOXIA", "ENG"]
+    assert router.normalize_affects(["docs/world/chronomap-erde/"], "NOXIA", "OTA") == ["NOXIA", "OTA"]
+    assert router.normalize_affects(["kg", "ECO", "ENG"], "NOXIA", "ENG") == ["NOXIA", "ENG", "KG", "ECO"]
+    assert router.normalize_affects(None, "KUE", "KG") == ["KUE", "KG"]
+
+    envelope = {
+        "title": "Resolve engineering dependency",
+        "reason": "r",
+        "requested_change": "c",
+        "expected_result": "e",
+        "affects": ["source-code", "target-code"],
+    }
+    text = router.markdown(envelope, "EXT-NOXIA-ENG-20261115-001", "NOXIA", "ENG", "abc", "2026-11-15")
+    assert "affects: [NOXIA, ENG]" in text

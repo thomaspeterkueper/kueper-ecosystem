@@ -148,9 +148,23 @@ def next_id(token: str, source: str, target: dict[str, Any], date: str) -> tuple
     return ident, branch
 
 
+def normalize_affects(raw: Any, source: str, target: str) -> list[str]:
+    """Keep only known project codes; source and target are always affected.
+
+    Agents sometimes copy template placeholders ("source-code") or file paths into
+    `affects`. Those are not project codes and must not reach the External Task.
+    """
+    allowed = set(codes().values())
+    result: list[str] = []
+    for code in [source, target, *(raw if isinstance(raw, list) else [])]:
+        value = str(code).strip().upper()
+        if value in allowed and value not in result:
+            result.append(value)
+    return result
+
+
 def markdown(env: dict[str, Any], ident: str, source: str, target: str, fp: str, today: str) -> str:
-    affects = env.get("affects") or [source, target]
-    affects_s = ", ".join(str(x) for x in affects)
+    affects_s = ", ".join(normalize_affects(env.get("affects"), source, target))
     parent = str(env.get("parent_task") or "")
     depth = int(env.get("depth", 1))
     cost_policy = env.get("cost_policy", "normal")

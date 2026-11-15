@@ -76,8 +76,9 @@ Cross-project follow-ups:
     "priority": "low|medium|high|critical",
     "parent_task": "{task.get('id')}",
     "depth": {next_depth},
-    "affects": ["source-code", "target-code"]
+    "affects": ["<own project code>", "<target code>"]
   }}
+- `affects` lists only project codes from the allowed list (never file paths); the own code and the target are always included.
 - One dependency per envelope. Use stable descriptive filenames. If no necessary cross-project dependency exists, create no outbox file.
 """
         env = os.environ.copy()
