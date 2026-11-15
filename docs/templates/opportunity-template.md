@@ -27,7 +27,10 @@ assessment:                      # je Dimension rating: low | medium | high | un
   collaboration_potential: {rating: unknown, reason: ""}
   ip_risk: {rating: unknown, reason: ""}
 status_history: []               # je Eintrag: at, by, from, to, reason
-deadline_at: null                # ISO-8601 mit Zeitzone; null wenn Uhrzeit/Zone nicht bestätigt
+deadline_at: null                # ISO-8601 mit Uhrzeit und Zeitzone; null wenn Uhrzeit/Zone nicht bestätigt
+deadline_date: null              # YYYY-MM-DD, wenn nur das Datum bekannt ist (als Zeichenkette in Anführungszeichen)
+deadline_status: unknown         # confirmed | reported | unknown
+evidence_status: null            # idea | hypothesis | simulated | experimentally_tested | independently_replicated | peer_reviewed; ab prioritized Pflicht
 funding_amount: null
 currency: null
 country: null
@@ -47,5 +50,7 @@ notes: ""
 next_action: ""
 last_reviewed_at: null
 ```
+
+Freitexte mit `#` oder `:` in Anführungszeichen setzen, sonst kürzt YAML den Wert.
 
 Prüfcheckliste: offizielle Quelle geprüft; formale Kriterien einzeln geprüft; KI- und IP-Regeln geprüft; Frist samt Zeitzone belegt; Forschungsstand korrekt eingeordnet; Entscheidung und Begründung dokumentiert.
