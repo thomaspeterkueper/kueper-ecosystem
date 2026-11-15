@@ -58,7 +58,7 @@ eigene Ressourcenzähler oder Begriffe zu duplizieren.
 | Mycology / Soil Ecology / Ecopoiesis | [`mycology-soil-ecopoiesis.md`](mycology-soil-ecopoiesis.md) | Fachliche Nachbardomäne; Living Infrastructure ist die Integrationsschicht, kein konkurrierendes Programm. Ecopoiesis bleibt Zukunftserweiterung. |
 | Planetary Evolution / Deep Time | [`planetary-evolution.md`](planetary-evolution.md) | Liefert langfristige Geosphäre-Biosphäre-Randbedingungen; Living Infrastructure arbeitet auf Siedlungs- und Engineering-Zeitskalen. |
 | Mars Settlement Systems Kernel | [`mars-settlement-kernel.md`](mars-settlement-kernel.md) | Übergeordnete Integrationsautorität für Siedlungssysteme; Living Infrastructure nutzt gemeinsame Reservoire und erzeugt keine doppelten Ressourcenzähler. |
-| Energy Grid Layer | `external-tasks/open/EXT-ENG-ECO-20260925-energy-grid-learning-routing.md` | Energieflüsse und Schnittstellen werden geteilt, nicht parallel modelliert. |
+| Energy Grid Layer | [`energy-grid.md`](energy-grid.md) | Energieflüsse und Schnittstellen werden geteilt, nicht parallel modelliert. |
 | Adaptive Industry | [`adaptive-industry.md`](adaptive-industry.md) | Material- und Prozessschnittstellen teilen KG-Identitäten und ENG-Verträge. |
 | Robotics / MiniNode | [`robotics-mininode.md`](robotics-mininode.md) | Physische Operationen und Automatisierung konsumieren die Flussverträge; keine Voraussetzung für die Registrierung. |
 | Geschlossene Lebenserhaltung, Landwirtschaft, Abfall/Recycling | [`reviews/2026-11-13-KUE-SCI-0172-2026-DE.md`](../../reviews/2026-11-13-KUE-SCI-0172-2026-DE.md) | Noch kein eigenes Programm-Request; als Bausteine hier und im Mars Settlement Kernel geführt. Evidenzhoheit bleibt OTA. |

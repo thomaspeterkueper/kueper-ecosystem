@@ -115,6 +115,7 @@ Source-of-Truth-Grenzen zu verschieben. Registrierung und Querverweise liegen in
 | Adaptive Industry | Adaptive Fertigung, digitale Zwillinge und Physical AI von der Evidenz über Anlagen- und Steuerungsarchitektur bis zu Produktions-Gameplay | [`docs/programs/adaptive-industry.md`](programs/adaptive-industry.md) |
 | Mars Settlement Systems Kernel | Integrationsinstanz für Siedlungssysteme: gemeinsame Reservoire und Flüsse für Energie, ECLSS/Wasser, Biologie, Landwirtschaft, Abfall, Industrie, Logistik und Robotik | [`docs/programs/mars-settlement-kernel.md`](programs/mars-settlement-kernel.md) |
 | Robotik / MiniNode | Familie interoperabler autonomer Roboterknoten von der Evidenz über Ontologie und Systemarchitektur bis zu Kanon, Gameplay und realem Prototypenpfad | [`docs/programs/robotics-mininode.md`](programs/robotics-mininode.md) |
+| Energy Grid Layer | Energienetz-Schicht und Lernmodul: Kapazität, Engpässe, Speicher, Inselbetrieb und Lernszenarien von der Evidenz bis zum Spiel | [`docs/programs/energy-grid.md`](programs/energy-grid.md) |
 
 ## 6. Nicht-Ziele dieser Systemkarte
 
