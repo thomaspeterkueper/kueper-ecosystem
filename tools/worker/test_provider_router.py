@@ -5,7 +5,7 @@ import sys
 import unittest
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from provider_router import load_policy, route
+from provider_router import fallback_chain, load_policy, route
 
 UTC = dt.timezone.utc
 
@@ -95,6 +95,31 @@ class ProviderRouterTest(unittest.TestCase):
     def test_invalid_cost_policy_is_rejected(self):
         with self.assertRaises(RuntimeError):
             route({"type":"RESEARCH", "payload":{"cost_policy":"free_money"}}, dt.datetime(2026,7,26,5,0,tzinfo=UTC), self.policy)
+
+    def test_fallback_low_uses_haiku_on_gateway(self):
+        task = {"type":"CLASSIFY", "priority":"medium"}
+        d = route(task, dt.datetime(2026,7,26,5,0,tzinfo=UTC), self.policy)
+        self.assertEqual(fallback_chain(task, d, self.policy), [("gateway", "anthropic/claude-haiku-5.5")])
+
+    def test_fallback_medium_flash_uses_gemini_on_gateway(self):
+        task = {"type":"RESEARCH", "priority":"medium"}
+        d = route(task, dt.datetime(2026,7,26,5,0,tzinfo=UTC), self.policy)
+        self.assertEqual(d.model, "deepseek-v4-flash")
+        self.assertEqual(fallback_chain(task, d, self.policy), [("gateway", "google/gemini-3-flash")])
+
+    def test_fallback_pro_uses_heavy_tier(self):
+        task = {"type":"RESEARCH", "priority":"high"}
+        d = route(task, dt.datetime(2026,7,26,5,0,tzinfo=UTC), self.policy)
+        self.assertEqual(d.model, "deepseek-v4-pro")
+        self.assertEqual(fallback_chain(task, d, self.policy), [("gateway-heavy", "google/gemini-3-flash")])
+
+    def test_fallback_skips_disabled_provider(self):
+        import copy
+        policy = copy.deepcopy(self.policy)
+        policy["providers"]["gateway"]["enabled"] = False
+        task = {"type":"CLASSIFY"}
+        d = route(task, dt.datetime(2026,7,26,5,0,tzinfo=UTC), policy)
+        self.assertEqual(fallback_chain(task, d, policy), [])
 
 if __name__ == "__main__":
     unittest.main()

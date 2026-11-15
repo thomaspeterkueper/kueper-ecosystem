@@ -1,7 +1,7 @@
 {
-  "version": 3,
+  "version": 4,
   "timezone": "UTC",
-  "notes": "DeepSeek is an escalation resource, not a default control-plane dependency. Peak windows are configuration, not provider truth.",
+  "notes": "DeepSeek is an escalation resource, not a default control-plane dependency. Peak windows are configuration, not provider truth. v4 (2026-11-15): fallback chain over the Vercel AI Gateway when DeepSeek is unavailable (decision Thomas, 2026-11-14).",
   "providers": {
     "deepseek": {
       "enabled": true,
@@ -9,11 +9,34 @@
       "complex_model": "deepseek-v4-pro",
       "peak_multiplier": 2.0,
       "peak_windows": [
-        {"start": "01:00", "end": "04:00"},
-        {"start": "06:00", "end": "10:00"}
+        {
+          "start": "01:00",
+          "end": "04:00"
+        },
+        {
+          "start": "06:00",
+          "end": "10:00"
+        }
       ],
-      "defer_during_peak": ["low", "medium"],
-      "never_defer": ["critical"]
+      "defer_during_peak": [
+        "low",
+        "medium"
+      ],
+      "never_defer": [
+        "critical"
+      ]
+    },
+    "gateway": {
+      "enabled": true,
+      "transport": "vercel-ai-gateway",
+      "credential_env": "AI_GATEWAY_API_KEY",
+      "notes": "Fallback tier for low/medium tasks; budget row ecosystem.llm_budget_policy 'gateway'."
+    },
+    "gateway-heavy": {
+      "enabled": true,
+      "transport": "vercel-ai-gateway",
+      "credential_env": "AI_GATEWAY_API_KEY",
+      "notes": "Fallback tier for Pro escalations; separate budget row 'gateway-heavy' (max 2 calls/day)."
     }
   },
   "routing": {
@@ -21,20 +44,110 @@
     "explicit_deep_reasoning_flag": "requires_deep_reasoning"
   },
   "task_classes": {
-    "RESEARCH_DISCOVERY": {"cost_sensitive": true, "complexity": "low", "allow_pro": false},
-    "RESEARCH": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
-    "CANON_VALIDATION": {"cost_sensitive": true, "complexity": "medium", "allow_pro": false},
-    "CLASSIFY": {"cost_sensitive": true, "complexity": "low", "allow_pro": false},
-    "ROUTE": {"cost_sensitive": true, "complexity": "low", "allow_pro": false},
-    "IMPLEMENT_EXTERNAL_REQUIREMENT": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
-    "IMPLEMENT_AGENT_RUNTIME": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
-    "LONG_SIMULATION_ANALYSIS": {"cost_sensitive": true, "complexity": "high", "allow_pro": true},
-    "REVIEW_FIX": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
-    "CODE": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
-    "COMPLEX_CODING": {"cost_sensitive": true, "complexity": "high", "allow_pro": true},
-    "BUG": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
-    "DEAD_END": {"cost_sensitive": true, "complexity": "medium", "allow_pro": false},
-    "BUILD_FAILED": {"cost_sensitive": true, "complexity": "medium", "allow_pro": true},
-    "SECURITY": {"cost_sensitive": false, "complexity": "high", "allow_pro": true}
+    "RESEARCH_DISCOVERY": {
+      "cost_sensitive": true,
+      "complexity": "low",
+      "allow_pro": false
+    },
+    "RESEARCH": {
+      "cost_sensitive": true,
+      "complexity": "medium",
+      "allow_pro": true
+    },
+    "CANON_VALIDATION": {
+      "cost_sensitive": true,
+      "complexity": "medium",
+      "allow_pro": false
+    },
+    "CLASSIFY": {
+      "cost_sensitive": true,
+      "complexity": "low",
+      "allow_pro": false
+    },
+    "ROUTE": {
+      "cost_sensitive": true,
+      "complexity": "low",
+      "allow_pro": false
+    },
+    "IMPLEMENT_EXTERNAL_REQUIREMENT": {
+      "cost_sensitive": true,
+      "complexity": "medium",
+      "allow_pro": true
+    },
+    "IMPLEMENT_AGENT_RUNTIME": {
+      "cost_sensitive": true,
+      "complexity": "medium",
+      "allow_pro": true
+    },
+    "LONG_SIMULATION_ANALYSIS": {
+      "cost_sensitive": true,
+      "complexity": "high",
+      "allow_pro": true
+    },
+    "REVIEW_FIX": {
+      "cost_sensitive": true,
+      "complexity": "medium",
+      "allow_pro": true
+    },
+    "CODE": {
+      "cost_sensitive": true,
+      "complexity": "medium",
+      "allow_pro": true
+    },
+    "COMPLEX_CODING": {
+      "cost_sensitive": true,
+      "complexity": "high",
+      "allow_pro": true
+    },
+    "BUG": {
+      "cost_sensitive": true,
+      "complexity": "medium",
+      "allow_pro": true
+    },
+    "DEAD_END": {
+      "cost_sensitive": true,
+      "complexity": "medium",
+      "allow_pro": false
+    },
+    "BUILD_FAILED": {
+      "cost_sensitive": true,
+      "complexity": "medium",
+      "allow_pro": true
+    },
+    "SECURITY": {
+      "cost_sensitive": false,
+      "complexity": "high",
+      "allow_pro": true
+    }
+  },
+  "gateway": {
+    "openai_base_url": "https://ai-gateway.vercel.sh/v1",
+    "anthropic_base_url": "https://ai-gateway.vercel.sh"
+  },
+  "fallback_chain": {
+    "low": [
+      {
+        "provider": "gateway",
+        "model": "anthropic/claude-haiku-5.5"
+      }
+    ],
+    "medium": [
+      {
+        "provider": "gateway",
+        "model": "google/gemini-3-flash"
+      }
+    ],
+    "high": [
+      {
+        "provider": "gateway",
+        "model": "google/gemini-3-flash"
+      }
+    ],
+    "pro": [
+      {
+        "provider": "gateway-heavy",
+        "model": "google/gemini-3-flash"
+      }
+    ]
   }
 }

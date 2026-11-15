@@ -113,8 +113,16 @@ async function buildEvidencePacket() {
     }),
   };
 
+  // Model fallbacks (ECO-OPS-20261028-llm-fallback, decision Thomas 2026-11-14): the gateway tries
+  // these in order when the primary scout model is unavailable or out of credit.
+  const fallbackModels = (process.env.KUEPER_EVIDENCE_FALLBACK_MODELS
+    ? process.env.KUEPER_EVIDENCE_FALLBACK_MODELS.split(',')
+    : evidencePolicy.fallback_models ?? []
+  ).map((m) => String(m).trim()).filter((m) => m && m !== model);
+
   const providerOptions = {
     gateway: {
+      ...(fallbackModels.length ? { models: fallbackModels } : {}),
       user: 'kueper-research-loop',
       tags: ['kueper', 'external-evidence', 'exa', `project:${sourceProject}`, `profile:${profileName}`],
     },
