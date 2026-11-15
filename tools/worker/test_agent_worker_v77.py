@@ -167,6 +167,45 @@ class WorkerV77Tests(unittest.TestCase):
         self.assertIsInstance(v77.classify_http_error("gateway", 402, "no credits"), worker.ProviderUnavailable)
         self.assertEqual(v77.classify_http_error("gateway", 429, "slow").code, "http-429")
         self.assertNotIsInstance(v77.classify_http_error("gateway", 400, "bad"), worker.ProviderUnavailable)
+        denied = v77.classify_http_error("gateway", 403, "Free tier users do not have access to this model.")
+        self.assertIsInstance(denied, worker.ProviderUnavailable)
+        self.assertEqual(denied.code, "gateway-access-denied")
+        self.assertNotIsInstance(v77.classify_http_error("gateway", 403, "forbidden"), worker.ProviderUnavailable)
+
+    def test_gateway_free_tier_refusal_in_agent_run_is_provider_unavailable(self):
+        # Live case 15.11.2026: Claude Code via gateway exits 1 with "403 Free tier users do not have access".
+        def refused_repo_task(task, model):
+            raise worker.WorkerError(
+                "agent failed (1): Failed to authenticate. API Error: 403 Free tier users do not have access "
+                "to this model. Upgrade to paid credits for unrestricted access."
+            )
+
+        with mock.patch.object(worker, "repo_task", refused_repo_task):
+            with self.assertRaises(worker.ProviderUnavailable) as ctx:
+                v77.execute({"id": "t", "repository": "o/r"}, "gateway", "google/gemini-3-flash")
+        self.assertEqual((ctx.exception.provider, ctx.exception.code), ("gateway", "gateway-access-denied"))
+
+    def test_other_gateway_agent_failure_stays_task_failure(self):
+        def broken_repo_task(task, model):
+            raise worker.WorkerError("agent failed (1): tests failed")
+
+        with mock.patch.object(worker, "repo_task", broken_repo_task):
+            with self.assertRaises(worker.WorkerError) as ctx:
+                v77.execute({"id": "t", "repository": "o/r"}, "gateway", "google/gemini-3-flash")
+        self.assertNotIsInstance(ctx.exception, worker.ProviderUnavailable)
+
+    def test_free_tier_refusal_exhausts_chain_and_reschedules(self):
+        db = ScriptedDB({"kueper_provider_available": True, "kueper_reserve_llm_invocation": {"allowed": True}})
+        chain = [("gateway", "google/gemini-3-flash")]
+
+        def executor(task, provider, model):
+            raise worker.ProviderUnavailable(provider, "gateway-access-denied", "403 free tier", 21600)
+
+        outcome, provider, _model, _depth, err = v77.run_chain(db, TASK, "lease", chain, "r", executor)
+        self.assertIsNone(outcome)
+        self.assertEqual(err.code, "gateway-access-denied")
+        pause = [p for n, p in db.calls if n == "kueper_pause_provider"]
+        self.assertEqual(pause[0]["p_provider"], "gateway")
 
 
 if __name__ == "__main__":

@@ -60,10 +60,21 @@ def _gateway_urls(policy: dict[str, Any] | None = None) -> tuple[str, str]:
     )
 
 
+GATEWAY_ACCESS_DENIED_MARKERS = ("free tier users do not have access", "upgrade to paid credits")
+
+
+def gateway_access_denied(message: str) -> bool:
+    """True when the gateway refuses the model for account/tier reasons (e.g. 403 on the free tier)."""
+    lower = message.lower()
+    return any(marker in lower for marker in GATEWAY_ACCESS_DENIED_MARKERS)
+
+
 def classify_http_error(provider: str, code: int, message: str) -> Exception:
     lower = message.lower()
     if code == 402 or "insufficient" in lower or ("credit" in lower and "balance" in lower):
         return worker.ProviderUnavailable(provider, "billing-insufficient-balance", message, 21600)
+    if code == 403 and gateway_access_denied(message):
+        return worker.ProviderUnavailable(provider, "gateway-access-denied", message, 21600)
     if code in {429, 503}:
         return worker.ProviderUnavailable(provider, f"http-{code}", message, 1800)
     return worker.WorkerError(f"{provider} HTTP {code}: {message[:2000]}")
@@ -150,6 +161,13 @@ def execute(task: dict[str, Any], provider: str, model: str) -> dict[str, Any]:
             # Older layers label agent failures as "deepseek"; attribute them to the gateway tier.
             if exc.provider != provider:
                 raise worker.ProviderUnavailable(provider, exc.code, exc.message, exc.pause_seconds) from exc
+            raise
+        except worker.WorkerError as exc:
+            # Claude Code reports a gateway refusal (403, model not available on the account tier)
+            # only as a failed agent run; treat it as provider unavailability, not as a task failure.
+            message = str(exc)
+            if gateway_access_denied(message):
+                raise worker.ProviderUnavailable(provider, "gateway-access-denied", message[-2000:], 21600) from exc
             raise
 
 
