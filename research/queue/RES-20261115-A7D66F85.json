@@ -1,0 +1,48 @@
+{
+  "id": "RES-20261115-A7D66F85",
+  "status": "queued",
+  "created": "2026-11-15T11:39:24+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-KOM-0002-2026-DE.md",
+  "source_ref": "160b71e8e7e7cc877f93b3ee67895a5c1d159779",
+  "source_blob_sha": "7bd45d3008737b558c003702a27240df1dd6bf39",
+  "document_signature": "OTA-KOM-0002-2026-DE",
+  "title": "Realwelt-Audit der musiktheoretischen [R-Anker] in OTA-KOM-0002 ('The Resonance of Us'): 'Lanna-Pentatonik' E–F#–G#–B–C#, E-Lydisch und die Thai-Textfassung",
+  "question": "Quellengestützter Audit der als [R-Anker] geführten Musik- und Sprachschicht von OTA-KOM-0002 (Weddingsong 'The Resonance of Us', v1.0, Status AKTIV; Frontmatter ['F','W'], im Text '[R-Anker] Musiktheorie'). Das Dokument behauptet in KN-02 ausdrücklich, die 'Verbindung zur Lanna-Pentatonik' sei 'kulturell präzise', und stützt die Songstruktur auf eine Tabelle mit Tonart, Akkorden und einer 'Lanna-Pentatonik E–F#–G#–B–C# · nordthailändische Tempelmusik-Stimmung'. (1) Skala: Prüfe gegen die ethnomusikologische Literatur zu Nordthailand/Lan Na, ob 'Lanna-Pentatonik' eine dokumentierte Skalen- oder Stimmungskategorie ist, welche Tonsätze für die jeweiligen Instrumente (z. B. Ranat, Pi, Khaen, Saw) real berichtet werden (pentatonisch vs. siebentönig/äquidistant; instrumentenspezifische Stimmungen) und ob sich E–F#–G#–B–C# als dokumentierter Lanna-Tonsatz belegen lässt oder nur als westliche Dur-Pentatonik auf E zu beschreiben ist. Melde jede Nichtbestätigung ausdrücklich und nenne die nächstliegenden realen Skalenkategorien, ohne sie stillschweigend zu substituieren. (2) Genre: Prüfe, ob 'nordthailändische Tempelmusik-Stimmung' eine zutreffende Genre-/Kontextbezeichnung ist oder ob Tempelmusik in Lan Na anderen Ensemble- und Aufführungstraditionen zuzuordnen ist; schlage die werktreue Fassung vor. (3) Modus/Akkorde: Prüfe die Aussage 'E-Lydisch hebt den erhöhten 4. Ton (A#) hervor' (E-Lydisch = E–F#–G#–A#–B–C#–D#) und die Konsistenz der Akkordtabelle (Emaj7 | Amaj7; Emaj7 | Bsus4 | C#m7 | Amaj7) mit E-Dur/E-Lydisch; melde jede inkonsistente Akkordbezeichnung. (4) Thai: Prüfe die Thai-Originalfassung und die Transliteration auf sprachliche Korrektheit (Orthographie, Grammatik, Tonsilben; Begriffe wie พรหมลิขิต/Prom-li-khit, Ranat-Ek, Rim Niran) und darauf, ob die Transliteration die Schrift wiedergibt oder nur eine Aussprachehilfe ist; benenne konkrete Fehler und Korrekturvorschläge, ohne den fiktiven Text umzuschreiben. (5) Reklassifiziere: Nenne die Aussagen, die [R-Anker] bleiben können (E-Dur/E-Lydisch und Akkordbezeichnungen als reale Musiktheorie; Thai als reale Sprache), die zu '[R-Anker] Quelleninhalt, kulturelle Zuschreibung offen' abzuschwächen sind ('Lanna-Pentatonik' als Eigenname, 'kulturell präzise', 'Tempelmusik-Stimmung') und die [F]/[W] bleiben; stelle fest, dass kein kanonischer Tonsatz, keine kanonische Stimmung und keine kanonische kulturelle Zuordnung in den Kanon aufgenommen wird. AUSGESCHLOSSEN: der fiktive Songtext selbst, die Hochzeitsnarrativik um Rim Niran, die KN-01-Koinzidenz mit OTA-KOM-0003, die NOXIA-/Ranat-Ek-Weltsetzung und alle Balancingwerte.",
+  "why_now": "Das Dokument ist als Song mit realer Aufführung archiviert und behauptet ausdrücklich kulturelle Präzision ('kulturell präzise'), trägt diese Behauptung aber nur als [R-Anker] ohne Quelle. Die thailändische Fassung, die Skalenbenennung und die Akkordtabelle sind die einzigen extern prüfbaren Aussagen des Dokuments und wurden bisher weder recherchiert noch in einem External-Task adressiert.",
+  "languages": [
+    "de",
+    "en",
+    "th"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R-Anker"
+  ],
+  "real_world_anchor": "Ethnomusikologie Nordthailands (Lan-Na-Tradition, pentatonische Skalen und instrumentenspezifische Stimmungen), westliche Modal- und Akkordtheorie, thailändische Orthographie und Transliteration.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.61,
+  "scores": {
+    "project_relevance": 0.6,
+    "cross_project_reuse": 0.55,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.6
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer OTA-Rechercheauftrag zu Musiktheorie, Lanna-/Thai-Musik oder thailändischer Sprachrichtigkeit; kein External-Task deckt die musiktheoretische [R-Anker]-Schicht ab. Damit ist die Prüfung ohne semantischen Vorläufer.",
+  "workqueue_basis": {
+    "substance": "KURZ",
+    "words": 843,
+    "quality_flags": [
+      "GENERIC_TITLE",
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "NO_HEADINGS"
+    ]
+  },
+  "fingerprint": "a7d66f85333292c9"
+}
