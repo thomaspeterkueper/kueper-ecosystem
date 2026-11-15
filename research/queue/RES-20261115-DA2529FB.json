@@ -1,6 +1,6 @@
 {
   "id": "RES-20261115-DA2529FB",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-15T11:15:16+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früheres Thema behandelt OTA-SCI-0112. Der nächstliegende Audit RES-20261114-CF45C0BC prüft die rover-skalige LRV-15-Lebenserhaltung (4 Personen, 14 Tage, 92 % Wasser-Recycling, Vorratsmassen) und damit Verbrauchsgüter, nicht die siedlungs-skalige Nahrungs-/Sauerstoffproduktion; RES-20261011-3AE8B95C und RES-20261011-FCA2165B prüfen Eisressourcen und die thermodynamische Energiebasis der Wasserextraktion, nicht Crop-Flächen und Lichtenergie. Neu ist die quantitative Kopplung Fläche → Lichtregime → elektrische Leistung pro Person, die im Dokument selbst nur als 'P_crop > 0' steht.",
-  "fingerprint": "da2529fbe4bb9898"
+  "fingerprint": "da2529fbe4bb9898",
+  "updated_at": "2026-11-15T11:28:23+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/301"
 }
