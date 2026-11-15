@@ -28,7 +28,7 @@ der Flüsse und Prozessverträge bleibt in `kueper-engineering`
 | Landwirtschaft, Abfall/Recycling | als Bausteine in [`living-infrastructure.md`](living-infrastructure.md) geführt; noch kein eigenes Programm |
 | Adaptive Industry | [`adaptive-industry.md`](adaptive-industry.md); ENG `ENG-SYS-AFCA-0001` |
 | Logistik | ENG `ENG-SYS-STL-0001` (`systems/solar-transfer-logistics-architecture-0.2.md`) |
-| MiniNodes / Robotik | `external-tasks/open/EXT-ENG-ECO-20260924-robotics-program-routing.md`; ENG `ENG-SYS-MININODE-0001` (`systems/mininode-robot-swarm-platform-r1.md`) |
+| MiniNodes / Robotik | [`robotics-mininode.md`](robotics-mininode.md); ENG `ENG-SYS-MININODE-0001` (`systems/mininode-robot-swarm-platform-r1.md`) |
 | Planetare Randbedingungen | [`planetary-evolution.md`](planetary-evolution.md) |
 
 ## 3. Zuständigkeiten
