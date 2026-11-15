@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261115-DA2529FB",
+  "status": "queued",
+  "created": "2026-11-15T11:15:16+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0112-2026-DE.md",
+  "source_ref": "160b71e8e7e7cc877f93b3ee67895a5c1d159779",
+  "source_blob_sha": "53dcca07a785ffdd89a67ab6a9282753c90d4284",
+  "title": "Realwelt-Audit der Crop-Flächen- und Lichtenergie-Kalibrierwerte in OTA-SCI-0112 (v1.0, §4–6 und §24): 20–25 m²/Person für O₂, 40–50 m²/Person für O₂ plus Nahrung, 453 m² für sechs Personen, APH 0,2 m² / 135 Tage / 180 Sensoren und Veggie 70 W",
+  "question": "Quellengestützter Audit der Kalibrierwerte von OTA-SCI-0112-2026-DE, gepinnt auf die im Workspace vorliegende v1.0 (Status ENTWURF, Stand 18.10.2026; Frontmatter-evidenceStatus ['R','I','H','OFFEN']). Das Dokument ist die Evidenzbasis für Mars-Siedlungen als Stoffstromsystem und liefert in §24 ausdrücklich die Kalibrierwerte für NOXIA; der Realteil zieht nach KUE, die Zahlen bleiben aber als OTA-Kalibrierwerte stehen (OTA-REQ-20261107-002). Die fünf bereits als 'zu ungenau' bekannten Literaturangaben (Wheeler, LMLSTP, 'Solar vs. Fission', ISS-Supportability, Beyond-LEO-Supportability) sind NICHT erneut zu prüfen – sie sind nur als geerbte Grenze zu zitieren. (1) Crop-Flächen: Prüfe 'etwa 20–25 m² aktive Crop-Fläche pro Person zur Deckung des Sauerstoffbedarfs' und 'etwa 40–50 m² pro Person für Sauerstoff plus wesentliche/full food production in optimierten Systemen' gegen die reale BLSS-/CELSS-Literatur (NASA CELSS-Studien, Wheeler, Bugbee/Salisbury, Drysdale, BIO-Plex-/Lunar-Mars-Life-Support-Test-Programm-Kontexte). Kläre: Handelt es sich um O₂-Bedarf, Kalorienbedarf oder beides, bei welcher PPF/DLI, Photoperiode, Ernteindex und welchem Diät-Modell, und ist die Spanne als Literaturwert oder als abgeleitete Größenordnung zu führen? (2) Interner Widerspruch: Das Dokument nennt 40–50 m²/Person und zugleich 'etwa 453 m² für sechs Personen' (= 75,5 m²/Person) aus einem historischen NASA-Menümodell, ohne die beiden Bezugsgrößen zu versöhnen. Prüfe, aus welcher Studie 453 m² für sechs Personen stammt (Diät, Lichtniveau, Kultursystem) und ob die Diskrepanz ein anderes Menü, ein anderes Lichtregime oder einen anderen Systemgrenzwert abbildet. (3) ISS-Hardware: Prüfe 'APH bietet ungefähr 0,2 m² Wachstumsfläche', 'Experimente bis etwa 135 Tage' und 'mehr als 180 Sensoren' sowie 'Veggie benötigt laut NASA-Factsheet etwa 70 W für Licht, Ventilation und Kontrolle' gegen NASA-Factsheets und APH-/Veggie-Primärbeschreibungen. Melde jede Abweichung der Fläche (APH gilt als größte ISS-Pflanzenkammer; ist 0,2 m² die Science-Carrier- oder die Gesamtfläche?) und jede Abweichung der Leistungsangabe. (4) Wasseranker: Prüfe '98 % Gesamt-Wasserrückgewinnung nach Integration des Brine Processor Assembly (2023)', '93–94 % davor' und 'ungefähr eine Gallone Wasser pro Person und Tag' gegen die NASA-Meldung von 2023 und die ECLSS-Referenzdokumentation; kläre, ob 98 % eine Kampagnen-/Demonstrationszahl oder ein Dauerbetriebswert ist. (5) Energie-Kalibrierung (der eigentliche Kern): §6 setzt nur 'P_crop > 0'. Rechne aus 40–50 m²/Person und plausiblen Lichtregimen (ca. 300–400 µmol m⁻² s⁻¹ PPF über 16–18 h, DLI ca. 17–26 mol m⁻² d⁻¹) und realen LED-Effizienzen (ca. 2,0–3,0 µmol/J) die elektrische Beleuchtungsleistung pro Person und Tag ab und vergleiche sie mit publizierten BLSS-Energiebilanzen (kW thermisch/elektrisch pro Person) und mit den übrigen Siedlungslasten. Berichte den Faktor gegenüber typischen ECLSS-Lasten, ob 40–50 m²/Person energetisch überhaupt darstellbar sind, und ob sich ein belastbarer Kalibrierbereich statt der Platzhalter-Ungleichung angeben lässt. (6) Reklassifiziere: Nenne die Sätze, die [R] bleiben können (ISS-Wasserrecycling demonstriert; APH/Veggie existieren; essbare Kulturen wurden auf der ISS gezogen; MOXIE erzeugte O₂ auf Mars), die zu '[R] Quelleninhalt, Bezugsgröße und Bestandsannahme offen' abzuschwächen sind (20–25 m², 40–50 m², 453 m², 0,2 m², 70 W, 98 % als Dauerwert), die als [T] zu führen sind (Licht-zu-Biomasse- und Leistungsmodell) und die [OFFEN] bleiben müssen; stelle fest, dass kein kanonischer m²/Person-Wert, kein kanonischer kW/Person-Wert und kein kanonischer Closure-Grad in den Kanon oder in NOXIA-Standardwerte aufgenommen wird. AUSGESCHLOSSEN: NOXIA-Spielmechaniken und Baukosten, MiniNode-/Robotik-Architektur, Fission-Surface-Power-Dimensionierung, die konkreten Mars-Siedlungszahlen, die Perchlorat-/Aufbereitungsprozesswahl (OTA-TEC-0086) sowie alle NOXIA-/OTA-Balancing-Werte. NICHT erneut zu prüfen: die Mars-Eisressourcen und die thermodynamische Energiebasis der Wasserextraktion (RES-20261011-3AE8B95C, RES-20261011-FCA2165B) – nur als geerbte Grenzen zitieren.",
+  "why_now": "OTA-SCI-0112 ist am 2026-11-07 begutachtet und nach KUE-Entscheid zum Brückendokument bestimmt; §24 bleibt dabei ausdrücklich als OTA-Kalibrierblock stehen (OTA-REQ-20261107-002). Genau diese Zahlen sind damit die einzigen Realwerte, die NOXIA und die Mars-Siedlungsdokumente ohne KUE-Verweis weiter tragen – und sie sind bisher nur bibliographisch (5 ungenaue Angaben), nie quantitativ geprüft. Der Review-Termin steht auf 2027-05-07.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "NASA-/BLSS-Literatur zu Crop-Fläche pro Person (O₂ und Vollernährung), APH-/Veggie-Spezifikationen, ISS-Wasserrecycling 98 % nach Brine Processor Assembly sowie die aus Fläche, PPF/DLI und LED-Effizienz ableitbare elektrische Beleuchtungsleistung pro Person.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.95,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früheres Thema behandelt OTA-SCI-0112. Der nächstliegende Audit RES-20261114-CF45C0BC prüft die rover-skalige LRV-15-Lebenserhaltung (4 Personen, 14 Tage, 92 % Wasser-Recycling, Vorratsmassen) und damit Verbrauchsgüter, nicht die siedlungs-skalige Nahrungs-/Sauerstoffproduktion; RES-20261011-3AE8B95C und RES-20261011-FCA2165B prüfen Eisressourcen und die thermodynamische Energiebasis der Wasserextraktion, nicht Crop-Flächen und Lichtenergie. Neu ist die quantitative Kopplung Fläche → Lichtregime → elektrische Leistung pro Person, die im Dokument selbst nur als 'P_crop > 0' steht.",
+  "fingerprint": "da2529fbe4bb9898"
+}
