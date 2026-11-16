@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261116-9F2F79BA",
+  "status": "queued",
+  "created": "2026-11-16T11:43:58+00:00",
+  "source_project": "products",
+  "source_repository": "thomaspeterkueper/kueper-products",
+  "source_path": "external-tasks/open/EXT-ENG-PRODUCTS-20261018-mininode-env-gen0-handoff.md",
+  "source_ref": "91a307e81227eecaea9c75e6ce1eaa3959113b59",
+  "source_blob_sha": "54cbaf70f37e07e43289ac958f724e15674c43ab",
+  "title": "Defensible RF/local-sync acceptance criterion for the basement-grade MiniNode",
+  "question": "What do peer-reviewed 2.4 GHz BLE indoor/subterranean propagation measurements, building-material attenuation data and ITU-R/IEEE link-budget models establish about achievable range, packet-delivery ratio and link margin for a battery-powered node with an internal antenna through masonry, concrete and soil at the MiniNode's intended sites (cellar, shed, garden, workshop), and what quantitative RF/local-sync acceptance criterion (range, RSSI/link margin, packet loss, sync interval) is defensible for the P2 gate without overclaiming whole-house or whole-garden coverage?",
+  "why_now": "The 2026-10-18 Engineering handoff closes the Gen-0 architecture and makes P2 acceptance depend on 'RF/local-sync performance', but states no threshold. The product is aimed at cellars, sheds and gardens — the worst 2.4 GHz environments — and the first-prototype requirement already includes local radio. Without a measured link budget the gate cannot pass or fail, and the local-first differentiation cannot be validated.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "2.4 GHz BLE indoor/subterranean propagation and building-material attenuation (ITU-R P.1238 and peer-reviewed measurement studies); nRF54L15 radio characteristics; ETSI EN 300 328 regulatory limits",
+  "publication_route_hint": null,
+  "project_weight": 0.9,
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.88,
+    "uncertainty": 0.82,
+    "evidence_potential": 0.88
+  },
+  "related_research_ids": [
+    "RES-20261108-5DA5CE14"
+  ],
+  "novelty_reason": "The prior MiniNode topic audits enclosure-induced T/RH lag, condensation bias and reference metrology for the 72-hour P0 run. This gap audits a different acceptance dimension: the P2 radio link and local-sync range. It does not rephrase the metrology question and does not treat RF measurements as proof of the product thesis.",
+  "fingerprint": "9f2f79ba786fac0c"
+}
