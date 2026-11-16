@@ -1,6 +1,6 @@
 {
   "id": "RES-20261116-9F2F79BA",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-16T11:43:58+00:00",
   "source_project": "products",
   "source_repository": "thomaspeterkueper/kueper-products",
@@ -33,5 +33,7 @@
     "RES-20261108-5DA5CE14"
   ],
   "novelty_reason": "The prior MiniNode topic audits enclosure-induced T/RH lag, condensation bias and reference metrology for the 72-hour P0 run. This gap audits a different acceptance dimension: the P2 radio link and local-sync range. It does not rephrase the metrology question and does not treat RF measurements as proof of the product thesis.",
-  "fingerprint": "9f2f79ba786fac0c"
+  "fingerprint": "9f2f79ba786fac0c",
+  "updated_at": "2026-11-16T11:53:22+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/306"
 }
