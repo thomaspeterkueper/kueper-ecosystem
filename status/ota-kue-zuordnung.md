@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-15 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-16 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -63,8 +63,8 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0102-2026-DE | Autophagie im menschlichen Altern — Flux, Zelltyp, Gesc | IOFFENR |  | geprüft 2026-11-13 – ganz nach KUE, OTA bleibt Brückendokument; EXT-OTA-KUE-20261113-002, OTA-REQ-20261113-002 |
 | OTA-SCI-0103-2026-DE | Longitudinale Gehirngesundheit — Lebenslauf-Risiken, Pr | IOFFENR |  | geprüft 2026-11-15 – ganz nach KUE, OTA bleibt Brückendokument (§19); EXT-OTA-KUE-20261115-001, OTA-REQ-20261115-001 |
 | OTA-SCI-0108-2026-DE | Ultrakompakte Doppel-Weiße-Zwerge: Orbitalzerfall, Dire | HIOFFENR |  | geprüft 2026-11-15 – ganz nach KUE (kein Werkbezug), OTA bleibt Brückendokument; EXT-OTA-KUE-20261115-002, OTA-REQ-20261115-002 |
-| OTA-SCI-0109-2026-DE | Stromnetz-Engpässe: Erzeugung, Transportkapazität, Redi | HOFFENRT |  | offen |
-| OTA-SCI-0110-2026-DE | Adaptive Fertigung und Physical AI: Digitale Zwillinge, | HIOFFENR |  | offen |
+| OTA-SCI-0109-2026-DE | Stromnetz-Engpässe: Erzeugung, Transportkapazität, Redi | HOFFENRT |  | geprüft 2026-11-16 – ganz nach KUE, OTA bleibt Brückendokument (NOXIA-Archivregel §14); EXT-OTA-KUE-20261116-001, OTA-REQ-20261116-001 |
+| OTA-SCI-0110-2026-DE | Adaptive Fertigung und Physical AI: Digitale Zwillinge, | HIOFFENR |  | geprüft 2026-11-16 – ganz nach KUE (Realteil), NOXIA-Anschluss/A0–A5/Archivregel bleiben; EXT-OTA-KUE-20261116-002, OTA-REQ-20261116-002 |
 | OTA-SCI-0111-2026-DE | β Pictoris b im Radio: Aurorale Emission, Magnetfeld-In | HIOFFENR |  | offen |
 | OTA-SCI-0112-2026-DE | Mars-Siedlungen als Stoffstromsystem: ECLSS, Nahrung, I | HIOFFENR |  | geprüft 2026-11-07 – ganz nach KUE (Realteil), NOXIA-Regeln §18/21/24/27/30 bleiben; EXT-OTA-KUE-20261107-001, danach Brückendokument OTA-REQ-20261107-002 |
 | OTA-TEC-0126-2026-DE | Verteilte Robotik und MiniNode: Evidenzbasis für hetero | HOFFENRT |  | offen |
