@@ -1,0 +1,47 @@
+{
+  "id": "RES-20261116-D0CA0941",
+  "status": "queued",
+  "created": "2026-11-16T12:10:54+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0114-2026-DE.md",
+  "source_ref": "58062860880172f6bc3e040bc0ad6e37acd16fe8",
+  "source_blob_sha": "35a198ef4386270cc6c9df2b8270a2fe3055d345",
+  "document_signature": "OTA-SCI-0114-2026-DE",
+  "title": "Realwelt-Audit der Cacciapaglia-et-al.-Kennung und der Flächensatz-Behauptung in OTA-SCI-0114 (v0.2): arXiv:2606.24642 gegen die PRD-2026-Fassung 'When Black Holes Admit Pair-of-pants Topologies', das Kerr-Fenster nahe Extremalität und die Grenze 'Entropiebedingung nur notwendig, nicht hinreichend'",
+  "question": "Quellengestützter Audit der [R]/[I]-Schicht von OTA-SCI-0114-2026-DE, gepinnt auf die im Workspace vorliegende v0.2 (Status ENTWURF; Frontmatter ['R','I','H','OFFEN']). Das Dokument trägt seinen gesamten externen Befund auf genau einer Arbeit und drei Behauptungen; die Quellenprüfung 2026-11 führt die Angabe als 'zu ungenau' und hat sie nicht abgeschlossen (OTA-REQ-20261106-quellenpruefung, Bereich OTA-SCI-0095 bis -0115). (1) Quellenverifikation: Prüfe, ob arXiv:2606.24642 existiert und ob Titel, Autorschaft (Cacciapaglia, Del Piano, Sannino, Vellucci), Einreichungsdatum und Kategorie so stimmen; prüfe ferner, ob eine Physical-Review-D-Fassung 2026 mit dem Titel 'When Black Holes Admit Pair-of-pants Topologies' und der Preprint-Abweichung 'When Black Holes Can Wear Pants' belegbar ist (Band, Artikelnummer, DOI, Publikationsdatum, Peer-Review-Status) und ob die Begleitmitteilung der University of Southern Denmark vom 21. Oktober 2026 unter der genannten URL und mit dem genannten Titel auffindbar ist. Melde jede Nichtbestätigung ausdrücklich und nenne die nächstliegenden realen Arbeiten zu Horizontspaltung/Topologiewechsel, ohne sie stillschweigend zu substituieren. (2) Gegenstand der Arbeit: Kläre, was 'pair-of-pants topologies' in dieser Arbeit physikalisch bezeichnet. Ist die Arbeit eine vierdimensionale klassische Gravitationsrechnung über die Spaltung eines Ereignishorizonts, oder eine Topologieänderung in höheren Dimensionen, eine euklidische/holographische Paar-Hosen-Geometrie (AdS/CFT-Randtopologie, Cobordismus) oder eine Kombination? Berichte Signatur, Dimension, Materiemodell, Randbedingungen und die tatsächlich untersuchte Observable, und stelle fest, ob die OTA-Kurzfassung den Gegenstand richtig wiedergibt oder eine populärwissenschaftliche Verkürzung übernimmt. (3) Flächensatz-Argument nachrechnen: Prüfe die Aussage 'in klassischer vierdimensionaler Relativitätstheorie verbietet der Flächensatz die Spaltung eines Schwarzschild-Lochs'. Rekonstruiere den zweiten Hauptsatz der Schwarze-Loch-Mechanik (nicht-abnehmende Gesamthorizontfläche), rechne für einen Zerfall M -> m1 + m2 (mit Strahlungsanteil) die Summe der Tochterflächen gegen die Ausgangsfläche und gib an, ob das Verbot als Satz folgt, ob es zusätzlich Energie-/Impulserhaltung und Strahlungsabfuhr braucht und wie die Arbeit selbst argumentiert. (4) Kerr-Fenster: Prüfe 'bei Kerr-Löchern bleibt allenfalls ein schmales Fenster nahe maximaler Rotation'. Rechne die Horizontfläche A(M, a) bzw. die irreduzible Masse nach und bestimme, für welche Spinparameter, Massenverhältnisse und Tochterspins eine Flächenzunahme überhaupt möglich wäre; berichte den von der Arbeit tatsächlich angegebenen Parameterbereich und ob 'nahe Extremalität' die Rechnung trifft oder eine Zuspitzung ist. (5) Entropiebedingung: Prüfe 'auch dort ist die Entropiebedingung nur notwendig, nicht hinreichend'. Welche zusätzlichen Bedingungen nennt die Arbeit (dynamische Stabilität, Gregory-Laflamme-Instabilität, Energie-/Impulserhaltung, topologische Änderung, Randbedingungen, Strahlungsverluste), und ist die Formulierung werktreu? (6) Forschungskontext: Berichte den realen Stand zu Horizontspaltung und Topologiewechsel — Gregory-Laflamme-Instabilität schwarzer Strings/Branes in höheren Dimensionen, Black-Hole-Fragmentation und 'pants'-Geometrien in AdS/CFT, Paar-Erzeugung versus Zerfall, Superradianz, modifizierte Gravitation — und ordne ein, welche Aussagen etabliert, welche modellspezifisch und welche offen sind. (7) Reklassifiziere: Nenne die Sätze, die als [R] nur den verifizierten Quelleninhalt bezeichnen können, die als [I]/[H] zu führen sind (Flächensatz-Verbot als Aussage der Arbeit, Kerr-Fenster, Notwendigkeitsgrenze, Extradimensionen/Superradianz/modifizierte Gravitation) und die [OFFEN] bleiben müssen; stelle fest, dass keine kanonische Aussage über Fragmentierbarkeit, kein kanonischer Spinparameter und keine kanonische Dimensionszahl in den Kanon aufgenommen wird. NICHT erneut zu erheben: die GW250114-Eckdaten, der beobachtete Flächensatz-Test und der Ein-Ereignis-Vorbehalt (KUE-SCI-0196 §4, OTA-SCI-0113) — sie sind nur als bestehende Grenze zu zitieren. AUSGESCHLOSSEN: der AVI-P-Filter T1–T4 und das Reaktivierungsurteil, die AVI-/Omnizedenz-Theorieschicht, die Buchwelt-Hinweise, die Transferregeln sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "OTA-SCI-0114 wurde am 2026-11-11 auf v0.2 gebracht (ECO-ARC-0038 §3b, OTA-REQ-20261107-001): Der Realteil wurde auf einen Verweis nach KUE-SCI-0196 gekürzt und die Quellen wurden korrigiert — die Journalfassung, das Kerr-Fenster und die SDU-Meldung kamen neu hinzu, nachdem die Quellenprüfung 2026-11 die Pressequelle als ungenau beanstandet hatte. Seither tragen eine einzige arXiv-Kennung und drei Sätze die gesamte externe Aussage des Dokuments; die Quellenprüfung führt die Angabe weiterhin als 'zu ungenau' und nicht abgeschlossen. Das Dokument speist die AVI-Beobachtungsmatrix (GW250114 als starker Standard-GR-Referenzfall) und den KG-Bestand an Black-Hole-/Horizont-Konzepten; die nächste planmäßige Prüfung ist erst 2027-11-07. Eine Verifikation jetzt verhindert, dass eine ungeprüfte Einzelpreprint-Aussage als Referenzfall weitergetragen wird.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "OFFEN"
+  ],
+  "real_world_anchor": "Cacciapaglia, Del Piano, Sannino, Vellucci (2026), 'When Black Holes Admit Pair-of-pants Topologies', Physical Review D, Preprint-Titel 'When Black Holes Can Wear Pants', arXiv:2606.24642; Begleitmitteilung University of Southern Denmark, 21.10.2026, 'Can a black hole split in two?'. Reale Prüfgegenstände: zweiter Hauptsatz der Schwarze-Loch-Mechanik, Kerr-Horizontfläche/irreduzible Masse, Gregory-Laflamme-Instabilität, Topologiewechsel und 'pants'-Geometrien in höherdimensionaler Gravitation und AdS/CFT.",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.77,
+  "scores": {
+    "project_relevance": 0.72,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.81
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Für OTA-SCI-0114 existiert bisher kein OTA-Recherchethema; die Liste der Vorläufer enthält keinen Black-Hole-, Horizont- oder Kerr-Audit. Die verwandten Themen RES-20261114-E8C3C177 (STAR-Impulskorrelationen) und RES-20261115-C268E784 (Doppel-Weißenzwerg-GW) betreffen andere Observablen und andere Quellen. Die Auslagerung des Realteils nach KUE-SCI-0196 ist ein Grundlagentext, keine Verifikation dieser Kennung; der Audit prüft die OTA-seitige Kennung, den Gegenstand der Arbeit und die Reklassifikation, nicht die bereits dort geführte Ereignisdarstellung.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 309,
+    "quality_flags": [
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "d0ca0941143b5960"
+}
