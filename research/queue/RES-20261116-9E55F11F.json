@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261116-9E55F11F",
+  "status": "queued",
+  "created": "2026-11-16T11:43:59+00:00",
+  "source_project": "products",
+  "source_repository": "thomaspeterkueper/kueper-products",
+  "source_path": "external-tasks/open/EXT-ENG-PRODUCTS-20261018-mininode-env-gen0-handoff.md",
+  "source_ref": "91a307e81227eecaea9c75e6ce1eaa3959113b59",
+  "source_blob_sha": "54cbaf70f37e07e43289ac958f724e15674c43ab",
+  "title": "Cell-level energy budget and test basis for the MiniNode '>2-year' battery claim",
+  "question": "What do peer-reviewed low-current/low-temperature alkaline-cell characterisation studies, IEC 60086-2 test conditions and manufacturer data establish about usable capacity, self-discharge, passivation and voltage delay of 2×AA alkaline cells at roughly 10–50 µA average drain and a 1.8–2.0 V cut-off, and what test basis makes the MiniNode P1 'credible >2-year practical battery path' a defensible product claim rather than a nameplate extrapolation?",
+  "why_now": "The same handoff fixes P1 as <50 µA average and a 'credible >2-year practical battery path, not a marketing claim until validated', but gives no cell derating, temperature range or test standard. In an unheated shed the nameplate arithmetic can overstate life, and Project principle 7 forbids performance values with false precision.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "2×AA alkaline cell usable capacity, self-discharge and low-temperature derating at microamp drains (IEC 60086-2 and peer-reviewed characterisation studies); nRF54L15 1.8–3.6 V supply range",
+  "publication_route_hint": null,
+  "project_weight": 0.9,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.86,
+    "uncertainty": 0.68,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [
+    "RES-20261108-5DA5CE14"
+  ],
+  "novelty_reason": "The prior MiniNode topic covers sensor/enclosure metrology, not the power subsystem. This gap audits the distinct P1 energy-budget claim: usable cell capacity, temperature derating and test standard. It adds a decision-relevant boundary that the prior topic did not address.",
+  "fingerprint": "9e55f11f92fedf64"
+}
