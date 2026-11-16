@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261116-EA7C03FA",
+  "status": "queued",
+  "created": "2026-11-16T11:44:00+00:00",
+  "source_project": "products",
+  "source_repository": "thomaspeterkueper/kueper-products",
+  "source_path": "research-watch/distributed-observation-constellations-2026-10-07.md",
+  "source_ref": "91a307e81227eecaea9c75e6ce1eaa3959113b59",
+  "source_blob_sha": "63be0c96aa20b8ac975de6920786e7324b65c49f",
+  "title": "Standards baseline before promoting a provenance-carrying distributed observation fabric",
+  "question": "Which existing open standards and reference implementations already cover the six elements of the proposed KUEPER Distributed Observation Node / Constellation Fabric — heterogeneous node observation metadata, provenance and uncertainty, time/position synchronization, store-and-forward operation, versioned fusion state claims and a confidence-aware dashboard — for example OGC SensorThings API, SOSA/SSN, O&M, W3C PROV, STAC, MQTT Sparkplug B, Eclipse Ditto/EdgeX and Apache Kafka, and what concrete gap would the KUEPER fabric actually have to fill rather than reimplement?",
+  "why_now": "The research-watch entry's explicit next gate is to compare existing open standards/platforms for sensor metadata, provenance, geospatial observations and distributed edge messaging before promotion to a product candidate. The advanced-products track lists distributed passive sensing and MiniNode swarm platforms as watch areas, so the candidate remains blocked on this comparison and risks duplicating mature standards.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "OGC SensorThings API / SOSA-SSN / O&M, W3C PROV, STAC, MQTT Sparkplug B, Eclipse Ditto/EdgeX, Apache Kafka and peer-reviewed sensor-web interoperability literature",
+  "publication_route_hint": null,
+  "project_weight": 0.9,
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.86,
+    "cross_project_reuse": 0.92,
+    "uncertainty": 0.86,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [],
+  "novelty_reason": "This is an architecture/standards state-of-the-art question, not a rephrasing of the photophoretic lift, drip-emitter hydraulics or MiniNode T/RH metrology topics. It resolves the explicit next gate in the research-watch file and tests the product thesis's novelty claim against existing standards.",
+  "fingerprint": "ea7c03fa9de3faf8"
+}
