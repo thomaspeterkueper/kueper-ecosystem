@@ -1,6 +1,6 @@
 {
   "id": "RES-20261115-48D2DB51",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-15T12:00:38+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -38,5 +38,8 @@
   },
   "related_research_ids": [],
   "novelty_reason": "OTA-TEC-0085 ist in der Topic-Liste nicht vertreten; kein früheres Topic behandelt Triebwerks-Restart, Reuse-Qualifikation oder Zündungslebensdauer. Der Gegenstand ist zudem materiell getrennt vom Leistungsaudit (Gap 1): dort geht es um Isp/Schub/Geometrie, hier um Zündzyklen, Küstenzeiten und Qualifikationslogik — die beiden Prüfungen teilen keine Überschneidung und keine Belegkette.",
-  "fingerprint": "48d2db516c85ebdc"
+  "fingerprint": "48d2db516c85ebdc",
+  "updated_at": "2026-11-16T06:50:00+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/305",
+  "executed_by": "claude-oekosystem-recherche (Übernahme nach HTTP 403 in Lauf 43711414307)"
 }
