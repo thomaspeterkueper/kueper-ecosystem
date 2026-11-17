@@ -219,6 +219,30 @@
       "require_strong_source": true,
       "scout_guidance": "Prioritize peer-reviewed papers, original datasets, collaboration/instrument publications and official institutions. Label preprints explicitly. Distinguish measurement, accepted interpretation, model dependence and open controversy."
     },
+    "standards-technical": {
+      "description": "Technical standards, specifications, protocols and reference implementations (state of the art, interoperability, prior art). Thomas, 17.11.2026: Fragen zu Standards bekommen ein eigenes Profil.",
+      "minimum_evidence_score": 0.72,
+      "minimum_sources": 3,
+      "minimum_domains": 2,
+      "minimum_urls": 3,
+      "preferred_source_types": [
+        "standard",
+        "specification",
+        "official-institution",
+        "reference-implementation",
+        "peer-reviewed",
+        "primary-source"
+      ],
+      "strong_source_markers": [
+        "standard",
+        "specification",
+        "official-institution",
+        "peer-reviewed",
+        "primary-source"
+      ],
+      "require_strong_source": true,
+      "scout_guidance": "Prefer the normative text from the issuing body (ISO, IEC, ITU, IETF, W3C, OGC, OASIS, IEEE, Eclipse/Apache foundation specifications) over secondary summaries. Record for every standard its exact version, publication date and status (Recommendation, Candidate, Draft, superseded, deprecated) and separate normative from informative content. Treat reference implementations and adoption evidence (official registries, conformance lists, maintained repositories) as maturity indicators, not as proof that a requirement is met. Use peer-reviewed interoperability literature for gaps and comparisons. Label vendor material as such."
+    },
     "avi-theoretical-cosmology": {
       "description": "Strict cosmology/theory profile for the Axiomatisches Vakuum Integral (AVI).",
       "minimum_evidence_score": 0.72,
@@ -426,5 +450,11 @@
       },
       "scout_guidance": "Use publication-grade source criticism. Prioritize peer-reviewed primary literature, original datasets and collaboration/instrument papers; identify preprints explicitly and check whether a peer-reviewed version exists. Search for newer results, null results, corrections and serious counterevidence. Keep measurement, derivation, model assumption and interpretation separate. This profile can recommend KUE-SCI publication on kueper.com but never publishes automatically."
     }
+  },
+  "evidence_profile_overrides": {
+    "allowed": [
+      "standards-technical"
+    ],
+    "note": "Discovery may assign one of these profiles per gap instead of the project profile, except for projects whose profile requires a pinned source path (OTA)."
   }
 }

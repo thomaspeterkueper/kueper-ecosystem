@@ -72,6 +72,18 @@ def prior_topics(history:list[dict[str,Any]],project_id:str)->list[dict[str,Any]
         for item in same[:PRIOR_RESEARCH_MAX_TOPICS]
     ]
 
+def override_options(profile:dict[str,Any])->list[str]:
+    """Profiles discovery may assign per gap (policy evidence_profile_overrides)."""
+    if profile.get("require_source_path") or profile.get("pin_source_revision"):return []
+    profiles=POLICY.get("evidence_profiles",{})
+    return [x for x in (POLICY.get("evidence_profile_overrides") or {}).get("allowed",[]) if x in profiles]
+
+def gap_profile(gap:dict[str,Any],profile_name:str,profile:dict[str,Any])->tuple[str,dict[str,Any]]:
+    override=gap.get("evidence_profile_override")
+    if isinstance(override,str) and override in override_options(profile):
+        return override,POLICY["evidence_profiles"][override]
+    return profile_name,profile
+
 def prompt(project:dict[str,Any],langs:list[str],profile_name:str,profile:dict[str,Any],previous:list[dict[str,Any]])->str:
     profile_rules=json.dumps(profile,ensure_ascii=False)
     previous_json=json.dumps(previous,ensure_ascii=False,indent=2)
@@ -100,6 +112,7 @@ CRITICAL pre-research classification rule:
 - For T/H/S, external research may test premises, constraints, counterevidence or falsifiability, but source count must not be treated as proof of the model/speculation.
 - `real_world_anchor` should name the external part that is actually being researched, or be null.
 - `publication_route_hint` is advisory only. If a standalone real-world scientific e-paper could result, use `real_scientific_epaper`; archive/canon material stays `fictional_archive_document`. Never imply that this discovery step publishes anything.
+- `evidence_profile_override`: if a gap is about technical standards, specifications, protocols or reference implementations (state of the art, interoperability, prior art) rather than empirical findings, set it to one of {json.dumps(override_options(profile),ensure_ascii=False)}; otherwise null. An empty list means the project profile is fixed.
 - `source_path` names the exact repository-relative file that contains the claim being audited. When the evidence profile requires a source path, every proposed gap MUST point to exactly one tracked file. Do not use a directory, glob, URL, generated description, or a second document as a substitute.
 
 CRITICAL novelty rule:
@@ -117,7 +130,7 @@ Only include score >= {POLICY['minimum_relevance_score']}.
 Choose source languages based on the topic, not quota. Local/primary-language sources may be useful but language itself is never evidence quality.
 
 Write ONLY `.kueper-discovery.json` with this JSON structure:
-{{"gaps":[{{"title":"...","question":"...","why_now":"...","project_id":"{project['id']}","source_path":"path/to/exact/source.md or null","suggested_languages":["en"],"claim_classes":["R"],"external_research_required":true,"real_world_anchor":"... or null","publication_route_hint":"... or null","related_research_ids":[],"novelty_reason":"","project_relevance":0.0,"cross_project_reuse":0.0,"uncertainty":0.0,"evidence_potential":0.0,"relevance_score":0.0}}]}}
+{{"gaps":[{{"title":"...","question":"...","why_now":"...","project_id":"{project['id']}","source_path":"path/to/exact/source.md or null","suggested_languages":["en"],"claim_classes":["R"],"external_research_required":true,"real_world_anchor":"... or null","publication_route_hint":"... or null","evidence_profile_override":null,"related_research_ids":[],"novelty_reason":"","project_relevance":0.0,"cross_project_reuse":0.0,"uncertainty":0.0,"evidence_potential":0.0,"relevance_score":0.0}}]}}
 Do not edit any other file.
 '''
 
@@ -144,7 +157,9 @@ def main()->int:
             score=float(gap.get("relevance_score",0))
             if score<float(POLICY["minimum_relevance_score"]):continue
             claim_classes=[x for x in gap.get("claim_classes",[]) if isinstance(x,str)]
-            if profile.get("require_claim_classification"):
+            item_profile_name,item_profile=gap_profile(gap,profile_name,profile)
+            allowed_claims=set(item_profile.get("claim_classes",{}));allowed_routes=set(item_profile.get("allowed_publication_routes",[]))
+            if item_profile.get("require_claim_classification"):
                 if not claim_classes or any(x not in allowed_claims for x in claim_classes):continue
                 if gap.get("external_research_required") is not True:continue
             route_hint=gap.get("publication_route_hint")
@@ -169,7 +184,7 @@ def main()->int:
             if gap.get("related_research_ids") and not related:continue
             if related and len(novelty)<20:continue
             now=dt.datetime.now(dt.timezone.utc);rid=f"RES-{now.strftime('%Y%m%d')}-{fp[:8].upper()}"
-            item={"id":rid,"status":"queued","created":now.replace(microsecond=0).isoformat(),"source_project":project["id"],"source_repository":project["repository"],"source_path":source_path,"source_ref":source_ref if source_path else None,"source_blob_sha":source_blob_sha,"title":gap.get("title"),"question":gap.get("question"),"why_now":gap.get("why_now"),"languages":langs or POLICY["default_languages"],"evidence_profile":profile_name,"claim_classes":claim_classes,"external_research_required":gap.get("external_research_required",True),"real_world_anchor":gap.get("real_world_anchor"),"publication_route_hint":route_hint,"project_weight":float(choice.get("weight",1.0)),"relevance_score":score,"scores":{k:gap.get(k) for k in ("project_relevance","cross_project_reuse","uncertainty","evidence_potential")},"related_research_ids":related,"novelty_reason":novelty or None,"fingerprint":fp}
+            item={"id":rid,"status":"queued","created":now.replace(microsecond=0).isoformat(),"source_project":project["id"],"source_repository":project["repository"],"source_path":source_path,"source_ref":source_ref if source_path else None,"source_blob_sha":source_blob_sha,"title":gap.get("title"),"question":gap.get("question"),"why_now":gap.get("why_now"),"languages":langs or POLICY["default_languages"],"evidence_profile":item_profile_name,"claim_classes":claim_classes,"external_research_required":gap.get("external_research_required",True),"real_world_anchor":gap.get("real_world_anchor"),"publication_route_hint":route_hint,"project_weight":float(choice.get("weight",1.0)),"relevance_score":score,"scores":{k:gap.get(k) for k in ("project_relevance","cross_project_reuse","uncertainty","evidence_potential")},"related_research_ids":related,"novelty_reason":novelty or None,"fingerprint":fp}
             content=base64.b64encode((json.dumps(item,indent=2,ensure_ascii=False)+"\n").encode()).decode()
             gh(token,"PUT",f"/repos/{CONTROL}/contents/research/queue/{rid}.json",{"message":f"research: queue {rid}","content":content,"branch":"main"})
             existing.add(fp);results.append(item)

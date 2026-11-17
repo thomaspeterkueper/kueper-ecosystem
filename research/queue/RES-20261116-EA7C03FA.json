@@ -1,6 +1,6 @@
 {
   "id": "RES-20261116-EA7C03FA",
-  "status": "needs-review",
+  "status": "queued",
   "created": "2026-11-16T11:44:00+00:00",
   "source_project": "products",
   "source_repository": "thomaspeterkueper/kueper-products",
@@ -13,7 +13,7 @@
   "languages": [
     "en"
   ],
-  "evidence_profile": "science",
+  "evidence_profile": "standards-technical",
   "claim_classes": [
     "R",
     "H"
@@ -32,6 +32,11 @@
   "related_research_ids": [],
   "novelty_reason": "This is an architecture/standards state-of-the-art question, not a rephrasing of the photophoretic lift, drip-emitter hydraulics or MiniNode T/RH metrology topics. It resolves the explicit next gate in the research-watch file and tests the product thesis's novelty claim against existing standards.",
   "fingerprint": "ea7c03fa9de3faf8",
-  "updated_at": "2026-11-16T12:02:40+00:00",
-  "last_error": "candidate for science lacks a strong source type marker"
+  "updated_at": "2026-11-17T16:00:00+00:00",
+  "requeued": {
+    "at": "2026-11-17T16:00:00+00:00",
+    "from_profile": "science",
+    "previous_error": "candidate for science lacks a strong source type marker",
+    "reason": "Thomas, 17.11.2026: Fragen zu Standards bekommen ein eigenes Profil (standards-technical)."
+  }
 }
