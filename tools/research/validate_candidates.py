@@ -46,12 +46,25 @@ def get_content(token,repo,path,ref):
         if "HTTP 404" in str(exc):return None
         raise
 
-def queue(token):
+def merged_candidate_ids(token)->set[str]:
+    """IDs whose candidate file is on the KG default branch (one API call)."""
+    branch=repo_default(token,KG)
+    listing=get_content(token,KG,POLICY["candidate_path"],branch)
+    if not isinstance(listing,list):return set()
+    return {x["name"][:-3] for x in listing if x.get("type")=="file" and x.get("name","").endswith(".md")}
+
+def queue(token,merged:set[str]|None=None):
+    """Queue items in status candidate-pr whose candidate is merged.
+
+    Unmerged candidates are skipped before fetching, so open or closed draft PRs
+    can no longer occupy the MAX_ITEMS slots (head-of-line blocking, 17.11.2026).
+    """
     try:items=gh(token,"GET",f"/repos/{CONTROL}/contents/research/queue?ref=main")
     except Exception:return []
     out=[]
     for item in items if isinstance(items,list) else []:
         if item.get("type")!="file" or not item.get("name","").endswith(".json"):continue
+        if merged is not None and item["name"][:-5] not in merged:continue
         payload=gh(token,"GET",f"/repos/{CONTROL}/contents/{item['path']}?ref=main")
         try:data=json.loads(base64.b64decode(payload.get("content","")).decode())
         except Exception:continue
@@ -209,7 +222,7 @@ def validate_one(token,item,payload,projects):
 def main()->int:
     token=os.environ.get("KUEPER_BOT_TOKEN")
     if not token:raise SystemExit("KUEPER_BOT_TOKEN required")
-    projects=project_map();items=queue(token)[:MAX_ITEMS];results=[validate_one(token,item,payload,projects) for item,payload in items]
+    projects=project_map();items=queue(token,merged_candidate_ids(token))[:MAX_ITEMS];results=[validate_one(token,item,payload,projects) for item,payload in items]
     print(json.dumps({"selected":len(items),"results":results},indent=2,ensure_ascii=False));return 0
 
 if __name__=="__main__":raise SystemExit(main())

@@ -123,6 +123,8 @@ Research-Ergebnisse werden ausschließlich unter `research/candidates/` im Knowl
 
 Diese Dokumente sind ausdrücklich `candidate / non-canonical`.
 
+Der Merge der Candidate-PRs in den KG-Staging-Bereich geschieht nicht durch den Executor, sondern im Claude-Lauf 3 „KG-Merge und Rückfragen“ (`docs/operations/claude-laeufe.md`) mit `tools/research/triage_candidates.py`. Der Canon Conflict Loop wählt nur Candidates, die auf dem KG-`main` liegen; ungemergte Drafts belegen keine Plätze mehr.
+
 ## Sicherheits- und Qualitätsgrenzen
 
 V3.2 darf nicht kanonische KG-Entitäten oder Relationen automatisch ändern, Roman-/Game-Kanon verändern, F/W-Setzungen extern „beweisen“, unbelegte Aussagen als Wissen übernehmen, Quellen/URLs/Autoren/Publikationen/Übersetzungen/Zitate erfinden, eine Sprache als Belegqualität behandeln oder direkt in OTA bzw. kueper.com publizieren.
