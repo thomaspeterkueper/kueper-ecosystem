@@ -73,6 +73,16 @@ async function buildEvidencePacket() {
   }
 
   const { generateText, gateway, stepCountIs } = await import('ai');
+  if (typeof gateway?.tools?.exaSearch !== 'function') {
+    let version = 'unbekannt';
+    try {
+      const { createRequire } = await import('node:module');
+      version = createRequire(import.meta.url)('ai/package.json').version;
+    } catch {}
+    throw new Error(
+      `installed ai@${version} has no gateway.tools.exaSearch – pin a version that provides it (see EXT-ECO-ECO-20261117-001)`,
+    );
+  }
 
   const researchId = field(originalPrompt, 'Research ID') || 'unknown';
   const sourceProject = field(originalPrompt, 'Source project') || 'unknown';

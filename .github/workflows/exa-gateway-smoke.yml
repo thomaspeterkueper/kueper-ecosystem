@@ -37,7 +37,7 @@ jobs:
           test -n "$AI_GATEWAY_API_KEY" || { echo "AI_GATEWAY_API_KEY is missing"; exit 2; }
 
       - name: Install AI SDK
-        run: npm install --no-save --package-lock=false ai@^6.0.0
+        run: npm install --no-save --package-lock=false ai@6.0.332
 
       - name: Run Exa smoke test
         shell: bash

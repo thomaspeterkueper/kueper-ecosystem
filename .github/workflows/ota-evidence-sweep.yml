@@ -65,7 +65,7 @@ jobs:
 
       - name: Install AI Gateway research tooling
         if: env.KUEPER_OTA_SWEEP_MODE != 'discovery-only'
-        run: npm install --no-save --package-lock=false ai@6.0.0
+        run: npm install --no-save --package-lock=false ai@6.0.332
 
       - name: Verify configuration
         shell: bash
