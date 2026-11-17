@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-16 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-17 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -35,7 +35,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0091-2026-DE | Supernovae Unite — 2.884 Typ-Ia-Supernovae und die Evid | HOFFENR | KUE-SCI-0191 | geprüft 2026-11-04 – KUE-Gegenstück vorhanden (KUE-SCI-0191 v0.2), AVI-Teil bleibt; Kürzung OTA-REQ-20261104-002 – umgesetzt 2026-11-08 (v1.1) |
 | OTA-SCI-0105-2026-DE | Seltene b→sμμ-Zerfälle – CMS- und LHCb-Spannungen mit d | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-10 – kein KUE-Gegenstück (KUE-SCI-0195 nur Abgrenzungssatz), tatsächlich Teile nach KUE, AVI-P bleibt; EXT-OTA-KUE-20261110-002, danach Kürzung OTA-REQ-20261110-002 |
 | OTA-SCI-0106-2026-DE | Gold über die Skalen – Nukleosynthese, Material, Ressou | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-05 – KUE-Gegenstück vorhanden; Realdossier ohne Werkbezug, Lagerstätten/Recycling/Provenienz in KUE-SCI-0195 v0.4 übernommen; Brückendokument OTA-REQ-20261105-001 – umgesetzt 2026-11-09 (v0.3) |
-| OTA-SCI-0107-2026-DE | STAR: Nichtmonotone transversale Impulskorrelationen in | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-11 – KUE-Gegenstück vorhanden (KUE-SCI-0195 v0.4); Signifikanzen/arXiv nach KUE per EXT-OTA-KUE-20261111-001, AVI-P/Omnizedenz bleiben; Kürzung OTA-REQ-20261111-002 |
+| OTA-SCI-0107-2026-DE | STAR: Nichtmonotone transversale Impulskorrelationen in | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-11 – KUE-Gegenstück vorhanden (KUE-SCI-0195 v0.4); Signifikanzen/arXiv nach KUE per EXT-OTA-KUE-20261111-001, AVI-P/Omnizedenz bleiben; Kürzung OTA-REQ-20261111-002 – umgesetzt 2026-11-17 (v1.1) |
 | OTA-SCI-0113-2026-DE | GW250114 – Hawkings Flächensatz, Kerr-Ringdown und star | IOFFENR | KUE-SCI-0196 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Realteil in KUE-SCI-0196 v0.2 übernommen, Kürzung OTA-REQ-20261102-001 – umgesetzt 2026-11-07 (v1.1) |
 | OTA-SCI-0114-2026-DE | Horizontfragmentierung – theoretische Grenzfälle und Bu | HIOFFENR | KUE-SCI-0196 | geprüft 2026-11-07 – KUE-Gegenstück vorhanden (KUE-SCI-0196 v0.2 vollständig); Quellenkorrektur/Kürzung OTA-REQ-20261107-001 – umgesetzt 2026-11-11 (v0.2) |
 | OTA-SCI-0115-2026-DE | Einzelpositron im Quantenzyklotron – Messfähigkeit stat | IOFFENR | KUE-SCI-0197 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Verschlankung OTA-REQ-20261102-002 – umgesetzt 2026-11-07 (v0.2) |
@@ -58,16 +58,16 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0057-2026-DE | Otjize als funktionales Materialsystem: Mineralogie, Na | RST |  | geprüft 2026-11-08 – Teile nach KUE (II–VI, VIII), Werkbezug OTJIZE bleibt; EXT-OTA-KUE-20261108-001, danach Kürzung OTA-REQ-20261108-001 |
 | OTA-SCI-0058-2026-DE | Triclosan als entkoppelnder Selektionsdruck: Wirkmechan | RT |  | geprüft 2026-11-09 – Teile nach KUE (II–VI, IX), Leitsatz/Systemvergleich Otjize bleibt; EXT-OTA-KUE-20261109-001, danach Kürzung OTA-REQ-20261109-001 |
 | OTA-SCI-0060-2026-DE | OTA-SCI-0060-2026-DE | HRT | KUE-SCI-0170 | geprüft 2026-11-13 – KUE-Gegenstück vorhanden (KUE-SCI-0170 v0.1, faktisch Gruppe K), Werkbezug bleibt; Kürzung OTA-REQ-20261113-001 (A–D umgesetzt 2026-11-13, E wartet auf Thomas), EXT-OTA-KUE-20261113-001 |
-| OTA-SCI-0062-2026-DE | Der Mpemba-Effekt: Anomale Relaxation, universelles Pri | RT |  | geprüft 2026-11-08 – Teile nach KUE (II–VII), VIII/Zuva bleibt; EXT-OTA-KUE-20261108-002, danach Kürzung OTA-REQ-20261108-002 (Leitsatz wartet auf Thomas) |
+| OTA-SCI-0062-2026-DE | Der Mpemba-Effekt: Anomale Relaxation, universelles Pri | RT |  | geprüft 2026-11-08 – Teile nach KUE (II–VII), VIII/Zuva bleibt; EXT-OTA-KUE-20261108-002, danach Kürzung OTA-REQ-20261108-002 (Leitsatz wartet auf Thomas) – A–D umgesetzt 2026-11-17 (v1.1), E wartet |
 | OTA-SCI-0082-2026-DE | Der Himmel von 2700 BCE: Präzession, Thuban als Polarst | RST |  | geprüft 2026-11-10 – Teile nach KUE (I, II, III.1), Bronzescheibe/Szene/Delphi bleiben; EXT-OTA-KUE-20261110-001, danach Korrektur/Kürzung OTA-REQ-20261110-001 (KN-1.2 wartet auf Thomas) |
 | OTA-SCI-0102-2026-DE | Autophagie im menschlichen Altern — Flux, Zelltyp, Gesc | IOFFENR |  | geprüft 2026-11-13 – ganz nach KUE, OTA bleibt Brückendokument; EXT-OTA-KUE-20261113-002, OTA-REQ-20261113-002 |
 | OTA-SCI-0103-2026-DE | Longitudinale Gehirngesundheit — Lebenslauf-Risiken, Pr | IOFFENR |  | geprüft 2026-11-15 – ganz nach KUE, OTA bleibt Brückendokument (§19); EXT-OTA-KUE-20261115-001, OTA-REQ-20261115-001 |
 | OTA-SCI-0108-2026-DE | Ultrakompakte Doppel-Weiße-Zwerge: Orbitalzerfall, Dire | HIOFFENR |  | geprüft 2026-11-15 – ganz nach KUE (kein Werkbezug), OTA bleibt Brückendokument; EXT-OTA-KUE-20261115-002, OTA-REQ-20261115-002 |
 | OTA-SCI-0109-2026-DE | Stromnetz-Engpässe: Erzeugung, Transportkapazität, Redi | HOFFENRT |  | geprüft 2026-11-16 – ganz nach KUE, OTA bleibt Brückendokument (NOXIA-Archivregel §14); EXT-OTA-KUE-20261116-001, OTA-REQ-20261116-001 |
 | OTA-SCI-0110-2026-DE | Adaptive Fertigung und Physical AI: Digitale Zwillinge, | HIOFFENR |  | geprüft 2026-11-16 – ganz nach KUE (Realteil), NOXIA-Anschluss/A0–A5/Archivregel bleiben; EXT-OTA-KUE-20261116-002, OTA-REQ-20261116-002 |
-| OTA-SCI-0111-2026-DE | β Pictoris b im Radio: Aurorale Emission, Magnetfeld-In | HIOFFENR |  | offen |
+| OTA-SCI-0111-2026-DE | β Pictoris b im Radio: Aurorale Emission, Magnetfeld-In | HIOFFENR |  | geprüft 2026-11-17 – ganz nach KUE (Realteil), NOXIA-Modell/SSF-Set/Archivregel bleiben; EXT-OTA-KUE-20261117-001, danach Brücke OTA-REQ-20261117-001 |
 | OTA-SCI-0112-2026-DE | Mars-Siedlungen als Stoffstromsystem: ECLSS, Nahrung, I | HIOFFENR |  | geprüft 2026-11-07 – ganz nach KUE (Realteil), NOXIA-Regeln §18/21/24/27/30 bleiben; EXT-OTA-KUE-20261107-001, danach Brückendokument OTA-REQ-20261107-002 |
-| OTA-TEC-0126-2026-DE | Verteilte Robotik und MiniNode: Evidenzbasis für hetero | HOFFENRT |  | offen |
+| OTA-TEC-0126-2026-DE | Verteilte Robotik und MiniNode: Evidenzbasis für hetero | HOFFENRT |  | geprüft 2026-11-17 – abweichend Teile nach KUE (Realanker), MiniNode-Bewertung bleibt; EXT-OTA-KUE-20261117-002, danach Kürzung OTA-REQ-20261117-002 |
 
 ## B – Teile nach KUE
 
