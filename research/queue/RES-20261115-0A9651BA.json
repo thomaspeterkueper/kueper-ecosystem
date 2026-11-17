@@ -1,6 +1,6 @@
 {
   "id": "RES-20261115-0A9651BA",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-15T11:15:17+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früheres Thema berührt Stromnetze, Redispatch oder Anschlusskapazität. Die bisherigen Audits decken Raumfahrt-, Archäologie-, Material- und Physikanker ab; RES-20261107-76117BB0 prüft Missions- und Programmstatus (CADRE, DARPA OFFSET, HEAP/Gravis), nicht Infrastrukturstatistik. Neu ist die Prüfung amtlicher Mengen-, Kosten- und Anschlussdaten einschließlich der Frage, ob die im Dokument gezogenen Prozent- und Stabilitätsaussagen aus denselben Grundgesamtheiten folgen.",
-  "fingerprint": "0a9651ba5a014ade"
+  "fingerprint": "0a9651ba5a014ade",
+  "updated_at": "2026-11-17T12:04:12+00:00",
+  "last_error": "agent-with-exa: Exa evidence failed: Cannot read properties of undefined (reading 'exaSearch')\nagent-with-exa: falling back to the existing research agent without Exa\nClaude Code doesn't recognize the model \"deepseek-v4-flash\", so it assumes a context window of 1m tokens. Update Claude Code, or see https://code.claude.com/docs/en/model-config#correct-the-window-for-a-gateway-or-custom-model-id to set the window.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"sdk\"}\nAPI Error: 402 Insufficient Balance (request_id: a55fde28-0198-4453-95c4-01a6c70dcb06)\n"
 }
