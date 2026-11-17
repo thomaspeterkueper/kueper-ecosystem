@@ -94,6 +94,14 @@ Das OTA-Profil ist absichtlich kein normales „science“-Profil. OTA-Dokumente
 
 Für extern prüfbare OTA-Anteile gelten mindestens 0,70 Evidence Score, drei Quellen, zwei Domains, drei sichtbare URLs und mindestens ein starker Quellentyp. Das ist eine Candidate-Schwelle, keine Kanonisierung.
 
+## Standards-Profil: `standards-technical`
+
+Seit 17.11.2026 (Thomas: „Fragen zu Standards bekommen ein eigenes Profil“) gibt es ein Evidenzprofil für technische Standards, Spezifikationen, Protokolle und Referenzimplementierungen – etwa den Abgleich eines Produktvorschlags mit OGC SensorThings, W3C PROV oder MQTT. Anlass: RES-20261116-EA7C03FA scheiterte im Profil `science`, das Normtexte nicht als starke Quelle kennt.
+
+Das Profil verlangt dieselben Mindestwerte wie `science` (0,72; drei Quellen, zwei Domains, drei URLs), erkennt aber `standard` und `specification` als starke Quellentypen an. Version, Datum und Status jeder Norm sind anzugeben, normative und informative Teile zu trennen; Referenzimplementierungen und Verbreitung gelten als Reifeindikatoren, nicht als Erfüllungsnachweis.
+
+Discovery darf das Profil je Gap über `evidence_profile_override` wählen (Liste `evidence_profile_overrides.allowed` in `research/policy.json`). Ausgenommen sind Projekte, deren Profil einen gepinnten Quellpfad verlangt (OTA).
+
 ## Reale wissenschaftliche E-Papers: `kueper.com` / `KUE-SCI`
 
 Die öffentliche kanonische Publikationsschicht für reale wissenschaftliche E-Papers ist:
