@@ -1,0 +1,47 @@
+{
+  "id": "RES-20261117-823533B6",
+  "status": "queued",
+  "created": "2026-11-17T15:04:37+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0100-2026-DE.md",
+  "source_ref": "1b6fb45d38e211872a12a872dfb44cf0c6774589",
+  "source_blob_sha": "a502458e0465d546a358ef5dd2c4e55295554834",
+  "document_signature": "OTA-TEC-0100-2026-DE",
+  "title": "Realwelt-Audit der Nahrungsmassen- und 30-Tage-Reserve-Anker in OTA-TEC-0100 (v1.1): 497 Personen, 0,57-0,91 t Nahrung/Tag, 17-27 t fuer 30 Tage und die kanonische Mindestreserve von 27 t",
+  "question": "Quellengestuetzter Audit der [R]-Nahrungsmasse und ihrer Verwendung in der [F/H]-Mindestreserve von OTA-TEC-0100-2026-DE (Abschnitte 'Evidenzbasis' und 'Kanonische OTA-Architektur'), gepinnt auf die im Workspace vorliegende v1.1 (Status ENTWURF; Frontmatter ['R','H','F','OFFEN']). Das Dokument traegt seine gesamte quantitative Nahrungsreserve auf genau einer internen SSF-Angabe und leitet daraus die kanonische Untergrenze 'mindestens 27 t vollstaendig lagerfaehige 30-Tage-Nahrung' ab. (1) Bezugsbasis der Zahl: Klaere, was 'Nahrung' in '0,57-0,91 t Nahrung/Tag' umfasst - Trockenmasse, verpackte Rationen inklusive Verpackung, Wasser-/Feuchteanteil, Frischanteil, Kuechen-/Tagesbestaende - und ob die Spanne eine Verbrauchs-, Einkaufs- oder Logistikmasse bezeichnet. (2) Realwelt-Anker: Berichte die realen Nahrungsmassen-Budgets der bemannten Raumfahrt (NASA BVAD/ISS-Nahrungssystem, Shuttle-/Mir-/ISS-Erfahrung, Missionsplanungsfaktoren) pro Crewmitglied und Tag, getrennt nach Trockennahrung, verpackter Ration und separat mitgefuehrtem Wasser, sowie die Verpackungs- und Lagerungsmasse. (3) Nachrechnen: Pruefe 497 Personen x 30 Tage gegen 0,57-0,91 t/Tag (= 1,15-1,83 kg/Person/Tag) und gegen 17-27 t; stelle fest, ob die 30-Tage-Spanne exakt aus der Tagesspanne folgt, welcher reale Bezugspunkt dem unteren und dem oberen Rand entspricht und ob 'mindestens 27 t' als konservative Untergrenze, als oberer Rand einer Spanne oder als Fehllesung der Spanne zu fuehren ist. (4) Bevoelkerungszahl: Behandle '497 Personen' als interne SSF-/Werkannahme, nicht als realen Bevoelkerungswert; pruefe nur die Skalierung pro Person und melde, wenn die Zahl selbst nicht extern belegbar ist. (5) Lagerung: Pruefe Masse, Volumen, Haltbarkeit und Kuehlbedarf von 27 t lagerfaehiger Nahrung fuer 30 Tage und ob 'vollstaendig lagerfaehig' mit realen Shelf-Life-/Verpackungs-/Kuehlketten-Annahmen vereinbar ist; trenne Trocken-, Kuehl-/Gefrier- und Spezialdiaet-Bestaende. (6) Reklassifiziere: Nenne die Saetze, die [R] bleiben koennen (Nahrungsmasse pro Person und Tag ist eine reale Planungsgroesse; verpackte Ration ist massereicher als Trockennahrung), die zu '[R] Quelleninhalt, Bezugsbasis offen' abzuschwaechen sind (0,57-0,91 t/Tag; 17-27 t/30 Tage), und die [F/H]/[OFFEN] bleiben muessen (497-Personen-Annahme; die kanonische 27-t-Untergrenze; die 30-Tage-Reserve als Architekturentscheidung). Stelle fest, dass keine kanonische Nahrungsmasse pro Person, keine kanonische Reservetonnage und keine kanonische Bevoelkerungszahl in den Kanon aufgenommen wird. NICHT erneut zu erheben: die Crop-Flaechen-, O2- und Energie-Kalibrierung aus OTA-SCI-0112 (RES-20261115-DA2529FB) - sie ist nur als bestehende Grenze zu zitieren. AUSGESCHLOSSEN: NOXIA-Produktions-, Verbrauchs- und Kostenwerte, Kuechenbetrieb, das Pflanzenmodul in Ausbauphase 1 (OTA-TEC-0038/OTA-SCI-0112), die 30-Tage-Reserve als Designentscheidung sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "OTA-TEC-0100 v1.1 ist die kanonische Phase-2-Grundlage der Nahrungsreserve; die 27-t-Untergrenze haengt vollstaendig an einer einzigen, nie extern geprueften SSF-Spanne. Ein Bezugsbasis-Fehler (Trocken- vs. verpackte Masse, Wasseranteil) verschiebt direkt die Lager-, Volumen- und Redundanzarchitektur der Startkolonie und wirkt in NOXIA und die Generation-Mars-Erzaehlung.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "real_world_anchor": "Nahrungs- und Verpflegungsmasse pro Crewmitglied und Tag in der realen bemannten Raumfahrt (NASA BVAD/ISS-Nahrungssystem, Shuttle-/Mir-/ISS-Erfahrung), getrennt nach Trockennahrung, verpackter Ration, Verpackungsmasse und separat mitgefuehrtem Wasser; reale Shelf-Life- und Lagerungsannahmen fuer 30-Tage-Reserven.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [
+    "RES-20261115-DA2529FB"
+  ],
+  "novelty_reason": "Die verwandte Vorarbeit RES-20261115-DA2529FB auditierte Crop-Flaechen, O2-Bedarf und Beleuchtungsenergie fuer OTA-SCI-0112, nicht die gelagerte Nahrungsmasse pro Person und Tag und nicht die 27-t-Mindestreserve. Kein bisheriger OTA-Research-Topic prueft die Nahrungsmittel-Logistikmasse oder die Ableitung der 30-Tage-Reserve.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 276,
+    "quality_flags": [
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "823533b6ad8430e2"
+}
