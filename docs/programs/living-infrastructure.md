@@ -87,7 +87,10 @@ Am 14.11.2026 zur Weiterleitung als External Tasks in `.kueper/outbox/` gestellt
 (das Routing in die Ziel-Repositories übernimmt der Ecosystem-Loop):
 
 - `ENG`: Vertrag für konservierte Flüsse und Systemgrenzen (Voraussetzung für alle
-  weiteren Bausteine).
+  weiteren Bausteine) – **erledigt (15.11.2026):** `ENG-LICF-r1` / `ENG-SYS-LICF-0001`,
+  Status `baseline`, in `kueper-engineering/systems/living-infrastructure-conserved-flow-contract-r1.json`
+  mit Begleitdokument `systems/living-infrastructure-conserved-flow-architecture-r1.md`.
+  Source of Truth bleibt `kueper-engineering`; hier nur der Verweis.
 - `KG`: kanonische Material- und Prozessidentitäten.
 - `OTA`: Evidenzkonsolidierung und Provenienz, einschließlich der offenen Frage
   früherer Mars-Pilz-Bestände.
@@ -101,3 +104,7 @@ Bewusst noch nicht geroutet:
 
 Meilenstein „stabile Verträge“: Der ENG-Flussvertrag und die KG-Identitäten liegen
 vor und werden vom OTA-Evidenzprofil referenziert.
+Stand 17.11.2026: offen – der ENG-Flussvertrag (`ENG-LICF-r1`) und die
+KG-Identitäten (`EXT-ECO-KG-20261114-001`, erledigt 15.11.2026:
+`kueper-knowledge-graph/exports/ontology-living-infrastructure-0.1.json`) liegen vor;
+die Referenzierung im OTA-Evidenzprofil (`EXT-ECO-OTA-20261114-001`) steht noch aus.
