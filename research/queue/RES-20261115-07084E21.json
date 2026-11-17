@@ -1,6 +1,6 @@
 {
   "id": "RES-20261115-07084E21",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-15T12:00:37+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -38,5 +38,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früheres OTA-Research-Topic behandelt OTA-TEC-0085 oder überhaupt Raketenantrieb; die Topic-Liste enthält keinen Eintrag zu Hydrolox-Leistungsdaten, Triebwerkszyklen oder Düsengeometrie. Der Audit ist damit weder Wiederholung noch kosmetische Verengung eines bestehenden Themas, sondern die erste externe Prüfung der Kenndaten-Grundlage von CYGNUS/RL-25.",
-  "fingerprint": "07084e21406e50e0"
+  "fingerprint": "07084e21406e50e0",
+  "updated_at": "2026-11-17T12:04:08+00:00",
+  "last_error": "agent-with-exa: Exa evidence failed: Cannot read properties of undefined (reading 'exaSearch')\nagent-with-exa: falling back to the existing research agent without Exa\nClaude Code doesn't recognize the model \"deepseek-v4-flash\", so it assumes a context window of 1m tokens. Update Claude Code, or see https://code.claude.com/docs/en/model-config#correct-the-window-for-a-gateway-or-custom-model-id to set the window.\n[claude-code:unrecognized_model] {\"model\":\"deepseek-v4-flash\",\"query_source\":\"sdk\"}\nAPI Error: 402 Insufficient Balance (request_id: 49509246-ce48-4d2d-b2f2-15e5d7a70520)\n"
 }
