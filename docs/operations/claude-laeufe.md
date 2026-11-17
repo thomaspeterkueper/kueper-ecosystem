@@ -24,6 +24,8 @@ Thomas, 13.11.2026:
 
 **Kollisionen vermeiden:** Claude fasst keinen Task an, für den ein Branch `agent/…` oder `claude/…` jünger als 6 Stunden existiert oder ein offener PR besteht, und keinen Task, den der Agent Worker gerade bearbeitet (Hinweis im Task oder Branch). Im Zweifel liegen lassen.
 
+**Branch-Präfix in `noxiagame`** (Thomas, 17.11.2026): `noxiagame/vercel.json` schaltet seit #774 Vercel-Deployments für `claude/*` ab, das Merge-Gate in `registry/merge-gates.json` verlangt aber fail-closed einen Vercel-Status. Claude-Läufe verwenden in `noxiagame` deshalb `fix/claude-<task-id>` statt `claude/<task-id>`; `vercel.json` und `merge-gates.json` bleiben unverändert. Anlass: #803/#789 blockiert, als #816/#817 gemergt.
+
 **Welche Repos wer:** vorerst keine feste Aufteilung nach Repo – die Regeln oben verteilen die Arbeit. Gibt Thomas eine Liste vor („diese Repos nur Claude“), wird sie hier eingetragen.
 
 ## Lauf 1: Ökosystem-Kreislauf (alle 3 Stunden, Claude)
