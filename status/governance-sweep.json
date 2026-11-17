@@ -1,31 +1,5 @@
 {
-  "generated_at": "2026-11-16T15:34:34.095043+00:00",
-  "findings": [
-    {
-      "id": "bf55fc5bd0e2",
-      "category": "task_addressed_to_eco",
-      "severity": "info",
-      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ENG-ECO-20261116-001.md"
-    },
-    {
-      "id": "2084c3130099",
-      "category": "governance_path_missing",
-      "severity": "warning",
-      "message": "Projekt 'thomas-kueper-de' fehlt der Pflichtpfad 'external-tasks/open'."
-    }
-  ],
-  "new_since_last_run": [
-    {
-      "id": "bf55fc5bd0e2",
-      "category": "task_addressed_to_eco",
-      "severity": "info",
-      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-ENG-ECO-20261116-001.md"
-    },
-    {
-      "id": "2084c3130099",
-      "category": "governance_path_missing",
-      "severity": "warning",
-      "message": "Projekt 'thomas-kueper-de' fehlt der Pflichtpfad 'external-tasks/open'."
-    }
-  ]
+  "generated_at": "2026-11-17T15:53:19.296650+00:00",
+  "findings": [],
+  "new_since_last_run": []
 }
