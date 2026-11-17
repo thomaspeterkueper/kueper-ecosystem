@@ -1,6 +1,6 @@
 {
   "id": "RES-20261116-D0CA0941",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-16T12:10:54+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -43,5 +43,8 @@
       "LOW_SUBSTANCE"
     ]
   },
-  "fingerprint": "d0ca0941143b5960"
+  "fingerprint": "d0ca0941143b5960",
+  "updated_at": "2026-11-17T06:50:00+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/307",
+  "executed_by": "claude-oekosystem-recherche (Übernahme nach HTTP 403 in Lauf 43863535966)"
 }
