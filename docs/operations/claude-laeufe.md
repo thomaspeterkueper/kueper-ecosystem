@@ -1,8 +1,8 @@
 # Claude-Läufe und DeepSeek-Workflows im Hybridbetrieb
 
 ```
-Stand:   13.11.2026, 21 Uhr – Hybridbetrieb (Thomas); davor 1.0.0: vollständige Ablösung, am selben Tag zurückgenommen
-Version: 2.0.0
+Stand:   17.11.2026 – Lauf 3 „KG-Merge und Rückfragen“ (Thomas); 13.11.2026: Hybridbetrieb; davor 1.0.0: vollständige Ablösung, am selben Tag zurückgenommen
+Version: 2.1.0
 ```
 
 Thomas, 13.11.2026:
@@ -21,6 +21,7 @@ Thomas, 13.11.2026:
 | GitHub-Issues, Draft-PRs mit CI-Fehlern oder Konflikten | – | ja (früher Lauf „Ökosystem Requests abarbeiten“) |
 | PR-Review | erstes Review | **zweites Review vor dem Merge** bei PRs von Agenten, die das erste Review bestanden haben oder länger als 6 Std. offen sind |
 | Recherche-Loops | ja – täglich wie bisher | **Prüfung** der Recherche-Ergebnisse der letzten 24 Std. und Übernahme gescheiterter Recherche |
+| Merge der KG-Candidates | – (Executor legt nur Drafts an) | ja – Lauf 3: Triage, Merge, Rückfragen |
 
 **Kollisionen vermeiden:** Claude fasst keinen Task an, für den ein Branch `agent/…` oder `claude/…` jünger als 6 Stunden existiert oder ein offener PR besteht, und keinen Task, den der Agent Worker gerade bearbeitet (Hinweis im Task oder Branch). Im Zweifel liegen lassen.
 
@@ -48,6 +49,22 @@ Läuft nach den nächtlichen Recherche-Workflows (Actions-Zeiten in UTC: 03:23, 
 5. Höchstens 5 Prüfungen und 1 übernommener Schritt je Lauf. Bericht höchstens 6 Zeilen.
 
 Regeln aus `docs/knowledge-research-loop.md` gelten unverändert.
+
+## Lauf 3: KG-Merge und Rückfragen (täglich 19:37 Uhr Berlin, Claude)
+
+Thomas, 17.11.2026: „Knowledge Graph kann man mergen, wir sollten für die Zukunft einen Agenten für Merges und Rückfragen im KG bauen.“ Anlass: 118 offene Candidate-Draft-PRs, der letzte Merge am 11.11.; der Canon Conflict Loop prüft nur gemergte Candidates und lief deshalb leer.
+
+Candidates bleiben auch nach dem Merge **non-canonical** – der Merge legt sie nur in den Staging-Bereich `research/candidates/` des KG, wo der Canon Conflict Loop sie gegen Kanon und Realwissen prüft und Requests erzeugt. `auto_merge_candidates` in `research/policy.json` bleibt `false`: Die Research-Executor mergen nie selbst, gemergt wird nur in diesem Lauf.
+
+1. **Erheben:** offene PRs in `kueper-knowledge-graph` mit Branch `research/res-…` (Status, Checks, Mergebarkeit) als JSON; alle `research/*`-Branches fetchen.
+2. **Triage:** `python3 tools/research/triage_candidates.py --kg <KG-Klon> --prs <prs.json>` – Entscheidung je PR `merge`, `hold` (mit Gründen) oder `close` (Candidate schon auf `main`). Geprüft werden: nur die eigene Candidate-Datei geändert, Queue-Eintrag `candidate-pr` mit passender PR-URL, Pflichtabschnitte und Quellen-Gate des Evidenzprofils, Status non-canonical, keine Platzhalter, Checks grün, mergebar.
+3. **Rote Checks:** Ist ein Check rot, prüfen, ob er auch auf `main` zur selben Zeit rot war (geerbter Fehler) – dann die KG-Prüfungen lokal auf `main` + Candidate ausführen; bei Grün wie `merge` behandeln.
+4. **Stichprobe** (höchstens 5 je Lauf): von den zu mergenden Candidates je eine wissenschaftliche Quelle (DOI, arXiv, Verlag) selbst öffnen; erfundene Kennungen → `hold` und Rückfrage.
+5. **Merge** nach Thomas' Regel: alle `merge`-PRs auf einem eigenen Branch `claude/kg-candidates-<datum>` mit je einem Merge-Commit „Merge pull request #N …“ zusammenführen, KG-Prüfungen (`scripts/check_source_of_truth.py`, Unittests, `scripts.check_evidence_exports`) ausführen, bei Grün `main` vorspulen (kein Force-Push). GitHub markiert die PRs dann als gemergt. Nur PRs, die älter als 12 Std. sind – Lauf 2 soll neue Candidates vorher prüfen können.
+6. **Rückfragen:** Was der Lauf nicht selbst klären kann, bekommt einen PR-Kommentar mit „Claude-Status: wartet auf Thomas“ und einer konkreten Frage – insbesondere Kanon- und Philosophiefragen, unklare Profile, abweichende Queue-Einträge. Queue-Einträge mit `needs-review` (Gate-Fehler) einordnen: behebbar → neu einreihen; Profil- oder Policyfrage → Rückfrage. PRs mit `close` schließen, mit Hinweis auf den Candidate auf `main`.
+7. **Bericht** nur bei Merges oder Rückfragen: höchstens 6 Zeilen.
+
+Grenzen: keine Änderungen an kanonischen KG-Entitäten, Relationen oder Schemas; keine anderen KG-PRs als `research/res-…` mergen (andere offene KG-PRs nur im Bericht nennen); keine Workflows ein- oder ausschalten.
 
 ## Rückweg und Anpassung
 
