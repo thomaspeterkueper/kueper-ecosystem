@@ -1,6 +1,6 @@
 {
   "id": "RES-20260902-BA7C8605",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-02T08:03:07+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -34,5 +34,21 @@
   "novelty_reason": "Kein früheres Research-Topic behandelt KUE-SCI-0183; die Goldhydrid- und MOF-Konfinement-Frage ist ein eigenständiger, erst mit dem letzten Commit ins Repo gelangter realwissenschaftlicher Sachverhalt und überlappt nicht mit den Topics zu OBS-0101, MTH-0006 oder SCI-0001.",
   "fingerprint": "ba7c860550db2d76",
   "updated_at": "2026-09-02T08:12:56+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/103"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/103",
+  "validated_at": "2026-11-18T14:22:59+00:00",
+  "validation_summary": "Das Research-Ergebnis ist eine Verifikation von KUE-SCI-0183 (Goldhydride unter Extrembedingungen, v0.2, Status 'Reviewfähig'). Alle im Dokument als [R] geführten quantitativen Befunde zu Frost et al. (2025, Angew. Chem. Int. Ed. 64, e202505811) werden wörtlich gegen Crossref/OSTI/PubMed bestätigt; ein Erratum existiert nicht, und bis 2026-09 ist keine unabhängige Reproduktion oder P–T–x-Erweiterung von Au₂Hₓ publiziert. Die in §§III–X getroffene Einstufung – keine demonstrierte Niedrigtemperatur-Metastabilität, Konfinement als ungetestete [T/H]-Hypothese, keine belastbaren Lebensdauerangaben – bleibt unverändert gültig; es entsteht kein Konflikt mit der Kanonfassung. Die Dokumentfassung vom 2026-11-03 ist sogar neuer als die Recherche (2026-09-02) und enthält bereits Details jenseits des Abstracts (Raman-/H₂-Freisetzung, entropiegetriebene Deutung, Wärmeleitfähigkeits-Preprint), sodass insoweit kein Nacharbeitsbedarf besteht. Zwei konkrete redaktionelle Folgepunkte bleiben: (1) der in",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20261118-001",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20261118-002",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    }
+  ]
 }
