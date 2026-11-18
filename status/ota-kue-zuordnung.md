@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-17 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-18 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -33,7 +33,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0080-2026-DE | OTA-SCI-0080-2026-DE | RST | KUE-SCI-0174 | geprüft 2026-11-06 – KUE-Gegenstück vorhanden; Regionalwerte in KUE-SCI-0174 v0.2 übernommen, Werkanker bleiben; Korrektur/Kürzung OTA-REQ-20261106-001 – umgesetzt 2026-11-10 (v1.4) |
 | OTA-SCI-0086-2026-DE | Reproduktion und Entwicklung von der Konzeption bis zum | HOFFENR | KUE-SCI-0187 | geprüft 2026-11-05 – KUE-Gegenstück vorhanden; fehlende Teile in KUE-SCI-0187 v0.2 übernommen, §19 bleibt; Kürzung OTA-REQ-20261105-002 – umgesetzt 2026-11-09 (v1.3) |
 | OTA-SCI-0091-2026-DE | Supernovae Unite — 2.884 Typ-Ia-Supernovae und die Evid | HOFFENR | KUE-SCI-0191 | geprüft 2026-11-04 – KUE-Gegenstück vorhanden (KUE-SCI-0191 v0.2), AVI-Teil bleibt; Kürzung OTA-REQ-20261104-002 – umgesetzt 2026-11-08 (v1.1) |
-| OTA-SCI-0105-2026-DE | Seltene b→sμμ-Zerfälle – CMS- und LHCb-Spannungen mit d | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-10 – kein KUE-Gegenstück (KUE-SCI-0195 nur Abgrenzungssatz), tatsächlich Teile nach KUE, AVI-P bleibt; EXT-OTA-KUE-20261110-002, danach Kürzung OTA-REQ-20261110-002 |
+| OTA-SCI-0105-2026-DE | Seltene b→sμμ-Zerfälle – CMS- und LHCb-Spannungen mit d | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-10 – kein KUE-Gegenstück (KUE-SCI-0195 nur Abgrenzungssatz), tatsächlich Teile nach KUE, AVI-P bleibt; EXT-OTA-KUE-20261110-002, danach Kürzung OTA-REQ-20261110-002 – umgesetzt 2026-11-18 (OTA-SCI-0105 v1.1, KUE-SCI-0205) |
 | OTA-SCI-0106-2026-DE | Gold über die Skalen – Nukleosynthese, Material, Ressou | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-05 – KUE-Gegenstück vorhanden; Realdossier ohne Werkbezug, Lagerstätten/Recycling/Provenienz in KUE-SCI-0195 v0.4 übernommen; Brückendokument OTA-REQ-20261105-001 – umgesetzt 2026-11-09 (v0.3) |
 | OTA-SCI-0107-2026-DE | STAR: Nichtmonotone transversale Impulskorrelationen in | IOFFENR | KUE-SCI-0195 | geprüft 2026-11-11 – KUE-Gegenstück vorhanden (KUE-SCI-0195 v0.4); Signifikanzen/arXiv nach KUE per EXT-OTA-KUE-20261111-001, AVI-P/Omnizedenz bleiben; Kürzung OTA-REQ-20261111-002 – umgesetzt 2026-11-17 (v1.1) |
 | OTA-SCI-0113-2026-DE | GW250114 – Hawkings Flächensatz, Kerr-Ringdown und star | IOFFENR | KUE-SCI-0196 | geprüft 2026-11-02 – KUE-Gegenstück vorhanden; Realteil in KUE-SCI-0196 v0.2 übernommen, Kürzung OTA-REQ-20261102-001 – umgesetzt 2026-11-07 (v1.1) |
@@ -54,7 +54,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-OBS-0006-2026-DE | SumTablets: KI-gestützte Keilschrift-Transliteration al | IRT |  | offen |
 | OTA-SCI-0019-2025-DE | DIE FÜNF EPOCHEN DES GEHIRNS | RS |  | geprüft 2026-11-09 – Teile nach KUE (I–III, Studie Mousley et al.), GANDHAKA/noχ-Extrapolationen bleiben; EXT-OTA-KUE-20261109-002, danach Kürzung OTA-REQ-20261109-002 |
 | OTA-SCI-0021-2025-DE | Mikrogravitation und Gehirnarchitektur | IRST |  | geprüft 2026-11-11 – kein KUE-Gegenstück; wegen Werkbezug tatsächlich Teile nach KUE (Realanker unbelegt, Quellen im Request), Matrix/KN-5.1 bleiben; EXT-OTA-KUE-20261111-002, danach Kürzung OTA-REQ-20261111-001; v1.1 ergänzt (II–IV, Epochen IV–V) nach Entscheidung Thomas 2026-11-11 |
-| OTA-SCI-0022-2025-DE | Zhurong-Entdeckung: Wasser-Fenster auf Mars verlängert  | R |  | geprüft 2026-11-12 – kein KUE-Gegenstück; wegen Werkbezug Teile nach KUE (Realteil unbelegt/fehlerhaft, Quellen im Request), Relikt-Fenster/2070/2091 bleiben; EXT-OTA-KUE-20261112-001, danach Korrektur/Kürzung OTA-REQ-20261112-001 (Kuratortext/Marker warten auf Thomas) |
+| OTA-SCI-0022-2025-DE | Zhurong-Entdeckung: Wasser-Fenster auf Mars verlängert  | R |  | geprüft 2026-11-12 – kein KUE-Gegenstück; wegen Werkbezug Teile nach KUE (Realteil unbelegt/fehlerhaft, Quellen im Request), Relikt-Fenster/2070/2091 bleiben; EXT-OTA-KUE-20261112-001, danach Korrektur/Kürzung OTA-REQ-20261112-001 (Kuratortext/Marker warten auf Thomas) – Punkte A–D umgesetzt 2026-11-18 (OTA-SCI-0022 v1.1, KUE-SCI-0202), Punkt E wartet auf Thomas |
 | OTA-SCI-0057-2026-DE | Otjize als funktionales Materialsystem: Mineralogie, Na | RST |  | geprüft 2026-11-08 – Teile nach KUE (II–VI, VIII), Werkbezug OTJIZE bleibt; EXT-OTA-KUE-20261108-001, danach Kürzung OTA-REQ-20261108-001 |
 | OTA-SCI-0058-2026-DE | Triclosan als entkoppelnder Selektionsdruck: Wirkmechan | RT |  | geprüft 2026-11-09 – Teile nach KUE (II–VI, IX), Leitsatz/Systemvergleich Otjize bleibt; EXT-OTA-KUE-20261109-001, danach Kürzung OTA-REQ-20261109-001 |
 | OTA-SCI-0060-2026-DE | OTA-SCI-0060-2026-DE | HRT | KUE-SCI-0170 | geprüft 2026-11-13 – KUE-Gegenstück vorhanden (KUE-SCI-0170 v0.1, faktisch Gruppe K), Werkbezug bleibt; Kürzung OTA-REQ-20261113-001 (A–D umgesetzt 2026-11-13, E wartet auf Thomas), EXT-OTA-KUE-20261113-001 |
@@ -84,7 +84,8 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-LSC-0007-2026-DE | OTA-LSC-0007-2026-DE | FRST | PROTOKOLL A: FASZIEN-VIBRATIONSTRAINING (8 WOCHEN) [R→T]; PROTOKOLL B: PHOTOBIOM | geprüft 2026-11-01 – Teile nach KUE (Protokolle A/B als Evidenzübersicht), erst nach OTA-REQ-20261101-004 |
 | OTA-MON-0002-2142-DE | TEMENON | FR | Reale wissenschaftliche Grundlagen [R] | offen |
 | OTA-SCI-0007-2026-Cuancoa | OTA-SCI-0007-2026-Cuancoa | RST |  | offen |
-| OTA-SCI-0015-2025-DE | Schumann-Resonanz: Biologische Relevanz und ISS-Referen | RST |  | offen |
+| OTA-SCI-0015-2025-DE | Schumann-Resonanz: Biologische Relevanz und ISS-Referen | RST |  | geprüft 2026-11-18 – Teile nach KUE (Realteil fehlerhaft: Barger/Stahn/Wever/Basner, ISS „ohne Schumann“ widerlegt durch C/NOFS), Hayashi-Rahmen bleibt; EXT-OTA-KUE-20261118-001, danach Korrektur/Kürzung OTA-REQ-20261118-002 (KN-00/01 und Mars-Weltlogik warten auf Thomas) |
+| OTA-SCI-0009-2025-DE | Planetare Schumann-Resonanzen und AVI-Kopplung | RTSW |  | geprüft 2026-11-18 (Zeile ergänzt) – Teile nach KUE (Mars-SR, Zeitdilatation; Erd-SR in KUE-SCI-0012), AVI/χ/Baumeister bleiben; EXT-OTA-KUE-20261118-001, danach Korrektur/Kürzung OTA-REQ-20261118-001 (KN-01, HRV-Zeile/Hypothese B warten auf Thomas) |
 | OTA-SCI-0026-2025-DE | SABRE-Vorkühler-Technologie: Hyperschall-Luftatmung dur | RT |  | offen |
 | OTA-SCI-0026-2026-DE | Interstellare Schwefelchemie — Die Entdeckung von 2,5-C | RST |  | offen |
 | OTA-SCI-0027-2025-DE | Graphen-Keramik-Verbundwerkstoffe: Ultra-Hochtemperatur | RST |  | offen |
