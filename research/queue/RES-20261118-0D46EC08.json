@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261118-0D46EC08",
+  "status": "queued",
+  "created": "2026-11-18T12:00:19+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "lib/learningPaths.ts",
+  "source_ref": "57a7783602dff15d78fd24d8475b6c609f4fb9b9",
+  "source_blob_sha": "daecb662fa55b1b5ccda2eb096d8a2721d7f8629",
+  "title": "Correct the Armstrong-limit, CO2-toxicity and reserve-sizing claims in the mobile life-support path",
+  "question": "PATH:SSF:ENG-LIFESUPPORT-MOBIL-0001 (lib/learningPaths.ts; assessment items in lib/learningPaths/quizRepairs.ts) teaches 'Armstrong limit at 6.3 kPa: above this blood boils', that 'CO2 poisoning is faster than oxygen deficiency becomes noticeable', that 'time to CO2 poisoning is about 2–4 hours at complete filter failure', and that a 'return path plus 20%' reserve is the appropriate emergency rule. What do NASA human-system standards, aviation physiology and ECLSS literature actually establish for (a) oxygen consumption and CO2 production rates and their variability (the existing Mars colony audit already anchors roughly 0.82–0.84 kg O2 and 1.00–1.04 kg CO2 per person per day); (b) CO2 exposure limits, symptoms and time course at different partial pressures and cabin volumes; (c) the Armstrong limit and ebullism — does blood actually boil at 6.3 kPa, and which body fluids do?; (d) how emergency oxygen/CO2 reserves are sized in practice (return path, hold-up, leak, metabolic margin, N-1 failure); and (e) which values are standards, measured physiology, or design assumptions? Correct the 'blood boils' statement and replace the universal 2–4 hour figure with a volume- and rate-dependent calculation.",
+  "why_now": "The path gates UNL:NOX:TOOL:LIFE-SUPPORT-MOBILE and UNL:NOX:ENG:PRESSURE-CABIN, and its emergency quiz turns a design assumption into a hard 2–4 hour deadline. It is quarantined only for legacy KNOW:* domain IDs, so it would become learner-facing unchanged once those domains are mapped. The existing Mars colony audit already fixes O2/CO2 rates but leaves the physiology and emergency claims unresolved.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Human physiology and NASA life-support standards for hypoxia, hypercapnia, ebullism at 6.3 kPa, CO2 exposure limits, and emergency reserve sizing.",
+  "publication_route_hint": null,
+  "project_weight": 0.8,
+  "relevance_score": 0.8775,
+  "scores": {
+    "project_relevance": 0.84,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.86,
+    "evidence_potential": 0.91
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Prior Mars research covers water stability, perchlorate and colony mass flows, not human physiology at 6.3 kPa, CO2 exposure limits, or reserve sizing. The existing Mars colony audit fixes O2/CO2 rates but does not resolve ebullism, hypercapnia time course, or emergency reserve design, so this is a distinct unresolved dimension.",
+  "fingerprint": "0d46ec088bb0121b"
+}
