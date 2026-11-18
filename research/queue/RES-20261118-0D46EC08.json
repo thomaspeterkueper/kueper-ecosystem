@@ -1,6 +1,6 @@
 {
   "id": "RES-20261118-0D46EC08",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-18T12:00:19+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Prior Mars research covers water stability, perchlorate and colony mass flows, not human physiology at 6.3 kPa, CO2 exposure limits, or reserve sizing. The existing Mars colony audit fixes O2/CO2 rates but does not resolve ebullism, hypercapnia time course, or emergency reserve design, so this is a distinct unresolved dimension.",
-  "fingerprint": "0d46ec088bb0121b"
+  "fingerprint": "0d46ec088bb0121b",
+  "updated_at": "2026-11-18T12:01:25+00:00",
+  "last_error": "[Errno 7] Argument list too long: 'node'"
 }
