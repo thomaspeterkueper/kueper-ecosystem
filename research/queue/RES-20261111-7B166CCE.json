@@ -1,6 +1,6 @@
 {
   "id": "RES-20261111-7B166CCE",
-  "status": "needs-review",
+  "status": "queued",
   "created": "2026-11-11T11:09:52+00:00",
   "source_project": "mishkenaz",
   "source_repository": "thomaspeterkueper/mishkenaz.org",
@@ -14,10 +14,10 @@
     "en",
     "de"
   ],
-  "evidence_profile": "historical-linguistic",
+  "evidence_profile": "conlang-scientific",
   "claim_classes": [
     "T",
-    "F"
+    "W"
   ],
   "external_research_required": true,
   "real_world_anchor": "Empirische Relativitäts-, Obligatorik- und Effabilitätsforschung (Lucy; Slobin, thinking for speaking; Gleitman & Papafragou; Everett/Deutscher-Debatte).",
@@ -33,6 +33,7 @@
   "related_research_ids": [],
   "novelty_reason": "Kein bisheriger Kandidat behandelt Relativität, Obligatorik oder Effabilität. RES-20261005-43D9854E prüft die verbinitiale Rollensyntax, RES-20260915-3ADB7DC0 die Lexikalisierung der 42 Vektoren; beide setzen die Sagbarkeitsfrage nicht voraus und beantworten sie nicht.",
   "fingerprint": "7b166cceffd9e15b",
-  "updated_at": "2026-11-11T11:18:40+00:00",
-  "last_error": "candidate for historical-linguistic lacks a strong source type marker"
+  "updated_at": "2026-11-18T19:20:00+00:00",
+  "last_error": "candidate for historical-linguistic lacks a strong source type marker",
+  "requeue_note": "Thomas, 18.11.2026: Mishkenaz ist eine fiktive Sprache aus den Romanen des Baumeister-Universums, weder historisch noch selbst Wissenschaft, aber wissenschaftlich korrekt aufgebaut. Neu eingereiht mit Profil conlang-scientific; vorher historical-linguistic, Gate-Fehler: fehlender starker Quellentyp."
 }

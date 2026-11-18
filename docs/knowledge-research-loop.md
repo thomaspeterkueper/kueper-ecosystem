@@ -102,6 +102,12 @@ Das Profil verlangt dieselben Mindestwerte wie `science` (0,72; drei Quellen, zw
 
 Discovery darf das Profil je Gap über `evidence_profile_override` wählen (Liste `evidence_profile_overrides.allowed` in `research/policy.json`). Ausgenommen sind Projekte, deren Profil einen gepinnten Quellpfad verlangt (OTA).
 
+## Conlang-Profil: `conlang-scientific`
+
+Seit 18.11.2026 hat Mishkenaz ein eigenes Evidenzprofil. Thomas: „Mishkenaz ist eine fiktive Sprache aus meinen Romanen, die im Baumeisteruniversum spielen, gehört weder zu his noch wirklich zu sci, wobei ich versucht habe, alles wissenschaftlich korrekt aufzubauen.“ Anlass: RES-20261111-7B166CCE scheiterte im Profil `historical-linguistic`, das Belege und Rekonstruktion realer Sprachen erwartet.
+
+Das Profil verlangt wie OTA eine Claim-Klassifikation vor der Recherche (`R`, `T`, `H`, `S`, `F`, `W`, `R-Anker`, `OFFEN`) und eine Gegenbefundprüfung (Abschnitt `Aktualität und Widerspruchsprüfung`). Extern geprüft werden nur die realen linguistischen Anker – Typologie, Phonetik, Lautwandel, Sprachkontakt, Psycholinguistik, Relativitäts- und Effabilitätsforschung, die historischen Ausgangssprachen. Formen und Regeln von Mishkenaz sind Werk-Setzung (`W`): Die Recherche sagt nur, ob eine Gestaltung typologisch verbreitet, selten oder unbelegt ist, und trennt Design-Entscheidungen von empirisch belegten Wirkungen. Mindestwerte wie bei `historical-linguistic` (0,68; drei Quellen, zwei Domains, drei URLs); starke Quellentypen sind `peer-reviewed`, `scholarly-grammar`, `academic-corpus`, `typological-database` und `academic-publisher`.
+
 ## Reale wissenschaftliche E-Papers: `kueper.com` / `KUE-SCI`
 
 Die öffentliche kanonische Publikationsschicht für reale wissenschaftliche E-Papers ist:

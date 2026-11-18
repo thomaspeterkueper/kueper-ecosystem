@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "schema_version": "1.5.0",
+  "schema_version": "1.6.0",
   "target_repository": "thomaspeterkueper/kueper-knowledge-graph",
   "candidate_path": "research/candidates",
   "default_languages": [
@@ -77,7 +77,7 @@
         "gu",
         "sa"
       ],
-      "evidence_profile": "historical-linguistic"
+      "evidence_profile": "conlang-scientific"
     },
     {
       "id": "ota",
@@ -310,6 +310,42 @@
       ],
       "require_strong_source": true,
       "scout_guidance": "Separate directly attested forms/finds, scholarly reconstruction, comparative inference and fictional extrapolation. Prefer archaeological reports, corpora, scholarly grammars, historical primary sources and peer-reviewed historical linguistics. Search relevant source languages when they materially improve access to primary scholarship."
+    },
+    "conlang-scientific": {
+      "description": "Fiktive, wissenschaftlich fundiert gebaute Sprachen (Mishkenaz, Baumeister-Universum). Geprüft werden nur die realen linguistischen Anker; Formen, Regeln und Wirkungen der Sprache selbst sind Werk-Setzung.",
+      "minimum_evidence_score": 0.68,
+      "minimum_sources": 3,
+      "minimum_domains": 2,
+      "minimum_urls": 3,
+      "preferred_source_types": [
+        "peer-reviewed",
+        "scholarly-grammar",
+        "academic-corpus",
+        "typological-database",
+        "academic-publisher",
+        "primary-historical-source"
+      ],
+      "strong_source_markers": [
+        "peer-reviewed",
+        "scholarly-grammar",
+        "academic-corpus",
+        "typological-database",
+        "academic-publisher"
+      ],
+      "require_strong_source": true,
+      "require_claim_classification": true,
+      "require_conflict_check": true,
+      "claim_classes": {
+        "R": "Real-world linguistic claim (phonetics, typology, language change, contact, psycholinguistics, historical attestation of a source language). Strong external evidence is required.",
+        "T": "Theoretical claim about language in general (e.g. linguistic relativity, effability, obligatoriness). Map the state of research including contested positions; do not settle a debated hypothesis by source count.",
+        "H": "Hypothetical or falsifiable claim about how such a language could work or be acquired. Map supporting, null and constraining evidence; do not upgrade it to established.",
+        "S": "Speculative extension beyond attested human languages. Search only for constraints and plausibility anchors.",
+        "F": "Fictional canon of the novels (speakers, history, in-universe effects). External search has no authority to validate or invalidate it.",
+        "W": "Design decision of the constructed language (phonology, grammar, lexicon, dialects as set by the author). Treat as a work-level fact; check only whether it is typologically attested, rare or unattested, and label it as design.",
+        "R-Anker": "Statement about the conlang directly anchored to a real-world linguistic claim. Verify the real anchor independently while preserving the design layer.",
+        "OFFEN": "Explicitly unresolved question. Preserve as open unless strong evidence resolves the external part."
+      },
+      "scout_guidance": "Mishkenaz is a constructed fictional language from the Baumeister novels, deliberately built to be scientifically sound; it is neither a historical language nor itself an object of empirical science. Classify the claim before searching. Research only the real linguistic anchors (typology, phonetics, sound change, language contact, psycholinguistics, relativity and effability research, the historical source languages it draws on). Never present the conlang's forms or rules as attested data, and never use external search to validate F or W. For every W claim say whether the design is typologically common, rare or unattested, and separate design decisions from empirically established effects of grammar on thought or speech. Surface serious counterevidence and contested positions."
     },
     "worldbuilding-scientific": {
       "description": "Real-world plausibility research for fictional settings while preserving the canon/evidence boundary.",
