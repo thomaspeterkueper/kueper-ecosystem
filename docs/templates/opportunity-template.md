@@ -28,8 +28,8 @@ assessment:                      # je Dimension rating: low | medium | high | un
   ip_risk: {rating: unknown, reason: ""}
 status_history: []               # je Eintrag: at, by, from, to, reason
 deadline_at: null                # ISO-8601 mit Uhrzeit und Zeitzone; null wenn Uhrzeit/Zone nicht bestätigt
-deadline_date: null              # YYYY-MM-DD, wenn nur das Datum bekannt ist (als Zeichenkette in Anführungszeichen)
-deadline_status: unknown         # confirmed | reported | unknown
+deadline_date: null              # YYYY-MM-DD als Zeichenkette in Anführungszeichen; gesetzt, sobald eine Frist bekannt ist (bei deadline_at dessen lokales Datum)
+deadline_status: unknown         # confirmed (verlangt source_checked_at) | reported | unknown (dann beide Fristfelder null)
 evidence_status: null            # idea | hypothesis | simulated | experimentally_tested | independently_replicated | peer_reviewed; ab prioritized Pflicht
 funding_amount: null
 currency: null
