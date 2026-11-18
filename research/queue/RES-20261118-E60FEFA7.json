@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261118-E60FEFA7",
+  "status": "queued",
+  "created": "2026-11-18T12:00:17+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "lib/learningPaths.ts",
+  "source_ref": "57a7783602dff15d78fd24d8475b6c609f4fb9b9",
+  "source_blob_sha": "daecb662fa55b1b5ccda2eb096d8a2721d7f8629",
+  "title": "Replace the hard 50/60/70/100 °C collagen thresholds with time-temperature kinetics in the goulash path",
+  "question": "PATH:SSF:CHE-KUECHE-KOLLAGEN-0001 (lib/learningPaths.ts; reinforced by assessment items in lib/learningPaths/quizRepairsKitchen.ts) teaches that collagen 'shrinks at 50 °C, becomes tough at 60 °C, starts converting to gelatin at 70 °C and is fully dissolved at 100 °C', that conversion begins after one hour and is almost complete after three hours, and that collagen 'only breaks down above about 70 °C'. What does food-science literature establish about (a) collagen denaturation/shrinkage temperature and its dependence on collagen type, animal age, pH, salt and heating rate; (b) the distinction between denaturation, hydrolytic conversion to gelatin, and physical gelation on cooling; (c) time-temperature kinetics (Arrhenius/rate integration) for collagen solubilisation in meat at 70–100 °C and whether 'complete' conversion is a meaningful endpoint; (d) how muscle cut, fibre orientation, connective-tissue type and cooking medium change tenderness; and (e) which statements are measured material properties, which are kinetic models, and which are culinary rules of thumb? The result should replace hard thresholds with a time-temperature framing and identify any assessment items that test the thresholds as fact.",
+  "why_now": "The path is a registered prototype whose quiz items explicitly test the 50/60/70 °C thresholds. The adjacent caramelization research (RES-20260831-B813E7F4) corrected the same hard-threshold pattern for sugars but does not cover protein denaturation, hydrolysis or gelation, so learners can still be assessed on a false threshold model.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Collagen denaturation, hydrolytic conversion to gelatin and meat-tenderness kinetics in food science.",
+  "publication_route_hint": null,
+  "project_weight": 0.8,
+  "relevance_score": 0.8325,
+  "scores": {
+    "project_relevance": 0.86,
+    "cross_project_reuse": 0.74,
+    "uncertainty": 0.87,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [],
+  "novelty_reason": "This is not the caramelization question: the caramel audit concerns thermal degradation of sugars, while this asks about protein denaturation, hydrolytic cleavage of collagen to gelatin, and physical gelation in meat. The red-wine audit touches protein denaturation only as a stain-setting mechanism on textiles, not collagen kinetics or meat tenderness. No prior candidate resolves these thresholds.",
+  "fingerprint": "e60fefa757cf4d49"
+}
