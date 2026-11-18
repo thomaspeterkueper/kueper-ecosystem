@@ -1,6 +1,6 @@
 {
   "id": "RES-20260902-A2A10C95",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-02T08:03:08+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -34,5 +34,27 @@
   "novelty_reason": "Kein früheres Research-Topic betrifft KUE-SCI-0170 oder die Neurophysiologie menschlicher Magnetorezeption; der Fokus auf Replikationsstand und Primärquellen-Verifikation ist dokumentbezogen und sachlich unabhängig von den Topics zu OBS-0101, MTH-0006 und SCI-0001.",
   "fingerprint": "a2a10c95a640ffba",
   "updated_at": "2026-09-02T08:26:46+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/104"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/104",
+  "validated_at": "2026-11-18T14:25:35+00:00",
+  "validation_summary": "Der Kandidat bestätigt sämtliche extern prüfbaren Aussagen von KUE-SCI-0170 (Wang 2019, Kaub 2026, Kletetschka & Bazala 2025, Kirschvink 1992, Maher 2016, Shibata 2024) und stützt die unveränderte [R]/[T]/[H]-Klassifikation; ein Konflikt oder eine Umstufung ist nicht begründet. Die Chae-/Oh-Linie ist in v0.3 bereits integriert. Drei konkrete redaktionelle Folgearbeiten bleiben: die im Revisionsvermerk selbst als offen markierte Artikelnummer 21909, die noch fehlende 2026er-Rezension Lam & Malkemper als Stützquelle für §VII und die nicht wörtlich belegte Zahl von vier erneut getesteten Respondern in §I.4.",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20261118-003",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20261118-004",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20261118-005",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    }
+  ]
 }
