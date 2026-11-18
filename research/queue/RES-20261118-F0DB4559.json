@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261118-F0DB4559",
+  "status": "queued",
+  "created": "2026-11-18T12:00:16+00:00",
+  "source_project": "ssf",
+  "source_repository": "thomaspeterkueper/solarsciencefoundation",
+  "source_path": "lib/learningPaths.ts",
+  "source_ref": "57a7783602dff15d78fd24d8475b6c609f4fb9b9",
+  "source_blob_sha": "daecb662fa55b1b5ccda2eb096d8a2721d7f8629",
+  "title": "Correct the flame-temperature, exhaust-temperature and catalytic-converter claims in the automotive combustion path",
+  "question": "PATH:SSF:CHE-AUTO-VERBRENNUNG-0001 (lib/learningPaths.ts; the same 2500 °C figure is repeated in PATH:SSF:PHY-AUTO-MOTOR-0001) teaches that gasoline (C8H18) burns at 'ca. 2500 °C', that exhaust gases leave the cylinder at 700–900 °C, and that a catalytic converter reduces pollutant concentration 'from 80% to below 1%'. What does the primary and technical literature actually establish for (a) gasoline composition and stoichiometry — is C8H18 a valid single surrogate for gasoline?; (b) the stoichiometric adiabatic flame temperature of gasoline/air and the difference between adiabatic, constant-volume peak, and measured burned-gas temperatures; (c) realistic exhaust temperatures at the exhaust valve/manifold, catalyst inlet and tailpipe under cold start, idle and load; (d) the lambda and temperature windows that produce CO, NOx and unburned hydrocarbons; and (e) three-way catalyst light-off, conversion efficiency, oxygen-storage and lambda-window behaviour, including what an '80% to below 1%' claim could legitimately refer to? Separate measured values, standard model calculations, and didactic simplification.",
+  "why_now": "The path is a registered prototype and its quiz repairs test the same stoichiometry; the 2500 °C figure is repeated in PATH:SSF:PHY-AUTO-MOTOR-0001, so one correction affects at least two learner-facing paths and the NOXIA TOOL:COMBUSTION / SENSE:EXHAUST unlocks. The hard numbers are asserted without a source or uncertainty range.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Gasoline/air combustion thermochemistry and three-way catalytic converter performance: adiabatic flame temperature, exhaust gas temperature, lambda-dependent CO/NOx/HC formation, and catalyst light-off/conversion efficiency.",
+  "publication_route_hint": null,
+  "project_weight": 0.8,
+  "relevance_score": 0.9125,
+  "scores": {
+    "project_relevance": 0.93,
+    "cross_project_reuse": 0.87,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.95
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous SSF research topic addresses combustion thermochemistry or exhaust aftertreatment. The closest topics are kitchen/caramel chemistry and critical-materials supply, which do not answer flame temperature, lambda-dependent pollutant formation, or catalyst conversion efficiency.",
+  "fingerprint": "f0db45597dd2bc5b"
+}
