@@ -1,6 +1,6 @@
 {
   "id": "RES-20261118-F0DB4559",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-18T12:00:16+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "No previous SSF research topic addresses combustion thermochemistry or exhaust aftertreatment. The closest topics are kitchen/caramel chemistry and critical-materials supply, which do not answer flame temperature, lambda-dependent pollutant formation, or catalyst conversion efficiency.",
-  "fingerprint": "f0db45597dd2bc5b"
+  "fingerprint": "f0db45597dd2bc5b",
+  "updated_at": "2026-11-18T12:01:23+00:00",
+  "last_error": "[Errno 7] Argument list too long: 'node'"
 }
