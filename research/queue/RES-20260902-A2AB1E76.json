@@ -1,6 +1,6 @@
 {
   "id": "RES-20260902-A2AB1E76",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-02T08:14:12+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -46,5 +46,21 @@
   },
   "fingerprint": "a2ab1e76b171a3a7",
   "updated_at": "2026-09-02T08:40:44+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/105"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/105",
+  "validated_at": "2026-11-18T14:28:35+00:00",
+  "validation_summary": "Der Kandidat bestätigt den realen Anker (Schumann-Grundmode ~7,83 Hz, natürliche Magnetfeldamplitude ~1 pT) und damit das pT-Ziel von OTA-TEC-0019-2095 als Replikation des natürlichen Hintergrunds. Er zeigt aber einen objektiven Rechen- und Einheitenfehler von 10⁷: Die im Dokument selbst zitierte Helmholtz-Formel ergibt mit N=100, I=0,5 A, R=2,5 m ~1,798·10⁻⁵ T (~18 µT), nicht 1,8 pT; Drahtlänge, 26 Ω, 6,6 W und ~10 V gehören zur µT-Konfiguration. Auch die Aussage '>90 % Homogenität über ~50 m³' ist für diese Geometrie überzogen, und die Bioeffekt-/Schlafnutzen-Prämisse in [KN-00] ist nicht etabliert. Daraus folgen zwei konkrete OTA-Aktionen; die fiktive Mars-/Helios-Base-Schicht bleibt unberührt.",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261118-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261118-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
