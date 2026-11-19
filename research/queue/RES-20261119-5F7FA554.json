@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261119-5F7FA554",
+  "status": "queued",
+  "created": "2026-11-19T11:53:33+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0202-2026-de.md",
+  "source_ref": "1029e6d1b3bd47bcf3c6a231f794f0baaee89ea7",
+  "source_blob_sha": "a5c8f1294e8a773ec0f99960b30fad6ca27b9b4b",
+  "title": "KUE-SCI-0202: Zhurong-Radarbefund und Amazonium-Alter – NSR-Primärarbeit und Folgedeutungen verifizieren",
+  "question": "Stimmen die in KUE-SCI-0202 v0.1 als [R]/[I] gesetzten Angaben zum Zhurong-Bodenradar und zur amazonischen Wasseraktivität mit den Primärarbeiten überein? Konkret: (1) Bestätigt Liu, Yike et al. (2025, National Science Review 12(12), nwaf505, DOI 10.1093/nsr/nwaf505, online 14.11.2025) den Frequenzbereich 450–2150 MHz, die Vierfachpolarisation, die Eindringtiefe von etwa 7 m im HV-Kanal bzw. 5 m im vollpolarisierten Detailprofil, die vertikale Auflösung von etwa 5 cm sowie die drei Schichten (im Mittel 0,65 m; stark reflektierende Lage bis im Mittel 3,9 m mit zentimeterfeiner Schichtung, Klüften und einem begrabenen Krater von etwa 11 m Durchmesser; darunter bis mindestens 7 m) und das Einfallen von 8–15° nach Norden? (2) Woher stammt das Alter von etwa 750 Mio. Jahren — ist es, wie im Dokument behauptet, ausdrücklich eine Übertragung aus der Kraterstatistik früherer Arbeiten auf die Landegebietsoberfläche und keine Datierung der Radarlage, und welche Spanne und Unsicherheit nennen die Autoren selbst? (3) Stützt Liu, Yang et al. (2022, Science Advances 8, eabn8555, DOI 10.1126/sciadv.abn8555) im Volltext die Charakterisierung als hydratisierte Sulfat-/Silica-Phasen in hellen Gesteinen, die Duricrust-Deutung und den Bezug auf aufsteigendes Grundwasser oder schmelzendes Untergrundeis — und gehört die verbreitete Angabe „etwa 700 Millionen Jahre“ tatsächlich zur Oberflächendatierung, nicht zu den Mineralen? (4) Sind die abgrenzenden Befunde korrekt wiedergegeben: Qin et al. (2023) zu salzhaltigen Krusten und 1,4–0,4 Mio. Jahren; Li, Chao et al. (2022, Nature 610, 308–312) mit geschichtetem Untergrund bis etwa 80 m und dem ausdrücklichen Nicht-Nachweis flüssigen Wassers oder wasserreichen Eises; Zhang, Lei et al. (2023) zu begrabenen Polygonen in etwa 35 m Tiefe und 3,7–2,9 Mrd. Jahren; Li, Jianhui et al. (2025, PNAS 122, e2422213122) zu Küstenablagerungen? (5) Wie ist der aktuelle Stand (November 2026) von Tianwen-3 (Start 2028, Rückkehr 2031) und des Mars-Sample-Return-Programms nach der FY2026-Haushaltsentscheidung, und sind seit der NSR-Arbeit unabhängige Radar-Reanalysen oder neue Zhurong-/Tianwen-1-Auswertungen erschienen, die die Schichtdeutung, das Alter oder die See-/Meer-Interpretation stützen, einschränken oder verwerfen? (6) Vertreten die zitierten Autoren selbst die im Dokument gezogene Grenze „Wasseraktivität ≠ Hinweis auf Leben“, oder findet sich im Primärtext eine stärkere Habitabilitätsdeutung?",
+  "why_now": "KUE-SCI-0202 trägt den Status `published_foundation_document` und wurde aus einer Pressemitteilung bzw. überwiegend sekundären Quellen aufgebaut; mehrere präzise Zahlen (Mächtigkeiten, Kratzerdurchmesser, Einfallswinkel) sind noch „am Volltext zu prüfen“. Die NSR-Arbeit ist über PMC12696870 offen zugänglich, sodass eine Verifikation mit vertretbarem Aufwand möglich ist. Die Zahlen und Altersaussagen werden laut Dokument ausdrücklich an OTA, SSF und NOXIA weitergereicht und dürfen dort nicht aufgewertet werden.",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "I",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "RoPeR-Radarmessungen des Rovers Zhurong in Utopia Planitia, kraterstatistische Altersbestimmung amazonischer Oberflächen, Mars-Sample-Return- und Tianwen-3-Zeitplan",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.8875,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.88,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.92
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Forschungseintrag befasst sich mit Zhurong, RoPeR oder der amazonischen Wasseraktivität in Utopia Planitia. Die Frage ist eine eigenständige Primärquellenprüfung der NSR-Arbeit und ihrer Abgrenzung zu älteren Radarbefunden.",
+  "fingerprint": "5f7fa554bd490503"
+}
