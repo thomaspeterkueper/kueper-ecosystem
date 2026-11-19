@@ -1,6 +1,6 @@
 {
   "id": "RES-20261119-83FC7F00",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-19T11:53:31+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -36,5 +36,7 @@
     "RES-20261021-640F4624"
   ],
   "novelty_reason": "Die frühere HIS-0001-Prüfung behandelt die Cheops-Ausrichtung nur als einen [H]-Marker innerhalb der Vermessungsgeschichte. Der neue Bedarf liegt auf einer anderen Achse: astrometrische Verifikation von Thuban und der Polbewegung, assyriologische Prüfung von MUL.APIN-Datierung und Listenstruktur sowie eine explizite heliakische Neuberechnung. Keine dieser Dimensionen wurde von RES-20261021-640F4624 beantwortet.",
-  "fingerprint": "83fc7f00ce51611a"
+  "fingerprint": "83fc7f00ce51611a",
+  "updated_at": "2026-11-19T12:09:38+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/313"
 }
