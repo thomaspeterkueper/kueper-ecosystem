@@ -1,0 +1,40 @@
+{
+  "id": "RES-20261119-83FC7F00",
+  "status": "queued",
+  "created": "2026-11-19T11:53:31+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0207-2026-de.md",
+  "source_ref": "1029e6d1b3bd47bcf3c6a231f794f0baaee89ea7",
+  "source_blob_sha": "418bbacb6c8ba4c29abfc033f8050e5a64d86866",
+  "title": "KUE-SCI-0207: Präzession, Thuban und MUL.APIN – astronomische und assyriologische Anker gegen Primärquellen prüfen",
+  "question": "Stimmen die in KUE-SCI-0207 v0.1 als [R]/[T] gesetzten Anker mit Primärquellen und eigener Nachrechnung überein? Konkret: (1) Sind die Thuban-Werte korrekt — engste Polnähe um 2830 v. Chr. bei weniger als 10′, Polstern etwa 3940–1790 v. Chr., Spektraltyp A0 III/A0 IV (kein Überriese), Entfernung 303 ± 5 Lj, scheinbare Helligkeit 3,65–3,67 mag — und lassen sie sich über Gaia DR3/Hipparcos, SIMBAD und ein explizites Präzessionsmodell (z. B. IAU 2006/2000A) belegen? (2) Ist die Rechnung in §I.2 (50,3″/a × 4700 a ≈ 65,7° Frühlingspunktwanderung; Polverlagerung ≈ 25° über die Sehne bei 23,4° Radius) methodisch sauber, und wie groß ist der Fehler der Näherung mit konstanter Rate und konstanter Schiefe gegenüber einer vollen Präzessionsrechnung für 2700 v. Chr. bis heute? (3) Trägt die MUL.APIN-Datierung und -struktur — älteste Abschrift 686 v. Chr., jüngste um 300 v. Chr., Kompilation um 1000 v. Chr. nach Hunger & Pingree, heliakische Daten nach Schaefer ≈ 1370 ± 100 v. Chr., nach de Jong ≈ 1400–1100 v. Chr., zwei Tafeln ohne dritte Hilfstafel — dem Stand von Hunger & Steele (2019) und Hunger & Pingree (1989), und sind die Listenaufteilung (Tafel I Liste 6 = Mondpfad, I iv 31–39), der Anu-Pfad von etwa ±17° und die 18 Sternzuordnungen (inklusive der unsicheren Pisces-/Andromeda-/Pegasus-Grenzfälle) so belegt? (4) Welche heliakischen Aufgangsdaten ergeben sich für 36° N um 2700 v. Chr. bei Angabe von Planetariumsversion, proleptischem Kalender, Horizont, Extinktion und Arcus visionis — insbesondere für Plejaden und Sirius —, und bestätigt oder verschiebt die Neuberechnung die im Dokument nur als Größenordnung zugelassenen Angaben? (5) Wie ist der Forschungsstand zu Badawy & Trimble (1964), zur Deutung des Cheops-Nordschachts auf Thuban und zu Spence (2000) heute zu bewerten — Hypothese, widerlegt oder weiterhin diskutierte Möglichkeit? (6) Hält die Leitgrenze „Präzessionsrechnung ≠ Polwanderung ≠ Datierung eines Textes“ angesichts der tatsächlichen MUL.APIN-Forschung, oder gibt es neuere Datierungsansätze, die die Epoche verschieben?",
+  "why_now": "KUE-SCI-0207 ist am 2026-11-18 neu angelegt, steht auf Status „Entwurf“ und stützt sämtliche astronomischen und assyriologischen Angaben ausdrücklich auf Wikipedia und nicht eingesehene Sekundärliteratur; der `review`-Block nennt Hunger & Steele (2019) und Badawy & Trimble (1964) als nicht eingesehen und die heliakischen Daten als nicht neu gerechnet. Das Dokument speist OTA-SCI-0081/0082 sowie die bronzezeitliche Himmelsweltbildung und ist damit ein aktueller, exponierter Anker.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Astrometrie und Präzessionsrechnung für Thuban und den Himmelspol um 2700 v. Chr.; Datierung, Tafelstruktur und Sternlisten des keilschriftlichen MUL.APIN; heliakische Sichtbarkeit an einem realen Beobachtungsort",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.9,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.88,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20261021-640F4624"
+  ],
+  "novelty_reason": "Die frühere HIS-0001-Prüfung behandelt die Cheops-Ausrichtung nur als einen [H]-Marker innerhalb der Vermessungsgeschichte. Der neue Bedarf liegt auf einer anderen Achse: astrometrische Verifikation von Thuban und der Polbewegung, assyriologische Prüfung von MUL.APIN-Datierung und Listenstruktur sowie eine explizite heliakische Neuberechnung. Keine dieser Dimensionen wurde von RES-20261021-640F4624 beantwortet.",
+  "fingerprint": "83fc7f00ce51611a"
+}
