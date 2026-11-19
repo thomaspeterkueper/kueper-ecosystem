@@ -1,0 +1,124 @@
+{
+  "id": "RES-20261119-3182EA73",
+  "status": "queued",
+  "created": "2026-11-19T08:08:02+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": null,
+  "source_ref": null,
+  "source_blob_sha": null,
+  "title": "AT 2025abao (Bao): observed evidence, model inference and forecast for a stellar merger in M31",
+  "question": "Which statements about AT 2025abao are direct observations, which are model-dependent inferences, and which are forecasts? Concretely: (1) What do the primary record (Karambelkar et al., Nature, DOI 10.1038/s41586-026-11221-z; arXiv:2611.23470) and the JWST Director's Discretionary Time observations (Program 12487, 2025-12-24) establish about the eruption, the ~7 solar-mass AGB primary, the ~0.7 solar-mass companion and the common-envelope history? (2) Which reported values are direct measurements, which are simulation-dependent reconstructions, and which are derived constraints such as the common-envelope efficiency? (3) What remains open or forecast-only, including the expected yield of similar transients from Roman time-domain surveys? Label each statement with an ecosystem reliability marker (R/T/H/S/OFFEN) and a provenance/verification level per ECO-ARC-0036, and record the TNS designation for AT 2025abao.",
+  "why_now": "A 2026-11-19 evidence note drafted in kueper-ecosystem (docs/research/) is withdrawn because this repository must not carry domain content (README \"Nicht-Zweck\"; docs/repository-roles.md §2-§5). The underlying event was published in Nature on 2026-11-18, but the withdrawn note rested on secondary press coverage only; the primary record, the JWST program and the TNS designation must be pinned before KG/OTA/NOXIA consumers use any part of it. The non-canonical candidate belongs in kueper-knowledge-graph/research/candidates/ (ECO-ARC-0021 §2; research/policy.json candidate_path).",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "claim_class_scope": {
+    "R": "Observed multi-instrument detections, observation dates, publication facts and the TNS designation.",
+    "T": "Model-dependent stellar parameters (~7 solar masses, ~350 solar radii, ~0.7 solar masses) and the reconstructed common-envelope history.",
+    "H": "Falsifiable forecast of additional similar transients in Roman time-domain surveys; not established by this single event.",
+    "OFFEN": "Post-merger state and a discovery rate for comparable transients."
+  },
+  "section_provenance": {
+    "observed_evidence": {
+      "reliability": "R",
+      "provenance": "quelle",
+      "verification": "sekundaer",
+      "note": "Detections and dates are reported observations; the Nature version was not directly retrievable, so the check rests on the arXiv record and secondary coverage."
+    },
+    "inference_model": {
+      "reliability": "T",
+      "provenance": "forschung",
+      "verification": "sekundaer",
+      "note": "Masses and common-envelope history are reconstruction/simulation dependent, not direct measurements."
+    },
+    "forecast": {
+      "reliability": [
+        "H",
+        "OFFEN"
+      ],
+      "provenance": "forschung",
+      "verification": "ungeprueft",
+      "note": "Roman yield forecast and post-merger state are not established by this event."
+    },
+    "project_relevance": {
+      "reliability": "OFFEN",
+      "provenance": "rekonstruktion",
+      "verification": "ungeprueft",
+      "note": "KUEPER-side consumer mapping; no claim about the event itself."
+    }
+  },
+  "external_research_required": true,
+  "real_world_anchor": "Transient AT 2025abao (TNS; reported 2025-10-20) in M31; JWST Director's Discretionary Time Program 12487 (PI: Karambelkar), MIRI observation 2025-12-24; Karambelkar et al., \"An inspiral of a star inside a common envelope with its giant companion\", Nature (published online 2026-11-18), DOI 10.1038/s41586-026-11221-z, arXiv:2611.23470.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.7,
+  "relevance_score": 0.92,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.95,
+    "uncertainty": 0.95,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "First source-pinned evidence handoff for AT 2025abao; replaces a withdrawn control-plane note with a non-canonical KG candidate route.",
+  "fingerprint": "3182ea7372555ed7",
+  "source_leads": [
+    {
+      "label": "primary publication",
+      "citation": "Karambelkar, V. et al. (2026). An inspiral of a star inside a common envelope with its giant companion. Nature. DOI 10.1038/s41586-026-11221-z.",
+      "url": "https://doi.org/10.1038/s41586-026-11221-z",
+      "identifier": "arXiv:2611.23470",
+      "source_type": "peer-reviewed",
+      "provenance": [
+        "quelle",
+        "forschung"
+      ],
+      "verification": "sekundaer",
+      "verification_note": "Nature landing page not directly retrievable on 2026-11-19 (redirect to authentication); DOI and title confirmed through the arXiv record and secondary coverage."
+    },
+    {
+      "label": "primary preprint record",
+      "citation": "Karambelkar, V. et al. (2026). arXiv:2611.23470 [astro-ph.SR], submitted 2026-11-17.",
+      "url": "https://arxiv.org/abs/2611.23470",
+      "source_type": "preprint",
+      "provenance": [
+        "quelle",
+        "forschung"
+      ],
+      "verification": "original",
+      "verification_note": "Full text consulted 2026-11-19; states JWST DDT Program 12487 (PI: Karambelkar) and TNS reporting date 2025-10-20."
+    },
+    {
+      "label": "secondary coverage",
+      "citation": "NASA Science (2026-11-18). NASA Data Clinches First-of-Its-Kind Stellar Merger.",
+      "url": "https://science.nasa.gov/missions/webb/nasa-data-clinches-first-of-its-kind-stellar-merger/",
+      "source_type": "secondary/news",
+      "provenance": "quelle",
+      "verification": "sekundaer"
+    },
+    {
+      "label": "secondary coverage",
+      "citation": "Columbia University news (2026-11-18). Columbia Researchers Spot First-of-Its-Kind Stellar Merger.",
+      "url": "https://news.columbia.edu/news/columbia-researchers-spot-first-its-kind-stellar-merger",
+      "source_type": "secondary/news",
+      "provenance": "quelle",
+      "verification": "sekundaer"
+    }
+  ],
+  "routing": {
+    "canonicality": "non-canonical",
+    "target_repository": "thomaspeterkueper/kueper-knowledge-graph",
+    "candidate_path": "research/candidates",
+    "removed_from": "docs/research/2026-11-19-bao-stellar-merger.md",
+    "reason": "kueper-ecosystem is the control plane; domain content belongs to the owning repositories (README \"Nicht-Zweck\"; docs/repository-roles.md §2-§5; ECO-ARC-0021 §2; ECO-ARC-0036; ECO-ARC-0037 §5).",
+    "promotion": "The resulting KG candidate stays non-canonical; any KUE-SCI publication or OTA/NOXIA reuse requires a separate review step. Auto-canonicalization and auto-publication remain disabled (research/policy.json)."
+  }
+}
