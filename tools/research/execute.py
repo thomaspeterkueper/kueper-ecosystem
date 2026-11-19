@@ -27,8 +27,9 @@ def gh(token:str,method:str,path:str,body:dict[str,Any]|None=None)->Any:
     except urllib.error.HTTPError as exc:
         raise RuntimeError(f"GitHub HTTP {exc.code}: {exc.read().decode(errors='replace')}") from exc
 
-def run(cmd:list[str],cwd:Path|None=None,check=True,env:dict[str,str]|None=None):
-    cp=subprocess.run(cmd,cwd=str(cwd) if cwd else None,env=env,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+def run(cmd:list[str],cwd:Path|None=None,check=True,env:dict[str,str]|None=None,stdin:str|None=None):
+    # Prompts gehen über stdin, nicht argv: lange Prompts sprengen sonst ARG_MAX (E2BIG).
+    cp=subprocess.run(cmd,input=stdin,cwd=str(cwd) if cwd else None,env=env,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
     if check and cp.returncode:raise RuntimeError(cp.stdout)
     return cp
 
@@ -237,7 +238,7 @@ def execute(token:str,item:dict[str,Any],payload:dict[str,Any])->dict[str,Any]:
         run(["git","checkout","-b",branch],cwd=root)
         run(["git","config","user.name","KUEPER Research Bot"],cwd=root);run(["git","config","user.email","research-bot@users.noreply.github.com"],cwd=root)
         cmd=shlex.split(os.environ.get("KUEPER_RESEARCH_AGENT_CMD","claude -p --dangerously-skip-permissions"))
-        cp=run(cmd+[research_prompt(item,source_context)],cwd=root,check=False)
+        cp=run(cmd,cwd=root,check=False,stdin=research_prompt(item,source_context))
         if cp.returncode:raise RuntimeError((cp.stdout or "")[-4000:])
         meta=validate_result(root,item);(root/".research-result.json").unlink()
         changed=run(["git","status","--porcelain","--untracked-files=all"],cwd=root).stdout or "";paths=[]

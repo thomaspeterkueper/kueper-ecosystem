@@ -1,6 +1,6 @@
 {
   "id": "RES-20261118-F0DB4559",
-  "status": "needs-review",
+  "status": "queued",
   "created": "2026-11-18T12:00:16+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -33,5 +33,9 @@
   "novelty_reason": "No previous SSF research topic addresses combustion thermochemistry or exhaust aftertreatment. The closest topics are kitchen/caramel chemistry and critical-materials supply, which do not answer flame temperature, lambda-dependent pollutant formation, or catalyst conversion efficiency.",
   "fingerprint": "f0db45597dd2bc5b",
   "updated_at": "2026-11-18T12:01:23+00:00",
-  "last_error": "[Errno 7] Argument list too long: 'node'"
+  "requeued": {
+    "at": "2026-11-19T06:30:00Z",
+    "by": "Claude Lauf 2",
+    "reason": "Technischer Fehler (E2BIG: Prompt als argv an node) – in tools/research/execute.py und agent-with-exa.mjs auf stdin umgestellt; vorheriger Fehler: [Errno 7] Argument list too long: 'node'"
+  }
 }

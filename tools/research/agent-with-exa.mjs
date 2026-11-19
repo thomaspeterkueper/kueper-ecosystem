@@ -25,7 +25,16 @@ const policy = JSON.parse(fs.readFileSync(policyPath, 'utf8'));
 const evidencePolicy = policy.external_evidence ?? {};
 const evidenceProfiles = policy.evidence_profiles ?? {};
 
-const originalPrompt = process.argv.slice(2).join(' ').trim();
+// Prompt aus argv (Smoke-Test) oder stdin (execute.py; lange Prompts sprengen sonst ARG_MAX).
+function readStdin() {
+  if (process.stdin.isTTY) return '';
+  try {
+    return fs.readFileSync(0, 'utf8');
+  } catch {
+    return '';
+  }
+}
+const originalPrompt = (process.argv.slice(2).join(' ') || readStdin()).trim();
 if (!originalPrompt) {
   console.error('agent-with-exa: missing research prompt');
   process.exit(2);
@@ -293,10 +302,12 @@ Do not fabricate citations, URLs, dates, authors, quotations, or source contents
 
 function runUnderlyingAgent(prompt) {
   const command = process.env.KUEPER_SYNTHESIS_AGENT_BIN || 'claude';
-  const args = ['-p', '--dangerously-skip-permissions', prompt];
+  const args = ['-p', '--dangerously-skip-permissions'];
   const child = spawnSync(command, args, {
     env: process.env,
-    stdio: 'inherit',
+    input: prompt,
+    stdio: ['pipe', 'inherit', 'inherit'],
+    maxBuffer: 64 * 1024 * 1024,
   });
 
   if (child.error) {
