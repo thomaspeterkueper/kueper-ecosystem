@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261119-B3FBE480",
+  "status": "queued",
+  "created": "2026-11-19T11:53:32+00:00",
+  "source_project": "kueper-com",
+  "source_repository": "thomaspeterkueper/kueper.com",
+  "source_path": "src/content/kue/sci/kue-sci-0209-2026-de.md",
+  "source_ref": "1029e6d1b3bd47bcf3c6a231f794f0baaee89ea7",
+  "source_blob_sha": "1ce211b1ea864e3052f7821382702e8979f2a5a2",
+  "title": "KUE-SCI-0209: Otjize – Havenga-/Teklay-/Rupping-Befunde und Ockerherkunft gegen Volltexte und Archive prüfen",
+  "question": "Stimmen die in KUE-SCI-0209 v0.1 als [R]/[T] gesetzten Aussagen mit den Primärtexten überein, und lassen sich die als [OFFEN]/`ungeprueft` markierten Provenienz- und Ethnographieangaben schließen? Konkret: (1) Berichtet Havenga et al. (2022, Scientific Reports 12, 2259, DOI 10.1038/s41598-021-04663-0) tatsächlich an genau einer unbehandelten Ockerpigmentprobe (nicht an der fertigen Paste) überwiegend nanokristallinen Hämatit plus einen kleineren γ-FeOOH-/Lepidokrokit-Anteil, eine Reflexion unter 3 % unterhalb von etwa 570 nm, ein Plateau von 53,6 % im nahen Infrarot nach einem Einbruch bei etwa 855 nm sowie eine schwache antibakterielle Wirkung gegen Escherichia coli und Staphylococcus aureus — und sind die Konzentrationen im Original als 50, 100, 200 µg/µl (also mg/ml) angegeben, mit Hemmhofdurchmessern, Kontrollen und Statistik? (2) Sind die bibliographischen Angaben und Befunde von Teklay et al. (2023, Journal of Archaeological Science: Reports 47, 103690, DOI 10.1016/j.jasrep.2022.103690) korrekt — erhöhte Mg-, Ca-, P-, K-, Rb-, Cs- und U-Gehalte der Himba-Ocker aus Ruacana, die genannten Nebenphasen, As/Cr/Pb unter Grenzwerten und das Mischungsverhältnis Ocker:Fett von etwa 1:1? (3) Existiert Rupping et al. (2025/26, Journal of the Namibia Scientific Society 72) in der zitierten Form, und berichtet die Arbeit tatsächlich einen messbaren SPF für eine Mischung aus 20 % Ocker und 20 % Ximenia-Öl? (4) Gibt es das Hämatitvorkommen „Otjize“/„Owihende“ zwischen Sesfontein und Opuwo, und sind Jacobsohn (2013, Ladies in Red), Telfair (1954), Roesener/Schreuder (1992) sowie der Beitrag in The Mineral Resources of Namibia (Geological Survey of Namibia) identifizierbar — und was sagen sie über Abbauort, Schachttiefe, „einzige Mine“ und Preisgefälle? (5) Ist das Harz von Commiphora multijuga ethnobotanisch als Duftträger von Otjize belegt, und ist Henshilwood et al. (2011, Science 334, 219–222) korrekt als 100.000 Jahre alte Ockerwerkstatt in Blombos zitiert? (6) Existieren unabhängige Messungen zu SPF, Hauttemperatur, Barrierefunktion, Hautmikrobiom oder Hautkrebsinzidenz bei Himba mit Bezug zur Otjize-Anwendung, die die im Dokument gezogenen Grenzen bestätigen oder verschieben?",
+  "why_now": "KUE-SCI-0209 ist die neueste Datei (2026-11-19), beruht naturwissenschaftlich auf einer einzigen Probe und einer nicht zugänglichen Vergleichsstudie, und markiert zentrale Aussagen selbst als [OFFEN] bzw. `ungeprueft`. Die Provenienz- und Ethnographieangaben stammen aus einer OTA-Vorlage, deren Belege nicht auffindbar waren; eine falsche Zuschreibung von Abbauort oder Gemeinschaftspraxis wäre sowohl wissenschaftlich als auch ethisch belastend und würde OTA-SCI-0057 sowie die Kultur-/Materialweltbildung tragen.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "general",
+  "claim_classes": [
+    "R",
+    "T",
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Mineralogie, Optik und antibakterielle Daten von Otjize-Ocker; Existenz und Charakterisierung des Ockerabbaus in der Kunene-Region Namibias; ethnographische und ethnobotanische Belege zu Himba-Otjize",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.845,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.82,
+    "uncertainty": 0.88,
+    "evidence_potential": 0.78
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Forschungseintrag behandelt Otjize, die namibische Ockerprovenienz oder die Havenga-/Teklay-/Rupping-Literatur. Der Bedarf ist eine eigenständige Primärquellen- und Provenienzprüfung, nicht eine Wiederholung einer früheren Frage.",
+  "fingerprint": "b3fbe48037ee73ee"
+}
