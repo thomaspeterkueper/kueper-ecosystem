@@ -1,6 +1,6 @@
 {
   "id": "RES-20260903-11C93480",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-03T08:11:17+00:00",
   "source_project": "endia",
   "source_repository": "thomaspeterkueper/endia.de",
@@ -33,5 +33,21 @@
   "novelty_reason": "Orthogonal to prior candidates: RES-20260826-868027AD asks which transmedia/game-in-literature design precedents make the in-book game coherent; RES-20260826-47CC2438 asks which digital-rights discourse and literacy content to draw on. Neither poses the empirical question of whether knowledge delivered inside a fictional frame is learned, retained and correctly attributed as fact vs. canon, nor which fact/fiction signalling guardrails the platform needs. This is therefore not a rephrasing or narrowing of either.",
   "fingerprint": "11c934802bc53e5e",
   "updated_at": "2026-09-03T08:22:14+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/106"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/106",
+  "validated_at": "2026-11-19T14:34:42+00:00",
+  "validation_summary": "Der Kandidat ist eine gut belegte lernpsychologische Synthese: Realwelt-Fakten in fiktionalen Erzähl- und Spielwelten werden gelernt und behalten, aber die Real/Fiktional-Quellenattribution ist fragil (Knowledge Neglect, verblassende Quellen-Tags, Sleeper-Effekt). Das endia-Repository enthält aktuell nur ein Onboarding-Scaffold (README, externe Task-Ordner) und keinen Kanon zur Wissensplattform oder zu Fakt/Fiktion-Präsentationsregeln. Es entsteht daher kein Widerspruch; die fiktionale Endia-Welt bleibt ausdrücklich unberührt. Konkreter Bedarf: Die im Kandidaten als zentrale Bildungsauftrags-Quelle deklarierte, aber nicht geprüfte ECO-ARC-0016 muss verifiziert werden; danach können die vier evidenzbasierten Guardrails die endia.de-Konzeption material vertiefen, ohne Kanon zu setzen.",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-ECO-20261119-001",
+      "target": "ecosystem",
+      "repository": "thomaspeterkueper/kueper-ecosystem"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-ENDIA-20261119-001",
+      "target": "endia",
+      "repository": "thomaspeterkueper/endia.de"
+    }
+  ]
 }
