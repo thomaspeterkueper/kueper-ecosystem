@@ -1,6 +1,6 @@
 {
   "id": "RES-20260903-F765D0E9",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-03T08:22:44+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -50,5 +50,27 @@
   },
   "fingerprint": "f765d0e991c76b54",
   "updated_at": "2026-09-03T08:32:55+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/108"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/108",
+  "validated_at": "2026-11-19T14:40:15+00:00",
+  "validation_summary": "Der Kandidat auditiert die extern prüfbare [R]/[T]-Schicht von OTA-TEC-0016-2063-DE und ist methodisch belastbar. Die fiktive Rahmung (2063–2091, KITE-Instanzen, PROMETHEUS/NOXIA, Simulatornarrativ) bleibt unberührt. Drei konkrete OTA-Aktionen: (1) Das EDL-Profil ist intern widersprüchlich – 'keine/minimale Aerodynamik' vs. 5–10 g Eintritt, und ~8 km/s sind aus einem gebundenen Marsorbit physikalisch nicht erreichbar; (2) die Antriebs-/Massenparameter (180 kN, 12 min, 8–12 t, 45 t max) schließen arithmetisch nicht und das Massenbudget überschreitet die Maximalmasse; (3) der [R]-Claim zur Methalox-ISRU ist als Chemie korrekt, als auf Mars demonstrierte Fähigkeit überzeichnet. Kein SSF-/KUE-SCI-Bedarf: Die Befunde sind etabliertes Wissen und erzeugen keine neue reale Wissenschaft. Der Kandidat bleibt als nicht-kanonische Evidenz für OTA-TEC-0016 geeignet; eine Kanonpromotion ist nicht angezeigt. Die im Kandidaten genannten Source-Refs sind im lokalen Squash-Verlauf nicht auflösbar; alle ",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261119-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261119-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261119-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
