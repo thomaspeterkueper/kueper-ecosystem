@@ -2,7 +2,9 @@
 
 - **Recorded:** 2026-11-18 (Europe/Berlin)
 - **Source event:** NASA announcement dated 2026-11-17
-- **Primary source:** https://www.nasa.gov/news/recently-published/ (NASA news listing, “NASA’s Terra Mission to End”)
+- **Primary source (announcement):** NASA Science, “NASA’s Terra Mission to End”, published 2026-11-17 12:50 — https://science.nasa.gov/blogs/science-news/2026/11/17/nasas-terra-mission-to-end/
+- **Primary source (operational alert):** NASA Earthdata, “New Terra Observations to Cease on December 1, 2026”, issued 2026-11-17, updated 2026-11-18 — https://www.earthdata.nasa.gov/data/alerts-outages/new-terra-observations-cease-december-1-2026
+- **Access note:** Both URLs retrieved and checked 2026-11-19 (Europe/Berlin); the article states “NASA’s Terra satellite will stop collecting science data on Dec. 1”, and the alert states “NASA's Terra mission will cease acquiring new data on December 1, 2026 (2026/335).”
 - **Evidence level:** High for the NASA-announced *plan*; not yet evidence that shutdown occurred.
 - **Type:** Confirmed agency announcement / prospective operational milestone, not an observed climate change.
 
