@@ -1,6 +1,6 @@
 {
   "id": "RES-20260826-47CC2438",
-  "status": "candidate-pr",
+  "status": "validated-no-action",
   "created": "2026-08-26T04:06:49+00:00",
   "source_project": "endia",
   "source_repository": "thomaspeterkueper/endia.de",
@@ -20,5 +20,7 @@
   },
   "fingerprint": "47cc243863af863e",
   "updated_at": "2026-09-03T08:32:10+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/107"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/107",
+  "validated_at": "2026-11-19T14:35:42+00:00",
+  "validation_summary": "Der Kandidat ist eine gut belegte, aber bewusst nicht-kanonische Kompilation realer Digital-Rights-Geschichte (CCC, Volkszählungsurteil 1983, IT-Grundrecht 2008, Vorratsdatenspeicherung, DSGVO/Schrems II, Netzpolitik-Affäre), von Überwachungsdiskursen und etablierter Digital-Literacy-Rahmenwerke (KMK, DigComp, UNESCO-MIL, Ethikrat). Er empfiehlt selbst keine eigenständige Publikation und dient als Archiv-/Unterstützungsschicht. Der aktuelle Projektstand von endia besteht nur aus der README (YA-Trilogie 'Digital Rebellion' im KUEPER-Ökosystem) und dem offenen External Task EXT-KG-ENDIA-20261119-001 zu Fakt/Fiktion-Guardrails; es gibt keinen Kanon- oder Wissensplattform-Inhalt, dem der Kandidat materiell widersprechen (kein conflict) oder den er inhaltlich vertiefen könnte (kein enrichment). Der einzige direkt projektbezogene Punkt des Kandidaten - die epistemische Real/Fiktions-Markierung realweltlicher Inhalte auf endia.de - ist bereits Gegenstand des offenen External Tasks; ein weiter"
 }
