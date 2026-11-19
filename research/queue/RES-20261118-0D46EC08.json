@@ -1,6 +1,6 @@
 {
   "id": "RES-20261118-0D46EC08",
-  "status": "needs-review",
+  "status": "queued",
   "created": "2026-11-18T12:00:19+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -33,5 +33,9 @@
   "novelty_reason": "Prior Mars research covers water stability, perchlorate and colony mass flows, not human physiology at 6.3 kPa, CO2 exposure limits, or reserve sizing. The existing Mars colony audit fixes O2/CO2 rates but does not resolve ebullism, hypercapnia time course, or emergency reserve design, so this is a distinct unresolved dimension.",
   "fingerprint": "0d46ec088bb0121b",
   "updated_at": "2026-11-18T12:01:25+00:00",
-  "last_error": "[Errno 7] Argument list too long: 'node'"
+  "requeued": {
+    "at": "2026-11-19T06:30:00Z",
+    "by": "Claude Lauf 2",
+    "reason": "Technischer Fehler (E2BIG: Prompt als argv an node) – in tools/research/execute.py und agent-with-exa.mjs auf stdin umgestellt; vorheriger Fehler: [Errno 7] Argument list too long: 'node'"
+  }
 }
