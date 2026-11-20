@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261120-4A6E8415",
+  "status": "queued",
+  "created": "2026-11-20T11:56:34+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "external-tasks/open/EXT-KG-ENDIA-20261119-001.md",
+  "source_ref": "f987b3bcb527fcdf90f495aec77da9c9bb7ee14b",
+  "source_blob_sha": "b66a222e6cfb116d74a974756a59b9e17f381588",
+  "title": "Retrieval practice on fiction-contaminated facts: does testing entrench false beliefs, and which corrective-feedback conditions prevent it?",
+  "question": "What does empirical cognitive-psychology research on retrieval-enhanced suggestibility, the testing effect for false or misinformation-contaminated material, and corrective feedback establish about whether retrieval practice on facts learned inside a fictional narrative can consolidate fiction-derived errors rather than correct them? Which feedback conditions — immediate vs delayed, answer feedback vs source re-statement, confidence-weighted correction, repeated testing — reduce rather than strengthen false beliefs, and how should a platform detect that a learner's 'correct' retrieval is actually a fiction-contaminated answer before using retrieval practice? The result should specify the safety conditions for guardrail (3) in EXT-KG-ENDIA-20261119-001 ('Retrieval Practice nur auf korrekte Fakten mit korrigierendem Feedback').",
+  "why_now": "The open task makes retrieval practice a guardrail but only says 'nur auf korrekte Fakten'. Without evidence on retrieval-enhanced suggestibility, the site could implement testing that strengthens exactly the fiction-derived errors the guardrails are meant to prevent.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewed cognitive-psychology research on retrieval-enhanced suggestibility, the testing effect for false information, and corrective feedback.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.78,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.76,
+    "uncertainty": 0.66,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [
+    "RES-20260903-11C93480"
+  ],
+  "novelty_reason": "RES-20260903-11C93480 treated retrieval practice as a guardrail but did not ask whether retrieval can consolidate fiction-derived false beliefs (retrieval-enhanced suggestibility) or which feedback conditions prevent that. The prior candidate answered 'use retrieval on correct facts'; this asks how to establish that a fact is uncontaminated and how feedback must be designed — a materially different mechanism and a safety condition, not a paraphrase.",
+  "fingerprint": "4a6e8415ae9d69c5"
+}
