@@ -1,6 +1,6 @@
 {
   "id": "RES-20260913-CF5AF859",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-13T08:31:48+00:00",
   "source_project": "noxia",
   "source_repository": "thomaspeterkueper/noxiagame",
@@ -34,5 +34,27 @@
   "novelty_reason": "Not a rephrase of RES-20260828-79092FF4: that candidate covers consumable and hazard quantities (per-capita water, oxygen, food, energy, radiation dose; pressure loss, dust storms, perchlorate toxicity) for keeping an adult colony alive. This gap concerns the biology of people who are conceived, gestated, born and raised across gravity environments — reproduction, development and adaptation physiology — which 79092FF4 does not address. It is also distinct from RES-20260828-471FC77C (behavioural needs frameworks), which is about psychological needs, not physiology.",
   "fingerprint": "cf5af85950c7b39c",
   "updated_at": "2026-09-13T08:38:14+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/109"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/109",
+  "validated_at": "2026-11-20T14:15:30+00:00",
+  "validation_summary": "Der Kandidat bestätigt die zentrale Negativ-Aussage des OTA vollständig und in stärkerer Form: Es gibt keine validierte menschliche Mindest-g-Schwelle, keine humane Konzeption/Schwangerschaft/Geburt im All, keine humanen pädiatrischen Teilgravitationsdaten, und die vielzitierte 0,4-g-Aussage ist eine Inferenz, keine Schwelle. Die aktuelle NOXIA-Implementierung steht dazu nicht im Widerspruch: settlementCapabilities.ts und settlementCapabilityGraph.ts modellieren reproduktive Versorgung ausschließlich als Infrastruktur-/Service-Capability ohne Fertilitäts-, Gestations-, Komplikations- oder sichere-g-Werte; developmentalFactors.ts nimmt ausdrücklich keine Teilgravitations-Entwicklungsabzüge an; künstliche Gravitation ist kein biologischer Unlock. Es entsteht daher kein Konflikt und keine Korrektur von Spielwerten. Handlungsbedarf besteht im Evidenzstatus: Die Grenze ist nicht mehr 'vorsichtshalber offen', sondern ein belegter [R]-Negativbefund. Dieser Status sollte in der NOXIA-Provenien",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-NOXIA-20261120-001",
+      "target": "noxia",
+      "repository": "thomaspeterkueper/noxiagame"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261120-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20261120-001",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    }
+  ]
 }
