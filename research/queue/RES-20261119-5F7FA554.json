@@ -1,6 +1,6 @@
 {
   "id": "RES-20261119-5F7FA554",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-19T11:53:33+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -34,5 +34,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früherer Forschungseintrag befasst sich mit Zhurong, RoPeR oder der amazonischen Wasseraktivität in Utopia Planitia. Die Frage ist eine eigenständige Primärquellenprüfung der NSR-Arbeit und ihrer Abgrenzung zu älteren Radarbefunden.",
-  "fingerprint": "5f7fa554bd490503"
+  "fingerprint": "5f7fa554bd490503",
+  "updated_at": "2026-11-20T12:23:31+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/316"
 }
