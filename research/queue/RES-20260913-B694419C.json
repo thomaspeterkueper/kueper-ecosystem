@@ -1,6 +1,6 @@
 {
   "id": "RES-20260913-B694419C",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-13T08:35:17+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -46,5 +46,27 @@
   },
   "fingerprint": "b694419c153f43f6",
   "updated_at": "2026-09-13T08:42:07+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/110"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/110",
+  "validated_at": "2026-11-20T14:19:32+00:00",
+  "validation_summary": "Der Kandidat prüft die realweltliche Ebene von OTA-SCI-0004 und kommt zu einem belastbaren Ergebnis: Die 432-Hz-'Tempelfrequenz' ist ein moderner Topos (Sauveur 1713, Verdi 1884, Schiller-Institut ab 1988/89), 127 Hz ist keine gemessene Mars-Krustenresonanz (SEIS-Band 0,01–50 Hz; planetare Moden 3–12 mHz; debattierte Lokalresonanz 2,4 Hz), die Entropieschwelle '>0,15' hat keine publizierte Grundlage, und Kanheri ist ein buddhistischer Felsklosterkomplex (1. Jh. v. Chr.–10. Jh. n. Chr.), nicht 'prävedisch'. OTA-SCI-0004 bleibt als Fiktion zulässig; ein Kanonkonflikt besteht nicht, weil die zentralen Behauptungen bereits als [F]/[S] geführt werden. Konkreter Handlungsbedarf liegt in der Archiv- und Evidenzschicht: Die realweltlichen Anker müssen von der 2087-Binnensicht getrennt, die Kanheri-Zuordnung korrigiert und die an OTA-TEC-0023 sowie OTA-SCI-0010 weitergegebenen Behauptungen qualifiziert bzw. vor einer Kanonisierung geprüft werden.",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261120-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261120-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261120-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
