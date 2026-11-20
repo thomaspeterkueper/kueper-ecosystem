@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-19 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-20 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -107,11 +107,11 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0066-2026-DE | OTA-SCI-0066-2026-DE | RT |  | offen |
 | OTA-SCI-0081-2026-DE | Die Bronzescheibe: Kreisplatten-Akustik, Lapis-lazuli-F | RST | 1.1 Grundlagen der Plattenakustik `[R]`; 1.2 Eigenfrequenzen der Bronzescheibe:  | offen |
 | OTA-SCI-0083-2026-DE | Eigenzeit, optische Atomuhren und relativistische Aussc | R |  | offen |
-| OTA-SCI-0084-2026-DE | Kryoporöse Oberflächen auf Eiswelten — Hazard- und Expl | OFFENRT |  | offen |
+| OTA-SCI-0084-2026-DE | Kryoporöse Oberflächen auf Eiswelten — Hazard- und Expl | OFFENRT |  | geprüft 2026-11-20 – KUE-Gegenstück vorhanden (KUE-SCI-0013 v1.1), Hazard/NOXIA bleiben; Korrektur/Verweis OTA-REQ-20261120-001, Ergänzung EXT-OTA-KUE-20261120-001 |
 | OTA-SCI-0092-2026-DE | Fast Radio Bursts — Baryonenverteilung, Feedback und Ma | HOFFENR |  | offen |
 | OTA-SCI-0093-2026-DE | Standard-Sirenen — Umgebungsbeschleunigung als systemat | HOFFENR |  | offen |
 | OTA-SCI-0094-2026-DE | Lokale Zustandsrekonstruktion und H0 — TRGB-Distanzleit | HOFFENR |  | offen |
-| OTA-SCI-0095-2026-DE | Galaktische zentrale Oberflächendichte — emergente Grav | HOFFENR |  | offen |
+| OTA-SCI-0095-2026-DE | Galaktische zentrale Oberflächendichte — emergente Grav | HOFFENR |  | geprüft 2026-11-20 – Teile nach KUE (§1–4), AVI-Teil bleibt; EXT-OTA-KUE-20261120-002, Quellen/Kürzung OTA-REQ-20261120-002 |
 | OTA-SCI-0096-2026-DE | Magnetobiologie künstlicher Habitate — Hypomagnetfeld,  | HOFFENRT |  | offen |
 | OTA-SCI-0098-2026-DE | Orbitaler Quantentest des schwachen Äquivalenzprinzips  | R |  | offen |
 | OTA-SCI-0099-2026-DE | Ausschluss des generalisierten Károlyházy-Dekohärenzmod | NULLR |  | offen |
@@ -125,7 +125,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-TEC-0109-2026-DE | Solarfeld — Photovoltaische Energieerzeugung und Feldbe | FHOFFENR | Physikalisch-technische Prinzipien [R] | offen |
 | OTA-TEC-0110-2026-DE | Technisches Labor — Analyse-, Forschungs- und Entwicklu | FHOFFENR | Technische Prinzipien [R] | offen |
 | OTA-TEC-0111-2026-DE | Oberflächen-Scanner — Lokale Fernerkundung, Messung und | FHOFFENR | Physikalisch-technische Prinzipien [R] | offen |
-| OTA-SCI-0020-2026-DE | Relikt-Fenster — Spätaktive Wasser- und Eisdynamik auf | RSTW | I.1 Zhurong [R]; I.2 Prudhoe Dome [R] | geprüft 2026-11-19 (nachgetragen) – Teile nach KUE: Zhurong-Gegenstück KUE-SCI-0202 vorhanden, Prudhoe Dome neu per EXT-OTA-KUE-20261119-001; Relikt-Fenster/Frequenz-Hypothese (AVI) bleiben; Kürzung OTA-REQ-20261119-002 (Punkte A/C umsetzbar, E wartet auf Thomas) |
+| OTA-SCI-0020-2026-DE | Relikt-Fenster — Spätaktive Wasser- und Eisdynamik auf | RSTW | I.1 Zhurong [R]; I.2 Prudhoe Dome [R] | geprüft 2026-11-19 (nachgetragen) – Teile nach KUE: Zhurong-Gegenstück KUE-SCI-0202 vorhanden, Prudhoe Dome neu per EXT-OTA-KUE-20261119-001; Relikt-Fenster/Frequenz-Hypothese (AVI) bleiben; Kürzung OTA-REQ-20261119-002 (Punkte A/C umsetzbar, E wartet auf Thomas) – A/C umgesetzt 2026-11-20 (v1.1) |
 
 ## T – Entscheidung Thomas (eigene Hypothesen)
 
@@ -145,6 +145,6 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 
 Geprüft 2026-11-01: OTA-BIO-0022-2026-DE, OTA-LSC-0001-2048-DE (bleiben OTA).
 
-Geprüft 2026-11-19 (nachgetragen, fehlte in der Inventur): OTA-SCI-0018-60000BCE-DE – bleibt OTA (Realkatalog als Anker der Paläolithikum-Setzung); Korrektur des Realteils per OTA-REQ-20261119-001 (Punkte A–G umsetzbar, H wartet auf Thomas).
+Geprüft 2026-11-19 (nachgetragen, fehlte in der Inventur): OTA-SCI-0018-60000BCE-DE – bleibt OTA (Realkatalog als Anker der Paläolithikum-Setzung); Korrektur des Realteils per OTA-REQ-20261119-001 (Punkte A–G umsetzbar, H wartet auf Thomas) – A–G umgesetzt 2026-11-20 (v1.1).
 
 122 Dokumente: Biografien, Weltdokumente, Mars-/Tharsis-Infrastruktur der Romanwelt, Artefakte, In-universe-Handbücher. Ihr Realteil ist Anker für die Setzung und bleibt dort, verweist aber nach Möglichkeit auf KUE bzw. KG.
