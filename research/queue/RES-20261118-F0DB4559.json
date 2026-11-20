@@ -1,6 +1,6 @@
 {
   "id": "RES-20261118-F0DB4559",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-18T12:00:16+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -32,7 +32,7 @@
   "related_research_ids": [],
   "novelty_reason": "No previous SSF research topic addresses combustion thermochemistry or exhaust aftertreatment. The closest topics are kitchen/caramel chemistry and critical-materials supply, which do not answer flame temperature, lambda-dependent pollutant formation, or catalyst conversion efficiency.",
   "fingerprint": "f0db45597dd2bc5b",
-  "updated_at": "2026-11-19T11:54:16+00:00",
+  "updated_at": "2026-11-20T12:12:10+00:00",
   "requeued": {
     "at": "2026-11-20T06:30:00Z",
     "by": "Claude Lauf 2",
@@ -42,5 +42,6 @@
       "by": "Claude Lauf 2",
       "reason": "Technischer Fehler (E2BIG: Prompt als argv an node) – in tools/research/execute.py und agent-with-exa.mjs auf stdin umgestellt; vorheriger Fehler: [Errno 7] Argument list too long: 'node'"
     }
-  }
+  },
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/315"
 }
