@@ -1,6 +1,6 @@
 {
   "id": "RES-20261118-F0DB4559",
-  "status": "needs-review",
+  "status": "queued",
   "created": "2026-11-18T12:00:16+00:00",
   "source_project": "ssf",
   "source_repository": "thomaspeterkueper/solarsciencefoundation",
@@ -34,9 +34,13 @@
   "fingerprint": "f0db45597dd2bc5b",
   "updated_at": "2026-11-19T11:54:16+00:00",
   "requeued": {
-    "at": "2026-11-19T06:30:00Z",
+    "at": "2026-11-20T06:30:00Z",
     "by": "Claude Lauf 2",
-    "reason": "Technischer Fehler (E2BIG: Prompt als argv an node) – in tools/research/execute.py und agent-with-exa.mjs auf stdin umgestellt; vorheriger Fehler: [Errno 7] Argument list too long: 'node'"
-  },
-  "last_error": "agent-with-exa: missing research prompt\n"
+    "reason": "Technischer Fehler beim Lesen des Prompts aus stdin (fs.readFileSync(0) bei 331-kB-Quellkontext auf dem Runner leer) – agent-with-exa.mjs liest stdin jetzt asynchron; vorheriger Fehler: agent-with-exa: missing research prompt",
+    "previous": {
+      "at": "2026-11-19T06:30:00Z",
+      "by": "Claude Lauf 2",
+      "reason": "Technischer Fehler (E2BIG: Prompt als argv an node) – in tools/research/execute.py und agent-with-exa.mjs auf stdin umgestellt; vorheriger Fehler: [Errno 7] Argument list too long: 'node'"
+    }
+  }
 }
