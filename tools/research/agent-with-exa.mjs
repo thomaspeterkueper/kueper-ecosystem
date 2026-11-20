@@ -26,15 +26,19 @@ const evidencePolicy = policy.external_evidence ?? {};
 const evidenceProfiles = policy.evidence_profiles ?? {};
 
 // Prompt aus argv (Smoke-Test) oder stdin (execute.py; lange Prompts sprengen sonst ARG_MAX).
-function readStdin() {
+// Asynchron lesen: fs.readFileSync(0) kann bei großen Pipe-Eingaben mit EAGAIN abbrechen
+// (RES-20261118-F0DB4559 am 19.11.: 331-kB-Quellkontext, „missing research prompt“).
+async function readStdin() {
   if (process.stdin.isTTY) return '';
+  const chunks = [];
   try {
-    return fs.readFileSync(0, 'utf8');
-  } catch {
-    return '';
+    for await (const chunk of process.stdin) chunks.push(Buffer.from(chunk));
+  } catch (error) {
+    console.error(`agent-with-exa: stdin read failed: ${error?.code || error?.message || error}`);
   }
+  return Buffer.concat(chunks).toString('utf8');
 }
-const originalPrompt = (process.argv.slice(2).join(' ') || readStdin()).trim();
+const originalPrompt = (process.argv.slice(2).join(' ') || (await readStdin())).trim();
 if (!originalPrompt) {
   console.error('agent-with-exa: missing research prompt');
   process.exit(2);
