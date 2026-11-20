@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261120-9670FC77",
+  "status": "queued",
+  "created": "2026-11-20T11:56:35+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "external-tasks/open/EXT-KG-ENDIA-20261119-001.md",
+  "source_ref": "f987b3bcb527fcdf90f495aec77da9c9bb7ee14b",
+  "source_blob_sha": "b66a222e6cfb116d74a974756a59b9e17f381588",
+  "title": "Repetition schedule for real/fiction provenance labels: when does repetition sustain source monitoring and when does it decay or backfire?",
+  "question": "What does empirical research on repeated warnings, provenance/source labels, the continued influence effect, and habituation/reactance establish about how often and in what form real/fiction provenance labels must be repeated to sustain source monitoring in a narrative knowledge platform? Specifically: how quickly do label effects decay after a single exposure; does repetition at item, section and page level improve source monitoring or produce label fatigue/reactance; what spacing and placement (pre-warning, item-near, post-debriefing) is supported; and are there age-specific effects for 15-19-year-olds? The result should turn guardrail (4) 'wiederholte Provenienz-Labels' into an evidence-based frequency/placement rule rather than an undefined repetition requirement.",
+  "why_now": "The open task requires 'wiederholte Provenienz-Labels' but gives no frequency, spacing or placement. An ad hoc implementation could produce label fatigue or false assurance, so the repetition rule needs an evidence base before the checklist is fixed.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewed research on warnings and corrective messages, the continued influence effect, habituation/reactance, and source-monitoring cues.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.735,
+  "scores": {
+    "project_relevance": 0.86,
+    "cross_project_reuse": 0.72,
+    "uncertainty": 0.62,
+    "evidence_potential": 0.74
+  },
+  "related_research_ids": [
+    "RES-20260903-11C93480"
+  ],
+  "novelty_reason": "RES-20260903-11C93480 covered source labels as a general guardrail but did not resolve the repetition parameter: how fast label effects decay, whether repeated labels habituate or backfire, and what spacing and placement sustain source monitoring. The current task explicitly requires 'wiederholte Provenienz-Labels'; the prior candidate did not answer frequency, decay or age-specific effects.",
+  "fingerprint": "9670fc7739dd4606"
+}
