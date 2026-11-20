@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261120-2DFF1545",
+  "status": "queued",
+  "created": "2026-11-20T11:56:33+00:00",
+  "source_project": "endia",
+  "source_repository": "thomaspeterkueper/endia.de",
+  "source_path": "external-tasks/open/EXT-KG-ENDIA-20261119-001.md",
+  "source_ref": "f987b3bcb527fcdf90f495aec77da9c9bb7ee14b",
+  "source_blob_sha": "b66a222e6cfb116d74a974756a59b9e17f381588",
+  "title": "Coherence principle vs. intrinsic integration: can real-world facts be embedded in Endia's fictional game frame without seductive-details costs?",
+  "question": "What do empirical studies and meta-analyses on Mayer's coherence principle, the seductive-details effect, and 'intrinsic integration' (Habgood & Ainsworth) establish about whether real-world factual content can be embedded inside a fictional game/narrative frame without reducing learning, and which design criteria distinguish intrinsically integrated fact content from seductive extraneous detail? Specifically: does the presence of a fictional game frame itself count as extraneous material under the coherence principle; what evidence shows that real-world facts can be made intrinsic to a game's core mechanic rather than added as attractive but irrelevant content; and which boundary conditions (prior knowledge, element interactivity, narrative transportation, age) moderate the cost? The result should tell endia.de whether the 'Kohärenzprinzip und intrinsische Integration' architecture hint in EXT-KG-ENDIA-20261119-001 is empirically supportable and what it permits for page structure.",
+  "why_now": "EXT-KG-ENDIA-20261119-001 asks endia.de to add 'Kohärenzprinzip und intrinsische Integration' as an architecture hint, but the task file asserts this without evidence. The checklist is about to be implemented, and this decision determines whether factual content can sit inside the game frame at all.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewed instructional-design and multimedia-learning research on the coherence principle, seductive details, and intrinsic integration in game-based learning.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.83,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.82,
+    "uncertainty": 0.72,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [
+    "RES-20260903-11C93480"
+  ],
+  "novelty_reason": "RES-20260903-11C93480 reviewed whether facts embedded in fiction are learned and which signalling, debriefing, retrieval and source-label guardrails follow, but it did not analyse the instructional-design constraint named in the current task: whether a fictional game frame is itself extraneous material under the coherence principle, and what separates intrinsic integration from seductive details. This is a distinct architecture-level question, not a rephrasing of the prior evidence review.",
+  "fingerprint": "2dff1545fe739487"
+}
