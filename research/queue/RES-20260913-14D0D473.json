@@ -1,6 +1,6 @@
 {
   "id": "RES-20260913-14D0D473",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-13T08:35:17+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -48,5 +48,27 @@
   },
   "fingerprint": "14d0d473944f5774",
   "updated_at": "2026-09-13T08:49:36+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/111"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/111",
+  "validated_at": "2026-11-20T14:24:03+00:00",
+  "validation_summary": "Der Kandidat prüft die Spezifikationstabelle von OTA-TEC-0003-2087-DE (Surveyor-9) gegen reale Mars-, Instrumenten- und Kommunikationstechnik. Drei konkrete OTA-Aktionen ergeben sich: (1) Die Zeile 'Vakuum-Sauger' ist bei 6–7 mbar kategorial nicht funktionsfähig (Haltekraft F = Δp·A, maximal ca. 1,2 N pro 5-cm-Sauger; vier Sauger decken nur ca. 12 % der Mars-Gewichtskraft von 41,2 N) — Konflikt. (2) 'XRF-Spektrometer: 42 Minerale' verwechselt elementare und mineralogische Analyse — Konflikt. (3) 'UHF 50 m durch Gestein' ist kein kategorialer Fehler, aber ein standortabhängiger Grenzfall mit falscher Bandzuordnung; der Verlusttangens des Kanonstandorts ist offen — Verifikation. Nicht als eigene Aktion erhoben, aber bei einer Überarbeitung zu beachten: Lidar '±0,5 mm' ist nur als Entfernungspräzision entlang des Strahls haltbar (3D-Genauigkeit eher dm), die Gewichtszeile ist eine SI-widrige, inhaltlich konsistente kgf-Notation, und die Feldnotiz-Absoluttemperaturen (−5/−18 °C in 802 m) s",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261120-005",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261120-006",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261120-007",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
