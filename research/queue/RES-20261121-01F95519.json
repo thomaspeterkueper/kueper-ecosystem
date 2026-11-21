@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261121-01F95519",
+  "status": "queued",
+  "created": "2026-11-21T11:23:40+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Fiktive Entitäten maschinenlesbar veröffentlichen: schema.org/JSON-LD und Wikidata-Modellierung für eine Saga mit zwei abgeleiteten Kontinuitäten",
+  "question": "README.md:3 beschreibt eine eigenständige literarische Kontinuität, aus der das Baumeister- und das Noxia-Universum hervorgegangen sind; die Website wird Figuren, Orte und Werke aller drei Kontinuitäten als Entitäten publizieren. Welche belegten Modellierungs- und Publikationsregeln gelten dafür? (a) Welche Typen stellt schema.org für Buchreihen, Werke, Personen und fiktive Figuren bereit, und wo endet die Vokabularabdeckung (gibt es überhaupt einen Typ für fiktive Personen/Orte, welche Ersatzlösungen sind dokumentiert)? (b) Welche Relevanz-/Quellen-/Eigendarstellungs-Regeln gelten für fiktive Entitäten in Wikidata und in der Wikipedia-Community, und wie werden Entitäten ohne externe Rezeption behandelt? (c) Wie verhindern stabile Kennungen (Wikidata-QID, sameAs, @id, kanonische URL), explizite Disambiguierungsangaben und die Trennung von Werk-, Figuren- und Kontinuitätsebene, dass Suchmaschinen und Wissensgraphen Figuren der Zereya-Saga mit realen Personen, realen Orten oder mit Entitäten der Baumeister- bzw. Noxia-Kontinuität verschmelzen? Welche dokumentierten Praktiken existieren für fiktive Entitäten, die noch keine externe Rezeption haben (Eigendarstellung durch Rechteinhaber, Verhältnis zu Fan-Wikis)?",
+  "why_now": "Das Repository enthält derzeit ausschließlich README.md; es gibt noch keine Entitätsliste, keine URLs und kein Datenmodell. Die Kennungs- und Markup-Konventionen müssen festgelegt werden, bevor Inhalte entstehen, weil stabile IDs nachträglich nur mit Weiterleitungen und ohne Garantie auf Neuindexierung änderbar sind.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "standards-technical",
+  "claim_classes": [],
+  "external_research_required": true,
+  "real_world_anchor": "schema.org-Vokabular und seine dokumentierte Abdeckung fiktiver Entitäten; Wikidata-Richtlinien zu Relevanz und fiktiven Gegenständen; Dokumentation der Suchmaschinen zu strukturierten Daten und Entitätsauflösung. Die Saga-Inhalte selbst (acht Bände, Baumeister-/Noxia-Figuren) bleiben F/W und werden nicht als Faktum geprüft.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20261023-C4FA4833",
+    "RES-20261016-88579799",
+    "RES-20260827-C23DE6E3"
+  ],
+  "novelty_reason": "C4FA4833 behandelt Kennzeichnung und Navigation für menschliche Lesende (Kontinuitätslabels, Herkunftsvermerke), 88579799 die Wirkung auf Leserüberzeugungen samt redaktioneller Quellenleitlinien, C23DE6E3 die internen Kanon-Datenkonventionen der Schwester-Repositories. Keine dieser Fragen prüft externe, maschinenlesbare Vokabulare und den Fehlermodus der Entitätsverschmelzung in Suchmaschinen, Wissensgraphen und KI-Retrieval. Anderer Adressat (Crawler statt Leser), andere Evidenzbasis (schema.org/Wikidata-Richtlinien statt kommunikationswissenschaftlicher Studien), anderer Fehlermodus (Identitätskollaps statt Fehlüberzeugung).",
+  "fingerprint": "01f95519e2c86e2b"
+}
