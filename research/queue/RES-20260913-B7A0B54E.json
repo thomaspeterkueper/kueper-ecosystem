@@ -1,6 +1,6 @@
 {
   "id": "RES-20260913-B7A0B54E",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-13T09:37:43+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -43,5 +43,27 @@
   "novelty_reason": "This is not a rephrasing of the Mars Medical Center audit. RES-20260831-TEC0088A audited Earth-Independent Medical Operations capability classes, staffing/bed scaling, blood supply, pharmacy, sterilization and mass-casualty logistics; it explicitly did not examine human reproduction, gametes, gestation, parturition or neonatal care, and it could not, because those capability requirements are newly surfaced by OTA-SCI-0086 Sections 15-16 (obstetrics/neonatology capability, delivery room, emergency caesarean, neonatal resuscitation). The materially new addition here is a bibliographic and evidence-state audit of a reproductive-medicine dossier — including whether the '16 human studies' figure and the five cited anchors hold, whether the central negative claim is current, and what the real in-utero radiation-protection baseline is. No prior OTA research topic in the program list addresses reproductive biology or obstetrics.",
   "fingerprint": "b7a0b54e042c0e7f",
   "updated_at": "2026-09-13T09:44:01+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/112"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/112",
+  "validated_at": "2026-11-21T13:41:28+00:00",
+  "validation_summary": "Der Kandidat prüft die extern prüfbaren [R]-Anker von OTA-SCI-0086 in einer älteren Fassung (v1.0; Abschnitte 2.1, 2.2, 4, 7, 13, 17). Die im Kandidaten genannte Blob-SHA ist im aktuellen Repository nicht vorhanden; die aktuelle Fassung ist v1.3, die den Realteil nach KUE-SCI-0187 ausgelagert hat und nur §1–15 als Kurzfassung sowie §16–19 führt. Die Abschnitts-Korrekturen zu 2.1/2.2/4/7/13 sind daher für OTA gegenstandslos; soweit sie den Realteil betreffen, sind sie in KUE-SCI-0187 zu prüfen. Die Kernaussage (keine belastbare Human-Evidenz für Empfängnis, Schwangerschaft, Geburt und neonatale Entwicklung unter Mikro-/Teilgravitation) wird durch den Kandidaten nicht falsifiziert; ein Kanonkonflikt besteht nicht. Die fünf geprüften Anker sind real, kein Anker ist fabriziert. Für OTA bleiben drei konkrete, extern belegte Lücken: (1) §18 Anker 4 datiert Ronca auf 2004 statt 2003 und nennt Band/Seiten/DOI nicht; Anker 5 (Mathyk) und Anker 3 (Ferraz) sind unvollständig bzw. im Artikeltyp zu",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261121-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261121-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261121-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
