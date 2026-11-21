@@ -1,6 +1,6 @@
 {
   "id": "RES-20260914-3AD6CB18",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-14T09:02:47+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -33,5 +33,27 @@
   "novelty_reason": "Kein vorangegangener Kandidat berührt Physiologie unter Teilgravitation. RES-20260829-862AA763 betraf Mars-Geologie, Vergrabungstiefe und Lavatunnel-Eis als Wasserquelle — also den geologischen und versorgungstechnischen Rahmen, nicht die Entwicklung von Kindern unter reduzierter Gravitation. RES-20260829-02C11838 betraf Frequenzarchitektur und Phonetik, RES-20260829-A7BD20AF Kosmologie. Die hier auditierten realen Behauptungen (Gravitationsschwelle, Fortpflanzung in Hypogravitation, physiologische Folgen später Gravitationsumstellung) sind neu.",
   "fingerprint": "3ad6cb18afcbdfc5",
   "updated_at": "2026-09-14T09:12:24+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/116"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/116",
+  "validated_at": "2026-11-21T13:49:04+00:00",
+  "validation_summary": "Der Kandidat bestätigt die bestehende NOXIA-Setzung weitgehend und erzeugt keinen materiellen Kanonwiderspruch: Piazzi-Lights nutzt bereits einen ~1-g-Wohnring, behandelt Ceres' ~0,03 g nicht als nachgewiesen ausreichend für Schwangerschaft, Kindheit oder jahrzehntelanges Leben und markiert niedrigere g-Modi als medizinisch unvalidiert (NXU-CERES-PIAZZI-LIGHTS-2091.md:104-120, 177-188). Die Bevölkerungsreferenz disclaimt 0,03 g, 0,16 g und 0,38 g ausdrücklich für Schwangerschaft und Entwicklung (NXU-SOLAR-HUMAN-POPULATION-2060-2150.md:157-163). Der Kandidat präzisiert jedoch die Evidenzlage: 1 g ist die einzige gesichert ausreichende Stufe; ≤0,4 g verhindert muskuloskelettale Dekonditionierung nicht; 0,16 g ist endpunktabhängig nur teilprotektiv; 0,03–0,15 g ist ungemessen; pädiatrische Daten fehlen; Fortpflanzung und Geburt im All sind nicht demonstriert. Daraus folgen zwei konkrete Punkte: Die im Manuskript genannte Angabe 0,35 g ist im Repo nicht kanonisch und evidenzseitig allenfal",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-NXU-20261121-001",
+      "target": "noxia-universe",
+      "repository": "thomaspeterkueper/noxia-universe"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-NXU-20261121-002",
+      "target": "noxia-universe",
+      "repository": "thomaspeterkueper/noxia-universe"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261121-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
