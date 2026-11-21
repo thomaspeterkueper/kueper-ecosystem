@@ -1,0 +1,133 @@
+{
+  "source": "kueper.com Draft PR #31 / Themenrückblick November 2026",
+  "updated": "2026-11-19",
+  "note": "Redaktionelle Themenliste, keine verifizierte Fachpublikation; Einträge sind keine Arbeitsaufträge.",
+  "items": [
+    {
+      "id": "IDEA-2026-0001",
+      "title": "Embodied AI und NPC-Wahrnehmung",
+      "project": "NOXIA",
+      "status": "prüfen",
+      "next": "Reflex-PRs #453, #454 und #835 vergleichen"
+    },
+    {
+      "id": "IDEA-2026-0002",
+      "title": "Cultural DNA und Persönlichkeitsentwicklung",
+      "project": "NOXIA",
+      "status": "prüfen",
+      "next": "Privaten Persona-Adapter #531 und persistierte Traits prüfen"
+    },
+    {
+      "id": "IDEA-2026-0003",
+      "title": "DMN, Gamma 40 Hz und Informationsintegration",
+      "project": "KG",
+      "status": "geparkt",
+      "next": "Originalstudien und Evidenzgrenzen sichern"
+    },
+    {
+      "id": "IDEA-2026-0004",
+      "title": "Neuroimmunologie und Alzheimer",
+      "project": "KG",
+      "status": "prüfen",
+      "next": "Zhou et al. Originalpublikation verifizieren"
+    },
+    {
+      "id": "IDEA-2026-0005",
+      "title": "KI-Agenten und Entwicklungs-Benchmarks",
+      "project": "Ecosystem",
+      "status": "prüfen",
+      "next": "Kosten und Fehler pro akzeptierter Änderung messen"
+    },
+    {
+      "id": "IDEA-2026-0006",
+      "title": "Foundation-Modelle für Physik",
+      "project": "SSF",
+      "status": "geparkt",
+      "next": "Originalpublikation und Datensatz suchen"
+    },
+    {
+      "id": "IDEA-2026-0007",
+      "title": "Euclid, DESI und Kosmologiedaten",
+      "project": "KG",
+      "status": "geparkt",
+      "next": "Release- und Modellannahmen prüfen"
+    },
+    {
+      "id": "IDEA-2026-0008",
+      "title": "Sternverschmelzung AT 2025abao",
+      "project": "KG",
+      "status": "überführt",
+      "next": "Bestehenden Ecosystem-PR #146 prüfen"
+    },
+    {
+      "id": "IDEA-2026-0009",
+      "title": "Kuipergürtel-Isotope und frühes Wasser",
+      "project": "KG",
+      "status": "prüfen",
+      "next": "Originalarbeit zur NASA-Meldung prüfen"
+    },
+    {
+      "id": "IDEA-2026-0010",
+      "title": "Mars-Regolith und Lebenserhaltung",
+      "project": "NOXIA",
+      "status": "prüfen",
+      "next": "ECLSS- und Habitat-Module abgleichen"
+    },
+    {
+      "id": "IDEA-2026-0011",
+      "title": "Natrium-, Zink-Iod- und Zink-Luft-Akkus",
+      "project": "KG",
+      "status": "geparkt",
+      "next": "Technologien und Reifegrade vergleichen"
+    },
+    {
+      "id": "IDEA-2026-0012",
+      "title": "Stromnetze und Speichersteuerung",
+      "project": "NOXIA",
+      "status": "prüfen",
+      "next": "Bestehende Dispatch-Entwicklung prüfen"
+    },
+    {
+      "id": "IDEA-2026-0013",
+      "title": "AMOC, Gletscher und Wald-Methan",
+      "project": "KG",
+      "status": "geparkt",
+      "next": "Messung und Prognose trennen"
+    },
+    {
+      "id": "IDEA-2026-0014",
+      "title": "Integrität astronomischer Beobachtungen",
+      "project": "SSF",
+      "status": "überführt",
+      "next": "Bestehenden NOXIA-PR #372 prüfen"
+    },
+    {
+      "id": "IDEA-2026-0015",
+      "title": "Webb, Hera und LISA als Simulationsreferenzen",
+      "project": "NOXIA",
+      "status": "geparkt",
+      "next": "Missionsstatus und Datenquellen prüfen"
+    },
+    {
+      "id": "IDEA-2026-0016",
+      "title": "Historische und kulturelle Rekonstruktionen",
+      "project": "NOXIA",
+      "status": "prüfen",
+      "next": "Chronomap- und Herodes-Arbeiten abgleichen"
+    },
+    {
+      "id": "IDEA-2026-0017",
+      "title": "Demonstrationsprojekte für saubere Energie",
+      "project": "KG",
+      "status": "geparkt",
+      "next": "COP31-Ausschreibungen 2027 nachverfolgen"
+    },
+    {
+      "id": "IDEA-2026-0018",
+      "title": "Europäische Launcher und DLR-Technologien",
+      "project": "NOXIA",
+      "status": "geparkt",
+      "next": "Technische Fachpublikationen suchen"
+    }
+  ]
+}
