@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261121-9B919181",
+  "status": "queued",
+  "created": "2026-11-21T11:23:42+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Zweisprachige Wissensplattform (de/en): Sprachkennzeichnung, hreflang und der Umgang mit erfundenen Eigennamen über Sprachfassungen hinweg",
+  "question": "Die Plattform soll dieselben Kanon-Entitäten deutsch und englisch zugänglich machen; die kanonische Schreibweise der geteilten Begriffe (u. a. 'Zereya' nach README.md:1, ferner Noxia, Davaru, 'Fluíde') ist Gegenstand der bereits geführten Projektfrage RES-20260827-358BDF84. Offen ist die Publikationsmechanik: Welche belegten technischen Regeln gelten — BCP 47/RFC 5646 und die IANA-Subtag-Registry für Sprachkennzeichnung, das lang-Attribut gemäß WCAG 3.1.1/3.1.2 für fremdsprachige Termini und Zitate, hreflang mit x-default gemäß der Suchmaschinen-Dokumentation sowie ISO 639? Welche dokumentierten Praktiken existieren dafür, erfundene Eigennamen über Sprachversionen hinweg zu behandeln (unübersetzt lassen, transliterieren, im Glossar erschließen, im Fließtext übersetzen), und welche Folgen hat jede Option für Titel, URLs und Zitierbarkeit? Wie wird sichergestellt, dass beide Sprachfassungen als eine Entität aufgelöst werden (kanonische URL, alternates, stabile IDs) und nicht als Dubletten mit konkurrierender Relevanz? Welche Fehlkonfigurationen sind belegt schädlich — fehlende hreflang-Reziprozität, automatische Übersetzung ohne Kennzeichnung, Sprachmischung in Titeln und Metadaten, falsche Sprachauszeichnung erfundener Wörter, die keiner realen Sprache angehören?",
+  "why_now": "Es existiert noch keine Sprachstruktur. Die Entscheidung 'unübersetzt vs. übersetzt' bestimmt URL-Schema, Entitäts-IDs und Glossar und ist später nur mit Weiterleitungskosten und Relevanzverlust revidierbar; zudem hängt die Sprachauszeichnung erfundener Termini an der Antwort, ob sie einer realen Sprache zugeordnet werden dürfen.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "standards-technical",
+  "claim_classes": [],
+  "external_research_required": true,
+  "real_world_anchor": "BCP 47 (RFC 5646) und IANA Language Subtag Registry, ISO 639, W3C-Internationalisierungsempfehlungen, hreflang-Dokumentation der Suchmaschinen, WCAG-Erfolgskriterien zur Sprachauszeichnung. Geprüft wird die Standardlage für zweisprachige Publikation, nicht die Richtigkeit der fiktiven Terminologie.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.7325,
+  "scores": {
+    "project_relevance": 0.72,
+    "cross_project_reuse": 0.78,
+    "uncertainty": 0.65,
+    "evidence_potential": 0.78
+  },
+  "related_research_ids": [
+    "RES-20260827-358BDF84"
+  ],
+  "novelty_reason": "358BDF84 entscheidet, welche Schreibweise, Herkunft und Übersetzungspolitik der geteilten Begriffe kanonisch ist — eine lexikografisch-etymologische Frage. Dieser Vorschlag setzt diese Entscheidung voraus und behandelt die davon unabhängige technische Frage, wie zwei Sprachfassungen derselben Entität deklariert, verknüpft und gegenüber Suchmaschinen als eine Entität aufgelöst werden. Andere Evidenzbasis (BCP 47/IANA, W3C i18n, hreflang- und WCAG-Dokumentation statt etymologischer Belege) und andere Lieferung (URL- und Metadatenkonvention statt Glossareintrag).",
+  "fingerprint": "9b9191816b5dbbb8"
+}
