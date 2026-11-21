@@ -1,6 +1,6 @@
 {
   "id": "RES-20260913-13DAB8F0",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-13T09:37:43+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -43,5 +43,15 @@
   "novelty_reason": "Distinct from RES-20260831-TEC0088A, which mapped EIMO capability classes and explicitly refused to derive staffing, bed-count or mass-casualty scaling. This gap attacks a different axis that prior OTA research has never touched: the physiological and gravitational-biology constraint layer — whether gravity is mechanistically required for parturition and the neonatal transition, and what mammalian evidence at microgravity and fractional g can legitimately bound for 0.16 g and 0.38 g. It is also distinct from the cislunar/ECLSS radiation audits (RES-20260831-TEC0082A/B, RES-20260831-TEC0093A): the questions here are obstetric mechanics, perinatal physiology and the existence or absence of a mammalian minimum-g threshold, not vehicle shielding or subsystem closure. The unresolved addition is a constraints-and-counterevidence map that keeps the threshold explicitly open rather than a source-count argument for a 'safe' gravity level.",
   "fingerprint": "13dab8f057d2ebd0",
   "updated_at": "2026-09-13T09:51:56+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/113"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/113",
+  "validated_at": "2026-11-21T13:46:12+00:00",
+  "validation_summary": "Audit der Langfassung OTA-SCI-0086 v1.2 (§§3/6/9–14). Der aktuelle OTA-Stand v1.3 (2026-11-09) hat diese Abschnitte nach DOC:KUE:KUE-SCI-0187-2026-DE ausgelagert; OTA hält nur Evidenzregel, Brückentext und §19. Für OTA kein materieller Konflikt. Der Kandidat bestätigt Kernaussagen und Marker R/H/OFFEN, verlangt aber eine Schärfung: Geburt ist kontraktionstreibend, Schwerkraft nur unterstützend und nicht auslösend (Elimination beim Menschen ungeprüft); neonatale Transition trennen in nicht-schwerkraftabhängige Physiologie (ENaC/O₂/PGE₂/Druck/Thermik) vs. habitatgekoppelte Achsen (Wärmeverlust ohne Konvektion, Fluiddrainage, Restraint); Negativbefund 'kein Säugetier in Mikrogravitation geboren'; MHU-8 2026 (0,33 g Masse, ≥0,67 g Funktion, getrennte Schwellen); Klinostat-vs.-ISS-Widerspruch; AG ohne schwangere/perinatale Subjekte und nie im All am Menschen getestet. Diese Punkte fehlen in KUE-SCI-0187 v0.2. Der OTA-Kurzanker Ronca ist 2003, nicht 2004 (redaktionell, kein Task).",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20261121-001",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    }
+  ]
 }
