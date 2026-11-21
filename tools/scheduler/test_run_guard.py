@@ -57,6 +57,47 @@ class SchedulerGuardTests(unittest.TestCase):
         finally:
             Path(output_path).unlink(missing_ok=True)
 
+    def test_probe_skips_empty_queue_after_recovery(self):
+        args = run_guard.build_parser().parse_args(["probe"])
+        calls = []
+        def fake_rpc(name, payload):
+            calls.append(name)
+            return None if name == "kueper_peek_runnable_task" else True
+        with tempfile.NamedTemporaryFile(delete=False) as output:
+            output_path = output.name
+        try:
+            with patch.dict(os.environ, {"GITHUB_OUTPUT": output_path}), patch.object(run_guard, "_rpc", side_effect=fake_rpc):
+                self.assertEqual(run_guard.probe(args), 0)
+            self.assertEqual(calls, ["kueper_recover_expired_leases", "kueper_peek_runnable_task"])
+            self.assertIn("has_work=false", Path(output_path).read_text())
+        finally:
+            Path(output_path).unlink(missing_ok=True)
+
+    def test_probe_detects_task_without_claiming(self):
+        args = run_guard.build_parser().parse_args(["probe"])
+        calls = []
+        def fake_rpc(name, payload):
+            calls.append(name)
+            return {"id": "task-1"} if name == "kueper_peek_runnable_task" else True
+        with tempfile.NamedTemporaryFile(delete=False) as output:
+            output_path = output.name
+        try:
+            with patch.dict(os.environ, {"GITHUB_OUTPUT": output_path}), patch.object(run_guard, "_rpc", side_effect=fake_rpc):
+                self.assertEqual(run_guard.probe(args), 0)
+            self.assertIn("has_work=true", Path(output_path).read_text())
+            self.assertEqual(calls, ["kueper_recover_expired_leases", "kueper_peek_runnable_task"])
+        finally:
+            Path(output_path).unlink(missing_ok=True)
+
+    def test_probe_fails_closed_on_rpc_error_or_malformed_task(self):
+        args = run_guard.build_parser().parse_args(["probe"])
+        with patch.object(run_guard, "_rpc", side_effect=RuntimeError("database unavailable")):
+            with self.assertRaises(RuntimeError):
+                run_guard.probe(args)
+        with patch.object(run_guard, "_rpc", side_effect=[True, {"unexpected": 1}]):
+            with self.assertRaises(RuntimeError):
+                run_guard.probe(args)
+
     def test_finish_maps_non_success_to_failed(self):
         parser = run_guard.build_parser()
         args = parser.parse_args([

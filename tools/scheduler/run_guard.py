@@ -85,6 +85,29 @@ def acquire(args: argparse.Namespace) -> int:
     return 0
 
 
+def probe(args: argparse.Namespace) -> int:
+    """Skip installing costly worker dependencies when no task is runnable.
+
+    Recovery happens before the read, matching the worker's normal sequence.
+    Errors propagate (fail closed); this is only a hint, not a claim: the
+    worker still performs its atomic budget-aware claim after this preflight.
+    """
+    _rpc("kueper_recover_expired_leases", {})
+    candidate = _rpc("kueper_peek_runnable_task", {
+        "p_target_project": None,
+        "p_types": None,
+    })
+    if candidate is not None and candidate is not False and candidate != {} and candidate != []:
+        if not isinstance(candidate, dict) or not candidate.get("id"):
+            raise RuntimeError("unexpected runnable-task peek response")
+        has_work = True
+    else:
+        has_work = False
+    _write_output("has_work", "true" if has_work else "false")
+    print("worker preflight: runnable task available" if has_work else "worker preflight: queue empty")
+    return 0
+
+
 def finish(args: argparse.Namespace) -> int:
     status = "succeeded" if args.status == "success" else "failed"
     error = None if status == "succeeded" else f"GitHub job status: {args.status}"
@@ -113,6 +136,9 @@ def build_parser() -> argparse.ArgumentParser:
     acquire_parser.add_argument("--lease-seconds", type=int, default=5400)
     acquire_parser.add_argument("--cooldown-seconds", type=int, default=600)
     acquire_parser.set_defaults(func=acquire)
+
+    probe_parser = sub.add_parser("probe")
+    probe_parser.set_defaults(func=probe)
 
     finish_parser = sub.add_parser("finish")
     finish_parser.add_argument("--run-id", required=True)
