@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261121-25DBB093",
+  "status": "queued",
+  "created": "2026-11-21T11:23:41+00:00",
+  "source_project": "zereya",
+  "source_repository": "thomaspeterkueper/zereya.de",
+  "source_path": "README.md",
+  "source_ref": "f6e827fa1842f068c00ab980922e4bb9a59e84d8",
+  "source_blob_sha": "f7f704d42b34b61576ab9b68d5cbbf3f75109d94",
+  "title": "Text- und Data-Mining-Vorbehalt für eine deutschsprachige Wissensplattform: § 44b UrhG, Art. 4 DSM-Richtlinie und Crawler-Direktiven",
+  "question": "README.md:15 formuliert für dieses Projekt die Norm 'verweisen statt kopieren'; die Plattform wird zugleich eigene, urheberrechtlich geschützte Kanontexte zu einer achtbändigen Reihe veröffentlichen. Welche belegten Regeln gelten, wenn Dritte — Suchmaschinen, Anbieter von KI-Modellen, Forschungs-Crawler — genau diese Inhalte maschinell auswerten? Zu klären ist: (a) der TDM-Vorbehalt nach § 44b Abs. 3 UrhG und Art. 4 Abs. 3 der Richtlinie (EU) 2019/790 — was gilt rechtlich als maschinenlesbarer Vorbehalt, welche Formen (robots.txt, Metadaten, Nutzungsbedingungen, technische Sperren) sind anerkannt, und wie ist der Stand der Auslegung in Kommissionsmaterialien und rechtswissenschaftlicher Kommentierung, insbesondere für nicht-kommerzielle Forschungsnutzung nach Art. 4 Abs. 2? (b) Was kann robots.txt nach IETF RFC 9309 technisch leisten und was nicht (keine Rechtswirkung, kein Durchsetzungsmechanismus, Verhalten bei Nichtbefolgung)? (c) Ändern die Pflichten für Anbieter von Allzweck-KI-Modellen nach Art. 53 Abs. 1 lit. c der Verordnung (EU) 2024/1689 (Urheberrechts-Policy einschließlich Respektierung von Rechtevorbehalten nach Art. 4 Abs. 3 der Richtlinie 2019/790) die Position des Rechteinhabers praktisch? Welche Kombination aus technischer Direktive und Rechtsvorbehalt ist belegt wirksam, und welche ist lediglich Symbolik?",
+  "why_now": "Die Seite ist noch nicht online; robots.txt, Metadaten-Konventionen und Nutzungsbedingungen können vor dem ersten Crawl festgelegt werden. Ein nachträglicher Vorbehalt erfasst bereits erfolgte Auswertung nicht, und die veröffentlichten Bände sind ab Band 1 exponiert.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "standards-technical",
+  "claim_classes": [],
+  "external_research_required": true,
+  "real_world_anchor": "§ 44b UrhG (TDM-Schranke und Vorbehalt), Art. 4 der Richtlinie (EU) 2019/790, Art. 53 Abs. 1 lit. c der Verordnung (EU) 2024/1689, IETF RFC 9309 (Robots Exclusion Protocol) sowie einschlägige Auslegungshilfen und Kommentarliteratur. Keine Prüfung des Kanons, nur des rechtlich-technischen Rahmens der Veröffentlichung.",
+  "publication_route_hint": null,
+  "project_weight": 0.7,
+  "relevance_score": 0.8375,
+  "scores": {
+    "project_relevance": 0.82,
+    "cross_project_reuse": 0.88,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20261023-1D1D68B3",
+    "RES-20260919-43549FCF"
+  ],
+  "novelty_reason": "1D1D68B3 behandelt die Rechte- und Provenienzkette für Bearbeitungen und Fortführungen (§§ 2, 3, 23 UrhG) und die Kennzeichnung von Rechteinhabern; 43549FCF behandelt Impressum, DSGVO-Einwilligung und die Barrierefreiheitspflichten digitaler Ausgaben. Beide betreffen das Verhältnis Mensch/Rechteinhaber bzw. Pflichten des Anbieters gegenüber Nutzenden. Keine der beiden berührt die maschinelle Auswertung durch Dritte: TDM-Vorbehalt, Crawler-Protokoll und die Urheberrechtspflichten von KI-Modellanbietern sind ein eigener Regelkreis mit eigener Evidenz (Gesetzestext, RFC, EU-Verordnung) und eigener Handlung (Konfiguration vor dem ersten Crawl).",
+  "fingerprint": "25dbb0932f05ba42"
+}
