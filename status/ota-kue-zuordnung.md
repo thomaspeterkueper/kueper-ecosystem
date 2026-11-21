@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-20 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-21 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -52,7 +52,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-OBS-0002-2026-DE | 60.000 Jahre alte Giftpfeile — Die Umhlatuzana-Entdecku | RT |  | offen |
 | OTA-OBS-0004-2026-DE | GÖBEKLI TEPE | R |  | offen |
 | OTA-OBS-0006-2026-DE | SumTablets: KI-gestützte Keilschrift-Transliteration al | IRT |  | offen |
-| OTA-SCI-0019-2025-DE | DIE FÜNF EPOCHEN DES GEHIRNS | RS |  | geprüft 2026-11-09 – Teile nach KUE (I–III, Studie Mousley et al.), GANDHAKA/noχ-Extrapolationen bleiben; EXT-OTA-KUE-20261109-002, danach Kürzung OTA-REQ-20261109-002 |
+| OTA-SCI-0019-2025-DE | DIE FÜNF EPOCHEN DES GEHIRNS | RS |  | geprüft 2026-11-09 – Teile nach KUE (I–III, Studie Mousley et al.), GANDHAKA/noχ-Extrapolationen bleiben; EXT-OTA-KUE-20261109-002, danach Kürzung OTA-REQ-20261109-002 – umgesetzt 2026-11-21 (v1.2, KUE-SCI-0212) |
 | OTA-SCI-0021-2025-DE | Mikrogravitation und Gehirnarchitektur | IRST |  | geprüft 2026-11-11 – kein KUE-Gegenstück; wegen Werkbezug tatsächlich Teile nach KUE (Realanker unbelegt, Quellen im Request), Matrix/KN-5.1 bleiben; EXT-OTA-KUE-20261111-002, danach Kürzung OTA-REQ-20261111-001; v1.1 ergänzt (II–IV, Epochen IV–V) nach Entscheidung Thomas 2026-11-11 |
 | OTA-SCI-0022-2025-DE | Zhurong-Entdeckung: Wasser-Fenster auf Mars verlängert  | R |  | geprüft 2026-11-12 – kein KUE-Gegenstück; wegen Werkbezug Teile nach KUE (Realteil unbelegt/fehlerhaft, Quellen im Request), Relikt-Fenster/2070/2091 bleiben; EXT-OTA-KUE-20261112-001, danach Korrektur/Kürzung OTA-REQ-20261112-001 (Kuratortext/Marker warten auf Thomas) – Punkte A–D umgesetzt 2026-11-18 (OTA-SCI-0022 v1.1, KUE-SCI-0202), Punkt E wartet auf Thomas |
 | OTA-SCI-0057-2026-DE | Otjize als funktionales Materialsystem: Mineralogie, Na | RST |  | geprüft 2026-11-08 – Teile nach KUE (II–VI, VIII), Werkbezug OTJIZE bleibt; EXT-OTA-KUE-20261108-001, danach Kürzung OTA-REQ-20261108-001 |
@@ -85,7 +85,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-MON-0002-2142-DE | TEMENON | FR | Reale wissenschaftliche Grundlagen [R] | offen |
 | OTA-SCI-0007-2026-Cuancoa | OTA-SCI-0007-2026-Cuancoa | RST |  | offen |
 | OTA-SCI-0015-2025-DE | Schumann-Resonanz: Biologische Relevanz und ISS-Referen | RST |  | geprüft 2026-11-18 – Teile nach KUE (Realteil fehlerhaft: Barger/Stahn/Wever/Basner, ISS „ohne Schumann“ widerlegt durch C/NOFS), Hayashi-Rahmen bleibt; EXT-OTA-KUE-20261118-001, danach Korrektur/Kürzung OTA-REQ-20261118-002 (KN-00/01 und Mars-Weltlogik warten auf Thomas) |
-| OTA-SCI-0009-2025-DE | Planetare Schumann-Resonanzen und AVI-Kopplung | RTSW |  | geprüft 2026-11-18 (Zeile ergänzt) – Teile nach KUE (Mars-SR, Zeitdilatation; Erd-SR in KUE-SCI-0012), AVI/χ/Baumeister bleiben; EXT-OTA-KUE-20261118-001, danach Korrektur/Kürzung OTA-REQ-20261118-001 (KN-01, HRV-Zeile/Hypothese B warten auf Thomas) |
+| OTA-SCI-0009-2025-DE | Planetare Schumann-Resonanzen und AVI-Kopplung | RTSW |  | geprüft 2026-11-18 (Zeile ergänzt) – Teile nach KUE (Mars-SR, Zeitdilatation; Erd-SR in KUE-SCI-0012), AVI/χ/Baumeister bleiben; EXT-OTA-KUE-20261118-001, danach Korrektur/Kürzung OTA-REQ-20261118-001 (KN-01, HRV-Zeile/Hypothese B warten auf Thomas) – Punkt D (AVI-Akronym) umgesetzt 2026-11-21 (v1.0.1) |
 | OTA-SCI-0026-2025-DE | SABRE-Vorkühler-Technologie: Hyperschall-Luftatmung dur | RT |  | offen |
 | OTA-SCI-0026-2026-DE | Interstellare Schwefelchemie — Die Entdeckung von 2,5-C | RST |  | offen |
 | OTA-SCI-0027-2025-DE | Graphen-Keramik-Verbundwerkstoffe: Ultra-Hochtemperatur | RST |  | offen |
@@ -135,11 +135,13 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-FND-0015-2026-DE | RKF: Epistemologische Schichtung | FRSTW | RKF (eigener Formalismus) | offen |
 | OTA-OBS-0005-2026-DE | LOD-REVERSAL | HRW | LOD-Vorhersage aus AVI | offen |
 | OTA-RED-0023-2026-DE | Vom QCD-Vakuum zur Raumzeit-Geometrie — Vakuumresonanz  | HRST | eigene QCD/Raumzeit-Hypothese | offen |
-| OTA-SCI-0023-2025-DE | Schwefel, Quellen und Bewusstsein: Neurotoxikologische  | IRS | χ-/Bewusstseins-Anteil | offen |
+| OTA-SCI-0023-2025-DE | Schwefel, Quellen und Bewusstsein: Neurotoxikologische  | IRS | χ-/Bewusstseins-Anteil | geprüft 2026-11-21 – Teile nach KUE ([R]-Blöcke §1.1–2.5, Neurotoxikologie H₂S/SO₂), [I]-Deutungen, GANDHAKA und KN-5.1 bleiben; EXT-OTA-KUE-20261121-001, Quellen/Kürzung OTA-REQ-20261121-001 (KN-Punkte warten auf Thomas) |
 | OTA-SCI-0036-2026-DE | OMNIZEDENZ v2.3 | HRT | Omnizedenz | offen |
 | OTA-SCI-0038-2026-EN | Quantum-Geometric Portals in Loop Quantum Gravity: A Te | HR | eigene LQG-Hypothese (KUE-SCI-QUANTUM-GRAVITY im Entwurf) | offen |
 | OTA-SCI-0041-2026-DE | OTA-SCI-0041-2026-DE | HRS | H-lastig, prüfen | offen |
 | OTA-SCI-0042-2026-DE | PHÄNOMENOLOGISCHE ERDBEBENTHEORIE UND DIE LOD-SEISMIZIT | HRS | eigene Erdbebentheorie | offen |
+| OTA-SCI-0024-2026-DE | Ein skalares Feldmediator-Modell für Neutrino-Dunkle- | HTSW | χ-Feld-Modell (Zeile ergänzt) | geprüft 2026-11-21 – Entscheidung Thomas (eigenes χ-Feld-Modell, bleibt OTA); S₈-Forschungsstand nach KUE per EXT-OTA-KUE-20261121-002; Zitate/Realgrundlage OTA-REQ-20261121-002 (Modellpunkte warten auf Thomas) |
+| OTA-SCI-0024-2026-EN | A Scalar Field Mediator for Neutrino-Dark Matter Inte | HTSW | χ-Feld-Modell (Zeile ergänzt) | geprüft 2026-11-21 – Entscheidung Thomas (eigenes χ-Feld-Modell, bleibt OTA); S₈-Forschungsstand nach KUE per EXT-OTA-KUE-20261121-002; Zitate/Realgrundlage OTA-REQ-20261121-002 (Modellpunkte warten auf Thomas) |
 
 ## C – bleibt in OTA
 
