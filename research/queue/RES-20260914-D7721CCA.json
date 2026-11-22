@@ -1,6 +1,6 @@
 {
   "id": "RES-20260914-D7721CCA",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-14T09:02:48+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -33,5 +33,27 @@
   "novelty_reason": "Die vorangegangenen Kandidaten betreffen Schumann-/432-Hz-Frequenzarchitektur, Mars-Geologie und Vergrabungstiefen sowie Kosmologie (S8-Spannung, LOD, Am-241, Euclid). Keiner berührt Bewusstseinstheorie, KI-Emergenz oder Falsifizierbarkeit von Bewusstseinszuschreibungen. Der Gegenstand ist neu und nicht als Umformulierung eines früheren Themas lesbar.",
   "fingerprint": "d7721cca1774d51e",
   "updated_at": "2026-09-14T09:17:47+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/117"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/117",
+  "validated_at": "2026-11-22T13:30:51+00:00",
+  "validation_summary": "Der Kandidat prüft die werkprägende Setzung „Bewusstsein entsteht überall nach derselben Logik“ (README, Tragende Prinzipien; NXU-RAUM-0001 §4.2) und die MIMI-Frage (OTA-HIS-0006; open_questions.mimi-self-awareness) gegen die reale Bewusstseinsdebatte 2024–2026. Ergebnis: Die Vorsorge-/Moralstatus-Ebene (Birch, Long et al., New York Declaration) ist breit gedeckt; die Existenz- und Universalismus-Ebene ist spekulative Fiktion. Ein etablierter Optimierungsmechanismus fehlt, der Indikator-Ansatz ist selbst-deklariert vorläufig und schließt IIT aus, Cogitate schwächt IIT und GNWT, und verbale Selbstauskunft gilt in der Fachdebatte nicht als Bewusstseinsindikator. Das ist kein Canon-Fehler — die Setzung ist als Fiktion zulässig —, aber der epistemische Status der Stelle und die evidentielle Rolle von MIMIs Frage sind im Repo nicht explizit. Daher eine Verifikation und zwei Enrichments; keine Kanonänderung wird erzwungen.",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-NXU-20261122-001",
+      "target": "noxia-universe",
+      "repository": "thomaspeterkueper/noxia-universe"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-NXU-20261122-002",
+      "target": "noxia-universe",
+      "repository": "thomaspeterkueper/noxia-universe"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-NXU-20261122-003",
+      "target": "noxia-universe",
+      "repository": "thomaspeterkueper/noxia-universe"
+    }
+  ]
 }
