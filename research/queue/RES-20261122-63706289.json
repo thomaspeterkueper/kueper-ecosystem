@@ -1,0 +1,39 @@
+{
+  "id": "RES-20261122-63706289",
+  "status": "queued",
+  "created": "2026-11-22T11:41:44+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/pages/philosophie.astro",
+  "source_ref": "ec88b7299b212961299629ff478d6529aa6ff661",
+  "source_blob_sha": "8789c4118c2f4e215c6ecbc284e28d9924971563",
+  "title": "Vollständig, aber nicht fertig: Welche Mereologie trägt den Hauptsatz der Omnizedenz?",
+  "question": "Die Philosophie-Seite setzt drei tragende Sätze: „Das Ganze ist vollständig, aber nicht fertig“, „Was im Teil geschieht, geschieht dem Ganzen“ und „Identität ist die fortgesetzte Genesis eines Zusammenhangs durch seine Veränderungen“. Zu prüfen ist, welche Mereologie diese Sätze tragen. Was bedeutet „vollständig“: maximale mereologische Summe, Geschlossenheit unter Konstitution, modale Vollständigkeit oder bloß die Reichweite des relationalen Zusammenhangs? Kann ein Ganzes Teile gewinnen, verlieren oder umbilden, ohne ein anderes Ganzes zu werden – und wie verhält sich das zu mereologischem Essentialismus (Chisholm), Konstitutionstheorien (Baker), composition as identity (Lewis, Sider) und prozessualer Mereologie (Whitehead, Seibt)? Ist „Was im Teil geschieht, geschieht dem Ganzen“ eine Kausal-, Konstitutions- oder Grounding-Behauptung, und folgt daraus irgendeine Form von Empfindungsfähigkeit oder Eigenperspektive des Ganzen? Wo ist der Satz eine ontologische Setzung, wo eine bloße Redeweise, und welche Einwände – Überdeterminierung, Verlust der Teileigentümlichkeit, Vagheit der Grenzen, unklare Identität über Teilwechsel – treffen ihn?",
+  "why_now": "Der Satz ist die sichtbarste ontologische Behauptung der Startseite und der Philosophie-Seite; die Werkstatt hält „Vollständigkeit und Wachstum“ ausdrücklich als offene Frage (Forschungsfrage 02) und verlangt, räumliche Ausdehnung, geschichtliche Veränderung, Komplexitätszunahme und neue Erfahrung zu unterscheiden. Ohne mereologische Klärung bleibt unbestimmt, ob „vollständig, aber nicht fertig“ ein kohärenter Begriff ist oder zwei unvereinbare Vollständigkeitsbegriffe vermischt.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "T",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Mereologie und Metaphysik der Teil-Ganzheit: klassische Mereologie (Leśniewski, Lewis), mereologischer Essentialismus (Chisholm), Konstitutionstheorien (Baker), composition as identity (Sider), prozessuale Mereologie (Whitehead, Seibt) und Identität über Zeit.",
+  "publication_route_hint": null,
+  "project_weight": 0.65,
+  "relevance_score": 0.875,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20261018-16792C5C",
+    "RES-20261019-827379B0"
+  ],
+  "novelty_reason": "Die früheren Aufträge prüfen Weltindividuation, metaphysical grounding und Geschichtlichkeit ohne gemeinsame Zeit. Keiner untersucht die mereologische Struktur der Sätze „vollständig, aber nicht fertig“ und „Was im Teil geschieht, geschieht dem Ganzen“, die Frage nach Teilwechsel und Identität des Ganzen oder die Konkurrenz von mereologischer, konstitutiver und prozessualer Lesart. Das ist eine eigenständige, bisher nicht behandelte Begründungslücke der Ontologie.",
+  "fingerprint": "6370628966b4c8c5"
+}
