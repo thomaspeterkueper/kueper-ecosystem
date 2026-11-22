@@ -1,6 +1,6 @@
 {
   "id": "RES-20261122-DFBB4343",
-  "status": "queued",
+  "status": "needs-review",
   "created": "2026-11-22T12:38:55+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -40,5 +40,7 @@
     "RES-20261115-DA2529FB"
   ],
   "novelty_reason": "Keine Wiederholung: RES-20261115-DA2529FB prüft an OTA-SCI-0112 die Wasser-Rückgewinnung (93–94 %/98 %) und die Crop-/Lichtkalibrierung, nicht den CO₂-Reduktionspfad. Neu und materiell ungelöst ist hier die Bezugsgröße und Stöchiometrie der O₂-Rückgewinnung, die Provenienz des 75-%-Ziels sowie der im Dossier ausdrücklich zurückgewiesene CRA-Shutdown 2017; die Wasserrückgewinnung wird nur als bestehende Grenze zitiert und nicht neu erhoben.",
-  "fingerprint": "dfbb43437e4e6ce6"
+  "fingerprint": "dfbb43437e4e6ce6",
+  "updated_at": "2026-11-22T12:50:44+00:00",
+  "last_error": "candidate for ota-archive-evidence lacks a strong source type marker"
 }
