@@ -1,0 +1,45 @@
+{
+  "id": "RES-20261122-4FB6F525",
+  "status": "queued",
+  "created": "2026-11-22T12:38:56+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0093-2026-DE.md",
+  "source_ref": "bd15bdfa33c5759edcea32d9340da795f212441b",
+  "source_blob_sha": "af27fbd1efa1df6bb94ef0859d5c3f97565c3e30",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 190,
+  "context_paths": [
+    "src/content/documents/OTA-TEC-0036-2026-DE.md",
+    "src/content/documents/OTA-TEC-0038-2026-DE.md",
+    "src/content/documents/OTA-TEC-0082-2026-DE.md"
+  ],
+  "title": "Realwelt-Audit der nichtlinearen Crew-Skalierung in OTA-TEC-0093 (v1.5, §3/§10): 2 / 4–6 / 20 / 200 Personen als Auslegungspunkte und die reale Massen-, Volumen- und Leistungsskalierung von ECLSS-Hardware",
+  "question": "Quellengestützter Audit der [H/OFFEN]-Skalierungsregel von OTA-TEC-0093-2026-DE (§3 'Kombinationsregel'; §10 'Crew-Skalierung': Referenzfälle 2 / 4–6 / 20 / 200 Personen, 'Hardwaremasse, Prozesszüge, Puffer, Wartungsaufwand und Redundanz dürfen nicht linear aus der Crewzahl extrapoliert werden'), gepinnt auf die im Workspace vorliegende v1.5 (Status ENTWURF, Stand 2026-10-18; Frontmatter ['R','H','F','OFFEN']). Das Dokument erhebt Nichtlinearität zur kanonisierten Architekturregel, nennt aber weder Richtung, Exponent noch eine belegte Skalierungsfunktion; über OTA-TEC-0036 (Rover, 2–4 Personen), OTA-TEC-0082 (CYGNUS), OTA-TEC-0087 (Gateway) und OTA-TEC-0038 (497 Personen) wirkt die Regel in mehrere Objektdossiers. (1) Reale Datenbasis: Berichte, welche realen Datenpunkte für ECLSS-Gesamtsysteme über Crewgrößen existieren — ISS (3-Personen-Stammbesatzung gegenüber 6-Personen-Expansionskonfiguration), Orion/MPCV, Gateway-Habitatstudien, terrestrische regenerative Testbetten (Lunar-Mars Life Support Test Project, BIO-Plex) und physikalisch-chemische Lebenserhaltung in U-Booten bzw. Antarktisstationen als Analoggrößen — und welche Massen-, Volumen-, Leistungs- und Wartungswerte jeweils berichtet werden. Nenne für jeden Datenpunkt, welche Subsysteme enthalten sind. (2) Skalierungsrichtung: Prüfe, ob reale ECLSS-Hardware sublinear (Economy of Scale durch gemeinsam genutzte CO₂-Abscheidung, Ventilation, Wasseraufbereitung, Sensorik, Steuerung) oder eher modular-stufenweise (diskrete Prozesszugzahl, N+1-Redundanz) mit der Crewzahl wächst. Nenne die real belegten Fixkosten- und Pro-Kopf-Anteile und stelle fest, ob ein Ansatz der Form m(N) = a + b·N oder eine sublineare Potenzfunktion durch reale Daten gestützt wird oder nur als plausible Modellform [T] zu führen ist. (3) Methode: Prüfe, was die reale Equivalent-System-Mass-/ESM-Methodik für die Crew-Skalierung liefert (Masse, Volumen, Energie, Wärme, Kühlung, Logistik in einer Metrik), und ob sie die im Dokument geforderte gekoppelte Bilanz (Masse, Volumen, Leistung, Abwärme, Ersatzteile, Redundanz, Versorgungslogistik) tatsächlich abbildet oder einzelne Terme ausblendet. (4) Obergrenze 20 und 200: Prüfe, ob für 20- und 200-Personen-ECLSS überhaupt reale Analogien bestehen (U-Boot-, Gebäude-/Siedlungs-Lebenserhaltung, Antarktisstationen, Studien zu großen Raumstationscrews) und wie weit deren Schließungsgrad, Energiebedarf, Wartbarkeit und Logistikabhängigkeit vom regenerativen Raumfahrt-ECLSS entfernt sind; melde ausdrücklich, wenn für 20 und 200 Personen keine belastbare reale Skalierungsbasis existiert und die Referenzpunkte nur Auslegungsabsichten [F/H] darstellen. (5) Redundanzkopplung: Prüfe den Zusammenhang von Crewzahl und Redundanzdimensionierung (N+1, F0–F3-Kritikalität) gegen reale Zuverlässigkeits- und Ausfallratendaten bemannter ECLSS und stelle fest, ob die im Dokument geforderte Nichtlinearität primär aus Subsystemgröße, aus Redundanzvervielfachung oder aus Puffer-/Verbrauchsmittelbeständen folgt. (6) Reklassifizieren: Nenne die Sätze, die [R] bleiben können (ECLSS-Masse und -Leistung wachsen mit der Crewzahl; gemeinsam genutzte Subsysteme erzeugen Größenvorteile; reale ECLSS sind nicht für beliebige Crewzahlen ausgelegt), die als [T]/[H] zu führen sind (die Nichtlinearitätsregel selbst, jede a + b·N-Form, jede Sublinearitätsbehauptung, die 20-/200-Personen-Referenzpunkte) und die [OFFEN] bleiben müssen (konkrete Exponenten, Redundanzanteil, Übertragbarkeit von Analoggrößen). Stelle fest, dass kein kanonischer Skalierungsexponent, keine kanonische Pro-Kopf-Masse und kein kanonisches Redundanzschema in den Kanon oder in NOXIA-Standardwerte aufgenommen wird. NICHT erneut zu erheben: die Crop-Flächen- und Lichtenergie-Kalibrierung pro Person (OTA-SCI-0112, RES-20261115-DA2529FB) und die Nahrungsmassen-/30-Tage-Reserve-Anker (OTA-TEC-0100, RES-20261117-823533B6) — sie sind nur als bestehende Grenzen zu zitieren und betreffen das Pflanzenmodul bzw. die Nahrungsreserve, nicht die ECLSS-Kernhardware. AUSGESCHLOSSEN: die vier Variantendefinitionen als Werkarchitektur, konkrete Hardwarekonfigurationen, NOXIA-Spielwerte, Baukosten und Unlocks sowie die CANDIDATE_COMPONENT_OF-Zuordnung.",
+  "why_now": "v1.5 hat die Crew-Referenzfälle 2 / 4–6 / 20 / 200 ausdrücklich in den Kanon der Familienarchitektur übernommen, während die Skalierungsregel selbst ohne Exponent und ohne Beleg bleibt; gleichzeitig sind absolute Massen-, Leistungs- und Reservewerte ausdrücklich nicht kanonisiert. Der Audit entscheidet, ob 'nichtlinear' als belegte reale Randbedingung oder nur als Werkannahme geführt werden darf und welche Richtung (sublinear versus modular-stufenweise) die reale Datenlage stützt.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "H",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Reale ECLSS-Auslegungsdaten über Crewgrößen: ISS-Konfiguration mit 3 und mit 6 Personen, Orion/MPCV, Gateway-Habitatstudien, terrestrisches Lunar-Mars Life Support Test Project und BIO-Plex, Equivalent-System-Mass-/ESM-Methodik sowie physikalisch-chemische Lebenserhaltung in U-Booten und Antarktisstationen als Analoggrößen.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [
+    "RES-20261115-DA2529FB",
+    "RES-20261117-823533B6"
+  ],
+  "novelty_reason": "Kein Follow-up, sondern ein angrenzender, eigenständiger Prüfgegenstand: RES-20261115-DA2529FB prüft m²/Person und Beleuchtungsleistung des Pflanzenmoduls, RES-20261117-823533B6 die Nahrungsmasse und die 30-Tage-Reserve für 497 Personen. Beide behandeln Pro-Kopf-Verbrauch, nicht die Skalierung von ECLSS-Kernhardware (Elektrolyse, CO₂-Abscheidung, Wasseraufbereitung, Redundanz) über 2 bis 200 Personen; genau diese Skalierungsfunktion ist in keinem früheren Topic geprüft und wird hier erstmals gegen ISS-, Testbett- und Analogdaten gehalten.",
+  "fingerprint": "4fb6f5254153538f"
+}
