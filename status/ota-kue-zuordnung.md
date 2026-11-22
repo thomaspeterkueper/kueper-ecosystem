@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-21 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-22 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -63,7 +63,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0102-2026-DE | Autophagie im menschlichen Altern — Flux, Zelltyp, Gesc | IOFFENR |  | geprüft 2026-11-13 – ganz nach KUE, OTA bleibt Brückendokument; EXT-OTA-KUE-20261113-002, OTA-REQ-20261113-002 – umgesetzt 2026-11-19 (OTA-SCI-0102 v1.1, KUE-SCI-0204) |
 | OTA-SCI-0103-2026-DE | Longitudinale Gehirngesundheit — Lebenslauf-Risiken, Pr | IOFFENR |  | geprüft 2026-11-15 – ganz nach KUE, OTA bleibt Brückendokument (§19); EXT-OTA-KUE-20261115-001, OTA-REQ-20261115-001 |
 | OTA-SCI-0108-2026-DE | Ultrakompakte Doppel-Weiße-Zwerge: Orbitalzerfall, Dire | HIOFFENR |  | geprüft 2026-11-15 – ganz nach KUE (kein Werkbezug), OTA bleibt Brückendokument; EXT-OTA-KUE-20261115-002, OTA-REQ-20261115-002 – umgesetzt 2026-11-19 (OTA-SCI-0108 v1.1, KUE-SCI-0206) |
-| OTA-SCI-0109-2026-DE | Stromnetz-Engpässe: Erzeugung, Transportkapazität, Redi | HOFFENRT |  | geprüft 2026-11-16 – ganz nach KUE, OTA bleibt Brückendokument (NOXIA-Archivregel §14); EXT-OTA-KUE-20261116-001, OTA-REQ-20261116-001 |
+| OTA-SCI-0109-2026-DE | Stromnetz-Engpässe: Erzeugung, Transportkapazität, Redi | HOFFENRT |  | geprüft 2026-11-16 – ganz nach KUE, OTA bleibt Brückendokument (NOXIA-Archivregel §14); EXT-OTA-KUE-20261116-001, OTA-REQ-20261116-001 – umgesetzt 2026-11-22 (v1.1, KUE-SCI-0214) |
 | OTA-SCI-0110-2026-DE | Adaptive Fertigung und Physical AI: Digitale Zwillinge, | HIOFFENR |  | geprüft 2026-11-16 – ganz nach KUE (Realteil), NOXIA-Anschluss/A0–A5/Archivregel bleiben; EXT-OTA-KUE-20261116-002, OTA-REQ-20261116-002 |
 | OTA-SCI-0111-2026-DE | β Pictoris b im Radio: Aurorale Emission, Magnetfeld-In | HIOFFENR |  | geprüft 2026-11-17 – ganz nach KUE (Realteil), NOXIA-Modell/SSF-Set/Archivregel bleiben; EXT-OTA-KUE-20261117-001, danach Brücke OTA-REQ-20261117-001 |
 | OTA-SCI-0112-2026-DE | Mars-Siedlungen als Stoffstromsystem: ECLSS, Nahrung, I | HIOFFENR |  | geprüft 2026-11-07 – ganz nach KUE (Realteil), NOXIA-Regeln §18/21/24/27/30 bleiben; EXT-OTA-KUE-20261107-001, danach Brückendokument OTA-REQ-20261107-002 |
@@ -97,7 +97,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0034-2026-DE | MoM-z14 — Die älteste Galaxie | RT |  | offen |
 | OTA-SCI-0035-2026-DE | Hybride Aggregatzustände in Metall-Nanopartikeln — Wenn | RST |  | offen |
 | OTA-SCI-0043-2026-DE | LLSVPs und die Kern-Mantel-Grenze: Evidenz, Geodynamo u | HOFFENRS | I. LLSVPs: SEISMISCHE EVIDENZ [R]; II. URSPRUNG DER TIEFMANTEL-HETEROGENITÄTEN [ | offen |
-| OTA-SCI-0044-2026-DE | Extragalaktische organische Chemie: JWST-Befunde in IRA | RT | 7.1 Kernaussagen [R]; 7.2 Theoretische Einordnung [T] | offen |
+| OTA-SCI-0044-2026-DE | Extragalaktische organische Chemie: JWST-Befunde in IRA | RT | 7.1 Kernaussagen [R]; 7.2 Theoretische Einordnung [T] | geprüft 2026-11-22 – ganz nach KUE (reines Realdossier, AVI-Übertragung liegt in OTA-FND-0012), viele unbelegte Zahlen; erst Korrektur, dann Brückendokument; EXT-OTA-KUE-20261122-001, OTA-REQ-20261122-001 (A umsetzbar, B wartet auf Thomas) |
 | OTA-SCI-0046-2026-DE | OTA-SCI-0046-2026-DE | HRT |  | offen |
 | OTA-SCI-0048-NACHTRAG-2026-DE | Λ-Haplogruppe: Drei Ergänzungsmodule — UPE-FSS-Detektio | FRST | MODUL A: UPE-FSS-DETEKTIONSPROTOKOLL [R→T→S]; A.1 Realweltlicher Sockel [R] | offen |
 | OTA-SCI-0059-2026-DE | OTA-SCI-0059-2026-DE | RST |  | offen |
@@ -105,7 +105,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0063-2026-DE | Die Belousov-Zhabotinsky-Reaktion: Selbstorganisierte D | RT | II. HISTORISCHER AUSGANG: ABLEHNUNG ALS MUSTER `[R-Anker]`; 2.1 Boris Belousov u | offen |
 | OTA-SCI-0065-2026-DE | OTA-SCI-0065-2026-DE | RT |  | offen |
 | OTA-SCI-0066-2026-DE | OTA-SCI-0066-2026-DE | RT |  | offen |
-| OTA-SCI-0081-2026-DE | Die Bronzescheibe: Kreisplatten-Akustik, Lapis-lazuli-F | RST | 1.1 Grundlagen der Plattenakustik `[R]`; 1.2 Eigenfrequenzen der Bronzescheibe:  | offen |
+| OTA-SCI-0081-2026-DE | Die Bronzescheibe: Kreisplatten-Akustik, Lapis-lazuli-F | RST | 1.1 Grundlagen der Plattenakustik `[R]`; 1.2 Eigenfrequenzen der Bronzescheibe:  | geprüft 2026-11-22 – Teile nach KUE (§1.1–1.2 Plattenakustik, §2.1–2.2 Lapis lazuli; §5.1 Gegenstück KUE-SCI-0207), Scheibe/Schlüssel/KN bleiben; Frequenzrechnung fehlerhaft; EXT-OTA-KUE-20261122-002, OTA-REQ-20261122-002 (A umsetzbar, B wartet auf Thomas) |
 | OTA-SCI-0083-2026-DE | Eigenzeit, optische Atomuhren und relativistische Aussc | R |  | offen |
 | OTA-SCI-0084-2026-DE | Kryoporöse Oberflächen auf Eiswelten — Hazard- und Expl | OFFENRT |  | geprüft 2026-11-20 – KUE-Gegenstück vorhanden (KUE-SCI-0013 v1.1), Hazard/NOXIA bleiben; Korrektur/Verweis OTA-REQ-20261120-001, Ergänzung EXT-OTA-KUE-20261120-001 |
 | OTA-SCI-0092-2026-DE | Fast Radio Bursts — Baryonenverteilung, Feedback und Ma | HOFFENR |  | offen |
@@ -125,7 +125,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-TEC-0109-2026-DE | Solarfeld — Photovoltaische Energieerzeugung und Feldbe | FHOFFENR | Physikalisch-technische Prinzipien [R] | offen |
 | OTA-TEC-0110-2026-DE | Technisches Labor — Analyse-, Forschungs- und Entwicklu | FHOFFENR | Technische Prinzipien [R] | offen |
 | OTA-TEC-0111-2026-DE | Oberflächen-Scanner — Lokale Fernerkundung, Messung und | FHOFFENR | Physikalisch-technische Prinzipien [R] | offen |
-| OTA-SCI-0020-2026-DE | Relikt-Fenster — Spätaktive Wasser- und Eisdynamik auf | RSTW | I.1 Zhurong [R]; I.2 Prudhoe Dome [R] | geprüft 2026-11-19 (nachgetragen) – Teile nach KUE: Zhurong-Gegenstück KUE-SCI-0202 vorhanden, Prudhoe Dome neu per EXT-OTA-KUE-20261119-001; Relikt-Fenster/Frequenz-Hypothese (AVI) bleiben; Kürzung OTA-REQ-20261119-002 (Punkte A/C umsetzbar, E wartet auf Thomas) – A/C umgesetzt 2026-11-20 (v1.1) |
+| OTA-SCI-0020-2026-DE | Relikt-Fenster — Spätaktive Wasser- und Eisdynamik auf | RSTW | I.1 Zhurong [R]; I.2 Prudhoe Dome [R] | geprüft 2026-11-19 (nachgetragen) – Teile nach KUE: Zhurong-Gegenstück KUE-SCI-0202 vorhanden, Prudhoe Dome neu per EXT-OTA-KUE-20261119-001; Relikt-Fenster/Frequenz-Hypothese (AVI) bleiben; Kürzung OTA-REQ-20261119-002 (Punkte A/C umsetzbar, E wartet auf Thomas) – A/C umgesetzt 2026-11-20 (v1.1); B/D umgesetzt 2026-11-22 (v1.2, KUE-SCI-0213), E wartet auf Thomas |
 
 ## T – Entscheidung Thomas (eigene Hypothesen)
 
