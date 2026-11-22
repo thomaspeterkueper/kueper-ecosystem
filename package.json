@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "npm run test:timeline && npm run test:ideas",
+    "test:ideas": "node -e \"require('fs').rmSync('.tmp-ideas-tests',{recursive:true,force:true})\" && tsc tests/ideas-auth.test.ts app/dashboard/ideas/page.tsx --outDir .tmp-ideas-tests --rootDir . --module commonjs --target ES2020 --moduleResolution node --esModuleInterop --resolveJsonModule --jsx react-jsx --skipLibCheck --types node && node --test .tmp-ideas-tests/tests/ideas-auth.test.js && node -e \"require('fs').rmSync('.tmp-ideas-tests',{recursive:true,force:true})\"",
     "test:timeline": "node -e \"require('fs').rmSync('.tmp-timeline-tests',{recursive:true,force:true})\" && tsc tests/timeline-math.test.ts tests/universe-projection.test.ts app/internal/universe/timeline/timeline-math.ts app/internal/universe/timeline/seed-projection.ts --outDir .tmp-timeline-tests --rootDir . --module commonjs --target ES2020 --moduleResolution node --esModuleInterop --types node && node --test .tmp-timeline-tests/tests/timeline-math.test.js .tmp-timeline-tests/tests/universe-projection.test.js && node -e \"require('fs').rmSync('.tmp-timeline-tests',{recursive:true,force:true})\""
   },
   "dependencies": {
