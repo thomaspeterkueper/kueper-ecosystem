@@ -1,0 +1,44 @@
+{
+  "id": "RES-20261122-DFBB4343",
+  "status": "queued",
+  "created": "2026-11-22T12:38:55+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0093-2026-DE.md",
+  "source_ref": "bd15bdfa33c5759edcea32d9340da795f212441b",
+  "source_blob_sha": "af27fbd1efa1df6bb94ef0859d5c3f97565c3e30",
+  "selection_method": "deterministic-document-scope-v1",
+  "selection_score": 190,
+  "context_paths": [
+    "src/content/documents/OTA-TEC-0036-2026-DE.md",
+    "src/content/documents/OTA-TEC-0038-2026-DE.md",
+    "src/content/documents/OTA-TEC-0082-2026-DE.md"
+  ],
+  "title": "Realwelt-Audit der Sabatier-O₂-Rückgewinnung in OTA-TEC-0093 (v1.5, §3/§5/§8): die 'etwa 47–50 %' ISS-Referenz, die stöchiometrische 50-%-Decke, das NASA-Beyond-LEO-Ziel ≥75 % und der nicht übernommene CRA-Shutdown Oktober 2017",
+  "question": "Quellengestützter Audit der [R]-Schließungsaussagen von OTA-TEC-0093-2026-DE (§3 'Physikalische/technische Grundlage', §5-Tabelle 'Sabatier-O₂-Rückgewinnung etwa 47–50 %' und 'Beyond-LEO-O₂-Ziel ≥75 %', §8 'Realer Katalysator-Anker'), gepinnt auf die im Workspace vorliegende v1.5 (Status ENTWURF, Stand 2026-10-18; Frontmatter ['R','H','F','OFFEN']). Das Dokument trägt seine gesamte quantitative Schließungsaussage auf zwei NASA-Zuschreibungen und einer stöchiometrischen Begründung; die vier Missionsvarianten ECLSS-SR/TR/ST/CV und die 'Kombinationsregel' in §3 hängen daran. (1) Bezugsgröße: Kläre, was 'O₂-Rückgewinnung' bei NASA bezeichnet — Anteil des im metabolischen CO₂ gebundenen Sauerstoffs, Anteil des insgesamt benötigten O₂, Wasseräquivalent oder Massenanteil — und ob 47–50 % ein ISS-Betriebswert, ein Auslegungsziel oder ein theoretischer Grenzwert ist. Trenne ausdrücklich Subsystemwirkungsgrad (Sabatier-Reaktor), Systemwirkungsgrad (Sabatier plus Elektrolyse plus Wasseraufbereitung) und Crew-Kreislaufbilanz. (2) Stöchiometrie nachrechnen: Rekonstruiere den Sabatier-Pfad CO₂ + 4 H₂ → CH₄ + 2 H₂O samt Wasserstoffherkunft aus der Elektrolyse und prüfe, ob die 50-%-Grenze tatsächlich stöchiometrisch folgt, ob sie die Methanabgabe voraussetzt und wie sie sich verschiebt, wenn CH₄ nachverarbeitet (Methanpyrolyse, Plasmapyrolyse, Bosch-/Boudouard-Reaktion) oder H₂ extern zugeführt bzw. aus anderer Quelle gewonnen wird. Nenne die real demonstrierten Rückgewinnungsgrade dieser Alternativpfade und ordne ein, ob '50 %' eine harte Decke oder ein pfad- und systemgrenzenabhängiger Betriebswert ist. (3) NASA-Ziel ≥75 %: Verifiziere, in welchem benannten NASA-Dokument (Life Support Baseline Values and Assumptions Document, ECLSS-Roadmap, Technology Roadmap TA06, Exploration-Architekturstudie) ein Ziel von mindestens 75 % steht, für welchen Systemtyp und Zeithorizont, und ob es ein Technologieentwicklungsziel oder eine Fluganforderung ist. Prüfe ferner, welcher reale O₂-Rückgewinnungsgrad mit heutiger ISS-Hardware (Oxygen Generation Assembly, Sabatier/CRA, CDRA) erreicht wird und welche Zahlen die begutachtete ECLSS-Literatur führt; melde jede Abweichung der Zuschreibung. (4) Katalysator und CRA: Prüfe die Aussage, NASA habe am ISS-Sabatier/CRA die Katalysatorvergiftung durch mit dem CO₂-Strom konzentrierte Spurenverunreinigungen untersucht, und kläre, welche Kontaminanten (Schwefel-, Halogen-, Siloxanverbindungen) real als Vergiftungspfad dokumentiert sind und welche Gegenmaßnahmen (Sorbentien, Guard beds, Feed-Reinigung) belegt sind. Prüfe ausdrücklich, ob sich für den im Dokument bewusst nicht übernommenen Satz 'ISS-CRA im Oktober 2017 endgültig wegen Katalysatorvergiftung abgeschaltet' eine NASA-Primärbestätigung finden lässt, und melde jede Nichtbestätigung mit den nächstliegenden realen CRA-Betriebsereignissen, ohne sie stillschweigend zu substituieren. (5) Systemgrenze: Prüfe, ob die behauptete Kopplung 'ein höherer Rückgewinnungsgrad ist kein kostenloser Upgradefaktor' (zusätzliche Reaktoren, Energie-, Masse-, Kohlenstoffhandhabungs- und Zuverlässigkeitslast) quantitativ gestützt ist, und ob reale Vergleichsarbeiten (Equivalent System Mass, ECLSS-Vergleichsstudien) diese Kopplung belegen oder nur plausibilisieren. (6) Reklassifizieren: Nenne die Sätze, die [R] bleiben können (Sabatier ist ein realer, geflogener CO₂-Reduktionspfad; Methanabgabe begrenzt die O₂-Rückgewinnung; höhere Rückgewinnung erfordert Zusatzhardware), die zu '[R] Quelleninhalt, Bezugsgröße offen' abzuschwächen sind (47–50 %, ≥75 %, die 50-%-Decke als exakte stöchiometrische Aussage) und die [OFFEN] bleiben müssen (der CRA-Shutdown 2017, die Erreichbarkeit von 75 % in einer konkreten NOXIA-Variante). Stelle fest, dass kein kanonischer Rückgewinnungsgrad, kein kanonischer Katalysator-Lebensdauerwert und keine kanonische Zielzahl in den Kanon aufgenommen wird. NICHT erneut zu erheben: die ISS-Wasserrückgewinnung 93–94 % / 98 % und die 'Gallone pro Person und Tag' aus OTA-SCI-0112 (RES-20261115-DA2529FB) — sie ist nur als bestehende Grenze zu zitieren. AUSGESCHLOSSEN: die vier Variantendefinitionen als Werkarchitektur, die F0–F3-Kritikalitätsskala, die ORU-Architektur, die Crew-Skalierung (eigener Prüfgegenstand), die NOXIA-Balancingwerte sowie die CANDIDATE_COMPONENT_OF-Zuordnung.",
+  "why_now": "Das Dossier steht in v1.5 (2026-10-18) unmittelbar vor der Entscheidung über AKTIV und erklärt in §5 ausdrücklich, missionsspezifische Recovery- und Reservewerte blieben offen. Die beiden Zahlen, die als einzige [R]-Kennwerte in der Leistungstabelle stehen, sind unbelegt zitiert; zugleich ist der CRA-Shutdown-Satz die einzige Stelle, an der das Dokument selbst eine Behauptung wegen fehlender Primärbestätigung zurückweist — der Audit entscheidet also, ob die [R]-Zeilen der Tabelle tragfähig sind und ob die Zurückweisung aufrechterhalten werden muss.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "NASA ECLSS auf der ISS: Sabatier-/Carbon-Dioxide-Reduction-Assembly, Oxygen Generation Assembly und CDRA; NASA Life Support Baseline Values and Assumptions Document (BVAD); begutachtete ECLSS-Literatur zu Sabatier-, Bosch-, Co-Elektrolyse- und Plasmapyrolyse-Rückgewinnungsgraden; reale ISS-Betriebs- und Ausfallgeschichte des CRA.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.9,
+  "relevance_score": 0.925,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.95
+  },
+  "related_research_ids": [
+    "RES-20261115-DA2529FB"
+  ],
+  "novelty_reason": "Keine Wiederholung: RES-20261115-DA2529FB prüft an OTA-SCI-0112 die Wasser-Rückgewinnung (93–94 %/98 %) und die Crop-/Lichtkalibrierung, nicht den CO₂-Reduktionspfad. Neu und materiell ungelöst ist hier die Bezugsgröße und Stöchiometrie der O₂-Rückgewinnung, die Provenienz des 75-%-Ziels sowie der im Dossier ausdrücklich zurückgewiesene CRA-Shutdown 2017; die Wasserrückgewinnung wird nur als bestehende Grenze zitiert und nicht neu erhoben.",
+  "fingerprint": "dfbb43437e4e6ce6"
+}
