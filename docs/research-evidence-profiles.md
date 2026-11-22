@@ -9,7 +9,9 @@ The research loop uses project-specific evidence profiles from `research/policy.
 - `technical-scientific` — NOXIA. Standards, original technical documentation, engineering literature and official data take precedence over vendor/community claims.
 - `historical-linguistic` — Mishkenaz. Separates attestation, archaeological/linguistic reconstruction, comparative inference and fictional extrapolation; relevant source languages are discovery channels.
 - `worldbuilding-scientific` — NOXIA Universe, ENDIA and Zereya. Researches real-world constraints first and keeps them distinct from canon and narrative choice.
-- `philosophy-comparative` — Omnizedenz and Contracomology. Uses primary philosophical/theological texts and serious scholarship while distinguishing textual fact, scholarly interpretation, comparison and KUEPER-system claims. Source count does not turn a metaphysical position into an empirical finding.
+- `philosophy-comparative` — Contracomology. Uses primary philosophical/theological texts and serious scholarship while distinguishing textual fact, scholarly interpretation, comparison and KUEPER-system claims. Source count does not turn a metaphysical position into an empirical finding.
+- `philosophy-own-system` — Omnizedenz (since 22.11.2026). Thomas' own philosophical system: the pinned own text (`own-system-text`) is the primary source; external philosophy is comparison, context or objection. No mandatory strong-source gate.
+- `conlang-scientific` — Mishkenaz. Claim classes and conflict check as OTA; real linguistic anchors are researched, the conlang itself is work-setting (`W`). No mandatory strong-source gate since 22.11.2026 (own thought, no external traces).
 - `general` — fallback/editorial profile for projects without a stronger domain-specific profile.
 
 ## Eligible rotation

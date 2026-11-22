@@ -149,3 +149,7 @@ jobs:
       - name: Run evidence profile override tests
         shell: bash
         run: python3 tools/research/test_profile_override.py
+
+      - name: Run own-system profile tests
+        shell: bash
+        run: python3 tools/research/test_own_system_profiles.py

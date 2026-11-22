@@ -1,6 +1,6 @@
 # Knowledge Expansion & Multilingual Research Loop
 
-Status: V3.2  
+Status: V3.2.1  
 Control Plane: `kueper-ecosystem`
 
 ## Zweck
@@ -107,6 +107,14 @@ Discovery darf das Profil je Gap über `evidence_profile_override` wählen (List
 Seit 18.11.2026 hat Mishkenaz ein eigenes Evidenzprofil. Thomas: „Mishkenaz ist eine fiktive Sprache aus meinen Romanen, die im Baumeisteruniversum spielen, gehört weder zu his noch wirklich zu sci, wobei ich versucht habe, alles wissenschaftlich korrekt aufzubauen.“ Anlass: RES-20261111-7B166CCE scheiterte im Profil `historical-linguistic`, das Belege und Rekonstruktion realer Sprachen erwartet.
 
 Das Profil verlangt wie OTA eine Claim-Klassifikation vor der Recherche (`R`, `T`, `H`, `S`, `F`, `W`, `R-Anker`, `OFFEN`) und eine Gegenbefundprüfung (Abschnitt `Aktualität und Widerspruchsprüfung`). Extern geprüft werden nur die realen linguistischen Anker – Typologie, Phonetik, Lautwandel, Sprachkontakt, Psycholinguistik, Relativitäts- und Effabilitätsforschung, die historischen Ausgangssprachen. Formen und Regeln von Mishkenaz sind Werk-Setzung (`W`): Die Recherche sagt nur, ob eine Gestaltung typologisch verbreitet, selten oder unbelegt ist, und trennt Design-Entscheidungen von empirisch belegten Wirkungen. Mindestwerte wie bei `historical-linguistic` (0,68; drei Quellen, zwei Domains, drei URLs); starke Quellentypen sind `peer-reviewed`, `scholarly-grammar`, `academic-corpus`, `typological-database` und `academic-publisher`.
+
+## Eigene Denksysteme: `philosophy-own-system` und Lockerung bei `conlang-scientific`
+
+Seit 22.11.2026 gilt für Omnizedenz und Mishkenaz kein Pflicht-Gate für starke externe Quellentypen mehr. Thomas: „Omnizedenz ist ja ein Sonderfall, zwangsweise gibt es da keine anderen Spuren als unsere eigenen, da es wie Mishkenaz meine Gedanken sind, also müssen wir es für Omnizedenz und Mishkenaz lockern.“ Anlass: RES-20261122-63706289 und mehrere Omnizedenz-Einträge davor scheiterten an „philosophy-comparative lacks a strong source type marker“.
+
+- Omnizedenz bekommt das eigene Profil `philosophy-own-system` (Kopie von `philosophy-comparative`, aber `require_strong_source: false`). Contracomology bleibt bei `philosophy-comparative`.
+- `conlang-scientific` (Mishkenaz) behält Claim-Klassifikation, Gegenbefundprüfung und Mindestwerte, verlangt aber keinen starken Quellentyp mehr.
+- In beiden Profilen ist der eigene Werktext (`own-system-text`, gepinnter Stand) die Primärquelle für System-, Werk- und Kanonaussagen; das Fehlen externer Spuren ist kein Mangel. Externe Literatur dient als Vergleich, Kontext, Prämisse oder Einwand, nie als Bestätigung. Mindestzahl an Quellen, Domains und URLs sowie der Status non-canonical bleiben unverändert.
 
 ## Reale wissenschaftliche E-Papers: `kueper.com` / `KUE-SCI`
 

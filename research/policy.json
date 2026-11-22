@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "schema_version": "1.6.0",
+  "schema_version": "1.7.0",
   "target_repository": "thomaspeterkueper/kueper-knowledge-graph",
   "candidate_path": "research/candidates",
   "default_languages": [
@@ -113,7 +113,7 @@
         "de",
         "en"
       ],
-      "evidence_profile": "philosophy-comparative"
+      "evidence_profile": "philosophy-own-system"
     },
     {
       "id": "contracomology",
@@ -318,6 +318,7 @@
       "minimum_domains": 2,
       "minimum_urls": 3,
       "preferred_source_types": [
+        "own-system-text",
         "peer-reviewed",
         "scholarly-grammar",
         "academic-corpus",
@@ -326,13 +327,14 @@
         "primary-historical-source"
       ],
       "strong_source_markers": [
+        "own-system-text",
         "peer-reviewed",
         "scholarly-grammar",
         "academic-corpus",
         "typological-database",
         "academic-publisher"
       ],
-      "require_strong_source": true,
+      "require_strong_source": false,
       "require_claim_classification": true,
       "require_conflict_check": true,
       "claim_classes": {
@@ -345,7 +347,8 @@
         "R-Anker": "Statement about the conlang directly anchored to a real-world linguistic claim. Verify the real anchor independently while preserving the design layer.",
         "OFFEN": "Explicitly unresolved question. Preserve as open unless strong evidence resolves the external part."
       },
-      "scout_guidance": "Mishkenaz is a constructed fictional language from the Baumeister novels, deliberately built to be scientifically sound; it is neither a historical language nor itself an object of empirical science. Classify the claim before searching. Research only the real linguistic anchors (typology, phonetics, sound change, language contact, psycholinguistics, relativity and effability research, the historical source languages it draws on). Never present the conlang's forms or rules as attested data, and never use external search to validate F or W. For every W claim say whether the design is typologically common, rare or unattested, and separate design decisions from empirically established effects of grammar on thought or speech. Surface serious counterevidence and contested positions."
+      "scout_guidance": "Mishkenaz is a constructed fictional language from the Baumeister novels, deliberately built to be scientifically sound; it is neither a historical language nor itself an object of empirical science. Classify the claim before searching. Research only the real linguistic anchors (typology, phonetics, sound change, language contact, psycholinguistics, relativity and effability research, the historical source languages it draws on). Never present the conlang's forms or rules as attested data, and never use external search to validate F or W. For every W claim say whether the design is typologically common, rare or unattested, and separate design decisions from empirically established effects of grammar on thought or speech. Surface serious counterevidence and contested positions.",
+      "own_system_primary_source": "Thomas, 22.11.2026: Omnizedenz und Mishkenaz sind seine eigenen Gedanken – zwangsläufig gibt es keine anderen Spuren als die eigenen. Die eigenen Werktexte (Repository am gepinnten Stand) sind deshalb die Primärquelle für alle System-, Werk- und Kanonaussagen; das Fehlen externer Spuren ist erwartbar und kein Mangel. Externe Literatur dient als Vergleich, Kontext, Prämisse oder Einwand, nicht als Bestätigung."
     },
     "worldbuilding-scientific": {
       "description": "Real-world plausibility research for fictional settings while preserving the canon/evidence boundary.",
@@ -390,6 +393,31 @@
       ],
       "require_strong_source": true,
       "scout_guidance": "Use primary philosophical/theological texts and serious scholarship. Separate textual/historical fact, scholarly interpretation, comparative analogy and KUEPER-system claim. Metaphysical propositions are not validated merely by source count; report them as philosophical positions unless they make independently testable empirical claims."
+    },
+    "philosophy-own-system": {
+      "description": "Omnizedenz: eigenes philosophisches System von Thomas Küper. Primärquelle ist der eigene Werktext; externe Philosophie und Fachliteratur dienen als Vergleich, Kontext und Einwand. Kein Pflicht-Gate für starke externe Quellentypen.",
+      "minimum_evidence_score": 0.65,
+      "minimum_sources": 3,
+      "minimum_domains": 2,
+      "minimum_urls": 3,
+      "preferred_source_types": [
+        "own-system-text",
+        "primary-philosophical-text",
+        "scholarly-edition",
+        "peer-reviewed",
+        "academic-reference",
+        "academic-publisher"
+      ],
+      "strong_source_markers": [
+        "own-system-text",
+        "primary-philosophical-text",
+        "scholarly-edition",
+        "peer-reviewed",
+        "academic-reference"
+      ],
+      "require_strong_source": false,
+      "scout_guidance": "Omnizedenz is Thomas Küper's own philosophical system; there are necessarily no external traces of it besides his own texts. Treat the pinned source text as the primary source for every system claim and label such sources 'own-system-text'. Use external philosophy and scholarship only as comparison, context, premise or objection – never as confirmation, and never report missing external attestation as a defect. Separate system claim, scholarly position, comparative analogy and open question. Metaphysical propositions are not validated by source count.",
+      "own_system_primary_source": "Thomas, 22.11.2026: Omnizedenz und Mishkenaz sind seine eigenen Gedanken – zwangsläufig gibt es keine anderen Spuren als die eigenen. Die eigenen Werktexte (Repository am gepinnten Stand) sind deshalb die Primärquelle für alle System-, Werk- und Kanonaussagen; das Fehlen externer Spuren ist erwartbar und kein Mangel. Externe Literatur dient als Vergleich, Kontext, Prämisse oder Einwand, nicht als Bestätigung."
     },
     "ota-archive-evidence": {
       "description": "Evidence profile for OTA documents that may mix real-world evidence, theory, speculation, work-setting and fictional canon.",
