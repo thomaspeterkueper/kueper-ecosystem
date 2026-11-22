@@ -1,0 +1,39 @@
+{
+  "id": "RES-20261122-4B1B62FF",
+  "status": "queued",
+  "created": "2026-11-22T11:41:46+00:00",
+  "source_project": "omnizedenz",
+  "source_repository": "thomaspeterkueper/omnizedenz.org",
+  "source_path": "src/pages/werkstatt.astro",
+  "source_ref": "ec88b7299b212961299629ff478d6529aa6ff661",
+  "source_blob_sha": "3af912cf305f30d7b862980fc3f5e3a35afff45b",
+  "title": "Von der Ontologie zur Norm: Trägt die „normative Brücke“ der Resonanzethik, oder bleibt die Spielraumregel eine Setzung?",
+  "question": "Die Werkstatt sagt ausdrücklich: „Aus der Tatsache, dass Menschen verbunden sind, folgt nicht automatisch eine bestimmte Pflicht. Wir müssen zusätzlich begründen, warum und wie wir den Spielraum anderer schützen sollen“ – und verlangt eine Prüfung „ohne naturalistischen Fehlschluss“. Zugleich fungiert die negative Mindestregel („Handle nicht so, dass dein Spielraum auf der dauerhaften Zerstörung der Fähigkeit anderer beruht, eigenen Spielraum zu bilden“) als ethischer Prüfbegriff. Zu prüfen ist, welche metaethische Struktur diesen Übergang tragen kann: Ist die Regel konstruktivistisch (Korsgaard, Rawls, Scanlon), recognitionstheoretisch (Honneth), capability-normativ (Sen, Nussbaum), rationalistisch (Gewirth, Raz) oder bloß stipulativ? Welche Rolle spielen Humes Sein-Sollen-Problem, Moores naturalistischer Fehlschluss und Mackies Queerness-Einwand? Lässt sich „Spielraum“ als normativ grundlegendes Gut begründen, ohne ihn zirkulär zu definieren, und welche Pflichten folgen daraus für Abwesende, Institutionen und nicht-menschliche Betroffene? Welche Formulierungen auf der öffentlichen Seite behaupten eine Ableitung, die tatsächlich eine eigenständige moralphilosophische Entscheidung ist?",
+  "why_now": "Der Abgleich vom 15. November 2026 (OMNI-07) und die Werkstatt nennen die normative Brücke als offene Aufgabe, während die Startseite eine „aus der Omnizedenz-Ontologie entwickelte“ Ethik ankündigt. Diese Spannung ist die zentrale Begründungslücke der Resonanzethik: Ohne Klärung bleibt unklar, ob die Ethik eigenständig begründet oder nur ontologisch eingekleidet ist.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "H",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Metaethik und normative Ethik: Sein-Sollen-Problem (Hume), naturalistischer Fehlschluss (Moore), moralischer Realismus/Antirealismus (Mackie), Konstruktivismus (Korsgaard, Rawls, Scanlon), Recognition (Honneth), Capability-Normativität (Sen, Nussbaum), Reasons-Ansätze (Raz, Gewirth).",
+  "publication_route_hint": null,
+  "project_weight": 0.65,
+  "relevance_score": 0.9125,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20261019-9E0185A4",
+    "RES-20261018-4B47CAEA"
+  ],
+  "novelty_reason": "Der frühere Spielraum-Auftrag vergleicht Begriffe, Operationalisierung und Neuetikettierung; der Auftrag zu künftigen Betroffenen prüft Pflichten in einem Anwendungsfall. Keiner untersucht, durch welche metaethische Struktur relationale Tatsachen überhaupt normative Verbindlichkeit erlangen, ob die negative Mindestregel begründet oder stipuliert ist und wie der ausdrücklich benannte naturalistische Fehlschluss vermieden werden kann. Das ist die allgemeine Begründungsfrage, nicht eine weitere Anwendung.",
+  "fingerprint": "4b1b62ff84cd9c68"
+}
