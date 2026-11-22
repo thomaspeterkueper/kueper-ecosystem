@@ -1,6 +1,6 @@
 {
   "id": "RES-20261122-4FB6F525",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-22T12:38:56+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -41,5 +41,7 @@
     "RES-20261117-823533B6"
   ],
   "novelty_reason": "Kein Follow-up, sondern ein angrenzender, eigenständiger Prüfgegenstand: RES-20261115-DA2529FB prüft m²/Person und Beleuchtungsleistung des Pflanzenmoduls, RES-20261117-823533B6 die Nahrungsmasse und die 30-Tage-Reserve für 497 Personen. Beide behandeln Pro-Kopf-Verbrauch, nicht die Skalierung von ECLSS-Kernhardware (Elektrolyse, CO₂-Abscheidung, Wasseraufbereitung, Redundanz) über 2 bis 200 Personen; genau diese Skalierungsfunktion ist in keinem früheren Topic geprüft und wird hier erstmals gegen ISS-, Testbett- und Analogdaten gehalten.",
-  "fingerprint": "4fb6f5254153538f"
+  "fingerprint": "4fb6f5254153538f",
+  "updated_at": "2026-11-22T12:58:46+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/322"
 }
