@@ -111,7 +111,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0092-2026-DE | Fast Radio Bursts — Baryonenverteilung, Feedback und Ma | HOFFENR |  | offen |
 | OTA-SCI-0093-2026-DE | Standard-Sirenen — Umgebungsbeschleunigung als systemat | HOFFENR |  | offen |
 | OTA-SCI-0094-2026-DE | Lokale Zustandsrekonstruktion und H0 — TRGB-Distanzleit | HOFFENR |  | offen |
-| OTA-SCI-0095-2026-DE | Galaktische zentrale Oberflächendichte — emergente Grav | HOFFENR |  | geprüft 2026-11-20 – Teile nach KUE (§1–4), AVI-Teil bleibt; EXT-OTA-KUE-20261120-002, Quellen/Kürzung OTA-REQ-20261120-002 |
+| OTA-SCI-0095-2026-DE | Galaktische zentrale Oberflächendichte — emergente Grav | HOFFENR |  | geprüft 2026-11-20 – Teile nach KUE (§1–4), AVI-Teil bleibt; EXT-OTA-KUE-20261120-002, Quellen/Kürzung OTA-REQ-20261120-002 – umgesetzt 2026-11-22 (v1.2, KUE-SCI-0215) |
 | OTA-SCI-0096-2026-DE | Magnetobiologie künstlicher Habitate — Hypomagnetfeld,  | HOFFENRT |  | offen |
 | OTA-SCI-0098-2026-DE | Orbitaler Quantentest des schwachen Äquivalenzprinzips  | R |  | offen |
 | OTA-SCI-0099-2026-DE | Ausschluss des generalisierten Károlyházy-Dekohärenzmod | NULLR |  | offen |
