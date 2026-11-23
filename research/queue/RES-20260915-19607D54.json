@@ -1,6 +1,6 @@
 {
   "id": "RES-20260915-19607D54",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-15T09:02:11+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -48,5 +48,27 @@
   },
   "fingerprint": "19607d5477fd3109",
   "updated_at": "2026-09-15T09:09:20+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/121"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/121",
+  "validated_at": "2026-11-23T16:25:39+00:00",
+  "validation_summary": "Der Kandidat ist quellengestützt und überwiegend belastbar. Die meisten realen Anker halten (Existenz von Mars-Lavaröhren, Strahlungsschutz- und Temperaturstabilitätslogik, 98 % Wasserrecycling, O2-Elektrolyse, 3–22 min Erd-Komm). Zwei konkrete Korrekturen sind in OTA-ORG-0002-2091-DE angezeigt: (1) KN-01 behauptet explizit [R], die 8-m-Korridore entsprächen realen Mars-Lavaröhren-Messungen; das ist durch Primärdaten falsifiziert (Skylight-Durchmesser 100–252 m; Kollapsketten-Nebenachsen 200–400 m, Konferenzabstract). (2) Die Klammerzusätze „geothermische Heizung/Aktivität“ in den Sektionen IV/V sind als natürliche Mechanismen bei 820 m bzw. 1.200–1.800 m physikalisch nicht tragfähig (bei 22 ± 1 mW/m² und 10–15 K/km etwa −55 bis −51 °C bei 820 m; 22 °C erforderte ~104 K/km); die 70-%-Geothermie ist als [R] nicht verteidigbar. Die Temperaturwerte selbst sind fiktionale Werk-Setzung und bleiben zulässig. Die Tiefentabelle ist als [F] zulässig, sollte aber eine Kuratornote zu den real beo",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261123-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261123-005",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261123-006",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
