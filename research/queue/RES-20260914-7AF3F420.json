@@ -1,6 +1,6 @@
 {
   "id": "RES-20260914-7AF3F420",
-  "status": "validation-error",
+  "status": "consumer-requests",
   "created": "2026-09-14T09:18:54+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -48,5 +48,20 @@
   "updated_at": "2026-09-14T09:27:43+00:00",
   "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/118",
   "validated_at": "2026-11-22T13:34:37+00:00",
-  "validation_error": "GitHub HTTP 403: {\n\t\"message\": \"API rate limit exceeded for user ID 259063969. If you reach out to GitHub Support for help, please include the request ID 4C34:E29A8:188F670:4E1E765:6B02EF6D and timestamp 2026-11-22 13:34:37 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https:\\/\\/docs.github.com\\/en\\/site-policy\\/github-terms\\/github-terms-of-service)\",\n\t\"documentation_url\": \"https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api#rate-limiting\",\n\t\"status\": \"403\"\n}\n"
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261122-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261122-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ],
+  "validation_summary": "Claude-Nachtrag 23.11.2026 (Lauf 2): Der Canon-Conflict-Lauf vom 22.11. hat zwei Requests in OTA angelegt (EXT-KG-OTA-20261122-001 Namensherkunft Cuancoá/Uúba in OTA-SCI-0007, conflict; -002 Gaia-DR3-Entfernung und Periode, enrichment) und brach danach mit GitHub-HTTP-403 (API-Rate-Limit) ab, bevor Queue-Status und Assessment geschrieben wurden; ein möglicher dritter Request ging verloren. Status hier nachgetragen. Die R-Anker-Befunde zu OTA-RED-0003 selbst ([F, W]: Proteus als 'nächste Übereinstimmung', r = 0,9731 aus einem Wertepaar, Seismographen-Passband) sind eine Kanonfrage und wurden nicht als Request angelegt.",
+  "validation_error_previous": "GitHub HTTP 403: {\n\t\"message\": \"API rate limit exceeded for user ID 259063969. If you reach out to GitHub Support for help, please include the request ID 4C34:E29A8:188F670:4E1E765:6B02EF6D and timestamp 2026-11-22 13:34:37 UTC. For more on scraping GitHub and how it may affect your rights, please r"
 }
