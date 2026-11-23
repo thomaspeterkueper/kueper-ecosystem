@@ -6755,10 +6755,11 @@
         "fileId": "1Uh0OICP_Kysz5jPtKbPftJeGMhwgPych",
         "title": "OTA-KOM-0002-2026-DE-v1_2.docx",
         "folder": "OTA (alt, bis Okt. 2026)/KOM",
-        "status": "nurDrive",
-        "beschreibung": "Duett-Fassung v1.2 (Partitur, Harmonik, KN-01–04); GitHub nur v1.0",
-        "checkedAt": "2026-10-31",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261031-002.md"
+        "status": "doppelt",
+        "beschreibung": "Duett-Fassung v1.2 (Partitur, Harmonik, KN-01–04); am 23.11.2026 auf GitHub übernommen",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-KOM-0002-2026-DE.md (v1.2)",
+        "checkedAt": "2026-11-23",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261031-002.md"
       },
       {
         "fileId": "1PBmCDmfbGw9HlBo9nofm8Ri0MIC_VHS9",
@@ -7299,8 +7300,9 @@
         "folder": "_GITHUB/overtime-archive",
         "status": "nurDrive",
         "beschreibung": "Frühere Fassung von OTA-SCI-0093 (Standard-Sirenen, Liodis et al.); weitgehend auf GitHub enthalten, nur in Drive: Kontrollpunkt AVI-CONTROL CSC-01 (sechs Schritte), Y/Q/ξ-Notation, kurze OTA-Bewertung.",
-        "checkedAt": "2026-11-22",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261122-001.md"
+        "checkedAt": "2026-11-23",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung in OTA-SCI-0093 (Abschnitt „Fassungen“) als Variante mit Link vermerkt",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261122-001.md"
       },
       {
         "fileId": "1idy6mUMrkSi_f_vEW2l_xNN2WCmqildY",
@@ -7353,7 +7355,8 @@
         "status": "nurDrive",
         "beschreibung": "Englische Fassung „Superionic Gold Hydride as Resonance Anchor“; auf GitHub nur DE",
         "checkedAt": "2026-11-23",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261123-003.md"
+        "entscheidung": "EN v1.0 älter als DE v1.1; GitHub-Fassung gültig, EN in OTA-SCI-0017-2025-DE (Abschnitt „Sprachfassungen“) als Variante mit Link vermerkt",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261123-003.md"
       }
     ],
     "movedFolders": [
