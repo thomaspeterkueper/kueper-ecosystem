@@ -6305,6 +6305,236 @@
         "status": "doppelt",
         "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0016-2150-DE.md (Textabgleich 96 %, Rest Tabellenzellen)",
         "checkedAt": "2026-11-23"
+      },
+      "1N2VNEp8kVPYRi1zaNqdedgHHXFr5j-Rp": {
+        "title": "RECHERCHE_Mars_Kolonie_Systeme_Energie_Thermal_Habitat.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/research/mars-kolonie-497/teil-1-energie-thermal-habitat.md",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261030-002.md"
+      },
+      "1raYwfl-h5FCoo7CbWQWhMkx3FV6IFEX5": {
+        "title": "RECHERCHE_Mars_Kolonie_Systeme_Teil2_Medical_Werkstatt_Fahrzeuge_Wege_Trassen.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/research/mars-kolonie-497/teil-2-medical-werkstatt-fahrzeuge-wege-trassen.md",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261030-002.md"
+      },
+      "1fSeWXX7hvSRnkdr23h50vNf5qiTkD3rO": {
+        "title": "OTA-INDEX-RKF-2026 (1).md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-INDEX-RKF-2026-DE.md (Abschnitt 8 ergänzt)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261030-003.md"
+      },
+      "1CLcracvzhNCmuU3kqlCwnkWlK-aLA6vj": {
+        "title": "Yamamoto_Zenodo_Datenanalyse.md",
+        "folder": "OTA (alt, bis Okt. 2026)",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0041-2026-DE.md (v1.1 + Anhang A)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261030-004.md"
+      },
+      "1Uh0OICP_Kysz5jPtKbPftJeGMhwgPych": {
+        "title": "OTA-KOM-0002-2026-DE-v1_2.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/KOM",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-KOM-0002-2026-DE.md (v1.2 übernommen)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261031-002.md"
+      },
+      "1DmmmDMnAYVIQnigbSoGYc2n3qUmzozr5": {
+        "title": "OTA-CUL-0013-2147-EN.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/CUL",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-CUL-0013-2147-EN.md (Drive variant)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261101-002.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "1dVYbc6w5OSCcOTWznl3XJNxb0_mzyKRB": {
+        "title": "OTA-HIS-0007-1200BCE-DE (1).md",
+        "folder": "OTA (alt, bis Okt. 2026)/HIS",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-HIS-0007-1200BCE-DE.md (Drive-Variante)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261103-001.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "1_l9cgiUluJHGlwXOEuvVDTppvkfyFvi_": {
+        "title": "OTA-HIS-0006-9500BCE-DE (1).md",
+        "folder": "OTA (alt, bis Okt. 2026)/HIS",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-HIS-0006-9500BCE-DE.md (Drive-Variante)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261103-001.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "1Hc-ZEsvStPIy5fhdzO1f92kmTZSjYeKp": {
+        "title": "OTA-BIO-0006-2025-DE-v1.2.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/BIO",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-BIO-0006-2025-DE.md (Drive-Varianten)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "1jsIYLS1kFCzCsK0XvezfOKtjmPZWUgiv": {
+        "title": "OTA-BIO-0007-2025-DE (2).docx",
+        "folder": "OTA (alt, bis Okt. 2026)/BIO",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-BIO-0007-2025-DE.md (v1.1 übernommen)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md"
+      },
+      "1NxsNKx2kA5m4e-ckPsMVMoKULWYUGkl9": {
+        "title": "OTA-BIO-0007-2025-DE (1).docx",
+        "folder": "OTA (alt, bis Okt. 2026)/BIO",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-BIO-0007-2025-DE.md (v1.1, textgleiches Exemplar)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md"
+      },
+      "1nsNRDC3kw0NFjjjzYzXZjdVMKzQVIoE2": {
+        "title": "OTA-BIO-0010-2025-DE-v12.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/BIO",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-BIO-0010-2025-DE.md (Drive-Variante)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "1q8jdMihM9JyLzmUpHny6eMb8VLoOWk3d": {
+        "title": "OTA-BIO-0011-2091-DE (1).docx",
+        "folder": "OTA (alt, bis Okt. 2026)/BIO",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-BIO-0006-2025-DE.md (Drive-Varianten)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "1i_T1mp2oJjYWBDpe7_P1th_Nv_kr0xDb": {
+        "title": "OTA-BIO-0015-2091-DE-v1.1.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/BIO",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-BIO-0015-2091-DE.md (Drive-Varianten)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "1HCMNwTdidcHJ8T0dr58x3QwivhKx2UPa": {
+        "title": "OTA-BIO-0015-2091-DE-v1.2.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/BIO",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-BIO-0015-2091-DE.md (Drive-Varianten)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "1OdVF2tKhUcscKcdTAQhPJPtlWWbW4Fa8": {
+        "title": "OTA-BIO-0027-2026-DE-v1_2.md",
+        "folder": "OTA (alt, bis Okt. 2026)/BIO",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-BIO-0027-2026-DE.md (v1.2 übernommen)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261105-001.md"
+      },
+      "1kp_lWzXWyzal-V6GG8pHzziA2GopWP8T": {
+        "title": "OTA_BIO_DIANA_BELLMANN.md",
+        "folder": "OTA (alt, bis Okt. 2026)/BIO",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-BIO-0004-2096-DE.md (Drive-Variante)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261105-001.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "13033QtfiunuuhrWHsV_5kw6t2YbSu8Ts": {
+        "title": "OTA-FND-0021-2026-DE-v1_0_1.md",
+        "folder": "OTA (alt, bis Okt. 2026)/FND",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-FND-0027-2026-DE.md (v1.0.1 übernommen)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261107-001.md"
+      },
+      "1iHyH7-aX4Hssuj07-LYfi4epqksIJFwF": {
+        "title": "OTA-SCI-0041-2026-DE-v1_1.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/SCI",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0041-2026-DE.md (v1.1 übernommen)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261108-001.md"
+      },
+      "17YFMNCcMOo9PMmPa8YprPPCKZ2lXmat3": {
+        "title": "OTA-SCI-0048-2031-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/SCI",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0048-2031-DE.md (Drive-Variante)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261108-001.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "134A-EAlKTB7XPdg8aIeQhXwtF3Hp__95": {
+        "title": "OTA-SCI-0038-2026-EN-v1_3.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/SCI",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0038-2026-EN.md (Drive variant)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261108-001.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "1esYC8p9TUcej8fmowVx_ggeDpnNmZeHukZdMVNSGDIs": {
+        "title": "OTA-SCI-0093-2026-DE — Umgebungsbeschleunigung als Systematik der Standard-Sirenen-Kosmologie",
+        "folder": "_GITHUB/overtime-archive",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0093-2026-DE.md (Abschnitt „Fassungen“)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261122-001.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "1X5wVgp_A3IMBuMT8zvxLTBnkiO4494S-": {
+        "title": "OTA_SCI_0018_GENDER_VOICE_LONGEVITY.md",
+        "folder": "OTA (alt, bis Okt. 2026)/SCI",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0008-2096-DE.md (Drive-Variante)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261123-002.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "1WhmoJzwyZyO-1GC9Eadoo02c_U4XCgj4": {
+        "title": "OTA-SCI-0017-2025-EN.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/SCI",
+        "status": "variante",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0017-2025-DE.md (Abschnitt „Sprachfassungen“)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261123-003.md",
+        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
       }
     },
     "onlyInDrive": [
@@ -6554,42 +6784,6 @@
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261030-001.md"
       },
       {
-        "fileId": "1N2VNEp8kVPYRi1zaNqdedgHHXFr5j-Rp",
-        "title": "RECHERCHE_Mars_Kolonie_Systeme_Energie_Thermal_Habitat.md",
-        "folder": "OTA (alt, bis Okt. 2026)",
-        "status": "nurDrive",
-        "beschreibung": "Rohrecherche Teil 1 (Energie, Radiatoren, Habitatvolumen) für Tharsis Hub mit 497 Personen; Werte und Quellen nicht im Repo.",
-        "checkedAt": "2026-10-30",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261030-002.md"
-      },
-      {
-        "fileId": "1raYwfl-h5FCoo7CbWQWhMkx3FV6IFEX5",
-        "title": "RECHERCHE_Mars_Kolonie_Systeme_Teil2_Medical_Werkstatt_Fahrzeuge_Wege_Trassen.md",
-        "folder": "OTA (alt, bis Okt. 2026)",
-        "status": "nurDrive",
-        "beschreibung": "Rohrecherche Teil 2 (Medical Center, Werkstatt, Fahrzeuge, Wege, Trassen) für Tharsis Hub; nicht im Repo.",
-        "checkedAt": "2026-10-30",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261030-002.md"
-      },
-      {
-        "fileId": "1fSeWXX7hvSRnkdr23h50vNf5qiTkD3rO",
-        "title": "OTA-INDEX-RKF-2026 (1).md",
-        "folder": "OTA (alt, bis Okt. 2026)",
-        "status": "nurDrive",
-        "beschreibung": "Neuere RKF-Index-Fassung mit zusätzlichem Abschnitt zu OTA-FND-0016 und erweitertem Diagramm, die im Repo-Index fehlen.",
-        "checkedAt": "2026-10-30",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261030-003.md"
-      },
-      {
-        "fileId": "1CLcracvzhNCmuU3kqlCwnkWlK-aLA6vj",
-        "title": "Yamamoto_Zenodo_Datenanalyse.md",
-        "folder": "OTA (alt, bis Okt. 2026)",
-        "status": "nurDrive",
-        "beschreibung": "Quantitative Zenodo-Daten- und Geodynamo-Code-Analyse zu Yamamoto et al. 2026, die OTA-SCI-0041 nur ankündigt.",
-        "checkedAt": "2026-10-30",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261030-004.md"
-      },
-      {
         "fileId": "1ib6gnAd56AlCZlvvq7UA-u8wOSyvog1U",
         "title": "Polare_Kohaerenz_im_Chi-Feld_2187.docx",
         "folder": "OTA (alt, bis Okt. 2026)",
@@ -6752,16 +6946,6 @@
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261031-001.md"
       },
       {
-        "fileId": "1Uh0OICP_Kysz5jPtKbPftJeGMhwgPych",
-        "title": "OTA-KOM-0002-2026-DE-v1_2.docx",
-        "folder": "OTA (alt, bis Okt. 2026)/KOM",
-        "status": "doppelt",
-        "beschreibung": "Duett-Fassung v1.2 (Partitur, Harmonik, KN-01–04); am 23.11.2026 auf GitHub übernommen",
-        "fundstelle": "overtime-archive.org/src/content/documents/OTA-KOM-0002-2026-DE.md (v1.2)",
-        "checkedAt": "2026-11-23",
-        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261031-002.md"
-      },
-      {
         "fileId": "1PBmCDmfbGw9HlBo9nofm8Ri0MIC_VHS9",
         "title": "OTA-MASTERPLAN-2091.docx",
         "folder": "OTA (alt, bis Okt. 2026)",
@@ -6861,15 +7045,6 @@
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261101-002.md"
       },
       {
-        "fileId": "1DmmmDMnAYVIQnigbSoGYc2n3qUmzozr5",
-        "title": "OTA-CUL-0013-2147-EN.docx",
-        "folder": "OTA (alt, bis Okt. 2026)/CUL",
-        "status": "nurDrive",
-        "beschreibung": "Langfassung Ceres-Dialog Demir vs. Kaelen – Part IV: Aftermath und KN-0.4 fehlen in GitHub v2.0.",
-        "checkedAt": "2026-11-01",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261101-002.md"
-      },
-      {
         "fileId": "1GIL1xhaL77a36D9jrnbjLCKoY82rzdf3",
         "title": "OTA-ORG-0005-2090-DE-updated.docx",
         "folder": "OTA (alt, bis Okt. 2026)/ORG",
@@ -6930,16 +7105,6 @@
         "hinweis": "Nicht auf GitHub: Nahal Hemar, Mira-Saha-Avaz und Hyksos kommen in keinem Repo vor. KUE-HIS-0001-2026 auf kueper.com ist ein anderes Dokument (über Vermessung ohne Laser und GPS)."
       },
       {
-        "fileId": "1dVYbc6w5OSCcOTWznl3XJNxb0_mzyKRB",
-        "title": "OTA-HIS-0007-1200BCE-DE (1).md",
-        "folder": "OTA (alt, bis Okt. 2026)/HIS",
-        "status": "nurDrive",
-        "beschreibung": "Andere, eigenständige Fassung von OTA-HIS-0007-1200BCE-DE ('Die Katastrophe von 1200 BCE und die Wissens-Diaspora', Epistemologie 50/30/15/5). Sie ist anders gegliedert und enthält Abschnitte, die auf GitHub fehlen: epistemologische Grenzziehung, Zahlen zum Bevölkerungsrückgang, dokumentierte Migrationen, Chronologie von Göbekli Tepe bis zu den Seleukiden, Wissensfragmente (was überlebte und was verloren ging), Delphi als Synthese-Ort, narrative Integration (72-Hz-Carnyx) und offene Forschungsfragen.",
-        "checkedAt": "2026-11-03",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261103-001.md",
-        "hinweis": "Die GitHub-Datei src/content/documents/OTA-HIS-0007-1200BCE-DE.md entspricht der anderen Drive-Fassung (1yNo5mIg…). Diese Variante ist inhaltlich nur teilweise abgedeckt; Delphi und Wissens-Relais werden nur am Rand in OTA-KARTE-0003 erwähnt."
-      },
-      {
         "fileId": "10z56R1Bbfuc-Pvvcaw8G8cgh2OsdTCYa",
         "title": "OTA-HIS-0004-2026-DE-v1_0.md",
         "folder": "OTA (alt, bis Okt. 2026)/HIS",
@@ -6958,16 +7123,6 @@
         "checkedAt": "2026-11-03",
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261103-001.md",
         "hinweis": "Auf GitHub gibt es nur OTA-HIS-0003-2087-DE (14 Tote von Sektor-7), was ein anderes Thema ist. 'NOVA CORP', 'Letzter Wächter', 'Logos ist universal' kommen in keinem Repo vor; K'ragoss/Lain Thorn stehen nur in der Timeline-route.ts (kueper-ecosystem) und als Stichwort in OTA-META-0002/0003."
-      },
-      {
-        "fileId": "1_l9cgiUluJHGlwXOEuvVDTppvkfyFvi_",
-        "title": "OTA-HIS-0006-9500BCE-DE (1).md",
-        "folder": "OTA (alt, bis Okt. 2026)/HIS",
-        "status": "nurDrive",
-        "beschreibung": "Alternative Fassung v1.0 des Göbekli-Tepe-Bridge-Dokuments ('Der Ur-Tempel und das Baumeister-Paradoxon'). Sie hat dieselbe Signatur und dasselbe Datum (2026-02-04) wie die GitHub-Fassung, ist aber ein anderer Text.",
-        "checkedAt": "2026-11-03",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261103-001.md",
-        "hinweis": "Die GitHub-Fassung src/content/documents/OTA-HIS-0006-9500BCE-DE.md ('Göbekli Tepe im Baumeister-Kontext', v1.0) behandelt Ur-Diaspora/Meeresspiegel, berechnete Infraschall-Frequenzen, T-Pfeiler-Akustik, Netzwerk-Chronologie und ein Frequenz-System. Nur in der Drive-Fassung stehen: §II Baumeister-Paradoxon (Tempel vor Landwirtschaft, 'Wo ist das Üben?'), §IV Ikonographie als Code (Tierarten↔Frequenzen), §V Versiegelung als Deaktivierung (Tabelle), §VII Transferrouten Levante/Anatolien (Jericho, Çatalhöyük), §VIII Narrative Integration (72 Hz) und §IX Offene Forschungsfragen. Die Themen überschneiden sich teilweise (Akustik, Versiegelung), die Abschnitte sind aber nicht deckungsgleich."
       },
       {
         "fileId": "1fGvqHzkb7ADTvwxIz_taBi3QVWzOmgjj",
@@ -6990,84 +7145,6 @@
         "hinweis": "Signaturkollision: OTA-BIO-0001-2025-DE ist auf GitHub Tobias Sebastian Graner"
       },
       {
-        "fileId": "1Hc-ZEsvStPIy5fhdzO1f92kmTZSjYeKp",
-        "title": "OTA-BIO-0006-2025-DE-v1.2.docx",
-        "folder": "OTA (alt, bis Okt. 2026)/BIO",
-        "status": "nurDrive",
-        "beschreibung": "Lena Kowalski v1.2: 72-FREQ-ECHO, fünf Ausfälle, eigene Bandzählung Generation Mars; GitHub hat nur v1.0 (archiviert, Nachfolger BIO-0036).",
-        "checkedAt": "2026-11-04",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md",
-        "hinweis": "unklar – bitte prüfen (überholter Generation-Mars-Zwischenstand)"
-      },
-      {
-        "fileId": "1jsIYLS1kFCzCsK0XvezfOKtjmPZWUgiv",
-        "title": "OTA-BIO-0007-2025-DE (2).docx",
-        "folder": "OTA (alt, bis Okt. 2026)/BIO",
-        "status": "nurDrive",
-        "beschreibung": "Marek Kowalski v1.1: Eltern-Lebensdaten 2035/2038 statt 1938/1942, 12 Hz statt 432 Hz (432 = 36 × 12); GitHub hat nur v1.0.",
-        "checkedAt": "2026-11-04",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md"
-      },
-      {
-        "fileId": "1NxsNKx2kA5m4e-ckPsMVMoKULWYUGkl9",
-        "title": "OTA-BIO-0007-2025-DE (1).docx",
-        "folder": "OTA (alt, bis Okt. 2026)/BIO",
-        "status": "nurDrive",
-        "beschreibung": "Marek Kowalski v1.1: Eltern-Lebensdaten 2035/2038 statt 1938/1942, 12 Hz statt 432 Hz; GitHub hat nur v1.0.",
-        "checkedAt": "2026-11-04",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md",
-        "hinweis": "textgleich mit OTA-BIO-0007-2025-DE (2).docx"
-      },
-      {
-        "fileId": "1nsNRDC3kw0NFjjjzYzXZjdVMKzQVIoE2",
-        "title": "OTA-BIO-0010-2025-DE-v12.docx",
-        "folder": "OTA (alt, bis Okt. 2026)/BIO",
-        "status": "nurDrive",
-        "beschreibung": "Keiko Nakamura v1.2 (Post-03:14-Ereignis): Ereignis-Chronologie 10.–12.09.2091, Post-Ereignis-Status, Zeugenbericht Rashid; GitHub hat v1.1.",
-        "checkedAt": "2026-11-04",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md",
-        "hinweis": "unklar – bitte prüfen (überholter Generation-Mars-Zwischenstand, Nachfolger BIO-0037)"
-      },
-      {
-        "fileId": "1q8jdMihM9JyLzmUpHny6eMb8VLoOWk3d",
-        "title": "OTA-BIO-0011-2091-DE (1).docx",
-        "folder": "OTA (alt, bis Okt. 2026)/BIO",
-        "status": "nurDrive",
-        "beschreibung": "Kurzprofil Lena Kowalski (01.01.2026) mit abweichenden Daten (Lena Yuki, geb. 2078, Mutter Yuki Tanaka-Kowalski † 2082, Bruder Viktor); inhaltlich durch BIO-0036 überholt.",
-        "checkedAt": "2026-11-04",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md",
-        "hinweis": "unklar – bitte prüfen; Signaturkollision: OTA-BIO-0011-2091-DE ist auf GitHub Haruka Nakamura"
-      },
-      {
-        "fileId": "1i_T1mp2oJjYWBDpe7_P1th_Nv_kr0xDb",
-        "title": "OTA-BIO-0015-2091-DE-v1.1.docx",
-        "folder": "OTA (alt, bis Okt. 2026)/BIO",
-        "status": "nurDrive",
-        "beschreibung": "Kaelen Voss v1.1: Korrektur Ceres-Oberfläche → Orbital-Habitat Piazzi-Lights (0,35 g), angepasste Physiologie; GitHub hat nur v1.0.",
-        "checkedAt": "2026-11-04",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md",
-        "hinweis": "Zwischenstand, durch v1.2 in Drive überholt"
-      },
-      {
-        "fileId": "1HCMNwTdidcHJ8T0dr58x3QwivhKx2UPa",
-        "title": "OTA-BIO-0015-2091-DE-v1.2.docx",
-        "folder": "OTA (alt, bis Okt. 2026)/BIO",
-        "status": "nurDrive",
-        "beschreibung": "Kaelen Asa Shiro – Das Gürtel-Kind, v1.2: Name Shiro statt Voss, neue Familie, Orbital-Habitat, Tripel-Shift, Gürtel-Kreol, IQ 156, politische Auswahl; GitHub hat nur v1.0, SCI-0025 nutzt schon den Namen Shiro.",
-        "checkedAt": "2026-11-04",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261104-001.md"
-      },
-      {
-        "fileId": "1OdVF2tKhUcscKcdTAQhPJPtlWWbW4Fa8",
-        "title": "OTA-BIO-0027-2026-DE-v1_2.md",
-        "folder": "OTA (alt, bis Okt. 2026)/BIO",
-        "status": "nurDrive",
-        "beschreibung": "Profil Mia Kowalski (Die Kette vom Hexenteich), Fassung v1.2: auf TEC-0035 v1.3 aktualisiert – Sättigungs-/Depletions-Stille, A-1-Grenze (Erzähler vs. erlebte Rede), Kap. 20–22 statt 20–24, erweiterte Querverbindungen (TEC-0036/0036b, SCI-0083/0085). GitHub hat nur v1.0 ohne diese Abschnitte.",
-        "hinweis": "Als Update von overtime-archive.org/src/content/documents/OTA-BIO-0027-2026-DE.md (v1.0 → v1.2) übernehmen.",
-        "checkedAt": "2026-11-05",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261105-001.md"
-      },
-      {
         "fileId": "1GVOE6edkWDnjI8ifm55cYR0CDzXMd7du",
         "title": "OTA-BIO-0021-2026-DE-v1_1.docx",
         "folder": "OTA (alt, bis Okt. 2026)/BIO",
@@ -7087,16 +7164,6 @@
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261105-001.md"
       },
       {
-        "fileId": "1kp_lWzXWyzal-V6GG8pHzziA2GopWP8T",
-        "title": "OTA_BIO_DIANA_BELLMANN.md",
-        "folder": "OTA (alt, bis Okt. 2026)/BIO",
-        "status": "nurDrive",
-        "beschreibung": "Frühe, ausführlichere Fassung des Profils Dr. Diana Bellmann (2061–2142) mit Familie (Kasper Voss, Kinder), Bellmann-Methode/Bellmann-Hayashi-Protokoll, Schubert-Anekdoten, Tagebucheintrag. Das GitHub-Profil OTA-BIO-0004-2096-DE ist eine andere Fassung ohne diese Inhalte.",
-        "hinweis": "Mit OTA-BIO-0004-2096-DE abgleichen; evtl. Konsistenz (Ort Olympus-Polis, Kasper Voss) prüfen.",
-        "checkedAt": "2026-11-05",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261105-001.md"
-      },
-      {
         "fileId": "1-OgRKZz3tUU2OXFtA8j8bs5qNp6eYc3T",
         "title": "OTA-FND-0020-2026-DE-v1_0.md",
         "folder": "OTA (alt, bis Okt. 2026)/FND",
@@ -7111,15 +7178,6 @@
         "folder": "OTA (alt, bis Okt. 2026)/FND",
         "status": "nurDrive",
         "beschreibung": "Trilinguale Ethikarchitektur der Sun-KI v1.1 ([F]/[R]-Deklaration, Markedness-Typologie, Omnizedenz-Semantics-Sketch). FND-0020 fehlt auf GitHub.",
-        "checkedAt": "2026-11-07",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261107-001.md"
-      },
-      {
-        "fileId": "13033QtfiunuuhrWHsV_5kw6t2YbSu8Ts",
-        "title": "OTA-FND-0021-2026-DE-v1_0_1.md",
-        "folder": "OTA (alt, bis Okt. 2026)/FND",
-        "status": "nurDrive",
-        "beschreibung": "Mishkenaz-Aktivierungssequenzen v1.0.1 (Slot-Korrekturen, kora_risk, Zustandsautomat). GitHub hat v1.0 als OTA-FND-0027; FND-0021 dort = Nalgae.",
         "checkedAt": "2026-11-07",
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261107-001.md"
       },
@@ -7232,15 +7290,6 @@
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261107-001.md"
       },
       {
-        "fileId": "1iHyH7-aX4Hssuj07-LYfi4epqksIJFwF",
-        "title": "OTA-SCI-0041-2026-DE-v1_1.docx",
-        "folder": "OTA (alt, bis Okt. 2026)/SCI",
-        "status": "nurDrive",
-        "beschreibung": "v1.1 mit Zenodo-Datenanalyse (348 Datenpunkte, Tests 1–4, 8-Panel-Abbildung); GitHub hat nur v1.0.",
-        "checkedAt": "2026-11-08",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261108-001.md"
-      },
-      {
         "fileId": "1oXkMicRHwSlUcwEStq0IpDwJIJ2L1TqX",
         "title": "OTA-SCI-0045-2026-DE-v1_1 (1).docx",
         "folder": "OTA (alt, bis Okt. 2026)/SCI",
@@ -7277,34 +7326,6 @@
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261108-001.md"
       },
       {
-        "fileId": "17YFMNCcMOo9PMmPa8YprPPCKZ2lXmat3",
-        "title": "OTA-SCI-0048-2031-DE.md",
-        "folder": "OTA (alt, bis Okt. 2026)/SCI",
-        "status": "unklar",
-        "beschreibung": "v1.0 ausführlicher als GitHub v1.2 (KN-03, RESONANZ-Zahlen, Fall Rada V., Raziel-Optionen); Kürzung evtl. gewollt.",
-        "checkedAt": "2026-11-08",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261108-001.md"
-      },
-      {
-        "fileId": "134A-EAlKTB7XPdg8aIeQhXwtF3Hp__95",
-        "title": "OTA-SCI-0038-2026-EN-v1_3.docx",
-        "folder": "OTA (alt, bis Okt. 2026)/SCI",
-        "status": "unklar",
-        "beschreibung": "Text auf GitHub, zusätzlich deutsche Kuratornotizen (⚑) und Metadaten-Tabelle, die auf GitHub fehlen.",
-        "checkedAt": "2026-11-08",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261108-001.md"
-      },
-      {
-        "fileId": "1esYC8p9TUcej8fmowVx_ggeDpnNmZeHukZdMVNSGDIs",
-        "title": "OTA-SCI-0093-2026-DE — Umgebungsbeschleunigung als Systematik der Standard-Sirenen-Kosmologie",
-        "folder": "_GITHUB/overtime-archive",
-        "status": "nurDrive",
-        "beschreibung": "Frühere Fassung von OTA-SCI-0093 (Standard-Sirenen, Liodis et al.); weitgehend auf GitHub enthalten, nur in Drive: Kontrollpunkt AVI-CONTROL CSC-01 (sechs Schritte), Y/Q/ξ-Notation, kurze OTA-Bewertung.",
-        "checkedAt": "2026-11-23",
-        "entscheidung": "GitHub-Fassung gültig; Drive-Fassung in OTA-SCI-0093 (Abschnitt „Fassungen“) als Variante mit Link vermerkt",
-        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261122-001.md"
-      },
-      {
         "fileId": "1idy6mUMrkSi_f_vEW2l_xNN2WCmqildY",
         "title": "OTA-FND-0027-2026-DE.docx",
         "folder": "OTA (alt, bis Okt. 2026)/FND",
@@ -7338,25 +7359,6 @@
         "beschreibung": "Magnetokalorische Materialien im Vergleich (Gd, La(Fe,Si)13, (Mn,Fe)2(P,Si)), [R] v1.0 (Aug. 2026); Signatur auf GitHub anders belegt",
         "checkedAt": "2026-11-23",
         "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261123-001.md"
-      },
-      {
-        "fileId": "1X5wVgp_A3IMBuMT8zvxLTBnkiO4494S-",
-        "title": "OTA_SCI_0018_GENDER_VOICE_LONGEVITY.md",
-        "folder": "OTA (alt, bis Okt. 2026)/SCI",
-        "status": "nurDrive",
-        "beschreibung": "Langfassung von „Gender, Voice, and Longevity“ (Bellmann 2096); GitHub OTA-SCI-0008-2096-DE kürzer, nur ~13 % Zeilenüberdeckung",
-        "checkedAt": "2026-11-23",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261123-002.md"
-      },
-      {
-        "fileId": "1WhmoJzwyZyO-1GC9Eadoo02c_U4XCgj4",
-        "title": "OTA-SCI-0017-2025-EN.docx",
-        "folder": "OTA (alt, bis Okt. 2026)/SCI",
-        "status": "nurDrive",
-        "beschreibung": "Englische Fassung „Superionic Gold Hydride as Resonance Anchor“; auf GitHub nur DE",
-        "checkedAt": "2026-11-23",
-        "entscheidung": "EN v1.0 älter als DE v1.1; GitHub-Fassung gültig, EN in OTA-SCI-0017-2025-DE (Abschnitt „Sprachfassungen“) als Variante mit Link vermerkt",
-        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261123-003.md"
       }
     ],
     "movedFolders": [
@@ -7418,7 +7420,7 @@
       }
     ],
     "remainingUncheckedApprox": 155,
-    "note": "Stand 2026-11-23: 'OTA (alt, bis Okt. 2026)/SCI' weiter bearbeitet – 25 Dateien geprüft: 21 doppelt (12 .md, 9 .docx), 4 nur in Drive (SCI-0084/0085 Magnetokalorik → EXT-ECO-OTA-20261123-001; Gender-Voice-Langfassung → -002; SCI-0017-EN → -003). Auffällig: GitHub OTA-SCI-0031-2024-DE.md hat „×“ als „—“ verstümmelt (z. B. Zeile 170 „~1,6—“). Restbestand SCI laut Liste noch u. a. SCI-0026-2048 (2×), 0018-60000BCE, 0015, 0014, 0010, 0009, 0004, 0008, 0012, 0007 (.docx); danach FND/TEC und weitere Serienordner. Hinweise: search_files liefert ohne Titelfilter nur 5 Treffer pro Seite; mit parentId = '<Ordner>' und \"title != '…'\"-Ausschlüssen der onlyInDrive-Titel kommt die ganze Restliste in einem Aufruf. download_file_content: .docx haben kein zentrales Verzeichnis – word/document.xml über den lokalen Header lesen (zlib raw deflate). Vergleich .md per Zeilenabdeckung inkl. Historie, .docx per 6-Wort-Schindeln. _Kann weg enthält rund 730 Einträge."
+    "note": "Stand 2026-11-23: 'OTA (alt, bis Okt. 2026)/SCI' weiter bearbeitet – 25 Dateien geprüft: 21 doppelt (12 .md, 9 .docx), 4 nur in Drive (SCI-0084/0085 Magnetokalorik → EXT-ECO-OTA-20261123-001; Gender-Voice-Langfassung → -002; SCI-0017-EN → -003). Auffällig: GitHub OTA-SCI-0031-2024-DE.md hat „×“ als „—“ verstümmelt (z. B. Zeile 170 „~1,6—“). Restbestand SCI laut Liste noch u. a. SCI-0026-2048 (2×), 0018-60000BCE, 0015, 0014, 0010, 0009, 0004, 0008, 0012, 0007 (.docx); danach FND/TEC und weitere Serienordner. Hinweise: search_files liefert ohne Titelfilter nur 5 Treffer pro Seite; mit parentId = '<Ordner>' und \"title != '…'\"-Ausschlüssen der onlyInDrive-Titel kommt die ganze Restliste in einem Aufruf. download_file_content: .docx haben kein zentrales Verzeichnis – word/document.xml über den lokalen Header lesen (zlib raw deflate). Vergleich .md per Zeilenabdeckung inkl. Historie, .docx per 6-Wort-Schindeln. _Kann weg enthält rund 730 Einträge. | Stand 2026-11-23 (Ökosystem-Kreislauf, Thomas: „ab nach kann weg und weiter“): 24 Dateien aus onlyInDrive entschieden und nach „_Kann weg“ verschoben (übernommen: KOM-0002, INDEX-RKF, SCI-0041 + Zenodo-Analyse, BIO-0007, BIO-0027, FND-0027 v1.0.1, Mars-Rohrecherchen; als Variante vermerkt: SCI-0017-EN, SCI-0093, SCI-0008/BIO-0004 Bellmann, BIO-0006/0010/0011/0015, SCI-0048, SCI-0038-EN, CUL-0013-EN, HIS-0006/0007). Verbleibende onlyInDrive-Einträge sind neue Kanondokumente ohne GitHub-Gegenstück und warten auf Thomas."
   },
   "encodingDefects": {
     "_comment": "Alle 14 Quelldateien am 2026-10-31 auf GitHub repariert (Rückumwandlung cp1252->UTF-8). Die 7 Dateien in notMirrored werden beim nächsten Lauf gespiegelt; SCI-0038-EN: „⁶“ und „μ“ aus Mustern erschlossen. notMirrored am 2026-11-01 gespiegelt.",
