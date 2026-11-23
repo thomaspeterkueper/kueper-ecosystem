@@ -1,8 +1,8 @@
 # Claude-Läufe und DeepSeek-Workflows im Hybridbetrieb
 
 ```
-Stand:   23.11.2026 – Regel „Drive-Fassungen“ (Thomas); 17.11.2026: Lauf 3 „KG-Merge und Rückfragen“ (Thomas); 13.11.2026: Hybridbetrieb; davor 1.0.0: vollständige Ablösung, am selben Tag zurückgenommen
-Version: 2.2.0
+Stand:   23.11.2026 – Regeln „Drive-Fassungen“ und „Drive-Datei nach _Kann weg“ (Thomas); 17.11.2026: Lauf 3 „KG-Merge und Rückfragen“ (Thomas); 13.11.2026: Hybridbetrieb; davor 1.0.0: vollständige Ablösung, am selben Tag zurückgenommen
+Version: 2.3.0
 ```
 
 Thomas, 13.11.2026:
@@ -32,6 +32,7 @@ Thomas, 13.11.2026:
 - Im Zweifel (älter, widersprüchlich, Gegenstand verschieden, Kanon- oder Weltlogikänderung) bleibt die GitHub-Fassung gültig; die Drive-Fassung wird im Dokument oder im Request als Variante mit Link vermerkt, der Request ist damit erledigt.
 - Bestehende Requests dieser Art mit „wartet auf Thomas“ fallen ab sofort unter Lauf 1 (d); der Status wird beim Bearbeiten ersetzt.
 - Kanon- und Weltlogikfragen sind davon nicht berührt und warten weiter auf Thomas.
+- **Drive-Datei nach „_Kann weg“** (Thomas, 23.11.2026: „Ja das macht sinn“): Ist eine Drive-Fassung entschieden – übernommen oder als Variante mit Link vermerkt – und der Merge in GitHub erfolgt, verschiebt Claude die Drive-Datei im selben Lauf selbst nach „_Kann weg“ (Ordner-ID `drive.kannWeg` in `status/drive-mirror.json`) und trägt sie dort von `altbestand.onlyInDrive` nach `altbestand.checked` um (Status, Fundstelle, `movedTo`, Request). Dateien zu Requests, die noch auf Thomas warten, bleiben liegen. Nichts wird gelöscht.
 
 **Living Legacy in `noxiagame`** (Thomas, 22.11.2026): „Living Legacy ist Bestandteil von noxiagame und über /erzaehlen erreichbar, es ist keine eigenständige Domain aktuell geplant.“ `noxiagame/next.config.ts` reicht `/erzaehlen` an das Vercel-Projekt `living-legacy` durch; der Fallback `living-legacy-thomas-projects-9bca900c.vercel.app` ist der automatische Vercel-Team-Alias und kein Fehler (am 23.11.2026 geprüft: `/erzaehlen` liefert HTTP 200). Nicht erneut nach einer eigenen Domain fragen und den Rewrite nicht als Befund behandeln. Anlass: `noxiagame` #866.
 
