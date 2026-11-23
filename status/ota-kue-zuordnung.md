@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-22 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-23 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -118,7 +118,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0100-2026-DE | Primordiale Gezeitenmomente in heutigen Galaxienspins — | NULLRT |  | offen |
 | OTA-SCI-0101-2026-DE | CHIME-21-cm-Autokorrelation bei z ~ 1 — unabhängiger HI | NULLOFFENR |  | offen |
 | OTA-SCI-0104-2026-DE | HS 0209+0832 – Kandidat eines Planeten zweiter Generati | IOFFENR | Beobachtungen [R] | offen |
-| OTA-TEC-0028-2025-DE | NANOSPIEGEL-METAMATERIAL-SYSTEME | FRST | II. [R] REALE GRUNDLAGEN (Stand 2025); IV. [T] THEORETISCH: EIGENZEIT-INFORMATIO | offen |
+| OTA-TEC-0028-2025-DE | NANOSPIEGEL-METAMATERIAL-SYSTEME | FRST | II. [R] REALE GRUNDLAGEN (Stand 2025); IV. [T] THEORETISCH: EIGENZEIT-INFORMATIO | geprüft 2026-11-23 – Teile nach KUE (§II ENZ/Plasmonik/Laserschreiben/Tarnkappen, fehlerhaft und weitgehend unbelegt), Baumeister/AXIS und KN bleiben; EXT-OTA-KUE-20261123-002, OTA-REQ-20261123-002 (A umsetzbar, B wartet auf Thomas) |
 | OTA-TEC-0028-2048-DE | Post-Dotierungs-Halbleitertechnologie — Geometrische un | FHRT | 1. [R] REAL — WISSENSCHAFTLICHE GRUNDLAGEN (2022–2026); 8.5 AVI-LOD-Index: Quant | offen |
 | OTA-TEC-0033-2026-DE | OTA-TEC-0033-2026-DE | FRST | TEIL I: SYSTEMARCHITEKTUR [R→T]; 1.2 Dosimetrie-Grundregel [R] | offen |
 | OTA-TEC-0108-2026-DE | Rohstoffgewinnungsanlage — Mine und Aufbereitungsvorstu | FHOFFENR | Physikalisch-technische Prinzipien [R] | offen |
@@ -135,13 +135,13 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-FND-0015-2026-DE | RKF: Epistemologische Schichtung | FRSTW | RKF (eigener Formalismus) | offen |
 | OTA-OBS-0005-2026-DE | LOD-REVERSAL | HRW | LOD-Vorhersage aus AVI | offen |
 | OTA-RED-0023-2026-DE | Vom QCD-Vakuum zur Raumzeit-Geometrie — Vakuumresonanz  | HRST | eigene QCD/Raumzeit-Hypothese | offen |
-| OTA-SCI-0023-2025-DE | Schwefel, Quellen und Bewusstsein: Neurotoxikologische  | IRS | χ-/Bewusstseins-Anteil | geprüft 2026-11-21 – Teile nach KUE ([R]-Blöcke §1.1–2.5, Neurotoxikologie H₂S/SO₂), [I]-Deutungen, GANDHAKA und KN-5.1 bleiben; EXT-OTA-KUE-20261121-001, Quellen/Kürzung OTA-REQ-20261121-001 (KN-Punkte warten auf Thomas) |
+| OTA-SCI-0023-2025-DE | Schwefel, Quellen und Bewusstsein: Neurotoxikologische  | IRS | χ-/Bewusstseins-Anteil | geprüft 2026-11-21 – Teile nach KUE ([R]-Blöcke §1.1–2.5, Neurotoxikologie H₂S/SO₂), [I]-Deutungen, GANDHAKA und KN-5.1 bleiben; EXT-OTA-KUE-20261121-001, Quellen/Kürzung OTA-REQ-20261121-001 (KN-Punkte warten auf Thomas) – A umgesetzt 2026-11-23 (v1.2) |
 | OTA-SCI-0036-2026-DE | OMNIZEDENZ v2.3 | HRT | Omnizedenz | offen |
 | OTA-SCI-0038-2026-EN | Quantum-Geometric Portals in Loop Quantum Gravity: A Te | HR | eigene LQG-Hypothese (KUE-SCI-QUANTUM-GRAVITY im Entwurf) | offen |
 | OTA-SCI-0041-2026-DE | OTA-SCI-0041-2026-DE | HRS | H-lastig, prüfen | offen |
-| OTA-SCI-0042-2026-DE | PHÄNOMENOLOGISCHE ERDBEBENTHEORIE UND DIE LOD-SEISMIZIT | HRS | eigene Erdbebentheorie | offen |
-| OTA-SCI-0024-2026-DE | Ein skalares Feldmediator-Modell für Neutrino-Dunkle- | HTSW | χ-Feld-Modell (Zeile ergänzt) | geprüft 2026-11-21 – Entscheidung Thomas (eigenes χ-Feld-Modell, bleibt OTA); S₈-Forschungsstand nach KUE per EXT-OTA-KUE-20261121-002; Zitate/Realgrundlage OTA-REQ-20261121-002 (Modellpunkte warten auf Thomas) |
-| OTA-SCI-0024-2026-EN | A Scalar Field Mediator for Neutrino-Dark Matter Inte | HTSW | χ-Feld-Modell (Zeile ergänzt) | geprüft 2026-11-21 – Entscheidung Thomas (eigenes χ-Feld-Modell, bleibt OTA); S₈-Forschungsstand nach KUE per EXT-OTA-KUE-20261121-002; Zitate/Realgrundlage OTA-REQ-20261121-002 (Modellpunkte warten auf Thomas) |
+| OTA-SCI-0042-2026-DE | PHÄNOMENOLOGISCHE ERDBEBENTHEORIE UND DIE LOD-SEISMIZIT | HRS | eigene Erdbebentheorie | geprüft 2026-11-23 – faktisch Gruppe K: KUE-Gegenstück KUE-SCI-0169 v0.2 vorhanden (Theorie stammt von Guglielmi, eigenes Modell nur der AVI-Anschluss §VII, bleibt OTA); Kürzung OTA-REQ-20261123-001 (sofort umsetzbar), Ergänzungen nach KUE per EXT-OTA-KUE-20261123-001 |
+| OTA-SCI-0024-2026-DE | Ein skalares Feldmediator-Modell für Neutrino-Dunkle- | HTSW | χ-Feld-Modell (Zeile ergänzt) | geprüft 2026-11-21 – Entscheidung Thomas (eigenes χ-Feld-Modell, bleibt OTA); S₈-Forschungsstand nach KUE per EXT-OTA-KUE-20261121-002; Zitate/Realgrundlage OTA-REQ-20261121-002 (Modellpunkte warten auf Thomas) – A umgesetzt 2026-11-23 (DE v1.1) |
+| OTA-SCI-0024-2026-EN | A Scalar Field Mediator for Neutrino-Dark Matter Inte | HTSW | χ-Feld-Modell (Zeile ergänzt) | geprüft 2026-11-21 – Entscheidung Thomas (eigenes χ-Feld-Modell, bleibt OTA); S₈-Forschungsstand nach KUE per EXT-OTA-KUE-20261121-002; Zitate/Realgrundlage OTA-REQ-20261121-002 (Modellpunkte warten auf Thomas) – A umgesetzt 2026-11-23 (EN v2.1) |
 
 ## C – bleibt in OTA
 
