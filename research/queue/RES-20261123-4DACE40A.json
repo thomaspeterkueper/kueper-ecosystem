@@ -1,0 +1,41 @@
+{
+  "id": "RES-20261123-4DACE40A",
+  "status": "queued",
+  "created": "2026-11-23T13:11:22+00:00",
+  "source_project": "contracomology",
+  "source_repository": "thomaspeterkueper/contracomology",
+  "source_path": "lib/i18n.ts",
+  "source_ref": "55150df775d0ae600f1bde4c326ef0edeec19e88",
+  "source_blob_sha": "49aa847ad6044cbb34bf52b723899941f637c24f",
+  "title": "Trägt die Kernthese die Übersetzung? „Musik erzeugt Zeit“ im Koreanischen und die fehlende Negation",
+  "question": "Die koreanische Fassung des Portalclaims in lib/i18n.ts lautet „Contracomology는 작품이 어떻게 시간을 생성하는지를 기술합니다…“ und lässt den in de/en tragenden Zusatz „— not in what time they exist“ weg, obwohl die koreanische Startseite die Negation führt („음악은 시간 속에 있는 것이 아니라 시간을 만들어 냅니다“). Wie lässt sich die Unterscheidung „nicht in der Zeit sein / Zeit erzeugen“ im Koreanischen so formulieren, dass sie nicht zu einer bloßen Metapher verfällt – mit welchen sprachlichen Mitteln („시간 속에 있다“ vs. „시간을 만들다/생성하다“, „시간성“/„시간 형식“, Aspekt und Tempus)? Welche koreanischen Übersetzungen von Husserls Zeitbewusstsein, Bergsons durée und Ingardens Werkontologie sind maßgeblich, und welche terminologischen Entscheidungen (Zeitform → 시간 형식 / 시간 형태 / 시간성) sind in der koreanischen Philosophie- und Musiktheorie-Rezeption belegt? Ist die Auslassung legitime Sprachökonomie oder eine Abschwächung der Ontologie, die der Consumer-Vertrag („inhaltlich nicht abgeschwächt oder umgedeutet“) verbietet?",
+  "why_now": "Die Route /ko wird auf jeder Seite als gleichwertige Sprachfassung angeboten, während Kurs und Publikationskatalog ausdrücklich nur auf Deutsch vorliegen. Damit ist die koreanische Portalbeschreibung die einzige lokalisierte fachliche Aussage – und sie schwächt die Kernthese gegenüber de/en ab. Der UI-COPY-Vertrag verbietet genau dies, erlaubt aber lokale Übersetzungen; die nächste Inhaltsrunde muss entscheiden, ob die ko-Fassung korrigiert oder bis zur autoritativen Übersetzung leer bleibt.",
+  "languages": [
+    "ko",
+    "de",
+    "en"
+  ],
+  "evidence_profile": "philosophy-comparative",
+  "claim_classes": [
+    "textual-fact",
+    "scholarly-interpretation",
+    "comparative-analogy",
+    "kueper-system-claim"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Koreanische Übersetzungen und Rezeption von Husserl, Bergson und Ingarden sowie koreanische Tempus-/Aspektsemantik und philosophische Terminologie (nicht der fiktionale Nalgae-Kanon).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 0.65,
+  "relevance_score": 0.7625,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.7
+  },
+  "related_research_ids": [
+    "RES-20261008-031971A1"
+  ],
+  "novelty_reason": "Die frühere Ontologie-Frage klärt, in welchen Bedeutungen „Zeit erzeugen“ im Deutschen/Englischen wahr oder falsch sein kann. Dieser Kandidat behandelt die dort ungelöste Dimension der dritten beworbenen Sprache: ob die Unterscheidung im Koreanischen überhaupt verlustfrei formulierbar ist und ob die lokale ko-Fassung die Ontologie abschwächt. Übersetzung, Tempus/Aspekt und koreanische Rezeptionsgeschichte sind in keinem früheren Kandidaten Thema.",
+  "fingerprint": "4dace40a62aac1c6"
+}
