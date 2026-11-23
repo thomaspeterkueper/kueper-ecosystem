@@ -1,8 +1,8 @@
 # Claude-Läufe und DeepSeek-Workflows im Hybridbetrieb
 
 ```
-Stand:   17.11.2026 – Lauf 3 „KG-Merge und Rückfragen“ (Thomas); 13.11.2026: Hybridbetrieb; davor 1.0.0: vollständige Ablösung, am selben Tag zurückgenommen
-Version: 2.1.0
+Stand:   23.11.2026 – Regel „Drive-Fassungen“ (Thomas); 17.11.2026: Lauf 3 „KG-Merge und Rückfragen“ (Thomas); 13.11.2026: Hybridbetrieb; davor 1.0.0: vollständige Ablösung, am selben Tag zurückgenommen
+Version: 2.2.0
 ```
 
 Thomas, 13.11.2026:
@@ -26,6 +26,12 @@ Thomas, 13.11.2026:
 **Kollisionen vermeiden:** Claude fasst keinen Task an, für den ein Branch `agent/…` oder `claude/…` jünger als 6 Stunden existiert oder ein offener PR besteht, und keinen Task, den der Agent Worker gerade bearbeitet (Hinweis im Task oder Branch). Im Zweifel liegen lassen.
 
 **Branch-Präfix in `noxiagame`** (Thomas, 17.11.2026): `noxiagame/vercel.json` schaltet seit #774 Vercel-Deployments für `claude/*` ab, das Merge-Gate in `registry/merge-gates.json` verlangt aber fail-closed einen Vercel-Status. Claude-Läufe verwenden in `noxiagame` deshalb `fix/claude-<task-id>` statt `claude/<task-id>`; `vercel.json` und `merge-gates.json` bleiben unverändert. Anlass: #803/#789 blockiert, als #816/#817 gemergt.
+
+**Drive-Fassungen selbst entscheiden** (Thomas, 23.11.2026, auf die Frage, warum so viel auf ihn wartet): Requests aus der Drive-Sortierung („Altbestand – … nur in Google Drive“ und ähnliche), die nur fragen, welche Fassung gilt, entscheidet Claude selbst und setzt bei ihnen kein „Claude-Status: wartet auf Thomas“ mehr:
+- Ist die Drive-Fassung neuer und als Korrektur oder Weiterentwicklung erkennbar (höhere Version, Korrekturvermerk, späteres Änderungsdatum bei gleichem Gegenstand), wird sie in das Ziel-Repo übernommen – mit Versionssprung und Revisionsvermerk, der die Drive-Quelle nennt.
+- Im Zweifel (älter, widersprüchlich, Gegenstand verschieden, Kanon- oder Weltlogikänderung) bleibt die GitHub-Fassung gültig; die Drive-Fassung wird im Dokument oder im Request als Variante mit Link vermerkt, der Request ist damit erledigt.
+- Bestehende Requests dieser Art mit „wartet auf Thomas“ fallen ab sofort unter Lauf 1 (d); der Status wird beim Bearbeiten ersetzt.
+- Kanon- und Weltlogikfragen sind davon nicht berührt und warten weiter auf Thomas.
 
 **Welche Repos wer:** vorerst keine feste Aufteilung nach Repo – die Regeln oben verteilen die Arbeit. Gibt Thomas eine Liste vor („diese Repos nur Claude“), wird sie hier eingetragen.
 
