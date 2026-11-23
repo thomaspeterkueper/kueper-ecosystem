@@ -1,6 +1,6 @@
 {
   "id": "RES-20260914-6507B47E",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-14T09:18:54+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -49,5 +49,27 @@
   },
   "fingerprint": "6507b47e9aa548be",
   "updated_at": "2026-09-14T09:36:38+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/119"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/119",
+  "validated_at": "2026-11-23T16:19:19+00:00",
+  "validation_summary": "Die nicht-kanonische Evidenz RES-20260914-6507B47E prüft die prüfbare Außenschicht von OTA-TEC-0015-2082-DE (HeliosCorp LRV-15). Das Dokument ist als fiktionale Hersteller-Spezifikation mit [S]-Basis-Specs und [F]-Modifikationen angelegt, wird aber in OTA-ORG-0001-2079-DE, OTA-BIO-0007-2025-DE, OTA-TEC-0004-2087-DE und OTA-TEC-0016-2063-DE als „Kanonisch“ geführt. Der Abgleich zeigt: Die [S]-Zeilen enthalten reale Ingenieursbehauptungen. Zwei Aussagen tragen in der vorliegenden Form nicht (GPR-Hohlräume bis 50 m ohne Frequenz- und Größenangabe; „Pannenfrei“ als Dauerhaftigkeitsaussage). Die übrigen Zeilen sind teils physikalisch einengbar (240 kW nur für eine schwere Fahrzeugklasse, abgedichtete Radnabenmotoren dauerhaft ca. 3–5 kW, S-Band kostet 11,2 dB gegenüber X-Band, Elektrolyse gewinnt kein O2 zurück), teils ohne Masse, Energiequelle, Apertur, Sendeleistung und Crew-Tage nicht prüfbar. Die fiktionale Schicht und alle NOXIA-Balancingwerte bleiben unberührt. Daraus folgen drei OTA-",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261123-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261123-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261123-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
