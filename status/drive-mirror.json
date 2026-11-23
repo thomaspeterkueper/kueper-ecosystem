@@ -6535,6 +6535,26 @@
         "movedTo": "_Kann weg",
         "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261123-003.md",
         "entscheidung": "GitHub-Fassung gültig; Drive-Fassung dort als Variante mit Link vermerkt (Drive-Regel 23.11.2026)"
+      },
+      "1Fdth-W3oP16DYMcbgBPTE9LJP0FfEVYl": {
+        "title": "OTA-SCI-0084-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/SCI",
+        "status": "übernommen",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0121-2026-DE.md (v1.1, neue Signatur)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261123-001.md",
+        "entscheidung": "Reines [R]-Dokument ohne GitHub-Fassung, unter freier SCI-Nummer übernommen (Drive-Regel 23.11.2026)"
+      },
+      "169YGpL7IrUYCUxGrXqQG_IN6uARNGG4T": {
+        "title": "OTA-SCI-0085-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/SCI",
+        "status": "übernommen",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-SCI-0122-2026-DE.md (v1.1, neue Signatur)",
+        "checkedAt": "2026-11-23",
+        "movedTo": "_Kann weg",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261123-001.md",
+        "entscheidung": "Reines [R]-Dokument ohne GitHub-Fassung, unter freier SCI-Nummer übernommen (Drive-Regel 23.11.2026)"
       }
     },
     "onlyInDrive": [
@@ -7341,24 +7361,6 @@
         "status": "imZweifel",
         "beschreibung": "Λ-Africa, Word-Fassung; Kernaussagen und Λ/∇-Exkurs auf GitHub (FND-0017, FND-0001-NACHTRAG), Tabellen (Haplogruppen, OXPHOS, Kopf-Kulturen, Saga-Optionen, Evidenzmatrix) nicht eindeutig zuordenbar (rund 68 % Textüberdeckung) – liegen gelassen, Thomas prüft.",
         "checkedAt": "2026-11-22"
-      },
-      {
-        "fileId": "1Fdth-W3oP16DYMcbgBPTE9LJP0FfEVYl",
-        "title": "OTA-SCI-0084-2026-DE.md",
-        "folder": "OTA (alt, bis Okt. 2026)/SCI",
-        "status": "nurDrive",
-        "beschreibung": "Magnetokalorische Kühlung – Kühlkreisläufe ohne Kältemittel, [R] v1.0 (Aug. 2026); Signatur auf GitHub anders belegt",
-        "checkedAt": "2026-11-23",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261123-001.md"
-      },
-      {
-        "fileId": "169YGpL7IrUYCUxGrXqQG_IN6uARNGG4T",
-        "title": "OTA-SCI-0085-2026-DE.md",
-        "folder": "OTA (alt, bis Okt. 2026)/SCI",
-        "status": "nurDrive",
-        "beschreibung": "Magnetokalorische Materialien im Vergleich (Gd, La(Fe,Si)13, (Mn,Fe)2(P,Si)), [R] v1.0 (Aug. 2026); Signatur auf GitHub anders belegt",
-        "checkedAt": "2026-11-23",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261123-001.md"
       }
     ],
     "movedFolders": [
@@ -7420,7 +7422,7 @@
       }
     ],
     "remainingUncheckedApprox": 155,
-    "note": "Stand 2026-11-23: 'OTA (alt, bis Okt. 2026)/SCI' weiter bearbeitet – 25 Dateien geprüft: 21 doppelt (12 .md, 9 .docx), 4 nur in Drive (SCI-0084/0085 Magnetokalorik → EXT-ECO-OTA-20261123-001; Gender-Voice-Langfassung → -002; SCI-0017-EN → -003). Auffällig: GitHub OTA-SCI-0031-2024-DE.md hat „×“ als „—“ verstümmelt (z. B. Zeile 170 „~1,6—“). Restbestand SCI laut Liste noch u. a. SCI-0026-2048 (2×), 0018-60000BCE, 0015, 0014, 0010, 0009, 0004, 0008, 0012, 0007 (.docx); danach FND/TEC und weitere Serienordner. Hinweise: search_files liefert ohne Titelfilter nur 5 Treffer pro Seite; mit parentId = '<Ordner>' und \"title != '…'\"-Ausschlüssen der onlyInDrive-Titel kommt die ganze Restliste in einem Aufruf. download_file_content: .docx haben kein zentrales Verzeichnis – word/document.xml über den lokalen Header lesen (zlib raw deflate). Vergleich .md per Zeilenabdeckung inkl. Historie, .docx per 6-Wort-Schindeln. _Kann weg enthält rund 730 Einträge. | Stand 2026-11-23 (Ökosystem-Kreislauf, Thomas: „ab nach kann weg und weiter“): 24 Dateien aus onlyInDrive entschieden und nach „_Kann weg“ verschoben (übernommen: KOM-0002, INDEX-RKF, SCI-0041 + Zenodo-Analyse, BIO-0007, BIO-0027, FND-0027 v1.0.1, Mars-Rohrecherchen; als Variante vermerkt: SCI-0017-EN, SCI-0093, SCI-0008/BIO-0004 Bellmann, BIO-0006/0010/0011/0015, SCI-0048, SCI-0038-EN, CUL-0013-EN, HIS-0006/0007). Verbleibende onlyInDrive-Einträge sind neue Kanondokumente ohne GitHub-Gegenstück und warten auf Thomas."
+    "note": "Stand 2026-11-23: 'OTA (alt, bis Okt. 2026)/SCI' weiter bearbeitet – 25 Dateien geprüft: 21 doppelt (12 .md, 9 .docx), 4 nur in Drive (SCI-0084/0085 Magnetokalorik → EXT-ECO-OTA-20261123-001; Gender-Voice-Langfassung → -002; SCI-0017-EN → -003). Auffällig: GitHub OTA-SCI-0031-2024-DE.md hat „×“ als „—“ verstümmelt (z. B. Zeile 170 „~1,6—“). Restbestand SCI laut Liste noch u. a. SCI-0026-2048 (2×), 0018-60000BCE, 0015, 0014, 0010, 0009, 0004, 0008, 0012, 0007 (.docx); danach FND/TEC und weitere Serienordner. Hinweise: search_files liefert ohne Titelfilter nur 5 Treffer pro Seite; mit parentId = '<Ordner>' und \"title != '…'\"-Ausschlüssen der onlyInDrive-Titel kommt die ganze Restliste in einem Aufruf. download_file_content: .docx haben kein zentrales Verzeichnis – word/document.xml über den lokalen Header lesen (zlib raw deflate). Vergleich .md per Zeilenabdeckung inkl. Historie, .docx per 6-Wort-Schindeln. _Kann weg enthält rund 730 Einträge. | Stand 2026-11-23 (Ökosystem-Kreislauf, Thomas: „ab nach kann weg und weiter“): 24 Dateien aus onlyInDrive entschieden und nach „_Kann weg“ verschoben (übernommen: KOM-0002, INDEX-RKF, SCI-0041 + Zenodo-Analyse, BIO-0007, BIO-0027, FND-0027 v1.0.1, Mars-Rohrecherchen; als Variante vermerkt: SCI-0017-EN, SCI-0093, SCI-0008/BIO-0004 Bellmann, BIO-0006/0010/0011/0015, SCI-0048, SCI-0038-EN, CUL-0013-EN, HIS-0006/0007). Verbleibende onlyInDrive-Einträge sind neue Kanondokumente ohne GitHub-Gegenstück und warten auf Thomas. | Stand 2026-11-23 abends (Ökosystem-Kreislauf): SCI-0084/0085 Magnetokalorik ([R], kein Kanon) als OTA-SCI-0121/0122 übernommen und nach „_Kann weg“ verschoben (EXT-ECO-OTA-20261123-001)."
   },
   "encodingDefects": {
     "_comment": "Alle 14 Quelldateien am 2026-10-31 auf GitHub repariert (Rückumwandlung cp1252->UTF-8). Die 7 Dateien in notMirrored werden beim nächsten Lauf gespiegelt; SCI-0038-EN: „⁶“ und „μ“ aus Mustern erschlossen. notMirrored am 2026-11-01 gespiegelt.",
