@@ -33,6 +33,8 @@ Thomas, 13.11.2026:
 - Bestehende Requests dieser Art mit „wartet auf Thomas“ fallen ab sofort unter Lauf 1 (d); der Status wird beim Bearbeiten ersetzt.
 - Kanon- und Weltlogikfragen sind davon nicht berührt und warten weiter auf Thomas.
 
+**Living Legacy in `noxiagame`** (Thomas, 22.11.2026): „Living Legacy ist Bestandteil von noxiagame und über /erzaehlen erreichbar, es ist keine eigenständige Domain aktuell geplant.“ `noxiagame/next.config.ts` reicht `/erzaehlen` an das Vercel-Projekt `living-legacy` durch; der Fallback `living-legacy-thomas-projects-9bca900c.vercel.app` ist der automatische Vercel-Team-Alias und kein Fehler (am 23.11.2026 geprüft: `/erzaehlen` liefert HTTP 200). Nicht erneut nach einer eigenen Domain fragen und den Rewrite nicht als Befund behandeln. Anlass: `noxiagame` #866.
+
 **Welche Repos wer:** vorerst keine feste Aufteilung nach Repo – die Regeln oben verteilen die Arbeit. Gibt Thomas eine Liste vor („diese Repos nur Claude“), wird sie hier eingetragen.
 
 ## Lauf 1: Ökosystem-Kreislauf (alle 3 Stunden, Claude)
