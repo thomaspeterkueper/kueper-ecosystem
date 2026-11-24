@@ -50,6 +50,7 @@ Diese Inhalte bleiben in den jeweils zuständigen Repositories.
 - [`docs/source-of-truth.md`](docs/source-of-truth.md)
 - [`docs/cross-repository-workflow.md`](docs/cross-repository-workflow.md)
 - [`docs/onboarding-template.md`](docs/onboarding-template.md) — verbindliche Vorlage für neue Projekte
+- [`docs/drive-exchange-standard.md`](docs/drive-exchange-standard.md) — verbindlicher Drive-Exchange- und Asset-Workshop-Standard (Exchange/Workshop, nicht Source of Truth; `ECO-ARC-0039`)
 - [`docs/programs/README.md`](docs/programs/README.md) — registrierte Cross-Repository-Programme und ihre Zuständigkeitsverteilung
 - [`decisions/README.md`](decisions/README.md)
 
