@@ -1,6 +1,6 @@
 {
   "id": "RES-20260915-D8CB8EC4",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-15T08:47:22+00:00",
   "source_project": "mishkenaz",
   "source_repository": "thomaspeterkueper/mishkenaz.org",
@@ -40,5 +40,15 @@
   "novelty_reason": "RES-20260822-69C82BFA hat die Formen -om/-ath/-il als Frage nach belegten indo-arischen bzw. dravidischen Aspektmarkern behandelt und die Antwort ergeben, dass sie als solche nicht belegt sind und als Fiktion zu kennzeichnen sind; als reale Anker wurden dort der dentale -t- Perfektiv/Partizip, das tamilische Lokativ -il und der vedische -tha-/-atha-Suffix genannt. Offen blieb die davon verschiedene Frage, ob der von diesen Formen bezeichnete semantische Bereich – Erwartung vs. Wirklichkeit, Stimmigkeit, Dissonanz, Offenheit – als grammatischer Funktionsbereich überhaupt existiert und wie er typischerweise grammatikalisiert wird. Das ist eine materiell andere Dimension: sie entscheidet nicht, ob die Formen indo-arisch belegt sind, sondern ob das Kategoriendesign als plausibles Design oder als reine Setzung auszuweisen ist, und liefert damit die Grundlage für die von EXT-KG-MISH-20260831-001 geforderte epistemische Trennung.",
   "fingerprint": "d8cb8ec4e280bbab",
   "updated_at": "2026-09-16T08:49:57+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/124"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/124",
+  "validated_at": "2026-11-24T16:09:55+00:00",
+  "validation_summary": "Der Kandidat belegt den typologischen Funktionsbereich ‚Nicht-Realisierung/Erwartungsbezug‘ und jeweils nächste Analogien zu -ath (Frustrativ), -om (Perfekt/Resultativ) und -il (Inkompletiv), findet aber kein belegtes dreiwertiges Paradigma; Formen, Terminus und Paradigmatik bleiben Kanon. Die aktuelle grammatik.astro beschreibt -om/-ath/-il jedoch als relational-epistemische Sprecherstellung ohne Zielmodell (§3, §9) und -tum als Deprivation, ausdrücklich ‚weder Resonanzaspekt noch allgemeiner Evidentialitätsmarker‘ (§4). Der Kandidat zitiert dagegen einen EVID-Slot, einen ‚Missingness-Slot‘ -tum und §3-Sätze, die im aktuellen Repo nicht existieren; seine source ref/blob sind hier nicht auflösbar. Es liegt kein Konflikt vor (bewusste Fiktion wird als solche gekennzeichnet), aber eine sachlich begrenzte Enrichment-Notiz und eine Provenienzprüfung des Kandidaten sind begründet.",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-MISH-20261124-001",
+      "target": "mishkenaz",
+      "repository": "thomaspeterkueper/mishkenaz.org"
+    }
+  ]
 }
