@@ -1,6 +1,6 @@
 {
   "id": "RES-20260914-7AFD24DB",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-14T09:02:49+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -34,5 +34,27 @@
   "novelty_reason": "Keiner der drei vorangegangenen Kandidaten behandelt Paläoanthropologie, Genetik oder Quartärgeografie. RES-20260829-862AA763 betraf Mars-Resurfacing und Lavatunnel-Eis, RES-20260829-02C11838 Frequenzen und Dhrupad-Phonetik, RES-20260829-A7BD20AF Kosmologie. Die Herkunftsebene des Gesamtwerks wurde bisher nicht extern geprüft.",
   "fingerprint": "7afd24db2c6a5be4",
   "updated_at": "2026-09-15T09:20:48+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/122"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/122",
+  "validated_at": "2026-11-24T16:03:31+00:00",
+  "validation_summary": "Der Kandidat prüft den 60.000-BCE-Horizont gegen den aktuellen Repo-Stand. Der Zeithorizont selbst ist als Arbeitsanker tragfähig (B0, Zeitstatus APPROXIMATE); der Befund stützt Diaspora, symbolisches Verhalten, Seefahrt als notwendige Inferenz und die versunkene Küstenkulisse. Drei konkrete Punkte sind vor dem ausstehenden Baumeister-Import (NXU-ADR-0001 §6 Schritt 6) zu klären: (1) Die README-Aussage „Die Baumeister waren proto-menschliche Vorfahren“ ist bei wörtlicher vor-sapiens-Lesart ein Kategorienfehler und braucht eine Entscheidung; (2) die Baumeister-Kompetenz um 60 ka ist für Pigment, Schmuck, Bestattung, Bettbau, Werkzeughaftung und Seefahrt belegbar, nicht für dauerhaften Wohnbau (früheste gesicherte Bauten ~32 ka) – der Raumname sollte entsprechend gedeutet werden; (3) „Mishkenaz-Ursprung“ und die 62.000-Jahre-Kontinuität sind als Gründungszweig einer bereits sprechenden Spezies zu rahmen, nicht als Sprachursprung. Keine Aktion zu Doggerland (im Repo nicht referenziert) un",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-NXU-20261124-001",
+      "target": "noxia-universe",
+      "repository": "thomaspeterkueper/noxia-universe"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-NXU-20261124-002",
+      "target": "noxia-universe",
+      "repository": "thomaspeterkueper/noxia-universe"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-NXU-20261124-003",
+      "target": "noxia-universe",
+      "repository": "thomaspeterkueper/noxia-universe"
+    }
+  ]
 }
