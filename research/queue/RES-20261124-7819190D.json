@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261124-7819190D",
+  "status": "queued",
+  "created": "2026-11-24T13:59:03+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "docs/world/chronomap-erde/wissen/landschaft-im-wandel.md",
+  "source_ref": "cd342c7d839d1e87877b9c58db86e75664dfdd08",
+  "source_blob_sha": "a578b5a0d3b8218c4be2a3cafa5ea118282f8870",
+  "title": "Holocene shoreline and river history of the Susiana plain: which watercourse is the Eulaios, and where lay the Persian Gulf coast in 1158, 647 and 474 BCE?",
+  "question": "What do peer-reviewed geoarchaeological studies, borehole and coring records, and published palaeogeographic maps establish about the Holocene evolution of the Susiana plain and the head of the Persian Gulf: the position of the coastline around 8000, 5500 and 2500 years BP, the avulsion history of the Karun, Karche/Schaur and Dez, and the identification of the ancient Eulaios? Which of these lines can be drawn for the Chronomap epochs 1158, 647 and 474 BCE with [R] (mapped or cored) versus [S] (inferred) status? Specifically: is the current equation Eulaios = Karche/Schaur (Potts 1999) defensible against the alternative that the Eulaios is the Dez or another arm; what does Heyvaert & Baeteman (Marine Geology 242, 2007), Fig. 11a-g actually show for each epoch; and what do the irrigation-channel and settlement records imply about which channels existed in each period?",
+  "why_now": "On 24.11.2026 the Susiana map base was drawn with land and a schematic Karche, but the Gulf coast after Heyvaert & Baeteman Fig. 11 is explicitly still undrawn, the Dez and the exact Schaur are unresolved, and the Madaktu/Badake location depends on the Eulaios identification (docs/world/chronomap-erde/warteschlange.md, same day; docs/world/chronomap-erde/wissen/landschaft-im-wandel.md, section 2).",
+  "languages": [
+    "en",
+    "fr",
+    "de"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "S"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Holocene sea-level, delta and fluvial-avulsion history of the Susiana plain and the Persian Gulf head (Heyvaert & Baeteman 2007 and later geoarchaeological coring), plus the identification of the ancient Eulaios/Karche river.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.855,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.72,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic covers Susiana, Elam or the Persian Gulf. The Galilee site-and-road topic concerns a different region, period and evidence base (first-century CE Lower Galilee), and the Passion-chronology topic concerns astronomy rather than Holocene geomorphology.",
+  "fingerprint": "7819190d3b3e2f6c"
+}
