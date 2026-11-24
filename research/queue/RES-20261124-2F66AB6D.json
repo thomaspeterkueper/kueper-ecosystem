@@ -1,0 +1,47 @@
+{
+  "id": "RES-20261124-2F66AB6D",
+  "status": "queued",
+  "created": "2026-11-24T14:23:16+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0095-2026-DE.md",
+  "source_ref": "ce3975a90650fa73792d92310e26f5208a3955c7",
+  "source_blob_sha": "6f195e25aa1cb00fdd021ba2955915510c87d1be",
+  "document_signature": "OTA-SCI-0095-2026-DE",
+  "title": "Realwelt-Audit der Yoon-2026-Studie und der zentralen galaktischen Oberflächendichte in OTA-SCI-0095 (v1.2): bibliographische Verifikation, 170 vs. 90–220 M☉/pc², Donato et al. 2009 und die MOND-Vorhersage",
+  "question": "Quellengestützter Audit der als [R] geführten Realgrundlage von OTA-SCI-0095-2026-DE (Abschnitt '1. Befund (Grundinformation)'), gepinnt auf die im Workspace vorliegende v1.2 (Status ENTWURF, Stand 2026-11-20; Frontmatter ['R','H','OFFEN']). Der Review-Vermerk hält ausdrücklich fest, dass die Primärquelle bibliographisch noch nicht bestätigt ist; zudem fehlen in der Kurzfassung Band und Artikelnummer. Die Arbeit wird als Theoriearbeit geführt, nicht als Messung. (1) Bibliographische Verifikation: Prüfe, ob Youngsub Yoon (2026), 'A characteristic phantom-halo surface-density scale in Verlinde-inspired emergent gravity', in *Physics of the Dark Universe* in dieser Form existiert — Titel, Autorschaft, Journal, Band, Artikelnummer, DOI, Publikationsdatum, Peer-Review-Status — und ob die Arbeit tatsächlich eine von Verlindes emergenter Gravitation inspirierte Ableitung einer 'Phantom-Halo'-Oberflächendichte liefert. Melde jede Nichtbestätigung ausdrücklich und nenne die nächstliegenden realen Arbeiten zu Verlinde'scher emergenter Gravitation und galaktischen Oberflächendichten, ohne sie stillschweigend zu substituieren. (2) Zahlen nachrechnen: Prüfe die im Dokument genannten rund 170 M☉/pc² Predictions und die als Beobachtungsvergleich geführten grob 90–220 M☉/pc². Kläre, ob 170 M☉/pc² eine theoretische Vorhersage, ein Fit-Ergebnis oder eine gerundete Größenordnung ist, auf welcher Observablen (zentrale Dunkle-Materie-Oberflächendichte aus Halo-Fits, Stellar-Masse-Profil, Rotationskurven) die 90–220 M☉/pc² beruhen und ob die Spanne über Galaxien, Methoden oder Unsicherheiten läuft. Rechne nach, ob die beiden Größen überhaupt vergleichbar definiert sind (Projektion, Profilannahme, Bezugsradius, 'core' vs. 'central'). (3) Donato- und Milgrom-Anker: Verifiziere Donato et al. (2009), 'A constant dark matter halo surface density in galaxies', MNRAS 397, 1169–1176, und Milgrom (2009), 'The central surface density of dark halos predicted by MOND', MNRAS 398, 1023–1026, bibliographisch und inhaltlich: Welche zentrale Oberflächendichte und welche Universalitätsaussage berichten sie, für welche Galaxientypen und mit welcher Streuung? Prüfe, ob die im Dossier behauptete MOND-Vorhersage derselben Skala durch Milgrom 2009 gedeckt ist. (4) Aktualität und Universalität: Berichte den realen Stand zur Universalität der zentralen Oberflächendichte nach 2009 (u. a. Arbeiten zu Kern-Profilen, Halo-Massenkonzentration, Selektionseffekten, Zwerggalaxien und der Radial Acceleration Relation) und ob die Spanne 90–220 M☉/pc² heute als bestätigt, als modellabhängig oder als überholt zu führen ist. Prüfe ausdrücklich, ob die beobachtete Regularität zwischen Dunkle-Materie-Halos, MOND und emergenter Gravitation diskriminiert oder ob sie in mehreren Modellen reproduzierbar ist. (5) Modell-Diskrimination: Nenne für die drei im Dokument genannten Modellklassen (Dunkle-Materie-Halo + Standardgravitation, MOND, Verlinde-inspirierte emergente Gravitation) je eine real beobachtbare, vorab definierte Observable, für die die Vorhersagen quantitativ auseinandergehen, und berichte, was die reale Literatur dazu bereits etabliert oder ausschließt. Das ist eine Constraints-/Plausibilitätsprüfung der [H]-Deutung, keine Validierung der AVI-Ontologie. (6) Reklassifizieren: Nenne die Sätze, die [R] bleiben können (Existenz einer Theoriearbeit zur Oberflächendichte; Existenz der Donato-/Milgrom-Anker; zentrale Oberflächendichte ist eine aus dynamischen Daten unter Profilannahmen abgeleitete Größe), die zu '[R] Quelleninhalt, Definition und Bezugsradius offen' abzuschwächen sind (170 M☉/pc², 90–220 M☉/pc², 'MOND sagt eine solche Skala voraus'), die [H] bleiben müssen (Emergenz-/MOND-Deutung, Universalität als Modelltest) und die [OFFEN] werden müssen (Diskriminationskraft, Übertragbarkeit auf AVI). Stelle fest, dass kein kanonischer Oberflächendichtewert, keine kanonische MOND-Skala und kein kanonisches Modellauswahlkriterium in den Kanon oder in NOXIA-Standardwerte aufgenommen wird. AUSGESCHLOSSEN: die AVI-Regel 'Predictive degeneracy before ontology selection' und das OTA-Fazit als Autorenentscheidung, der AVI-Core und die State-Completeness-Systematik, die bereits nach KUE-SCI-0215 ausgelagerte reine Textverschiebung sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Der Review-Vermerk von v1.2 (2026-11-20) benennt die fehlende bibliographische Bestätigung der Primärquelle ausdrücklich und setzt die nächste Prüfung auf 2027-05-20; die KUE-Auslagerung vom 2026-11-22 hat den Befundtext verschoben, aber Band/Artikelnummer und die belastbare Definition der 90–220-M☉/pc²-Spanne nicht verifiziert. Da das Dokument als Modell-Diskriminationskontrolle für AVI dient, hängt seine Brauchbarkeit direkt an der korrekten Wiedergabe und Einordnung dieser einen Theoriearbeit.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H",
+    "OFFEN"
+  ],
+  "real_world_anchor": "Youngsub Yoon (2026), Physics of the Dark Universe (Titel, Band, Artikelnummer und DOI unbestätigt); Donato et al. (2009), MNRAS 397, 1169–1176; Milgrom (2009), MNRAS 398, 1023–1026; die reale Literatur zur zentralen Oberflächendichte von Galaxien und zur Radial Acceleration Relation.",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.88,
+    "cross_project_reuse": 0.82,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriges OTA-Research-Topic behandelt OTA-SCI-0095 oder die zentrale galaktische Oberflächendichte. Die abgeschlossene Aufräum- und Auslagerungsarbeit (OTA-REQ-20261120-002, EXT-OTA-KUE-20261120-002) hat nur den Befundtext nach KUE-SCI-0215 verschoben und den Donato-/Milgrom-Anker in die Quellenliste eingetragen; die bibliographische Verifikation der Yoon-Arbeit (Band/Artikelnummer/DOI) und die Prüfung, ob 170 M☉/pc² und 90–220 M☉/pc² überhaupt vergleichbar definiert sind, stehen weiterhin aus. Genau diese Außenprüfung ist hier neu.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 241,
+    "quality_flags": [
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "2f66ab6dab6b9c5d"
+}
