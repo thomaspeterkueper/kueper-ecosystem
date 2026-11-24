@@ -1,8 +1,8 @@
 # Claude-Läufe und DeepSeek-Workflows im Hybridbetrieb
 
 ```
-Stand:   23.11.2026 – Regeln „Drive-Fassungen“ und „Drive-Datei nach _Kann weg“ (Thomas); 17.11.2026: Lauf 3 „KG-Merge und Rückfragen“ (Thomas); 13.11.2026: Hybridbetrieb; davor 1.0.0: vollständige Ablösung, am selben Tag zurückgenommen
-Version: 2.3.0
+Stand:   24.11.2026 – Review-Regeln: überholte Agent-PRs schließen, zweites Review direkt nach erstem PASS, Label `kueper-hold` (Thomas); 23.11.2026: Regeln „Drive-Fassungen“ und „Drive-Datei nach _Kann weg“ (Thomas); 17.11.2026: Lauf 3 „KG-Merge und Rückfragen“ (Thomas); 13.11.2026: Hybridbetrieb; davor 1.0.0: vollständige Ablösung, am selben Tag zurückgenommen
+Version: 2.4.0
 ```
 
 Thomas, 13.11.2026:
@@ -19,7 +19,7 @@ Thomas, 13.11.2026:
 | Tasks, die DeepSeek nicht schafft | – | ja: gescheiterte, geparkte (nicht Owner), länger als 24 Std. unberührte |
 | Bugs, Sicherheit, Priorität `high`/`critical` | ja | ja, wenn nach 6 Std. kein Branch/PR existiert |
 | GitHub-Issues, Draft-PRs mit CI-Fehlern oder Konflikten | – | ja (früher Lauf „Ökosystem Requests abarbeiten“) |
-| PR-Review | erstes Review | **zweites Review vor dem Merge** bei PRs von Agenten, die das erste Review bestanden haben oder länger als 6 Std. offen sind |
+| PR-Review | erstes Review | **zweites Review vor dem Merge** bei PRs von Agenten, sobald das erste Review für den aktuellen Head PASS meldet, sonst nach 6 Std. |
 | Recherche-Loops | ja – täglich wie bisher | **Prüfung** der Recherche-Ergebnisse der letzten 24 Std. und Übernahme gescheiterter Recherche |
 | Merge der KG-Candidates | – (Executor legt nur Drafts an) | ja – Lauf 3: Triage, Merge, Rückfragen |
 
@@ -44,7 +44,9 @@ Thomas, 13.11.2026:
 2. **Auswahl** (höchstens 3 Arbeiten): (a) Bugs, Sicherheit, CI-Fehler ohne Branch/PR seit 6 Std.; (b) Draft-PRs mit CI-Fehlern oder Merge-Konflikten auf `claude/…`-Branches weiterführen; (c) GitHub-Issues ohne verknüpften PR; (d) Tasks, die DeepSeek gescheitert oder geparkt (nicht Owner) hat, oder die seit 24 Std. unberührt sind. Übersprungen: „Claude-Status: wartet auf Thomas“, `KUEPER_PARK_OWNER`, offene `## Rückfrage` an Thomas.
 3. **Bearbeiten** im Ziel-Repo nach dessen README/AGENTS/CLAUDE.md und `docs/cross-repository-workflow.md`, `docs/repository-roles.md`, `docs/source-of-truth.md`: Branch `claude/<task-id>`, kleine Commits, Tests. Fremde Source of Truth nie ändern – Bedarf anderswo als Umschlag in `.kueper/outbox/`.
 4. **Übernehmen:** eigener Branch, nach grünen Prüfungen Merge (Thomas' Regel); für Repos in `registry/merge-gates.json` PR und Pflichtprüfungen. Task nach `external-tasks/done/` mit `Status: done`, `Erledigt`, `Umgesetzt`. Zu Großes nach `parked/` mit konkreter Rückfrage.
-5. **Zweites Review** (höchstens 3): PRs von Agenten wie in der Tabelle; Kommentar mit Befund; bei Grün und ohne Bedenken mergen.
+5. **Zweites Review** (höchstens 3): PRs von Agenten wie in der Tabelle, PRs mit erstem PASS für den aktuellen Head zuerst; Kommentar mit Befund; bei Grün und ohne Bedenken mergen.
+   - **Überholte Agent-PRs schließen** (Thomas, 24.11.2026): Ist der Task eines Agent-PR nachweislich auf `main` erledigt (Datei in `external-tasks/done/`), schließt der Lauf den PR ohne Merge, mit Kommentar und Verweis auf die done-Datei. Der Branch bleibt erhalten. Anlass: acht überholte PRs in `kueper-ecosystem` (#112–#141), die wochenlang offen blieben und weiter erste Reviews bekamen.
+   - **`kueper-hold`:** PRs, deren Urteil „wartet auf Thomas“ lautet oder die aus anderem Grund nicht weiterlaufen sollen, bekommen das Label `kueper-hold`. Das erste Review überspringt sie (nach Merge von #152). Bei neuen Commits auf dem PR oder nach Thomas' Entscheidung entfernt der Lauf das Label wieder.
 6. **Bericht** nur, wenn etwas getan wurde oder etwas auf Thomas wartet: höchstens 8 Zeilen.
 
 ## Lauf 2: Ökosystem-Recherche (täglich 07:13 Uhr, Claude)
