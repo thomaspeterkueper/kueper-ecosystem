@@ -1,6 +1,6 @@
 {
   "id": "RES-20261124-842BDD38",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-24T13:59:05+00:00",
   "source_project": "noxia",
   "source_repository": "thomaspeterkueper/noxiagame",
@@ -35,5 +35,7 @@
     "RES-20261112-C472DAEA"
   ],
   "novelty_reason": "The queued Passion-chronology topic covers the crucifixion between 26 and 36 CE (Passover weekdays, the reported darkness, and the 3 April 33 lunar eclipse). It does not examine Herod's death in 5/4/1 BCE, the Herodian succession and numismatics, the Titulus Tiburtinus, or the 6 CE Quirinius census that form the birth chronology. This gap adds the BCE/CE birth axis and does not repeat the Passion question.",
-  "fingerprint": "842bdd38c844dda9"
+  "fingerprint": "842bdd38c844dda9",
+  "updated_at": "2026-11-24T14:10:40+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/329"
 }
