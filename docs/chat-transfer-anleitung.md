@@ -21,7 +21,7 @@ Bevor Inhalte aus dem Chat übernommen werden:
 5. Bei widersprüchlichen Ständen nicht raten: Konflikt als offenen Punkt oder Request dokumentieren.
 6. Erst nach diesem Read-before-Write-Schritt entscheiden, was tatsächlich übertragen werden muss.
 
-Google Drive und andere persönliche Arbeitsablagen können **Werkstatt** sein, sind aber nicht automatisch kanonisch. GitHub-Repositories bzw. die dort festgelegten Sources of Truth bestimmen den belastbaren Ecosystem-Zustand.
+Google Drive und andere persönliche Arbeitsablagen können **Werkstatt** sein, sind aber nicht automatisch kanonisch. GitHub-Repositories bzw. die dort festgelegten Sources of Truth bestimmen den belastbaren Ecosystem-Zustand. Für strukturierte Drive-Arbeit gilt der verbindliche Promotion-Standard aus [`docs/drive-exchange-standard.md`](drive-exchange-standard.md) (`ECO-ARC-0039`): Ein Artefakt wird erst durch bewusste Übernahme in das zuständige Repository kanonisch.
 
 ## 1. Arbeitsauftrag für einen alten Chat
 
@@ -117,7 +117,7 @@ Fine-grained Tokens sind gegenüber breit berechtigten klassischen Tokens zu bev
 
 ### 5a. Werkstatt statt vorschneller Kanonisierung
 
-Nicht jedes wertvolle Chatergebnis gehört sofort in ein kanonisches Repository. Unfertige Szenen, Varianten, Notizen, visuelle Ideen oder noch nicht entschiedene Konzepte können in der vorgesehenen Werkstatt-/Authoring-Schicht verbleiben. Erst eine fachliche Entscheidung oder ein klarer Request führt zur Übernahme in eine kanonische Source of Truth.
+Nicht jedes wertvolle Chatergebnis gehört sofort in ein kanonisches Repository. Unfertige Szenen, Varianten, Notizen, visuelle Ideen oder noch nicht entschiedene Konzepte können in der vorgesehenen Werkstatt-/Authoring-Schicht verbleiben. Erst eine fachliche Entscheidung oder ein klarer Request führt zur Übernahme in eine kanonische Source of Truth. Nutzt der Workstream dafür Google Drive, gelten Struktur, Statuswerte und Metadaten aus [`docs/drive-exchange-standard.md`](drive-exchange-standard.md).
 
 ## 6. Beziehungen und Folgewirkungen
 

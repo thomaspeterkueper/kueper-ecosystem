@@ -115,6 +115,7 @@ Projekte betreffen könnten: prüfe, ob es dafür schon eine Source of Truth gib
 | In-universe-/Archiv-Dokumente des Noxia-Kanons (`OTA-*`) | `overtime-archive.org` (OTA) — **ausschließlich dort** |
 | Universums-Primärdaten: Bücher, Figuren, Handlungen, Orte | `noxia-universe` (eigene DB) |
 | Zentrale Rechtstexte (Impressum, Datenschutz, AGB) | `kueper-knowledge-graph` (`registry/legal/`) |
+| Entwürfe, Reviews, LLM-Übergaben und Bild-/Binärdaten in Google Drive | **keine Source of Truth**; nach bewusster Übernahme das zuständige Repository (`ECO-ARC-0039`, `docs/drive-exchange-standard.md`) |
 
 Verstößt dein Vorhaben dagegen (du würdest z. B. eigene `OTA-*`-Dokumente
 anlegen oder eine zweite Impressums-Wahrheit pflegen), ist das ein Fall für einen
