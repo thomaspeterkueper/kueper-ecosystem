@@ -1,7 +1,10 @@
 # Governance-Sweep — Bericht
 
-Erzeugt: 2026-11-23T17:56:42.437095+00:00
+Erzeugt: 2026-11-24T17:32:47.813645+00:00
 
-**0 Fund(e)** — 0 error, 0 warning, 0 info
+**2 Fund(e)** — 0 error, 0 warning, 2 info
 
-Keine Auffälligkeiten.
+## task_addressed_to_eco (2)
+- **[info]** Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20261124-001.md
+- **[info]** Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20261124-002.md
+
