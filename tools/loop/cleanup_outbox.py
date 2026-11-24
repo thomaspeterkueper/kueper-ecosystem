@@ -3,9 +3,13 @@
 
 Auditability remains in the canonical External Task via routing_fingerprint/parent_task.
 Invalid/unroutable envelopes are intentionally retained for inspection.
+
+Routed fingerprints and default branches are cached per repository for one run:
+reading every External Task of a target once per envelope exhausted the GitHub
+API rate limit (Autonomous Loop failures 22.–24.11.2026).
 """
 from __future__ import annotations
-import base64, hashlib, json, os, re, urllib.error, urllib.parse, urllib.request
+import base64, functools, hashlib, json, os, re, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 from typing import Any
 
@@ -25,6 +29,7 @@ def gh(token:str,method:str,path:str,body:dict[str,Any]|None=None):
         if exc.code==404:return None
         raise RuntimeError(exc.read().decode(errors="replace")) from exc
 
+@functools.lru_cache(maxsize=None)
 def default(token,repo):return gh(token,"GET",f"/repos/{repo}")["default_branch"]
 def enc(path):return "/".join(urllib.parse.quote(x,safe="") for x in path.split("/"))
 def get(token,repo,path,ref):return gh(token,"GET",f"/repos/{repo}/contents/{enc(path)}?ref={urllib.parse.quote(ref,safe='')}")
@@ -38,16 +43,20 @@ def targets():
     return out
 
 def routed_fingerprints(token,target):
-    branch=default(token,target["repository"]);found=set()
+    return _routed_fingerprints(token,target["repository"])
+
+@functools.lru_cache(maxsize=None)
+def _routed_fingerprints(token,repository):
+    branch=default(token,repository);found=set()
     for state in ("open","parked","done","rejected"):
-        listing=get(token,target["repository"],f"external-tasks/{state}",branch)
+        listing=get(token,repository,f"external-tasks/{state}",branch)
         for item in listing if isinstance(listing,list) else []:
             if item.get("type")!="file" or not item.get("name","").endswith(".md"):continue
-            p=get(token,target["repository"],item["path"],branch)
+            p=get(token,repository,item["path"],branch)
             if isinstance(p,dict):
                 m=re.search(r"^routing_fingerprint:\s*['\"]?([0-9a-f]+)",decode(p),re.M)
                 if m:found.add(m.group(1))
-    return found
+    return frozenset(found)
 
 def main():
     token=os.environ.get("KUEPER_BOT_TOKEN")
