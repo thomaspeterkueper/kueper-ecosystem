@@ -1,0 +1,47 @@
+{
+  "id": "RES-20261124-1C20E1D9",
+  "status": "queued",
+  "created": "2026-11-24T14:23:16+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0105-2026-DE.md",
+  "source_ref": "ce3975a90650fa73792d92310e26f5208a3955c7",
+  "source_blob_sha": "8d8bf6156a7689dca60c22499c0f129c9f5dacc6",
+  "document_signature": "OTA-SCI-0105-2026-DE",
+  "title": "Realwelt-Audit der CMS- und LHCb-Befunde zu seltenen b→sμμ-Zerfällen in OTA-SCI-0105 (v1.1): CMS-PAS-BPH-24-005 mit sechs Kanälen, LHCb arXiv:2608.12215 mit C₉-Abweichung 4,3–4,8σ und die Frage hadronischer vs. neuer Physik",
+  "question": "Quellengestützter Audit der als [R] geführten Realgrundlage von OTA-SCI-0105-2026-DE (Abschnitt 'Realgrundlage (Kurzfassung)'), gepinnt auf die im Workspace vorliegende v1.1 (Status ENTWURF, Stand 17.10.2026; Frontmatter ['R','I','OFFEN']). Das Dokument nennt in der Kurzfassung nur das Muster ('CMS fand 2026 in sechs Kanälen durchweg etwas kleinere Raten als vorhergesagt', 'LHCb ... C₉ um gut 4σ'), während die Primäranalysen bereits als CMS-PAS-BPH-24-005 (Run-3-Daten 2022–2024) und LHCb arXiv:2608.12215 (12.08.2026, 8,4 fb⁻¹ Run 1+2, modellunabhängige Transversitätsamplituden von B⁰→K*⁰μ⁺μ⁻, effektiver Wilson-Koeffizient C₉ 4,3–4,8σ je q²-Binning) identifiziert, aber nicht auf Publikations- und Peer-Review-Status geprüft wurden. Diese Prüfung ist der Auditgegenstand; die AVI-P-Einordnung T1–T4 ist ausdrücklich nicht Gegenstand. (1) Quellenstatus: Verifiziere, ob CMS-PAS-BPH-24-005 in der genannten Form existiert (Kollaborationskennung, Datensatz, sechs Zerfallskanäle, CMS-News vom 17.09.2026) und ob die zugehörige Analyse inzwischen peer-reviewt publiziert ist. Verifiziere ferner, ob arXiv:2608.12215 existiert und ob Titel, Autorschaft (LHCb-Kollaboration), Einreichungsdatum 12.08.2026, Datensatzumfang 8,4 fb⁻¹, Observablen (Transversitätsamplituden, P₅′-artige Größen) und die C₉-Abweichung von 4,3–4,8σ je q²-Binning so berichtet werden. Melde jede Nichtbestätigung ausdrücklich und nenne die nächstliegenden realen Publikationen (LHCb-Run-1/2-Winkelanalysen, CMS-BPH-Analysen, globale b→sμμ-Fits), ohne sie stillschweigend zu substituieren; beachte, dass die Angaben in einem Archiv mit fiktiver 2026er-Datierung stehen und die reale Literaturlage zum Prüfzeitpunkt maßgeblich ist. (2) Kanalinventur: Prüfe, ob der fünfte CMS-Kanal tatsächlich B⁰ₛ → φμμ und nicht B⁰ₛ → μμ ist, und ob 'sechs Kanäle' die im PAS ausgewiesenen Verzweigungsverhältnisse (B⁰→K*⁰μμ, B⁺→K*⁺μμ, B⁰ₛ→φμμ, B⁺→K⁺μμ, B⁰→K⁰ₛμμ und weitere) korrekt zusammenfasst. (3) Hadronische Unsicherheit (der eigentliche Streitpunkt): Prüfe, ob die beobachtete C₉-Verschiebung gegenüber aktuellen Formfaktor- und Charm-Schleifen-Rechnungen robust ist. Berichte den realen Stand der B→K* Formfaktoren (Light-Cone-Sum-Rules, Lattice-QCD bei hohem q², Daten-getriebene Parameterisierungen), der nichtfaktorisierbaren Korrekturen (Λ_QCD/m_b, Duality, Charmonium-Resonanzen bei niedrigem q²), der 'charm-loop'-Unsicherheit und der Vorhersagen für differentielle Verzweigungsverhältnisse. Stelle fest, ob ein Teil der Abweichung durch unterschätzte hadronische Effekte erklärt werden kann, ob die globale Fit-Lage nach den jüngsten Formfaktor-Updates stabil bleibt und wie die CMS-Ratenabweichung in sechs Kanälen mit der LHCb-C₉-Verschiebung konsistent ist. (4) Statusaussage: Prüfe, ob die Formulierung 'eine Entdeckung ist das nicht' zutrifft, ob die Abweichung als lokale oder globale Signifikanz zu führen ist, ob Look-elsewhere-/q²-Binning-Effekte berücksichtigt sind und ob unabhängige Wiederholungen (Belle II, LHCb-Run-3, CMS-Run-3) vorliegen. (5) Reklassifizieren: Nenne die Sätze, die [R] bleiben können (Existenz von CMS- und LHCb-Messungen der b→sμμ-Kanäle; Richtung der beobachteten Ratenabweichung; C₉ als effektiver Wilson-Koeffizient), die zu '[R] Quelleninhalt, Analyse- und Publikationsstatus offen' abzuschwächen sind (die konkreten Signifikanzen, Kanalzahlen, Datensatzumfänge), die als [I] zu führen sind (gemeinsames Muster als Hinweis auf eine effektive Kopplung) und die [OFFEN] bleiben müssen (hadronische vs. BSM-Erklärung, globale Signifikanz, Bestätigung durch unabhängige Analysen). Stelle fest, dass kein kanonischer C₉-Wert, keine kanonische Signifikanz und keine kanonische BSM-Interpretation in den Kanon oder in NOXIA-Standardwerte aufgenommen wird. AUSGESCHLOSSEN: die AVI-P-Bewertung T1–T4 und die Aussage 'AVI unverändert lassen', das Beobachtungs-/Qualitätsschema als Autorenentscheidung, die bereits nach KUE-SCI-0205 ausgelagerte Kanal- und Quelleninventur als bloße Wiederholung sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Das Dokument ist mit Priorität 9 und RELATION_GAP geführt; der Revisionsvermerk nennt die CMS-Veröffentlichung zu CMS-PAS-BPH-24-005 und LHCb-Run-3-Winkelanalysen als erwartete, noch nicht abgeschlossene Prüfpunkte und setzt die nächste Begutachtung auf 2027-05-10. Die Realgrundlage ist seither unverändert; die Frage, ob die ~4σ-C₉-Verschiebung den hadronischen Unsicherheiten standhält, ist für die Aussagekraft des Dokuments entscheidend und derzeit nur als Kurzfassung ohne eigene Quellenprüfung im OTA vorhanden.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "OFFEN"
+  ],
+  "real_world_anchor": "CMS-PAS-BPH-24-005 (Run-3, sechs b→sμμ-Kanäle, CMS-News 17.09.2026) und LHCb arXiv:2608.12215 (12.08.2026, 8,4 fb⁻¹, B⁰→K*⁰μ⁺μ⁻, C₉-Abweichung 4,3–4,8σ je q²-Binning); dazu die reale Literatur zu B→K* Formfaktoren, Charm-Schleifen und globalen b→sμμ-Fits.",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.88,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.86,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein Eintrag der bisherigen OTA-Research-Topics behandelt OTA-SCI-0105 oder die b→sμμ-Anomalie. Die bereits abgeschlossene Aufräum- und Auslagerungsarbeit (OTA-REQ-20261110-002, EXT-OTA-KUE-20261117-002) hat nur die Kanal- und Quelleninventur nach KUE-SCI-0205 verschoben; sie hat weder den Peer-Review-/Publikationsstatus von CMS-PAS-BPH-24-005 und arXiv:2608.12215 noch die Robustheit der C₉-Verschiebung gegen aktuelle Formfaktor- und Charm-Schleifen-Unsicherheiten geprüft. Genau diese Außenprüfung ist hier neu.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 242,
+    "quality_flags": [
+      "GENERIC_SUMMARY",
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "1c20e1d97aa1213c"
+}
