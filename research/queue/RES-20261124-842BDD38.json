@@ -1,0 +1,39 @@
+{
+  "id": "RES-20261124-842BDD38",
+  "status": "queued",
+  "created": "2026-11-24T13:59:05+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "docs/world/chronomap-jesus/01-geburt-und-volkszaehlung.md",
+  "source_ref": "cd342c7d839d1e87877b9c58db86e75664dfdd08",
+  "source_blob_sha": "263669f1bf77f2994e9f0e564a1eb6d0691d8442",
+  "title": "Herod's death year and the census of Quirinius: what the primary evidence supports for the Chronomap's birth chronology",
+  "question": "What do Josephus (Ant. 17-18), the candidate lunar eclipses of 15/16 September 5 BCE, 12/13 March 4 BCE and 10 January 1 BCE, Herodian and successor numismatics, the Titulus Tiburtinus (CIL XIV 3613), the Q. Aemilius Secundus inscription (CIL III 6687) and current peer-reviewed Herodian chronology establish about the year of Herod the Great's death and the date and status of the Quirinius census, and which statements can be labelled [A]/[R], [S] or [T]? Specifically: does the 4 BCE eclipse satisfy Josephus' sequence (eclipse, Antipater's execution five days later, Herod's death, a Passover); what are the strongest arguments for 5 or 1 BCE; is the 'second legateship' of Quirinius in Syria epigraphically established or only inferred; and how should the Chronomap present its two birth axes (before Herod's death versus the 6 CE census) without turning a contested chronology into a settled date?",
+  "why_now": "Chronomap Jesus chapter 01 (docs/world/chronomap-jesus/01-geburt-und-volkszaehlung.md, header revised 12/23.11.2026) makes Herod's death year the first switch of the whole chronology and lists 4, 5 and 1 BCE alongside the Quirinius problem; the person-and-place rollout for chapters 02-03 is queued for 24.11.2026, so the birth axis will be propagated into more files.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "S",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "The year of Herod the Great's death and the census of Quirinius: Josephus Ant. 17-18, the 5/4/1 BCE lunar-eclipse candidates, the Titulus Tiburtinus (CIL XIV 3613), and Herodian and successor numismatics.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.8625,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20261112-C472DAEA"
+  ],
+  "novelty_reason": "The queued Passion-chronology topic covers the crucifixion between 26 and 36 CE (Passover weekdays, the reported darkness, and the 3 April 33 lunar eclipse). It does not examine Herod's death in 5/4/1 BCE, the Herodian succession and numismatics, the Titulus Tiburtinus, or the 6 CE Quirinius census that form the birth chronology. This gap adds the BCE/CE birth axis and does not repeat the Passion question.",
+  "fingerprint": "842bdd38c844dda9"
+}
