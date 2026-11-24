@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-23 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-24 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -91,13 +91,13 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0027-2025-DE | Graphen-Keramik-Verbundwerkstoffe: Ultra-Hochtemperatur | RST |  | offen |
 | OTA-SCI-0028-2025-DE | Aerostatische Staudüsen: Elektrostatische Lageregelung  | RST |  | offen |
 | OTA-SCI-0029-2025-DE | SSTO-Massenbudget und Treibstoffchemie: ASCE-Schließaud | FOFFENRT | V. BETRIEBS- UND KOSTENCLAIMS [T/F] | offen |
-| OTA-SCI-0030-2025-DE | HD 20794 d — Die episodische Supererde | RST |  | offen |
+| OTA-SCI-0030-2025-DE | HD 20794 d — Die episodische Supererde | RST |  | geprüft 2026-11-24 – Teile nach KUE (I, II.1, HZ-Grenzen, Instrumente, VIII), Spekulation/NOXIA/χ-Feld bleiben; EXT-OTA-KUE-20261124-002, Korrektur/Kürzung OTA-REQ-20261124-002 (B wartet auf Thomas) |
 | OTA-SCI-0031-2024-DE | Gliese-12b — Die stille Exo-Venus | RST |  | offen |
 | OTA-SCI-0032-2024-DE | GJ 251 c — Die kosmische Nachbarin in der habitablen Zo | RST |  | offen |
 | OTA-SCI-0034-2026-DE | MoM-z14 — Die älteste Galaxie | RT |  | offen |
 | OTA-SCI-0035-2026-DE | Hybride Aggregatzustände in Metall-Nanopartikeln — Wenn | RST |  | offen |
 | OTA-SCI-0043-2026-DE | LLSVPs und die Kern-Mantel-Grenze: Evidenz, Geodynamo u | HOFFENRS | I. LLSVPs: SEISMISCHE EVIDENZ [R]; II. URSPRUNG DER TIEFMANTEL-HETEROGENITÄTEN [ | offen |
-| OTA-SCI-0044-2026-DE | Extragalaktische organische Chemie: JWST-Befunde in IRA | RT | 7.1 Kernaussagen [R]; 7.2 Theoretische Einordnung [T] | geprüft 2026-11-22 – ganz nach KUE (reines Realdossier, AVI-Übertragung liegt in OTA-FND-0012), viele unbelegte Zahlen; erst Korrektur, dann Brückendokument; EXT-OTA-KUE-20261122-001, OTA-REQ-20261122-001 (A umsetzbar, B wartet auf Thomas) |
+| OTA-SCI-0044-2026-DE | Extragalaktische organische Chemie: JWST-Befunde in IRA | RT | 7.1 Kernaussagen [R]; 7.2 Theoretische Einordnung [T] | geprüft 2026-11-22 – ganz nach KUE (reines Realdossier, AVI-Übertragung liegt in OTA-FND-0012), viele unbelegte Zahlen; erst Korrektur, dann Brückendokument; EXT-OTA-KUE-20261122-001, OTA-REQ-20261122-001 (A umsetzbar, B wartet auf Thomas) – A umgesetzt 2026-11-24 (v1.1) |
 | OTA-SCI-0046-2026-DE | OTA-SCI-0046-2026-DE | HRT |  | offen |
 | OTA-SCI-0048-NACHTRAG-2026-DE | Λ-Haplogruppe: Drei Ergänzungsmodule — UPE-FSS-Detektio | FRST | MODUL A: UPE-FSS-DETEKTIONSPROTOKOLL [R→T→S]; A.1 Realweltlicher Sockel [R] | offen |
 | OTA-SCI-0059-2026-DE | OTA-SCI-0059-2026-DE | RST |  | offen |
@@ -105,8 +105,8 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0063-2026-DE | Die Belousov-Zhabotinsky-Reaktion: Selbstorganisierte D | RT | II. HISTORISCHER AUSGANG: ABLEHNUNG ALS MUSTER `[R-Anker]`; 2.1 Boris Belousov u | offen |
 | OTA-SCI-0065-2026-DE | OTA-SCI-0065-2026-DE | RT |  | offen |
 | OTA-SCI-0066-2026-DE | OTA-SCI-0066-2026-DE | RT |  | offen |
-| OTA-SCI-0081-2026-DE | Die Bronzescheibe: Kreisplatten-Akustik, Lapis-lazuli-F | RST | 1.1 Grundlagen der Plattenakustik `[R]`; 1.2 Eigenfrequenzen der Bronzescheibe:  | geprüft 2026-11-22 – Teile nach KUE (§1.1–1.2 Plattenakustik, §2.1–2.2 Lapis lazuli; §5.1 Gegenstück KUE-SCI-0207), Scheibe/Schlüssel/KN bleiben; Frequenzrechnung fehlerhaft; EXT-OTA-KUE-20261122-002, OTA-REQ-20261122-002 (A umsetzbar, B wartet auf Thomas) |
-| OTA-SCI-0083-2026-DE | Eigenzeit, optische Atomuhren und relativistische Aussc | R |  | offen |
+| OTA-SCI-0081-2026-DE | Die Bronzescheibe: Kreisplatten-Akustik, Lapis-lazuli-F | RST | 1.1 Grundlagen der Plattenakustik `[R]`; 1.2 Eigenfrequenzen der Bronzescheibe:  | geprüft 2026-11-22 – Teile nach KUE (§1.1–1.2 Plattenakustik, §2.1–2.2 Lapis lazuli; §5.1 Gegenstück KUE-SCI-0207), Scheibe/Schlüssel/KN bleiben; Frequenzrechnung fehlerhaft; EXT-OTA-KUE-20261122-002, OTA-REQ-20261122-002 (A umsetzbar, B wartet auf Thomas) – A umgesetzt 2026-11-24 (v1.3) |
+| OTA-SCI-0083-2026-DE | Eigenzeit, optische Atomuhren und relativistische Aussc | R |  | geprüft 2026-11-24 – ganz nach KUE (Realteil) als Ergänzung von KUE-SCI-0177, §8/§9 (AVI/EIGENZEIT-Trennlinie) bleiben; EXT-OTA-KUE-20261124-001, danach Brücke OTA-REQ-20261124-001 (Quellenpunkt A sofort) |
 | OTA-SCI-0084-2026-DE | Kryoporöse Oberflächen auf Eiswelten — Hazard- und Expl | OFFENRT |  | geprüft 2026-11-20 – KUE-Gegenstück vorhanden (KUE-SCI-0013 v1.1), Hazard/NOXIA bleiben; Korrektur/Verweis OTA-REQ-20261120-001, Ergänzung EXT-OTA-KUE-20261120-001 |
 | OTA-SCI-0092-2026-DE | Fast Radio Bursts — Baryonenverteilung, Feedback und Ma | HOFFENR |  | offen |
 | OTA-SCI-0093-2026-DE | Standard-Sirenen — Umgebungsbeschleunigung als systemat | HOFFENR |  | offen |
