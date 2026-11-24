@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261124-7F1DA580",
+  "status": "queued",
+  "created": "2026-11-24T13:59:06+00:00",
+  "source_project": "noxia",
+  "source_repository": "thomaspeterkueper/noxiagame",
+  "source_path": "docs/world/chronomap-erde/wissen/geld-preise.md",
+  "source_ref": "cd342c7d839d1e87877b9c58db86e75664dfdd08",
+  "source_blob_sha": "bc35ef68cc25c237ce2076637b453a58c5987747",
+  "title": "Defensible first-century prices, wages and coin conversions for the Chronomap economy",
+  "question": "What do papyri, coin finds and numismatic catalogues (RPC, Hendin), Josephus, the Mishnah and peer-reviewed economic histories establish about daily wages, bread and wheat prices, clothing, rent and the purchasing power of the denarius in first-century CE Judaea and the eastern Mediterranean, and which conversion conventions are defensible: 1 denarius = 16 asses after c. 141 BCE, 1 talent = 6000 denarii/drachmas, and what is the mine? Specifically, can the Mishnah's 200-zuz poverty line, the 2-denarius inn payment (Lk 10:35), Antipas' 200-talent tribute (Ant. 17:318) and the 'two sparrows for an as' (Mt 10:29) be converted into a consistent price scale, and where must the Chronomap show a range rather than a point value?",
+  "why_now": "The money file was revised on 21.11.2026 to provide a source-backed basis for the Chronomap game economy, but it still lists open points on first-century bread and wheat prices and on the mine/talent conversion; the same values feed the Chronomap economy and the Academy material.",
+  "languages": [
+    "en",
+    "de",
+    "fr"
+  ],
+  "evidence_profile": "technical-scientific",
+  "claim_classes": [
+    "R",
+    "S",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "First-century CE prices, wages and coin conversions in Roman Judaea and the eastern Mediterranean: papyri, coin hoards, RPC/Hendin catalogues, Josephus, and the Mishnah.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.805,
+  "scores": {
+    "project_relevance": 0.82,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic covers ancient prices, wages or coinage. The prior Georgist land-value-taxation topic concerns modern LVT and outer-space property law, not Roman-period market prices or numismatic conversion conventions.",
+  "fingerprint": "7f1da580fa44c16b"
+}
