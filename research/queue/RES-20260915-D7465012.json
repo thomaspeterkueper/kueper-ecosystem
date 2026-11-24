@@ -1,6 +1,6 @@
 {
   "id": "RES-20260915-D7465012",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-15T09:02:11+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -49,5 +49,27 @@
   },
   "fingerprint": "d7465012b4758d35",
   "updated_at": "2026-09-15T09:21:59+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/123"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/123",
+  "validated_at": "2026-11-24T16:08:16+00:00",
+  "validation_summary": "Der Kandidat bestätigt die Zahlenanker (21,5 kHz liegt im real messbaren jungen EHF-Bereich; 20 kHz ist die nominale Hörgrenze; Mars c ≈ 240 m/s), widerlegt aber zwei Kausalsätze: '21.500 Hz ist die Lavaröhren-Eigenfrequenz' (f₁ = c/2L verlangt einen Millimeterresonator; reale Lavaröhren resonieren im Infraschall) und 'der Körper schwingt bei 21,5 kHz mit' (Körperresonanzen liegen bei 4–8 Hz bzw. 8–1000 Hz). Konkreter OTA-Handlungsbedarf entsteht dort, wo OTA eine [R]-Kennzeichnung trägt: Die Alters-/Hörbereichstabelle in OTA-SCI-0013 ist als [R] materiell falsch, weil 20 kHz keine harte obere Grenze ist und Kinder/Jugendliche bei ~90–105 dB SPL bis in den 22-kHz-Bereich messbar sind. OTA-RED-0018 und OTA-SCI-0014 führen den Lavaröhren-Satz dagegen bereits als [F] bzw. [F/S]; eine Kanonkorrektur ist dort nicht erzwungen, eine Kuratorennote zur Real/Fiktions-Grenze ist aber sinnvoll. STUFE-OMEGA, Fälle, Personen und Status bleiben unberührt.",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261124-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261124-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261124-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
