@@ -6779,14 +6779,20 @@
       "1aHIk7myd0DDnYIUrZ4lYSp_dE8rkMVQD": {
         "title": "OTA-FND-0019-2025-DE-v1_1.docx",
         "folder": "OTA (alt, bis Okt. 2026)/FND",
-        "status": "nurDrive",
-        "checkedAt": "2026-11-24"
+        "status": "übernommen",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-FND-0019-2025-DE.md (v1.1)",
+        "checkedAt": "2026-11-24",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261124-001.md",
+        "entscheidung": "Drive-Fassung v1.1 ist Weiterentwicklung (Ergänzung A integriert) und ersetzt die GitHub-v1.0 (Drive-Regel 23.11.2026)"
       },
       "1-T6t5IKxM3c6BpE_G3yOv-h4JXbv5kJ7": {
         "title": "OTA-FND-0019-2025-DE-v1_1.pdf",
         "folder": "OTA (alt, bis Okt. 2026)/FND",
-        "status": "nurDrive",
-        "checkedAt": "2026-11-24"
+        "status": "übernommen",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-FND-0019-2025-DE.md (v1.1)",
+        "checkedAt": "2026-11-24",
+        "request": "overtime-archive.org/external-tasks/done/EXT-ECO-OTA-20261124-001.md",
+        "entscheidung": "Drive-Fassung v1.1 ist Weiterentwicklung (Ergänzung A integriert) und ersetzt die GitHub-v1.0 (Drive-Regel 23.11.2026)"
       },
       "1V9k7JJbLMGAL23UGpz1EKuUkvkebXYyU": {
         "title": "OTA-FND-0010-CORRECTIONS-v1.1.md",
@@ -7601,24 +7607,6 @@
         "checkedAt": "2026-11-22"
       },
       {
-        "fileId": "1aHIk7myd0DDnYIUrZ4lYSp_dE8rkMVQD",
-        "title": "OTA-FND-0019-2025-DE-v1_1.docx",
-        "folder": "OTA (alt, bis Okt. 2026)/FND",
-        "status": "nurDrive",
-        "beschreibung": "Davaru-Kodex v1.1 (Ergänzung A integriert, März 2026): ca. 2.700 Wörter, GitHub hat v1.0 (ca. 1.650); fehlen u. a. I.A Grenzkollisionen, VIII.A Spiderman-Vorfall, XI „Der Weg in der Zeit“.",
-        "checkedAt": "2026-11-24",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261124-001.md"
-      },
-      {
-        "fileId": "1-T6t5IKxM3c6BpE_G3yOv-h4JXbv5kJ7",
-        "title": "OTA-FND-0019-2025-DE-v1_1.pdf",
-        "folder": "OTA (alt, bis Okt. 2026)/FND",
-        "status": "nurDrive",
-        "beschreibung": "PDF-Export des Davaru-Kodex v1.1 (inhaltsgleich mit der .docx).",
-        "checkedAt": "2026-11-24",
-        "request": "overtime-archive.org/external-tasks/open/EXT-ECO-OTA-20261124-001.md"
-      },
-      {
         "fileId": "1V9k7JJbLMGAL23UGpz1EKuUkvkebXYyU",
         "title": "OTA-FND-0010-CORRECTIONS-v1.1.md",
         "folder": "OTA (alt, bis Okt. 2026)/FND",
@@ -7791,6 +7779,18 @@
       {
         "fileId": "1rUmxbZZJDTQpybuYMc0h5T1hnj3H2ItS",
         "newTitle": "[doppelt 2026-11-24] OTA-FND-0002-2025.docx",
+        "grund": "Drive-Werkzeug: „The caller does not have permission to move this file“ (2026-11-24)"
+      },
+      {
+        "fileId": "1aHIk7myd0DDnYIUrZ4lYSp_dE8rkMVQD",
+        "newTitle": "[übernommen 2026-11-24] OTA-FND-0019-2025-DE-v1_1.docx",
+        "movedTo": "_Kann weg",
+        "grund": "Drive-Werkzeug: „The caller does not have permission to move this file“ (2026-11-24)"
+      },
+      {
+        "fileId": "1-T6t5IKxM3c6BpE_G3yOv-h4JXbv5kJ7",
+        "newTitle": "[übernommen 2026-11-24] OTA-FND-0019-2025-DE-v1_1.pdf",
+        "movedTo": "_Kann weg",
         "grund": "Drive-Werkzeug: „The caller does not have permission to move this file“ (2026-11-24)"
       }
     ]
