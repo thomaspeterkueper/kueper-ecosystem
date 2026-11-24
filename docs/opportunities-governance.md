@@ -1,6 +1,6 @@
 # Externe Forschungs- und Förderchancen – systemweiter Vertrag (Entwurf)
 
-Status: proposal · Issue: [#131](https://github.com/thomaspeterkueper/kueper-ecosystem/issues/131) · Stand: 2026-11-15
+Status: proposal · Issue: [#131](https://github.com/thomaspeterkueper/kueper-ecosystem/issues/131) · Stand: 2026-11-24
 
 ## Zweck und Zuständigkeit
 
@@ -23,7 +23,11 @@ Dieses Dokument beschreibt den **gemeinsamen Metadatenvertrag** für Förderprog
 - `assessment`: getrennte Bewertungsdimensionen nach Regel 3, je Dimension `rating` (`low | medium | high | unknown`) und `reason`; Dimensionen: `research_fit`, `validation_level`, `benefit`, `visibility`, `collaboration_potential`, `ip_risk`. Vor dem Eligibility-Gate alle `unknown`.
 - `status_history`: Auditliste nach Regel 6, je Eintrag `at` (ISO-8601), `by`, `from`, `to`, `reason`; der erste Eintrag hat `from: null`
 
-Alle Pflichtfelder müssen in jedem Datensatz vorhanden sein. `source_checked_at` und `eligibility_checked_at` dürfen nur dann `null` sein, wenn noch keine offizielle Quelle geprüft wurde; dann gilt zwingend `eligibility: unclear` (siehe Regel 1 und 2).
+Alle Pflichtfelder müssen in jedem Datensatz vorhanden sein. Für die beiden Prüfzeitpunkte gelten getrennte Regeln (siehe Regel 1 und 2):
+
+- `source_checked_at` ist `null`, solange noch keine offizielle Quelle geprüft wurde; dann gilt zwingend `eligibility: unclear`.
+- `eligibility_checked_at` ist `null`, solange das Eligibility-Gate noch nicht geprüft wurde; dann gilt ebenfalls zwingend `eligibility: unclear`. Der Zwischenzustand „Primärquelle geprüft, Gate noch offen“ (`source_checked_at` gesetzt, `eligibility_checked_at: null`, `eligibility: unclear`) ist ausdrücklich zulässig.
+- Invarianten: `eligibility` ≠ `unclear` ⇒ `source_checked_at` und `eligibility_checked_at` beide gesetzt; `eligibility_checked_at` gesetzt ⇒ `source_checked_at` gesetzt. Ein geprüftes Gate darf `unclear` bleiben (fehlende Nachweise, Regel 2); dann ist `eligibility_checked_at` gesetzt.
 
 Optionale Felder: `deadline_at` (exakte Frist, ISO-8601 mit Uhrzeit und Zeitzone); `deadline_date` (Fristdatum `YYYY-MM-DD`; gesetzt, sobald eine Frist bekannt ist – bei exakter Frist das lokale Datum von `deadline_at`, sonst das allein bekannte Datum) mit `deadline_status` (`confirmed | reported | unknown`, siehe Regel 1); `evidence_status` (Reifegrad des eingebrachten KUEPER-Beitrags, siehe Regel 4; ab Status `prioritized` Pflicht); `contact` (externer Ansprechpartner beim Ausrichter, nur dienstliche Kontaktangaben aus der offiziellen Quelle); `funding_amount` plus Währung; `country`; `language`; `partner_requirements`; `degree_requirements`; `publication_requirements`; `institution_requirements`; `residency_requirements`; `legal_form_requirements`; `allowed_ai_use`; `ip_terms`; `submission_url`; `evidence_refs` (kanonische IDs/URLs); `notes`; `next_action`; `last_reviewed_at`.
 

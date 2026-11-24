@@ -8,11 +8,11 @@ title: ""
 type: prize                      # grant | prize | collaboration | publication
 organizer: ""
 official_url: ""
-source_checked_at: null          # ISO-8601 inklusive Zeitzone; null nur solange eligibility: unclear
+source_checked_at: null          # ISO-8601 inklusive Zeitzone; null nur solange keine offizielle Quelle geprüft (dann eligibility: unclear)
 status: discovered               # discovered | screening | prioritized | preparing | submitted | awarded | rejected | archived
 eligibility: unclear             # eligible | partner_required | ineligible | unclear
 eligibility_reason: ""
-eligibility_checked_at: null     # ISO-8601 inklusive Zeitzone; null nur solange eligibility: unclear
+eligibility_checked_at: null     # ISO-8601 inklusive Zeitzone; null solange das Gate nicht geprüft ist (dann eligibility: unclear); setzt source_checked_at voraus
 projects: []                     # IDs aus registry/projects.json (z. B. knowledge-graph, noxia)
 topics: []
 call_round: null                 # Ausschreibungsrunde/Ausgabejahr; Teil des Dedup-Schlüssels
