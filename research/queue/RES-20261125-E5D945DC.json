@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261125-E5D945DC",
+  "status": "queued",
+  "created": "2026-11-25T13:13:52+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "spaces/noxia/infrastructure/NXU-CERES-PIAZZI-LIGHTS-2091.md",
+  "source_ref": "44279d46a6919dbed8ec0ef35d2e2dbe2cb67c49",
+  "source_blob_sha": "d49e9126e2ce72073d5c889a5f60be0bd02ccc20",
+  "title": "Ceres als Siedlungsstandort: Was Dawn-Daten und peer-reviewte Kryo-/Regolithforschung für Piazzi-Lights wirklich tragen",
+  "question": "Was belegen Dawn-Messungen und peer-reviewte Ceres-Studien zu Verteilung, Tiefe und Zugänglichkeit von Wasser-/Volatilvorkommen, Regolithzusammensetzung und -geotechnik, Oberflächenthermik, Staub/Elektrostatik und lokaler ISRU — und welche Siedlungsarchitektur (Oberflächen-/Untergrundkomplex, Wassergewinnung, Sauerstoffproduktion, lokale Abschirmmasse) für ~120 Menschen auf Ceres ist damit vereinbar? Wo muss der Kanon von „großen Wasservorkommen“ und „lokaler Versorgung“ zu konkreten Lagerstätten-, Förder- und Energiegrenzen übergehen, statt Ceres als selbstverständlichen Ressourcenknoten zu setzen? Strahlenschutz und Teilgravitationsbiologie sind separat behandelt und nicht Teil dieser Frage.",
+  "why_now": "Piazzi-Lights v1.2 ist aktueller Arbeitskanon und trägt die Belt-/Ceres-Bevölkerungslinie (~120 Menschen 2091) sowie die Ceres-Kinder- und 0,35-g-Debatte. Das Dokument lässt „exakte Lager-/Antriebstechnik, Abschirmtiefe, Leistungsbedarf, Thermik, Baufolge“ ausdrücklich offen und setzt zugleich große lokale Wasservorkommen, lokale Sauerstofferzeugung und lokalen Abschirmmassenvorrat voraus. Eine reale Ceres-Ankerprüfung verhindert, dass die Siedlung auf Annahmen gebaut wird, die Dawn-Daten zu Eisverteilung, Eistiefe und Zugänglichkeit widersprechen.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Dawn-Mission (NASA/JPL) zu Ceres' Innerem, Krustenzusammensetzung, Wassereis, Occator-Salzen und Ammoniummineralen; peer-reviewte Ceres-Kryo- und Regolithstudien (Icarus, JGR Planets, Nature Geoscience, Science); Oberflächenthermik, Staub- und Elektrostatikumgebung. Strahlung und Teilgravitation sind bewusst ausgeklammert (bereits RES-20261029-598703D4 und RES-20260914-3AD6CB18).",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.8375,
+  "scores": {
+    "project_relevance": 0.95,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger Topic behandelt Ceres als planetaren Körper: RES-20260914-3AD6CB18 prüft Teilgravitationsbiologie, RES-20261029-598703D4 Strahlenschutz, RES-20261029-9BDD2E8E Marsgeologie, RES-20261010-2E3C4B95 Dvārakā. Neu ist die Frage nach realer Ceres-Eisgeologie, Volatilzugänglichkeit, Regolithgeotechnik und ISRU als Grundlage der Piazzi-Lights-Architektur.",
+  "fingerprint": "e5d945dc5854469f"
+}
