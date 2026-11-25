@@ -44,7 +44,7 @@ HOLD_LABEL = "kueper-hold"
 
 def _has_hold_label(pr: dict[str, Any]) -> bool:
     labels = pr.get("labels") if isinstance(pr.get("labels"), list) else []
-    return any(isinstance(label, dict) and label.get("name") == HOLD_LABEL for label in labels)
+    return any(isinstance(label, dict) and str(label.get("name") or "").strip().lower() == HOLD_LABEL for label in labels)
 
 
 def _round_robin(per_repo: list[tuple[str, list[dict[str, Any]]]]):
@@ -156,12 +156,12 @@ def discover(
             results.append({"repository": repository, "pr_url": pr.get("html_url"),
                             "head_sha": None, "task_id": None, "status": "skipped-hold"})
             continue
-        intaken += 1
         html_url = str(pr.get("html_url") or "").strip()
         head = pr.get("head") if isinstance(pr.get("head"), dict) else {}
         head_sha = str(head.get("sha") or "").strip().lower()
         if not html_url:
             continue
+        intaken += 1
         try:
             task = intake(db, html_url, repository_projects=projects, head_sha=head_sha or None)
         except Exception as exc:  # per-PR isolation: one anomalous row must not abort the batch

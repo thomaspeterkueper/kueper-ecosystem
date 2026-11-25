@@ -42,6 +42,21 @@ class FairnessTests(unittest.TestCase):
         self.assertEqual([r["status"] for r in result].count("skipped-hold"), 2)
         self.assertEqual(db.seen, [f"https://github.com/{A}/pull/3"])
 
+    def test_hold_label_match_ignores_case(self):
+        db = RecordingDb()
+        data = {A: prs(A, 1, labels=[{"name": "KUEPER-Hold"}])}
+        result = discover(db, "t", repository_projects={A: "A"},
+                          fetch_open_prs=lambda repo, token: data[repo])
+        self.assertEqual(result[0]["status"], "skipped-hold")
+        self.assertEqual(db.seen, [])
+
+    def test_malformed_row_does_not_consume_budget(self):
+        db = RecordingDb()
+        data = {A: [{"html_url": "", "head": {}}] + prs(A, 2)}
+        discover(db, "t", repository_projects={A: "A"},
+                 fetch_open_prs=lambda repo, token: data[repo], max_prs=2)
+        self.assertEqual(len(db.seen), 2)
+
     def test_unreachable_repository_does_not_abort_discovery(self):
         db = RecordingDb()
 
