@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261125-009CDD74",
+  "status": "queued",
+  "created": "2026-11-25T13:13:54+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "spaces/noxia/infrastructure/NXU-MARS-QUADRATURE-NETWORK.md",
+  "source_ref": "44279d46a6919dbed8ec0ef35d2e2dbe2cb67c49",
+  "source_blob_sha": "55fbdf01c8a6b0aefccf2146af03cc9c73e62543",
+  "title": "Mars–Erde- und Quadratur-Kommunikation: Latenz, Konjunktionsausfälle und Relaiskapazität als reale Grenzen für „Das Schweigen“ und Q1",
+  "question": "Was legen NASA Deep Space Network, Mars-Relais-Orbiter, optische Deep-Space-Kommunikation (z. B. DSOC), CCSDS-/DTN-Standards und peer-reviewte Studien zu Einweg-Lichtzeit, Dauer und Häufigkeit von Sonnenkonjunktions-Ausfällen, erreichbarer Bandbreite pro Siedlung/Station, Relaisabdeckung und der nötigen lokalen Autonomie fest, wenn eine Mars-Siedlung oder eine heliozentrische Station für Wochen bis Jahre keinen Kontakt hat? Welche Teile einer zweijährigen vollständigen Erde–Mars-Stille („Das Schweigen“ 2067–2069) sind physikalisch erzwungen, welche brauchen eine Infrastruktur- oder politische Ursache, und welche Mindestarchitektur (lokale Navigation, Notfalltelemetrie, Datenpuffer, autonome Softwarewartung) bräuchten ~3.800 Menschen auf Mars und ~3.250 auf Q1?",
+  "why_now": "NXU-MARS-QUADRATURE-NETWORK v1.0 führt „Kommunikationsfunktion bei ungünstiger Sonne-Erde-Mars-Geometrie“ als offenen Punkt 8; Q1 ist als Kommunikationsknoten gesetzt. Gleichzeitig ist „Das Schweigen“ (2067–2069, zwei Jahre) ein tragendes Timeline-Ereignis, und die Timeline verzeichnet 2056 bereits eine 72-Stunden-„solare Interferenz“. Ohne reale Link- und Konjunktionsgrenzen bleibt unklar, was an der Isolation physikalisch erzwungen und was Setzung ist.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "NASA Deep Space Network und Mars Relay Network; optische Deep-Space-Kommunikationsdemonstrationen (DSOC/Psyche); CCSDS-Raumfunkstandards und Delay-Tolerant Networking; peer-reviewte Studien zu Mars–Erde-Konjunktion, Lichtzeit und Link-Budgets.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.85,
+    "uncertainty": 0.65,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "RES-20261004-9D79B665 behandelt die Definition einer gemeinsamen Referenzzeit und relativistische Uhrenkorrekturen, nicht Link-Budgets, Konjunktionsausfälle, Relaisabdeckung oder Autonomie bei Kontaktverlust. RES-20261113-AA5ECC0E behandelt Start-/Landesicherheitsabstände, nicht Kommunikation. Neu ist die kommunikationstechnische Grenze der Mars-/Q1-Isolation.",
+  "fingerprint": "009cdd74a59c46ed"
+}
