@@ -51,6 +51,7 @@ Diese Inhalte bleiben in den jeweils zuständigen Repositories.
 - [`docs/cross-repository-workflow.md`](docs/cross-repository-workflow.md)
 - [`docs/onboarding-template.md`](docs/onboarding-template.md) — verbindliche Vorlage für neue Projekte
 - [`docs/drive-exchange-standard.md`](docs/drive-exchange-standard.md) — verbindlicher Drive-Exchange- und Asset-Workshop-Standard (Exchange/Workshop, nicht Source of Truth; `ECO-ARC-0039`)
+- [`docs/development-checkpoints.md`](docs/development-checkpoints.md) – auffindbarer Entwicklungsstand je Repository; Einstieg für dieses Repository: [`docs/development/README.md`](docs/development/README.md)
 - [`docs/programs/README.md`](docs/programs/README.md) — registrierte Cross-Repository-Programme und ihre Zuständigkeitsverteilung
 - [`decisions/README.md`](decisions/README.md)
 
