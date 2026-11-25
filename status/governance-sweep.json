@@ -1,31 +1,5 @@
 {
-  "generated_at": "2026-11-24T17:32:47.813645+00:00",
-  "findings": [
-    {
-      "id": "a2be2bdc2a17",
-      "category": "task_addressed_to_eco",
-      "severity": "info",
-      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20261124-001.md"
-    },
-    {
-      "id": "76228609fbd0",
-      "category": "task_addressed_to_eco",
-      "severity": "info",
-      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20261124-002.md"
-    }
-  ],
-  "new_since_last_run": [
-    {
-      "id": "a2be2bdc2a17",
-      "category": "task_addressed_to_eco",
-      "severity": "info",
-      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20261124-001.md"
-    },
-    {
-      "id": "76228609fbd0",
-      "category": "task_addressed_to_eco",
-      "severity": "info",
-      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-NOXIA-ECO-20261124-002.md"
-    }
-  ]
+  "generated_at": "2026-11-25T17:05:30.436511+00:00",
+  "findings": [],
+  "new_since_last_run": []
 }
