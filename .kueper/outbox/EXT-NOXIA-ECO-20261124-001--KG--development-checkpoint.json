@@ -1,0 +1,16 @@
+{
+  "target": "KG",
+  "title": "Entwicklungscheckpoint-Einstieg in kueper-knowledge-graph anlegen",
+  "reason": "EXT-NOXIA-ECO-20261124-001 (Owner-Wunsch, 24.11.2026): Lange KI-Chats dürfen nicht die einzige Quelle für Entwürfe, Implementierungsstände und offene Arbeit sein. kueper-ecosystem hat dafür die Regel docs/development-checkpoints.md (v1.0.0) festgelegt; fachliche Checkpoints liegen im zuständigen Repository, deshalb wird der Einstieg hier nicht von ECO aus angelegt.",
+  "requested_change": "docs/development/README.md als Einstieg anlegen und die aktiven Workstreams (u. a. Research-Candidates-Pipeline, Evidenz-/Validierungswerkzeuge, offene Feature-PRs) nach dem Mindestformat aus kueper-ecosystem/docs/development-checkpoints.md erfassen; vorhandene docs/handoffs/ verlinken statt kopieren. README.md verweist mit einem Satz darauf.",
+  "expected_result": "Ein neuer berechtigter Chat findet über docs/development/README.md (oder den README-Abschnitt „Entwicklungsstand“) alle aktiven Workstreams des Repositories mit Ziel, Status, Branch/PR, letzter verifizierter Revision, Tests, offenen Schritten (als Verweise), Risiken und Abschlusskriterien – ohne alte Chat-Historie und ohne zweite Aufgabenliste.",
+  "priority": "medium",
+  "cost_policy": "normal",
+  "estimated_effort": "low",
+  "depth": 1,
+  "affects": [
+    "KG",
+    "ECO"
+  ],
+  "parent_task": "EXT-NOXIA-ECO-20261124-001"
+}
