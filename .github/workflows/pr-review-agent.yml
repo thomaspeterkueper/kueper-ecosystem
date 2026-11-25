@@ -108,6 +108,7 @@ jobs:
           python -m unittest tools/review/test_merge_gate.py
           python -m unittest tools/review/test_direct_pr_intake.py
           python -m unittest tools/review/test_direct_pr_intake_v02.py
+          python -m unittest tools/review/test_direct_pr_intake_fairness.py
 
       - name: Discover direct PRs from registry
         if: steps.lease.outputs.should_run == 'true'

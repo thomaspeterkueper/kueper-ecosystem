@@ -15,6 +15,12 @@ RPC/data errors still fail normally and are surfaced by per-PR discovery isolati
 Discovery isolates per-PR intake failures into error entries instead of aborting
 the batch, so one anomalous row (e.g. a legacy task without a repository column)
 cannot starve the review queue.
+
+Fairness (24.11.2026): discovery walks repositories round-robin instead of
+alphabetically, so the ``max_prs`` cap cannot starve repositories late in the
+alphabet (with ~150 open PRs, noxiagame, overtime-archive.org and others were
+never reached). PRs carrying the label ``HOLD_LABEL`` (set by Claude runs on
+superseded PRs or PRs waiting for the owner) are skipped and reported.
 """
 from __future__ import annotations
 
@@ -33,6 +39,25 @@ parse_pr_url = v01.parse_pr_url
 load_repository_projects = v01.load_repository_projects
 github_open_prs = v01.github_open_prs
 SHA_RE = v01.SHA_RE
+HOLD_LABEL = "kueper-hold"
+
+
+def _has_hold_label(pr: dict[str, Any]) -> bool:
+    labels = pr.get("labels") if isinstance(pr.get("labels"), list) else []
+    return any(isinstance(label, dict) and str(label.get("name") or "").strip().lower() == HOLD_LABEL for label in labels)
+
+
+def _round_robin(per_repo: list[tuple[str, list[dict[str, Any]]]]):
+    index = 0
+    while True:
+        emitted = False
+        for repository, prs in per_repo:
+            if index < len(prs):
+                emitted = True
+                yield repository, prs[index]
+        if not emitted:
+            return
+        index += 1
 
 
 def _head_note_rpc_unavailable(exc: Exception) -> bool:
@@ -116,35 +141,47 @@ def discover(
 ) -> list[dict[str, Any]]:
     projects = repository_projects if repository_projects is not None else load_repository_projects()
     results: list[dict[str, Any]] = []
+    per_repo: list[tuple[str, list[dict[str, Any]]]] = []
     for repository in sorted(projects):
-        for pr in fetch_open_prs(repository, token):
-            if len(results) >= max_prs:
-                return results
-            html_url = str(pr.get("html_url") or "").strip()
-            head = pr.get("head") if isinstance(pr.get("head"), dict) else {}
-            head_sha = str(head.get("sha") or "").strip().lower()
-            if not html_url:
-                continue
-            try:
-                task = intake(db, html_url, repository_projects=projects, head_sha=head_sha or None)
-            except Exception as exc:  # per-PR isolation: one anomalous row must not abort the batch
-                results.append({
-                    "repository": repository,
-                    "pr_url": html_url,
-                    "head_sha": head_sha or None,
-                    "task_id": None,
-                    "status": "error",
-                    "error": str(exc),
-                })
-                continue
+        try:
+            per_repo.append((repository, list(fetch_open_prs(repository, token))))
+        except Exception as exc:  # one unreachable repository must not abort discovery
+            results.append({"repository": repository, "pr_url": None, "head_sha": None,
+                            "task_id": None, "status": "error", "error": str(exc)})
+    intaken = 0
+    for repository, pr in _round_robin(per_repo):
+        if intaken >= max_prs:
+            return results
+        if _has_hold_label(pr):
+            results.append({"repository": repository, "pr_url": pr.get("html_url"),
+                            "head_sha": None, "task_id": None, "status": "skipped-hold"})
+            continue
+        html_url = str(pr.get("html_url") or "").strip()
+        head = pr.get("head") if isinstance(pr.get("head"), dict) else {}
+        head_sha = str(head.get("sha") or "").strip().lower()
+        if not html_url:
+            continue
+        intaken += 1
+        try:
+            task = intake(db, html_url, repository_projects=projects, head_sha=head_sha or None)
+        except Exception as exc:  # per-PR isolation: one anomalous row must not abort the batch
             results.append({
                 "repository": repository,
                 "pr_url": html_url,
                 "head_sha": head_sha or None,
-                "task_id": task.get("id"),
-                "status": task.get("status"),
-                "task_type": task.get("type"),
+                "task_id": None,
+                "status": "error",
+                "error": str(exc),
             })
+            continue
+        results.append({
+            "repository": repository,
+            "pr_url": html_url,
+            "head_sha": head_sha or None,
+            "task_id": task.get("id"),
+            "status": task.get("status"),
+            "task_type": task.get("type"),
+        })
     return results
 
 
