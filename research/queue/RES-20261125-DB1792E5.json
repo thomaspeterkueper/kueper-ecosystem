@@ -1,0 +1,48 @@
+{
+  "id": "RES-20261125-DB1792E5",
+  "status": "queued",
+  "created": "2026-11-25T13:41:37+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-TEC-0098-2026-DE.md",
+  "source_ref": "6df9c474514c680df6238d59e81323045f2bd9fa",
+  "source_blob_sha": "ff66ef0a367e2829522ccefa4b3ee9bfbb0e7db6",
+  "document_signature": "OTA-TEC-0098-2026-DE",
+  "title": "Realwelt-Audit der [R]-Staub-/Emissionsaussage in OTA-TEC-0098 (v1.0): verschlechtert Marsstaub die effektive Emissivität der Radiatoren 'deutlich', oder dominiert die erhöhte Solarabsorptivität – und trägt die 6-MW-Auslegung eine belegte Degradationsreserve",
+  "question": "Quellengestützter Realwelt-Audit der [R]- und [A/F]-Schicht von OTA-TEC-0098-2026-DE (Abschnitte 'Evidenzgrenze' und 'Kanonische OTA-Architektur'), gepinnt auf die im Workspace vorliegende v1.0 (Status ENTWURF; Frontmatter ['R','H','F','OFFEN']. Das Dossier trägt die gesamte thermische Auslegung des Tharsis Hub auf zwei [R]-Sätzen und einer [A/F]-Dimensionierung. (1) Emissionsaussage: Prüfe '[R] Marsstaub kann die effektive Emissivität deutlich verschlechtern' gegen die reale Staub-/Radiator-Literatur. Berichte die thermische Emissivität realistischer Marsstaubschichten (Größenordnung ~0,9) gegenüber weißen Radiatorbeschichtungen (ca. 0,85–0,92) und stelle fest, ob abgeschiedener Staub die Emissivität überhaupt nennenswert senkt oder primär die Solarabsorptivität (Tageslast) erhöht und eine leitende Isolationsschicht bildet. Ist 'deutlich verschlechtern' auf die Emissivität bezogen werktreu, oder muss die Aussage auf Absorptivität bzw. Netto-Kühlleistung umgeschrieben werden? (2) Größenordnungen: Berichte reale Mars-Staubdepositionsraten und optische Tiefen (Mars Pathfinder, MER, Phoenix, InSight), Reinigungsereignisse und elektrostatische Anhaftung; quantifiziere die erwartete Radiatorderatierung über Missionslebensdauern. (3) Raumfahrt-Vergleich: Prüfe reale Kontaminations- und Staubeffekte auf Raumstationsradiatoren (ISS) als Vergleichsklasse. (4) Universalitätsaussage: Prüfe '[R] Marsradiatoren besitzen keinen universellen W/m²-Wert' und die Liste der Einflussgrößen (Temperatur, Emissivität, Solarabsorptivität, Orientierung, Sichtfaktoren, atmosphärische IR-Last, dünne Konvektion, Staub) gegen die reale Mars-Thermalmodellierung; welche Terme dominieren, und ist die Aussage als Definitionsaussage (keine universelle Kennzahl) korrekt? (5) Auslegungsfolge: Prüfe die [A/F]-Setzung 'mindestens 6 MW unter nominell sauberen Auslegungsbedingungen, mit zusätzlicher Degradationsreserve' – welche Staub-/Alterungsderatierung müsste die Reserve abdecken, und ist die Größe ohne reale Deratingspanne belastbar? (6) Reklassifiziere: Nenne die Sätze, die [R] bleiben können (Radiatorleistung hängt von Emissions-/Absorptionsvermögen, Geometrie und Umgebung ab; Marsstaub beeinflusst die Netto-Kühlleistung), die zu '[R] Quelleninhalt, Degradationsmechanismus und Größenordnung offen' abzuschwächen sind ('Emissivität deutlich verschlechtern'; jede 6-MW-Deratingsannahme) und die [H]/[A/F] bleiben müssen (Feldzahl, Ringtopologie, 6 MW). Stelle fest, dass kein kanonischer W/m²-Wert, keine kanonische Feldfläche und keine kanonische Staubderatingspanne in den Kanon oder in NOXIA-Standardwerte aufgenommen wird. AUSGESCHLOSSEN: die NOXIA-Objekt- und Balancingwerte, die konkrete Feldgeometrie, die Pumpen-/Ventilarchitektur sowie alle Werkentscheidungen. NICHT erneut zu erheben: die lunare Staubabrasion und die Landeplatzverdichtung aus OTA-TEC-0084 (RES-20261018-B5BD1FEE, RES-20261018-F009F97A) sowie die PV-Staubdeposition – nur als bestehende Grenzen zitieren.",
+  "why_now": "Das Tharsis-Hub-Phase-2-Thermaldossier (v1.0, graphUpdated 2026-08-30) ist Evidenzbasis für fünf Radiatorfelder, zwei Wärmenetze und die 6-MW-Auslegung. Der [R]-Satz zur Emissivität ist die einzige physikalische Behauptung des Dossiers und bislang ungeprüft; die Nachbar-Staubdossiers (OTA-TEC-0084) sind bereits extern auditiert, das Radiator-Derating nicht.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "real_world_anchor": "Radiative Eigenschaften abgeschiedener Marsstaubschichten sowie Staubdepositionsraten (Mars Pathfinder, MER, Phoenix, InSight; NASA-Dust-Effects-Arbeiten) und reale Raumstations-Radiatorbetriebserfahrung.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.72,
+    "evidence_potential": 0.82
+  },
+  "related_research_ids": [
+    "RES-20261018-B5BD1FEE",
+    "RES-20261018-F009F97A"
+  ],
+  "novelty_reason": "Kein bisheriger Topic prüft Mars-Radiator- oder Emissivitätsderating bzw. OTA-TEC-0098. Abgegrenzt von der bereits auditierten lunaren Staubabrasion und Landeplatzverdichtung (OTA-TEC-0084) sowie der PV-Staubdeposition: hier geht es um thermische Emission und Netto-Kühlleistung, nicht um optische Transmission oder Soiling an PV-Flächen.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 232,
+    "quality_flags": [
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "db1792e5a6c750a9"
+}
