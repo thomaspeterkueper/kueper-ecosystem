@@ -185,3 +185,16 @@ Regeln:
 - Projektspezifische Parameter (Spielwerte, Weltbau-Annahmen, technische Dimensionierung) bleiben im Herkunfts-Repository bzw. in `kueper-engineering` und werden nicht nach KUE übernommen.
 - Bedarf in KG, SSF, OTA oder NOXIA läuft als External Task ins jeweilige Ziel-Repository; das Quell-Repository wird durch das Mining nicht Source of Truth für die abgeleitete Grundlage.
 - Grounding-Audits prüfen Verweise entlang dieser Richtung: Anwendungen verweisen auf KG-IDs bzw. KUE-Dokumente, nicht umgekehrt.
+
+## 9. Arbeitsartefakte aus Google Drive
+
+Entwürfe, Spezifikationen, Reviews, LLM-/Agent-Übergaben sowie Bild- und Binärdaten dürfen in einem projektbezogenen Drive-Exchange liegen. Sie sind dort Arbeitsmaterial und **nicht** kanonisch.
+
+Regeln:
+
+- Kanonisch wird ein Artefakt erst durch bewusste Übernahme in das zuständige Repository; der Weg ist `incoming -> specs/graphics -> reviewed -> Repository -> archive` ([`ECO-ARC-0039-2026-DE`](../decisions/ECO-ARC-0039-2026-DE.md), [`docs/drive-exchange-standard.md`](drive-exchange-standard.md)).
+- Die Übernahme in ein fremdes Repository läuft weiterhin ausschließlich über `external-tasks/open/` im Ziel-Repository. Ein Drive-Artefakt ersetzt diesen Weg nicht.
+- Repository-Review, Tests und Merge-Gates gelten unverändert; ein Drive-Review ist kein Ersatz.
+- Nach der Übernahme verweist das Drive-Artefakt auf Ziel-Repository, Pfad und möglichst Commit/PR.
+- Es gibt keinen automatischen Sync in eine Richtung; insbesondere werden Binärdaten nicht automatisch in öffentliche Repositories kopiert.
+- Private Drive-Inhalte, private URLs und vertrauliche Metadaten gehören nicht in öffentliche ECO-Indizes oder External Tasks.

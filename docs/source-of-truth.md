@@ -26,6 +26,7 @@ Kein Repository darf fremde Domänen stillschweigend kanonisieren.
 | Cross-Repository-Workflow | `kueper-ecosystem` |
 | Systemweite Publikations- und KI-Transparenzpolicy | `kueper-ecosystem` (`config/publication-transparency.json`) |
 | Gemeinsame ID- und Metadatenregeln | `kueper-ecosystem`, sofern systemweit; sonst jeweiliges Fachrepo |
+| Arbeitsartefakte, Entwürfe, Reviews, LLM-Übergaben und Bild-/Binärdaten in Google Drive (Exchange/Workshop) | **kein Source of Truth**; nach bewusster Übernahme das zuständige Repository (`decisions/ECO-ARC-0039-2026-DE.md`) |
 | Entitäten und Relationen | `kueper-knowledge-graph` |
 | Knowledge Domains | `kueper-knowledge-graph` |
 | KXF-Exporte und Mappings | `kueper-knowledge-graph` |
@@ -58,6 +59,8 @@ Eine Aussage wird nicht dadurch kanonisch, dass sie in einem abhängigen Reposit
 Beispiel:
 
 Wenn NOXIA einen Unlock `UNL:NOX:orbital-navigation` verwendet, definiert NOXIA den Unlock selbst, aber nicht die fachliche Physik, auf die er sich stützt.
+
+Ebenso wenig wird ein Artefakt dadurch kanonisch, dass es in Google Drive liegt, verlinkt oder in einem Chat bzw. einer Agentenübergabe verwendet wird. Drive ist Arbeits- und Austauschfläche (Exchange/Workshop); kanonisch wird ein Artefakt erst durch bewusste Übernahme in das zuständige Repository. Details: [`ECO-ARC-0039-2026-DE`](../decisions/ECO-ARC-0039-2026-DE.md) und [`docs/drive-exchange-standard.md`](drive-exchange-standard.md).
 
 ## 6. Konfliktregel
 

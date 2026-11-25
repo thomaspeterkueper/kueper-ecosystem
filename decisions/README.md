@@ -100,6 +100,7 @@ Betroffene Repositories: ...
 - [ECO-ARC-0036-2026-DE — Herkunftsebene und Prüfstand von Aussagen](./ECO-ARC-0036-2026-DE.md) — `proposed`
 - [ECO-ARC-0037-2026-DE — Wiederkehrende Begutachtung von KUE- und OTA-Dokumenten](./ECO-ARC-0037-2026-DE.md) — `accepted`
 - [ECO-ARC-0038-2026-DE – Zuordnung realwissenschaftlicher Inhalte zwischen OTA und kueper.com](./ECO-ARC-0038-2026-DE.md) – `accepted`
+- [ECO-ARC-0039-2026-DE — Google Drive als Exchange- und Workshop-Fläche, nicht als Source of Truth](./ECO-ARC-0039-2026-DE.md) — `accepted`
 
 ## Erste mögliche Entscheidungen
 

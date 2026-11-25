@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-24 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-25 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -61,7 +61,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0062-2026-DE | Der Mpemba-Effekt: Anomale Relaxation, universelles Pri | RT |  | geprüft 2026-11-08 – Teile nach KUE (II–VII), VIII/Zuva bleibt; EXT-OTA-KUE-20261108-002, danach Kürzung OTA-REQ-20261108-002 (Leitsatz wartet auf Thomas) – A–D umgesetzt 2026-11-17 (v1.1), E wartet |
 | OTA-SCI-0082-2026-DE | Der Himmel von 2700 BCE: Präzession, Thuban als Polarst | RST |  | geprüft 2026-11-10 – Teile nach KUE (I, II, III.1), Bronzescheibe/Szene/Delphi bleiben; EXT-OTA-KUE-20261110-001, danach Korrektur/Kürzung OTA-REQ-20261110-001 (KN-1.2 wartet auf Thomas) |
 | OTA-SCI-0102-2026-DE | Autophagie im menschlichen Altern — Flux, Zelltyp, Gesc | IOFFENR |  | geprüft 2026-11-13 – ganz nach KUE, OTA bleibt Brückendokument; EXT-OTA-KUE-20261113-002, OTA-REQ-20261113-002 – umgesetzt 2026-11-19 (OTA-SCI-0102 v1.1, KUE-SCI-0204) |
-| OTA-SCI-0103-2026-DE | Longitudinale Gehirngesundheit — Lebenslauf-Risiken, Pr | IOFFENR |  | geprüft 2026-11-15 – ganz nach KUE, OTA bleibt Brückendokument (§19); EXT-OTA-KUE-20261115-001, OTA-REQ-20261115-001 |
+| OTA-SCI-0103-2026-DE | Longitudinale Gehirngesundheit — Lebenslauf-Risiken, Pr | IOFFENR |  | geprüft 2026-11-15 – ganz nach KUE, OTA bleibt Brückendokument (§19); EXT-OTA-KUE-20261115-001, OTA-REQ-20261115-001 – umgesetzt 2026-11-25 (OTA-SCI-0103 v1.1, KUE-SCI-0220) |
 | OTA-SCI-0108-2026-DE | Ultrakompakte Doppel-Weiße-Zwerge: Orbitalzerfall, Dire | HIOFFENR |  | geprüft 2026-11-15 – ganz nach KUE (kein Werkbezug), OTA bleibt Brückendokument; EXT-OTA-KUE-20261115-002, OTA-REQ-20261115-002 – umgesetzt 2026-11-19 (OTA-SCI-0108 v1.1, KUE-SCI-0206) |
 | OTA-SCI-0109-2026-DE | Stromnetz-Engpässe: Erzeugung, Transportkapazität, Redi | HOFFENRT |  | geprüft 2026-11-16 – ganz nach KUE, OTA bleibt Brückendokument (NOXIA-Archivregel §14); EXT-OTA-KUE-20261116-001, OTA-REQ-20261116-001 – umgesetzt 2026-11-22 (v1.1, KUE-SCI-0214) |
 | OTA-SCI-0110-2026-DE | Adaptive Fertigung und Physical AI: Digitale Zwillinge, | HIOFFENR |  | geprüft 2026-11-16 – ganz nach KUE (Realteil), NOXIA-Anschluss/A0–A5/Archivregel bleiben; EXT-OTA-KUE-20261116-002, OTA-REQ-20261116-002 |
@@ -88,7 +88,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0009-2025-DE | Planetare Schumann-Resonanzen und AVI-Kopplung | RTSW |  | geprüft 2026-11-18 (Zeile ergänzt) – Teile nach KUE (Mars-SR, Zeitdilatation; Erd-SR in KUE-SCI-0012), AVI/χ/Baumeister bleiben; EXT-OTA-KUE-20261118-001, danach Korrektur/Kürzung OTA-REQ-20261118-001 (KN-01, HRV-Zeile/Hypothese B warten auf Thomas) – Punkt D (AVI-Akronym) umgesetzt 2026-11-21 (v1.0.1) |
 | OTA-SCI-0026-2025-DE | SABRE-Vorkühler-Technologie: Hyperschall-Luftatmung dur | RT |  | offen |
 | OTA-SCI-0026-2026-DE | Interstellare Schwefelchemie — Die Entdeckung von 2,5-C | RST |  | offen |
-| OTA-SCI-0027-2025-DE | Graphen-Keramik-Verbundwerkstoffe: Ultra-Hochtemperatur | RST |  | offen |
+| OTA-SCI-0027-2025-DE | Graphen-Keramik-Verbundwerkstoffe: Ultra-Hochtemperatur | RST |  | geprüft 2026-11-25 – Teile nach KUE, aber erst bereinigen: drei [R]-Quellen nicht nachweisbar (NASA/TM-Nummer fingiert), GCV-7-Simulation als [R] ausgewiesen; Korrektur OTA-REQ-20261125-004 (A sofort, B wartet auf Thomas), KUE-Request nach Bereinigung |
 | OTA-SCI-0028-2025-DE | Aerostatische Staudüsen: Elektrostatische Lageregelung  | RST |  | offen |
 | OTA-SCI-0029-2025-DE | SSTO-Massenbudget und Treibstoffchemie: ASCE-Schließaud | FOFFENRT | V. BETRIEBS- UND KOSTENCLAIMS [T/F] | offen |
 | OTA-SCI-0030-2025-DE | HD 20794 d — Die episodische Supererde | RST |  | geprüft 2026-11-24 – Teile nach KUE (I, II.1, HZ-Grenzen, Instrumente, VIII), Spekulation/NOXIA/χ-Feld bleiben; EXT-OTA-KUE-20261124-002, Korrektur/Kürzung OTA-REQ-20261124-002 (B wartet auf Thomas) |
@@ -126,6 +126,9 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-TEC-0110-2026-DE | Technisches Labor — Analyse-, Forschungs- und Entwicklu | FHOFFENR | Technische Prinzipien [R] | offen |
 | OTA-TEC-0111-2026-DE | Oberflächen-Scanner — Lokale Fernerkundung, Messung und | FHOFFENR | Physikalisch-technische Prinzipien [R] | offen |
 | OTA-SCI-0020-2026-DE | Relikt-Fenster — Spätaktive Wasser- und Eisdynamik auf | RSTW | I.1 Zhurong [R]; I.2 Prudhoe Dome [R] | geprüft 2026-11-19 (nachgetragen) – Teile nach KUE: Zhurong-Gegenstück KUE-SCI-0202 vorhanden, Prudhoe Dome neu per EXT-OTA-KUE-20261119-001; Relikt-Fenster/Frequenz-Hypothese (AVI) bleiben; Kürzung OTA-REQ-20261119-002 (Punkte A/C umsetzbar, E wartet auf Thomas) – A/C umgesetzt 2026-11-20 (v1.1); B/D umgesetzt 2026-11-22 (v1.2, KUE-SCI-0213), E wartet auf Thomas |
+| OTA-SCI-0117-2026-DE | Obsidian: Materialwissenschaft — Vulkanisches Glas, Min | RTS | I–IV, 5.1, 5.2 Methoden A–C, 6.1 | geprüft 2026-11-25 – Teile nach KUE (gemeinsames KUE-Dokument Obsidian); EXT-OTA-KUE-20261125-001, Korrektur/Kürzung OTA-REQ-20261125-001 (A sofort, B nach KUE-Merge, C Hook 1 wartet auf Thomas) |
+| OTA-SCI-0118-2026-DE | Obsidian: Archäometrie — Provenienzanalyse, Hydratation | RTSF | 1.1–1.3, 2.1–2.3, 3.1–3.2, 3.3/3.4 je erster Absatz | geprüft 2026-11-25 – Teile nach KUE (gemeinsames KUE-Dokument Obsidian); EXT-OTA-KUE-20261125-001, Korrektur/Kürzung OTA-REQ-20261125-002 (A sofort, B nach KUE-Merge, C wartet auf Thomas) |
+| OTA-SCI-0119-2026-DE | Lodestone: Magnetit-Eisenstein — Natürlicher Permanentm | RTSF | I–IV.2, VI.1–6.2, VII.1–7.2 | geprüft 2026-11-25 – Teile nach KUE; EXT-OTA-KUE-20261125-002, Korrektur/Kürzung OTA-REQ-20261125-003 (A sofort, B nach KUE-Merge, C Sauerland-Träger wartet auf Thomas) |
 
 ## T – Entscheidung Thomas (eigene Hypothesen)
 
@@ -139,7 +142,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0036-2026-DE | OMNIZEDENZ v2.3 | HRT | Omnizedenz | offen |
 | OTA-SCI-0038-2026-EN | Quantum-Geometric Portals in Loop Quantum Gravity: A Te | HR | eigene LQG-Hypothese (KUE-SCI-QUANTUM-GRAVITY im Entwurf) | offen |
 | OTA-SCI-0041-2026-DE | OTA-SCI-0041-2026-DE | HRS | H-lastig, prüfen | offen |
-| OTA-SCI-0042-2026-DE | PHÄNOMENOLOGISCHE ERDBEBENTHEORIE UND DIE LOD-SEISMIZIT | HRS | eigene Erdbebentheorie | geprüft 2026-11-23 – faktisch Gruppe K: KUE-Gegenstück KUE-SCI-0169 v0.2 vorhanden (Theorie stammt von Guglielmi, eigenes Modell nur der AVI-Anschluss §VII, bleibt OTA); Kürzung OTA-REQ-20261123-001 (sofort umsetzbar), Ergänzungen nach KUE per EXT-OTA-KUE-20261123-001 |
+| OTA-SCI-0042-2026-DE | PHÄNOMENOLOGISCHE ERDBEBENTHEORIE UND DIE LOD-SEISMIZIT | HRS | eigene Erdbebentheorie | geprüft 2026-11-23 – faktisch Gruppe K: KUE-Gegenstück KUE-SCI-0169 v0.2 vorhanden (Theorie stammt von Guglielmi, eigenes Modell nur der AVI-Anschluss §VII, bleibt OTA); Kürzung OTA-REQ-20261123-001 (sofort umsetzbar), Ergänzungen nach KUE per EXT-OTA-KUE-20261123-001 – umgesetzt 2026-11-25 (OTA-SCI-0042 v1.6) |
 | OTA-SCI-0024-2026-DE | Ein skalares Feldmediator-Modell für Neutrino-Dunkle- | HTSW | χ-Feld-Modell (Zeile ergänzt) | geprüft 2026-11-21 – Entscheidung Thomas (eigenes χ-Feld-Modell, bleibt OTA); S₈-Forschungsstand nach KUE per EXT-OTA-KUE-20261121-002; Zitate/Realgrundlage OTA-REQ-20261121-002 (Modellpunkte warten auf Thomas) – A umgesetzt 2026-11-23 (DE v1.1) |
 | OTA-SCI-0024-2026-EN | A Scalar Field Mediator for Neutrino-Dark Matter Inte | HTSW | χ-Feld-Modell (Zeile ergänzt) | geprüft 2026-11-21 – Entscheidung Thomas (eigenes χ-Feld-Modell, bleibt OTA); S₈-Forschungsstand nach KUE per EXT-OTA-KUE-20261121-002; Zitate/Realgrundlage OTA-REQ-20261121-002 (Modellpunkte warten auf Thomas) – A umgesetzt 2026-11-23 (EN v2.1) |
 
