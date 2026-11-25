@@ -60,6 +60,14 @@ Das ist deine Inbox für Anforderungen von anderen Projekten und dein Postausgan
 für Anforderungen an andere. Leere Ordner mit `.gitkeep` halten (Konvention im
 Ökosystem). Der Collector meldet fehlende Pfade als `critical`.
 
+### Entwicklungsstand
+
+Sobald in `{PROJEKT}` Entwicklungsarbeit über mehr als eine Sitzung läuft, lege
+`docs/development/README.md` als Einstieg an (oder einen Abschnitt
+„Entwicklungsstand“ in der `README.md`, der auf deinen vorhandenen Ort verweist).
+Format und Statusstufen: `kueper-ecosystem/docs/development-checkpoints.md`.
+Offene Aufgaben bleiben in `external-tasks/` – der Checkpoint verweist nur darauf.
+
 ## 3. Cross-Repository-Kommunikation läuft ausschließlich über External Tasks
 
 Wenn du etwas von einem anderen Projekt brauchst (Daten, eine Änderung, eine
