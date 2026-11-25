@@ -40,9 +40,9 @@
     }
   },
   "lastSync": {
-    "kueper.com": "5bb24627329a9e3834bb50b75d174e98a67f4c30",
-    "overtime-archive.org": "e5a998df1ea1375d2594ccff0ab8b44f84927ddc",
-    "kueper-ecosystem/reviews": "fee23663e936eccaa872a2aa284ee1c1a7060d91"
+    "kueper.com": "64fd6a463ab01de76b8276637378149caad73e44",
+    "overtime-archive.org": "fe890c37e5da024444c25a0842aa779aa14023de",
+    "kueper-ecosystem/reviews": "9e0b160b9984a6218b7988ba0d4892c96324d2bc"
   },
   "documents": {
     "kueper-ecosystem/reviews/2026-10-29-KUE-SCI-0004-2026-DE.md": {
@@ -621,9 +621,9 @@
       "syncedAt": "2026-11-15"
     },
     "kueper.com/src/content/kue/sci/kue-sci-0169-2026-de.md": {
-      "fileId": "1xOijb_nvfZ0z8Q5Lizx9iTQXL9V3S_vKee6yrVHc2B0",
-      "hash": "78a934ba45d079b3434a21f7ddbb8dd43c5665d1",
-      "syncedAt": "2026-11-11"
+      "fileId": "1UybphmgvhPWPqCNzIHhWkNl7OcWA9VR83HaHCZS-Nxs",
+      "hash": "6621ddf302f54e79fa11021ad39b8a864727a844",
+      "syncedAt": "2026-11-25"
     },
     "kueper.com/src/content/kue/sci/kue-sci-0170-2026-de.md": {
       "fileId": "17XPMLOaSKpXs3v2cB0ULRXK1aM7MdLMEv0XoKrbGTSM",
@@ -711,9 +711,9 @@
       "syncedAt": "2026-11-19"
     },
     "kueper.com/src/content/kue/sci/kue-sci-0187-2026-de.md": {
-      "fileId": "1v7UwT6_8UrZruLa8atlbIWIiAp77z_zzIU8RHYkgD9Q",
-      "hash": "4bf20d13b4453889a41b1580599258c3530ade58",
-      "syncedAt": "2026-11-23"
+      "fileId": "1PoQzbxDiZAKQRDfUH-eKiyMoFN2Qs5CiMBnVwZi8iq4",
+      "hash": "1bc0cd1a2a222ff286122fc31af37b435ee3baa4",
+      "syncedAt": "2026-11-25"
     },
     "kueper.com/src/content/kue/sci/kue-sci-0188-2026-de.md": {
       "fileId": "1j7N3N3HjHCUJaqQeE25O8u72CGIsDK36dgRGg_MzKAs",
@@ -1176,9 +1176,9 @@
       "syncedAt": "2026-10-31"
     },
     "overtime-archive.org/src/content/documents/OTA-FND-0019-2025-DE.md": {
-      "fileId": "1HXJX-uEfN5G3RhQ3vpkyB4RRUR6lXKa6OIZqaW2mTe0",
-      "hash": "24e07211130459be7d6efd79f6ecbb51bae04014",
-      "syncedAt": "2026-11-21"
+      "fileId": "161czIpuY06X4aS1nY31-PSvrlKeMdCYevhjn_DP7efM",
+      "hash": "83ad129ed31cf4bbd053be56b33c15c2e202d3fa",
+      "syncedAt": "2026-11-25"
     },
     "overtime-archive.org/src/content/documents/OTA-FND-0021-2026-DE.md": {
       "fileId": "1WlDi0415p6NczuGYRkZwreacWvUj6oJUny-8meBkYfU",
@@ -1536,9 +1536,9 @@
       "syncedAt": "2026-11-01"
     },
     "overtime-archive.org/src/content/documents/OTA-ORG-0002-2091-DE.md": {
-      "fileId": "1ygO75RtbFONai2GMr-QoJjdaXe_BqmXmKk_oZpFP2B0",
-      "hash": "8020abb2f5db461a236f857aebd9f7d64b31d5e8",
-      "syncedAt": "2026-11-01"
+      "fileId": "1djLBNr5hkCjvWOus-7iLTDE4E1DRB-Gwlj-qVnoZDuQ",
+      "hash": "63e8cd6e0fa3e8c31d595fe1bd8fe8fce799577a",
+      "syncedAt": "2026-11-25"
     },
     "overtime-archive.org/src/content/documents/OTA-ORG-0003-2089-DE.md": {
       "fileId": "1d-h6LNAVPuOkFy1Qh2k-3PVwzkz75kP_FJqHJedAcoM",
@@ -1761,9 +1761,9 @@
       "syncedAt": "2026-11-02"
     },
     "overtime-archive.org/src/content/documents/OTA-SCI-0027-2025-DE.md": {
-      "fileId": "13AqzqPAhtB4xHs9OgYbupKUrVKRFQCZgaIHNXYpcX6w",
-      "hash": "756eac14ef38899850ac644da91883dafc0ece36",
-      "syncedAt": "2026-11-02"
+      "fileId": "1RSF22UC8K3-aE54Vgd3B9hfa8X9qbzcS9CDTBA9gMGE",
+      "hash": "1185ee00a8db83194ba35667821d476322e1f75f",
+      "syncedAt": "2026-11-25"
     },
     "overtime-archive.org/src/content/documents/OTA-SCI-0028-2025-DE.md": {
       "fileId": "1dNryvPmReFXAIR_yjxtcM5zC3uZ9rIH8PJ-0oz81InM",
@@ -1786,9 +1786,9 @@
       "syncedAt": "2026-11-02"
     },
     "overtime-archive.org/src/content/documents/OTA-SCI-0031-2024-DE.md": {
-      "fileId": "1q4NYmm7WHmqK_yplSci46DtIvRQ-ALg41qFwuRs-Ha4",
-      "hash": "b1673bc0f631427a6c17ca8b9371bfb4103b2909",
-      "syncedAt": "2026-11-02"
+      "fileId": "13E0MzorCqjzAWADVmZZv7KDxdKxyf6SLrwMaUEi__BA",
+      "hash": "58f6114a3007b9aa1e2d882e641cb66709654b40",
+      "syncedAt": "2026-11-25"
     },
     "overtime-archive.org/src/content/documents/OTA-SCI-0032-2024-DE.md": {
       "fileId": "196KOQ1lkXNsO2fbKYWCupIAXX_3AcPfGJV4LXUNOCiE",
@@ -1826,9 +1826,9 @@
       "syncedAt": "2026-11-24"
     },
     "overtime-archive.org/src/content/documents/OTA-SCI-0042-2026-DE.md": {
-      "fileId": "11z0Jr-hm98ZG18ViEbuSO-w6U7d10wHC-kPEZGNXf9E",
-      "hash": "0301647e04983fce62da61f656ec3901c557624a",
-      "syncedAt": "2026-11-23"
+      "fileId": "17LCwCeAMxl9pgqKlhrxjOaenXFGRC1N3Pz93lAxplIU",
+      "hash": "0e76ad8d5797f52a454036a1e772a67fae1e3be4",
+      "syncedAt": "2026-11-25"
     },
     "overtime-archive.org/src/content/documents/OTA-SCI-0043-2026-DE.md": {
       "fileId": "1ZxBUZZ-OutdpKrqxsTRfEv5tLxe0CNAZl6bWvjS5LH8",
@@ -2036,9 +2036,9 @@
       "syncedAt": "2026-11-19"
     },
     "overtime-archive.org/src/content/documents/OTA-SCI-0103-2026-DE.md": {
-      "fileId": "1Ydp8eGSgwCgvsViAlGMh4R5ppC-7YFnPeKTzjGrSNzo",
-      "hash": "b7dbc954482f26ef26c1a214abcb6ae17537c67b",
-      "syncedAt": "2026-11-15"
+      "fileId": "1xwjHnqY5wJQx61mzDT_eBfNi94Tsfyn_CzxC3O7oYX8",
+      "hash": "8cb25557a454f528cd0e84b7f199197ef869e810",
+      "syncedAt": "2026-11-25"
     },
     "overtime-archive.org/src/content/documents/OTA-SCI-0104-2026-DE.md": {
       "fileId": "1FpzS9QTEP_nSJBao13sd2_2VH8sYLsI0sw9Og2H7Jgk",
@@ -2106,19 +2106,19 @@
       "syncedAt": "2026-11-08"
     },
     "overtime-archive.org/src/content/documents/OTA-SCI-0117-2026-DE.md": {
-      "fileId": "1eQDL2EylN94qJzlG4P3nJYEGSaiEvipvnYxwxvmfJKo",
-      "hash": "dd3548b0bead605264aa5007996978310e83d133",
-      "syncedAt": "2026-11-07"
+      "fileId": "1nP5jqlEUz4a27C9TA4RYTCordUuDV4HCJr1EIzgZ_2I",
+      "hash": "09b6074ae4786c7d7cb681a3ddeae52545525458",
+      "syncedAt": "2026-11-25"
     },
     "overtime-archive.org/src/content/documents/OTA-SCI-0118-2026-DE.md": {
-      "fileId": "1UtP9YUNtP0HKlNC-eex69yhGWw20E7B673RDVNiFIAI",
-      "hash": "a6ab9944a18596e7e562a72e3a28777dbf2197c2",
-      "syncedAt": "2026-11-07"
+      "fileId": "1KsZ7oVKV9zHi_Kq1KQbxynHqRenj7aL01Yp8jOqLzCw",
+      "hash": "c9a0be103b17002919f1b47ce63ce72aa19639aa",
+      "syncedAt": "2026-11-25"
     },
     "overtime-archive.org/src/content/documents/OTA-SCI-0119-2026-DE.md": {
-      "fileId": "1ZrSjiEvC_t8YsY7IbInyKbpp15y2LFwmXbjZFItatY0",
-      "hash": "85e6ce1aae93fbd7a2355e8326b789056aa937f8",
-      "syncedAt": "2026-11-07"
+      "fileId": "1aSTnxMwSPTnlOUbCzKspiFHH4Cv4pPcTdabjKM_eks4",
+      "hash": "4a916c0b6d60d0a1aa383432ccd1d8522b95da97",
+      "syncedAt": "2026-11-25"
     },
     "overtime-archive.org/src/content/documents/OTA-SCI-0120-2026-DE.md": {
       "fileId": "17nyOo--htsOtggoj-W1W1AByUAm6BvRQyXyLVau7w2A",
@@ -2146,9 +2146,9 @@
       "syncedAt": "2026-11-04"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0015-2082-DE.md": {
-      "fileId": "1MMkBiBDN1Q0scxAD4DuRfREp4RSPmCq-a6b5AUtmXA0",
-      "hash": "798fa86e0ff1a05c10fe8004939600511a21c7ef",
-      "syncedAt": "2026-11-04"
+      "fileId": "1fP70CE2TPQ3anxE2dBN7pm_q4jIXk26F8-EJA0iooO0",
+      "hash": "72a483bbf4ec7856a07922af1ca280cd8e9c8a8d",
+      "syncedAt": "2026-11-25"
     },
     "overtime-archive.org/src/content/documents/OTA-TEC-0016-2063-DE.md": {
       "fileId": "1mtpIuYRQQr9ECj5zswEQJEO_RBixsjaQLkWbOaB39xo",
@@ -2679,6 +2679,51 @@
       "fileId": "1Umihe3v-zIvFoajP2kQL_hLis0flNMaJ8t1K_x_8de0",
       "hash": "3f3a5468e7b0216c4bb1f38543431411cbf1bd4d",
       "syncedAt": "2026-11-24"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0221-2026-de.md": {
+      "fileId": "1hZ881B3CHqlbaxgYMDp40CvNrxx_h8VxZ1vOzwJo4dE",
+      "hash": "bf3c71d794602617097ff3eb40df854723323f2a",
+      "syncedAt": "2026-11-25"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0223-2026-de.md": {
+      "fileId": "1W5SE0AdHqPdYUTPBRTwxWP5PaZ7MQ1nofTkY4BfDwUE",
+      "hash": "e799c818e33b420d279cc03f6b15fa50d9eafa0d",
+      "syncedAt": "2026-11-25"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0222-2026-de.md": {
+      "fileId": "1D7vF26cWoNNCmplulYXj0K4_Bzs4cI4V0YsC__UJEng",
+      "hash": "d183b6d264524c114cb8f17a5b7f933bcaf8587b",
+      "syncedAt": "2026-11-25"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0220-2026-de.md": {
+      "fileId": "14rJKGEytQEdxbMvGS97GLzwZ4StIxh3qAx5Oc_7skeM",
+      "hash": "890c955c4a6755d8018829022c3bace6d7863961",
+      "syncedAt": "2026-11-25"
+    },
+    "kueper.com/src/content/kue/sci/kue-sci-0219-2026-de.md": {
+      "fileId": "1G6OOsotcJUS43crylCHrivy49ZJsN24e6HdHUtzIRSY",
+      "hash": "d8b45c1dfb7c5bc010ed97b051098557930805b2",
+      "syncedAt": "2026-11-25"
+    },
+    "kueper-ecosystem/reviews/2026-11-25-OTA-SCI-0119-2026-DE.md": {
+      "fileId": "1N8osxhLsdQAnY4EU9X_VJb0EML-5PtIIzUCTuVbPuO0",
+      "hash": "a0e4a33eabb752b80cbf2c5718156a0b48752817",
+      "syncedAt": "2026-11-25"
+    },
+    "kueper-ecosystem/reviews/2026-11-25-OTA-SCI-0118-2026-DE.md": {
+      "fileId": "1Ptwm4cvz1WWzNp0wnpyKi_uq6EJ_IiSRarSogTjj-Pc",
+      "hash": "8c49b0fb91b59891fdd722b8b0330720a03487a9",
+      "syncedAt": "2026-11-25"
+    },
+    "kueper-ecosystem/reviews/2026-11-25-OTA-SCI-0027-2025-DE.md": {
+      "fileId": "1OPieX7emgFvIWun7CrjoBa3TewHHfLsJUxCgORcalc4",
+      "hash": "6f73497236acf645e1cb7473e6f48d81961c15b0",
+      "syncedAt": "2026-11-25"
+    },
+    "kueper-ecosystem/reviews/2026-11-25-OTA-SCI-0117-2026-DE.md": {
+      "fileId": "1hSXDAhNMOK8cnz3PPC7fyuMsHlVF0zwkTn9icWjTrTY",
+      "hash": "4c9c6e3395885e3c39300b50b321fd90e781f61d",
+      "syncedAt": "2026-11-25"
     }
   },
   "altbestand": {
@@ -6799,6 +6844,173 @@
         "folder": "OTA (alt, bis Okt. 2026)/FND",
         "status": "nurDrive",
         "checkedAt": "2026-11-24"
+      },
+      "1PxTg9YjhN4t4LS1yMOdk3FABpO5BpkM5": {
+        "title": "OTA-FND-0017-NACHTRAG-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/FND",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-FND-0017-NACHTRAG-2026-DE.md (v1.0, gleich)",
+        "checkedAt": "2026-11-25"
+      },
+      "1oUiQPK5SV5QIhOGmN2zvHIxmeTZxaq7R": {
+        "title": "OTA-FND-0025-2026-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/FND",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-FND-0025-2026-DE.md (v1.1, neuer)",
+        "checkedAt": "2026-11-25"
+      },
+      "1geuFvSFTv6pDjXqLAi38Wufkv8uaryI7": {
+        "title": "OTA-FND-0026-2026-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/FND",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-FND-0026-2026-DE.md (v1.0, gleich)",
+        "checkedAt": "2026-11-25"
+      },
+      "1D6KO2uXkQqFuycmcjAlkwaNewPlvhyJm": {
+        "title": "OTA-TEC-0023-2089-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0023-2089-DE.md (v1.1, Nachfolgefassung)",
+        "checkedAt": "2026-11-25"
+      },
+      "1WScgqWFH1q82hC9AujSMwdqV371WqREn": {
+        "title": "OTA-TEC-0025-2091-DE-v2.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0025-2091-DE.md (Inhalt v2.0)",
+        "checkedAt": "2026-11-25"
+      },
+      "1dMtTAOp3hgZ5daXQjeVk0vifK3r4pI4z": {
+        "title": "OTA-TEC-0022-2025-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0022-2025-DE.md (Inhalt v1.1)",
+        "checkedAt": "2026-11-25"
+      },
+      "1_NLHKfy59cChaBucpy5QvXW6_4CWw2Bs": {
+        "title": "OTA-TEC-0025-2050-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0025-2050-DE.md (v1.3/Rev. 3.3, Nachfolgefassung)",
+        "checkedAt": "2026-11-25"
+      },
+      "1mO1L7Xu-pNRNg-FvnkCq-zUy4ygN3lHv": {
+        "title": "OTA-TEC-0023-2091-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0023-2091-DE.md (v1.0)",
+        "checkedAt": "2026-11-25"
+      },
+      "1Tv2FAspzayMtbtTPSaNNG26vJipKZ2Z-": {
+        "title": "OTA-TEC-0024-2150-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0024-2150-DE.md (v1.0)",
+        "checkedAt": "2026-11-25"
+      },
+      "1dhJCt8B34kJ46AkPKyzyYqY2bLbjfNMm": {
+        "title": "OTA-TEC-0020-2091-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0020-2091-DE.md (v1.0)",
+        "checkedAt": "2026-11-25"
+      },
+      "1Hlm9K-SUTtFgazpZCyd9PTx5iiymJ4eM": {
+        "title": "OTA-TEC-0028-2048-DE_v2.0_FINAL.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0028-2048-DE.md (Erstimport d6e8ca6 wortgleich, heute v1.1)",
+        "checkedAt": "2026-11-25"
+      },
+      "1HIciNCTx5VNOCeJsrNc6LShcm9U47Wau": {
+        "title": "OTA-TEC-0028-2048-DE_v2.0_FINAL (1).docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0028-2048-DE.md (Kopie der v2.0 FINAL)",
+        "checkedAt": "2026-11-25"
+      },
+      "1TeUdm8D5c2zaEPhulpH8DWlbPC_PqDwb": {
+        "title": "OTA-TEC-0029-2048-DE_v1.0.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0029-2048-DE.md (Erstimport deadfce wortgleich, heute v1.3; Realteil in KUE-SCI-0177)",
+        "checkedAt": "2026-11-25"
+      },
+      "1Mayw3BrmPhm7p-JofFp--4uQ6ii22mrJ": {
+        "title": "OTA-TEC-0029-2048-DE_v1.0 (1).docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0029-2048-DE.md (Kopie der v1.0)",
+        "checkedAt": "2026-11-25"
+      },
+      "1j8dls7fplDt66KLQjo0bii8f-tcjD5lD": {
+        "title": "OTA-TEC-0027-2091-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0027-2091-DE.md (Erstimport 20e3b5d wortgleich, heute v1.3)",
+        "checkedAt": "2026-11-25"
+      },
+      "1xHoZxsKuEos3LzDeuVNlTtkUwriuaeu3": {
+        "title": "OTA-TEC-0028-2025-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0028-2025-DE.md (v1.0, praktisch gleich)",
+        "checkedAt": "2026-11-25"
+      },
+      "1BlseScEut8d4kwTUP-UjMC3a30QB7jKW": {
+        "title": "OTA-TEC-0027-2091-DE.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "doppelt",
+        "fundstelle": "overtime-archive.org/src/content/documents/OTA-TEC-0027-2091-DE.md (docx = ältere v1.1; nur Schlusszitat van Hood fehlt, unerheblich)",
+        "checkedAt": "2026-11-25"
+      },
+      "13se50ZoHXdhzd-ODsmsWMDhyi-oPUI_Z": {
+        "title": "OTA-FND-0031-NACHTRAG-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/FND",
+        "status": "nurDrive",
+        "checkedAt": "2026-11-25"
+      },
+      "1boiIKbEmfV6wAe59_pUMBt0LqbmJqfN4": {
+        "title": "LIES MICH – Liv Dawn heißt jetzt Liv Mhira (2026-11-20).md",
+        "folder": "OTA (alt, bis Okt. 2026)/FND",
+        "status": "hinweis",
+        "checkedAt": "2026-11-25"
+      },
+      "1D-leyym8dFC5zSnBlH-kK0N01yDeNdz6": {
+        "title": "OTA-TEC-0002-2095-DE-framework.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "nurDrive",
+        "checkedAt": "2026-11-25"
+      },
+      "1EPcLxhH3rJlMIcLIrjpEjZzVKnFpT3Bo": {
+        "title": "OTA-TEC-0026-2091-DE-v1.1-FINAL.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "nurDrive",
+        "checkedAt": "2026-11-25"
+      },
+      "1NOzhbRlExumjAv89krB5jzwhzE90TBMK": {
+        "title": "OTA-TEC-0027-2089-DE-v1_1.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "nurDrive",
+        "checkedAt": "2026-11-25"
+      },
+      "1lsfCrJ6xJY4rr0ImJp82yEPGlX3BCuxi": {
+        "title": "OTA-TEC-0025-2091-DE-v2.1.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "imZweifel",
+        "checkedAt": "2026-11-25"
+      },
+      "14cO6_n3QBprwDztypSuppPta0_bgXoSw": {
+        "title": "OTA-TEC-0025-2091-DE-v2.1 (1).docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "imZweifel",
+        "checkedAt": "2026-11-25"
+      },
+      "1AwPEYdwAWUeKPlU7I_lSLG4_cBmLVkff": {
+        "title": "OTA-TEC-0023-2089-DE-v1_1.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "imZweifel",
+        "checkedAt": "2026-11-25"
       }
     },
     "onlyInDrive": [
@@ -7613,6 +7825,70 @@
         "status": "nurDrive",
         "beschreibung": "Änderungsprotokoll (09.01.2026) zu einem „OTA-FND-0010-2025-DE“ über Sehnsucht (Scheibe/Baltes, sechs Kernmerkmale). Ein solches Dokument gibt es auf GitHub nicht (FND-0010 ist dort „Das χ-Feld als Präkursor-Theorie“). Im Zweifel liegen gelassen, kein Request – Thomas klärt, wo das Sehnsucht-Dokument liegt.",
         "checkedAt": "2026-11-24"
+      },
+      {
+        "fileId": "13se50ZoHXdhzd-ODsmsWMDhyi-oPUI_Z",
+        "title": "OTA-FND-0031-NACHTRAG-2026-DE.md",
+        "folder": "OTA (alt, bis Okt. 2026)/FND",
+        "status": "nurDrive",
+        "beschreibung": "Nachtrag v0.2 (Aug. 2026): NS-Merger als Omnizedenz-Geburtsmechanismus, Poplawski/Smolin, PISN SN 2023vbw als Gegenposition – kein GitHub-Gegenstück → EXT-ECO-OTA-20261125-001.",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "fileId": "1boiIKbEmfV6wAe59_pUMBt0LqbmJqfN4",
+        "title": "LIES MICH – Liv Dawn heißt jetzt Liv Mhira (2026-11-20).md",
+        "folder": "OTA (alt, bis Okt. 2026)/FND",
+        "status": "hinweis",
+        "beschreibung": "Hinweisdatei von Thomas für den Drive-Ordner (Umbenennung Liv Dawn → Liv Mhira); maßgeblich in OTA-BIO-0023 v1.2. Bleibt liegen, kein Request.",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "fileId": "1D-leyym8dFC5zSnBlH-kK0N01yDeNdz6",
+        "title": "OTA-TEC-0002-2095-DE-framework.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "nurDrive",
+        "beschreibung": "Gerüst FPD-Handbuch (Frequency-Plasma-Deposition, v3.1 Framework), Kapitel fast nur Platzhalter; echter Inhalt nur KN-0.1/0.2 und Referenzliste. Kein Gegenstück; als Gerüst kein Request – Thomas entscheidet.",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "fileId": "1EPcLxhH3rJlMIcLIrjpEjZzVKnFpT3Bo",
+        "title": "OTA-TEC-0026-2091-DE-v1.1-FINAL.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "nurDrive",
+        "beschreibung": "Bewusstseins-Technologie-Schnittstellen (BTI, Typ I–IV, Kopplungs-Matrix); auf GitHub nur als kanonisch zitierter Verweis (SCI-0019/0020, TEC-0032) → EXT-ECO-OTA-20261125-002.",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "fileId": "1NOzhbRlExumjAv89krB5jzwhzE90TBMK",
+        "title": "OTA-TEC-0027-2089-DE-v1_1.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "nurDrive",
+        "beschreibung": "Baumeister-Kammern (Typ-0/I/II/III/X, Glas, φ-Geometrie, AXIS/NOCTIS); Nummer 0027 auf GitHub mit ASCE-2091 belegt → EXT-ECO-OTA-20261125-003.",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "fileId": "1lsfCrJ6xJY4rr0ImJp82yEPGlX3BCuxi",
+        "title": "OTA-TEC-0025-2091-DE-v2.1.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "imZweifel",
+        "beschreibung": "Bis auf Namenskorrektur „Kaelen Voss → Kaelen Asa Shiro“ (bewusst nicht übernommen, EXT-ECO-OTA-20261104-001) vollständig auf GitHub (v2.0).",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "fileId": "14cO6_n3QBprwDztypSuppPta0_bgXoSw",
+        "title": "OTA-TEC-0025-2091-DE-v2.1 (1).docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "imZweifel",
+        "beschreibung": "Kopie von OTA-TEC-0025-2091-DE-v2.1.docx; siehe dort.",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "fileId": "1AwPEYdwAWUeKPlU7I_lSLG4_cBmLVkff",
+        "title": "OTA-TEC-0023-2089-DE-v1_1.docx",
+        "folder": "OTA (alt, bis Okt. 2026)/TEC",
+        "status": "imZweifel",
+        "beschreibung": "Fassungen auseinandergelaufen: nur hier 802 m → 864 m mit Noctis-Resonanz 864 Hz, Kammer-Typentabelle, 12 Relaisstationen, 72-Hz-Tabelle, KN-3.1; im Repo 802/864 m gemischt – Thomas entscheidet die kanonischen Werte (ca. 60–65 % Abdeckung).",
+        "checkedAt": "2026-11-25"
       }
     ],
     "movedFolders": [
@@ -7673,8 +7949,8 @@
         "movedAt": "2026-11-02"
       }
     ],
-    "remainingUncheckedApprox": 130,
-    "note": "Stand 2026-11-23: 'OTA (alt, bis Okt. 2026)/SCI' weiter bearbeitet – 25 Dateien geprüft: 21 doppelt (12 .md, 9 .docx), 4 nur in Drive (SCI-0084/0085 Magnetokalorik → EXT-ECO-OTA-20261123-001; Gender-Voice-Langfassung → -002; SCI-0017-EN → -003). Auffällig: GitHub OTA-SCI-0031-2024-DE.md hat „×“ als „—“ verstümmelt (z. B. Zeile 170 „~1,6—“). Restbestand SCI laut Liste noch u. a. SCI-0026-2048 (2×), 0018-60000BCE, 0015, 0014, 0010, 0009, 0004, 0008, 0012, 0007 (.docx); danach FND/TEC und weitere Serienordner. Hinweise: search_files liefert ohne Titelfilter nur 5 Treffer pro Seite; mit parentId = '<Ordner>' und \"title != '…'\"-Ausschlüssen der onlyInDrive-Titel kommt die ganze Restliste in einem Aufruf. download_file_content: .docx haben kein zentrales Verzeichnis – word/document.xml über den lokalen Header lesen (zlib raw deflate). Vergleich .md per Zeilenabdeckung inkl. Historie, .docx per 6-Wort-Schindeln. _Kann weg enthält rund 730 Einträge. | Stand 2026-11-23 (Ökosystem-Kreislauf, Thomas: „ab nach kann weg und weiter“): 24 Dateien aus onlyInDrive entschieden und nach „_Kann weg“ verschoben (übernommen: KOM-0002, INDEX-RKF, SCI-0041 + Zenodo-Analyse, BIO-0007, BIO-0027, FND-0027 v1.0.1, Mars-Rohrecherchen; als Variante vermerkt: SCI-0017-EN, SCI-0093, SCI-0008/BIO-0004 Bellmann, BIO-0006/0010/0011/0015, SCI-0048, SCI-0038-EN, CUL-0013-EN, HIS-0006/0007). Verbleibende onlyInDrive-Einträge sind neue Kanondokumente ohne GitHub-Gegenstück und warten auf Thomas. | Stand 2026-11-23 abends (Ökosystem-Kreislauf): SCI-0084/0085 Magnetokalorik ([R], kein Kanon) als OTA-SCI-0121/0122 übernommen und nach „_Kann weg“ verschoben (EXT-ECO-OTA-20261123-001). | Stand 2026-11-24: 25 geprüft (SCI-Restliste vollständig, FND bis auf „LIES MICH – Liv Dawn heißt jetzt Liv Mhira“ und FND-0031-NACHTRAG): 22 doppelt, 3 nur in Drive (FND-0019 v1.1 docx+pdf → EXT-ECO-OTA-20261124-001; FND-0010-CORRECTIONS im Zweifel). Verschieben der .docx nach „_Kann weg“ schlug heute mit „caller does not have permission to move this file“ fehl (nur die .md ging) – 21 Dateien in altbestand.pendingMove, nächster Lauf versucht es erneut. Danach weiter mit HIS, ORG, LIT und „files (alt, KUE-Kopien Juni 2026)“.",
+    "remainingUncheckedApprox": 105,
+    "note": "Stand 2026-11-23: 'OTA (alt, bis Okt. 2026)/SCI' weiter bearbeitet – 25 Dateien geprüft: 21 doppelt (12 .md, 9 .docx), 4 nur in Drive (SCI-0084/0085 Magnetokalorik → EXT-ECO-OTA-20261123-001; Gender-Voice-Langfassung → -002; SCI-0017-EN → -003). Auffällig: GitHub OTA-SCI-0031-2024-DE.md hat „×“ als „—“ verstümmelt (z. B. Zeile 170 „~1,6—“). Restbestand SCI laut Liste noch u. a. SCI-0026-2048 (2×), 0018-60000BCE, 0015, 0014, 0010, 0009, 0004, 0008, 0012, 0007 (.docx); danach FND/TEC und weitere Serienordner. Hinweise: search_files liefert ohne Titelfilter nur 5 Treffer pro Seite; mit parentId = '<Ordner>' und \"title != '…'\"-Ausschlüssen der onlyInDrive-Titel kommt die ganze Restliste in einem Aufruf. download_file_content: .docx haben kein zentrales Verzeichnis – word/document.xml über den lokalen Header lesen (zlib raw deflate). Vergleich .md per Zeilenabdeckung inkl. Historie, .docx per 6-Wort-Schindeln. _Kann weg enthält rund 730 Einträge. | Stand 2026-11-23 (Ökosystem-Kreislauf, Thomas: „ab nach kann weg und weiter“): 24 Dateien aus onlyInDrive entschieden und nach „_Kann weg“ verschoben (übernommen: KOM-0002, INDEX-RKF, SCI-0041 + Zenodo-Analyse, BIO-0007, BIO-0027, FND-0027 v1.0.1, Mars-Rohrecherchen; als Variante vermerkt: SCI-0017-EN, SCI-0093, SCI-0008/BIO-0004 Bellmann, BIO-0006/0010/0011/0015, SCI-0048, SCI-0038-EN, CUL-0013-EN, HIS-0006/0007). Verbleibende onlyInDrive-Einträge sind neue Kanondokumente ohne GitHub-Gegenstück und warten auf Thomas. | Stand 2026-11-23 abends (Ökosystem-Kreislauf): SCI-0084/0085 Magnetokalorik ([R], kein Kanon) als OTA-SCI-0121/0122 übernommen und nach „_Kann weg“ verschoben (EXT-ECO-OTA-20261123-001). | Stand 2026-11-24: 25 geprüft (SCI-Restliste vollständig, FND bis auf „LIES MICH – Liv Dawn heißt jetzt Liv Mhira“ und FND-0031-NACHTRAG): 22 doppelt, 3 nur in Drive (FND-0019 v1.1 docx+pdf → EXT-ECO-OTA-20261124-001; FND-0010-CORRECTIONS im Zweifel). Verschieben der .docx nach „_Kann weg“ schlug heute mit „caller does not have permission to move this file“ fehl (nur die .md ging) – 21 Dateien in altbestand.pendingMove, nächster Lauf versucht es erneut. Danach weiter mit HIS, ORG, LIT und „files (alt, KUE-Kopien Juni 2026)“. | Stand 2026-11-25: 25 geprüft (FND-Rest, TEC zu zwei Dritteln): 17 doppelt, 5 nur in Drive (FND-0031-NACHTRAG → EXT-ECO-OTA-20261125-001, TEC-0026 BTI → -002, TEC-0027-2089 Baumeister-Kammern → -003, TEC-0002-Framework ohne Request, LIES MICH bleibt), 3 im Zweifel (TEC-0025-2091 v2.1 2×, TEC-0023-2089 v1.1). WICHTIG: Seit heute meldet Drive für fast alle Altbestand-Dateien (auch .md) canMoveItemWithinDrive = false und canEdit = false – nur vom Connector angelegte/zuletzt berührte Dateien lassen sich noch verschieben. Daher nur 1 Datei (FND-0017-NACHTRAG) verschoben; 16 weitere doppelte stehen zusätzlich in pendingMove (jetzt 39). Thomas muss sie selbst nach „_Kann weg“ ziehen oder dem Connector wieder vollen Drive-Zugriff geben. Weiter mit TEC-Rest (0019-2091, 0019-2095, 0018, 0016, 0004, 0015-2082, 0003, 0001-2196 3×), dann „files (alt, KUE-Kopien Juni 2026)“. Neu: Docs per create_file mit Dateireferenz (base64Content = sha256:<hex>:<Pfad>) statt textContent – spart den Inhalt im Aufruf.",
     "pendingMove": [
       {
         "fileId": "1m6d9G4n4Hq4LmclUNoE2WuDAJKXoNxdG",
@@ -7792,6 +8068,86 @@
         "newTitle": "[übernommen 2026-11-24] OTA-FND-0019-2025-DE-v1_1.pdf",
         "movedTo": "_Kann weg",
         "grund": "Drive-Werkzeug: „The caller does not have permission to move this file“ (2026-11-24)"
+      },
+      {
+        "fileId": "1oUiQPK5SV5QIhOGmN2zvHIxmeTZxaq7R",
+        "newTitle": "[doppelt 2026-11-25] OTA-FND-0025-2026-DE.docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1geuFvSFTv6pDjXqLAi38Wufkv8uaryI7",
+        "newTitle": "[doppelt 2026-11-25] OTA-FND-0026-2026-DE.docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1D6KO2uXkQqFuycmcjAlkwaNewPlvhyJm",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0023-2089-DE.docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1WScgqWFH1q82hC9AujSMwdqV371WqREn",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0025-2091-DE-v2.docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1dMtTAOp3hgZ5daXQjeVk0vifK3r4pI4z",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0022-2025-DE.docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1_NLHKfy59cChaBucpy5QvXW6_4CWw2Bs",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0025-2050-DE.docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1mO1L7Xu-pNRNg-FvnkCq-zUy4ygN3lHv",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0023-2091-DE.docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1Tv2FAspzayMtbtTPSaNNG26vJipKZ2Z-",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0024-2150-DE.docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1dhJCt8B34kJ46AkPKyzyYqY2bLbjfNMm",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0020-2091-DE.docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1Hlm9K-SUTtFgazpZCyd9PTx5iiymJ4eM",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0028-2048-DE_v2.0_FINAL.docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1HIciNCTx5VNOCeJsrNc6LShcm9U47Wau",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0028-2048-DE_v2.0_FINAL (1).docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1TeUdm8D5c2zaEPhulpH8DWlbPC_PqDwb",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0029-2048-DE_v1.0.docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1Mayw3BrmPhm7p-JofFp--4uQ6ii22mrJ",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0029-2048-DE_v1.0 (1).docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1j8dls7fplDt66KLQjo0bii8f-tcjD5lD",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0027-2091-DE.md",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1xHoZxsKuEos3LzDeuVNlTtkUwriuaeu3",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0028-2025-DE.md",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
+      },
+      {
+        "fileId": "1BlseScEut8d4kwTUP-UjMC3a30QB7jKW",
+        "newTitle": "[doppelt 2026-11-25] OTA-TEC-0027-2091-DE.docx",
+        "grund": "Drive-Werkzeug: canMoveItemWithinDrive = false (2026-11-25), Verschieben nicht möglich"
       }
     ]
   },
