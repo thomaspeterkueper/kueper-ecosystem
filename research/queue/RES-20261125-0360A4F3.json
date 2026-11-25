@@ -1,0 +1,46 @@
+{
+  "id": "RES-20261125-0360A4F3",
+  "status": "queued",
+  "created": "2026-11-25T13:41:37+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0102-2026-DE.md",
+  "source_ref": "6df9c474514c680df6238d59e81323045f2bd9fa",
+  "source_blob_sha": "4cb639eac9ff17820d5b4a4b8532ad33d93dcf55",
+  "document_signature": "OTA-SCI-0102-2026-DE",
+  "title": "Realwelt-Audit des Autophagie-Flux-Befunds in OTA-SCI-0102 (v1.1): die Moreno-et-al.-2026-Humanstudie, 'höherer Flux im hohen Alter ↔ schlechtere körperliche Funktion' und die offene Frage Wartung vs. Schadensantwort",
+  "question": "Quellengestützter Audit der [R]- und [OFFEN]-Schicht von OTA-SCI-0102-2026-DE (§1 'Realgrundlage (Kurzfassung)'), gepinnt auf die im Workspace vorliegende v1.1 (Status ENTWURF, Stand 19.11.2026; Frontmatter ['R','I','OFFEN']; review.reason führt den Umzug des Realteils nach KUE-SCI-0204 als ausstehend und den nächsten Prüftermin 2027-05-13). Das Dokument trägt seine gesamte Humanaussage auf einer einzigen namentlichen Studie und einer counterintuitiven Richtung. (1) Quellenverifikation: Prüfe, ob 'Moreno et al. 2026' in der im Dossier implizierten Form existiert – Titel, Autorschaft, Journal, Band/Artikelnummer, DOI, Publikationsdatum, Peer-Review-Status – und ob die Arbeit tatsächlich menschlichen Autophagie-Flux (nicht nur Markerexpression) in Blutzellen misst. Melde jede Nichtbestätigung ausdrücklich und nenne die nächstliegenden realen Humanstudien zu Autophagie-Flux und Altern, ohne sie stillschweigend zu substituieren. (2) Methodik: Kläre, wie 'Flux' operationalisiert wird (lysosomale Blockade mit Bafilomycin A1/Leupeptin, LC3-II-Fluss, p62-Degradation, Durchflusszytometrie in PBMC/Monozyten), welche Kohorte (N, Altersspanne, Geschlechterverteilung, Gesundheitsstatus), welches Design (querschnittlich vs. longitudinal) und welche Effektgrößen und Statistik berichtet werden. (3) Richtungsaussage: Prüfe 'der Flux sinkt im Alter nicht einheitlich, sondern verändert sich je nach Zelltyp, Geschlecht und Zustand' sowie 'im hohen Alter ging höherer Flux in Blutzellen mit schlechterer körperlicher Funktion einher' gegen Volltext und reale Literatur. Ist der Befund robust, oder durch Entzündung/Inflammaging, Seneszenz, Komorbidität, Medikation oder Selektion der Hochbetagten konfundiert? Berichte, was die reale Autophagie-Alterungs-Literatur (CMA-, Mitophagie- und Flux-Studien; Tiermodelle gegenüber Human) zur Richtung sagt. (4) Proxy-Grenze: Prüfe die im Dossier gezogenen Grenzen ('peripherer Blut-Flux ist nicht automatisch neuronaler Flux') und ob PBMC-Flux überhaupt ein validierter Surrogatmarker für Gewebs- oder neuronale Autophagie ist; berichte reale Validierungs- und Limitationen-Literatur. (5) [OFFEN]-Frage: Prüfe, ob 'hoher Flux = gute Wartung vs. Antwort auf mehr Schaden' real entscheidbar ist – welche Marker (Flux vs. Markermenge, Seneszenz-assoziierte Autophagie, Mitophagie-Indizes, lysosomale Kapazität) die Unterscheidung tragen. (6) Reklassifiziere: Nenne die Sätze, die [R] bleiben können (Autophagie ist zelluläre Wartung; Flux ist in Humanblutzellen unter lysosomaler Blockade messbar; Zelltyp-/Geschlechtsabhängigkeit als Arbeitshypothese), die zu '[R] Quelleninhalt, Kohorte und Endpunkt offen' abzuschwächen sind (die konkrete Moreno-Richtung, 'höherer Flux ↔ schlechtere Funktion') und die [OFFEN] bleiben müssen (Wartung vs. Schadensantwort; neuronale Übertragbarkeit). Stelle fest, dass kein kanonischer Flux-Schwellenwert, keine kanonische Altersrichtungsaussage und kein kanonischer Surrogatmarker in den Kanon oder in KG-Standardwerte aufgenommen wird. AUSGESCHLOSSEN: die OTA-Anschlusslogik an OTA-SCI-0103 und den Strang Longitudinal Brain Health als Autorenentscheidung, die KG-Kandidatenclaim-Vergabe, APOE4-Zellmodelle als individuelle Prognose sowie alle NOXIA-/OTA-Balancing-Werte. NICHT erneut zu erheben: die Magnetobiologie-/ROS-Schicht aus OTA-SCI-0096 (RES-20261002-B1647AAF) – nur als bestehende Grenze zitieren.",
+  "why_now": "Die [R]-Kernaussage steht in v1.1 vom 19.11.2026, das Feld (Humanmessungen des Autophagie-Flux 2025/2026) ist schnelllebig, und review.next liegt bei 2027-05-13. Eine externe Prüfung vor dem endgültigen Handoff verhindert, dass unverifizierte [R]-Labels und die counterintuitive Richtungsaussage ungeprüft in KUE-SCI-0204 übernommen werden.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "OFFEN"
+  ],
+  "real_world_anchor": "Moreno et al. (2026), peer-reviewte Humanstudie zum Autophagie-Flux in Blutzellen und körperlicher Funktion im hohen Alter; reale Autophagie-Alterungs- und Flux-Methodikliteratur (lysosomale Blockade, LC3-II/p62, CMA/Mitophagie).",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.79,
+  "scores": {
+    "project_relevance": 0.78,
+    "cross_project_reuse": 0.66,
+    "uncertainty": 0.86,
+    "evidence_potential": 0.86
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger OTA-Research-Topic behandelt Autophagie-Flux oder OTA-SCI-0102; thematisch verschieden von OTA-SCI-0096 (Magnetobiologie/ROS, RES-20261002-B1647AAF) und OTA-SCI-0086 (Reproduktionsbiologie). Erstmalige externe Prüfung der einzigen namentlichen Humanquelle des Dossiers.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 208,
+    "quality_flags": [
+      "RELATION_GAP",
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "0360a4f3851c53ea"
+}
