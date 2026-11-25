@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261125-ACF24400",
+  "status": "queued",
+  "created": "2026-11-25T13:13:53+00:00",
+  "source_project": "noxia-universe",
+  "source_repository": "thomaspeterkueper/noxia-universe",
+  "source_path": "spaces/noxia/infrastructure/NXU-Q1-QUADRATURE-STATION.md",
+  "source_ref": "44279d46a6919dbed8ec0ef35d2e2dbe2cb67c49",
+  "source_blob_sha": "5d1a4457dd3ccb745154e47c4a9ea9a5cdb04a12",
+  "title": "400-m-Rotationshabitate: Was reale Großhabitat-Studien zu Strukturmasse, Lagern, Spin-up und Ausfallmodi für Q1 belegen",
+  "question": "Was sagen NASA-/ASEE-/Princeton-Großhabitatstudien (z. B. NASA SP-413), peer-reviewte Artificial-Gravity- und Rotationsstruktur-Analysen sowie Material- und Lagertechnik zu Strukturmasse, Steifigkeit, Spin-up-/Spin-down-Energie und Drehimpuls, Lager- und Durchführungslasten, Unwucht-/Schwingungskontrolle, Mikrometeoriten- und Sekundärschutz sowie Ausfallmodi von Habitaten der 350–450-m-Radiusklasse? Welche Größenordnungen und offenen Punkte folgen daraus für Q1s zwei gegenläufige Wohnkörper mit ~3.250 Menschen, und wo muss der Kanon strukturelle Grenzen, Inspektions-/Reparaturpfade und ein kontrolliertes Spin-down statt „gegenläufige Ringe“ als gelöst zeigen?",
+  "why_now": "Q1 v1.0 setzt 350–450 m Radius, ~400 m Referenzpunkt und zwei gegenläufige Wohnkörper; §18 führt „350–450-m-Rotationskörper: Struktur, Lager, Balance, Spin-up/down und Transfer“ ausdrücklich als ungeschlossene technische Gates. Die 1-g-Referenz bei ~1,5 rpm und der 3.250-Bewohner-Envelope hängen an dieser Geometrie. Eine reale Ingenieurprüfung liefert Größenordnungen und Ausfallmodi, bevor Engineering die Werte schließt.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "worldbuilding-scientific",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "NASA SP-413 „Space Settlements: A Design Study“ und verwandte NASA-/ASEE-/Princeton-Großhabitatstudien; peer-reviewte Artificial-Gravity-Literatur (z. B. Clément/Bukley, Springer) und Struktur-/Lageranalysen großer rotierender Systeme; Spin-up-/Drehimpuls- und Mikrometeoriten-Schutztechnik.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [],
+  "novelty_reason": "RES-20261113-477236C3 prüft die vestibulär-medizinische Toleranz von rpm/Radius, RES-20261004-776D4025 die heliozentrische Phasenhaltung, RES-20261029-1298ACCC die Energieversorgung. Keiner dieser Topics behandelt Struktur, Lager, Unwucht, Spin-up-Energie und Ausfallmodi des rotierenden Habitats selbst — genau die in Q1 §18 offenen Gates.",
+  "fingerprint": "acf244003a0f2c99"
+}
