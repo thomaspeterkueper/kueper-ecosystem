@@ -97,7 +97,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0034-2026-DE | MoM-z14 — Die älteste Galaxie | RT |  | offen |
 | OTA-SCI-0035-2026-DE | Hybride Aggregatzustände in Metall-Nanopartikeln — Wenn | RST |  | offen |
 | OTA-SCI-0043-2026-DE | LLSVPs und die Kern-Mantel-Grenze: Evidenz, Geodynamo u | HOFFENRS | I. LLSVPs: SEISMISCHE EVIDENZ [R]; II. URSPRUNG DER TIEFMANTEL-HETEROGENITÄTEN [ | offen |
-| OTA-SCI-0044-2026-DE | Extragalaktische organische Chemie: JWST-Befunde in IRA | RT | 7.1 Kernaussagen [R]; 7.2 Theoretische Einordnung [T] | geprüft 2026-11-22 – ganz nach KUE (reines Realdossier, AVI-Übertragung liegt in OTA-FND-0012), viele unbelegte Zahlen; erst Korrektur, dann Brückendokument; EXT-OTA-KUE-20261122-001, OTA-REQ-20261122-001 (A umsetzbar, B wartet auf Thomas) – A umgesetzt 2026-11-24 (v1.1) |
+| OTA-SCI-0044-2026-DE | Extragalaktische organische Chemie: JWST-Befunde in IRA | RT | 7.1 Kernaussagen [R]; 7.2 Theoretische Einordnung [T] | geprüft 2026-11-22 – ganz nach KUE (reines Realdossier, AVI-Übertragung liegt in OTA-FND-0012), viele unbelegte Zahlen; erst Korrektur, dann Brückendokument; EXT-OTA-KUE-20261122-001, OTA-REQ-20261122-001 (A umsetzbar, B wartet auf Thomas) – A umgesetzt 2026-11-24 (v1.1), C umgesetzt 2026-11-25 (OTA-SCI-0044 v1.2, KUE-SCI-0218); B wartet auf Thomas |
 | OTA-SCI-0046-2026-DE | OTA-SCI-0046-2026-DE | HRT |  | offen |
 | OTA-SCI-0048-NACHTRAG-2026-DE | Λ-Haplogruppe: Drei Ergänzungsmodule — UPE-FSS-Detektio | FRST | MODUL A: UPE-FSS-DETEKTIONSPROTOKOLL [R→T→S]; A.1 Realweltlicher Sockel [R] | offen |
 | OTA-SCI-0059-2026-DE | OTA-SCI-0059-2026-DE | RST |  | offen |
