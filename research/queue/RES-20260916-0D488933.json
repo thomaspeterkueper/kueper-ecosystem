@@ -1,6 +1,6 @@
 {
   "id": "RES-20260916-0D488933",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-16T08:41:45+00:00",
   "source_project": "avi-modell",
   "source_repository": "thomaspeterkueper/avi-modell",
@@ -33,5 +33,21 @@
   "novelty_reason": "Nicht identisch mit RES-20260828-0806A449 und ausdrücklich keine verdeckte Wiederholung: dort war die Leitfrage, welche Frameworks Historien- oder Pfadabhängigkeit bei identischem Y erlauben und welche Bedingungen xi erfüllen muss. Hier wird eine andere, im Repository offen markierte Achse bearbeitet — ob ein zusätzlicher Expansionsbeitrag ΔH² überhaupt eine tragfähige Energie- und Gravitationsinterpretation besitzt. Der entscheidende inhaltliche Unterschied: eine Vakuumdichte der Form rho_vac(H) hängt nur vom momentanen Y ab und ist damit gerade kein Historienzustand; ihre Untersuchung klärt, welche Klasse-A-Kandidaten den Test-B-Mechanismus prinzipiell nicht tragen können.",
   "fingerprint": "0d48893353a8cf0e",
   "updated_at": "2026-09-17T08:59:03+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/128"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/128",
+  "validated_at": "2026-11-26T15:38:25+00:00",
+  "validation_summary": "Der Kandidat ist eine externe Literatur- und Strukturanalyse zu expansionsabhängiger Vakuumenergie (Running Vacuum, Vakuum-Metamorphose, zerfallendes/interagierendes Vakuum). Er widerspricht dem AVI-Kanon nicht: Der Closure-Vertrag §7 fordert für Klasse A ausdrücklich eine konsistente Energie-/Gravitationsinterpretation von ΔH_AVI², nennt aber keinen externen Rahmen; die späteren Gates verlangen bereits, dass ein echter ξ-Zustand nicht aus Y rekonstruierbar sein darf. Der Kandidat liefert (a) den etablierten externen Unterbau für Klasse A mit ΛCDM-Nullfall, zwei Bianchi-konsistenten Implementierungen und publizierten harten Grenzen (BBN, Ġ/G) sowie (b) die als H klassifizierte Inferenz C23/C24, dass eine reine Λ(H,Ḣ)-Closure ein erststufiges autonomes System mit derselben Zahl von Integrationskonstanten wie ΛCDM ist und daher kein Test-B-Träger sein kann. Punkt (b) ist im Repo nur als allgemeines Kriterium 'ξ = f(Y) ist kein zusätzlicher Freiheitsgrad' vorhanden; der Kandidat markiert ",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-AVI-20261126-001",
+      "target": "avi-modell",
+      "repository": "thomaspeterkueper/avi-modell"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-AVI-20261126-002",
+      "target": "avi-modell",
+      "repository": "thomaspeterkueper/avi-modell"
+    }
+  ]
 }
