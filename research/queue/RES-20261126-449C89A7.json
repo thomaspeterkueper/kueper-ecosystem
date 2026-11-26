@@ -1,0 +1,46 @@
+{
+  "id": "RES-20261126-449C89A7",
+  "status": "queued",
+  "created": "2026-11-26T13:18:26+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0101-2026-DE.md",
+  "source_ref": "5df7d00cc50e0c441efdd5bd4daaafe19842e0f0",
+  "source_blob_sha": "5bf029b0b905ba4c5deae193494f8c6cabc4be45",
+  "document_signature": "OTA-SCI-0101-2026-DE",
+  "title": "Realwelt-Audit der CHIME-21-cm-Autokorrelation bei z ~ 1 (v1.0): die ApJ-Kennungen 10.3847/1538-4357/ae9835 und ae9747, 94 Beobachtungsnächte, 608,2–707,8 MHz und die 12,4-σ-Behauptung samt Teilband-Signifikanzen 8,6/9,1 σ",
+  "question": "Quellengestützter Audit der vollständig als [R] geführten Realgrundlage von OTA-SCI-0101-2026-DE (Abschnitte 1 'Befund', 2 'Wissenschaftliche Bedeutung' und 4 'IllustrisTNG-Vergleich'), gepinnt auf die im Workspace vorliegende v1.0 (Status ENTWURF; Frontmatter ['R','NULL','OFFEN']). Das Dokument trägt seine gesamte externe Aussage auf zwei Zeitschriftenkennungen und sechs Zahlen; die Quellenprüfung 2026-11 führt OTA-SCI-0101 ausdrücklich mit dem Befund '1 zu ungenau' und ordnet es dem Schwerpunkt OTA-SCI-0095 bis -0115 der noch nicht abgeschlossenen Quellenprüfung zu (OTA-REQ-20261106-quellenpruefung). (1) Quellenverifikation: Prüfe, ob die CHIME Collaboration im *Astrophysical Journal* tatsächlich am 28. September 2026 einen Nachweis des kosmologischen 21-cm-Intensity-Mapping-Signals bei z ~ 1 in Autokorrelation mit CHIME allein berichtet und ob DOI 10.3847/1538-4357/ae9835 in dieser Form existiert – Titel, Autorschaft (Kollaborationspublikation), Band, Artikelnummer, Publikationsdatum, Peer-Review-Status. Prüfe ebenso die Begleitarbeit DOI 10.3847/1538-4357/ae9747 (parametrische HI-Clustering-Modelle, IllustrisTNG-Vorhersagen). Melde jede Nichtbestätigung ausdrücklich und nenne die nächstliegenden realen CHIME-21-cm-Arbeiten (Kreuzkorrelationen mit eBOSS-/Quasarkatalogen, frühere Autokorrelations-Obergrenzen, GBT-/LOFAR-/OVRO-LWA-Kontext), ohne sie stillschweigend zu substituieren; beachte, dass die Angaben in einem Archiv mit fiktiver 2026er-Datierung stehen und die reale Literaturlage zum Prüfzeitpunkt maßgeblich ist. (2) Messwerte: Prüfe '94 Beobachtungsnächte', das HI-Auto-Powerspektrum über '608.2–707.8 MHz' entsprechend 'z = 1.34–1.01', den Bereich '0.4 < k < 1.5 h/Mpc' und die '12.4 sigma' gegen Abstract und Ergebnisteil. Kläre, was die Signifikanz bezeichnet (globale vs. lokale Signifikanz, Zahl unabhängiger Moden, Kovarianz, Look-elsewhere-Effekt, Bandbreiten-/Beam-Transfer, Foreground-Entfernung) und ob die Teilbandwerte 'z ~ 1.08: 8.6 sigma' und 'z ~ 1.24: 9.1 sigma' so berichtet werden oder aus einer anderen Statistik stammen. Rechne nach, ob 608,2–707,8 MHz tatsächlich z = 1,34–1,01 entspricht (Ruhefrequenz 1420,4 MHz) und ob die z-Werte der Teilbänder konsistent sind. (3) Erstnachweis-Behauptung: Prüfe den Satz, frühere CHIME-21-cm-Nachweise hätten Kreuzkorrelationen mit externen Galaxien-/Quasarkatalogen genutzt, und die Autokorrelation zeige, dass CHIME großräumige HI-Struktur 'prinzipiell aus dem eigenen Radio-Datensatz' extrahieren könne. Berichte den realen Stand der 21-cm-Intensity-Mapping-Detektionen (welche Tracer, welche Redshifts, welche Signifikanzen, welche Instrumente) und stelle fest, ob 'erster Nachweis in Autokorrelation mit CHIME allein' als Erstnachweis, als erster Nachweis bei z ~ 1 oder als erster Autokorrelationsnachweis überhaupt zu führen ist. (4) IllustrisTNG-Spannung: Prüfe die Aussage, die Begleitanalyse berichte 'Spannungen gegenüber IllustrisTNG-Vorhersagen im gemessenen nichtlinearen Skalenbereich', gegen die reale Arbeit und die TNG100-/TNG300-Literatur. Kläre, welche Observable verglichen wird (Auto-Powerspektrum, HI-Bias, RSD-Parameter), welche Skalen betroffen sind, wie groß die Spannung ist und ob die Autoren sie als Modell-/Tracer-/Baryonikdiagnostik oder als kosmologische Spannung einordnen. Prüfe ausdrücklich, ob die OTA-Formulierung 'Simulation residual is not cosmological closure defect' werktreu ist und ob das Dokument die Standardmodellierungsliste (HI-Dichte/Bias, RSD, nichtlineares Clustering, baryonische/galaktische HI-Physik, Foreground-Entfernung, RFI/Maskierung, Bandpass/Instrumentkalibration, Beamforming/Mapmaking, Power-Spectrum-Estimator/Kovarianz) vollständig und korrekt führt. (5) Reklassifiziere: Nenne die Sätze, die [R] bleiben können (Existenz einer peer-reviewten CHIME-21-cm-Messung; Richtung des Befunds als positiver Nachweis; 21-cm-Intensity-Mapping als eigener Beobachtungskanal), die zu '[R] Quelleninhalt, Signifikanz, Redshiftbereich und Bezugsgröße offen' abzuschwächen sind (12,4 σ, 8,6/9,1 σ, 94 Nächte, Frequenz-/k-Bereich, 'erster Nachweis'), die als [T] zu führen sind (IllustrisTNG-Spannung als Tracer-/Baryonikdiagnostik) und die [OFFEN] bleiben müssen (kosmologische Interpretation, Foreground-/Kovarianzsystematik, Unabhängigkeit des Kanals). Stelle fest, dass kein kanonischer Signifikanzwert, keine kanonische Frequenz-/Redshiftgrenze und keine kanonische TNG-Spannungsgröße in den Kanon oder in NOXIA-Standardwerte aufgenommen wird. AUSGESCHLOSSEN: die AVI-P-Triggerprüfung T1–T4 und das Fazit 'kein T1-T4-Reaktivierungstrigger', die Aufnahme in die AVI-Beobachtungsmatrix, die OTA-Anschlusslogik an OTA-SCI-0092/0093/0100 sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "Die Quellenprüfung 2026-11 führt OTA-SCI-0101 mit dem Befund '1 zu ungenau' und dem Schwerpunkt der noch nicht abgeschlossenen Prüfung OTA-SCI-0095 bis -0115; das Dokument ist v1.0 ohne unabhängige Verifikation seiner beiden DOI-Kennungen. Zugleich trägt es mit 12,4 σ eine der stärksten Einzelbehauptungen des SCI-Bestands, die als Referenz für spätere Cross-Channel-Tests (T2) und als Standardmodellierungs-Kontrollfall dient – eine ungeprüfte Signifikanz würde die Beobachtungsmatrix und die Aussage 'kein AVI-P-Trigger' mit einem falschen Anker tragen. Das Dokument ist in der bisherigen Rechercheliste nicht enthalten und hat keinen KUE-Realteil, der die Prüfung bereits abdeckte.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T",
+    "OFFEN"
+  ],
+  "real_world_anchor": "CHIME-Collaboration, Astrophysical Journal (2026), DOI 10.3847/1538-4357/ae9835: kosmologisches 21-cm-Intensity-Mapping in Autokorrelation bei z ~ 1, 94 Beobachtungsnächte, 608,2–707,8 MHz (z = 1,34–1,01), 0,4 < k < 1,5 h/Mpc, 12,4 σ, Teilbänder z ~ 1,08 (8,6 σ) und z ~ 1,24 (9,1 σ); Begleitarbeit DOI 10.3847/1538-4357/ae9747 zu parametrischen HI-Clustering-Modellen und IllustrisTNG-Vorhersagen.",
+  "publication_route_hint": "fictional_archive_document",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.835,
+  "scores": {
+    "project_relevance": 0.82,
+    "cross_project_reuse": 0.68,
+    "uncertainty": 0.92,
+    "evidence_potential": 0.92
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein bisheriger Research-Topic behandelt OTA-SCI-0101 oder die CHIME-21-cm-Autokorrelation; anders als OTA-SCI-0044/0103/0116 besitzt das Dokument keinen ausgelagerten KUE-Realteil. Der Audit ist nicht bibliographische Routine, sondern prüft die tragende 12,4-σ-Signifikanz, die Erstnachweis-Reichweite und die IllustrisTNG-Spannung, an denen die OTA-Aussage 'Standardmodellierungs-Kontrollfall, kein AVI-Trigger' hängt.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 245,
+    "quality_flags": [
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "449c89a7aa2047e5"
+}
