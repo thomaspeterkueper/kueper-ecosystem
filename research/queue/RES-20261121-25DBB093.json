@@ -1,6 +1,6 @@
 {
   "id": "RES-20261121-25DBB093",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-21T11:23:41+00:00",
   "source_project": "zereya",
   "source_repository": "thomaspeterkueper/zereya.de",
@@ -32,5 +32,7 @@
     "RES-20260919-43549FCF"
   ],
   "novelty_reason": "1D1D68B3 behandelt die Rechte- und Provenienzkette für Bearbeitungen und Fortführungen (§§ 2, 3, 23 UrhG) und die Kennzeichnung von Rechteinhabern; 43549FCF behandelt Impressum, DSGVO-Einwilligung und die Barrierefreiheitspflichten digitaler Ausgaben. Beide betreffen das Verhältnis Mensch/Rechteinhaber bzw. Pflichten des Anbieters gegenüber Nutzenden. Keine der beiden berührt die maschinelle Auswertung durch Dritte: TDM-Vorbehalt, Crawler-Protokoll und die Urheberrechtspflichten von KI-Modellanbietern sind ein eigener Regelkreis mit eigener Evidenz (Gesetzestext, RFC, EU-Verordnung) und eigener Handlung (Konfiguration vor dem ersten Crawl).",
-  "fingerprint": "25dbb0932f05ba42"
+  "fingerprint": "25dbb0932f05ba42",
+  "updated_at": "2026-11-26T13:17:07+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/332"
 }
