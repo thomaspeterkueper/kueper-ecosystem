@@ -71,7 +71,7 @@ Einstieg nach [`docs/development-checkpoints.md`](../development-checkpoints.md)
 ## Entwicklungscheckpoints
 
 - Ziel: jeder Workstream ist ohne Chat-Historie auffindbar.
-- Status: integriert (Regel und dieser Pilot); Einführung in NOXIA, KG, SSF, KUE über Umschläge.
+- Status: integriert (Regel und dieser Pilot); Einstiege in KG, SSF und kueper.com angelegt (26.11.2026), NOXIA offen (`noxiagame/external-tasks/open/EXT-ECO-NOXIA-20261125-001.md`).
 - Branch / PR: `claude/EXT-NOXIA-ECO-20261124-001`.
 - Offene Schritte: Umschläge in `.kueper/outbox/` (`…--development-checkpoint.json`).
 - Abschlusskriterien: Einstieg in allen Repositories mit laufender Entwicklung; danach Entscheidung über eine maschinelle Abdeckungsprüfung.

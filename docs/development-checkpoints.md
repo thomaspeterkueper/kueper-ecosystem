@@ -1,8 +1,8 @@
 # Entwicklungscheckpoints – auffindbarer Arbeitsstand je Repository
 
 ```
-Stand:   25.11.2026 – erste Fassung (EXT-NOXIA-ECO-20261124-001, Claude-Lauf „Ökosystem-Kreislauf“)
-Version: 1.0.0
+Stand:   26.11.2026 – Abdeckung: Einstiege in KG, SSF und kueper.com angelegt (Claude-Lauf „Ökosystem-Kreislauf“); 25.11.2026 – erste Fassung (EXT-NOXIA-ECO-20261124-001)
+Version: 1.0.1
 Status:  gültig für alle registrierten Repositories; Einführung schrittweise (Abschnitt 7)
 ```
 
@@ -72,7 +72,7 @@ Vorlage:
 
 Der Checkpoint wird **bei jedem wesentlichen Arbeitsschritt im selben Commit** aktualisiert (neuer Branch, PR, Merge, Statuswechsel, neue offene Frage). Wer – Mensch, Claude-Lauf oder DeepSeek-Worker – einen Workstream fortsetzt, liest zuerst den Checkpoint.
 
-## 6. Abdeckung (Inventur 25.11.2026)
+## 6. Abdeckung (Inventur 25.11.2026, fortgeschrieben 26.11.2026)
 
 Erhoben lesend über die Repository-Bäume der Default-Branches. Private Repositories nur mit Ja/Nein.
 
@@ -80,9 +80,9 @@ Erhoben lesend über die Repository-Bäume der Default-Branches. Private Reposit
 |---|---|---|---|
 | `kueper-ecosystem` | öffentlich | `status/`-Berichte, `docs/operations/claude-laeufe.md` | ja – [`docs/development/README.md`](development/README.md) |
 | `noxiagame` | privat | ja (Teilprojekt-Dateien je Chat) | Verweis aus README fehlt – Umschlag an NOXIA |
-| `kueper-knowledge-graph` | privat | ja (Handoffs) | nein – Umschlag an KG |
-| `solarsciencefoundation` | öffentlich | `docs/ROADMAP.md`, `docs/handoffs/` | nein – Umschlag an SSF |
-| `kueper.com` | öffentlich | `docs/backlog/` | nein – Umschlag an KUE |
+| `kueper-knowledge-graph` | privat | ja (Handoffs) | ja (26.11.2026, EXT-ECO-KG-20261125-001) |
+| `solarsciencefoundation` | öffentlich | `docs/ROADMAP.md`, `docs/handoffs/` | ja – [`docs/development/README.md`](https://github.com/thomaspeterkueper/solarsciencefoundation/blob/main/docs/development/README.md) (26.11.2026) |
+| `kueper.com` | öffentlich | `docs/backlog/` | ja – [`docs/development/README.md`](https://github.com/thomaspeterkueper/kueper.com/blob/main/docs/development/README.md) (26.11.2026) |
 | `kueper-engineering` | privat | einzelne Handoff-Dateien | nein – bei nächster Entwicklungsarbeit |
 | `buecherwelten` | privat | ja (Migrations-Checkpoints) | nein – bei nächster Entwicklungsarbeit |
 | übrige registrierte Repositories | – | nur `external-tasks/` | nicht nötig, solange keine Entwicklung läuft |
