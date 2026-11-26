@@ -1,0 +1,39 @@
+{
+  "id": "RES-20261126-B115E9B7",
+  "status": "queued",
+  "created": "2026-11-26T12:52:02+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "docs/abgleich/2026-11-16-r1-artikulatorische-phonologie-v01.md",
+  "source_ref": "0701096dd603b504c3ac72ca7a218b0abe730fdb",
+  "source_blob_sha": "5a7b5a830edd759c54967fca7f69e2c944a46400",
+  "title": "Ta-Stille als prosodische Grenze: Trägt der Apostroph in Ma'Ta'U, Pa'Ta, Om'Ta einen realen phonologischen Anker?",
+  "question": "Welche dokumentierten phonologischen und prosodischen Mittel markieren in natürlichen Sprachen eine Morphem- oder Wortgrenze hörbar – Pause, Glottalisierung/Glottisverschluss, Hiatusauflösung, Grenzton, prosodisches Wort, „juncture“ –, wie werden solche Grenzsignale phonetisch gemessen (Pausendauer, Sprechtempo, Stimmqualität), und wie unterscheiden Referenzgrammatiken ein bedeutungstragendes Grenzsignal von bloßer Koartikulation, Ellipse oder rein orthographischer Konvention? Konkret zu prüfen: Deckt die in grammatik.astro §8 gesetzte „Ta-Stille“ (Apostroph als kurze Pause, „in ihr ist die Grenze“) einen anerkannten prosodischen Funktionsbereich ab, oder ist sie als Designentscheidung zu kennzeichnen – und welche Notation und Realisierung ist für R1 tragfähig, ohne eine identische akustische Pause über alle Galut-Schichten zu unterstellen?",
+  "why_now": "Die ethisch zentralen Kanonformen Ma'Ta'U, Pa'Ta und Om'Ta hängen an der Ta-Stille (grammatik §8, Wörterbuch, index.astro), und sprachgeschichte.astro fragt ausdrücklich, welche Aussprache- oder Schriftänderung die Unterscheidung zwischen „Bindung mit Grenze“ und „Bindung ohne explizite Differenz“ nicht verwischt. Die R1-Phonologie-Notiz vom 16.11.2026 führt dazu Experiment R1-PHON-004 („Der Apostroph ist vorerst ein graphematischer Marker“) und verlangt Pausendauer, Sprechtempo und Morphemgrenze zu prüfen – externe prosodische Evidenz fehlt bisher vollständig.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "conlang-scientific",
+  "claim_classes": [
+    "R",
+    "R-Anker",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Prosodische Grenzmarkierung: Pause, Glottalisierung/Glottisverschluss, Hiatusauflösung, Grenztöne, „juncture“ und prosodisches Wort; phonetische Messung von Pausendauer und Sprechtempo.",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 1.0,
+  "relevance_score": 0.8,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.65,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [
+    "RES-20260915-0CD0C163"
+  ],
+  "novelty_reason": "RES-20261011-5288D5BC behandelt den ausgelassenen Aspektmarker (Schweigeplatz als markierte Null im Paradigma). Die Ta-Stille ist das Gegenteil: ein eingefügtes, hörbares Grenzsignal zwischen Morphemen. RES-20260915-0CD0C163 behandelt Silbenbau und Wortakzent, nicht die Prosodie von Morphemgrenzen. Die neue Frage prüft die reale prosodische Basis dieses eingefügten Grenzsignals, seine Messbarkeit und seine Notation – ein in der Phonologie-Notiz dokumentierter, aber extern ungeprüfter Prüfpunkt.",
+  "fingerprint": "b115e9b70f568587"
+}
