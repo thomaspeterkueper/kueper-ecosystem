@@ -1,6 +1,6 @@
 {
   "id": "RES-20261125-ACF24400",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-25T13:13:53+00:00",
   "source_project": "noxia-universe",
   "source_repository": "thomaspeterkueper/noxia-universe",
@@ -31,5 +31,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "RES-20261113-477236C3 prüft die vestibulär-medizinische Toleranz von rpm/Radius, RES-20261004-776D4025 die heliozentrische Phasenhaltung, RES-20261029-1298ACCC die Energieversorgung. Keiner dieser Topics behandelt Struktur, Lager, Unwucht, Spin-up-Energie und Ausfallmodi des rotierenden Habitats selbst — genau die in Q1 §18 offenen Gates.",
-  "fingerprint": "acf244003a0f2c99"
+  "fingerprint": "acf244003a0f2c99",
+  "updated_at": "2026-11-26T13:03:30+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/331"
 }
