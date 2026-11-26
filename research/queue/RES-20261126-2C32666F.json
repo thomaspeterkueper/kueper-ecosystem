@@ -1,0 +1,40 @@
+{
+  "id": "RES-20261126-2C32666F",
+  "status": "queued",
+  "created": "2026-11-26T12:52:01+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/sprachgeschichte.astro",
+  "source_ref": "0701096dd603b504c3ac72ca7a218b0abe730fdb",
+  "source_blob_sha": "6af0494dce5a3ebf0f36ceda432622fba8291255",
+  "title": "G5-Tonschicht und G3-Gesang: Ton, Intonation und Melodie – was ist belegt, was ist Setzung?",
+  "question": "Welche dokumentierten Befunde gibt es zu (a) lexikalischem Ton und Tonogenese, (b) dem Verhältnis von lexikalischem Ton zu Intonation und zu gesungener Melodie (tone-tune-Assoziation), (c) musikalischen Surrogatsprachen (Pfeif- und Trommelsprache) und (d) kontaktinduzierter Tonogenese – und welche dieser Befunde können die in sprachgeschichte.astro offen geführte G5-Schicht („Tonalität und Klang als Bedeutung“, „kein bereits dokumentiertes Tonsystem“) und die G3-Schicht („Gesang, Melodie und Abschiedsüberlieferung“) extern verankern, ohne ein Tonsystem als belegt auszugeben? Konkret zu prüfen: Lässt sich die dort offene Frage „Ist lexikalischer Ton, Intonation oder musikalische Tonhöhenführung gemeint?“ mit typologischer und phonetischer Literatur beantworten, und welche Formen der Tonmarkierung (Register, Kontur, Tonhöhenakzent) sind für eine Kontaktzone „Ostasien“ plausibel, ohne eine bestimmte Sprache zu unterstellen? Welche Statusangabe ist für G5/G3 tragfähig – Design, Hypothese oder belegter Typus?",
+  "why_now": "Die Startseite zitiert das G3-Lied Auv-Pa-il mit Melodiebezug, sprachgeschichte.astro führt G3 „Gesang“ und G5 „Tonalität“ als ausdrücklich offene Punkte („kein bereits dokumentiertes Tonsystem“), und die diachrone Prüfmatrix vom 16.11.2026 verlangt „Ohne Belege keine Tonphoneme festlegen“. Die laufende R1-Phonologiearbeit (Silbenbau, Betonung, Morphophonologie, EXT-KG-MISH-20261123-002) berührt Ton bisher nicht; ohne externe Anker bleibt G5 entweder unausgearbeitet oder droht als erfundene Tonalität auf die Seite zu geraten.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "conlang-scientific",
+  "claim_classes": [
+    "R",
+    "H",
+    "W"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Typologie der Tonsprachen und Tonogenese; tone-tune-Assoziation beim Singen in Tonsprachen; musikalische Surrogatsprachen (Pfeif-/Trommelsprache); kontaktinduzierte Tonogenese und Intonation.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.825,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.7,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20260915-0CD0C163",
+    "RES-20260822-69C82BFA"
+  ],
+  "novelty_reason": "RES-20260915-0CD0C163 behandelt Segmentinventare, Silbenbau und Wortakzent des südasiatischen Areals, RES-20260822-69C82BFA die allgemeinen Wandelmechanismen und die Zuordnung von -om/-ath/-il, Ta-Konstante und G1–G6. Keine der beiden prüft lexikalischen Ton, Tonogenese, tone-tune-Assoziation oder Surrogatsprachen. Die neue Frage adressiert die in sprachgeschichte.astro explizit als „noch zu prüfen“ geführte Klangdimension von G5 und G3, die dort ohne externe Evidenz bleibt.",
+  "fingerprint": "2c32666f5dd42fd9"
+}
