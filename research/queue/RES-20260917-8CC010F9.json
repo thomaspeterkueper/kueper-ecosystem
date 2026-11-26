@@ -1,6 +1,6 @@
 {
   "id": "RES-20260917-8CC010F9",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-17T08:45:14+00:00",
   "source_project": "kueper-com",
   "source_repository": "thomaspeterkueper/kueper.com",
@@ -35,5 +35,27 @@
   "novelty_reason": "Kein vorheriges Topic berührt KUE-SCI-0174 oder die Lagerstättengeochemie von U/Th in Phosphoriten und historischen Kupfererzen. Die bisherigen Topics (0169, 0170, 0183, MTH-0006, OBS-0101, SCI-0001) prüfen andere Dokumente und andere Fachgebiete.",
   "fingerprint": "8cc010f94976d0bb",
   "updated_at": "2026-09-17T08:51:43+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/127"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/127",
+  "validated_at": "2026-11-26T15:36:47+00:00",
+  "validation_summary": "Der Kandidat bestätigt den Rechenanker und die Wärmekonstanten von KUE-SCI-0174 (200 ppm ⇒ 19,7 nW/kg; 100 g ⇒ 1,97 nW) sowie die Trägeraussagen (Francolith/Carbonat-Fluorapatit, Mn-Oxide, organische Substanz; Th arm, Th/U ≪ 1). Er widerlegt jedoch die absolute Überschrift von §III: In der Levante sind Cu-Mn-Vererzung und Phosphorit in derselben Timna-Formation gekoppelt (Faynan-DLS-Phosphorit >22 % P₂O₅, U-assoziiert; U bis 4 000 ppm), und in Mansfeld wurde ein bis 280 ppm U führendes Kupfererz historisch verhüttet. Die operative Aussage (keine automatische Übertragung; U/Th folgen dem Kupfer nicht) bleibt richtig. Zusätzlich fehlt dem Dokument die materialabhängige Wärmebilanz: 100 g Metall ≈0,05 nW, Erz ≈0,25 nW, Phosphorit ≈1,2–2 nW, Schlacke ≈12 nW (~250×); der Schlackenpfad konzentriert U/Th, der Metallpfad reichert sie ab. Daraus folgen eine Konfliktauflösung und zwei Enrichments an kueper-com. Keine OTA-Aktion: In diesem Repository ist kein konkretes Artefakt geführt, und der K",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20261126-001",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20261126-002",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-KUE-20261126-003",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com"
+    }
+  ]
 }
