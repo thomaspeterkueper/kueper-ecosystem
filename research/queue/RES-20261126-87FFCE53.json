@@ -1,0 +1,39 @@
+{
+  "id": "RES-20261126-87FFCE53",
+  "status": "queued",
+  "created": "2026-11-26T12:52:03+00:00",
+  "source_project": "mishkenaz",
+  "source_repository": "thomaspeterkueper/mishkenaz.org",
+  "source_path": "src/pages/grammatik.astro",
+  "source_ref": "0701096dd603b504c3ac72ca7a218b0abe730fdb",
+  "source_blob_sha": "9eebe240f525d63e64908915a6f85ff2614b990d",
+  "title": "Zwei Sprecher, zwei ehrliche Aspekte: Ist „faultless disagreement“ der reale semantische Anker für -om/-ath/-il?",
+  "question": "Was etabliert die formale Semantik und Sprachphilosophie zu „faultless disagreement“ – Prädikate des persönlichen Geschmacks, epistemische Modale, assessor-relative Semantik sowie Kontextualismus vs. Relativismus vs. Expressivismus –, und deckt dieser Forschungsstand die in grammatik.astro §3 und index.astro behauptete Struktur ab, dass zwei Sprecher denselben Vorgang ehrlich verschieden aspektieren können, ohne dass einer von einem objektiven Resonanzwert abweicht? Wie ist in diesem Rahmen die dortige Lügendefinition (Lüge als bewusstes Setzen eines Aspekts gegen die eigene wahrgenommene Passung) einzuordnen – als Assertions- und Aufrichtigkeitsfrage, nicht als Wahrheitsfrage –, welche Positionen sind umstritten, und folgt aus der Analyse ein Zwang zur Kennzeichnung der Aspekte als Sprecherstellungnahme (statt als Aussage über die Wirklichkeit)?",
+  "why_now": "grammatik.astro §3 macht eine präzise intersubjektive Semantikbehauptung („Zwei Sprecher können denselben Vorgang ehrlich verschieden aspektieren … Eine Lüge entsteht nicht durch Abweichung von einem objektiven Resonanzwert“), und index.astro fasst die Aspekte als „Stellungnahme, der das Gegenüber widersprechen kann – kein Urteil über die Wirklichkeit“. Die Forschungsnotiz vom 26.11.2026 grenzt die Aspekte von Frustrativ, Perfekt und Evidentialität ab, behandelt aber nicht die Semantik ehrlicher Meinungsverschiedenheit; ohne diesen Anker bleibt die zentrale epistemische Behauptung der Seite ungeerdet.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "conlang-scientific",
+  "claim_classes": [
+    "T",
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Semantik des „faultless disagreement“: Prädikate des persönlichen Geschmacks, epistemische Modale, assessor-relativistische vs. kontextualistische vs. expressivistische Analyse; Assertion, Aufrichtigkeit und Lüge.",
+  "publication_route_hint": "real_scientific_epaper",
+  "project_weight": 1.0,
+  "relevance_score": 0.8125,
+  "scores": {
+    "project_relevance": 0.85,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [
+    "RES-20261111-7B166CCE",
+    "RES-20260915-D8CB8EC4"
+  ],
+  "novelty_reason": "RES-20261111-7B166CCE prüft sprachliche Relativität, Obligatorizität und Effabilität – ob eine Grammatik Aussagen erzwingt oder unmöglich macht –, nicht die Semantik ehrlicher Meinungsverschiedenheit zwischen Sprechern. RES-20260915-D8CB8EC4 (erledigt) ordnet die Aspekte Frustrativ, Perfekt und Evidentialität zu, nicht der Wahrheitsbewertung von Stellungnahmen. Neu ist die Frage, ob „faultless disagreement“ die behauptete Struktur trägt und wie die Lügendefinition darin als Aufrichtigkeitsfrage einzuordnen ist.",
+  "fingerprint": "87ffce539e145d3e"
+}
