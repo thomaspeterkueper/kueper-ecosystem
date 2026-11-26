@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-25 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-26 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -43,6 +43,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-TEC-0019-2091-DE | OTA-TEC-0019-2091-DE | FHRT | KUE-SCI-0178 | geprüft 2026-11-14 – KUE-Gegenstück vorhanden (KUE-SCI-0178 v0.2 mit NASA-O₂/CO₂-Werten), Realteil bereits minimal, KITE-Setzung bleibt; CO₂-Anker per OTA-REQ-20261114-001 – umgesetzt 2026-11-14 (v1.4); Trinkwasser-Anker nach KUE per EXT-OTA-KUE-20261114-001 |
 | OTA-TEC-0021-2025-DE | MOF-STABILISIERUNG FÜR SUPERIONISCHES GOLDHYDRID | FHRS | KUE-SCI-0183 | geprüft 2026-11-14 – KUE-Gegenstück vorhanden (KUE-SCI-0183 v0.2), Realteil bereits auf Grundinformation + Verweis reduziert, Konfinement-Hypothese/Saga bleiben; kein Request |
 | OTA-TEC-0029-2048-DE | Quantensensorik & KI-Integration für LOD-Validierung | FHRT | KUE-SCI-0177 | geprüft 2026-11-12 – KUE-Gegenstück vorhanden, aber unvollständig; Uhrenwerte/Atominterferometer/Tageslänge nach KUE per EXT-OTA-KUE-20261112-002, AVI-/SSF-Teil bleibt; Kürzung OTA-REQ-20261112-002 – KUE-SCI-0177 v0.2 gemergt 2026-11-14, umgesetzt 2026-11-14 (v1.3) |
+| OTA-SCI-0045-2026-DE | Die Λambda-Haplogruppe – mtDNA, piRNA, Frequenz-Sensitivität | RTSF | KUE-SCI-0175, KUE-SCI-0176 | geprüft 2026-11-26 (Zeile ergänzt) – KUE-Gegenstück vorhanden (KUE-SCI-0175/0176), mtDNA-Vererbung als Ergänzung nach KUE-SCI-0176, Λ-Setzung bleibt; Korrektur/Kürzung OTA-REQ-20261126-003 (A/B1 sofort, B2 nach KUE-Merge, C wartet auf Thomas), EXT-OTA-KUE-20261126-003 |
 
 ## A – Kandidaten für vollständigen Umzug
 
@@ -84,12 +85,12 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-LSC-0007-2026-DE | OTA-LSC-0007-2026-DE | FRST | PROTOKOLL A: FASZIEN-VIBRATIONSTRAINING (8 WOCHEN) [R→T]; PROTOKOLL B: PHOTOBIOM | geprüft 2026-11-01 – Teile nach KUE (Protokolle A/B als Evidenzübersicht), erst nach OTA-REQ-20261101-004 |
 | OTA-MON-0002-2142-DE | TEMENON | FR | Reale wissenschaftliche Grundlagen [R] | offen |
 | OTA-SCI-0007-2026-Cuancoa | OTA-SCI-0007-2026-Cuancoa | RST |  | offen |
-| OTA-SCI-0015-2025-DE | Schumann-Resonanz: Biologische Relevanz und ISS-Referen | RST |  | geprüft 2026-11-18 – Teile nach KUE (Realteil fehlerhaft: Barger/Stahn/Wever/Basner, ISS „ohne Schumann“ widerlegt durch C/NOFS), Hayashi-Rahmen bleibt; EXT-OTA-KUE-20261118-001, danach Korrektur/Kürzung OTA-REQ-20261118-002 (KN-00/01 und Mars-Weltlogik warten auf Thomas) |
-| OTA-SCI-0009-2025-DE | Planetare Schumann-Resonanzen und AVI-Kopplung | RTSW |  | geprüft 2026-11-18 (Zeile ergänzt) – Teile nach KUE (Mars-SR, Zeitdilatation; Erd-SR in KUE-SCI-0012), AVI/χ/Baumeister bleiben; EXT-OTA-KUE-20261118-001, danach Korrektur/Kürzung OTA-REQ-20261118-001 (KN-01, HRV-Zeile/Hypothese B warten auf Thomas) – Punkt D (AVI-Akronym) umgesetzt 2026-11-21 (v1.0.1) |
+| OTA-SCI-0015-2025-DE | Schumann-Resonanz: Biologische Relevanz und ISS-Referen | RST |  | geprüft 2026-11-18 – Teile nach KUE (Realteil fehlerhaft: Barger/Stahn/Wever/Basner, ISS „ohne Schumann“ widerlegt durch C/NOFS), Hayashi-Rahmen bleibt; EXT-OTA-KUE-20261118-001, danach Korrektur/Kürzung OTA-REQ-20261118-002 (KN-00/01 und Mars-Weltlogik warten auf Thomas) – Punkte A–C umgesetzt 2026-11-26 (v1.1, KUE-SCI-0223); offen D (wartet auf Thomas) |
+| OTA-SCI-0009-2025-DE | Planetare Schumann-Resonanzen und AVI-Kopplung | RTSW |  | geprüft 2026-11-18 (Zeile ergänzt) – Teile nach KUE (Mars-SR, Zeitdilatation; Erd-SR in KUE-SCI-0012), AVI/χ/Baumeister bleiben; EXT-OTA-KUE-20261118-001, danach Korrektur/Kürzung OTA-REQ-20261118-001 (KN-01, HRV-Zeile/Hypothese B warten auf Thomas) – Punkt D (AVI-Akronym) umgesetzt 2026-11-21 (v1.0.1) – Punkte A–C umgesetzt 2026-11-26 (v1.1, KUE-SCI-0223) |
 | OTA-SCI-0026-2025-DE | SABRE-Vorkühler-Technologie: Hyperschall-Luftatmung dur | RT |  | offen |
 | OTA-SCI-0026-2026-DE | Interstellare Schwefelchemie — Die Entdeckung von 2,5-C | RST |  | offen |
 | OTA-SCI-0027-2025-DE | Graphen-Keramik-Verbundwerkstoffe: Ultra-Hochtemperatur | RST |  | geprüft 2026-11-25 – Teile nach KUE, aber erst bereinigen: drei [R]-Quellen nicht nachweisbar (NASA/TM-Nummer fingiert), GCV-7-Simulation als [R] ausgewiesen; Korrektur OTA-REQ-20261125-004 (A sofort, B wartet auf Thomas), KUE-Request nach Bereinigung |
-| OTA-SCI-0028-2025-DE | Aerostatische Staudüsen: Elektrostatische Lageregelung  | RST |  | offen |
+| OTA-SCI-0028-2025-DE | Aerostatische Staudüsen: Elektrostatische Lageregelung  | RST |  | geprüft 2026-11-26 – Teile nach KUE, erst bereinigen (Rechnung 2.2 Faktor 10, PPT/Elektrospray flugerprobt, 3 Quellen nicht identifizierbar); Korrektur OTA-REQ-20261126-002 (C wartet auf Thomas), EXT-OTA-KUE-20261126-002 |
 | OTA-SCI-0029-2025-DE | SSTO-Massenbudget und Treibstoffchemie: ASCE-Schließaud | FOFFENRT | V. BETRIEBS- UND KOSTENCLAIMS [T/F] | offen |
 | OTA-SCI-0030-2025-DE | HD 20794 d — Die episodische Supererde | RST |  | geprüft 2026-11-24 – Teile nach KUE (I, II.1, HZ-Grenzen, Instrumente, VIII), Spekulation/NOXIA/χ-Feld bleiben; EXT-OTA-KUE-20261124-002, Korrektur/Kürzung OTA-REQ-20261124-002 (B wartet auf Thomas) |
 | OTA-SCI-0031-2024-DE | Gliese-12b — Die stille Exo-Venus | RST |  | offen |
@@ -102,7 +103,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0048-NACHTRAG-2026-DE | Λ-Haplogruppe: Drei Ergänzungsmodule — UPE-FSS-Detektio | FRST | MODUL A: UPE-FSS-DETEKTIONSPROTOKOLL [R→T→S]; A.1 Realweltlicher Sockel [R] | offen |
 | OTA-SCI-0059-2026-DE | OTA-SCI-0059-2026-DE | RST |  | offen |
 | OTA-SCI-0061-2026-DE | Disulfidbrücken in Proteinen: Chemie, Strukturfunktion, | RT | I. EINLEITUNG `[R]`; II. CHEMIE DER DISULFIDBRÜCKE `[R]` | offen |
-| OTA-SCI-0063-2026-DE | Die Belousov-Zhabotinsky-Reaktion: Selbstorganisierte D | RT | II. HISTORISCHER AUSGANG: ABLEHNUNG ALS MUSTER `[R-Anker]`; 2.1 Boris Belousov u | offen |
+| OTA-SCI-0063-2026-DE | Die Belousov-Zhabotinsky-Reaktion: Selbstorganisierte D | RT | II. HISTORISCHER AUSGANG: ABLEHNUNG ALS MUSTER `[R-Anker]`; 2.1 Boris Belousov u | geprüft 2026-11-26 – Teile nach KUE, Korrektur OTA-REQ-20261126-004 (C wartet auf Thomas), EXT-OTA-KUE-20261126-004 |
 | OTA-SCI-0065-2026-DE | OTA-SCI-0065-2026-DE | RT |  | offen |
 | OTA-SCI-0066-2026-DE | OTA-SCI-0066-2026-DE | RT |  | offen |
 | OTA-SCI-0081-2026-DE | Die Bronzescheibe: Kreisplatten-Akustik, Lapis-lazuli-F | RST | 1.1 Grundlagen der Plattenakustik `[R]`; 1.2 Eigenfrequenzen der Bronzescheibe:  | geprüft 2026-11-22 – Teile nach KUE (§1.1–1.2 Plattenakustik, §2.1–2.2 Lapis lazuli; §5.1 Gegenstück KUE-SCI-0207), Scheibe/Schlüssel/KN bleiben; Frequenzrechnung fehlerhaft; EXT-OTA-KUE-20261122-002, OTA-REQ-20261122-002 (A umsetzbar, B wartet auf Thomas) – A umgesetzt 2026-11-24 (v1.3) |
@@ -140,7 +141,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-RED-0023-2026-DE | Vom QCD-Vakuum zur Raumzeit-Geometrie — Vakuumresonanz  | HRST | eigene QCD/Raumzeit-Hypothese | offen |
 | OTA-SCI-0023-2025-DE | Schwefel, Quellen und Bewusstsein: Neurotoxikologische  | IRS | χ-/Bewusstseins-Anteil | geprüft 2026-11-21 – Teile nach KUE ([R]-Blöcke §1.1–2.5, Neurotoxikologie H₂S/SO₂), [I]-Deutungen, GANDHAKA und KN-5.1 bleiben; EXT-OTA-KUE-20261121-001, Quellen/Kürzung OTA-REQ-20261121-001 (KN-Punkte warten auf Thomas) – A umgesetzt 2026-11-23 (v1.2) |
 | OTA-SCI-0036-2026-DE | OMNIZEDENZ v2.3 | HRT | Omnizedenz | offen |
-| OTA-SCI-0038-2026-EN | Quantum-Geometric Portals in Loop Quantum Gravity: A Te | HR | eigene LQG-Hypothese (KUE-SCI-QUANTUM-GRAVITY im Entwurf) | offen |
+| OTA-SCI-0038-2026-EN | Quantum-Geometric Portals in Loop Quantum Gravity: A Te | HR | eigene LQG-Hypothese (KUE-SCI-QUANTUM-GRAVITY im Entwurf) | geprüft 2026-11-26 – Entscheidung Thomas (eigenes LQG-Modell; KUE-SCI-QUANTUM-GRAVITY deckt LQG/Spinschaum nicht ab), Korrektur OTA-REQ-20261126-001 (C wartet auf Thomas), kein KUE-Request |
 | OTA-SCI-0041-2026-DE | OTA-SCI-0041-2026-DE | HRS | H-lastig, prüfen | offen |
 | OTA-SCI-0042-2026-DE | PHÄNOMENOLOGISCHE ERDBEBENTHEORIE UND DIE LOD-SEISMIZIT | HRS | eigene Erdbebentheorie | geprüft 2026-11-23 – faktisch Gruppe K: KUE-Gegenstück KUE-SCI-0169 v0.2 vorhanden (Theorie stammt von Guglielmi, eigenes Modell nur der AVI-Anschluss §VII, bleibt OTA); Kürzung OTA-REQ-20261123-001 (sofort umsetzbar), Ergänzungen nach KUE per EXT-OTA-KUE-20261123-001 – umgesetzt 2026-11-25 (OTA-SCI-0042 v1.6) |
 | OTA-SCI-0024-2026-DE | Ein skalares Feldmediator-Modell für Neutrino-Dunkle- | HTSW | χ-Feld-Modell (Zeile ergänzt) | geprüft 2026-11-21 – Entscheidung Thomas (eigenes χ-Feld-Modell, bleibt OTA); S₈-Forschungsstand nach KUE per EXT-OTA-KUE-20261121-002; Zitate/Realgrundlage OTA-REQ-20261121-002 (Modellpunkte warten auf Thomas) – A umgesetzt 2026-11-23 (DE v1.1) |
