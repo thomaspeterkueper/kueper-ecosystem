@@ -1,6 +1,6 @@
 {
   "id": "RES-20260916-6BAF76EA",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-16T08:54:56+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -50,5 +50,27 @@
   },
   "fingerprint": "6baf76ea84b386db",
   "updated_at": "2026-09-16T09:03:24+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/125"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/125",
+  "validated_at": "2026-11-26T07:30:00+00:00",
+  "validation_summary": "Übernommen von Claude (Lauf 2), da der Canon Conflict Loop am 25.11.2026 an GitHub HTTP 502 abbrach. KUE: KUE-SCI-0223-2026-DE v0.2 – §I.3 korrigiert (MAVEN/MGS-Nullsuche 5–16 Hz nach Esman et al. 2023), Chide et al. 2025 ergänzt. OTA: OTA-SCI-0009-Realteil bereits über OTA-REQ-20261118-001 erfasst (E.3 wartet auf Thomas); OTA-RED-0016 12-Hz-„Grundton“ als Infraschall – Kanonfrage, EXT-KG-OTA-20261126-001.",
+  "consumer_requests": [
+    {
+      "result": "applied",
+      "target": "kueper-com",
+      "repository": "thomaspeterkueper/kueper.com",
+      "document": "KUE-SCI-0223-2026-DE",
+      "commit": "c2917e6"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261126-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "duplicate",
+      "target": "ota",
+      "note": "OTA-REQ-20261118-001 (OTA-SCI-0009, Ruf-Werte, Toledo-Redondo, Haider)"
+    }
+  ]
 }
