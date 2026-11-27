@@ -1,6 +1,6 @@
 {
   "id": "RES-20260917-0E02295F",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-17T08:58:43+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -49,5 +49,27 @@
   },
   "fingerprint": "0e02295f6f9ba2d1",
   "updated_at": "2026-09-17T09:06:25+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/129"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/129",
+  "validated_at": "2026-11-27T15:25:51+00:00",
+  "validation_summary": "Der Candidate ist ein sorgfältiges Quellen-Audit, erzeugt gegen den aktuellen Repository-Stand aber keinen conflict: OTA-TEC-0037 v1.2 führt Casimir-Drift, Thorium-Mikrozelle, Mantrika-Verstärkung, Kernschmelze und den Bereich -180 bis +120 °C bereits ausdrücklich als [F]/[W] und trennt reale Sensor- und Umweltanker ab; OTA-TEC-0022 markiert RESO/Casimir-Drift als [F] und χ-Feld-abhängig; OTA-SCI-0037 und OTA-TEC-0031 behandeln reale Vakuumphysik als [R]/[H] und benennen die fehlende Skalierung. Der 528-Hz-Teil ist bereits durch den offenen Request EXT-ECO-OTA-20261126-001 (Drive-v1.1: 528 → 377 Hz) abgedeckt und wird hier nicht dupliziert. Drei konkrete Anschlussarbeiten bleiben: die Materialaussage in Titan- und Polymergrenze trennen (enrichment), den 72-h-Normalbetrieb als Standby oder Flug klären (verification) und das von TEC-0037 referenzierte SSF-Modul gegen die Legitimierung des fiktiven Antriebs prüfen (verification). Der wichtigste physikalische Vorbehalt des Candidates – ant",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261127-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261127-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-SSF-20261127-001",
+      "target": "ssf",
+      "repository": "thomaspeterkueper/solarsciencefoundation"
+    }
+  ]
 }
