@@ -1,6 +1,6 @@
 {
   "id": "RES-20260916-08FAD47F",
-  "status": "validation-error",
+  "status": "consumer-requests",
   "created": "2026-09-16T08:54:56+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -47,6 +47,28 @@
   "fingerprint": "08fad47f52bd2927",
   "updated_at": "2026-09-16T09:12:52+00:00",
   "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/126",
-  "validated_at": "2026-11-26T15:33:56+00:00",
-  "validation_error": "GitHub HTTP 504: "
+  "validated_at": "2026-11-27T06:45:00+00:00",
+  "validation_summary": "Übernommen von Claude (Lauf 2), da der Canon Conflict Loop am 26.11.2026 nach EXT-KG-OTA-20261126-002 an GitHub HTTP 504 abbrach. Geprüft gegen OTA-KOM-0002 v1.2 (Drive-Übernahme 23.11.): Emaj7(#11) bringt jetzt A♯, Verse/Chorus/Bridge mit Amaj7 (A♮) bleiben E-Ionisch – 'Tonart: E-Lydisch' weiter nicht haltbar; Transliteration 'kwarm-ngao' (Verse 1, Outro) entspricht nicht ความเงียบ(งัน); 'Lanna-Pentatonik' über EXT-KG-OTA-20261126-002 erfasst. Keine KUE-Aktion (Publikationsroute fictional_archive_document).",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261126-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261127-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org",
+      "commit": "5689cce"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261127-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org",
+      "commit": "5689cce"
+    }
+  ]
 }
