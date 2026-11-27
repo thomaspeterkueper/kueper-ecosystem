@@ -1,6 +1,6 @@
 {
   "id": "RES-20260918-C5EDAF53",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-18T08:22:04+00:00",
   "source_project": "endia",
   "source_repository": "thomaspeterkueper/endia.de",
@@ -33,5 +33,21 @@
   "novelty_reason": null,
   "fingerprint": "c5edaf53f22da71c",
   "updated_at": "2026-09-18T08:40:47+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/131"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/131",
+  "validated_at": "2026-11-27T15:34:30+00:00",
+  "validation_summary": "Geprüft gegen den endia-Checkout (README, docs/fakt-fiktion-checkliste.md, external-tasks). Der Kandidat ist eine regulatorische Baseline für eine öffentliche deutschsprachige Wissenswebsite (JMStV/BzKJ, Art. 8 DSGVO, BFSG/BITV 2.0, EN 301 549/WCAG 2.2 AA, § 5 DDG) und ausdrücklich auf endia.de zugeschnitten. Er widerspricht keinem Kanon und keiner Projektaussage; die Trennung von Weltbau und Realrecht ist im Kandidaten selbst angelegt (W1–W4). Konkreter Handlungsbedarf entsteht an zwei Stellen: (1) Die entscheidenden Compliance-Weichen (Konten-Rechtsgrundlage, Altersgate, Analytics, Barrierefreiheit) sind nur vor dem Bau billig zu stellen — dafür fehlt im Projekt eine Vor-Launch-Baseline; (2) der Kandidat stützt sich auf registry/legal-Artefakte und eine angebliche Minderjährigen-Lücke in der Datenschutzerklärung, die im geprüften Repository nicht existieren und vor einer Umsetzung verifiziert werden müssen. Der wichtigste Gegenbefund — das BFSG erfasst reine Informationswebsites nich",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-ENDIA-20261127-001",
+      "target": "endia",
+      "repository": "thomaspeterkueper/endia.de"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-ENDIA-20261127-002",
+      "target": "endia",
+      "repository": "thomaspeterkueper/endia.de"
+    }
+  ]
 }
