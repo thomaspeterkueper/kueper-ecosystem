@@ -1,0 +1,44 @@
+{
+  "id": "RES-20261127-91391161",
+  "status": "queued",
+  "created": "2026-11-27T13:13:43+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0101-2026-DE.md",
+  "source_ref": "9fa0cead8a638e422e28f0278236d07b7dc2ccc4",
+  "source_blob_sha": "5bf029b0b905ba4c5deae193494f8c6cabc4be45",
+  "document_signature": "OTA-SCI-0101-2026-DE",
+  "title": "CHIME-21-cm-Autokorrelation bei z ~ 1 — externe Verifikation des Erstnachweises, der Signifikanzen und des Rezeptionsstatus",
+  "question": "Existieren die im Dokument zitierte CHIME-Autokorrelationsarbeit (ApJ 2026, DOI 10.3847/1538-4357/ae9835) und die Begleitanalyse (DOI 10.3847/1538-4357/ae9747) tatsächlich mit den angegebenen Werten — 94 Beobachtungsnächte, 608,2–707,8 MHz (z = 1,34–1,01), 0,4 < k < 1,5 h/Mpc, 12,4σ Gesamtsignifikanz sowie 8,6σ und 9,1σ in den Teilbändern bei z ~ 1,08 und z ~ 1,24? Wie wird der Befund in der Fachliteratur aufgenommen: gilt er als erster eigenständiger Autokorrelationsnachweis des 21-cm-Signals, welche Foreground-, RFI-, Beam- und Kalibrationskritik wird vorgebracht, und existieren unabhängige Nachprüfungen, Reanalysen oder Gegenbefunde?",
+  "why_now": "Der behauptete Erstnachweis ist erst im September 2026 erschienen und trägt die gesamte Argumentation des Dokuments (v1.0, ENTWURF, ohne KUE-Handoff). Ohne externe Bestätigung von Publikation, Zahlen und Rezeptionsstatus ist die zentrale Aussage 'erster Nachweis in Autokorrelation' nicht belastbar; zugleich ist in diesem schnell bewegten Feld kurzfristig mit Kommentaren und Folgeanalysen zu rechnen.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R"
+  ],
+  "real_world_anchor": "Peer-reviewte CHIME-21-cm-Intensitätskartierung bei z ~ 1 (ApJ 2026, DOI 10.3847/1538-4357/ae9835; Begleitanalyse DOI 10.3847/1538-4357/ae9747); HI-Autopowerspektrum über 608,2–707,8 MHz, Redshift-Space Distortions, nichtlineares Clustering und Foreground-Entfernung.",
+  "publication_route_hint": "real_scientific_epaper",
+  "external_research_required": true,
+  "project_weight": 0.9,
+  "relevance_score": 0.79,
+  "scores": {
+    "project_relevance": 0.8,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.75,
+    "evidence_potential": 0.85
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Im Repository findet sich weder eine KUE-Handoff-Referenz im Dokument noch ein passender external-task oder Research-Eintrag zu CHIME-21-cm-Autokorrelation; die externe Prüfung der Primärpublikation und ihrer Rezeption ist neu.",
+  "workqueue_basis": {
+    "substance": "FRAGMENT",
+    "words": 245,
+    "quality_flags": [
+      "NO_VISUAL",
+      "LOW_SUBSTANCE"
+    ]
+  },
+  "fingerprint": "9139116115b12298"
+}
