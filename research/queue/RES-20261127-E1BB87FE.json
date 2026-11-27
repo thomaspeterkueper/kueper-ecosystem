@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261127-E1BB87FE",
+  "status": "queued",
+  "created": "2026-11-27T12:45:36+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0121-2026-DE.md",
+  "source_ref": "ed51fed86f12c40464e056c11ba2de535eeb7351",
+  "source_blob_sha": "16ab60ed94232d4a88da06d01621a97074f1779a",
+  "title": "Realwelt-Audit des Technologiereife- und Kommerzialisierungsbefunds der magnetokalorischen Kühlung in OTA-SCI-0121 (v1.1)",
+  "question": "Quellengestützter Audit der vollständig als [R] geführten Realaussagen von OTA-SCI-0121-2026-DE ('Magnetokalorische Kühlung – Kühlkreisläufe ohne Kältemittel'), gepinnt auf die im Workspace vorliegende v1.1 (Status AKTIV, reviewStatus 'metadata-reviewed', Git-Revision ed51fed86f12c40464e056c11ba2de535eeb7351). Das Dokument wurde am 2026-11-23 aus dem Drive-Altbestand übernommen, wobei der Revisionsvermerk ausdrücklich festhält: 'Inhalt sonst unverändert; Quellen in diesem Schritt nicht neu geprüft' (EXT-ECO-OTA-20261123-001). Es trägt seine gesamte Aussage über den Stand der Technik auf einer Podcast-Quelle (detektor.fm/Spektrum 'Forschungsquartett', 21.08.2026), je einer Fraunhofer-IPM- und TU-Darmstadt-Seite sowie der Firmenseite von Magnotherm – und markiert zugleich 'Quellenmarker: [R] Real – 100 %'. (1) Kommerzialisierung: Prüfe, ob das TU-Darmstadt-Spin-off Magnotherm tatsächlich 'bereits erste Prototypen mit Magnetkühlung in Supermärkten' betreibt – welche Feldtests/Kühlmöbel, in welchem Markt, mit welcher Kühlleistung, welchem Temperaturhub und in welchem Betriebszeitraum; trenne Labor-Demonstrator, Feldtest und Serienprodukt und melde jede Nichtbestätigung ausdrücklich, ohne sie durch eine ähnliche Quelle zu ersetzen. (2) Forschungsstand: Prüfe die namentliche Zuschreibung (Dr. Benedikt Beckmann, Fachgruppe Funktionale Materialien unter Prof. Dr. Oliver Gutfleisch, Institut für Materialwissenschaft, TU Darmstadt), die Aussage 'zwei vielversprechende Kandidaten bereits identifiziert (Stand 2026)' und die Beckmann sinngemäß zugeschriebene Priorisierung von Rechenzentrumskühlung gegenüber Haushaltskühlschränken gegen Primärquellen (TU-Darmstadt-Mitteilungen, Fachpublikationen der Gruppe). (3) Effizienz- und Funktionsbehauptungen: Prüfe die Tabelle 'Vorteile gegenüber Dampfkompressionskühlung' – insbesondere 'Energieeffizienz potenziell höher', 'sehr gut für Tieftemperatur', 'explizit für Wasserstoffverflüssigung genannt' – gegen die reale Literatur zu erreichten COP-Werten, Temperaturhüben, Kühlleistungen und Materialmengen magnetokalorischer Systeme (u. a. Franco et al., Prog. Mater. Sci. 93 (2018); Fraunhofer-IPM- und Magnotherm-Systemdaten) und stelle fest, ob 'potenziell höher' als [T] statt [R] zu führen ist. (4) Kältemittel-Aussage: Prüfe, ob 'da kein Kältemittel komprimiert und expandiert werden muss, entfällt das zentrale Leckage-/Nachschubproblem vollständig' werktreu ist – magnetokalorische Systeme nutzen ein Wärmeträgerfluid (Wasser/Glykol) und Magnetfeldquellen; welche Leckage-, Wartungs- und Fluidpfade bleiben, und ist 'vollständig' haltbar? (5) Wasserstoffverflüssigung: Prüfe die Tauglichkeit magnetokalorischer Kühlung für die H2-Verflüssigung (notwendige Temperaturniveaus 20 K, Kaskadierung, reale Demonstratoren) und ob die Quelle diese Anwendung tatsächlich stützt. (6) Reklassifiziere: Nenne die Sätze, die [R] bleiben können (magnetokalorischer Effekt existiert; Prototypen im Labormaßstab; kein klassisches Kältemittel im Kreis), die zu '[R] Quelleninhalt, TRL und Bezugsgröße offen' abzuschwächen sind ('bereits in Supermärkten', 'zwei Kandidaten identifiziert', 'Datenzentren als vorrangiges Zukunftsfeld', jede Effizienzaussage) und die als [T] zu führen sind (Effizienz-, Kosten- und Skalierungspotenzial), und stelle fest, dass weder ein kanonischer COP-Wert noch eine kanonische TRL-Zahl noch eine kanonische Marktreife-Aussage in den Kanon oder in NOXIA-Standardwerte aufgenommen wird. AUSGESCHLOSSEN: die in OTA-SCI-0122-2026-DE geführten Materialkennwerte (eigener Prüfgegenstand), die offene Temenon-Verbindung als Kanonfrage, jede NOXIA-Anwendungs- und Balancingentscheidung sowie die Archiv-/Signaturfrage der Drive-Übernahme.",
+  "why_now": "OTA-SCI-0121 ist erst am 2026-11-23 ohne jede Quellenprüfung in den Bestand gelangt, trägt [R]-100 % und Status AKTIV, und sein Revisionsvermerk sagt selbst, dass die Quellen nicht geprüft wurden. Die Quellenlage ist ausschließlich populär- und institutionenkommunikativ (Podcast, Pressemitteilungen, Firmenseite), nicht peer-reviewt. Gleichzeitig ist das Dokument die Voraussetzung für OTA-SCI-0122 und ein möglicher Anker für Temenon-/NOXIA-Anwendungen – falsche Reifeaussagen pflanzen sich also fort.",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Realstand der magnetokalorischen Kühlung 2024–2026: Magnotherm-/TU-Darmstadt-Prototypen und Feldtests, erreichte Kühlleistung/Temperaturhub/COP, Fraunhofer-IPM-Systeme, Eignung für Wasserstoffverflüssigung",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.89,
+  "scores": {
+    "project_relevance": 0.92,
+    "cross_project_reuse": 0.88,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Kein früherer Prüfauftrag dieses Projekts berührt die Magnetokalorik. Die vorhandenen Topics decken ECLSS (OTA-TEC-0093), Marsmedizin, Hydrolox-Antriebe, LOD, b→sμμ, CHIME-21-cm u. a. ab, aber kein Kühltechnologie-Dossier; die beiden Magnetokalorik-Dokumente sind erst seit dem 2026-11-23 im Bestand und wurden nie extern geprüft.",
+  "fingerprint": "e1bb87fe13be414b"
+}
