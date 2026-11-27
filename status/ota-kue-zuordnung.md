@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-26 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-27 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -107,7 +107,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0065-2026-DE | OTA-SCI-0065-2026-DE | RT |  | offen |
 | OTA-SCI-0066-2026-DE | OTA-SCI-0066-2026-DE | RT |  | offen |
 | OTA-SCI-0081-2026-DE | Die Bronzescheibe: Kreisplatten-Akustik, Lapis-lazuli-F | RST | 1.1 Grundlagen der Plattenakustik `[R]`; 1.2 Eigenfrequenzen der Bronzescheibe:  | geprüft 2026-11-22 – Teile nach KUE (§1.1–1.2 Plattenakustik, §2.1–2.2 Lapis lazuli; §5.1 Gegenstück KUE-SCI-0207), Scheibe/Schlüssel/KN bleiben; Frequenzrechnung fehlerhaft; EXT-OTA-KUE-20261122-002, OTA-REQ-20261122-002 (A umsetzbar, B wartet auf Thomas) – A umgesetzt 2026-11-24 (v1.3), C umgesetzt 2026-11-26 (OTA-SCI-0081 v1.4, KUE-SCI-0221/0222); B wartet auf Thomas |
-| OTA-SCI-0083-2026-DE | Eigenzeit, optische Atomuhren und relativistische Aussc | R |  | geprüft 2026-11-24 – ganz nach KUE (Realteil) als Ergänzung von KUE-SCI-0177, §8/§9 (AVI/EIGENZEIT-Trennlinie) bleiben; EXT-OTA-KUE-20261124-001, danach Brücke OTA-REQ-20261124-001 (Quellenpunkt A sofort) |
+| OTA-SCI-0083-2026-DE | Eigenzeit, optische Atomuhren und relativistische Aussc | R |  | geprüft 2026-11-24 – ganz nach KUE (Realteil) als Ergänzung von KUE-SCI-0177, §8/§9 (AVI/EIGENZEIT-Trennlinie) bleiben; EXT-OTA-KUE-20261124-001, danach Brücke OTA-REQ-20261124-001 (Quellenpunkt A sofort) – umgesetzt 2026-11-27 (v1.2, Brückendokument) |
 | OTA-SCI-0084-2026-DE | Kryoporöse Oberflächen auf Eiswelten — Hazard- und Expl | OFFENRT |  | geprüft 2026-11-20 – KUE-Gegenstück vorhanden (KUE-SCI-0013 v1.1), Hazard/NOXIA bleiben; Korrektur/Verweis OTA-REQ-20261120-001, Ergänzung EXT-OTA-KUE-20261120-001 |
 | OTA-SCI-0092-2026-DE | Fast Radio Bursts — Baryonenverteilung, Feedback und Ma | HOFFENR |  | offen |
 | OTA-SCI-0093-2026-DE | Standard-Sirenen — Umgebungsbeschleunigung als systemat | HOFFENR |  | offen |
@@ -119,7 +119,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0100-2026-DE | Primordiale Gezeitenmomente in heutigen Galaxienspins — | NULLRT |  | offen |
 | OTA-SCI-0101-2026-DE | CHIME-21-cm-Autokorrelation bei z ~ 1 — unabhängiger HI | NULLOFFENR |  | offen |
 | OTA-SCI-0104-2026-DE | HS 0209+0832 – Kandidat eines Planeten zweiter Generati | IOFFENR | Beobachtungen [R] | offen |
-| OTA-TEC-0028-2025-DE | NANOSPIEGEL-METAMATERIAL-SYSTEME | FRST | II. [R] REALE GRUNDLAGEN (Stand 2025); IV. [T] THEORETISCH: EIGENZEIT-INFORMATIO | geprüft 2026-11-23 – Teile nach KUE (§II ENZ/Plasmonik/Laserschreiben/Tarnkappen, fehlerhaft und weitgehend unbelegt), Baumeister/AXIS und KN bleiben; EXT-OTA-KUE-20261123-002, OTA-REQ-20261123-002 (A umsetzbar, B wartet auf Thomas) |
+| OTA-TEC-0028-2025-DE | NANOSPIEGEL-METAMATERIAL-SYSTEME | FRST | II. [R] REALE GRUNDLAGEN (Stand 2025); IV. [T] THEORETISCH: EIGENZEIT-INFORMATIO | geprüft 2026-11-23 – Teile nach KUE (§II ENZ/Plasmonik/Laserschreiben/Tarnkappen, fehlerhaft und weitgehend unbelegt), Baumeister/AXIS und KN bleiben; EXT-OTA-KUE-20261123-002, OTA-REQ-20261123-002 (A umsetzbar, B wartet auf Thomas) – A und C umgesetzt 2026-11-27 (v1.2, Verweis KUE-SCI-0224) |
 | OTA-TEC-0028-2048-DE | Post-Dotierungs-Halbleitertechnologie — Geometrische un | FHRT | 1. [R] REAL — WISSENSCHAFTLICHE GRUNDLAGEN (2022–2026); 8.5 AVI-LOD-Index: Quant | offen |
 | OTA-TEC-0033-2026-DE | OTA-TEC-0033-2026-DE | FRST | TEIL I: SYSTEMARCHITEKTUR [R→T]; 1.2 Dosimetrie-Grundregel [R] | offen |
 | OTA-TEC-0108-2026-DE | Rohstoffgewinnungsanlage — Mine und Aufbereitungsvorstu | FHOFFENR | Physikalisch-technische Prinzipien [R] | offen |
@@ -130,6 +130,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0117-2026-DE | Obsidian: Materialwissenschaft — Vulkanisches Glas, Min | RTS | I–IV, 5.1, 5.2 Methoden A–C, 6.1 | geprüft 2026-11-25 – Teile nach KUE (gemeinsames KUE-Dokument Obsidian); EXT-OTA-KUE-20261125-001, Korrektur/Kürzung OTA-REQ-20261125-001 (A sofort, B nach KUE-Merge, C Hook 1 wartet auf Thomas) |
 | OTA-SCI-0118-2026-DE | Obsidian: Archäometrie — Provenienzanalyse, Hydratation | RTSF | 1.1–1.3, 2.1–2.3, 3.1–3.2, 3.3/3.4 je erster Absatz | geprüft 2026-11-25 – Teile nach KUE (gemeinsames KUE-Dokument Obsidian); EXT-OTA-KUE-20261125-001, Korrektur/Kürzung OTA-REQ-20261125-002 (A sofort, B nach KUE-Merge, C wartet auf Thomas) |
 | OTA-SCI-0119-2026-DE | Lodestone: Magnetit-Eisenstein — Natürlicher Permanentm | RTSF | I–IV.2, VI.1–6.2, VII.1–7.2 | geprüft 2026-11-25 – Teile nach KUE; EXT-OTA-KUE-20261125-002, Korrektur/Kürzung OTA-REQ-20261125-003 (A sofort, B nach KUE-Merge, C Sauerland-Träger wartet auf Thomas) |
+| OTA-SCI-0090-2026-DE | Utopia Planitia — Subsurface Ice and Settlement Potential | RHF | §2 Zhurong, §3 SHARAD-Untergrundeis | geprüft 2026-11-27 (nachgetragen) – Teile nach KUE (§2 → KUE-SCI-0202 vorhanden, §3 neu per EXT-OTA-KUE-20261127-003); NOXIA-Korridor bleibt; OTA-REQ-20261127-004 (A sofort, B nach KUE-Merge, C wartet auf Thomas) |
 
 ## T – Entscheidung Thomas (eigene Hypothesen)
 
@@ -142,7 +143,8 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0023-2025-DE | Schwefel, Quellen und Bewusstsein: Neurotoxikologische  | IRS | χ-/Bewusstseins-Anteil | geprüft 2026-11-21 – Teile nach KUE ([R]-Blöcke §1.1–2.5, Neurotoxikologie H₂S/SO₂), [I]-Deutungen, GANDHAKA und KN-5.1 bleiben; EXT-OTA-KUE-20261121-001, Quellen/Kürzung OTA-REQ-20261121-001 (KN-Punkte warten auf Thomas) – A umgesetzt 2026-11-23 (v1.2) |
 | OTA-SCI-0036-2026-DE | OMNIZEDENZ v2.3 | HRT | Omnizedenz | offen |
 | OTA-SCI-0038-2026-EN | Quantum-Geometric Portals in Loop Quantum Gravity: A Te | HR | eigene LQG-Hypothese (KUE-SCI-QUANTUM-GRAVITY im Entwurf) | geprüft 2026-11-26 – Entscheidung Thomas (eigenes LQG-Modell; KUE-SCI-QUANTUM-GRAVITY deckt LQG/Spinschaum nicht ab), Korrektur OTA-REQ-20261126-001 (C wartet auf Thomas), kein KUE-Request |
-| OTA-SCI-0041-2026-DE | OTA-SCI-0041-2026-DE | HRS | H-lastig, prüfen | offen |
+| OTA-SCI-0041-2026-DE | OTA-SCI-0041-2026-DE | HRS | H-lastig, prüfen | geprüft 2026-11-27 – Entscheidung Thomas (AVI/R(a)); nur Studiendarstellung werkneutral → neues KUE-Dokument per EXT-OTA-KUE-20261127-002; Korrektur OTA-REQ-20261127-003 (A sofort, B/C warten auf Thomas) |
+| OTA-SCI-0026-2048-DE | AVI-LOD-Index und geophysikalische Modellierung (2048) | THSW | AVI-LOD-Index; Realteil (Part I) mit KUE-Gegenstück KUE-SCI-0177 §VI a / KUE-SCI-0169 | geprüft 2026-11-27 (nachgetragen) – Entscheidung Thomas; reale LOD-Werte fehlerhaft; OTA-REQ-20261127-001 (A sofort, B/C warten auf Thomas), EXT-OTA-KUE-20261127-001 |
 | OTA-SCI-0042-2026-DE | PHÄNOMENOLOGISCHE ERDBEBENTHEORIE UND DIE LOD-SEISMIZIT | HRS | eigene Erdbebentheorie | geprüft 2026-11-23 – faktisch Gruppe K: KUE-Gegenstück KUE-SCI-0169 v0.2 vorhanden (Theorie stammt von Guglielmi, eigenes Modell nur der AVI-Anschluss §VII, bleibt OTA); Kürzung OTA-REQ-20261123-001 (sofort umsetzbar), Ergänzungen nach KUE per EXT-OTA-KUE-20261123-001 – umgesetzt 2026-11-25 (OTA-SCI-0042 v1.6) |
 | OTA-SCI-0024-2026-DE | Ein skalares Feldmediator-Modell für Neutrino-Dunkle- | HTSW | χ-Feld-Modell (Zeile ergänzt) | geprüft 2026-11-21 – Entscheidung Thomas (eigenes χ-Feld-Modell, bleibt OTA); S₈-Forschungsstand nach KUE per EXT-OTA-KUE-20261121-002; Zitate/Realgrundlage OTA-REQ-20261121-002 (Modellpunkte warten auf Thomas) – A umgesetzt 2026-11-23 (DE v1.1) |
 | OTA-SCI-0024-2026-EN | A Scalar Field Mediator for Neutrino-Dark Matter Inte | HTSW | χ-Feld-Modell (Zeile ergänzt) | geprüft 2026-11-21 – Entscheidung Thomas (eigenes χ-Feld-Modell, bleibt OTA); S₈-Forschungsstand nach KUE per EXT-OTA-KUE-20261121-002; Zitate/Realgrundlage OTA-REQ-20261121-002 (Modellpunkte warten auf Thomas) – A umgesetzt 2026-11-23 (EN v2.1) |
@@ -150,6 +152,8 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 ## C – bleibt in OTA
 
 Geprüft 2026-11-01: OTA-BIO-0022-2026-DE, OTA-LSC-0001-2048-DE (bleiben OTA).
+
+Geprüft 2026-11-27 (nachgetragen, fehlte in der Inventur): OTA-SCI-0030-2090-DE – bleibt OTA (Kapitelübersicht, Realanker nur als Überschriften zum χ-Feld-/Λ-Modell); Metadaten direkt korrigiert, Quellen per OTA-REQ-20261127-002 (A/B sofort, C wartet auf Thomas).
 
 Geprüft 2026-11-19 (nachgetragen, fehlte in der Inventur): OTA-SCI-0018-60000BCE-DE – bleibt OTA (Realkatalog als Anker der Paläolithikum-Setzung); Korrektur des Realteils per OTA-REQ-20261119-001 (Punkte A–G umsetzbar, H wartet auf Thomas) – A–G umgesetzt 2026-11-20 (v1.1).
 
