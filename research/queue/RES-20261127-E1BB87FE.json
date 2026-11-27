@@ -1,6 +1,6 @@
 {
   "id": "RES-20261127-E1BB87FE",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-27T12:45:36+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -32,5 +32,7 @@
   },
   "related_research_ids": [],
   "novelty_reason": "Kein früherer Prüfauftrag dieses Projekts berührt die Magnetokalorik. Die vorhandenen Topics decken ECLSS (OTA-TEC-0093), Marsmedizin, Hydrolox-Antriebe, LOD, b→sμμ, CHIME-21-cm u. a. ab, aber kein Kühltechnologie-Dossier; die beiden Magnetokalorik-Dokumente sind erst seit dem 2026-11-23 im Bestand und wurden nie extern geprüft.",
-  "fingerprint": "e1bb87fe13be414b"
+  "fingerprint": "e1bb87fe13be414b",
+  "updated_at": "2026-11-27T12:54:12+00:00",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/334"
 }
