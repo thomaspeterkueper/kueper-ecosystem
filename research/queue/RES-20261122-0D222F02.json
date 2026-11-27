@@ -1,6 +1,6 @@
 {
   "id": "RES-20261122-0D222F02",
-  "status": "needs-review",
+  "status": "queued",
   "created": "2026-11-22T11:41:47+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -35,6 +35,6 @@
   ],
   "novelty_reason": "Die fluide Hermeneutik behandelt die Auslegung überlieferter Texte; sie prüft nicht, ob die Symbolsprache eine Notation mit Syntax und Semantik, eine taxonomische Kunstsprache oder eine metaphorische Verdichtung ist. Kein früherer Auftrag untersucht die Formelhaftigkeit, die Operatorbedeutung, die Wohlgeformtheit oder die Grenze zwischen Beschreibung und normativer Kodierung im Zeichensystem. Das ist eine eigenständige semiotisch-sprachphilosophische Frage, keine Variante der Textinterpretation.",
   "fingerprint": "0d222f02b3fc3b26",
-  "updated_at": "2026-11-23T13:22:09+00:00",
+  "updated_at": "2026-11-27T19:01:36+00:00",
   "last_error": "candidate for philosophy-comparative lacks a strong source type marker"
 }

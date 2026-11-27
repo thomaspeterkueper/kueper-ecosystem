@@ -1,6 +1,6 @@
 {
   "id": "RES-20261122-63706289",
-  "status": "needs-review",
+  "status": "queued",
   "created": "2026-11-22T11:41:44+00:00",
   "source_project": "omnizedenz",
   "source_repository": "thomaspeterkueper/omnizedenz.org",
@@ -36,6 +36,6 @@
   ],
   "novelty_reason": "Die früheren Aufträge prüfen Weltindividuation, metaphysical grounding und Geschichtlichkeit ohne gemeinsame Zeit. Keiner untersucht die mereologische Struktur der Sätze „vollständig, aber nicht fertig“ und „Was im Teil geschieht, geschieht dem Ganzen“, die Frage nach Teilwechsel und Identität des Ganzen oder die Konkurrenz von mereologischer, konstitutiver und prozessualer Lesart. Das ist eine eigenständige, bisher nicht behandelte Begründungslücke der Ontologie.",
   "fingerprint": "6370628966b4c8c5",
-  "updated_at": "2026-11-22T12:02:38+00:00",
+  "updated_at": "2026-11-27T19:01:36+00:00",
   "last_error": "candidate for philosophy-comparative lacks a strong source type marker"
 }
