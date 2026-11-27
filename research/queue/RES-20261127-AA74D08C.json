@@ -1,0 +1,38 @@
+{
+  "id": "RES-20261127-AA74D08C",
+  "status": "queued",
+  "created": "2026-11-27T12:45:39+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-SCI-0120-2026-DE.md",
+  "source_ref": "ed51fed86f12c40464e056c11ba2de535eeb7351",
+  "source_blob_sha": "6b8a1e08b5f928b766aa31426d05a7097d3f2513",
+  "title": "Realwelt-Audit der LHCb-B⁰→μ⁺μ⁻-Evidenz (3,2 σ, 3. November 2026) und der effektiven B_s⁰→μ⁺μ⁻-Lebensdauer in OTA-SCI-0120 (v1.0)",
+  "question": "Quellengestützter Audit der als [R]/[I]/[OFFEN] geführten Realgrundlage von OTA-SCI-0120-2026-DE ('LHCb 2026: Evidenz für den seltenen B⁰→μ⁺μ⁻-Zerfall'), gepinnt auf die im Workspace vorliegende v1.0 (Status ENTWURF, Git-Revision ed51fed86f12c40464e056c11ba2de535eeb7351). Das Dokument trägt seine gesamte externe Aussage auf drei URLs und drei Zahlen und speist die AVI-/RTNS-/KG-Schnittstellen sowie den Querverweis auf OTA-SCI-0105-2026-DE. (1) Quellenverifikation: Prüfe, ob CERN am 3. November 2026 tatsächlich eine Mitteilung 'LHCb finds evidence of one-in-ten-billion particle decay' unter der angegebenen URL veröffentlicht hat – die im Dokument genannte Adresse https://home.cern/lhcb-finds-evidence-of-one-in-ten-billion-particle-decay/ entspricht nicht dem üblichen CERN-Pfadschema (/news/news/physics/…) und ist gesondert zu prüfen. Prüfe ebenso den LHCb-Outreach-Beitrag 'Evidence for the decay B0→μμ and improved measurements of Bs0→μμ' vom 3. November 2026 und den Berliner-Zeitung-Artikel ('nach 42 Jahren Suche'). Melde jede Nichtbestätigung ausdrücklich und nenne die nächstliegenden realen LHCb-/CMS-Publikationen zu B⁰→μ⁺μ⁻ und B_s⁰→μ⁺μ⁻, ohne sie stillschweigend zu substituieren. (2) Messinhalt: Prüfe die Signifikanz von 3,2 σ – handelt es sich um eine Kombination mehrerer Datensätze, mehrerer Kanäle oder einer einzelnen Messung; ist sie lokal oder global (Look-elsewhere), mit oder ohne Systematiken, und was genau ist die Nullhypothese (Signal existiert nicht vs. Standardmodell-Verzweigungsverhältnis)? Prüfe ferner 'etwa ein Zerfall unter zehn Milliarden' gegen die Standardmodell-Vorhersage für B⁰→μ⁺μ⁻ (Größenordnung ~10⁻¹⁰) und die reale experimentelle Lage (bisherige Obergrenzen und Evidenzgrade). (3) Lebensdauer: Prüfe die berichtete effektive Lebensdauer τ_eff(B_s⁰) = 1,60 ± 0,16 (stat.) ± 0,01 (syst.) ps gegen den reale Messstand und die B_s⁰-Lebensdauer; kläre, ob die systematische Unsicherheit von 0,01 ps plausibel ist. (4) Statusaussage: Prüfe, ob 'Evidenz aus einem einzelnen Experiment', '3,2 σ', 'mit dem Standardmodell verträglich' und 'kein Nachweis neuer Physik' werktreu sind, und ob die Abgrenzung zum b→sμ⁺μ⁻-Kanal in OTA-SCI-0105 (dort C₉ und Winkelobservablen) sachlich korrekt ist – B⁰→μ⁺μ⁻ ist ein b→d-Übergang, kein b→s-Übergang. (5) Anschluss: Prüfe, ob aus der Evidenz tatsächlich kein AVI-P-T1–T4-Trigger folgt (nur als Konsistenzprüfung der Aussage, nicht als erneute AVI-Bewertung) und ob 'Zeptoversum' als populärwissenschaftliche Reichweitenbezeichnung korrekt abgegrenzt ist. (6) Reklassifiziere: Nenne die Sätze, die nach Verifikation [R] bleiben können (Existenz einer LHCb-Messung; Richtung des Befunds als Evidenz, nicht Entdeckung; B⁰→μμ ist im Standardmodell stark unterdrückt), die zu '[R] Quelleninhalt, Signifikanz und Bezugsgröße offen' abzuschwächen sind (3,2 σ, 'ein Zerfall unter zehn Milliarden', 1,60 ± 0,16 ± 0,01 ps), die als [T] zu führen sind (Sensitivität für schwere Teilchen in virtuellen Prozessen) und die [OFFEN] bleiben müssen (Fachpublikation/DOI, unabhängige Bestätigung, BSM-Deutung); stelle fest, dass keine kanonische Signifikanz, kein kanonisches Verzweigungsverhältnis und keine kanonische BSM-Aussage in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die AVI-P-Bewertung T1–T4 selbst und das Reaktivierungsurteil, die KG-/RTNS-/NOXIA-Transferregeln als Autorenentscheidung sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "OTA-SCI-0120 ist ein ENTWURF, dessen einzige externe Stütze drei URLs sind, davon eine mit ungewöhnlichem CERN-Pfadschema; es ist zugleich der jüngste Beleg im Umfeld von OTA-SCI-0105 und wird für die Aussage 'kein AVI-P-Trigger' gebraucht. Die Quellenprüfung 2026-11 hat den Dokumentbereich OTA-SCI-0095 bis -0115 als Schwerpunkt ungeprüfter Angaben markiert; OTA-SCI-0120 ist noch nicht einmal in dieser Liste, weil es erst danach entstand.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "T",
+    "OFFEN"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "LHCb-Messung von B⁰→μ⁺μ⁻ und B_s⁰→μ⁺μ⁻: CERN-/LHCb-Mitteilung vom 3. November 2026, Signifikanz, Verzweigungsverhältnis, effektive Lebensdauer und Publikationsstatus",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.85,
+  "scores": {
+    "project_relevance": 0.82,
+    "cross_project_reuse": 0.78,
+    "uncertainty": 0.9,
+    "evidence_potential": 0.9
+  },
+  "related_research_ids": [
+    "RES-20261124-1C20E1D9"
+  ],
+  "novelty_reason": "Der frühere Auftrag RES-20261124-1C20E1D9 prüft OTA-SCI-0105 (b→sμ⁺μ⁻: CMS-PAS-BPH-24-005, LHCb arXiv:2608.12215, C₉-Verschiebung, hadronische Unsicherheit). Der neue Gegenstand ist ein anderer Zerfallskanal (b→dμ⁺μ⁻ statt b→sμ⁺μ⁻), eine andere Observable (effektive B_s⁰-Lebensdauer) und eine andere statistische Behauptung (3,2 σ Einzelexperiment-Evidenz für ein Verzweigungsverhältnis, nicht C₉-Abweichung); zusätzlich ist die Existenz der zitierten CERN-Mitteilung selbst ungeprüft. Eine Antwort aus RES-20261124-1C20E1D9 deckt keinen dieser Punkte ab.",
+  "fingerprint": "aa74d08c79d5725e"
+}
