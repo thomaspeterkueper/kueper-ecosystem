@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261127-76AD5DB9",
+  "status": "queued",
+  "created": "2026-11-27T12:45:37+00:00",
+  "source_project": "ota",
+  "source_repository": "thomaspeterkueper/overtime-archive.org",
+  "source_path": "src/content/documents/OTA-OBS-0004-2026-DE.md",
+  "source_ref": "ed51fed86f12c40464e056c11ba2de535eeb7351",
+  "source_blob_sha": "5b1247c472b5b6620c3d5a4ff7b70a0246bfba41",
+  "title": "Realwelt-Audit der Göbekli-Tepe-Darstellung in OTA-OBS-0004 (v1.0): Datierung, Grabungsleitung, Siedlungs- vs. Heiligtumsdebatte und die Behauptung, der Monumentalbau widerlege das Modell der neolithischen Revolution",
+  "question": "Quellengestützter Audit der als [R] Real – 100 % und Status 'Kanonisch' geführten Aussagen von OTA-OBS-0004-2026-DE ('Göbekli Tepe – Älteste bekannte Monumentalarchitektur der Menschheit'), gepinnt auf die im Workspace vorliegende v1.0 (Git-Revision ed51fed86f12c40464e056c11ba2de535eeb7351). Das Dokument hat keinen review-Block und ist in der Quellenprüfung 2026-11 mit '1 nicht auffindbar' geführt; es ist Referenz für OTA-HIS-0006-9500BCE-DE, OTA-HIS-0008-3500BCE-DE, OTA-OBS-0010-2026-DE (Vorbild-Beobachtungsdossier), OTA-SCI-0047-2026-DE (Proto-Temenon-Stätte) und OTA-CUL-0015-MULTI-DE. (1) Chronologie und Datierung: Prüfe die PPNA/PPNB-Grenzen ~9500–8800 bzw. ~8800–8000 BCE, die Tellfläche ~8 ha (300 × 300 m), die Schichthöhe bis 15 m, den Ausgrabungsstand '~10 % (Stand 2021)' und die Radiokarbondatierung gegen die DAI-Publikationen und die begutachtete Archäologieliteratur. (2) Grabungsleitung: Das Dokument widerspricht sich selbst – Text: 'Nach seinem Tod 2014 übernahmen die Istanbul Üniversitesi, das Şanlıurfa-Museum und das DAI unter Leitung von Prof. Dr. Necmi Karul'; Tabelle IX: 'DAI-Grabungsleitung (1995–2014: K. Schmidt; 2014–heute: L. Clare)'. Kläre, wer die Grabung nach 2014 tatsächlich leitete, in welchem Verhältnis Karul und Lee Clare standen und seit wann; melde die Nichtauflösbarkeit ausdrücklich. (3) Architektur- und Fundzahlen: Prüfe Durchmesser der Enclosures A–D (u. a. 'Enclosure C ~30 m'), Pfeilerhöhen 3–5,5 m (einzelne bis 7 m), Gewichte 10–16 t ('größte bis 50 t?'), '200+ dokumentiert', den unfertigen 7-m-Pfeiler im Steinbruch und die Angabe '~10 % freigelegt'. (4) Die Paradigmenbehauptung (Kern des Audits): Prüfe '[R] Monumentalarchitektur entstand hier vor der Sesshaftwerdung – nicht danach', 'Jäger-Sammler bauten Monumentalarchitektur' und die Tabellenzeile 'Monumentalbau vor der Sesshaftwerdung widerlegt das Modell der neolithischen Revolution'. Berichte den realen Forschungsstand zur Siedlungs-/Heiligtumsdebatte (Schmidt'sches 'Bergheiligtum' vs. Nachweise häuslicher Aktivitäten, Vorratshaltung, Wassermanagement), ob das DAI tatsächlich die im Dokument zitierte Position 'Siedlungsort mit ausgeprägter ritueller Komponente' vertritt und seit wann, und ob 'widerlegt' nicht zu 'hat das ältere Stufenmodell infrage gestellt' abzuschwächen ist. (5) Interne Spannung: Das Dokument führt in §6.1 'Keine Wohnbebauung, keine Herdstellen, keine Abfallgruben (frühe Phase)' als Beleg für das Heiligtum und in §6.2 zugleich 'Häusliche Aktivitäten nachgewiesen / Hinweise auf dauerhafte Besiedlung'. Prüfe, was davon auf welchen Grabungsabschnitt und welche Publikation zurückgeht. (6) Einzelaussagen: Prüfe 'keine Wasserquelle' (reale Befunde zu Zisternen/Wasser), 'wahrscheinlich überdacht', die Verfüllungshypothesen, die Zuschreibung 'Kurdischer Name Girê Mirazan / Xerabreşkê' und die UNESCO-Eintragung 2018. (7) Quellen: Prüfe die fünf Literaturangaben (Schmidt 2006/2012, Dietrich et al. 2012 Antiquity 86, 674–695, Clare et al. 2019 'Building the New Göbekli Tepe', Peters & Schmidt 2004 Anthropozoologica 39.1) und identifiziere die 'nicht auffindbare' Angabe. (8) Reklassifiziere: Nenne die Sätze, die [R] bleiben können (Existenz, Lage, T-Pfeiler, PPNA/PPNB-Rahmen, UNESCO), die zu '[R] Quelleninhalt, Datierung und Deutung offen' abzuschwächen sind (Freilegungsgrad, Pfeilergewichte, Leitung nach 2014, DAI-Positionszitat), die als [H] zu führen sind (Religion als Motor der Sesshaftwerdung, rituelle Verfüllung) und die [OFFEN] bleiben; stelle fest, dass keine kanonische Datierungsgrenze und keine kanonische Funktionsdeutung in den Kanon aufgenommen wird. AUSGESCHLOSSEN: die archäoakustische KN-11.1-Notiz und die Temenon-/Romanverwendung (Werkebene), die Ableitungen in OTA-HIS-0008 und OTA-SCI-0047 als Autorenentscheidung sowie alle NOXIA-/OTA-Balancing-Werte.",
+  "why_now": "OTA-OBS-0004 trägt als einziges Göbekli-Tope-Dossier das Label [R] – 100 % und 'Kanonisch', hat aber keinen review-Eintrag, wird von fünf weiteren Dokumenten als Tatsachengrundlage zitiert und enthält zugleich einen offensichtlichen internen Widerspruch zur Grabungsleitung und zwei unvereinbare Aussagen zur Wohnbebauung. Die Quellenprüfung 2026-11 hat bereits eine nicht auffindbare Literaturangabe vermerkt, aber keine Inhaltsprüfung vorgenommen. Da das Dossier die Erzählung 'Monumentalbau vor Sesshaftigkeit' trägt, wirkt eine ungeprüfte Zuspitzung direkt in Weltbild und Nachbardokumente.",
+  "languages": [
+    "de",
+    "en",
+    "tr"
+  ],
+  "evidence_profile": "ota-archive-evidence",
+  "claim_classes": [
+    "R",
+    "H"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Archäologie des Göbekli Tepe: DAI-Grabungsbefunde, Radiokarbondatierung, Grabungsleitung 2014–2026, Siedlungs- vs. Heiligtumsdebatte und Publikationslage zu häuslicher Nutzung",
+  "publication_route_hint": "fictional_archive_document",
+  "project_weight": 0.9,
+  "relevance_score": 0.89,
+  "scores": {
+    "project_relevance": 0.9,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.95
+  },
+  "related_research_ids": [],
+  "novelty_reason": "Die bisherigen archaeologischen Aufträge betreffen Kanheri/Konkan (OTA-SCI-0004) und die Obsidian-/Lodestone-Materialreihe, nicht Göbekli Tepe. OTA-OBS-0004 war in keinem früheren Topic enthalten und ist auch nicht durch die KUE-Grounding-Matrix abgedeckt.",
+  "fingerprint": "76ad5db9cf6371b0"
+}
