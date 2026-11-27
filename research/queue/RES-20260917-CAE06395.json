@@ -1,6 +1,6 @@
 {
   "id": "RES-20260917-CAE06395",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-17T08:58:43+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -51,5 +51,27 @@
   },
   "fingerprint": "cae063952211ab28",
   "updated_at": "2026-09-17T09:13:57+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/130"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/130",
+  "validated_at": "2026-11-27T15:33:01+00:00",
+  "validation_summary": "Der Candidate prüft OTA-RED-0017 auf Basis eines überholten Blobs (00836…, v1.0: 150 Nominierte/146 Teilnehmer). Der aktuelle Stand ist v1.1: 34 Nominierte, 4 entfernt, 30 Teilnehmer (15+15), konsistent mit OTA-FND-0007. Die 4-von-150-Statistik ist auf RED-0017 daher nicht mehr anwendbar; sie passt noch auf OTA-SCI-0013 §3.2 (150 Kandidaten, 4 = 2,7 %) und die 146-Angaben in OTA-RED-0016/OTA-BIO-0006, die mit FND-0007 kollidieren. Drei konkrete Aktionen bleiben: (1) SCI-0013 markiert eine strahlungsbedingte Erhöhung synaptischer Konnektivität als [R], obwohl der HZE-Korpus Richtung und Persistenz offenlässt und der Dosisratenbruch zur chronischen GCR-Exposition ungeklärt ist; (2) der archivweite Teilnehmernenner und die Signifikanzbehauptung in RED-0017 §III.3.2 sind ungeklärt; (3) die Schwerkraft-Zeile in RED-0017 ist richtungsverkehrt und ohne Teilgravitations-Beleg, lässt sich aber mit realen Otokonien-/Calyx-Ankern als Fiktion erden. RED-0017 ist [F]/[W], daher dort keine Kanonkorr",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261127-005",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261127-006",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261127-007",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
