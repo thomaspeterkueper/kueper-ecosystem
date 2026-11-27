@@ -91,20 +91,37 @@ Am 14.11.2026 zur Weiterleitung als External Tasks in `.kueper/outbox/` gestellt
   Status `baseline`, in `kueper-engineering/systems/living-infrastructure-conserved-flow-contract-r1.json`
   mit Begleitdokument `systems/living-infrastructure-conserved-flow-architecture-r1.md`.
   Source of Truth bleibt `kueper-engineering`; hier nur der Verweis.
-- `KG`: kanonische Material- und Prozessidentitäten.
+- `KG`: kanonische Material- und Prozessidentitäten – **erledigt (15.11.2026):**
+  `EXT-ECO-KG-20261114-001`, Export
+  `kueper-knowledge-graph/exports/ontology-living-infrastructure-0.1.json`.
+  Source of Truth bleibt `kueper-knowledge-graph`.
 - `OTA`: Evidenzkonsolidierung und Provenienz, einschließlich der offenen Frage
-  früherer Mars-Pilz-Bestände.
-
-Bewusst noch nicht geroutet:
-
-- `NXU` und `NOXIA`: Sie konsumieren die stabilen ENG-/KG-Verträge. Ihre
-  Folgearbeiten werden erst nach deren Vorliegen geroutet, damit keine parallelen
-  Begriffe oder Zähler entstehen.
-- `noxia-realtime`: ausdrücklich erst nach stabilen Verträgen.
+  früherer Mars-Pilz-Bestände – **erledigt (27.11.2026):** `EXT-ECO-OTA-20261114-001`,
+  Evidenzprofil `overtime-archive.org/docs/research/OTA-EVIDENCE-LIVING-INFRASTRUCTURE-2026-11.md`
+  (Arbeitsindex, nicht kanonisch; nächste Prüfung spätestens 27.05.2027). Es
+  referenziert den ENG-Flussvertrag (`ENG-LICF-r1`) und den KG-Export
+  `ontology-living-infrastructure-0.1.json` und führt „nicht gefunden“
+  ausdrücklich als Suchergebnis, nicht als Abwesenheitsnachweis (§6).
 
 Meilenstein „stabile Verträge“: Der ENG-Flussvertrag und die KG-Identitäten liegen
 vor und werden vom OTA-Evidenzprofil referenziert.
-Stand 17.11.2026: offen – der ENG-Flussvertrag (`ENG-LICF-r1`) und die
-KG-Identitäten (`EXT-ECO-KG-20261114-001`, erledigt 15.11.2026:
-`kueper-knowledge-graph/exports/ontology-living-infrastructure-0.1.json`) liegen vor;
-die Referenzierung im OTA-Evidenzprofil (`EXT-ECO-OTA-20261114-001`) steht noch aus.
+**Stand 28.11.2026: erreicht** – alle drei Teile liegen vor (ENG-Flussvertrag
+15.11.2026, KG-Export 15.11.2026, OTA-Evidenzprofil 27.11.2026 mit Verweis auf
+beide). Festgestellt im Ökosystem-Kreislauf zu
+[`EXT-OTA-ECO-20261127-001`](../../external-tasks/done/EXT-OTA-ECO-20261127-001.md).
+Vorbehalt: Der ENG-Vertrag hat Status `baseline` und der KG-Export Version 0.1 –
+stabil heißt referenzierbar und versioniert, nicht validiert. Konsumenten binden
+sich an die genannte Revision und zählen nicht selbst.
+
+Damit freigegeben (28.11.2026):
+
+- `NXU` und `NOXIA`: Die Folgearbeiten sind freigegeben und am 28.11.2026 als
+  Umschläge in `.kueper/outbox/` gestellt (Routing in die Ziel-Repositories durch
+  den Ecosystem-Loop): NXU für Siedlungsgeschichte, Institutionen und Kultur,
+  NOXIA für Spielschleifen und Lernmodule – beide gebunden an `ENG-LICF-r1` und
+  `ontology-living-infrastructure-0.1.json`, ohne eigene Begriffe oder Zähler.
+
+Weiterhin nicht adressiert:
+
+- `noxia-realtime`: ausdrücklich erst nach validierten, nicht nur stabilen
+  Verträgen; die Zurückstellung aus der Registrierung bleibt bestehen.
