@@ -1,6 +1,6 @@
 # OTA → kueper.com: Zuordnungsinventur
 
-Stand: 2026-11-27 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
+Stand: 2026-11-28 · Grundlage: ECO-ARC-0038-2026-DE (accepted), ECO-ARC-0036, `docs/repository-roles.md`
 Gepflegt von: geplanter Aufgabe „KUE/OTA-Dokumente begutachten“ (Spalte „Stand“)
 
 ## Wie die Liste entstanden ist
@@ -65,7 +65,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-SCI-0103-2026-DE | Longitudinale Gehirngesundheit — Lebenslauf-Risiken, Pr | IOFFENR |  | geprüft 2026-11-15 – ganz nach KUE, OTA bleibt Brückendokument (§19); EXT-OTA-KUE-20261115-001, OTA-REQ-20261115-001 – umgesetzt 2026-11-25 (OTA-SCI-0103 v1.1, KUE-SCI-0220) |
 | OTA-SCI-0108-2026-DE | Ultrakompakte Doppel-Weiße-Zwerge: Orbitalzerfall, Dire | HIOFFENR |  | geprüft 2026-11-15 – ganz nach KUE (kein Werkbezug), OTA bleibt Brückendokument; EXT-OTA-KUE-20261115-002, OTA-REQ-20261115-002 – umgesetzt 2026-11-19 (OTA-SCI-0108 v1.1, KUE-SCI-0206) |
 | OTA-SCI-0109-2026-DE | Stromnetz-Engpässe: Erzeugung, Transportkapazität, Redi | HOFFENRT |  | geprüft 2026-11-16 – ganz nach KUE, OTA bleibt Brückendokument (NOXIA-Archivregel §14); EXT-OTA-KUE-20261116-001, OTA-REQ-20261116-001 – umgesetzt 2026-11-22 (v1.1, KUE-SCI-0214) |
-| OTA-SCI-0110-2026-DE | Adaptive Fertigung und Physical AI: Digitale Zwillinge, | HIOFFENR |  | geprüft 2026-11-16 – ganz nach KUE (Realteil), NOXIA-Anschluss/A0–A5/Archivregel bleiben; EXT-OTA-KUE-20261116-002, OTA-REQ-20261116-002 |
+| OTA-SCI-0110-2026-DE | Adaptive Fertigung und Physical AI: Digitale Zwillinge, | HIOFFENR |  | geprüft 2026-11-16 – ganz nach KUE (Realteil), NOXIA-Anschluss/A0–A5/Archivregel bleiben; EXT-OTA-KUE-20261116-002, OTA-REQ-20261116-002 – umgesetzt 2026-11-28 (OTA-SCI-0110 v1.1, KUE-SCI-0229) |
 | OTA-SCI-0111-2026-DE | β Pictoris b im Radio: Aurorale Emission, Magnetfeld-In | HIOFFENR |  | geprüft 2026-11-17 – ganz nach KUE (Realteil), NOXIA-Modell/SSF-Set/Archivregel bleiben; EXT-OTA-KUE-20261117-001, danach Brücke OTA-REQ-20261117-001 |
 | OTA-SCI-0112-2026-DE | Mars-Siedlungen als Stoffstromsystem: ECLSS, Nahrung, I | HIOFFENR |  | geprüft 2026-11-07 – ganz nach KUE (Realteil), NOXIA-Regeln §18/21/24/27/30 bleiben; EXT-OTA-KUE-20261107-001, danach Brückendokument OTA-REQ-20261107-002 |
 | OTA-TEC-0126-2026-DE | Verteilte Robotik und MiniNode: Evidenzbasis für hetero | HOFFENRT |  | geprüft 2026-11-17 – abweichend Teile nach KUE (Realanker), MiniNode-Bewertung bleibt; EXT-OTA-KUE-20261117-002, danach Kürzung OTA-REQ-20261117-002 |
@@ -127,7 +127,7 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 | OTA-TEC-0110-2026-DE | Technisches Labor — Analyse-, Forschungs- und Entwicklu | FHOFFENR | Technische Prinzipien [R] | offen |
 | OTA-TEC-0111-2026-DE | Oberflächen-Scanner — Lokale Fernerkundung, Messung und | FHOFFENR | Physikalisch-technische Prinzipien [R] | offen |
 | OTA-SCI-0020-2026-DE | Relikt-Fenster — Spätaktive Wasser- und Eisdynamik auf | RSTW | I.1 Zhurong [R]; I.2 Prudhoe Dome [R] | geprüft 2026-11-19 (nachgetragen) – Teile nach KUE: Zhurong-Gegenstück KUE-SCI-0202 vorhanden, Prudhoe Dome neu per EXT-OTA-KUE-20261119-001; Relikt-Fenster/Frequenz-Hypothese (AVI) bleiben; Kürzung OTA-REQ-20261119-002 (Punkte A/C umsetzbar, E wartet auf Thomas) – A/C umgesetzt 2026-11-20 (v1.1); B/D umgesetzt 2026-11-22 (v1.2, KUE-SCI-0213), E wartet auf Thomas |
-| OTA-SCI-0117-2026-DE | Obsidian: Materialwissenschaft — Vulkanisches Glas, Min | RTS | I–IV, 5.1, 5.2 Methoden A–C, 6.1 | geprüft 2026-11-25 – Teile nach KUE (gemeinsames KUE-Dokument Obsidian); EXT-OTA-KUE-20261125-001, Korrektur/Kürzung OTA-REQ-20261125-001 (A sofort, B nach KUE-Merge, C Hook 1 wartet auf Thomas) |
+| OTA-SCI-0117-2026-DE | Obsidian: Materialwissenschaft — Vulkanisches Glas, Min | RTS | I–IV, 5.1, 5.2 Methoden A–C, 6.1 | geprüft 2026-11-25 – Teile nach KUE (gemeinsames KUE-Dokument Obsidian); EXT-OTA-KUE-20261125-001, Korrektur/Kürzung OTA-REQ-20261125-001 (A sofort, B nach KUE-Merge, C Hook 1 wartet auf Thomas) – A und B umgesetzt 2026-11-28 (OTA-SCI-0117 v1.2/v1.3, KUE-SCI-0227), C wartet auf Thomas |
 | OTA-SCI-0118-2026-DE | Obsidian: Archäometrie — Provenienzanalyse, Hydratation | RTSF | 1.1–1.3, 2.1–2.3, 3.1–3.2, 3.3/3.4 je erster Absatz | geprüft 2026-11-25 – Teile nach KUE (gemeinsames KUE-Dokument Obsidian); EXT-OTA-KUE-20261125-001, Korrektur/Kürzung OTA-REQ-20261125-002 (A sofort, B nach KUE-Merge, C wartet auf Thomas) |
 | OTA-SCI-0119-2026-DE | Lodestone: Magnetit-Eisenstein — Natürlicher Permanentm | RTSF | I–IV.2, VI.1–6.2, VII.1–7.2 | geprüft 2026-11-25 – Teile nach KUE; EXT-OTA-KUE-20261125-002, Korrektur/Kürzung OTA-REQ-20261125-003 (A sofort, B nach KUE-Merge, C Sauerland-Träger wartet auf Thomas) |
 | OTA-SCI-0090-2026-DE | Utopia Planitia — Subsurface Ice and Settlement Potential | RHF | §2 Zhurong, §3 SHARAD-Untergrundeis | geprüft 2026-11-27 (nachgetragen) – Teile nach KUE (§2 → KUE-SCI-0202 vorhanden, §3 neu per EXT-OTA-KUE-20261127-003); NOXIA-Korridor bleibt; OTA-REQ-20261127-004 (A sofort, B nach KUE-Merge, C wartet auf Thomas) |
@@ -152,6 +152,8 @@ Hinweis: Viele A/B-Dokumente sind Realdossiers ohne oder fast ohne Quellen. Vor 
 ## C – bleibt in OTA
 
 Geprüft 2026-11-01: OTA-BIO-0022-2026-DE, OTA-LSC-0001-2048-DE (bleiben OTA).
+
+Geprüft 2026-11-28 (nachgetragen, fehlten in der Inventur): OTA-SCI-0084-2163-EN – bleibt OTA (fiktiver Temenon-Fachartikel, Realteil nur als [R]-Referenzen); Folgestudien-Verweis direkt korrigiert, Referenzen per OTA-REQ-20261128-001 (A sofort). OTA-TEC-0087-2026-DE – bleibt OTA (NOXIA-Objektdossier; KUE-Gegenstück KUE-SCI-0173 für NRHO/Gateway-Programmstand/Kryotechnik vorhanden, nur Verweis); Programmstand und Quellen per OTA-REQ-20261128-002 (A/B sofort, C nach KUE-Merge), Messwert nach KUE per EXT-OTA-KUE-20261128-001.
 
 Geprüft 2026-11-27 (nachgetragen, fehlte in der Inventur): OTA-SCI-0030-2090-DE – bleibt OTA (Kapitelübersicht, Realanker nur als Überschriften zum χ-Feld-/Λ-Modell); Metadaten direkt korrigiert, Quellen per OTA-REQ-20261127-002 (A/B sofort, C wartet auf Thomas).
 
