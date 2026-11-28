@@ -1,6 +1,6 @@
 {
   "id": "RES-20261127-76AD5DB9",
-  "status": "queued",
+  "status": "candidate-pr",
   "created": "2026-11-27T12:45:37+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -34,6 +34,7 @@
   "related_research_ids": [],
   "novelty_reason": "Die bisherigen archaeologischen Aufträge betreffen Kanheri/Konkan (OTA-SCI-0004) und die Obsidian-/Lodestone-Materialreihe, nicht Göbekli Tepe. OTA-OBS-0004 war in keinem früheren Topic enthalten und ist auch nicht durch die KUE-Grounding-Matrix abgedeckt.",
   "fingerprint": "76ad5db9cf6371b0",
-  "updated_at": "2026-11-27T19:01:36+00:00",
-  "last_error": "candidate for ota-archive-evidence reports invalid claim class"
+  "updated_at": "2026-11-28T12:39:57+00:00",
+  "last_error": "candidate for ota-archive-evidence reports invalid claim class",
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/336"
 }
