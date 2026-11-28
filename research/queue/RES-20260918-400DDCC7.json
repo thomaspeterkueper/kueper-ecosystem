@@ -1,6 +1,6 @@
 {
   "id": "RES-20260918-400DDCC7",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-18T08:34:39+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -51,5 +51,27 @@
   },
   "fingerprint": "400ddcc7500d2030",
   "updated_at": "2026-09-18T08:44:17+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/132"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/132",
+  "validated_at": "2026-11-28T14:29:47+00:00",
+  "validation_summary": "Der Candidate auditiert die extern prüfbaren Ausrüstungs- und Setting-Zeilen von OTA-ORG-0001-2079-DE. Ergebnis: Die realen Technologieklassen existieren, aber zwei Kernfunktionen sind um Größenordnungen nicht gestützt – VTOL-7 als atmosphärisches Mars-Transportflugzeug und GD-9 als Gravimetrie-Personenverfolger. Die übrigen Zeilen (SR-3/LRV-20, EMP-Granaten) sind als Signaturreduktion bzw. lokale HPM-Wirkung lesbar, aber nicht als Unsichtbarkeit oder militärisch bedeutsamer Radius; das Phobos-Siting ist physisch konsistent. Daraus folgen zwei Konflikt- und eine Enrichment-Aktion, alle ohne Kanon-, Bezeichnungs- oder Balancing-Änderung.",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261128-001",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261128-002",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261128-003",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
