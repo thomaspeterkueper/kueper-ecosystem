@@ -1,5 +1,19 @@
 {
-  "generated_at": "2026-11-27T16:31:44.680854+00:00",
-  "findings": [],
-  "new_since_last_run": []
+  "generated_at": "2026-11-28T15:24:56.451714+00:00",
+  "findings": [
+    {
+      "id": "9b1277f58ecf",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-KG-ECO-20261128-001.md"
+    }
+  ],
+  "new_since_last_run": [
+    {
+      "id": "9b1277f58ecf",
+      "category": "task_addressed_to_eco",
+      "severity": "info",
+      "message": "Offener, an ECO adressierter Task in 'ecosystem': EXT-KG-ECO-20261128-001.md"
+    }
+  ]
 }
