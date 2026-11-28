@@ -1,6 +1,6 @@
 {
   "id": "RES-20260919-43549FCF",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-19T08:10:57+00:00",
   "source_project": "zereya",
   "source_repository": "thomaspeterkueper/zereya.de",
@@ -33,5 +33,27 @@
   "novelty_reason": "Weder RES-20260827-C23DE6E3 noch die übrigen Vorläufer behandeln Rechtstexte oder Barrierefreiheit; RES-20260827-C23DE6E3 betrifft Kanon-Entitäten, IDs und OTA-Dokumente, RES-20260827-46EBEEB6 den Essay-Bestand der Omnizedenz-Philosophie. Neu ist hier die externe Überprüfung einer im Ökosystem selbst aufgestellten Rechtsbehauptung (Onboarding §5) gegen Primärrecht sowie die bislang nirgends erfasste EAA-Frist.",
   "fingerprint": "43549fcf020c45ab",
   "updated_at": "2026-09-19T08:21:11+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/134"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/134",
+  "validated_at": "2026-11-28T14:37:34+00:00",
+  "validation_summary": "Der Kandidat prüft realrechtliche Pflichten für den öffentlichen deutschsprachigen Zereya-Webauftritt: Impressum (§ 5 DDG bzw. § 18 MStV), Informationspflichten nach Art. 13 DSGVO, Einwilligung nach § 25 TDDDG sowie EAA/BFSG-Barrierefreiheit. In-repo bestätigt: Das README (Blob f7f704d4…) enthält die untersuchte §5-Aussage nicht, sondern verweist nur auf das Onboarding-Template; es ist Trigger, nicht Quelle. Die eigentliche Aussage liegt im gepinnten Nachbardokument von kueper-ecosystem und ist in diesem Repository nicht verifizierbar. Das Zereya-Repository besteht derzeit nur aus README und leeren external-tasks-Verzeichnissen; es gibt keine Website-Implementierung, Rechtstexte oder Kanon-Inhalte, die dem Befund widersprechen. Die §5-Regel ist im Ergebnis für einen geschäftsmäßigen Buchauftritt tragfähig, ihre rechtliche Begründung („öffentlich erreichbar“) ist jedoch zu weit gefasst; die „fast immer“-Wirkung entsteht erst durch § 18 Abs. 1 MStV. Daraus folgen drei konkrete, voneinand",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-ZEREYA-20261128-001",
+      "target": "zereya",
+      "repository": "thomaspeterkueper/zereya.de"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-ZEREYA-20261128-002",
+      "target": "zereya",
+      "repository": "thomaspeterkueper/zereya.de"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-ECO-20261128-001",
+      "target": "ecosystem",
+      "repository": "thomaspeterkueper/kueper-ecosystem"
+    }
+  ]
 }
