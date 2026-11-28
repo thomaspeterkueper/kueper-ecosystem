@@ -1,0 +1,37 @@
+{
+  "id": "RES-20261128-F6F2B41B",
+  "status": "queued",
+  "created": "2026-11-28T12:01:11+00:00",
+  "source_project": "products",
+  "source_repository": "thomaspeterkueper/kueper-products",
+  "source_path": "external-tasks/open/EXT-ENG-PRODUCTS-20261018-mininode-env-gen0-handoff.md",
+  "source_ref": "ab9bc958a2a78351232a87dd18996cec5eb27132",
+  "source_blob_sha": "54cbaf70f37e07e43289ac958f724e15674c43ab",
+  "title": "Multi-year drift and calibration interval for the SHT40-class MiniNode accuracy claim",
+  "question": "What do peer-reviewed field-stability, accelerated-aging and intercomparison studies establish about the long-term drift, hysteresis and contamination sensitivity of SHT40-class capacitive RH/T sensors in cold, humid enclosures over one to five years, and what calibration interval or field check is required before a MiniNode can state a product accuracy over a multi-year no-cloud deployment rather than only a 72-hour bench comparison?",
+  "why_now": "The MiniNode environment handoff makes 'stable sensor response' a P2 acceptance condition, while the planned Gen-0 validation is only a 72-hour run against a reference. Because the product promise is local-first operation over a multi-year battery life, an accuracy statement without a drift and calibration basis cannot outlive the bench test.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Measured long-term drift and field stability of low-cost capacitive RH/T sensors (SHT40/SHT3x class), accelerated-aging behaviour, and calibration-transfer practice in environmental metrology.",
+  "publication_route_hint": null,
+  "project_weight": 0.9,
+  "relevance_score": 0.78,
+  "scores": {
+    "project_relevance": 0.88,
+    "cross_project_reuse": 0.75,
+    "uncertainty": 0.7,
+    "evidence_potential": 0.8
+  },
+  "related_research_ids": [
+    "RES-20261108-5DA5CE14"
+  ],
+  "novelty_reason": "The prior MiniNode metrology topic bounds the 72-hour enclosure response, condensation bias and reference traceability for a bench run. It does not address drift, hysteresis or calibration interval across the multi-year life implied by the >2-year battery and no-cloud product promise; this gap adds the product-lifetime accuracy and maintenance dimension and asks whether a one-time calibration can sustain a stated accuracy.",
+  "fingerprint": "f6f2b41b884d3a6f"
+}
