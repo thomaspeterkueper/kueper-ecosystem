@@ -7,6 +7,11 @@ Invalid/unroutable envelopes are intentionally retained for inspection.
 Routed fingerprints and default branches are cached per repository for one run:
 reading every External Task of a target once per envelope exhausted the GitHub
 API rate limit (Autonomous Loop failures 22.–24.11.2026).
+
+Hitting the rate limit anyway no longer fails the whole loop: the cleanup stops
+in an orderly fashion and reports what it managed to consume. Consuming an
+envelope is idempotent, so the next run finishes the rest (Autonomous Loop
+failure 28.11.2026).
 """
 from __future__ import annotations
 import base64, functools, hashlib, json, os, re, urllib.error, urllib.parse, urllib.request
@@ -18,6 +23,14 @@ ROOT=Path(__file__).resolve().parents[2]
 REG=json.loads((ROOT/"registry/projects.json").read_text(encoding="utf-8"))
 CODES={"ecosystem":"ECO","knowledge-graph":"KG","ssf":"SSF","noxia":"NOXIA","noxia-universe":"NXU","mishkenaz":"MISH","omnizedenz":"OMNI","avi-modell":"AVI","contracomology":"CONTRA","kueper-archive-schema":"ARCH","endia":"ENDIA","zereya":"ZEREYA","davaru":"DAVARU","fluide-hermeneutik":"FLHERM","resonanz-ethik":"RESETH","kueper-com":"KUE","ota":"OTA","products":"PROD","thomas-kueper-de":"TKD"}
 
+class RateLimited(RuntimeError):
+    """GitHub refused the request because a rate limit is exhausted."""
+
+def _is_rate_limit(code:int,payload:str)->bool:
+    if code not in (403,429):return False
+    lowered=payload.lower()
+    return "rate limit" in lowered or "abuse detection" in lowered or "secondary rate" in lowered
+
 def gh(token:str,method:str,path:str,body:dict[str,Any]|None=None):
     data=None if body is None else json.dumps(body).encode();req=urllib.request.Request(API+path,data=data,method=method)
     req.add_header("Authorization",f"Bearer {token}");req.add_header("Accept","application/vnd.github+json");req.add_header("X-GitHub-Api-Version","2022-11-28")
@@ -27,7 +40,9 @@ def gh(token:str,method:str,path:str,body:dict[str,Any]|None=None):
             raw=r.read();return json.loads(raw) if raw else None
     except urllib.error.HTTPError as exc:
         if exc.code==404:return None
-        raise RuntimeError(exc.read().decode(errors="replace")) from exc
+        payload=exc.read().decode(errors="replace")
+        if _is_rate_limit(exc.code,payload):raise RateLimited(payload) from exc
+        raise RuntimeError(payload) from exc
 
 @functools.lru_cache(maxsize=None)
 def default(token,repo):return gh(token,"GET",f"/repos/{repo}")["default_branch"]
@@ -61,22 +76,27 @@ def _routed_fingerprints(token,repository):
 def main():
     token=os.environ.get("KUEPER_BOT_TOKEN")
     if not token:raise SystemExit("KUEPER_BOT_TOKEN required")
-    by_code=targets();results=[]
-    for p in REG["projects"]:
-        if not p.get("enabled",True) or p["id"] not in CODES:continue
-        source=CODES[p["id"]];repo=p["repository"];branch=default(token,repo);listing=get(token,repo,".kueper/outbox",branch)
-        for item in listing if isinstance(listing,list) else []:
-            if item.get("type")!="file" or not item.get("name","").endswith(".json"):continue
-            payload=get(token,repo,item["path"],branch)
-            if not isinstance(payload,dict):continue
-            try:env=json.loads(decode(payload))
-            except Exception:continue
-            target=by_code.get(env.get("target"))
-            if not target:continue
-            fingerprint=fp(source,target and CODES[target["id"]],str(env.get("title",'')),str(env.get("requested_change",'')))
-            if fingerprint not in routed_fingerprints(token,target):continue
-            gh(token,"DELETE",f"/repos/{repo}/contents/{enc(item['path'])}",{"message":f"chore(loop): consume routed envelope {item['name']}","sha":payload["sha"],"branch":branch})
-            results.append({"source":repo,"file":item["path"],"result":"consumed","fingerprint":fingerprint})
-    print(json.dumps({"consumed":len(results),"results":results},indent=2,ensure_ascii=False));return 0
+    by_code=targets();results=[];stopped=None
+    try:
+        for p in REG["projects"]:
+            if not p.get("enabled",True) or p["id"] not in CODES:continue
+            source=CODES[p["id"]];repo=p["repository"];branch=default(token,repo);listing=get(token,repo,".kueper/outbox",branch)
+            for item in listing if isinstance(listing,list) else []:
+                if item.get("type")!="file" or not item.get("name","").endswith(".json"):continue
+                payload=get(token,repo,item["path"],branch)
+                if not isinstance(payload,dict):continue
+                try:env=json.loads(decode(payload))
+                except Exception:continue
+                target=by_code.get(env.get("target"))
+                if not target:continue
+                fingerprint=fp(source,target and CODES[target["id"]],str(env.get("title",'')),str(env.get("requested_change",'')))
+                if fingerprint not in routed_fingerprints(token,target):continue
+                gh(token,"DELETE",f"/repos/{repo}/contents/{enc(item['path'])}",{"message":f"chore(loop): consume routed envelope {item['name']}","sha":payload["sha"],"branch":branch})
+                results.append({"source":repo,"file":item["path"],"result":"consumed","fingerprint":fingerprint})
+    except RateLimited as exc:
+        stopped={"reason":"rate-limit","detail":str(exc)[:500]}
+    report={"consumed":len(results),"results":results}
+    if stopped is not None:report["stopped"]=stopped
+    print(json.dumps(report,indent=2,ensure_ascii=False));return 0
 
 if __name__=="__main__":raise SystemExit(main())
