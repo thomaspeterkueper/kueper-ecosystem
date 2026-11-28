@@ -1,0 +1,35 @@
+{
+  "id": "RES-20261128-D1E81B87",
+  "status": "queued",
+  "created": "2026-11-28T12:01:09+00:00",
+  "source_project": "products",
+  "source_repository": "thomaspeterkueper/kueper-products",
+  "source_path": "opportunities/retrospective-research-product-screening-2026-10-02.md",
+  "source_ref": "ab9bc958a2a78351232a87dd18996cec5eb27132",
+  "source_blob_sha": "7fb0b42b70e18fd0b6399ed84ed90d97c2a5855e",
+  "title": "Compact cosmic-muon imaging: exposure-time, resolution and detector-cost envelope for a product claim",
+  "question": "What do peer-reviewed cosmic-ray muon radiography/tomography campaigns and detector-characterisation studies establish about the exposure time, spatial resolution, detector mass, cost and portability trade-off for imaging metre-scale structures such as walls, shafts, soil voids and industrial vessels with passive cosmic-muon detectors, and where is the boundary between demonstrated compact detectors and the active or laser-generated muon concepts the repository keeps separate and non-product-ready?",
+  "why_now": "The retrospective screening backlog promotes muography to structured screening but blocks it behind a falsification gate on measurement time, detector cost and resolution, and explicitly requires splitting passive cosmic-muon from active/laser-muon concepts. Muography still appears in the advanced-products watch list without a bounded performance envelope, so the advanced track cannot reach a go/hold/reject decision.",
+  "languages": [
+    "en"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "H",
+    "R"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Measured cosmic-ray muon flux and peer-reviewed muon radiography/tomography performance (exposure time versus spatial resolution versus detector area/cost) and detector technologies such as scintillator+SiPM, resistive plate chambers and drift-tube systems.",
+  "publication_route_hint": null,
+  "project_weight": 0.9,
+  "relevance_score": 0.81,
+  "scores": {
+    "project_relevance": 0.72,
+    "cross_project_reuse": 0.8,
+    "uncertainty": 0.85,
+    "evidence_potential": 0.88
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic addresses muography, cosmic-muon detectors or non-destructive imaging performance; the prior standards, battery, RF, enclosure, photophoretic and drip-emitter topics are unrelated.",
+  "fingerprint": "d1e81b8705517480"
+}
