@@ -1,6 +1,6 @@
 {
   "id": "RES-20260918-37BCA156",
-  "status": "candidate-pr",
+  "status": "consumer-requests",
   "created": "2026-09-18T08:34:39+00:00",
   "source_project": "ota",
   "source_repository": "thomaspeterkueper/overtime-archive.org",
@@ -48,5 +48,21 @@
   },
   "fingerprint": "37bca156f8280aa0",
   "updated_at": "2026-09-18T08:52:53+00:00",
-  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/133"
+  "candidate_pr": "https://github.com/thomaspeterkueper/kueper-knowledge-graph/pull/133",
+  "validated_at": "2026-11-28T14:35:56+00:00",
+  "validation_summary": "Der Kandidat prüft die realwissenschaftliche Schicht hinter OTA-BIO-0003-2195-EN und empfiehlt zu Recht `fictional_archive_document`: Das Dokument ist durchgehend [F]/[W] und bleibt Kanon; ein eigenständiges KUE-SCI-Paper ist nicht begründet. Die peer-reviewte Literatur stützt interpersonale kardiale Synchronie nur ko-lokal und kanalvermittelt; 'non-lokale' kardiale Synchronie über Distanz ohne plausiblen Kanal ist keine etablierte Forschung, HRV ist real messbar, aber eine innerindividuelle Größe, und ein Tod durch reduzierte Gravitation ist raumfahrtmedizinisch nicht belegt. Weil die Abweichungen durch den ausdrücklichen Fiktionsstatus gedeckt sind, werden sie nicht als Kanonfehler (conflict) gewertet. Zwei konkrete, kanonneutrale Präzisierungen sind jedoch begründet: (1) eine [R-Anker]-/Kuratornotiz, die reale Messgrößen von der fiktionalen nicht-lokalen Prämisse trennt, und (2) eine kohärente Fassung der Todesursachenformulierung als beitragende Kondition. Beides folgt der im Repo ",
+  "consumer_requests": [
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261128-004",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    },
+    {
+      "result": "created",
+      "id": "EXT-KG-OTA-20261128-005",
+      "target": "ota",
+      "repository": "thomaspeterkueper/overtime-archive.org"
+    }
+  ]
 }
