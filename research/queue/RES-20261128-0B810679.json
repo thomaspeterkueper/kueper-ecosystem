@@ -1,0 +1,36 @@
+{
+  "id": "RES-20261128-0B810679",
+  "status": "queued",
+  "created": "2026-11-28T12:01:10+00:00",
+  "source_project": "products",
+  "source_repository": "thomaspeterkueper/kueper-products",
+  "source_path": "docs/integration-closure-candidate.md",
+  "source_ref": "ab9bc958a2a78351232a87dd18996cec5eb27132",
+  "source_blob_sha": "031ed18f2ab3a1979d13257d39a826aca4ae28b0",
+  "title": "Does 'Integration Closure' add design value beyond established systems-engineering constructs?",
+  "question": "Does the proposed 'Integration Closure' concept — all components, interfaces, resources, control loops and operating conditions functioning together within their permitted ranges — add explanatory or design value beyond established systems-engineering constructs such as TRL, Integration Readiness Level, System Readiness Level, interface management, system-of-systems integration, and qualification/certification closure, and if so which observable criteria distinguish it from ordinary 'system integration'?",
+  "why_now": "The document is explicitly a candidate principle, not canon, and its own evidence rule requires showing added explanatory or design value across independent domains relative to existing systems-engineering terminology before canonization. The proposed `integration-closure-candidate` tag is already meant to mark new research and product cases, so unresolved overlap with established constructs would propagate an ill-defined concept into screening decisions.",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "evidence_profile": "science",
+  "claim_classes": [
+    "H",
+    "T"
+  ],
+  "external_research_required": true,
+  "real_world_anchor": "Peer-reviewed systems-engineering, readiness-level and integration-management literature: TRL, Integration Readiness Level, System Readiness Level, interface management, system-of-systems integration, and qualification/certification closure.",
+  "publication_route_hint": null,
+  "project_weight": 0.9,
+  "relevance_score": 0.82,
+  "scores": {
+    "project_relevance": 0.75,
+    "cross_project_reuse": 0.9,
+    "uncertainty": 0.8,
+    "evidence_potential": 0.82
+  },
+  "related_research_ids": [],
+  "novelty_reason": "No previous topic examines systems-engineering terminology or readiness constructs; the prior standards baseline concerns sensor metadata, provenance and messaging standards, not the governance concept in `docs/integration-closure-candidate.md`.",
+  "fingerprint": "0b810679f0a5532e"
+}
